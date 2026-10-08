@@ -1,0 +1,152 @@
+[
+  {
+    "voice": "es-ES-AlvaroNeural",
+    "gender": "Male",
+    "locale": "es-ES",
+    "file": "es-ES-AlvaroNeural.mp3"
+  },
+  {
+    "voice": "es-ES-ElviraNeural",
+    "gender": "Female",
+    "locale": "es-ES",
+    "file": "es-ES-ElviraNeural.mp3"
+  },
+  {
+    "voice": "es-ES-XimenaNeural",
+    "gender": "Female",
+    "locale": "es-ES",
+    "file": "es-ES-XimenaNeural.mp3"
+  },
+  {
+    "voice": "de-DE-FlorianMultilingualNeural",
+    "gender": "Male",
+    "locale": "de-DE",
+    "file": "de-DE-FlorianMultilingualNeural.mp3"
+  },
+  {
+    "voice": "de-DE-SeraphinaMultilingualNeural",
+    "gender": "Female",
+    "locale": "de-DE",
+    "file": "de-DE-SeraphinaMultilingualNeural.mp3"
+  },
+  {
+    "voice": "en-AU-WilliamMultilingualNeural",
+    "gender": "Male",
+    "locale": "en-AU",
+    "file": "en-AU-WilliamMultilingualNeural.mp3"
+  },
+  {
+    "voice": "en-US-AndrewMultilingualNeural",
+    "gender": "Male",
+    "locale": "en-US",
+    "file": "en-US-AndrewMultilingualNeural.mp3"
+  },
+  {
+    "voice": "en-US-AvaMultilingualNeural",
+    "gender": "Female",
+    "locale": "en-US",
+    "file": "en-US-AvaMultilingualNeural.mp3"
+  },
+  {
+    "voice": "en-US-BrianMultilingualNeural",
+    "gender": "Male",
+    "locale": "en-US",
+    "file": "en-US-BrianMultilingualNeural.mp3"
+  },
+  {
+    "voice": "en-US-EmmaMultilingualNeural",
+    "gender": "Female",
+    "locale": "en-US",
+    "file": "en-US-EmmaMultilingualNeural.mp3"
+  },
+  {
+    "voice": "es-AR-ElenaNeural",
+    "gender": "Female",
+    "locale": "es-AR",
+    "file": "es-AR-ElenaNeural.mp3"
+  },
+  {
+    "voice": "es-AR-TomasNeural",
+    "gender": "Male",
+    "locale": "es-AR",
+    "file": "es-AR-TomasNeural.mp3"
+  },
+  {
+    "voice": "es-CL-CatalinaNeural",
+    "gender": "Female",
+    "locale": "es-CL",
+    "file": "es-CL-CatalinaNeural.mp3"
+  },
+  {
+    "voice": "es-CL-LorenzoNeural",
+    "gender": "Male",
+    "locale": "es-CL",
+    "file": "es-CL-LorenzoNeural.mp3"
+  },
+  {
+    "voice": "es-CO-GonzaloNeural",
+    "gender": "Male",
+    "locale": "es-CO",
+    "file": "es-CO-GonzaloNeural.mp3"
+  },
+  {
+    "voice": "es-CO-SalomeNeural",
+    "gender": "Female",
+    "locale": "es-CO",
+    "file": "es-CO-SalomeNeural.mp3"
+  },
+  {
+    "voice": "es-MX-DaliaNeural",
+    "gender": "Female",
+    "locale": "es-MX",
+    "file": "es-MX-DaliaNeural.mp3"
+  },
+  {
+    "voice": "es-MX-JorgeNeural",
+    "gender": "Male",
+    "locale": "es-MX",
+    "file": "es-MX-JorgeNeural.mp3"
+  },
+  {
+    "voice": "es-US-AlonsoNeural",
+    "gender": "Male",
+    "locale": "es-US",
+    "file": "es-US-AlonsoNeural.mp3"
+  },
+  {
+    "voice": "es-US-PalomaNeural",
+    "gender": "Female",
+    "locale": "es-US",
+    "file": "es-US-PalomaNeural.mp3"
+  },
+  {
+    "voice": "fr-FR-RemyMultilingualNeural",
+    "gender": "Male",
+    "locale": "fr-FR",
+    "file": "fr-FR-RemyMultilingualNeural.mp3"
+  },
+  {
+    "voice": "fr-FR-VivienneMultilingualNeural",
+    "gender": "Female",
+    "locale": "fr-FR",
+    "file": "fr-FR-VivienneMultilingualNeural.mp3"
+  },
+  {
+    "voice": "it-IT-GiuseppeMultilingualNeural",
+    "gender": "Male",
+    "locale": "it-IT",
+    "file": "it-IT-GiuseppeMultilingualNeural.mp3"
+  },
+  {
+    "voice": "ko-KR-HyunsuMultilingualNeural",
+    "gender": "Male",
+    "locale": "ko-KR",
+    "file": "ko-KR-HyunsuMultilingualNeural.mp3"
+  },
+  {
+    "voice": "pt-BR-ThalitaMultilingualNeural",
+    "gender": "Female",
+    "locale": "pt-BR",
+    "file": "pt-BR-ThalitaMultilingualNeural.mp3"
+  }
+]
