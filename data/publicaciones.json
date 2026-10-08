@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "slug": "camaron-pistola",
+      "category": "animales",
+      "due": "2026-10-08T15:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-camaron-pistola/camaron-pistola-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac7a41de63932e2c5a54358",
+        "tiktok": "6ac7a41d444a36d3be24cfa0",
+        "instagram": "6ac7a41edaf7bb7cba24578c"
+      }
+    }
+  ]
+}
