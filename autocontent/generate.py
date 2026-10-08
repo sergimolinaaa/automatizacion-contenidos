@@ -399,5 +399,10 @@ def generate(topic: dict | None = None, max_fixes: int = 2) -> Path:
     folder = save(script)
     (folder / "investigacion.md").write_text(facts, encoding="utf-8")
     mark_done(topic)
+    try:
+        from .visual_qa import review
+        review(folder)
+    except Exception as e:  # la revisión visual nunca debe parar la publicación
+        print(f"  aviso: revisión visual no completada: {e}")
     print(f"→ {folder}")
     return folder
