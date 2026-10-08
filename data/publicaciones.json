@@ -87,6 +87,17 @@
         "tiktok": "6ac7b5f6b99c473c41bad079",
         "instagram": "6ac7b5f7daf7bb7cba280b90"
       }
+    },
+    {
+      "slug": "lote3-01-zapatero",
+      "category": "animales",
+      "due": "2026-10-09T07:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote3-01-zapatero/lote3-01-zapatero-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac7d9df357f26ef519a3c6c",
+        "tiktok": "6ac7d9df777d0616a6fc0053",
+        "instagram": "6ac7d9e0d3b0be2fc412fb76"
+      }
     }
   ]
 }
