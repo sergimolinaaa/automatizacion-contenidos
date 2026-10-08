@@ -1,0 +1,124 @@
+{
+  "topic": "El camarón pistola caza con una burbuja que explota",
+  "title": "Este camarón dispara burbujas 💥🦐",
+  "source": "Fuente: Versluis et al., Science (2000) · Lohse et al., Nature (2001)",
+  "chapters": ["?", "1", "2", "3", "TÚ"],
+  "outro_cta": "La naturaleza tiene trucos",
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Este camarón *dispara*",
+      "narration": "Este camarón caza con una pistola… de burbujas.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 1 · Camarón pistola",
+        "anims": [
+          {"target": "weed", "effect": "sway", "origin": "bottom"},
+          {"target": "shrimp", "effect": "float", "amount": 0.5},
+          {"target": "prey", "effect": "float"},
+          {"target": "sound", "effect": "hide"},
+          {"target": "flash", "effect": "hide"},
+          {"target": "dactyl", "effect": "move", "rotate": -22, "origin": "right", "trigger": "caza", "dur": 0.4},
+          {"target": "dactyl", "effect": "move", "rotate": 22, "origin": "right", "trigger": "pistola", "dur": 0.12},
+          {"target": "jet", "effect": "draw", "trigger": "pistola", "dur": 0.2},
+          {"target": "bubble", "effect": "pop", "trigger": "burbujas"},
+          {"target": "bubble", "effect": "pulse", "trigger": "burbujas", "amount": 1.5}
+        ]
+      }
+    },
+    {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Cómo lo hace? El truco es…"},
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Una pinza *gatillo*",
+      "narration": "Es el camarón pistola. Abre su pinza grande… y la cierra de golpe, rapidísimo.",
+      "illustration": {
+        "svg_file": "pinza.svg",
+        "caption": "Fig. 2 · La pinza",
+        "anims": [
+          {"target": "jet2", "effect": "hide"},
+          {"target": "bub2", "effect": "hide"},
+          {"target": "flash2", "effect": "hide"},
+          {"target": "snd2", "effect": "hide"},
+          {"target": "l2", "effect": "hide"},
+          {"target": "l3", "effect": "hide"},
+          {"target": "l1", "effect": "pop", "trigger": "pinza"},
+          {"target": "dactyl2", "effect": "move", "rotate": -24, "origin": "right", "trigger": "Abre", "dur": 0.6},
+          {"target": "dactyl2", "effect": "move", "rotate": 24, "origin": "right", "trigger": "golpe", "dur": 0.1},
+          {"target": "dactyl2", "effect": "shake", "trigger": "rapidísimo", "amount": 0.6}
+        ]
+      },
+      "elements": [{"type": "tag", "text": "Camarón pistola", "tone": "accent", "trigger": "camarón"}]
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Una burbuja *que explota*",
+      "narration": "El chorro de agua crea una burbuja. Cuando la burbuja revienta, suena como un disparo.",
+      "illustration": {
+        "svg_file": "pinza.svg",
+        "caption": "Fig. 3 · El disparo",
+        "anims": [
+          {"target": "l3", "effect": "pop", "trigger": "revienta"},
+          {"target": "flash2", "effect": "pop", "trigger": "revienta"},
+          {"target": "flash2", "effect": "spin", "trigger": "revienta", "amount": 0.4},
+          {"target": "jet2", "effect": "draw", "trigger": "chorro", "dur": 0.25},
+          {"target": "jet2", "effect": "flow", "trigger": "chorro"},
+          {"target": "bub2", "effect": "pop", "trigger": "crea"},
+          {"target": "bub2", "effect": "pulse", "trigger": "crea", "amount": 1.5},
+          {"target": "l2", "effect": "pop", "trigger": "burbuja"},
+          {"target": "bub2", "effect": "hide", "trigger": "revienta"},
+          {"target": "snd2", "effect": "draw", "trigger": "suena", "dur": 0.4},
+          {"target": "snd2", "effect": "pulse", "trigger": "disparo", "amount": 1.5}
+        ]
+      },
+      "elements": [{"type": "stamp", "text": "¡Bang!", "tone": "hot", "trigger": "disparo"}]
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Caliente *como el Sol*",
+      "narration": "Y dentro de esa burbuja se alcanzan casi 5.000 grados: como la superficie del Sol.",
+      "mascot": {"trigger": "Sol", "pose": "surprise", "note": "¡Y todo pasa en menos de un parpadeo!", "side": "right"},
+      "elements": [
+        {"type": "stat", "label": "Dentro de la burbuja", "value": 4700, "from": 0, "unit": "°C", "note": "Superficie del Sol: unos 5.500 °C", "trigger": "alcanzan"},
+        {"type": "icon", "icon": "sun", "label": "El Sol", "trigger": "superficie"}
+      ]
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Y la presa… *KO*",
+      "narration": "La onda deja aturdida a su presa, y el camarón se la lleva.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 4 · K.O.",
+        "anims": [
+          {"target": "weed", "effect": "sway", "origin": "bottom"},
+          {"target": "jet", "effect": "hide"},
+          {"target": "bubble", "effect": "hide"},
+          {"target": "flash", "effect": "hide"},
+          {"target": "sound", "effect": "draw", "trigger": "onda", "dur": 0.4},
+          {"target": "sound", "effect": "hide", "trigger": "aturdida"},
+          {"target": "prey", "effect": "shake", "trigger": "onda"},
+          {"target": "prey", "effect": "move", "rotate": 180, "to": [0, 60], "trigger": "aturdida", "dur": 0.6},
+          {"target": "shrimp", "effect": "move", "to": [-330, 0], "trigger": "lleva", "dur": 0.5}
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "TÚ",
+      "headline": "¿Qué te *flipa* más?",
+      "narration": "¿Qué te flipa más? Uno, la pinza pistola. Dos, la burbuja que explota. Tres, el calor del Sol. Escríbelo en comentarios.",
+      "mascot": {"trigger": "Escríbelo", "pose": "wave", "note": "¡Te leo!", "side": "right"},
+      "elements": [
+        {"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
+          {"text": "La pinza pistola", "trigger": "Uno"},
+          {"text": "La burbuja", "trigger": "Dos"},
+          {"text": "El calor del Sol", "trigger": "Tres"}
+        ]}
+      ]
+    }
+  ]
+}

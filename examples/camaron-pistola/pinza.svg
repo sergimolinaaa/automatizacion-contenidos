@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#4FB3FF"/>
+  <path d="M 0 120 Q 120 100 240 120 T 480 120 T 720 120 T 960 120 T 1200 120" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="5" fill="none"/>
+  <path d="M 1010 420 L 880 420" stroke="#0B0B14" stroke-width="90" stroke-linecap="round"/><path d="M 1010 420 L 880 420" stroke="#FF7A45" stroke-width="70" stroke-linecap="round"/>
+  <path d="M 890 420 Q 900 250 700 300 L 430 380 Q 390 410 430 440 L 700 500 Q 900 560 890 420 Z" fill="#FF5A36" stroke="#0B0B14" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="560" cy="398" r="26" fill="#0B0B14"/>
+  <g id="dactyl2"><path d="M 840 340 Q 650 250 430 330 Q 410 352 440 360 Q 560 330 600 345 L 600 372 A 24 24 0 0 0 620 372 L 620 345 Q 740 330 840 380 Z" fill="#FFB547" stroke="#0B0B14" stroke-width="9" stroke-linejoin="round"/></g>
+  <g id="jet2"><path d="M 420 408 L 250 408" stroke="#0B0B14" stroke-width="40" stroke-linecap="round"/><path d="M 420 408 L 250 408" stroke="#DFF6FF" stroke-width="22" stroke-linecap="round"/></g>
+  <g id="bub2"><circle cx="175" cy="408" r="80" fill="#FFFFFF" fill-opacity="0.85" stroke="#0B0B14" stroke-width="9"/><circle cx="150" cy="380" r="16" fill="#FFFFFF"/></g>
+  <g id="flash2"><polygon points="175,290 200,380 290,408 200,436 175,526 150,436 60,408 150,380" fill="#C8FF2E" stroke="#0B0B14" stroke-width="9" stroke-linejoin="round"/></g>
+  <g id="snd2" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"><path d="M 300 250 Q 360 408 300 566"/><path d="M 345 210 Q 420 408 345 606"/></g>
+  <g font-family="JetBrains Mono" font-weight="800" font-size="30">
+    <g id="l1"><rect x="600" y="560" width="140" height="48" rx="8" fill="#0B0B14"/><text x="670" y="594" text-anchor="middle" fill="#C8FF2E">PINZA</text></g>
+    <g id="l2"><rect x="85" y="230" width="180" height="48" rx="8" fill="#0B0B14"/><text x="175" y="264" text-anchor="middle" fill="#C8FF2E">BURBUJA</text></g>
+    <g id="l3"><rect x="85" y="560" width="180" height="48" rx="8" fill="#C8FF2E" stroke="#0B0B14" stroke-width="5"/><text x="175" y="594" text-anchor="middle" fill="#0B0B14">¡FLASH!</text></g>
+  </g>
+</svg>
