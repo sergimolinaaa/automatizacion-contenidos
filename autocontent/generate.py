@@ -23,7 +23,7 @@ FALLBACK_BETA = "server-side-fallback-2026-07-01"
 CONTENT_DIR = ROOT / "content"
 TOPICS = ROOT / "data" / "temas.json"
 
-ELEMENT_TYPES = {"stat", "fact", "icon", "compare", "dots", "list", "scale", "tag", "stamp", "quiz"}
+ELEMENT_TYPES = {"stat", "fact", "icon", "compare", "dots", "list", "scale", "tag", "stamp", "quiz", "ask"}
 ICONS = {"atom", "earth", "moon", "sun", "paper", "dna", "brain", "drop", "bolt", "rocket", "clock", "eye", "bacteria",
          "star", "ruler", "heart", "fire", "snow", "magnet", "planet", "microscope", "leaf", "bone", "wave"}
 EFFECTS = {"pop", "fade", "draw", "grow", "slide-left", "slide-right", "slide-up", "slide-down", "float", "bob", "sway",
@@ -32,7 +32,7 @@ EFFECTS = {"pop", "fade", "draw", "grow", "slide-left", "slide-right", "slide-up
 SFX = {"whoosh", "barrido", "pop", "papel", "ding", "sorpresa", "sello", "chasquido", "chorro", "burbujas", "splash",
        "tic", "magia", "boing", "rotulador", "brillo", "none"}
 POSES = {"idle", "point", "wave", "think", "surprise", "explain", "cheer"}
-SIGNATURE_LINE = "¿Cómo lo hace? El truco es…"
+SIGNATURE_LINE = "El truco es…"
 
 
 def _client() -> anthropic.Anthropic:
@@ -166,11 +166,13 @@ NUNCA inventes datos: usa solo los de la ficha de investigación; si un dato est
 
 ESTRUCTURA (unos 45-60 segundos, 140-190 palabras de narración en total, 9-12 escenas cortas de 1-2 frases: ritmo rápido):
 - Escena 0, capítulo 0 "?": GANCHO. Lo increíble en una frase (máx. 12 palabras). Con ilustración.
-- Escena 1, capítulo 0: FIRMA. {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Cómo lo hace? El truco es…"}
-  (si el protagonista no es un ser vivo, usa "¿Y eso por qué? El truco es…").
+- Escena 1, capítulo 0: FIRMA (rápida). {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "El truco es…"}
 - Capítulos "1", "2", "3": el truco explicado paso a paso (1-2 escenas por capítulo). Usa ilustraciones de detalle.
 - Capítulo "+": 1-2 datos extra sorprendentes.
-- Capítulo "TÚ": encuesta "¿Qué te flipa más?" con 3 opciones dichas en voz ("Uno, ... Dos, ... Tres, ...") y "Escríbelo en comentarios."
+- Capítulo "TÚ": UNA pregunta final corta (máx. 12 palabras) sobre el tema del vídeo, con gracia o un punto de humor,
+  que den ganas de contestar en comentarios (nada de encuestas genéricas ni "¿qué te flipa más?"). Escena de 2-3 segundos:
+  headline de 1-2 palabras ("*Confiesa*", "Te *toca*"...); narration = la pregunta (+ "Te leo." opcional); elements = [{"type":"ask","text":"la pregunta con *palabra clave*","trigger":primera palabra}].
+  Ejemplos de tono: "¿Qué superpoder animal te pedirías tú?", "Sinceramente: ¿tú te habrías hundido?".
 chapters siempre = ["?", "1", "2", "3", "+", "TÚ"]. Las escenas de capítulos numerados llevan "number" igual al capítulo.
 
 CADA ESCENA: headline (2-6 palabras, con *asteriscos* en la palabra clave), narration (1-3 frases), y según convenga:
@@ -178,7 +180,7 @@ CADA ESCENA: headline (2-6 palabras, con *asteriscos* en la palabra clave), narr
 - elements: tarjetas (máx. 2 por escena; con ilustración, máx. 1 pequeña: tag, stamp o stat).
 - mascot: el matraz (mascota de la cuenta) aparece SOLO de vez en cuando (2-3 veces por vídeo) para una nota corta y graciosa:
   {"trigger": "palabra", "pose": "point|think|surprise|explain|cheer|wave", "note": "máx. 8 palabras", "side": "right"}.
-  No lo pongas en escenas con ilustración Y tarjetas a la vez. Siempre en la escena final ("¡Te leo!").
+  No lo pongas en escenas con ilustración Y tarjetas a la vez.
 - Ninguna nota ni texto en pantalla lleva emojis.
 
 TARJETAS (elements). Todas aceptan "trigger" (palabra EXACTA de la narración de esa escena en la que aparecen) y "sfx":
@@ -191,7 +193,7 @@ TARJETAS (elements). Todas aceptan "trigger" (palabra EXACTA de la narración de
 - {"type":"scale","label"?,"from","to","progress":0-1,"marker"?}
 - {"type":"tag","text","tone":"accent|ink|hot"}
 - {"type":"stamp","text","tone":"accent|hot"}  (golpe: ¡PLAF!, ¡BANG!, MITO, FALSO...)
-- {"type":"quiz","footer":"Escribe 1, 2 o 3 en comentarios","options":[{"text","trigger"}]}  (solo en TÚ)
+- {"type":"ask","text":"pregunta final con *resaltado*"}  (solo en TÚ, sola)
 
 ILUSTRACIONES (svgs): estilo "pegatina realista": contornos de tinta #0B0B14 gruesos (6-9 px, stroke-linejoin round) en
 el primer plano, pero con VOLUMEN y DETALLE de ilustración profesional:
@@ -313,8 +315,7 @@ def validate(script: dict) -> tuple[list[str], list[str]]:
         errors.append(f"Hay {len(scenes)} escenas; deben ser entre 7 y 12.")
     if len(scenes) > 1:
         sig = scenes[1].get("narration", "")
-        if not sig.rstrip().endswith("El truco es…") or len(sig.split()) > 8:
-            sig = SIGNATURE_LINE
+        sig = SIGNATURE_LINE
         scenes[1].update({"chapter": 0, "signature": True, "headline": "El truco es…", "narration": sig})
         scenes[1].pop("illustration", None), scenes[1].pop("elements", None), scenes[1].pop("mascot", None)
     if scenes and not scenes[0].get("illustration"):
@@ -323,7 +324,7 @@ def validate(script: dict) -> tuple[list[str], list[str]]:
     if not 110 <= words <= 240:
         errors.append(f"La narración tiene {words} palabras; debe tener entre 150 y 210.")
     if scenes and scenes[-1].get("chapter") != 5:
-        errors.append("La última escena debe ser el capítulo 5 (TÚ) con la encuesta.")
+        errors.append("La última escena debe ser el capítulo 5 (TÚ) con la pregunta final.")
 
     for i, sc in enumerate(scenes):
         if not isinstance(sc.get("chapter"), int) or not 0 <= sc["chapter"] <= 5:

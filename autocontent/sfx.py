@@ -218,7 +218,7 @@ def music(duration: float, seed: int) -> np.ndarray:
 ANIM_SFX = {"pop": "pop", "draw": "rotulador", "move": "whoosh", "slide-left": "whoosh", "slide-right": "whoosh",
             "slide-up": "whoosh", "slide-down": "whoosh", "grow": "pop", "zoom": "whoosh", "punch": "tic"}
 ELEMENT_SFX = {"stat": "pop", "fact": "papel", "icon": "pop", "compare": "papel", "dots": "papel", "list": "papel",
-               "scale": "whoosh", "tag": "papel", "stamp": "sello", "quiz": "papel"}
+               "scale": "whoosh", "tag": "papel", "stamp": "sello", "quiz": "papel", "ask": "pop"}
 
 
 def events_from_props(props: dict) -> list[dict]:

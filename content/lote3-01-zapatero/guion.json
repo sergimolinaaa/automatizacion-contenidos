@@ -114,7 +114,7 @@
       "chapter": 0,
       "signature": true,
       "headline": "El truco es…",
-      "narration": "¿Cómo lo hace? El truco es…"
+      "narration": "El truco es…"
     },
     {
       "chapter": 1,
@@ -729,33 +729,13 @@
     {
       "chapter": 5,
       "number": "TÚ",
-      "headline": "¿Qué te *flipa* más?",
-      "narration": "¿Qué te flipa más? Uno, sus patas con traje de aire. Dos, la piel del agua. Tres, que rema con remolinos. Escríbelo en comentarios.",
-      "mascot": {
-        "trigger": "Escríbelo",
-        "pose": "wave",
-        "note": "¡Te leo!",
-        "side": "right"
-      },
+      "headline": "*Confiesa*",
+      "narration": "Sinceramente: ¿tú te habrías hundido a la primera? Te leo.",
       "elements": [
         {
-          "type": "quiz",
-          "trigger": "Uno",
-          "footer": "Escribe 1, 2 o 3 en comentarios",
-          "options": [
-            {
-              "text": "Traje de aire",
-              "trigger": "Uno"
-            },
-            {
-              "text": "La piel del agua",
-              "trigger": "Dos"
-            },
-            {
-              "text": "Remolinos",
-              "trigger": "Tres"
-            }
-          ]
+          "type": "ask",
+          "text": "¿Tú te habrías *hundido* a la primera?",
+          "trigger": "Sinceramente"
         }
       ]
     }

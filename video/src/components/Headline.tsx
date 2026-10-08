@@ -1,4 +1,4 @@
-import { interpolate, useCurrentFrame } from "remotion";
+import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { brand } from "../brand";
 import { exitOut, parseMarkup, pop, sec } from "../anim";
 
@@ -59,27 +59,38 @@ export const Headline: React.FC<{ text: string; number?: string | null; start: n
       )}
       <div style={{ display: "flex", flexWrap: "wrap", columnGap: size * 0.28, rowGap: 8, lineHeight: 1.08 }}>
         {tokens.map(({ word, hi, i }) => {
-          const s = pop(f, 2 + i * 2.5, 12);
+          const d = 2 + i * 2;
+          if (hi) {
+            // el bloque lima se abre de izquierda a derecha y el texto sube dentro
+            const w = interpolate(f - d, [0, 8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+            const t = pop(f, d + 4, 13);
+            return (
+              <span key={i} style={{ position: "relative", display: "inline-block", padding: "2px 14px 6px", transform: "rotate(-2deg)" }}>
+                <span style={{ position: "absolute", inset: 0, background: colors.accent, border: `${border - 1}px solid ${colors.ink}`, boxShadow: `7px 7px 0 ${colors.ink}`, transformOrigin: "0 50%", transform: `scaleX(${w})`, opacity: w > 0 ? 1 : 0 }} />
+                <span style={{ position: "relative", display: "inline-block", overflow: "hidden", verticalAlign: "top" }}>
+                  <span style={{ display: "inline-block", fontFamily: fonts.display, fontWeight: 900, fontSize: size, letterSpacing: -1, color: colors.ink, transform: `translateY(${interpolate(t, [0, 1], [105, 0])}%)` }}>{word}</span>
+                </span>
+              </span>
+            );
+          }
+          // palabras normales: aparecen desde abajo tras una máscara (sin recortar su sombra)
+          const s = pop(f, d, 13);
           return (
-            <span
-              key={i}
-              style={{
-                display: "inline-block",
-                fontFamily: fonts.display,
-                fontWeight: 900,
-                fontSize: size,
-                letterSpacing: -1,
-                color: hi ? colors.ink : colors.paper,
-                background: hi ? colors.accent : "transparent",
-                padding: hi ? "2px 14px 6px" : 0,
-                border: hi ? `${border - 1}px solid ${colors.ink}` : undefined,
-                boxShadow: hi ? `7px 7px 0 ${colors.ink}` : undefined,
-                textShadow: hi ? undefined : `5px 5px 0 ${colors.ink}`,
-                opacity: Math.min(1, s * 1.5),
-                transform: `translateY(${interpolate(s, [0, 1], [40, 0])}px) rotate(${hi ? -2 : 0}deg)`,
-              }}
-            >
-              {word}
+            <span key={i} style={{ display: "inline-block", overflow: "hidden", padding: "0 8px 10px 0", marginRight: -8, marginBottom: -10 }}>
+              <span
+                style={{
+                  display: "inline-block",
+                  fontFamily: fonts.display,
+                  fontWeight: 900,
+                  fontSize: size,
+                  letterSpacing: -1,
+                  color: colors.paper,
+                  textShadow: `5px 5px 0 ${colors.ink}`,
+                  transform: `translateY(${interpolate(s, [0, 1], [110, 0])}%) rotate(${interpolate(s, [0, 1], [6, 0])}deg)`,
+                }}
+              >
+                {word}
+              </span>
             </span>
           );
         })}

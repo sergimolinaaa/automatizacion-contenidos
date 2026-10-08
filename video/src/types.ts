@@ -20,6 +20,7 @@ export type Element =
   | { type: "scale"; at: number; label?: string; from: string; to: string; progress: number; marker?: string }
   | { type: "tag"; at: number; text: string; tone?: "accent" | "ink" | "hot" }
   | { type: "stamp"; at: number; text: string; tone?: "accent" | "hot" }
+  | { type: "ask"; at: number; text: string; footer?: string }
   | { type: "quiz"; at: number; question?: string; options: { text: string; at?: number }[]; footer?: string };
 
 /** Animación aplicada a un elemento (id) de la ilustración SVG. */

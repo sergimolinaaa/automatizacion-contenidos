@@ -6,7 +6,7 @@ import { Mascot } from "./Mascot";
 const { colors, fonts, border } = brand;
 
 /** Logotipo de la cuenta (palabras con o sin caja), con entrada escalonada opcional. */
-export const Wordmark: React.FC<{ size: number; f: number; stagger?: number }> = ({ size, f, stagger = 4 }) => (
+export const Wordmark: React.FC<{ size: number; f: number; stagger?: number }> = ({ size, f, stagger = 3 }) => (
   <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: size * 0.22, rowGap: size * 0.18 }}>
     {brand.logo.map((w, i) => {
       const s = pop(f, i * stagger, 9, 0.5);
@@ -41,10 +41,10 @@ export const Signature: React.FC<{ start: number; end: number }> = ({ start, end
   const frame = useCurrentFrame();
   const f = frame - sec(start);
   const out = exitOut(frame, sec(end), 6);
-  const shake = f >= 6 && f < 14 ? Math.sin(f * 3) * 8 : 0;
+  const shake = f >= 4 && f < 10 ? Math.sin(f * 3) * 7 : 0;
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 50, paddingTop: 110, opacity: out, transform: `translateX(${shake}px)` }}>
-      <Wordmark size={128} f={f} />
+      <Wordmark size={128} f={f} stagger={2} />
       <Mascot pose="explain" toward={1} look="center" talking={0} poseFrame={f} scale={1.15} />
     </div>
   );

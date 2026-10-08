@@ -25,30 +25,85 @@ const Label: React.FC<{ children: React.ReactNode; dark?: boolean }> = ({ childr
   </div>
 );
 
-/** Tarjeta neo-brutalista con entrada "pop" y salida al final de la escena. */
+/** Tarjeta neo-brutalista: entra con un barrido limpio (una barra lima abre la tarjeta) y sale al final de la escena. */
 const Card: React.FC<{
   el: Element; ctx: Ctx; children: React.ReactNode; tone?: "paper" | "accent" | "ink"; pad?: number; style?: React.CSSProperties;
 }> = ({ el, ctx, children, tone = "paper", pad = 26, style }) => {
   const frame = useCurrentFrame();
   const f = frame - sec(el.at);
-  const s = pop(f, 0, 10);
+  const p = interpolate(f, [0, 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+  const settle = pop(f, 4, 12);
   const out = ctx.isLast ? 1 : exitOut(frame, sec(ctx.end), 6);
-  const tilt = (seeded(JSON.stringify(el)) - 0.5) * 3;
+  const tilt = (seeded(JSON.stringify(el)) - 0.5) * 2;
   const bg = tone === "accent" ? colors.accent : tone === "ink" ? colors.ink : colors.paper;
   return (
     <div
       style={{
+        position: "relative",
         background: bg,
         border: `${border}px solid ${colors.ink}`,
         borderRadius: radius,
         boxShadow: `${shadow}px ${shadow}px 0 ${colors.ink}`,
         padding: pad,
-        opacity: f < 0 ? 0 : Math.min(1, s * 2) * out,
-        transform: `translateY(${interpolate(s, [0, 1], [60, 0]) + (1 - out) * 40}px) scale(${interpolate(s, [0, 1], [0.7, 1]) * (0.9 + 0.1 * out)}) rotate(${interpolate(s, [0, 1], [tilt * 4, tilt])}deg)`,
+        opacity: f < 0 ? 0 : out,
+        clipPath: p < 1 ? `inset(-40px ${((1 - p) * 100).toFixed(2)}% -40px -40px)` : undefined,
+        transform: `translateY(${interpolate(p, [0, 1], [24, 0]) + (1 - out) * 30}px) rotate(${interpolate(settle, [0, 1], [0, tilt])}deg) scale(${0.96 + 0.04 * out})`,
         ...style,
       }}
     >
       {children}
+      {p > 0 && p < 1 && (
+        <div style={{ position: "absolute", top: -border, bottom: -border, left: `calc(${(p * 100).toFixed(2)}% - 14px)`, width: 14, background: colors.accent, borderLeft: `4px solid ${colors.ink}`, borderRight: `4px solid ${colors.ink}` }} />
+      )}
+    </div>
+  );
+};
+
+/** Pregunta final para comentarios: corta, del tema del vídeo, con un toque de humor. */
+const Ask: React.FC<{ el: Extract<Element, { type: "ask" }>; ctx: Ctx }> = ({ el, ctx }) => {
+  const frame = useCurrentFrame();
+  const f = frame - sec(el.at);
+  const words = el.text.split(/\s+/).filter(Boolean);
+  const bob = Math.sin(frame / 9) * 4;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 26 }}>
+      <Card el={el} ctx={ctx} pad={44} style={{ borderRadius: 40 }}>
+        <div style={{ display: "flex", flexWrap: "wrap", columnGap: 18, rowGap: 6 }}>
+          {words.map((w, i) => {
+            const s = pop(f, 6 + i * 1.6, 13);
+            const hi = /^\*.*\*[¿?¡!.,]*$/.test(w);
+            return (
+              <span key={i} style={{ display: "inline-block", overflow: "hidden", padding: "0 4px 6px", margin: "0 -4px -6px" }}>
+                <span
+                  style={{
+                    display: "inline-block",
+                    fontFamily: fonts.display, fontWeight: 900, fontSize: 66, lineHeight: 1.1, color: colors.ink,
+                    background: hi ? colors.accent : "transparent", padding: hi ? "0 10px" : 0,
+                    transform: `translateY(${interpolate(s, [0, 1], [90, 0])}%)`,
+                  }}
+                >
+                  {w.replace(/\*/g, "")}
+                </span>
+              </span>
+            );
+          })}
+        </div>
+        <svg width={90} height={60} viewBox="0 0 90 60" style={{ position: "absolute", left: 70, bottom: -58 }}>
+          <path d="M 0 0 L 70 0 L 10 54 Z" fill={colors.paper} stroke={colors.ink} strokeWidth={border} strokeLinejoin="round" />
+          <rect x={-2} y={-12} width={80} height={14} fill={colors.paper} />
+        </svg>
+      </Card>
+      <div
+        style={{
+          alignSelf: "flex-end", display: "flex", alignItems: "center", gap: 14, marginTop: 30,
+          fontFamily: fonts.mono, fontWeight: 800, fontSize: 30, background: colors.ink, color: colors.accent,
+          padding: "12px 22px", borderRadius: 14, opacity: f < 14 ? 0 : 1,
+          transform: `translateY(${(1 - pop(f, 14, 12)) * 30 + bob}px)`,
+        }}
+      >
+        <svg width={40} height={36} viewBox="0 0 44 40"><path d="M 4 4 H 40 V 28 H 18 L 8 36 V 28 H 4 Z" fill={colors.accent} stroke={colors.accent} strokeWidth={4} strokeLinejoin="round" /></svg>
+        {el.footer ?? "TE LEO EN COMENTARIOS"}
+      </div>
     </div>
   );
 };
@@ -267,6 +322,7 @@ export const ElementView: React.FC<{ el: Element; ctx: Ctx }> = ({ el, ctx }) =>
     case "scale": return <Scale el={el} ctx={ctx} />;
     case "tag": return <Tag el={el} ctx={ctx} />;
     case "quiz": return <Quiz el={el} ctx={ctx} />;
+    case "ask": return <Ask el={el} ctx={ctx} />;
     case "stamp": return <Stamp el={el} ctx={ctx} />;
     default: return null;
   }
