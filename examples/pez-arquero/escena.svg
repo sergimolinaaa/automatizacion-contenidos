@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <clipPath id="fishclip"><path d="M -150 -4 C -120 -74 40 -86 110 -32 L 172 -72 L 160 0 L 172 72 L 110 32 C 40 86 -120 72 -150 4 Z"/></clipPath>
+    <g id="bugshape">
+      <g stroke="#0B0B14" stroke-width="5" stroke-linecap="round">
+        <line x1="-14" y1="12" x2="-24" y2="30"/><line x1="0" y1="14" x2="0" y2="32"/><line x1="14" y1="12" x2="24" y2="30"/>
+      </g>
+      <ellipse cx="6" cy="0" rx="30" ry="19" fill="#FF5A36" stroke="#0B0B14" stroke-width="6"/>
+      <line x1="6" y1="-18" x2="6" y2="18" stroke="#0B0B14" stroke-width="4"/>
+      <circle cx="-4" cy="-6" r="4" fill="#0B0B14"/><circle cx="18" cy="6" r="4" fill="#0B0B14"/>
+      <circle cx="-26" cy="-2" r="12" fill="#0B0B14"/>
+      <path d="M -32 -12 Q -42 -30 -52 -26 M -26 -13 Q -30 -32 -40 -34" stroke="#0B0B14" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <rect width="1000" height="700" fill="#DDF3FF"/>
+  <circle cx="860" cy="110" r="56" fill="#C8FF2E" stroke="#0B0B14" stroke-width="7"/>
+  <g id="branch">
+    <path d="M -20 110 Q 200 150 430 196" stroke="#0B0B14" stroke-width="30" fill="none" stroke-linecap="round"/>
+    <path d="M -20 110 Q 200 150 430 196" stroke="#A86B3C" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <ellipse cx="330" cy="214" rx="92" ry="28" transform="rotate(-8 330 214)" fill="#7BE07B" stroke="#0B0B14" stroke-width="7"/>
+    <path d="M 250 222 L 410 204" stroke="#0B0B14" stroke-width="4" fill="none"/>
+  </g>
+  <g id="bug"><g transform="translate(330 176)"><use href="#bugshape"/></g></g>
+  <rect y="390" width="1000" height="310" fill="#4FB3FF"/>
+  <path id="waves" d="M 0 470 Q 60 455 120 470 T 240 470 T 360 470 T 480 470 T 600 470 T 720 470 T 840 470 T 960 470 T 1080 470 M 0 560 Q 60 545 120 560 T 240 560 T 360 560 T 480 560 T 600 560 T 720 560 T 840 560 T 960 560 T 1080 560" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5" fill="none"/>
+  <path id="surface" d="M 0 392 Q 50 380 100 392 T 200 392 T 300 392 T 400 392 T 500 392 T 600 392 T 700 392 T 800 392 T 900 392 T 1000 392" stroke="#0B0B14" stroke-width="7" fill="none"/>
+  <g id="weed1"><path d="M 840 700 Q 820 620 850 560 Q 870 520 846 480" stroke="#0B0B14" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M 840 700 Q 820 620 850 560 Q 870 520 846 480" stroke="#36B37E" stroke-width="10" fill="none" stroke-linecap="round"/></g>
+  <g id="weed2"><path d="M 120 700 Q 140 640 112 590" stroke="#0B0B14" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M 120 700 Q 140 640 112 590" stroke="#36B37E" stroke-width="10" fill="none" stroke-linecap="round"/></g>
+  <g id="bubbles" fill="none" stroke="#FFFFFF" stroke-width="4"><circle cx="700" cy="520" r="9"/><circle cx="720" cy="470" r="6"/><circle cx="690" cy="440" r="4"/></g>
+  <g id="sight"><path d="M 517 430 L 336 182" stroke="#0B0B14" stroke-width="5" stroke-dasharray="0.03 0.025" fill="none"/></g>
+  <g id="fish">
+    <g transform="translate(600 480) rotate(18)">
+      <path d="M 20 -64 L 70 -98 L 92 -44 Z" fill="#E9ECF5" stroke="#0B0B14" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M -150 -4 C -120 -74 40 -86 110 -32 L 172 -72 L 160 0 L 172 72 L 110 32 C 40 86 -120 72 -150 4 Z" fill="#F4F6FB"/>
+      <g clip-path="url(#fishclip)" fill="#0B0B14">
+        <rect x="-62" y="-90" width="26" height="70" rx="12"/><rect x="-6" y="-90" width="28" height="80" rx="12"/><rect x="52" y="-90" width="26" height="74" rx="12"/>
+      </g>
+      <path d="M -150 -4 C -120 -74 40 -86 110 -32 L 172 -72 L 160 0 L 172 72 L 110 32 C 40 86 -120 72 -150 4 Z" fill="none" stroke="#0B0B14" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M -40 20 Q -10 40 10 18" fill="#E9ECF5" stroke="#0B0B14" stroke-width="6"/>
+      <g id="eye"><circle cx="-96" cy="-22" r="17" fill="#FFFFFF" stroke="#0B0B14" stroke-width="5"/><circle cx="-102" cy="-25" r="8" fill="#0B0B14"/></g>
+      <path d="M -150 -2 L -128 0" stroke="#0B0B14" stroke-width="5"/>
+    </g>
+  </g>
+  <g id="jet">
+    <path d="M 455 424 Q 392 300 334 198" stroke="#0B0B14" stroke-width="24" fill="none" stroke-linecap="round"/>
+    <path d="M 455 424 Q 392 300 334 198" stroke="#BFEAFF" stroke-width="12" fill="none" stroke-linecap="round"/>
+  </g>
+  <g id="drops" fill="#BFEAFF" stroke="#0B0B14" stroke-width="4"><circle cx="350" cy="230" r="9"/><circle cx="312" cy="196" r="7"/><circle cx="366" cy="186" r="6"/></g>
+  <g id="splash" fill="#BFEAFF" stroke="#0B0B14" stroke-width="5">
+    <path d="M 300 392 Q 280 340 262 352 Q 286 362 292 394 Z"/><path d="M 320 392 Q 330 330 348 340 Q 330 360 330 394 Z"/>
+    <ellipse cx="312" cy="394" rx="56" ry="12" fill="none"/>
+  </g>
+</svg>

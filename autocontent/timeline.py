@@ -67,13 +67,33 @@ def build_props(script: dict, scene_words: list[list[dict]], end_padding: float 
                     item["at"] = round(t_item - 0.1, 3)
                     cursor = item["at"]
             elements.append(el)
+        ill = sc.get("illustration")
+        if ill:
+            ill = copy.deepcopy(ill)
+            anims = []
+            for a in ill.get("anims", []):
+                trig = a.pop("trigger", None)
+                if trig:
+                    at = find_trigger(trig, ws, s["start"])
+                    a["at"] = round((at if at is not None else s["start"] + 0.3) - 0.05, 3)
+                elif "delay" in a:
+                    a["at"] = round(s["start"] + a.pop("delay"), 3)
+                anims.append(a)
+            ill["anims"] = anims
+        cameo = sc.get("mascot")
+        if cameo:
+            cameo = copy.deepcopy(cameo)
+            at = find_trigger(cameo.pop("trigger", None), ws, s["start"])
+            cameo["at"] = round(at - 0.1 if at is not None else s["start"] + 0.4, 3)
         out_scenes.append({
             "start": s["start"],
             "end": s["end"],
             "chapter": sc.get("chapter", 0),
             "number": sc.get("number"),
             "headline": sc["headline"],
-            "mascot": sc.get("mascot", {}),
+            "signature": bool(sc.get("signature")),
+            "illustration": ill,
+            "mascot": cameo,
             "elements": elements,
         })
 

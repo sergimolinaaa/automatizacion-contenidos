@@ -267,32 +267,33 @@ export const ElementView: React.FC<{ el: Element; ctx: Ctx }> = ({ el, ctx }) =>
     case "scale": return <Scale el={el} ctx={ctx} />;
     case "tag": return <Tag el={el} ctx={ctx} />;
     case "quiz": return <Quiz el={el} ctx={ctx} />;
-    default: return null; // los sellos se dibujan aparte, encima de todo
+    case "stamp": return <Stamp el={el} ctx={ctx} />;
+    default: return null;
   }
 };
 
-/** Sello que "golpea" la pantalla: FALSO, REAL, MITO... */
-export const Stamp: React.FC<{ el: Extract<Element, { type: "stamp" }>; ctx: Ctx }> = ({ el, ctx }) => {
+/** Sello que "golpea" en su propio hueco (no se superpone a otras tarjetas). */
+const Stamp: React.FC<{ el: Extract<Element, { type: "stamp" }>; ctx: Ctx }> = ({ el, ctx }) => {
   const frame = useCurrentFrame();
   const f = frame - sec(el.at);
-  if (f < 0) return null;
-  const s = pop(f, 0, 9, 0.5);
+  const s = f < 0 ? 0 : pop(f, 0, 9, 0.5);
   const out = ctx.isLast ? 1 : exitOut(frame, sec(ctx.end), 5);
   const color = el.tone === "accent" ? colors.accent : colors.hot;
+  const shake = f >= 3 && f < 10 ? Math.sin(f * 3) * 6 : 0;
   return (
-    <div style={{ position: "absolute", left: 0, right: 0, top: 760, display: "flex", justifyContent: "center", pointerEvents: "none", opacity: out }}>
+    <div style={{ alignSelf: "center", padding: "14px 0", opacity: f < 0 ? 0 : out }}>
       <div
         style={{
-          transform: `scale(${interpolate(s, [0, 1], [2.6, 1])}) rotate(-11deg)`,
+          transform: `translateX(${shake}px) scale(${interpolate(s, [0, 1], [1.35, 1])}) rotate(-7deg)`,
           opacity: Math.min(1, s * 3),
-          border: `12px solid ${colors.ink}`,
+          border: `10px solid ${colors.ink}`,
           background: color,
-          boxShadow: `14px 14px 0 ${colors.ink}`,
-          borderRadius: 18,
-          padding: "10px 40px 16px",
+          boxShadow: `12px 12px 0 ${colors.ink}`,
+          borderRadius: 16,
+          padding: "6px 34px 12px",
           fontFamily: fonts.display,
           fontWeight: 900,
-          fontSize: 130,
+          fontSize: 96,
           letterSpacing: 2,
           color: colors.ink,
         }}

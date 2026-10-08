@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <g id="bugshape">
+      <ellipse cx="6" cy="0" rx="30" ry="19" fill="#FF5A36" stroke="#0B0B14" stroke-width="6"/>
+      <line x1="6" y1="-18" x2="6" y2="18" stroke="#0B0B14" stroke-width="4"/>
+      <circle cx="-26" cy="-2" r="12" fill="#0B0B14"/>
+    </g>
+  </defs>
+  <rect width="1000" height="700" fill="#DDF3FF"/>
+  <rect y="380" width="1000" height="320" fill="#4FB3FF"/>
+  <path d="M 0 380 L 1000 380" stroke="#0B0B14" stroke-width="7"/>
+  <path d="M 520 300 L 520 470" stroke="#0B0B14" stroke-width="3" stroke-dasharray="0.05 0.04" fill="none"/>
+  <g id="leaf"><ellipse cx="720" cy="226" rx="80" ry="22" transform="rotate(-6 720 226)" fill="#7BE07B" stroke="#0B0B14" stroke-width="7"/></g>
+  <g id="real"><g transform="translate(712 196)"><use href="#bugshape"/></g></g>
+  <g id="ghost" opacity="0.4"><g transform="translate(712 90)"><use href="#bugshape"/></g></g>
+  <g id="ray"><path d="M 700 210 L 520 380 L 382 601" stroke="#C8FF2E" stroke-width="16" fill="none" stroke-linejoin="round" stroke-linecap="round"/><path d="M 700 210 L 520 380 L 382 601" stroke="#0B0B14" stroke-width="5" fill="none" stroke-linejoin="round"/></g>
+  <g id="fake"><path d="M 520 380 L 700 92" stroke="#FF5A36" stroke-width="7" stroke-dasharray="0.06 0.04" fill="none"/></g>
+  <g id="fish2">
+    <g transform="translate(330 640) rotate(-58)">
+      <path d="M -80 0 C -60 -40 20 -46 60 -16 L 96 -40 L 90 0 L 96 40 L 60 16 C 20 46 -60 40 -80 0 Z" fill="#F4F6FB" stroke="#0B0B14" stroke-width="7" stroke-linejoin="round"/>
+      <circle cx="-48" cy="-12" r="10" fill="#FFFFFF" stroke="#0B0B14" stroke-width="4"/><circle cx="-51" cy="-13" r="5" fill="#0B0B14"/>
+    </g>
+  </g>
+  <g id="lbl" font-family="JetBrains Mono" font-weight="800" font-size="30">
+    <g id="lg"><rect x="800" y="66" width="150" height="48" rx="8" fill="#FF5A36" stroke="#0B0B14" stroke-width="4"/><text x="875" y="100" text-anchor="middle" fill="#0B0B14">PARECE</text></g>
+    <g id="lr"><rect x="800" y="250" width="150" height="48" rx="8" fill="#0B0B14"/><text x="875" y="284" text-anchor="middle" fill="#C8FF2E">ESTÁ</text></g>
+  </g>
+</svg>

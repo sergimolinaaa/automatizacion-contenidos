@@ -22,13 +22,44 @@ export type Element =
   | { type: "stamp"; at: number; text: string; tone?: "accent" | "hot" }
   | { type: "quiz"; at: number; question?: string; options: { text: string; at?: number }[]; footer?: string };
 
+/** Animación aplicada a un elemento (id) de la ilustración SVG. */
+export type IllustrationAnim = {
+  target: string; // id del elemento SVG (sin '#')
+  effect:
+    | "pop" | "fade" | "draw" | "grow" | "slide-left" | "slide-right" | "slide-up" | "slide-down" // entradas
+    | "float" | "bob" | "sway" | "spin" | "pulse" | "shake" | "wiggle" | "flow" | "blink" // bucles
+    | "move" | "hide"; // acciones puntuales
+  at?: number; // segundos (absolutos). Bucles sin `at` empiezan desde el principio de la escena
+  dur?: number; // segundos
+  to?: [number, number]; // para "move": desplazamiento en unidades del viewBox
+  rotate?: number; // para "move": giro final en grados
+  amount?: number; // intensidad de los bucles (1 = normal)
+  origin?: "center" | "bottom" | "top" | "left" | "right";
+};
+
+export type Illustration = {
+  svg: string; // SVG completo con viewBox "0 0 1000 700"
+  anims?: IllustrationAnim[];
+  caption?: string; // rótulo pequeño en la esquina
+};
+
+export type MascotCameo = {
+  at: number; // cuándo aparece
+  until?: number; // cuándo se va (por defecto, fin de escena)
+  pose?: Pose;
+  note?: string; // texto del bocadillo
+  side?: "left" | "right";
+};
+
 export type Scene = {
   start: number;
   end: number;
   chapter: number; // índice en `chapters`
   number?: string | null; // número grande junto al titular (p. ej. "1")
   headline: string; // usa *asteriscos* para resaltar
-  mascot?: { pose?: Pose; side?: "left" | "right"; look?: "left" | "right" | "up" | "down" | "center" };
+  signature?: boolean; // escena-firma: el nombre de la cuenta irrumpe en pantalla
+  illustration?: Illustration | null;
+  mascot?: MascotCameo | null; // el matraz solo aparece si se indica
   elements?: Element[];
 };
 

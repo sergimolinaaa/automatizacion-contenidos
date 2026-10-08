@@ -1,7 +1,13 @@
 // Identidad visual de la cuenta. Cambiar aquí cambia todos los vídeos.
 export const brand = {
-  name: "EL MATRAZ",
-  handle: "@elmatraz",
+  name: "¿Y ESO CÓMO?",
+  handle: "@yesocomo",
+  // Logotipo: palabras en orden; las "boxed" van en bloque lima.
+  logo: [
+    { text: "¿Y ESO", boxed: false },
+    { text: "CÓMO?", boxed: true },
+  ],
+  tagline: "Lo increíble, explicado",
   colors: {
     bg: "#2347FF", // azul eléctrico de laboratorio
     bgDeep: "#1631C9",
