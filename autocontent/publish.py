@@ -159,8 +159,30 @@ def caption(script: dict, service: str) -> str:
     return f"{pub.get('caption', script['title'])}\n\n{tags}"
 
 
+def refresh_hosted(state: dict) -> None:
+    """Si un vídeo ya programado se ha vuelto a renderizar, sustituye el archivo en la misma URL.
+    Buffer descarga el vídeo al publicar, así que sale la versión nueva sin tocar la publicación."""
+    now = datetime.now(timezone.utc)
+    repo = os.environ["MEDIA_REPO"]
+    for p in state["posts"]:
+        if datetime.fromisoformat(p["due"]) <= now + timedelta(minutes=10):
+            continue
+        video = PREVIEWS / f"{p['slug']}-con-voz.mp4"
+        if not video.exists():
+            continue
+        tag = f"v-{p['slug']}"
+        res = subprocess.run(["gh", "release", "view", tag, "--repo", repo, "--json", "assets"], capture_output=True, text=True)
+        if res.returncode != 0:
+            continue
+        sizes = {a["name"]: a.get("size") for a in json.loads(res.stdout).get("assets", [])}
+        if sizes.get(video.name) != video.stat().st_size:
+            subprocess.run(["gh", "release", "upload", tag, str(video), str(video.with_suffix(".png")), "--repo", repo, "--clobber"], check=True)
+            print(f"  actualizado {p['slug']} (nuevo render)")
+
+
 def schedule_all(limit: int | None = None) -> list[dict]:
     state = load_state()
+    refresh_hosted(state)
     chans = channels()
     print("Canales:", ", ".join(f"{c['service']} ({c['name']})" for c in chans))
     now = datetime.now(timezone.utc)
