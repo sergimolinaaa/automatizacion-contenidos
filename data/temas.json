@@ -140,7 +140,8 @@
   {
     "tema": "Las semillas del diente de león vuelan con un 'anillo' de aire",
     "categoria": "plantas",
-    "pista": "el vilano crea un remolino separado que la sostiene (Nature, 2018)"
+    "pista": "el vilano crea un remolino separado que la sostiene (Nature, 2018)",
+    "hecho": true
   },
   {
     "tema": "Los girasoles jóvenes siguen al Sol",
@@ -167,7 +168,8 @@
   {
     "tema": "Cómo se forma un arcoíris",
     "categoria": "fisica",
-    "pista": "cada gota refracta, refleja y separa los colores; ángulo de unos 42°"
+    "pista": "cada gota refracta, refleja y separa los colores; ángulo de unos 42°",
+    "hecho": true
   },
   {
     "tema": "Por qué el hielo flota",
@@ -193,11 +195,38 @@
   {
     "tema": "Por qué se pone la piel de gallina",
     "categoria": "cuerpo",
-    "pista": "músculos erectores del pelo; reflejo heredado de antepasados con más pelo"
+    "pista": "músculos erectores del pelo; reflejo heredado de antepasados con más pelo",
+    "hecho": true
   },
   {
     "tema": "Por qué los bostezos se contagian",
     "categoria": "cuerpo",
     "pista": "relacionado con la imitación social; las causas exactas se siguen investigando"
+  },
+  {
+    "tema": "Las piedras que se mueven solas en el Valle de la Muerte",
+    "categoria": "tierra",
+    "pista": "placas finas de hielo que se rompen al sol y el viento flojo las empuja (Norris et al., PLOS ONE 2014)",
+    "hecho": true
+  },
+  {
+    "tema": "Por qué el mar es salado",
+    "categoria": "tierra",
+    "pista": "ríos que disuelven minerales de las rocas + fuentes hidrotermales; el agua se evapora y la sal se queda"
+  },
+  {
+    "tema": "Cómo se forman los rayos",
+    "categoria": "fisica",
+    "pista": "choques de granizo y cristales de hielo separan cargas en la nube; descarga escalonada y retorno"
+  },
+  {
+    "tema": "Las dunas que cantan",
+    "categoria": "tierra",
+    "pista": "avalanchas de arena seca y bien redondeada producen un zumbido grave"
+  },
+  {
+    "tema": "Por qué nos crujen los nudillos",
+    "categoria": "cuerpo",
+    "pista": "burbuja de gas que se forma en el líquido sinovial (resonancia magnética, 2015)"
   }
 ]
