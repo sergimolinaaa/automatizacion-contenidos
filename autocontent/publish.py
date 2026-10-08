@@ -173,8 +173,10 @@ def refresh_hosted(state: dict) -> None:
         tag = f"v-{p['slug']}"
         res = subprocess.run(["gh", "release", "view", tag, "--repo", repo, "--json", "assets"], capture_output=True, text=True)
         if res.returncode != 0:
+            print(f"  aviso: no puedo leer la release {tag}: {res.stderr.strip()[:200]}")
             continue
         sizes = {a["name"]: a.get("size") for a in json.loads(res.stdout).get("assets", [])}
+        print(f"  {p['slug']}: alojado {sizes.get(video.name)} bytes, render actual {video.stat().st_size} bytes")
         if sizes.get(video.name) != video.stat().st_size:
             subprocess.run(["gh", "release", "upload", tag, str(video), str(video.with_suffix(".png")), "--repo", repo, "--clobber"], check=True)
             print(f"  actualizado {p['slug']} (nuevo render)")
