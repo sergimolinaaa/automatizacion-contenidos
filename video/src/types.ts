@@ -71,6 +71,8 @@ export type ShortProps = {
   audio?: string | null;
   music?: string | null;
   musicVolume?: number;
+  sfx?: string | null;
+  sfxVolume?: number;
   outro?: { at: number; cta?: string } | null;
   endPadding?: number;
 };

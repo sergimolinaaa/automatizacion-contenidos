@@ -7,6 +7,7 @@
     "1",
     "2",
     "3",
+    "+",
     "TÚ"
   ],
   "outro_cta": "La naturaleza tiene trucos",
@@ -67,7 +68,8 @@
             "target": "jet",
             "effect": "draw",
             "trigger": "escupitajos",
-            "dur": 0.35
+            "dur": 0.35,
+            "sfx": "chorro"
           }
         ]
       }
@@ -216,13 +218,15 @@
               0
             ],
             "trigger": "golpe",
-            "dur": 0.25
+            "dur": 0.25,
+            "sfx": "chasquido"
           },
           {
             "target": "jet2",
             "effect": "draw",
             "trigger": "disparada",
-            "dur": 0.3
+            "dur": 0.3,
+            "sfx": "chorro"
           },
           {
             "target": "jet2",
@@ -332,7 +336,8 @@
             "target": "jet",
             "effect": "draw",
             "trigger": "Acierta",
-            "dur": 0.3
+            "dur": 0.3,
+            "sfx": "chorro"
           },
           {
             "target": "drops",
@@ -358,12 +363,14 @@
             ],
             "rotate": 160,
             "trigger": "cae",
-            "dur": 0.5
+            "dur": 0.5,
+            "sfx": "whoosh"
           },
           {
             "target": "splash",
             "effect": "pop",
-            "trigger": "pez"
+            "trigger": "pez",
+            "sfx": "splash"
           },
           {
             "target": "fish",
@@ -393,9 +400,117 @@
     },
     {
       "chapter": 4,
+      "number": "+",
+      "headline": "Aprenden *mirando*",
+      "narration": "Y lo más curioso: los jóvenes aprenden a disparar mirando a los adultos… y al principio fallan muchísimo.",
+      "mascot": {
+        "trigger": "fallan",
+        "pose": "think",
+        "note": "Como tú aprendiendo a tirar triples",
+        "side": "right"
+      },
+      "elements": [
+        {
+          "type": "list",
+          "label": "Cómo aprende un pez arquero",
+          "trigger": "aprenden",
+          "items": [
+            {
+              "text": "Mira a los adultos",
+              "trigger": "mirando"
+            },
+            {
+              "text": "Prueba y falla",
+              "trigger": "fallan"
+            },
+            {
+              "text": "Afina la puntería",
+              "trigger": "muchísimo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Y si está cerca… *salta*",
+      "narration": "Y si la presa está muy cerca del agua, ni dispara: salta fuera y se la come de un bocado.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 6 · Plan B",
+        "anims": [
+          {
+            "target": "waves",
+            "effect": "flow",
+            "amount": 0.6
+          },
+          {
+            "target": "weed1",
+            "effect": "sway",
+            "origin": "bottom"
+          },
+          {
+            "target": "weed2",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 1.4
+          },
+          {
+            "target": "sight",
+            "effect": "hide"
+          },
+          {
+            "target": "jet",
+            "effect": "hide"
+          },
+          {
+            "target": "drops",
+            "effect": "hide"
+          },
+          {
+            "target": "splash",
+            "effect": "hide"
+          },
+          {
+            "target": "bug",
+            "effect": "wiggle",
+            "amount": 0.5
+          },
+          {
+            "target": "fish",
+            "effect": "move",
+            "to": [
+              -180,
+              -150
+            ],
+            "rotate": -25,
+            "trigger": "salta",
+            "dur": 0.35,
+            "sfx": "splash"
+          },
+          {
+            "target": "bug",
+            "effect": "hide",
+            "trigger": "bocado",
+            "sfx": "pop"
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "stamp",
+          "text": "¡Ñam!",
+          "tone": "accent",
+          "trigger": "bocado"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
       "number": "TÚ",
       "headline": "¿Qué te *flipa* más?",
-      "narration": "¿Qué te flipa más? Uno, su pistola de agua. Dos, que corrija la luz. Tres, su puntería. Escríbelo en comentarios.",
+      "narration": "¿Qué te flipa más? Uno, su pistola de agua. Dos, que corrija la luz. Tres, que salte a por la presa. Escríbelo en comentarios.",
       "mascot": {
         "trigger": "Escríbelo",
         "pose": "wave",
@@ -417,7 +532,7 @@
               "trigger": "Dos"
             },
             {
-              "text": "Su puntería",
+              "text": "Que salte",
               "trigger": "Tres"
             }
           ]

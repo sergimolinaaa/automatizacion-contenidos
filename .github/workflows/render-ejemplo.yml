@@ -32,17 +32,15 @@ jobs:
           cache: npm
           cache-dependency-path: video/package-lock.json
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
-      - run: pip install edge-tts PyYAML requests
+      - run: pip install edge-tts PyYAML requests numpy
       - run: npm ci
         working-directory: video
-      - name: Renderizar los guiones de ejemplo que aún no tienen vídeo
+      - name: Renderizar los guiones de ejemplo
         run: |
           for g in examples/*/guion.json; do
             slug=$(basename "$(dirname "$g")")
             out="previews/${slug}-con-voz.mp4"
-            if [ ! -f "$out" ] || [ "$g" -nt "$out" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-              python scripts/render_example.py "$g" "$out"
-            fi
+            python scripts/render_example.py "$g" "$out"
           done
       - name: Guardar el vídeo en la rama
         run: |

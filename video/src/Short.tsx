@@ -20,7 +20,21 @@ const STAGE_BOTTOM = 1300;
 const CONTENT_W = W - PAD * 2;
 const GAP = 40;
 
-export const Short: React.FC<ShortProps> = ({ chapters, scenes, words, source, audio, music, musicVolume = 0.1, outro }) => {
+const src = (f: string) => (f.startsWith("http") ? f : staticFile(f));
+
+/** La música baja mientras habla la voz y sube en las pausas (ducking). */
+const duckedVolume = (words: ShortProps["words"], base: number) => (f: number) => {
+  const t = f / FPS;
+  let near = Infinity;
+  for (const w of words) {
+    if (t >= w.start && t <= w.end) { near = 0; break; }
+    near = Math.min(near, Math.abs(t - w.start), Math.abs(t - w.end));
+  }
+  const k = interpolate(near, [0.15, 0.6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return base * (0.55 + 0.45 * k);
+};
+
+export const Short: React.FC<ShortProps> = ({ chapters, scenes, words, source, audio, music, musicVolume = 0.28, sfx, sfxVolume = 0.85, outro }) => {
   const frame = useCurrentFrame();
   const t = frame / FPS;
   const idx = Math.max(0, scenes.findIndex((s, i) => t >= s.start && (t < s.end || i === scenes.length - 1)));
@@ -43,8 +57,9 @@ export const Short: React.FC<ShortProps> = ({ chapters, scenes, words, source, a
   return (
     <AbsoluteFill style={{ fontFamily: brand.fonts.display }}>
       <Background />
-      {audio && <Audio src={audio.startsWith("http") ? audio : staticFile(audio)} />}
-      {music && <Audio src={music.startsWith("http") ? music : staticFile(music)} volume={musicVolume} loop />}
+      {audio && <Audio src={src(audio)} />}
+      {music && <Audio src={src(music)} volume={duckedVolume(words, musicVolume)} />}
+      {sfx && <Audio src={src(sfx)} volume={sfxVolume} />}
 
       <ProgressBar chapters={chapters} scenes={scenes} source={source} />
 
