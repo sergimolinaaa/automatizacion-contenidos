@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#DDF3FF"/>
+  <g fill="#FFFFFF" stroke="#0B0B14" stroke-width="5"><path d="M 120 120 L 140 80 L 160 120 Z"/><path d="M 820 110 L 845 60 L 870 110 Z"/></g>
+  <path d="M 0 250 L 1000 250 L 1000 700 L 0 700 Z" fill="#2D7FE0" stroke="#0B0B14" stroke-width="7"/>
+  <g id="icesheet"><rect x="-10" y="215" width="1020" height="70" fill="#E8F8FF" stroke="#0B0B14" stroke-width="8"/><g stroke="#9AA3B5" stroke-width="5" fill="none"><path d="M 150 230 L 220 270"/><path d="M 600 225 L 660 265 L 700 240"/></g></g>
+  <g id="fish"><g transform="translate(400 470)"><path d="M -60 0 Q -30 -35 30 -10 L 60 -30 L 55 0 L 60 30 L 30 10 Q -30 35 -60 0 Z" fill="#FFB547" stroke="#0B0B14" stroke-width="6" stroke-linejoin="round"/><circle cx="-35" cy="-6" r="7" fill="#0B0B14"/></g></g>
+  <g id="fish2"><g transform="translate(700 580) scale(-1 1)"><path d="M -50 0 Q -25 -28 25 -8 L 50 -24 L 46 0 L 50 24 L 25 8 Q -25 28 -50 0 Z" fill="#FF7A45" stroke="#0B0B14" stroke-width="6" stroke-linejoin="round"/><circle cx="-30" cy="-5" r="6" fill="#0B0B14"/></g></g>
+  <g id="weed"><path d="M 150 700 Q 130 620 160 560" stroke="#0B0B14" stroke-width="20" fill="none" stroke-linecap="round"/><path d="M 150 700 Q 130 620 160 560" stroke="#36B37E" stroke-width="9" fill="none" stroke-linecap="round"/></g>
+  <g font-family="JetBrains Mono" font-weight="800" font-size="28">
+    <g id="lt"><rect x="380" y="300" width="240" height="44" rx="8" fill="#0B0B14"/><text x="500" y="331" text-anchor="middle" fill="#C8FF2E">4 °C ABAJO</text></g>
+  </g>
+</svg>

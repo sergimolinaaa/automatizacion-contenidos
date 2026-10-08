@@ -1,0 +1,338 @@
+{
+  "topic": "El escarabajo bombardero dispara un spray hirviendo",
+  "categoria": "animales",
+  "title": "Este escarabajo dispara agua hirviendo 🪲🔥",
+  "source": "Fuentes: Eisner (Cornell) · Arndt et al., Science (2015) · Sugiura & Sato, Biology Letters (2018)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "La naturaleza tiene trucos",
+  "cover": {
+    "text": "Dispara *spray hirviendo*",
+    "badge": "¿CÓMO LO HACE?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Un escarabajo con un lanzallamas químico en el culo 🪲🔥 Y lo dispara a ráfagas. ¿Lo conocías?",
+    "description": "El escarabajo bombardero guarda dos sustancias por separado y, cuando le atacan, las mezcla en una cámara con enzimas: la reacción calienta el líquido hasta unos 100 °C y lo dispara a ráfagas, apuntando hacia donde quiere. Fuentes: Eisner; Arndt et al., Science (2015); Sugiura & Sato, Biology Letters (2018).",
+    "hashtags": [
+      "escarabajo",
+      "insectos",
+      "animales",
+      "ciencia",
+      "curiosidades",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Dispara *spray hirviendo*",
+      "narration": "Si molestas a este escarabajo… te dispara un chorro hirviendo.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 1 · Escarabajo bombardero",
+        "anims": [
+          {
+            "target": "sweat",
+            "effect": "hide"
+          },
+          {
+            "target": "hot",
+            "effect": "hide"
+          },
+          {
+            "target": "ant",
+            "effect": "move",
+            "to": [
+              -90,
+              0
+            ],
+            "trigger": "molestas",
+            "dur": 0.8
+          },
+          {
+            "target": "beetle",
+            "effect": "bob",
+            "amount": 0.3
+          },
+          {
+            "target": "spray",
+            "effect": "pop",
+            "trigger": "chorro",
+            "sfx": "chorro"
+          },
+          {
+            "target": "spray",
+            "effect": "pulse",
+            "trigger": "chorro",
+            "amount": 2
+          },
+          {
+            "target": "hot",
+            "effect": "pop",
+            "trigger": "hirviendo"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "¿Cómo lo hace? El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Dos *depósitos*",
+      "narration": "Guarda dentro dos sustancias por separado. Solas no hacen nada… pero juntas, son explosivas. Por algo lo llaman bombardero.",
+      "illustration": {
+        "svg_file": "camara.svg",
+        "caption": "Fig. 2 · Su arsenal",
+        "anims": [
+          {
+            "target": "flow",
+            "effect": "hide"
+          },
+          {
+            "target": "chamber",
+            "effect": "hide"
+          },
+          {
+            "target": "puffs",
+            "effect": "hide"
+          },
+          {
+            "target": "pulses",
+            "effect": "hide"
+          },
+          {
+            "target": "lc",
+            "effect": "hide"
+          },
+          {
+            "target": "ld",
+            "effect": "hide"
+          },
+          {
+            "target": "la",
+            "effect": "pop",
+            "trigger": "sustancias"
+          },
+          {
+            "target": "lb",
+            "effect": "pop",
+            "trigger": "separado"
+          },
+          {
+            "target": "resA",
+            "effect": "pulse",
+            "trigger": "juntas",
+            "amount": 1.5
+          },
+          {
+            "target": "resB",
+            "effect": "pulse",
+            "trigger": "juntas",
+            "amount": 1.5
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Química de defensa",
+          "tone": "ink",
+          "trigger": "explosivas"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "La cámara *de reacción*",
+      "narration": "Cuando le atacan, las mezcla en una cámara con enzimas. La reacción las calienta hasta unos cien grados.",
+      "illustration": {
+        "svg_file": "camara.svg",
+        "caption": "Fig. 3 · La cámara",
+        "anims": [
+          {
+            "target": "puffs",
+            "effect": "hide"
+          },
+          {
+            "target": "pulses",
+            "effect": "hide"
+          },
+          {
+            "target": "flow",
+            "effect": "draw",
+            "trigger": "mezcla",
+            "dur": 0.5
+          },
+          {
+            "target": "chamber",
+            "effect": "pop",
+            "trigger": "cámara",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "lc",
+            "effect": "pop",
+            "trigger": "enzimas"
+          },
+          {
+            "target": "chamber",
+            "effect": "shake",
+            "trigger": "reacción"
+          },
+          {
+            "target": "ld",
+            "effect": "pop",
+            "trigger": "grados",
+            "sfx": "sello"
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "stat",
+          "label": "Temperatura del chorro",
+          "value": 100,
+          "unit": "°C",
+          "trigger": "cien"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Dispara *a ráfagas*",
+      "narration": "Y no lo suelta de golpe: dispara a ráfagas, unas quinientas por segundo, y puede apuntar hacia donde quiera.",
+      "illustration": {
+        "svg_file": "camara.svg",
+        "caption": "Fig. 4 · Ametralladora",
+        "anims": [
+          {
+            "target": "chamber",
+            "effect": "pulse",
+            "amount": 2
+          },
+          {
+            "target": "puffs",
+            "effect": "pop",
+            "trigger": "dispara",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "pulses",
+            "effect": "draw",
+            "trigger": "ráfagas",
+            "dur": 0.3
+          },
+          {
+            "target": "pulses",
+            "effect": "shake",
+            "trigger": "quinientas",
+            "amount": 1.5
+          },
+          {
+            "target": "puffs",
+            "effect": "shake",
+            "trigger": "quinientas",
+            "amount": 1.2
+          },
+          {
+            "target": "nozzle",
+            "effect": "move",
+            "rotate": -14,
+            "origin": "left",
+            "trigger": "apuntar",
+            "dur": 0.4
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "stat",
+          "label": "Ráfagas por segundo",
+          "value": 500,
+          "from": 0,
+          "trigger": "quinientas"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Hasta *desde dentro*",
+      "narration": "Y si un sapo se lo traga, puede dispararle desde dentro… y el sapo acaba vomitándolo vivo.",
+      "mascot": {
+        "trigger": "vomitándolo",
+        "pose": "surprise",
+        "note": "Plan B: que te escupan",
+        "side": "right"
+      },
+      "elements": [
+        {
+          "type": "list",
+          "label": "Mal plan para el sapo",
+          "trigger": "sapo",
+          "items": [
+            {
+              "text": "Se lo traga",
+              "trigger": "traga"
+            },
+            {
+              "text": "Recibe un disparo",
+              "trigger": "dispararle"
+            },
+            {
+              "text": "Lo vomita vivo",
+              "trigger": "vivo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "¿Qué te *flipa* más?",
+      "narration": "¿Qué te flipa más? Uno, el spray hirviendo. Dos, las quinientas ráfagas. Tres, que se escape del sapo. Escríbelo en comentarios.",
+      "mascot": {
+        "trigger": "Escríbelo",
+        "pose": "wave",
+        "note": "¡Te leo!",
+        "side": "right"
+      },
+      "elements": [
+        {
+          "type": "quiz",
+          "trigger": "Uno",
+          "footer": "Escribe 1, 2 o 3 en comentarios",
+          "options": [
+            {
+              "text": "Spray hirviendo",
+              "trigger": "Uno"
+            },
+            {
+              "text": "500 ráfagas",
+              "trigger": "Dos"
+            },
+            {
+              "text": "Escapar del sapo",
+              "trigger": "Tres"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#FFF3E8"/>
+  <g id="boxA"><rect x="60" y="120" width="400" height="460" rx="20" fill="#4FB3FF" stroke="#0B0B14" stroke-width="9"/></g>
+  <g id="liquid">
+    <g fill="#FFFFFF" stroke="#0B0B14" stroke-width="5">
+      <circle cx="140" cy="200" r="22"/><circle cx="210" cy="230" r="22"/><circle cx="290" cy="190" r="22"/><circle cx="380" cy="220" r="22"/>
+      <circle cx="120" cy="290" r="22"/><circle cx="190" cy="320" r="22"/><circle cx="260" cy="280" r="22"/><circle cx="330" cy="310" r="22"/><circle cx="400" cy="290" r="22"/>
+      <circle cx="150" cy="390" r="22"/><circle cx="230" cy="380" r="22"/><circle cx="300" cy="400" r="22"/><circle cx="380" cy="380" r="22"/>
+      <circle cx="120" cy="480" r="22"/><circle cx="200" cy="470" r="22"/><circle cx="270" cy="500" r="22"/><circle cx="340" cy="470" r="22"/><circle cx="410" cy="500" r="22"/>
+    </g>
+  </g>
+  <g id="boxB"><rect x="540" y="120" width="400" height="460" rx="20" fill="#E8F8FF" stroke="#0B0B14" stroke-width="9"/></g>
+  <g id="lattice">
+    <g stroke="#0B0B14" stroke-width="6" fill="none">
+      <polygon points="660,190 720,190 750,242 720,294 660,294 630,242"/><polygon points="750,242 810,242 840,294 810,346 750,346 720,294"/>
+      <polygon points="660,294 720,294 750,346 720,398 660,398 630,346"/><polygon points="750,346 810,346 840,398 810,450 750,450 720,398"/>
+      <polygon points="660,398 720,398 750,450 720,502 660,502 630,450"/>
+    </g>
+    <g fill="#FFFFFF" stroke="#0B0B14" stroke-width="5">
+      <circle cx="660" cy="190" r="18"/><circle cx="720" cy="190" r="18"/><circle cx="750" cy="242" r="18"/><circle cx="630" cy="242" r="18"/><circle cx="660" cy="294" r="18"/><circle cx="720" cy="294" r="18"/>
+      <circle cx="810" cy="242" r="18"/><circle cx="840" cy="294" r="18"/><circle cx="810" cy="346" r="18"/><circle cx="750" cy="346" r="18"/>
+      <circle cx="630" cy="346" r="18"/><circle cx="660" cy="398" r="18"/><circle cx="720" cy="398" r="18"/><circle cx="840" cy="398" r="18"/><circle cx="810" cy="450" r="18"/><circle cx="750" cy="450" r="18"/>
+      <circle cx="630" cy="450" r="18"/><circle cx="660" cy="502" r="18"/><circle cx="720" cy="502" r="18"/>
+    </g>
+  </g>
+  <g id="gaps" fill="#C8FF2E" stroke="#0B0B14" stroke-width="4"><circle cx="690" cy="242" r="12"/><circle cx="780" cy="294" r="12"/><circle cx="690" cy="346" r="12"/><circle cx="780" cy="398" r="12"/><circle cx="690" cy="450" r="12"/></g>
+  <g font-family="JetBrains Mono" font-weight="800" font-size="28">
+    <g id="la"><rect x="150" y="600" width="220" height="44" rx="8" fill="#0B0B14"/><text x="260" y="631" text-anchor="middle" fill="#C8FF2E">LÍQUIDA</text></g>
+    <g id="lb"><rect x="630" y="600" width="220" height="44" rx="8" fill="#0B0B14"/><text x="740" y="631" text-anchor="middle" fill="#C8FF2E">HIELO</text></g>
+    <g id="lc"><rect x="610" y="60" width="260" height="44" rx="8" fill="#C8FF2E" stroke="#0B0B14" stroke-width="4"/><text x="740" y="91" text-anchor="middle" fill="#0B0B14">HUECOS</text></g>
+  </g>
+</svg>

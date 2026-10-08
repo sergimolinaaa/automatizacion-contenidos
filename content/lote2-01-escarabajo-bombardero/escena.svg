@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#FFF3E8"/>
+  <path d="M 0 520 Q 250 500 500 520 T 1000 515 L 1000 700 L 0 700 Z" fill="#C98B4A" stroke="#0B0B14" stroke-width="7"/>
+  <g fill="#36B37E" stroke="#0B0B14" stroke-width="6"><path d="M 80 520 Q 70 440 100 400 Q 110 460 120 520 Z"/><path d="M 900 515 Q 920 430 950 410 Q 940 470 930 515 Z"/></g>
+  <g id="beetle"><g transform="translate(560 450)">
+    <g stroke="#0B0B14" stroke-width="7" stroke-linecap="round"><line x1="-60" y1="40" x2="-90" y2="75"/><line x1="0" y1="45" x2="0" y2="80"/><line x1="60" y1="40" x2="90" y2="75"/></g>
+    <ellipse cx="20" cy="0" rx="120" ry="60" fill="#2B4BA8" stroke="#0B0B14" stroke-width="8"/>
+    <line x1="20" y1="-58" x2="20" y2="58" stroke="#0B0B14" stroke-width="5"/>
+    <g fill="#FFB547"><circle cx="-20" cy="-20" r="10"/><circle cx="60" cy="20" r="12"/></g>
+    <ellipse cx="-115" cy="0" rx="40" ry="34" fill="#FF7A45" stroke="#0B0B14" stroke-width="7"/>
+    <circle cx="-135" cy="-10" r="10" fill="#FFFFFF" stroke="#0B0B14" stroke-width="4"/><circle cx="-138" cy="-10" r="5" fill="#0B0B14"/>
+    <path d="M -140 -28 Q -170 -70 -200 -70 M -128 -30 Q -150 -80 -170 -90" stroke="#0B0B14" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <g id="tip"><path d="M 135 -10 L 165 -20 L 165 10 L 135 10 Z" fill="#FF7A45" stroke="#0B0B14" stroke-width="6" stroke-linejoin="round"/></g>
+  </g></g>
+  <g id="spray" fill="#FFFFFF" stroke="#0B0B14" stroke-width="6">
+    <circle cx="760" cy="420" r="26"/><circle cx="805" cy="400" r="34"/><circle cx="860" cy="390" r="40"/><circle cx="830" cy="360" r="24"/>
+  </g>
+  <g id="hot" fill="#FF5A36"><circle cx="805" cy="400" r="10"/><circle cx="860" cy="390" r="12"/></g>
+  <g id="ant"><g transform="translate(880 470)">
+    <g stroke="#0B0B14" stroke-width="5" stroke-linecap="round"><line x1="-20" y1="10" x2="-35" y2="35"/><line x1="0" y1="12" x2="0" y2="38"/><line x1="20" y1="10" x2="35" y2="35"/></g>
+    <circle cx="-40" cy="0" r="18" fill="#7A1E1E" stroke="#0B0B14" stroke-width="5"/><ellipse cx="0" cy="0" rx="18" ry="14" fill="#7A1E1E" stroke="#0B0B14" stroke-width="5"/><ellipse cx="45" cy="0" rx="28" ry="20" fill="#7A1E1E" stroke="#0B0B14" stroke-width="5"/>
+    <circle cx="-46" cy="-5" r="5" fill="#FFFFFF"/>
+  </g></g>
+  <g id="sweat" fill="#4FB3FF" stroke="#0B0B14" stroke-width="3"><circle cx="830" cy="430" r="7"/><circle cx="815" cy="445" r="5"/></g>
+</svg>

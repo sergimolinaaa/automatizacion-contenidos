@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#F2FFE8"/>
+  <path d="M 80 560 L 420 400" stroke="#0B0B14" stroke-width="50" stroke-linecap="round"/><path d="M 80 560 L 420 400" stroke="#36B37E" stroke-width="34" stroke-linecap="round"/>
+  <g id="stalk"><path d="M 470 380 L 900 160" stroke="#0B0B14" stroke-width="40" stroke-linecap="round"/><path d="M 470 380 L 900 160" stroke="#7BE07B" stroke-width="26" stroke-linecap="round"/></g>
+  <g id="full"><circle cx="440" cy="390" r="70" fill="#7BE07B" stroke="#0B0B14" stroke-width="8"/><g fill="#4FB3FF" stroke="#0B0B14" stroke-width="4"><circle cx="415" cy="370" r="16"/><circle cx="460" cy="365" r="16"/><circle cx="420" cy="415" r="16"/><circle cx="465" cy="410" r="16"/></g></g>
+  <g id="empty"><ellipse cx="440" cy="400" rx="70" ry="40" fill="#C9E6A0" stroke="#0B0B14" stroke-width="8"/></g>
+  <g id="water" fill="#4FB3FF" stroke="#0B0B14" stroke-width="4"><circle cx="520" cy="480" r="12"/><circle cx="560" cy="520" r="10"/><circle cx="500" cy="540" r="11"/></g>
+  <g id="signal" fill="#C8FF2E" stroke="#0B0B14" stroke-width="5"><circle cx="160" cy="522" r="14"/><circle cx="260" cy="475" r="14"/></g>
+  <g font-family="JetBrains Mono" font-weight="800" font-size="28">
+    <g id="l1"><rect x="330" y="240" width="220" height="44" rx="8" fill="#0B0B14"/><text x="440" y="271" text-anchor="middle" fill="#C8FF2E">BISAGRA</text></g>
+    <g id="l2"><rect x="560" y="560" width="250" height="44" rx="8" fill="#0B0B14"/><text x="685" y="591" text-anchor="middle" fill="#C8FF2E">SALE EL AGUA</text></g>
+    <g id="l3"><rect x="120" y="600" width="230" height="44" rx="8" fill="#C8FF2E" stroke="#0B0B14" stroke-width="4"/><text x="235" y="631" text-anchor="middle" fill="#0B0B14">SEÑAL ELÉCTRICA</text></g>
+  </g>
+</svg>

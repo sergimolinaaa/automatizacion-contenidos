@@ -1,0 +1,99 @@
+{
+  "topic": "Por qué nos da hipo",
+  "categoria": "cuerpo",
+  "title": "¿Por qué nos da hipo? 😮‍💨",
+  "source": "Fuentes: revisión en Physiology & Behavior · UCL (2019) · Guinness World Records",
+  "chapters": ["?", "1", "2", "3", "+", "TÚ"],
+  "outro_cta": "Tu cuerpo también tiene trucos",
+  "cover": {"text": "¿De dónde sale *el ¡hic!*?", "badge": "EL TRUCO ES…", "scene": 3},
+  "publish": {
+    "caption": "El hipo es un 'error' de tu cuerpo que hacías hasta antes de nacer 😮‍💨 Y alguien lo tuvo durante 68 años. ¿Cuál es tu truco para quitarlo?",
+    "description": "El hipo es un espasmo del diafragma: de repente tomas aire y, una fracción de segundo después, la glotis se cierra de golpe y suena '¡hic!'. Lo disparan comer rápido o el gas. Los bebés tienen hipo incluso dentro del útero, y una hipótesis es que ayuda a su cerebro a aprender a respirar.",
+    "hashtags": ["hipo", "cuerpohumano", "curiosidades", "ciencia", "salud", "eltrucoes"]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿De dónde sale *el ¡hic!*?",
+      "narration": "El hipo es un ruido que tu cuerpo hace solo… y que no puedes parar.",
+      "illustration": {"svg_file": "torso.svg", "caption": "Fig. 1 · Tú, con hipo", "anims": [
+        {"target": "nerve", "effect": "hide"}, {"target": "ld", "effect": "hide"}, {"target": "lg", "effect": "hide"},
+        {"target": "lungs", "effect": "pulse", "amount": 0.6},
+        {"target": "hic", "effect": "pop", "trigger": "ruido", "sfx": "boing"},
+        {"target": "hic", "effect": "wiggle", "trigger": "ruido"},
+        {"target": "eyes", "effect": "blink"}
+      ]}
+    },
+    {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Y eso por qué? El truco es…"},
+    {
+      "chapter": 1, "number": "1",
+      "headline": "Un tirón *del diafragma*",
+      "narration": "Empieza en el diafragma, el músculo que usas para respirar. De repente, da un tirón sin avisar.",
+      "illustration": {"svg_file": "torso.svg", "caption": "Fig. 2 · El diafragma", "anims": [
+        {"target": "hic", "effect": "hide"}, {"target": "nerve", "effect": "hide"}, {"target": "lg", "effect": "hide"},
+        {"target": "lungs", "effect": "pulse", "amount": 0.6},
+        {"target": "ld", "effect": "pop", "trigger": "diafragma"},
+        {"target": "diaphragm", "effect": "pulse", "trigger": "músculo", "amount": 1.5},
+        {"target": "diaphragm", "effect": "move", "to": [0, 40], "trigger": "tirón", "dur": 0.15, "sfx": "boing"},
+        {"target": "lungs", "effect": "shake", "trigger": "avisar"}
+      ]}
+    },
+    {
+      "chapter": 2, "number": "2",
+      "headline": "Y la garganta *se cierra*",
+      "narration": "Ese tirón te hace coger aire de golpe… y justo después la glotis, en la garganta, se cierra en seco. Ese portazo es el ¡hic!",
+      "illustration": {"svg_file": "torso.svg", "caption": "Fig. 3 · El portazo", "anims": [
+        {"target": "nerve", "effect": "hide"}, {"target": "ld", "effect": "hide"}, {"target": "hic", "effect": "hide"},
+        {"target": "lungs", "effect": "pulse", "trigger": "aire", "amount": 2},
+        {"target": "lg", "effect": "pop", "trigger": "glotis"},
+        {"target": "glottis", "effect": "move", "rotate": 0, "to": [0, 0], "trigger": "glotis"},
+        {"target": "glottis", "effect": "shake", "trigger": "seco", "amount": 1.5},
+        {"target": "hic", "effect": "pop", "trigger": "portazo", "sfx": "sello"},
+        {"target": "hic", "effect": "wiggle", "trigger": "hic"}
+      ]}
+    },
+    {
+      "chapter": 3, "number": "3",
+      "headline": "¿Quién *lo dispara*?",
+      "narration": "Es un reflejo: comer muy rápido, beber refrescos con gas o un estómago muy lleno pueden activar los nervios que lo controlan.",
+      "illustration": {"svg_file": "torso.svg", "caption": "Fig. 4 · El interruptor", "anims": [
+        {"target": "hic", "effect": "hide"}, {"target": "ld", "effect": "hide"}, {"target": "lg", "effect": "hide"},
+        {"target": "lungs", "effect": "pulse", "amount": 0.6},
+        {"target": "nerve", "effect": "draw", "trigger": "nervios", "dur": 0.6},
+        {"target": "nerve", "effect": "flow", "trigger": "controlan"}
+      ]},
+      "elements": [{"type": "list", "label": "Lo que lo activa", "trigger": "reflejo", "items": [
+        {"text": "Comer rápido", "trigger": "comer"},
+        {"text": "Refrescos con gas", "trigger": "refrescos"},
+        {"text": "Estómago lleno", "trigger": "estómago"}
+      ]}]
+    },
+    {
+      "chapter": 4, "number": "+",
+      "headline": "Lo hacías *antes de nacer*",
+      "narration": "Los bebés ya tienen hipo dentro de la tripa de su madre. Una hipótesis es que ayuda a su cerebro a aprender a respirar.",
+      "elements": [
+        {"type": "icon", "icon": "brain", "label": "Entrenamiento", "trigger": "cerebro"},
+        {"type": "tag", "text": "Hipótesis", "tone": "ink", "trigger": "hipótesis"}
+      ],
+      "mascot": {"trigger": "respirar", "pose": "think", "note": "Hipo de fábrica", "side": "right"}
+    },
+    {
+      "chapter": 4, "number": "+",
+      "headline": "Récord: *68 años*",
+      "narration": "Y el récord es increíble: un hombre estuvo con hipo sesenta y ocho años seguidos.",
+      "elements": [{"type": "stat", "label": "Récord de hipo", "value": 68, "from": 0, "unit": "años", "note": "Charles Osborne (Guinness)", "trigger": "récord"}]
+    },
+    {
+      "chapter": 5, "number": "TÚ",
+      "headline": "¿Qué te *flipa* más?",
+      "narration": "¿Qué te flipa más? Uno, el portazo de la garganta. Dos, que lo hagan los bebés. Tres, los sesenta y ocho años. Escríbelo en comentarios.",
+      "mascot": {"trigger": "Escríbelo", "pose": "wave", "note": "¡Te leo!", "side": "right"},
+      "elements": [{"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
+        {"text": "El portazo", "trigger": "Uno"},
+        {"text": "Bebés con hipo", "trigger": "Dos"},
+        {"text": "68 años", "trigger": "Tres"}
+      ]}]
+    }
+  ]
+}

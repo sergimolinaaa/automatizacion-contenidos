@@ -1,0 +1,90 @@
+{
+  "topic": "Por qué el hielo flota",
+  "categoria": "fisica",
+  "title": "¿Por qué el hielo flota? 🧊",
+  "source": "Fuente: USGS Water Science School · propiedades del agua",
+  "chapters": ["?", "1", "2", "3", "+", "TÚ"],
+  "outro_cta": "La naturaleza tiene trucos",
+  "cover": {"text": "El hielo *no debería flotar*", "badge": "¿Y ESO POR QUÉ?", "scene": 0},
+  "publish": {
+    "caption": "Casi todo lo sólido se hunde en su propio líquido… menos el hielo 🧊 Y gracias a eso hay vida en los lagos helados.",
+    "description": "Casi todas las sustancias son más densas en sólido que en líquido, pero el agua no: al congelarse sus moléculas forman una red con huecos y el hielo ocupa más espacio. Por eso flota, los lagos se congelan por arriba y los peces sobreviven debajo. Fuente: USGS.",
+    "hashtags": ["hielo", "agua", "fisica", "ciencia", "curiosidades", "eltrucoes"]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "El hielo *no debería flotar*",
+      "narration": "Casi todo lo sólido se hunde en su propio líquido… menos el hielo.",
+      "illustration": {"svg_file": "vaso.svg", "caption": "Fig. 1 · Dos vasos", "anims": [
+        {"target": "ice", "effect": "bob", "amount": 0.5},
+        {"target": "lb", "effect": "pop", "trigger": "sólido"},
+        {"target": "wax", "effect": "move", "to": [0, 200], "trigger": "hunde", "dur": 0.8, "sfx": "whoosh"},
+        {"target": "la", "effect": "pop", "trigger": "hielo"},
+        {"target": "ice", "effect": "pulse", "trigger": "hielo", "amount": 1.5}
+      ]}
+    },
+    {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Y eso por qué? El truco es…"},
+    {
+      "chapter": 1, "number": "1",
+      "headline": "En líquido, *apretadas*",
+      "narration": "En el agua líquida, las moléculas se mueven sin parar, muy juntas y desordenadas.",
+      "illustration": {"svg_file": "moleculas.svg", "caption": "Fig. 2 · Agua por dentro", "anims": [
+        {"target": "boxB", "effect": "hide"}, {"target": "lattice", "effect": "hide"}, {"target": "gaps", "effect": "hide"}, {"target": "lb", "effect": "hide"}, {"target": "lc", "effect": "hide"},
+        {"target": "liquid", "effect": "shake", "amount": 1.2},
+        {"target": "la", "effect": "pop", "trigger": "líquida"}
+      ]}
+    },
+    {
+      "chapter": 2, "number": "2",
+      "headline": "En hielo, *con huecos*",
+      "narration": "Al congelarse, se colocan en hexágonos perfectos… que dejan huecos en medio. El hielo ocupa más espacio.",
+      "illustration": {"svg_file": "moleculas.svg", "caption": "Fig. 3 · La red", "anims": [
+        {"target": "liquid", "effect": "shake", "amount": 1.2},
+        {"target": "boxB", "effect": "pop", "trigger": "congelarse"},
+        {"target": "lattice", "effect": "pop", "trigger": "hexágonos", "sfx": "brillo"},
+        {"target": "lb", "effect": "pop", "trigger": "hexágonos"},
+        {"target": "gaps", "effect": "pop", "trigger": "huecos"},
+        {"target": "lc", "effect": "pop", "trigger": "huecos"},
+        {"target": "gaps", "effect": "pulse", "trigger": "espacio", "amount": 2}
+      ]},
+      "elements": [{"type": "stat", "label": "Más volumen al congelarse", "value": 9, "prefix": "+", "unit": "%", "trigger": "espacio"}]
+    },
+    {
+      "chapter": 3, "number": "3",
+      "headline": "Menos denso… *flota*",
+      "narration": "Mismo peso en más espacio: el hielo es menos denso que el agua. Por eso flota, y los icebergs asoman solo un poquito.",
+      "illustration": {"svg_file": "vaso.svg", "caption": "Fig. 4 · Flotando", "anims": [
+        {"target": "glassB", "effect": "hide"}, {"target": "wax", "effect": "hide"}, {"target": "lb", "effect": "hide"},
+        {"target": "la", "effect": "pop", "trigger": "agua"},
+        {"target": "ice", "effect": "bob", "trigger": "flota", "amount": 0.8}
+      ]},
+      "elements": [{"type": "tag", "text": "Iceberg: 90% bajo el agua", "tone": "ink", "trigger": "icebergs"}]
+    },
+    {
+      "chapter": 4, "number": "+",
+      "headline": "Gracias a eso, *hay vida*",
+      "narration": "Por eso los lagos se congelan por arriba. El hielo hace de tapa, y debajo los peces siguen nadando tan tranquilos.",
+      "illustration": {"svg_file": "lago.svg", "caption": "Fig. 5 · Lago helado", "anims": [
+        {"target": "lt", "effect": "hide"},
+        {"target": "weed", "effect": "sway", "origin": "bottom"},
+        {"target": "icesheet", "effect": "slide-down", "trigger": "arriba", "sfx": "whoosh"},
+        {"target": "fish", "effect": "move", "to": [200, 0], "trigger": "peces", "dur": 2.0},
+        {"target": "fish2", "effect": "float", "amount": 1.2},
+        {"target": "lt", "effect": "pop", "trigger": "nadando"}
+      ]},
+      "mascot": {"trigger": "tranquilos", "pose": "cheer", "note": "Un edredón de hielo", "side": "right"}
+    },
+    {
+      "chapter": 5, "number": "TÚ",
+      "headline": "¿Qué te *flipa* más?",
+      "narration": "¿Qué te flipa más? Uno, que el hielo sea la excepción. Dos, los hexágonos con huecos. Tres, los peces bajo el hielo. Escríbelo en comentarios.",
+      "mascot": {"trigger": "Escríbelo", "pose": "wave", "note": "¡Te leo!", "side": "right"},
+      "elements": [{"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
+        {"text": "La gran excepción", "trigger": "Uno"},
+        {"text": "Hexágonos con huecos", "trigger": "Dos"},
+        {"text": "Peces bajo el hielo", "trigger": "Tres"}
+      ]}]
+    }
+  ]
+}

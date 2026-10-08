@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#FFF3E8"/>
+  <path d="M 330 700 L 330 330 Q 330 250 420 235 L 450 230 L 450 170 L 550 170 L 550 230 L 580 235 Q 670 250 670 330 L 670 700 Z" fill="#FFC8A2" stroke="#0B0B14" stroke-width="9" stroke-linejoin="round"/>
+  <circle cx="500" cy="110" r="80" fill="#FFC8A2" stroke="#0B0B14" stroke-width="9"/>
+  <g id="eyes"><circle cx="472" cy="100" r="9" fill="#0B0B14"/><circle cx="528" cy="100" r="9" fill="#0B0B14"/></g>
+  <g id="mouth"><ellipse cx="500" cy="145" rx="16" ry="10" fill="#0B0B14"/></g>
+  <path d="M 500 190 L 500 300" stroke="#FF8FA8" stroke-width="22" stroke-linecap="round"/>
+  <g id="glottis"><g transform="translate(500 235)"><path d="M -26 0 L 26 0" stroke="#0B0B14" stroke-width="8" stroke-linecap="round"/><path id="flapL" d="M -26 0 L -6 -18" stroke="#0B0B14" stroke-width="8" stroke-linecap="round"/><path d="M 26 0 L 6 -18" stroke="#0B0B14" stroke-width="8" stroke-linecap="round"/></g></g>
+  <g id="lungs" fill="#FF8FA8" stroke="#0B0B14" stroke-width="8"><path d="M 480 300 Q 380 300 375 430 Q 372 520 470 520 Z"/><path d="M 520 300 Q 620 300 625 430 Q 628 520 530 520 Z"/></g>
+  <g id="diaphragm"><path d="M 345 560 Q 500 470 655 560" stroke="#FF5A36" stroke-width="22" fill="none" stroke-linecap="round"/></g>
+  <g id="nerve"><path d="M 560 180 Q 620 300 600 540" stroke="#FFE066" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="0.04 0.03"/></g>
+  <g id="hic"><g transform="translate(720 120)"><path d="M -100 -60 L 120 -60 Q 150 -60 150 -30 L 150 40 Q 150 70 120 70 L -40 70 L -90 110 L -70 70 L -100 70 Q -130 70 -130 40 L -130 -30 Q -130 -60 -100 -60 Z" fill="#FFFFFF" stroke="#0B0B14" stroke-width="8" stroke-linejoin="round"/><text x="10" y="32" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="72" fill="#0B0B14">¡HIC!</text></g></g>
+  <g font-family="JetBrains Mono" font-weight="800" font-size="28">
+    <g id="ld"><rect x="380" y="590" width="240" height="44" rx="8" fill="#0B0B14"/><text x="500" y="621" text-anchor="middle" fill="#C8FF2E">DIAFRAGMA</text></g>
+    <g id="lg"><rect x="160" y="210" width="200" height="44" rx="8" fill="#0B0B14"/><text x="260" y="241" text-anchor="middle" fill="#C8FF2E">GLOTIS</text></g>
+  </g>
+</svg>

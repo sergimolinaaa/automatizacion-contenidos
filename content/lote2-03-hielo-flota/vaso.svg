@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#FFF3E8"/>
+  <rect y="600" width="1000" height="100" fill="#C98B4A" stroke="#0B0B14" stroke-width="7"/>
+  <g id="glassA">
+    <path d="M 160 200 L 190 600 L 410 600 L 440 200" fill="#FFFFFF" fill-opacity="0.6" stroke="#0B0B14" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M 172 320 L 190 595 L 410 595 L 428 320 Z" fill="#4FB3FF" fill-opacity="0.85"/>
+    <path d="M 172 320 L 428 320" stroke="#0B0B14" stroke-width="6"/>
+  </g>
+  <g id="ice"><rect x="240" y="270" width="110" height="100" rx="14" fill="#E8F8FF" stroke="#0B0B14" stroke-width="8"/><path d="M 260 290 L 290 290" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/></g>
+  <g id="glassB">
+    <path d="M 560 200 L 590 600 L 810 600 L 840 200" fill="#FFFFFF" fill-opacity="0.6" stroke="#0B0B14" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M 572 320 L 590 595 L 810 595 L 828 320 Z" fill="#FFE066" fill-opacity="0.85"/>
+    <path d="M 572 320 L 828 320" stroke="#0B0B14" stroke-width="6"/>
+  </g>
+  <g id="wax"><rect x="645" y="270" width="110" height="100" rx="14" fill="#FFB547" stroke="#0B0B14" stroke-width="8"/></g>
+  <g font-family="JetBrains Mono" font-weight="800" font-size="28">
+    <g id="la"><rect x="200" y="130" width="200" height="44" rx="8" fill="#0B0B14"/><text x="300" y="161" text-anchor="middle" fill="#C8FF2E">AGUA</text></g>
+    <g id="lb"><rect x="590" y="130" width="220" height="44" rx="8" fill="#0B0B14"/><text x="700" y="161" text-anchor="middle" fill="#C8FF2E">CERA</text></g>
+  </g>
+</svg>

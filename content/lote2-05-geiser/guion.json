@@ -1,0 +1,97 @@
+{
+  "topic": "Cómo funcionan los géiseres",
+  "categoria": "tierra",
+  "title": "¿Cómo dispara agua un géiser? 💨",
+  "source": "Fuentes: USGS · Servicio de Parques Nacionales de EE. UU. (Yellowstone)",
+  "chapters": ["?", "1", "2", "3", "+", "TÚ"],
+  "outro_cta": "La Tierra también tiene trucos",
+  "cover": {"text": "La Tierra *escupe agua*", "badge": "¿Y ESO POR QUÉ?", "scene": 4},
+  "publish": {
+    "caption": "Un chorro de agua hirviendo que sale del suelo como un reloj 💨 ¿Sabes qué truco usa?",
+    "description": "Bajo un géiser hay una cámara de agua calentada por el magma. El peso del agua de encima sube su punto de ebullición, así que se calienta por encima de 100 °C sin hervir. Cuando un poco se convierte en vapor, la presión baja de golpe y todo hierve a la vez: ¡erupción! Fuente: USGS, Yellowstone NPS.",
+    "hashtags": ["geiser", "yellowstone", "geologia", "ciencia", "curiosidades", "eltrucoes"]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "La Tierra *escupe agua*",
+      "narration": "Hay sitios donde el suelo dispara agua hirviendo hacia el cielo.",
+      "illustration": {"svg_file": "geiser.svg", "caption": "Fig. 1 · Géiser", "anims": [
+        {"target": "lc", "effect": "hide"}, {"target": "lp", "effect": "hide"}, {"target": "lm", "effect": "hide"},
+        {"target": "heat", "effect": "flow", "amount": 0.6},
+        {"target": "bubbles", "effect": "float", "amount": 1.5},
+        {"target": "jet", "effect": "grow", "trigger": "dispara", "sfx": "chorro"},
+        {"target": "jet", "effect": "shake", "trigger": "hirviendo", "amount": 0.5},
+        {"target": "steam", "effect": "pop", "trigger": "cielo", "sfx": "none"},
+        {"target": "steam", "effect": "float", "trigger": "cielo"}
+      ]}
+    },
+    {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Y eso por qué? El truco es…"},
+    {
+      "chapter": 1, "number": "1",
+      "headline": "Una olla *bajo tierra*",
+      "narration": "Bajo el géiser hay una cueva llena de agua, y debajo, roca calentada por el magma.",
+      "illustration": {"svg_file": "geiser.svg", "caption": "Fig. 2 · Por dentro", "anims": [
+        {"target": "jet", "effect": "hide"}, {"target": "steam", "effect": "hide"}, {"target": "lc", "effect": "hide"}, {"target": "lp", "effect": "hide"},
+        {"target": "chamber", "effect": "pulse", "trigger": "cueva", "amount": 1.4},
+        {"target": "lm", "effect": "pop", "trigger": "magma"},
+        {"target": "heat", "effect": "draw", "trigger": "calentada", "dur": 0.5},
+        {"target": "heat", "effect": "flow", "trigger": "magma"}
+      ]}
+    },
+    {
+      "chapter": 2, "number": "2",
+      "headline": "Más de *100 °C*… sin hervir",
+      "narration": "El peso del agua de encima la aprieta tanto que no puede hervir. Así se calienta por encima de los cien grados.",
+      "illustration": {"svg_file": "geiser.svg", "caption": "Fig. 3 · Agua sobrecalentada", "anims": [
+        {"target": "jet", "effect": "hide"}, {"target": "steam", "effect": "hide"}, {"target": "lm", "effect": "hide"},
+        {"target": "heat", "effect": "flow"},
+        {"target": "lp", "effect": "pop", "trigger": "peso"},
+        {"target": "chamber", "effect": "shake", "trigger": "aprieta", "amount": 0.6},
+        {"target": "lc", "effect": "pop", "trigger": "cien", "sfx": "sello"}
+      ]},
+      "mascot": {"trigger": "hervir", "pose": "explain", "note": "Como una olla exprés", "side": "right"}
+    },
+    {
+      "chapter": 3, "number": "3",
+      "headline": "Y de golpe… *¡fuuush!*",
+      "narration": "Cuando un poco se convierte en vapor, la presión baja de golpe… y toda el agua hierve a la vez. ¡Erupción!",
+      "illustration": {"svg_file": "geiser.svg", "caption": "Fig. 4 · Erupción", "anims": [
+        {"target": "lc", "effect": "hide"}, {"target": "lp", "effect": "hide"}, {"target": "lm", "effect": "hide"}, {"target": "steam", "effect": "hide"}, {"target": "jet", "effect": "hide"},
+        {"target": "heat", "effect": "flow"},
+        {"target": "bubbles", "effect": "move", "to": [0, -120], "trigger": "vapor", "dur": 0.6, "sfx": "burbujas"},
+        {"target": "chamber", "effect": "shake", "trigger": "baja"},
+        {"target": "jet", "effect": "grow", "trigger": "Erupción", "sfx": "chorro"},
+        {"target": "steam", "effect": "pop", "trigger": "Erupción", "sfx": "none"}
+      ]},
+      "elements": [{"type": "stamp", "text": "¡Fuuush!", "tone": "accent", "trigger": "Erupción"}]
+    },
+    {
+      "chapter": 4, "number": "+",
+      "headline": "Puntual *como un reloj*",
+      "narration": "El géiser más famoso, Old Faithful, en Yellowstone, entra en erupción más o menos cada hora y media.",
+      "elements": [
+        {"type": "stat", "label": "Old Faithful", "value": 90, "unit": "min", "note": "entre erupciones, de media", "trigger": "cada"},
+        {"type": "icon", "icon": "clock", "label": "Puntual", "trigger": "media"}
+      ]
+    },
+    {
+      "chapter": 4, "number": "+",
+      "headline": "Son *rarísimos*",
+      "narration": "Y son rarísimos: en todo el planeta hay menos de mil, y casi la mitad están en Yellowstone.",
+      "elements": [{"type": "dots", "label": "Géiseres del mundo", "filled": 50, "total": 100, "caption": "de cada 100, en Yellowstone", "trigger": "mitad"}],
+      "mascot": {"trigger": "Yellowstone", "pose": "surprise", "note": "Un parque lleno de ollas", "side": "right"}
+    },
+    {
+      "chapter": 5, "number": "TÚ",
+      "headline": "¿Qué te *flipa* más?",
+      "narration": "¿Qué te flipa más? Uno, el agua a más de cien grados. Dos, la erupción de golpe. Tres, lo puntual que es. Escríbelo en comentarios.",
+      "mascot": {"trigger": "Escríbelo", "pose": "wave", "note": "¡Te leo!", "side": "right"},
+      "elements": [{"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
+        {"text": "Agua a +100 °C", "trigger": "Uno"},
+        {"text": "La erupción", "trigger": "Dos"},
+        {"text": "Lo puntual", "trigger": "Tres"}
+      ]}]
+    }
+  ]
+}
