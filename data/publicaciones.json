@@ -76,6 +76,17 @@
         "tiktok": "6ac7a4d082db5af660c83ad8",
         "instagram": "6ac7a4d1444a36d3be24f11d"
       }
+    },
+    {
+      "slug": "lote2-01-escarabajo-bombardero",
+      "category": "animales",
+      "due": "2026-10-09T05:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote2-01-escarabajo-bombardero/lote2-01-escarabajo-bombardero-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac7b5f582db5af660cba4dc",
+        "tiktok": "6ac7b5f6b99c473c41bad079",
+        "instagram": "6ac7b5f7daf7bb7cba280b90"
+      }
     }
   ]
 }
