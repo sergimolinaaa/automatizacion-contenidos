@@ -1,6 +1,7 @@
 import { Composition, continueRender, delayRender } from "remotion";
 import { FPS, H, W } from "./brand";
 import { fontsReady } from "./fonts";
+import { Profile } from "./Profile";
 import { Short } from "./Short";
 import sample from "./sample-props.json";
 import type { ShortProps } from "./types";
@@ -15,6 +16,8 @@ const durationOf = (p: ShortProps) => {
 };
 
 export const Root: React.FC = () => (
+  <>
+  <Composition id="Perfil" component={Profile} width={1080} height={1080} fps={FPS} durationInFrames={60} defaultProps={{ variant: "blue" as const }} />
   <Composition
     id="Short"
     component={Short}
@@ -25,4 +28,5 @@ export const Root: React.FC = () => (
     defaultProps={sample as ShortProps}
     calculateMetadata={({ props }) => ({ durationInFrames: durationOf(props) })}
   />
+  </>
 );

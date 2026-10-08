@@ -20,7 +20,7 @@ jobs:
           python-version: "3.12"
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - run: pip install edge-tts
-      - run: python scripts/voice_samples.py previews/voces
+      - run: python scripts/voice_samples.py previews/voces/ximena es-ES-XimenaNeural
       - name: Guardar las muestras en la rama
         run: |
           git config user.name "github-actions[bot]"
