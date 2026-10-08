@@ -10,6 +10,72 @@
         "tiktok": "6ac7a41d444a36d3be24cfa0",
         "instagram": "6ac7a41edaf7bb7cba24578c"
       }
+    },
+    {
+      "slug": "lote1-04-gecko",
+      "category": "animales",
+      "due": "2026-10-08T17:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote1-04-gecko/lote1-04-gecko-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac7a4a8daf7bb7cba246ef3",
+        "tiktok": "6ac7a4a8daf7bb7cba246f44",
+        "instagram": "6ac7a4a9444a36d3be24e867"
+      }
+    },
+    {
+      "slug": "lote1-01-atrapamoscas",
+      "category": "plantas",
+      "due": "2026-10-08T19:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote1-01-atrapamoscas/lote1-01-atrapamoscas-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac7a4af444a36d3be24e9d5",
+        "tiktok": "6ac7a4b082db5af660c83522",
+        "instagram": "6ac7a4b1d1ababbf88b3aff3"
+      }
+    },
+    {
+      "slug": "lote1-02-cielo-azul",
+      "category": "fisica",
+      "due": "2026-10-08T21:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote1-02-cielo-azul/lote1-02-cielo-azul-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac7a4b8d1ababbf88b3b0f5",
+        "tiktok": "6ac7a4b9d1ababbf88b3b12f",
+        "instagram": "6ac7a4ba08d405a9e7046a3e"
+      }
+    },
+    {
+      "slug": "lote1-03-dedos-arrugados",
+      "category": "cuerpo",
+      "due": "2026-10-08T23:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote1-03-dedos-arrugados/lote1-03-dedos-arrugados-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac7a4c008d405a9e7046b27",
+        "tiktok": "6ac7a4c1e63932e2c5a55ea0",
+        "instagram": "6ac7a4c208d405a9e7046bb4"
+      }
+    },
+    {
+      "slug": "lote1-05-volcan",
+      "category": "tierra",
+      "due": "2026-10-09T01:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote1-05-volcan/lote1-05-volcan-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac7a4c8444a36d3be24ef9d",
+        "tiktok": "6ac7a4c9d1ababbf88b3b5f8",
+        "instagram": "6ac7a4c9444a36d3be24eff4"
+      }
+    },
+    {
+      "slug": "pez-arquero",
+      "category": "animales",
+      "due": "2026-10-09T03:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-pez-arquero/pez-arquero-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac7a4d0daf7bb7cba24752a",
+        "tiktok": "6ac7a4d082db5af660c83ad8",
+        "instagram": "6ac7a4d1444a36d3be24f11d"
+      }
     }
   ]
 }
