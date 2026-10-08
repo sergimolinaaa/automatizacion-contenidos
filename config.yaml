@@ -1,7 +1,7 @@
 # Configuración del canal. Todo lo que define "de qué va" la cuenta está aquí.
 
 channel:
-  name: "Datos Curiosos Diarios"
+  name: "El truco es…"
   # Tema del canal: cuanto más concreto, mejor rinde el contenido.
   niche: "curiosidades sorprendentes de ciencia, historia y naturaleza"
   language: "es"            # idioma del guion, título y descripción
@@ -29,8 +29,9 @@ video:
 
 voice:
   # Voces gratuitas de Microsoft Edge TTS. Lista: `edge-tts --list-voices`
-  name: "es-ES-AlvaroNeural"
+  name: "es-ES-XimenaNeural"
   rate: "+8%"
+  pitch: "-4Hz"
 
 claude:
   model: "claude-opus-5-5"

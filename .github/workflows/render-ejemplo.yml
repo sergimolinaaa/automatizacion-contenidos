@@ -1,0 +1,46 @@
+name: Render de ejemplo
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - examples/**
+      - video/src/**
+      - autocontent/**
+      - scripts/render_example.py
+      - config.yaml
+      - .github/workflows/render-ejemplo.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: video/package-lock.json
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install edge-tts PyYAML requests
+      - run: npm ci
+        working-directory: video
+      - run: python scripts/render_example.py examples/pez-arquero/guion.json previews/pez-arquero-con-voz.mp4
+      - name: Guardar el vídeo en la rama
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add previews/pez-arquero-con-voz.mp4
+          git commit -m "Render de ejemplo con voz: pez arquero" || exit 0
+          for i in 1 2 3; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0; sleep 5; done
+          exit 1

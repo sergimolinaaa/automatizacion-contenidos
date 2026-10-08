@@ -8,3 +8,4 @@ token*.json
 .pytest_cache/
 node_modules/
 video/out/
+video/public/audio/
