@@ -207,7 +207,10 @@ ANIMACIONES (anims): {"target": id, "effect", "trigger"?, "dur"?, "to"?: [dx, dy
   flow (agua que corre en trazos), blink.
 - Acciones: move (to: desplazamiento en unidades del viewBox, rotate: grados, origin: center|bottom|top|left|right|bottom-left|bottom-right|top-left|top-right = punto de giro de la caja del grupo, útil para bisagras), hide (desaparece; sin trigger = oculto toda la escena).
 - Cuando reutilices un SVG en otra escena, oculta con "hide" lo que no toque mostrar.
+- La ilustración debe verse COMPLETA desde el primer instante de la escena (nunca un panel vacío): usa entradas solo para
+  detalles que se añaden (chorros, flechas, etiquetas, burbujas), no para el protagonista ni el fondo.
 - Da vida a todo: algo siempre se mueve, y lo importante ocurre justo cuando la voz lo dice (trigger).
+- Cada escena debe enseñar lo que dice la narración: si hablas de la lava, se ve la lava; no reutilices un dibujo que no encaja.
 - "sfx" opcional para el sonido del momento: whoosh, pop, papel, ding, sorpresa, sello, chasquido, chorro, burbujas, splash, boing, rotulador, brillo, none.
 
 TRIGGERS: deben ser una palabra que aparezca TAL CUAL en la narración de ESA escena (sin signos).
