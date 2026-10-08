@@ -337,6 +337,10 @@
         "caption": "Fig. 5 · Se hunde, no se rompe",
         "anims": [
           {
+            "target": "lskin",
+            "effect": "hide"
+          },
+          {
             "target": "pull",
             "effect": "hide"
           },
