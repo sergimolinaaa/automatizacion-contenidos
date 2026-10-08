@@ -1,0 +1,578 @@
+{
+ "source": "Fuentes: Eisner (Cornell) · Arndt et al., Science (2015) · Sugiura & Sato, Biology Letters (2018)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "Si",
+   "start": 0.1,
+   "end": 0.3315
+  },
+  {
+   "text": "molestas",
+   "start": 0.343041,
+   "end": 0.840707
+  },
+  {
+   "text": "a",
+   "start": 0.852333,
+   "end": 0.933333
+  },
+  {
+   "text": "este",
+   "start": 0.944916,
+   "end": 1.199541
+  },
+  {
+   "text": "escarabajo…",
+   "start": 1.211125,
+   "end": 1.905583
+  },
+  {
+   "text": "te",
+   "start": 2.044458,
+   "end": 2.137041
+  },
+  {
+   "text": "dispara",
+   "start": 2.148625,
+   "end": 2.553708
+  },
+  {
+   "text": "un",
+   "start": 2.565291,
+   "end": 2.6926240000000004
+  },
+  {
+   "text": "chorro",
+   "start": 2.704166,
+   "end": 3.005082
+  },
+  {
+   "text": "hirviendo.",
+   "start": 3.016666,
+   "end": 3.5722069999999997
+  },
+  {
+   "text": "¿Cómo",
+   "start": 4.390291,
+   "end": 4.691207
+  },
+  {
+   "text": "lo",
+   "start": 4.702791,
+   "end": 4.8301240000000005
+  },
+  {
+   "text": "hace?",
+   "start": 4.841666,
+   "end": 5.188874
+  },
+  {
+   "text": "El",
+   "start": 5.999083,
+   "end": 6.2652909999999995
+  },
+  {
+   "text": "truco",
+   "start": 6.276833,
+   "end": 6.624041
+  },
+  {
+   "text": "es…",
+   "start": 6.635666,
+   "end": 6.936582
+  },
+  {
+   "text": "Guarda",
+   "start": 7.74675,
+   "end": 8.128708
+  },
+  {
+   "text": "dentro",
+   "start": 8.140291,
+   "end": 8.452791
+  },
+  {
+   "text": "dos",
+   "start": 8.464333,
+   "end": 8.637958
+  },
+  {
+   "text": "sustancias",
+   "start": 8.649541,
+   "end": 9.193541
+  },
+  {
+   "text": "por",
+   "start": 9.205083,
+   "end": 9.355541
+  },
+  {
+   "text": "separado.",
+   "start": 9.367125,
+   "end": 9.945833
+  },
+  {
+   "text": "Solas",
+   "start": 10.744458,
+   "end": 11.218999
+  },
+  {
+   "text": "no",
+   "start": 11.230541,
+   "end": 11.346291
+  },
+  {
+   "text": "hacen",
+   "start": 11.357875,
+   "end": 11.577791
+  },
+  {
+   "text": "nada…",
+   "start": 11.589333,
+   "end": 11.890249
+  },
+  {
+   "text": "pero",
+   "start": 12.017583,
+   "end": 12.191208
+  },
+  {
+   "text": "juntas,",
+   "start": 12.202791,
+   "end": 12.700457
+  },
+  {
+   "text": "son",
+   "start": 12.816208,
+   "end": 13.036124
+  },
+  {
+   "text": "explosivas.",
+   "start": 13.047666,
+   "end": 13.846290999999999
+  },
+  {
+   "text": "Por",
+   "start": 14.679625,
+   "end": 14.899541
+  },
+  {
+   "text": "algo",
+   "start": 14.911125,
+   "end": 15.119458
+  },
+  {
+   "text": "lo",
+   "start": 15.131,
+   "end": 15.24675
+  },
+  {
+   "text": "llaman",
+   "start": 15.258333,
+   "end": 15.559249000000001
+  },
+  {
+   "text": "bombardero.",
+   "start": 15.570833,
+   "end": 16.218999
+  },
+  {
+   "text": "Cuando",
+   "start": 17.017583,
+   "end": 17.353248999999998
+  },
+  {
+   "text": "le",
+   "start": 17.364833,
+   "end": 17.445833
+  },
+  {
+   "text": "atacan,",
+   "start": 17.457416,
+   "end": 17.897249
+  },
+  {
+   "text": "las",
+   "start": 18.024541,
+   "end": 18.209706999999998
+  },
+  {
+   "text": "mezcla",
+   "start": 18.221291,
+   "end": 18.580082
+  },
+  {
+   "text": "en",
+   "start": 18.591666,
+   "end": 18.695832
+  },
+  {
+   "text": "una",
+   "start": 18.707416,
+   "end": 18.857874
+  },
+  {
+   "text": "cámara",
+   "start": 18.869458,
+   "end": 19.193541000000003
+  },
+  {
+   "text": "con",
+   "start": 19.205083,
+   "end": 19.355541
+  },
+  {
+   "text": "enzimas.",
+   "start": 19.367125,
+   "end": 19.968958
+  },
+  {
+   "text": "La",
+   "start": 20.779166,
+   "end": 21.010666
+  },
+  {
+   "text": "reacción",
+   "start": 21.022208,
+   "end": 21.473582999999998
+  },
+  {
+   "text": "las",
+   "start": 21.485166,
+   "end": 21.635624
+  },
+  {
+   "text": "calienta",
+   "start": 21.647208,
+   "end": 22.110166
+  },
+  {
+   "text": "hasta",
+   "start": 22.12175,
+   "end": 22.330083
+  },
+  {
+   "text": "unos",
+   "start": 22.341666,
+   "end": 22.619457
+  },
+  {
+   "text": "cien",
+   "start": 22.631,
+   "end": 22.816166
+  },
+  {
+   "text": "grados.",
+   "start": 22.827791,
+   "end": 23.313916000000003
+  },
+  {
+   "text": "Y",
+   "start": 24.1125,
+   "end": 24.274541
+  },
+  {
+   "text": "no",
+   "start": 24.286125,
+   "end": 24.424999999999997
+  },
+  {
+   "text": "lo",
+   "start": 24.436583,
+   "end": 24.540748999999998
+  },
+  {
+   "text": "suelta",
+   "start": 24.552333,
+   "end": 24.853249
+  },
+  {
+   "text": "de",
+   "start": 24.864833,
+   "end": 24.957416000000002
+  },
+  {
+   "text": "golpe:",
+   "start": 24.969,
+   "end": 25.350958000000002
+  },
+  {
+   "text": "dispara",
+   "start": 25.489833,
+   "end": 25.883333
+  },
+  {
+   "text": "a",
+   "start": 25.894916,
+   "end": 25.941206899999997
+  },
+  {
+   "text": "ráfagas,",
+   "start": 25.952791,
+   "end": 26.508332000000003
+  },
+  {
+   "text": "unas",
+   "start": 26.624083,
+   "end": 26.878708
+  },
+  {
+   "text": "quinientas",
+   "start": 26.890291,
+   "end": 27.364832
+  },
+  {
+   "text": "por",
+   "start": 27.376375,
+   "end": 27.526833
+  },
+  {
+   "text": "segundo,",
+   "start": 27.538416,
+   "end": 28.001374000000002
+  },
+  {
+   "text": "y",
+   "start": 28.151833,
+   "end": 28.1981239
+  },
+  {
+   "text": "puede",
+   "start": 28.209708,
+   "end": 28.418041
+  },
+  {
+   "text": "apuntar",
+   "start": 28.429625,
+   "end": 28.811583000000002
+  },
+  {
+   "text": "hacia",
+   "start": 28.823166,
+   "end": 29.043082000000002
+  },
+  {
+   "text": "donde",
+   "start": 29.054625,
+   "end": 29.286125000000002
+  },
+  {
+   "text": "quiera.",
+   "start": 29.297666,
+   "end": 29.714332
+  },
+  {
+   "text": "Y",
+   "start": 30.524541,
+   "end": 30.674999
+  },
+  {
+   "text": "si",
+   "start": 30.686583,
+   "end": 30.825457999999998
+  },
+  {
+   "text": "un",
+   "start": 30.837041,
+   "end": 30.952790999999998
+  },
+  {
+   "text": "sapo",
+   "start": 30.964333,
+   "end": 31.207374
+  },
+  {
+   "text": "se",
+   "start": 31.219,
+   "end": 31.323166
+  },
+  {
+   "text": "lo",
+   "start": 31.334708,
+   "end": 31.438874
+  },
+  {
+   "text": "traga,",
+   "start": 31.450458,
+   "end": 31.809249
+  },
+  {
+   "text": "puede",
+   "start": 31.913416,
+   "end": 32.133332
+  },
+  {
+   "text": "dispararle",
+   "start": 32.144916,
+   "end": 32.700457
+  },
+  {
+   "text": "desde",
+   "start": 32.712041,
+   "end": 32.931957
+  },
+  {
+   "text": "dentro…",
+   "start": 32.9435,
+   "end": 33.337
+  },
+  {
+   "text": "y",
+   "start": 33.510666,
+   "end": 33.568541
+  },
+  {
+   "text": "el",
+   "start": 33.580083,
+   "end": 33.695833
+  },
+  {
+   "text": "sapo",
+   "start": 33.707416,
+   "end": 33.985207
+  },
+  {
+   "text": "acaba",
+   "start": 33.99675,
+   "end": 34.286083
+  },
+  {
+   "text": "vomitándolo",
+   "start": 34.297666,
+   "end": 34.876374
+  },
+  {
+   "text": "vivo.",
+   "start": 34.887958,
+   "end": 35.246748999999994
+  },
+  {
+   "text": "¿Qué",
+   "start": 36.045375,
+   "end": 36.219
+  },
+  {
+   "text": "te",
+   "start": 36.230541,
+   "end": 36.334707
+  },
+  {
+   "text": "flipa",
+   "start": 36.346291,
+   "end": 36.612499
+  },
+  {
+   "text": "más?",
+   "start": 36.624083,
+   "end": 36.982873999999995
+  },
+  {
+   "text": "Uno,",
+   "start": 37.804625,
+   "end": 38.198125000000005
+  },
+  {
+   "text": "el",
+   "start": 38.313875,
+   "end": 38.441208
+  },
+  {
+   "text": "spray",
+   "start": 38.452791,
+   "end": 38.823166
+  },
+  {
+   "text": "hirviendo.",
+   "start": 38.834708,
+   "end": 39.390249
+  },
+  {
+   "text": "Dos,",
+   "start": 40.188875,
+   "end": 40.628708
+  },
+  {
+   "text": "las",
+   "start": 40.744458,
+   "end": 40.952791000000005
+  },
+  {
+   "text": "quinientas",
+   "start": 40.964333,
+   "end": 41.427291000000004
+  },
+  {
+   "text": "ráfagas.",
+   "start": 41.438875,
+   "end": 42.040708
+  },
+  {
+   "text": "Tres,",
+   "start": 42.8625,
+   "end": 43.302333
+  },
+  {
+   "text": "que",
+   "start": 43.4065,
+   "end": 43.533833
+  },
+  {
+   "text": "se",
+   "start": 43.545375,
+   "end": 43.672708
+  },
+  {
+   "text": "escape",
+   "start": 43.68425,
+   "end": 44.031458
+  },
+  {
+   "text": "del",
+   "start": 44.043041,
+   "end": 44.193499
+  },
+  {
+   "text": "sapo.",
+   "start": 44.205083,
+   "end": 44.621749
+  },
+  {
+   "text": "Escríbelo",
+   "start": 45.420375,
+   "end": 46.137958
+  },
+  {
+   "text": "en",
+   "start": 46.149541,
+   "end": 46.242124
+  },
+  {
+   "text": "comentarios.",
+   "start": 46.253708,
+   "end": 47.029166000000004
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 47.529,
+  "cta": "La naturaleza tiene trucos"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Dispara *spray hirviendo*",
+  "badge": "¿CÓMO LO HACE?",
+  "scene": 0
+ },
+ "duration": 50.129000000000005,
+ "cover_offset_ms": 50429
+}
