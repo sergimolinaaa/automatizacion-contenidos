@@ -1,6 +1,7 @@
 import { Composition, continueRender, delayRender } from "remotion";
 import { FPS, H, W } from "./brand";
 import { fontsReady } from "./fonts";
+import { Cover } from "./Cover";
 import { Profile } from "./Profile";
 import { ProfileName } from "./ProfileName";
 import { Short } from "./Short";
@@ -18,6 +19,7 @@ const durationOf = (p: ShortProps) => {
 
 export const Root: React.FC = () => (
   <>
+  <Composition id="Portada" component={Cover} width={W} height={H} fps={FPS} durationInFrames={9000} defaultProps={sample as ShortProps} />
   <Composition id="PerfilNombre" component={ProfileName} width={1080} height={1080} fps={FPS} durationInFrames={1} defaultProps={{ variant: "blue" as const }} />
   <Composition id="Perfil" component={Profile} width={1080} height={1080} fps={FPS} durationInFrames={60} defaultProps={{ variant: "blue" as const }} />
   <Composition
