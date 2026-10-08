@@ -1,0 +1,759 @@
+{
+  "topic": "El zapatero camina sobre el agua",
+  "categoria": "animales",
+  "title": "Este insecto camina sobre el agua (y no se moja) 💧",
+  "source": "Fuentes: Gao & Jiang, Nature (2004) · Hu, Chan & Bush, Nature (2003) · Koh et al., Science (2015)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "La naturaleza tiene trucos",
+  "cover": {
+    "text": "Camina *sobre el agua*",
+    "badge": "¿CÓMO LO HACE?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Camina sobre el agua y ni se moja las patas 💧 Su truco mezcla pelitos microscópicos, la «piel» del agua y remolinos. ¿Lo sabías?",
+    "description": "El zapatero de agua (Gerridae) tiene las patas cubiertas de miles de pelitos microscópicos que atrapan aire y repelen el agua. Además aprovecha la tensión superficial: sus patas solo hunden un poco la superficie, y cada pata puede aguantar unas 15 veces su peso. Para avanzar rema con las patas del medio, lanzando remolinos bajo el agua. Fuentes: Gao & Jiang, Nature (2004); Hu, Chan & Bush, Nature (2003); Koh et al., Science (2015).",
+    "hashtags": [
+      "insectos",
+      "agua",
+      "animales",
+      "ciencia",
+      "curiosidades",
+      "fisica",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Camina *sobre el agua*",
+      "narration": "Este bicho camina sobre el agua… y ni siquiera se moja las patas.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 1 · Zapatero de agua",
+        "anims": [
+          {
+            "target": "ripa1",
+            "effect": "ripple",
+            "phase": 0.0
+          },
+          {
+            "target": "ripa2",
+            "effect": "ripple",
+            "phase": 0.5
+          },
+          {
+            "target": "ripb1",
+            "effect": "ripple",
+            "phase": 0.2
+          },
+          {
+            "target": "ripb2",
+            "effect": "ripple",
+            "phase": 0.7
+          },
+          {
+            "target": "ripc1",
+            "effect": "ripple",
+            "phase": 0.4
+          },
+          {
+            "target": "ripc2",
+            "effect": "ripple",
+            "phase": 0.9
+          },
+          {
+            "target": "strider",
+            "effect": "breathe",
+            "amount": 0.35
+          },
+          {
+            "target": "antennae",
+            "effect": "wiggle",
+            "amount": 0.6,
+            "origin": "right"
+          },
+          {
+            "target": "pad",
+            "effect": "bob",
+            "amount": 0.25
+          },
+          {
+            "target": "reeds",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.4
+          },
+          {
+            "target": "strider",
+            "effect": "punch",
+            "trigger": "camina"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              700,
+              430
+            ],
+            "amount": 1.8,
+            "trigger": "moja",
+            "dur": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "¿Cómo lo hace? El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Patas *peludas*",
+      "narration": "Sus patas están cubiertas de miles de pelitos microscópicos.",
+      "illustration": {
+        "svg_file": "pata.svg",
+        "caption": "Fig. 2 · Pata al microscopio",
+        "anims": [
+          {
+            "target": "lgota",
+            "effect": "hide"
+          },
+          {
+            "target": "laire",
+            "effect": "hide"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              380,
+              470
+            ],
+            "amount": 1.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              660,
+              470
+            ],
+            "amount": 1.6,
+            "trigger": "pelitos",
+            "dur": 0.9
+          },
+          {
+            "target": "drop1",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "drop2",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "zoomtag",
+            "effect": "pop",
+            "trigger": "cubiertas",
+            "sfx": "pop"
+          },
+          {
+            "target": "lpelos",
+            "effect": "pop",
+            "trigger": "pelitos"
+          },
+          {
+            "target": "setae",
+            "effect": "punch",
+            "trigger": "microscópicos",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Un *traje de aire*",
+      "narration": "Entre ellos queda atrapado aire, y el agua no puede entrar: las gotas ruedan como canicas.",
+      "illustration": {
+        "svg_file": "pata.svg",
+        "caption": "Fig. 3 · Repelen el agua",
+        "anims": [
+          {
+            "target": "lpelos",
+            "effect": "hide"
+          },
+          {
+            "target": "air",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "laire",
+            "effect": "pop",
+            "trigger": "aire"
+          },
+          {
+            "target": "air",
+            "effect": "punch",
+            "trigger": "atrapado"
+          },
+          {
+            "target": "lgota",
+            "effect": "pop",
+            "trigger": "gotas"
+          },
+          {
+            "target": "drop1",
+            "effect": "move",
+            "to": [
+              -150,
+              0
+            ],
+            "rotate": -160,
+            "trigger": "ruedan",
+            "dur": 1.1,
+            "sfx": "boing"
+          },
+          {
+            "target": "drop2",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "drop2",
+            "effect": "punch",
+            "trigger": "gotas"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "canicas",
+        "pose": "surprise",
+        "note": "Chubasquero incorporado",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "La *piel* del agua",
+      "narration": "Además, el agua tiene truco: sus moléculas se agarran entre sí y forman una piel elástica.",
+      "illustration": {
+        "svg_file": "tension.svg",
+        "caption": "Fig. 4 · Tensión superficial",
+        "anims": [
+          {
+            "target": "foot",
+            "effect": "hide"
+          },
+          {
+            "target": "weight",
+            "effect": "hide"
+          },
+          {
+            "target": "pull",
+            "effect": "hide"
+          },
+          {
+            "target": "lpeso",
+            "effect": "hide"
+          },
+          {
+            "target": "ltira",
+            "effect": "hide"
+          },
+          {
+            "target": "lskin",
+            "effect": "hide"
+          },
+          {
+            "target": "mols",
+            "effect": "shake",
+            "amount": 0.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              300,
+              420
+            ],
+            "amount": 1.5,
+            "trigger": "moléculas",
+            "dur": 0.8
+          },
+          {
+            "target": "hbonds",
+            "effect": "pulse",
+            "trigger": "agarran",
+            "amount": 0.6
+          },
+          {
+            "target": "bonds",
+            "effect": "pop",
+            "trigger": "forman",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "piel",
+            "dur": 0.8
+          },
+          {
+            "target": "lskin",
+            "effect": "pop",
+            "trigger": "piel"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Como una *cama elástica*",
+      "narration": "Sus patas solo la hunden un poquito, como una cama elástica… y la piel las empuja hacia arriba.",
+      "illustration": {
+        "svg_file": "tension.svg",
+        "caption": "Fig. 5 · Se hunde, no se rompe",
+        "anims": [
+          {
+            "target": "pull",
+            "effect": "hide"
+          },
+          {
+            "target": "ltira",
+            "effect": "hide"
+          },
+          {
+            "target": "mols",
+            "effect": "shake",
+            "amount": 0.2
+          },
+          {
+            "target": "weight",
+            "effect": "draw",
+            "trigger": "hunden",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lpeso",
+            "effect": "pop",
+            "trigger": "hunden"
+          },
+          {
+            "target": "foot",
+            "effect": "punch",
+            "trigger": "poquito"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              330
+            ],
+            "amount": 1.45,
+            "trigger": "cama",
+            "dur": 0.8
+          },
+          {
+            "target": "bonds",
+            "effect": "pulse",
+            "trigger": "elástica",
+            "amount": 1.2
+          },
+          {
+            "target": "pull",
+            "effect": "pop",
+            "trigger": "empuja",
+            "sfx": "boing"
+          },
+          {
+            "target": "ltira",
+            "effect": "pop",
+            "trigger": "arriba"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "arriba",
+            "dur": 0.7
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*15 veces* su peso",
+      "narration": "Cada pata aguanta unas quince veces el peso del insecto.",
+      "elements": [
+        {
+          "type": "stat",
+          "label": "Cada pata aguanta",
+          "value": 15,
+          "from": 1,
+          "prefix": "×",
+          "note": "el peso de todo el insecto",
+          "trigger": "quince"
+        }
+      ],
+      "mascot": {
+        "trigger": "peso",
+        "pose": "cheer",
+        "note": "Y sin ir al gimnasio",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Rema con *remolinos*",
+      "narration": "Para avanzar, rema con las patas del medio. Cada golpe lanza remolinos bajo el agua que lo empujan hacia delante.",
+      "illustration": {
+        "svg_file": "remo.svg",
+        "caption": "Fig. 6 · Vista desde arriba",
+        "anims": [
+          {
+            "target": "r01",
+            "effect": "ripple",
+            "phase": 0.0,
+            "amount": 1
+          },
+          {
+            "target": "r02",
+            "effect": "ripple",
+            "phase": 0.5,
+            "amount": 1
+          },
+          {
+            "target": "r11",
+            "effect": "ripple",
+            "phase": 0.17,
+            "amount": 1
+          },
+          {
+            "target": "r12",
+            "effect": "ripple",
+            "phase": 0.67,
+            "amount": 1
+          },
+          {
+            "target": "r21",
+            "effect": "ripple",
+            "phase": 0.34,
+            "amount": 1
+          },
+          {
+            "target": "r22",
+            "effect": "ripple",
+            "phase": 0.8400000000000001,
+            "amount": 1
+          },
+          {
+            "target": "r31",
+            "effect": "ripple",
+            "phase": 0.51,
+            "amount": 1
+          },
+          {
+            "target": "r32",
+            "effect": "ripple",
+            "phase": 1.01,
+            "amount": 1
+          },
+          {
+            "target": "r41",
+            "effect": "ripple",
+            "phase": 0.68,
+            "amount": 1
+          },
+          {
+            "target": "r42",
+            "effect": "ripple",
+            "phase": 1.1800000000000002,
+            "amount": 1
+          },
+          {
+            "target": "r51",
+            "effect": "ripple",
+            "phase": 0.8500000000000001,
+            "amount": 1
+          },
+          {
+            "target": "r52",
+            "effect": "ripple",
+            "phase": 1.35,
+            "amount": 1
+          },
+          {
+            "target": "vortex1",
+            "effect": "hide"
+          },
+          {
+            "target": "vortex2",
+            "effect": "hide"
+          },
+          {
+            "target": "push",
+            "effect": "hide"
+          },
+          {
+            "target": "lvortex",
+            "effect": "hide"
+          },
+          {
+            "target": "legtop",
+            "effect": "sway",
+            "origin": "bottom-left",
+            "amount": 2.2
+          },
+          {
+            "target": "legbot",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": -2.2
+          },
+          {
+            "target": "antennae",
+            "effect": "wiggle",
+            "amount": 0.5
+          },
+          {
+            "target": "lremo",
+            "effect": "pop",
+            "trigger": "rema"
+          },
+          {
+            "target": "vortex1",
+            "effect": "pop",
+            "trigger": "remolinos",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "vortex2",
+            "effect": "pop",
+            "trigger": "remolinos",
+            "sfx": "none"
+          },
+          {
+            "target": "vortex1",
+            "effect": "spin",
+            "trigger": "remolinos",
+            "amount": -1.2
+          },
+          {
+            "target": "vortex2",
+            "effect": "spin",
+            "trigger": "remolinos",
+            "amount": 1.2
+          },
+          {
+            "target": "lvortex",
+            "effect": "pop",
+            "trigger": "bajo"
+          },
+          {
+            "target": "push",
+            "effect": "slide-right",
+            "trigger": "empujan"
+          },
+          {
+            "target": "go",
+            "effect": "draw",
+            "trigger": "delante",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "strider",
+            "effect": "move",
+            "to": [
+              -70,
+              0
+            ],
+            "trigger": "delante",
+            "dur": 0.9
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Salta *sin hundirse*",
+      "narration": "Y puede saltar desde el agua sin romper la superficie. ¡Hop!",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 7 · Despegue",
+        "anims": [
+          {
+            "target": "ripa1",
+            "effect": "ripple",
+            "phase": 0.0
+          },
+          {
+            "target": "ripa2",
+            "effect": "ripple",
+            "phase": 0.5
+          },
+          {
+            "target": "ripb1",
+            "effect": "ripple",
+            "phase": 0.2
+          },
+          {
+            "target": "ripb2",
+            "effect": "ripple",
+            "phase": 0.7
+          },
+          {
+            "target": "ripc1",
+            "effect": "ripple",
+            "phase": 0.4
+          },
+          {
+            "target": "ripc2",
+            "effect": "ripple",
+            "phase": 0.9
+          },
+          {
+            "target": "antennae",
+            "effect": "wiggle",
+            "amount": 0.6,
+            "origin": "right"
+          },
+          {
+            "target": "reeds",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.4
+          },
+          {
+            "target": "strider",
+            "effect": "move",
+            "to": [
+              0,
+              -190
+            ],
+            "rotate": -6,
+            "trigger": "saltar",
+            "dur": 0.7,
+            "sfx": "boing"
+          },
+          {
+            "target": "dimples",
+            "effect": "hide",
+            "trigger": "saltar"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              560,
+              330
+            ],
+            "amount": 1.3,
+            "trigger": "superficie",
+            "dur": 0.8
+          },
+          {
+            "target": "strider",
+            "effect": "move",
+            "to": [
+              0,
+              190
+            ],
+            "rotate": 6,
+            "trigger": "Hop",
+            "dur": 0.6
+          },
+          {
+            "target": "dimples",
+            "effect": "fade",
+            "trigger": "Hop",
+            "dur": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Hasta en *alta mar*",
+      "narration": "Y unos parientes suyos viven en mitad del océano: casi los únicos insectos marinos del planeta.",
+      "elements": [
+        {
+          "type": "icon",
+          "icon": "wave",
+          "label": "Halobates",
+          "trigger": "océano"
+        },
+        {
+          "type": "fact",
+          "label": "Dato",
+          "text": "Pasan toda su vida sobre el mar abierto",
+          "tone": "accent",
+          "trigger": "únicos"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "¿Qué te *flipa* más?",
+      "narration": "¿Qué te flipa más? Uno, sus patas con traje de aire. Dos, la piel del agua. Tres, que rema con remolinos. Escríbelo en comentarios.",
+      "mascot": {
+        "trigger": "Escríbelo",
+        "pose": "wave",
+        "note": "¡Te leo!",
+        "side": "right"
+      },
+      "elements": [
+        {
+          "type": "quiz",
+          "trigger": "Uno",
+          "footer": "Escribe 1, 2 o 3 en comentarios",
+          "options": [
+            {
+              "text": "Traje de aire",
+              "trigger": "Uno"
+            },
+            {
+              "text": "La piel del agua",
+              "trigger": "Dos"
+            },
+            {
+              "text": "Remolinos",
+              "trigger": "Tres"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

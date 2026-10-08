@@ -28,7 +28,10 @@ export type IllustrationAnim = {
   effect:
     | "pop" | "fade" | "draw" | "grow" | "slide-left" | "slide-right" | "slide-up" | "slide-down" // entradas
     | "float" | "bob" | "sway" | "spin" | "pulse" | "shake" | "wiggle" | "flow" | "blink" // bucles
-    | "move" | "hide"; // acciones puntuales
+    | "ripple" | "breathe" | "drift" // bucles: onda que se expande, respiración, deriva lateral
+    | "move" | "hide" | "punch" // acciones puntuales (punch: golpe de énfasis)
+    | "zoom"; // solo con target "camera": acerca la cámara a `to` ([x, y] del viewBox) con `amount` = zoom
+  phase?: number; // desfase de los bucles (0-1), p. ej. para ondas sucesivas
   at?: number; // segundos (absolutos). Bucles sin `at` empiezan desde el principio de la escena
   dur?: number; // segundos
   to?: [number, number]; // para "move": desplazamiento en unidades del viewBox

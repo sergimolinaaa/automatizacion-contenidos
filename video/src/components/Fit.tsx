@@ -1,8 +1,8 @@
 import { useLayoutEffect, useRef } from "react";
 
 /**
- * Encaja su contenido en el alto disponible: si no cabe, lo reduce (sin recortar ni
- * solapar con lo de abajo). Se mide sin transformaciones, así que el resultado es estable.
+ * Encaja su contenido en el alto disponible: si no cabe, lo reduce entero y lo centra (sin recortar ni
+ * solapar con lo de abajo). No cambia el ancho del contenido, así los paneles mantienen su proporción.
  */
 export const Fit: React.FC<{ height: number; width: number; children: React.ReactNode; align?: "top" | "center" }> = ({
   height, width, children, align = "top",
@@ -11,17 +11,12 @@ export const Fit: React.FC<{ height: number; width: number; children: React.Reac
   useLayoutEffect(() => {
     const el = ref.current;
     if (!el) return;
-    let scale = 1;
-    for (let i = 0; i < 4; i++) {
-      el.style.width = `${width / scale}px`;
-      const natural = el.offsetHeight;
-      const next = Math.min(1, height / Math.max(1, natural));
-      if (Math.abs(next - scale) < 0.005) break;
-      scale = next;
-    }
-    el.style.width = `${width / scale}px`;
-    const offset = align === "center" ? Math.max(0, (height - el.offsetHeight * scale) / 2) : 0;
-    el.style.transform = `translateY(${offset}px) scale(${scale})`;
+    el.style.width = `${width}px`;
+    const natural = el.offsetHeight;
+    const scale = Math.min(1, height / Math.max(1, natural));
+    const dx = (width - width * scale) / 2;
+    const offset = align === "center" ? Math.max(0, (height - natural * scale) / 2) : 0;
+    el.style.transform = `translate(${dx}px, ${offset}px) scale(${scale})`;
   });
   return (
     <div style={{ position: "relative", height, width }}>

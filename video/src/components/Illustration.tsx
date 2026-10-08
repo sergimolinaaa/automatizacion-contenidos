@@ -81,7 +81,7 @@ function computeStyles(anims: IllustrationAnim[], frame: number, sceneStart: num
   }
 
   for (const a of anims) {
-    if (ENTRANCES.has(a.effect) || a.effect === "hide") continue;
+    if (ENTRANCES.has(a.effect) || a.effect === "hide" || a.target === "camera") continue;
     const st = (out[a.target] ??= { tx: 0, ty: 0, rot: 0, sx: 1, sy: 1, op: 1 });
     if (a.origin) st.origin = ORIGINS[a.origin];
     const at = a.at ?? sceneStart;
@@ -95,6 +95,14 @@ function computeStyles(anims: IllustrationAnim[], frame: number, sceneStart: num
       st.rot += (a.rotate ?? 0) * p;
       continue;
     }
+    if (a.effect === "punch") {
+      if (f >= 0 && f < 14) {
+        const k = 1 + Math.sin((f / 14) * Math.PI) * 0.16 * amount;
+        st.sx *= k;
+        st.sy *= k;
+      }
+      continue;
+    }
     if (f < 0) continue; // los bucles empiezan en `at`
     switch (a.effect) {
       case "float": st.ty += Math.sin(lt * 2.2) * 10 * amount; break;
@@ -105,10 +113,39 @@ function computeStyles(anims: IllustrationAnim[], frame: number, sceneStart: num
       case "shake": st.tx += Math.sin(lt * 45) * 5 * amount; break;
       case "wiggle": st.rot += Math.sin(lt * 9) * 5 * amount; break;
       case "flow": st.dash = "0.08 0.05"; st.offset = -lt * 0.6 * amount; break;
+      case "ripple": {
+        const c = (lt / 1.6 + (a.phase ?? 0)) % 1;
+        const k = 0.45 + c * 1.1 * amount;
+        st.sx *= k; st.sy *= k; st.op *= c < 0.15 ? c / 0.15 : 1 - (c - 0.15) / 0.85;
+        break;
+      }
+      case "breathe": { st.sy *= 1 + Math.sin(lt * 2.4 + (a.phase ?? 0) * 6.28) * 0.03 * amount; st.sx *= 1 + Math.sin(lt * 2.4 + (a.phase ?? 0) * 6.28) * 0.012 * amount; break; }
+      case "drift": st.tx += Math.sin(lt * 1.1 + (a.phase ?? 0) * 6.28) * 18 * amount; break;
       case "blink": { const c = (lt * FPS) % 90; st.sy *= c < 5 ? Math.max(0.1, Math.abs(Math.cos((c / 5) * Math.PI))) : 1; break; }
     }
   }
   return out;
+}
+
+/** Cámara del panel: acercamientos ("zoom" sobre target "camera") encadenados + un leve avance continuo. */
+function camera(anims: IllustrationAnim[], frame: number, sceneStart: number, sceneEnd: number) {
+  const shots = anims.filter((a) => a.target === "camera" && a.effect === "zoom").sort((x, y) => (x.at ?? sceneStart) - (y.at ?? sceneStart));
+  const at = (zx: number, zy: number, z: number) => ({ ox: -(zx / 1000 - 0.5) * z * 100, oy: -(zy / 700 - 0.5) * z * 100, s: z });
+  let cur = { ox: 0, oy: 0, s: 1 };
+  for (const a of shots) {
+    const f = frame - sec(a.at ?? sceneStart);
+    if (f < 0) break;
+    const z = Math.max(1, a.amount ?? 1.5);
+    const next = z === 1 ? { ox: 0, oy: 0, s: 1 } : at(a.to?.[0] ?? 500, a.to?.[1] ?? 350, z);
+    const p = spring({ frame: f, fps: FPS, durationInFrames: sec(a.dur ?? 0.7), config: { damping: 200 } });
+    cur = { ox: cur.ox + (next.ox - cur.ox) * p, oy: cur.oy + (next.oy - cur.oy) * p, s: cur.s + (next.s - cur.s) * p };
+  }
+  // avance lento tipo documental durante toda la escena
+  const drift = interpolate(frame, [sec(sceneStart), sec(sceneEnd)], [1, 1.045], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const s = cur.s * drift;
+  const lim = ((s - 1) / 2) * 100; // nunca se ve el borde del dibujo
+  const clampL = (v: number) => Math.max(-lim, Math.min(lim, v));
+  return `translate(${clampL(cur.ox).toFixed(2)}%, ${clampL(cur.oy).toFixed(2)}%) scale(${s.toFixed(4)})`;
 }
 
 // Panel de "figura" con una ilustración vectorial animada del tema del vídeo.
@@ -154,7 +191,10 @@ export const IllustrationPanel: React.FC<{ ill: Ill; id: string; sceneStart: num
       }}
     >
       <style>{css}</style>
-      <div style={{ position: "absolute", inset: 0 }} dangerouslySetInnerHTML={{ __html: svg }} />
+      <div
+        style={{ position: "absolute", inset: 0, transformOrigin: "50% 50%", transform: camera(ill.anims ?? [], frame, sceneStart, sceneEnd) }}
+        dangerouslySetInnerHTML={{ __html: svg }}
+      />
       {ill.caption && (
         <div
           style={{

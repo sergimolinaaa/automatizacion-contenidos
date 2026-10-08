@@ -54,7 +54,7 @@ def test_generator_validator_accepts_examples_and_fixes_bad_triggers():
     from autocontent import generate
 
     script = _json.loads(generate._example())
-    script["scenes"][0]["illustration"]["anims"].append({"target": "fish", "effect": "pop", "trigger": "inexistente"})
+    script["scenes"][0]["illustration"]["anims"].append({"target": "strider", "effect": "pop", "trigger": "inexistente"})
     script["scenes"][0]["illustration"]["anims"].append({"target": "no-existe", "effect": "pop"})
     errors, warnings = generate.validate(script)
     assert errors == []

@@ -23,7 +23,8 @@ FALLBACK_BETA = "server-side-fallback-2026-07-01"
 VIDEO_DIR = ROOT / "video"
 
 QA_PROMPT = """Eres el director de arte de «El truco es…», una cuenta de vídeos científicos animados con un estilo de
-ilustración plana tipo pegatina (contornos de tinta gruesos, colores planos, marca azul #2347FF + lima #C8FF2E).
+"pegatina realista" (contornos de tinta gruesos, volumen con degradados, brillos y sombras, anatomía correcta, marca azul
+#2347FF + lima #C8FF2E).
 Te paso fotogramas reales de cada escena del vídeo (a mitad y al final de la escena), el código SVG de las ilustraciones
 y sus animaciones. Revisa con ojo MUY exigente, como si fuera a publicarse en una cuenta profesional:
 
@@ -34,6 +35,8 @@ y sus animaciones. Revisa con ojo MUY exigente, como si fuera a publicarse en un
 - Color: colores que no corresponden al objeto real, poco contraste, elementos que se pierden con el fondo.
 - Composición: paneles vacíos o casi vacíos, protagonista demasiado pequeño, cosas cortadas por el borde,
   etiquetas que tapan lo importante o se salen, texto ilegible.
+- Calidad: si el dibujo parece pobre o plano (sin volumen, sin detalle, formas genéricas), mejóralo al nivel de una
+  ilustración profesional manteniendo el estilo.
 - Animación: elementos que aparecen en el sitio equivocado tras un "move", rotaciones con el punto de giro mal
   (p. ej. una bisagra que gira desde el centro), cosas que deberían verse y están ocultas, o al revés.
 

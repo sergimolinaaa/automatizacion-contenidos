@@ -27,7 +27,8 @@ ELEMENT_TYPES = {"stat", "fact", "icon", "compare", "dots", "list", "scale", "ta
 ICONS = {"atom", "earth", "moon", "sun", "paper", "dna", "brain", "drop", "bolt", "rocket", "clock", "eye", "bacteria",
          "star", "ruler", "heart", "fire", "snow", "magnet", "planet", "microscope", "leaf", "bone", "wave"}
 EFFECTS = {"pop", "fade", "draw", "grow", "slide-left", "slide-right", "slide-up", "slide-down", "float", "bob", "sway",
-           "spin", "pulse", "shake", "wiggle", "flow", "blink", "move", "hide"}
+           "spin", "pulse", "shake", "wiggle", "flow", "blink", "move", "hide", "punch",
+           "ripple", "breathe", "drift"}
 SFX = {"whoosh", "barrido", "pop", "papel", "ding", "sorpresa", "sello", "chasquido", "chorro", "burbujas", "splash",
        "tic", "magia", "boing", "rotulador", "brillo", "none"}
 POSES = {"idle", "point", "wave", "think", "surprise", "explain", "cheer"}
@@ -147,7 +148,7 @@ def research(topic: dict) -> str:
 # ------------------------------------------------------------------ 3. guion
 
 def _example() -> str:
-    ex = ROOT / "examples" / "pez-arquero"
+    ex = ROOT / "content" / "lote3-01-zapatero"
     script = json.loads((ex / "guion.json").read_text(encoding="utf-8"))
     svgs = {p.stem: p.read_text(encoding="utf-8") for p in ex.glob("*.svg")}
     for sc in script["scenes"]:
@@ -163,7 +164,7 @@ en español de España. Cada vídeo enseña algo de la naturaleza o la ciencia q
 Tono: cercano, con chispa y humor suave; frases cortas que se entienden a la primera; nada de relleno ni clickbait falso.
 NUNCA inventes datos: usa solo los de la ficha de investigación; si un dato está marcado como dudoso, no lo uses.
 
-ESTRUCTURA (unos 50-70 segundos, 150-210 palabras de narración en total):
+ESTRUCTURA (unos 45-60 segundos, 140-190 palabras de narración en total, 9-12 escenas cortas de 1-2 frases: ritmo rápido):
 - Escena 0, capítulo 0 "?": GANCHO. Lo increíble en una frase (máx. 12 palabras). Con ilustración.
 - Escena 1, capítulo 0: FIRMA. {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Cómo lo hace? El truco es…"}
   (si el protagonista no es un ser vivo, usa "¿Y eso por qué? El truco es…").
@@ -192,24 +193,39 @@ TARJETAS (elements). Todas aceptan "trigger" (palabra EXACTA de la narración de
 - {"type":"stamp","text","tone":"accent|hot"}  (golpe: ¡PLAF!, ¡BANG!, MITO, FALSO...)
 - {"type":"quiz","footer":"Escribe 1, 2 o 3 en comentarios","options":[{"text","trigger"}]}  (solo en TÚ)
 
-ILUSTRACIONES (svgs): dibujos vectoriales propios, planos, estilo "pegatina": viewBox="0 0 1000 700", un rect de fondo que lo
-cubre todo, contornos de tinta #0B0B14 de 6-9 px con stroke-linejoin round, colores planos alegres y realistas para el tema
-(agua #4FB3FF, cielo #DDF3FF, vegetación #7BE07B/#36B37E, arena #FFD98A, coral #FF5A36, naranja #FF7A45, amarillo #FFB547,
-lima de marca #C8FF2E para resaltar, blanco #FFFFFF, gris #9AA3B5). Formas simples pero reconocibles, protagonista grande y
-centrado, con ojos simpáticos si es un animal. Sin degradados, sin filtros, sin imágenes, sin <script>, sin enlaces externos.
-Haz 2-3 SVG por vídeo: la escena general y 1-2 vistas de detalle o esquema del truco (cortes, flechas, etiquetas).
-Etiquetas: <g id="..."><rect .../><text font-family="JetBrains Mono" font-weight="800" font-size="30">TEXTO</text></g>, MAYÚSCULAS, cortas.
-Todo lo que se anima va en un <g id="nombre"> propio (ids en minúscula, sin espacios). Los <defs>/<use> están permitidos.
+ILUSTRACIONES (svgs): estilo "pegatina realista": contornos de tinta #0B0B14 gruesos (6-9 px, stroke-linejoin round) en
+el primer plano, pero con VOLUMEN y DETALLE de ilustración profesional:
+- Anatomía y forma CORRECTAS y reconocibles (número de patas, articulaciones, proporciones, colores reales del ser u objeto).
+  Las patas, antenas, tallos... salen del punto exacto del cuerpo donde nacen y terminan donde apoyan (calcula las coordenadas).
+- Volumen: <linearGradient>/<radialGradient> en <defs> (claro arriba, oscuro abajo), una línea de brillo clara y fina en el
+  borde superior de cada cuerpo, brillo blanco en ojos y gotas, sombras proyectadas suaves (elipse oscura con opacidad).
+- Profundidad: fondo en capas (lejos: colores claros y desaturados SIN contorno; cerca: con contorno), luz coherente.
+- Detalles que dan realismo: segmentos, texturas sencillas (escamas, venas, pelitos), reflejos en el agua, piedrecitas...
+- Trazos finos (patas, antenas): doble trazo, uno de tinta ancho debajo y el color encima, para que tengan contorno.
+- Paleta realista para el tema (agua #8FD3FF→#2F7FD6, vegetación #36B37E/#7BE07B, tierra #E7C487...) y marca solo para
+  resaltar: lima #C8FF2E (flechas, etiquetas), coral #FF5A36 (peligro, calor, fuerza).
+- Protagonista grande y centrado, nada importante a menos de 40 unidades del borde (el panel recorta un poco arriba y abajo),
+  esquina superior izquierda (0-340 × 0-70) libre para el rótulo "Fig.". Sin filtros, sin imágenes, sin <script>, sin enlaces.
+- Haz 3-4 SVG por vídeo: la escena general + vistas de detalle o esquemas del truco (cortes, vista al microscopio, vista
+  desde arriba, moléculas...). Etiquetas: <g id="..."><rect rx="12" .../><text font-family="JetBrains Mono"
+  font-weight="800" font-size="30" text-anchor="middle">TEXTO</text></g>, MAYÚSCULAS, cortas, con línea guía hasta lo que
+  señalan; NUNCA tapan al protagonista ni se solapan entre sí ni con flechas.
+- Todo lo que se anima va en un <g id="nombre"> propio (ids en minúscula, sin espacios). Los <defs>/<use> están permitidos.
 
-ANIMACIONES (anims): {"target": id, "effect", "trigger"?, "dur"?, "to"?: [dx, dy], "rotate"?, "amount"?, "origin"?, "sfx"?}
+ANIMACIONES (anims): {"target": id, "effect", "trigger"?, "dur"?, "to"?: [dx, dy], "rotate"?, "amount"?, "origin"?, "phase"?, "sfx"?}
 - Entradas (empiezan ocultas hasta su trigger): pop, fade, draw (trazos que se dibujan: chorros, flechas, rayos), grow, slide-left/right/up/down.
 - Bucles (sin trigger = desde el inicio de la escena): float, bob, sway (origin bottom para plantas), spin, pulse, shake, wiggle,
-  flow (agua que corre en trazos), blink.
-- Acciones: move (to: desplazamiento en unidades del viewBox, rotate: grados, origin: center|bottom|top|left|right|bottom-left|bottom-right|top-left|top-right = punto de giro de la caja del grupo, útil para bisagras), hide (desaparece; sin trigger = oculto toda la escena).
+  flow (agua que corre en trazos), blink, ripple (onda que se expande y se desvanece: pon 2 por punto con phase 0 y 0.5),
+  breathe (respiración sutil del cuerpo), drift (deriva lateral lenta).
+- Acciones: move (to: desplazamiento en unidades del viewBox, rotate: grados, origin: center|bottom|top|left|right|bottom-left|bottom-right|top-left|top-right = punto de giro de la caja del grupo, útil para bisagras; los move se suman), hide (desaparece; sin trigger = oculto toda la escena),
+  punch (golpe de énfasis: crece y vuelve, justo cuando la voz nombra esa parte).
+- CÁMARA: {"target": "camera", "effect": "zoom", "to": [x, y] del viewBox, "amount": 1.3-2, "trigger"?} acerca la cámara a ese
+  punto; con "amount": 1 vuelve al plano general. Úsala 1-2 veces por escena para enseñar el detalle del que se habla.
 - Cuando reutilices un SVG en otra escena, oculta con "hide" lo que no toque mostrar.
 - La ilustración debe verse COMPLETA desde el primer instante de la escena (nunca un panel vacío): usa entradas solo para
   detalles que se añaden (chorros, flechas, etiquetas, burbujas), no para el protagonista ni el fondo.
-- Da vida a todo: algo siempre se mueve, y lo importante ocurre justo cuando la voz lo dice (trigger).
+- RITMO MUY DINÁMICO: cada escena con ilustración lleva 6-12 anims; algo nuevo pasa cada 1-1,5 s (zoom, punch, etiqueta,
+  flecha, movimiento) siempre sincronizado con la palabra que lo dice, y siempre hay bucles de fondo (ondas, respiración, antenas).
 - Cada escena debe enseñar lo que dice la narración: si hablas de la lava, se ve la lava; no reutilices un dibujo que no encaja.
 - "sfx" opcional para el sonido del momento: whoosh, pop, papel, ding, sorpresa, sello, chasquido, chorro, burbujas, splash, boing, rotulador, brillo, none.
 
@@ -331,7 +347,10 @@ def validate(script: dict) -> tuple[list[str], list[str]]:
                 ids = _ids(svgs[name])
                 good = []
                 for a in ill.get("anims", []):
-                    if a.get("target") not in ids or a.get("effect") not in EFFECTS:
+                    if a.get("target") == "camera":
+                        if a.get("effect") != "zoom":
+                            continue
+                    elif a.get("target") not in ids or a.get("effect") not in EFFECTS:
                         warnings.append(f"Escena {i}: animación inválida {a.get('target')}/{a.get('effect')} (se quita).")
                         continue
                     fix_trigger(a, f"anim {a['target']}")

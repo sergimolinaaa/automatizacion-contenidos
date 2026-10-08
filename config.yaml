@@ -30,7 +30,7 @@ video:
 voice:
   # Voces gratuitas de Microsoft Edge TTS. Lista: `edge-tts --list-voices`
   name: "es-ES-XimenaNeural"
-  rate: "+8%"
+  rate: "+14%"
   pitch: "-4Hz"
 
 claude:
