@@ -1,0 +1,51 @@
+[
+  {
+    "voice": "es-ES-XimenaNeural",
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "label": "natural",
+    "file": "es-ES-XimenaNeural_natural_vel+0%_tono+0Hz.mp3"
+  },
+  {
+    "voice": "es-ES-XimenaNeural",
+    "rate": "+8%",
+    "pitch": "+0Hz",
+    "label": "agil",
+    "file": "es-ES-XimenaNeural_agil_vel+8%_tono+0Hz.mp3"
+  },
+  {
+    "voice": "es-ES-XimenaNeural",
+    "rate": "+14%",
+    "pitch": "+0Hz",
+    "label": "rapida",
+    "file": "es-ES-XimenaNeural_rapida_vel+14%_tono+0Hz.mp3"
+  },
+  {
+    "voice": "es-ES-XimenaNeural",
+    "rate": "+8%",
+    "pitch": "-4Hz",
+    "label": "agil-grave",
+    "file": "es-ES-XimenaNeural_agil-grave_vel+8%_tono-4Hz.mp3"
+  },
+  {
+    "voice": "es-ES-XimenaNeural",
+    "rate": "+8%",
+    "pitch": "+4Hz",
+    "label": "agil-aguda",
+    "file": "es-ES-XimenaNeural_agil-aguda_vel+8%_tono+4Hz.mp3"
+  },
+  {
+    "voice": "es-ES-XimenaNeural",
+    "rate": "+12%",
+    "pitch": "+2Hz",
+    "label": "energica",
+    "file": "es-ES-XimenaNeural_energica_vel+12%_tono+2Hz.mp3"
+  },
+  {
+    "voice": "es-ES-XimenaNeural",
+    "rate": "+4%",
+    "pitch": "-2Hz",
+    "label": "calmada",
+    "file": "es-ES-XimenaNeural_calmada_vel+4%_tono-2Hz.mp3"
+  }
+]
