@@ -5,6 +5,8 @@ name: Programar en Buffer
 # Secretos: BUFFER_API_KEY, MEDIA_TOKEN (token con escritura en el repo público de vídeos).
 # Variable: MEDIA_REPO (p. ej. "usuario/eltrucoes-videos").
 on:
+  schedule:
+    - cron: "37 */2 * * *"   # cada 2 horas rellena la cola de Buffer (máx. 8 por canal)
   workflow_dispatch:
     inputs:
       n:

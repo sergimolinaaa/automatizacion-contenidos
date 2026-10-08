@@ -22,6 +22,7 @@ API = "https://api.buffer.com"
 STATE = ROOT / "data" / "publicaciones.json"
 PREVIEWS = ROOT / "previews"
 INTERVAL = timedelta(hours=2)
+MAX_QUEUE = 8  # publicaciones futuras por canal (el plan de Buffer permite 10)
 CATEGORY_ORDER = ["animales", "plantas", "fisica", "cuerpo", "tierra"]
 
 
@@ -191,13 +192,23 @@ def schedule_all(limit: int | None = None) -> list[dict]:
     last = max((datetime.fromisoformat(p["due"]) for p in state["posts"]), default=None)
     due = max(now + timedelta(minutes=30), (last + INTERVAL) if last else now)
     due = due.replace(minute=0, second=0, microsecond=0) + (timedelta(hours=1) if due.minute else timedelta())
+    future = sum(1 for p in state["posts"] if datetime.fromisoformat(p["due"]) > now)
+    room = max(0, MAX_QUEUE - future)
+    limit = room if limit is None else min(limit, room)
+    print(f"En cola: {future} · hueco para {room} · se programan {limit}")
     scheduled = []
     for item in pending_videos(state)[:limit]:
         url = host_video(item["slug"], item["video"], item["cover"])
         meta = {"title": item["script"]["title"]}
         posts = {}
         for ch in chans:
-            post = create_post(ch, caption(item["script"], ch["service"]), url, due, meta, item["thumb_ms"])
+            try:
+                post = create_post(ch, caption(item["script"], ch["service"]), url, due, meta, item["thumb_ms"])
+            except RuntimeError as e:
+                if "limit reached" in str(e) and not posts:
+                    print(f"  Buffer está lleno ({e}); se reintentará en la próxima ejecución.")
+                    return scheduled
+                raise
             posts[ch["service"]] = post["id"]
             print(f"  {item['slug']} → {ch['service']} a las {due:%d/%m %H:%M} UTC")
         entry = {"slug": item["slug"], "category": item["category"], "due": due.isoformat(), "url": url, "posts": posts}
