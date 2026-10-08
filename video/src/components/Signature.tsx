@@ -45,7 +45,7 @@ export const Signature: React.FC<{ start: number; end: number }> = ({ start, end
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 50, paddingTop: 110, opacity: out, transform: `translateX(${shake}px)` }}>
       <Wordmark size={128} f={f} />
-      <Mascot pose="think" toward={1} look="up" talking={0} poseFrame={f} scale={1.15} />
+      <Mascot pose="explain" toward={1} look="center" talking={0} poseFrame={f} scale={1.15} />
     </div>
   );
 };

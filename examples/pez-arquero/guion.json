@@ -2,8 +2,14 @@
   "topic": "El pez arquero caza insectos disparando chorros de agua",
   "title": "Este pez caza a escupitajos 🎯💦",
   "source": "Fuente: Toxotes (pez arquero) · Wikipedia / estudios de comportamiento",
-  "chapters": ["?", "1", "2", "3", "TÚ"],
-  "outro_cta": "Lo increíble, explicado",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "TÚ"
+  ],
+  "outro_cta": "La naturaleza tiene trucos",
   "scenes": [
     {
       "chapter": 0,
@@ -13,24 +19,64 @@
         "svg_file": "escena.svg",
         "caption": "Fig. 1 · Pez arquero",
         "anims": [
-          {"target": "waves", "effect": "flow", "amount": 0.6},
-          {"target": "weed1", "effect": "sway", "origin": "bottom"},
-          {"target": "weed2", "effect": "sway", "origin": "bottom", "amount": 1.4},
-          {"target": "fish", "effect": "float"},
-          {"target": "bubbles", "effect": "float", "amount": 2},
-          {"target": "bug", "effect": "wiggle", "amount": 0.5},
-          {"target": "sight", "effect": "hide"},
-          {"target": "splash", "effect": "hide"},
-          {"target": "drops", "effect": "pop", "trigger": "escupitajos", "delay": 0},
-          {"target": "jet", "effect": "draw", "trigger": "escupitajos", "dur": 0.35}
+          {
+            "target": "waves",
+            "effect": "flow",
+            "amount": 0.6
+          },
+          {
+            "target": "weed1",
+            "effect": "sway",
+            "origin": "bottom"
+          },
+          {
+            "target": "weed2",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 1.4
+          },
+          {
+            "target": "fish",
+            "effect": "float"
+          },
+          {
+            "target": "bubbles",
+            "effect": "float",
+            "amount": 2
+          },
+          {
+            "target": "bug",
+            "effect": "wiggle",
+            "amount": 0.5
+          },
+          {
+            "target": "sight",
+            "effect": "hide"
+          },
+          {
+            "target": "splash",
+            "effect": "hide"
+          },
+          {
+            "target": "drops",
+            "effect": "pop",
+            "trigger": "escupitajos",
+            "delay": 0
+          },
+          {
+            "target": "jet",
+            "effect": "draw",
+            "trigger": "escupitajos",
+            "dur": 0.35
+          }
         ]
       }
     },
     {
       "chapter": 0,
       "signature": true,
-      "headline": "¿Y eso cómo?",
-      "narration": "¿Y eso cómo?"
+      "headline": "El truco es…",
+      "narration": "¿Cómo lo hace? El truco es…"
     },
     {
       "chapter": 1,
@@ -41,22 +87,75 @@
         "svg_file": "escena.svg",
         "caption": "Fig. 2 · Apuntando",
         "anims": [
-          {"target": "waves", "effect": "flow", "amount": 0.6},
-          {"target": "weed1", "effect": "sway", "origin": "bottom"},
-          {"target": "weed2", "effect": "sway", "origin": "bottom", "amount": 1.4},
-          {"target": "fish", "effect": "float"},
-          {"target": "bubbles", "effect": "float", "amount": 2},
-          {"target": "bug", "effect": "wiggle", "amount": 0.5},
-          {"target": "jet", "effect": "hide"},
-          {"target": "drops", "effect": "hide"},
-          {"target": "splash", "effect": "hide"},
-          {"target": "eye", "effect": "pulse", "trigger": "Ve", "amount": 2.5},
-          {"target": "sight", "effect": "draw", "trigger": "presa", "dur": 0.6},
-          {"target": "bug", "effect": "pulse", "trigger": "hoja", "amount": 1.5}
+          {
+            "target": "waves",
+            "effect": "flow",
+            "amount": 0.6
+          },
+          {
+            "target": "weed1",
+            "effect": "sway",
+            "origin": "bottom"
+          },
+          {
+            "target": "weed2",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 1.4
+          },
+          {
+            "target": "fish",
+            "effect": "float"
+          },
+          {
+            "target": "bubbles",
+            "effect": "float",
+            "amount": 2
+          },
+          {
+            "target": "bug",
+            "effect": "wiggle",
+            "amount": 0.5
+          },
+          {
+            "target": "jet",
+            "effect": "hide"
+          },
+          {
+            "target": "drops",
+            "effect": "hide"
+          },
+          {
+            "target": "splash",
+            "effect": "hide"
+          },
+          {
+            "target": "eye",
+            "effect": "pulse",
+            "trigger": "Ve",
+            "amount": 2.5
+          },
+          {
+            "target": "sight",
+            "effect": "draw",
+            "trigger": "presa",
+            "dur": 0.6
+          },
+          {
+            "target": "bug",
+            "effect": "pulse",
+            "trigger": "hoja",
+            "amount": 1.5
+          }
         ]
       },
       "elements": [
-        {"type": "tag", "text": "Pez arquero", "tone": "accent", "trigger": "arquero"}
+        {
+          "type": "tag",
+          "text": "Pez arquero",
+          "tone": "accent",
+          "trigger": "arquero"
+        }
       ]
     },
     {
@@ -68,19 +167,77 @@
         "svg_file": "boca.svg",
         "caption": "Fig. 3 · Corte de la boca",
         "anims": [
-          {"target": "l2", "effect": "pop", "trigger": "paladar"},
-          {"target": "groove", "effect": "pulse", "trigger": "surco", "amount": 0.5},
-          {"target": "l1", "effect": "pop", "trigger": "lengua"},
-          {"target": "tongue", "effect": "move", "to": [0, -18], "trigger": "Pega"},
-          {"target": "tube", "effect": "draw", "trigger": "tubo", "dur": 0.5},
-          {"target": "l3", "effect": "pop", "trigger": "branquias"},
-          {"target": "press", "effect": "slide-right", "trigger": "cierra"},
-          {"target": "gill", "effect": "move", "to": [-40, 0], "trigger": "golpe", "dur": 0.25},
-          {"target": "jet2", "effect": "draw", "trigger": "disparada", "dur": 0.3},
-          {"target": "jet2", "effect": "shake", "trigger": "disparada", "amount": 0.6}
+          {
+            "target": "l2",
+            "effect": "pop",
+            "trigger": "paladar"
+          },
+          {
+            "target": "groove",
+            "effect": "pulse",
+            "trigger": "surco",
+            "amount": 0.5
+          },
+          {
+            "target": "l1",
+            "effect": "pop",
+            "trigger": "lengua"
+          },
+          {
+            "target": "tongue",
+            "effect": "move",
+            "to": [
+              0,
+              -18
+            ],
+            "trigger": "Pega"
+          },
+          {
+            "target": "tube",
+            "effect": "draw",
+            "trigger": "tubo",
+            "dur": 0.5
+          },
+          {
+            "target": "l3",
+            "effect": "pop",
+            "trigger": "branquias"
+          },
+          {
+            "target": "press",
+            "effect": "slide-right",
+            "trigger": "cierra"
+          },
+          {
+            "target": "gill",
+            "effect": "move",
+            "to": [
+              -40,
+              0
+            ],
+            "trigger": "golpe",
+            "dur": 0.25
+          },
+          {
+            "target": "jet2",
+            "effect": "draw",
+            "trigger": "disparada",
+            "dur": 0.3
+          },
+          {
+            "target": "jet2",
+            "effect": "shake",
+            "trigger": "disparada",
+            "amount": 0.6
+          }
         ]
       },
-      "mascot": {"trigger": "branquias", "pose": "explain", "note": "Como apretar una jeringuilla", "side": "right"}
+      "mascot": {
+        "trigger": "branquias",
+        "pose": "explain",
+        "note": "Como apretar una jeringuilla",
+        "side": "right"
+      }
     },
     {
       "chapter": 3,
@@ -91,17 +248,51 @@
         "svg_file": "luz.svg",
         "caption": "Fig. 4 · Refracción",
         "anims": [
-          {"target": "fish2", "effect": "float"},
-          {"target": "ray", "effect": "draw", "trigger": "refracción", "dur": 0.8},
-          {"target": "ghost", "effect": "fade", "trigger": "parece"},
-          {"target": "fake", "effect": "fade", "trigger": "parece"},
-          {"target": "lg", "effect": "pop", "trigger": "parece"},
-          {"target": "lr", "effect": "pop", "trigger": "está"},
-          {"target": "real", "effect": "pulse", "trigger": "está", "amount": 1.5}
+          {
+            "target": "fish2",
+            "effect": "float"
+          },
+          {
+            "target": "ray",
+            "effect": "draw",
+            "trigger": "refracción",
+            "dur": 0.8
+          },
+          {
+            "target": "ghost",
+            "effect": "fade",
+            "trigger": "parece"
+          },
+          {
+            "target": "fake",
+            "effect": "fade",
+            "trigger": "parece"
+          },
+          {
+            "target": "lg",
+            "effect": "pop",
+            "trigger": "parece"
+          },
+          {
+            "target": "lr",
+            "effect": "pop",
+            "trigger": "está"
+          },
+          {
+            "target": "real",
+            "effect": "pulse",
+            "trigger": "está",
+            "amount": 1.5
+          }
         ]
       },
       "elements": [
-        {"type": "tag", "text": "Refracción", "tone": "ink", "trigger": "refracción"}
+        {
+          "type": "tag",
+          "text": "Refracción",
+          "tone": "ink",
+          "trigger": "refracción"
+        }
       ]
     },
     {
@@ -113,23 +304,91 @@
         "svg_file": "escena.svg",
         "caption": "Fig. 5 · Impacto",
         "anims": [
-          {"target": "waves", "effect": "flow", "amount": 0.6},
-          {"target": "weed1", "effect": "sway", "origin": "bottom"},
-          {"target": "weed2", "effect": "sway", "origin": "bottom", "amount": 1.4},
-          {"target": "fish", "effect": "float"},
-          {"target": "sight", "effect": "hide"},
-          {"target": "jet", "effect": "draw", "trigger": "Acierta", "dur": 0.3},
-          {"target": "drops", "effect": "pop", "trigger": "Acierta"},
-          {"target": "jet", "effect": "hide", "trigger": "insecto"},
-          {"target": "drops", "effect": "hide", "trigger": "insecto"},
-          {"target": "bug", "effect": "move", "to": [-20, 215], "rotate": 160, "trigger": "cae", "dur": 0.5},
-          {"target": "splash", "effect": "pop", "trigger": "pez"},
-          {"target": "fish", "effect": "move", "to": [-150, -40], "trigger": "come", "dur": 0.4},
-          {"target": "bug", "effect": "hide", "trigger": "come"}
+          {
+            "target": "waves",
+            "effect": "flow",
+            "amount": 0.6
+          },
+          {
+            "target": "weed1",
+            "effect": "sway",
+            "origin": "bottom"
+          },
+          {
+            "target": "weed2",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 1.4
+          },
+          {
+            "target": "fish",
+            "effect": "float"
+          },
+          {
+            "target": "sight",
+            "effect": "hide"
+          },
+          {
+            "target": "jet",
+            "effect": "draw",
+            "trigger": "Acierta",
+            "dur": 0.3
+          },
+          {
+            "target": "drops",
+            "effect": "pop",
+            "trigger": "Acierta"
+          },
+          {
+            "target": "jet",
+            "effect": "hide",
+            "trigger": "insecto"
+          },
+          {
+            "target": "drops",
+            "effect": "hide",
+            "trigger": "insecto"
+          },
+          {
+            "target": "bug",
+            "effect": "move",
+            "to": [
+              -20,
+              215
+            ],
+            "rotate": 160,
+            "trigger": "cae",
+            "dur": 0.5
+          },
+          {
+            "target": "splash",
+            "effect": "pop",
+            "trigger": "pez"
+          },
+          {
+            "target": "fish",
+            "effect": "move",
+            "to": [
+              -150,
+              -40
+            ],
+            "trigger": "come",
+            "dur": 0.4
+          },
+          {
+            "target": "bug",
+            "effect": "hide",
+            "trigger": "come"
+          }
         ]
       },
       "elements": [
-        {"type": "stamp", "text": "¡Plaf!", "tone": "accent", "trigger": "cae"}
+        {
+          "type": "stamp",
+          "text": "¡Plaf!",
+          "tone": "accent",
+          "trigger": "cae"
+        }
       ]
     },
     {
@@ -137,13 +396,32 @@
       "number": "TÚ",
       "headline": "¿Qué te *flipa* más?",
       "narration": "¿Qué te flipa más? Uno, su pistola de agua. Dos, que corrija la luz. Tres, su puntería. Escríbelo en comentarios.",
-      "mascot": {"trigger": "Escríbelo", "pose": "wave", "note": "¡Te leo!", "side": "right"},
+      "mascot": {
+        "trigger": "Escríbelo",
+        "pose": "wave",
+        "note": "¡Te leo!",
+        "side": "right"
+      },
       "elements": [
-        {"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
-          {"text": "Pistola de agua", "trigger": "Uno"},
-          {"text": "Corregir la luz", "trigger": "Dos"},
-          {"text": "Su puntería", "trigger": "Tres"}
-        ]}
+        {
+          "type": "quiz",
+          "trigger": "Uno",
+          "footer": "Escribe 1, 2 o 3 en comentarios",
+          "options": [
+            {
+              "text": "Pistola de agua",
+              "trigger": "Uno"
+            },
+            {
+              "text": "Corregir la luz",
+              "trigger": "Dos"
+            },
+            {
+              "text": "Su puntería",
+              "trigger": "Tres"
+            }
+          ]
+        }
       ]
     }
   ]

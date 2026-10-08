@@ -1,0 +1,30 @@
+name: Muestras de voz
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/voice_samples.py
+      - .github/workflows/voces.yml
+
+permissions:
+  contents: write
+
+jobs:
+  muestras:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install edge-tts
+      - run: python scripts/voice_samples.py previews/voces
+      - name: Guardar las muestras en la rama
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add previews/voces
+          git commit -m "Muestras de voz de Edge TTS" || echo "Sin cambios"
+          git push
