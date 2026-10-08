@@ -1,0 +1,114 @@
+{
+  "topic": "Doblar un folio 42 veces llegaría a la Luna",
+  "title": "¿Un folio hasta la Luna? 📄🌕",
+  "source": "Cálculo: 0,1 mm × 2⁴² · Distancia Tierra-Luna: NASA",
+  "chapters": ["?", "1", "2", "3", "!", "TÚ"],
+  "outro_cta": "Ciencia que no te contaron",
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Un folio hasta *la Luna*",
+      "narration": "Si doblas un folio 42 veces, llegas a la Luna.",
+      "mascot": {"pose": "surprise", "side": "right"},
+      "elements": [
+        {"type": "icon", "icon": "paper", "label": "1 folio", "trigger": "folio"},
+        {"type": "icon", "icon": "moon", "label": "La Luna", "trigger": "Luna"}
+      ]
+    },
+    {
+      "chapter": 0,
+      "headline": "¿Cómo es *posible*?",
+      "narration": "Parece imposible. Pero son matemáticas.",
+      "mascot": {"pose": "think", "look": "up"},
+      "elements": [
+        {"type": "stamp", "text": "Mates", "tone": "accent", "trigger": "matemáticas"}
+      ]
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Empieza *fino*",
+      "narration": "Un folio mide una décima de milímetro.",
+      "mascot": {"pose": "point", "side": "right"},
+      "elements": [
+        {"type": "stat", "label": "Grosor de un folio", "value": 0.1, "decimals": 1, "unit": "mm", "trigger": "mide"},
+        {"type": "tag", "text": "casi nada", "tone": "accent", "trigger": "décima"}
+      ]
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Cada doblez *duplica*",
+      "narration": "Cada vez que lo doblas, el grosor se duplica.",
+      "mascot": {"pose": "explain", "side": "right"},
+      "elements": [
+        {"type": "list", "label": "Grosor", "trigger": "doblas", "items": [
+          {"text": "1 doblez → 0,2 mm"},
+          {"text": "2 → 0,4 mm"},
+          {"text": "3 → 0,8 mm", "trigger": "duplica"}
+        ]}
+      ]
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Crece *muy rápido*",
+      "narration": "Con 10 dobleces mide 10 centímetros. Con 20, más de 100 metros.",
+      "mascot": {"pose": "point", "side": "right"},
+      "elements": [
+        {"type": "compare", "label": "Altura del papel", "log": true, "trigger": "Con", "rows": [
+          {"label": "10 dobleces", "value": 10, "display": "10 cm", "trigger": "10"},
+          {"label": "20 dobleces", "value": 10486, "display": "105 m", "trigger": "20"}
+        ]},
+        {"type": "tag", "text": "×1.024", "tone": "ink", "trigger": "metros"}
+      ]
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Hasta *el espacio*",
+      "narration": "Con 30 dobleces, superas los 100 kilómetros: ya estás en el espacio.",
+      "mascot": {"pose": "cheer", "side": "left"},
+      "elements": [
+        {"type": "stat", "label": "30 dobleces", "value": 107, "from": 0, "unit": "km", "note": "La línea del espacio: 100 km", "trigger": "superas"},
+        {"type": "icon", "icon": "rocket", "label": "Espacio", "trigger": "espacio"}
+      ]
+    },
+    {
+      "chapter": 4,
+      "number": "!",
+      "headline": "Y con *42*...",
+      "narration": "Y con 42, unos 440.000 kilómetros. Más que la distancia a la Luna.",
+      "mascot": {"pose": "surprise", "side": "right"},
+      "elements": [
+        {"type": "stat", "label": "42 dobleces", "value": 439805, "from": 0, "unit": "km", "trigger": "unos"},
+        {"type": "scale", "label": "Tierra → Luna (384.400 km)", "from": "Tierra", "to": "Luna", "progress": 1, "marker": "¡LLEGA!", "trigger": "distancia"}
+      ]
+    },
+    {
+      "chapter": 4,
+      "number": "!",
+      "headline": "Pero *ojo*",
+      "narration": "Eso sí: con un folio normal, casi nadie pasa de 7 dobleces.",
+      "mascot": {"pose": "think", "side": "right"},
+      "elements": [
+        {"type": "stat", "label": "Dobleces reales con un folio", "value": 7, "from": 0, "trigger": "nadie"},
+        {"type": "stamp", "text": "Límite", "tone": "hot", "trigger": "dobleces"}
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "¿Qué te *flipa* más?",
+      "narration": "¿Qué te flipa más? Uno, el espacio. Dos, la Luna. Tres, el límite de 7. Escríbelo en comentarios.",
+      "mascot": {"pose": "point", "side": "right"},
+      "elements": [
+        {"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
+          {"text": "El espacio", "trigger": "Uno"},
+          {"text": "La Luna", "trigger": "Dos"},
+          {"text": "El límite", "trigger": "Tres"}
+        ]}
+      ]
+    }
+  ]
+}

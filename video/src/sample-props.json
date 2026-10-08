@@ -1,0 +1,768 @@
+{
+ "source": "Cálculo: 0,1 mm × 2⁴² · Distancia Tierra-Luna: NASA",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "!",
+  "TÚ"
+ ],
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 4.825,
+   "chapter": 0,
+   "number": null,
+   "headline": "Un folio hasta *la Luna*",
+   "mascot": {
+    "pose": "surprise",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "icon",
+     "icon": "paper",
+     "label": "1 folio",
+     "at": 1.28
+    },
+    {
+     "type": "icon",
+     "icon": "moon",
+     "label": "La Luna",
+     "at": 4.065
+    }
+   ]
+  },
+  {
+   "start": 4.825,
+   "end": 8.67,
+   "chapter": 0,
+   "number": null,
+   "headline": "¿Cómo es *posible*?",
+   "mascot": {
+    "pose": "think",
+    "look": "up"
+   },
+   "elements": [
+    {
+     "type": "stamp",
+     "text": "Mates",
+     "tone": "accent",
+     "at": 7.385
+    }
+   ]
+  },
+  {
+   "start": 8.67,
+   "end": 12.435,
+   "chapter": 1,
+   "number": "1",
+   "headline": "Empieza *fino*",
+   "mascot": {
+    "pose": "point",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "stat",
+     "label": "Grosor de un folio",
+     "value": 0.1,
+     "decimals": 1,
+     "unit": "mm",
+     "at": 9.535
+    },
+    {
+     "type": "tag",
+     "text": "casi nada",
+     "tone": "accent",
+     "at": 10.38
+    }
+   ]
+  },
+  {
+   "start": 12.435,
+   "end": 17.07,
+   "chapter": 1,
+   "number": "1",
+   "headline": "Cada doblez *duplica*",
+   "mascot": {
+    "pose": "explain",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "list",
+     "label": "Grosor",
+     "items": [
+      {
+       "text": "1 doblez → 0,2 mm"
+      },
+      {
+       "text": "2 → 0,4 mm"
+      },
+      {
+       "text": "3 → 0,8 mm",
+       "at": 16.085
+      }
+     ],
+     "at": 13.995
+    }
+   ]
+  },
+  {
+   "start": 17.07,
+   "end": 23.485,
+   "chapter": 2,
+   "number": "2",
+   "headline": "Crece *muy rápido*",
+   "mascot": {
+    "pose": "point",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "compare",
+     "label": "Altura del papel",
+     "log": true,
+     "rows": [
+      {
+       "label": "10 dobleces",
+       "value": 10,
+       "display": "10 cm",
+       "at": 17.475
+      },
+      {
+       "label": "20 dobleces",
+       "value": 10486,
+       "display": "105 m",
+       "at": 20.935
+      }
+     ],
+     "at": 17.09
+    },
+    {
+     "type": "tag",
+     "text": "×1.024",
+     "tone": "ink",
+     "at": 22.575
+    }
+   ]
+  },
+  {
+   "start": 23.485,
+   "end": 30.275,
+   "chapter": 3,
+   "number": "3",
+   "headline": "Hasta *el espacio*",
+   "mascot": {
+    "pose": "cheer",
+    "side": "left"
+   },
+   "elements": [
+    {
+     "type": "stat",
+     "label": "30 dobleces",
+     "value": 107,
+     "from": 0,
+     "unit": "km",
+     "note": "La línea del espacio: 100 km",
+     "at": 25.21
+    },
+    {
+     "type": "icon",
+     "icon": "rocket",
+     "label": "Espacio",
+     "at": 29.29
+    }
+   ]
+  },
+  {
+   "start": 30.275,
+   "end": 36.925,
+   "chapter": 4,
+   "number": "!",
+   "headline": "Y con *42*...",
+   "mascot": {
+    "pose": "surprise",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "stat",
+     "label": "42 dobleces",
+     "value": 439805,
+     "from": 0,
+     "unit": "km",
+     "at": 31.475
+    },
+    {
+     "type": "scale",
+     "label": "Tierra → Luna (384.400 km)",
+     "from": "Tierra",
+     "to": "Luna",
+     "progress": 1,
+     "marker": "¡LLEGA!",
+     "at": 34.785
+    }
+   ]
+  },
+  {
+   "start": 36.925,
+   "end": 43.04,
+   "chapter": 4,
+   "number": "!",
+   "headline": "Pero *ojo*",
+   "mascot": {
+    "pose": "think",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "stat",
+     "label": "Dobleces reales con un folio",
+     "value": 7,
+     "from": 0,
+     "at": 40.44
+    },
+    {
+     "type": "stamp",
+     "text": "Límite",
+     "tone": "hot",
+     "at": 41.98
+    }
+   ]
+  },
+  {
+   "start": 43.04,
+   "end": 53.585,
+   "chapter": 5,
+   "number": "TÚ",
+   "headline": "¿Qué te *flipa* más?",
+   "mascot": {
+    "pose": "point",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "quiz",
+     "footer": "Escribe 1, 2 o 3 en comentarios",
+     "options": [
+      {
+       "text": "El espacio",
+       "at": 44.925
+      },
+      {
+       "text": "La Luna",
+       "at": 46.805
+      },
+      {
+       "text": "El límite",
+       "at": 48.46
+      }
+     ],
+     "at": 44.925
+    }
+   ]
+  }
+ ],
+ "words": [
+  {
+   "text": "Si",
+   "start": 0.15,
+   "end": 0.43
+  },
+  {
+   "text": "doblas",
+   "start": 0.46,
+   "end": 1.04
+  },
+  {
+   "text": "un",
+   "start": 1.07,
+   "end": 1.35
+  },
+  {
+   "text": "folio",
+   "start": 1.38,
+   "end": 1.885
+  },
+  {
+   "text": "42",
+   "start": 1.915,
+   "end": 2.195
+  },
+  {
+   "text": "veces,",
+   "start": 2.225,
+   "end": 2.73
+  },
+  {
+   "text": "llegas",
+   "start": 3.01,
+   "end": 3.59
+  },
+  {
+   "text": "a",
+   "start": 3.62,
+   "end": 3.825
+  },
+  {
+   "text": "la",
+   "start": 3.855,
+   "end": 4.135
+  },
+  {
+   "text": "Luna.",
+   "start": 4.165,
+   "end": 4.595
+  },
+  {
+   "text": "Parece",
+   "start": 4.945,
+   "end": 5.525
+  },
+  {
+   "text": "imposible.",
+   "start": 5.555,
+   "end": 6.36
+  },
+  {
+   "text": "Pero",
+   "start": 6.64,
+   "end": 7.07
+  },
+  {
+   "text": "son",
+   "start": 7.1,
+   "end": 7.455
+  },
+  {
+   "text": "matemáticas.",
+   "start": 7.485,
+   "end": 8.44
+  },
+  {
+   "text": "Un",
+   "start": 8.79,
+   "end": 9.07
+  },
+  {
+   "text": "folio",
+   "start": 9.1,
+   "end": 9.605
+  },
+  {
+   "text": "mide",
+   "start": 9.635,
+   "end": 10.065
+  },
+  {
+   "text": "una",
+   "start": 10.095,
+   "end": 10.45
+  },
+  {
+   "text": "décima",
+   "start": 10.48,
+   "end": 11.06
+  },
+  {
+   "text": "de",
+   "start": 11.09,
+   "end": 11.37
+  },
+  {
+   "text": "milímetro.",
+   "start": 11.4,
+   "end": 12.205
+  },
+  {
+   "text": "Cada",
+   "start": 12.555,
+   "end": 12.985
+  },
+  {
+   "text": "vez",
+   "start": 13.015,
+   "end": 13.37
+  },
+  {
+   "text": "que",
+   "start": 13.4,
+   "end": 13.755
+  },
+  {
+   "text": "lo",
+   "start": 13.785,
+   "end": 14.065
+  },
+  {
+   "text": "doblas,",
+   "start": 14.095,
+   "end": 14.675
+  },
+  {
+   "text": "el",
+   "start": 14.955,
+   "end": 15.235
+  },
+  {
+   "text": "grosor",
+   "start": 15.265,
+   "end": 15.845
+  },
+  {
+   "text": "se",
+   "start": 15.875,
+   "end": 16.155
+  },
+  {
+   "text": "duplica.",
+   "start": 16.185,
+   "end": 16.84
+  },
+  {
+   "text": "Con",
+   "start": 17.19,
+   "end": 17.545
+  },
+  {
+   "text": "10",
+   "start": 17.575,
+   "end": 17.855
+  },
+  {
+   "text": "dobleces",
+   "start": 17.885,
+   "end": 18.615
+  },
+  {
+   "text": "mide",
+   "start": 18.645,
+   "end": 19.075
+  },
+  {
+   "text": "10",
+   "start": 19.105,
+   "end": 19.385
+  },
+  {
+   "text": "centímetros.",
+   "start": 19.415,
+   "end": 20.37
+  },
+  {
+   "text": "Con",
+   "start": 20.65,
+   "end": 21.005
+  },
+  {
+   "text": "20,",
+   "start": 21.035,
+   "end": 21.315
+  },
+  {
+   "text": "más",
+   "start": 21.595,
+   "end": 21.95
+  },
+  {
+   "text": "de",
+   "start": 21.98,
+   "end": 22.26
+  },
+  {
+   "text": "100",
+   "start": 22.29,
+   "end": 22.645
+  },
+  {
+   "text": "metros.",
+   "start": 22.675,
+   "end": 23.255
+  },
+  {
+   "text": "Con",
+   "start": 23.605,
+   "end": 23.96
+  },
+  {
+   "text": "30",
+   "start": 23.99,
+   "end": 24.27
+  },
+  {
+   "text": "dobleces,",
+   "start": 24.3,
+   "end": 25.03
+  },
+  {
+   "text": "superas",
+   "start": 25.31,
+   "end": 25.965
+  },
+  {
+   "text": "los",
+   "start": 25.995,
+   "end": 26.35
+  },
+  {
+   "text": "100",
+   "start": 26.38,
+   "end": 26.735
+  },
+  {
+   "text": "kilómetros:",
+   "start": 26.765,
+   "end": 27.645
+  },
+  {
+   "text": "ya",
+   "start": 27.925,
+   "end": 28.205
+  },
+  {
+   "text": "estás",
+   "start": 28.235,
+   "end": 28.74
+  },
+  {
+   "text": "en",
+   "start": 28.77,
+   "end": 29.05
+  },
+  {
+   "text": "el",
+   "start": 29.08,
+   "end": 29.36
+  },
+  {
+   "text": "espacio.",
+   "start": 29.39,
+   "end": 30.045
+  },
+  {
+   "text": "Y",
+   "start": 30.395,
+   "end": 30.6
+  },
+  {
+   "text": "con",
+   "start": 30.63,
+   "end": 30.985
+  },
+  {
+   "text": "42,",
+   "start": 31.015,
+   "end": 31.295
+  },
+  {
+   "text": "unos",
+   "start": 31.575,
+   "end": 32.005
+  },
+  {
+   "text": "440.000",
+   "start": 32.035,
+   "end": 32.615
+  },
+  {
+   "text": "kilómetros.",
+   "start": 32.645,
+   "end": 33.525
+  },
+  {
+   "text": "Más",
+   "start": 33.805,
+   "end": 34.16
+  },
+  {
+   "text": "que",
+   "start": 34.19,
+   "end": 34.545
+  },
+  {
+   "text": "la",
+   "start": 34.575,
+   "end": 34.855
+  },
+  {
+   "text": "distancia",
+   "start": 34.885,
+   "end": 35.69
+  },
+  {
+   "text": "a",
+   "start": 35.72,
+   "end": 35.925
+  },
+  {
+   "text": "la",
+   "start": 35.955,
+   "end": 36.235
+  },
+  {
+   "text": "Luna.",
+   "start": 36.265,
+   "end": 36.695
+  },
+  {
+   "text": "Eso",
+   "start": 37.045,
+   "end": 37.4
+  },
+  {
+   "text": "sí:",
+   "start": 37.43,
+   "end": 37.71
+  },
+  {
+   "text": "con",
+   "start": 37.99,
+   "end": 38.345
+  },
+  {
+   "text": "un",
+   "start": 38.375,
+   "end": 38.655
+  },
+  {
+   "text": "folio",
+   "start": 38.685,
+   "end": 39.19
+  },
+  {
+   "text": "normal,",
+   "start": 39.22,
+   "end": 39.8
+  },
+  {
+   "text": "casi",
+   "start": 40.08,
+   "end": 40.51
+  },
+  {
+   "text": "nadie",
+   "start": 40.54,
+   "end": 41.045
+  },
+  {
+   "text": "pasa",
+   "start": 41.075,
+   "end": 41.505
+  },
+  {
+   "text": "de",
+   "start": 41.535,
+   "end": 41.815
+  },
+  {
+   "text": "7",
+   "start": 41.845,
+   "end": 42.05
+  },
+  {
+   "text": "dobleces.",
+   "start": 42.08,
+   "end": 42.81
+  },
+  {
+   "text": "¿Qué",
+   "start": 43.16,
+   "end": 43.515
+  },
+  {
+   "text": "te",
+   "start": 43.545,
+   "end": 43.825
+  },
+  {
+   "text": "flipa",
+   "start": 43.855,
+   "end": 44.36
+  },
+  {
+   "text": "más?",
+   "start": 44.39,
+   "end": 44.745
+  },
+  {
+   "text": "Uno,",
+   "start": 45.025,
+   "end": 45.38
+  },
+  {
+   "text": "el",
+   "start": 45.66,
+   "end": 45.94
+  },
+  {
+   "text": "espacio.",
+   "start": 45.97,
+   "end": 46.625
+  },
+  {
+   "text": "Dos,",
+   "start": 46.905,
+   "end": 47.26
+  },
+  {
+   "text": "la",
+   "start": 47.54,
+   "end": 47.82
+  },
+  {
+   "text": "Luna.",
+   "start": 47.85,
+   "end": 48.28
+  },
+  {
+   "text": "Tres,",
+   "start": 48.56,
+   "end": 48.99
+  },
+  {
+   "text": "el",
+   "start": 49.27,
+   "end": 49.55
+  },
+  {
+   "text": "límite",
+   "start": 49.58,
+   "end": 50.16
+  },
+  {
+   "text": "de",
+   "start": 50.19,
+   "end": 50.47
+  },
+  {
+   "text": "7.",
+   "start": 50.5,
+   "end": 50.705
+  },
+  {
+   "text": "Escríbelo",
+   "start": 50.985,
+   "end": 51.79
+  },
+  {
+   "text": "en",
+   "start": 51.82,
+   "end": 52.1
+  },
+  {
+   "text": "comentarios.",
+   "start": 52.13,
+   "end": 53.085
+  }
+ ],
+ "audio": null,
+ "music": null,
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 53.585,
+  "cta": "Ciencia que no te contaron"
+ }
+}
