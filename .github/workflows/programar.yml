@@ -26,16 +26,19 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-      GH_TOKEN: ${{ secrets.MEDIA_TOKEN }}
-      MEDIA_REPO: ${{ vars.MEDIA_REPO }}
+      # Por defecto los vídeos se alojan en las releases de ESTE repo (debe ser público).
+      # Con un repo público aparte: variable MEDIA_REPO + secreto MEDIA_TOKEN.
+      GH_TOKEN: ${{ secrets.MEDIA_TOKEN || github.token }}
+      MEDIA_REPO: ${{ vars.MEDIA_REPO || github.repository }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
       - name: Comprobar credenciales
         run: |
           missing=""
           [ -z "$BUFFER_API_KEY" ] && missing="$missing BUFFER_API_KEY"
-          [ -z "$GH_TOKEN" ] && missing="$missing MEDIA_TOKEN"
-          [ -z "$MEDIA_REPO" ] && missing="$missing MEDIA_REPO"
+          vis=$(curl -s -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$MEDIA_REPO" | python3 -c "import sys,json; print(json.load(sys.stdin).get('visibility','?'))")
+          echo "Repo de vídeos: $MEDIA_REPO ($vis)"
+          [ "$vis" != "public" ] && missing="$missing REPO_PUBLICO($MEDIA_REPO es $vis)"
           [ -n "$ANTHROPIC_API_KEY" ] && echo "ANTHROPIC_API_KEY: configurada" || echo "ANTHROPIC_API_KEY: falta"
           if [ -n "$missing" ]; then
             echo "::warning::Faltan:$missing — no se programa nada."
