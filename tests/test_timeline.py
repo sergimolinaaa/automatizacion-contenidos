@@ -46,3 +46,17 @@ def test_triggers_map_to_word_times():
     assert s0["elements"][0]["at"] < s0["illustration"]["anims"][0]["at"]
     assert s1["mascot"]["at"] > s1["start"]
     assert props["outro"]["at"] == s1["end"]
+
+
+def test_generator_validator_accepts_examples_and_fixes_bad_triggers():
+    import json as _json
+
+    from autocontent import generate
+
+    script = _json.loads(generate._example())
+    script["scenes"][0]["illustration"]["anims"].append({"target": "fish", "effect": "pop", "trigger": "inexistente"})
+    script["scenes"][0]["illustration"]["anims"].append({"target": "no-existe", "effect": "pop"})
+    errors, warnings = generate.validate(script)
+    assert errors == []
+    assert any("inexistente" in w for w in warnings) and any("no-existe" in w for w in warnings)
+    assert script["scenes"][1]["signature"] is True

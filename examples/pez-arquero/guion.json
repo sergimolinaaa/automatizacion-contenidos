@@ -539,5 +539,22 @@
         }
       ]
     }
-  ]
+  ],
+  "cover": {
+    "text": "Este pez caza *a escupitajos*",
+    "badge": "¿CÓMO LO HACE?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Este pez derriba insectos… escupiéndoles agua 💦 Y encima corrige la refracción de la luz. ¿Cuál de sus trucos te parece más loco?",
+    "description": "El pez arquero caza insectos posados en hojas disparándoles chorros de agua desde debajo del agua. Su truco: forma un tubo con la lengua y el paladar y cierra las branquias de golpe. Además corrige la refracción de la luz para no fallar.",
+    "hashtags": [
+      "pezarquero",
+      "animales",
+      "naturaleza",
+      "ciencia",
+      "curiosidades",
+      "eltrucoes"
+    ]
+  }
 }

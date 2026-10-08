@@ -457,5 +457,22 @@
         }
       ]
     }
-  ]
+  ],
+  "cover": {
+    "text": "Este camarón *dispara*",
+    "badge": "¿CÓMO LO HACE?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Un camarón que caza con una burbuja casi tan caliente como la superficie del Sol 🦐💥 ¿Cuál de sus trucos te flipa más?",
+    "description": "El camarón pistola cierra su pinza tan rápido que crea una burbuja de cavitación. Al reventar suena como un disparo, aturde a sus presas y por dentro alcanza miles de grados. Fuentes: Versluis et al., Science (2000); Lohse et al., Nature (2001).",
+    "hashtags": [
+      "camaronpistola",
+      "animales",
+      "oceano",
+      "ciencia",
+      "curiosidades",
+      "eltrucoes"
+    ]
+  }
 }
