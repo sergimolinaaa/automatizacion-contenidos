@@ -1,7 +1,7 @@
 name: Programar en Buffer
 
 # Programa en Buffer (YouTube, Instagram y TikTok) los vídeos renderizados que aún no lo están,
-# uno cada 3 horas y alternando categorías. Se ejecuta tras cada render y también a mano.
+# uno cada 2 horas y alternando categorías. Se ejecuta tras cada render y también a mano.
 # Secretos: BUFFER_API_KEY, MEDIA_TOKEN (token con escritura en el repo público de vídeos).
 # Variable: MEDIA_REPO (p. ej. "usuario/eltrucoes-videos").
 on:

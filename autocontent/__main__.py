@@ -3,7 +3,7 @@
   python -m autocontent render CARPETA     # vídeo + portada de un guion
   python -m autocontent diario             # generar + render
   python -m autocontent canales            # lista los canales de Buffer
-  python -m autocontent programar [-n N]   # programa en Buffer los vídeos pendientes, uno cada 3 horas
+  python -m autocontent programar [-n N]   # programa en Buffer los vídeos pendientes, uno cada 2 horas
 """
 import argparse
 from pathlib import Path

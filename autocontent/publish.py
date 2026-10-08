@@ -1,4 +1,4 @@
-"""Programa los vídeos renderizados en Buffer (YouTube, Instagram y TikTok), uno cada 3 horas.
+"""Programa los vídeos renderizados en Buffer (YouTube, Instagram y TikTok), uno cada 2 horas.
 
 - Cada vídeo necesita una URL pública (la API de Buffer no admite subir archivos): se publica como
   asset de una release de GitHub en un repositorio PÚBLICO (MEDIA_REPO, p. ej. "usuario/eltrucoes-videos").
@@ -21,7 +21,7 @@ from .config import ROOT
 API = "https://api.buffer.com"
 STATE = ROOT / "data" / "publicaciones.json"
 PREVIEWS = ROOT / "previews"
-INTERVAL = timedelta(hours=3)
+INTERVAL = timedelta(hours=2)
 CATEGORY_ORDER = ["animales", "plantas", "fisica", "cuerpo", "tierra"]
 
 
