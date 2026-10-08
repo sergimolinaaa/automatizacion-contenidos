@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#DDF3FF"/>
+  <g fill="#FFFFFF" stroke="#0B0B14" stroke-width="5"><rect x="0" y="0" width="1000" height="70"/><line x1="100" y1="0" x2="100" y2="70"/><line x1="200" y1="0" x2="200" y2="70"/></g>
+  <rect id="water" y="380" width="1000" height="320" fill="#4FB3FF"/>
+  <path id="waves" d="M 0 380 Q 60 365 120 380 T 240 380 T 360 380 T 480 380 T 600 380 T 720 380 T 840 380 T 960 380 T 1080 380" stroke="#0B0B14" stroke-width="7" fill="none"/>
+  <g id="duck"><g transform="translate(800 340)"><ellipse cx="0" cy="20" rx="60" ry="34" fill="#FFE066" stroke="#0B0B14" stroke-width="7"/><circle cx="-40" cy="-20" r="28" fill="#FFE066" stroke="#0B0B14" stroke-width="7"/><path d="M -66 -18 L -92 -10 L -66 -4 Z" fill="#FF7A45" stroke="#0B0B14" stroke-width="5" stroke-linejoin="round"/><circle cx="-46" cy="-26" r="5" fill="#0B0B14"/></g></g>
+  <g id="hand">
+    <path d="M 330 700 L 330 520 Q 330 470 360 470 L 360 300 Q 360 270 390 270 Q 420 270 420 300 L 420 440 L 430 250 Q 432 220 462 220 Q 492 222 490 252 L 486 440 L 500 270 Q 503 240 532 242 Q 560 245 558 275 L 548 450 L 572 330 Q 578 302 606 308 Q 632 315 626 344 L 600 520 Q 600 560 580 600 L 560 700 Z" fill="#FFC8A2" stroke="#0B0B14" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M 330 560 Q 300 520 270 470 Q 255 440 280 430 Q 305 422 320 455 L 345 500" fill="#FFC8A2" stroke="#0B0B14" stroke-width="8" stroke-linejoin="round"/>
+  </g>
+  <g id="wrinkles" stroke="#C97A55" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M 372 300 Q 390 292 408 300 M 372 318 Q 390 310 408 318 M 372 336 Q 390 328 408 336"/>
+    <path d="M 442 252 Q 460 244 478 252 M 442 270 Q 460 262 478 270 M 442 288 Q 460 280 478 288"/>
+    <path d="M 512 272 Q 530 264 548 272 M 512 290 Q 530 282 548 290 M 512 308 Q 530 300 548 308"/>
+    <path d="M 584 336 Q 600 330 616 338 M 582 354 Q 598 348 614 356"/>
+  </g>
+  <g id="drops" fill="#4FB3FF" stroke="#0B0B14" stroke-width="4"><circle cx="392" cy="360" r="9"/><circle cx="470" cy="330" r="8"/><circle cx="540" cy="345" r="9"/></g>
+</svg>

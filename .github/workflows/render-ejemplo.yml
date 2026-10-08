@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - examples/**
+      - content/**
       - video/src/**
       - autocontent/**
       - scripts/render_example.py
@@ -16,13 +17,15 @@ permissions:
 
 concurrency:
   group: render-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   render:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -35,18 +38,13 @@ jobs:
       - run: pip install edge-tts PyYAML requests numpy
       - run: npm ci
         working-directory: video
-      - name: Renderizar los guiones de ejemplo
-        run: |
-          for g in examples/*/guion.json; do
-            slug=$(basename "$(dirname "$g")")
-            out="previews/${slug}-con-voz.mp4"
-            python scripts/render_example.py "$g" "$out"
-          done
+      - name: Renderizar guiones nuevos o modificados
+        run: python scripts/render_queue.py "${{ github.event.before }}" ${{ github.event_name == 'workflow_dispatch' && '--todo' || '' }}
       - name: Guardar el vídeo en la rama
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add previews/*-con-voz.mp4 previews/*-con-voz.png
+          git add previews/*-con-voz.*
           git commit -m "Render de ejemplos con voz" || exit 0
           for i in 1 2 3; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0; sleep 5; done
           exit 1

@@ -9,7 +9,7 @@ from pathlib import Path
 
 from . import sfx
 from .config import ROOT, load_config
-from .timeline import build_props, duration_of
+from .timeline import build_props, cover_offset_ms, duration_of
 from .voice import narrate
 
 VIDEO_DIR = ROOT / "video"
@@ -67,5 +67,5 @@ def render(folder: Path, out_dir: Path | None = None) -> tuple[Path, Path]:
     print(f"Duración: {duration_of(props):.1f} s")
     _remotion(["render", "Short", str(video), f"--props={props_path}"])
     _remotion(["still", "Portada", str(cover), "--frame=0", f"--props={props_path}"])
-    (out_dir / "props.json").write_text(json.dumps({k: v for k, v in props.items() if k != "scenes"} | {"duration": duration_of(props)}, ensure_ascii=False, indent=1), encoding="utf-8")
+    (out_dir / "props.json").write_text(json.dumps({k: v for k, v in props.items() if k != "scenes"} | {"duration": duration_of(props), "cover_offset_ms": cover_offset_ms(props)}, ensure_ascii=False, indent=1), encoding="utf-8")
     return video, cover

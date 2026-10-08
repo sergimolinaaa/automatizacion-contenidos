@@ -1,7 +1,9 @@
 """Uso:
   python -m autocontent generar            # Claude investiga un tema y escribe el guion (content/<fecha-tema>/)
   python -m autocontent render CARPETA     # vídeo + portada de un guion
-  python -m autocontent diario             # generar + render (y publicar cuando esté configurado)
+  python -m autocontent diario             # generar + render
+  python -m autocontent canales            # lista los canales de Buffer
+  python -m autocontent programar [-n N]   # programa en Buffer los vídeos pendientes, uno cada 3 horas
 """
 import argparse
 from pathlib import Path
@@ -18,7 +20,20 @@ def main() -> None:
     r = sub.add_parser("render")
     r.add_argument("carpeta", type=Path)
     sub.add_parser("diario")
+    sub.add_parser("canales")
+    pr = sub.add_parser("programar")
+    pr.add_argument("-n", type=int, default=None, help="máximo de vídeos a programar")
     a = ap.parse_args()
+
+    if a.cmd in ("canales", "programar"):
+        from . import publish
+
+        if a.cmd == "canales":
+            for c in publish.channels():
+                print(f"{c['service']:<10} {c['name']:<30} {c['id']}")
+        else:
+            publish.schedule_all(a.n)
+        return
 
     from . import generate, render
 

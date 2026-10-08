@@ -24,6 +24,8 @@ for sc in script["scenes"]:
     scene_words.append(ws)
     t = ws[-1]["end"] + 0.3
 props = build_props(script, scene_words)
+if "cover" in script:
+    props["cover"] = script["cover"]
 out = ROOT / "video" / "src" / "sample-props.json"
 out.write_text(json.dumps(props, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{out} · {duration_of(props):.1f} s")

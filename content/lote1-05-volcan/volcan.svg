@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#DDF3FF"/>
+  <g id="plume">
+    <g fill="#9AA3B5" stroke="#0B0B14" stroke-width="7">
+      <circle cx="500" cy="170" r="80"/><circle cx="420" cy="120" r="60"/><circle cx="590" cy="110" r="70"/><circle cx="500" cy="70" r="60"/><circle cx="660" cy="170" r="50"/><circle cx="350" cy="180" r="45"/>
+    </g>
+  </g>
+  <g id="rocks" fill="#5A4A42" stroke="#0B0B14" stroke-width="5"><circle cx="480" cy="250" r="14"/><circle cx="530" cy="240" r="11"/><circle cx="505" cy="210" r="9"/></g>
+  <path d="M 120 700 L 420 270 Q 500 250 580 270 L 880 700 Z" fill="#8C6A55" stroke="#0B0B14" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M 420 270 Q 500 300 580 270" fill="#FF7A45" stroke="#0B0B14" stroke-width="7"/>
+  <g id="lava"><path d="M 560 280 Q 600 380 590 450 Q 610 540 660 620 Q 690 670 700 700" stroke="#0B0B14" stroke-width="34" fill="none" stroke-linecap="round"/><path d="M 560 280 Q 600 380 590 450 Q 610 540 660 620 Q 690 670 700 700" stroke="#FF7A45" stroke-width="20" fill="none" stroke-linecap="round"/></g>
+  <path d="M 0 640 L 1000 640 L 1000 700 L 0 700 Z" fill="#6B4E3D" stroke="#0B0B14" stroke-width="7"/>
+  <g id="conduit"><path d="M 500 290 L 500 560" stroke="#FF5A36" stroke-width="40" stroke-linecap="round"/></g>
+  <g id="chamber"><ellipse cx="500" cy="600" rx="170" ry="60" fill="#FF5A36" stroke="#0B0B14" stroke-width="8"/></g>
+  <g id="bubbles" fill="#FFE066" stroke="#0B0B14" stroke-width="4"><circle cx="470" cy="610" r="12"/><circle cx="520" cy="590" r="9"/><circle cx="560" cy="615" r="11"/><circle cx="440" cy="590" r="8"/></g>
+  <g id="bubblesup" fill="#FFE066" stroke="#0B0B14" stroke-width="4"><circle cx="495" cy="500" r="10"/><circle cx="505" cy="430" r="14"/><circle cx="495" cy="350" r="18"/></g>
+  <g font-family="JetBrains Mono" font-weight="800" font-size="28">
+    <g id="l1"><rect x="700" y="560" width="160" height="44" rx="8" fill="#0B0B14"/><text x="780" y="591" text-anchor="middle" fill="#C8FF2E">MAGMA</text></g>
+    <g id="l2"><rect x="610" y="390" width="140" height="44" rx="8" fill="#0B0B14"/><text x="680" y="421" text-anchor="middle" fill="#C8FF2E">GASES</text></g>
+  </g>
+</svg>

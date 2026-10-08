@@ -6,7 +6,10 @@ import type { Illustration as Ill, IllustrationAnim } from "../types";
 const { colors, fonts, border, shadow } = brand;
 
 const ENTRANCES = new Set(["pop", "fade", "draw", "grow", "slide-left", "slide-right", "slide-up", "slide-down"]);
-const ORIGINS: Record<string, string> = { center: "center", bottom: "50% 100%", top: "50% 0%", left: "0% 50%", right: "100% 50%" };
+const ORIGINS: Record<string, string> = {
+  center: "center", bottom: "50% 100%", top: "50% 0%", left: "0% 50%", right: "100% 50%",
+  "bottom-left": "0% 100%", "bottom-right": "100% 100%", "top-left": "0% 0%", "top-right": "100% 0%",
+};
 
 /** Limpia el SVG generado (sin scripts ni recursos externos) y aísla sus ids. */
 export function sanitizeSvg(svg: string, prefix: string): string {
@@ -36,45 +39,60 @@ type State = { tx: number; ty: number; rot: number; sx: number; sy: number; op: 
 function computeStyles(anims: IllustrationAnim[], frame: number, sceneStart: number): Record<string, State> {
   const t = frame / FPS;
   const out: Record<string, State> = {};
+
+  // Visibilidad: por cada elemento, el último evento (entrada u ocultación) anterior al instante actual manda.
+  // Si su primer evento es una entrada, empieza oculto; si no tiene eventos, se ve siempre.
+  const vis: Record<string, { at: number; a: IllustrationAnim }[]> = {};
   for (const a of anims) {
+    if (ENTRANCES.has(a.effect) || a.effect === "hide") (vis[a.target] ??= []).push({ at: a.at ?? sceneStart, a });
+  }
+  for (const [target, evs] of Object.entries(vis)) {
+    evs.sort((x, y) => x.at - y.at);
+    const st = (out[target] ??= { tx: 0, ty: 0, rot: 0, sx: 1, sy: 1, op: 1 });
+    const past = evs.filter((e) => frame >= sec(e.at));
+    if (!past.length) {
+      if (ENTRANCES.has(evs[0].a.effect)) st.op = 0;
+      continue;
+    }
+    const { a, at } = past[past.length - 1];
+    const f = frame - sec(at);
+    if (a.origin) st.origin = ORIGINS[a.origin];
+    if (a.effect === "hide") {
+      const prevVisible = past.length > 1 || !ENTRANCES.has(evs[0].a.effect);
+      st.op *= at <= sceneStart + 0.01 || !prevVisible ? 0 : interpolate(f, [0, 6], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      continue;
+    }
+    const dur = a.dur ?? 0.7;
+    if (a.effect === "draw") {
+      st.dash = "1 1";
+      st.offset = 1 - interpolate(f, [0, sec(dur)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+      continue;
+    }
+    const p = pop(f, 0, 11);
+    switch (a.effect) {
+      case "pop": st.sx *= p; st.sy *= p; st.op *= Math.min(1, p * 2); break;
+      case "fade": st.op *= interpolate(f, [0, sec(dur)], [0, 1], { extrapolateRight: "clamp" }); break;
+      case "grow": st.sy *= p; st.origin ??= ORIGINS.bottom; break;
+      case "slide-left": st.tx += (1 - p) * -260; st.op *= Math.min(1, p * 2); break;
+      case "slide-right": st.tx += (1 - p) * 260; st.op *= Math.min(1, p * 2); break;
+      case "slide-up": st.ty += (1 - p) * 220; st.op *= Math.min(1, p * 2); break;
+      case "slide-down": st.ty += (1 - p) * -220; st.op *= Math.min(1, p * 2); break;
+    }
+  }
+
+  for (const a of anims) {
+    if (ENTRANCES.has(a.effect) || a.effect === "hide") continue;
     const st = (out[a.target] ??= { tx: 0, ty: 0, rot: 0, sx: 1, sy: 1, op: 1 });
     if (a.origin) st.origin = ORIGINS[a.origin];
     const at = a.at ?? sceneStart;
     const f = frame - sec(at);
     const amount = a.amount ?? 1;
-    const lt = Math.max(0, t - at); // tiempo de bucle
-    const dur = a.dur ?? 0.7;
-
-    if (ENTRANCES.has(a.effect)) {
-      if (a.effect === "draw") {
-        const p = interpolate(f, [0, sec(dur)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
-        st.dash = "1 1";
-        st.offset = 1 - p;
-        if (f < 0) st.op *= 0;
-        continue;
-      }
-      const p = f < 0 ? 0 : pop(f, 0, 11);
-      if (f < 0) { st.op *= 0; continue; }
-      switch (a.effect) {
-        case "pop": st.sx *= p; st.sy *= p; st.op *= Math.min(1, p * 2); break;
-        case "fade": st.op *= interpolate(f, [0, sec(dur)], [0, 1], { extrapolateRight: "clamp" }); break;
-        case "grow": st.sy *= p; st.origin ??= ORIGINS.bottom; break;
-        case "slide-left": st.tx += (1 - p) * -260; st.op *= Math.min(1, p * 2); break;
-        case "slide-right": st.tx += (1 - p) * 260; st.op *= Math.min(1, p * 2); break;
-        case "slide-up": st.ty += (1 - p) * 220; st.op *= Math.min(1, p * 2); break;
-        case "slide-down": st.ty += (1 - p) * -220; st.op *= Math.min(1, p * 2); break;
-      }
-      continue;
-    }
+    const lt = Math.max(0, t - at);
     if (a.effect === "move") {
       const p = f < 0 ? 0 : spring({ frame: f, fps: FPS, durationInFrames: sec(a.dur ?? 0.6), config: { damping: 18 } });
       st.tx += (a.to?.[0] ?? 0) * p;
       st.ty += (a.to?.[1] ?? 0) * p;
       st.rot += (a.rotate ?? 0) * p;
-      continue;
-    }
-    if (a.effect === "hide") {
-      st.op *= interpolate(f, [0, 6], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
       continue;
     }
     if (f < 0) continue; // los bucles empiezan en `at`

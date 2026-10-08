@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#FFF3E8"/>
+  <g id="z1"><circle cx="190" cy="330" r="150" fill="#7BE07B" stroke="#0B0B14" stroke-width="9"/>
+    <g stroke="#36B37E" stroke-width="16" stroke-linecap="round"><line x1="110" y1="250" x2="270" y2="250"/><line x1="90" y1="300" x2="290" y2="300"/><line x1="90" y1="350" x2="290" y2="350"/><line x1="110" y1="400" x2="270" y2="400"/></g></g>
+  <g id="link1"><path d="M 330 280 L 400 250 M 330 380 L 400 410" stroke="#0B0B14" stroke-width="6" stroke-dasharray="0.05 0.04" fill="none"/></g>
+  <g id="z2"><circle cx="520" cy="330" r="140" fill="#FFFFFF" stroke="#0B0B14" stroke-width="9"/>
+    <g stroke="#36B37E" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 440 420 Q 445 340 470 260"/><path d="M 475 430 Q 480 350 505 255"/><path d="M 510 435 Q 515 355 540 250"/><path d="M 545 430 Q 550 350 575 255"/><path d="M 580 420 Q 585 345 605 270"/>
+    </g></g>
+  <g id="link2"><path d="M 650 280 L 720 250 M 650 380 L 720 410" stroke="#0B0B14" stroke-width="6" stroke-dasharray="0.05 0.04" fill="none"/></g>
+  <g id="z3"><circle cx="840" cy="330" r="140" fill="#FFFFFF" stroke="#0B0B14" stroke-width="9"/>
+    <path d="M 840 460 L 840 330" stroke="#36B37E" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <g stroke="#36B37E" stroke-width="6" fill="none" stroke-linecap="round"><path d="M 840 340 L 780 250"/><path d="M 840 340 L 805 235"/><path d="M 840 340 L 840 228"/><path d="M 840 340 L 875 235"/><path d="M 840 340 L 900 250"/></g>
+    <g fill="#C8FF2E" stroke="#0B0B14" stroke-width="4"><circle cx="780" cy="250" r="9"/><circle cx="805" cy="235" r="9"/><circle cx="840" cy="228" r="9"/><circle cx="875" cy="235" r="9"/><circle cx="900" cy="250" r="9"/></g></g>
+  <g id="pull" stroke="#FF5A36" stroke-width="8" stroke-linecap="round" fill="none"><path d="M 780 230 L 780 200 M 805 215 L 805 185 M 840 208 L 840 178 M 875 215 L 875 185 M 900 230 L 900 200"/></g>
+  <g font-family="JetBrains Mono" font-weight="800" font-size="28">
+    <g id="l1"><rect x="110" y="510" width="160" height="44" rx="8" fill="#0B0B14"/><text x="190" y="541" text-anchor="middle" fill="#C8FF2E">DEDO</text></g>
+    <g id="l2"><rect x="430" y="510" width="180" height="44" rx="8" fill="#0B0B14"/><text x="520" y="541" text-anchor="middle" fill="#C8FF2E">PELITOS</text></g>
+    <g id="l3"><rect x="760" y="510" width="160" height="44" rx="8" fill="#0B0B14"/><text x="840" y="541" text-anchor="middle" fill="#C8FF2E">PUNTAS</text></g>
+  </g>
+</svg>

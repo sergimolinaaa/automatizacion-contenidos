@@ -1,0 +1,105 @@
+{
+  "topic": "Por qué se arrugan los dedos en el agua",
+  "categoria": "cuerpo",
+  "title": "¿Por qué se arrugan los dedos en el agua? 🛁",
+  "source": "Fuentes: Kareklas et al., Biology Letters (2013) · estudios con lesiones del nervio mediano",
+  "chapters": ["?", "1", "2", "3", "+", "TÚ"],
+  "outro_cta": "Tu cuerpo también tiene trucos",
+  "cover": {"text": "Tus dedos *no se empapan*", "badge": "¿ENTONCES QUÉ PASA?", "scene": 0},
+  "publish": {
+    "caption": "No, tus dedos no se arrugan porque se empapen de agua 🛁 Lo hace tu sistema nervioso… y puede que tenga un motivo genial.",
+    "description": "Las arrugas de los dedos en el agua no son piel empapada: las provoca el sistema nervioso al estrechar los vasos sanguíneos de la yema. Si el nervio del dedo está dañado, no aparecen. Una hipótesis es que mejoran el agarre en mojado, como el dibujo de un neumático.",
+    "hashtags": ["cuerpohumano", "curiosidades", "ciencia", "biologia", "sabiasque", "eltrucoes"]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Tus dedos *se arrugan*",
+      "narration": "Métete en la bañera un rato… y tus dedos se arrugan como pasas.",
+      "illustration": {"svg_file": "mano.svg", "caption": "Fig. 1 · Hora del baño", "anims": [
+        {"target": "waves", "effect": "flow", "amount": 0.4},
+        {"target": "duck", "effect": "bob", "amount": 0.6},
+        {"target": "hand", "effect": "float", "amount": 0.4},
+        {"target": "drops", "effect": "float", "amount": 1.5},
+        {"target": "wrinkles", "effect": "draw", "trigger": "arrugan", "dur": 0.8, "sfx": "rotulador"}
+      ]}
+    },
+    {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Y eso por qué? El truco es…"},
+    {
+      "chapter": 1, "number": "1",
+      "headline": "No es *el agua*",
+      "narration": "No es que la piel se empape. De hecho, si el nervio del dedo está dañado, ya no se arruga.",
+      "illustration": {"svg_file": "nervio.svg", "caption": "Fig. 2 · El cableado", "anims": [
+        {"target": "signal", "effect": "hide"}, {"target": "vesselsthin", "effect": "hide"}, {"target": "wavy", "effect": "hide"},
+        {"target": "l2", "effect": "hide"}, {"target": "l3", "effect": "hide"},
+        {"target": "brain", "effect": "pulse", "amount": 0.6},
+        {"target": "nerve", "effect": "draw", "trigger": "nervio", "dur": 0.7},
+        {"target": "l1", "effect": "pop", "trigger": "dedo"},
+        {"target": "nerve", "effect": "shake", "trigger": "dañado"}
+      ]},
+      "elements": [{"type": "stamp", "text": "Mito", "tone": "hot", "trigger": "empape"}]
+    },
+    {
+      "chapter": 2, "number": "2",
+      "headline": "Lo ordena *tu cuerpo*",
+      "narration": "Es tu sistema nervioso: estrecha los vasos sanguíneos de la yema, la piel se encoge… y aparecen las arrugas.",
+      "illustration": {"svg_file": "nervio.svg", "caption": "Fig. 3 · La orden", "anims": [
+        {"target": "l1", "effect": "hide"}, {"target": "wavy", "effect": "hide"}, {"target": "l3", "effect": "hide"}, {"target": "vesselsthin", "effect": "hide"},
+        {"target": "brain", "effect": "pulse", "amount": 0.6},
+        {"target": "signal", "effect": "pop", "trigger": "nervioso"},
+        {"target": "signal", "effect": "move", "to": [380, 230], "trigger": "nervioso", "dur": 1.2},
+        {"target": "l2", "effect": "pop", "trigger": "vasos"},
+        {"target": "vesselswide", "effect": "hide", "trigger": "estrecha"},
+        {"target": "vesselsthin", "effect": "pop", "trigger": "estrecha"},
+        {"target": "flat", "effect": "hide", "trigger": "encoge"},
+        {"target": "wavy", "effect": "pop", "trigger": "encoge"},
+        {"target": "l3", "effect": "pop", "trigger": "arrugas", "sfx": "ding"}
+      ]}
+    },
+    {
+      "chapter": 3, "number": "3",
+      "headline": "¿Para qué *sirve*?",
+      "narration": "Una hipótesis: funcionan como el dibujo de un neumático. Ayudan a sacar el agua y a agarrar mejor las cosas mojadas.",
+      "illustration": {"svg_file": "neumatico.svg", "caption": "Fig. 4 · Como un neumático", "anims": [
+        {"target": "tire", "effect": "spin", "amount": 0.6},
+        {"target": "splash", "effect": "pulse", "amount": 1.5},
+        {"target": "l1", "effect": "pop", "trigger": "neumático"},
+        {"target": "finger", "effect": "slide-left", "trigger": "Ayudan"},
+        {"target": "l2", "effect": "pop", "trigger": "Ayudan"},
+        {"target": "channels", "effect": "draw", "trigger": "agua", "dur": 0.4, "sfx": "chorro"},
+        {"target": "channels", "effect": "flow", "trigger": "agarrar"}
+      ]},
+      "elements": [{"type": "tag", "text": "Hipótesis", "tone": "ink", "trigger": "hipótesis"}]
+    },
+    {
+      "chapter": 4, "number": "+",
+      "headline": "Tardan *unos minutos*",
+      "narration": "Suelen aparecer tras unos cinco minutos en agua calentita, y se van poco después de salir.",
+      "elements": [
+        {"type": "stat", "label": "En agua caliente", "value": 5, "unit": "min", "note": "y desaparecen al secarse", "trigger": "cinco"},
+        {"type": "icon", "icon": "clock", "label": "Paciencia", "trigger": "salir"}
+      ]
+    },
+    {
+      "chapter": 4, "number": "+",
+      "headline": "Solo *manos y pies*",
+      "narration": "Y solo pasa en los dedos de manos y pies: justo donde más falta hace no resbalarse.",
+      "mascot": {"trigger": "resbalarse", "pose": "surprise", "note": "Antideslizante de serie", "side": "right"},
+      "elements": [{"type": "list", "label": "Dónde se arruga", "trigger": "pasa", "items": [
+        {"text": "Dedos de las manos", "trigger": "manos"},
+        {"text": "Dedos de los pies", "trigger": "pies"}
+      ]}]
+    },
+    {
+      "chapter": 5, "number": "TÚ",
+      "headline": "¿Qué te *flipa* más?",
+      "narration": "¿Qué te flipa más? Uno, que no sea el agua. Dos, que lo ordenen tus nervios. Tres, el truco del neumático. Escríbelo en comentarios.",
+      "mascot": {"trigger": "Escríbelo", "pose": "wave", "note": "¡Te leo!", "side": "right"},
+      "elements": [{"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
+        {"text": "No es el agua", "trigger": "Uno"},
+        {"text": "Lo ordenan tus nervios", "trigger": "Dos"},
+        {"text": "Dedos neumático", "trigger": "Tres"}
+      ]}]
+    }
+  ]
+}

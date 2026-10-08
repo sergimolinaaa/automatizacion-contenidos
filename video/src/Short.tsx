@@ -1,4 +1,5 @@
-import { AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { Cover, type CoverProps } from "./Cover";
 import { FPS, PAD, W, brand } from "./brand";
 import { sec } from "./anim";
 import { Background } from "./components/Background";
@@ -15,6 +16,9 @@ import type { ShortProps } from "./types";
 
 // Zonas fijas de la pantalla (nada se dibuja fuera de la suya, así nada se tapa):
 // barra de capítulos 118-210 · contenido 236-1300 · subtítulos 1350-1480 · UI de la red social debajo.
+/** Fotogramas finales con la portada: al elegir la portada en la app, se selecciona el final del vídeo. */
+export const COVER_FRAMES = 18;
+
 const CONTENT_TOP = 236;
 const STAGE_BOTTOM = 1300;
 const CONTENT_W = W - PAD * 2;
@@ -34,8 +38,10 @@ const duckedVolume = (words: ShortProps["words"], base: number) => (f: number) =
   return base * (0.55 + 0.45 * k);
 };
 
-export const Short: React.FC<ShortProps> = ({ chapters, scenes, words, source, audio, music, musicVolume = 0.28, sfx, sfxVolume = 0.85, outro }) => {
+export const Short: React.FC<CoverProps> = (props) => {
+  const { chapters, scenes, words, source, audio, music, musicVolume = 0.28, sfx, sfxVolume = 0.85, outro } = props;
   const frame = useCurrentFrame();
+  const { durationInFrames } = useVideoConfig();
   const t = frame / FPS;
   const idx = Math.max(0, scenes.findIndex((s, i) => t >= s.start && (t < s.end || i === scenes.length - 1)));
   const scene = scenes[idx];
@@ -121,6 +127,12 @@ export const Short: React.FC<ShortProps> = ({ chapters, scenes, words, source, a
       )}
 
       {outro && <Outro at={outro.at} cta={outro.cta} />}
+
+      {frame >= durationInFrames - COVER_FRAMES && (
+        <AbsoluteFill>
+          <Cover {...props} />
+        </AbsoluteFill>
+      )}
     </AbsoluteFill>
   );
 };

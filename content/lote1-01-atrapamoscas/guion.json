@@ -1,0 +1,118 @@
+{
+  "topic": "La venus atrapamoscas cuenta los toques antes de cerrarse",
+  "categoria": "plantas",
+  "title": "Esta planta sabe contar 🌱🪰",
+  "source": "Fuentes: Böhm et al., Current Biology (2016) · Forterre et al., Nature (2005)",
+  "chapters": ["?", "1", "2", "3", "+", "TÚ"],
+  "outro_cta": "La naturaleza tiene trucos",
+  "cover": {"text": "Esta planta *sabe contar*", "badge": "¿CÓMO LO HACE?", "scene": 3},
+  "publish": {
+    "caption": "Una planta que cuenta hasta cinco antes de comerse a un insecto 🌱🪰 ¿Te lo creías?",
+    "description": "La venus atrapamoscas solo cierra su trampa si un insecto toca dos de sus pelitos sensores en unos 20 segundos, y empieza a digerirlo a partir de cinco toques. Se cierra en una décima de segundo gracias a un 'clac' como el de la tapa de un bote. Fuentes: Böhm et al., Current Biology (2016); Forterre et al., Nature (2005).",
+    "hashtags": ["atrapamoscas", "plantas", "plantascarnivoras", "ciencia", "curiosidades", "eltrucoes"]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Esta planta *sabe contar*",
+      "narration": "Esta planta come insectos… y sabe contar.",
+      "illustration": {"svg_file": "planta.svg", "caption": "Fig. 1 · Venus atrapamoscas", "anims": [
+        {"target": "leaves", "effect": "sway", "origin": "bottom", "amount": 0.5},
+        {"target": "fly", "effect": "float", "amount": 1.4},
+        {"target": "wings", "effect": "blink", "amount": 2},
+        {"target": "zap", "effect": "hide"}, {"target": "drop", "effect": "hide"},
+        {"target": "n1", "effect": "pop", "trigger": "contar", "sfx": "ding"},
+        {"target": "n2", "effect": "pop", "trigger": "contar", "sfx": "none"}
+      ]}
+    },
+    {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Cómo lo hace? El truco es…"},
+    {
+      "chapter": 1, "number": "1",
+      "headline": "Pelitos *sensores*",
+      "narration": "Es la venus atrapamoscas. Dentro de su trampa tiene unos pelitos que funcionan como sensores.",
+      "illustration": {"svg_file": "planta.svg", "caption": "Fig. 2 · Los sensores", "anims": [
+        {"target": "leaves", "effect": "sway", "origin": "bottom", "amount": 0.5},
+        {"target": "fly", "effect": "float", "amount": 1.4},
+        {"target": "zap", "effect": "hide"}, {"target": "drop", "effect": "hide"}, {"target": "n1", "effect": "hide"}, {"target": "n2", "effect": "hide"},
+        {"target": "hair1", "effect": "pulse", "trigger": "pelitos", "amount": 3},
+        {"target": "hair2", "effect": "pulse", "trigger": "pelitos", "amount": 3}
+      ]},
+      "elements": [{"type": "tag", "text": "Venus atrapamoscas", "tone": "accent", "trigger": "atrapamoscas"}]
+    },
+    {
+      "chapter": 1, "number": "1",
+      "headline": "Cuenta *los toques*",
+      "narration": "Si algo toca un pelito, no pasa nada. Pero si toca dos en unos veinte segundos… ¡zas!, se cierra.",
+      "illustration": {"svg_file": "planta.svg", "caption": "Fig. 3 · Uno, dos… ¡zas!", "anims": [
+        {"target": "leaves", "effect": "sway", "origin": "bottom", "amount": 0.5},
+        {"target": "drop", "effect": "hide"},
+        {"target": "wings", "effect": "blink", "amount": 2},
+        {"target": "fly", "effect": "move", "to": [-250, 250], "trigger": "toca", "dur": 0.6, "sfx": "whoosh"},
+        {"target": "n1", "effect": "pop", "trigger": "pelito", "sfx": "ding"},
+        {"target": "hair1", "effect": "shake", "trigger": "pelito"},
+        {"target": "n2", "effect": "pop", "trigger": "dos", "sfx": "ding"},
+        {"target": "hair2", "effect": "shake", "trigger": "dos"},
+        {"target": "zap", "effect": "pop", "trigger": "zas", "sfx": "none"},
+        {"target": "zap", "effect": "pulse", "trigger": "zas", "amount": 2},
+        {"target": "lobetop", "effect": "move", "rotate": 24, "origin": "bottom-left", "trigger": "cierra", "dur": 0.15, "sfx": "chasquido"},
+        {"target": "lobebot", "effect": "move", "rotate": -24, "origin": "top-left", "trigger": "cierra", "dur": 0.15, "sfx": "none"},
+        {"target": "n1", "effect": "hide", "trigger": "cierra"}, {"target": "n2", "effect": "hide", "trigger": "cierra"}
+      ]}
+    },
+    {
+      "chapter": 2, "number": "2",
+      "headline": "Así *no se equivoca*",
+      "narration": "Así no se cierra por una gota de lluvia: solo cuando hay una presa que se mueve.",
+      "illustration": {"svg_file": "planta.svg", "caption": "Fig. 4 · Falsa alarma", "anims": [
+        {"target": "leaves", "effect": "sway", "origin": "bottom", "amount": 0.5},
+        {"target": "fly", "effect": "hide"}, {"target": "zap", "effect": "hide"}, {"target": "n2", "effect": "hide"},
+        {"target": "n1", "effect": "hide"},
+        {"target": "drop", "effect": "move", "to": [-30, 400], "trigger": "gota", "dur": 0.5, "sfx": "splash"},
+        {"target": "drop", "effect": "hide", "trigger": "lluvia"},
+        {"target": "n1", "effect": "pop", "trigger": "lluvia", "sfx": "ding"},
+        {"target": "hair1", "effect": "shake", "trigger": "lluvia"}
+      ]},
+      "elements": [{"type": "tag", "text": "Ahorra energía", "tone": "ink", "trigger": "presa"}]
+    },
+    {
+      "chapter": 3, "number": "3",
+      "headline": "Se cierra *de golpe*",
+      "narration": "Y se cierra en una décima de segundo. Sus hojas pasan de curvarse hacia fuera a curvarse hacia dentro, como la tapa de un bote que hace clac.",
+      "illustration": {"svg_file": "clac.svg", "caption": "Fig. 5 · El efecto tapa de bote", "anims": [
+        {"target": "concave", "effect": "hide"}, {"target": "l2", "effect": "hide"}, {"target": "clac", "effect": "hide"}, {"target": "flip", "effect": "hide"},
+        {"target": "l1", "effect": "pop", "trigger": "fuera"},
+        {"target": "convex", "effect": "pulse", "trigger": "fuera"},
+        {"target": "flip", "effect": "pop", "trigger": "dentro"},
+        {"target": "convex", "effect": "hide", "trigger": "tapa"},
+        {"target": "l1", "effect": "hide", "trigger": "tapa"},
+        {"target": "concave", "effect": "pop", "trigger": "tapa", "sfx": "chasquido"},
+        {"target": "l2", "effect": "pop", "trigger": "bote"},
+        {"target": "clac", "effect": "pop", "trigger": "clac", "sfx": "sello"},
+        {"target": "clac", "effect": "wiggle", "trigger": "clac"}
+      ]},
+      "elements": [{"type": "stat", "label": "Tiempo de cierre", "value": 0.1, "decimals": 1, "unit": "s", "trigger": "décima"}]
+    },
+    {
+      "chapter": 4, "number": "+",
+      "headline": "Cinco toques: *a comer*",
+      "narration": "Y si la presa sigue luchando y toca cinco veces, la planta empieza a fabricar sus jugos para digerirla.",
+      "mascot": {"trigger": "digerirla", "pose": "surprise", "note": "Cuanto más pataleas, peor", "side": "right"},
+      "elements": [{"type": "list", "label": "El contador de la planta", "trigger": "presa", "items": [
+        {"text": "1 toque: nada", "trigger": "luchando"},
+        {"text": "2 toques: se cierra", "trigger": "toca"},
+        {"text": "5 toques: a digerir", "trigger": "cinco"}
+      ]}]
+    },
+    {
+      "chapter": 5, "number": "TÚ",
+      "headline": "¿Qué te *flipa* más?",
+      "narration": "¿Qué te flipa más? Uno, que sepa contar. Dos, el cierre de golpe. Tres, que digiera insectos. Escríbelo en comentarios.",
+      "mascot": {"trigger": "Escríbelo", "pose": "wave", "note": "¡Te leo!", "side": "right"},
+      "elements": [{"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
+        {"text": "Que sepa contar", "trigger": "Uno"},
+        {"text": "El cierre de golpe", "trigger": "Dos"},
+        {"text": "Que digiera insectos", "trigger": "Tres"}
+      ]}]
+    }
+  ]
+}

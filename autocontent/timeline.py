@@ -111,6 +111,14 @@ def build_props(script: dict, scene_words: list[list[dict]], end_padding: float 
     return props
 
 
+COVER_SECONDS = 18 / 30  # fotogramas finales con la portada (video/src/Short.tsx: COVER_FRAMES)
+
+
+def cover_offset_ms(props: dict) -> int:
+    """Milisegundo del vídeo donde está la portada (para elegirla como miniatura)."""
+    return int((duration_of(props) + COVER_SECONDS / 2) * 1000)
+
+
 def duration_of(props: dict) -> float:
     end = max(s["end"] for s in props["scenes"])
     if props.get("outro"):

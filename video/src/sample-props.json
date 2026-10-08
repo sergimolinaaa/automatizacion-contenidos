@@ -1,5 +1,5 @@
 {
- "source": "Fuente: Versluis et al., Science (2000) · Lohse et al., Nature (2001)",
+ "source": "Fuentes: Böhm et al., Current Biology (2016) · Forterre et al., Nature (2005)",
  "chapters": [
   "?",
   "1",
@@ -11,81 +11,59 @@
  "scenes": [
   {
    "start": 0.0,
-   "end": 3.923,
+   "end": 3.453,
    "chapter": 0,
    "number": null,
-   "headline": "Este camarón *dispara*",
+   "headline": "Esta planta *sabe contar*",
    "signature": false,
    "illustration": {
-    "caption": "Fig. 1 · Camarón pistola",
+    "caption": "Fig. 1 · Venus atrapamoscas",
     "anims": [
      {
-      "target": "weed",
+      "target": "leaves",
       "effect": "sway",
-      "origin": "bottom"
-     },
-     {
-      "target": "shrimp",
-      "effect": "float",
+      "origin": "bottom",
       "amount": 0.5
      },
      {
-      "target": "prey",
-      "effect": "float"
+      "target": "fly",
+      "effect": "float",
+      "amount": 1.4
      },
      {
-      "target": "sound",
+      "target": "wings",
+      "effect": "blink",
+      "amount": 2
+     },
+     {
+      "target": "zap",
       "effect": "hide"
      },
      {
-      "target": "flash",
+      "target": "drop",
       "effect": "hide"
      },
      {
-      "target": "dactyl",
-      "effect": "move",
-      "rotate": -22,
-      "origin": "right",
-      "dur": 0.4,
-      "at": 1.103
-     },
-     {
-      "target": "dactyl",
-      "effect": "move",
-      "rotate": 22,
-      "origin": "right",
-      "dur": 0.12,
-      "sfx": "chasquido",
-      "at": 2.185
-     },
-     {
-      "target": "jet",
-      "effect": "draw",
-      "dur": 0.2,
-      "sfx": "none",
-      "at": 2.185
-     },
-     {
-      "target": "bubble",
+      "target": "n1",
       "effect": "pop",
-      "sfx": "burbujas",
-      "at": 3.058
+      "sfx": "ding",
+      "at": 2.719
      },
      {
-      "target": "bubble",
-      "effect": "pulse",
-      "amount": 1.5,
-      "at": 3.058
+      "target": "n2",
+      "effect": "pop",
+      "sfx": "none",
+      "at": 2.719
      }
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 700\">\n  <rect width=\"1000\" height=\"700\" fill=\"#4FB3FF\"/>\n  <g fill=\"#FFFFFF\" opacity=\"0.16\"><polygon points=\"120,0 220,0 120,560 40,560\"/><polygon points=\"520,0 600,0 560,560 470,560\"/><polygon points=\"820,0 880,0 900,560 840,560\"/></g>\n  <path d=\"M 0 575 Q 120 552 250 570 T 520 566 T 780 572 T 1000 560 L 1000 700 L 0 700 Z\" fill=\"#FFD98A\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <g fill=\"#9AA3B5\" stroke=\"#0B0B14\" stroke-width=\"7\"><path d=\"M 30 585 Q 60 520 120 540 Q 160 560 150 590 Z\"/><path d=\"M 880 580 Q 900 530 950 540 Q 990 555 985 585 Z\"/></g>\n  <g id=\"weed\"><path d=\"M 940 560 Q 920 480 950 420 Q 970 380 945 330\" stroke=\"#0B0B14\" stroke-width=\"22\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 940 560 Q 920 480 950 420 Q 970 380 945 330\" stroke=\"#36B37E\" stroke-width=\"10\" fill=\"none\" stroke-linecap=\"round\"/></g>\n  <g id=\"prey\">\n    <g transform=\"translate(110 455)\">\n      <path d=\"M -40 0 Q -10 -30 30 -8 L 52 -26 L 48 0 L 52 26 L 30 8 Q -10 30 -40 0 Z\" fill=\"#FFB547\" stroke=\"#0B0B14\" stroke-width=\"6\" stroke-linejoin=\"round\"/>\n      <circle cx=\"-22\" cy=\"-5\" r=\"6\" fill=\"#0B0B14\"/>\n    </g>\n  </g>\n  <g id=\"sound\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"9\" stroke-linecap=\"round\">\n    <path d=\"M 205 395 Q 165 455 205 515\"/><path d=\"M 170 360 Q 115 455 170 550\"/><path d=\"M 135 325 Q 65 455 135 585\"/>\n  </g>\n  <g id=\"jet\"><path d=\"M 362 452 L 262 452\" stroke=\"#0B0B14\" stroke-width=\"22\" stroke-linecap=\"round\"/><path d=\"M 362 452 L 262 452\" stroke=\"#DFF6FF\" stroke-width=\"10\" stroke-linecap=\"round\"/></g>\n  <g id=\"bubble\"><circle cx=\"232\" cy=\"452\" r=\"38\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke=\"#0B0B14\" stroke-width=\"7\"/><circle cx=\"220\" cy=\"440\" r=\"9\" fill=\"#FFFFFF\"/></g>\n  <g id=\"flash\"><polygon points=\"232,392 246,436 292,452 246,468 232,512 218,468 172,452 218,436\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"7\" stroke-linejoin=\"round\"/></g>\n  <g id=\"shrimp\">\n    <path d=\"M 610 300 Q 520 240 430 250 M 600 305 Q 540 200 470 190\" stroke=\"#0B0B14\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/>\n    <g stroke=\"#0B0B14\" stroke-width=\"6\" stroke-linecap=\"round\"><line x1=\"660\" y1=\"500\" x2=\"650\" y2=\"545\"/><line x1=\"700\" y1=\"505\" x2=\"695\" y2=\"550\"/><line x1=\"740\" y1=\"505\" x2=\"740\" y2=\"548\"/><line x1=\"780\" y1=\"500\" x2=\"786\" y2=\"542\"/></g>\n    <path d=\"M 590 470 Q 600 400 680 395 Q 790 390 850 420 Q 905 450 900 505 L 950 480 L 960 540 L 905 530 Q 880 515 860 505 Q 800 500 700 505 Q 610 510 590 470 Z\" fill=\"#FF7A45\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#0B0B14\" stroke-width=\"5\" fill=\"none\"><path d=\"M 700 398 Q 690 450 700 503\"/><path d=\"M 760 396 Q 750 450 760 503\"/><path d=\"M 815 405 Q 805 455 812 502\"/></g>\n    <path d=\"M 610 470 L 540 470\" stroke=\"#0B0B14\" stroke-width=\"30\" stroke-linecap=\"round\"/><path d=\"M 610 470 L 540 470\" stroke=\"#FF7A45\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n    <path d=\"M 545 470 Q 545 410 470 420 L 370 440 Q 352 458 372 470 L 470 476 Q 470 520 545 505 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g id=\"dactyl\"><path d=\"M 520 432 Q 450 395 375 425 Q 365 438 380 440 Q 450 425 520 448 Z\" fill=\"#FFB547\" stroke=\"#0B0B14\" stroke-width=\"7\" stroke-linejoin=\"round\"/></g>\n    <circle cx=\"612\" cy=\"420\" r=\"18\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"6\"/><circle cx=\"606\" cy=\"418\" r=\"8\" fill=\"#0B0B14\"/>\n  </g>\n</svg>\n"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 700\">\n  <rect width=\"1000\" height=\"700\" fill=\"#DDF3FF\"/>\n  <circle cx=\"140\" cy=\"120\" r=\"54\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <path d=\"M 0 640 Q 250 620 500 640 T 1000 630 L 1000 700 L 0 700 Z\" fill=\"#C98B4A\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <g id=\"leaves\"><path d=\"M 440 640 Q 300 600 250 520 Q 340 540 445 620 Z\" fill=\"#36B37E\" stroke=\"#0B0B14\" stroke-width=\"7\"/><path d=\"M 470 640 Q 620 610 690 540 Q 590 550 470 620 Z\" fill=\"#36B37E\" stroke=\"#0B0B14\" stroke-width=\"7\"/></g>\n  <path d=\"M 430 410 Q 470 520 455 640\" stroke=\"#0B0B14\" stroke-width=\"30\" fill=\"none\" stroke-linecap=\"round\"/>\n  <path d=\"M 430 410 Q 470 520 455 640\" stroke=\"#7BE07B\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\"/>\n  <g id=\"zap\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linejoin=\"round\">\n    <path d=\"M 360 360 L 335 400 L 355 400 L 340 440 L 385 390 L 362 390 Z\"/><path d=\"M 395 470 L 372 500 L 390 500 L 378 532 L 418 492 L 398 492 Z\"/>\n  </g>\n  <g id=\"lobebot\">\n    <path d=\"M 420 410 Q 520 560 720 540 L 735 510 Q 560 510 430 405 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#36B37E\" stroke-width=\"7\" stroke-linecap=\"round\"><line x1=\"489\" y1=\"485\" x2=\"480\" y2=\"520\"/><line x1=\"545\" y1=\"517\" x2=\"540\" y2=\"555\"/><line x1=\"609\" y1=\"537\" x2=\"610\" y2=\"575\"/><line x1=\"681\" y1=\"542\" x2=\"690\" y2=\"580\"/></g>\n    <g id=\"hair1\"><line x1=\"560\" y1=\"500\" x2=\"568\" y2=\"470\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linecap=\"round\"/></g>\n    <g id=\"hair2\"><line x1=\"640\" y1=\"512\" x2=\"648\" y2=\"484\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linecap=\"round\"/></g>\n  </g>\n  <g id=\"lobetop\">\n    <path d=\"M 420 400 Q 520 250 720 270 L 735 300 Q 560 300 430 405 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#36B37E\" stroke-width=\"7\" stroke-linecap=\"round\"><line x1=\"489\" y1=\"325\" x2=\"480\" y2=\"290\"/><line x1=\"545\" y1=\"292\" x2=\"540\" y2=\"255\"/><line x1=\"609\" y1=\"273\" x2=\"610\" y2=\"235\"/><line x1=\"681\" y1=\"268\" x2=\"690\" y2=\"230\"/></g>\n  </g>\n  <g id=\"fly\">\n    <g transform=\"translate(860 200)\">\n      <g id=\"wings\"><ellipse cx=\"-6\" cy=\"-26\" rx=\"16\" ry=\"26\" transform=\"rotate(-25 -6 -26)\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"5\"/><ellipse cx=\"14\" cy=\"-24\" rx=\"14\" ry=\"24\" transform=\"rotate(20 14 -24)\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"5\"/></g>\n      <ellipse cx=\"0\" cy=\"0\" rx=\"34\" ry=\"20\" fill=\"#3A3A4A\" stroke=\"#0B0B14\" stroke-width=\"6\"/>\n      <circle cx=\"-30\" cy=\"-4\" r=\"13\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"5\"/>\n      <g stroke=\"#0B0B14\" stroke-width=\"4\" stroke-linecap=\"round\"><line x1=\"-12\" y1=\"16\" x2=\"-20\" y2=\"34\"/><line x1=\"4\" y1=\"18\" x2=\"2\" y2=\"36\"/><line x1=\"18\" y1=\"16\" x2=\"24\" y2=\"32\"/></g>\n    </g>\n  </g>\n  <g id=\"drop\"><path d=\"M 600 60 Q 625 100 625 115 A 25 25 0 0 1 575 115 Q 575 100 600 60 Z\" fill=\"#4FB3FF\" stroke=\"#0B0B14\" stroke-width=\"6\"/></g>\n  <g font-family=\"JetBrains Mono\" font-weight=\"800\" font-size=\"34\">\n    <g id=\"n1\"><circle cx=\"560\" cy=\"430\" r=\"28\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"6\"/><text x=\"560\" y=\"442\" text-anchor=\"middle\" fill=\"#0B0B14\">1</text></g>\n    <g id=\"n2\"><circle cx=\"648\" cy=\"440\" r=\"28\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"6\"/><text x=\"648\" y=\"452\" text-anchor=\"middle\" fill=\"#0B0B14\">2</text></g>\n  </g>\n</svg>\n"
    },
    "mascot": null,
    "elements": []
   },
   {
-   "start": 3.923,
-   "end": 6.54,
+   "start": 3.453,
+   "end": 6.07,
    "chapter": 0,
    "number": null,
    "headline": "El truco es…",
@@ -95,364 +73,370 @@
    "elements": []
   },
   {
-   "start": 6.54,
-   "end": 13.291,
+   "start": 6.07,
+   "end": 13.757,
    "chapter": 1,
    "number": "1",
-   "headline": "Una pinza *gatillo*",
+   "headline": "Pelitos *sensores*",
    "signature": false,
    "illustration": {
-    "caption": "Fig. 2 · La pinza",
+    "caption": "Fig. 2 · Los sensores",
     "anims": [
      {
-      "target": "jet2",
+      "target": "leaves",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.5
+     },
+     {
+      "target": "fly",
+      "effect": "float",
+      "amount": 1.4
+     },
+     {
+      "target": "zap",
       "effect": "hide"
      },
      {
-      "target": "bub2",
+      "target": "drop",
       "effect": "hide"
      },
      {
-      "target": "flash2",
+      "target": "n1",
       "effect": "hide"
      },
      {
-      "target": "snd2",
+      "target": "n2",
       "effect": "hide"
      },
      {
-      "target": "l2",
-      "effect": "hide"
+      "target": "hair1",
+      "effect": "pulse",
+      "amount": 3,
+      "at": 10.82
      },
      {
-      "target": "l3",
-      "effect": "hide"
-     },
-     {
-      "target": "l1",
-      "effect": "pop",
-      "at": 9.283
-     },
-     {
-      "target": "dactyl2",
-      "effect": "move",
-      "rotate": -24,
-      "origin": "right",
-      "dur": 0.6,
-      "at": 8.606
-     },
-     {
-      "target": "dactyl2",
-      "effect": "move",
-      "rotate": 24,
-      "origin": "right",
-      "dur": 0.1,
-      "sfx": "chasquido",
-      "at": 11.577
-     },
-     {
-      "target": "dactyl2",
-      "effect": "shake",
-      "amount": 0.6,
-      "at": 12.296
+      "target": "hair2",
+      "effect": "pulse",
+      "amount": 3,
+      "at": 10.82
      }
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 700\">\n  <rect width=\"1000\" height=\"700\" fill=\"#4FB3FF\"/>\n  <path d=\"M 0 120 Q 120 100 240 120 T 480 120 T 720 120 T 960 120 T 1200 120\" stroke=\"#FFFFFF\" stroke-opacity=\"0.5\" stroke-width=\"5\" fill=\"none\"/>\n  <path d=\"M 1010 420 L 880 420\" stroke=\"#0B0B14\" stroke-width=\"90\" stroke-linecap=\"round\"/><path d=\"M 1010 420 L 880 420\" stroke=\"#FF7A45\" stroke-width=\"70\" stroke-linecap=\"round\"/>\n  <path d=\"M 890 420 Q 900 250 700 300 L 430 380 Q 390 410 430 440 L 700 500 Q 900 560 890 420 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"10\" stroke-linejoin=\"round\"/>\n  <circle cx=\"560\" cy=\"398\" r=\"26\" fill=\"#0B0B14\"/>\n  <g id=\"dactyl2\"><path d=\"M 840 340 Q 650 250 430 330 Q 410 352 440 360 Q 560 330 600 345 L 600 372 A 24 24 0 0 0 620 372 L 620 345 Q 740 330 840 380 Z\" fill=\"#FFB547\" stroke=\"#0B0B14\" stroke-width=\"9\" stroke-linejoin=\"round\"/></g>\n  <g id=\"jet2\"><path d=\"M 420 408 L 250 408\" stroke=\"#0B0B14\" stroke-width=\"40\" stroke-linecap=\"round\"/><path d=\"M 420 408 L 250 408\" stroke=\"#DFF6FF\" stroke-width=\"22\" stroke-linecap=\"round\"/></g>\n  <g id=\"bub2\"><circle cx=\"175\" cy=\"408\" r=\"80\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke=\"#0B0B14\" stroke-width=\"9\"/><circle cx=\"150\" cy=\"380\" r=\"16\" fill=\"#FFFFFF\"/></g>\n  <g id=\"flash2\"><polygon points=\"175,290 200,380 290,408 200,436 175,526 150,436 60,408 150,380\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"9\" stroke-linejoin=\"round\"/></g>\n  <g id=\"snd2\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"10\" stroke-linecap=\"round\"><path d=\"M 300 250 Q 360 408 300 566\"/><path d=\"M 345 210 Q 420 408 345 606\"/></g>\n  <g font-family=\"JetBrains Mono\" font-weight=\"800\" font-size=\"30\">\n    <g id=\"l1\"><rect x=\"600\" y=\"560\" width=\"140\" height=\"48\" rx=\"8\" fill=\"#0B0B14\"/><text x=\"670\" y=\"594\" text-anchor=\"middle\" fill=\"#C8FF2E\">PINZA</text></g>\n    <g id=\"l2\"><rect x=\"85\" y=\"230\" width=\"180\" height=\"48\" rx=\"8\" fill=\"#0B0B14\"/><text x=\"175\" y=\"264\" text-anchor=\"middle\" fill=\"#C8FF2E\">BURBUJA</text></g>\n    <g id=\"l3\"><rect x=\"85\" y=\"560\" width=\"180\" height=\"48\" rx=\"8\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"5\"/><text x=\"175\" y=\"594\" text-anchor=\"middle\" fill=\"#0B0B14\">¡FLASH!</text></g>\n  </g>\n</svg>\n"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 700\">\n  <rect width=\"1000\" height=\"700\" fill=\"#DDF3FF\"/>\n  <circle cx=\"140\" cy=\"120\" r=\"54\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <path d=\"M 0 640 Q 250 620 500 640 T 1000 630 L 1000 700 L 0 700 Z\" fill=\"#C98B4A\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <g id=\"leaves\"><path d=\"M 440 640 Q 300 600 250 520 Q 340 540 445 620 Z\" fill=\"#36B37E\" stroke=\"#0B0B14\" stroke-width=\"7\"/><path d=\"M 470 640 Q 620 610 690 540 Q 590 550 470 620 Z\" fill=\"#36B37E\" stroke=\"#0B0B14\" stroke-width=\"7\"/></g>\n  <path d=\"M 430 410 Q 470 520 455 640\" stroke=\"#0B0B14\" stroke-width=\"30\" fill=\"none\" stroke-linecap=\"round\"/>\n  <path d=\"M 430 410 Q 470 520 455 640\" stroke=\"#7BE07B\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\"/>\n  <g id=\"zap\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linejoin=\"round\">\n    <path d=\"M 360 360 L 335 400 L 355 400 L 340 440 L 385 390 L 362 390 Z\"/><path d=\"M 395 470 L 372 500 L 390 500 L 378 532 L 418 492 L 398 492 Z\"/>\n  </g>\n  <g id=\"lobebot\">\n    <path d=\"M 420 410 Q 520 560 720 540 L 735 510 Q 560 510 430 405 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#36B37E\" stroke-width=\"7\" stroke-linecap=\"round\"><line x1=\"489\" y1=\"485\" x2=\"480\" y2=\"520\"/><line x1=\"545\" y1=\"517\" x2=\"540\" y2=\"555\"/><line x1=\"609\" y1=\"537\" x2=\"610\" y2=\"575\"/><line x1=\"681\" y1=\"542\" x2=\"690\" y2=\"580\"/></g>\n    <g id=\"hair1\"><line x1=\"560\" y1=\"500\" x2=\"568\" y2=\"470\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linecap=\"round\"/></g>\n    <g id=\"hair2\"><line x1=\"640\" y1=\"512\" x2=\"648\" y2=\"484\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linecap=\"round\"/></g>\n  </g>\n  <g id=\"lobetop\">\n    <path d=\"M 420 400 Q 520 250 720 270 L 735 300 Q 560 300 430 405 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#36B37E\" stroke-width=\"7\" stroke-linecap=\"round\"><line x1=\"489\" y1=\"325\" x2=\"480\" y2=\"290\"/><line x1=\"545\" y1=\"292\" x2=\"540\" y2=\"255\"/><line x1=\"609\" y1=\"273\" x2=\"610\" y2=\"235\"/><line x1=\"681\" y1=\"268\" x2=\"690\" y2=\"230\"/></g>\n  </g>\n  <g id=\"fly\">\n    <g transform=\"translate(860 200)\">\n      <g id=\"wings\"><ellipse cx=\"-6\" cy=\"-26\" rx=\"16\" ry=\"26\" transform=\"rotate(-25 -6 -26)\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"5\"/><ellipse cx=\"14\" cy=\"-24\" rx=\"14\" ry=\"24\" transform=\"rotate(20 14 -24)\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"5\"/></g>\n      <ellipse cx=\"0\" cy=\"0\" rx=\"34\" ry=\"20\" fill=\"#3A3A4A\" stroke=\"#0B0B14\" stroke-width=\"6\"/>\n      <circle cx=\"-30\" cy=\"-4\" r=\"13\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"5\"/>\n      <g stroke=\"#0B0B14\" stroke-width=\"4\" stroke-linecap=\"round\"><line x1=\"-12\" y1=\"16\" x2=\"-20\" y2=\"34\"/><line x1=\"4\" y1=\"18\" x2=\"2\" y2=\"36\"/><line x1=\"18\" y1=\"16\" x2=\"24\" y2=\"32\"/></g>\n    </g>\n  </g>\n  <g id=\"drop\"><path d=\"M 600 60 Q 625 100 625 115 A 25 25 0 0 1 575 115 Q 575 100 600 60 Z\" fill=\"#4FB3FF\" stroke=\"#0B0B14\" stroke-width=\"6\"/></g>\n  <g font-family=\"JetBrains Mono\" font-weight=\"800\" font-size=\"34\">\n    <g id=\"n1\"><circle cx=\"560\" cy=\"430\" r=\"28\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"6\"/><text x=\"560\" y=\"442\" text-anchor=\"middle\" fill=\"#0B0B14\">1</text></g>\n    <g id=\"n2\"><circle cx=\"648\" cy=\"440\" r=\"28\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"6\"/><text x=\"648\" y=\"452\" text-anchor=\"middle\" fill=\"#0B0B14\">2</text></g>\n  </g>\n</svg>\n"
    },
    "mascot": null,
    "elements": [
     {
      "type": "tag",
-     "text": "Camarón pistola",
+     "text": "Venus atrapamoscas",
      "tone": "accent",
-     "at": 7.107
+     "at": 7.106
     }
    ]
   },
   {
-   "start": 13.291,
-   "end": 20.707,
-   "chapter": 2,
-   "number": "2",
-   "headline": "Una burbuja *que explota*",
+   "start": 13.757,
+   "end": 22.19,
+   "chapter": 1,
+   "number": "1",
+   "headline": "Cuenta *los toques*",
    "signature": false,
    "illustration": {
-    "caption": "Fig. 3 · El disparo",
+    "caption": "Fig. 3 · Uno, dos… ¡zas!",
     "anims": [
      {
-      "target": "l3",
-      "effect": "pop",
-      "at": 17.846
-     },
-     {
-      "target": "flash2",
-      "effect": "pop",
-      "sfx": "chasquido",
-      "at": 17.846
-     },
-     {
-      "target": "flash2",
-      "effect": "spin",
-      "amount": 0.4,
-      "at": 17.846
-     },
-     {
-      "target": "jet2",
-      "effect": "draw",
-      "dur": 0.25,
-      "sfx": "chorro",
-      "at": 13.634
-     },
-     {
-      "target": "jet2",
-      "effect": "flow",
-      "at": 13.634
-     },
-     {
-      "target": "bub2",
-      "effect": "pop",
-      "sfx": "burbujas",
-      "at": 14.846
-     },
-     {
-      "target": "bub2",
-      "effect": "pulse",
-      "amount": 1.5,
-      "at": 14.846
-     },
-     {
-      "target": "l2",
-      "effect": "pop",
-      "at": 15.589
-     },
-     {
-      "target": "bub2",
-      "effect": "hide",
-      "at": 17.846
-     },
-     {
-      "target": "snd2",
-      "effect": "draw",
-      "dur": 0.4,
-      "at": 18.761
-     },
-     {
-      "target": "snd2",
-      "effect": "pulse",
-      "amount": 1.5,
-      "at": 19.907
-     }
-    ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 700\">\n  <rect width=\"1000\" height=\"700\" fill=\"#4FB3FF\"/>\n  <path d=\"M 0 120 Q 120 100 240 120 T 480 120 T 720 120 T 960 120 T 1200 120\" stroke=\"#FFFFFF\" stroke-opacity=\"0.5\" stroke-width=\"5\" fill=\"none\"/>\n  <path d=\"M 1010 420 L 880 420\" stroke=\"#0B0B14\" stroke-width=\"90\" stroke-linecap=\"round\"/><path d=\"M 1010 420 L 880 420\" stroke=\"#FF7A45\" stroke-width=\"70\" stroke-linecap=\"round\"/>\n  <path d=\"M 890 420 Q 900 250 700 300 L 430 380 Q 390 410 430 440 L 700 500 Q 900 560 890 420 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"10\" stroke-linejoin=\"round\"/>\n  <circle cx=\"560\" cy=\"398\" r=\"26\" fill=\"#0B0B14\"/>\n  <g id=\"dactyl2\"><path d=\"M 840 340 Q 650 250 430 330 Q 410 352 440 360 Q 560 330 600 345 L 600 372 A 24 24 0 0 0 620 372 L 620 345 Q 740 330 840 380 Z\" fill=\"#FFB547\" stroke=\"#0B0B14\" stroke-width=\"9\" stroke-linejoin=\"round\"/></g>\n  <g id=\"jet2\"><path d=\"M 420 408 L 250 408\" stroke=\"#0B0B14\" stroke-width=\"40\" stroke-linecap=\"round\"/><path d=\"M 420 408 L 250 408\" stroke=\"#DFF6FF\" stroke-width=\"22\" stroke-linecap=\"round\"/></g>\n  <g id=\"bub2\"><circle cx=\"175\" cy=\"408\" r=\"80\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke=\"#0B0B14\" stroke-width=\"9\"/><circle cx=\"150\" cy=\"380\" r=\"16\" fill=\"#FFFFFF\"/></g>\n  <g id=\"flash2\"><polygon points=\"175,290 200,380 290,408 200,436 175,526 150,436 60,408 150,380\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"9\" stroke-linejoin=\"round\"/></g>\n  <g id=\"snd2\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"10\" stroke-linecap=\"round\"><path d=\"M 300 250 Q 360 408 300 566\"/><path d=\"M 345 210 Q 420 408 345 606\"/></g>\n  <g font-family=\"JetBrains Mono\" font-weight=\"800\" font-size=\"30\">\n    <g id=\"l1\"><rect x=\"600\" y=\"560\" width=\"140\" height=\"48\" rx=\"8\" fill=\"#0B0B14\"/><text x=\"670\" y=\"594\" text-anchor=\"middle\" fill=\"#C8FF2E\">PINZA</text></g>\n    <g id=\"l2\"><rect x=\"85\" y=\"230\" width=\"180\" height=\"48\" rx=\"8\" fill=\"#0B0B14\"/><text x=\"175\" y=\"264\" text-anchor=\"middle\" fill=\"#C8FF2E\">BURBUJA</text></g>\n    <g id=\"l3\"><rect x=\"85\" y=\"560\" width=\"180\" height=\"48\" rx=\"8\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"5\"/><text x=\"175\" y=\"594\" text-anchor=\"middle\" fill=\"#0B0B14\">¡FLASH!</text></g>\n  </g>\n</svg>\n"
-   },
-   "mascot": null,
-   "elements": [
-    {
-     "type": "stamp",
-     "text": "¡Bang!",
-     "tone": "hot",
-     "at": 19.857
-    }
-   ]
-  },
-  {
-   "start": 20.707,
-   "end": 27.612,
-   "chapter": 3,
-   "number": "3",
-   "headline": "Caliente *como el Sol*",
-   "signature": false,
-   "illustration": null,
-   "mascot": {
-    "pose": "surprise",
-    "note": "¡Y todo pasa en menos de un parpadeo!",
-    "side": "right",
-    "at": 27.023
-   },
-   "elements": [
-    {
-     "type": "stat",
-     "label": "Dentro de la burbuja",
-     "value": 4700,
-     "from": 0,
-     "unit": "°C",
-     "note": "Superficie del Sol: unos 5.500 °C",
-     "at": 22.955
-    },
-    {
-     "type": "icon",
-     "icon": "sun",
-     "label": "El Sol",
-     "at": 25.889
-    }
-   ]
-  },
-  {
-   "start": 27.612,
-   "end": 32.926,
-   "chapter": 3,
-   "number": "3",
-   "headline": "Y la presa… *KO*",
-   "signature": false,
-   "illustration": {
-    "caption": "Fig. 4 · K.O.",
-    "anims": [
-     {
-      "target": "weed",
+      "target": "leaves",
       "effect": "sway",
-      "origin": "bottom"
+      "origin": "bottom",
+      "amount": 0.5
      },
      {
-      "target": "jet",
+      "target": "drop",
       "effect": "hide"
      },
      {
-      "target": "bubble",
-      "effect": "hide"
+      "target": "wings",
+      "effect": "blink",
+      "amount": 2
      },
      {
-      "target": "flash",
-      "effect": "hide"
-     },
-     {
-      "target": "sound",
-      "effect": "draw",
-      "dur": 0.4,
-      "at": 27.955
-     },
-     {
-      "target": "sound",
-      "effect": "hide",
-      "at": 28.763
-     },
-     {
-      "target": "prey",
-      "effect": "shake",
-      "at": 27.955
-     },
-     {
-      "target": "prey",
+      "target": "fly",
       "effect": "move",
-      "rotate": 180,
       "to": [
-       0,
-       60
+       -250,
+       250
       ],
       "dur": 0.6,
-      "at": 28.763
+      "sfx": "whoosh",
+      "at": 14.504
      },
      {
-      "target": "shrimp",
+      "target": "n1",
+      "effect": "pop",
+      "sfx": "ding",
+      "at": 15.182
+     },
+     {
+      "target": "hair1",
+      "effect": "shake",
+      "at": 15.182
+     },
+     {
+      "target": "n2",
+      "effect": "pop",
+      "sfx": "ding",
+      "at": 18.379
+     },
+     {
+      "target": "hair2",
+      "effect": "shake",
+      "at": 18.379
+     },
+     {
+      "target": "zap",
+      "effect": "pop",
+      "sfx": "none",
+      "at": 20.594
+     },
+     {
+      "target": "zap",
+      "effect": "pulse",
+      "amount": 2,
+      "at": 20.594
+     },
+     {
+      "target": "lobetop",
       "effect": "move",
-      "to": [
-       -330,
-       0
-      ],
-      "dur": 0.5,
-      "at": 32.257
+      "rotate": 24,
+      "origin": "bottom-left",
+      "dur": 0.15,
+      "sfx": "chasquido",
+      "at": 21.456
+     },
+     {
+      "target": "lobebot",
+      "effect": "move",
+      "rotate": -24,
+      "origin": "top-left",
+      "dur": 0.15,
+      "sfx": "none",
+      "at": 21.456
+     },
+     {
+      "target": "n1",
+      "effect": "hide",
+      "at": 21.456
+     },
+     {
+      "target": "n2",
+      "effect": "hide",
+      "at": 21.456
      }
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 700\">\n  <rect width=\"1000\" height=\"700\" fill=\"#4FB3FF\"/>\n  <g fill=\"#FFFFFF\" opacity=\"0.16\"><polygon points=\"120,0 220,0 120,560 40,560\"/><polygon points=\"520,0 600,0 560,560 470,560\"/><polygon points=\"820,0 880,0 900,560 840,560\"/></g>\n  <path d=\"M 0 575 Q 120 552 250 570 T 520 566 T 780 572 T 1000 560 L 1000 700 L 0 700 Z\" fill=\"#FFD98A\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <g fill=\"#9AA3B5\" stroke=\"#0B0B14\" stroke-width=\"7\"><path d=\"M 30 585 Q 60 520 120 540 Q 160 560 150 590 Z\"/><path d=\"M 880 580 Q 900 530 950 540 Q 990 555 985 585 Z\"/></g>\n  <g id=\"weed\"><path d=\"M 940 560 Q 920 480 950 420 Q 970 380 945 330\" stroke=\"#0B0B14\" stroke-width=\"22\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 940 560 Q 920 480 950 420 Q 970 380 945 330\" stroke=\"#36B37E\" stroke-width=\"10\" fill=\"none\" stroke-linecap=\"round\"/></g>\n  <g id=\"prey\">\n    <g transform=\"translate(110 455)\">\n      <path d=\"M -40 0 Q -10 -30 30 -8 L 52 -26 L 48 0 L 52 26 L 30 8 Q -10 30 -40 0 Z\" fill=\"#FFB547\" stroke=\"#0B0B14\" stroke-width=\"6\" stroke-linejoin=\"round\"/>\n      <circle cx=\"-22\" cy=\"-5\" r=\"6\" fill=\"#0B0B14\"/>\n    </g>\n  </g>\n  <g id=\"sound\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"9\" stroke-linecap=\"round\">\n    <path d=\"M 205 395 Q 165 455 205 515\"/><path d=\"M 170 360 Q 115 455 170 550\"/><path d=\"M 135 325 Q 65 455 135 585\"/>\n  </g>\n  <g id=\"jet\"><path d=\"M 362 452 L 262 452\" stroke=\"#0B0B14\" stroke-width=\"22\" stroke-linecap=\"round\"/><path d=\"M 362 452 L 262 452\" stroke=\"#DFF6FF\" stroke-width=\"10\" stroke-linecap=\"round\"/></g>\n  <g id=\"bubble\"><circle cx=\"232\" cy=\"452\" r=\"38\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke=\"#0B0B14\" stroke-width=\"7\"/><circle cx=\"220\" cy=\"440\" r=\"9\" fill=\"#FFFFFF\"/></g>\n  <g id=\"flash\"><polygon points=\"232,392 246,436 292,452 246,468 232,512 218,468 172,452 218,436\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"7\" stroke-linejoin=\"round\"/></g>\n  <g id=\"shrimp\">\n    <path d=\"M 610 300 Q 520 240 430 250 M 600 305 Q 540 200 470 190\" stroke=\"#0B0B14\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/>\n    <g stroke=\"#0B0B14\" stroke-width=\"6\" stroke-linecap=\"round\"><line x1=\"660\" y1=\"500\" x2=\"650\" y2=\"545\"/><line x1=\"700\" y1=\"505\" x2=\"695\" y2=\"550\"/><line x1=\"740\" y1=\"505\" x2=\"740\" y2=\"548\"/><line x1=\"780\" y1=\"500\" x2=\"786\" y2=\"542\"/></g>\n    <path d=\"M 590 470 Q 600 400 680 395 Q 790 390 850 420 Q 905 450 900 505 L 950 480 L 960 540 L 905 530 Q 880 515 860 505 Q 800 500 700 505 Q 610 510 590 470 Z\" fill=\"#FF7A45\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#0B0B14\" stroke-width=\"5\" fill=\"none\"><path d=\"M 700 398 Q 690 450 700 503\"/><path d=\"M 760 396 Q 750 450 760 503\"/><path d=\"M 815 405 Q 805 455 812 502\"/></g>\n    <path d=\"M 610 470 L 540 470\" stroke=\"#0B0B14\" stroke-width=\"30\" stroke-linecap=\"round\"/><path d=\"M 610 470 L 540 470\" stroke=\"#FF7A45\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n    <path d=\"M 545 470 Q 545 410 470 420 L 370 440 Q 352 458 372 470 L 470 476 Q 470 520 545 505 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g id=\"dactyl\"><path d=\"M 520 432 Q 450 395 375 425 Q 365 438 380 440 Q 450 425 520 448 Z\" fill=\"#FFB547\" stroke=\"#0B0B14\" stroke-width=\"7\" stroke-linejoin=\"round\"/></g>\n    <circle cx=\"612\" cy=\"420\" r=\"18\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"6\"/><circle cx=\"606\" cy=\"418\" r=\"8\" fill=\"#0B0B14\"/>\n  </g>\n</svg>\n"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 700\">\n  <rect width=\"1000\" height=\"700\" fill=\"#DDF3FF\"/>\n  <circle cx=\"140\" cy=\"120\" r=\"54\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <path d=\"M 0 640 Q 250 620 500 640 T 1000 630 L 1000 700 L 0 700 Z\" fill=\"#C98B4A\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <g id=\"leaves\"><path d=\"M 440 640 Q 300 600 250 520 Q 340 540 445 620 Z\" fill=\"#36B37E\" stroke=\"#0B0B14\" stroke-width=\"7\"/><path d=\"M 470 640 Q 620 610 690 540 Q 590 550 470 620 Z\" fill=\"#36B37E\" stroke=\"#0B0B14\" stroke-width=\"7\"/></g>\n  <path d=\"M 430 410 Q 470 520 455 640\" stroke=\"#0B0B14\" stroke-width=\"30\" fill=\"none\" stroke-linecap=\"round\"/>\n  <path d=\"M 430 410 Q 470 520 455 640\" stroke=\"#7BE07B\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\"/>\n  <g id=\"zap\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linejoin=\"round\">\n    <path d=\"M 360 360 L 335 400 L 355 400 L 340 440 L 385 390 L 362 390 Z\"/><path d=\"M 395 470 L 372 500 L 390 500 L 378 532 L 418 492 L 398 492 Z\"/>\n  </g>\n  <g id=\"lobebot\">\n    <path d=\"M 420 410 Q 520 560 720 540 L 735 510 Q 560 510 430 405 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#36B37E\" stroke-width=\"7\" stroke-linecap=\"round\"><line x1=\"489\" y1=\"485\" x2=\"480\" y2=\"520\"/><line x1=\"545\" y1=\"517\" x2=\"540\" y2=\"555\"/><line x1=\"609\" y1=\"537\" x2=\"610\" y2=\"575\"/><line x1=\"681\" y1=\"542\" x2=\"690\" y2=\"580\"/></g>\n    <g id=\"hair1\"><line x1=\"560\" y1=\"500\" x2=\"568\" y2=\"470\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linecap=\"round\"/></g>\n    <g id=\"hair2\"><line x1=\"640\" y1=\"512\" x2=\"648\" y2=\"484\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linecap=\"round\"/></g>\n  </g>\n  <g id=\"lobetop\">\n    <path d=\"M 420 400 Q 520 250 720 270 L 735 300 Q 560 300 430 405 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#36B37E\" stroke-width=\"7\" stroke-linecap=\"round\"><line x1=\"489\" y1=\"325\" x2=\"480\" y2=\"290\"/><line x1=\"545\" y1=\"292\" x2=\"540\" y2=\"255\"/><line x1=\"609\" y1=\"273\" x2=\"610\" y2=\"235\"/><line x1=\"681\" y1=\"268\" x2=\"690\" y2=\"230\"/></g>\n  </g>\n  <g id=\"fly\">\n    <g transform=\"translate(860 200)\">\n      <g id=\"wings\"><ellipse cx=\"-6\" cy=\"-26\" rx=\"16\" ry=\"26\" transform=\"rotate(-25 -6 -26)\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"5\"/><ellipse cx=\"14\" cy=\"-24\" rx=\"14\" ry=\"24\" transform=\"rotate(20 14 -24)\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"5\"/></g>\n      <ellipse cx=\"0\" cy=\"0\" rx=\"34\" ry=\"20\" fill=\"#3A3A4A\" stroke=\"#0B0B14\" stroke-width=\"6\"/>\n      <circle cx=\"-30\" cy=\"-4\" r=\"13\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"5\"/>\n      <g stroke=\"#0B0B14\" stroke-width=\"4\" stroke-linecap=\"round\"><line x1=\"-12\" y1=\"16\" x2=\"-20\" y2=\"34\"/><line x1=\"4\" y1=\"18\" x2=\"2\" y2=\"36\"/><line x1=\"18\" y1=\"16\" x2=\"24\" y2=\"32\"/></g>\n    </g>\n  </g>\n  <g id=\"drop\"><path d=\"M 600 60 Q 625 100 625 115 A 25 25 0 0 1 575 115 Q 575 100 600 60 Z\" fill=\"#4FB3FF\" stroke=\"#0B0B14\" stroke-width=\"6\"/></g>\n  <g font-family=\"JetBrains Mono\" font-weight=\"800\" font-size=\"34\">\n    <g id=\"n1\"><circle cx=\"560\" cy=\"430\" r=\"28\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"6\"/><text x=\"560\" y=\"442\" text-anchor=\"middle\" fill=\"#0B0B14\">1</text></g>\n    <g id=\"n2\"><circle cx=\"648\" cy=\"440\" r=\"28\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"6\"/><text x=\"648\" y=\"452\" text-anchor=\"middle\" fill=\"#0B0B14\">2</text></g>\n  </g>\n</svg>\n"
    },
    "mascot": null,
    "elements": []
   },
   {
-   "start": 32.926,
-   "end": 41.696,
-   "chapter": 4,
-   "number": "+",
-   "headline": "Más ruidoso *que un concierto*",
+   "start": 22.19,
+   "end": 29.185,
+   "chapter": 2,
+   "number": "2",
+   "headline": "Así *no se equivoca*",
    "signature": false,
    "illustration": {
-    "caption": "Fig. 5 · Ruido",
+    "caption": "Fig. 4 · Falsa alarma",
     "anims": [
      {
-      "target": "weed",
+      "target": "leaves",
       "effect": "sway",
-      "origin": "bottom"
+      "origin": "bottom",
+      "amount": 0.5
      },
      {
-      "target": "prey",
+      "target": "fly",
       "effect": "hide"
      },
      {
-      "target": "jet",
+      "target": "zap",
       "effect": "hide"
      },
      {
-      "target": "bubble",
+      "target": "n2",
       "effect": "hide"
      },
      {
-      "target": "flash",
+      "target": "n1",
       "effect": "hide"
      },
      {
-      "target": "sound",
-      "effect": "draw",
-      "dur": 0.3,
-      "sfx": "chasquido",
-      "at": 35.224
+      "target": "drop",
+      "effect": "move",
+      "to": [
+       -30,
+       400
+      ],
+      "dur": 0.5,
+      "sfx": "splash",
+      "at": 24.357
      },
      {
-      "target": "sound",
-      "effect": "pulse",
-      "amount": 2,
-      "at": 35.224
+      "target": "drop",
+      "effect": "hide",
+      "at": 25.035
      },
      {
-      "target": "shrimp",
+      "target": "n1",
+      "effect": "pop",
+      "sfx": "ding",
+      "at": 25.035
+     },
+     {
+      "target": "hair1",
       "effect": "shake",
-      "amount": 0.5,
-      "at": 38.093
+      "at": 25.035
      }
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 700\">\n  <rect width=\"1000\" height=\"700\" fill=\"#4FB3FF\"/>\n  <g fill=\"#FFFFFF\" opacity=\"0.16\"><polygon points=\"120,0 220,0 120,560 40,560\"/><polygon points=\"520,0 600,0 560,560 470,560\"/><polygon points=\"820,0 880,0 900,560 840,560\"/></g>\n  <path d=\"M 0 575 Q 120 552 250 570 T 520 566 T 780 572 T 1000 560 L 1000 700 L 0 700 Z\" fill=\"#FFD98A\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <g fill=\"#9AA3B5\" stroke=\"#0B0B14\" stroke-width=\"7\"><path d=\"M 30 585 Q 60 520 120 540 Q 160 560 150 590 Z\"/><path d=\"M 880 580 Q 900 530 950 540 Q 990 555 985 585 Z\"/></g>\n  <g id=\"weed\"><path d=\"M 940 560 Q 920 480 950 420 Q 970 380 945 330\" stroke=\"#0B0B14\" stroke-width=\"22\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 940 560 Q 920 480 950 420 Q 970 380 945 330\" stroke=\"#36B37E\" stroke-width=\"10\" fill=\"none\" stroke-linecap=\"round\"/></g>\n  <g id=\"prey\">\n    <g transform=\"translate(110 455)\">\n      <path d=\"M -40 0 Q -10 -30 30 -8 L 52 -26 L 48 0 L 52 26 L 30 8 Q -10 30 -40 0 Z\" fill=\"#FFB547\" stroke=\"#0B0B14\" stroke-width=\"6\" stroke-linejoin=\"round\"/>\n      <circle cx=\"-22\" cy=\"-5\" r=\"6\" fill=\"#0B0B14\"/>\n    </g>\n  </g>\n  <g id=\"sound\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"9\" stroke-linecap=\"round\">\n    <path d=\"M 205 395 Q 165 455 205 515\"/><path d=\"M 170 360 Q 115 455 170 550\"/><path d=\"M 135 325 Q 65 455 135 585\"/>\n  </g>\n  <g id=\"jet\"><path d=\"M 362 452 L 262 452\" stroke=\"#0B0B14\" stroke-width=\"22\" stroke-linecap=\"round\"/><path d=\"M 362 452 L 262 452\" stroke=\"#DFF6FF\" stroke-width=\"10\" stroke-linecap=\"round\"/></g>\n  <g id=\"bubble\"><circle cx=\"232\" cy=\"452\" r=\"38\" fill=\"#FFFFFF\" fill-opacity=\"0.85\" stroke=\"#0B0B14\" stroke-width=\"7\"/><circle cx=\"220\" cy=\"440\" r=\"9\" fill=\"#FFFFFF\"/></g>\n  <g id=\"flash\"><polygon points=\"232,392 246,436 292,452 246,468 232,512 218,468 172,452 218,436\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"7\" stroke-linejoin=\"round\"/></g>\n  <g id=\"shrimp\">\n    <path d=\"M 610 300 Q 520 240 430 250 M 600 305 Q 540 200 470 190\" stroke=\"#0B0B14\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/>\n    <g stroke=\"#0B0B14\" stroke-width=\"6\" stroke-linecap=\"round\"><line x1=\"660\" y1=\"500\" x2=\"650\" y2=\"545\"/><line x1=\"700\" y1=\"505\" x2=\"695\" y2=\"550\"/><line x1=\"740\" y1=\"505\" x2=\"740\" y2=\"548\"/><line x1=\"780\" y1=\"500\" x2=\"786\" y2=\"542\"/></g>\n    <path d=\"M 590 470 Q 600 400 680 395 Q 790 390 850 420 Q 905 450 900 505 L 950 480 L 960 540 L 905 530 Q 880 515 860 505 Q 800 500 700 505 Q 610 510 590 470 Z\" fill=\"#FF7A45\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#0B0B14\" stroke-width=\"5\" fill=\"none\"><path d=\"M 700 398 Q 690 450 700 503\"/><path d=\"M 760 396 Q 750 450 760 503\"/><path d=\"M 815 405 Q 805 455 812 502\"/></g>\n    <path d=\"M 610 470 L 540 470\" stroke=\"#0B0B14\" stroke-width=\"30\" stroke-linecap=\"round\"/><path d=\"M 610 470 L 540 470\" stroke=\"#FF7A45\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n    <path d=\"M 545 470 Q 545 410 470 420 L 370 440 Q 352 458 372 470 L 470 476 Q 470 520 545 505 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g id=\"dactyl\"><path d=\"M 520 432 Q 450 395 375 425 Q 365 438 380 440 Q 450 425 520 448 Z\" fill=\"#FFB547\" stroke=\"#0B0B14\" stroke-width=\"7\" stroke-linejoin=\"round\"/></g>\n    <circle cx=\"612\" cy=\"420\" r=\"18\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"6\"/><circle cx=\"606\" cy=\"418\" r=\"8\" fill=\"#0B0B14\"/>\n  </g>\n</svg>\n"
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 700\">\n  <rect width=\"1000\" height=\"700\" fill=\"#DDF3FF\"/>\n  <circle cx=\"140\" cy=\"120\" r=\"54\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <path d=\"M 0 640 Q 250 620 500 640 T 1000 630 L 1000 700 L 0 700 Z\" fill=\"#C98B4A\" stroke=\"#0B0B14\" stroke-width=\"7\"/>\n  <g id=\"leaves\"><path d=\"M 440 640 Q 300 600 250 520 Q 340 540 445 620 Z\" fill=\"#36B37E\" stroke=\"#0B0B14\" stroke-width=\"7\"/><path d=\"M 470 640 Q 620 610 690 540 Q 590 550 470 620 Z\" fill=\"#36B37E\" stroke=\"#0B0B14\" stroke-width=\"7\"/></g>\n  <path d=\"M 430 410 Q 470 520 455 640\" stroke=\"#0B0B14\" stroke-width=\"30\" fill=\"none\" stroke-linecap=\"round\"/>\n  <path d=\"M 430 410 Q 470 520 455 640\" stroke=\"#7BE07B\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\"/>\n  <g id=\"zap\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linejoin=\"round\">\n    <path d=\"M 360 360 L 335 400 L 355 400 L 340 440 L 385 390 L 362 390 Z\"/><path d=\"M 395 470 L 372 500 L 390 500 L 378 532 L 418 492 L 398 492 Z\"/>\n  </g>\n  <g id=\"lobebot\">\n    <path d=\"M 420 410 Q 520 560 720 540 L 735 510 Q 560 510 430 405 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#36B37E\" stroke-width=\"7\" stroke-linecap=\"round\"><line x1=\"489\" y1=\"485\" x2=\"480\" y2=\"520\"/><line x1=\"545\" y1=\"517\" x2=\"540\" y2=\"555\"/><line x1=\"609\" y1=\"537\" x2=\"610\" y2=\"575\"/><line x1=\"681\" y1=\"542\" x2=\"690\" y2=\"580\"/></g>\n    <g id=\"hair1\"><line x1=\"560\" y1=\"500\" x2=\"568\" y2=\"470\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linecap=\"round\"/></g>\n    <g id=\"hair2\"><line x1=\"640\" y1=\"512\" x2=\"648\" y2=\"484\" stroke=\"#0B0B14\" stroke-width=\"5\" stroke-linecap=\"round\"/></g>\n  </g>\n  <g id=\"lobetop\">\n    <path d=\"M 420 400 Q 520 250 720 270 L 735 300 Q 560 300 430 405 Z\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n    <g stroke=\"#36B37E\" stroke-width=\"7\" stroke-linecap=\"round\"><line x1=\"489\" y1=\"325\" x2=\"480\" y2=\"290\"/><line x1=\"545\" y1=\"292\" x2=\"540\" y2=\"255\"/><line x1=\"609\" y1=\"273\" x2=\"610\" y2=\"235\"/><line x1=\"681\" y1=\"268\" x2=\"690\" y2=\"230\"/></g>\n  </g>\n  <g id=\"fly\">\n    <g transform=\"translate(860 200)\">\n      <g id=\"wings\"><ellipse cx=\"-6\" cy=\"-26\" rx=\"16\" ry=\"26\" transform=\"rotate(-25 -6 -26)\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"5\"/><ellipse cx=\"14\" cy=\"-24\" rx=\"14\" ry=\"24\" transform=\"rotate(20 14 -24)\" fill=\"#FFFFFF\" stroke=\"#0B0B14\" stroke-width=\"5\"/></g>\n      <ellipse cx=\"0\" cy=\"0\" rx=\"34\" ry=\"20\" fill=\"#3A3A4A\" stroke=\"#0B0B14\" stroke-width=\"6\"/>\n      <circle cx=\"-30\" cy=\"-4\" r=\"13\" fill=\"#FF5A36\" stroke=\"#0B0B14\" stroke-width=\"5\"/>\n      <g stroke=\"#0B0B14\" stroke-width=\"4\" stroke-linecap=\"round\"><line x1=\"-12\" y1=\"16\" x2=\"-20\" y2=\"34\"/><line x1=\"4\" y1=\"18\" x2=\"2\" y2=\"36\"/><line x1=\"18\" y1=\"16\" x2=\"24\" y2=\"32\"/></g>\n    </g>\n  </g>\n  <g id=\"drop\"><path d=\"M 600 60 Q 625 100 625 115 A 25 25 0 0 1 575 115 Q 575 100 600 60 Z\" fill=\"#4FB3FF\" stroke=\"#0B0B14\" stroke-width=\"6\"/></g>\n  <g font-family=\"JetBrains Mono\" font-weight=\"800\" font-size=\"34\">\n    <g id=\"n1\"><circle cx=\"560\" cy=\"430\" r=\"28\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"6\"/><text x=\"560\" y=\"442\" text-anchor=\"middle\" fill=\"#0B0B14\">1</text></g>\n    <g id=\"n2\"><circle cx=\"648\" cy=\"440\" r=\"28\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"6\"/><text x=\"648\" y=\"452\" text-anchor=\"middle\" fill=\"#0B0B14\">2</text></g>\n  </g>\n</svg>\n"
    },
    "mascot": null,
    "elements": [
     {
      "type": "tag",
-     "text": "Uno de los más ruidosos del mar",
+     "text": "Ahorra energía",
      "tone": "ink",
-     "at": 36.177
+     "at": 27.385
     }
    ]
   },
   {
-   "start": 41.696,
-   "end": 49.396,
+   "start": 29.185,
+   "end": 41.199,
+   "chapter": 3,
+   "number": "3",
+   "headline": "Se cierra *de golpe*",
+   "signature": false,
+   "illustration": {
+    "caption": "Fig. 5 · El efecto tapa de bote",
+    "anims": [
+     {
+      "target": "concave",
+      "effect": "hide"
+     },
+     {
+      "target": "l2",
+      "effect": "hide"
+     },
+     {
+      "target": "clac",
+      "effect": "hide"
+     },
+     {
+      "target": "flip",
+      "effect": "hide"
+     },
+     {
+      "target": "l1",
+      "effect": "pop",
+      "at": 35.225
+     },
+     {
+      "target": "convex",
+      "effect": "pulse",
+      "at": 35.225
+     },
+     {
+      "target": "flip",
+      "effect": "pop",
+      "at": 37.036
+     },
+     {
+      "target": "convex",
+      "effect": "hide",
+      "at": 38.498
+     },
+     {
+      "target": "l1",
+      "effect": "hide",
+      "at": 38.498
+     },
+     {
+      "target": "concave",
+      "effect": "pop",
+      "sfx": "chasquido",
+      "at": 38.498
+     },
+     {
+      "target": "l2",
+      "effect": "pop",
+      "at": 39.449
+     },
+     {
+      "target": "clac",
+      "effect": "pop",
+      "sfx": "sello",
+      "at": 40.595
+     },
+     {
+      "target": "clac",
+      "effect": "wiggle",
+      "at": 40.595
+     }
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1000 700\">\n  <rect width=\"1000\" height=\"700\" fill=\"#DDF3FF\"/>\n  <g id=\"convex\"><path d=\"M 230 430 Q 500 210 770 430\" stroke=\"#0B0B14\" stroke-width=\"44\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 230 430 Q 500 210 770 430\" stroke=\"#FF5A36\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\"/></g>\n  <g id=\"concave\"><path d=\"M 230 370 Q 500 590 770 370\" stroke=\"#0B0B14\" stroke-width=\"44\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 230 370 Q 500 590 770 370\" stroke=\"#FF5A36\" stroke-width=\"28\" fill=\"none\" stroke-linecap=\"round\"/></g>\n  <g id=\"flip\"><path d=\"M 500 250 L 500 420\" stroke=\"#0B0B14\" stroke-width=\"12\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 470 390 L 500 430 L 530 390\" stroke=\"#0B0B14\" stroke-width=\"12\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g>\n  <g id=\"clac\"><polygon points=\"820,220 845,265 895,250 870,295 915,320 865,330 875,380 830,350 795,390 790,340 740,330 785,300 760,255 805,268\" fill=\"#C8FF2E\" stroke=\"#0B0B14\" stroke-width=\"7\" stroke-linejoin=\"round\"/><text x=\"828\" y=\"318\" text-anchor=\"middle\" font-family=\"JetBrains Mono\" font-weight=\"800\" font-size=\"34\" fill=\"#0B0B14\">CLAC</text></g>\n  <g font-family=\"JetBrains Mono\" font-weight=\"800\" font-size=\"30\">\n    <g id=\"l1\"><rect x=\"80\" y=\"160\" width=\"190\" height=\"48\" rx=\"8\" fill=\"#0B0B14\"/><text x=\"175\" y=\"194\" text-anchor=\"middle\" fill=\"#C8FF2E\">ABIERTA</text></g>\n    <g id=\"l2\"><rect x=\"80\" y=\"520\" width=\"190\" height=\"48\" rx=\"8\" fill=\"#0B0B14\"/><text x=\"175\" y=\"554\" text-anchor=\"middle\" fill=\"#C8FF2E\">CERRADA</text></g>\n  </g>\n</svg>\n"
+   },
+   "mascot": null,
+   "elements": [
+    {
+     "type": "stat",
+     "label": "Tiempo de cierre",
+     "value": 0.1,
+     "decimals": 1,
+     "unit": "s",
+     "at": 30.833
+    }
+   ]
+  },
+  {
+   "start": 41.199,
+   "end": 49.85,
    "chapter": 4,
    "number": "+",
-   "headline": "Despistaba *submarinos*",
+   "headline": "Cinco toques: *a comer*",
    "signature": false,
    "illustration": null,
    "mascot": {
     "pose": "surprise",
-    "note": "Un camarón contra un submarino. Gana el camarón.",
+    "note": "Cuanto más pataleas, peor",
     "side": "right",
-    "at": 47.139
+    "at": 48.87
    },
    "elements": [
     {
-     "type": "icon",
-     "icon": "wave",
-     "label": "Sónar",
-     "at": 45.393
-    },
-    {
-     "type": "fact",
-     "label": "Dato histórico",
-     "text": "Su chasquido se colaba en los sónares",
-     "tone": "accent",
-     "at": 45.862
+     "type": "list",
+     "label": "El contador de la planta",
+     "items": [
+      {
+       "text": "1 toque: nada",
+       "at": 42.912
+      },
+      {
+       "text": "2 toques: se cierra",
+       "at": 43.786
+      },
+      {
+       "text": "5 toques: a digerir",
+       "at": 44.189
+      }
+     ],
+     "at": 41.974
     }
    ]
   },
   {
-   "start": 49.396,
-   "end": 60.662,
+   "start": 49.85,
+   "end": 60.986,
    "chapter": 5,
    "number": "TÚ",
    "headline": "¿Qué te *flipa* más?",
@@ -462,7 +446,7 @@
     "pose": "wave",
     "note": "¡Te leo!",
     "side": "right",
-    "at": 58.228
+    "at": 58.552
    },
    "elements": [
     {
@@ -470,660 +454,690 @@
      "footer": "Escribe 1, 2 o 3 en comentarios",
      "options": [
       {
-       "text": "La pinza pistola",
-       "at": 51.086
+       "text": "Que sepa contar",
+       "at": 51.54
       },
       {
-       "text": "El calor del Sol",
-       "at": 53.267
+       "text": "El cierre de golpe",
+       "at": 53.656
       },
       {
-       "text": "Despistar submarinos",
-       "at": 55.526
+       "text": "Que digiera insectos",
+       "at": 56.045
       }
      ],
-     "at": 51.086
+     "at": 51.54
     }
    ]
   }
  ],
  "words": [
   {
-   "text": "Este",
+   "text": "Esta",
    "start": 0.15,
    "end": 0.524
   },
   {
-   "text": "camarón",
+   "text": "planta",
    "start": 0.554,
-   "end": 1.123
+   "end": 1.058
   },
   {
-   "text": "caza",
-   "start": 1.153,
-   "end": 1.527
+   "text": "come",
+   "start": 1.088,
+   "end": 1.462
   },
   {
-   "text": "con",
-   "start": 1.557,
-   "end": 1.866
+   "text": "insectos…",
+   "start": 1.492,
+   "end": 2.127
   },
   {
-   "text": "una",
-   "start": 1.896,
-   "end": 2.205
+   "text": "y",
+   "start": 2.157,
+   "end": 2.335
   },
   {
-   "text": "pistola…",
-   "start": 2.235,
-   "end": 2.804
+   "text": "sabe",
+   "start": 2.365,
+   "end": 2.739
   },
   {
-   "text": "de",
-   "start": 2.834,
-   "end": 3.078
-  },
-  {
-   "text": "burbujas.",
-   "start": 3.108,
-   "end": 3.743
+   "text": "contar.",
+   "start": 2.769,
+   "end": 3.273
   },
   {
    "text": "¿Cómo",
-   "start": 4.043,
-   "end": 4.417
+   "start": 3.573,
+   "end": 3.947
   },
   {
    "text": "lo",
-   "start": 4.447,
-   "end": 4.69
+   "start": 3.977,
+   "end": 4.22
   },
   {
    "text": "hace?",
-   "start": 4.72,
-   "end": 5.094
+   "start": 4.25,
+   "end": 4.624
   },
   {
    "text": "El",
-   "start": 5.374,
-   "end": 5.618
+   "start": 4.904,
+   "end": 5.148
   },
   {
    "text": "truco",
-   "start": 5.648,
-   "end": 6.087
+   "start": 5.178,
+   "end": 5.617
   },
   {
    "text": "es…",
-   "start": 6.117,
-   "end": 6.36
+   "start": 5.647,
+   "end": 5.89
   },
   {
    "text": "Es",
-   "start": 6.66,
-   "end": 6.903
+   "start": 6.19,
+   "end": 6.433
   },
   {
-   "text": "el",
-   "start": 6.933,
-   "end": 7.177
+   "text": "la",
+   "start": 6.463,
+   "end": 6.707
   },
   {
-   "text": "camarón",
-   "start": 7.207,
-   "end": 7.777
+   "text": "venus",
+   "start": 6.737,
+   "end": 7.176
   },
   {
-   "text": "pistola.",
-   "start": 7.807,
-   "end": 8.376
+   "text": "atrapamoscas.",
+   "start": 7.206,
+   "end": 8.102
   },
   {
-   "text": "Abre",
-   "start": 8.656,
-   "end": 9.03
+   "text": "Dentro",
+   "start": 8.382,
+   "end": 8.886
+  },
+  {
+   "text": "de",
+   "start": 8.916,
+   "end": 9.16
   },
   {
    "text": "su",
-   "start": 9.06,
-   "end": 9.303
+   "start": 9.19,
+   "end": 9.433
   },
   {
-   "text": "pinza",
-   "start": 9.333,
-   "end": 9.773
+   "text": "trampa",
+   "start": 9.463,
+   "end": 9.967
   },
   {
-   "text": "grande…",
-   "start": 9.803,
-   "end": 10.307
+   "text": "tiene",
+   "start": 9.997,
+   "end": 10.437
   },
   {
-   "text": "y",
-   "start": 10.337,
-   "end": 10.515
+   "text": "unos",
+   "start": 10.467,
+   "end": 10.84
   },
   {
-   "text": "la",
-   "start": 10.545,
-   "end": 10.789
+   "text": "pelitos",
+   "start": 10.87,
+   "end": 11.44
   },
   {
-   "text": "cierra",
-   "start": 10.819,
-   "end": 11.323
+   "text": "que",
+   "start": 11.47,
+   "end": 11.779
   },
   {
-   "text": "de",
-   "start": 11.353,
-   "end": 11.597
-  },
-  {
-   "text": "golpe,",
-   "start": 11.627,
-   "end": 12.066
-  },
-  {
-   "text": "rapidísimo.",
-   "start": 12.346,
-   "end": 13.111
-  },
-  {
-   "text": "El",
-   "start": 13.411,
-   "end": 13.654
-  },
-  {
-   "text": "chorro",
-   "start": 13.684,
-   "end": 14.189
-  },
-  {
-   "text": "de",
-   "start": 14.219,
-   "end": 14.462
-  },
-  {
-   "text": "agua",
-   "start": 14.492,
-   "end": 14.866
-  },
-  {
-   "text": "crea",
-   "start": 14.896,
-   "end": 15.27
-  },
-  {
-   "text": "una",
-   "start": 15.3,
-   "end": 15.609
-  },
-  {
-   "text": "burbuja.",
-   "start": 15.639,
-   "end": 16.208
-  },
-  {
-   "text": "Cuando",
-   "start": 16.488,
-   "end": 16.993
-  },
-  {
-   "text": "la",
-   "start": 17.023,
-   "end": 17.266
-  },
-  {
-   "text": "burbuja",
-   "start": 17.296,
-   "end": 17.866
-  },
-  {
-   "text": "revienta,",
-   "start": 17.896,
-   "end": 18.531
-  },
-  {
-   "text": "suena",
-   "start": 18.811,
-   "end": 19.25
+   "text": "funcionan",
+   "start": 11.809,
+   "end": 12.509
   },
   {
    "text": "como",
-   "start": 19.28,
-   "end": 19.654
+   "start": 12.539,
+   "end": 12.913
+  },
+  {
+   "text": "sensores.",
+   "start": 12.943,
+   "end": 13.577
+  },
+  {
+   "text": "Si",
+   "start": 13.877,
+   "end": 14.12
+  },
+  {
+   "text": "algo",
+   "start": 14.15,
+   "end": 14.524
+  },
+  {
+   "text": "toca",
+   "start": 14.554,
+   "end": 14.928
   },
   {
    "text": "un",
-   "start": 19.684,
-   "end": 19.927
+   "start": 14.958,
+   "end": 15.202
   },
   {
-   "text": "disparo.",
-   "start": 19.957,
-   "end": 20.527
-  },
-  {
-   "text": "Y",
-   "start": 20.827,
-   "end": 21.005
-  },
-  {
-   "text": "dentro",
-   "start": 21.035,
-   "end": 21.54
-  },
-  {
-   "text": "de",
-   "start": 21.57,
-   "end": 21.813
-  },
-  {
-   "text": "esa",
-   "start": 21.843,
-   "end": 22.152
-  },
-  {
-   "text": "burbuja",
-   "start": 22.182,
-   "end": 22.751
-  },
-  {
-   "text": "se",
-   "start": 22.781,
-   "end": 23.025
-  },
-  {
-   "text": "alcanzan",
-   "start": 23.055,
-   "end": 23.69
-  },
-  {
-   "text": "casi",
-   "start": 23.72,
-   "end": 24.094
-  },
-  {
-   "text": "5.000",
-   "start": 24.124,
-   "end": 24.497
-  },
-  {
-   "text": "grados:",
-   "start": 24.527,
-   "end": 25.032
-  },
-  {
-   "text": "como",
-   "start": 25.312,
-   "end": 25.686
-  },
-  {
-   "text": "la",
-   "start": 25.716,
-   "end": 25.959
-  },
-  {
-   "text": "superficie",
-   "start": 25.989,
-   "end": 26.754
-  },
-  {
-   "text": "del",
-   "start": 26.784,
-   "end": 27.093
-  },
-  {
-   "text": "Sol.",
-   "start": 27.123,
-   "end": 27.432
-  },
-  {
-   "text": "La",
-   "start": 27.732,
-   "end": 27.975
-  },
-  {
-   "text": "onda",
-   "start": 28.005,
-   "end": 28.379
-  },
-  {
-   "text": "deja",
-   "start": 28.409,
-   "end": 28.783
-  },
-  {
-   "text": "aturdida",
-   "start": 28.813,
-   "end": 29.448
-  },
-  {
-   "text": "a",
-   "start": 29.478,
-   "end": 29.656
-  },
-  {
-   "text": "su",
-   "start": 29.686,
-   "end": 29.93
-  },
-  {
-   "text": "presa,",
-   "start": 29.96,
-   "end": 30.399
-  },
-  {
-   "text": "y",
-   "start": 30.679,
-   "end": 30.857
-  },
-  {
-   "text": "el",
-   "start": 30.887,
-   "end": 31.131
-  },
-  {
-   "text": "camarón",
-   "start": 31.161,
-   "end": 31.73
-  },
-  {
-   "text": "se",
-   "start": 31.76,
-   "end": 32.004
-  },
-  {
-   "text": "la",
-   "start": 32.034,
-   "end": 32.277
-  },
-  {
-   "text": "lleva.",
-   "start": 32.307,
-   "end": 32.746
-  },
-  {
-   "text": "Es",
-   "start": 33.046,
-   "end": 33.289
-  },
-  {
-   "text": "uno",
-   "start": 33.319,
-   "end": 33.628
-  },
-  {
-   "text": "de",
-   "start": 33.658,
-   "end": 33.902
-  },
-  {
-   "text": "los",
-   "start": 33.932,
-   "end": 34.24
-  },
-  {
-   "text": "animales",
-   "start": 34.27,
-   "end": 34.905
-  },
-  {
-   "text": "más",
-   "start": 34.935,
-   "end": 35.244
-  },
-  {
-   "text": "ruidosos",
-   "start": 35.274,
-   "end": 35.909
-  },
-  {
-   "text": "del",
-   "start": 35.939,
-   "end": 36.247
-  },
-  {
-   "text": "océano.",
-   "start": 36.277,
-   "end": 36.782
-  },
-  {
-   "text": "Y",
-   "start": 37.062,
-   "end": 37.24
-  },
-  {
-   "text": "cuando",
-   "start": 37.27,
-   "end": 37.774
-  },
-  {
-   "text": "hay",
-   "start": 37.804,
-   "end": 38.113
-  },
-  {
-   "text": "miles",
-   "start": 38.143,
-   "end": 38.582
-  },
-  {
-   "text": "juntos,",
-   "start": 38.612,
-   "end": 39.116
-  },
-  {
-   "text": "el",
-   "start": 39.396,
-   "end": 39.64
-  },
-  {
-   "text": "chasquido",
-   "start": 39.67,
-   "end": 40.37
+   "text": "pelito,",
+   "start": 15.232,
+   "end": 15.736
   },
   {
    "text": "no",
-   "start": 40.4,
-   "end": 40.643
+   "start": 16.016,
+   "end": 16.26
   },
   {
-   "text": "para",
-   "start": 40.673,
-   "end": 41.047
+   "text": "pasa",
+   "start": 16.29,
+   "end": 16.664
   },
   {
-   "text": "nunca.",
-   "start": 41.077,
-   "end": 41.516
+   "text": "nada.",
+   "start": 16.694,
+   "end": 17.067
   },
   {
-   "text": "Tanto,",
-   "start": 41.816,
-   "end": 42.255
+   "text": "Pero",
+   "start": 17.347,
+   "end": 17.721
   },
   {
-   "text": "que",
-   "start": 42.535,
-   "end": 42.844
+   "text": "si",
+   "start": 17.751,
+   "end": 17.995
+  },
+  {
+   "text": "toca",
+   "start": 18.025,
+   "end": 18.399
+  },
+  {
+   "text": "dos",
+   "start": 18.429,
+   "end": 18.737
   },
   {
    "text": "en",
-   "start": 42.874,
-   "end": 43.117
+   "start": 18.767,
+   "end": 19.011
   },
   {
-   "text": "la",
-   "start": 43.147,
-   "end": 43.391
+   "text": "unos",
+   "start": 19.041,
+   "end": 19.415
   },
   {
-   "text": "Segunda",
-   "start": 43.421,
-   "end": 43.99
+   "text": "veinte",
+   "start": 19.445,
+   "end": 19.949
   },
   {
-   "text": "Guerra",
-   "start": 44.02,
-   "end": 44.525
+   "text": "segundos…",
+   "start": 19.979,
+   "end": 20.614
   },
   {
-   "text": "Mundial",
-   "start": 44.555,
-   "end": 45.124
+   "text": "¡zas!,",
+   "start": 20.644,
+   "end": 20.953
   },
   {
-   "text": "ese",
-   "start": 45.154,
-   "end": 45.463
+   "text": "se",
+   "start": 21.233,
+   "end": 21.476
   },
   {
-   "text": "ruido",
-   "start": 45.493,
-   "end": 45.932
+   "text": "cierra.",
+   "start": 21.506,
+   "end": 22.01
   },
   {
-   "text": "confundía",
-   "start": 45.962,
-   "end": 46.662
+   "text": "Así",
+   "start": 22.31,
+   "end": 22.619
   },
   {
-   "text": "a",
-   "start": 46.692,
-   "end": 46.87
+   "text": "no",
+   "start": 22.649,
+   "end": 22.892
   },
   {
-   "text": "los",
-   "start": 46.9,
-   "end": 47.209
+   "text": "se",
+   "start": 22.922,
+   "end": 23.166
   },
   {
-   "text": "sónares",
-   "start": 47.239,
-   "end": 47.809
+   "text": "cierra",
+   "start": 23.196,
+   "end": 23.7
+  },
+  {
+   "text": "por",
+   "start": 23.73,
+   "end": 24.039
+  },
+  {
+   "text": "una",
+   "start": 24.069,
+   "end": 24.377
+  },
+  {
+   "text": "gota",
+   "start": 24.407,
+   "end": 24.781
   },
   {
    "text": "de",
-   "start": 47.839,
-   "end": 48.082
+   "start": 24.811,
+   "end": 25.055
   },
   {
-   "text": "los",
-   "start": 48.112,
-   "end": 48.421
+   "text": "lluvia:",
+   "start": 25.085,
+   "end": 25.589
   },
   {
-   "text": "submarinos.",
-   "start": 48.451,
-   "end": 49.216
+   "text": "solo",
+   "start": 25.869,
+   "end": 26.243
   },
   {
-   "text": "¿Qué",
-   "start": 49.516,
-   "end": 49.825
+   "text": "cuando",
+   "start": 26.273,
+   "end": 26.777
   },
   {
-   "text": "te",
-   "start": 49.855,
-   "end": 50.098
+   "text": "hay",
+   "start": 26.807,
+   "end": 27.116
   },
   {
-   "text": "flipa",
-   "start": 50.128,
-   "end": 50.567
+   "text": "una",
+   "start": 27.146,
+   "end": 27.455
   },
   {
-   "text": "más?",
-   "start": 50.597,
-   "end": 50.906
-  },
-  {
-   "text": "Uno,",
-   "start": 51.186,
-   "end": 51.495
-  },
-  {
-   "text": "la",
-   "start": 51.775,
-   "end": 52.018
-  },
-  {
-   "text": "pinza",
-   "start": 52.048,
-   "end": 52.487
-  },
-  {
-   "text": "pistola.",
-   "start": 52.517,
-   "end": 53.087
-  },
-  {
-   "text": "Dos,",
-   "start": 53.367,
-   "end": 53.676
-  },
-  {
-   "text": "el",
-   "start": 53.956,
-   "end": 54.199
-  },
-  {
-   "text": "calor",
-   "start": 54.229,
-   "end": 54.668
-  },
-  {
-   "text": "del",
-   "start": 54.698,
-   "end": 55.007
-  },
-  {
-   "text": "Sol.",
-   "start": 55.037,
-   "end": 55.346
-  },
-  {
-   "text": "Tres,",
-   "start": 55.626,
-   "end": 55.999
+   "text": "presa",
+   "start": 27.485,
+   "end": 27.924
   },
   {
    "text": "que",
-   "start": 56.279,
-   "end": 56.588
+   "start": 27.954,
+   "end": 28.263
   },
   {
-   "text": "despiste",
-   "start": 56.618,
-   "end": 57.253
+   "text": "se",
+   "start": 28.293,
+   "end": 28.536
   },
   {
-   "text": "submarinos.",
-   "start": 57.283,
-   "end": 58.048
+   "text": "mueve.",
+   "start": 28.566,
+   "end": 29.005
   },
   {
-   "text": "Escríbelo",
-   "start": 58.328,
-   "end": 59.028
+   "text": "Y",
+   "start": 29.305,
+   "end": 29.483
+  },
+  {
+   "text": "se",
+   "start": 29.513,
+   "end": 29.757
+  },
+  {
+   "text": "cierra",
+   "start": 29.787,
+   "end": 30.291
   },
   {
    "text": "en",
-   "start": 59.058,
-   "end": 59.302
+   "start": 30.321,
+   "end": 30.565
+  },
+  {
+   "text": "una",
+   "start": 30.595,
+   "end": 30.903
+  },
+  {
+   "text": "décima",
+   "start": 30.933,
+   "end": 31.438
+  },
+  {
+   "text": "de",
+   "start": 31.468,
+   "end": 31.711
+  },
+  {
+   "text": "segundo.",
+   "start": 31.741,
+   "end": 32.311
+  },
+  {
+   "text": "Sus",
+   "start": 32.591,
+   "end": 32.899
+  },
+  {
+   "text": "hojas",
+   "start": 32.929,
+   "end": 33.368
+  },
+  {
+   "text": "pasan",
+   "start": 33.398,
+   "end": 33.838
+  },
+  {
+   "text": "de",
+   "start": 33.868,
+   "end": 34.111
+  },
+  {
+   "text": "curvarse",
+   "start": 34.141,
+   "end": 34.776
+  },
+  {
+   "text": "hacia",
+   "start": 34.806,
+   "end": 35.245
+  },
+  {
+   "text": "fuera",
+   "start": 35.275,
+   "end": 35.714
+  },
+  {
+   "text": "a",
+   "start": 35.744,
+   "end": 35.922
+  },
+  {
+   "text": "curvarse",
+   "start": 35.952,
+   "end": 36.587
+  },
+  {
+   "text": "hacia",
+   "start": 36.617,
+   "end": 37.056
+  },
+  {
+   "text": "dentro,",
+   "start": 37.086,
+   "end": 37.591
+  },
+  {
+   "text": "como",
+   "start": 37.871,
+   "end": 38.245
+  },
+  {
+   "text": "la",
+   "start": 38.275,
+   "end": 38.518
+  },
+  {
+   "text": "tapa",
+   "start": 38.548,
+   "end": 38.922
+  },
+  {
+   "text": "de",
+   "start": 38.952,
+   "end": 39.195
+  },
+  {
+   "text": "un",
+   "start": 39.225,
+   "end": 39.469
+  },
+  {
+   "text": "bote",
+   "start": 39.499,
+   "end": 39.873
+  },
+  {
+   "text": "que",
+   "start": 39.903,
+   "end": 40.212
+  },
+  {
+   "text": "hace",
+   "start": 40.242,
+   "end": 40.615
+  },
+  {
+   "text": "clac.",
+   "start": 40.645,
+   "end": 41.019
+  },
+  {
+   "text": "Y",
+   "start": 41.319,
+   "end": 41.497
+  },
+  {
+   "text": "si",
+   "start": 41.527,
+   "end": 41.771
+  },
+  {
+   "text": "la",
+   "start": 41.801,
+   "end": 42.044
+  },
+  {
+   "text": "presa",
+   "start": 42.074,
+   "end": 42.513
+  },
+  {
+   "text": "sigue",
+   "start": 42.543,
+   "end": 42.982
+  },
+  {
+   "text": "luchando",
+   "start": 43.012,
+   "end": 43.647
+  },
+  {
+   "text": "y",
+   "start": 43.677,
+   "end": 43.856
+  },
+  {
+   "text": "toca",
+   "start": 43.886,
+   "end": 44.259
+  },
+  {
+   "text": "cinco",
+   "start": 44.289,
+   "end": 44.729
+  },
+  {
+   "text": "veces,",
+   "start": 44.759,
+   "end": 45.198
+  },
+  {
+   "text": "la",
+   "start": 45.478,
+   "end": 45.721
+  },
+  {
+   "text": "planta",
+   "start": 45.751,
+   "end": 46.256
+  },
+  {
+   "text": "empieza",
+   "start": 46.286,
+   "end": 46.855
+  },
+  {
+   "text": "a",
+   "start": 46.885,
+   "end": 47.063
+  },
+  {
+   "text": "fabricar",
+   "start": 47.093,
+   "end": 47.728
+  },
+  {
+   "text": "sus",
+   "start": 47.758,
+   "end": 48.067
+  },
+  {
+   "text": "jugos",
+   "start": 48.097,
+   "end": 48.536
+  },
+  {
+   "text": "para",
+   "start": 48.566,
+   "end": 48.94
+  },
+  {
+   "text": "digerirla.",
+   "start": 48.97,
+   "end": 49.67
+  },
+  {
+   "text": "¿Qué",
+   "start": 49.97,
+   "end": 50.279
+  },
+  {
+   "text": "te",
+   "start": 50.309,
+   "end": 50.552
+  },
+  {
+   "text": "flipa",
+   "start": 50.582,
+   "end": 51.021
+  },
+  {
+   "text": "más?",
+   "start": 51.051,
+   "end": 51.36
+  },
+  {
+   "text": "Uno,",
+   "start": 51.64,
+   "end": 51.949
+  },
+  {
+   "text": "que",
+   "start": 52.229,
+   "end": 52.537
+  },
+  {
+   "text": "sepa",
+   "start": 52.567,
+   "end": 52.941
+  },
+  {
+   "text": "contar.",
+   "start": 52.971,
+   "end": 53.476
+  },
+  {
+   "text": "Dos,",
+   "start": 53.756,
+   "end": 54.064
+  },
+  {
+   "text": "el",
+   "start": 54.344,
+   "end": 54.588
+  },
+  {
+   "text": "cierre",
+   "start": 54.618,
+   "end": 55.122
+  },
+  {
+   "text": "de",
+   "start": 55.152,
+   "end": 55.396
+  },
+  {
+   "text": "golpe.",
+   "start": 55.426,
+   "end": 55.865
+  },
+  {
+   "text": "Tres,",
+   "start": 56.145,
+   "end": 56.519
+  },
+  {
+   "text": "que",
+   "start": 56.799,
+   "end": 57.107
+  },
+  {
+   "text": "digiera",
+   "start": 57.137,
+   "end": 57.707
+  },
+  {
+   "text": "insectos.",
+   "start": 57.737,
+   "end": 58.372
+  },
+  {
+   "text": "Escríbelo",
+   "start": 58.652,
+   "end": 59.352
+  },
+  {
+   "text": "en",
+   "start": 59.382,
+   "end": 59.625
   },
   {
    "text": "comentarios.",
-   "start": 59.332,
-   "end": 60.162
+   "start": 59.655,
+   "end": 60.486
   }
  ],
  "audio": null,
  "music": null,
  "musicVolume": 0.1,
  "outro": {
-  "at": 60.662,
+  "at": 60.986,
   "cta": "La naturaleza tiene trucos"
+ },
+ "cover": {
+  "text": "Esta planta *sabe contar*",
+  "badge": "¿CÓMO LO HACE?",
+  "scene": 3
  }
 }

@@ -1,41 +1,202 @@
 [
-  {"tema": "El pez arquero caza insectos disparando chorros de agua", "categoria": "animales", "hecho": true},
-  {"tema": "El camarón pistola caza con una burbuja que explota", "categoria": "animales", "hecho": true},
-  {"tema": "El zapatero (Gerridae) camina sobre el agua sin hundirse", "categoria": "animales", "pista": "pelitos encerados que atrapan aire + tensión superficial; rema creando remolinos"},
-  {"tema": "El gecko trepa por paredes y techos de cristal", "categoria": "animales", "pista": "millones de pelitos (setas) en los dedos; fuerzas de van der Waals; se despega cambiando el ángulo"},
-  {"tema": "El escarabajo bombardero dispara un spray hirviendo", "categoria": "animales", "pista": "dos depósitos químicos (hidroquinonas y peróxido) que reaccionan en una cámara; cerca de 100 °C; disparo a pulsos"},
-  {"tema": "El basilisco corre sobre el agua", "categoria": "animales", "pista": "golpea muy rápido con patas grandes; crea bolsas de aire; saca la pata antes de que se cierren"},
-  {"tema": "El pulpo cambia de color en un instante", "categoria": "animales", "pista": "cromatóforos: saquitos de pigmento que abre y cierra con músculos"},
-  {"tema": "El camaleón dispara la lengua más rápido que un coche deportivo acelera", "categoria": "animales", "pista": "catapulta elástica de colágeno que acumula energía"},
-  {"tema": "Los murciélagos 'ven' con sonido", "categoria": "animales", "pista": "ecolocalización: emiten chillidos y escuchan el eco"},
-  {"tema": "La lechuza vuela en completo silencio", "categoria": "animales", "pista": "plumas con borde de flecos y superficie aterciopelada que rompen las turbulencias"},
-  {"tema": "La rana de cristal se vuelve transparente al dormir", "categoria": "animales", "pista": "esconde casi todos los glóbulos rojos en el hígado (estudio en Science, 2022)"},
-  {"tema": "El ajolote regenera patas enteras", "categoria": "animales", "pista": "blastema: células que vuelven a un estado 'joven' y reconstruyen la pata"},
-  {"tema": "El tardígrado sobrevive al vacío del espacio", "categoria": "animales", "pista": "se seca y entra en criptobiosis (tun); proteínas protectoras"},
-  {"tema": "La anguila eléctrica da descargas de cientos de voltios", "categoria": "animales", "pista": "miles de electrocitos apilados como pilas en serie"},
-  {"tema": "El colibrí puede volar hacia atrás", "categoria": "animales", "pista": "alas que giran en el hombro y baten dibujando un ocho"},
-  {"tema": "Las abejas se indican dónde hay flores bailando", "categoria": "animales", "pista": "danza del meneo: el ángulo indica la dirección respecto al Sol y la duración, la distancia"},
-  {"tema": "Las hormigas encuentran siempre el camino más corto", "categoria": "animales", "pista": "rastros de feromonas que se refuerzan en el camino más corto"},
-  {"tema": "Los flamencos son rosas por lo que comen", "categoria": "animales", "pista": "pigmentos carotenoides de algas y gambas"},
-  {"tema": "La mariposa morfo es azul sin tener pigmento azul", "categoria": "animales", "pista": "color estructural: escamas con nanoestructuras que reflejan solo el azul"},
-  {"tema": "Los gatos casi siempre caen de pie", "categoria": "animales", "pista": "reflejo de enderezamiento: giran primero la parte delantera y luego la trasera"},
-  {"tema": "El perro se seca sacudiéndose en segundos", "categoria": "animales", "pista": "oscilación muy rápida de la piel suelta; elimina buena parte del agua en un segundo"},
-  {"tema": "La jirafa no se marea al bajar la cabeza", "categoria": "animales", "pista": "corazón muy potente y vasos con válvulas y red de vasos que regulan la presión"},
-  {"tema": "Las luciérnagas hacen luz sin calor", "categoria": "animales", "pista": "bioluminiscencia: luciferina + luciferasa + oxígeno"},
-  {"tema": "Los pingüinos emperador aguantan -40 °C", "categoria": "animales", "pista": "se apiñan y rotan; plumas densas; intercambio de calor a contracorriente en las patas"},
-  {"tema": "El pájaro carpintero golpea sin hacerse daño", "categoria": "animales", "pista": "cerebro pequeño y bien encajado; golpes muy cortos (estudio de 2022: la cabeza actúa como martillo rígido)"},
-  {"tema": "La planta atrapamoscas cuenta hasta cinco", "categoria": "plantas", "pista": "se cierra si tocan 2 pelos en unos 20-30 s; con más toques empieza a digerir"},
-  {"tema": "La mimosa púdica cierra sus hojas al tocarla", "categoria": "plantas", "pista": "cambios rápidos de presión de agua en la base de las hojas"},
-  {"tema": "Las semillas del diente de león vuelan con un 'anillo' de aire", "categoria": "plantas", "pista": "el vilano crea un remolino separado que la sostiene (Nature, 2018)"},
-  {"tema": "Los girasoles jóvenes siguen al Sol", "categoria": "plantas", "pista": "el tallo crece más por un lado gracias a un reloj interno; de adultos miran al este"},
-  {"tema": "Los volcanes explotan como un refresco agitado", "categoria": "tierra", "pista": "gases disueltos en el magma que se liberan de golpe al bajar la presión"},
-  {"tema": "Los géiseres disparan agua hirviendo", "categoria": "tierra", "pista": "agua sobrecalentada bajo presión en conductos estrechos"},
-  {"tema": "Por qué el cielo es azul", "categoria": "fisica", "pista": "dispersión de Rayleigh: el aire dispersa más la luz azul"},
-  {"tema": "Cómo se forma un arcoíris", "categoria": "fisica", "pista": "cada gota refracta, refleja y separa los colores; ángulo de unos 42°"},
-  {"tema": "Por qué el hielo flota", "categoria": "fisica", "pista": "al congelarse, el agua forma una red con huecos y es menos densa"},
-  {"tema": "Cómo se forman las auroras boreales", "categoria": "fisica", "pista": "partículas del viento solar guiadas por el campo magnético chocan con el aire"},
-  {"tema": "Por qué se arrugan los dedos en el agua", "categoria": "cuerpo", "pista": "lo controla el sistema nervioso (vasoconstricción); hipótesis: mejor agarre en mojado"},
-  {"tema": "Por qué nos da hipo", "categoria": "cuerpo", "pista": "espasmo del diafragma + cierre brusco de la glotis ('hip')"},
-  {"tema": "Por qué se pone la piel de gallina", "categoria": "cuerpo", "pista": "músculos erectores del pelo; reflejo heredado de antepasados con más pelo"},
-  {"tema": "Por qué los bostezos se contagian", "categoria": "cuerpo", "pista": "relacionado con la imitación social; las causas exactas se siguen investigando"}
+  {
+    "tema": "El pez arquero caza insectos disparando chorros de agua",
+    "categoria": "animales",
+    "hecho": true
+  },
+  {
+    "tema": "El camarón pistola caza con una burbuja que explota",
+    "categoria": "animales",
+    "hecho": true
+  },
+  {
+    "tema": "El zapatero (Gerridae) camina sobre el agua sin hundirse",
+    "categoria": "animales",
+    "pista": "pelitos encerados que atrapan aire + tensión superficial; rema creando remolinos"
+  },
+  {
+    "tema": "El gecko trepa por paredes y techos de cristal",
+    "categoria": "animales",
+    "pista": "millones de pelitos (setas) en los dedos; fuerzas de van der Waals; se despega cambiando el ángulo",
+    "hecho": true
+  },
+  {
+    "tema": "El escarabajo bombardero dispara un spray hirviendo",
+    "categoria": "animales",
+    "pista": "dos depósitos químicos (hidroquinonas y peróxido) que reaccionan en una cámara; cerca de 100 °C; disparo a pulsos"
+  },
+  {
+    "tema": "El basilisco corre sobre el agua",
+    "categoria": "animales",
+    "pista": "golpea muy rápido con patas grandes; crea bolsas de aire; saca la pata antes de que se cierren"
+  },
+  {
+    "tema": "El pulpo cambia de color en un instante",
+    "categoria": "animales",
+    "pista": "cromatóforos: saquitos de pigmento que abre y cierra con músculos"
+  },
+  {
+    "tema": "El camaleón dispara la lengua más rápido que un coche deportivo acelera",
+    "categoria": "animales",
+    "pista": "catapulta elástica de colágeno que acumula energía"
+  },
+  {
+    "tema": "Los murciélagos 'ven' con sonido",
+    "categoria": "animales",
+    "pista": "ecolocalización: emiten chillidos y escuchan el eco"
+  },
+  {
+    "tema": "La lechuza vuela en completo silencio",
+    "categoria": "animales",
+    "pista": "plumas con borde de flecos y superficie aterciopelada que rompen las turbulencias"
+  },
+  {
+    "tema": "La rana de cristal se vuelve transparente al dormir",
+    "categoria": "animales",
+    "pista": "esconde casi todos los glóbulos rojos en el hígado (estudio en Science, 2022)"
+  },
+  {
+    "tema": "El ajolote regenera patas enteras",
+    "categoria": "animales",
+    "pista": "blastema: células que vuelven a un estado 'joven' y reconstruyen la pata"
+  },
+  {
+    "tema": "El tardígrado sobrevive al vacío del espacio",
+    "categoria": "animales",
+    "pista": "se seca y entra en criptobiosis (tun); proteínas protectoras"
+  },
+  {
+    "tema": "La anguila eléctrica da descargas de cientos de voltios",
+    "categoria": "animales",
+    "pista": "miles de electrocitos apilados como pilas en serie"
+  },
+  {
+    "tema": "El colibrí puede volar hacia atrás",
+    "categoria": "animales",
+    "pista": "alas que giran en el hombro y baten dibujando un ocho"
+  },
+  {
+    "tema": "Las abejas se indican dónde hay flores bailando",
+    "categoria": "animales",
+    "pista": "danza del meneo: el ángulo indica la dirección respecto al Sol y la duración, la distancia"
+  },
+  {
+    "tema": "Las hormigas encuentran siempre el camino más corto",
+    "categoria": "animales",
+    "pista": "rastros de feromonas que se refuerzan en el camino más corto"
+  },
+  {
+    "tema": "Los flamencos son rosas por lo que comen",
+    "categoria": "animales",
+    "pista": "pigmentos carotenoides de algas y gambas"
+  },
+  {
+    "tema": "La mariposa morfo es azul sin tener pigmento azul",
+    "categoria": "animales",
+    "pista": "color estructural: escamas con nanoestructuras que reflejan solo el azul"
+  },
+  {
+    "tema": "Los gatos casi siempre caen de pie",
+    "categoria": "animales",
+    "pista": "reflejo de enderezamiento: giran primero la parte delantera y luego la trasera"
+  },
+  {
+    "tema": "El perro se seca sacudiéndose en segundos",
+    "categoria": "animales",
+    "pista": "oscilación muy rápida de la piel suelta; elimina buena parte del agua en un segundo"
+  },
+  {
+    "tema": "La jirafa no se marea al bajar la cabeza",
+    "categoria": "animales",
+    "pista": "corazón muy potente y vasos con válvulas y red de vasos que regulan la presión"
+  },
+  {
+    "tema": "Las luciérnagas hacen luz sin calor",
+    "categoria": "animales",
+    "pista": "bioluminiscencia: luciferina + luciferasa + oxígeno"
+  },
+  {
+    "tema": "Los pingüinos emperador aguantan -40 °C",
+    "categoria": "animales",
+    "pista": "se apiñan y rotan; plumas densas; intercambio de calor a contracorriente en las patas"
+  },
+  {
+    "tema": "El pájaro carpintero golpea sin hacerse daño",
+    "categoria": "animales",
+    "pista": "cerebro pequeño y bien encajado; golpes muy cortos (estudio de 2022: la cabeza actúa como martillo rígido)"
+  },
+  {
+    "tema": "La planta atrapamoscas cuenta hasta cinco",
+    "categoria": "plantas",
+    "pista": "se cierra si tocan 2 pelos en unos 20-30 s; con más toques empieza a digerir",
+    "hecho": true
+  },
+  {
+    "tema": "La mimosa púdica cierra sus hojas al tocarla",
+    "categoria": "plantas",
+    "pista": "cambios rápidos de presión de agua en la base de las hojas"
+  },
+  {
+    "tema": "Las semillas del diente de león vuelan con un 'anillo' de aire",
+    "categoria": "plantas",
+    "pista": "el vilano crea un remolino separado que la sostiene (Nature, 2018)"
+  },
+  {
+    "tema": "Los girasoles jóvenes siguen al Sol",
+    "categoria": "plantas",
+    "pista": "el tallo crece más por un lado gracias a un reloj interno; de adultos miran al este"
+  },
+  {
+    "tema": "Los volcanes explotan como un refresco agitado",
+    "categoria": "tierra",
+    "pista": "gases disueltos en el magma que se liberan de golpe al bajar la presión",
+    "hecho": true
+  },
+  {
+    "tema": "Los géiseres disparan agua hirviendo",
+    "categoria": "tierra",
+    "pista": "agua sobrecalentada bajo presión en conductos estrechos"
+  },
+  {
+    "tema": "Por qué el cielo es azul",
+    "categoria": "fisica",
+    "pista": "dispersión de Rayleigh: el aire dispersa más la luz azul",
+    "hecho": true
+  },
+  {
+    "tema": "Cómo se forma un arcoíris",
+    "categoria": "fisica",
+    "pista": "cada gota refracta, refleja y separa los colores; ángulo de unos 42°"
+  },
+  {
+    "tema": "Por qué el hielo flota",
+    "categoria": "fisica",
+    "pista": "al congelarse, el agua forma una red con huecos y es menos densa"
+  },
+  {
+    "tema": "Cómo se forman las auroras boreales",
+    "categoria": "fisica",
+    "pista": "partículas del viento solar guiadas por el campo magnético chocan con el aire"
+  },
+  {
+    "tema": "Por qué se arrugan los dedos en el agua",
+    "categoria": "cuerpo",
+    "pista": "lo controla el sistema nervioso (vasoconstricción); hipótesis: mejor agarre en mojado",
+    "hecho": true
+  },
+  {
+    "tema": "Por qué nos da hipo",
+    "categoria": "cuerpo",
+    "pista": "espasmo del diafragma + cierre brusco de la glotis ('hip')"
+  },
+  {
+    "tema": "Por qué se pone la piel de gallina",
+    "categoria": "cuerpo",
+    "pista": "músculos erectores del pelo; reflejo heredado de antepasados con más pelo"
+  },
+  {
+    "tema": "Por qué los bostezos se contagian",
+    "categoria": "cuerpo",
+    "pista": "relacionado con la imitación social; las causas exactas se siguen investigando"
+  }
 ]

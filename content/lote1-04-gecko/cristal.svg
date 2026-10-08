@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#BFE6FF"/>
+  <g fill="#FFFFFF" opacity="0.55"><polygon points="120,0 220,0 60,700 -40,700"/><polygon points="300,0 340,0 180,700 140,700"/><polygon points="760,0 860,0 700,700 600,700"/></g>
+  <rect x="0" y="0" width="1000" height="40" fill="#9AA3B5" stroke="#0B0B14" stroke-width="7"/>
+  <g id="gecko"><g transform="translate(520 380) rotate(-90)">
+    <path d="M 150 0 Q 230 10 290 60 Q 320 90 300 110 Q 280 80 220 50 Q 180 35 140 30 Z" fill="#7BE07B" stroke="#0B0B14" stroke-width="7" stroke-linejoin="round"/>
+    <g id="legs" stroke="#0B0B14" stroke-width="7" fill="#7BE07B" stroke-linejoin="round">
+      <path d="M 60 -40 L 90 -100 L 110 -95 L 80 -38 Z"/><path d="M 60 40 L 90 100 L 110 95 L 80 38 Z"/>
+      <path d="M -60 -40 L -90 -100 L -70 -105 L -40 -40 Z"/><path d="M -60 40 L -90 100 L -70 105 L -40 40 Z"/>
+    </g>
+    <g id="toes" fill="#C8FF2E" stroke="#0B0B14" stroke-width="5">
+      <circle cx="100" cy="-110" r="16"/><circle cx="100" cy="110" r="16"/><circle cx="-80" cy="-112" r="16"/><circle cx="-80" cy="112" r="16"/>
+    </g>
+    <ellipse cx="20" cy="0" rx="150" ry="55" fill="#7BE07B" stroke="#0B0B14" stroke-width="8"/>
+    <g fill="#36B37E"><circle cx="40" cy="-15" r="10"/><circle cx="-10" cy="18" r="8"/><circle cx="80" cy="12" r="9"/></g>
+    <path d="M -120 -30 Q -200 -30 -210 0 Q -200 30 -120 30 Z" fill="#7BE07B" stroke="#0B0B14" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="-170" cy="-24" r="16" fill="#FFFFFF" stroke="#0B0B14" stroke-width="5"/><circle cx="-174" cy="-24" r="7" fill="#0B0B14"/>
+    <circle cx="-170" cy="24" r="16" fill="#FFFFFF" stroke="#0B0B14" stroke-width="5"/><circle cx="-174" cy="24" r="7" fill="#0B0B14"/>
+  </g></g>
+  <g id="fly"><g transform="translate(520 110)"><ellipse rx="22" ry="14" fill="#3A3A4A" stroke="#0B0B14" stroke-width="5"/><ellipse cx="-6" cy="-18" rx="10" ry="16" fill="#FFFFFF" stroke="#0B0B14" stroke-width="4"/></g></g>
+  <g id="pan"><g transform="translate(830 560)"><ellipse rx="110" ry="40" fill="#2B2B36" stroke="#0B0B14" stroke-width="7"/><rect x="100" y="-12" width="120" height="24" rx="8" fill="#2B2B36" stroke="#0B0B14" stroke-width="6"/><text x="0" y="10" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="26" fill="#C8FF2E">TEFLÓN</text></g></g>
+</svg>

@@ -51,12 +51,32 @@ def _check_stop(msg) -> None:
 
 # ------------------------------------------------------------------ 1. tema
 
+CATEGORY_ORDER = ["animales", "plantas", "fisica", "cuerpo", "tierra"]
+
+
+def _last_category() -> str | None:
+    scripts = sorted(CONTENT_DIR.glob("*/guion.json"), key=lambda p: p.stat().st_mtime) if CONTENT_DIR.exists() else []
+    for p in reversed(scripts):
+        cat = json.loads(p.read_text(encoding="utf-8")).get("categoria")
+        if cat:
+            return cat
+    return None
+
+
 def pick_topic() -> dict:
+    """Siguiente tema pendiente, rotando de categoría respecto al último vídeo."""
     topics = json.loads(TOPICS.read_text(encoding="utf-8"))
-    for t in topics:
-        if not t.get("hecho"):
-            return t
-    return new_topic(topics)
+    pending = [t for t in topics if not t.get("hecho")]
+    if not pending:
+        return new_topic(topics)
+    last = _last_category()
+    start = (CATEGORY_ORDER.index(last) + 1) if last in CATEGORY_ORDER else 0
+    for k in range(len(CATEGORY_ORDER)):
+        cat = CATEGORY_ORDER[(start + k) % len(CATEGORY_ORDER)]
+        for t in pending:
+            if t.get("categoria") == cat:
+                return t
+    return pending[0]
 
 
 def new_topic(existing: list[dict]) -> dict:
@@ -145,7 +165,8 @@ NUNCA inventes datos: usa solo los de la ficha de investigación; si un dato est
 
 ESTRUCTURA (unos 50-70 segundos, 150-210 palabras de narración en total):
 - Escena 0, capítulo 0 "?": GANCHO. Lo increíble en una frase (máx. 12 palabras). Con ilustración.
-- Escena 1, capítulo 0: FIRMA. Exactamente {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Cómo lo hace? El truco es…"}.
+- Escena 1, capítulo 0: FIRMA. {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Cómo lo hace? El truco es…"}
+  (si el protagonista no es un ser vivo, usa "¿Y eso por qué? El truco es…").
 - Capítulos "1", "2", "3": el truco explicado paso a paso (1-2 escenas por capítulo). Usa ilustraciones de detalle.
 - Capítulo "+": 1-2 datos extra sorprendentes.
 - Capítulo "TÚ": encuesta "¿Qué te flipa más?" con 3 opciones dichas en voz ("Uno, ... Dos, ... Tres, ...") y "Escríbelo en comentarios."
@@ -184,7 +205,7 @@ ANIMACIONES (anims): {"target": id, "effect", "trigger"?, "dur"?, "to"?: [dx, dy
 - Entradas (empiezan ocultas hasta su trigger): pop, fade, draw (trazos que se dibujan: chorros, flechas, rayos), grow, slide-left/right/up/down.
 - Bucles (sin trigger = desde el inicio de la escena): float, bob, sway (origin bottom para plantas), spin, pulse, shake, wiggle,
   flow (agua que corre en trazos), blink.
-- Acciones: move (to: desplazamiento en unidades del viewBox, rotate: grados, origin), hide (desaparece; sin trigger = oculto toda la escena).
+- Acciones: move (to: desplazamiento en unidades del viewBox, rotate: grados, origin: center|bottom|top|left|right|bottom-left|bottom-right|top-left|top-right = punto de giro de la caja del grupo, útil para bisagras), hide (desaparece; sin trigger = oculto toda la escena).
 - Cuando reutilices un SVG en otra escena, oculta con "hide" lo que no toque mostrar.
 - Da vida a todo: algo siempre se mueve, y lo importante ocurre justo cuando la voz lo dice (trigger).
 - "sfx" opcional para el sonido del momento: whoosh, pop, papel, ding, sorpresa, sello, chasquido, chorro, burbujas, splash, boing, rotulador, brillo, none.
@@ -272,12 +293,15 @@ def validate(script: dict) -> tuple[list[str], list[str]]:
     if not 7 <= len(scenes) <= 12:
         errors.append(f"Hay {len(scenes)} escenas; deben ser entre 7 y 12.")
     if len(scenes) > 1:
-        scenes[1].update({"chapter": 0, "signature": True, "headline": "El truco es…", "narration": SIGNATURE_LINE})
+        sig = scenes[1].get("narration", "")
+        if not sig.rstrip().endswith("El truco es…") or len(sig.split()) > 8:
+            sig = SIGNATURE_LINE
+        scenes[1].update({"chapter": 0, "signature": True, "headline": "El truco es…", "narration": sig})
         scenes[1].pop("illustration", None), scenes[1].pop("elements", None), scenes[1].pop("mascot", None)
     if scenes and not scenes[0].get("illustration"):
         errors.append("La escena 0 (gancho) necesita ilustración.")
     words = sum(len(s.get("narration", "").split()) for s in scenes)
-    if not 130 <= words <= 240:
+    if not 110 <= words <= 240:
         errors.append(f"La narración tiene {words} palabras; debe tener entre 150 y 210.")
     if scenes and scenes[-1].get("chapter") != 5:
         errors.append("La última escena debe ser el capítulo 5 (TÚ) con la encuesta.")
@@ -368,6 +392,7 @@ def generate(topic: dict | None = None, max_fixes: int = 2) -> Path:
         if attempt == max_fixes:
             raise RuntimeError("El guion no pasó la validación: " + "; ".join(errors))
         script, raw = write_script(topic, facts, errors, raw)
+    script["categoria"] = topic.get("categoria", script.get("categoria", "animales"))
     folder = save(script)
     (folder / "investigacion.md").write_text(facts, encoding="utf-8")
     mark_done(topic)

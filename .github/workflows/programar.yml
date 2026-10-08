@@ -1,0 +1,63 @@
+name: Programar en Buffer
+
+# Programa en Buffer (YouTube, Instagram y TikTok) los vídeos renderizados que aún no lo están,
+# uno cada 3 horas y alternando categorías. Se ejecuta tras cada render y también a mano.
+# Secretos: BUFFER_API_KEY, MEDIA_TOKEN (token con escritura en el repo público de vídeos).
+# Variable: MEDIA_REPO (p. ej. "usuario/eltrucoes-videos").
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: "Máximo de vídeos a programar (vacío = todos)"
+        required: false
+  workflow_run:
+    workflows: ["Render de ejemplo", "Vídeo diario"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: programar
+  cancel-in-progress: false
+
+jobs:
+  programar:
+    runs-on: ubuntu-latest
+    env:
+      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+      GH_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+      MEDIA_REPO: ${{ vars.MEDIA_REPO }}
+    steps:
+      - name: Comprobar credenciales
+        run: |
+          if [ -z "$BUFFER_API_KEY" ] || [ -z "$GH_TOKEN" ] || [ -z "$MEDIA_REPO" ]; then
+            echo "::warning::Faltan BUFFER_API_KEY, MEDIA_TOKEN o MEDIA_REPO; no se programa nada."
+            echo "SKIP=1" >> "$GITHUB_ENV"
+          fi
+      - uses: actions/checkout@v4
+        if: env.SKIP != '1'
+        with:
+          ref: ${{ github.event.workflow_run.head_branch || github.ref_name }}
+      - uses: actions/setup-python@v5
+        if: env.SKIP != '1'
+        with:
+          python-version: "3.12"
+      - if: env.SKIP != '1'
+        run: pip install requests PyYAML
+      - if: env.SKIP != '1'
+        run: python -m autocontent canales
+      - if: env.SKIP != '1'
+        run: python -m autocontent programar ${{ github.event.inputs.n && format('-n {0}', github.event.inputs.n) || '' }}
+      - name: Guardar el estado
+        if: env.SKIP != '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/publicaciones.json
+          git commit -m "Vídeos programados en Buffer" || exit 0
+          branch="${{ github.event.workflow_run.head_branch || github.ref_name }}"
+          for i in 1 2 3; do git pull --rebase origin "$branch" && git push origin "HEAD:$branch" && exit 0; sleep 5; done
+          exit 1

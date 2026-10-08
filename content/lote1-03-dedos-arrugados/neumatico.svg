@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" fill="#DDF3FF"/>
+  <rect y="520" width="1000" height="180" fill="#9AA3B5" stroke="#0B0B14" stroke-width="7"/>
+  <path d="M 0 520 L 1000 520" stroke="#4FB3FF" stroke-width="16"/>
+  <g id="tire"><g transform="translate(330 330)">
+    <circle r="190" fill="#2B2B36" stroke="#0B0B14" stroke-width="8"/>
+    <g stroke="#0B0B14" stroke-width="10" stroke-linecap="round">
+      <line x1="0" y1="-190" x2="0" y2="-150"/><line x1="134" y1="-134" x2="106" y2="-106"/><line x1="190" y1="0" x2="150" y2="0"/><line x1="134" y1="134" x2="106" y2="106"/>
+      <line x1="0" y1="190" x2="0" y2="150"/><line x1="-134" y1="134" x2="-106" y2="106"/><line x1="-190" y1="0" x2="-150" y2="0"/><line x1="-134" y1="-134" x2="-106" y2="-106"/>
+    </g>
+    <circle r="80" fill="#9AA3B5" stroke="#0B0B14" stroke-width="8"/><circle r="22" fill="#2B2B36"/>
+  </g></g>
+  <g id="splash" fill="#4FB3FF" stroke="#0B0B14" stroke-width="5"><path d="M 150 510 Q 110 460 90 480 Q 120 490 135 520 Z"/><path d="M 510 510 Q 560 450 585 470 Q 550 490 530 522 Z"/></g>
+  <g id="finger"><g transform="translate(780 330)">
+    <path d="M -70 200 L -70 -60 Q -70 -130 0 -130 Q 70 -130 70 -60 L 70 200 Z" fill="#FFC8A2" stroke="#0B0B14" stroke-width="8" stroke-linejoin="round"/>
+    <g stroke="#C97A55" stroke-width="6" fill="none" stroke-linecap="round"><path d="M -50 -60 Q 0 -80 50 -60"/><path d="M -55 -30 Q 0 -50 55 -30"/><path d="M -55 0 Q 0 -20 55 0"/><path d="M -55 30 Q 0 10 55 30"/></g>
+  </g></g>
+  <g id="channels" stroke="#4FB3FF" stroke-width="8" stroke-linecap="round" fill="none"><path d="M 700 330 L 640 300"/><path d="M 860 330 L 920 300"/><path d="M 700 380 L 640 360"/><path d="M 860 380 L 920 360"/></g>
+  <g font-family="JetBrains Mono" font-weight="800" font-size="28">
+    <g id="l1"><rect x="220" y="60" width="220" height="44" rx="8" fill="#0B0B14"/><text x="330" y="91" text-anchor="middle" fill="#C8FF2E">NEUMÁTICO</text></g>
+    <g id="l2"><rect x="690" y="120" width="180" height="44" rx="8" fill="#0B0B14"/><text x="780" y="151" text-anchor="middle" fill="#C8FF2E">TU DEDO</text></g>
+  </g>
+</svg>

@@ -4,7 +4,7 @@ import { fontsReady } from "./fonts";
 import { Cover } from "./Cover";
 import { Profile } from "./Profile";
 import { ProfileName } from "./ProfileName";
-import { Short } from "./Short";
+import { COVER_FRAMES, Short } from "./Short";
 import sample from "./sample-props.json";
 import type { ShortProps } from "./types";
 
@@ -14,7 +14,7 @@ fontsReady.then(() => continueRender(handle));
 const durationOf = (p: ShortProps) => {
   let end = Math.max(...p.scenes.map((s) => s.end));
   if (p.outro) end = Math.max(end, p.outro.at + 2.6);
-  return Math.ceil(end * FPS);
+  return Math.ceil(end * FPS) + COVER_FRAMES;
 };
 
 export const Root: React.FC = () => (

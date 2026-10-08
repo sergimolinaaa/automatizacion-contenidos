@@ -56,8 +56,8 @@ export const ProgressBar: React.FC<{ chapters: string[]; scenes: Scene[]; source
       </div>
       {source && (
         <div style={{ marginTop: 14, display: "flex", alignItems: "center", gap: 10, fontFamily: fonts.mono, fontWeight: 500, fontSize: 21, color: "rgba(255,255,255,0.85)" }}>
-          <div style={{ width: 14, height: 14, background: colors.accent, border: `2px solid ${colors.ink}` }} />
-          {source}
+          <div style={{ width: 14, height: 14, flexShrink: 0, background: colors.accent, border: `2px solid ${colors.ink}` }} />
+          <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{source}</span>
         </div>
       )}
     </div>

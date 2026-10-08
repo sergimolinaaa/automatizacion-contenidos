@@ -1,0 +1,106 @@
+{
+  "topic": "Por qué algunos volcanes explotan",
+  "categoria": "tierra",
+  "title": "¿Por qué algunos volcanes explotan? 🌋",
+  "source": "Fuente: USGS · Programa de Riesgos Volcánicos",
+  "chapters": ["?", "1", "2", "3", "+", "TÚ"],
+  "outro_cta": "La Tierra también tiene trucos",
+  "cover": {"text": "Un volcán es *un refresco*", "badge": "¿Y ESO POR QUÉ?", "scene": 4},
+  "publish": {
+    "caption": "Un volcán funciona como un refresco agitado 🌋🥤 ¿Por qué unos explotan y otros solo echan lava?",
+    "description": "El magma lleva gases disueltos, como un refresco. Al subir, la presión baja y se forman burbujas. Si el magma es espeso, el gas no escapa y el volcán explota; si es líquido, como en Hawái, la lava sale como un río. Y de esa espuma de magma nace la piedra pómez, que flota en el agua.",
+    "hashtags": ["volcanes", "geologia", "tierra", "ciencia", "curiosidades", "eltrucoes"]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Algunos volcanes *explotan*",
+      "narration": "Algunos volcanes no echan lava tranquilamente… explotan.",
+      "illustration": {"svg_file": "volcan.svg", "caption": "Fig. 1 · Volcán", "anims": [
+        {"target": "lava", "effect": "hide"}, {"target": "l1", "effect": "hide"}, {"target": "l2", "effect": "hide"},
+        {"target": "conduit", "effect": "hide"}, {"target": "chamber", "effect": "hide"}, {"target": "bubbles", "effect": "hide"}, {"target": "bubblesup", "effect": "hide"},
+        {"target": "plume", "effect": "grow", "trigger": "explotan", "sfx": "sello"},
+        {"target": "plume", "effect": "float", "trigger": "explotan", "amount": 0.8},
+        {"target": "rocks", "effect": "pop", "trigger": "explotan", "sfx": "none"},
+        {"target": "rocks", "effect": "move", "to": [0, -150], "trigger": "explotan", "dur": 0.5}
+      ]}
+    },
+    {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Y eso por qué? El truco es…"},
+    {
+      "chapter": 1, "number": "1",
+      "headline": "Magma *con gas*",
+      "narration": "El magma, la roca fundida bajo tierra, lleva gases disueltos… igual que un refresco lleva su gas.",
+      "illustration": {"svg_file": "refresco.svg", "caption": "Fig. 2 · Como un refresco", "anims": [
+        {"target": "foam", "effect": "hide"}, {"target": "shake", "effect": "hide"},
+        {"target": "bottle", "effect": "pop", "trigger": "refresco"},
+        {"target": "fizz", "effect": "pop", "trigger": "gases", "sfx": "burbujas"},
+        {"target": "fizz", "effect": "float", "trigger": "gases", "amount": 1.5}
+      ]},
+      "elements": [{"type": "tag", "text": "Magma = roca fundida", "tone": "ink", "trigger": "roca"}]
+    },
+    {
+      "chapter": 2, "number": "2",
+      "headline": "Sube y *burbujea*",
+      "narration": "Al subir hacia la superficie, la presión baja y esos gases forman burbujas que crecen y crecen.",
+      "illustration": {"svg_file": "volcan.svg", "caption": "Fig. 3 · Por dentro", "anims": [
+        {"target": "plume", "effect": "hide"}, {"target": "rocks", "effect": "hide"}, {"target": "lava", "effect": "hide"}, {"target": "bubblesup", "effect": "hide"},
+        {"target": "chamber", "effect": "pulse", "amount": 0.6},
+        {"target": "l1", "effect": "pop", "trigger": "subir"},
+        {"target": "bubbles", "effect": "float", "amount": 1.5},
+        {"target": "conduit", "effect": "draw", "trigger": "superficie", "dur": 0.6},
+        {"target": "bubblesup", "effect": "pop", "trigger": "burbujas", "sfx": "burbujas"},
+        {"target": "bubblesup", "effect": "pulse", "trigger": "crecen", "amount": 2.5},
+        {"target": "l2", "effect": "pop", "trigger": "gases"}
+      ]}
+    },
+    {
+      "chapter": 3, "number": "3",
+      "headline": "Si es espeso… *¡bum!*",
+      "narration": "Si el magma es muy espeso, el gas no puede escapar. La presión sube y sube… hasta que todo revienta.",
+      "illustration": {"svg_file": "volcan.svg", "caption": "Fig. 4 · Explosiva", "anims": [
+        {"target": "lava", "effect": "hide"}, {"target": "l1", "effect": "hide"}, {"target": "l2", "effect": "hide"}, {"target": "plume", "effect": "hide"}, {"target": "rocks", "effect": "hide"},
+        {"target": "chamber", "effect": "pulse", "trigger": "presión", "amount": 2},
+        {"target": "bubblesup", "effect": "shake", "trigger": "escapar"},
+        {"target": "plume", "effect": "grow", "trigger": "revienta", "sfx": "sello"},
+        {"target": "rocks", "effect": "pop", "trigger": "revienta", "sfx": "none"},
+        {"target": "rocks", "effect": "move", "to": [0, -150], "trigger": "revienta", "dur": 0.4}
+      ]},
+      "elements": [{"type": "stamp", "text": "¡Bum!", "tone": "hot", "trigger": "revienta"}]
+    },
+    {
+      "chapter": 3, "number": "3",
+      "headline": "Si es líquido, *río de lava*",
+      "narration": "Si es más líquido, como en Hawái, el gas se escapa fácil y la lava sale despacio, como un río.",
+      "illustration": {"svg_file": "refresco.svg", "caption": "Fig. 5 · Agitado vs. tranquilo", "anims": [
+        {"target": "shake", "effect": "pop", "trigger": "líquido"},
+        {"target": "bottle", "effect": "shake", "trigger": "líquido", "amount": 0.5},
+        {"target": "fizz", "effect": "float", "amount": 2},
+        {"target": "cap", "effect": "move", "to": [120, -120], "rotate": 60, "trigger": "escapa", "dur": 0.3, "sfx": "chasquido"},
+        {"target": "foam", "effect": "grow", "trigger": "escapa", "sfx": "burbujas"},
+        {"target": "foam", "effect": "wiggle", "trigger": "lava"}
+      ]},
+      "elements": [{"type": "tag", "text": "Hawái: lava tranquila", "tone": "accent", "trigger": "Hawái"}]
+    },
+    {
+      "chapter": 4, "number": "+",
+      "headline": "Piedras *que flotan*",
+      "narration": "Y de esa espuma de magma nace la piedra pómez: tiene tantas burbujas que flota en el agua.",
+      "mascot": {"trigger": "flota", "pose": "surprise", "note": "Una piedra que flota. Toma ya.", "side": "right"},
+      "elements": [
+        {"type": "fact", "label": "Piedra pómez", "text": "Magma con espuma que se enfría de golpe", "tone": "paper", "trigger": "pómez"},
+        {"type": "icon", "icon": "drop", "label": "Flota", "trigger": "agua"}
+      ]
+    },
+    {
+      "chapter": 5, "number": "TÚ",
+      "headline": "¿Qué te *flipa* más?",
+      "narration": "¿Qué te flipa más? Uno, el volcán refresco. Dos, la lava como un río. Tres, la piedra que flota. Escríbelo en comentarios.",
+      "mascot": {"trigger": "Escríbelo", "pose": "wave", "note": "¡Te leo!", "side": "right"},
+      "elements": [{"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
+        {"text": "El volcán refresco", "trigger": "Uno"},
+        {"text": "Río de lava", "trigger": "Dos"},
+        {"text": "La piedra que flota", "trigger": "Tres"}
+      ]}]
+    }
+  ]
+}

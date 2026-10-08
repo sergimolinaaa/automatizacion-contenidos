@@ -34,7 +34,7 @@ export type IllustrationAnim = {
   to?: [number, number]; // para "move": desplazamiento en unidades del viewBox
   rotate?: number; // para "move": giro final en grados
   amount?: number; // intensidad de los bucles (1 = normal)
-  origin?: "center" | "bottom" | "top" | "left" | "right";
+  origin?: "center" | "bottom" | "top" | "left" | "right" | "bottom-left" | "bottom-right" | "top-left" | "top-right";
 };
 
 export type Illustration = {
