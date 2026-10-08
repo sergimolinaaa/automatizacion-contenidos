@@ -109,6 +109,17 @@
         "tiktok": "6ac7f56153e0236000173025",
         "instagram": "6ac7f5612a80dca54c7c1102"
       }
+    },
+    {
+      "slug": "lote2-03-hielo-flota",
+      "category": "fisica",
+      "due": "2026-10-09T11:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote2-03-hielo-flota/lote2-03-hielo-flota-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac80b3e05aa5777b614cfdd",
+        "tiktok": "6ac80b3f341d7e8b1e7b80a5",
+        "instagram": "6ac80b408fe35a71b9754ed0"
+      }
     }
   ]
 }
