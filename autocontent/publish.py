@@ -86,17 +86,17 @@ def create_post(channel: dict, text: str, video_url: str, due: datetime, meta: d
     md = _metadata(channel["service"], meta)
     attempts = [dict(base, metadata=md)] if md else []
     attempts.append(base)  # sin metadatos específicos si el esquema no los acepta
-    last = None
+    errors = []
     for inp in attempts:
         try:
             res = gql(CREATE, {"input": inp})["createPost"]
         except RuntimeError as e:
-            last = str(e)
+            errors.append(str(e)[:600])
             continue
         if "post" in res:
             return res["post"]
-        last = res.get("message")
-    raise RuntimeError(f"No se pudo programar en {channel['service']}: {last}")
+        errors.append(res.get("message"))
+    raise RuntimeError(f"No se pudo programar en {channel['service']}: " + " || ".join(map(str, errors)))
 
 
 # ------------------------------------------------------------------ alojamiento público
