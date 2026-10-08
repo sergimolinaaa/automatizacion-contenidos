@@ -28,12 +28,20 @@ jobs:
       BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
       GH_TOKEN: ${{ secrets.MEDIA_TOKEN }}
       MEDIA_REPO: ${{ vars.MEDIA_REPO }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
       - name: Comprobar credenciales
         run: |
-          if [ -z "$BUFFER_API_KEY" ] || [ -z "$GH_TOKEN" ] || [ -z "$MEDIA_REPO" ]; then
-            echo "::warning::Faltan BUFFER_API_KEY, MEDIA_TOKEN o MEDIA_REPO; no se programa nada."
+          missing=""
+          [ -z "$BUFFER_API_KEY" ] && missing="$missing BUFFER_API_KEY"
+          [ -z "$GH_TOKEN" ] && missing="$missing MEDIA_TOKEN"
+          [ -z "$MEDIA_REPO" ] && missing="$missing MEDIA_REPO"
+          [ -n "$ANTHROPIC_API_KEY" ] && echo "ANTHROPIC_API_KEY: configurada" || echo "ANTHROPIC_API_KEY: falta"
+          if [ -n "$missing" ]; then
+            echo "::warning::Faltan:$missing — no se programa nada."
             echo "SKIP=1" >> "$GITHUB_ENV"
+          else
+            echo "Credenciales completas."
           fi
       - uses: actions/checkout@v4
         if: env.SKIP != '1'
