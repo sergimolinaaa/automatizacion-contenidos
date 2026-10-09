@@ -249,7 +249,7 @@ ADEMÁS:
 - "source": línea corta de fuentes.
 
 Responde SOLO con el objeto JSON (sin texto antes ni después, sin ```), con las claves: topic, title, source, chapters,
-outro_cta ("La naturaleza tiene trucos"), svgs (objeto nombre → SVG completo), scenes, publish, cover."""
+outro_cta (lema corto general, p. ej. "Todo tiene un truco"; nunca "la naturaleza tiene trucos"), svgs (objeto nombre → SVG completo), scenes, publish, cover."""
 
 
 def _extract_json(text: str) -> dict:
@@ -303,7 +303,7 @@ def validate(script: dict) -> tuple[list[str], list[str]]:
     if errors:
         return errors, warnings
     script["chapters"] = ["?", "1", "2", "3", "+", "TÚ"]
-    script.setdefault("outro_cta", "La naturaleza tiene trucos")
+    script.setdefault("outro_cta", "Todo tiene un truco")
 
     svgs = script["svgs"]
     for name, svg in list(svgs.items()):

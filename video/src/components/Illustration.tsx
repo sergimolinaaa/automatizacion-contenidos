@@ -129,15 +129,15 @@ function computeStyles(anims: IllustrationAnim[], frame: number, sceneStart: num
 }
 
 /** Cámara del panel: acercamientos ("zoom" sobre target "camera") encadenados + un leve avance continuo. */
-function camera(anims: IllustrationAnim[], frame: number, sceneStart: number, sceneEnd: number) {
+function camera(anims: IllustrationAnim[], frame: number, sceneStart: number, sceneEnd: number, vw = 1000, vh = 700) {
   const shots = anims.filter((a) => a.target === "camera" && a.effect === "zoom").sort((x, y) => (x.at ?? sceneStart) - (y.at ?? sceneStart));
-  const at = (zx: number, zy: number, z: number) => ({ ox: -(zx / 1000 - 0.5) * z * 100, oy: -(zy / 700 - 0.5) * z * 100, s: z });
+  const at = (zx: number, zy: number, z: number) => ({ ox: -(zx / vw - 0.5) * z * 100, oy: -(zy / vh - 0.5) * z * 100, s: z });
   let cur = { ox: 0, oy: 0, s: 1 };
   for (const a of shots) {
     const f = frame - sec(a.at ?? sceneStart);
     if (f < 0) break;
     const z = Math.max(1, a.amount ?? 1.5);
-    const next = z === 1 ? { ox: 0, oy: 0, s: 1 } : at(a.to?.[0] ?? 500, a.to?.[1] ?? 350, z);
+    const next = z === 1 ? { ox: 0, oy: 0, s: 1 } : at(a.to?.[0] ?? vw / 2, a.to?.[1] ?? vh / 2, z);
     const p = spring({ frame: f, fps: FPS, durationInFrames: sec(a.dur ?? 0.7), config: { damping: 200 } });
     cur = { ox: cur.ox + (next.ox - cur.ox) * p, oy: cur.oy + (next.oy - cur.oy) * p, s: cur.s + (next.s - cur.s) * p };
   }
@@ -150,12 +150,14 @@ function camera(anims: IllustrationAnim[], frame: number, sceneStart: number, sc
 }
 
 // Panel de "figura" con una ilustración vectorial animada del tema del vídeo.
-export const IllustrationPanel: React.FC<{ ill: Ill; id: string; sceneStart: number; sceneEnd: number; isLast: boolean; height: number }> = ({
-  ill, id, sceneStart, sceneEnd, isLast, height,
-}) => {
+export const IllustrationPanel: React.FC<{
+  ill: Ill; id: string; sceneStart: number; sceneEnd: number; isLast: boolean; height: number; variant?: "panel" | "free" | "full";
+}> = ({ ill, id, sceneStart, sceneEnd, isLast, height, variant = "panel" }) => {
   const frame = useCurrentFrame();
   const prefix = `ill${id}`;
   const svg = sanitizeSvg(ill.svg, prefix);
+  const vb = (ill.svg.match(/viewBox="\s*[-\d.]+[\s,]+[-\d.]+[\s,]+([\d.]+)[\s,]+([\d.]+)/) ?? []).slice(1).map(Number);
+  const [vw, vh] = vb.length === 2 ? vb : [1000, 700];
   const states = computeStyles(ill.anims ?? [], frame, sceneStart);
   const css = Object.entries(states)
     .map(([target, s]) => {
@@ -177,27 +179,33 @@ export const IllustrationPanel: React.FC<{ ill: Ill; id: string; sceneStart: num
   const s = pop(f, 0, 13);
   const out = isLast ? 1 : exitOut(frame, sec(sceneEnd), 6);
 
+  const framed = variant === "panel";
+  const box: React.CSSProperties =
+    variant === "full"
+      ? { position: "absolute", inset: 0, overflow: "hidden", opacity: Math.min(1, s * 2) * out, transform: `scale(${interpolate(s, [0, 1], [1.06, 1])})` }
+      : variant === "free"
+        ? { position: "relative", height, flexShrink: 0, overflow: "hidden", opacity: Math.min(1, s * 2) * out, transform: `translateY(${interpolate(s, [0, 1], [40, 0])}px) scale(${0.96 + 0.04 * out})` }
+        : {
+            position: "relative",
+            height,
+            flexShrink: 0,
+            border: `${border}px solid ${colors.ink}`,
+            borderRadius: 26,
+            boxShadow: `${shadow}px ${shadow}px 0 ${colors.ink}`,
+            overflow: "hidden",
+            background: colors.paper,
+            opacity: Math.min(1, s * 2) * out,
+            transform: `scale(${interpolate(s, [0, 1], [0.92, 1]) * (0.95 + 0.05 * out)}) rotate(${interpolate(s, [0, 1], [-2, 0])}deg)`,
+          };
+
   return (
-    <div
-      style={{
-        position: "relative",
-        height,
-        flexShrink: 0,
-        border: `${border}px solid ${colors.ink}`,
-        borderRadius: 26,
-        boxShadow: `${shadow}px ${shadow}px 0 ${colors.ink}`,
-        overflow: "hidden",
-        background: colors.paper,
-        opacity: Math.min(1, s * 2) * out,
-        transform: `scale(${interpolate(s, [0, 1], [0.92, 1]) * (0.95 + 0.05 * out)}) rotate(${interpolate(s, [0, 1], [-2, 0])}deg)`,
-      }}
-    >
+    <div style={box}>
       <style>{css}</style>
       <div
-        style={{ position: "absolute", inset: 0, transformOrigin: "50% 50%", transform: camera(ill.anims ?? [], frame, sceneStart, sceneEnd) }}
+        style={{ position: "absolute", inset: 0, transformOrigin: "50% 50%", transform: camera(ill.anims ?? [], frame, sceneStart, sceneEnd, vw, vh) }}
         dangerouslySetInnerHTML={{ __html: svg }}
       />
-      {ill.caption && (
+      {ill.caption && framed && (
         <div
           style={{
             position: "absolute",

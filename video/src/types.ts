@@ -46,6 +46,10 @@ export type Illustration = {
   svg: string; // SVG completo con viewBox "0 0 1000 700"
   anims?: IllustrationAnim[];
   caption?: string; // rótulo pequeño en la esquina
+  // panel: recuadro clásico · free: sin recuadro, el dibujo sobre el fondo (puede ser vertical) ·
+  // full: pantalla completa detrás del titular (usa un SVG vertical, p. ej. viewBox 0 0 1080 1920)
+  layout?: "panel" | "free" | "full";
+  height?: number; // alto en px para "panel"/"free" (por defecto 620 / 820)
 };
 
 export type MascotCameo = {

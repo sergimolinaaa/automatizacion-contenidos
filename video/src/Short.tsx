@@ -59,6 +59,7 @@ export const Short: React.FC<CoverProps> = (props) => {
   const contentH = STAGE_BOTTOM - CONTENT_TOP - (cameo ? CAMEO_H + 20 : 0);
   const elements = scene.elements ?? [];
   const ill = scene.illustration;
+  const layout = ill?.layout ?? "panel";
 
   return (
     <AbsoluteFill style={{ fontFamily: brand.fonts.display }}>
@@ -66,6 +67,14 @@ export const Short: React.FC<CoverProps> = (props) => {
       {audio && <Audio src={src(audio)} />}
       {music && <Audio src={src(music)} volume={duckedVolume(words, musicVolume)} />}
       {sfx && <Audio src={src(sfx)} volume={sfxVolume} />}
+
+      {ill && layout === "full" && !scene.signature && (
+        <AbsoluteFill>
+          <IllustrationPanel ill={ill} id={String(idx)} sceneStart={scene.start} sceneEnd={scene.end} isLast={ctx.isLast} height={1920} variant="full" />
+          {/* velos para que el titular y los subtítulos se lean sobre el dibujo */}
+          <AbsoluteFill style={{ background: "linear-gradient(rgba(11,11,20,0.55), rgba(11,11,20,0) 26%, rgba(11,11,20,0) 62%, rgba(11,11,20,0.6) 82%, rgba(11,11,20,0.2))" }} />
+        </AbsoluteFill>
+      )}
 
       <ProgressBar chapters={chapters} scenes={scenes} source={source} />
 
@@ -78,16 +87,20 @@ export const Short: React.FC<CoverProps> = (props) => {
           <Fit key={`c${idx}`} height={contentH} width={CONTENT_W}>
             <div style={{ display: "flex", flexDirection: "column", gap: GAP }}>
               <Headline text={scene.headline} number={scene.number} start={scene.start} end={scene.end} isLast={ctx.isLast} />
-              {ill && (
-                <IllustrationPanel ill={ill} id={String(idx)} sceneStart={scene.start} sceneEnd={scene.end} isLast={ctx.isLast} height={ill.svg ? 620 : 0} />
+              {ill && layout !== "full" && (
+                <IllustrationPanel
+                  ill={ill} id={String(idx)} sceneStart={scene.start} sceneEnd={scene.end} isLast={ctx.isLast}
+                  height={ill.height ?? (layout === "free" ? 820 : 620)} variant={layout}
+                />
               )}
               {elements.length > 0 && (
                 <div
                   style={{
                     display: "flex",
-                    flexDirection: ill ? "row" : "column",
-                    flexWrap: ill ? "wrap" : "nowrap",
-                    alignItems: ill ? "flex-start" : "stretch",
+                    flexDirection: ill && layout !== "full" ? "row" : "column",
+                    flexWrap: ill && layout !== "full" ? "wrap" : "nowrap",
+                    alignItems: ill && layout !== "full" ? "flex-start" : "stretch",
+                    marginTop: layout === "full" ? 560 : 0,
                     gap: 30,
                   }}
                 >

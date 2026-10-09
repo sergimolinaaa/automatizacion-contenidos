@@ -1,4 +1,4 @@
-import { Easing, interpolate, useCurrentFrame } from "remotion";
+import { Easing, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { FPS, brand } from "../brand";
 import { exitOut, formatNumber, pop, sec, seeded } from "../anim";
 import { Icon } from "../icons";
@@ -68,10 +68,7 @@ const Follow: React.FC<{ el: Extract<Element, { type: "follow" }>; ctx: Ctx }> =
   return (
     <Card el={el} ctx={ctx} pad={22} style={{ borderRadius: 30 }}>
       <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
-        <div style={{ width: 96, height: 96, borderRadius: 48, background: colors.bg, border: `${border}px solid ${colors.ink}`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-          <span style={{ fontFamily: fonts.display, fontWeight: 900, fontSize: 30, color: colors.paper, lineHeight: 0.9, textAlign: "center" }}>EL<br />
-            <span style={{ background: colors.accent, color: colors.ink, padding: "0 4px" }}>ES…</span></span>
-        </div>
+        <Img src={staticFile("perfil.png")} style={{ width: 96, height: 96, borderRadius: 48, border: `${border}px solid ${colors.ink}`, flexShrink: 0, objectFit: "cover" }} />
         <div style={{ flex: 1 }}>
           <div style={{ fontFamily: fonts.display, fontWeight: 900, fontSize: 46, color: colors.ink, lineHeight: 1 }}>{brand.handle}</div>
           <div style={{ fontFamily: fonts.mono, fontWeight: 800, fontSize: 22, color: colors.ink, opacity: 0.7, marginTop: 8 }}>{el.text ?? brand.tagline}</div>

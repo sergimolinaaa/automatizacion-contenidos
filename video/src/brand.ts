@@ -7,7 +7,7 @@ export const brand = {
     { text: "EL TRUCO", boxed: false },
     { text: "ES…", boxed: true },
   ],
-  tagline: "La naturaleza tiene trucos",
+  tagline: "Todo tiene un truco",
   colors: {
     bg: "#2347FF", // azul eléctrico de laboratorio
     bgDeep: "#1631C9",
