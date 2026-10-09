@@ -208,6 +208,17 @@
         "tiktok": "6ac97521ed92ed8fa5ae7fdf",
         "instagram": "6ac97521c4de2d2b120c0230"
       }
+    },
+    {
+      "slug": "lote3-05-piedras-que-se-mueven",
+      "category": "tierra",
+      "due": "2026-10-10T06:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote3-05-piedras-que-se-mueven/lote3-05-piedras-que-se-mueven-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac9778bb07d37ac9754da07",
+        "tiktok": "6ac9778bd9cab260a7a78e2c",
+        "instagram": "6ac9778cc4de2d2b120c57c2"
+      }
     }
   ]
 }
