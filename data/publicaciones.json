@@ -131,6 +131,17 @@
         "tiktok": "6ac83370f07e682de69a9980",
         "instagram": "6ac8337104f06b2e8f720329"
       }
+    },
+    {
+      "slug": "lote2-05-geiser",
+      "category": "tierra",
+      "due": "2026-10-09T15:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote2-05-geiser/lote2-05-geiser-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac852709db755aaaac02866",
+        "tiktok": "6ac852709db755aaaac0289b",
+        "instagram": "6ac852717d9f9f330120deb8"
+      }
     }
   ]
 }
