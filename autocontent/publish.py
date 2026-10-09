@@ -21,7 +21,7 @@ from .config import ROOT
 API = "https://api.buffer.com"
 STATE = ROOT / "data" / "publicaciones.json"
 PREVIEWS = ROOT / "previews"
-INTERVAL = timedelta(hours=1)
+INTERVAL = timedelta(hours=3)
 MAX_QUEUE = 8  # publicaciones futuras por canal (el plan de Buffer permite 10)
 CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra"]
 
