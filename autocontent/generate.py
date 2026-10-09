@@ -231,6 +231,13 @@ ANIMACIONES (anims): {"target": id, "effect", "trigger"?, "dur"?, "to"?: [dx, dy
 - Cuando reutilices un SVG en otra escena, oculta con "hide" lo que no toque mostrar.
 - TODAS las escenas (salvo la firma y la final TÚ) llevan ilustración: nada de escenas solo con tarjetas. Si una escena es un
   dato o una cifra, ponla sobre un dibujo (puedes REUTILIZAR un SVG con otros zooms y otras anims, o hacer uno nuevo).
+- VARIEDAD DE DISEÑO por escena (illustration.layout): alterna en cada vídeo los tres tipos, no siempre el recuadro:
+  · "panel" (por defecto): recuadro con viewBox 0 0 1000 700.
+  · "free": SIN recuadro, el dibujo flota sobre el fondo azul de la marca. SVG SIN rect de fondo (transparente), puede ser
+    vertical (p. ej. viewBox 0 0 1000 1100) y con "height" en px (800-900). Ideal para el protagonista recortado.
+  · "full": PANTALLA COMPLETA detrás del titular. SVG vertical viewBox 0 0 1080 1920 con fondo completo; lo importante entre
+    y 450 y 1250 (arriba va el titular y abajo los subtítulos). Úsalo para el gancho o los momentos espectaculares.
+  Usa al menos 2 escenas "free" o "full" por vídeo. El zoom de cámara usa las coordenadas del viewBox de cada SVG.
 - La ilustración debe verse COMPLETA desde el primer instante de la escena (nunca un panel vacío): usa entradas solo para
   detalles que se añaden (chorros, flechas, etiquetas, burbujas), no para el protagonista ni el fondo.
 - RITMO MUY DINÁMICO: cada escena con ilustración lleva 6-12 anims; algo nuevo pasa cada 1-1,5 s (zoom, punch, etiqueta,
