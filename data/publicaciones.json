@@ -186,6 +186,28 @@
         "tiktok": "6ac92f9fc4de2d2b1200f03e",
         "instagram": "6ac92f9fed92ed8fa5a39873"
       }
+    },
+    {
+      "slug": "lote4-03-hormiga-leon",
+      "category": "animales",
+      "due": "2026-10-10T00:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote4-03-hormiga-leon/lote4-03-hormiga-leon-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac97518ed92ed8fa5ae7f3a",
+        "tiktok": "6ac97519d9cab260a7a73595",
+        "instagram": "6ac97519bba9419ccbe39e5d"
+      }
+    },
+    {
+      "slug": "lote4-04-cerveza-golpe",
+      "category": "cocina",
+      "due": "2026-10-10T03:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote4-04-cerveza-golpe/lote4-04-cerveza-golpe-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac97520f91f772d4575e5ee",
+        "tiktok": "6ac97521ed92ed8fa5ae7fdf",
+        "instagram": "6ac97521c4de2d2b120c0230"
+      }
     }
   ]
 }
