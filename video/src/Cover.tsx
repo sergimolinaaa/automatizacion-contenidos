@@ -4,7 +4,6 @@ import { parseMarkup } from "./anim";
 import { Background } from "./components/Background";
 import { Fit } from "./components/Fit";
 import { IllustrationPanel } from "./components/Illustration";
-import { Mascot } from "./components/Mascot";
 import type { ShortProps } from "./types";
 
 const { colors, fonts, border } = brand;
@@ -75,22 +74,6 @@ export const Cover: React.FC<CoverProps> = (props) => {
                 </Freeze>
               </div>
             )}
-            <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", height: 250 }}>
-              <div
-                style={{
-                  background: colors.paper, border: `${border}px solid ${colors.ink}`, boxShadow: `10px 10px 0 ${colors.ink}`,
-                  borderRadius: 18, padding: "14px 26px", marginBottom: 60, fontFamily: fonts.display, fontWeight: 900,
-                  fontSize: 50, color: colors.ink, transform: "rotate(-3deg)",
-                }}
-              >
-                {c.badge ?? "¿CÓMO LO HACE?"}
-              </div>
-              <div style={{ width: 220, height: 250, position: "relative" }}>
-                <div style={{ position: "absolute", bottom: 0, right: 0 }}>
-                  <Mascot pose="think" toward={-1} look="left" talking={0} poseFrame={20} scale={0.62} />
-                </div>
-              </div>
-            </div>
           </div>
         </Fit>
       </div>

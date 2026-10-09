@@ -3,90 +3,912 @@
   "categoria": "plantas",
   "title": "Esta planta se 'desmaya' si la tocas 🌿",
   "source": "Fuentes: Volkov et al. (2010) · Gagliano et al., Oecologia (2014)",
-  "chapters": ["?", "1", "2", "3", "+", "TÚ"],
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
   "outro_cta": "La naturaleza tiene trucos",
-  "cover": {"text": "Se cierra *si la tocas*", "badge": "¿CÓMO LO HACE?", "scene": 0},
+  "cover": {
+    "text": "Se cierra *si la tocas*",
+    "badge": "¿CÓMO LO HACE?",
+    "scene": 0
+  },
   "publish": {
     "caption": "Una planta que se pliega en segundos si la tocas 🌿 Y encima aprende a ignorar falsas alarmas. ¿La has tocado alguna vez?",
     "description": "La mimosa púdica pliega sus hojas en segundos cuando la tocas. Una señal eléctrica viaja hasta la base de cada hoja, unas células 'bisagra' pierden agua de golpe y la hoja se dobla. Así parece mustia y menos apetecible. Y en un experimento aprendieron a ignorar caídas inofensivas. Fuentes: Volkov et al. (2010); Gagliano et al., Oecologia (2014).",
-    "hashtags": ["mimosa", "plantas", "botanica", "ciencia", "curiosidades", "eltrucoes"]
+    "hashtags": [
+      "mimosa",
+      "plantas",
+      "botanica",
+      "ciencia",
+      "curiosidades",
+      "eltrucoes"
+    ]
   },
   "scenes": [
     {
       "chapter": 0,
       "headline": "Se cierra *si la tocas*",
-      "narration": "Toca esta planta… y en unos segundos se cierra entera.",
-      "illustration": {"svg_file": "mimosa.svg", "caption": "Fig. 1 · Mimosa púdica", "anims": [
-        {"target": "aclosed", "effect": "hide"}, {"target": "bclosed", "effect": "hide"}, {"target": "cclosed", "effect": "hide"},
-        {"target": "drop", "effect": "hide"}, {"target": "zap", "effect": "hide"},
-        {"target": "flower", "effect": "sway", "amount": 0.6},
-        {"target": "finger", "effect": "move", "to": [-260, 40], "trigger": "Toca", "dur": 0.6},
-        {"target": "aopen", "effect": "hide", "trigger": "cierra"}, {"target": "aclosed", "effect": "pop", "trigger": "cierra", "sfx": "whoosh"},
-        {"target": "bopen", "effect": "hide", "trigger": "entera"}, {"target": "bclosed", "effect": "pop", "trigger": "entera", "sfx": "none"},
-        {"target": "copen", "effect": "hide", "trigger": "entera"}, {"target": "cclosed", "effect": "pop", "trigger": "entera", "sfx": "none"}
-      ]}
+      "narration": "Toca esta planta… y en unos segundos se cierra entera, como si se desmayara.",
+      "illustration": {
+        "svg_file": "mimosa.svg",
+        "caption": "Fig. 1 · Mimosa púdica",
+        "anims": [
+          {
+            "target": "flower",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "aopen",
+            "effect": "sway",
+            "origin": "right",
+            "amount": 0.15
+          },
+          {
+            "target": "copen",
+            "effect": "sway",
+            "origin": "right",
+            "amount": 0.15
+          },
+          {
+            "target": "bopen",
+            "effect": "sway",
+            "origin": "left",
+            "amount": 0.12
+          },
+          {
+            "target": "dopen",
+            "effect": "sway",
+            "origin": "left",
+            "amount": 0.12
+          },
+          {
+            "target": "finger",
+            "effect": "move",
+            "to": [
+              -218,
+              -4
+            ],
+            "trigger": "Toca",
+            "dur": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              600,
+              320
+            ],
+            "amount": 1.3,
+            "trigger": "Toca",
+            "dur": 0.8
+          },
+          {
+            "target": "zap",
+            "effect": "pop",
+            "trigger": "planta",
+            "sfx": "pop"
+          },
+          {
+            "target": "zap",
+            "effect": "hide",
+            "trigger": "segundos"
+          },
+          {
+            "target": "bopen",
+            "effect": "hide",
+            "trigger": "cierra"
+          },
+          {
+            "target": "bclosed",
+            "effect": "pop",
+            "trigger": "cierra",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "amount": 1,
+            "trigger": "entera",
+            "dur": 0.8
+          },
+          {
+            "target": "aopen",
+            "effect": "hide",
+            "trigger": "entera"
+          },
+          {
+            "target": "copen",
+            "effect": "hide",
+            "trigger": "entera"
+          },
+          {
+            "target": "dopen",
+            "effect": "hide",
+            "trigger": "entera"
+          },
+          {
+            "target": "aclosed",
+            "effect": "pop",
+            "trigger": "entera",
+            "sfx": "none"
+          },
+          {
+            "target": "cclosed",
+            "effect": "pop",
+            "trigger": "entera",
+            "sfx": "none"
+          },
+          {
+            "target": "dclosed",
+            "effect": "pop",
+            "trigger": "entera",
+            "sfx": "none"
+          },
+          {
+            "target": "finger",
+            "effect": "move",
+            "to": [
+              218,
+              4
+            ],
+            "trigger": "como",
+            "dur": 0.7
+          }
+        ]
+      }
     },
-    {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Cómo lo hace? El truco es…"},
     {
-      "chapter": 1, "number": "1",
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
       "headline": "Una señal *eléctrica*",
-      "narration": "Al tocarla, sus células mandan una señal eléctrica que recorre la planta, como un mini nervio.",
-      "illustration": {"svg_file": "pulvino.svg", "caption": "Fig. 2 · El aviso", "anims": [
-        {"target": "empty", "effect": "hide"}, {"target": "water", "effect": "hide"}, {"target": "l2", "effect": "hide"}, {"target": "l1", "effect": "hide"},
-        {"target": "signal", "effect": "pop", "trigger": "señal", "sfx": "brillo"},
-        {"target": "signal", "effect": "move", "to": [200, -95], "trigger": "recorre", "dur": 1.0},
-        {"target": "l3", "effect": "pop", "trigger": "eléctrica"}
-      ]}
+      "narration": "Al tocarla, sus células disparan una señal eléctrica que recorre la planta, como un mini nervio.",
+      "illustration": {
+        "svg_file": "pulvino.svg",
+        "caption": "Fig. 2 · El aviso",
+        "anims": [
+          {
+            "target": "empty",
+            "effect": "hide"
+          },
+          {
+            "target": "water",
+            "effect": "hide"
+          },
+          {
+            "target": "l1",
+            "effect": "hide"
+          },
+          {
+            "target": "l2",
+            "effect": "hide"
+          },
+          {
+            "target": "stalk",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              260,
+              520
+            ],
+            "amount": 1.5,
+            "trigger": "tocarla",
+            "dur": 0.8
+          },
+          {
+            "target": "bolt",
+            "effect": "pop",
+            "trigger": "tocarla",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "bolt",
+            "effect": "wiggle",
+            "trigger": "tocarla",
+            "amount": 0.8
+          },
+          {
+            "target": "signal",
+            "effect": "draw",
+            "trigger": "señal",
+            "dur": 1.4,
+            "sfx": "brillo"
+          },
+          {
+            "target": "l3",
+            "effect": "pop",
+            "trigger": "eléctrica"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              330,
+              380
+            ],
+            "amount": 1.2,
+            "trigger": "recorre",
+            "dur": 1.0
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "amount": 1,
+            "trigger": "nervio",
+            "dur": 0.8
+          },
+          {
+            "target": "pulvinus",
+            "effect": "punch",
+            "trigger": "nervio"
+          }
+        ]
+      }
     },
     {
-      "chapter": 2, "number": "2",
-      "headline": "Bisagras *de agua*",
-      "narration": "La señal llega a la base de cada hoja, una especie de bisagra llena de agua. De golpe, esas células sueltan su agua…",
-      "illustration": {"svg_file": "pulvino.svg", "caption": "Fig. 3 · La bisagra", "anims": [
-        {"target": "signal", "effect": "hide"}, {"target": "l3", "effect": "hide"}, {"target": "empty", "effect": "hide"}, {"target": "l2", "effect": "hide"},
-        {"target": "l1", "effect": "pop", "trigger": "bisagra"},
-        {"target": "full", "effect": "pulse", "trigger": "agua", "amount": 1.4},
-        {"target": "full", "effect": "hide", "trigger": "sueltan"},
-        {"target": "empty", "effect": "pop", "trigger": "sueltan"},
-        {"target": "water", "effect": "pop", "trigger": "sueltan", "sfx": "burbujas"},
-        {"target": "water", "effect": "move", "to": [60, 60], "trigger": "agua", "dur": 1.0},
-        {"target": "l2", "effect": "pop", "trigger": "células"}
-      ]}
+      "chapter": 2,
+      "number": "2",
+      "headline": "Una *bisagra* de agua",
+      "narration": "La señal llega a la base de cada hoja: un bultito lleno de agua que hace de bisagra.",
+      "illustration": {
+        "svg_file": "pulvino.svg",
+        "caption": "Fig. 3 · La bisagra",
+        "anims": [
+          {
+            "target": "empty",
+            "effect": "hide"
+          },
+          {
+            "target": "water",
+            "effect": "hide"
+          },
+          {
+            "target": "l2",
+            "effect": "hide"
+          },
+          {
+            "target": "l3",
+            "effect": "hide"
+          },
+          {
+            "target": "bolt",
+            "effect": "hide"
+          },
+          {
+            "target": "stalk",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "signal",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              360,
+              330
+            ],
+            "amount": 1.6,
+            "trigger": "base",
+            "dur": 0.8
+          },
+          {
+            "target": "pulvinus",
+            "effect": "punch",
+            "trigger": "bultito",
+            "sfx": "pop"
+          },
+          {
+            "target": "full",
+            "effect": "pulse",
+            "trigger": "lleno",
+            "amount": 1.0
+          },
+          {
+            "target": "l1",
+            "effect": "pop",
+            "trigger": "bisagra"
+          },
+          {
+            "target": "stalk",
+            "effect": "move",
+            "rotate": 8,
+            "origin": "left",
+            "trigger": "bisagra",
+            "dur": 0.4
+          },
+          {
+            "target": "stalk",
+            "effect": "move",
+            "rotate": -8,
+            "origin": "left",
+            "trigger": "bisagra",
+            "dur": 0.9
+          }
+        ]
+      }
     },
     {
-      "chapter": 3, "number": "3",
-      "headline": "…y la hoja *se dobla*",
-      "narration": "Sin agua que la sostenga, la hoja se dobla. Así parece mustia y poco apetecible para quien quería comérsela.",
-      "illustration": {"svg_file": "pulvino.svg", "caption": "Fig. 4 · Plegado", "anims": [
-        {"target": "full", "effect": "hide"}, {"target": "signal", "effect": "hide"}, {"target": "l3", "effect": "hide"}, {"target": "l2", "effect": "hide"}, {"target": "water", "effect": "hide"},
-        {"target": "stalk", "effect": "move", "rotate": 55, "origin": "left", "trigger": "dobla", "dur": 0.5, "sfx": "whoosh"},
-        {"target": "l1", "effect": "hide", "trigger": "dobla"}
-      ]},
-      "elements": [{"type": "tag", "text": "Camuflaje de mustia", "tone": "accent", "trigger": "mustia"}]
+      "chapter": 2,
+      "number": "2",
+      "headline": "Se *desinfla*",
+      "narration": "De golpe, sus células sueltan el agua y se desinflan como un globo.",
+      "illustration": {
+        "svg_file": "pulvino.svg",
+        "caption": "Fig. 4 · Pierde el agua",
+        "anims": [
+          {
+            "target": "signal",
+            "effect": "hide"
+          },
+          {
+            "target": "l3",
+            "effect": "hide"
+          },
+          {
+            "target": "bolt",
+            "effect": "hide"
+          },
+          {
+            "target": "l1",
+            "effect": "hide"
+          },
+          {
+            "target": "stalk",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              380,
+              400
+            ],
+            "amount": 1.35,
+            "dur": 0.6
+          },
+          {
+            "target": "l2",
+            "effect": "pop",
+            "trigger": "células"
+          },
+          {
+            "target": "full",
+            "effect": "hide",
+            "trigger": "sueltan"
+          },
+          {
+            "target": "empty",
+            "effect": "pop",
+            "trigger": "sueltan"
+          },
+          {
+            "target": "water",
+            "effect": "pop",
+            "trigger": "sueltan",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "water",
+            "effect": "move",
+            "to": [
+              0,
+              80
+            ],
+            "trigger": "agua",
+            "dur": 1.0
+          },
+          {
+            "target": "pulvinus",
+            "effect": "shake",
+            "trigger": "desinflan",
+            "amount": 0.6
+          },
+          {
+            "target": "stalk",
+            "effect": "move",
+            "rotate": 10,
+            "origin": "left",
+            "trigger": "globo",
+            "dur": 0.8
+          }
+        ]
+      }
     },
     {
-      "chapter": 4, "number": "+",
-      "headline": "Y aprende *a ignorarte*",
-      "narration": "Lo más loco: en un experimento, las dejaban caer una y otra vez sin hacerles daño… y dejaron de cerrarse. Aprendieron que no era peligro.",
-      "illustration": {"svg_file": "mimosa.svg", "caption": "Fig. 5 · Aprendizaje", "anims": [
-        {"target": "aclosed", "effect": "hide"}, {"target": "bclosed", "effect": "hide"}, {"target": "cclosed", "effect": "hide"},
-        {"target": "finger", "effect": "hide"}, {"target": "zap", "effect": "hide"},
-        {"target": "flower", "effect": "sway", "amount": 0.6},
-        {"target": "drop", "effect": "move", "to": [-250, 330], "trigger": "caer", "dur": 0.5, "sfx": "splash"},
-        {"target": "drop", "effect": "hide", "trigger": "daño"}
-      ]},
-      "mascot": {"trigger": "peligro", "pose": "surprise", "note": "Una planta con memoria", "side": "right"}
+      "chapter": 3,
+      "number": "3",
+      "headline": "…y la hoja *se desploma*",
+      "narration": "Sin agua que la sostenga, el tallo de la hoja se desploma de golpe.",
+      "illustration": {
+        "svg_file": "pulvino.svg",
+        "caption": "Fig. 5 · Plegado",
+        "anims": [
+          {
+            "target": "full",
+            "effect": "hide"
+          },
+          {
+            "target": "signal",
+            "effect": "hide"
+          },
+          {
+            "target": "l3",
+            "effect": "hide"
+          },
+          {
+            "target": "bolt",
+            "effect": "hide"
+          },
+          {
+            "target": "l2",
+            "effect": "hide"
+          },
+          {
+            "target": "water",
+            "effect": "hide"
+          },
+          {
+            "target": "stalk",
+            "effect": "move",
+            "rotate": 10,
+            "origin": "left",
+            "dur": 0.1
+          },
+          {
+            "target": "empty",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "pulvinus",
+            "effect": "punch",
+            "trigger": "agua"
+          },
+          {
+            "target": "l1",
+            "effect": "pop",
+            "trigger": "tallo"
+          },
+          {
+            "target": "stalk",
+            "effect": "move",
+            "rotate": 35,
+            "origin": "left",
+            "trigger": "desploma",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              560,
+              430
+            ],
+            "amount": 1.25,
+            "trigger": "desploma",
+            "dur": 0.8
+          },
+          {
+            "target": "l1",
+            "effect": "hide",
+            "trigger": "desploma"
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "stamp",
+          "text": "¡PLOF!",
+          "tone": "hot",
+          "trigger": "golpe"
+        }
+      ]
     },
     {
-      "chapter": 5, "number": "TÚ",
-      "headline": "¿Qué te *flipa* más?",
-      "narration": "¿Qué te flipa más? Uno, la señal eléctrica. Dos, las bisagras de agua. Tres, que aprenda a ignorarte. Escríbelo en comentarios.",
-      "mascot": {"trigger": "Escríbelo", "pose": "wave", "note": "¡Te leo!", "side": "right"},
-      "elements": [{"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
-        {"text": "La señal eléctrica", "trigger": "Uno"},
-        {"text": "Bisagras de agua", "trigger": "Dos"},
-        {"text": "Que aprenda", "trigger": "Tres"}
-      ]}]
+      "chapter": 3,
+      "number": "3",
+      "headline": "Se pliega *por parejas*",
+      "narration": "Y sus hojitas, cada una con su mini bisagra, se pliegan por parejas como un abanico.",
+      "illustration": {
+        "svg_file": "foliolos.svg",
+        "caption": "Fig. 6 · Hojitas al detalle",
+        "anims": [
+          {
+            "target": "pulvinules",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "lfol",
+            "effect": "pop",
+            "trigger": "hojitas"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              300,
+              420
+            ],
+            "amount": 1.35,
+            "trigger": "mini",
+            "dur": 0.8
+          },
+          {
+            "target": "lbis",
+            "effect": "pop",
+            "trigger": "bisagra"
+          },
+          {
+            "target": "pulvinules",
+            "effect": "punch",
+            "trigger": "bisagra"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "amount": 1,
+            "trigger": "pliegan",
+            "dur": 0.7
+          },
+          {
+            "target": "lfol",
+            "effect": "hide",
+            "trigger": "mini"
+          },
+          {
+            "target": "openA",
+            "effect": "hide",
+            "trigger": "pliegan"
+          },
+          {
+            "target": "closeA",
+            "effect": "fade",
+            "trigger": "pliegan",
+            "dur": 0.3,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "openB",
+            "effect": "hide",
+            "trigger": "parejas"
+          },
+          {
+            "target": "closeB",
+            "effect": "fade",
+            "trigger": "parejas",
+            "dur": 0.3,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "openC",
+            "effect": "hide",
+            "trigger": "abanico"
+          },
+          {
+            "target": "closeC",
+            "effect": "fade",
+            "trigger": "abanico",
+            "dur": 0.3,
+            "sfx": "whoosh"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Camuflaje *de mustia*",
+      "narration": "Así parece mustia y poco apetecible para cualquiera que quisiera comérsela.",
+      "illustration": {
+        "svg_file": "mimosa.svg",
+        "caption": "Fig. 7 · Cerrada",
+        "anims": [
+          {
+            "target": "aopen",
+            "effect": "hide"
+          },
+          {
+            "target": "bopen",
+            "effect": "hide"
+          },
+          {
+            "target": "copen",
+            "effect": "hide"
+          },
+          {
+            "target": "dopen",
+            "effect": "hide"
+          },
+          {
+            "target": "finger",
+            "effect": "hide"
+          },
+          {
+            "target": "zap",
+            "effect": "hide"
+          },
+          {
+            "target": "flower",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              430,
+              330
+            ],
+            "amount": 1.25,
+            "trigger": "mustia",
+            "dur": 0.8
+          },
+          {
+            "target": "bclosed",
+            "effect": "punch",
+            "trigger": "mustia"
+          },
+          {
+            "target": "aclosed",
+            "effect": "punch",
+            "trigger": "apetecible"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "amount": 1,
+            "trigger": "cualquiera",
+            "dur": 0.8
+          },
+          {
+            "target": "cclosed",
+            "effect": "wiggle",
+            "trigger": "comérsela",
+            "amount": 0.4
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Parece mustia",
+          "tone": "accent",
+          "trigger": "apetecible"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "La dejaban *caer*",
+      "narration": "Lo más loco: en un experimento, las dejaban caer una y otra vez, sin hacerles daño.",
+      "illustration": {
+        "svg_file": "caida.svg",
+        "caption": "Fig. 8 · El experimento",
+        "anims": [
+          {
+            "target": "calendar",
+            "effect": "hide"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              330
+            ],
+            "amount": 1.2,
+            "trigger": "experimento",
+            "dur": 0.8
+          },
+          {
+            "target": "pot",
+            "effect": "move",
+            "to": [
+              0,
+              140
+            ],
+            "trigger": "caer",
+            "dur": 0.35,
+            "sfx": "boing"
+          },
+          {
+            "target": "motion",
+            "effect": "pop",
+            "trigger": "caer"
+          },
+          {
+            "target": "motion",
+            "effect": "hide",
+            "trigger": "una"
+          },
+          {
+            "target": "popen",
+            "effect": "hide",
+            "trigger": "caer"
+          },
+          {
+            "target": "pclosed",
+            "effect": "fade",
+            "trigger": "caer",
+            "dur": 0.3
+          },
+          {
+            "target": "bump",
+            "effect": "pop",
+            "trigger": "una"
+          },
+          {
+            "target": "bump",
+            "effect": "hide",
+            "trigger": "otra"
+          },
+          {
+            "target": "pot",
+            "effect": "move",
+            "to": [
+              0,
+              -140
+            ],
+            "trigger": "otra",
+            "dur": 0.5
+          },
+          {
+            "target": "pot",
+            "effect": "move",
+            "to": [
+              0,
+              140
+            ],
+            "trigger": "vez",
+            "dur": 0.35,
+            "sfx": "boing"
+          },
+          {
+            "target": "bump",
+            "effect": "pop",
+            "trigger": "vez"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "amount": 1,
+            "trigger": "sin",
+            "dur": 0.7
+          },
+          {
+            "target": "lfoam",
+            "effect": "pop",
+            "trigger": "daño"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Y *aprendieron*",
+      "narration": "Y al final, dejaron de cerrarse. Aprendieron que no era peligro… y lo recordaron un mes.",
+      "mascot": {
+        "trigger": "peligro",
+        "pose": "surprise",
+        "note": "Una planta con memoria",
+        "side": "right"
+      },
+      "illustration": {
+        "svg_file": "caida.svg",
+        "caption": "Fig. 9 · Aprendizaje",
+        "anims": [
+          {
+            "target": "pclosed",
+            "effect": "hide"
+          },
+          {
+            "target": "motion",
+            "effect": "hide"
+          },
+          {
+            "target": "lfoam",
+            "effect": "hide"
+          },
+          {
+            "target": "pot",
+            "effect": "move",
+            "to": [
+              0,
+              140
+            ],
+            "trigger": "dejaron",
+            "dur": 0.35,
+            "sfx": "boing"
+          },
+          {
+            "target": "bump",
+            "effect": "pop",
+            "trigger": "dejaron"
+          },
+          {
+            "target": "popen",
+            "effect": "punch",
+            "trigger": "cerrarse"
+          },
+          {
+            "target": "bump",
+            "effect": "hide",
+            "trigger": "Aprendieron"
+          },
+          {
+            "target": "pot",
+            "effect": "move",
+            "to": [
+              0,
+              -140
+            ],
+            "trigger": "Aprendieron",
+            "dur": 0.6
+          },
+          {
+            "target": "pot",
+            "effect": "move",
+            "to": [
+              0,
+              140
+            ],
+            "trigger": "peligro",
+            "dur": 0.35,
+            "sfx": "boing"
+          },
+          {
+            "target": "calendar",
+            "effect": "pop",
+            "trigger": "recordaron",
+            "sfx": "ding"
+          },
+          {
+            "target": "calendar",
+            "effect": "wiggle",
+            "trigger": "mes",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Confiesa: ¿cuántas veces la tocarías seguidas? Te leo.",
+      "elements": [
+        {
+          "type": "ask",
+          "text": "¿Cuántas veces la *tocarías* seguidas?",
+          "trigger": "Confiesa"
+        }
+      ]
     }
   ]
 }
