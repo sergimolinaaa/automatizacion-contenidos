@@ -10,7 +10,8 @@
     "tema": "La trampa de la hormiga león: un embudo de arena del que no se sale",
     "categoria": "animales",
     "prioridad": true,
-    "pista": "larva enterrada al fondo de un cono de arena al ángulo de reposo; lanza arena para provocar avalanchas; mandíbulas huecas que inyectan enzimas. Gancho propio (no copiar: 'esta hormiga acaba de caer en...')."
+    "pista": "larva enterrada al fondo de un cono de arena al ángulo de reposo; lanza arena para provocar avalanchas; mandíbulas huecas que inyectan enzimas. Gancho propio (no copiar: 'esta hormiga acaba de caer en...').",
+    "hecho": true
   },
   {
     "tema": "Por qué la punta del metro de cinta está suelta (y no está rota)",
@@ -23,7 +24,8 @@
     "tema": "Por qué una cerveza se desborda si golpeas su boca con otra botella",
     "categoria": "cocina",
     "prioridad": true,
-    "pista": "el golpe crea una onda de presión: cavitación, burbujas diminutas que colapsan y siembran miles de burbujas de CO2 que suben en forma de hongo (Rodríguez-Rodríguez et al., Physical Review Letters 2014)."
+    "pista": "el golpe crea una onda de presión: cavitación, burbujas diminutas que colapsan y siembran miles de burbujas de CO2 que suben en forma de hongo (Rodríguez-Rodríguez et al., Physical Review Letters 2014).",
+    "hecho": true
   },
   {
     "tema": "El pez arquero caza insectos disparando chorros de agua",
