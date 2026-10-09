@@ -65,7 +65,7 @@ jobs:
       - if: env.SKIP != '1'
         run: python -m autocontent programar ${{ github.event.inputs.n && format('-n {0}', github.event.inputs.n) || '' }}
       - name: Guardar el estado
-        if: env.SKIP != '1'
+        if: always() && env.SKIP != '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

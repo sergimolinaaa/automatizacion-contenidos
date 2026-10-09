@@ -28,7 +28,8 @@ CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cue
 
 # ------------------------------------------------------------------ Buffer GraphQL
 
-def gql(query: str, variables: dict | None = None) -> dict:
+def gql(query: str, variables: dict | None = None, partial: bool = False) -> dict:
+    """partial=True devuelve los datos aunque Buffer añada errores (p. ej. una publicación creada con avisos)."""
     r = requests.post(
         API,
         json={"query": query, "variables": variables or {}},
@@ -38,6 +39,9 @@ def gql(query: str, variables: dict | None = None) -> dict:
     r.raise_for_status()
     data = r.json()
     if data.get("errors"):
+        if partial and data.get("data"):
+            print(f"  aviso de Buffer: {data['errors']}")
+            return data["data"]
         raise RuntimeError(f"Buffer: {data['errors']}")
     return data["data"]
 
@@ -90,11 +94,14 @@ def create_post(channel: dict, text: str, video_url: str, due: datetime, meta: d
     errors = []
     for inp in attempts:
         try:
-            res = gql(CREATE, {"input": inp})["createPost"]
+            res = (gql(CREATE, {"input": inp}, partial=True) or {}).get("createPost") or {}
+        except requests.RequestException as e:
+            # sin respuesta no sabemos si se creó: NO reintentar (evita duplicados)
+            raise RuntimeError(f"Sin respuesta de Buffer en {channel['service']} (no se reintenta): {e}") from e
         except RuntimeError as e:
             errors.append(str(e)[:600])
             continue
-        if "post" in res:
+        if res.get("post"):
             return res["post"]
         errors.append(res.get("message"))
     raise RuntimeError(f"No se pudo programar en {channel['service']}: " + " || ".join(map(str, errors)))
@@ -196,24 +203,52 @@ def schedule_all(limit: int | None = None) -> list[dict]:
     room = max(0, MAX_QUEUE - future)
     limit = room if limit is None else min(limit, room)
     print(f"En cola: {future} · hueco para {room} · se programan {limit}")
+    complete_missing(state, chans, now)
     scheduled = []
     for item in pending_videos(state)[:limit]:
         url = host_video(item["slug"], item["video"], item["cover"])
-        meta = {"title": item["script"]["title"]}
-        posts = {}
-        for ch in chans:
-            try:
-                post = create_post(ch, caption(item["script"], ch["service"]), url, due, meta, item["thumb_ms"])
-            except RuntimeError as e:
-                if "limit reached" in str(e) and not posts:
-                    print(f"  Buffer está lleno ({e}); se reintentará en la próxima ejecución.")
-                    return scheduled
-                raise
-            posts[ch["service"]] = post["id"]
-            print(f"  {item['slug']} → {ch['service']} a las {due:%d/%m %H:%M} UTC")
-        entry = {"slug": item["slug"], "category": item["category"], "due": due.isoformat(), "url": url, "posts": posts}
-        state["posts"].append(entry)
+        entry = {"slug": item["slug"], "category": item["category"], "due": due.isoformat(), "url": url, "posts": {}}
+        state["posts"].append(entry)  # se guarda ANTES de crear nada: un fallo nunca provoca duplicados
         save_state(state)
+        full = fill_channels(state, entry, item["script"], chans, item["thumb_ms"])
         scheduled.append(entry)
         due += INTERVAL
+        if not full:
+            print("  Buffer está lleno en algún canal; los canales que faltan se completarán en la próxima ejecución.")
+            break
     return scheduled
+
+
+def fill_channels(state: dict, entry: dict, script: dict, chans: list[dict], thumb_ms: int) -> bool:
+    """Crea la publicación en los canales que aún no la tienen. Guarda el estado tras cada una."""
+    due = datetime.fromisoformat(entry["due"])
+    ok = True
+    for ch in chans:
+        if ch["service"] in entry["posts"]:
+            continue
+        try:
+            post = create_post(ch, caption(script, ch["service"]), entry["url"], due, {"title": script["title"]}, thumb_ms)
+        except RuntimeError as e:
+            print(f"  {entry['slug']} → {ch['service']}: {e}")
+            ok = False
+            continue
+        entry["posts"][ch["service"]] = post["id"]
+        save_state(state)
+        print(f"  {entry['slug']} → {ch['service']} a las {due:%d/%m %H:%M} UTC")
+    return ok
+
+
+def complete_missing(state: dict, chans: list[dict], now: datetime) -> None:
+    """Publicaciones futuras a las que les falta algún canal (p. ej. por la cola llena): se completan."""
+    for entry in state["posts"]:
+        if datetime.fromisoformat(entry["due"]) <= now + timedelta(minutes=20):
+            continue
+        if all(c["service"] in entry["posts"] for c in chans):
+            continue
+        folder = next((p for p in [ROOT / "content" / entry["slug"], ROOT / "examples" / entry["slug"]] if (p / "guion.json").exists()), None)
+        if not folder:
+            continue
+        script = json.loads((folder / "guion.json").read_text(encoding="utf-8"))
+        info_p = PREVIEWS / f"{entry['slug']}-con-voz.json"
+        thumb = json.loads(info_p.read_text(encoding="utf-8")).get("cover_offset_ms", 0) if info_p.exists() else 0
+        fill_channels(state, entry, script, chans, thumb)
