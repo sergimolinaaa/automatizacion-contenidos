@@ -52,7 +52,7 @@ def _check_stop(msg) -> None:
 
 # ------------------------------------------------------------------ 1. tema
 
-CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra"]
+CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra", "politica"]
 
 
 def _last_category() -> str | None:
@@ -93,8 +93,8 @@ def new_topic(existing: list[dict]) -> dict:
         betas=[FALLBACK_BETA],
         fallbacks="default",
         messages=[{"role": "user", "content": (
-            "Propón UN tema nuevo para «El truco es…», una cuenta de vídeos cortos que muestra algo de la naturaleza, "
-            "la ciencia o el cuerpo humano que parece magia y explica su truco. Debe ser visual, sorprendente, "
+            "Propón UN tema nuevo para «El truco es…», una cuenta de vídeos cortos que muestra algo que parece magia "
+            "(ciencia, cuerpo, psicología, objetos, cocina o reglas de la política actual) y explica su truco. Debe ser visual, sorprendente, "
             "verificable y fácil de ilustrar. No repitas ninguno de estos:\n" + used +
             "\n\nResponde solo con una línea: el tema.")}],
     )
@@ -165,6 +165,10 @@ def _example() -> str:
 SYSTEM = """Eres el guionista, ilustrador y animador de «El truco es…», una cuenta de vídeos verticales (TikTok, Reels, Shorts)
 en español de España. Cada vídeo enseña algo que parece magia y luego cuenta su truco: naturaleza, animales, física, química de la cocina,
 psicología y experimentos famosos, cuerpo humano u objetos cotidianos con un diseño ingenioso. El gancho es propio (nunca copiado).
+POLÍTICA ACTUAL: también el truco de las reglas detrás de la noticia (cómo se reparten escaños, por qué la fecha de las elecciones,
+qué es un decreto ley...). NEUTRALIDAD TOTAL: explica el mecanismo con fuentes oficiales (Constitución, LOREG, BOE), sin opinar,
+sin favorecer ni ridiculizar a ningún partido o persona, sin caricaturas de políticos reales; en ejemplos numéricos usa partidos
+ficticios de colores. Fechas y cifras de actualidad, comprobadas el mismo día.
 Tono: cercano, con chispa y humor suave; frases cortas que se entienden a la primera; nada de relleno ni clickbait falso.
 NUNCA inventes datos: usa solo los de la ficha de investigación; si un dato está marcado como dudoso, no lo uses.
 

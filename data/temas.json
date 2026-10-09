@@ -3,7 +3,8 @@
     "tema": "El experimento de la manta y el carrito: ¿cuándo sabe un bebé que su cuerpo es un obstáculo?",
     "categoria": "psicologia",
     "prioridad": true,
-    "pista": "Moore, Mealiea, Garon y Povinelli (2007, Infancy): el bebé debe empujar un carrito mientras está de pie sobre la manta atada a él; los mayores se bajan de la manta. Comprobar edades y resultados exactos."
+    "pista": "Moore, Mealiea, Garon y Povinelli (2007, Infancy): el bebé debe empujar un carrito mientras está de pie sobre la manta atada a él; los mayores se bajan de la manta. Comprobar edades y resultados exactos.",
+    "hecho": true
   },
   {
     "tema": "La trampa de la hormiga león: un embudo de arena del que no se sale",
@@ -15,7 +16,8 @@
     "tema": "Por qué la punta del metro de cinta está suelta (y no está rota)",
     "categoria": "objetos",
     "prioridad": true,
-    "pista": "el gancho se desliza exactamente su propio grosor: medidas exteriores (tirando) e interiores (empujando) dan el cero real."
+    "pista": "el gancho se desliza exactamente su propio grosor: medidas exteriores (tirando) e interiores (empujando) dan el cero real.",
+    "hecho": true
   },
   {
     "tema": "Por qué una cerveza se desborda si golpeas su boca con otra botella",
@@ -282,5 +284,47 @@
     "tema": "Por qué el Velcro se pega",
     "categoria": "objetos",
     "pista": "ganchos y bucles; inspirado en los cardos (George de Mestral, 1941)"
+  },
+  {
+    "tema": "Por qué las generales son justo el 29 de noviembre: el truco de los 54 días",
+    "categoria": "politica",
+    "prioridad": true,
+    "pista": "LOREG art. 42: las elecciones se celebran el día 54 tras la convocatoria (decreto en el BOE del 6 oct 2026 → 29 nov). Pasos: disolución, juntas electorales, listas, campaña de 15 días, jornada de reflexión. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+  },
+  {
+    "tema": "La ley D'Hondt: por qué los mismos votos no dan los mismos escaños",
+    "categoria": "politica",
+    "prioridad": true,
+    "pista": "Se divide el voto de cada partido entre 1, 2, 3… y se reparten los escaños a los cocientes más altos; se hace por provincia y hay umbral del 3 % en cada circunscripción (LOREG art. 163). Ejemplo con números inventados y partidos ficticios (colores, no siglas reales). Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+  },
+  {
+    "tema": "Por qué un voto en Soria pesa más que uno en Madrid",
+    "categoria": "politica",
+    "pista": "LOREG art. 162: 350 diputados, mínimo 2 por provincia (Ceuta y Melilla 1) y el resto según población; calcular votantes por escaño con datos oficiales del INE/Ministerio del Interior. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+  },
+  {
+    "tema": "Cómo puede el Congreso tumbar una ley que ya está en vigor: el decreto ley",
+    "categoria": "politica",
+    "pista": "Constitución art. 86: el Gobierno aprueba un decreto ley que entra en vigor ya, pero el Congreso debe convalidarlo en 30 días o queda derogado (como los decretos de vivienda del 2 oct 2026). Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+  },
+  {
+    "tema": "La jornada de reflexión: por qué el sábado nadie te puede pedir el voto",
+    "categoria": "politica",
+    "pista": "LOREG: campaña de 15 días que acaba a las 0 h del viernes al sábado; el día antes de votar no hay propaganda; prohibido publicar encuestas los 5 días previos (art. 69). Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+  },
+  {
+    "tema": "Gerrymandering: ganar unas elecciones dibujando el mapa",
+    "categoria": "politica",
+    "pista": "EE. UU., elecciones de mitad de mandato del 3 nov 2026 y la guerra de redistribución de distritos (Texas, California Prop. 50). Técnicas 'cracking' y 'packing'; nombre por Elbridge Gerry y la salamandra de 1812. Ejemplo con cuadrícula de votantes de colores. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+  },
+  {
+    "tema": "La moción de censura constructiva: para echar a un presidente tienes que traer otro",
+    "categoria": "politica",
+    "pista": "Constitución art. 113: mayoría absoluta y candidato alternativo; inspirada en Alemania. Casos: 1980, 1987, 2017, 2018 (única que prosperó), 2023. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+  },
+  {
+    "tema": "El voto en blanco no castiga a nadie (y puede dejar fuera a los pequeños)",
+    "categoria": "politica",
+    "pista": "El voto en blanco cuenta como válido, así que sube el listón del 3 %; el nulo no cuenta. Diferencia blanco/nulo/abstención con ejemplo numérico ficticio. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
   }
 ]
