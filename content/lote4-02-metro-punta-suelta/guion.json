@@ -1,0 +1,854 @@
+{
+  "topic": "Por qué la punta del metro está suelta",
+  "categoria": "objetos",
+  "title": "¿La punta de tu metro está rota? No: es a propósito 📏",
+  "source": "Fuentes: patente US 7.204.037 (gancho de flexómetro) · U.S. Tape, «Hidden features of a tape measure» · Homebuilding & Renovating",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Tu metro está *roto*?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Ese gancho que baila en la punta de tu metro no está roto 📏 Se mueve justo lo que mide su grosor para que midas bien por fuera y por dentro. ¿Tú también intentaste arreglarlo?",
+    "description": "El gancho de un flexómetro va sujeto con remaches que pasan por agujeros alargados, así que puede deslizarse una distancia igual a su propio grosor. Cuando enganchas el borde de una pieza y tiras, el gancho sale hacia fuera; cuando lo aprietas contra una pared, se mete hacia dentro. Así el grosor del gancho se compensa solo y el cero queda siempre en su sitio. Si lo fijas, las medidas fallarían justo por ese grosor. Además, su agujerito sirve para engancharlo en un clavo o un tornillo, y los metros en pulgadas marcan en rojo cada 16, la separación típica entre montantes de pared en Norteamérica. Fuentes: patente US 7.204.037; U.S. Tape; Homebuilding & Renovating.",
+    "hashtags": [
+      "herramientas",
+      "bricolaje",
+      "objetos",
+      "diseño",
+      "ciencia",
+      "curiosidades",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Está *rota*?",
+      "narration": "La punta de tu metro baila… ¿Está rota? Para nada: está hecha así a propósito.",
+      "elements": [
+        {
+          "type": "stamp",
+          "text": "A PROPÓSITO",
+          "tone": "accent",
+          "trigger": "propósito",
+          "sfx": "sello"
+        }
+      ],
+      "illustration": {
+        "svg_file": "metro_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Flexómetro",
+        "anims": [
+          {
+            "target": "gancho",
+            "effect": "shake",
+            "amount": 0.7
+          },
+          {
+            "target": "carcasa",
+            "effect": "breathe",
+            "amount": 0.4
+          },
+          {
+            "target": "lgancho",
+            "effect": "pop",
+            "trigger": "punta",
+            "sfx": "pop"
+          },
+          {
+            "target": "carcasa",
+            "effect": "punch",
+            "trigger": "metro",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              853,
+              893
+            ],
+            "amount": 1.5,
+            "trigger": "baila",
+            "dur": 0.8
+          },
+          {
+            "target": "baila",
+            "effect": "pop",
+            "trigger": "baila"
+          },
+          {
+            "target": "baila",
+            "effect": "pulse",
+            "amount": 1.2
+          },
+          {
+            "target": "lrota",
+            "effect": "pop",
+            "trigger": "rota",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              540,
+              960
+            ],
+            "amount": 1,
+            "trigger": "nada",
+            "dur": 0.8
+          },
+          {
+            "target": "gancho",
+            "effect": "punch",
+            "trigger": "hecha"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Remaches con *holgura*",
+      "narration": "El gancho va sujeto con remaches en unos agujeros alargados, así que puede deslizarse.",
+      "illustration": {
+        "svg_file": "gancho.svg",
+        "caption": "Fig. 2 · Gancho en corte",
+        "anims": [
+          {
+            "target": "choL",
+            "effect": "hide"
+          },
+          {
+            "target": "cgrosor",
+            "effect": "hide"
+          },
+          {
+            "target": "igual",
+            "effect": "hide"
+          },
+          {
+            "target": "martillo",
+            "effect": "hide"
+          },
+          {
+            "target": "prohibido",
+            "effect": "hide"
+          },
+          {
+            "target": "hook",
+            "effect": "punch",
+            "trigger": "gancho",
+            "amount": 0.4
+          },
+          {
+            "target": "lremache",
+            "effect": "pop",
+            "trigger": "remaches",
+            "sfx": "pop"
+          },
+          {
+            "target": "remaches",
+            "effect": "punch",
+            "trigger": "remaches",
+            "amount": 0.4
+          },
+          {
+            "target": "arriba",
+            "effect": "pop",
+            "trigger": "agujeros"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              380
+            ],
+            "amount": 1.3,
+            "trigger": "alargados",
+            "dur": 0.8
+          },
+          {
+            "target": "arriba",
+            "effect": "hide",
+            "trigger": "alargados"
+          },
+          {
+            "target": "huecos",
+            "effect": "pop",
+            "trigger": "alargados",
+            "sfx": "brillo"
+          },
+          {
+            "target": "huecos",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "huecos",
+            "effect": "hide",
+            "trigger": "deslizarse"
+          },
+          {
+            "target": "hook",
+            "effect": "move",
+            "to": [
+              44,
+              0
+            ],
+            "trigger": "deslizarse",
+            "dur": 0.6,
+            "sfx": "chasquido"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Justo *su grosor*",
+      "narration": "Y se desliza justo lo que mide el grosor del propio gancho.",
+      "illustration": {
+        "svg_file": "gancho_free.svg",
+        "layout": "free",
+        "height": 672,
+        "caption": "Fig. 3 · Holgura = grosor",
+        "anims": [
+          {
+            "target": "martillo",
+            "effect": "hide"
+          },
+          {
+            "target": "prohibido",
+            "effect": "hide"
+          },
+          {
+            "target": "arriba",
+            "effect": "hide"
+          },
+          {
+            "target": "lremache",
+            "effect": "hide"
+          },
+          {
+            "target": "hook",
+            "effect": "shake",
+            "amount": 0.4
+          },
+          {
+            "target": "huecos",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              690,
+              410
+            ],
+            "amount": 1.4
+          },
+          {
+            "target": "choL",
+            "effect": "pop",
+            "trigger": "justo",
+            "sfx": "pop"
+          },
+          {
+            "target": "cgrosor",
+            "effect": "pop",
+            "trigger": "grosor",
+            "sfx": "pop"
+          },
+          {
+            "target": "igual",
+            "effect": "pop",
+            "trigger": "propio",
+            "sfx": "ding"
+          },
+          {
+            "target": "igual",
+            "effect": "pulse",
+            "amount": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Medir *tirando*",
+      "narration": "Si enganchas el borde de una tabla y tiras, el gancho sale hacia fuera…",
+      "illustration": {
+        "svg_file": "medidas.svg",
+        "caption": "Fig. 4 · Por fuera",
+        "anims": [
+          {
+            "target": "cero",
+            "effect": "hide"
+          },
+          {
+            "target": "lcero",
+            "effect": "hide"
+          },
+          {
+            "target": "lsale",
+            "effect": "hide"
+          },
+          {
+            "target": "empuja",
+            "effect": "hide"
+          },
+          {
+            "target": "lempuja",
+            "effect": "hide"
+          },
+          {
+            "target": "lentra",
+            "effect": "hide"
+          },
+          {
+            "target": "huecoA",
+            "effect": "hide"
+          },
+          {
+            "target": "cintaA",
+            "effect": "move",
+            "to": [
+              -44,
+              0
+            ],
+            "dur": 0.05
+          },
+          {
+            "target": "remA",
+            "effect": "move",
+            "to": [
+              -44,
+              0
+            ],
+            "dur": 0.05
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              440,
+              230
+            ],
+            "amount": 1.3
+          },
+          {
+            "target": "tabla",
+            "effect": "punch",
+            "trigger": "tabla",
+            "amount": 0.3
+          },
+          {
+            "target": "ganchoA",
+            "effect": "punch",
+            "trigger": "enganchas",
+            "amount": 0.5
+          },
+          {
+            "target": "tira",
+            "effect": "draw",
+            "trigger": "tiras",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cintaA",
+            "effect": "move",
+            "to": [
+              44,
+              0
+            ],
+            "trigger": "tiras",
+            "dur": 0.7
+          },
+          {
+            "target": "remA",
+            "effect": "move",
+            "to": [
+              44,
+              0
+            ],
+            "trigger": "tiras",
+            "dur": 0.7
+          },
+          {
+            "target": "ltira",
+            "effect": "pop",
+            "trigger": "tiras"
+          },
+          {
+            "target": "huecoA",
+            "effect": "pop",
+            "trigger": "fuera",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "lsale",
+            "effect": "pop",
+            "trigger": "fuera"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Medir *empujando*",
+      "narration": "…y si lo empujas contra una pared, se mete hacia dentro.",
+      "illustration": {
+        "svg_file": "medidas.svg",
+        "caption": "Fig. 5 · Por dentro",
+        "anims": [
+          {
+            "target": "cero",
+            "effect": "hide"
+          },
+          {
+            "target": "lcero",
+            "effect": "hide"
+          },
+          {
+            "target": "lsale",
+            "effect": "hide"
+          },
+          {
+            "target": "tira",
+            "effect": "hide"
+          },
+          {
+            "target": "ltira",
+            "effect": "hide"
+          },
+          {
+            "target": "lentra",
+            "effect": "hide"
+          },
+          {
+            "target": "lempuja",
+            "effect": "hide"
+          },
+          {
+            "target": "cintaB",
+            "effect": "move",
+            "to": [
+              44,
+              0
+            ],
+            "dur": 0.05
+          },
+          {
+            "target": "remB",
+            "effect": "move",
+            "to": [
+              44,
+              0
+            ],
+            "dur": 0.05
+          },
+          {
+            "target": "huecoA",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              440,
+              470
+            ],
+            "amount": 1.3
+          },
+          {
+            "target": "empuja",
+            "effect": "draw",
+            "trigger": "empujas",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lempuja",
+            "effect": "pop",
+            "trigger": "empujas"
+          },
+          {
+            "target": "pared",
+            "effect": "punch",
+            "trigger": "pared",
+            "amount": 0.3
+          },
+          {
+            "target": "cintaB",
+            "effect": "move",
+            "to": [
+              -44,
+              0
+            ],
+            "trigger": "mete",
+            "dur": 0.6,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "remB",
+            "effect": "move",
+            "to": [
+              -44,
+              0
+            ],
+            "trigger": "mete",
+            "dur": 0.6
+          },
+          {
+            "target": "lentra",
+            "effect": "pop",
+            "trigger": "dentro"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "El *cero* real",
+      "narration": "Así su grosor se suma o se resta solo, y el cero cae siempre en su sitio.",
+      "illustration": {
+        "svg_file": "medidas.svg",
+        "caption": "Fig. 6 · El cero real",
+        "anims": [
+          {
+            "target": "lsale",
+            "effect": "hide"
+          },
+          {
+            "target": "lentra",
+            "effect": "hide"
+          },
+          {
+            "target": "tira",
+            "effect": "hide"
+          },
+          {
+            "target": "empuja",
+            "effect": "hide"
+          },
+          {
+            "target": "huecoA",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "ganchoA",
+            "effect": "punch",
+            "trigger": "suma",
+            "amount": 0.5
+          },
+          {
+            "target": "ganchoB",
+            "effect": "punch",
+            "trigger": "resta",
+            "amount": 0.5
+          },
+          {
+            "target": "cero",
+            "effect": "fade",
+            "trigger": "cero",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lcero",
+            "effect": "pop",
+            "trigger": "cero",
+            "sfx": "ding"
+          },
+          {
+            "target": "lcero",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              180,
+              360
+            ],
+            "amount": 1.5,
+            "trigger": "siempre",
+            "dur": 0.9
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "sitio",
+        "pose": "explain",
+        "note": "Ni un pelo más, ni uno menos",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "*No* lo arregles",
+      "narration": "Por eso no lo arregles con un martillo: si lo fijas, tus medidas fallarían por ese grosor.",
+      "elements": [
+        {
+          "type": "stamp",
+          "text": "¡QUIETO!",
+          "tone": "hot",
+          "trigger": "fijas",
+          "sfx": "sello"
+        }
+      ],
+      "illustration": {
+        "svg_file": "gancho.svg",
+        "caption": "Fig. 7 · No lo fijes",
+        "anims": [
+          {
+            "target": "choL",
+            "effect": "hide"
+          },
+          {
+            "target": "igual",
+            "effect": "hide"
+          },
+          {
+            "target": "arriba",
+            "effect": "hide"
+          },
+          {
+            "target": "lremache",
+            "effect": "hide"
+          },
+          {
+            "target": "huecos",
+            "effect": "hide"
+          },
+          {
+            "target": "hook",
+            "effect": "shake",
+            "amount": 0.4
+          },
+          {
+            "target": "martillo",
+            "effect": "slide-down",
+            "trigger": "martillo",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "martillo",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 1.2
+          },
+          {
+            "target": "prohibido",
+            "effect": "pop",
+            "trigger": "fijas"
+          },
+          {
+            "target": "remaches",
+            "effect": "punch",
+            "trigger": "fijas",
+            "amount": 0.4
+          },
+          {
+            "target": "hook",
+            "effect": "punch",
+            "trigger": "medidas",
+            "amount": 0.3
+          },
+          {
+            "target": "cgrosor",
+            "effect": "pop",
+            "trigger": "grosor",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "El *agujerito*",
+      "narration": "Extra: su agujerito sirve para engancharlo en un clavo o un tornillo y medir tú solo.",
+      "illustration": {
+        "svg_file": "extras.svg",
+        "caption": "Fig. 8 · Para el clavo",
+        "anims": [
+          {
+            "target": "l16",
+            "effect": "hide"
+          },
+          {
+            "target": "lmontante",
+            "effect": "hide"
+          },
+          {
+            "target": "rojo",
+            "effect": "hide"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              460,
+              200
+            ],
+            "amount": 1.6
+          },
+          {
+            "target": "gancho",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.15
+          },
+          {
+            "target": "lupa",
+            "effect": "pop",
+            "trigger": "agujerito",
+            "sfx": "pop"
+          },
+          {
+            "target": "lagujero",
+            "effect": "pop",
+            "trigger": "agujerito"
+          },
+          {
+            "target": "lclavo",
+            "effect": "pop",
+            "trigger": "clavo"
+          },
+          {
+            "target": "cabeza",
+            "effect": "punch",
+            "trigger": "tornillo"
+          },
+          {
+            "target": "gancho",
+            "effect": "punch",
+            "trigger": "medir",
+            "amount": 0.3
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "solo",
+        "pose": "cheer",
+        "note": "Manos libres, por fin",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Marcas *secretas*",
+      "narration": "Y en los metros en pulgadas, cada 16 sale en rojo: la separación típica entre montantes de pared.",
+      "illustration": {
+        "svg_file": "extras.svg",
+        "caption": "Fig. 9 · Metro en pulgadas",
+        "anims": [
+          {
+            "target": "lupa",
+            "effect": "hide"
+          },
+          {
+            "target": "lagujero",
+            "effect": "hide"
+          },
+          {
+            "target": "lclavo",
+            "effect": "hide"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              480,
+              500
+            ],
+            "amount": 1.3
+          },
+          {
+            "target": "pulgadas",
+            "effect": "punch",
+            "trigger": "pulgadas",
+            "amount": 0.2
+          },
+          {
+            "target": "rojo",
+            "effect": "pop",
+            "trigger": "rojo",
+            "sfx": "ding"
+          },
+          {
+            "target": "l16",
+            "effect": "pop",
+            "trigger": "16"
+          },
+          {
+            "target": "rojo",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "lmontante",
+            "effect": "pop",
+            "trigger": "montantes",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              420,
+              520
+            ],
+            "amount": 1.5,
+            "trigger": "separación",
+            "dur": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "Te *toca*",
+      "narration": "Síguenos para más trucos. Sé sincero: ¿alguna vez intentaste arreglar el gancho?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Alguna vez intentaste *arreglar* el gancho?",
+          "trigger": "Sé"
+        }
+      ]
+    }
+  ]
+}

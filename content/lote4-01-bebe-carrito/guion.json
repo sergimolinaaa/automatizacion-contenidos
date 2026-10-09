@@ -1,0 +1,994 @@
+{
+  "topic": "El bebé que debe bajarse de la manta para mover el carrito",
+  "categoria": "psicologia",
+  "title": "¿Conseguirá este bebé mover el carrito? Un test genial 🛒",
+  "source": "Fuentes: Moore, Mealiea, Garon & Povinelli, Infancy (2007) · Dale & Plotnik, Scientific Reports (2017)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Podrá *mover* el carrito?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Empuja y empuja… pero el carrito no se mueve 🛒 Para lograrlo, el bebé tiene que darse cuenta de que el obstáculo es su propio cuerpo. ¿A qué edad crees que lo pillan?",
+    "description": "En un experimento de Chris Moore y su equipo (Universidad de Dalhousie), unos bebés tenían que empujar un carrito de juguete hasta su madre mientras estaban de pie sobre una manta atada a la parte trasera del carrito. Su propio peso lo frenaba: para conseguirlo tenían que entender que el obstáculo era su cuerpo y bajarse de la manta. Los niños de 21 meses lo lograban mucho más que los de 15, pero si el estorbo era un bote lleno de arena la edad no marcaba diferencia. Además, el resultado se relacionaba con reconocerse en el espejo, incluso a igual edad. Años después, una prueba parecida demostró que los elefantes también se apartan de una alfombra para pasar un palo atado a ella. Fuentes: Moore, Mealiea, Garon & Povinelli, Infancy 11(2) (2007); Dale & Plotnik, Scientific Reports (2017).",
+    "hashtags": [
+      "psicologia",
+      "bebes",
+      "desarrolloinfantil",
+      "experimentos",
+      "ciencia",
+      "curiosidades",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Lo *conseguirá*?",
+      "narration": "Este bebé quiere llevarle el carrito a mamá. ¿Lo conseguirá?",
+      "illustration": {
+        "svg_file": "escena_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · El reto del carrito",
+        "anims": [
+          {
+            "target": "bebe2",
+            "effect": "hide"
+          },
+          {
+            "target": "bote",
+            "effect": "hide"
+          },
+          {
+            "target": "lbote",
+            "effect": "hide"
+          },
+          {
+            "target": "vel",
+            "effect": "hide"
+          },
+          {
+            "target": "yay",
+            "effect": "hide"
+          },
+          {
+            "target": "lmanta",
+            "effect": "hide"
+          },
+          {
+            "target": "bebe",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "b1eyes",
+            "effect": "blink"
+          },
+          {
+            "target": "mama",
+            "effect": "breathe",
+            "amount": 0.5,
+            "phase": 0.3
+          },
+          {
+            "target": "momhead",
+            "effect": "wiggle",
+            "amount": 0.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              330,
+              870
+            ],
+            "amount": 1.5
+          },
+          {
+            "target": "bebe",
+            "effect": "punch",
+            "trigger": "bebé"
+          },
+          {
+            "target": "carrito",
+            "effect": "punch",
+            "trigger": "carrito",
+            "amount": 0.7
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              540,
+              960
+            ],
+            "amount": 1,
+            "trigger": "mamá",
+            "dur": 0.8
+          },
+          {
+            "target": "lmama",
+            "effect": "pop",
+            "trigger": "mamá",
+            "sfx": "pop"
+          },
+          {
+            "target": "empuje",
+            "effect": "draw",
+            "trigger": "Lo",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "conseguirá",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "duda",
+            "effect": "float",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Una *trampa* de laboratorio",
+      "narration": "Es una trampa: el carrito lleva una manta atada detrás… y el bebé está de pie encima.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 2 · La trampa",
+        "anims": [
+          {
+            "target": "bebe2",
+            "effect": "hide"
+          },
+          {
+            "target": "bote",
+            "effect": "hide"
+          },
+          {
+            "target": "lbote",
+            "effect": "hide"
+          },
+          {
+            "target": "vel",
+            "effect": "hide"
+          },
+          {
+            "target": "yay",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "empuje",
+            "effect": "hide"
+          },
+          {
+            "target": "lmama",
+            "effect": "hide"
+          },
+          {
+            "target": "bebe",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "b1eyes",
+            "effect": "blink"
+          },
+          {
+            "target": "mama",
+            "effect": "breathe",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              300,
+              520
+            ],
+            "amount": 1.6,
+            "trigger": "trampa",
+            "dur": 0.9
+          },
+          {
+            "target": "manta",
+            "effect": "punch",
+            "trigger": "manta",
+            "amount": 0.5
+          },
+          {
+            "target": "lmanta",
+            "effect": "pop",
+            "trigger": "manta",
+            "sfx": "pop"
+          },
+          {
+            "target": "cuerda",
+            "effect": "punch",
+            "trigger": "atada",
+            "amount": 1.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              260,
+              430
+            ],
+            "amount": 1.3,
+            "trigger": "bebé",
+            "dur": 0.8
+          },
+          {
+            "target": "bebe",
+            "effect": "punch",
+            "trigger": "encima"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Empuja… y *nada*",
+      "narration": "Empuja y empuja, pero el carrito no avanza: su propio peso sujeta la manta.",
+      "illustration": {
+        "svg_file": "pies.svg",
+        "caption": "Fig. 3 · Visto de cerca",
+        "anims": [
+          {
+            "target": "glow",
+            "effect": "hide"
+          },
+          {
+            "target": "lobst",
+            "effect": "hide"
+          },
+          {
+            "target": "bebe",
+            "effect": "shake",
+            "amount": 0.35
+          },
+          {
+            "target": "pbeyes",
+            "effect": "blink"
+          },
+          {
+            "target": "empuje",
+            "effect": "draw",
+            "trigger": "Empuja",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "carrito",
+            "effect": "shake",
+            "amount": 0.25
+          },
+          {
+            "target": "frena",
+            "effect": "pop",
+            "trigger": "avanza",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "lnada",
+            "effect": "pop",
+            "trigger": "avanza"
+          },
+          {
+            "target": "peso",
+            "effect": "draw",
+            "trigger": "peso",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lpeso",
+            "effect": "pop",
+            "trigger": "peso"
+          },
+          {
+            "target": "presion",
+            "effect": "pop",
+            "trigger": "peso"
+          },
+          {
+            "target": "presion",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              560,
+              520
+            ],
+            "amount": 1.45,
+            "trigger": "sujeta",
+            "dur": 0.8
+          },
+          {
+            "target": "latada",
+            "effect": "pop",
+            "trigger": "sujeta",
+            "sfx": "pop"
+          },
+          {
+            "target": "cuerda",
+            "effect": "punch",
+            "trigger": "manta",
+            "amount": 1.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "El obstáculo *eres tú*",
+      "narration": "Para lograrlo, tiene que descubrir algo enorme: el obstáculo es su propio cuerpo.",
+      "illustration": {
+        "svg_file": "obstaculo.svg",
+        "layout": "free",
+        "height": 826,
+        "caption": "Fig. 4 · El obstáculo",
+        "anims": [
+          {
+            "target": "glow",
+            "effect": "hide"
+          },
+          {
+            "target": "lobst",
+            "effect": "hide"
+          },
+          {
+            "target": "peso",
+            "effect": "hide"
+          },
+          {
+            "target": "lpeso",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "bebe",
+            "effect": "breathe",
+            "amount": 0.7
+          },
+          {
+            "target": "obeyes",
+            "effect": "blink"
+          },
+          {
+            "target": "manta",
+            "effect": "punch",
+            "trigger": "lograrlo",
+            "amount": 0.4
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "descubrir",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "glow",
+            "effect": "pop",
+            "trigger": "obstáculo",
+            "sfx": "magia"
+          },
+          {
+            "target": "glow",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "lobst",
+            "effect": "pop",
+            "trigger": "obstáculo"
+          },
+          {
+            "target": "peso",
+            "effect": "draw",
+            "trigger": "propio",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lpeso",
+            "effect": "pop",
+            "trigger": "propio"
+          },
+          {
+            "target": "bebe",
+            "effect": "punch",
+            "trigger": "cuerpo"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Se *baja*… ¡y rueda!",
+      "narration": "Si lo entiende, se baja de la manta… ¡y el carrito por fin rueda!",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 5 · ¡Lo pilla!",
+        "anims": [
+          {
+            "target": "bote",
+            "effect": "hide"
+          },
+          {
+            "target": "lbote",
+            "effect": "hide"
+          },
+          {
+            "target": "lmanta",
+            "effect": "hide"
+          },
+          {
+            "target": "lmama",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "bebe2",
+            "effect": "hide"
+          },
+          {
+            "target": "bebe",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "b1eyes",
+            "effect": "blink"
+          },
+          {
+            "target": "b2eyes",
+            "effect": "blink"
+          },
+          {
+            "target": "mama",
+            "effect": "breathe",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              300,
+              470
+            ],
+            "amount": 1.4,
+            "trigger": "entiende",
+            "dur": 0.8
+          },
+          {
+            "target": "bebe",
+            "effect": "hide",
+            "trigger": "baja"
+          },
+          {
+            "target": "bebe2",
+            "effect": "fade",
+            "trigger": "baja",
+            "dur": 0.3,
+            "sfx": "boing"
+          },
+          {
+            "target": "manta",
+            "effect": "punch",
+            "trigger": "manta",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "carrito",
+            "dur": 0.7
+          },
+          {
+            "target": "empuje",
+            "effect": "draw",
+            "trigger": "carrito"
+          },
+          {
+            "target": "convoy",
+            "effect": "move",
+            "to": [
+              90,
+              0
+            ],
+            "trigger": "rueda",
+            "dur": 1.0,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "vel",
+            "effect": "draw",
+            "trigger": "rueda"
+          },
+          {
+            "target": "yay",
+            "effect": "pop",
+            "trigger": "fin",
+            "sfx": "brillo"
+          },
+          {
+            "target": "mama",
+            "effect": "punch",
+            "trigger": "rueda",
+            "amount": 0.5
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "rueda",
+        "pose": "cheer",
+        "note": "Plot twist: el freno era él",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "*15* contra *21* meses",
+      "narration": "En el experimento de Chris Moore, los de 21 meses se bajaban mucho más que los de 15.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Moore et al. · Infancy, 2007",
+          "tone": "ink",
+          "trigger": "Moore"
+        }
+      ],
+      "illustration": {
+        "svg_file": "edades.svg",
+        "caption": "Fig. 6 · Por edades",
+        "anims": [
+          {
+            "target": "e15bebe",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "e21bebe",
+            "effect": "breathe",
+            "amount": 0.6,
+            "phase": 0.5
+          },
+          {
+            "target": "e15eyes",
+            "effect": "blink"
+          },
+          {
+            "target": "e21eyes",
+            "effect": "blink"
+          },
+          {
+            "target": "t15",
+            "effect": "pop",
+            "trigger": "experimento",
+            "sfx": "pop"
+          },
+          {
+            "target": "t21",
+            "effect": "pop",
+            "trigger": "experimento",
+            "sfx": "none"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              750,
+              330
+            ],
+            "amount": 1.3,
+            "trigger": "21",
+            "dur": 0.8
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "bajaban",
+            "sfx": "ding"
+          },
+          {
+            "target": "lbaja",
+            "effect": "pop",
+            "trigger": "bajaban"
+          },
+          {
+            "target": "vel",
+            "effect": "draw",
+            "trigger": "mucho"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "15",
+            "dur": 0.7
+          },
+          {
+            "target": "t15",
+            "effect": "hide",
+            "trigger": "21"
+          },
+          {
+            "target": "t15",
+            "effect": "pop",
+            "trigger": "15"
+          },
+          {
+            "target": "lsigue",
+            "effect": "pop",
+            "trigger": "15"
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "15"
+          },
+          {
+            "target": "frena",
+            "effect": "pop",
+            "trigger": "15"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "No es *fuerza*",
+      "narration": "Y no era cuestión de fuerza: con un bote de arena sobre la manta, la edad no marcaba diferencia.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Misma dificultad a ambas edades",
+          "tone": "accent",
+          "trigger": "diferencia"
+        }
+      ],
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 7 · Prueba de control",
+        "anims": [
+          {
+            "target": "bebe",
+            "effect": "hide"
+          },
+          {
+            "target": "lmanta",
+            "effect": "hide"
+          },
+          {
+            "target": "lmama",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "yay",
+            "effect": "hide"
+          },
+          {
+            "target": "vel",
+            "effect": "hide"
+          },
+          {
+            "target": "b2eyes",
+            "effect": "blink"
+          },
+          {
+            "target": "bebe2",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "mama",
+            "effect": "breathe",
+            "amount": 0.5
+          },
+          {
+            "target": "empuje",
+            "effect": "draw",
+            "trigger": "fuerza",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              420,
+              400
+            ],
+            "amount": 1.12,
+            "trigger": "bote",
+            "dur": 0.8
+          },
+          {
+            "target": "bote",
+            "effect": "pop",
+            "trigger": "bote",
+            "sfx": "pop"
+          },
+          {
+            "target": "lbote",
+            "effect": "pop",
+            "trigger": "arena"
+          },
+          {
+            "target": "manta",
+            "effect": "punch",
+            "trigger": "manta",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "edad",
+            "dur": 0.8
+          },
+          {
+            "target": "bebe2",
+            "effect": "punch",
+            "trigger": "diferencia"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "El test del *espejo*",
+      "narration": "Además, los que se reconocían en el espejo lo resolvían mejor, incluso con la misma edad.",
+      "illustration": {
+        "svg_file": "espejo.svg",
+        "caption": "Fig. 8 · Test del espejo",
+        "anims": [
+          {
+            "target": "bebe",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "reflejo",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "eeyes",
+            "effect": "blink"
+          },
+          {
+            "target": "reyes",
+            "effect": "blink"
+          },
+          {
+            "target": "yo",
+            "effect": "pop",
+            "trigger": "reconocían",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              580,
+              350
+            ],
+            "amount": 1.25,
+            "trigger": "espejo",
+            "dur": 0.8
+          },
+          {
+            "target": "lmancha",
+            "effect": "pop",
+            "trigger": "espejo"
+          },
+          {
+            "target": "dot",
+            "effect": "pulse",
+            "amount": 2
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "resolvían",
+            "dur": 0.8
+          },
+          {
+            "target": "minicarro",
+            "effect": "pop",
+            "trigger": "resolvían",
+            "sfx": "ding"
+          },
+          {
+            "target": "bebe",
+            "effect": "punch",
+            "trigger": "misma"
+          },
+          {
+            "target": "reflejo",
+            "effect": "punch",
+            "trigger": "misma"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "mejor",
+        "pose": "wave",
+        "note": "Hola, guapetón",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Hasta los *elefantes*",
+      "narration": "Y los elefantes también lo superan: se apartan de la alfombra para pasar un palo atado a ella.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Se bajan en 42 de 48 intentos",
+          "tone": "accent",
+          "trigger": "superan"
+        }
+      ],
+      "illustration": {
+        "svg_file": "elefante.svg",
+        "caption": "Fig. 9 · Versión elefante",
+        "anims": [
+          {
+            "target": "elefante",
+            "effect": "breathe",
+            "amount": 0.5
+          },
+          {
+            "target": "ojo",
+            "effect": "blink"
+          },
+          {
+            "target": "trompa",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.25
+          },
+          {
+            "target": "elefante",
+            "effect": "punch",
+            "trigger": "elefantes",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              640,
+              520
+            ],
+            "amount": 1.45,
+            "trigger": "apartan",
+            "dur": 0.8
+          },
+          {
+            "target": "lalfombra",
+            "effect": "pop",
+            "trigger": "alfombra",
+            "sfx": "pop"
+          },
+          {
+            "target": "alfombra",
+            "effect": "punch",
+            "trigger": "alfombra",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              780,
+              330
+            ],
+            "amount": 1.35,
+            "trigger": "palo",
+            "dur": 0.8
+          },
+          {
+            "target": "mano",
+            "effect": "slide-left",
+            "trigger": "pasar",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lpalo",
+            "effect": "pop",
+            "trigger": "palo"
+          },
+          {
+            "target": "cuerda",
+            "effect": "punch",
+            "trigger": "atado",
+            "amount": 1.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos para más trucos. Confiesa: ¿cuántas veces has sido tú el obstáculo?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Cuántas veces has sido tú el *obstáculo*?",
+          "trigger": "Confiesa"
+        }
+      ]
+    }
+  ]
+}
