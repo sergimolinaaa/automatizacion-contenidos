@@ -1,0 +1,738 @@
+{
+  "topic": "La ley D'Hondt: por qué los mismos votos no dan los mismos escaños",
+  "categoria": "politica",
+  "title": "La ley D'Hondt: mismos votos, distintos escaños 🗳️",
+  "source": "Fuentes: LOREG (LO 5/1985), arts. 96.5, 162 y 163 · BOE 6/10/2026, Real Decreto 806/2026 (diputados por provincia) · Junta Electoral Central · Ejemplo numérico inventado",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Mismos votos, *otro resultado*",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Con el 9 % de los votos puedes sacar 3 escaños… o ninguno 🗳️ Te contamos con un ejemplo inventado cómo reparte la ley D'Hondt los escaños de cada provincia. Sin posicionarnos: solo explicamos cómo funciona. ¿Te atreves a repartir 5 escaños sin calculadora?",
+    "description": "En las elecciones al Congreso cada provincia reparte sus propios escaños (Madrid 38, Soria 2, según el Real Decreto 806/2026). La LOREG (art. 163) aplica la regla D'Hondt: se descartan las candidaturas que no llegan al 3 % de los votos válidos de la circunscripción, los votos de cada una se dividen entre 1, 2, 3… y los escaños van a los cocientes más altos. En nuestro ejemplo inventado, con 5 escaños, un partido con 9.000 votos (9 %) se queda sin nada; con 38 escaños y los mismos porcentajes, sacaría 3. El voto en blanco (sobre sin papeleta) cuenta como válido; un papel en blanco dentro del sobre es nulo. Los partidos del vídeo son ficticios. Sin posicionarnos: solo explicamos cómo funciona. Fuentes: LOREG, arts. 96.5, 162 y 163; BOE (Real Decreto 806/2026); Junta Electoral Central.",
+    "hashtags": [
+      "leydhondt",
+      "elecciones",
+      "eleccionesgenerales",
+      "matematicas",
+      "politica",
+      "curiosidades",
+      "aprendeentiktok",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Mismos votos, *otro resultado*",
+      "narration": "Con el 9 % de los votos, en una provincia sacas tres escaños… y en otra, cero.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · El mismo 9 %",
+        "anims": [
+          {
+            "target": "p9",
+            "effect": "pop",
+            "trigger": "9",
+            "sfx": "pop"
+          },
+          {
+            "target": "p9",
+            "effect": "wiggle",
+            "amount": 0.4
+          },
+          {
+            "target": "g38square",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "f1",
+            "effect": "draw",
+            "trigger": "provincia",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "g38card",
+            "effect": "punch",
+            "trigger": "provincia",
+            "amount": 0.15
+          },
+          {
+            "target": "g38res",
+            "effect": "pop",
+            "trigger": "tres",
+            "sfx": "ding"
+          },
+          {
+            "target": "f2",
+            "effect": "draw",
+            "trigger": "otra",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "g5card",
+            "effect": "punch",
+            "trigger": "otra",
+            "amount": 0.15
+          },
+          {
+            "target": "g5res",
+            "effect": "pop",
+            "trigger": "cero",
+            "sfx": "sello"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Cada provincia, *aparte*",
+      "narration": "Sin posicionarnos, solo cómo funciona. Al Congreso no se vota en una bolsa única: cada provincia reparte sus escaños.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "SIN POSICIONARNOS",
+          "tone": "ink",
+          "trigger": "posicionarnos"
+        }
+      ],
+      "illustration": {
+        "svg_file": "mapa.svg",
+        "caption": "Fig. 2 · 52 circunscripciones",
+        "anims": [
+          {
+            "target": "bmadrid",
+            "effect": "hide"
+          },
+          {
+            "target": "bsoria",
+            "effect": "hide"
+          },
+          {
+            "target": "tdh",
+            "effect": "hide"
+          },
+          {
+            "target": "pmadrid",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "psoria",
+            "effect": "pulse",
+            "amount": 0.6,
+            "phase": 0.5
+          },
+          {
+            "target": "espana",
+            "effect": "punch",
+            "trigger": "Congreso",
+            "amount": 0.12
+          },
+          {
+            "target": "puntos",
+            "effect": "punch",
+            "trigger": "bolsa",
+            "amount": 0.15
+          },
+          {
+            "target": "puntos",
+            "effect": "pulse",
+            "trigger": "provincia",
+            "amount": 0.4
+          },
+          {
+            "target": "t52",
+            "effect": "pop",
+            "trigger": "provincia",
+            "sfx": "pop"
+          },
+          {
+            "target": "t52",
+            "effect": "punch",
+            "trigger": "escaños",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "*38* contra *2*",
+      "narration": "Madrid reparte 38; Soria, solo 2. Y todas usan la misma regla: D'Hondt.",
+      "illustration": {
+        "svg_file": "mapa.svg",
+        "caption": "Fig. 3 · Escaños por provincia",
+        "anims": [
+          {
+            "target": "t52",
+            "effect": "hide"
+          },
+          {
+            "target": "pmadrid",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "psoria",
+            "effect": "pulse",
+            "amount": 0.6,
+            "phase": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              450,
+              300
+            ],
+            "amount": 1.3,
+            "trigger": "Madrid",
+            "dur": 0.7
+          },
+          {
+            "target": "bmadrid",
+            "effect": "pop",
+            "trigger": "38",
+            "sfx": "pop"
+          },
+          {
+            "target": "bsoria",
+            "effect": "pop",
+            "trigger": "Soria",
+            "sfx": "pop"
+          },
+          {
+            "target": "bsoria",
+            "effect": "punch",
+            "trigger": "solo",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "todas",
+            "dur": 0.7
+          },
+          {
+            "target": "puntos",
+            "effect": "punch",
+            "trigger": "todas",
+            "amount": 0.15
+          },
+          {
+            "target": "tdh",
+            "effect": "pop",
+            "trigger": "regla",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Divide entre *1, 2, 3*",
+      "narration": "Imagina una provincia con 5 escaños. Los votos de cada partido se dividen entre 1, 2, 3…",
+      "illustration": {
+        "svg_file": "tabla.svg",
+        "caption": "Fig. 4 · Ejemplo inventado",
+        "anims": [
+          {
+            "target": "w1",
+            "effect": "hide"
+          },
+          {
+            "target": "w2",
+            "effect": "hide"
+          },
+          {
+            "target": "w3",
+            "effect": "hide"
+          },
+          {
+            "target": "w4",
+            "effect": "hide"
+          },
+          {
+            "target": "w5",
+            "effect": "hide"
+          },
+          {
+            "target": "corte",
+            "effect": "hide"
+          },
+          {
+            "target": "tcorte",
+            "effect": "hide"
+          },
+          {
+            "target": "t5",
+            "effect": "pop",
+            "trigger": "5",
+            "sfx": "pop"
+          },
+          {
+            "target": "fila0",
+            "effect": "punch",
+            "trigger": "votos",
+            "amount": 0.08
+          },
+          {
+            "target": "fila1",
+            "effect": "punch",
+            "trigger": "cada",
+            "amount": 0.08
+          },
+          {
+            "target": "fila2",
+            "effect": "punch",
+            "trigger": "partido",
+            "amount": 0.08
+          },
+          {
+            "target": "fila3",
+            "effect": "punch",
+            "trigger": "dividen",
+            "amount": 0.08
+          },
+          {
+            "target": "div1",
+            "effect": "fade",
+            "trigger": "1",
+            "sfx": "pop"
+          },
+          {
+            "target": "div2",
+            "effect": "fade",
+            "trigger": "2",
+            "sfx": "pop"
+          },
+          {
+            "target": "div3",
+            "effect": "fade",
+            "trigger": "3",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Los 5 *más altos*",
+      "narration": "Y los escaños van, uno a uno, a los cinco cocientes más altos.",
+      "illustration": {
+        "svg_file": "tabla.svg",
+        "caption": "Fig. 5 · Reparto D'Hondt",
+        "anims": [
+          {
+            "target": "corte",
+            "effect": "hide"
+          },
+          {
+            "target": "tcorte",
+            "effect": "hide"
+          },
+          {
+            "target": "t5",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "w1",
+            "effect": "pop",
+            "trigger": "escaños",
+            "sfx": "ding"
+          },
+          {
+            "target": "w2",
+            "effect": "pop",
+            "trigger": "van",
+            "sfx": "ding"
+          },
+          {
+            "target": "w3",
+            "effect": "pop",
+            "trigger": "uno",
+            "sfx": "ding"
+          },
+          {
+            "target": "w4",
+            "effect": "pop",
+            "trigger": "a uno",
+            "sfx": "ding"
+          },
+          {
+            "target": "w5",
+            "effect": "pop",
+            "trigger": "cinco",
+            "sfx": "ding"
+          },
+          {
+            "target": "corte",
+            "effect": "pop",
+            "trigger": "altos",
+            "sfx": "pop"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "cocientes",
+        "pose": "explain",
+        "note": "Como repartir pizza, pero con votos",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Cuadrado, *a cero*",
+      "narration": "Resultado: Estrella 2, Círculo 2, Triángulo 1… y Cuadrado, con 9.000 votos, cero.",
+      "illustration": {
+        "svg_file": "hemi5_free.svg",
+        "layout": "free",
+        "height": 590,
+        "caption": "Fig. 6 · 5 escaños",
+        "anims": [
+          {
+            "target": "t9000",
+            "effect": "hide"
+          },
+          {
+            "target": "flecha9",
+            "effect": "hide"
+          },
+          {
+            "target": "h5star",
+            "effect": "punch",
+            "trigger": "Estrella",
+            "amount": 0.2
+          },
+          {
+            "target": "c5star",
+            "effect": "pop",
+            "trigger": "Estrella",
+            "sfx": "pop"
+          },
+          {
+            "target": "h5circle",
+            "effect": "punch",
+            "trigger": "Círculo",
+            "amount": 0.2
+          },
+          {
+            "target": "c5circle",
+            "effect": "pop",
+            "trigger": "Círculo",
+            "sfx": "pop"
+          },
+          {
+            "target": "h5tri",
+            "effect": "punch",
+            "trigger": "Triángulo",
+            "amount": 0.2
+          },
+          {
+            "target": "c5tri",
+            "effect": "pop",
+            "trigger": "Triángulo",
+            "sfx": "pop"
+          },
+          {
+            "target": "t9000",
+            "effect": "pop",
+            "trigger": "9.000",
+            "sfx": "pop"
+          },
+          {
+            "target": "flecha9",
+            "effect": "draw",
+            "trigger": "votos",
+            "dur": 0.5
+          },
+          {
+            "target": "c5square",
+            "effect": "pop",
+            "trigger": "cero",
+            "sfx": "sello"
+          },
+          {
+            "target": "c5square",
+            "effect": "shake",
+            "trigger": "cero",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "El listón del *3 %*",
+      "narration": "Además, quien no llega al 3 % de los votos válidos de su provincia, ni entra en el reparto.",
+      "illustration": {
+        "svg_file": "umbral.svg",
+        "caption": "Fig. 7 · Umbral del 3 %",
+        "anims": [
+          {
+            "target": "linea3",
+            "effect": "fade",
+            "trigger": "3",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "t3",
+            "effect": "pop",
+            "trigger": "3",
+            "sfx": "pop"
+          },
+          {
+            "target": "t3",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "rrombo",
+            "effect": "punch",
+            "trigger": "llega",
+            "amount": 0.15
+          },
+          {
+            "target": "tvalidos",
+            "effect": "pop",
+            "trigger": "válidos",
+            "sfx": "pop"
+          },
+          {
+            "target": "rblanco",
+            "effect": "punch",
+            "trigger": "válidos",
+            "amount": 0.2
+          },
+          {
+            "target": "rcircle",
+            "effect": "punch",
+            "trigger": "provincia",
+            "amount": 0.06
+          },
+          {
+            "target": "fuera",
+            "effect": "pop",
+            "trigger": "reparto",
+            "sfx": "sello"
+          },
+          {
+            "target": "rrombo",
+            "effect": "shake",
+            "trigger": "reparto",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Con 38: *3 escaños*",
+      "narration": "Con 38 escaños y los mismos porcentajes, ese 9 % de Cuadrado daría 3 escaños.",
+      "illustration": {
+        "svg_file": "compara_free.svg",
+        "layout": "free",
+        "height": 857,
+        "caption": "Fig. 8 · 5 contra 38",
+        "anims": [
+          {
+            "target": "anillo",
+            "effect": "hide"
+          },
+          {
+            "target": "tp38",
+            "effect": "punch",
+            "trigger": "38",
+            "amount": 0.3
+          },
+          {
+            "target": "bstar",
+            "effect": "breathe",
+            "amount": 0.3
+          },
+          {
+            "target": "bcircle",
+            "effect": "breathe",
+            "amount": 0.3,
+            "phase": 0.3
+          },
+          {
+            "target": "tmismo",
+            "effect": "pop",
+            "trigger": "porcentajes",
+            "sfx": "pop"
+          },
+          {
+            "target": "ca",
+            "effect": "punch",
+            "trigger": "9",
+            "amount": 0.3
+          },
+          {
+            "target": "anillo",
+            "effect": "pop",
+            "trigger": "daría",
+            "sfx": "brillo"
+          },
+          {
+            "target": "anillo",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "cb",
+            "effect": "pop",
+            "trigger": "3 escaños",
+            "sfx": "ding"
+          },
+          {
+            "target": "bsquare",
+            "effect": "punch",
+            "trigger": "Cuadrado",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "El voto *en blanco*",
+      "narration": "Extra: el voto en blanco es un sobre vacío y cuenta para el 3 %. ¿Un papel en blanco dentro? Nulo.",
+      "illustration": {
+        "svg_file": "sobres.svg",
+        "caption": "Fig. 9 · Blanco o nulo",
+        "anims": [
+          {
+            "target": "ok",
+            "effect": "hide"
+          },
+          {
+            "target": "lvalido",
+            "effect": "hide"
+          },
+          {
+            "target": "ko",
+            "effect": "hide"
+          },
+          {
+            "target": "nulo",
+            "effect": "hide"
+          },
+          {
+            "target": "llleno",
+            "effect": "hide"
+          },
+          {
+            "target": "lvacio",
+            "effect": "pop",
+            "trigger": "voto",
+            "sfx": "pop"
+          },
+          {
+            "target": "vacio",
+            "effect": "punch",
+            "trigger": "vacío",
+            "amount": 0.15
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "cuenta",
+            "sfx": "ding"
+          },
+          {
+            "target": "lvalido",
+            "effect": "pop",
+            "trigger": "3"
+          },
+          {
+            "target": "bpapel",
+            "effect": "slide-down",
+            "trigger": "papel",
+            "sfx": "papel"
+          },
+          {
+            "target": "llleno",
+            "effect": "pop",
+            "trigger": "papel"
+          },
+          {
+            "target": "lleno",
+            "effect": "punch",
+            "trigger": "dentro",
+            "amount": 0.15
+          },
+          {
+            "target": "ko",
+            "effect": "pop",
+            "trigger": "Nulo",
+            "sfx": "sello"
+          },
+          {
+            "target": "nulo",
+            "effect": "pop",
+            "trigger": "Nulo"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "papel",
+        "pose": "surprise",
+        "note": "Ojo: eso ya no vale",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "Te *toca*",
+      "narration": "Síguenos para más trucos. ¿Te atreves a repartir cinco escaños sin calculadora?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Te atreves a repartir 5 escaños *sin calculadora*?",
+          "trigger": "Te"
+        }
+      ]
+    }
+  ]
+}

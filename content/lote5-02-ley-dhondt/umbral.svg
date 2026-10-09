@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+<defs><linearGradient id="urnaGlass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF8FF" stop-opacity="0.75"/><stop offset="1" stop-color="#9FD3F2" stop-opacity="0.55"/></linearGradient><linearGradient id="urnaSide" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C4E6FA" stop-opacity="0.7"/><stop offset="1" stop-color="#7DB8DE" stop-opacity="0.6"/></linearGradient><linearGradient id="urnaLid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A6B8C"/><stop offset="1" stop-color="#2C3954"/></linearGradient><linearGradient id="paperG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEFF5"/></linearGradient><linearGradient id="sobreG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E3E6EE"/></linearGradient><linearGradient id="woodG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C98B55"/><stop offset="1" stop-color="#8A5A31"/></linearGradient><radialGradient id="shadowR" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0B0B14" stop-opacity="0.35"/><stop offset="1" stop-color="#0B0B14" stop-opacity="0"/></radialGradient><linearGradient id="bgU" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F6FB"/><stop offset="1" stop-color="#E2E8F2"/></linearGradient><linearGradient id="barstar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD877"/><stop offset="1" stop-color="#E0B035"/></linearGradient><linearGradient id="barcircle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6CD5CB"/><stop offset="1" stop-color="#28ACA0"/></linearGradient><linearGradient id="bartri" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFA4CB"/><stop offset="1" stop-color="#E06EA0"/></linearGradient><linearGradient id="barsquare" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D7AC81"/><stop offset="1" stop-color="#AF7842"/></linearGradient><linearGradient id="bardiamond" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B8BECB"/><stop offset="1" stop-color="#878F9F"/></linearGradient></defs>
+<rect width="1000" height="700" fill="url(#bgU)"/>
+<g stroke="#D3DAE6" stroke-width="2"><line x1="0" y1="0" x2="0" y2="700"/><line x1="40" y1="0" x2="40" y2="700"/><line x1="80" y1="0" x2="80" y2="700"/><line x1="120" y1="0" x2="120" y2="700"/><line x1="160" y1="0" x2="160" y2="700"/><line x1="200" y1="0" x2="200" y2="700"/><line x1="240" y1="0" x2="240" y2="700"/><line x1="280" y1="0" x2="280" y2="700"/><line x1="320" y1="0" x2="320" y2="700"/><line x1="360" y1="0" x2="360" y2="700"/><line x1="400" y1="0" x2="400" y2="700"/><line x1="440" y1="0" x2="440" y2="700"/><line x1="480" y1="0" x2="480" y2="700"/><line x1="520" y1="0" x2="520" y2="700"/><line x1="560" y1="0" x2="560" y2="700"/><line x1="600" y1="0" x2="600" y2="700"/><line x1="640" y1="0" x2="640" y2="700"/><line x1="680" y1="0" x2="680" y2="700"/><line x1="720" y1="0" x2="720" y2="700"/><line x1="760" y1="0" x2="760" y2="700"/><line x1="800" y1="0" x2="800" y2="700"/><line x1="840" y1="0" x2="840" y2="700"/><line x1="880" y1="0" x2="880" y2="700"/><line x1="920" y1="0" x2="920" y2="700"/><line x1="960" y1="0" x2="960" y2="700"/></g>
+<line x1="330" y1="90" x2="330" y2="540" stroke="#0B0B14" stroke-width="6"/>
+<g id="rstar">
+<path d="M 70 117 L 75.9 131.9 L 91.9 132.9 L 79.5 143.1 L 83.5 158.6 L 70 150 L 56.5 158.6 L 60.5 143.1 L 48.1 132.9 L 64.1 131.9 Z" fill="#FFC83D" stroke="#0B0B14" stroke-width="5" stroke-linejoin="round"/><circle cx="67" cy="135" r="3.2" fill="#FFE094"/>
+<text x="104" y="150" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="26" fill="#0B0B14" >ESTRELLA</text>
+<path d="M 330 116 L 836 116 L 822 128 L 836 140 L 822 152 L 836 164 L 330 164 Z" fill="url(#barstar)" stroke="#0B0B14" stroke-width="5" stroke-linejoin="round"/>
+<path d="M 336 124 L 814 124" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+<text x="854" y="152" text-anchor="start" font-family="Unbounded" font-weight="900" font-size="32" fill="#0B0B14" >40 %</text>
+</g>
+<g id="rcircle">
+<circle cx="70" cy="224" r="20" fill="#2EC4B6" stroke="#0B0B14" stroke-width="5"/><circle cx="63" cy="217" r="5" fill="#8CDED6"/>
+<text x="104" y="234" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="26" fill="#0B0B14" >CÍRCULO</text>
+<path d="M 330 200 L 836 200 L 822 212 L 836 224 L 822 236 L 836 248 L 330 248 Z" fill="url(#barcircle)" stroke="#0B0B14" stroke-width="5" stroke-linejoin="round"/>
+<path d="M 336 208 L 814 208" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+<text x="854" y="236" text-anchor="start" font-family="Unbounded" font-weight="900" font-size="32" fill="#0B0B14" >30 %</text>
+</g>
+<g id="rtri">
+<path d="M 70 286 L 91 324 L 49 324 Z" fill="#FF7EB6" stroke="#0B0B14" stroke-width="5" stroke-linejoin="round"/><circle cx="67" cy="304" r="3.6" fill="#FFB8D6"/>
+<text x="104" y="318" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="26" fill="#0B0B14" >TRIÁNGULO</text>
+<path d="M 330 284 L 836 284 L 822 296 L 836 308 L 822 320 L 836 332 L 330 332 Z" fill="url(#bartri)" stroke="#0B0B14" stroke-width="5" stroke-linejoin="round"/>
+<path d="M 336 292 L 814 292" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+<text x="854" y="320" text-anchor="start" font-family="Unbounded" font-weight="900" font-size="32" fill="#0B0B14" >18 %</text>
+</g>
+<g id="rsquare">
+<rect x="52" y="374" width="36" height="36" rx="4" fill="#C7894B" stroke="#0B0B14" stroke-width="5"/><rect x="58" y="380" width="9" height="6" rx="3" fill="#E0BE9C"/>
+<text x="104" y="402" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="26" fill="#0B0B14" >CUADRADO</text>
+<path d="M 330 368 L 744.0 368 L 744.0 416 L 330 416 Z" fill="url(#barsquare)" stroke="#0B0B14" stroke-width="5" stroke-linejoin="round"/>
+<path d="M 336 376 L 722.0 376" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+<text x="762" y="404" text-anchor="start" font-family="Unbounded" font-weight="900" font-size="32" fill="#0B0B14" >9 %</text>
+</g>
+<g id="rrombo">
+<path d="M 70 454 L 89 476 L 70 498 L 51 476 Z" fill="#9AA3B5" stroke="#0B0B14" stroke-width="5" stroke-linejoin="round"/>
+<text x="104" y="486" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="26" fill="#0B0B14" >ROMBO</text>
+<path d="M 330 452 L 445.0 452 L 445.0 500 L 330 500 Z" fill="url(#bardiamond)" stroke="#0B0B14" stroke-width="5" stroke-linejoin="round"/>
+<path d="M 336 460 L 423.0 460" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+<text x="490" y="488" text-anchor="start" font-family="Unbounded" font-weight="900" font-size="32" fill="#0B0B14" >2,5 %</text>
+</g>
+<g id="rblanco">
+<g transform="rotate(0 70 560)"><rect x="47" y="544" width="46" height="32" rx="5" fill="url(#sobreG)" stroke="#0B0B14" stroke-width="4" stroke-linejoin="round"/><path d="M 51 548 L 70 561.6 L 89 548" fill="none" stroke="#B9BFCC" stroke-width="2.8" stroke-linejoin="round"/></g>
+<text x="104" y="570" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="26" fill="#5A6170" >EN BLANCO</text>
+<rect x="330" y="536" width="23" height="48" fill="#FFFFFF" stroke="#0B0B14" stroke-width="5"/>
+<text x="490" y="572" text-anchor="start" font-family="Unbounded" font-weight="900" font-size="32" fill="#5A6170" >0,5 %</text>
+</g>
+<g id="linea3"><path d="M 468 86 L 468 600" stroke="#FF5A36" stroke-width="7" stroke-dasharray="16 12" stroke-linecap="round"/></g>
+<g id="t3"><rect x="419" y="31" width="98" height="58" rx="12" fill="#FF5A36" stroke="#0B0B14" stroke-width="3"/><text x="468" y="70.8" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="30" fill="#FFFFFF" >3 %</text></g>
+<g id="fuera"><g transform="rotate(-8 790 476)"><rect x="670" y="442" width="240" height="68" rx="10" fill="#FFFFFF" fill-opacity="0.9" stroke="#FF5A36" stroke-width="7"/><text x="790" y="489" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="38" fill="#FF5A36" >FUERA</text></g></g>
+<g id="tvalidos"><rect x="621" y="36" width="278" height="48" rx="12" fill="#0B0B14" stroke="#0B0B14" stroke-width="3"/><text x="760" y="69.4" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="26" fill="#C8FF2E" >100.000 VÁLIDOS</text></g>
+</svg>

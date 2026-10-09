@@ -291,13 +291,15 @@
     "tema": "Por qué las generales son justo el 29 de noviembre: el truco de los 54 días",
     "categoria": "politica",
     "prioridad": true,
-    "pista": "LOREG art. 42: las elecciones se celebran el día 54 tras la convocatoria (decreto en el BOE del 6 oct 2026 → 29 nov). Pasos: disolución, juntas electorales, listas, campaña de 15 días, jornada de reflexión. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+    "pista": "LOREG art. 42: las elecciones se celebran el día 54 tras la convocatoria (decreto en el BOE del 6 oct 2026 → 29 nov). Pasos: disolución, juntas electorales, listas, campaña de 15 días, jornada de reflexión. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido.",
+    "hecho": true
   },
   {
     "tema": "La ley D'Hondt: por qué los mismos votos no dan los mismos escaños",
     "categoria": "politica",
     "prioridad": true,
-    "pista": "Se divide el voto de cada partido entre 1, 2, 3… y se reparten los escaños a los cocientes más altos; se hace por provincia y hay umbral del 3 % en cada circunscripción (LOREG art. 163). Ejemplo con números inventados y partidos ficticios (colores, no siglas reales). Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+    "pista": "Se divide el voto de cada partido entre 1, 2, 3… y se reparten los escaños a los cocientes más altos; se hace por provincia y hay umbral del 3 % en cada circunscripción (LOREG art. 163). Ejemplo con números inventados y partidos ficticios (colores, no siglas reales). Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido.",
+    "hecho": true
   },
   {
     "tema": "Por qué un voto en Soria pesa más que uno en Madrid",

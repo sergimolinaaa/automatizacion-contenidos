@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 1000 910">
+<defs><linearGradient id="urnaGlass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF8FF" stop-opacity="0.75"/><stop offset="1" stop-color="#9FD3F2" stop-opacity="0.55"/></linearGradient><linearGradient id="urnaSide" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C4E6FA" stop-opacity="0.7"/><stop offset="1" stop-color="#7DB8DE" stop-opacity="0.6"/></linearGradient><linearGradient id="urnaLid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A6B8C"/><stop offset="1" stop-color="#2C3954"/></linearGradient><linearGradient id="paperG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEFF5"/></linearGradient><linearGradient id="sobreG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E3E6EE"/></linearGradient><linearGradient id="woodG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C98B55"/><stop offset="1" stop-color="#8A5A31"/></linearGradient><radialGradient id="shadowR" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0B0B14" stop-opacity="0.35"/><stop offset="1" stop-color="#0B0B14" stop-opacity="0"/></radialGradient><linearGradient id="cover" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B23A3A"/><stop offset="1" stop-color="#6E1E1E"/></linearGradient><linearGradient id="pageL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.85" stop-color="#F1EEE6"/><stop offset="1" stop-color="#D9D3C4"/></linearGradient><linearGradient id="pageR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D9D3C4"/><stop offset="0.15" stop-color="#F1EEE6"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><radialGradient id="burst" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E9FF8A"/><stop offset="1" stop-color="#C8FF2E"/></radialGradient></defs>
+<ellipse cx="500" cy="912" rx="420" ry="34" fill="#0B0B14" opacity="0.3"/>
+<g id="libro">
+<path d="M 92 520 Q 300 480 500 530 Q 700 480 908 520 L 918 896 Q 700 866 500 908 Q 300 866 82 896 Z" fill="url(#cover)" stroke="#0B0B14" stroke-width="8" stroke-linejoin="round"/>
+<path d="M 104 506 Q 300 466 500 516 Q 700 466 896 506 L 900 886 Q 700 856 500 898 Q 300 856 100 886 Z" fill="#E8E2D3" stroke="#0B0B14" stroke-width="3"/>
+<path d="M 108 509 Q 300 469 500 519 Q 700 469 892 509 L 896 883 Q 700 853 500 895 Q 300 853 104 883 Z" fill="#E8E2D3" stroke="#0B0B14" stroke-width="3"/>
+<path d="M 112 512 Q 300 472 500 522 Q 700 472 888 512 L 892 880 Q 700 850 500 892 Q 300 850 108 880 Z" fill="#E8E2D3" stroke="#0B0B14" stroke-width="3"/>
+<path d="M 116 515 Q 300 475 500 525 Q 700 475 884 515 L 888 877 Q 700 847 500 889 Q 300 847 112 877 Z" fill="#E8E2D3" stroke="#0B0B14" stroke-width="3"/>
+<path d="M 120 494 Q 310 452 500 506 L 500 878 Q 310 834 116 866 Z" fill="url(#pageL)" stroke="#0B0B14" stroke-width="6" stroke-linejoin="round"/>
+<path d="M 880 494 Q 690 452 500 506 L 500 878 Q 690 834 884 866 Z" fill="url(#pageR)" stroke="#0B0B14" stroke-width="6" stroke-linejoin="round"/>
+<path d="M 500 506 L 500 878" stroke="#A39B87" stroke-width="10" opacity="0.5"/><path d="M 500 506 L 500 878" stroke="#0B0B14" stroke-width="5"/>
+<text x="306" y="560" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="26" fill="#0B0B14" >LEY ORGÁNICA</text>
+<text x="306" y="594" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="26" fill="#0B0B14" >DEL RÉGIMEN</text>
+<text x="306" y="628" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="26" fill="#0B0B14" >ELECTORAL</text>
+<text x="306" y="662" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="26" fill="#0B0B14" >GENERAL</text>
+<text x="306" y="698" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="24" fill="#FF5A36" >5/1985</text>
+<rect x="161" y="728" width="290" height="9" rx="4.5" fill="#C3BCA9"/>
+<rect x="161" y="752" width="283" height="9" rx="4.5" fill="#C3BCA9"/>
+<rect x="161" y="776" width="276" height="9" rx="4.5" fill="#C3BCA9"/>
+<rect x="161" y="800" width="269" height="9" rx="4.5" fill="#C3BCA9"/>
+<rect x="161" y="824" width="262" height="9" rx="4.5" fill="#C3BCA9"/>
+<text x="530" y="556" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="26" fill="#0B0B14" >Artículo 42</text>
+<g id="subr" opacity="0.9">
+<path d="M 528 672 L 721.2 672" stroke="#C8FF2E" stroke-width="34"/>
+<path d="M 528 712 L 620.4 712" stroke="#C8FF2E" stroke-width="34"/>
+</g>
+<text x="532" y="600" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="24" fill="#0B0B14" >...habrán de celebrarse</text>
+<text x="532" y="640" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="24" fill="#0B0B14" >el día</text>
+<text x="532" y="680" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="24" fill="#0B0B14" >QUINCUAGÉSIMO</text>
+<text x="532" y="720" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="24" fill="#0B0B14" >CUARTO</text>
+<text x="532" y="760" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="24" fill="#0B0B14" >posterior a la</text>
+<text x="532" y="800" text-anchor="start" font-family="JetBrains Mono" font-weight="800" font-size="24" fill="#0B0B14" >convocatoria.</text>
+<rect x="532" y="826" width="300" height="9" rx="4.5" fill="#C3BCA9"/>
+<rect x="532" y="850" width="230" height="9" rx="4.5" fill="#C3BCA9"/>
+<path d="M 610 468 L 610 538 L 626 524 L 642 538 L 642 468" fill="#FF5A36" stroke="#0B0B14" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g id="badge">
+<path d="M 480 72 L 511.6 103.1 L 552.7 86.5 L 570 127.3 L 614.4 127.6 L 614.7 172 L 655.5 189.3 L 638.9 230.4 L 670 262 L 638.9 293.6 L 655.5 334.7 L 614.7 352 L 614.4 396.4 L 570 396.7 L 552.7 437.5 L 511.6 420.9 L 480 452 L 448.4 420.9 L 407.3 437.5 L 390 396.7 L 345.6 396.4 L 345.3 352 L 304.5 334.7 L 321.1 293.6 L 290 262 L 321.1 230.4 L 304.5 189.3 L 345.3 172 L 345.6 127.6 L 390 127.3 L 407.3 86.5 L 448.4 103.1 Z" fill="#0B0B14" opacity="0.35"/>
+<path d="M 470 60 L 501.6 91.1 L 542.7 74.5 L 560 115.3 L 604.4 115.6 L 604.7 160 L 645.5 177.3 L 628.9 218.4 L 660 250 L 628.9 281.6 L 645.5 322.7 L 604.7 340 L 604.4 384.4 L 560 384.7 L 542.7 425.5 L 501.6 408.9 L 470 440 L 438.4 408.9 L 397.3 425.5 L 380 384.7 L 335.6 384.4 L 335.3 340 L 294.5 322.7 L 311.1 281.6 L 280 250 L 311.1 218.4 L 294.5 177.3 L 335.3 160 L 335.6 115.6 L 380 115.3 L 397.3 74.5 L 438.4 91.1 Z" fill="url(#burst)" stroke="#0B0B14" stroke-width="8" stroke-linejoin="round"/>
+<circle cx="470" cy="250" r="140" fill="none" stroke="#0B0B14" stroke-width="4" stroke-dasharray="4 12" stroke-linecap="round"/>
+<text x="470" y="188" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="44" fill="#0B0B14" >DÍA</text>
+<text x="470" y="328" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="150" fill="#0B0B14" >54</text>
+</g>
+<g id="flecha"><path d="M 655 330 C 980 380, 960 690, 745 676" fill="none" stroke="#0B0B14" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/><path d="M 655 330 C 980 380, 960 690, 745 676" fill="none" stroke="#C8FF2E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M 775.8 661.7 L 745 676 L 773.7 694.2" fill="none" stroke="#0B0B14" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/><path d="M 775.8 661.7 L 745 676 L 773.7 694.2" fill="none" stroke="#C8FF2E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g id="tachon"><path d="M 360 320 L 580 210" stroke="#0B0B14" stroke-width="26" stroke-linecap="round"/><path d="M 360 320 L 580 210" stroke="#FF5A36" stroke-width="14" stroke-linecap="round"/></g>
+<g id="p47"><g transform="rotate(10 770 200)"><circle cx="778" cy="210" r="118" fill="#0B0B14" opacity="0.35"/><circle cx="770" cy="200" r="118" fill="#FF5A36" stroke="#0B0B14" stroke-width="8"/><circle cx="770" cy="200" r="98" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-dasharray="3 10" stroke-linecap="round"/><text x="770" y="230" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="96" fill="#FFFFFF" >47</text><text x="770" y="272" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="26" fill="#FFFFFF" >DÍAS</text></g></g>
+<g id="chispas" fill="#FFFFFF" stroke="#0B0B14" stroke-width="4" stroke-linejoin="round"><path d="M 210 98 L 216 114 L 232 120 L 216 126 L 210 142 L 204 126 L 188 120 L 204 114 Z"/><path d="M 240 378 L 246 394 L 262 400 L 246 406 L 240 422 L 234 406 L 218 400 L 234 394 Z"/><path d="M 700 398 L 706 414 L 722 420 L 706 426 L 700 442 L 694 426 L 678 420 L 694 414 Z"/></g>
+</svg>

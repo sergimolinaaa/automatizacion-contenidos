@@ -1,0 +1,981 @@
+{
+  "topic": "Por qué las elecciones generales son el 29 de noviembre: la regla de los 54 días",
+  "categoria": "politica",
+  "title": "¿Por qué votamos el 29N? El truco de los 54 días 🗳️",
+  "source": "Fuentes: BOE 6/10/2026 (Real Decreto 806/2026) · LOREG (LO 5/1985), arts. 14, 42, 45, 47, 51, 53, 88 y disp. adic. 7.ª · Constitución, art. 99.5",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Por qué el *29N*?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "¿Por qué las generales son justo el 29 de noviembre? 🗳️ La ley electoral manda votar el día 54 después de la convocatoria, y el decreto salió en el BOE el 6 de octubre. Sin posicionarnos: solo explicamos cómo funciona. ¿Tú reflexionas el sábado o echas la siesta?",
+    "description": "La Ley Orgánica del Régimen Electoral General (art. 42) fija que, cuando se disuelven las Cortes, las elecciones se celebran el día 54 posterior a la convocatoria. El Real Decreto 806/2026, de disolución y convocatoria, se publicó en el BOE el 6 de octubre de 2026: 25 días de octubre más 29 de noviembre dan el domingo 29 de noviembre. Por el camino: juntas electorales al tercer día, presentación de listas entre los días 15 y 20, proclamación de candidaturas el día 27, campaña de 15 días desde el día 38 (del 13 al 27 de noviembre), jornada de reflexión el sábado 28 y votación de 9 a 20 h. Si tras unas elecciones nadie logra la investidura en dos meses, la repetición se hace con un calendario de 47 días. Sin posicionarnos: solo explicamos cómo funciona. Fuentes: BOE (Real Decreto 806/2026); LOREG, arts. 14, 42, 45, 47, 51, 53, 88 y disposición adicional séptima; Constitución, art. 99.5.",
+    "hashtags": [
+      "elecciones",
+      "eleccionesgenerales",
+      "29N",
+      "leyelectoral",
+      "politica",
+      "curiosidades",
+      "aprendeentiktok",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Por qué el *29N*?",
+      "narration": "¿Por qué las generales caen justo el 29 de noviembre? Es una cuenta atrás.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Cuenta atrás",
+        "anims": [
+          {
+            "target": "chispas",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "sobre",
+            "effect": "bob",
+            "amount": 0.6
+          },
+          {
+            "target": "urna",
+            "effect": "punch",
+            "trigger": "generales",
+            "amount": 0.4
+          },
+          {
+            "target": "calendario",
+            "effect": "punch",
+            "trigger": "justo",
+            "amount": 0.15
+          },
+          {
+            "target": "circulo",
+            "effect": "draw",
+            "trigger": "29",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "calendario",
+            "effect": "punch",
+            "trigger": "noviembre",
+            "amount": 0.2
+          },
+          {
+            "target": "p54",
+            "effect": "pop",
+            "trigger": "cuenta",
+            "sfx": "pop"
+          },
+          {
+            "target": "p54",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "sobre",
+            "effect": "move",
+            "to": [
+              0,
+              44
+            ],
+            "trigger": "atrás",
+            "dur": 0.5,
+            "sfx": "papel"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Lo dice el *BOE*",
+      "narration": "Sin posicionarnos, solo cómo funciona. El 6 de octubre, el BOE publicó el decreto: Cortes disueltas y elecciones convocadas.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "SIN POSICIONARNOS",
+          "tone": "ink",
+          "trigger": "posicionarnos"
+        }
+      ],
+      "illustration": {
+        "svg_file": "boe.svg",
+        "caption": "Fig. 2 · BOE, 6/10/2026",
+        "anims": [
+          {
+            "target": "lcortes",
+            "effect": "hide"
+          },
+          {
+            "target": "lelec",
+            "effect": "hide"
+          },
+          {
+            "target": "pluma",
+            "effect": "bob",
+            "amount": 0.5
+          },
+          {
+            "target": "hemi",
+            "effect": "breathe",
+            "amount": 0.3
+          },
+          {
+            "target": "fecha",
+            "effect": "pop",
+            "trigger": "octubre",
+            "sfx": "pop"
+          },
+          {
+            "target": "boepage",
+            "effect": "punch",
+            "trigger": "BOE",
+            "amount": 0.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              330,
+              340
+            ],
+            "amount": 1.45,
+            "trigger": "publicó",
+            "dur": 0.8
+          },
+          {
+            "target": "marca",
+            "effect": "draw",
+            "trigger": "decreto",
+            "dur": 0.8,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "Cortes",
+            "dur": 0.7
+          },
+          {
+            "target": "lcortes",
+            "effect": "pop",
+            "trigger": "Cortes"
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "disueltas",
+            "sfx": "sello"
+          },
+          {
+            "target": "minical",
+            "effect": "pop",
+            "trigger": "elecciones",
+            "sfx": "pop"
+          },
+          {
+            "target": "lelec",
+            "effect": "pop",
+            "trigger": "convocadas"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "La regla del *día 54*",
+      "narration": "La ley electoral manda votar el día 54 tras la convocatoria.",
+      "illustration": {
+        "svg_file": "ley_free.svg",
+        "layout": "free",
+        "height": 866,
+        "caption": "Fig. 3 · LOREG, art. 42",
+        "anims": [
+          {
+            "target": "tachon",
+            "effect": "hide"
+          },
+          {
+            "target": "p47",
+            "effect": "hide"
+          },
+          {
+            "target": "chispas",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "libro",
+            "effect": "punch",
+            "trigger": "ley",
+            "amount": 0.25
+          },
+          {
+            "target": "badge",
+            "effect": "pop",
+            "trigger": "54",
+            "sfx": "ding"
+          },
+          {
+            "target": "badge",
+            "effect": "wiggle",
+            "amount": 0.4
+          },
+          {
+            "target": "subr",
+            "effect": "draw",
+            "trigger": "tras",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "libro",
+            "effect": "punch",
+            "trigger": "votar",
+            "amount": 0.15
+          },
+          {
+            "target": "flecha",
+            "effect": "draw",
+            "trigger": "convocatoria",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Haz la *cuenta*",
+      "narration": "Cuenta: 25 días que quedan de octubre, más 29 de noviembre. 54. Domingo 29.",
+      "illustration": {
+        "svg_file": "calendario.svg",
+        "caption": "Fig. 4 · Octubre + noviembre",
+        "anims": [
+          {
+            "target": "cntoct",
+            "effect": "hide"
+          },
+          {
+            "target": "cntnov",
+            "effect": "hide"
+          },
+          {
+            "target": "juntas",
+            "effect": "hide"
+          },
+          {
+            "target": "listas",
+            "effect": "hide"
+          },
+          {
+            "target": "procl",
+            "effect": "hide"
+          },
+          {
+            "target": "campana",
+            "effect": "hide"
+          },
+          {
+            "target": "reflex",
+            "effect": "hide"
+          },
+          {
+            "target": "t25",
+            "effect": "hide"
+          },
+          {
+            "target": "t29",
+            "effect": "hide"
+          },
+          {
+            "target": "t54",
+            "effect": "hide"
+          },
+          {
+            "target": "tjuntas",
+            "effect": "hide"
+          },
+          {
+            "target": "tlistas",
+            "effect": "hide"
+          },
+          {
+            "target": "tprocl",
+            "effect": "hide"
+          },
+          {
+            "target": "treflex",
+            "effect": "hide"
+          },
+          {
+            "target": "tcamp",
+            "effect": "hide"
+          },
+          {
+            "target": "voto",
+            "effect": "hide"
+          },
+          {
+            "target": "pin",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "boe",
+            "effect": "punch",
+            "trigger": "Cuenta",
+            "amount": 0.4
+          },
+          {
+            "target": "cntoct",
+            "effect": "fade",
+            "trigger": "25",
+            "dur": 0.6,
+            "sfx": "brillo"
+          },
+          {
+            "target": "t25",
+            "effect": "pop",
+            "trigger": "octubre"
+          },
+          {
+            "target": "cntoct",
+            "effect": "punch",
+            "trigger": "más",
+            "amount": 0.08
+          },
+          {
+            "target": "cntnov",
+            "effect": "fade",
+            "trigger": "29",
+            "dur": 0.6,
+            "sfx": "brillo"
+          },
+          {
+            "target": "t29",
+            "effect": "pop",
+            "trigger": "noviembre"
+          },
+          {
+            "target": "t54",
+            "effect": "pop",
+            "trigger": "54",
+            "sfx": "ding"
+          },
+          {
+            "target": "voto",
+            "effect": "draw",
+            "trigger": "Domingo",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Juntas y *listas*",
+      "narration": "Al tercer día, juntas electorales. Entre el día 15 y el 20, se presentan las listas.",
+      "illustration": {
+        "svg_file": "calendario.svg",
+        "caption": "Fig. 5 · Primeros plazos",
+        "anims": [
+          {
+            "target": "cntoct",
+            "effect": "hide"
+          },
+          {
+            "target": "cntnov",
+            "effect": "hide"
+          },
+          {
+            "target": "procl",
+            "effect": "hide"
+          },
+          {
+            "target": "campana",
+            "effect": "hide"
+          },
+          {
+            "target": "reflex",
+            "effect": "hide"
+          },
+          {
+            "target": "t25",
+            "effect": "hide"
+          },
+          {
+            "target": "t29",
+            "effect": "hide"
+          },
+          {
+            "target": "t54",
+            "effect": "hide"
+          },
+          {
+            "target": "tprocl",
+            "effect": "hide"
+          },
+          {
+            "target": "treflex",
+            "effect": "hide"
+          },
+          {
+            "target": "tcamp",
+            "effect": "hide"
+          },
+          {
+            "target": "voto",
+            "effect": "hide"
+          },
+          {
+            "target": "pin",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "boe",
+            "effect": "punch",
+            "trigger": "Al",
+            "amount": 0.4
+          },
+          {
+            "target": "juntas",
+            "effect": "fade",
+            "trigger": "tercer",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "tjuntas",
+            "effect": "pop",
+            "trigger": "juntas"
+          },
+          {
+            "target": "juntas",
+            "effect": "punch",
+            "trigger": "electorales",
+            "amount": 0.4
+          },
+          {
+            "target": "listas",
+            "effect": "fade",
+            "trigger": "15",
+            "dur": 0.6,
+            "sfx": "brillo"
+          },
+          {
+            "target": "tlistas",
+            "effect": "pop",
+            "trigger": "presentan",
+            "sfx": "papel"
+          },
+          {
+            "target": "listas",
+            "effect": "punch",
+            "trigger": "listas",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Día 27: *candidaturas*",
+      "narration": "El día 27 se proclaman las candidaturas: ya es oficial quién se presenta.",
+      "illustration": {
+        "svg_file": "calendario.svg",
+        "caption": "Fig. 6 · Proclamación",
+        "anims": [
+          {
+            "target": "cntoct",
+            "effect": "hide"
+          },
+          {
+            "target": "cntnov",
+            "effect": "hide"
+          },
+          {
+            "target": "campana",
+            "effect": "hide"
+          },
+          {
+            "target": "reflex",
+            "effect": "hide"
+          },
+          {
+            "target": "t25",
+            "effect": "hide"
+          },
+          {
+            "target": "t29",
+            "effect": "hide"
+          },
+          {
+            "target": "t54",
+            "effect": "hide"
+          },
+          {
+            "target": "tjuntas",
+            "effect": "hide"
+          },
+          {
+            "target": "tlistas",
+            "effect": "hide"
+          },
+          {
+            "target": "treflex",
+            "effect": "hide"
+          },
+          {
+            "target": "tcamp",
+            "effect": "hide"
+          },
+          {
+            "target": "voto",
+            "effect": "hide"
+          },
+          {
+            "target": "pin",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "listas",
+            "effect": "punch",
+            "trigger": "día",
+            "amount": 0.2
+          },
+          {
+            "target": "procl",
+            "effect": "fade",
+            "trigger": "27",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "tprocl",
+            "effect": "pop",
+            "trigger": "candidaturas"
+          },
+          {
+            "target": "procl",
+            "effect": "punch",
+            "trigger": "oficial",
+            "amount": 0.5
+          },
+          {
+            "target": "tprocl",
+            "effect": "punch",
+            "trigger": "presenta",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "*15 días* de campaña",
+      "narration": "El día 38 arranca la campaña: quince días, del 13 al 27 de noviembre.",
+      "illustration": {
+        "svg_file": "calle.svg",
+        "caption": "Fig. 7 · Campaña electoral",
+        "anims": [
+          {
+            "target": "noche",
+            "effect": "hide"
+          },
+          {
+            "target": "luz",
+            "effect": "hide"
+          },
+          {
+            "target": "luna",
+            "effect": "hide"
+          },
+          {
+            "target": "estrellas",
+            "effect": "hide"
+          },
+          {
+            "target": "zzz",
+            "effect": "hide"
+          },
+          {
+            "target": "tsab",
+            "effect": "hide"
+          },
+          {
+            "target": "banderines",
+            "effect": "sway",
+            "amount": 0.5
+          },
+          {
+            "target": "sol",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "t38",
+            "effect": "pop",
+            "trigger": "38",
+            "sfx": "pop"
+          },
+          {
+            "target": "onda0",
+            "effect": "pop",
+            "trigger": "arranca",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "onda1",
+            "effect": "pop",
+            "trigger": "campaña"
+          },
+          {
+            "target": "onda2",
+            "effect": "pop",
+            "trigger": "campaña"
+          },
+          {
+            "target": "ondas",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "megafono",
+            "effect": "shake",
+            "trigger": "campaña",
+            "amount": 0.4
+          },
+          {
+            "target": "t38",
+            "effect": "hide",
+            "trigger": "quince"
+          },
+          {
+            "target": "t15",
+            "effect": "pop",
+            "trigger": "quince",
+            "sfx": "ding"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              334,
+              300
+            ],
+            "amount": 1.45,
+            "trigger": "13",
+            "dur": 0.7
+          },
+          {
+            "target": "banderola",
+            "effect": "punch",
+            "trigger": "27",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "noviembre",
+            "dur": 0.7
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Sábado de *reflexión*",
+      "narration": "El sábado 28, jornada de reflexión: se acabaron los actos de campaña.",
+      "illustration": {
+        "svg_file": "calle.svg",
+        "caption": "Fig. 8 · Reflexión",
+        "anims": [
+          {
+            "target": "t15",
+            "effect": "hide"
+          },
+          {
+            "target": "t38",
+            "effect": "hide"
+          },
+          {
+            "target": "ondas",
+            "effect": "hide"
+          },
+          {
+            "target": "banderines",
+            "effect": "sway",
+            "amount": 0.3
+          },
+          {
+            "target": "sol",
+            "effect": "hide",
+            "trigger": "sábado"
+          },
+          {
+            "target": "noche",
+            "effect": "fade",
+            "trigger": "sábado",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "estrellas",
+            "effect": "fade",
+            "trigger": "sábado",
+            "dur": 0.6
+          },
+          {
+            "target": "estrellas",
+            "effect": "blink"
+          },
+          {
+            "target": "luna",
+            "effect": "pop",
+            "trigger": "28"
+          },
+          {
+            "target": "tsab",
+            "effect": "pop",
+            "trigger": "28",
+            "sfx": "pop"
+          },
+          {
+            "target": "luz",
+            "effect": "fade",
+            "trigger": "jornada",
+            "dur": 0.5
+          },
+          {
+            "target": "luz",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "megafono",
+            "effect": "punch",
+            "trigger": "acabaron",
+            "amount": 0.3
+          },
+          {
+            "target": "zzz",
+            "effect": "pop",
+            "trigger": "acabaron",
+            "sfx": "none"
+          },
+          {
+            "target": "zzz",
+            "effect": "float",
+            "amount": 0.6
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "reflexión",
+        "pose": "think",
+        "note": "Shhh… estoy pensando",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Domingo: *a votar*",
+      "narration": "El domingo 29, colegios abiertos: de nueve de la mañana a ocho de la tarde.",
+      "illustration": {
+        "svg_file": "colegio_full.svg",
+        "layout": "full",
+        "caption": "Fig. 9 · Colegio electoral",
+        "anims": [
+          {
+            "target": "minutero",
+            "effect": "spin",
+            "amount": 2
+          },
+          {
+            "target": "urnas",
+            "effect": "breathe",
+            "amount": 0.2
+          },
+          {
+            "target": "t29",
+            "effect": "pop",
+            "trigger": "domingo",
+            "sfx": "pop"
+          },
+          {
+            "target": "cartel",
+            "effect": "punch",
+            "trigger": "colegios",
+            "amount": 0.3
+          },
+          {
+            "target": "voto",
+            "effect": "move",
+            "to": [
+              0,
+              42
+            ],
+            "trigger": "abiertos",
+            "dur": 0.6,
+            "sfx": "papel"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              800,
+              820
+            ],
+            "amount": 1.2,
+            "trigger": "nueve",
+            "dur": 0.7
+          },
+          {
+            "target": "reloj",
+            "effect": "punch",
+            "trigger": "nueve",
+            "amount": 0.2
+          },
+          {
+            "target": "horaria",
+            "effect": "move",
+            "rotate": 330,
+            "origin": "center",
+            "trigger": "ocho",
+            "dur": 1.2,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "thora",
+            "effect": "pop",
+            "trigger": "tarde",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Repetición *exprés*",
+      "narration": "Extra: si nadie logra la investidura en dos meses, se repiten… en solo 47 días.",
+      "illustration": {
+        "svg_file": "ley_free.svg",
+        "layout": "free",
+        "height": 866,
+        "caption": "Fig. 10 · Disp. adicional 7.ª",
+        "anims": [
+          {
+            "target": "flecha",
+            "effect": "hide"
+          },
+          {
+            "target": "chispas",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "badge",
+            "effect": "wiggle",
+            "amount": 0.3
+          },
+          {
+            "target": "libro",
+            "effect": "punch",
+            "trigger": "investidura",
+            "amount": 0.2
+          },
+          {
+            "target": "badge",
+            "effect": "punch",
+            "trigger": "repiten",
+            "amount": 0.3
+          },
+          {
+            "target": "tachon",
+            "effect": "draw",
+            "trigger": "repiten",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "libro",
+            "effect": "punch",
+            "trigger": "meses",
+            "amount": 0.15
+          },
+          {
+            "target": "p47",
+            "effect": "pop",
+            "trigger": "47",
+            "sfx": "sello"
+          },
+          {
+            "target": "p47",
+            "effect": "pulse",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos para más trucos. Confiesa: ¿tú reflexionas el sábado… o echas la siesta?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Tú *reflexionas* el sábado… o echas la siesta?",
+          "trigger": "Confiesa"
+        }
+      ]
+    }
+  ]
+}
