@@ -164,6 +164,28 @@
         "tiktok": "6ac8e6e76324418386b542ea",
         "instagram": "6ac8e6e8130133a20a020d87"
       }
+    },
+    {
+      "slug": "lote4-01-bebe-carrito",
+      "category": "psicologia",
+      "due": "2026-10-09T20:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote4-01-bebe-carrito/lote4-01-bebe-carrito-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac92f95c4de2d2b1200eaf8",
+        "tiktok": "6ac92f96b07d37ac97498a4d",
+        "instagram": "6ac92f96d9cab260a79be946"
+      }
+    },
+    {
+      "slug": "lote4-02-metro-punta-suelta",
+      "category": "objetos",
+      "due": "2026-10-09T21:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote4-02-metro-punta-suelta/lote4-02-metro-punta-suelta-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac92f9ef91f772d456adae7",
+        "tiktok": "6ac92f9fc4de2d2b1200f03e",
+        "instagram": "6ac92f9fed92ed8fa5a39873"
+      }
     }
   ]
 }
