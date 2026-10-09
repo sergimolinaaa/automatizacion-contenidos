@@ -1,0 +1,1139 @@
+{
+  "topic": "Las piedras que se mueven solas en el Valle de la Muerte",
+  "categoria": "tierra",
+  "title": "Estas piedras se mueven solas por el desierto (y ya sabemos cómo) 🪨",
+  "source": "Fuentes: Norris et al., PLOS ONE (2014), «Sliding Rocks on Racetrack Playa, Death Valley National Park: First Observation of Rocks in Motion»",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Piedras que *se mueven solas*",
+    "badge": "¿CÓMO LO HACEN?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "En el Valle de la Muerte hay piedras que se mueven solas y dejan surcos de cientos de metros. Durante décadas nadie las vio moverse… hasta que les pusieron GPS. ¿Adivinas quién las empuja?",
+    "description": "En Racetrack Playa, un lago seco del Valle de la Muerte (California), las piedras dejan surcos larguísimos en el barro. En 2014, un equipo de científicos las grabó por fin en movimiento con GPS, cámaras y una estación meteorológica. El truco: en invierno se forma un charco poco profundo que de noche se congela en una placa de hielo de 3 a 6 mm. Por la mañana el sol la rompe en paneles flotantes y una brisa floja (unos 4-5 m/s) los empuja contra las piedras, que resbalan sobre el barro a 2-5 metros por minuto. Una llegó a recorrer 224 metros y el 20 de diciembre de 2013 se movieron más de 60 a la vez. Fuente: Norris et al., PLOS ONE (2014).",
+    "hashtags": [
+      "valledelamuerte",
+      "geologia",
+      "piedras",
+      "ciencia",
+      "curiosidades",
+      "naturaleza",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Piedras *que se mueven*",
+      "narration": "En este desierto, las piedras se mueven solas… y dejan su rastro.",
+      "illustration": {
+        "svg_file": "playa_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Racetrack Playa",
+        "anims": [
+          {
+            "target": "gps",
+            "effect": "hide"
+          },
+          {
+            "target": "gw1",
+            "effect": "hide"
+          },
+          {
+            "target": "gw2",
+            "effect": "hide"
+          },
+          {
+            "target": "camara",
+            "effect": "hide"
+          },
+          {
+            "target": "meteo",
+            "effect": "hide"
+          },
+          {
+            "target": "cups",
+            "effect": "hide"
+          },
+          {
+            "target": "lgps",
+            "effect": "hide"
+          },
+          {
+            "target": "lcamara",
+            "effect": "hide"
+          },
+          {
+            "target": "lmeteo",
+            "effect": "hide"
+          },
+          {
+            "target": "lsurco",
+            "effect": "hide"
+          },
+          {
+            "target": "clouds",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "sun",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "sun",
+            "effect": "punch",
+            "trigger": "desierto",
+            "amount": 0.5
+          },
+          {
+            "target": "r1",
+            "effect": "punch",
+            "trigger": "piedras",
+            "amount": 0.8,
+            "sfx": "pop"
+          },
+          {
+            "target": "r2",
+            "effect": "punch",
+            "trigger": "piedras",
+            "amount": 0.8
+          },
+          {
+            "target": "r0",
+            "effect": "punch",
+            "trigger": "mueven",
+            "amount": 0.5
+          },
+          {
+            "target": "r0",
+            "effect": "move",
+            "trigger": "solas",
+            "to": [
+              16,
+              6
+            ],
+            "dur": 1.6
+          },
+          {
+            "target": "trailglow",
+            "effect": "draw",
+            "trigger": "rastro",
+            "dur": 1.0,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "r0",
+            "effect": "punch",
+            "trigger": "rastro",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Nadie las *veía*",
+      "narration": "Durante décadas, nadie las vio moverse. Solo aparecían sus surcos, de cientos de metros.",
+      "illustration": {
+        "svg_file": "playa.svg",
+        "caption": "Fig. 2 · Surcos en el barro",
+        "anims": [
+          {
+            "target": "gps",
+            "effect": "hide"
+          },
+          {
+            "target": "gw1",
+            "effect": "hide"
+          },
+          {
+            "target": "gw2",
+            "effect": "hide"
+          },
+          {
+            "target": "camara",
+            "effect": "hide"
+          },
+          {
+            "target": "meteo",
+            "effect": "hide"
+          },
+          {
+            "target": "cups",
+            "effect": "hide"
+          },
+          {
+            "target": "lgps",
+            "effect": "hide"
+          },
+          {
+            "target": "lcamara",
+            "effect": "hide"
+          },
+          {
+            "target": "lmeteo",
+            "effect": "hide"
+          },
+          {
+            "target": "clouds",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "sun",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "décadas",
+            "to": [
+              560,
+              440
+            ],
+            "amount": 1.3,
+            "dur": 1.0
+          },
+          {
+            "target": "r1",
+            "effect": "punch",
+            "trigger": "moverse",
+            "amount": 0.5
+          },
+          {
+            "target": "trailglow",
+            "effect": "draw",
+            "trigger": "surcos",
+            "dur": 1.0
+          },
+          {
+            "target": "lsurco",
+            "effect": "pop",
+            "trigger": "surcos",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "cientos",
+            "to": [
+              500,
+              380
+            ],
+            "amount": 1,
+            "dur": 0.8
+          },
+          {
+            "target": "tr2",
+            "effect": "punch",
+            "trigger": "metros",
+            "amount": 0.4
+          },
+          {
+            "target": "tr3",
+            "effect": "punch",
+            "trigger": "metros",
+            "amount": 0.4
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "stamp",
+          "text": "MISTERIO",
+          "tone": "hot",
+          "trigger": "nadie"
+        }
+      ]
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "*Espías* con GPS",
+      "narration": "Hasta que unos científicos les pusieron GPS y vigilaron el lago seco con cámaras y una estación meteorológica.",
+      "illustration": {
+        "svg_file": "playa.svg",
+        "caption": "Fig. 3 · Piedras con GPS",
+        "anims": [
+          {
+            "target": "lsurco",
+            "effect": "hide"
+          },
+          {
+            "target": "trailglow",
+            "effect": "hide"
+          },
+          {
+            "target": "clouds",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "científicos",
+            "to": [
+              600,
+              440
+            ],
+            "amount": 1.6,
+            "dur": 0.9
+          },
+          {
+            "target": "gps",
+            "effect": "pop",
+            "trigger": "GPS",
+            "sfx": "pop"
+          },
+          {
+            "target": "lgps",
+            "effect": "pop",
+            "trigger": "GPS"
+          },
+          {
+            "target": "gw1",
+            "effect": "fade",
+            "trigger": "GPS",
+            "dur": 0.2
+          },
+          {
+            "target": "gw2",
+            "effect": "fade",
+            "trigger": "GPS",
+            "dur": 0.2
+          },
+          {
+            "target": "gw1",
+            "effect": "ripple",
+            "trigger": "GPS",
+            "phase": 0.0
+          },
+          {
+            "target": "gw2",
+            "effect": "ripple",
+            "trigger": "GPS",
+            "phase": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "lago",
+            "to": [
+              500,
+              380
+            ],
+            "amount": 1,
+            "dur": 0.8
+          },
+          {
+            "target": "camara",
+            "effect": "slide-up",
+            "trigger": "cámaras",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lcamara",
+            "effect": "pop",
+            "trigger": "cámaras"
+          },
+          {
+            "target": "meteo",
+            "effect": "slide-up",
+            "trigger": "estación"
+          },
+          {
+            "target": "cups",
+            "effect": "pop",
+            "trigger": "estación"
+          },
+          {
+            "target": "cups",
+            "effect": "spin",
+            "trigger": "meteorológica",
+            "amount": 2.5
+          },
+          {
+            "target": "lmeteo",
+            "effect": "pop",
+            "trigger": "meteorológica"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "vigilaron",
+        "pose": "point",
+        "note": "Vigilancia nivel espía",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Un charco *helado*",
+      "narration": "En invierno, la lluvia deja un charco poco profundo. De noche, se congela en una placa finísima.",
+      "illustration": {
+        "svg_file": "hielo.svg",
+        "caption": "Fig. 4 · Corte del charco",
+        "anims": [
+          {
+            "target": "lbarro",
+            "effect": "hide"
+          },
+          {
+            "target": "lviento",
+            "effect": "hide"
+          },
+          {
+            "target": "lsurco",
+            "effect": "hide"
+          },
+          {
+            "target": "viento",
+            "effect": "hide"
+          },
+          {
+            "target": "empuje",
+            "effect": "hide"
+          },
+          {
+            "target": "surconuevo",
+            "effect": "hide"
+          },
+          {
+            "target": "grietas",
+            "effect": "hide"
+          },
+          {
+            "target": "lluvia",
+            "effect": "fade",
+            "trigger": "lluvia",
+            "dur": 0.3,
+            "sfx": "chorro"
+          },
+          {
+            "target": "lluvia",
+            "effect": "float",
+            "trigger": "lluvia",
+            "amount": 0.5
+          },
+          {
+            "target": "agua",
+            "effect": "grow",
+            "trigger": "charco",
+            "sfx": "splash"
+          },
+          {
+            "target": "lagua",
+            "effect": "pop",
+            "trigger": "profundo"
+          },
+          {
+            "target": "lluvia",
+            "effect": "hide",
+            "trigger": "noche"
+          },
+          {
+            "target": "sol",
+            "effect": "hide",
+            "trigger": "noche"
+          },
+          {
+            "target": "noche",
+            "effect": "fade",
+            "trigger": "noche",
+            "dur": 0.5
+          },
+          {
+            "target": "luna",
+            "effect": "fade",
+            "trigger": "noche",
+            "dur": 0.5
+          },
+          {
+            "target": "hielo",
+            "effect": "fade",
+            "trigger": "congela",
+            "dur": 0.4,
+            "sfx": "brillo"
+          },
+          {
+            "target": "hielo2",
+            "effect": "fade",
+            "trigger": "congela",
+            "dur": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "placa",
+            "to": [
+              300,
+              430
+            ],
+            "amount": 1.35,
+            "dur": 0.8
+          },
+          {
+            "target": "lhielo",
+            "effect": "pop",
+            "trigger": "placa"
+          },
+          {
+            "target": "hielo",
+            "effect": "punch",
+            "trigger": "finísima",
+            "amount": 0.4
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Hielo de 3 a 6 mm",
+          "tone": "accent",
+          "trigger": "finísima"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "El sol la *rompe*",
+      "narration": "Por la mañana, el sol la calienta, la agrieta y la parte en grandes paneles flotantes.",
+      "illustration": {
+        "svg_file": "panel.svg",
+        "caption": "Fig. 5 · Vista desde arriba",
+        "anims": [
+          {
+            "target": "nuevos",
+            "effect": "hide"
+          },
+          {
+            "target": "viento",
+            "effect": "hide"
+          },
+          {
+            "target": "lsurco",
+            "effect": "hide"
+          },
+          {
+            "target": "brillo",
+            "effect": "fade",
+            "trigger": "sol",
+            "dur": 0.6,
+            "sfx": "brillo"
+          },
+          {
+            "target": "brillo",
+            "effect": "pulse",
+            "trigger": "sol",
+            "amount": 0.4
+          },
+          {
+            "target": "grietas",
+            "effect": "draw",
+            "trigger": "agrieta",
+            "dur": 0.8,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "lgrieta",
+            "effect": "pop",
+            "trigger": "agrieta"
+          },
+          {
+            "target": "entero",
+            "effect": "hide",
+            "trigger": "parte"
+          },
+          {
+            "target": "grietas",
+            "effect": "hide",
+            "trigger": "parte"
+          },
+          {
+            "target": "p1",
+            "effect": "drift",
+            "trigger": "parte",
+            "amount": 0.35,
+            "phase": 0.0
+          },
+          {
+            "target": "p2",
+            "effect": "drift",
+            "trigger": "parte",
+            "amount": 0.3,
+            "phase": 0.3
+          },
+          {
+            "target": "p3",
+            "effect": "drift",
+            "trigger": "parte",
+            "amount": 0.35,
+            "phase": 0.6
+          },
+          {
+            "target": "p4",
+            "effect": "drift",
+            "trigger": "parte",
+            "amount": 0.3,
+            "phase": 0.15
+          },
+          {
+            "target": "p5",
+            "effect": "drift",
+            "trigger": "parte",
+            "amount": 0.35,
+            "phase": 0.45
+          },
+          {
+            "target": "p6",
+            "effect": "drift",
+            "trigger": "parte",
+            "amount": 0.3,
+            "phase": 0.75
+          },
+          {
+            "target": "p7",
+            "effect": "drift",
+            "trigger": "parte",
+            "amount": 0.35,
+            "phase": 0.9
+          },
+          {
+            "target": "lgrieta",
+            "effect": "hide",
+            "trigger": "paneles"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "paneles",
+            "to": [
+              480,
+              460
+            ],
+            "amount": 1.25,
+            "dur": 0.8
+          },
+          {
+            "target": "lpanel",
+            "effect": "pop",
+            "trigger": "paneles",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Un *empujoncito*",
+      "narration": "Basta una brisa floja: el viento empuja el hielo… y el hielo empuja las piedras.",
+      "illustration": {
+        "svg_file": "hielo_free.svg",
+        "layout": "free",
+        "height": 840,
+        "caption": "Fig. 6 · El hielo empuja",
+        "anims": [
+          {
+            "target": "grietas",
+            "effect": "hide"
+          },
+          {
+            "target": "lagua",
+            "effect": "hide"
+          },
+          {
+            "target": "lbarro",
+            "effect": "hide"
+          },
+          {
+            "target": "lsurco",
+            "effect": "hide"
+          },
+          {
+            "target": "lhielo",
+            "effect": "hide"
+          },
+          {
+            "target": "agua",
+            "effect": "pulse",
+            "amount": 0.1
+          },
+          {
+            "target": "viento",
+            "effect": "draw",
+            "trigger": "brisa",
+            "dur": 0.7,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lviento",
+            "effect": "pop",
+            "trigger": "brisa"
+          },
+          {
+            "target": "viento",
+            "effect": "drift",
+            "trigger": "viento",
+            "amount": 0.4
+          },
+          {
+            "target": "empuje",
+            "effect": "draw",
+            "trigger": "empuja",
+            "dur": 0.5
+          },
+          {
+            "target": "hielo",
+            "effect": "punch",
+            "trigger": "hielo",
+            "amount": 0.4
+          },
+          {
+            "target": "lhielo",
+            "effect": "pop",
+            "trigger": "hielo empuja"
+          },
+          {
+            "target": "lviento",
+            "effect": "hide",
+            "trigger": "piedras"
+          },
+          {
+            "target": "lhielo",
+            "effect": "hide",
+            "trigger": "piedras"
+          },
+          {
+            "target": "piedra",
+            "effect": "move",
+            "trigger": "piedras",
+            "to": [
+              130,
+              0
+            ],
+            "dur": 1.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "hielo",
+            "effect": "move",
+            "trigger": "piedras",
+            "to": [
+              130,
+              0
+            ],
+            "dur": 1.6
+          },
+          {
+            "target": "hielo2",
+            "effect": "move",
+            "trigger": "piedras",
+            "to": [
+              130,
+              0
+            ],
+            "dur": 1.6
+          },
+          {
+            "target": "empuje",
+            "effect": "move",
+            "trigger": "piedras",
+            "to": [
+              130,
+              0
+            ],
+            "dur": 1.6
+          },
+          {
+            "target": "surconuevo",
+            "effect": "draw",
+            "trigger": "piedras",
+            "dur": 1.4
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "stat",
+          "label": "Brisa de unos",
+          "value": 5,
+          "from": 0,
+          "unit": " m/s",
+          "note": "unos 18 km/h",
+          "trigger": "brisa"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Y dejan *surco*",
+      "narration": "Las piedras resbalan sobre el barro blando del fondo y van dibujando su rastro, a veces en zigzag.",
+      "illustration": {
+        "svg_file": "panel.svg",
+        "caption": "Fig. 7 · Así se forma el surco",
+        "anims": [
+          {
+            "target": "entero",
+            "effect": "hide"
+          },
+          {
+            "target": "grietas",
+            "effect": "hide"
+          },
+          {
+            "target": "brillo",
+            "effect": "hide"
+          },
+          {
+            "target": "lgrieta",
+            "effect": "hide"
+          },
+          {
+            "target": "lpanel",
+            "effect": "hide"
+          },
+          {
+            "target": "viento",
+            "effect": "draw",
+            "trigger": "piedras",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "viento",
+            "effect": "drift",
+            "trigger": "piedras",
+            "amount": 0.3
+          },
+          {
+            "target": "paneles",
+            "effect": "move",
+            "trigger": "resbalan",
+            "to": [
+              90,
+              0
+            ],
+            "dur": 2.2
+          },
+          {
+            "target": "nuevos",
+            "effect": "draw",
+            "trigger": "resbalan",
+            "dur": 1.8
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "barro",
+            "to": [
+              520,
+              400
+            ],
+            "amount": 1.4,
+            "dur": 0.8
+          },
+          {
+            "target": "rb",
+            "effect": "punch",
+            "trigger": "blando",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "dibujando",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.7
+          },
+          {
+            "target": "lsurco",
+            "effect": "pop",
+            "trigger": "rastro",
+            "sfx": "rotulador"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Sin *prisa*",
+      "narration": "Iban a entre 2 y 5 metros por minuto: más despacio que una persona paseando.",
+      "illustration": {
+        "svg_file": "playa.svg",
+        "caption": "Fig. 8 · A paso lento",
+        "anims": [
+          {
+            "target": "gps",
+            "effect": "hide"
+          },
+          {
+            "target": "gw1",
+            "effect": "hide"
+          },
+          {
+            "target": "gw2",
+            "effect": "hide"
+          },
+          {
+            "target": "camara",
+            "effect": "hide"
+          },
+          {
+            "target": "meteo",
+            "effect": "hide"
+          },
+          {
+            "target": "cups",
+            "effect": "hide"
+          },
+          {
+            "target": "lgps",
+            "effect": "hide"
+          },
+          {
+            "target": "lcamara",
+            "effect": "hide"
+          },
+          {
+            "target": "lmeteo",
+            "effect": "hide"
+          },
+          {
+            "target": "lsurco",
+            "effect": "hide"
+          },
+          {
+            "target": "clouds",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "sun",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "Iban",
+            "to": [
+              560,
+              450
+            ],
+            "amount": 1.5,
+            "dur": 1.0
+          },
+          {
+            "target": "r1",
+            "effect": "move",
+            "trigger": "Iban",
+            "to": [
+              30,
+              10
+            ],
+            "dur": 4.5
+          },
+          {
+            "target": "trailglow",
+            "effect": "draw",
+            "trigger": "metros",
+            "dur": 1.2,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "r1",
+            "effect": "punch",
+            "trigger": "despacio",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "persona",
+            "to": [
+              500,
+              380
+            ],
+            "amount": 1,
+            "dur": 0.8
+          },
+          {
+            "target": "r2",
+            "effect": "punch",
+            "trigger": "paseando",
+            "amount": 0.5
+          },
+          {
+            "target": "r3",
+            "effect": "punch",
+            "trigger": "paseando",
+            "amount": 0.5
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "2-5 metros por minuto",
+          "tone": "accent",
+          "trigger": "metros"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "*224 metros*",
+      "narration": "Una llegó a recorrer 224 metros. Y un solo día se movieron más de 60 piedras.",
+      "illustration": {
+        "svg_file": "panel.svg",
+        "caption": "Fig. 9 · Todas a la vez",
+        "anims": [
+          {
+            "target": "entero",
+            "effect": "hide"
+          },
+          {
+            "target": "grietas",
+            "effect": "hide"
+          },
+          {
+            "target": "brillo",
+            "effect": "hide"
+          },
+          {
+            "target": "lgrieta",
+            "effect": "hide"
+          },
+          {
+            "target": "lpanel",
+            "effect": "hide"
+          },
+          {
+            "target": "lsurco",
+            "effect": "hide"
+          },
+          {
+            "target": "viento",
+            "effect": "draw",
+            "trigger": "llegó",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rb",
+            "effect": "punch",
+            "trigger": "224",
+            "amount": 0.6
+          },
+          {
+            "target": "paneles",
+            "effect": "move",
+            "trigger": "día",
+            "to": [
+              90,
+              0
+            ],
+            "dur": 2.4
+          },
+          {
+            "target": "nuevos",
+            "effect": "draw",
+            "trigger": "día",
+            "dur": 2.0
+          },
+          {
+            "target": "ra",
+            "effect": "punch",
+            "trigger": "60",
+            "amount": 0.5
+          },
+          {
+            "target": "rc",
+            "effect": "punch",
+            "trigger": "60",
+            "amount": 0.5
+          },
+          {
+            "target": "rd",
+            "effect": "punch",
+            "trigger": "60",
+            "amount": 0.5
+          },
+          {
+            "target": "re",
+            "effect": "punch",
+            "trigger": "60",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "piedras",
+            "to": [
+              500,
+              380
+            ],
+            "amount": 1.2,
+            "dur": 0.8
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "stat",
+          "label": "Recorrido récord",
+          "value": 224,
+          "from": 0,
+          "unit": " m",
+          "trigger": "224"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos para más trucos. ¿Cuántas horas aguantarías mirando una piedra?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Cuántas horas aguantarías mirando una *piedra*?",
+          "trigger": "Cuántas"
+        }
+      ]
+    }
+  ]
+}
