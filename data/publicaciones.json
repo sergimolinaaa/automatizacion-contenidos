@@ -142,6 +142,28 @@
         "tiktok": "6ac852709db755aaaac0289b",
         "instagram": "6ac852717d9f9f330120deb8"
       }
+    },
+    {
+      "slug": "lote3-03-arcoiris",
+      "category": "fisica",
+      "due": "2026-10-09T17:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote3-03-arcoiris/lote3-03-arcoiris-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac8e6de130133a20a020bdb",
+        "tiktok": "6ac8e6df1f640591362a414c",
+        "instagram": "6ac8e6e0130133a20a020c11"
+      }
+    },
+    {
+      "slug": "lote3-02-diente-de-leon",
+      "category": "plantas",
+      "due": "2026-10-09T19:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote3-02-diente-de-leon/lote3-02-diente-de-leon-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac8e6e7c22cbf9dd502ff32",
+        "tiktok": "6ac8e6e76324418386b542ea",
+        "instagram": "6ac8e6e8130133a20a020d87"
+      }
     }
   ]
 }
