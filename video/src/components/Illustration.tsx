@@ -25,7 +25,8 @@ export function sanitizeSvg(svg: string, prefix: string): string {
   s = s.replace(/url\(#([^)]+)\)/g, `url(#${prefix}-$1)`);
   s = s.replace(/href="#([^"]+)"/g, `href="#${prefix}-$1"`);
   // pathLength=1 permite los efectos "draw" y "flow" en cualquier trazo
-  s = s.replace(/<(path|line|polyline)\b(?![^>]*pathLength)/g, '<$1 pathLength="1"');
+  // (salvo en trazos con su propio stroke-dasharray, que se verían continuos)
+  s = s.replace(/<(path|line|polyline)\b(?![^>]*(pathLength|stroke-dasharray))/g, '<$1 pathLength="1"');
   // el SVG ocupa todo el panel
   s = s.replace(/<svg\b([^>]*)>/, (_m, attrs: string) => {
     const clean = attrs.replace(/\s(width|height|preserveAspectRatio)="[^"]*"/g, "");
@@ -164,8 +165,9 @@ export const IllustrationPanel: React.FC<{ ill: Ill; id: string; sceneStart: num
         `translate: ${s.tx.toFixed(2)}px ${s.ty.toFixed(2)}px`,
         `rotate: ${s.rot.toFixed(2)}deg`,
         `scale: ${s.sx.toFixed(4)} ${s.sy.toFixed(4)}`,
-        `opacity: ${s.op.toFixed(3)}`,
       ];
+      // con opacidad 1 no se fija, para respetar la opacidad propia del grupo en el SVG
+      if (s.op < 0.999) rules.push(`opacity: ${s.op.toFixed(3)}`);
       if (s.dash) rules.push(`stroke-dasharray: ${s.dash}`, `stroke-dashoffset: ${s.offset?.toFixed(4)}`);
       return `#${prefix}-${CSS.escape(target)} { ${rules.join("; ")} }`;
     })
