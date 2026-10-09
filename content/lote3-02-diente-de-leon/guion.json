@@ -1,0 +1,1021 @@
+{
+  "topic": "Las semillas del diente de león vuelan con un anillo de aire",
+  "categoria": "plantas",
+  "title": "Vuela más de un kilómetro con un paracaídas lleno de agujeros 🌬️",
+  "source": "Fuentes: Cummins et al., Nature (2018) · Seale et al., eLife (2022) · Iyer et al., Nature (2022)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "La naturaleza tiene trucos",
+  "cover": {
+    "text": "Vuela con un *anillo de aire*",
+    "badge": "¿CÓMO LO HACE?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Su paracaídas es un 92% aire… y aun así vuela más de un kilómetro 🌬️ El truco: un anillo de aire que gira justo encima y frena la caída. ¿Cuántos deseos has pedido soplando uno?",
+    "description": "La semilla del diente de león cuelga de un vilano: unos cien pelitos finísimos que dejan pasar el aire (más del 90% es hueco). Al caer, el aire que cruza entre los pelos forma un anillo giratorio que flota separado justo encima, crea baja presión y frena la caída a unos 40 cm/s. Con la misma cantidad de material frena unas cuatro veces más que un disco macizo, y con humedad el vilano se cierra para no soltarse con lluvia. Fuentes: Cummins et al., Nature (2018); Seale et al., eLife (2022); Iyer et al., Nature (2022).",
+    "hashtags": [
+      "dientedeleon",
+      "plantas",
+      "naturaleza",
+      "ciencia",
+      "fisica",
+      "curiosidades",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Un paracaídas *con agujeros*",
+      "narration": "Vuela más de un kilómetro… colgada de un paracaídas lleno de agujeros.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 1 · Diente de león",
+        "anims": [
+          {
+            "target": "sensor",
+            "effect": "hide"
+          },
+          {
+            "target": "lsensor",
+            "effect": "hide"
+          },
+          {
+            "target": "clouds",
+            "effect": "drift",
+            "amount": 0.5
+          },
+          {
+            "target": "wind",
+            "effect": "flow",
+            "amount": 0.8
+          },
+          {
+            "target": "clock",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "fl1",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "fl2",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.4,
+            "phase": 0.3
+          },
+          {
+            "target": "fs1",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "fs3",
+            "effect": "float",
+            "amount": 0.7
+          },
+          {
+            "target": "fs4",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "fs2",
+            "effect": "float",
+            "amount": 0.4,
+            "phase": 0.5
+          },
+          {
+            "target": "clock",
+            "effect": "punch",
+            "trigger": "Vuela"
+          },
+          {
+            "target": "fs2",
+            "effect": "move",
+            "to": [
+              -90,
+              -50
+            ],
+            "rotate": -10,
+            "trigger": "kilómetro",
+            "dur": 1.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              300,
+              215
+            ],
+            "amount": 1.7,
+            "dur": 0.8,
+            "trigger": "paracaídas"
+          },
+          {
+            "target": "lpara",
+            "effect": "pop",
+            "trigger": "paracaídas",
+            "sfx": "pop"
+          },
+          {
+            "target": "fs1",
+            "effect": "punch",
+            "trigger": "agujeros"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Un *pincel* de pelos",
+      "narration": "Su paracaídas se llama vilano: unos cien pelitos finísimos sobre un palito.",
+      "illustration": {
+        "svg_file": "semilla.svg",
+        "caption": "Fig. 2 · Una semilla",
+        "anims": [
+          {
+            "target": "cerradob",
+            "effect": "hide"
+          },
+          {
+            "target": "cerradof",
+            "effect": "hide"
+          },
+          {
+            "target": "rain",
+            "effect": "hide"
+          },
+          {
+            "target": "wet",
+            "effect": "hide"
+          },
+          {
+            "target": "bigdrops",
+            "effect": "hide"
+          },
+          {
+            "target": "lcerrado",
+            "effect": "hide"
+          },
+          {
+            "target": "bokeh",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "lsemilla",
+            "effect": "pop",
+            "trigger": "Su"
+          },
+          {
+            "target": "lvilano",
+            "effect": "pop",
+            "trigger": "vilano",
+            "sfx": "pop"
+          },
+          {
+            "target": "seed",
+            "effect": "punch",
+            "trigger": "vilano",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              210
+            ],
+            "amount": 1.5,
+            "dur": 0.8,
+            "trigger": "pelitos"
+          },
+          {
+            "target": "lpelos",
+            "effect": "pop",
+            "trigger": "cien"
+          },
+          {
+            "target": "abiertof",
+            "effect": "punch",
+            "trigger": "finísimos",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "palito"
+          },
+          {
+            "target": "lpico",
+            "effect": "pop",
+            "trigger": "palito",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Casi todo es *aire*",
+      "narration": "Visto desde arriba, casi todo es hueco: un 92% del vilano es aire.",
+      "illustration": {
+        "svg_file": "arriba.svg",
+        "caption": "Fig. 3 · Vista desde arriba",
+        "anims": [
+          {
+            "target": "motas",
+            "effect": "drift",
+            "amount": 0.5
+          },
+          {
+            "target": "disco",
+            "effect": "spin",
+            "amount": 0.05
+          },
+          {
+            "target": "lpelo",
+            "effect": "pop",
+            "trigger": "Visto"
+          },
+          {
+            "target": "lpelo",
+            "effect": "hide",
+            "trigger": "casi"
+          },
+          {
+            "target": "lpelo",
+            "effect": "pop",
+            "trigger": "92"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              640,
+              290
+            ],
+            "amount": 1.6,
+            "dur": 0.8,
+            "trigger": "hueco"
+          },
+          {
+            "target": "hueco",
+            "effect": "pop",
+            "trigger": "hueco",
+            "sfx": "pop"
+          },
+          {
+            "target": "hueco",
+            "effect": "pulse",
+            "trigger": "hueco",
+            "amount": 0.8
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "92"
+          },
+          {
+            "target": "laire",
+            "effect": "pop",
+            "trigger": "92",
+            "sfx": "ding"
+          },
+          {
+            "target": "airefill",
+            "effect": "fade",
+            "trigger": "aire",
+            "dur": 0.5
+          },
+          {
+            "target": "pelos",
+            "effect": "punch",
+            "trigger": "vilano",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Un *anillo* de aire",
+      "narration": "Al caer, el aire cruza entre los pelos… y forma un anillo que gira justo encima.",
+      "illustration": {
+        "svg_file": "vortice.svg",
+        "caption": "Fig. 4 · Túnel de viento",
+        "anims": [
+          {
+            "target": "lbaja",
+            "effect": "hide"
+          },
+          {
+            "target": "menos",
+            "effect": "hide"
+          },
+          {
+            "target": "freno",
+            "effect": "hide"
+          },
+          {
+            "target": "lhuecos",
+            "effect": "hide"
+          },
+          {
+            "target": "lvel",
+            "effect": "hide"
+          },
+          {
+            "target": "aire",
+            "effect": "flow",
+            "amount": 1
+          },
+          {
+            "target": "cae",
+            "effect": "pop",
+            "trigger": "caer"
+          },
+          {
+            "target": "lcae",
+            "effect": "pop",
+            "trigger": "caer"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              420
+            ],
+            "amount": 1.4,
+            "dur": 0.8,
+            "trigger": "cruza"
+          },
+          {
+            "target": "vilano",
+            "effect": "punch",
+            "trigger": "pelos",
+            "amount": 0.5
+          },
+          {
+            "target": "anillo",
+            "effect": "pop",
+            "trigger": "anillo",
+            "sfx": "magia"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "anillo"
+          },
+          {
+            "target": "lanillo",
+            "effect": "pop",
+            "trigger": "anillo"
+          },
+          {
+            "target": "swl",
+            "effect": "spin",
+            "trigger": "gira",
+            "amount": 1.2
+          },
+          {
+            "target": "swr",
+            "effect": "spin",
+            "trigger": "gira",
+            "amount": -1.2
+          },
+          {
+            "target": "lsep",
+            "effect": "pop",
+            "trigger": "encima",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Frena *la caída*",
+      "narration": "Ese remolino crea baja presión encima y frena la caída: unos 40 centímetros por segundo.",
+      "illustration": {
+        "svg_file": "vortice.svg",
+        "caption": "Fig. 5 · Baja presión",
+        "anims": [
+          {
+            "target": "lhuecos",
+            "effect": "hide"
+          },
+          {
+            "target": "lsep",
+            "effect": "hide"
+          },
+          {
+            "target": "lanillo",
+            "effect": "hide"
+          },
+          {
+            "target": "lvel",
+            "effect": "hide"
+          },
+          {
+            "target": "aire",
+            "effect": "flow",
+            "amount": 1
+          },
+          {
+            "target": "swl",
+            "effect": "spin",
+            "amount": 1.2
+          },
+          {
+            "target": "swr",
+            "effect": "spin",
+            "amount": -1.2
+          },
+          {
+            "target": "anillo",
+            "effect": "punch",
+            "trigger": "remolino"
+          },
+          {
+            "target": "menos",
+            "effect": "pop",
+            "trigger": "baja"
+          },
+          {
+            "target": "lbaja",
+            "effect": "pop",
+            "trigger": "presión",
+            "sfx": "pop"
+          },
+          {
+            "target": "baja",
+            "effect": "pulse",
+            "trigger": "presión",
+            "amount": 1
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              560,
+              340
+            ],
+            "amount": 1.25,
+            "dur": 0.8,
+            "trigger": "frena"
+          },
+          {
+            "target": "freno",
+            "effect": "draw",
+            "trigger": "frena",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cae",
+            "effect": "punch",
+            "trigger": "caída"
+          },
+          {
+            "target": "lvel",
+            "effect": "pop",
+            "trigger": "40",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Huecos *justos*",
+      "narration": "La clave son los huecos justos: con menos, el anillo se vuelve inestable y se escapa.",
+      "illustration": {
+        "svg_file": "vortice.svg",
+        "caption": "Fig. 6 · Huecos justos",
+        "anims": [
+          {
+            "target": "lbaja",
+            "effect": "hide"
+          },
+          {
+            "target": "menos",
+            "effect": "hide"
+          },
+          {
+            "target": "freno",
+            "effect": "hide"
+          },
+          {
+            "target": "lsep",
+            "effect": "hide"
+          },
+          {
+            "target": "lanillo",
+            "effect": "hide"
+          },
+          {
+            "target": "cae",
+            "effect": "hide"
+          },
+          {
+            "target": "lcae",
+            "effect": "hide"
+          },
+          {
+            "target": "lvel",
+            "effect": "hide"
+          },
+          {
+            "target": "aire",
+            "effect": "flow",
+            "amount": 1
+          },
+          {
+            "target": "swl",
+            "effect": "spin",
+            "amount": 1.2
+          },
+          {
+            "target": "swr",
+            "effect": "spin",
+            "amount": -1.2
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              450,
+              450
+            ],
+            "amount": 1.6,
+            "dur": 0.8,
+            "trigger": "huecos"
+          },
+          {
+            "target": "lhuecos",
+            "effect": "pop",
+            "trigger": "huecos",
+            "sfx": "pop"
+          },
+          {
+            "target": "vilano",
+            "effect": "punch",
+            "trigger": "justos",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "anillo"
+          },
+          {
+            "target": "anillo",
+            "effect": "shake",
+            "trigger": "inestable",
+            "amount": 1.6
+          },
+          {
+            "target": "anillo",
+            "effect": "move",
+            "to": [
+              170,
+              -340
+            ],
+            "rotate": 25,
+            "trigger": "escapa",
+            "dur": 1.0,
+            "sfx": "whoosh"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Menos es *más*",
+      "narration": "Resultado: con el mismo material, frena unas cuatro veces más que un disco macizo.",
+      "illustration": {
+        "svg_file": "vortice.svg",
+        "caption": "Fig. 7 · Poco material, mucho freno",
+        "anims": [
+          {
+            "target": "lbaja",
+            "effect": "hide"
+          },
+          {
+            "target": "lsep",
+            "effect": "hide"
+          },
+          {
+            "target": "lanillo",
+            "effect": "hide"
+          },
+          {
+            "target": "lhuecos",
+            "effect": "hide"
+          },
+          {
+            "target": "lvel",
+            "effect": "hide"
+          },
+          {
+            "target": "cae",
+            "effect": "hide"
+          },
+          {
+            "target": "lcae",
+            "effect": "hide"
+          },
+          {
+            "target": "aire",
+            "effect": "flow",
+            "amount": 1
+          },
+          {
+            "target": "swl",
+            "effect": "spin",
+            "amount": 1.2
+          },
+          {
+            "target": "swr",
+            "effect": "spin",
+            "amount": -1.2
+          },
+          {
+            "target": "baja",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "vilano",
+            "effect": "punch",
+            "trigger": "material",
+            "amount": 0.5
+          },
+          {
+            "target": "freno",
+            "effect": "draw",
+            "trigger": "frena",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              380
+            ],
+            "amount": 1.3,
+            "dur": 0.8,
+            "trigger": "frena"
+          },
+          {
+            "target": "freno",
+            "effect": "punch",
+            "trigger": "cuatro"
+          },
+          {
+            "target": "menos",
+            "effect": "pop",
+            "trigger": "veces"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "macizo"
+          },
+          {
+            "target": "anillo",
+            "effect": "punch",
+            "trigger": "macizo",
+            "amount": 0.5
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "×4 de freno",
+          "tone": "accent",
+          "trigger": "cuatro"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Se cierra *con lluvia*",
+      "narration": "Con humedad, el vilano se cierra como un paraguas: así casi no se suelta si llueve.",
+      "illustration": {
+        "svg_file": "semilla.svg",
+        "caption": "Fig. 8 · Con humedad",
+        "anims": [
+          {
+            "target": "lpelos",
+            "effect": "hide"
+          },
+          {
+            "target": "lpico",
+            "effect": "hide"
+          },
+          {
+            "target": "lsemilla",
+            "effect": "hide"
+          },
+          {
+            "target": "lvilano",
+            "effect": "hide"
+          },
+          {
+            "target": "cerradob",
+            "effect": "hide"
+          },
+          {
+            "target": "cerradof",
+            "effect": "hide"
+          },
+          {
+            "target": "wet",
+            "effect": "hide"
+          },
+          {
+            "target": "lcerrado",
+            "effect": "hide"
+          },
+          {
+            "target": "bokeh",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "rain",
+            "effect": "fade",
+            "trigger": "humedad",
+            "dur": 0.5
+          },
+          {
+            "target": "bigdrops",
+            "effect": "pop",
+            "trigger": "humedad",
+            "sfx": "splash"
+          },
+          {
+            "target": "bigdrops",
+            "effect": "float",
+            "trigger": "humedad",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              540,
+              250
+            ],
+            "amount": 1.35,
+            "dur": 0.8,
+            "trigger": "cierra"
+          },
+          {
+            "target": "abierto",
+            "effect": "hide",
+            "trigger": "cierra"
+          },
+          {
+            "target": "abiertof",
+            "effect": "hide",
+            "trigger": "cierra"
+          },
+          {
+            "target": "cerradob",
+            "effect": "pop",
+            "trigger": "cierra"
+          },
+          {
+            "target": "cerradof",
+            "effect": "pop",
+            "trigger": "cierra",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "wet",
+            "effect": "pop",
+            "trigger": "paraguas"
+          },
+          {
+            "target": "lcerrado",
+            "effect": "pop",
+            "trigger": "paraguas"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "suelta"
+          },
+          {
+            "target": "seed",
+            "effect": "punch",
+            "trigger": "suelta",
+            "amount": 0.5
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "llueve",
+        "pose": "surprise",
+        "note": "Paraguas de serie",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Copiado por *ingenieros*",
+      "narration": "Y ya inspira sensores sin batería que viajan con el viento.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 9 · Sensor volador",
+        "anims": [
+          {
+            "target": "lpara",
+            "effect": "hide"
+          },
+          {
+            "target": "clouds",
+            "effect": "drift",
+            "amount": 0.5
+          },
+          {
+            "target": "wind",
+            "effect": "flow",
+            "amount": 0.8
+          },
+          {
+            "target": "clock",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "fl1",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "fl2",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.4,
+            "phase": 0.3
+          },
+          {
+            "target": "fs1",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "fs2",
+            "effect": "float",
+            "amount": 0.4,
+            "phase": 0.5
+          },
+          {
+            "target": "fs3",
+            "effect": "float",
+            "amount": 0.7
+          },
+          {
+            "target": "fs4",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "sensor",
+            "effect": "pop",
+            "trigger": "sensores",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              800,
+              250
+            ],
+            "amount": 1.5,
+            "dur": 0.8,
+            "trigger": "sensores"
+          },
+          {
+            "target": "lsensor",
+            "effect": "pop",
+            "trigger": "batería",
+            "sfx": "ding"
+          },
+          {
+            "target": "sensor",
+            "effect": "float",
+            "trigger": "batería",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "viento"
+          },
+          {
+            "target": "fs1",
+            "effect": "punch",
+            "trigger": "viento"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "Te *toca*",
+      "narration": "Síguenos para más trucos. ¿Cuántos deseos has pedido soplando uno de estos?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Cuántos *deseos* has pedido soplando uno?",
+          "trigger": "Cuántos"
+        }
+      ]
+    }
+  ]
+}

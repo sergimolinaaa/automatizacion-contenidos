@@ -1,0 +1,1139 @@
+{
+  "topic": "Cómo se forma un arcoíris",
+  "categoria": "fisica",
+  "title": "Por qué el arcoíris es un arco (y nunca podrás alcanzarlo) 🌈",
+  "source": "Fuentes: Atmospheric Optics (L. Cowley) · HyperPhysics, Georgia State University",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "La naturaleza tiene trucos",
+  "cover": {
+    "text": "Nunca podrás *alcanzarlo*",
+    "badge": "¿POR QUÉ?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Lo tienes delante, pero nunca podrás llegar al arcoíris 🌈 Cada gota de lluvia hace de prisma y espejo, y solo te mandan color las que están a 42° de tu sombra. ¿Alguna vez lo has perseguido?",
+    "description": "Cada gota de lluvia refracta la luz del Sol al entrar, la refleja en su fondo y la vuelve a refractar al salir, separando los colores: el rojo sale a unos 42° de la luz del Sol y el violeta a unos 40°. Solo ves color en las gotas que forman ese ángulo con tu sombra, así que todas juntas dibujan un círculo alrededor de ella; el suelo corta la mitad de abajo y por eso ves un arco. Con dos reflexiones dentro de la gota aparece un segundo arco más alto con los colores invertidos, y entre ambos el cielo se ve más oscuro: la banda de Alejandro. Fuentes: Atmospheric Optics (Les Cowley); HyperPhysics, Georgia State University.",
+    "hashtags": [
+      "arcoiris",
+      "fisica",
+      "luz",
+      "ciencia",
+      "curiosidades",
+      "optica",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Nunca lo *alcanzarás*",
+      "narration": "Lo tienes delante… pero nunca podrás llegar hasta él.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 1 · Después de la lluvia",
+        "anims": [
+          {
+            "target": "lluvia",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "nube",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "pajaros",
+            "effect": "float",
+            "amount": 0.8
+          },
+          {
+            "target": "arboles",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3
+          },
+          {
+            "target": "flores",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "rip1",
+            "effect": "ripple",
+            "phase": 0
+          },
+          {
+            "target": "rip2",
+            "effect": "ripple",
+            "phase": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              560,
+              330
+            ],
+            "amount": 1.2,
+            "dur": 0.8,
+            "trigger": "tienes"
+          },
+          {
+            "target": "arco",
+            "effect": "punch",
+            "trigger": "delante",
+            "amount": 0.6
+          },
+          {
+            "target": "persona",
+            "effect": "move",
+            "to": [
+              80,
+              -45
+            ],
+            "trigger": "nunca",
+            "dur": 1.6
+          },
+          {
+            "target": "arco",
+            "effect": "move",
+            "to": [
+              80,
+              0
+            ],
+            "trigger": "nunca",
+            "dur": 1.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "llegar"
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "stamp",
+          "text": "¡IMPOSIBLE!",
+          "tone": "hot",
+          "trigger": "llegar"
+        }
+      ]
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Cada gota, un *prisma*",
+      "narration": "Cada gota de lluvia hace de prisma: la luz del Sol entra y se dobla.",
+      "illustration": {
+        "svg_file": "gota.svg",
+        "caption": "Fig. 2 · Una gota de lluvia",
+        "anims": [
+          {
+            "target": "whiteback",
+            "effect": "hide"
+          },
+          {
+            "target": "whiteout",
+            "effect": "hide"
+          },
+          {
+            "target": "fanin",
+            "effect": "hide"
+          },
+          {
+            "target": "fanback",
+            "effect": "hide"
+          },
+          {
+            "target": "fanout",
+            "effect": "hide"
+          },
+          {
+            "target": "ang",
+            "effect": "hide"
+          },
+          {
+            "target": "l42",
+            "effect": "hide"
+          },
+          {
+            "target": "lrebota",
+            "effect": "hide"
+          },
+          {
+            "target": "lrojo",
+            "effect": "hide"
+          },
+          {
+            "target": "lvioleta",
+            "effect": "hide"
+          },
+          {
+            "target": "lluvia",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "gotas",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "sol",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "gota",
+            "effect": "punch",
+            "trigger": "gota",
+            "amount": 0.5
+          },
+          {
+            "target": "beam",
+            "effect": "draw",
+            "trigger": "luz",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lluz",
+            "effect": "pop",
+            "trigger": "Sol"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              420,
+              220
+            ],
+            "amount": 1.5,
+            "dur": 0.8,
+            "trigger": "entra"
+          },
+          {
+            "target": "inwhite",
+            "effect": "draw",
+            "trigger": "entra",
+            "dur": 0.6
+          },
+          {
+            "target": "ldobla",
+            "effect": "pop",
+            "trigger": "dobla",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Rebota *dentro*",
+      "narration": "Dentro, rebota en el fondo de la gota como en un espejo… y vuelve a salir.",
+      "illustration": {
+        "svg_file": "gota.svg",
+        "caption": "Fig. 3 · Un espejo dentro",
+        "anims": [
+          {
+            "target": "fanin",
+            "effect": "hide"
+          },
+          {
+            "target": "fanback",
+            "effect": "hide"
+          },
+          {
+            "target": "fanout",
+            "effect": "hide"
+          },
+          {
+            "target": "ang",
+            "effect": "hide"
+          },
+          {
+            "target": "l42",
+            "effect": "hide"
+          },
+          {
+            "target": "lrojo",
+            "effect": "hide"
+          },
+          {
+            "target": "lvioleta",
+            "effect": "hide"
+          },
+          {
+            "target": "lluz",
+            "effect": "hide"
+          },
+          {
+            "target": "ldobla",
+            "effect": "hide"
+          },
+          {
+            "target": "lluvia",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "gotas",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "sol",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "inwhite",
+            "effect": "punch",
+            "trigger": "Dentro",
+            "amount": 0.4
+          },
+          {
+            "target": "whiteback",
+            "effect": "draw",
+            "trigger": "rebota",
+            "dur": 0.6,
+            "sfx": "boing"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              760,
+              230
+            ],
+            "amount": 1.6,
+            "dur": 0.8,
+            "trigger": "fondo"
+          },
+          {
+            "target": "lrebota",
+            "effect": "pop",
+            "trigger": "espejo",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "salir"
+          },
+          {
+            "target": "whiteout",
+            "effect": "draw",
+            "trigger": "salir",
+            "dur": 0.7,
+            "sfx": "whoosh"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "espejo",
+        "pose": "point",
+        "note": "Espejito, espejito…",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Los colores *se separan*",
+      "narration": "Pero cada color se dobla distinto: el violeta más que el rojo. Así se separan.",
+      "illustration": {
+        "svg_file": "gota.svg",
+        "caption": "Fig. 4 · Se abre en colores",
+        "anims": [
+          {
+            "target": "inwhite",
+            "effect": "hide"
+          },
+          {
+            "target": "whiteback",
+            "effect": "hide"
+          },
+          {
+            "target": "whiteout",
+            "effect": "hide"
+          },
+          {
+            "target": "ang",
+            "effect": "hide"
+          },
+          {
+            "target": "l42",
+            "effect": "hide"
+          },
+          {
+            "target": "lrebota",
+            "effect": "hide"
+          },
+          {
+            "target": "lluz",
+            "effect": "hide"
+          },
+          {
+            "target": "ldobla",
+            "effect": "hide"
+          },
+          {
+            "target": "lluvia",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "gotas",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "sol",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "fanin",
+            "effect": "draw",
+            "trigger": "color",
+            "dur": 0.5,
+            "sfx": "magia"
+          },
+          {
+            "target": "fanback",
+            "effect": "draw",
+            "trigger": "dobla",
+            "dur": 0.5
+          },
+          {
+            "target": "fanout",
+            "effect": "draw",
+            "trigger": "distinto",
+            "dur": 0.7
+          },
+          {
+            "target": "lvioleta",
+            "effect": "pop",
+            "trigger": "violeta",
+            "sfx": "pop"
+          },
+          {
+            "target": "lrojo",
+            "effect": "pop",
+            "trigger": "rojo",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              480,
+              520
+            ],
+            "amount": 1.4,
+            "dur": 0.8,
+            "trigger": "separan"
+          },
+          {
+            "target": "fanout",
+            "effect": "punch",
+            "trigger": "separan",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "El ángulo *mágico*",
+      "narration": "Y sale formando unos 42 grados con los rayos del Sol.",
+      "illustration": {
+        "svg_file": "gota.svg",
+        "caption": "Fig. 5 · Siempre 42°",
+        "anims": [
+          {
+            "target": "inwhite",
+            "effect": "hide"
+          },
+          {
+            "target": "whiteback",
+            "effect": "hide"
+          },
+          {
+            "target": "whiteout",
+            "effect": "hide"
+          },
+          {
+            "target": "lrebota",
+            "effect": "hide"
+          },
+          {
+            "target": "lvioleta",
+            "effect": "hide"
+          },
+          {
+            "target": "lluz",
+            "effect": "hide"
+          },
+          {
+            "target": "ldobla",
+            "effect": "hide"
+          },
+          {
+            "target": "lluvia",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "gotas",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "sol",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "fanout",
+            "effect": "punch",
+            "trigger": "sale",
+            "amount": 0.4
+          },
+          {
+            "target": "ang",
+            "effect": "draw",
+            "trigger": "formando",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              560,
+              500
+            ],
+            "amount": 1.4,
+            "dur": 0.8,
+            "trigger": "42"
+          },
+          {
+            "target": "l42",
+            "effect": "pop",
+            "trigger": "42",
+            "sfx": "ding"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "rayos"
+          },
+          {
+            "target": "beam",
+            "effect": "punch",
+            "trigger": "Sol",
+            "amount": 0.6
+          },
+          {
+            "target": "sol",
+            "effect": "punch",
+            "trigger": "Sol"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Tu *sombra* manda",
+      "narration": "Solo te mandan color las gotas a 42 grados de la sombra de tu cabeza.",
+      "illustration": {
+        "svg_file": "geometria.svg",
+        "caption": "Fig. 6 · Visto de lado",
+        "anims": [
+          {
+            "target": "lsuelo",
+            "effect": "hide"
+          },
+          {
+            "target": "lower",
+            "effect": "hide"
+          },
+          {
+            "target": "lluvia",
+            "effect": "drift",
+            "amount": 0.2
+          },
+          {
+            "target": "nube",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "sol",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "gotitas",
+            "effect": "float",
+            "amount": 0.3
+          },
+          {
+            "target": "sunray",
+            "effect": "draw",
+            "trigger": "mandan",
+            "dur": 0.6
+          },
+          {
+            "target": "toeye",
+            "effect": "draw",
+            "trigger": "color",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              330,
+              260
+            ],
+            "amount": 1.5,
+            "dur": 0.8,
+            "trigger": "gotas"
+          },
+          {
+            "target": "lgota",
+            "effect": "pop",
+            "trigger": "gotas",
+            "sfx": "pop"
+          },
+          {
+            "target": "gotar",
+            "effect": "punch",
+            "trigger": "gotas"
+          },
+          {
+            "target": "upline",
+            "effect": "draw",
+            "trigger": "42",
+            "dur": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "grados"
+          },
+          {
+            "target": "ang",
+            "effect": "draw",
+            "trigger": "grados",
+            "dur": 0.5
+          },
+          {
+            "target": "l42",
+            "effect": "pop",
+            "trigger": "grados",
+            "sfx": "ding"
+          },
+          {
+            "target": "anti",
+            "effect": "draw",
+            "trigger": "sombra",
+            "dur": 0.6
+          },
+          {
+            "target": "lsombra",
+            "effect": "pop",
+            "trigger": "sombra"
+          },
+          {
+            "target": "persona",
+            "effect": "punch",
+            "trigger": "cabeza",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Por eso es un *arco*",
+      "narration": "Esas gotas forman un círculo alrededor de tu sombra; el suelo lo corta y queda un arco.",
+      "illustration": {
+        "svg_file": "arcos.svg",
+        "caption": "Fig. 7 · Un círculo cortado",
+        "anims": [
+          {
+            "target": "sec",
+            "effect": "hide"
+          },
+          {
+            "target": "banda",
+            "effect": "hide"
+          },
+          {
+            "target": "lrojo1",
+            "effect": "hide"
+          },
+          {
+            "target": "lrojo2",
+            "effect": "hide"
+          },
+          {
+            "target": "lsec",
+            "effect": "hide"
+          },
+          {
+            "target": "lbanda",
+            "effect": "hide"
+          },
+          {
+            "target": "lluvia",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "arboles",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3
+          },
+          {
+            "target": "prim",
+            "effect": "punch",
+            "trigger": "gotas",
+            "amount": 0.5
+          },
+          {
+            "target": "circ",
+            "effect": "draw",
+            "trigger": "círculo",
+            "dur": 1.0,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "lsombra",
+            "effect": "pop",
+            "trigger": "sombra",
+            "sfx": "pop"
+          },
+          {
+            "target": "sombra",
+            "effect": "punch",
+            "trigger": "sombra"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              560
+            ],
+            "amount": 1.4,
+            "dur": 0.8,
+            "trigger": "suelo"
+          },
+          {
+            "target": "circ",
+            "effect": "pulse",
+            "trigger": "corta",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "arco"
+          },
+          {
+            "target": "prim",
+            "effect": "punch",
+            "trigger": "arco",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Cada uno, *el suyo*",
+      "narration": "Si te mueves, cambian las gotas que te sirven: cada persona ve su propio arcoíris.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 8 · Te sigue",
+        "anims": [
+          {
+            "target": "lluvia",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "nube",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "pajaros",
+            "effect": "float",
+            "amount": 0.8
+          },
+          {
+            "target": "arboles",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3
+          },
+          {
+            "target": "flores",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "rip1",
+            "effect": "ripple",
+            "phase": 0
+          },
+          {
+            "target": "rip2",
+            "effect": "ripple",
+            "phase": 0.5
+          },
+          {
+            "target": "persona",
+            "effect": "move",
+            "to": [
+              80,
+              -45
+            ],
+            "trigger": "mueves",
+            "dur": 1.4
+          },
+          {
+            "target": "arco",
+            "effect": "move",
+            "to": [
+              80,
+              0
+            ],
+            "trigger": "mueves",
+            "dur": 1.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              560,
+              320
+            ],
+            "amount": 1.25,
+            "dur": 0.8,
+            "trigger": "cambian"
+          },
+          {
+            "target": "arco",
+            "effect": "punch",
+            "trigger": "gotas",
+            "amount": 0.5
+          },
+          {
+            "target": "persona",
+            "effect": "punch",
+            "trigger": "persona",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "arcoíris"
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Uno por persona",
+          "tone": "accent",
+          "trigger": "propio"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Doble y *al revés*",
+      "narration": "Con dos rebotes dentro, sale un segundo arco más alto… con los colores al revés.",
+      "illustration": {
+        "svg_file": "arcos.svg",
+        "caption": "Fig. 9 · Doble arcoíris",
+        "anims": [
+          {
+            "target": "lsombra",
+            "effect": "hide"
+          },
+          {
+            "target": "banda",
+            "effect": "hide"
+          },
+          {
+            "target": "lbanda",
+            "effect": "hide"
+          },
+          {
+            "target": "circ",
+            "effect": "hide"
+          },
+          {
+            "target": "sec",
+            "effect": "hide"
+          },
+          {
+            "target": "lsec",
+            "effect": "hide"
+          },
+          {
+            "target": "lrojo1",
+            "effect": "hide"
+          },
+          {
+            "target": "lrojo2",
+            "effect": "hide"
+          },
+          {
+            "target": "lluvia",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "arboles",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3
+          },
+          {
+            "target": "prim",
+            "effect": "punch",
+            "trigger": "rebotes",
+            "amount": 0.5
+          },
+          {
+            "target": "sec",
+            "effect": "fade",
+            "trigger": "segundo",
+            "dur": 0.6,
+            "sfx": "magia"
+          },
+          {
+            "target": "lsec",
+            "effect": "pop",
+            "trigger": "alto",
+            "sfx": "pop"
+          },
+          {
+            "target": "lsec",
+            "effect": "hide",
+            "trigger": "colores"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              300,
+              280
+            ],
+            "amount": 1.5,
+            "dur": 0.8,
+            "trigger": "colores"
+          },
+          {
+            "target": "lrojo1",
+            "effect": "pop",
+            "trigger": "colores",
+            "sfx": "pop"
+          },
+          {
+            "target": "lrojo2",
+            "effect": "pop",
+            "trigger": "revés",
+            "sfx": "pop"
+          },
+          {
+            "target": "sec",
+            "effect": "punch",
+            "trigger": "revés",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "La banda *oscura*",
+      "narration": "Entre los dos arcos, el cielo se ve más oscuro: la banda de Alejandro.",
+      "illustration": {
+        "svg_file": "arcos.svg",
+        "caption": "Fig. 10 · Banda de Alejandro",
+        "anims": [
+          {
+            "target": "lsombra",
+            "effect": "hide"
+          },
+          {
+            "target": "circ",
+            "effect": "hide"
+          },
+          {
+            "target": "lrojo1",
+            "effect": "hide"
+          },
+          {
+            "target": "lrojo2",
+            "effect": "hide"
+          },
+          {
+            "target": "lsec",
+            "effect": "hide"
+          },
+          {
+            "target": "banda",
+            "effect": "hide"
+          },
+          {
+            "target": "lbanda",
+            "effect": "hide"
+          },
+          {
+            "target": "lluvia",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "arboles",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3
+          },
+          {
+            "target": "prim",
+            "effect": "punch",
+            "trigger": "arcos",
+            "amount": 0.4
+          },
+          {
+            "target": "sec",
+            "effect": "punch",
+            "trigger": "arcos",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              260
+            ],
+            "amount": 1.5,
+            "dur": 0.8,
+            "trigger": "cielo"
+          },
+          {
+            "target": "banda",
+            "effect": "fade",
+            "trigger": "oscuro",
+            "dur": 0.8
+          },
+          {
+            "target": "lbanda",
+            "effect": "pop",
+            "trigger": "Alejandro",
+            "sfx": "ding"
+          },
+          {
+            "target": "banda",
+            "effect": "pulse",
+            "trigger": "Alejandro",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "Te *toca*",
+      "narration": "Síguenos para más trucos. ¿Alguna vez has perseguido un arcoíris?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Alguna vez has *perseguido* un arcoíris?",
+          "trigger": "Alguna"
+        }
+      ]
+    }
+  ]
+}
