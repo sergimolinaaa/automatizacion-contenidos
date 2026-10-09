@@ -59,6 +59,35 @@ const Card: React.FC<{
   );
 };
 
+/** Llamada a seguir la cuenta: ficha de perfil cuyo botón pasa de SEGUIR a SIGUIENDO. */
+const Follow: React.FC<{ el: Extract<Element, { type: "follow" }>; ctx: Ctx }> = ({ el, ctx }) => {
+  const frame = useCurrentFrame();
+  const f = frame - sec(el.at);
+  const done = f > 22;
+  const press = f > 16 && f < 24 ? 0.9 : 1;
+  return (
+    <Card el={el} ctx={ctx} pad={22} style={{ borderRadius: 30 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
+        <div style={{ width: 96, height: 96, borderRadius: 48, background: colors.bg, border: `${border}px solid ${colors.ink}`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+          <span style={{ fontFamily: fonts.display, fontWeight: 900, fontSize: 30, color: colors.paper, lineHeight: 0.9, textAlign: "center" }}>EL<br />
+            <span style={{ background: colors.accent, color: colors.ink, padding: "0 4px" }}>ES…</span></span>
+        </div>
+        <div style={{ flex: 1 }}>
+          <div style={{ fontFamily: fonts.display, fontWeight: 900, fontSize: 46, color: colors.ink, lineHeight: 1 }}>{brand.handle}</div>
+          <div style={{ fontFamily: fonts.mono, fontWeight: 800, fontSize: 22, color: colors.ink, opacity: 0.7, marginTop: 8 }}>{el.text ?? brand.tagline}</div>
+        </div>
+        <div style={{
+          fontFamily: fonts.display, fontWeight: 900, fontSize: 34, padding: "14px 24px", borderRadius: 16,
+          border: `${border}px solid ${colors.ink}`, background: done ? colors.paper : colors.hot, color: colors.ink,
+          transform: `scale(${press})`, boxShadow: `6px 6px 0 ${colors.ink}`, whiteSpace: "nowrap",
+        }}>
+          {done ? "SIGUIENDO ✓" : "+ SEGUIR"}
+        </div>
+      </div>
+    </Card>
+  );
+};
+
 /** Pregunta final para comentarios: corta, del tema del vídeo, con un toque de humor. */
 const Ask: React.FC<{ el: Extract<Element, { type: "ask" }>; ctx: Ctx }> = ({ el, ctx }) => {
   const frame = useCurrentFrame();
@@ -323,6 +352,7 @@ export const ElementView: React.FC<{ el: Element; ctx: Ctx }> = ({ el, ctx }) =>
     case "tag": return <Tag el={el} ctx={ctx} />;
     case "quiz": return <Quiz el={el} ctx={ctx} />;
     case "ask": return <Ask el={el} ctx={ctx} />;
+    case "follow": return <Follow el={el} ctx={ctx} />;
     case "stamp": return <Stamp el={el} ctx={ctx} />;
     default: return null;
   }

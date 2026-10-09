@@ -1,5 +1,29 @@
 [
   {
+    "tema": "El experimento de la manta y el carrito: ¿cuándo sabe un bebé que su cuerpo es un obstáculo?",
+    "categoria": "psicologia",
+    "prioridad": true,
+    "pista": "Moore, Mealiea, Garon y Povinelli (2007, Infancy): el bebé debe empujar un carrito mientras está de pie sobre la manta atada a él; los mayores se bajan de la manta. Comprobar edades y resultados exactos."
+  },
+  {
+    "tema": "La trampa de la hormiga león: un embudo de arena del que no se sale",
+    "categoria": "animales",
+    "prioridad": true,
+    "pista": "larva enterrada al fondo de un cono de arena al ángulo de reposo; lanza arena para provocar avalanchas; mandíbulas huecas que inyectan enzimas. Gancho propio (no copiar: 'esta hormiga acaba de caer en...')."
+  },
+  {
+    "tema": "Por qué la punta del metro de cinta está suelta (y no está rota)",
+    "categoria": "objetos",
+    "prioridad": true,
+    "pista": "el gancho se desliza exactamente su propio grosor: medidas exteriores (tirando) e interiores (empujando) dan el cero real."
+  },
+  {
+    "tema": "Por qué una cerveza se desborda si golpeas su boca con otra botella",
+    "categoria": "cocina",
+    "prioridad": true,
+    "pista": "el golpe crea una onda de presión: cavitación, burbujas diminutas que colapsan y siembran miles de burbujas de CO2 que suben en forma de hongo (Rodríguez-Rodríguez et al., Physical Review Letters 2014)."
+  },
+  {
     "tema": "El pez arquero caza insectos disparando chorros de agua",
     "categoria": "animales",
     "hecho": true
@@ -228,5 +252,35 @@
     "tema": "Por qué nos crujen los nudillos",
     "categoria": "cuerpo",
     "pista": "burbuja de gas que se forma en el líquido sinovial (resonancia magnética, 2015)"
+  },
+  {
+    "tema": "Por qué el pan tostado cae casi siempre por el lado de la mantequilla",
+    "categoria": "fisica",
+    "pista": "altura de la mesa y velocidad de giro: da media vuelta antes de tocar el suelo (Matthews, 1995)"
+  },
+  {
+    "tema": "El efecto Stroop: por qué te cuesta decir el color de la palabra ROJO escrita en azul",
+    "categoria": "psicologia",
+    "pista": "lectura automática que interfiere; Stroop 1935"
+  },
+  {
+    "tema": "Por qué los botones de los cruces a veces no hacen nada",
+    "categoria": "objetos",
+    "pista": "botones placebo en algunos semáforos con ciclo automático; verificar ciudades"
+  },
+  {
+    "tema": "Por qué las palomitas explotan",
+    "categoria": "cocina",
+    "pista": "agua dentro del grano se convierte en vapor; la cáscara aguanta hasta ~180 °C y revienta; sonido por liberación de vapor (Virot y Ponomarenko 2015)"
+  },
+  {
+    "tema": "El efecto IKEA: valoramos más lo que montamos nosotros",
+    "categoria": "psicologia",
+    "pista": "Norton, Mochon y Ariely (2012)"
+  },
+  {
+    "tema": "Por qué el Velcro se pega",
+    "categoria": "objetos",
+    "pista": "ganchos y bucles; inspirado en los cardos (George de Mestral, 1941)"
   }
 ]

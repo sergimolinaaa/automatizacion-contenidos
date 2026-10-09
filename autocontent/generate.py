@@ -23,7 +23,7 @@ FALLBACK_BETA = "server-side-fallback-2026-07-01"
 CONTENT_DIR = ROOT / "content"
 TOPICS = ROOT / "data" / "temas.json"
 
-ELEMENT_TYPES = {"stat", "fact", "icon", "compare", "dots", "list", "scale", "tag", "stamp", "quiz", "ask"}
+ELEMENT_TYPES = {"stat", "fact", "icon", "compare", "dots", "list", "scale", "tag", "stamp", "quiz", "ask", "follow"}
 ICONS = {"atom", "earth", "moon", "sun", "paper", "dna", "brain", "drop", "bolt", "rocket", "clock", "eye", "bacteria",
          "star", "ruler", "heart", "fire", "snow", "magnet", "planet", "microscope", "leaf", "bone", "wave"}
 EFFECTS = {"pop", "fade", "draw", "grow", "slide-left", "slide-right", "slide-up", "slide-down", "float", "bob", "sway",
@@ -52,7 +52,7 @@ def _check_stop(msg) -> None:
 
 # ------------------------------------------------------------------ 1. tema
 
-CATEGORY_ORDER = ["animales", "plantas", "fisica", "cuerpo", "tierra"]
+CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra"]
 
 
 def _last_category() -> str | None:
@@ -68,6 +68,9 @@ def pick_topic() -> dict:
     """Siguiente tema pendiente, rotando de categoría respecto al último vídeo."""
     topics = json.loads(TOPICS.read_text(encoding="utf-8"))
     pending = [t for t in topics if not t.get("hecho")]
+    urgent = [t for t in pending if t.get("prioridad")]
+    if urgent:
+        return urgent[0]
     if not pending:
         return new_topic(topics)
     last = _last_category()
@@ -160,18 +163,20 @@ def _example() -> str:
 
 
 SYSTEM = """Eres el guionista, ilustrador y animador de «El truco es…», una cuenta de vídeos verticales (TikTok, Reels, Shorts)
-en español de España. Cada vídeo enseña algo de la naturaleza o la ciencia que parece magia y luego cuenta su truco.
+en español de España. Cada vídeo enseña algo que parece magia y luego cuenta su truco: naturaleza, animales, física, química de la cocina,
+psicología y experimentos famosos, cuerpo humano u objetos cotidianos con un diseño ingenioso. El gancho es propio (nunca copiado).
 Tono: cercano, con chispa y humor suave; frases cortas que se entienden a la primera; nada de relleno ni clickbait falso.
 NUNCA inventes datos: usa solo los de la ficha de investigación; si un dato está marcado como dudoso, no lo uses.
 
-ESTRUCTURA (unos 45-60 segundos, 140-190 palabras de narración en total, 9-12 escenas cortas de 1-2 frases: ritmo rápido):
+ESTRUCTURA (unos 40-55 segundos, 130-175 palabras de narración en total, 9-12 escenas cortas de 1-2 frases: ritmo rápido):
 - Escena 0, capítulo 0 "?": GANCHO. Lo increíble en una frase (máx. 12 palabras). Con ilustración.
 - Escena 1, capítulo 0: FIRMA (rápida). {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "El truco es…"}
 - Capítulos "1", "2", "3": el truco explicado paso a paso (1-2 escenas por capítulo). Usa ilustraciones de detalle.
 - Capítulo "+": 1-2 datos extra sorprendentes.
-- Capítulo "TÚ": UNA pregunta final corta (máx. 12 palabras) sobre el tema del vídeo, con gracia o un punto de humor,
-  que den ganas de contestar en comentarios (nada de encuestas genéricas ni "¿qué te flipa más?"). Escena de 2-3 segundos:
-  headline de 1-2 palabras ("*Confiesa*", "Te *toca*"...); narration = la pregunta (+ "Te leo." opcional); elements = [{"type":"ask","text":"la pregunta con *palabra clave*","trigger":primera palabra}].
+- Capítulo "TÚ" (escena final, unos 4-5 s): primero la llamada a seguir y luego UNA pregunta corta (máx. 12 palabras) sobre
+  el tema del vídeo, con gracia o un punto de humor, que den ganas de contestar (nada de encuestas genéricas).
+  narration = "Síguenos para más trucos. <pregunta>"; headline de 1-2 palabras ("*Confiesa*", "Te *toca*"...);
+  elements = [{"type":"follow","trigger":"Síguenos"}, {"type":"ask","text":"<pregunta con *palabra clave*>","trigger":<1ª palabra de la pregunta>}].
   Ejemplos de tono: "¿Qué superpoder animal te pedirías tú?", "Sinceramente: ¿tú te habrías hundido?".
 chapters siempre = ["?", "1", "2", "3", "+", "TÚ"]. Las escenas de capítulos numerados llevan "number" igual al capítulo.
 
@@ -193,7 +198,7 @@ TARJETAS (elements). Todas aceptan "trigger" (palabra EXACTA de la narración de
 - {"type":"scale","label"?,"from","to","progress":0-1,"marker"?}
 - {"type":"tag","text","tone":"accent|ink|hot"}
 - {"type":"stamp","text","tone":"accent|hot"}  (golpe: ¡PLAF!, ¡BANG!, MITO, FALSO...)
-- {"type":"ask","text":"pregunta final con *resaltado*"}  (solo en TÚ, sola)
+- {"type":"follow"} y {"type":"ask","text":"pregunta final con *resaltado*"}  (solo en TÚ)
 
 ILUSTRACIONES (svgs): estilo "pegatina realista": contornos de tinta #0B0B14 gruesos (6-9 px, stroke-linejoin round) en
 el primer plano, pero con VOLUMEN y DETALLE de ilustración profesional:
@@ -224,6 +229,8 @@ ANIMACIONES (anims): {"target": id, "effect", "trigger"?, "dur"?, "to"?: [dx, dy
 - CÁMARA: {"target": "camera", "effect": "zoom", "to": [x, y] del viewBox, "amount": 1.3-2, "trigger"?} acerca la cámara a ese
   punto; con "amount": 1 vuelve al plano general. Úsala 1-2 veces por escena para enseñar el detalle del que se habla.
 - Cuando reutilices un SVG en otra escena, oculta con "hide" lo que no toque mostrar.
+- TODAS las escenas (salvo la firma y la final TÚ) llevan ilustración: nada de escenas solo con tarjetas. Si una escena es un
+  dato o una cifra, ponla sobre un dibujo (puedes REUTILIZAR un SVG con otros zooms y otras anims, o hacer uno nuevo).
 - La ilustración debe verse COMPLETA desde el primer instante de la escena (nunca un panel vacío): usa entradas solo para
   detalles que se añaden (chorros, flechas, etiquetas, burbujas), no para el protagonista ni el fondo.
 - RITMO MUY DINÁMICO: cada escena con ilustración lleva 6-12 anims; algo nuevo pasa cada 1-1,5 s (zoom, punch, etiqueta,
@@ -318,6 +325,9 @@ def validate(script: dict) -> tuple[list[str], list[str]]:
         sig = SIGNATURE_LINE
         scenes[1].update({"chapter": 0, "signature": True, "headline": "El truco es…", "narration": sig})
         scenes[1].pop("illustration", None), scenes[1].pop("elements", None), scenes[1].pop("mascot", None)
+    for i, sc in enumerate(scenes[2:-1], start=2):
+        if not sc.get("illustration"):
+            errors.append(f"Escena {i}: todas las escenas (salvo firma y final) deben llevar ilustración.")
     if scenes and not scenes[0].get("illustration"):
         errors.append("La escena 0 (gancho) necesita ilustración.")
     words = sum(len(s.get("narration", "").split()) for s in scenes)

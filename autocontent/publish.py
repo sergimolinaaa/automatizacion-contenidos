@@ -23,7 +23,7 @@ STATE = ROOT / "data" / "publicaciones.json"
 PREVIEWS = ROOT / "previews"
 INTERVAL = timedelta(hours=2)
 MAX_QUEUE = 8  # publicaciones futuras por canal (el plan de Buffer permite 10)
-CATEGORY_ORDER = ["animales", "plantas", "fisica", "cuerpo", "tierra"]
+CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra"]
 
 
 # ------------------------------------------------------------------ Buffer GraphQL

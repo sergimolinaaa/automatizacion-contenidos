@@ -423,15 +423,65 @@
           "value": 15,
           "from": 1,
           "prefix": "×",
-          "note": "el peso de todo el insecto",
+          "note": "el peso del insecto",
           "trigger": "quince"
         }
       ],
-      "mascot": {
-        "trigger": "peso",
-        "pose": "cheer",
-        "note": "Y sin ir al gimnasio",
-        "side": "right"
+      "illustration": {
+        "svg_file": "tension.svg",
+        "caption": "Fig. 6 · Cada pata",
+        "anims": [
+          {
+            "target": "pull",
+            "effect": "hide"
+          },
+          {
+            "target": "ltira",
+            "effect": "hide"
+          },
+          {
+            "target": "lskin",
+            "effect": "hide"
+          },
+          {
+            "target": "lpeso",
+            "effect": "hide"
+          },
+          {
+            "target": "mols",
+            "effect": "shake",
+            "amount": 0.2
+          },
+          {
+            "target": "bonds",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              300
+            ],
+            "amount": 1.35
+          },
+          {
+            "target": "foot",
+            "effect": "punch",
+            "trigger": "pata"
+          },
+          {
+            "target": "weight",
+            "effect": "draw",
+            "trigger": "quince"
+          },
+          {
+            "target": "pull",
+            "effect": "pop",
+            "trigger": "peso"
+          }
+        ]
       }
     },
     {
@@ -712,26 +762,149 @@
       "narration": "Y unos parientes suyos viven en mitad del océano: casi los únicos insectos marinos del planeta.",
       "elements": [
         {
-          "type": "icon",
-          "icon": "wave",
-          "label": "Halobates",
-          "trigger": "océano"
-        },
-        {
-          "type": "fact",
-          "label": "Dato",
-          "text": "Pasan toda su vida sobre el mar abierto",
+          "type": "tag",
+          "text": "Género Halobates",
           "tone": "accent",
-          "trigger": "únicos"
+          "trigger": "océano"
         }
-      ]
+      ],
+      "illustration": {
+        "svg_file": "remo.svg",
+        "caption": "Fig. 8 · En mar abierto",
+        "anims": [
+          {
+            "target": "r01",
+            "effect": "ripple",
+            "phase": 0.0
+          },
+          {
+            "target": "r02",
+            "effect": "ripple",
+            "phase": 0.5
+          },
+          {
+            "target": "r11",
+            "effect": "ripple",
+            "phase": 0.17
+          },
+          {
+            "target": "r12",
+            "effect": "ripple",
+            "phase": 0.67
+          },
+          {
+            "target": "r21",
+            "effect": "ripple",
+            "phase": 0.34
+          },
+          {
+            "target": "r22",
+            "effect": "ripple",
+            "phase": 0.8400000000000001
+          },
+          {
+            "target": "r31",
+            "effect": "ripple",
+            "phase": 0.51
+          },
+          {
+            "target": "r32",
+            "effect": "ripple",
+            "phase": 1.01
+          },
+          {
+            "target": "r41",
+            "effect": "ripple",
+            "phase": 0.68
+          },
+          {
+            "target": "r42",
+            "effect": "ripple",
+            "phase": 1.1800000000000002
+          },
+          {
+            "target": "r51",
+            "effect": "ripple",
+            "phase": 0.8500000000000001
+          },
+          {
+            "target": "r52",
+            "effect": "ripple",
+            "phase": 1.35
+          },
+          {
+            "target": "vortex1",
+            "effect": "hide"
+          },
+          {
+            "target": "vortex2",
+            "effect": "hide"
+          },
+          {
+            "target": "push",
+            "effect": "hide"
+          },
+          {
+            "target": "lvortex",
+            "effect": "hide"
+          },
+          {
+            "target": "lremo",
+            "effect": "hide"
+          },
+          {
+            "target": "go",
+            "effect": "hide"
+          },
+          {
+            "target": "leaf",
+            "effect": "hide"
+          },
+          {
+            "target": "strider",
+            "effect": "drift",
+            "amount": 1.2
+          },
+          {
+            "target": "legtop",
+            "effect": "sway",
+            "origin": "bottom-left",
+            "amount": 1.5
+          },
+          {
+            "target": "legbot",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": -1.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              420,
+              350
+            ],
+            "amount": 1.4,
+            "trigger": "océano"
+          },
+          {
+            "target": "strider",
+            "effect": "punch",
+            "trigger": "marinos"
+          }
+        ]
+      }
     },
     {
       "chapter": 5,
       "number": "TÚ",
       "headline": "*Confiesa*",
-      "narration": "Sinceramente: ¿tú te habrías hundido a la primera? Te leo.",
+      "narration": "Síguenos para más trucos. Sinceramente: ¿tú te habrías hundido a la primera?",
       "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
         {
           "type": "ask",
           "text": "¿Tú te habrías *hundido* a la primera?",
