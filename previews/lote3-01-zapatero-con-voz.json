@@ -670,61 +670,71 @@
    "end": 45.64208300000001
   },
   {
-   "text": "Sinceramente:",
+   "text": "Síguenos",
    "start": 46.398666,
-   "end": 47.253916
+   "end": 46.924999
+  },
+  {
+   "text": "para",
+   "start": 46.935958,
+   "end": 47.089458
+  },
+  {
+   "text": "más",
+   "start": 47.100458,
+   "end": 47.275916
+  },
+  {
+   "text": "trucos.",
+   "start": 47.286833,
+   "end": 47.813166
+  },
+  {
+   "text": "Sinceramente:",
+   "start": 48.679375,
+   "end": 49.534625
   },
   {
    "text": "¿tú",
-   "start": 47.363583,
-   "end": 47.462249
+   "start": 49.644291,
+   "end": 49.742957000000004
   },
   {
    "text": "te",
-   "start": 47.47325,
-   "end": 47.571916
+   "start": 49.753958,
+   "end": 49.852624
   },
   {
    "text": "habrías",
-   "start": 47.582875,
-   "end": 47.922791000000004
+   "start": 49.863583,
+   "end": 50.203499
   },
   {
    "text": "hundido",
-   "start": 47.933791,
-   "end": 48.251791
+   "start": 50.214458,
+   "end": 50.532458
   },
   {
    "text": "a",
-   "start": 48.262708,
-   "end": 48.295583
+   "start": 50.543416,
+   "end": 50.576291
   },
   {
    "text": "la",
-   "start": 48.306583,
-   "end": 48.394291
+   "start": 50.587291,
+   "end": 50.674999
   },
   {
    "text": "primera?",
-   "start": 48.40525,
-   "end": 48.865791
-  },
-  {
-   "text": "Te",
-   "start": 49.622375,
-   "end": 49.786833
-  },
-  {
-   "text": "leo.",
-   "start": 49.797791,
-   "end": 50.137707
+   "start": 50.685958,
+   "end": 51.146499
   }
  ],
  "audio": "audio/voz.mp3",
  "music": "audio/music.wav",
  "musicVolume": 0.1,
  "outro": {
-  "at": 50.638,
+  "at": 51.646,
   "cta": "La naturaleza tiene trucos"
  },
  "sfx": "audio/sfx.wav",
@@ -733,6 +743,6 @@
   "badge": "¿CÓMO LO HACE?",
   "scene": 0
  },
- "duration": 53.238,
- "cover_offset_ms": 53538
+ "duration": 54.246,
+ "cover_offset_ms": 54546
 }
