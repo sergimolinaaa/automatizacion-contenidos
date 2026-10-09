@@ -2,96 +2,1074 @@
   "topic": "Cómo funcionan los géiseres",
   "categoria": "tierra",
   "title": "¿Cómo dispara agua un géiser? 💨",
-  "source": "Fuentes: USGS · Servicio de Parques Nacionales de EE. UU. (Yellowstone)",
-  "chapters": ["?", "1", "2", "3", "+", "TÚ"],
+  "source": "Fuentes: USGS · Servicio de Parques Nacionales de EE. UU. (Yellowstone, Old Faithful)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
   "outro_cta": "La Tierra también tiene trucos",
-  "cover": {"text": "La Tierra *escupe agua*", "badge": "¿Y ESO POR QUÉ?", "scene": 4},
+  "cover": {
+    "text": "La Tierra *escupe agua*",
+    "scene": 0
+  },
   "publish": {
-    "caption": "Un chorro de agua hirviendo que sale del suelo como un reloj 💨 ¿Sabes qué truco usa?",
-    "description": "Bajo un géiser hay una cámara de agua calentada por el magma. El peso del agua de encima sube su punto de ebullición, así que se calienta por encima de 100 °C sin hervir. Cuando un poco se convierte en vapor, la presión baja de golpe y todo hierve a la vez: ¡erupción! Fuente: USGS, Yellowstone NPS.",
-    "hashtags": ["geiser", "yellowstone", "geologia", "ciencia", "curiosidades", "eltrucoes"]
+    "caption": "Un chorro de agua hirviendo que sale del suelo como un reloj 💨 El truco: agua a más de 100 °C que no puede hervir… hasta que de golpe sí. ¿Esperarías hora y media para verlo?",
+    "description": "Bajo un géiser hay una cueva llena de agua de lluvia, unida a la superficie por un tubo estrecho y calentada por la roca que rodea al magma. El peso del agua de encima sube su punto de ebullición, así que se calienta por encima de 100 °C sin hervir. Cuando un poco se convierte en vapor y derrama agua por arriba, la presión baja y todo hierve de golpe: ¡erupción! Old Faithful, en Yellowstone, entra en erupción cada 60 a 110 minutos y lanza agua hasta 55 metros. Fuentes: USGS; Servicio de Parques Nacionales de EE. UU. (Yellowstone).",
+    "hashtags": [
+      "geiser",
+      "yellowstone",
+      "geologia",
+      "ciencia",
+      "curiosidades",
+      "eltrucoes"
+    ]
   },
   "scenes": [
     {
       "chapter": 0,
       "headline": "La Tierra *escupe agua*",
       "narration": "Hay sitios donde el suelo dispara agua hirviendo hacia el cielo.",
-      "illustration": {"svg_file": "geiser.svg", "caption": "Fig. 1 · Géiser", "anims": [
-        {"target": "lc", "effect": "hide"}, {"target": "lp", "effect": "hide"}, {"target": "lm", "effect": "hide"},
-        {"target": "heat", "effect": "flow", "amount": 0.6},
-        {"target": "bubbles", "effect": "float", "amount": 1.5},
-        {"target": "jet", "effect": "grow", "trigger": "dispara", "sfx": "chorro"},
-        {"target": "jet", "effect": "shake", "trigger": "hirviendo", "amount": 0.5},
-        {"target": "steam", "effect": "pop", "trigger": "cielo", "sfx": "none"},
-        {"target": "steam", "effect": "float", "trigger": "cielo"}
-      ]}
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 1 · Géiser",
+        "anims": [
+          {
+            "target": "poolfog",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "bison",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "people",
+            "effect": "bob",
+            "amount": 0.15
+          },
+          {
+            "target": "ruler",
+            "effect": "hide"
+          },
+          {
+            "target": "lalt",
+            "effect": "hide"
+          },
+          {
+            "target": "linterval",
+            "effect": "hide"
+          },
+          {
+            "target": "lyellow",
+            "effect": "hide"
+          },
+          {
+            "target": "puff",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              440
+            ],
+            "amount": 1.6,
+            "dur": 0.8
+          },
+          {
+            "target": "bison",
+            "effect": "punch",
+            "trigger": "suelo",
+            "amount": 0.5
+          },
+          {
+            "target": "puff",
+            "effect": "hide",
+            "trigger": "dispara"
+          },
+          {
+            "target": "jet",
+            "effect": "grow",
+            "trigger": "dispara",
+            "sfx": "chorro"
+          },
+          {
+            "target": "steam",
+            "effect": "fade",
+            "trigger": "dispara",
+            "dur": 0.9
+          },
+          {
+            "target": "steam",
+            "effect": "drift",
+            "trigger": "dispara",
+            "amount": 0.8
+          },
+          {
+            "target": "runoff",
+            "effect": "flow",
+            "trigger": "dispara",
+            "amount": 1.2
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.9,
+            "trigger": "dispara"
+          },
+          {
+            "target": "lhot",
+            "effect": "pop",
+            "trigger": "hirviendo",
+            "sfx": "pop"
+          },
+          {
+            "target": "jet",
+            "effect": "punch",
+            "trigger": "cielo",
+            "amount": 0.5
+          }
+        ]
+      }
     },
-    {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "¿Y eso por qué? El truco es…"},
     {
-      "chapter": 1, "number": "1",
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
       "headline": "Una olla *bajo tierra*",
-      "narration": "Bajo el géiser hay una cueva llena de agua, y debajo, roca calentada por el magma.",
-      "illustration": {"svg_file": "geiser.svg", "caption": "Fig. 2 · Por dentro", "anims": [
-        {"target": "jet", "effect": "hide"}, {"target": "steam", "effect": "hide"}, {"target": "lc", "effect": "hide"}, {"target": "lp", "effect": "hide"},
-        {"target": "chamber", "effect": "pulse", "trigger": "cueva", "amount": 1.4},
-        {"target": "lm", "effect": "pop", "trigger": "magma"},
-        {"target": "heat", "effect": "draw", "trigger": "calentada", "dur": 0.5},
-        {"target": "heat", "effect": "flow", "trigger": "magma"}
-      ]}
+      "narration": "Bajo el géiser hay una cueva llena de agua, unida a la superficie por un tubo estrecho.",
+      "illustration": {
+        "svg_file": "corte.svg",
+        "caption": "Fig. 2 · Por dentro",
+        "anims": [
+          {
+            "target": "jet",
+            "effect": "hide"
+          },
+          {
+            "target": "boil",
+            "effect": "hide"
+          },
+          {
+            "target": "vapor",
+            "effect": "hide"
+          },
+          {
+            "target": "spill",
+            "effect": "hide"
+          },
+          {
+            "target": "lvapor",
+            "effect": "hide"
+          },
+          {
+            "target": "infil",
+            "effect": "hide"
+          },
+          {
+            "target": "rain",
+            "effect": "hide"
+          },
+          {
+            "target": "heat",
+            "effect": "hide"
+          },
+          {
+            "target": "llluvia",
+            "effect": "hide"
+          },
+          {
+            "target": "lmagma",
+            "effect": "hide"
+          },
+          {
+            "target": "bubbles",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              480,
+              460
+            ],
+            "amount": 1.4,
+            "dur": 0.8,
+            "trigger": "cueva"
+          },
+          {
+            "target": "lcam",
+            "effect": "pop",
+            "trigger": "cueva",
+            "sfx": "pop"
+          },
+          {
+            "target": "chamber",
+            "effect": "punch",
+            "trigger": "llena",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              300
+            ],
+            "amount": 1.3,
+            "dur": 0.8,
+            "trigger": "superficie"
+          },
+          {
+            "target": "ltubo",
+            "effect": "pop",
+            "trigger": "tubo"
+          },
+          {
+            "target": "chamber",
+            "effect": "punch",
+            "trigger": "estrecho",
+            "amount": 0.3
+          }
+        ]
+      }
     },
     {
-      "chapter": 2, "number": "2",
-      "headline": "Más de *100 °C*… sin hervir",
-      "narration": "El peso del agua de encima la aprieta tanto que no puede hervir. Así se calienta por encima de los cien grados.",
-      "illustration": {"svg_file": "geiser.svg", "caption": "Fig. 3 · Agua sobrecalentada", "anims": [
-        {"target": "jet", "effect": "hide"}, {"target": "steam", "effect": "hide"}, {"target": "lm", "effect": "hide"},
-        {"target": "heat", "effect": "flow"},
-        {"target": "lp", "effect": "pop", "trigger": "peso"},
-        {"target": "chamber", "effect": "shake", "trigger": "aprieta", "amount": 0.6},
-        {"target": "lc", "effect": "pop", "trigger": "cien", "sfx": "sello"}
-      ]},
-      "mascot": {"trigger": "hervir", "pose": "explain", "note": "Como una olla exprés", "side": "right"}
+      "chapter": 1,
+      "number": "1",
+      "headline": "Lluvia *y fuego*",
+      "narration": "La lluvia se filtra hasta allí… y el magma calienta la roca que la rodea.",
+      "illustration": {
+        "svg_file": "corte.svg",
+        "caption": "Fig. 3 · Agua y calor",
+        "anims": [
+          {
+            "target": "jet",
+            "effect": "hide"
+          },
+          {
+            "target": "boil",
+            "effect": "hide"
+          },
+          {
+            "target": "vapor",
+            "effect": "hide"
+          },
+          {
+            "target": "spill",
+            "effect": "hide"
+          },
+          {
+            "target": "lvapor",
+            "effect": "hide"
+          },
+          {
+            "target": "ltubo",
+            "effect": "hide"
+          },
+          {
+            "target": "lcam",
+            "effect": "hide"
+          },
+          {
+            "target": "heat",
+            "effect": "hide"
+          },
+          {
+            "target": "bubbles",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "rain",
+            "effect": "pop",
+            "trigger": "lluvia",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "rain",
+            "effect": "float",
+            "trigger": "lluvia",
+            "amount": 0.5
+          },
+          {
+            "target": "llluvia",
+            "effect": "pop",
+            "trigger": "lluvia"
+          },
+          {
+            "target": "infil",
+            "effect": "draw",
+            "trigger": "filtra",
+            "dur": 1.1
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              420,
+              560
+            ],
+            "amount": 1.5,
+            "dur": 0.8,
+            "trigger": "magma"
+          },
+          {
+            "target": "lmagma",
+            "effect": "pop",
+            "trigger": "magma"
+          },
+          {
+            "target": "heat",
+            "effect": "pop",
+            "trigger": "calienta",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "heat",
+            "effect": "pulse",
+            "trigger": "calienta",
+            "amount": 1.0
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "rodea"
+          },
+          {
+            "target": "chamber",
+            "effect": "punch",
+            "trigger": "rodea",
+            "amount": 0.4
+          }
+        ]
+      }
     },
     {
-      "chapter": 3, "number": "3",
-      "headline": "Y de golpe… *¡fuuush!*",
-      "narration": "Cuando un poco se convierte en vapor, la presión baja de golpe… y toda el agua hierve a la vez. ¡Erupción!",
-      "illustration": {"svg_file": "geiser.svg", "caption": "Fig. 4 · Erupción", "anims": [
-        {"target": "lc", "effect": "hide"}, {"target": "lp", "effect": "hide"}, {"target": "lm", "effect": "hide"}, {"target": "steam", "effect": "hide"}, {"target": "jet", "effect": "hide"},
-        {"target": "heat", "effect": "flow"},
-        {"target": "bubbles", "effect": "move", "to": [0, -120], "trigger": "vapor", "dur": 0.6, "sfx": "burbujas"},
-        {"target": "chamber", "effect": "shake", "trigger": "baja"},
-        {"target": "jet", "effect": "grow", "trigger": "Erupción", "sfx": "chorro"},
-        {"target": "steam", "effect": "pop", "trigger": "Erupción", "sfx": "none"}
-      ]},
-      "elements": [{"type": "stamp", "text": "¡Fuuush!", "tone": "accent", "trigger": "Erupción"}]
+      "chapter": 2,
+      "number": "2",
+      "headline": "Aplastada *por el peso*",
+      "narration": "Pero el peso del agua de encima la aprieta tanto que no puede hervir.",
+      "illustration": {
+        "svg_file": "presion.svg",
+        "caption": "Fig. 4 · Presión",
+        "anims": [
+          {
+            "target": "hotter",
+            "effect": "hide"
+          },
+          {
+            "target": "lmas",
+            "effect": "hide"
+          },
+          {
+            "target": "heat",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "parcel",
+            "effect": "breathe",
+            "amount": 0.8
+          },
+          {
+            "target": "press1",
+            "effect": "pop",
+            "trigger": "peso",
+            "sfx": "pop"
+          },
+          {
+            "target": "lpeso",
+            "effect": "pop",
+            "trigger": "peso"
+          },
+          {
+            "target": "press2",
+            "effect": "pop",
+            "trigger": "agua"
+          },
+          {
+            "target": "press3",
+            "effect": "pop",
+            "trigger": "encima"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              420,
+              520
+            ],
+            "amount": 1.5,
+            "dur": 0.8,
+            "trigger": "aprieta"
+          },
+          {
+            "target": "squeeze",
+            "effect": "pop",
+            "trigger": "aprieta",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "squeeze",
+            "effect": "pulse",
+            "trigger": "aprieta",
+            "amount": 1.2
+          },
+          {
+            "target": "parcel",
+            "effect": "punch",
+            "trigger": "tanto"
+          },
+          {
+            "target": "nobubble",
+            "effect": "shake",
+            "trigger": "hervir",
+            "amount": 0.6
+          },
+          {
+            "target": "lnohierve",
+            "effect": "pop",
+            "trigger": "hervir"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "hervir",
+        "pose": "explain",
+        "note": "Como una olla exprés",
+        "side": "right"
+      }
     },
     {
-      "chapter": 4, "number": "+",
-      "headline": "Puntual *como un reloj*",
-      "narration": "El géiser más famoso, Old Faithful, en Yellowstone, entra en erupción más o menos cada hora y media.",
+      "chapter": 2,
+      "number": "2",
+      "headline": "Más de *100 °C*… y líquida",
+      "narration": "Así supera los cien grados… y sigue siendo líquida.",
       "elements": [
-        {"type": "stat", "label": "Old Faithful", "value": 90, "unit": "min", "note": "entre erupciones, de media", "trigger": "cada"},
-        {"type": "icon", "icon": "clock", "label": "Puntual", "trigger": "media"}
-      ]
+        {
+          "type": "tag",
+          "text": "Agua sobrecalentada",
+          "tone": "hot",
+          "trigger": "líquida"
+        }
+      ],
+      "illustration": {
+        "svg_file": "presion.svg",
+        "caption": "Fig. 5 · Sobrecalentada",
+        "anims": [
+          {
+            "target": "lpeso",
+            "effect": "hide"
+          },
+          {
+            "target": "lnohierve",
+            "effect": "hide"
+          },
+          {
+            "target": "heat",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "parcel",
+            "effect": "breathe",
+            "amount": 0.8
+          },
+          {
+            "target": "squeeze",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              760,
+              320
+            ],
+            "amount": 1.4,
+            "dur": 0.8,
+            "trigger": "supera"
+          },
+          {
+            "target": "hotter",
+            "effect": "grow",
+            "trigger": "supera",
+            "dur": 1.2,
+            "sfx": "magia"
+          },
+          {
+            "target": "mark100",
+            "effect": "punch",
+            "trigger": "cien"
+          },
+          {
+            "target": "lmas",
+            "effect": "pop",
+            "trigger": "grados"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "líquida"
+          },
+          {
+            "target": "parcel",
+            "effect": "punch",
+            "trigger": "líquida"
+          }
+        ]
+      }
     },
     {
-      "chapter": 4, "number": "+",
+      "chapter": 3,
+      "number": "3",
+      "headline": "Una *burbuja* lo cambia todo",
+      "narration": "Hasta que un poco se convierte en vapor, sube y derrama agua por arriba.",
+      "illustration": {
+        "svg_file": "corte.svg",
+        "caption": "Fig. 6 · Rebosa",
+        "anims": [
+          {
+            "target": "jet",
+            "effect": "hide"
+          },
+          {
+            "target": "boil",
+            "effect": "hide"
+          },
+          {
+            "target": "ltubo",
+            "effect": "hide"
+          },
+          {
+            "target": "lcam",
+            "effect": "hide"
+          },
+          {
+            "target": "llluvia",
+            "effect": "hide"
+          },
+          {
+            "target": "lmagma",
+            "effect": "hide"
+          },
+          {
+            "target": "infil",
+            "effect": "hide"
+          },
+          {
+            "target": "rain",
+            "effect": "hide"
+          },
+          {
+            "target": "spill",
+            "effect": "hide"
+          },
+          {
+            "target": "vapor",
+            "effect": "hide"
+          },
+          {
+            "target": "lvapor",
+            "effect": "hide"
+          },
+          {
+            "target": "heat",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "bubbles",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              330
+            ],
+            "amount": 1.35,
+            "dur": 0.8
+          },
+          {
+            "target": "vapor",
+            "effect": "pop",
+            "trigger": "vapor",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "lvapor",
+            "effect": "pop",
+            "trigger": "vapor"
+          },
+          {
+            "target": "lvapor",
+            "effect": "hide",
+            "trigger": "sube"
+          },
+          {
+            "target": "vapor",
+            "effect": "move",
+            "trigger": "sube",
+            "to": [
+              0,
+              -196
+            ],
+            "dur": 1.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              200
+            ],
+            "amount": 1.6,
+            "dur": 0.8,
+            "trigger": "derrama"
+          },
+          {
+            "target": "spill",
+            "effect": "pop",
+            "trigger": "derrama",
+            "sfx": "splash"
+          },
+          {
+            "target": "spill",
+            "effect": "flow",
+            "trigger": "arriba",
+            "amount": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Y de golpe… *¡fuuush!*",
+      "narration": "Pesa menos, la presión baja… y toda el agua hierve de golpe. ¡Erupción!",
+      "elements": [
+        {
+          "type": "stamp",
+          "text": "¡Fuuush!",
+          "tone": "hot",
+          "trigger": "Erupción",
+          "sfx": "sello"
+        }
+      ],
+      "illustration": {
+        "svg_file": "corte.svg",
+        "caption": "Fig. 7 · Erupción",
+        "anims": [
+          {
+            "target": "vapor",
+            "effect": "hide"
+          },
+          {
+            "target": "lvapor",
+            "effect": "hide"
+          },
+          {
+            "target": "ltubo",
+            "effect": "hide"
+          },
+          {
+            "target": "lcam",
+            "effect": "hide"
+          },
+          {
+            "target": "llluvia",
+            "effect": "hide"
+          },
+          {
+            "target": "lmagma",
+            "effect": "hide"
+          },
+          {
+            "target": "infil",
+            "effect": "hide"
+          },
+          {
+            "target": "rain",
+            "effect": "hide"
+          },
+          {
+            "target": "heat",
+            "effect": "pulse",
+            "amount": 1.0
+          },
+          {
+            "target": "bubbles",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "spill",
+            "effect": "flow",
+            "amount": 1.0
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              300
+            ],
+            "amount": 1.3,
+            "dur": 0.8
+          },
+          {
+            "target": "spill",
+            "effect": "punch",
+            "trigger": "Pesa",
+            "amount": 0.8
+          },
+          {
+            "target": "chamber",
+            "effect": "punch",
+            "trigger": "presión",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              440
+            ],
+            "amount": 1.3,
+            "dur": 0.6,
+            "trigger": "hierve"
+          },
+          {
+            "target": "boil",
+            "effect": "pop",
+            "trigger": "hierve",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "boil",
+            "effect": "shake",
+            "trigger": "hierve",
+            "amount": 0.8
+          },
+          {
+            "target": "chamber",
+            "effect": "shake",
+            "trigger": "golpe",
+            "amount": 0.8
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.6,
+            "trigger": "Erupción"
+          },
+          {
+            "target": "jet",
+            "effect": "grow",
+            "trigger": "Erupción",
+            "sfx": "chorro"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Puntual *como un reloj*",
+      "narration": "Old Faithful, el más famoso, entra en erupción cada 60 a 110 minutos… y lanza agua hasta 55 metros.",
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 8 · Old Faithful",
+        "anims": [
+          {
+            "target": "poolfog",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "bison",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "people",
+            "effect": "bob",
+            "amount": 0.15
+          },
+          {
+            "target": "puff",
+            "effect": "hide"
+          },
+          {
+            "target": "lhot",
+            "effect": "hide"
+          },
+          {
+            "target": "ruler",
+            "effect": "hide"
+          },
+          {
+            "target": "lalt",
+            "effect": "hide"
+          },
+          {
+            "target": "linterval",
+            "effect": "hide"
+          },
+          {
+            "target": "lyellow",
+            "effect": "hide"
+          },
+          {
+            "target": "steam",
+            "effect": "drift",
+            "amount": 0.8
+          },
+          {
+            "target": "runoff",
+            "effect": "flow",
+            "amount": 1.2
+          },
+          {
+            "target": "jet",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "jet",
+            "effect": "punch",
+            "trigger": "famoso",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              330
+            ],
+            "amount": 1.4,
+            "dur": 0.8,
+            "trigger": "Faithful"
+          },
+          {
+            "target": "jet",
+            "effect": "punch",
+            "trigger": "erupción",
+            "amount": 0.6
+          },
+          {
+            "target": "people",
+            "effect": "punch",
+            "trigger": "erupción",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.8,
+            "trigger": "minutos"
+          },
+          {
+            "target": "linterval",
+            "effect": "pop",
+            "trigger": "minutos",
+            "sfx": "tic"
+          },
+          {
+            "target": "ruler",
+            "effect": "draw",
+            "trigger": "lanza",
+            "dur": 1.2,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "lalt",
+            "effect": "pop",
+            "trigger": "metros",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
       "headline": "Son *rarísimos*",
-      "narration": "Y son rarísimos: en todo el planeta hay menos de mil, y casi la mitad están en Yellowstone.",
-      "elements": [{"type": "dots", "label": "Géiseres del mundo", "filled": 50, "total": 100, "caption": "de cada 100, en Yellowstone", "trigger": "mitad"}],
-      "mascot": {"trigger": "Yellowstone", "pose": "surprise", "note": "Un parque lleno de ollas", "side": "right"}
+      "narration": "Y son rarísimos: la mitad de los géiseres del planeta están en Yellowstone.",
+      "elements": [
+        {
+          "type": "stat",
+          "label": "Géiseres del planeta",
+          "value": 50,
+          "from": 0,
+          "unit": " %",
+          "note": "están en Yellowstone",
+          "trigger": "mitad"
+        }
+      ],
+      "illustration": {
+        "svg_file": "escena.svg",
+        "caption": "Fig. 9 · Un parque único",
+        "anims": [
+          {
+            "target": "poolfog",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "bison",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "people",
+            "effect": "bob",
+            "amount": 0.15
+          },
+          {
+            "target": "puff",
+            "effect": "hide"
+          },
+          {
+            "target": "lhot",
+            "effect": "hide"
+          },
+          {
+            "target": "ruler",
+            "effect": "hide"
+          },
+          {
+            "target": "lalt",
+            "effect": "hide"
+          },
+          {
+            "target": "linterval",
+            "effect": "hide"
+          },
+          {
+            "target": "lyellow",
+            "effect": "hide"
+          },
+          {
+            "target": "steam",
+            "effect": "drift",
+            "amount": 0.8
+          },
+          {
+            "target": "runoff",
+            "effect": "flow",
+            "amount": 1.2
+          },
+          {
+            "target": "jet",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              300
+            ],
+            "amount": 1.5,
+            "dur": 0.8
+          },
+          {
+            "target": "jet",
+            "effect": "punch",
+            "trigger": "rarísimos",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 1.0,
+            "trigger": "planeta"
+          },
+          {
+            "target": "lyellow",
+            "effect": "pop",
+            "trigger": "Yellowstone",
+            "sfx": "ding"
+          },
+          {
+            "target": "bison",
+            "effect": "punch",
+            "trigger": "Yellowstone",
+            "amount": 0.6
+          }
+        ]
+      }
     },
     {
-      "chapter": 5, "number": "TÚ",
-      "headline": "¿Qué te *flipa* más?",
-      "narration": "¿Qué te flipa más? Uno, el agua a más de cien grados. Dos, la erupción de golpe. Tres, lo puntual que es. Escríbelo en comentarios.",
-      "mascot": {"trigger": "Escríbelo", "pose": "wave", "note": "¡Te leo!", "side": "right"},
-      "elements": [{"type": "quiz", "trigger": "Uno", "footer": "Escribe 1, 2 o 3 en comentarios", "options": [
-        {"text": "Agua a +100 °C", "trigger": "Uno"},
-        {"text": "La erupción", "trigger": "Dos"},
-        {"text": "Lo puntual", "trigger": "Tres"}
-      ]}]
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos para más trucos. Sinceramente: ¿esperarías hora y media para ver un chorro?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Esperarías *hora y media* para ver un chorro?",
+          "trigger": "Sinceramente"
+        }
+      ]
     }
   ]
 }
