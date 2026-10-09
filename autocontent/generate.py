@@ -169,6 +169,8 @@ POLÍTICA ACTUAL: también el truco de las reglas detrás de la noticia (cómo s
 qué es un decreto ley...). NEUTRALIDAD TOTAL: explica el mecanismo con fuentes oficiales (Constitución, LOREG, BOE), sin opinar,
 sin favorecer ni ridiculizar a ningún partido o persona, sin caricaturas de políticos reales; en ejemplos numéricos usa partidos
 ficticios de colores. Fechas y cifras de actualidad, comprobadas el mismo día.
+Y DILO EXPLÍCITAMENTE: tras la firma, una frase corta tipo «Sin posicionarnos: solo cómo funciona.» con un sello/etiqueta
+visible «SIN POSICIONARNOS», y en el texto de publicación de cada red «Sin posicionarnos: solo explicamos cómo funciona.».
 Tono: cercano, con chispa y humor suave; frases cortas que se entienden a la primera; nada de relleno ni clickbait falso.
 NUNCA inventes datos: usa solo los de la ficha de investigación; si un dato está marcado como dudoso, no lo uses.
 
