@@ -202,7 +202,8 @@
   {
     "tema": "Por qué el hielo flota",
     "categoria": "fisica",
-    "pista": "al congelarse, el agua forma una red con huecos y es menos densa"
+    "pista": "al congelarse, el agua forma una red con huecos y es menos densa",
+    "hecho": true
   },
   {
     "tema": "Cómo se forman las auroras boreales",
@@ -218,7 +219,8 @@
   {
     "tema": "Por qué nos da hipo",
     "categoria": "cuerpo",
-    "pista": "espasmo del diafragma + cierre brusco de la glotis ('hip')"
+    "pista": "espasmo del diafragma + cierre brusco de la glotis ('hip')",
+    "hecho": true
   },
   {
     "tema": "Por qué se pone la piel de gallina",
