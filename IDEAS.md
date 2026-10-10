@@ -57,3 +57,8 @@ Cada idea lleva la pista del mecanismo a explicar; los datos se verifican antes 
 - **Las luciérnagas hacen luz sin calor**: bioluminiscencia: luciferina + luciferasa + oxígeno
 - **Los pingüinos emperador aguantan -40 °C**: se apiñan y rotan; plumas densas; intercambio de calor a contracorriente en las patas
 - **El pájaro carpintero golpea sin hacerse daño**: cerebro pequeño y bien encajado; golpes muy cortos (estudio de 2022: la cabeza actúa como martillo rígido)
+
+## Coches (3)
+- **Cómo funciona un motor de coche: miles de explosiones por minuto**: pistones, cilindros, bujía; 4 tiempos; comparaciones cotidianas
+- **Por qué el ABS evita que derrapes al frenar**: suelta y aprieta el freno muchas veces por segundo; rueda que gira = rueda que se puede dirigir
+- **Cómo el airbag se infla más rápido que un parpadeo**: sensor de aceleración y reacción química que libera gas en milisegundos

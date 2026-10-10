@@ -383,5 +383,20 @@
     "categoria": "politica",
     "prioridad": true,
     "pista": "Gancho: «A las 20:00 cierran los colegios y a las 23:00 ya sabes quién gana. ¿Cómo?». Escrutinio en cada mesa en público, acta, datos provisionales vs escrutinio general oficial días después por las Juntas Electorales. Generales del 29-N (RD 806/2026, BOE 6-10-2026): verifica fechas y cifras el mismo día con fuentes oficiales (JEC, BOE, LOREG, Correos, INE). Neutral: solo el mecanismo, partidos ficticios de colores, «Sin posicionarnos»."
+  },
+  {
+    "tema": "Cómo funciona un motor de coche: miles de explosiones por minuto",
+    "categoria": "objetos",
+    "pista": "pistones, cilindros, bujía; 4 tiempos (admisión, compresión, explosión, escape); comparaciones cotidianas"
+  },
+  {
+    "tema": "Por qué el ABS evita que derrapes al frenar",
+    "categoria": "objetos",
+    "pista": "sensores de giro de rueda; suelta y aprieta el freno muchas veces por segundo; rueda que gira = rueda que se puede dirigir"
+  },
+  {
+    "tema": "Cómo el airbag se infla más rápido que un parpadeo",
+    "categoria": "objetos",
+    "pista": "sensor de aceleración, reacción química que libera gas en milisegundos; verifica cifras"
   }
 ]

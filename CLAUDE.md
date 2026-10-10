@@ -15,6 +15,9 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 - 9-12 escenas, **135-150 palabras** (40-55 s), frases cortas. Voz Edge TTS a +25 % (`config.yaml`): ritmo rápido. Escena 1 = firma `{"chapter":0,"signature":true,"headline":"El truco es…","narration":"El truco es…"}`.
 - Final (capítulo 5 «TÚ», sin mascota): narración `"Síguenos para más trucos. <UNA pregunta corta y graciosa>"`,
   elements `[{"type":"follow","trigger":"Síguenos"},{"type":"ask","text":"¿… *clave* …?","trigger":"<1ª palabra de la pregunta>"}]`.
+- **Para todos, de 10 a 90 años**: cada palabra técnica, la primera vez que sale, va con una definición de pocas palabras o una
+  comparación cotidiana, en la narración y si cabe en una etiqueta («escaño: cada asiento del Congreso», «hipotálamo: el termostato
+  de tu cerebro», «el pistón es como la rodilla del motor»). Si se puede decir sin jerga, sin jerga.
 - Triggers = palabras EXACTAS de la narración de esa escena. Solo datos verdaderos y verificables (WebSearch si dudas).
 - Mascota (matraz): 1-2 cameos graciosos, nunca junto a ilustración + tarjetas.
 
