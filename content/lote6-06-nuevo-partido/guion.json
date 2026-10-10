@@ -1,0 +1,806 @@
+{
+  "topic": "Democracia 21, el partido presentado el 10 de octubre de 2026: qué propone según su presentación y qué necesita para presentarse a las generales del 29-N",
+  "categoria": "politica",
+  "title": "Nace un partido a 50 días del 29-N: ¿llega a tiempo? 🗳️",
+  "source": "Fuentes: LO 6/2002 de Partidos Políticos, arts. 3 y 4 · LOREG (LO 5/1985), arts. 44, 45 y 169.3 · BOE 6/10/2026 (Real Decreto 806/2026) · Presentación de Democracia 21 (10/10/2026, Antena 3) · Inscripción en el Registro de Partidos en junio de 2026 (Forbes, Ara)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Llega al *29-N*?",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-11T09:00:00+02:00",
+    "caption": "¿Le da tiempo a un partido recién presentado a llegar al 29-N? 🗳️ Democracia 21 se presentó el 10 de octubre: según su presentación, es reformista, busca consensos, quiere modernizar la democracia y «situar al ciudadano en el centro». Para ir a las urnas ya está inscrito en el Registro de Partidos; ahora debe presentar candidaturas del 21 al 26 de octubre y, sin escaños previos, reunir firmas de 1 de cada 1.000 votantes de cada provincia. Sin posicionarnos: solo explicamos cómo funciona. ¿Cómo se llamaría tu partido?",
+    "description": "Democracia 21, el partido presentado el 10 de octubre de 2026 por la abogada Miriam González, y qué necesita para concurrir a las elecciones generales del 29 de noviembre (Real Decreto 806/2026, BOE del 6 de octubre). 1) Según su presentación, se define como reformista y aboga por facilitar consensos, modernizar la democracia española y «situar al ciudadano en el centro». 2) Cómo nace un partido en España (Ley Orgánica 6/2002): sus promotores firman ante notario el acta fundacional, con los estatutos (sus normas internas), y la presentan en el Registro de Partidos Políticos del Ministerio del Interior, que tiene veinte días para inscribirlo; la inscripción le da personalidad jurídica. Democracia 21 figura inscrito desde junio de 2026. 3) Para el 29-N, cada partido presenta sus candidaturas (listas de candidatos por provincia) ante las juntas electorales del 21 al 26 de octubre. 4) Los partidos que no obtuvieron representación en ninguna de las Cámaras en las elecciones anteriores necesitan, además, las firmas del 0,1 % de los electores inscritos en el censo de cada circunscripción en la que se presenten (LOREG, art. 169.3). Sin posicionarnos: solo explicamos cómo funciona. Fuentes: LO 6/2002; LOREG, arts. 44, 45 y 169.3; BOE (Real Decreto 806/2026).",
+    "hashtags": [
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Nace un *partido*",
+      "narration": "Nace un partido a 50 días del 29-N. ¿Qué propone? ¿Llega a tiempo?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Presentación del 10 de octubre",
+        "anims": [
+          {
+            "target": "brillo",
+            "effect": "hide"
+          },
+          {
+            "target": "ideas",
+            "effect": "hide"
+          },
+          {
+            "target": "tideas",
+            "effect": "hide"
+          },
+          {
+            "target": "papeles",
+            "effect": "hide"
+          },
+          {
+            "target": "tpapeles",
+            "effect": "hide"
+          },
+          {
+            "target": "tnuevo",
+            "effect": "pop",
+            "trigger": "Nace",
+            "sfx": "ding"
+          },
+          {
+            "target": "confeti",
+            "effect": "pop",
+            "trigger": "Nace"
+          },
+          {
+            "target": "confeti",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "atril",
+            "effect": "punch",
+            "trigger": "partido",
+            "amount": 0.2
+          },
+          {
+            "target": "hoy",
+            "effect": "pop",
+            "trigger": "50",
+            "sfx": "pop"
+          },
+          {
+            "target": "flecha",
+            "effect": "draw",
+            "trigger": "días",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "t50",
+            "effect": "pop",
+            "trigger": "días",
+            "sfx": "pop"
+          },
+          {
+            "target": "nov",
+            "effect": "pop",
+            "trigger": "29-N",
+            "sfx": "sello"
+          },
+          {
+            "target": "tque",
+            "effect": "pop",
+            "trigger": "Qué",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "tque",
+            "effect": "wiggle",
+            "amount": 0.4
+          },
+          {
+            "target": "ttiempo",
+            "effect": "pop",
+            "trigger": "Llega",
+            "sfx": "pop"
+          },
+          {
+            "target": "nov",
+            "effect": "shake",
+            "trigger": "tiempo",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Ideas y *papeles*",
+      "narration": "El truco es… mirar ideas y papeles. Sin posicionarnos: solo te contamos qué propone.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "EL TRUCO ES…",
+          "trigger": "truco"
+        },
+        {
+          "type": "tag",
+          "text": "SIN POSICIONARNOS",
+          "tone": "ink",
+          "trigger": "posicionarnos"
+        }
+      ],
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 2 · Dos cosas que mirar",
+        "anims": [
+          {
+            "target": "tque",
+            "effect": "hide"
+          },
+          {
+            "target": "ttiempo",
+            "effect": "hide"
+          },
+          {
+            "target": "hoy",
+            "effect": "hide"
+          },
+          {
+            "target": "nov",
+            "effect": "hide"
+          },
+          {
+            "target": "flecha",
+            "effect": "hide"
+          },
+          {
+            "target": "t50",
+            "effect": "hide"
+          },
+          {
+            "target": "tnuevo",
+            "effect": "hide"
+          },
+          {
+            "target": "confeti",
+            "effect": "hide"
+          },
+          {
+            "target": "atril",
+            "effect": "hide"
+          },
+          {
+            "target": "brillo",
+            "effect": "hide"
+          },
+          {
+            "target": "ideas",
+            "effect": "hide"
+          },
+          {
+            "target": "tideas",
+            "effect": "hide"
+          },
+          {
+            "target": "papeles",
+            "effect": "hide"
+          },
+          {
+            "target": "tpapeles",
+            "effect": "hide"
+          },
+          {
+            "target": "ideas",
+            "effect": "pop",
+            "trigger": "ideas",
+            "sfx": "pop"
+          },
+          {
+            "target": "tideas",
+            "effect": "pop",
+            "trigger": "ideas"
+          },
+          {
+            "target": "brillo",
+            "effect": "pop",
+            "trigger": "ideas"
+          },
+          {
+            "target": "brillo",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "papeles",
+            "effect": "slide-up",
+            "trigger": "papeles",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "tpapeles",
+            "effect": "pop",
+            "trigger": "papeles"
+          },
+          {
+            "target": "papeles",
+            "effect": "bob",
+            "amount": 0.4
+          },
+          {
+            "target": "papeles",
+            "effect": "punch",
+            "trigger": "posicionarnos",
+            "amount": 0.2
+          },
+          {
+            "target": "ideas",
+            "effect": "punch",
+            "trigger": "propone",
+            "amount": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "*Democracia 21*",
+      "narration": "Se llama Democracia 21. Según su presentación, es reformista y busca consensos: acuerdos entre distintos.",
+      "illustration": {
+        "svg_file": "carteles.svg",
+        "caption": "Fig. 3 · Según su presentación",
+        "anims": [
+          {
+            "target": "nombre",
+            "effect": "hide"
+          },
+          {
+            "target": "tsegun",
+            "effect": "hide"
+          },
+          {
+            "target": "c1",
+            "effect": "hide"
+          },
+          {
+            "target": "c2",
+            "effect": "hide"
+          },
+          {
+            "target": "c3",
+            "effect": "hide"
+          },
+          {
+            "target": "c4",
+            "effect": "hide"
+          },
+          {
+            "target": "atril",
+            "effect": "breathe",
+            "amount": 0.2
+          },
+          {
+            "target": "nombre",
+            "effect": "pop",
+            "trigger": "Democracia",
+            "sfx": "ding"
+          },
+          {
+            "target": "nombre",
+            "effect": "punch",
+            "trigger": "21",
+            "amount": 0.15
+          },
+          {
+            "target": "tsegun",
+            "effect": "pop",
+            "trigger": "Según",
+            "sfx": "sello"
+          },
+          {
+            "target": "c1",
+            "effect": "pop",
+            "trigger": "reformista",
+            "sfx": "pop"
+          },
+          {
+            "target": "c1",
+            "effect": "wiggle",
+            "amount": 0.25
+          },
+          {
+            "target": "c2",
+            "effect": "pop",
+            "trigger": "consensos",
+            "sfx": "pop"
+          },
+          {
+            "target": "c2",
+            "effect": "punch",
+            "trigger": "acuerdos",
+            "amount": 0.2
+          },
+          {
+            "target": "c2",
+            "effect": "punch",
+            "trigger": "distintos",
+            "amount": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Lo que *propone*",
+      "narration": "Y propone modernizar la democracia y «situar al ciudadano en el centro».",
+      "illustration": {
+        "svg_file": "carteles.svg",
+        "caption": "Fig. 4 · Presentación del 10-oct-2026",
+        "anims": [
+          {
+            "target": "c3",
+            "effect": "hide"
+          },
+          {
+            "target": "c4",
+            "effect": "hide"
+          },
+          {
+            "target": "atril",
+            "effect": "breathe",
+            "amount": 0.2
+          },
+          {
+            "target": "atril",
+            "effect": "punch",
+            "trigger": "propone",
+            "amount": 0.2
+          },
+          {
+            "target": "c3",
+            "effect": "pop",
+            "trigger": "modernizar",
+            "sfx": "pop"
+          },
+          {
+            "target": "c3",
+            "effect": "punch",
+            "trigger": "democracia",
+            "amount": 0.2
+          },
+          {
+            "target": "c4",
+            "effect": "pop",
+            "trigger": "ciudadano",
+            "sfx": "pop"
+          },
+          {
+            "target": "c4",
+            "effect": "punch",
+            "trigger": "centro",
+            "amount": 0.25
+          },
+          {
+            "target": "c4",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "nombre",
+            "effect": "punch",
+            "trigger": "situar",
+            "amount": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Ya está *inscrito*",
+      "narration": "¿Y los papeles? Ya está inscrito, desde junio, en el Registro de Partidos.",
+      "illustration": {
+        "svg_file": "registro_free.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 5 · Ley de Partidos (LO 6/2002)",
+        "anims": [
+          {
+            "target": "tesc",
+            "effect": "hide"
+          },
+          {
+            "target": "tdefesc",
+            "effect": "hide"
+          },
+          {
+            "target": "firmas",
+            "effect": "hide"
+          },
+          {
+            "target": "boli",
+            "effect": "hide"
+          },
+          {
+            "target": "gente",
+            "effect": "hide"
+          },
+          {
+            "target": "uno",
+            "effect": "hide"
+          },
+          {
+            "target": "t1000",
+            "effect": "hide"
+          },
+          {
+            "target": "t01",
+            "effect": "hide"
+          },
+          {
+            "target": "tprov",
+            "effect": "hide"
+          },
+          {
+            "target": "tinterior",
+            "effect": "hide"
+          },
+          {
+            "target": "tjunio",
+            "effect": "hide"
+          },
+          {
+            "target": "sello",
+            "effect": "hide"
+          },
+          {
+            "target": "chk",
+            "effect": "hide"
+          },
+          {
+            "target": "tdni",
+            "effect": "hide"
+          },
+          {
+            "target": "carnet",
+            "effect": "slide-up",
+            "trigger": "papeles",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "carnet",
+            "effect": "bob",
+            "amount": 0.3
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "inscrito",
+            "sfx": "sello"
+          },
+          {
+            "target": "tjunio",
+            "effect": "pop",
+            "trigger": "junio",
+            "sfx": "ding"
+          },
+          {
+            "target": "tinterior",
+            "effect": "pop",
+            "trigger": "Registro",
+            "sfx": "pop"
+          },
+          {
+            "target": "tdni",
+            "effect": "pop",
+            "trigger": "Partidos",
+            "sfx": "pop"
+          },
+          {
+            "target": "chk",
+            "effect": "pop",
+            "trigger": "Partidos",
+            "sfx": "ding"
+          },
+          {
+            "target": "chk",
+            "effect": "pulse",
+            "amount": 0.5
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "inscrito",
+        "pose": "cheer",
+        "note": "¡Papeles en regla!",
+        "side": "left"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "*21-26 oct*",
+      "narration": "Para el 29-N, debe presentar candidatura, su lista por provincia, del 21 al 26 de octubre.",
+      "illustration": {
+        "svg_file": "calendario_full.svg",
+        "layout": "full",
+        "caption": "Fig. 6 · LOREG, art. 45 · RD 806/2026",
+        "anims": [
+          {
+            "target": "nota",
+            "effect": "hide"
+          },
+          {
+            "target": "rango",
+            "effect": "hide"
+          },
+          {
+            "target": "tplazo",
+            "effect": "hide"
+          },
+          {
+            "target": "lista",
+            "effect": "hide"
+          },
+          {
+            "target": "tdef",
+            "effect": "hide"
+          },
+          {
+            "target": "junta",
+            "effect": "hide"
+          },
+          {
+            "target": "fl",
+            "effect": "hide"
+          },
+          {
+            "target": "hoy",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "nota",
+            "effect": "pop",
+            "trigger": "29-N",
+            "sfx": "pop"
+          },
+          {
+            "target": "junta",
+            "effect": "pop",
+            "trigger": "presentar",
+            "sfx": "pop"
+          },
+          {
+            "target": "lista",
+            "effect": "slide-up",
+            "trigger": "candidatura",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "tdef",
+            "effect": "pop",
+            "trigger": "lista",
+            "sfx": "pop"
+          },
+          {
+            "target": "fl",
+            "effect": "draw",
+            "trigger": "provincia",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rango",
+            "effect": "pop",
+            "trigger": "21",
+            "sfx": "ding"
+          },
+          {
+            "target": "rango",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "tplazo",
+            "effect": "pop",
+            "trigger": "26",
+            "sfx": "sello"
+          },
+          {
+            "target": "junta",
+            "effect": "punch",
+            "trigger": "octubre",
+            "amount": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Firmas: *1 de cada 1.000*",
+      "narration": "Sin escaños previos, necesita firmas: una de cada mil votantes de la provincia.",
+      "illustration": {
+        "svg_file": "registro_free.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 7 · LOREG, art. 169.3",
+        "anims": [
+          {
+            "target": "tinterior",
+            "effect": "hide"
+          },
+          {
+            "target": "carnet",
+            "effect": "hide"
+          },
+          {
+            "target": "tjunio",
+            "effect": "hide"
+          },
+          {
+            "target": "sello",
+            "effect": "hide"
+          },
+          {
+            "target": "chk",
+            "effect": "hide"
+          },
+          {
+            "target": "tdni",
+            "effect": "hide"
+          },
+          {
+            "target": "tesc",
+            "effect": "hide"
+          },
+          {
+            "target": "tdefesc",
+            "effect": "hide"
+          },
+          {
+            "target": "firmas",
+            "effect": "hide"
+          },
+          {
+            "target": "boli",
+            "effect": "hide"
+          },
+          {
+            "target": "gente",
+            "effect": "hide"
+          },
+          {
+            "target": "uno",
+            "effect": "hide"
+          },
+          {
+            "target": "t1000",
+            "effect": "hide"
+          },
+          {
+            "target": "t01",
+            "effect": "hide"
+          },
+          {
+            "target": "tprov",
+            "effect": "hide"
+          },
+          {
+            "target": "tesc",
+            "effect": "pop",
+            "trigger": "escaños",
+            "sfx": "pop"
+          },
+          {
+            "target": "tdefesc",
+            "effect": "pop",
+            "trigger": "previos"
+          },
+          {
+            "target": "firmas",
+            "effect": "slide-right",
+            "trigger": "firmas",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "boli",
+            "effect": "pop",
+            "trigger": "firmas"
+          },
+          {
+            "target": "boli",
+            "effect": "wiggle",
+            "amount": 0.4
+          },
+          {
+            "target": "gente",
+            "effect": "fade",
+            "trigger": "una",
+            "dur": 0.4
+          },
+          {
+            "target": "uno",
+            "effect": "pop",
+            "trigger": "cada",
+            "sfx": "ding"
+          },
+          {
+            "target": "uno",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "t1000",
+            "effect": "pop",
+            "trigger": "mil",
+            "sfx": "pop"
+          },
+          {
+            "target": "t01",
+            "effect": "pop",
+            "trigger": "votantes"
+          },
+          {
+            "target": "tprov",
+            "effect": "pop",
+            "trigger": "provincia",
+            "sfx": "sello"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Cómo se llamaría tu partido?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Cómo se llamaría *tu partido*?",
+          "trigger": "Cómo"
+        }
+      ]
+    }
+  ]
+}
