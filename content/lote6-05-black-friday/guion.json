@@ -1,0 +1,717 @@
+{
+  "topic": "Cómo saber si una oferta del Black Friday (27 de noviembre de 2026) es falsa: la regla del precio anterior más bajo de los últimos 30 días",
+  "categoria": "consumo",
+  "title": "¿Esa rebaja del Black Friday es de verdad? 🏷️",
+  "source": "Fuentes: Ley 7/1996 de Ordenación del Comercio Minorista, art. 20.1 (redacción del Real Decreto-ley 24/2021, art. 85) · Directiva (UE) 2019/2161 · Ejemplo con precios ficticios",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Rebajas *de mentira*",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "¿Y si tu «-50 %» del Black Friday cuesta lo mismo que hace un mes? 🏷️ El truco: subir el precio unas semanas antes y luego «rebajarlo». En España, el precio tachado debe ser el más bajo de los 30 días anteriores. Haz captura del precio o mira su historial. ¿Te la han colado alguna vez?",
+    "description": "Cómo saber si una oferta del Black Friday (27 de noviembre de 2026) es falsa. 1) El truco: subir el precio unas semanas antes y después anunciar una gran «rebaja» que te deja en el precio de siempre (ejemplo con precios ficticios: de 50 a 100 € y vuelta a 50 € con un «-50 %»). 2) En España, cuando una tienda anuncia una reducción de precio, el precio anterior que muestra debe ser el más bajo que aplicó a ese mismo producto en los 30 días anteriores (Ley 7/1996 de Ordenación del Comercio Minorista, art. 20.1, en la redacción del Real Decreto-ley 24/2021, que aplica la Directiva europea 2019/2161). 3) Cómo comprobarlo: haz captura del precio (con fecha) unas semanas antes o consulta su historial de precios. 4) Si no cuadra, pide la hoja de reclamaciones o acude a consumo. Fuentes: Ley 7/1996, art. 20; Real Decreto-ley 24/2021 (BOE).",
+    "hashtags": [
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Rebaja *de verdad*?",
+      "narration": "Este Black Friday, muchas rebajas no son rebajas.",
+      "illustration": {
+        "svg_file": "etiqueta_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Un «chollo»",
+        "anims": [
+          {
+            "target": "viejo50",
+            "effect": "hide"
+          },
+          {
+            "target": "t2sem",
+            "effect": "hide"
+          },
+          {
+            "target": "tdef",
+            "effect": "hide"
+          },
+          {
+            "target": "cero",
+            "effect": "hide"
+          },
+          {
+            "target": "falsa",
+            "effect": "hide"
+          },
+          {
+            "target": "banner",
+            "effect": "pulse",
+            "amount": 0.35
+          },
+          {
+            "target": "badge",
+            "effect": "punch",
+            "trigger": "Black",
+            "amount": 0.25,
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "muchas",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "amount": 0.6
+          },
+          {
+            "target": "badge",
+            "effect": "spin",
+            "amount": 0.15
+          },
+          {
+            "target": "bolsas",
+            "effect": "sway",
+            "amount": 0.4
+          },
+          {
+            "target": "etiqueta",
+            "effect": "shake",
+            "trigger": "no",
+            "amount": 0.5
+          },
+          {
+            "target": "falsa",
+            "effect": "pop",
+            "trigger": "no",
+            "sfx": "sello"
+          },
+          {
+            "target": "falsa",
+            "effect": "punch",
+            "trigger": "son",
+            "amount": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Subir… y *rebajar*",
+      "narration": "El truco es… subir el precio unas semanas antes, y luego «rebajarlo».",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "EL TRUCO ES…",
+          "trigger": "truco"
+        }
+      ],
+      "illustration": {
+        "svg_file": "grafica.svg",
+        "caption": "Fig. 2 · Precio día a día",
+        "anims": [
+          {
+            "target": "p50",
+            "effect": "hide"
+          },
+          {
+            "target": "igual",
+            "effect": "hide"
+          },
+          {
+            "target": "ventana",
+            "effect": "hide"
+          },
+          {
+            "target": "t30",
+            "effect": "hide"
+          },
+          {
+            "target": "minimo",
+            "effect": "hide"
+          },
+          {
+            "target": "tmin",
+            "effect": "hide"
+          },
+          {
+            "target": "tley",
+            "effect": "hide"
+          },
+          {
+            "target": "l1",
+            "effect": "draw",
+            "dur": 0.8
+          },
+          {
+            "target": "bf",
+            "effect": "pop",
+            "trigger": "truco",
+            "sfx": "pop"
+          },
+          {
+            "target": "l2",
+            "effect": "draw",
+            "trigger": "subir",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "p100",
+            "effect": "pop",
+            "trigger": "precio",
+            "sfx": "pop"
+          },
+          {
+            "target": "p100",
+            "effect": "punch",
+            "trigger": "semanas",
+            "amount": 0.2
+          },
+          {
+            "target": "l3",
+            "effect": "draw",
+            "trigger": "rebajarlo",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "m50",
+            "effect": "pop",
+            "trigger": "rebajarlo",
+            "sfx": "ding"
+          },
+          {
+            "target": "m50",
+            "effect": "pulse",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Pagas *lo mismo*",
+      "narration": "Costaba 50. Lo suben a 100… y vuelve a 50 con un «menos 50 %». Pagas lo mismo.",
+      "illustration": {
+        "svg_file": "grafica.svg",
+        "caption": "Fig. 3 · Precios ficticios",
+        "anims": [
+          {
+            "target": "p50",
+            "effect": "hide"
+          },
+          {
+            "target": "p100",
+            "effect": "hide"
+          },
+          {
+            "target": "m50",
+            "effect": "hide"
+          },
+          {
+            "target": "igual",
+            "effect": "hide"
+          },
+          {
+            "target": "ventana",
+            "effect": "hide"
+          },
+          {
+            "target": "t30",
+            "effect": "hide"
+          },
+          {
+            "target": "minimo",
+            "effect": "hide"
+          },
+          {
+            "target": "tmin",
+            "effect": "hide"
+          },
+          {
+            "target": "tley",
+            "effect": "hide"
+          },
+          {
+            "target": "p50",
+            "effect": "pop",
+            "trigger": "Costaba",
+            "sfx": "pop"
+          },
+          {
+            "target": "l1",
+            "effect": "punch",
+            "trigger": "Costaba",
+            "amount": 0.15
+          },
+          {
+            "target": "l2",
+            "effect": "punch",
+            "trigger": "suben",
+            "amount": 0.15
+          },
+          {
+            "target": "p100",
+            "effect": "pop",
+            "trigger": "100",
+            "sfx": "pop"
+          },
+          {
+            "target": "l3",
+            "effect": "punch",
+            "trigger": "vuelve",
+            "amount": 0.15
+          },
+          {
+            "target": "m50",
+            "effect": "pop",
+            "trigger": "menos",
+            "sfx": "ding"
+          },
+          {
+            "target": "bf",
+            "effect": "punch",
+            "trigger": "menos",
+            "amount": 0.2
+          },
+          {
+            "target": "igual",
+            "effect": "pop",
+            "trigger": "mismo",
+            "sfx": "sello"
+          },
+          {
+            "target": "igual",
+            "effect": "pulse",
+            "amount": 0.4
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "Pagas",
+        "pose": "surprise",
+        "note": "¡Qué morro!",
+        "side": "left"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "La regla de *30 días*",
+      "narration": "En España hay una ley: el precio tachado debe ser el más bajo de los últimos 30 días.",
+      "illustration": {
+        "svg_file": "grafica.svg",
+        "caption": "Fig. 4 · Ley 7/1996, art. 20",
+        "anims": [
+          {
+            "target": "igual",
+            "effect": "hide"
+          },
+          {
+            "target": "ventana",
+            "effect": "hide"
+          },
+          {
+            "target": "t30",
+            "effect": "hide"
+          },
+          {
+            "target": "minimo",
+            "effect": "hide"
+          },
+          {
+            "target": "tmin",
+            "effect": "hide"
+          },
+          {
+            "target": "tley",
+            "effect": "hide"
+          },
+          {
+            "target": "tley",
+            "effect": "pop",
+            "trigger": "ley",
+            "sfx": "sello"
+          },
+          {
+            "target": "m50",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "p100",
+            "effect": "shake",
+            "trigger": "tachado",
+            "amount": 0.5
+          },
+          {
+            "target": "ventana",
+            "effect": "fade",
+            "trigger": "últimos",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "t30",
+            "effect": "pop",
+            "trigger": "30",
+            "sfx": "pop"
+          },
+          {
+            "target": "minimo",
+            "effect": "pop",
+            "trigger": "bajo",
+            "sfx": "ding"
+          },
+          {
+            "target": "tmin",
+            "effect": "pop",
+            "trigger": "bajo"
+          },
+          {
+            "target": "minimo",
+            "effect": "pulse",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Tachado = *50 €*",
+      "narration": "Si hace dos semanas costaba 50, el tachado tiene que decir 50. Rebaja: cero.",
+      "illustration": {
+        "svg_file": "etiqueta_full.svg",
+        "layout": "full",
+        "caption": "Fig. 5 · Lo que exige la ley",
+        "anims": [
+          {
+            "target": "viejo50",
+            "effect": "hide"
+          },
+          {
+            "target": "t2sem",
+            "effect": "hide"
+          },
+          {
+            "target": "tdef",
+            "effect": "hide"
+          },
+          {
+            "target": "cero",
+            "effect": "hide"
+          },
+          {
+            "target": "falsa",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "bolsas",
+            "effect": "sway",
+            "amount": 0.4
+          },
+          {
+            "target": "t2sem",
+            "effect": "pop",
+            "trigger": "hace",
+            "sfx": "pop"
+          },
+          {
+            "target": "t2sem",
+            "effect": "hide",
+            "trigger": "tachado"
+          },
+          {
+            "target": "tdef",
+            "effect": "pop",
+            "trigger": "tachado",
+            "sfx": "pop"
+          },
+          {
+            "target": "viejo",
+            "effect": "hide",
+            "trigger": "decir"
+          },
+          {
+            "target": "viejo50",
+            "effect": "pop",
+            "trigger": "decir",
+            "sfx": "papel"
+          },
+          {
+            "target": "badge",
+            "effect": "shake",
+            "trigger": "Rebaja",
+            "amount": 0.6
+          },
+          {
+            "target": "badge",
+            "effect": "hide",
+            "trigger": "cero"
+          },
+          {
+            "target": "cero",
+            "effect": "pop",
+            "trigger": "cero",
+            "sfx": "sello"
+          },
+          {
+            "target": "etiqueta",
+            "effect": "punch",
+            "trigger": "cero",
+            "amount": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Haz *captura*",
+      "narration": "Tu truco: haz captura del precio semanas antes. O mira su historial: lo que costó cada día.",
+      "illustration": {
+        "svg_file": "movil_free.svg",
+        "layout": "free",
+        "height": 840,
+        "caption": "Fig. 6 · Tus pruebas",
+        "anims": [
+          {
+            "target": "hoja",
+            "effect": "hide"
+          },
+          {
+            "target": "nocuadra",
+            "effect": "hide"
+          },
+          {
+            "target": "this",
+            "effect": "hide"
+          },
+          {
+            "target": "this2",
+            "effect": "hide"
+          },
+          {
+            "target": "this3",
+            "effect": "hide"
+          },
+          {
+            "target": "flash",
+            "effect": "hide"
+          },
+          {
+            "target": "pico",
+            "effect": "hide"
+          },
+          {
+            "target": "telefono",
+            "effect": "slide-up",
+            "dur": 0.5
+          },
+          {
+            "target": "tcap",
+            "effect": "pop",
+            "trigger": "captura",
+            "sfx": "pop"
+          },
+          {
+            "target": "flash",
+            "effect": "fade",
+            "trigger": "captura",
+            "dur": 0.15
+          },
+          {
+            "target": "flash",
+            "effect": "hide",
+            "trigger": "precio"
+          },
+          {
+            "target": "tfecha",
+            "effect": "pop",
+            "trigger": "semanas",
+            "sfx": "pop"
+          },
+          {
+            "target": "lupa",
+            "effect": "pop",
+            "trigger": "mira",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lupa",
+            "effect": "sway",
+            "amount": 0.5
+          },
+          {
+            "target": "curva",
+            "effect": "draw",
+            "trigger": "historial",
+            "dur": 0.8
+          },
+          {
+            "target": "this",
+            "effect": "pop",
+            "trigger": "historial",
+            "sfx": "ding"
+          },
+          {
+            "target": "this2",
+            "effect": "pop",
+            "trigger": "costó"
+          },
+          {
+            "target": "pico",
+            "effect": "pop",
+            "trigger": "costó",
+            "sfx": "pop"
+          },
+          {
+            "target": "this3",
+            "effect": "pop",
+            "trigger": "día"
+          },
+          {
+            "target": "pico",
+            "effect": "pulse",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "¿No *cuadra*?",
+      "narration": "¿No cuadra? Pide la hoja de reclamaciones.",
+      "illustration": {
+        "svg_file": "movil_free.svg",
+        "layout": "free",
+        "height": 840,
+        "caption": "Fig. 7 · Tu derecho",
+        "anims": [
+          {
+            "target": "this",
+            "effect": "hide"
+          },
+          {
+            "target": "this2",
+            "effect": "hide"
+          },
+          {
+            "target": "this3",
+            "effect": "hide"
+          },
+          {
+            "target": "flash",
+            "effect": "hide"
+          },
+          {
+            "target": "tcap",
+            "effect": "hide"
+          },
+          {
+            "target": "tfecha",
+            "effect": "hide"
+          },
+          {
+            "target": "lupa",
+            "effect": "hide"
+          },
+          {
+            "target": "hoja",
+            "effect": "hide"
+          },
+          {
+            "target": "nocuadra",
+            "effect": "hide"
+          },
+          {
+            "target": "pico",
+            "effect": "pulse",
+            "amount": 0.7
+          },
+          {
+            "target": "telefono",
+            "effect": "shake",
+            "trigger": "No",
+            "amount": 0.4
+          },
+          {
+            "target": "nocuadra",
+            "effect": "pop",
+            "trigger": "cuadra",
+            "sfx": "sello"
+          },
+          {
+            "target": "hoja",
+            "effect": "slide-left",
+            "trigger": "hoja",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "hoja",
+            "effect": "punch",
+            "trigger": "reclamaciones",
+            "amount": 0.2
+          },
+          {
+            "target": "nocuadra",
+            "effect": "punch",
+            "trigger": "reclamaciones",
+            "amount": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Cuántas gangas has pagado a precio normal?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Cuántas *gangas* has pagado a precio normal?",
+          "trigger": "Cuántas"
+        }
+      ]
+    }
+  ]
+}

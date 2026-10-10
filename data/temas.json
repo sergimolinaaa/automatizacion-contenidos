@@ -403,7 +403,8 @@
     "tema": "Black Friday: cómo saber si una oferta es falsa",
     "categoria": "consumo",
     "pista": "El 27-N es Black Friday. Subir el precio antes para 'rebajarlo'; ley española: el precio anterior de referencia es el más bajo de los 30 días previos (Ley de Ordenación del Comercio Minorista, art. 20, verificar). Truco: historial de precios.",
-    "prioridad": true
+    "prioridad": true,
+    "hecho": true
   },
   {
     "tema": "Por qué los precios acaban en ,99",
