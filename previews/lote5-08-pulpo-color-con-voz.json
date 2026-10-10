@@ -1,0 +1,727 @@
+{
+ "source": "Fuentes: Messenger, Biological Reviews 76 (2001) · Mäthger et al., J. R. Soc. Interface 6 (2009) · Ramirez & Oakley, J. Exp. Biol. 218 (2015)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "Mira",
+   "start": 0.1,
+   "end": 0.505708
+  },
+  {
+   "text": "esta",
+   "start": 0.516666,
+   "end": 0.724999
+  },
+  {
+   "text": "roca.",
+   "start": 0.735958,
+   "end": 1.174541
+  },
+  {
+   "text": "Ahora…",
+   "start": 1.935958,
+   "end": 2.407458
+  },
+  {
+   "text": "¡es",
+   "start": 2.539041,
+   "end": 2.659666
+  },
+  {
+   "text": "un",
+   "start": 2.670625,
+   "end": 2.769291
+  },
+  {
+   "text": "pulpo!",
+   "start": 2.78025,
+   "end": 3.196916
+  },
+  {
+   "text": "Ha",
+   "start": 3.964458,
+   "end": 4.106999
+  },
+  {
+   "text": "cambiado",
+   "start": 4.118,
+   "end": 4.523708
+  },
+  {
+   "text": "de",
+   "start": 4.534666,
+   "end": 4.611415999999999
+  },
+  {
+   "text": "color",
+   "start": 4.622375,
+   "end": 4.885541
+  },
+  {
+   "text": "en",
+   "start": 4.8965,
+   "end": 4.973249999999999
+  },
+  {
+   "text": "menos",
+   "start": 4.984208,
+   "end": 5.2583329999999995
+  },
+  {
+   "text": "de",
+   "start": 5.269291,
+   "end": 5.356999
+  },
+  {
+   "text": "un",
+   "start": 5.368,
+   "end": 5.488625000000001
+  },
+  {
+   "text": "segundo.",
+   "start": 5.499541,
+   "end": 5.992957
+  },
+  {
+   "text": "El",
+   "start": 6.749541,
+   "end": 7.001749
+  },
+  {
+   "text": "truco",
+   "start": 7.012708,
+   "end": 7.341666
+  },
+  {
+   "text": "es…",
+   "start": 7.352625,
+   "end": 7.637708
+  },
+  {
+   "text": "Su",
+   "start": 8.40525,
+   "end": 8.613583
+  },
+  {
+   "text": "piel",
+   "start": 8.624541,
+   "end": 8.810957
+  },
+  {
+   "text": "tiene",
+   "start": 8.821916,
+   "end": 9.019290999999999
+  },
+  {
+   "text": "miles",
+   "start": 9.03025,
+   "end": 9.326291000000001
+  },
+  {
+   "text": "de",
+   "start": 9.337291,
+   "end": 9.414041000000001
+  },
+  {
+   "text": "saquitos",
+   "start": 9.425,
+   "end": 9.841666
+  },
+  {
+   "text": "de",
+   "start": 9.852625,
+   "end": 9.929375
+  },
+  {
+   "text": "pigmento:",
+   "start": 9.940333,
+   "end": 10.455666
+  },
+  {
+   "text": "amarillo,",
+   "start": 10.59825,
+   "end": 11.091666
+  },
+  {
+   "text": "rojo",
+   "start": 11.22325,
+   "end": 11.54125
+  },
+  {
+   "text": "y",
+   "start": 11.552208,
+   "end": 11.596083
+  },
+  {
+   "text": "marrón.",
+   "start": 11.607,
+   "end": 12.023665999999999
+  },
+  {
+   "text": "Son",
+   "start": 12.78025,
+   "end": 13.087250000000001
+  },
+  {
+   "text": "los",
+   "start": 13.09825,
+   "end": 13.229833
+  },
+  {
+   "text": "cromatóforos.",
+   "start": 13.240791,
+   "end": 14.030249
+  },
+  {
+   "text": "Cada",
+   "start": 14.797791,
+   "end": 15.060957
+  },
+  {
+   "text": "saquito",
+   "start": 15.071916,
+   "end": 15.455707
+  },
+  {
+   "text": "está",
+   "start": 15.466666,
+   "end": 15.674999
+  },
+  {
+   "text": "rodeado",
+   "start": 15.685958,
+   "end": 16.091666
+  },
+  {
+   "text": "de",
+   "start": 16.102625,
+   "end": 16.179375
+  },
+  {
+   "text": "músculos.",
+   "start": 16.190333,
+   "end": 16.760499
+  },
+  {
+   "text": "Si",
+   "start": 17.528083,
+   "end": 17.736416
+  },
+  {
+   "text": "se",
+   "start": 17.747375,
+   "end": 17.857041000000002
+  },
+  {
+   "text": "contraen,",
+   "start": 17.868,
+   "end": 18.372374999999998
+  },
+  {
+   "text": "lo",
+   "start": 18.503958,
+   "end": 18.613624
+  },
+  {
+   "text": "estiran",
+   "start": 18.624541,
+   "end": 19.019291
+  },
+  {
+   "text": "y",
+   "start": 19.03025,
+   "end": 19.074125
+  },
+  {
+   "text": "el",
+   "start": 19.085083,
+   "end": 19.172791
+  },
+  {
+   "text": "color",
+   "start": 19.183791,
+   "end": 19.490790999999998
+  },
+  {
+   "text": "se",
+   "start": 19.50175,
+   "end": 19.611416000000002
+  },
+  {
+   "text": "extiende.",
+   "start": 19.622375,
+   "end": 20.159666
+  },
+  {
+   "text": "Esos",
+   "start": 20.960083,
+   "end": 21.321916
+  },
+  {
+   "text": "músculos",
+   "start": 21.332875,
+   "end": 21.7605
+  },
+  {
+   "text": "los",
+   "start": 21.7715,
+   "end": 21.914041
+  },
+  {
+   "text": "manda",
+   "start": 21.925,
+   "end": 22.210083
+  },
+  {
+   "text": "el",
+   "start": 22.221041,
+   "end": 22.341666
+  },
+  {
+   "text": "cerebro",
+   "start": 22.352625,
+   "end": 22.7035
+  },
+  {
+   "text": "con",
+   "start": 22.714458,
+   "end": 22.856999000000002
+  },
+  {
+   "text": "nervios",
+   "start": 22.868,
+   "end": 23.196958
+  },
+  {
+   "text": "directos.",
+   "start": 23.207875,
+   "end": 23.767083000000003
+  },
+  {
+   "text": "Por",
+   "start": 24.523666,
+   "end": 24.731999
+  },
+  {
+   "text": "eso",
+   "start": 24.743,
+   "end": 24.907458
+  },
+  {
+   "text": "basta",
+   "start": 24.918416,
+   "end": 25.181582
+  },
+  {
+   "text": "menos",
+   "start": 25.192541,
+   "end": 25.477624
+  },
+  {
+   "text": "de",
+   "start": 25.488583,
+   "end": 25.565333
+  },
+  {
+   "text": "un",
+   "start": 25.576333,
+   "end": 25.696958000000002
+  },
+  {
+   "text": "segundo.",
+   "start": 25.707875,
+   "end": 26.21225
+  },
+  {
+   "text": "Debajo",
+   "start": 26.979833,
+   "end": 27.462291
+  },
+  {
+   "text": "hay",
+   "start": 27.47325,
+   "end": 27.571916
+  },
+  {
+   "text": "más",
+   "start": 27.582875,
+   "end": 27.747333
+  },
+  {
+   "text": "trucos:",
+   "start": 27.758333,
+   "end": 28.196916
+  },
+  {
+   "text": "los",
+   "start": 28.317541,
+   "end": 28.492998999999998
+  },
+  {
+   "text": "iridóforos,",
+   "start": 28.503958,
+   "end": 29.107041000000002
+  },
+  {
+   "text": "capas",
+   "start": 29.238583,
+   "end": 29.545582999999997
+  },
+  {
+   "text": "que",
+   "start": 29.556583,
+   "end": 29.644291
+  },
+  {
+   "text": "reflejan",
+   "start": 29.65525,
+   "end": 30.082874999999998
+  },
+  {
+   "text": "la",
+   "start": 30.093875,
+   "end": 30.170625
+  },
+  {
+   "text": "luz",
+   "start": 30.181583,
+   "end": 30.389916
+  },
+  {
+   "text": "en",
+   "start": 30.400875,
+   "end": 30.477625
+  },
+  {
+   "text": "azules",
+   "start": 30.488583,
+   "end": 30.894291
+  },
+  {
+   "text": "y",
+   "start": 30.90525,
+   "end": 30.949125
+  },
+  {
+   "text": "verdes.",
+   "start": 30.960083,
+   "end": 31.453499
+  },
+  {
+   "text": "Y",
+   "start": 32.221041,
+   "end": 32.352624
+  },
+  {
+   "text": "los",
+   "start": 32.363583,
+   "end": 32.517083
+  },
+  {
+   "text": "leucóforos,",
+   "start": 32.528083,
+   "end": 33.164041000000005
+  },
+  {
+   "text": "blancos,",
+   "start": 33.262708,
+   "end": 33.76708300000001
+  },
+  {
+   "text": "devuelven",
+   "start": 33.909666,
+   "end": 34.348249
+  },
+  {
+   "text": "la",
+   "start": 34.359208,
+   "end": 34.435958
+  },
+  {
+   "text": "luz",
+   "start": 34.446916,
+   "end": 34.644291
+  },
+  {
+   "text": "que",
+   "start": 34.65525,
+   "end": 34.742958
+  },
+  {
+   "text": "llega:",
+   "start": 34.753958,
+   "end": 35.071957999999995
+  },
+  {
+   "text": "toman",
+   "start": 35.2035,
+   "end": 35.466666
+  },
+  {
+   "text": "el",
+   "start": 35.477625,
+   "end": 35.565333
+  },
+  {
+   "text": "color",
+   "start": 35.576333,
+   "end": 35.872374
+  },
+  {
+   "text": "del",
+   "start": 35.883333,
+   "end": 36.003958
+  },
+  {
+   "text": "entorno.",
+   "start": 36.014916,
+   "end": 36.541249
+  },
+  {
+   "text": "El",
+   "start": 37.308791,
+   "end": 37.517124
+  },
+  {
+   "text": "misterio:",
+   "start": 37.528083,
+   "end": 37.999583
+  },
+  {
+   "text": "sus",
+   "start": 38.120166,
+   "end": 38.284624
+  },
+  {
+   "text": "ojos",
+   "start": 38.295625,
+   "end": 38.514916
+  },
+  {
+   "text": "probablemente",
+   "start": 38.525875,
+   "end": 39.161833
+  },
+  {
+   "text": "no",
+   "start": 39.172791,
+   "end": 39.282456999999994
+  },
+  {
+   "text": "distinguen",
+   "start": 39.293416,
+   "end": 39.764916
+  },
+  {
+   "text": "colores.",
+   "start": 39.775875,
+   "end": 40.335083
+  },
+  {
+   "text": "¿Cómo",
+   "start": 41.091666,
+   "end": 41.376749
+  },
+  {
+   "text": "los",
+   "start": 41.387708,
+   "end": 41.541208000000005
+  },
+  {
+   "text": "imita,",
+   "start": 41.552208,
+   "end": 41.892124
+  },
+  {
+   "text": "entonces?",
+   "start": 42.012708,
+   "end": 42.637708
+  },
+  {
+   "text": "Una",
+   "start": 43.40525,
+   "end": 43.679375
+  },
+  {
+   "text": "pista:",
+   "start": 43.690333,
+   "end": 44.063124
+  },
+  {
+   "text": "su",
+   "start": 44.19475,
+   "end": 44.304415999999996
+  },
+  {
+   "text": "piel",
+   "start": 44.315333,
+   "end": 44.512708
+  },
+  {
+   "text": "tiene",
+   "start": 44.523666,
+   "end": 44.753916
+  },
+  {
+   "text": "opsinas,",
+   "start": 44.764916,
+   "end": 45.280249
+  },
+  {
+   "text": "las",
+   "start": 45.378958,
+   "end": 45.554415999999996
+  },
+  {
+   "text": "proteínas",
+   "start": 45.565333,
+   "end": 46.047791000000004
+  },
+  {
+   "text": "del",
+   "start": 46.058791,
+   "end": 46.190374
+  },
+  {
+   "text": "ojo",
+   "start": 46.201333,
+   "end": 46.365791
+  },
+  {
+   "text": "que",
+   "start": 46.37675,
+   "end": 46.475416
+  },
+  {
+   "text": "captan",
+   "start": 46.486416,
+   "end": 46.804415999999996
+  },
+  {
+   "text": "la",
+   "start": 46.815333,
+   "end": 46.892083
+  },
+  {
+   "text": "luz.",
+   "start": 46.903083,
+   "end": 47.188166
+  },
+  {
+   "text": "Pero",
+   "start": 47.955708,
+   "end": 48.218874
+  },
+  {
+   "text": "el",
+   "start": 48.229833,
+   "end": 48.306582999999996
+  },
+  {
+   "text": "enigma",
+   "start": 48.317541,
+   "end": 48.657457
+  },
+  {
+   "text": "sigue",
+   "start": 48.668416,
+   "end": 48.920624000000004
+  },
+  {
+   "text": "abierto.",
+   "start": 48.931583,
+   "end": 49.43595800000001
+  },
+  {
+   "text": "Síguenos",
+   "start": 50.2035,
+   "end": 50.729833
+  },
+  {
+   "text": "para",
+   "start": 50.740791,
+   "end": 50.894291
+  },
+  {
+   "text": "más",
+   "start": 50.90525,
+   "end": 51.080708
+  },
+  {
+   "text": "trucos.",
+   "start": 51.091666,
+   "end": 51.617999
+  },
+  {
+   "text": "Si",
+   "start": 52.484208,
+   "end": 52.692541000000006
+  },
+  {
+   "text": "fueras",
+   "start": 52.7035,
+   "end": 52.988583
+  },
+  {
+   "text": "pulpo,",
+   "start": 52.999541,
+   "end": 53.372332
+  },
+  {
+   "text": "¿de",
+   "start": 53.493,
+   "end": 53.591666000000004
+  },
+  {
+   "text": "qué",
+   "start": 53.602625,
+   "end": 53.712291
+  },
+  {
+   "text": "color",
+   "start": 53.72325,
+   "end": 53.997375
+  },
+  {
+   "text": "te",
+   "start": 54.008333,
+   "end": 54.085083
+  },
+  {
+   "text": "pondrías",
+   "start": 54.096041,
+   "end": 54.534624
+  },
+  {
+   "text": "ahora",
+   "start": 54.545625,
+   "end": 54.775875
+  },
+  {
+   "text": "mismo?",
+   "start": 54.786833,
+   "end": 55.170624000000004
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 55.671,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Cambia de color *en un instante*",
+  "scene": 0
+ },
+ "duration": 58.271,
+ "cover_offset_ms": 58571
+}
