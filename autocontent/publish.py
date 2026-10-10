@@ -10,6 +10,7 @@ Variables: BUFFER_API_KEY, MEDIA_REPO, GH_TOKEN (con permiso de escritura en MED
 
 import json
 import os
+import re
 import subprocess
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -26,6 +27,7 @@ TZ = ZoneInfo("Europe/Madrid")
 SLOTS = (9, 14, 21)  # horas locales de publicación: mañana, mediodía y tarde-noche
 MIN_GAP = timedelta(hours=2)  # separación mínima con la publicación anterior
 MAX_QUEUE = 8  # publicaciones futuras por canal (el plan de Buffer permite 10)
+HASHTAG = "#eltrucoes"
 CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra", "politica"]
 
 
@@ -164,10 +166,10 @@ def interleave(items: list[dict]) -> list[dict]:
 
 def caption(script: dict, service: str) -> str:
     pub = script.get("publish", {})
-    tags = " ".join(f"#{h}" for h in pub.get("hashtags", []))
-    if service.lower() == "youtube":
-        return f"{pub.get('description', script['title'])}\n\n{tags} #shorts"
-    return f"{pub.get('caption', script['title'])}\n\n{tags}"
+    # Solo nuestro hashtag: se ignoran los del guion y se quitan los que vengan dentro del texto.
+    text = pub.get("description" if service.lower() == "youtube" else "caption", script["title"])
+    text = re.sub(r"[ \t]*#\w+", "", text).strip()
+    return f"{text}\n\n{HASHTAG}"
 
 
 def refresh_hosted(state: dict) -> None:
