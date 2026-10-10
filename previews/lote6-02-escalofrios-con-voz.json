@@ -1,0 +1,778 @@
+{
+ "source": "Fuentes: fisiología de la termorregulación y la fiebre (hipotálamo, prostaglandina E2) · Salimpoor et al., Nature Neuroscience (2011), Universidad McGill",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "Pianobert",
+   "start": 0.1,
+   "end": 0.582458
+  },
+  {
+   "text": "nos",
+   "start": 0.593416,
+   "end": 0.757874
+  },
+  {
+   "text": "pregunta:",
+   "start": 0.768875,
+   "end": 1.229416
+  },
+  {
+   "text": "¿y",
+   "start": 1.371916,
+   "end": 1.393832
+  },
+  {
+   "text": "los",
+   "start": 1.404833,
+   "end": 1.569291
+  },
+  {
+   "text": "escalofríos?",
+   "start": 1.58025,
+   "end": 2.314916
+  },
+  {
+   "text": "Te",
+   "start": 3.065333,
+   "end": 3.251749
+  },
+  {
+   "text": "explicamos",
+   "start": 3.262708,
+   "end": 3.832874
+  },
+  {
+   "text": "el",
+   "start": 3.843875,
+   "end": 3.953541
+  },
+  {
+   "text": "truco.",
+   "start": 3.964458,
+   "end": 4.381124
+  },
+  {
+   "text": "El",
+   "start": 5.159666,
+   "end": 5.411873999999999
+  },
+  {
+   "text": "truco",
+   "start": 5.422791,
+   "end": 5.751749
+  },
+  {
+   "text": "es…",
+   "start": 5.762708,
+   "end": 6.047791
+  },
+  {
+   "text": "En",
+   "start": 6.815333,
+   "end": 7.045583
+  },
+  {
+   "text": "tu",
+   "start": 7.056583,
+   "end": 7.1552489999999995
+  },
+  {
+   "text": "cerebro,",
+   "start": 7.166208,
+   "end": 7.6047910000000005
+  },
+  {
+   "text": "el",
+   "start": 7.7035,
+   "end": 7.846041
+  },
+  {
+   "text": "hipotálamo",
+   "start": 7.857,
+   "end": 8.3285
+  },
+  {
+   "text": "funciona",
+   "start": 8.339458,
+   "end": 8.788999
+  },
+  {
+   "text": "como",
+   "start": 8.8,
+   "end": 8.997375
+  },
+  {
+   "text": "un",
+   "start": 9.008333,
+   "end": 9.106999
+  },
+  {
+   "text": "termostato:",
+   "start": 9.118,
+   "end": 9.743
+  },
+  {
+   "text": "quiere",
+   "start": 9.863583,
+   "end": 10.082874
+  },
+  {
+   "text": "tenerte",
+   "start": 10.093875,
+   "end": 10.488625
+  },
+  {
+   "text": "a",
+   "start": 10.499541,
+   "end": 10.554374000000001
+  },
+  {
+   "text": "unos",
+   "start": 10.565333,
+   "end": 11.957915900000001
+  },
+  {
+   "text": "37",
+   "start": 11.957915900000001,
+   "end": 12.357915900000002
+  },
+  {
+   "text": "grados.",
+   "start": 12.357915900000002,
+   "end": 12.714458
+  },
+  {
+   "text": "Si",
+   "start": 12.714458,
+   "end": 12.933749
+  },
+  {
+   "text": "te",
+   "start": 12.94475,
+   "end": 13.043416
+  },
+  {
+   "text": "enfrías,",
+   "start": 13.054375,
+   "end": 13.580708
+  },
+  {
+   "text": "da",
+   "start": 13.679375,
+   "end": 13.778041
+  },
+  {
+   "text": "la",
+   "start": 13.789041,
+   "end": 13.920624
+  },
+  {
+   "text": "orden:",
+   "start": 13.931583,
+   "end": 14.315374
+  },
+  {
+   "text": "tus",
+   "start": 14.468875,
+   "end": 14.611416
+  },
+  {
+   "text": "músculos",
+   "start": 14.622375,
+   "end": 15.039041
+  },
+  {
+   "text": "se",
+   "start": 15.05,
+   "end": 15.137708
+  },
+  {
+   "text": "contraen",
+   "start": 15.148666,
+   "end": 15.598207
+  },
+  {
+   "text": "y",
+   "start": 15.609208,
+   "end": 15.653083
+  },
+  {
+   "text": "relajan",
+   "start": 15.664041,
+   "end": 16.091666
+  },
+  {
+   "text": "sin",
+   "start": 16.102625,
+   "end": 16.256125
+  },
+  {
+   "text": "parar,",
+   "start": 16.267125,
+   "end": 16.574125
+  },
+  {
+   "text": "muy",
+   "start": 16.705708,
+   "end": 16.870166
+  },
+  {
+   "text": "rápido.",
+   "start": 16.881125,
+   "end": 17.374541
+  },
+  {
+   "text": "Eso",
+   "start": 18.164041,
+   "end": 18.492999
+  },
+  {
+   "text": "es",
+   "start": 18.503958,
+   "end": 18.602624000000002
+  },
+  {
+   "text": "tiritar:",
+   "start": 18.613583,
+   "end": 19.019291
+  },
+  {
+   "text": "un",
+   "start": 19.172791,
+   "end": 19.249541
+  },
+  {
+   "text": "movimiento",
+   "start": 19.260541,
+   "end": 19.775874
+  },
+  {
+   "text": "que",
+   "start": 19.786833,
+   "end": 19.885499000000003
+  },
+  {
+   "text": "no",
+   "start": 19.8965,
+   "end": 20.006166
+  },
+  {
+   "text": "te",
+   "start": 20.017125,
+   "end": 20.104833
+  },
+  {
+   "text": "lleva",
+   "start": 20.115791,
+   "end": 20.346041000000003
+  },
+  {
+   "text": "a",
+   "start": 20.357,
+   "end": 20.400875
+  },
+  {
+   "text": "ningún",
+   "start": 20.411833,
+   "end": 20.740791
+  },
+  {
+   "text": "sitio,",
+   "start": 20.75175,
+   "end": 21.091666
+  },
+  {
+   "text": "pero",
+   "start": 21.212291,
+   "end": 21.387749
+  },
+  {
+   "text": "fabrica",
+   "start": 21.398666,
+   "end": 21.749540999999997
+  },
+  {
+   "text": "calor.",
+   "start": 21.760541,
+   "end": 22.122374
+  },
+  {
+   "text": "¿Y",
+   "start": 22.911833,
+   "end": 23.043416
+  },
+  {
+   "text": "con",
+   "start": 23.054375,
+   "end": 23.240791
+  },
+  {
+   "text": "fiebre?",
+   "start": 23.25175,
+   "end": 23.690333000000003
+  },
+  {
+   "text": "Tus",
+   "start": 24.457875,
+   "end": 24.633333
+  },
+  {
+   "text": "defensas",
+   "start": 24.644291,
+   "end": 25.093832
+  },
+  {
+   "text": "suben",
+   "start": 25.104833,
+   "end": 25.357041
+  },
+  {
+   "text": "el",
+   "start": 25.368,
+   "end": 25.455707999999998
+  },
+  {
+   "text": "termostato,",
+   "start": 25.466666,
+   "end": 26.080707
+  },
+  {
+   "text": "por",
+   "start": 26.201333,
+   "end": 26.343874000000003
+  },
+  {
+   "text": "ejemplo",
+   "start": 26.354833,
+   "end": 26.716666
+  },
+  {
+   "text": "a",
+   "start": 26.727625,
+   "end": 26.782458
+  },
+  {
+   "text": "39",
+   "start": 26.793416,
+   "end": 27.878957
+  },
+  {
+   "text": "grados.",
+   "start": 27.878957,
+   "end": 28.278957
+  },
+  {
+   "text": "Tu",
+   "start": 28.635541,
+   "end": 28.789041
+  },
+  {
+   "text": "cuerpo",
+   "start": 28.8,
+   "end": 29.107
+  },
+  {
+   "text": "sigue",
+   "start": 29.118,
+   "end": 29.370207999999998
+  },
+  {
+   "text": "a",
+   "start": 29.381125,
+   "end": 29.425
+  },
+  {
+   "text": "37,",
+   "start": 29.435958,
+   "end": 30.148706999999998
+  },
+  {
+   "text": "así",
+   "start": 30.269291,
+   "end": 30.521499
+  },
+  {
+   "text": "que",
+   "start": 30.532458,
+   "end": 30.642124
+  },
+  {
+   "text": "el",
+   "start": 30.653083,
+   "end": 30.751749
+  },
+  {
+   "text": "cerebro",
+   "start": 30.762708,
+   "end": 31.113583
+  },
+  {
+   "text": "cree",
+   "start": 31.124541,
+   "end": 31.332874
+  },
+  {
+   "text": "que",
+   "start": 31.343875,
+   "end": 31.431583
+  },
+  {
+   "text": "tienes",
+   "start": 31.442541,
+   "end": 31.727624
+  },
+  {
+   "text": "frío.",
+   "start": 31.738583,
+   "end": 32.089458
+  },
+  {
+   "text": "Por",
+   "start": 32.857,
+   "end": 33.054375
+  },
+  {
+   "text": "eso",
+   "start": 33.065333,
+   "end": 33.218833000000004
+  },
+  {
+   "text": "tiritas",
+   "start": 33.229833,
+   "end": 33.646499
+  },
+  {
+   "text": "hasta",
+   "start": 33.657458,
+   "end": 33.865791
+  },
+  {
+   "text": "llegar",
+   "start": 33.87675,
+   "end": 34.128958000000004
+  },
+  {
+   "text": "a",
+   "start": 34.139916,
+   "end": 34.194749
+  },
+  {
+   "text": "39.",
+   "start": 34.205708,
+   "end": 34.9513319
+  },
+  {
+   "text": "Es",
+   "start": 35.729833,
+   "end": 35.960083
+  },
+  {
+   "text": "el",
+   "start": 35.971041,
+   "end": 36.058749
+  },
+  {
+   "text": "mismo",
+   "start": 36.06975,
+   "end": 36.332916
+  },
+  {
+   "text": "modo",
+   "start": 36.343875,
+   "end": 36.563165999999995
+  },
+  {
+   "text": "frío",
+   "start": 36.574125,
+   "end": 36.815333
+  },
+  {
+   "text": "de",
+   "start": 36.826333,
+   "end": 36.892123999999995
+  },
+  {
+   "text": "la",
+   "start": 36.903083,
+   "end": 36.990791
+  },
+  {
+   "text": "piel",
+   "start": 37.00175,
+   "end": 37.210083000000004
+  },
+  {
+   "text": "de",
+   "start": 37.221041,
+   "end": 37.286832
+  },
+  {
+   "text": "gallina:",
+   "start": 37.297791,
+   "end": 37.703498999999994
+  },
+  {
+   "text": "tu",
+   "start": 37.846041,
+   "end": 37.933749
+  },
+  {
+   "text": "cuerpo",
+   "start": 37.94475,
+   "end": 38.26275
+  },
+  {
+   "text": "intenta",
+   "start": 38.273666,
+   "end": 38.602624
+  },
+  {
+   "text": "guardar",
+   "start": 38.613583,
+   "end": 38.964458
+  },
+  {
+   "text": "calor.",
+   "start": 38.975458,
+   "end": 39.348249
+  },
+  {
+   "text": "¿Y",
+   "start": 40.104833,
+   "end": 40.269291
+  },
+  {
+   "text": "el",
+   "start": 40.28025,
+   "end": 40.357
+  },
+  {
+   "text": "escalofrío",
+   "start": 40.368,
+   "end": 40.894333
+  },
+  {
+   "text": "con",
+   "start": 40.90525,
+   "end": 41.069708000000006
+  },
+  {
+   "text": "tu",
+   "start": 41.080708,
+   "end": 41.157458
+  },
+  {
+   "text": "canción",
+   "start": 41.168416,
+   "end": 41.563166
+  },
+  {
+   "text": "favorita?",
+   "start": 41.574125,
+   "end": 42.133333
+  },
+  {
+   "text": "Eso",
+   "start": 42.889916,
+   "end": 43.240791
+  },
+  {
+   "text": "es",
+   "start": 43.25175,
+   "end": 43.372375
+  },
+  {
+   "text": "otra",
+   "start": 43.383333,
+   "end": 43.569749
+  },
+  {
+   "text": "cosa:",
+   "start": 43.580708,
+   "end": 43.942541
+  },
+  {
+   "text": "se",
+   "start": 44.074125,
+   "end": 44.19475
+  },
+  {
+   "text": "llama",
+   "start": 44.205708,
+   "end": 44.446916
+  },
+  {
+   "text": "frisson.",
+   "start": 44.457875,
+   "end": 44.973208
+  },
+  {
+   "text": "En",
+   "start": 45.740791,
+   "end": 45.981999
+  },
+  {
+   "text": "2011,",
+   "start": 45.993,
+   "end": 46.6289159
+  },
+  {
+   "text": "en",
+   "start": 46.727625,
+   "end": 46.804375
+  },
+  {
+   "text": "Montreal,",
+   "start": 46.815333,
+   "end": 47.308749000000006
+  },
+  {
+   "text": "vieron",
+   "start": 47.495166,
+   "end": 47.769290999999996
+  },
+  {
+   "text": "que",
+   "start": 47.78025,
+   "end": 47.878916000000004
+  },
+  {
+   "text": "en",
+   "start": 47.889916,
+   "end": 47.977624
+  },
+  {
+   "text": "ese",
+   "start": 47.988583,
+   "end": 48.153041
+  },
+  {
+   "text": "momento",
+   "start": 48.164041,
+   "end": 48.547832
+  },
+  {
+   "text": "el",
+   "start": 48.558791,
+   "end": 48.657457
+  },
+  {
+   "text": "cerebro",
+   "start": 48.668416,
+   "end": 48.997374
+  },
+  {
+   "text": "libera",
+   "start": 49.008333,
+   "end": 49.304374
+  },
+  {
+   "text": "dopamina,",
+   "start": 49.315333,
+   "end": 49.786833
+  },
+  {
+   "text": "la",
+   "start": 49.907458,
+   "end": 50.006124
+  },
+  {
+   "text": "de",
+   "start": 50.017125,
+   "end": 50.082916
+  },
+  {
+   "text": "la",
+   "start": 50.093875,
+   "end": 50.181582999999996
+  },
+  {
+   "text": "recompensa.",
+   "start": 50.192541,
+   "end": 50.905249
+  },
+  {
+   "text": "Síguenos",
+   "start": 51.661833,
+   "end": 52.188166
+  },
+  {
+   "text": "para",
+   "start": 52.199125,
+   "end": 52.352625
+  },
+  {
+   "text": "más",
+   "start": 52.363583,
+   "end": 52.539041
+  },
+  {
+   "text": "trucos.",
+   "start": 52.55,
+   "end": 53.076333
+  },
+  {
+   "text": "¿Qué",
+   "start": 53.942541,
+   "end": 54.117999
+  },
+  {
+   "text": "rareza",
+   "start": 54.128958,
+   "end": 54.457916
+  },
+  {
+   "text": "de",
+   "start": 54.468875,
+   "end": 54.556582999999996
+  },
+  {
+   "text": "tu",
+   "start": 54.567541,
+   "end": 54.644290999999996
+  },
+  {
+   "text": "cuerpo",
+   "start": 54.65525,
+   "end": 54.940333
+  },
+  {
+   "text": "te",
+   "start": 54.951333,
+   "end": 55.039041
+  },
+  {
+   "text": "explicamos",
+   "start": 55.05,
+   "end": 55.609207999999995
+  },
+  {
+   "text": "ahora?",
+   "start": 55.620166,
+   "end": 55.992957
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 56.493,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "¿Por qué *tiritamos*?",
+  "badge": "RESPONDEMOS EN COMENTARIOS",
+  "scene": 3
+ },
+ "duration": 59.093,
+ "cover_offset_ms": 59393
+}
