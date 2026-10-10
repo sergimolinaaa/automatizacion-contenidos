@@ -274,6 +274,28 @@
         "tiktok": "6ac99380b07d37ac9758f3db",
         "instagram": "6ac99381c4de2d2b12103496"
       }
+    },
+    {
+      "slug": "lote5-05-palomitas",
+      "category": "cocina",
+      "due": "2026-10-11T00:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote5-05-palomitas/lote5-05-palomitas-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac9c221b07d37ac975f0304",
+        "tiktok": "6ac9c221ed92ed8fa5b8c59d",
+        "instagram": "6ac9c222d9cab260a7b18d86"
+      }
+    },
+    {
+      "slug": "lote5-06-gerrymandering",
+      "category": "politica",
+      "due": "2026-10-11T03:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote5-06-gerrymandering/lote5-06-gerrymandering-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac9c228ed92ed8fa5b8c641",
+        "tiktok": "6ac9c228c4de2d2b1216484d",
+        "instagram": "6ac9c229ed92ed8fa5b8c66b"
+      }
     }
   ]
 }
