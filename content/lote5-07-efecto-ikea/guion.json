@@ -1,0 +1,824 @@
+{
+  "topic": "El efecto IKEA: valoramos más lo que montamos nosotros",
+  "categoria": "psicologia",
+  "title": "¿Por qué tu estantería torcida te parece preciosa? 🔩",
+  "source": "Fuentes: Norton, Mochon & Ariely, Journal of Consumer Psychology, 22, 453-460 (2012) · Mochon, Norton & Ariely, Int. J. Research in Marketing, 29, 363-369 (2012)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Tu mueble *torcido* vale más",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Tu estantería está torcida, le sobra un tornillo… y te parece preciosa 🔩 Es el efecto IKEA: valoramos más lo que montamos nosotros. ¿Qué chapuza tuya defiendes como obra maestra?",
+    "description": "En 2012, Michael Norton, Daniel Mochon y Dan Ariely publicaron en el Journal of Consumer Psychology «The IKEA effect: When labor leads to love». Quienes montaban una caja de almacenaje de IKEA ofrecían de media 0,78 dólares por ella, frente a 0,48 de quienes la recibían ya montada (alrededor de un 63 % más). Con origami pasó lo mismo: los autores de ranas y grullas de papel pujaban casi cinco veces más que otros participantes por sus propias figuras, casi como por las de un experto. Pero el efecto desaparecía si no terminaban la tarea o si montaban y luego desmontaban. Un trabajo posterior de los mismos autores lo relaciona con sentirse capaz. La historia de los bizcochos de sobre a los que había que añadir un huevo es una anécdota popular, no un experimento. Fuentes: Norton, Mochon & Ariely (2012), J. Consum. Psychol. 22, 453-460; Mochon, Norton & Ariely (2012), Int. J. Res. Mark. 29, 363-369.",
+    "hashtags": [
+      "efectoikea",
+      "psicologia",
+      "sesgos",
+      "cerebro",
+      "bricolaje",
+      "curiosidades",
+      "ciencia",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "*Torcida*, pero tuya",
+      "narration": "Esa estantería que montaste tú, torcida y con un tornillo de sobra… te parece preciosa.",
+      "illustration": {
+        "svg_file": "montaje_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Obra propia",
+        "anims": [
+          {
+            "target": "medalla",
+            "effect": "hide"
+          },
+          {
+            "target": "plomada",
+            "effect": "hide"
+          },
+          {
+            "target": "luz",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "estanteria",
+            "effect": "punch",
+            "trigger": "estantería",
+            "amount": 0.25
+          },
+          {
+            "target": "carton",
+            "effect": "punch",
+            "trigger": "montaste",
+            "amount": 0.2
+          },
+          {
+            "target": "llave",
+            "effect": "wiggle",
+            "trigger": "montaste",
+            "amount": 0.6
+          },
+          {
+            "target": "nivel",
+            "effect": "punch",
+            "trigger": "torcida",
+            "amount": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "burbuja",
+            "effect": "move",
+            "trigger": "torcida",
+            "to": [
+              34,
+              0
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "plomada",
+            "effect": "fade",
+            "trigger": "torcida",
+            "dur": 0.4
+          },
+          {
+            "target": "tornillo",
+            "effect": "punch",
+            "trigger": "tornillo",
+            "amount": 0.8
+          },
+          {
+            "target": "lsobra",
+            "effect": "pop",
+            "trigger": "sobra",
+            "sfx": "pop"
+          },
+          {
+            "target": "tornillo",
+            "effect": "wiggle",
+            "trigger": "sobra",
+            "amount": 0.6
+          },
+          {
+            "target": "corazones",
+            "effect": "pop",
+            "trigger": "preciosa",
+            "sfx": "brillo"
+          },
+          {
+            "target": "corazones",
+            "effect": "float",
+            "trigger": "preciosa",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "A *montar* cajas",
+      "narration": "En 2012, Norton, Mochon y Ariely pusieron a voluntarios a montar cajas de IKEA.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "J. Consum. Psychol., 2012",
+          "tone": "ink",
+          "trigger": "Norton"
+        }
+      ],
+      "illustration": {
+        "svg_file": "cajas.svg",
+        "caption": "Fig. 2 · El experimento",
+        "anims": [
+          {
+            "target": "cajar",
+            "effect": "hide"
+          },
+          {
+            "target": "lmontada",
+            "effect": "hide"
+          },
+          {
+            "target": "pl",
+            "effect": "hide"
+          },
+          {
+            "target": "pr",
+            "effect": "hide"
+          },
+          {
+            "target": "badge",
+            "effect": "hide"
+          },
+          {
+            "target": "pregunta",
+            "effect": "hide"
+          },
+          {
+            "target": "aguja",
+            "effect": "spin",
+            "amount": 0.5
+          },
+          {
+            "target": "llave",
+            "effect": "wiggle",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "Norton",
+            "to": [
+              400,
+              400
+            ],
+            "amount": 1.3,
+            "dur": 0.8
+          },
+          {
+            "target": "piezas",
+            "effect": "punch",
+            "trigger": "voluntarios",
+            "amount": 0.3
+          },
+          {
+            "target": "piezas",
+            "effect": "hide",
+            "trigger": "montar"
+          },
+          {
+            "target": "cajal",
+            "effect": "pop",
+            "trigger": "montar",
+            "sfx": "pop"
+          },
+          {
+            "target": "lmontas",
+            "effect": "pop",
+            "trigger": "cajas",
+            "sfx": "rotulador"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "IKEA",
+            "amount": 1,
+            "dur": 0.7
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "¿Cuánto *pagarías*?",
+      "narration": "Luego les preguntaron cuánto pagarían. Otros veían la misma caja, ya montada.",
+      "illustration": {
+        "svg_file": "cajas.svg",
+        "caption": "Fig. 3 · La subasta",
+        "anims": [
+          {
+            "target": "piezas",
+            "effect": "hide"
+          },
+          {
+            "target": "pl",
+            "effect": "hide"
+          },
+          {
+            "target": "pr",
+            "effect": "hide"
+          },
+          {
+            "target": "badge",
+            "effect": "hide"
+          },
+          {
+            "target": "aguja",
+            "effect": "spin",
+            "amount": 0.5
+          },
+          {
+            "target": "pregunta",
+            "effect": "pop",
+            "trigger": "preguntaron",
+            "sfx": "pop"
+          },
+          {
+            "target": "pregunta",
+            "effect": "wiggle",
+            "trigger": "preguntaron",
+            "amount": 0.3
+          },
+          {
+            "target": "cajal",
+            "effect": "punch",
+            "trigger": "pagarían",
+            "amount": 0.3
+          },
+          {
+            "target": "cajar",
+            "effect": "pop",
+            "trigger": "Otros",
+            "sfx": "pop"
+          },
+          {
+            "target": "cajar",
+            "effect": "punch",
+            "trigger": "misma",
+            "amount": 0.25
+          },
+          {
+            "target": "lmontada",
+            "effect": "pop",
+            "trigger": "montada",
+            "sfx": "rotulador"
+          },
+          {
+            "target": "cajar",
+            "effect": "punch",
+            "trigger": "montada",
+            "amount": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "¡Un *63 %* más!",
+      "narration": "Los que la montaron ofrecían 78 céntimos de dólar. Los demás, 48. ¡Un 63 % más!",
+      "illustration": {
+        "svg_file": "cajas.svg",
+        "caption": "Fig. 4 · Pujas medias",
+        "anims": [
+          {
+            "target": "piezas",
+            "effect": "hide"
+          },
+          {
+            "target": "pregunta",
+            "effect": "hide"
+          },
+          {
+            "target": "aguja",
+            "effect": "spin",
+            "amount": 0.5
+          },
+          {
+            "target": "cajal",
+            "effect": "punch",
+            "trigger": "montaron",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "ofrecían",
+            "to": [
+              400,
+              300
+            ],
+            "amount": 1.35,
+            "dur": 0.7
+          },
+          {
+            "target": "pl",
+            "effect": "pop",
+            "trigger": "78",
+            "sfx": "ding"
+          },
+          {
+            "target": "pl",
+            "effect": "sway",
+            "trigger": "78",
+            "amount": 0.4,
+            "origin": "left"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "demás",
+            "to": [
+              620,
+              300
+            ],
+            "amount": 1.35,
+            "dur": 0.7
+          },
+          {
+            "target": "pr",
+            "effect": "pop",
+            "trigger": "48",
+            "sfx": "ding"
+          },
+          {
+            "target": "pr",
+            "effect": "sway",
+            "trigger": "48",
+            "amount": 0.4,
+            "origin": "left"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "Un",
+            "amount": 1,
+            "dur": 0.6
+          },
+          {
+            "target": "badge",
+            "effect": "pop",
+            "trigger": "63",
+            "sfx": "sello"
+          },
+          {
+            "target": "badge",
+            "effect": "wiggle",
+            "trigger": "63",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Origami *de autor*",
+      "narration": "Con origami, igual: quien doblaba su rana pagaba casi cinco veces más que quien solo la miraba.",
+      "illustration": {
+        "svg_file": "origami_free.svg",
+        "layout": "free",
+        "height": 780,
+        "caption": "Fig. 5 · Ranas de papel",
+        "anims": [
+          {
+            "target": "rana2",
+            "effect": "hide"
+          },
+          {
+            "target": "grulla",
+            "effect": "hide"
+          },
+          {
+            "target": "pila_exp",
+            "effect": "hide"
+          },
+          {
+            "target": "l_exp",
+            "effect": "hide"
+          },
+          {
+            "target": "igual",
+            "effect": "hide"
+          },
+          {
+            "target": "rana",
+            "effect": "bob",
+            "amount": 0.35
+          },
+          {
+            "target": "rana",
+            "effect": "punch",
+            "trigger": "rana",
+            "amount": 0.3,
+            "sfx": "boing"
+          },
+          {
+            "target": "pila_tu",
+            "effect": "pop",
+            "trigger": "pagaba",
+            "sfx": "pop"
+          },
+          {
+            "target": "l_tu",
+            "effect": "pop",
+            "trigger": "pagaba"
+          },
+          {
+            "target": "pila_otros",
+            "effect": "pop",
+            "trigger": "veces",
+            "sfx": "pop"
+          },
+          {
+            "target": "l_otros",
+            "effect": "pop",
+            "trigger": "veces"
+          },
+          {
+            "target": "pila_tu",
+            "effect": "punch",
+            "trigger": "más",
+            "amount": 0.3
+          },
+          {
+            "target": "badge",
+            "effect": "pop",
+            "trigger": "miraba",
+            "sfx": "sello"
+          },
+          {
+            "target": "badge",
+            "effect": "wiggle",
+            "trigger": "miraba",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Casi *de experto*",
+      "narration": "Y la valoraba casi como una de experto.",
+      "illustration": {
+        "svg_file": "origami_free.svg",
+        "layout": "free",
+        "height": 780,
+        "caption": "Fig. 6 · Experto",
+        "anims": [
+          {
+            "target": "rana",
+            "effect": "hide"
+          },
+          {
+            "target": "pila_otros",
+            "effect": "hide"
+          },
+          {
+            "target": "l_otros",
+            "effect": "hide"
+          },
+          {
+            "target": "badge",
+            "effect": "hide"
+          },
+          {
+            "target": "rana2",
+            "effect": "bob",
+            "amount": 0.3
+          },
+          {
+            "target": "grulla",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "pila_tu",
+            "effect": "punch",
+            "trigger": "valoraba",
+            "amount": 0.3
+          },
+          {
+            "target": "igual",
+            "effect": "pop",
+            "trigger": "casi",
+            "sfx": "pop"
+          },
+          {
+            "target": "pila_exp",
+            "effect": "pop",
+            "trigger": "como",
+            "sfx": "pop"
+          },
+          {
+            "target": "l_exp",
+            "effect": "pop",
+            "trigger": "experto",
+            "sfx": "rotulador"
+          },
+          {
+            "target": "grulla",
+            "effect": "punch",
+            "trigger": "experto",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Si no lo *acabas*…",
+      "narration": "Eso sí: si la desmontaban después, o no la terminaban, el efecto desaparecía.",
+      "illustration": {
+        "svg_file": "inacabada.svg",
+        "caption": "Fig. 7 · A medias",
+        "anims": [
+          {
+            "target": "corazon",
+            "effect": "pulse",
+            "amount": 0.7
+          },
+          {
+            "target": "caja",
+            "effect": "punch",
+            "trigger": "Eso",
+            "amount": 0.25
+          },
+          {
+            "target": "flecha",
+            "effect": "draw",
+            "trigger": "desmontaban",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "paneles",
+            "effect": "shake",
+            "trigger": "desmontaban",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "terminaban",
+            "to": [
+              460,
+              350
+            ],
+            "amount": 1.2,
+            "dur": 0.7
+          },
+          {
+            "target": "lsin",
+            "effect": "pop",
+            "trigger": "terminaban",
+            "sfx": "rotulador"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "efecto",
+            "amount": 1,
+            "dur": 0.6
+          },
+          {
+            "target": "corazon",
+            "effect": "hide",
+            "trigger": "desaparecía"
+          },
+          {
+            "target": "roto",
+            "effect": "pop",
+            "trigger": "desaparecía",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "roto",
+            "effect": "shake",
+            "trigger": "desaparecía",
+            "amount": 0.4
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "desaparecía",
+        "pose": "think",
+        "note": "La mía lleva a medias desde 2019",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Te sientes *capaz*",
+      "narration": "¿Por qué? Terminarlo te hace sentir capaz. Y ese orgullo se paga en cariño.",
+      "illustration": {
+        "svg_file": "montaje_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · Orgullo",
+        "anims": [
+          {
+            "target": "plomada",
+            "effect": "hide"
+          },
+          {
+            "target": "lsobra",
+            "effect": "hide"
+          },
+          {
+            "target": "luz",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "estanteria",
+            "effect": "punch",
+            "trigger": "Terminarlo",
+            "amount": 0.25
+          },
+          {
+            "target": "nivel",
+            "effect": "punch",
+            "trigger": "sentir",
+            "amount": 0.3
+          },
+          {
+            "target": "medalla",
+            "effect": "pop",
+            "trigger": "capaz",
+            "sfx": "ding"
+          },
+          {
+            "target": "medalla",
+            "effect": "wiggle",
+            "trigger": "capaz",
+            "amount": 0.4
+          },
+          {
+            "target": "estanteria",
+            "effect": "punch",
+            "trigger": "orgullo",
+            "amount": 0.2
+          },
+          {
+            "target": "corazones",
+            "effect": "pop",
+            "trigger": "cariño",
+            "sfx": "brillo"
+          },
+          {
+            "target": "corazones",
+            "effect": "float",
+            "trigger": "cariño",
+            "amount": 0.6
+          },
+          {
+            "target": "burbuja",
+            "effect": "move",
+            "to": [
+              34,
+              0
+            ],
+            "dur": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "¿Y el *huevo*?",
+      "narration": "Se cuenta que los bizcochos de sobre vendían más al pedir un huevo. Es una anécdota, no un experimento.",
+      "elements": [
+        {
+          "type": "stamp",
+          "text": "ANÉCDOTA",
+          "tone": "hot",
+          "trigger": "anécdota",
+          "sfx": "sello"
+        }
+      ],
+      "illustration": {
+        "svg_file": "bizcocho.svg",
+        "caption": "Fig. 9 · La leyenda del huevo",
+        "anims": [
+          {
+            "target": "salpica",
+            "effect": "hide"
+          },
+          {
+            "target": "cascaras",
+            "effect": "wiggle",
+            "amount": 0.3
+          },
+          {
+            "target": "yema",
+            "effect": "bob",
+            "amount": 0.25
+          },
+          {
+            "target": "caja",
+            "effect": "punch",
+            "trigger": "bizcochos",
+            "amount": 0.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "sobre",
+            "to": [
+              420,
+              300
+            ],
+            "amount": 1.25,
+            "dur": 0.7
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "pedir",
+            "sfx": "pop"
+          },
+          {
+            "target": "yema",
+            "effect": "move",
+            "trigger": "huevo",
+            "to": [
+              0,
+              168
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "yema",
+            "effect": "hide",
+            "trigger": "Es"
+          },
+          {
+            "target": "salpica",
+            "effect": "pop",
+            "trigger": "Es",
+            "sfx": "splash"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "anécdota",
+            "amount": 1,
+            "dur": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos para más trucos. Confiesa: ¿qué chapuza tuya defiendes como obra maestra?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Qué *chapuza* tuya defiendes como obra maestra?",
+          "trigger": "Confiesa"
+        }
+      ]
+    }
+  ]
+}

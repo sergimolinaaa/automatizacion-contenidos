@@ -62,7 +62,8 @@
   {
     "tema": "El pulpo cambia de color en un instante",
     "categoria": "animales",
-    "pista": "cromatóforos: saquitos de pigmento que abre y cierra con músculos"
+    "pista": "cromatóforos: saquitos de pigmento que abre y cierra con músculos",
+    "hecho": true
   },
   {
     "tema": "El camaleón dispara la lengua más rápido que un coche deportivo acelera",
@@ -284,7 +285,8 @@
   {
     "tema": "El efecto IKEA: valoramos más lo que montamos nosotros",
     "categoria": "psicologia",
-    "pista": "Norton, Mochon y Ariely (2012)"
+    "pista": "Norton, Mochon y Ariely (2012)",
+    "hecho": true
   },
   {
     "tema": "Por qué el Velcro se pega",

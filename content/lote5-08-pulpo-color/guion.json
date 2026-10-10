@@ -1,0 +1,827 @@
+{
+  "topic": "El pulpo cambia de color en un instante",
+  "categoria": "animales",
+  "title": "El pulpo cambia de color en menos de un segundo 🐙",
+  "source": "Fuentes: Messenger, Biological Reviews 76 (2001) · Mäthger et al., J. R. Soc. Interface 6 (2009) · Ramirez & Oakley, J. Exp. Biol. 218 (2015)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Cambia de color *en un instante*",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Hace un segundo era una roca… y ahora es un pulpo 🐙 Su piel está llena de saquitos de pigmento que unos músculos abren al instante. ¿De qué color te pondrías tú ahora mismo?",
+    "description": "El pulpo cambia de color en menos de un segundo gracias a los cromatóforos: saquitos elásticos de pigmento amarillo, rojo o marrón rodeados de músculos radiales. Esos músculos los controla directamente el cerebro a través de nervios, y al contraerse estiran el saquito y el color se extiende por la piel. Debajo hay más capas: los iridóforos, pilas de placas que reflejan la luz y dan brillos azules y verdes, y los leucóforos, células blancas que devuelven la luz que les llega y toman el color del entorno. El gran misterio: los cefalópodos tienen un solo tipo de fotorreceptor y probablemente no distinguen colores. Se ha visto que su piel tiene opsinas, proteínas que captan la luz, pero cómo igualan los colores sigue sin resolverse. Fuentes: Messenger (2001), Biological Reviews 76; Mäthger et al. (2009), J. R. Soc. Interface 6; Ramirez & Oakley (2015), J. Exp. Biol. 218.",
+    "hashtags": [
+      "pulpo",
+      "camuflaje",
+      "animales",
+      "biologia",
+      "oceano",
+      "curiosidades",
+      "ciencia",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Era una *roca*",
+      "narration": "Mira esta roca. Ahora… ¡es un pulpo! Ha cambiado de color en menos de un segundo.",
+      "illustration": {
+        "svg_file": "arrecife_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Pulpo común",
+        "anims": [
+          {
+            "target": "ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "burbujas",
+            "effect": "float",
+            "amount": 0.8
+          },
+          {
+            "target": "peces",
+            "effect": "drift",
+            "amount": 0.8
+          },
+          {
+            "target": "algas",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "coral",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "anemona",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "pulpo",
+            "effect": "punch",
+            "trigger": "roca",
+            "amount": 0.12
+          },
+          {
+            "target": "rojo",
+            "effect": "fade",
+            "trigger": "pulpo",
+            "dur": 0.3,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "lpulpo",
+            "effect": "pop",
+            "trigger": "pulpo"
+          },
+          {
+            "target": "pulpo",
+            "effect": "punch",
+            "trigger": "cambiado",
+            "amount": 0.2
+          },
+          {
+            "target": "crono",
+            "effect": "pop",
+            "trigger": "menos",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "aguja",
+            "effect": "pop",
+            "trigger": "menos"
+          },
+          {
+            "target": "eje",
+            "effect": "pop",
+            "trigger": "menos"
+          },
+          {
+            "target": "aguja",
+            "effect": "spin",
+            "trigger": "menos",
+            "amount": 2.5,
+            "origin": "bottom"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Saquitos de *pigmento*",
+      "narration": "Su piel tiene miles de saquitos de pigmento: amarillo, rojo y marrón. Son los cromatóforos.",
+      "illustration": {
+        "svg_file": "cromatoforo_free.svg",
+        "layout": "free",
+        "height": 780,
+        "caption": "Fig. 2 · Piel al microscopio",
+        "anims": [
+          {
+            "target": "relajado",
+            "effect": "hide"
+          },
+          {
+            "target": "contraido",
+            "effect": "hide"
+          },
+          {
+            "target": "nervio",
+            "effect": "hide"
+          },
+          {
+            "target": "impulso",
+            "effect": "hide"
+          },
+          {
+            "target": "l_pig",
+            "effect": "hide"
+          },
+          {
+            "target": "l_mus",
+            "effect": "hide"
+          },
+          {
+            "target": "l_ner",
+            "effect": "hide"
+          },
+          {
+            "target": "vista",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "vista",
+            "effect": "punch",
+            "trigger": "piel",
+            "amount": 0.12
+          },
+          {
+            "target": "vista",
+            "effect": "punch",
+            "trigger": "pigmento",
+            "amount": 0.12
+          },
+          {
+            "target": "l_am",
+            "effect": "pop",
+            "trigger": "amarillo",
+            "sfx": "pop"
+          },
+          {
+            "target": "l_ro",
+            "effect": "pop",
+            "trigger": "rojo",
+            "sfx": "pop"
+          },
+          {
+            "target": "l_ma",
+            "effect": "pop",
+            "trigger": "marrón",
+            "sfx": "pop"
+          },
+          {
+            "target": "l_cro",
+            "effect": "pop",
+            "trigger": "cromatóforos",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Músculos que *estiran*",
+      "narration": "Cada saquito está rodeado de músculos. Si se contraen, lo estiran y el color se extiende.",
+      "illustration": {
+        "svg_file": "cromatoforo_free.svg",
+        "layout": "free",
+        "height": 780,
+        "caption": "Fig. 3 · Un cromatóforo",
+        "anims": [
+          {
+            "target": "vista",
+            "effect": "hide"
+          },
+          {
+            "target": "l_am",
+            "effect": "hide"
+          },
+          {
+            "target": "l_ro",
+            "effect": "hide"
+          },
+          {
+            "target": "l_ma",
+            "effect": "hide"
+          },
+          {
+            "target": "l_cro",
+            "effect": "hide"
+          },
+          {
+            "target": "l_ner",
+            "effect": "hide"
+          },
+          {
+            "target": "relajado",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "relajado",
+            "effect": "punch",
+            "trigger": "saquito",
+            "amount": 0.15
+          },
+          {
+            "target": "l_pig",
+            "effect": "pop",
+            "trigger": "saquito",
+            "sfx": "pop"
+          },
+          {
+            "target": "l_mus",
+            "effect": "pop",
+            "trigger": "músculos",
+            "sfx": "pop"
+          },
+          {
+            "target": "impulso",
+            "effect": "move",
+            "trigger": "contraen",
+            "to": [
+              160,
+              -126
+            ],
+            "dur": 0.4
+          },
+          {
+            "target": "impulso",
+            "effect": "hide",
+            "trigger": "estiran"
+          },
+          {
+            "target": "relajado",
+            "effect": "hide",
+            "trigger": "estiran"
+          },
+          {
+            "target": "contraido",
+            "effect": "pop",
+            "trigger": "estiran",
+            "sfx": "boing"
+          },
+          {
+            "target": "contraido",
+            "effect": "punch",
+            "trigger": "color",
+            "amount": 0.15
+          },
+          {
+            "target": "contraido",
+            "effect": "breathe",
+            "trigger": "extiende",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Nervios *directos*",
+      "narration": "Esos músculos los manda el cerebro con nervios directos. Por eso basta menos de un segundo.",
+      "illustration": {
+        "svg_file": "piel.svg",
+        "caption": "Fig. 4 · Corte de la piel",
+        "anims": [
+          {
+            "target": "opsinas",
+            "effect": "hide"
+          },
+          {
+            "target": "l_ops",
+            "effect": "hide"
+          },
+          {
+            "target": "interroga",
+            "effect": "hide"
+          },
+          {
+            "target": "luz_iri",
+            "effect": "hide"
+          },
+          {
+            "target": "refl_iri",
+            "effect": "hide"
+          },
+          {
+            "target": "luz_leu",
+            "effect": "hide"
+          },
+          {
+            "target": "refl_leu",
+            "effect": "hide"
+          },
+          {
+            "target": "l_iri",
+            "effect": "hide"
+          },
+          {
+            "target": "l_leu",
+            "effect": "hide"
+          },
+          {
+            "target": "l_cro",
+            "effect": "pop",
+            "trigger": "músculos",
+            "sfx": "pop"
+          },
+          {
+            "target": "cr_cerrados",
+            "effect": "punch",
+            "trigger": "músculos",
+            "amount": 0.2
+          },
+          {
+            "target": "nervios",
+            "effect": "draw",
+            "trigger": "cerebro",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "l_cer",
+            "effect": "pop",
+            "trigger": "cerebro"
+          },
+          {
+            "target": "pulsos",
+            "effect": "move",
+            "trigger": "nervios",
+            "to": [
+              560,
+              -10
+            ],
+            "dur": 0.8
+          },
+          {
+            "target": "pulsos",
+            "effect": "hide",
+            "trigger": "Por"
+          },
+          {
+            "target": "cr_cerrados",
+            "effect": "hide",
+            "trigger": "Por"
+          },
+          {
+            "target": "cr_abiertos",
+            "effect": "pop",
+            "trigger": "Por",
+            "sfx": "boing"
+          },
+          {
+            "target": "superficie",
+            "effect": "punch",
+            "trigger": "basta",
+            "amount": 0.15
+          },
+          {
+            "target": "crono",
+            "effect": "pop",
+            "trigger": "segundo",
+            "sfx": "chasquido"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Espejos *bajo la piel*",
+      "narration": "Debajo hay más trucos: los iridóforos, capas que reflejan la luz en azules y verdes.",
+      "illustration": {
+        "svg_file": "piel.svg",
+        "caption": "Fig. 5 · Iridóforos",
+        "anims": [
+          {
+            "target": "cr_cerrados",
+            "effect": "hide"
+          },
+          {
+            "target": "opsinas",
+            "effect": "hide"
+          },
+          {
+            "target": "l_ops",
+            "effect": "hide"
+          },
+          {
+            "target": "interroga",
+            "effect": "hide"
+          },
+          {
+            "target": "crono",
+            "effect": "hide"
+          },
+          {
+            "target": "pulsos",
+            "effect": "hide"
+          },
+          {
+            "target": "l_cer",
+            "effect": "hide"
+          },
+          {
+            "target": "luz_leu",
+            "effect": "hide"
+          },
+          {
+            "target": "refl_leu",
+            "effect": "hide"
+          },
+          {
+            "target": "l_leu",
+            "effect": "hide"
+          },
+          {
+            "target": "l_cro",
+            "effect": "hide"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "Debajo",
+            "to": [
+              400,
+              340
+            ],
+            "amount": 1.25,
+            "dur": 0.7
+          },
+          {
+            "target": "iridoforos",
+            "effect": "punch",
+            "trigger": "iridóforos",
+            "amount": 0.15
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "capas",
+            "amount": 1,
+            "dur": 0.6
+          },
+          {
+            "target": "l_iri",
+            "effect": "pop",
+            "trigger": "reflejan",
+            "sfx": "pop"
+          },
+          {
+            "target": "luz_iri",
+            "effect": "draw",
+            "trigger": "luz",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "refl_iri",
+            "effect": "draw",
+            "trigger": "azules",
+            "dur": 0.6,
+            "sfx": "brillo"
+          },
+          {
+            "target": "refl_iri",
+            "effect": "pulse",
+            "trigger": "verdes",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Blanco que *copia*",
+      "narration": "Y los leucóforos, blancos, devuelven la luz que llega: toman el color del entorno.",
+      "illustration": {
+        "svg_file": "piel.svg",
+        "caption": "Fig. 6 · Leucóforos",
+        "anims": [
+          {
+            "target": "cr_cerrados",
+            "effect": "hide"
+          },
+          {
+            "target": "opsinas",
+            "effect": "hide"
+          },
+          {
+            "target": "l_ops",
+            "effect": "hide"
+          },
+          {
+            "target": "interroga",
+            "effect": "hide"
+          },
+          {
+            "target": "crono",
+            "effect": "hide"
+          },
+          {
+            "target": "pulsos",
+            "effect": "hide"
+          },
+          {
+            "target": "l_cer",
+            "effect": "hide"
+          },
+          {
+            "target": "luz_iri",
+            "effect": "hide"
+          },
+          {
+            "target": "refl_iri",
+            "effect": "hide"
+          },
+          {
+            "target": "l_iri",
+            "effect": "hide"
+          },
+          {
+            "target": "l_cro",
+            "effect": "hide"
+          },
+          {
+            "target": "leucoforos",
+            "effect": "punch",
+            "trigger": "leucóforos",
+            "amount": 0.15
+          },
+          {
+            "target": "l_leu",
+            "effect": "pop",
+            "trigger": "leucóforos",
+            "sfx": "pop"
+          },
+          {
+            "target": "luz_leu",
+            "effect": "draw",
+            "trigger": "luz",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "refl_leu",
+            "effect": "draw",
+            "trigger": "llega",
+            "dur": 0.6,
+            "sfx": "brillo"
+          },
+          {
+            "target": "superficie",
+            "effect": "punch",
+            "trigger": "color",
+            "amount": 0.15
+          },
+          {
+            "target": "refl_leu",
+            "effect": "pulse",
+            "trigger": "entorno",
+            "amount": 0.5
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "entorno",
+        "pose": "point",
+        "note": "Camaleón, toma nota",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "¿Y si no ve *colores*?",
+      "narration": "El misterio: sus ojos probablemente no distinguen colores. ¿Cómo los imita, entonces?",
+      "illustration": {
+        "svg_file": "ojo.svg",
+        "caption": "Fig. 7 · Ojo de pulpo",
+        "anims": [
+          {
+            "target": "ojo",
+            "effect": "blink"
+          },
+          {
+            "target": "cabeza",
+            "effect": "breathe",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "ojos",
+            "to": [
+              390,
+              380
+            ],
+            "amount": 1.3,
+            "dur": 0.7
+          },
+          {
+            "target": "ojo",
+            "effect": "punch",
+            "trigger": "ojos",
+            "amount": 0.15
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "distinguen",
+            "amount": 1,
+            "dur": 0.6
+          },
+          {
+            "target": "vista_color",
+            "effect": "hide",
+            "trigger": "distinguen"
+          },
+          {
+            "target": "l_bn",
+            "effect": "pop",
+            "trigger": "colores",
+            "sfx": "pop"
+          },
+          {
+            "target": "interroga",
+            "effect": "pop",
+            "trigger": "imita",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "interroga",
+            "effect": "wiggle",
+            "trigger": "imita",
+            "amount": 0.5
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "imita",
+        "pose": "think",
+        "note": "¿Daltónico y rey del disfraz?",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Piel que *capta luz*",
+      "narration": "Una pista: su piel tiene opsinas, las proteínas del ojo que captan la luz. Pero el enigma sigue abierto.",
+      "illustration": {
+        "svg_file": "piel.svg",
+        "caption": "Fig. 8 · Opsinas en la piel",
+        "anims": [
+          {
+            "target": "cr_cerrados",
+            "effect": "hide"
+          },
+          {
+            "target": "crono",
+            "effect": "hide"
+          },
+          {
+            "target": "pulsos",
+            "effect": "hide"
+          },
+          {
+            "target": "l_cer",
+            "effect": "hide"
+          },
+          {
+            "target": "luz_iri",
+            "effect": "hide"
+          },
+          {
+            "target": "refl_iri",
+            "effect": "hide"
+          },
+          {
+            "target": "refl_leu",
+            "effect": "hide"
+          },
+          {
+            "target": "l_iri",
+            "effect": "hide"
+          },
+          {
+            "target": "l_leu",
+            "effect": "hide"
+          },
+          {
+            "target": "l_cro",
+            "effect": "hide"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "piel",
+            "to": [
+              400,
+              290
+            ],
+            "amount": 1.3,
+            "dur": 0.7
+          },
+          {
+            "target": "opsinas",
+            "effect": "pop",
+            "trigger": "opsinas",
+            "sfx": "brillo"
+          },
+          {
+            "target": "opsinas",
+            "effect": "pulse",
+            "trigger": "opsinas",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "proteínas",
+            "amount": 1,
+            "dur": 0.6
+          },
+          {
+            "target": "l_ops",
+            "effect": "pop",
+            "trigger": "captan",
+            "sfx": "pop"
+          },
+          {
+            "target": "luz_leu",
+            "effect": "draw",
+            "trigger": "luz",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "interroga",
+            "effect": "pop",
+            "trigger": "enigma",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "interroga",
+            "effect": "wiggle",
+            "trigger": "enigma",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "Te *toca*",
+      "narration": "Síguenos para más trucos. Si fueras pulpo, ¿de qué color te pondrías ahora mismo?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "Si fueras pulpo, ¿de qué *color* te pondrías ahora?",
+          "trigger": "fueras"
+        }
+      ]
+    }
+  ]
+}
