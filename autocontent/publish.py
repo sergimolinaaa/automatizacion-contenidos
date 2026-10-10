@@ -25,7 +25,7 @@ STATE = ROOT / "data" / "publicaciones.json"
 PREVIEWS = ROOT / "previews"
 TZ = ZoneInfo("Europe/Madrid")
 SLOTS = (14,)  # 1 al día (ahorro de créditos); antes (9, 14, 21)
-MIN_GAP = timedelta(hours=2)  # separación mínima con la publicación anterior
+MIN_GAP = timedelta(hours=12)  # separación mínima con la publicación anterior (1 al día)
 MAX_QUEUE = 8  # publicaciones futuras por canal (el plan de Buffer permite 10)
 HASHTAG = "#eltrucoes"
 CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra", "politica", "consumo", "bulos", "moviles", "dinero"]
