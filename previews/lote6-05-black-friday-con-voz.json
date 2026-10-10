@@ -1,0 +1,602 @@
+{
+ "source": "Fuentes: Ley 7/1996 de Ordenación del Comercio Minorista, art. 20.1 (redacción del Real Decreto-ley 24/2021, art. 85) · Directiva (UE) 2019/2161 · Ejemplo con precios ficticios",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "Este",
+   "start": 0.1,
+   "end": 0.4
+  },
+  {
+   "text": "Black",
+   "start": 0.41,
+   "end": 0.6
+  },
+  {
+   "text": "Friday,",
+   "start": 0.61,
+   "end": 0.98
+  },
+  {
+   "text": "muchas",
+   "start": 1.09,
+   "end": 1.35
+  },
+  {
+   "text": "rebajas",
+   "start": 1.36,
+   "end": 1.75
+  },
+  {
+   "text": "no",
+   "start": 1.76,
+   "end": 1.86
+  },
+  {
+   "text": "son",
+   "start": 1.87,
+   "end": 2.0300000000000002
+  },
+  {
+   "text": "rebajas.",
+   "start": 2.04,
+   "end": 2.55
+  },
+  {
+   "text": "El",
+   "start": 3.24,
+   "end": 3.47
+  },
+  {
+   "text": "truco",
+   "start": 3.48,
+   "end": 3.8
+  },
+  {
+   "text": "es…",
+   "start": 3.81,
+   "end": 3.95
+  },
+  {
+   "text": "subir",
+   "start": 4.09,
+   "end": 4.33
+  },
+  {
+   "text": "el",
+   "start": 4.34,
+   "end": 4.42
+  },
+  {
+   "text": "precio",
+   "start": 4.43,
+   "end": 4.72
+  },
+  {
+   "text": "unas",
+   "start": 4.73,
+   "end": 4.91
+  },
+  {
+   "text": "semanas",
+   "start": 4.92,
+   "end": 5.27
+  },
+  {
+   "text": "antes,",
+   "start": 5.28,
+   "end": 5.65
+  },
+  {
+   "text": "y",
+   "start": 5.74,
+   "end": 5.8
+  },
+  {
+   "text": "luego",
+   "start": 5.81,
+   "end": 6.119999999999999
+  },
+  {
+   "text": "«rebajarlo».",
+   "start": 6.25,
+   "end": 6.83
+  },
+  {
+   "text": "Costaba",
+   "start": 7.54,
+   "end": 7.94
+  },
+  {
+   "text": "50.",
+   "start": 7.95,
+   "end": 8.49
+  },
+  {
+   "text": "Lo",
+   "start": 9.18,
+   "end": 9.39
+  },
+  {
+   "text": "suben",
+   "start": 9.4,
+   "end": 9.67
+  },
+  {
+   "text": "a",
+   "start": 9.68,
+   "end": 9.73
+  },
+  {
+   "text": "100…",
+   "start": 9.74,
+   "end": 10.0
+  },
+  {
+   "text": "y",
+   "start": 10.14,
+   "end": 10.18
+  },
+  {
+   "text": "vuelve",
+   "start": 10.19,
+   "end": 10.44
+  },
+  {
+   "text": "a",
+   "start": 10.45,
+   "end": 10.489999999999998
+  },
+  {
+   "text": "50",
+   "start": 10.5,
+   "end": 10.91
+  },
+  {
+   "text": "con",
+   "start": 10.92,
+   "end": 11.06
+  },
+  {
+   "text": "un",
+   "start": 11.07,
+   "end": 11.18
+  },
+  {
+   "text": "«menos",
+   "start": 11.32,
+   "end": 11.59
+  },
+  {
+   "text": "50",
+   "start": 11.6,
+   "end": 12.53
+  },
+  {
+   "text": "%».",
+   "start": 12.53,
+   "end": 12.93
+  },
+  {
+   "text": "Pagas",
+   "start": 13.23,
+   "end": 13.56
+  },
+  {
+   "text": "lo",
+   "start": 13.57,
+   "end": 13.65
+  },
+  {
+   "text": "mismo.",
+   "start": 13.66,
+   "end": 14.06
+  },
+  {
+   "text": "En",
+   "start": 14.76,
+   "end": 14.93
+  },
+  {
+   "text": "España",
+   "start": 14.94,
+   "end": 15.26
+  },
+  {
+   "text": "hay",
+   "start": 15.27,
+   "end": 15.379999999999999
+  },
+  {
+   "text": "una",
+   "start": 15.39,
+   "end": 15.51
+  },
+  {
+   "text": "ley:",
+   "start": 15.52,
+   "end": 15.74
+  },
+  {
+   "text": "el",
+   "start": 15.85,
+   "end": 15.95
+  },
+  {
+   "text": "precio",
+   "start": 15.96,
+   "end": 16.240000000000002
+  },
+  {
+   "text": "tachado",
+   "start": 16.25,
+   "end": 16.59
+  },
+  {
+   "text": "debe",
+   "start": 16.6,
+   "end": 16.770000000000003
+  },
+  {
+   "text": "ser",
+   "start": 16.78,
+   "end": 16.94
+  },
+  {
+   "text": "el",
+   "start": 16.95,
+   "end": 17.029999999999998
+  },
+  {
+   "text": "más",
+   "start": 17.04,
+   "end": 17.189999999999998
+  },
+  {
+   "text": "bajo",
+   "start": 17.2,
+   "end": 17.419999999999998
+  },
+  {
+   "text": "de",
+   "start": 17.43,
+   "end": 17.49
+  },
+  {
+   "text": "los",
+   "start": 17.5,
+   "end": 17.64
+  },
+  {
+   "text": "últimos",
+   "start": 17.65,
+   "end": 18.0
+  },
+  {
+   "text": "30",
+   "start": 18.01,
+   "end": 18.700000000000003
+  },
+  {
+   "text": "días.",
+   "start": 18.700000000000003,
+   "end": 19.1
+  },
+  {
+   "text": "Si",
+   "start": 19.39,
+   "end": 19.61
+  },
+  {
+   "text": "hace",
+   "start": 19.62,
+   "end": 19.77
+  },
+  {
+   "text": "dos",
+   "start": 19.78,
+   "end": 19.93
+  },
+  {
+   "text": "semanas",
+   "start": 19.94,
+   "end": 20.290000000000003
+  },
+  {
+   "text": "costaba",
+   "start": 20.3,
+   "end": 20.63
+  },
+  {
+   "text": "50,",
+   "start": 20.64,
+   "end": 21.12
+  },
+  {
+   "text": "el",
+   "start": 21.24,
+   "end": 21.369999999999997
+  },
+  {
+   "text": "tachado",
+   "start": 21.38,
+   "end": 21.72
+  },
+  {
+   "text": "tiene",
+   "start": 21.73,
+   "end": 21.93
+  },
+  {
+   "text": "que",
+   "start": 21.94,
+   "end": 22.02
+  },
+  {
+   "text": "decir",
+   "start": 22.03,
+   "end": 22.28
+  },
+  {
+   "text": "50.",
+   "start": 22.29,
+   "end": 22.83
+  },
+  {
+   "text": "Rebaja:",
+   "start": 23.51,
+   "end": 24.060000000000002
+  },
+  {
+   "text": "cero.",
+   "start": 24.16,
+   "end": 24.53
+  },
+  {
+   "text": "Tu",
+   "start": 25.24,
+   "end": 25.389999999999997
+  },
+  {
+   "text": "truco:",
+   "start": 25.4,
+   "end": 25.729999999999997
+  },
+  {
+   "text": "haz",
+   "start": 25.87,
+   "end": 25.990000000000002
+  },
+  {
+   "text": "captura",
+   "start": 26.0,
+   "end": 26.36
+  },
+  {
+   "text": "del",
+   "start": 26.37,
+   "end": 26.5
+  },
+  {
+   "text": "precio",
+   "start": 26.51,
+   "end": 26.8
+  },
+  {
+   "text": "semanas",
+   "start": 26.81,
+   "end": 27.18
+  },
+  {
+   "text": "antes.",
+   "start": 27.19,
+   "end": 27.62
+  },
+  {
+   "text": "O",
+   "start": 28.31,
+   "end": 28.439999999999998
+  },
+  {
+   "text": "mira",
+   "start": 28.45,
+   "end": 28.669999999999998
+  },
+  {
+   "text": "su",
+   "start": 28.68,
+   "end": 28.79
+  },
+  {
+   "text": "historial:",
+   "start": 28.8,
+   "end": 29.240000000000002
+  },
+  {
+   "text": "lo",
+   "start": 29.36,
+   "end": 29.439999999999998
+  },
+  {
+   "text": "que",
+   "start": 29.45,
+   "end": 29.529999999999998
+  },
+  {
+   "text": "costó",
+   "start": 29.54,
+   "end": 29.779999999999998
+  },
+  {
+   "text": "cada",
+   "start": 29.79,
+   "end": 29.97
+  },
+  {
+   "text": "día.",
+   "start": 29.98,
+   "end": 30.32
+  },
+  {
+   "text": "¿No",
+   "start": 31.02,
+   "end": 31.259999999999998
+  },
+  {
+   "text": "cuadra?",
+   "start": 31.27,
+   "end": 31.69
+  },
+  {
+   "text": "Pide",
+   "start": 32.38,
+   "end": 32.620000000000005
+  },
+  {
+   "text": "la",
+   "start": 32.63,
+   "end": 32.760000000000005
+  },
+  {
+   "text": "hoja",
+   "start": 32.77,
+   "end": 32.95
+  },
+  {
+   "text": "de",
+   "start": 32.96,
+   "end": 33.03
+  },
+  {
+   "text": "reclamaciones.",
+   "start": 33.04,
+   "end": 33.83
+  },
+  {
+   "text": "Tú",
+   "start": 34.53,
+   "end": 34.660000000000004
+  },
+  {
+   "text": "traes",
+   "start": 34.67,
+   "end": 34.92
+  },
+  {
+   "text": "las",
+   "start": 34.93,
+   "end": 35.08
+  },
+  {
+   "text": "dudas",
+   "start": 35.09,
+   "end": 35.36000000000001
+  },
+  {
+   "text": "y",
+   "start": 35.37,
+   "end": 35.41
+  },
+  {
+   "text": "nosotros",
+   "start": 35.42,
+   "end": 35.84
+  },
+  {
+   "text": "te",
+   "start": 35.85,
+   "end": 35.940000000000005
+  },
+  {
+   "text": "damos",
+   "start": 35.95,
+   "end": 36.220000000000006
+  },
+  {
+   "text": "el",
+   "start": 36.23,
+   "end": 36.33
+  },
+  {
+   "text": "truco.",
+   "start": 36.34,
+   "end": 36.720000000000006
+  },
+  {
+   "text": "Síguenos",
+   "start": 37.41,
+   "end": 37.919999999999995
+  },
+  {
+   "text": "y",
+   "start": 37.93,
+   "end": 37.98
+  },
+  {
+   "text": "las",
+   "start": 37.99,
+   "end": 38.120000000000005
+  },
+  {
+   "text": "resolvemos.",
+   "start": 38.13,
+   "end": 38.79
+  },
+  {
+   "text": "¿Cuántas",
+   "start": 39.48,
+   "end": 39.82
+  },
+  {
+   "text": "gangas",
+   "start": 39.83,
+   "end": 40.14
+  },
+  {
+   "text": "has",
+   "start": 40.15,
+   "end": 40.24
+  },
+  {
+   "text": "pagado",
+   "start": 40.25,
+   "end": 40.52
+  },
+  {
+   "text": "a",
+   "start": 40.53,
+   "end": 40.57
+  },
+  {
+   "text": "precio",
+   "start": 40.58,
+   "end": 40.85
+  },
+  {
+   "text": "normal?",
+   "start": 40.86,
+   "end": 41.25
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 41.75,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Rebajas *de mentira*",
+  "scene": 0
+ },
+ "duration": 44.35,
+ "cover_offset_ms": 44650
+}
