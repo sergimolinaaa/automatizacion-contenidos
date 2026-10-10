@@ -1,4 +1,4 @@
-"""Programa los vídeos renderizados en Buffer (YouTube, Instagram y TikTok), uno cada 2 horas.
+"""Programa los vídeos renderizados en Buffer (YouTube, Instagram y TikTok): 3 al día (mañana, mediodía y noche, hora de Madrid).
 
 - Cada vídeo necesita una URL pública (la API de Buffer no admite subir archivos): se publica como
   asset de una release de GitHub en un repositorio PÚBLICO (MEDIA_REPO, p. ej. "usuario/eltrucoes-videos").
@@ -13,6 +13,7 @@ import os
 import subprocess
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -21,7 +22,9 @@ from .config import ROOT
 API = "https://api.buffer.com"
 STATE = ROOT / "data" / "publicaciones.json"
 PREVIEWS = ROOT / "previews"
-INTERVAL = timedelta(hours=3)
+TZ = ZoneInfo("Europe/Madrid")
+SLOTS = (9, 14, 21)  # horas locales de publicación: mañana, mediodía y tarde-noche
+MIN_GAP = timedelta(hours=2)  # separación mínima con la publicación anterior
 MAX_QUEUE = 8  # publicaciones futuras por canal (el plan de Buffer permite 10)
 CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra", "politica"]
 
@@ -190,6 +193,18 @@ def refresh_hosted(state: dict) -> None:
             print(f"  actualizado {p['slug']} (nuevo render)")
 
 
+def next_slot(after: datetime) -> datetime:
+    """Primera franja (SLOTS, hora de Madrid) estrictamente posterior a `after`."""
+    local = after.astimezone(TZ)
+    for day in range(3):
+        d = (local + timedelta(days=day)).date()
+        for h in SLOTS:
+            slot = datetime(d.year, d.month, d.day, h, tzinfo=TZ)
+            if slot > local:
+                return slot.astimezone(timezone.utc)
+    raise RuntimeError("sin franja")
+
+
 def schedule_all(limit: int | None = None) -> list[dict]:
     state = load_state()
     refresh_hosted(state)
@@ -197,8 +212,7 @@ def schedule_all(limit: int | None = None) -> list[dict]:
     print("Canales:", ", ".join(f"{c['service']} ({c['name']})" for c in chans))
     now = datetime.now(timezone.utc)
     last = max((datetime.fromisoformat(p["due"]) for p in state["posts"]), default=None)
-    due = max(now + timedelta(minutes=30), (last + INTERVAL) if last else now)
-    due = due.replace(minute=0, second=0, microsecond=0) + (timedelta(hours=1) if due.minute else timedelta())
+    due = next_slot(max(now + timedelta(minutes=30), (last + MIN_GAP) if last else now))
     future = sum(1 for p in state["posts"] if datetime.fromisoformat(p["due"]) > now)
     room = max(0, MAX_QUEUE - future)
     limit = room if limit is None else min(limit, room)
@@ -212,7 +226,7 @@ def schedule_all(limit: int | None = None) -> list[dict]:
         save_state(state)
         full = fill_channels(state, entry, item["script"], chans, item["thumb_ms"])
         scheduled.append(entry)
-        due += INTERVAL
+        due = next_slot(due + MIN_GAP)
         if not full:
             print("  Buffer está lleno en algún canal; los canales que faltan se completarán en la próxima ejecución.")
             break

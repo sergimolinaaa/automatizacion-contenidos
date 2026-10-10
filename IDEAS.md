@@ -3,11 +3,18 @@
 Temas aún sin producir (no generados). Origen: `data/temas.json` (los que no tienen `"hecho": true`).
 Cada idea lleva la pista del mecanismo a explicar; los datos se verifican antes de producir. Para producir uno, sigue `CLAUDE.md`.
 
-## Política actual (neutral, con «Sin posicionarnos») (4)
+## Política actual: elecciones generales del 29-N (neutral, con «Sin posicionarnos») (11)
 - **Por qué un voto en Soria pesa más que uno en Madrid**: LOREG art. 162: 350 diputados, mínimo 2 por provincia (Ceuta y Melilla 1) y el resto según población; calcular votantes por escaño con datos oficiales del INE/Ministerio del Interior.
 - **La jornada de reflexión: por qué el sábado nadie te puede pedir el voto**: LOREG: campaña de 15 días que acaba a las 0 h del viernes al sábado; el día antes de votar no hay propaganda; prohibido publicar encuestas los 5 días previos (art. 69).
 - **La moción de censura constructiva: para echar a un presidente tienes que traer otro**: Constitución art. 113: mayoría absoluta y candidato alternativo; inspirada en Alemania. Casos: 1980, 1987, 2017, 2018 (única que prosperó), 2023.
-- **El voto en blanco no castiga a nadie (y puede dejar fuera a los pequeños)**: El voto en blanco cuenta como válido, así que sube el listón del 3 %; el nulo no cuenta. Diferencia blanco/nulo/abstención con ejemplo numérico ficticio.
+- **¿Votar por correo es seguro? Así viaja tu voto hasta la urna**: Gancho: «¿Votas por correo el 29-N? Mucha gente tiene miedo de esto». Solicitud en Correos con DNI, certificado, la documentación llega por correo certificado a tu casa, sobres, entrega en Correos, custodia y llega a tu mesa el día de la votación; quién lo puede abrir. Plazos exactos del 29-N.
+- **Votar en blanco no hace lo que crees**: Gancho: «Si el 29-N votas en blanco para castigar a todos… mira esto». Blanco = voto válido: sube el listón del 3 % por circunscripción; no deja escaños vacíos; nulo no cuenta; abstención no cuenta. Ejemplo numérico con partidos ficticios.
+- **Qué anula tu papeleta (y qué no)**: Gancho: «Un tachón y tu voto el 29-N no vale». Nulo: papeleta de otro proceso, dos papeletas de partidos distintos, sobre alterado, tachaduras o escritos en Congreso (lista cerrada); dos papeletas iguales = un voto válido. LOREG art. 96.
+- **Me ha tocado mesa electoral el 29-N: ¿me puedo librar?**: Gancho: «Te llega una carta: te ha tocado mesa el 29-N». Sorteo público por el ayuntamiento, obligatorio, excusas válidas ante la Junta Electoral de Zona en 7 días, dieta (verificar importe vigente), qué pasa si no vas (delito, LOREG art. 143).
+- **¿Por qué no puedes ver encuestas la última semana? (el truco de Andorra)**: Gancho: «Del 24 al 29-N no podrás ver encuestas en España… salvo en un sitio». LOREG art. 69: prohibido publicar sondeos los 5 días previos; medios lo sortean publicando en Andorra/extranjero («el precio de las frutas»).
+- **En el Senado votas personas, no listas**: Gancho: «El 29-N te dan una papeleta enorme y puedes marcar hasta 3». Listas abiertas, sistema mayoritario limitado: 4 senadores por provincia, marcas hasta 3; islas distintas; senadores autonómicos designados.
+- **¿Y si nadie gana el 29-N? Así funciona la investidura**: Gancho: «Gana uno y gobierna otro: ¿cómo puede pasar?». Constitución art. 99: el Rey propone candidato, mayoría absoluta en 1ª votación, simple en 2ª (48 h); si en 2 meses no hay presidente, nuevas elecciones. Sin nombres de partidos reales.
+- **Cómo se cuentan 25 millones de votos en una noche**: Gancho: «A las 20:00 cierran los colegios y a las 23:00 ya sabes quién gana. ¿Cómo?». Escrutinio en cada mesa en público, acta, datos provisionales vs escrutinio general oficial días después por las Juntas Electorales.
 
 ## Cuerpo (2)
 - **Por qué los bostezos se contagian**: relacionado con la imitación social; las causas exactas se siguen investigando

@@ -6,7 +6,7 @@ name: Programar en Buffer
 # Variable: MEDIA_REPO (p. ej. "usuario/eltrucoes-videos").
 on:
   schedule:
-    - cron: "37 * * * *"   # cada hora mira si hay vídeo nuevo; se publican separados 3 h (INTERVAL)
+    - cron: "37 * * * *"   # cada hora mira si hay vídeo nuevo; 3 al día a las 9, 14 y 21 h de Madrid (SLOTS)
   workflow_dispatch:
     inputs:
       n:
