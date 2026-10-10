@@ -1,0 +1,1008 @@
+{
+  "topic": "Cómo se circula bien por una rotonda en España: prioridad, carriles y salida",
+  "categoria": "objetos",
+  "title": "Rotondas: ¿el que corta o el que no lo deja? 🚗",
+  "source": "Fuentes: Reglamento General de Circulación (Real Decreto 1428/2003), art. 57.1.c (preferencia en las glorietas) · DGT, recomendaciones para circular por glorietas (salir siempre desde el carril exterior, intermitente al salir)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Rotondas: *¿quién manda?*",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "¿En la rotonda tiene razón el que corta o el que no lo deja? 🚗 Quien ya circula dentro tiene preferencia (Reglamento General de Circulación, art. 57.1.c). Puedes ir por el carril interior, pero antes de salir pon el intermitente y pásate con tiempo al exterior. ¿Se te pasó? Otra vuelta. ¿Tú cuántas das?",
+    "description": "Cómo se circula bien por una rotonda (glorieta) en España. 1) Quien ya circula dentro de la rotonda tiene preferencia sobre quien quiere entrar: el que entra cede el paso (Reglamento General de Circulación, art. 57.1.c: «En las glorietas, los que se hallen dentro de la vía circular tendrán preferencia de paso sobre los que pretendan acceder a aquéllas»). 2) Si vas a una salida lejana puedes circular por el carril interior. 3) Antes de salir, pon el intermitente derecho y pásate con antelación al carril exterior: la DGT recuerda que se sale siempre desde el carril exterior. 4) Salir cortando desde el carril interior es el error clásico: el coche que va por el carril exterior sigue su carril y tiene preferencia. 5) Si no llegas a tiempo al carril exterior, da otra vuelta. Fuentes: Real Decreto 1428/2003 (Reglamento General de Circulación), art. 57.1.c; DGT.",
+    "hashtags": [
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Quién tiene *razón*?",
+      "narration": "En la rotonda: ¿el que corta o el que no lo deja?",
+      "illustration": {
+        "svg_file": "rotonda_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Rotonda de dos carriles",
+        "anims": [
+          {
+            "target": "espera",
+            "effect": "hide"
+          },
+          {
+            "target": "dentro",
+            "effect": "hide"
+          },
+          {
+            "target": "ceda",
+            "effect": "hide"
+          },
+          {
+            "target": "blanco5",
+            "effect": "hide"
+          },
+          {
+            "target": "rojo5",
+            "effect": "hide"
+          },
+          {
+            "target": "tpref",
+            "effect": "hide"
+          },
+          {
+            "target": "tdentro",
+            "effect": "hide"
+          },
+          {
+            "target": "tcedes",
+            "effect": "hide"
+          },
+          {
+            "target": "mal",
+            "effect": "hide"
+          },
+          {
+            "target": "bien",
+            "effect": "hide"
+          },
+          {
+            "target": "recalc",
+            "effect": "hide"
+          },
+          {
+            "target": "ruta_mal",
+            "effect": "draw",
+            "trigger": "rotonda",
+            "dur": 0.9,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              400,
+              800
+            ],
+            "amount": 1.45,
+            "dur": 0.3
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "rotonda",
+            "sfx": "ding"
+          },
+          {
+            "target": "duda",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "rojo",
+            "effect": "punch",
+            "trigger": "corta",
+            "amount": 0.3
+          },
+          {
+            "target": "tcorta",
+            "effect": "pop",
+            "trigger": "corta",
+            "sfx": "pop"
+          },
+          {
+            "target": "rojo",
+            "effect": "shake",
+            "amount": 0.4
+          },
+          {
+            "target": "blanco",
+            "effect": "punch",
+            "trigger": "deja",
+            "amount": 0.3
+          },
+          {
+            "target": "tnodeja",
+            "effect": "pop",
+            "trigger": "deja",
+            "sfx": "pop"
+          },
+          {
+            "target": "piii",
+            "effect": "pop",
+            "trigger": "deja",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "piii",
+            "effect": "wiggle",
+            "amount": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Dentro *manda*",
+      "narration": "El truco es… quien ya está dentro manda. Si vas a entrar, cedes el paso.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "EL TRUCO ES…",
+          "trigger": "truco"
+        }
+      ],
+      "illustration": {
+        "svg_file": "rotonda_full.svg",
+        "layout": "full",
+        "caption": "Fig. 2 · Quien circula dentro, primero",
+        "anims": [
+          {
+            "target": "blanco",
+            "effect": "hide"
+          },
+          {
+            "target": "rojo",
+            "effect": "hide"
+          },
+          {
+            "target": "blanco5",
+            "effect": "hide"
+          },
+          {
+            "target": "rojo5",
+            "effect": "hide"
+          },
+          {
+            "target": "ruta_mal",
+            "effect": "hide"
+          },
+          {
+            "target": "tcorta",
+            "effect": "hide"
+          },
+          {
+            "target": "tnodeja",
+            "effect": "hide"
+          },
+          {
+            "target": "piii",
+            "effect": "hide"
+          },
+          {
+            "target": "mal",
+            "effect": "hide"
+          },
+          {
+            "target": "bien",
+            "effect": "hide"
+          },
+          {
+            "target": "recalc",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "tdentro",
+            "effect": "pop",
+            "trigger": "dentro",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              700,
+              880
+            ],
+            "amount": 1.3,
+            "dur": 0.5
+          },
+          {
+            "target": "dentro",
+            "effect": "move",
+            "to": [
+              159.7,
+              -146.3
+            ],
+            "rotate": -45,
+            "dur": 0.7,
+            "trigger": "dentro"
+          },
+          {
+            "target": "dentro",
+            "effect": "move",
+            "to": [
+              9.4,
+              -216.4
+            ],
+            "rotate": -45,
+            "dur": 0.7,
+            "trigger": "manda"
+          },
+          {
+            "target": "dentro",
+            "effect": "move",
+            "to": [
+              -169.1,
+              -169.1
+            ],
+            "rotate": -50,
+            "dur": 0.7,
+            "trigger": "vas"
+          },
+          {
+            "target": "tpref",
+            "effect": "pop",
+            "trigger": "manda",
+            "sfx": "ding"
+          },
+          {
+            "target": "tpref",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "espera",
+            "effect": "punch",
+            "trigger": "entrar",
+            "amount": 0.25
+          },
+          {
+            "target": "ceda",
+            "effect": "pop",
+            "trigger": "cedes",
+            "sfx": "sello"
+          },
+          {
+            "target": "tcedes",
+            "effect": "pop",
+            "trigger": "cedes"
+          },
+          {
+            "target": "ceda",
+            "effect": "punch",
+            "trigger": "paso",
+            "amount": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Lo dice la *norma*",
+      "narration": "Lo dice el Reglamento de Circulación, el libro de normas del tráfico: artículo 57.",
+      "illustration": {
+        "svg_file": "norma.svg",
+        "caption": "Fig. 3 · RGC, art. 57.1.c",
+        "anims": [
+          {
+            "target": "ficha",
+            "effect": "slide-left",
+            "trigger": "dice",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "libro",
+            "effect": "punch",
+            "trigger": "Reglamento",
+            "amount": 0.25
+          },
+          {
+            "target": "libro",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "tlibro",
+            "effect": "pop",
+            "trigger": "libro",
+            "sfx": "pop"
+          },
+          {
+            "target": "hl_dentro",
+            "effect": "draw",
+            "trigger": "normas",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "hl_preferencia",
+            "effect": "draw",
+            "trigger": "tráfico",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "artículo",
+            "sfx": "sello"
+          },
+          {
+            "target": "sello",
+            "effect": "punch",
+            "trigger": "57",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "normas",
+            "to": [
+              690,
+              300
+            ],
+            "amount": 1.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "artículo",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Carril de *dentro*",
+      "narration": "¿Vas a la tercera salida? Puedes ir por el carril de dentro.",
+      "illustration": {
+        "svg_file": "ruta_full.svg",
+        "layout": "full",
+        "caption": "Fig. 4 · Salidas 1, 2 y 3",
+        "anims": [
+          {
+            "target": "tu4",
+            "effect": "hide"
+          },
+          {
+            "target": "tu6",
+            "effect": "hide"
+          },
+          {
+            "target": "ruta_out",
+            "effect": "hide"
+          },
+          {
+            "target": "ruta_vuelta",
+            "effect": "hide"
+          },
+          {
+            "target": "lint",
+            "effect": "hide"
+          },
+          {
+            "target": "lgratis",
+            "effect": "hide"
+          },
+          {
+            "target": "gpsv",
+            "effect": "hide"
+          },
+          {
+            "target": "sinpiii",
+            "effect": "hide"
+          },
+          {
+            "target": "gps3",
+            "effect": "slide-down",
+            "trigger": "Vas",
+            "dur": 0.5,
+            "sfx": "ding"
+          },
+          {
+            "target": "b1",
+            "effect": "pop",
+            "delay": 0.5,
+            "sfx": "pop"
+          },
+          {
+            "target": "b2",
+            "effect": "pop",
+            "delay": 0.8,
+            "sfx": "pop"
+          },
+          {
+            "target": "b3",
+            "effect": "pop",
+            "trigger": "tercera",
+            "sfx": "ding"
+          },
+          {
+            "target": "b3",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "ruta_in",
+            "effect": "draw",
+            "trigger": "Puedes",
+            "dur": 1.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lfuera",
+            "effect": "pop",
+            "trigger": "carril",
+            "sfx": "pop"
+          },
+          {
+            "target": "ldentro",
+            "effect": "pop",
+            "trigger": "dentro",
+            "sfx": "pop"
+          },
+          {
+            "target": "tu3",
+            "effect": "move",
+            "to": [
+              96.2,
+              -198.8
+            ],
+            "rotate": 45,
+            "dur": 0.7,
+            "trigger": "Puedes"
+          },
+          {
+            "target": "tu3",
+            "effect": "move",
+            "to": [
+              26.1,
+              -177.6
+            ],
+            "rotate": -50,
+            "dur": 0.7,
+            "trigger": "ir"
+          },
+          {
+            "target": "tu3",
+            "effect": "move",
+            "to": [
+              -79.5,
+              -137.6
+            ],
+            "rotate": -50,
+            "dur": 0.7,
+            "trigger": "carril"
+          },
+          {
+            "target": "tu3",
+            "effect": "move",
+            "to": [
+              -156.5,
+              -27.6
+            ],
+            "rotate": -50,
+            "dur": 0.7,
+            "trigger": "dentro"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Sal por *fuera*",
+      "narration": "Pero antes de salir, pon el intermitente y pásate con tiempo al carril de fuera.",
+      "illustration": {
+        "svg_file": "ruta_full.svg",
+        "layout": "full",
+        "caption": "Fig. 5 · Primero al carril exterior",
+        "anims": [
+          {
+            "target": "tu3",
+            "effect": "hide"
+          },
+          {
+            "target": "tu6",
+            "effect": "hide"
+          },
+          {
+            "target": "ruta_in",
+            "effect": "hide"
+          },
+          {
+            "target": "ruta_vuelta",
+            "effect": "hide"
+          },
+          {
+            "target": "lgratis",
+            "effect": "hide"
+          },
+          {
+            "target": "gpsv",
+            "effect": "hide"
+          },
+          {
+            "target": "sinpiii",
+            "effect": "hide"
+          },
+          {
+            "target": "b1",
+            "effect": "hide"
+          },
+          {
+            "target": "b2",
+            "effect": "hide"
+          },
+          {
+            "target": "lint",
+            "effect": "hide"
+          },
+          {
+            "target": "b3",
+            "effect": "punch",
+            "trigger": "salir",
+            "amount": 0.3
+          },
+          {
+            "target": "gps3",
+            "effect": "punch",
+            "trigger": "salir",
+            "amount": 0.12
+          },
+          {
+            "target": "tu4b",
+            "effect": "pop",
+            "trigger": "intermitente",
+            "sfx": "ding"
+          },
+          {
+            "target": "tu4b",
+            "effect": "pulse",
+            "amount": 1.6
+          },
+          {
+            "target": "lint",
+            "effect": "pop",
+            "trigger": "intermitente"
+          },
+          {
+            "target": "lint",
+            "effect": "hide",
+            "trigger": "pásate"
+          },
+          {
+            "target": "ruta_out",
+            "effect": "draw",
+            "trigger": "pásate",
+            "dur": 1.3,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lfuera",
+            "effect": "punch",
+            "trigger": "fuera",
+            "amount": 0.3
+          },
+          {
+            "target": "tu4",
+            "effect": "move",
+            "to": [
+              -136.4,
+              8.3
+            ],
+            "rotate": -30,
+            "dur": 0.7,
+            "trigger": "pásate"
+          },
+          {
+            "target": "tu4",
+            "effect": "move",
+            "to": [
+              -72.8,
+              57.9
+            ],
+            "rotate": -18,
+            "dur": 0.7,
+            "trigger": "tiempo"
+          },
+          {
+            "target": "tu4",
+            "effect": "move",
+            "to": [
+              -66.5,
+              43.5
+            ],
+            "rotate": 63,
+            "dur": 0.7,
+            "trigger": "carril"
+          },
+          {
+            "target": "tu4",
+            "effect": "move",
+            "to": [
+              -80,
+              2
+            ],
+            "rotate": 5,
+            "dur": 0.7,
+            "trigger": "fuera"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "El error *clásico*",
+      "narration": "Cortar desde dentro es el error clásico. El de fuera sigue su carril: tiene preferencia.",
+      "illustration": {
+        "svg_file": "rotonda_full.svg",
+        "layout": "full",
+        "caption": "Fig. 6 · El que corta y el que no lo deja",
+        "anims": [
+          {
+            "target": "espera",
+            "effect": "hide"
+          },
+          {
+            "target": "dentro",
+            "effect": "hide"
+          },
+          {
+            "target": "ceda",
+            "effect": "hide"
+          },
+          {
+            "target": "blanco",
+            "effect": "hide"
+          },
+          {
+            "target": "rojo",
+            "effect": "hide"
+          },
+          {
+            "target": "tpref",
+            "effect": "hide"
+          },
+          {
+            "target": "tdentro",
+            "effect": "hide"
+          },
+          {
+            "target": "tcedes",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "ruta_mal",
+            "effect": "draw",
+            "trigger": "Cortar",
+            "dur": 1.0,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              400,
+              800
+            ],
+            "amount": 1.45,
+            "dur": 0.3
+          },
+          {
+            "target": "tcorta",
+            "effect": "pop",
+            "trigger": "dentro",
+            "sfx": "pop"
+          },
+          {
+            "target": "recalc",
+            "effect": "slide-down",
+            "trigger": "error",
+            "dur": 0.5,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "piii",
+            "effect": "pop",
+            "trigger": "error"
+          },
+          {
+            "target": "piii",
+            "effect": "wiggle",
+            "amount": 0.8
+          },
+          {
+            "target": "mal",
+            "effect": "pop",
+            "trigger": "clásico",
+            "sfx": "sello"
+          },
+          {
+            "target": "tnodeja",
+            "effect": "pop",
+            "trigger": "fuera",
+            "sfx": "pop"
+          },
+          {
+            "target": "recalc",
+            "effect": "hide",
+            "trigger": "fuera"
+          },
+          {
+            "target": "blanco5",
+            "effect": "punch",
+            "trigger": "carril",
+            "amount": 0.25
+          },
+          {
+            "target": "bien",
+            "effect": "pop",
+            "trigger": "preferencia",
+            "sfx": "ding"
+          },
+          {
+            "target": "rojo5",
+            "effect": "move",
+            "to": [
+              -104.4,
+              43.3
+            ],
+            "rotate": -35,
+            "dur": 0.7,
+            "trigger": "Cortar"
+          },
+          {
+            "target": "rojo5",
+            "effect": "move",
+            "to": [
+              -97.2,
+              70.0
+            ],
+            "rotate": 30,
+            "dur": 0.7,
+            "trigger": "dentro"
+          },
+          {
+            "target": "blanco5",
+            "effect": "move",
+            "to": [
+              -160.9,
+              89.7
+            ],
+            "rotate": -38,
+            "dur": 1.0,
+            "trigger": "Cortar"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Otra *vuelta*",
+      "narration": "¿Se te pasó? Da otra vuelta. Gratis y sin bocinazos.",
+      "illustration": {
+        "svg_file": "ruta_full.svg",
+        "layout": "full",
+        "caption": "Fig. 7 · Vuelta extra",
+        "anims": [
+          {
+            "target": "tu3",
+            "effect": "hide"
+          },
+          {
+            "target": "tu4",
+            "effect": "hide"
+          },
+          {
+            "target": "ruta_in",
+            "effect": "hide"
+          },
+          {
+            "target": "ruta_out",
+            "effect": "hide"
+          },
+          {
+            "target": "gps3",
+            "effect": "hide"
+          },
+          {
+            "target": "lint",
+            "effect": "hide"
+          },
+          {
+            "target": "ldentro",
+            "effect": "hide"
+          },
+          {
+            "target": "lfuera",
+            "effect": "hide"
+          },
+          {
+            "target": "b1",
+            "effect": "hide"
+          },
+          {
+            "target": "b2",
+            "effect": "hide"
+          },
+          {
+            "target": "gpsv",
+            "effect": "slide-down",
+            "trigger": "pasó",
+            "dur": 0.5,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "b3",
+            "effect": "shake",
+            "amount": 0.6
+          },
+          {
+            "target": "tu6",
+            "effect": "punch",
+            "trigger": "pasó",
+            "amount": 0.25
+          },
+          {
+            "target": "ruta_vuelta",
+            "effect": "draw",
+            "trigger": "Da",
+            "dur": 2.2,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lgratis",
+            "effect": "pop",
+            "trigger": "Gratis",
+            "sfx": "ding"
+          },
+          {
+            "target": "sinpiii",
+            "effect": "pop",
+            "trigger": "bocinazos",
+            "sfx": "pop"
+          },
+          {
+            "target": "tu6",
+            "effect": "move",
+            "to": [
+              209.7,
+              202.5
+            ],
+            "rotate": -62,
+            "dur": 0.6,
+            "trigger": "Da"
+          },
+          {
+            "target": "tu6",
+            "effect": "move",
+            "to": [
+              277.2,
+              -90.1
+            ],
+            "rotate": -62,
+            "dur": 0.6,
+            "trigger": "otra"
+          },
+          {
+            "target": "tu6",
+            "effect": "move",
+            "to": [
+              50.6,
+              -287.1
+            ],
+            "rotate": -62,
+            "dur": 0.6,
+            "trigger": "vuelta"
+          },
+          {
+            "target": "tu6",
+            "effect": "move",
+            "to": [
+              -229.7,
+              -179.5
+            ],
+            "rotate": -62,
+            "dur": 0.6,
+            "trigger": "Gratis"
+          },
+          {
+            "target": "tu6",
+            "effect": "move",
+            "to": [
+              -266.3,
+              118.6
+            ],
+            "rotate": -62,
+            "dur": 0.6,
+            "trigger": "sin"
+          },
+          {
+            "target": "tu6",
+            "effect": "move",
+            "to": [
+              -108.2,
+              95.3
+            ],
+            "rotate": 50,
+            "dur": 0.6,
+            "trigger": "bocinazos"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "vuelta",
+        "pose": "cheer",
+        "note": "¡Vuelta de honor!",
+        "side": "left"
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Tú eres de los que dan tres vueltas?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Tú eres de los que dan *tres vueltas*?",
+          "trigger": "Tú"
+        }
+      ]
+    }
+  ]
+}
