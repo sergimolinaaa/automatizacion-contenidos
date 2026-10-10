@@ -23,6 +23,7 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 - **Para todos, de 10 a 90 años**: cada palabra técnica, la primera vez que sale, va con una definición de pocas palabras o una
   comparación cotidiana, en la narración y si cabe en una etiqueta («escaño: cada asiento del Congreso», «hipotálamo: el termostato
   de tu cerebro», «el pistón es como la rodilla del motor»). Si se puede decir sin jerga, sin jerga.
+- Urgente: `"publish": {"at": "2026-10-11T09:00:00+02:00", …}` publica a esa hora sin mover la cola.
 - Texto de publicación: la 1ª frase pica la curiosidad (pregunta o dato sorprendente). Hashtags: SOLO #eltrucoes (lo pone `publish.py`; los del guion se ignoran).
 - Triggers = palabras EXACTAS de la narración de esa escena. Solo datos verdaderos y verificables (WebSearch si dudas).
 - Mascota (matraz): 1-2 cameos graciosos, nunca junto a ilustración + tarjetas.

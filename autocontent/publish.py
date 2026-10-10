@@ -221,14 +221,22 @@ def schedule_all(limit: int | None = None) -> list[dict]:
     print(f"En cola: {future} · hueco para {room} · se programan {limit}")
     complete_missing(state, chans, now)
     scheduled = []
-    for item in pending_videos(state)[:limit]:
+    items = pending_videos(state)
+    # urgentes: los que traen "publish.at" (fecha ISO) van primero y salen a esa hora, sin mover la cola
+    items.sort(key=lambda it: 0 if it["script"].get("publish", {}).get("at") else 1)
+    for item in items[:limit]:
         url = host_video(item["slug"], item["video"], item["cover"])
-        entry = {"slug": item["slug"], "category": item["category"], "due": due.isoformat(), "url": url, "posts": {}}
+        fixed = item["script"].get("publish", {}).get("at")
+        fixed_due = datetime.fromisoformat(fixed).astimezone(timezone.utc) if fixed else None
+        if fixed_due and fixed_due < now + timedelta(minutes=30):
+            fixed_due = now + timedelta(minutes=30)
+        entry = {"slug": item["slug"], "category": item["category"], "due": (fixed_due or due).isoformat(), "url": url, "posts": {}}
         state["posts"].append(entry)  # se guarda ANTES de crear nada: un fallo nunca provoca duplicados
         save_state(state)
         full = fill_channels(state, entry, item["script"], chans, item["thumb_ms"])
         scheduled.append(entry)
-        due = next_slot(due + MIN_GAP)
+        if not fixed_due:
+            due = next_slot(due + MIN_GAP)
         if not full:
             print("  Buffer está lleno en algún canal; los canales que faltan se completarán en la próxima ejecución.")
             break
