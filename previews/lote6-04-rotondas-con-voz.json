@@ -1,0 +1,602 @@
+{
+ "source": "Fuentes: Reglamento General de Circulación (Real Decreto 1428/2003), art. 57.1.c (preferencia en las glorietas) · DGT, recomendaciones para circular por glorietas (salir siempre desde el carril exterior, intermitente al salir)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "En",
+   "start": 0.1,
+   "end": 0.28
+  },
+  {
+   "text": "la",
+   "start": 0.29,
+   "end": 0.37
+  },
+  {
+   "text": "rotonda:",
+   "start": 0.38,
+   "end": 0.8
+  },
+  {
+   "text": "¿el",
+   "start": 0.9,
+   "end": 1.02
+  },
+  {
+   "text": "que",
+   "start": 1.03,
+   "end": 1.12
+  },
+  {
+   "text": "corta",
+   "start": 1.13,
+   "end": 1.43
+  },
+  {
+   "text": "o",
+   "start": 1.44,
+   "end": 1.54
+  },
+  {
+   "text": "el",
+   "start": 1.55,
+   "end": 1.6400000000000001
+  },
+  {
+   "text": "que",
+   "start": 1.65,
+   "end": 1.72
+  },
+  {
+   "text": "no",
+   "start": 1.73,
+   "end": 1.82
+  },
+  {
+   "text": "lo",
+   "start": 1.83,
+   "end": 1.9100000000000001
+  },
+  {
+   "text": "deja?",
+   "start": 1.92,
+   "end": 2.28
+  },
+  {
+   "text": "El",
+   "start": 2.96,
+   "end": 3.18
+  },
+  {
+   "text": "truco",
+   "start": 3.19,
+   "end": 3.4899999999999998
+  },
+  {
+   "text": "es…",
+   "start": 3.5,
+   "end": 3.66
+  },
+  {
+   "text": "quien",
+   "start": 3.8,
+   "end": 3.9499999999999997
+  },
+  {
+   "text": "ya",
+   "start": 3.96,
+   "end": 4.07
+  },
+  {
+   "text": "está",
+   "start": 4.08,
+   "end": 4.28
+  },
+  {
+   "text": "dentro",
+   "start": 4.29,
+   "end": 4.54
+  },
+  {
+   "text": "manda.",
+   "start": 4.55,
+   "end": 4.91
+  },
+  {
+   "text": "Si",
+   "start": 5.61,
+   "end": 5.82
+  },
+  {
+   "text": "vas",
+   "start": 5.83,
+   "end": 6.0
+  },
+  {
+   "text": "a",
+   "start": 6.01,
+   "end": 6.06
+  },
+  {
+   "text": "entrar,",
+   "start": 6.07,
+   "end": 6.430000000000001
+  },
+  {
+   "text": "cedes",
+   "start": 6.53,
+   "end": 6.800000000000001
+  },
+  {
+   "text": "el",
+   "start": 6.81,
+   "end": 6.8999999999999995
+  },
+  {
+   "text": "paso.",
+   "start": 6.91,
+   "end": 7.28
+  },
+  {
+   "text": "Lo",
+   "start": 7.97,
+   "end": 8.15
+  },
+  {
+   "text": "dice",
+   "start": 8.16,
+   "end": 8.36
+  },
+  {
+   "text": "el",
+   "start": 8.37,
+   "end": 8.45
+  },
+  {
+   "text": "Reglamento",
+   "start": 8.46,
+   "end": 8.9
+  },
+  {
+   "text": "de",
+   "start": 8.91,
+   "end": 8.99
+  },
+  {
+   "text": "Circulación,",
+   "start": 9.0,
+   "end": 9.62
+  },
+  {
+   "text": "el",
+   "start": 9.75,
+   "end": 9.83
+  },
+  {
+   "text": "libro",
+   "start": 9.84,
+   "end": 10.07
+  },
+  {
+   "text": "de",
+   "start": 10.08,
+   "end": 10.15
+  },
+  {
+   "text": "normas",
+   "start": 10.16,
+   "end": 10.47
+  },
+  {
+   "text": "del",
+   "start": 10.48,
+   "end": 10.6
+  },
+  {
+   "text": "tráfico:",
+   "start": 10.61,
+   "end": 11.059999999999999
+  },
+  {
+   "text": "artículo",
+   "start": 11.19,
+   "end": 11.629999999999999
+  },
+  {
+   "text": "57.",
+   "start": 11.64,
+   "end": 12.43
+  },
+  {
+   "text": "¿Vas",
+   "start": 13.12,
+   "end": 13.389999999999999
+  },
+  {
+   "text": "a",
+   "start": 13.4,
+   "end": 13.43
+  },
+  {
+   "text": "la",
+   "start": 13.44,
+   "end": 13.53
+  },
+  {
+   "text": "tercera",
+   "start": 13.54,
+   "end": 13.85
+  },
+  {
+   "text": "salida?",
+   "start": 13.86,
+   "end": 14.29
+  },
+  {
+   "text": "Puedes",
+   "start": 15.01,
+   "end": 15.33
+  },
+  {
+   "text": "ir",
+   "start": 15.34,
+   "end": 15.43
+  },
+  {
+   "text": "por",
+   "start": 15.44,
+   "end": 15.549999999999999
+  },
+  {
+   "text": "el",
+   "start": 15.56,
+   "end": 15.63
+  },
+  {
+   "text": "carril",
+   "start": 15.64,
+   "end": 15.9
+  },
+  {
+   "text": "de",
+   "start": 15.91,
+   "end": 15.99
+  },
+  {
+   "text": "dentro.",
+   "start": 16.0,
+   "end": 16.42
+  },
+  {
+   "text": "Pero",
+   "start": 17.12,
+   "end": 17.35
+  },
+  {
+   "text": "antes",
+   "start": 17.36,
+   "end": 17.58
+  },
+  {
+   "text": "de",
+   "start": 17.59,
+   "end": 17.66
+  },
+  {
+   "text": "salir,",
+   "start": 17.67,
+   "end": 17.98
+  },
+  {
+   "text": "pon",
+   "start": 18.08,
+   "end": 18.209999999999997
+  },
+  {
+   "text": "el",
+   "start": 18.22,
+   "end": 18.29
+  },
+  {
+   "text": "intermitente",
+   "start": 18.3,
+   "end": 18.86
+  },
+  {
+   "text": "y",
+   "start": 18.87,
+   "end": 18.92
+  },
+  {
+   "text": "pásate",
+   "start": 18.93,
+   "end": 19.25
+  },
+  {
+   "text": "con",
+   "start": 19.26,
+   "end": 19.42
+  },
+  {
+   "text": "tiempo",
+   "start": 19.43,
+   "end": 19.69
+  },
+  {
+   "text": "al",
+   "start": 19.7,
+   "end": 19.77
+  },
+  {
+   "text": "carril",
+   "start": 19.78,
+   "end": 20.040000000000003
+  },
+  {
+   "text": "de",
+   "start": 20.05,
+   "end": 20.13
+  },
+  {
+   "text": "fuera.",
+   "start": 20.14,
+   "end": 20.46
+  },
+  {
+   "text": "Cortar",
+   "start": 21.15,
+   "end": 21.49
+  },
+  {
+   "text": "desde",
+   "start": 21.5,
+   "end": 21.7
+  },
+  {
+   "text": "dentro",
+   "start": 21.71,
+   "end": 22.03
+  },
+  {
+   "text": "es",
+   "start": 22.04,
+   "end": 22.16
+  },
+  {
+   "text": "el",
+   "start": 22.17,
+   "end": 22.26
+  },
+  {
+   "text": "error",
+   "start": 22.27,
+   "end": 22.49
+  },
+  {
+   "text": "clásico.",
+   "start": 22.5,
+   "end": 23.01
+  },
+  {
+   "text": "El",
+   "start": 23.7,
+   "end": 23.919999999999998
+  },
+  {
+   "text": "de",
+   "start": 23.93,
+   "end": 24.02
+  },
+  {
+   "text": "fuera",
+   "start": 24.03,
+   "end": 24.220000000000002
+  },
+  {
+   "text": "sigue",
+   "start": 24.23,
+   "end": 24.46
+  },
+  {
+   "text": "su",
+   "start": 24.47,
+   "end": 24.57
+  },
+  {
+   "text": "carril:",
+   "start": 24.58,
+   "end": 24.939999999999998
+  },
+  {
+   "text": "tiene",
+   "start": 25.03,
+   "end": 25.23
+  },
+  {
+   "text": "preferencia.",
+   "start": 25.24,
+   "end": 25.86
+  },
+  {
+   "text": "¿Se",
+   "start": 26.56,
+   "end": 26.759999999999998
+  },
+  {
+   "text": "te",
+   "start": 26.77,
+   "end": 26.849999999999998
+  },
+  {
+   "text": "pasó?",
+   "start": 26.86,
+   "end": 27.18
+  },
+  {
+   "text": "Da",
+   "start": 27.89,
+   "end": 28.11
+  },
+  {
+   "text": "otra",
+   "start": 28.12,
+   "end": 28.3
+  },
+  {
+   "text": "vuelta.",
+   "start": 28.31,
+   "end": 28.73
+  },
+  {
+   "text": "Gratis",
+   "start": 29.43,
+   "end": 29.87
+  },
+  {
+   "text": "y",
+   "start": 29.88,
+   "end": 29.919999999999998
+  },
+  {
+   "text": "sin",
+   "start": 29.93,
+   "end": 30.06
+  },
+  {
+   "text": "bocinazos.",
+   "start": 30.07,
+   "end": 30.73
+  },
+  {
+   "text": "Tú",
+   "start": 31.47,
+   "end": 31.599999999999998
+  },
+  {
+   "text": "traes",
+   "start": 31.61,
+   "end": 31.86
+  },
+  {
+   "text": "las",
+   "start": 31.87,
+   "end": 32.02
+  },
+  {
+   "text": "dudas",
+   "start": 32.03,
+   "end": 32.300000000000004
+  },
+  {
+   "text": "y",
+   "start": 32.31,
+   "end": 32.35
+  },
+  {
+   "text": "nosotros",
+   "start": 32.36,
+   "end": 32.78
+  },
+  {
+   "text": "te",
+   "start": 32.79,
+   "end": 32.88
+  },
+  {
+   "text": "damos",
+   "start": 32.89,
+   "end": 33.160000000000004
+  },
+  {
+   "text": "el",
+   "start": 33.17,
+   "end": 33.27
+  },
+  {
+   "text": "truco.",
+   "start": 33.28,
+   "end": 33.660000000000004
+  },
+  {
+   "text": "Síguenos",
+   "start": 34.35,
+   "end": 34.86
+  },
+  {
+   "text": "y",
+   "start": 34.87,
+   "end": 34.919999999999995
+  },
+  {
+   "text": "las",
+   "start": 34.93,
+   "end": 35.06
+  },
+  {
+   "text": "resolvemos.",
+   "start": 35.07,
+   "end": 35.73
+  },
+  {
+   "text": "¿Tú",
+   "start": 36.42,
+   "end": 36.6
+  },
+  {
+   "text": "eres",
+   "start": 36.61,
+   "end": 36.79
+  },
+  {
+   "text": "de",
+   "start": 36.8,
+   "end": 36.86
+  },
+  {
+   "text": "los",
+   "start": 36.87,
+   "end": 37.0
+  },
+  {
+   "text": "que",
+   "start": 37.01,
+   "end": 37.089999999999996
+  },
+  {
+   "text": "dan",
+   "start": 37.1,
+   "end": 37.27
+  },
+  {
+   "text": "tres",
+   "start": 37.28,
+   "end": 37.46
+  },
+  {
+   "text": "vueltas?",
+   "start": 37.47,
+   "end": 37.91
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 38.41,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Rotondas: *¿quién manda?*",
+  "scene": 0
+ },
+ "duration": 41.01,
+ "cover_offset_ms": 41309
+}
