@@ -398,5 +398,53 @@
     "tema": "Cómo el airbag se infla más rápido que un parpadeo",
     "categoria": "objetos",
     "pista": "sensor de aceleración, reacción química que libera gas en milisegundos; verifica cifras"
+  },
+  {
+    "tema": "Black Friday: cómo saber si una oferta es falsa",
+    "categoria": "consumo",
+    "pista": "El 27-N es Black Friday. Subir el precio antes para 'rebajarlo'; ley española: el precio anterior de referencia es el más bajo de los 30 días previos (Ley de Ordenación del Comercio Minorista, art. 20, verificar). Truco: historial de precios.",
+    "prioridad": true
+  },
+  {
+    "tema": "Por qué los precios acaban en ,99",
+    "categoria": "consumo",
+    "pista": "Efecto del dígito izquierdo: 9,99 se lee como 9 y no como 10 (estudios de Thomas y Morwitz, 2005, verificar).",
+    "prioridad": true
+  },
+  {
+    "tema": "Los trucos del supermercado para que compres más",
+    "categoria": "consumo",
+    "pista": "Leche y pan al fondo, productos caros a la altura de los ojos, carros grandes, música lenta (Milliman, 1982, verificar).",
+    "prioridad": true
+  },
+  {
+    "tema": "¿La regla de los cinco segundos funciona?",
+    "categoria": "bulos",
+    "pista": "Estudio de Rutgers (Schaffner, 2016): las bacterias pasan en menos de 1 s; depende de humedad y superficie."
+  },
+  {
+    "tema": "¿El Bluetooth gasta mucha batería?",
+    "categoria": "bulos",
+    "pista": "Bluetooth Low Energy consume muy poco; la pantalla y la señal móvil gastan mucho más (verificar cifras)."
+  },
+  {
+    "tema": "¿El agua caliente se congela antes que la fría?",
+    "categoria": "bulos",
+    "pista": "Efecto Mpemba: observado a veces, sigue en debate; depende de evaporación, convección y recipiente."
+  },
+  {
+    "tema": "Por qué el móvil va más lento con los años",
+    "categoria": "moviles",
+    "pista": "Batería que envejece y limita picos de potencia, apps más pesadas, almacenamiento lleno (verificar)."
+  },
+  {
+    "tema": "Por qué cargar el móvil al 100 % no es lo ideal",
+    "categoria": "moviles",
+    "pista": "Baterías de litio sufren más en cargas altas y con calor; carga optimizada al 80 % (verificar)."
+  },
+  {
+    "tema": "El truco de los tipos de interés: por qué tu hipoteca sube o baja",
+    "categoria": "dinero",
+    "pista": "Euríbor: lo que se prestan los bancos entre sí; tu cuota = euríbor + diferencial. Comparaciones cotidianas."
   }
 ]

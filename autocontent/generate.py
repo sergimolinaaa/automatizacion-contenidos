@@ -52,7 +52,7 @@ def _check_stop(msg) -> None:
 
 # ------------------------------------------------------------------ 1. tema
 
-CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra", "politica"]
+CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra", "politica", "consumo", "bulos", "moviles", "dinero"]
 
 
 def _last_category() -> str | None:
@@ -171,14 +171,15 @@ POLÍTICA ACTUAL: también el truco de las reglas detrás de la noticia (cómo s
 qué es un decreto ley...). NEUTRALIDAD TOTAL: explica el mecanismo con fuentes oficiales (Constitución, LOREG, BOE), sin opinar,
 sin favorecer ni ridiculizar a ningún partido o persona, sin caricaturas de políticos reales; en ejemplos numéricos usa partidos
 ficticios de colores. Fechas y cifras de actualidad, comprobadas el mismo día.
-Y DILO EXPLÍCITAMENTE: tras la firma, una frase corta tipo «Sin posicionarnos: solo cómo funciona.» con un sello/etiqueta
+Y DILO EXPLÍCITAMENTE: tras «El truco es…», una frase corta tipo «Sin posicionarnos: solo cómo funciona.» con un sello/etiqueta
 visible «SIN POSICIONARNOS», y en el texto de publicación de cada red «Sin posicionarnos: solo explicamos cómo funciona.».
 Tono: cercano, con chispa y humor suave; frases cortas que se entienden a la primera; nada de relleno ni clickbait falso.
 NUNCA inventes datos: usa solo los de la ficha de investigación; si un dato está marcado como dudoso, no lo uses.
 
-ESTRUCTURA (unos 40-55 segundos, 130-175 palabras de narración en total, 9-12 escenas cortas de 1-2 frases: ritmo rápido):
-- Escena 0, capítulo 0 "?": GANCHO. Lo increíble en una frase (máx. 12 palabras). Con ilustración.
-- Escena 1, capítulo 0: FIRMA (rápida). {"chapter": 0, "signature": true, "headline": "El truco es…", "narration": "El truco es…"}
+ESTRUCTURA (unos 35-45 segundos, 100-115 palabras de narración en total, 7-10 escenas cortas de 1-2 frases: ritmo rápido; la escena "+" solo si es muy buena):
+- Escena 0, capítulo 0 "?": GANCHO. Lo más impactante en una frase (máx. 12 palabras), en grande desde el primer fotograma. Con ilustración.
+- Escena 1, capítulo 1: «El truco es…» YA EN ACCIÓN: la narración empieza por "El truco es…" y sigue con la explicación sobre su ilustración
+  (nada de ventanilla/firma aparte); añade el elemento {"type":"tag","text":"EL TRUCO ES…","trigger":"truco"}.
 - Capítulos "1", "2", "3": el truco explicado paso a paso (1-2 escenas por capítulo). Usa ilustraciones de detalle.
 - Capítulo "+": 1-2 datos extra sorprendentes.
 - Capítulo "TÚ" (escena final, unos 4-5 s): primero la llamada a seguir y luego UNA pregunta corta (máx. 12 palabras) sobre
@@ -237,7 +238,7 @@ ANIMACIONES (anims): {"target": id, "effect", "trigger"?, "dur"?, "to"?: [dx, dy
 - CÁMARA: {"target": "camera", "effect": "zoom", "to": [x, y] del viewBox, "amount": 1.3-2, "trigger"?} acerca la cámara a ese
   punto; con "amount": 1 vuelve al plano general. Úsala 1-2 veces por escena para enseñar el detalle del que se habla.
 - Cuando reutilices un SVG en otra escena, oculta con "hide" lo que no toque mostrar.
-- TODAS las escenas (salvo la firma y la final TÚ) llevan ilustración: nada de escenas solo con tarjetas. Si una escena es un
+- TODAS las escenas (salvo las dos del cierre TÚ) llevan ilustración: nada de escenas solo con tarjetas. Si una escena es un
   dato o una cifra, ponla sobre un dibujo (puedes REUTILIZAR un SVG con otros zooms y otras anims, o hacer uno nuevo).
 - VARIEDAD DE DISEÑO por escena (illustration.layout): alterna en cada vídeo los tres tipos, no siempre el recuadro:
   · "panel" (por defecto): recuadro con viewBox 0 0 1000 700.
@@ -258,7 +259,7 @@ Escribe los números de la narración con cifras (42, 5.000) solo si se leen bie
 
 ADEMÁS:
 - "title": título para YouTube (máx. 70 caracteres, con gancho, sin mentir) que puede llevar 1 emoji al final.
-- "publish": {"caption": texto para Instagram/TikTok (2-3 frases con gancho + pregunta), "description": descripción para YouTube
+- "publish": {"caption": texto para Instagram/TikTok (la 1ª frase es una pregunta o dato que pique la curiosidad; 2-3 frases + pregunta), "description": descripción para YouTube
   (3-5 frases + fuente), "hashtags": ["eltrucoes"]} (solo nuestro hashtag; ninguno dentro del texto).
 - "cover": {"text": gancho de portada de 3-6 palabras con *palabra clave*, "badge": "¿CÓMO LO HACE?" o similar, "scene": 0}.
 - "source": línea corta de fuentes.
@@ -333,21 +334,18 @@ def validate(script: dict) -> tuple[list[str], list[str]]:
             errors.append(f"El SVG '{name}' contiene scripts o enlaces externos.")
 
     scenes = script["scenes"]
-    if not 7 <= len(scenes) <= 12:
+    if not 7 <= len(scenes) <= 11:
         errors.append(f"Hay {len(scenes)} escenas; deben ser entre 7 y 12.")
-    if len(scenes) > 1:
-        sig = scenes[1].get("narration", "")
-        sig = SIGNATURE_LINE
-        scenes[1].update({"chapter": 0, "signature": True, "headline": "El truco es…", "narration": sig})
-        scenes[1].pop("illustration", None), scenes[1].pop("elements", None), scenes[1].pop("mascot", None)
-    for i, sc in enumerate(scenes[2:-1], start=2):
-        if not sc.get("illustration"):
-            errors.append(f"Escena {i}: todas las escenas (salvo firma y final) deben llevar ilustración.")
+    if len(scenes) > 1 and not scenes[1].get("narration", "").startswith("El truco es"):
+        warnings.append("La escena 1 debería empezar su narración por «El truco es…» (en acción, con ilustración).")
+    for i, sc in enumerate(scenes[1:], start=1):
+        if sc.get("chapter") != 5 and not sc.get("signature") and not sc.get("illustration"):
+            errors.append(f"Escena {i}: todas las escenas (salvo el cierre TÚ) deben llevar ilustración.")
     if scenes and not scenes[0].get("illustration"):
         errors.append("La escena 0 (gancho) necesita ilustración.")
     words = sum(len(s.get("narration", "").split()) for s in scenes)
-    if not 110 <= words <= 240:
-        errors.append(f"La narración tiene {words} palabras; debe tener entre 150 y 210.")
+    if not 90 <= words <= 135:  # aviso: los guiones antiguos son más largos
+        warnings.append(f"La narración tiene {words} palabras; debería tener entre 100 y 115.")
     if scenes and scenes[-1].get("chapter") != 5:
         errors.append("La última escena debe ser el capítulo 5 (TÚ) con la pregunta final.")
 

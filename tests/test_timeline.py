@@ -59,4 +59,3 @@ def test_generator_validator_accepts_examples_and_fixes_bad_triggers():
     errors, warnings = generate.validate(script)
     assert errors == []
     assert any("inexistente" in w for w in warnings) and any("no-existe" in w for w in warnings)
-    assert script["scenes"][1]["signature"] is True

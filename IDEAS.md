@@ -62,3 +62,18 @@ Cada idea lleva la pista del mecanismo a explicar; los datos se verifican antes 
 - **Cómo funciona un motor de coche: miles de explosiones por minuto**: pistones, cilindros, bujía; 4 tiempos; comparaciones cotidianas
 - **Por qué el ABS evita que derrapes al frenar**: suelta y aprieta el freno muchas veces por segundo; rueda que gira = rueda que se puede dirigir
 - **Cómo el airbag se infla más rápido que un parpadeo**: sensor de aceleración y reacción química que libera gas en milisegundos
+
+## Consumo y Black Friday (27-N) (3)
+- **Black Friday: cómo saber si una oferta es falsa**: El 27-N es Black Friday. Subir el precio antes para 'rebajarlo'; ley española: el precio anterior de referencia es el más bajo de los 30 días previos (Ley de Ordenación del Comercio Minorista, art. 20, verificar). Truco: historial de precios.
+- **Por qué los precios acaban en ,99**: Efecto del dígito izquierdo: 9,99 se lee como 9 y no como 10 (estudios de Thomas y Morwitz, 2005, verificar).
+- **Los trucos del supermercado para que compres más**: Leche y pan al fondo, productos caros a la altura de los ojos, carros grandes, música lenta (Milliman, 1982, verificar).
+
+## Bulos del día a día (3)
+- **¿La regla de los cinco segundos funciona?**: Estudio de Rutgers (Schaffner, 2016): las bacterias pasan en menos de 1 s; depende de humedad y superficie.
+- **¿El Bluetooth gasta mucha batería?**: Bluetooth Low Energy consume muy poco; la pantalla y la señal móvil gastan mucho más (verificar cifras).
+- **¿El agua caliente se congela antes que la fría?**: Efecto Mpemba: observado a veces, sigue en debate; depende de evaporación, convección y recipiente.
+
+## Móviles y dinero (3)
+- **Por qué el móvil va más lento con los años**: Batería que envejece y limita picos de potencia, apps más pesadas, almacenamiento lleno (verificar).
+- **Por qué cargar el móvil al 100 % no es lo ideal**: Baterías de litio sufren más en cargas altas y con calor; carga optimizada al 80 % (verificar).
+- **El truco de los tipos de interés: por qué tu hipoteca sube o baja**: Euríbor: lo que se prestan los bancos entre sí; tu cuota = euríbor + diferencial. Comparaciones cotidianas.

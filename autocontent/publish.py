@@ -28,7 +28,7 @@ SLOTS = (9, 14, 21)  # horas locales de publicación: mañana, mediodía y tarde
 MIN_GAP = timedelta(hours=2)  # separación mínima con la publicación anterior
 MAX_QUEUE = 8  # publicaciones futuras por canal (el plan de Buffer permite 10)
 HASHTAG = "#eltrucoes"
-CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra", "politica"]
+CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra", "politica", "consumo", "bulos", "moviles", "dinero"]
 
 
 # ------------------------------------------------------------------ Buffer GraphQL

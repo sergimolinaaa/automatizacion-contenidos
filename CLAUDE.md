@@ -12,7 +12,10 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 ## Fórmula y estructura (el nivel MÍNIMO es `content/lote3-01-zapatero`; cópialo como plantilla)
 - Reglas completas de guion, ilustración y DSL de animación: constante `SYSTEM` en `autocontent/generate.py`. Motor: `video/src/components/Illustration.tsx`, tipos en `video/src/types.ts`.
 - guion.json: topic, categoria, title, source (fuentes reales), chapters `["?","1","2","3","+","TÚ"]`, outro_cta, cover, publish, scenes.
-- 9-12 escenas, **135-150 palabras** (40-55 s), frases cortas. Voz Edge TTS a +25 % (`config.yaml`): ritmo rápido. Escena 1 = firma `{"chapter":0,"signature":true,"headline":"El truco es…","narration":"El truco es…"}`.
+- 7-10 escenas, **100-115 palabras** (35-45 s), frases cortas; escena "+" solo si es muy buena. Voz Edge TTS a +25 % (`config.yaml`).
+- Escena 0 = GANCHO: la frase más impactante, en grande desde el primer fotograma.
+- Escena 1 = «El truco es…» YA EN ACCIÓN (sin firma/ventanilla aparte): la narración empieza por "El truco es…" y sigue explicando sobre
+  su ilustración, con el elemento `{"type":"tag","text":"EL TRUCO ES…","trigger":"truco"}`.
 - Cierre en 2 escenas (capítulo 5 «TÚ»): (1) narración "Tú traes las dudas y nosotros te damos el truco.", headline "Dudas → *truco*",
   elements `[{"type":"trick","trigger":"Tú","reveal_trigger":"nosotros"}]` (animación con 4 variantes, cambia sola en cada vídeo);
   (2) final sin mascota: narración `"Síguenos y las resolvemos. <UNA pregunta corta y graciosa>"`,
@@ -20,13 +23,13 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 - **Para todos, de 10 a 90 años**: cada palabra técnica, la primera vez que sale, va con una definición de pocas palabras o una
   comparación cotidiana, en la narración y si cabe en una etiqueta («escaño: cada asiento del Congreso», «hipotálamo: el termostato
   de tu cerebro», «el pistón es como la rodilla del motor»). Si se puede decir sin jerga, sin jerga.
-- Hashtags: SOLO #eltrucoes (lo pone `publish.py`; los del guion se ignoran).
+- Texto de publicación: la 1ª frase pica la curiosidad (pregunta o dato sorprendente). Hashtags: SOLO #eltrucoes (lo pone `publish.py`; los del guion se ignoran).
 - Triggers = palabras EXACTAS de la narración de esa escena. Solo datos verdaderos y verificables (WebSearch si dudas).
 - Mascota (matraz): 1-2 cameos graciosos, nunca junto a ilustración + tarjetas.
 
 ## Estilo visual
 - Pegatina realista: degradados, brillos, sombras, anatomía/física correctas; 3-4 SVG por vídeo generados con un script Python que calcula coordenadas.
-- TODAS las escenas (salvo firma y final) llevan dibujo; la mitad inferior queda libre para subtítulos; nada solapado ni cortado.
+- TODAS las escenas (salvo las dos del cierre) llevan dibujo; la mitad inferior queda libre para subtítulos; nada solapado ni cortado.
 - Varía `illustration.layout`: `panel` (1000x700, nada importante fuera de y 45-655, esquina 0-340×0-70 reservada a «Fig.»),
   `free` (transparente, vertical, height 800-900) y `full` (1080x1920, lo importante entre y 450-1250). Mínimo 2 free/full por vídeo.
 - 6-12 anims por escena (pop/fade/grow/slide/draw, move, hide con trigger, bucles): algo nuevo cada 1-1,5 s.
@@ -36,7 +39,7 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 Solo el mecanismo (D'Hondt, decreto ley, fechas…) con fuentes oficiales (Constitución, LOREG, BOE, INE); fechas y cifras comprobadas el mismo día.
 Elecciones generales del **29-N** (RD 806/2026): 1 vídeo de política al día + 2 de otros temas. Gancho llamativo ligado al 29-N
 («Votar en blanco no hace lo que crees», «¿Votar por correo es seguro?»), adaptado al formato, nunca copiado.
-Sin opinión, sin partidos ni políticos reales (nada de «si votas a X esto proponen»), sin caricaturas: partidos ficticios de colores. **Obligatorio**: tras la firma,
+Sin opinión, sin partidos ni políticos reales (nada de «si votas a X esto proponen»), sin caricaturas: partidos ficticios de colores. **Obligatorio**: tras «El truco es…»,
 narración «Sin posicionarnos: solo cómo funciona.» + sello visible «SIN POSICIONARNOS»; y en cada texto de publicación
 «Sin posicionarnos: solo explicamos cómo funciona.».
 
@@ -59,5 +62,5 @@ narración «Sin posicionarnos: solo cómo funciona.» + sello visible «SIN POS
 - NUNCA `git stash pop` a ciegas (hay stashes viejos que no deben aplicarse); usa `pull --rebase --autostash`.
 - Zooms de cámara (`"camera"`) que tapan el titular o cortan etiquetas: oculta etiquetas con `hide` o quita el zoom.
 - `hide` sin trigger oculta desde el principio de la escena; los `move` se suman; en grupos rotados van en coordenadas locales.
-- Vídeos demasiado largos (>55 s): recorta palabras, no escenas.
+- Vídeos demasiado largos (>45 s): recorta palabras y la escena "+".
 - **Secretos**: la clave de Buffer vive solo en el secreto `BUFFER_API_KEY` de GitHub. Nunca la escribas en archivos ni pidas claves por chat.
