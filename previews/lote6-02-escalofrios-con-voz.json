@@ -700,71 +700,111 @@
    "end": 46.43
   },
   {
-   "text": "Síguenos",
+   "text": "Tú",
    "start": 47.12,
-   "end": 47.599999999999994
+   "end": 47.26
   },
   {
-   "text": "para",
-   "start": 47.61,
-   "end": 47.75
+   "text": "traes",
+   "start": 47.27,
+   "end": 47.53
   },
   {
-   "text": "más",
-   "start": 47.76,
-   "end": 47.919999999999995
+   "text": "las",
+   "start": 47.54,
+   "end": 47.68
   },
   {
-   "text": "trucos.",
-   "start": 47.93,
-   "end": 48.41
+   "text": "dudas",
+   "start": 47.69,
+   "end": 47.96
+  },
+  {
+   "text": "y",
+   "start": 47.97,
+   "end": 48.01
+  },
+  {
+   "text": "nosotros,",
+   "start": 48.02,
+   "end": 48.510000000000005
+  },
+  {
+   "text": "el",
+   "start": 48.61,
+   "end": 48.769999999999996
+  },
+  {
+   "text": "truco.",
+   "start": 48.78,
+   "end": 49.160000000000004
+  },
+  {
+   "text": "Síguenos",
+   "start": 49.86,
+   "end": 50.37
+  },
+  {
+   "text": "y",
+   "start": 50.38,
+   "end": 50.43
+  },
+  {
+   "text": "las",
+   "start": 50.44,
+   "end": 50.57
+  },
+  {
+   "text": "resolvemos.",
+   "start": 50.58,
+   "end": 51.239999999999995
   },
   {
    "text": "¿Qué",
-   "start": 49.2,
-   "end": 49.36
+   "start": 51.93,
+   "end": 52.089999999999996
   },
   {
    "text": "rareza",
-   "start": 49.37,
-   "end": 49.669999999999995
+   "start": 52.1,
+   "end": 52.4
   },
   {
    "text": "de",
-   "start": 49.68,
-   "end": 49.76
+   "start": 52.41,
+   "end": 52.489999999999995
   },
   {
    "text": "tu",
-   "start": 49.77,
-   "end": 49.84
+   "start": 52.5,
+   "end": 52.57
   },
   {
    "text": "cuerpo",
-   "start": 49.85,
-   "end": 50.11
+   "start": 52.58,
+   "end": 52.839999999999996
   },
   {
    "text": "te",
-   "start": 50.12,
-   "end": 50.199999999999996
+   "start": 52.85,
+   "end": 52.93
   },
   {
    "text": "explicamos",
-   "start": 50.21,
-   "end": 50.72
+   "start": 52.94,
+   "end": 53.449999999999996
   },
   {
    "text": "ahora?",
-   "start": 50.73,
-   "end": 51.07
+   "start": 53.46,
+   "end": 53.800000000000004
   }
  ],
  "audio": "audio/voz.mp3",
  "music": "audio/music.wav",
  "musicVolume": 0.1,
  "outro": {
-  "at": 51.57,
+  "at": 54.3,
   "cta": "Todo tiene un truco"
  },
  "sfx": "audio/sfx.wav",
@@ -773,6 +813,6 @@
   "badge": "RESPONDEMOS EN COMENTARIOS",
   "scene": 3
  },
- "duration": 54.17,
- "cover_offset_ms": 54470
+ "duration": 56.9,
+ "cover_offset_ms": 57199
 }
