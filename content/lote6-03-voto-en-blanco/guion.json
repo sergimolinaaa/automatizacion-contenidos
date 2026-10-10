@@ -1,0 +1,748 @@
+{
+  "topic": "Qué hace de verdad el voto en blanco en las elecciones generales del 29 de noviembre de 2026",
+  "categoria": "politica",
+  "title": "Votar en blanco no hace lo que crees 🗳️",
+  "source": "Fuentes: LOREG (LO 5/1985), arts. 96.5 y 163.1.a · BOE 6/10/2026 (Real Decreto 806/2026) · Ejemplo con partidos ficticios calculado con la regla D'Hondt",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Blanco: *no es lo que crees*",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "¿Vas a votar en blanco el 29-N? 🗳️ El voto en blanco es válido: no deja escaños vacíos, pero suma al total y sube el listón del 3 % que cada partido necesita en su provincia. El nulo y la abstención no cuentan para ese 3 %. Sin posicionarnos: solo explicamos cómo funciona. ¿Lo sabías?",
+    "description": "Qué hace de verdad el voto en blanco en las elecciones generales del 29 de noviembre de 2026 (Real Decreto 806/2026, BOE del 6 de octubre). 1) Votar en blanco al Congreso es meter en la urna el sobre sin papeleta; la LOREG lo considera voto válido (art. 96.5). 2) No deja escaños vacíos: todos los escaños de la provincia se reparten entre las candidaturas. 3) Para entrar en el reparto del Congreso, una candidatura necesita al menos el 3 % de los votos válidos de su circunscripción (art. 163.1.a), y los votos en blanco forman parte de ese total. 4) Ejemplo con partidos ficticios en una provincia imaginaria de 30 escaños: con 100.000 votos válidos el listón es 3.000 y el partido Rombo, con 3.100, entra y saca 1 escaño; si llegan 9.000 votos en blanco más (109.000 válidos), el listón sube a 3.270, Rombo queda fuera con los mismos votos y su escaño pasa a otro partido. 5) Los votos nulos y la abstención no cuentan como votos válidos, así que no mueven ese listón. Sin posicionarnos: solo explicamos cómo funciona. Fuentes: LOREG, arts. 96 y 163; BOE (Real Decreto 806/2026).",
+    "hashtags": [
+      "votoenblanco",
+      "elecciones",
+      "eleccionesgenerales",
+      "29N",
+      "leyelectoral",
+      "politica",
+      "aprendeentiktok",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Castigar a *todos*?",
+      "narration": "Si el 29-N votas en blanco para castigar a todos… mira esto.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Un sobre vacío",
+        "anims": [
+          {
+            "target": "tsinpap",
+            "effect": "hide"
+          },
+          {
+            "target": "valido",
+            "effect": "hide"
+          },
+          {
+            "target": "tvalido",
+            "effect": "hide"
+          },
+          {
+            "target": "tley",
+            "effect": "hide"
+          },
+          {
+            "target": "sobre",
+            "effect": "bob",
+            "amount": 0.6
+          },
+          {
+            "target": "t29",
+            "effect": "pop",
+            "trigger": "29-N",
+            "sfx": "ding"
+          },
+          {
+            "target": "urna",
+            "effect": "punch",
+            "trigger": "votas",
+            "amount": 0.2
+          },
+          {
+            "target": "tblanco",
+            "effect": "pop",
+            "trigger": "blanco",
+            "sfx": "pop"
+          },
+          {
+            "target": "tcast",
+            "effect": "pop",
+            "trigger": "castigar",
+            "sfx": "sello"
+          },
+          {
+            "target": "partidos",
+            "effect": "shake",
+            "trigger": "castigar",
+            "amount": 0.5
+          },
+          {
+            "target": "partidos",
+            "effect": "punch",
+            "trigger": "todos",
+            "amount": 0.2
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "mira",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "duda",
+            "effect": "pulse",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Blanco = *válido*",
+      "narration": "Sin posicionarnos: solo cómo funciona. Votar en blanco es meter el sobre sin papeleta. Y la ley lo cuenta como voto válido.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "SIN POSICIONARNOS",
+          "tone": "ink",
+          "trigger": "posicionarnos"
+        }
+      ],
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 2 · LOREG, art. 96.5",
+        "anims": [
+          {
+            "target": "t29",
+            "effect": "hide"
+          },
+          {
+            "target": "tcast",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "partidos",
+            "effect": "hide"
+          },
+          {
+            "target": "tblanco",
+            "effect": "punch",
+            "trigger": "blanco",
+            "amount": 0.25
+          },
+          {
+            "target": "sobre",
+            "effect": "move",
+            "trigger": "meter",
+            "to": [
+              0,
+              95
+            ],
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tsinpap",
+            "effect": "pop",
+            "trigger": "papeleta",
+            "sfx": "papel"
+          },
+          {
+            "target": "sobre",
+            "effect": "hide",
+            "trigger": "ley"
+          },
+          {
+            "target": "urna",
+            "effect": "punch",
+            "trigger": "ley",
+            "amount": 0.25
+          },
+          {
+            "target": "tley",
+            "effect": "pop",
+            "trigger": "ley",
+            "sfx": "sello"
+          },
+          {
+            "target": "valido",
+            "effect": "pop",
+            "trigger": "válido",
+            "sfx": "ding"
+          },
+          {
+            "target": "tvalido",
+            "effect": "pop",
+            "trigger": "válido"
+          },
+          {
+            "target": "valido",
+            "effect": "pulse",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Ningún escaño *vacío*",
+      "narration": "No deja escaños vacíos: todos se reparten entre los partidos.",
+      "illustration": {
+        "svg_file": "hemi_free.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 3 · 30 de 30",
+        "anims": [
+          {
+            "target": "nuevo",
+            "effect": "hide"
+          },
+          {
+            "target": "anillo",
+            "effect": "hide"
+          },
+          {
+            "target": "c2circle",
+            "effect": "hide"
+          },
+          {
+            "target": "c2diamond",
+            "effect": "hide"
+          },
+          {
+            "target": "fuera",
+            "effect": "hide"
+          },
+          {
+            "target": "tpasa",
+            "effect": "hide"
+          },
+          {
+            "target": "asientos",
+            "effect": "grow",
+            "trigger": "escaños",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "cero",
+            "effect": "pop",
+            "trigger": "vacíos",
+            "sfx": "sello"
+          },
+          {
+            "target": "t30",
+            "effect": "pop",
+            "trigger": "todos",
+            "sfx": "ding"
+          },
+          {
+            "target": "asientos",
+            "effect": "punch",
+            "trigger": "reparten",
+            "amount": 0.15
+          },
+          {
+            "target": "chips",
+            "effect": "slide-up",
+            "trigger": "partidos",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "El listón del *3 %*",
+      "narration": "Pero suma al total de votos válidos. Y para entrar en el reparto del Congreso, cada partido necesita el 3 % de ese total en su provincia.",
+      "illustration": {
+        "svg_file": "liston.svg",
+        "caption": "Fig. 4 · LOREG, art. 163.1",
+        "anims": [
+          {
+            "target": "t3000",
+            "effect": "hide"
+          },
+          {
+            "target": "t3270",
+            "effect": "hide"
+          },
+          {
+            "target": "v109",
+            "effect": "hide"
+          },
+          {
+            "target": "tmas",
+            "effect": "hide"
+          },
+          {
+            "target": "monton",
+            "effect": "hide"
+          },
+          {
+            "target": "entra",
+            "effect": "hide"
+          },
+          {
+            "target": "nollega",
+            "effect": "hide"
+          },
+          {
+            "target": "t3100",
+            "effect": "hide"
+          },
+          {
+            "target": "v100",
+            "effect": "pop",
+            "trigger": "suma",
+            "sfx": "ding"
+          },
+          {
+            "target": "v100",
+            "effect": "punch",
+            "trigger": "válidos",
+            "amount": 0.2
+          },
+          {
+            "target": "liston",
+            "effect": "slide-right",
+            "trigger": "entrar",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "t3",
+            "effect": "pop",
+            "trigger": "3",
+            "sfx": "pop"
+          },
+          {
+            "target": "rombo",
+            "effect": "slide-up",
+            "trigger": "partido",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tley",
+            "effect": "pop",
+            "trigger": "provincia",
+            "sfx": "sello"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Rombo *entra*",
+      "narration": "Imagina una provincia con 100.000 votos válidos. Listón: 3.000. El partido Rombo tiene 3.100: entra.",
+      "illustration": {
+        "svg_file": "liston.svg",
+        "caption": "Fig. 5 · Partidos ficticios",
+        "anims": [
+          {
+            "target": "t3",
+            "effect": "hide"
+          },
+          {
+            "target": "t3270",
+            "effect": "hide"
+          },
+          {
+            "target": "v109",
+            "effect": "hide"
+          },
+          {
+            "target": "tmas",
+            "effect": "hide"
+          },
+          {
+            "target": "tley",
+            "effect": "hide"
+          },
+          {
+            "target": "monton",
+            "effect": "hide"
+          },
+          {
+            "target": "nollega",
+            "effect": "hide"
+          },
+          {
+            "target": "v100",
+            "effect": "punch",
+            "trigger": "100.000",
+            "amount": 0.25
+          },
+          {
+            "target": "liston",
+            "effect": "punch",
+            "trigger": "Listón",
+            "amount": 0.15
+          },
+          {
+            "target": "t3000",
+            "effect": "pop",
+            "trigger": "3.000",
+            "sfx": "pop"
+          },
+          {
+            "target": "rombo",
+            "effect": "punch",
+            "trigger": "Rombo",
+            "amount": 0.2
+          },
+          {
+            "target": "t3100",
+            "effect": "pop",
+            "trigger": "3.100",
+            "sfx": "pop"
+          },
+          {
+            "target": "entra",
+            "effect": "pop",
+            "trigger": "entra",
+            "sfx": "ding"
+          },
+          {
+            "target": "entra",
+            "effect": "pulse",
+            "amount": 0.4
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "Rombo",
+        "pose": "cheer",
+        "note": "¡Por los pelos!",
+        "side": "left"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "El listón *sube*",
+      "narration": "Ahora llegan 9.000 votos en blanco de castigo. Hay 109.000 válidos, y el listón sube a 3.270.",
+      "illustration": {
+        "svg_file": "liston.svg",
+        "caption": "Fig. 6 · Mismos votos",
+        "anims": [
+          {
+            "target": "t3",
+            "effect": "hide"
+          },
+          {
+            "target": "t3270",
+            "effect": "hide"
+          },
+          {
+            "target": "v109",
+            "effect": "hide"
+          },
+          {
+            "target": "tmas",
+            "effect": "hide"
+          },
+          {
+            "target": "tley",
+            "effect": "hide"
+          },
+          {
+            "target": "monton",
+            "effect": "hide"
+          },
+          {
+            "target": "entra",
+            "effect": "hide"
+          },
+          {
+            "target": "nollega",
+            "effect": "hide"
+          },
+          {
+            "target": "monton",
+            "effect": "slide-up",
+            "trigger": "9.000",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "tmas",
+            "effect": "pop",
+            "trigger": "blanco",
+            "sfx": "pop"
+          },
+          {
+            "target": "monton",
+            "effect": "punch",
+            "trigger": "castigo",
+            "amount": 0.2
+          },
+          {
+            "target": "v100",
+            "effect": "hide",
+            "trigger": "109.000"
+          },
+          {
+            "target": "v109",
+            "effect": "pop",
+            "trigger": "109.000",
+            "sfx": "ding"
+          },
+          {
+            "target": "liston",
+            "effect": "move",
+            "trigger": "sube",
+            "to": [
+              0,
+              -135
+            ],
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "t3000",
+            "effect": "hide",
+            "trigger": "3.270"
+          },
+          {
+            "target": "t3270",
+            "effect": "pop",
+            "trigger": "3.270",
+            "sfx": "pop"
+          },
+          {
+            "target": "nollega",
+            "effect": "pop",
+            "trigger": "3.270",
+            "sfx": "sello"
+          },
+          {
+            "target": "rombo",
+            "effect": "shake",
+            "trigger": "3.270",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Rombo, *fuera*",
+      "narration": "Rombo, con los mismos votos, se queda fuera. Y su escaño pasa a otro partido.",
+      "illustration": {
+        "svg_file": "hemi_free.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 7 · Provincia de 30 escaños",
+        "anims": [
+          {
+            "target": "cero",
+            "effect": "hide"
+          },
+          {
+            "target": "t30",
+            "effect": "hide"
+          },
+          {
+            "target": "anillo",
+            "effect": "pop",
+            "trigger": "Rombo",
+            "sfx": "pop"
+          },
+          {
+            "target": "anillo",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "cdiamond",
+            "effect": "punch",
+            "trigger": "mismos",
+            "amount": 0.25
+          },
+          {
+            "target": "cdiamond",
+            "effect": "hide",
+            "trigger": "fuera"
+          },
+          {
+            "target": "c2diamond",
+            "effect": "pop",
+            "trigger": "fuera",
+            "sfx": "sello"
+          },
+          {
+            "target": "fuera",
+            "effect": "pop",
+            "trigger": "fuera"
+          },
+          {
+            "target": "nuevo",
+            "effect": "pop",
+            "trigger": "escaño",
+            "sfx": "pop"
+          },
+          {
+            "target": "ccircle",
+            "effect": "hide",
+            "trigger": "otro"
+          },
+          {
+            "target": "c2circle",
+            "effect": "pop",
+            "trigger": "otro",
+            "sfx": "ding"
+          },
+          {
+            "target": "tpasa",
+            "effect": "pop",
+            "trigger": "partido",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "¿Y el *nulo*?",
+      "narration": "¿Y el nulo? No cuenta para el 3 %. La abstención, tampoco. Solo el blanco sube el listón.",
+      "illustration": {
+        "svg_file": "cuenta_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · LOREG, arts. 96 y 163",
+        "anims": [
+          {
+            "target": "zzz",
+            "effect": "bob",
+            "amount": 0.6
+          },
+          {
+            "target": "cnulo",
+            "effect": "pop",
+            "trigger": "nulo",
+            "sfx": "pop"
+          },
+          {
+            "target": "sn",
+            "effect": "pop",
+            "trigger": "nulo"
+          },
+          {
+            "target": "kon",
+            "effect": "pop",
+            "trigger": "No",
+            "sfx": "pop"
+          },
+          {
+            "target": "vn",
+            "effect": "pop",
+            "trigger": "cuenta"
+          },
+          {
+            "target": "titulo",
+            "effect": "punch",
+            "trigger": "3",
+            "amount": 0.2
+          },
+          {
+            "target": "cabst",
+            "effect": "pop",
+            "trigger": "abstención",
+            "sfx": "pop"
+          },
+          {
+            "target": "sa",
+            "effect": "pop",
+            "trigger": "abstención"
+          },
+          {
+            "target": "koa",
+            "effect": "pop",
+            "trigger": "tampoco",
+            "sfx": "pop"
+          },
+          {
+            "target": "va",
+            "effect": "pop",
+            "trigger": "tampoco"
+          },
+          {
+            "target": "cblanco",
+            "effect": "punch",
+            "trigger": "Solo",
+            "amount": 0.15
+          },
+          {
+            "target": "okb",
+            "effect": "pop",
+            "trigger": "blanco",
+            "sfx": "ding"
+          },
+          {
+            "target": "vb",
+            "effect": "pop",
+            "trigger": "blanco"
+          },
+          {
+            "target": "sube",
+            "effect": "slide-up",
+            "trigger": "sube",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos para más trucos. ¿Quién diría que un sobre vacío pesa tanto?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Quién diría que un sobre *vacío* pesa tanto?",
+          "trigger": "Quién"
+        }
+      ]
+    }
+  ]
+}
