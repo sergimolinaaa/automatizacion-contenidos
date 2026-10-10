@@ -1,0 +1,602 @@
+{
+ "source": "Fuentes: LO 6/2002 de Partidos Políticos, arts. 3 y 4 · LOREG (LO 5/1985), arts. 44, 45 y 169.3 · BOE 6/10/2026 (Real Decreto 806/2026) · Presentación de Democracia 21 (10/10/2026, Antena 3) · Inscripción en el Registro de Partidos en junio de 2026 (Forbes, Ara)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "Nace",
+   "start": 0.1,
+   "end": 0.47
+  },
+  {
+   "text": "un",
+   "start": 0.48,
+   "end": 0.5599999999999999
+  },
+  {
+   "text": "partido",
+   "start": 0.57,
+   "end": 0.9099999999999999
+  },
+  {
+   "text": "a",
+   "start": 0.92,
+   "end": 0.9600000000000001
+  },
+  {
+   "text": "50",
+   "start": 0.97,
+   "end": 1.6
+  },
+  {
+   "text": "días",
+   "start": 1.6,
+   "end": 1.6500000000000001
+  },
+  {
+   "text": "del",
+   "start": 1.61,
+   "end": 1.7100000000000002
+  },
+  {
+   "text": "29-N.",
+   "start": 1.72,
+   "end": 2.45
+  },
+  {
+   "text": "¿Qué",
+   "start": 2.46,
+   "end": 2.56
+  },
+  {
+   "text": "propone?",
+   "start": 2.57,
+   "end": 3.01
+  },
+  {
+   "text": "¿Llega",
+   "start": 3.7,
+   "end": 4.0
+  },
+  {
+   "text": "a",
+   "start": 4.01,
+   "end": 4.06
+  },
+  {
+   "text": "tiempo?",
+   "start": 4.07,
+   "end": 4.45
+  },
+  {
+   "text": "El",
+   "start": 5.15,
+   "end": 5.390000000000001
+  },
+  {
+   "text": "truco",
+   "start": 5.4,
+   "end": 5.69
+  },
+  {
+   "text": "es…",
+   "start": 5.7,
+   "end": 5.84
+  },
+  {
+   "text": "mirar",
+   "start": 5.99,
+   "end": 6.220000000000001
+  },
+  {
+   "text": "ideas",
+   "start": 6.23,
+   "end": 6.510000000000001
+  },
+  {
+   "text": "y",
+   "start": 6.52,
+   "end": 6.56
+  },
+  {
+   "text": "papeles.",
+   "start": 6.57,
+   "end": 7.08
+  },
+  {
+   "text": "Sin",
+   "start": 7.78,
+   "end": 8.030000000000001
+  },
+  {
+   "text": "posicionarnos:",
+   "start": 8.04,
+   "end": 8.75
+  },
+  {
+   "text": "solo",
+   "start": 8.87,
+   "end": 9.1
+  },
+  {
+   "text": "te",
+   "start": 9.11,
+   "end": 9.19
+  },
+  {
+   "text": "contamos",
+   "start": 9.2,
+   "end": 9.6
+  },
+  {
+   "text": "qué",
+   "start": 9.61,
+   "end": 9.69
+  },
+  {
+   "text": "propone.",
+   "start": 9.7,
+   "end": 10.149999999999999
+  },
+  {
+   "text": "Se",
+   "start": 10.85,
+   "end": 11.07
+  },
+  {
+   "text": "llama",
+   "start": 11.08,
+   "end": 11.3
+  },
+  {
+   "text": "Democracia",
+   "start": 11.31,
+   "end": 11.770000000000001
+  },
+  {
+   "text": "21.",
+   "start": 11.78,
+   "end": 12.33
+  },
+  {
+   "text": "Según",
+   "start": 13.04,
+   "end": 13.409999999999998
+  },
+  {
+   "text": "su",
+   "start": 13.42,
+   "end": 13.51
+  },
+  {
+   "text": "presentación,",
+   "start": 13.52,
+   "end": 14.139999999999999
+  },
+  {
+   "text": "es",
+   "start": 14.28,
+   "end": 14.36
+  },
+  {
+   "text": "reformista",
+   "start": 14.37,
+   "end": 14.879999999999999
+  },
+  {
+   "text": "y",
+   "start": 14.89,
+   "end": 14.940000000000001
+  },
+  {
+   "text": "busca",
+   "start": 14.95,
+   "end": 15.2
+  },
+  {
+   "text": "consensos:",
+   "start": 15.21,
+   "end": 15.780000000000001
+  },
+  {
+   "text": "acuerdos",
+   "start": 15.91,
+   "end": 16.31
+  },
+  {
+   "text": "entre",
+   "start": 16.32,
+   "end": 16.52
+  },
+  {
+   "text": "distintos.",
+   "start": 16.53,
+   "end": 17.130000000000003
+  },
+  {
+   "text": "Y",
+   "start": 17.82,
+   "end": 17.93
+  },
+  {
+   "text": "propone",
+   "start": 17.94,
+   "end": 18.240000000000002
+  },
+  {
+   "text": "modernizar",
+   "start": 18.25,
+   "end": 18.74
+  },
+  {
+   "text": "la",
+   "start": 18.75,
+   "end": 18.83
+  },
+  {
+   "text": "democracia",
+   "start": 18.84,
+   "end": 19.36
+  },
+  {
+   "text": "y",
+   "start": 19.37,
+   "end": 19.43
+  },
+  {
+   "text": "«situar",
+   "start": 19.62,
+   "end": 19.94
+  },
+  {
+   "text": "al",
+   "start": 19.95,
+   "end": 20.04
+  },
+  {
+   "text": "ciudadano",
+   "start": 20.05,
+   "end": 20.5
+  },
+  {
+   "text": "en",
+   "start": 20.51,
+   "end": 20.580000000000002
+  },
+  {
+   "text": "el",
+   "start": 20.59,
+   "end": 20.68
+  },
+  {
+   "text": "centro».",
+   "start": 20.69,
+   "end": 21.09
+  },
+  {
+   "text": "¿Y",
+   "start": 21.78,
+   "end": 21.93
+  },
+  {
+   "text": "los",
+   "start": 21.94,
+   "end": 22.09
+  },
+  {
+   "text": "papeles?",
+   "start": 22.1,
+   "end": 22.580000000000002
+  },
+  {
+   "text": "Ya",
+   "start": 23.27,
+   "end": 23.48
+  },
+  {
+   "text": "está",
+   "start": 23.49,
+   "end": 23.669999999999998
+  },
+  {
+   "text": "inscrito,",
+   "start": 23.68,
+   "end": 24.15
+  },
+  {
+   "text": "desde",
+   "start": 24.27,
+   "end": 24.49
+  },
+  {
+   "text": "junio,",
+   "start": 24.5,
+   "end": 24.86
+  },
+  {
+   "text": "en",
+   "start": 24.97,
+   "end": 25.07
+  },
+  {
+   "text": "el",
+   "start": 25.08,
+   "end": 25.159999999999997
+  },
+  {
+   "text": "Registro",
+   "start": 25.17,
+   "end": 25.560000000000002
+  },
+  {
+   "text": "de",
+   "start": 25.57,
+   "end": 25.64
+  },
+  {
+   "text": "Partidos.",
+   "start": 25.65,
+   "end": 26.169999999999998
+  },
+  {
+   "text": "Para",
+   "start": 26.89,
+   "end": 27.11
+  },
+  {
+   "text": "el",
+   "start": 27.12,
+   "end": 27.18
+  },
+  {
+   "text": "29-N,",
+   "start": 27.19,
+   "end": 27.89
+  },
+  {
+   "text": "debe",
+   "start": 28.03,
+   "end": 28.21
+  },
+  {
+   "text": "presentar",
+   "start": 28.22,
+   "end": 28.65
+  },
+  {
+   "text": "candidatura,",
+   "start": 28.66,
+   "end": 29.28
+  },
+  {
+   "text": "su",
+   "start": 29.38,
+   "end": 29.48
+  },
+  {
+   "text": "lista",
+   "start": 29.49,
+   "end": 29.75
+  },
+  {
+   "text": "por",
+   "start": 29.76,
+   "end": 29.89
+  },
+  {
+   "text": "provincia,",
+   "start": 29.9,
+   "end": 30.4
+  },
+  {
+   "text": "del",
+   "start": 30.57,
+   "end": 32.37
+  },
+  {
+   "text": "21",
+   "start": 32.37,
+   "end": 32.769999999999996
+  },
+  {
+   "text": "al",
+   "start": 32.769999999999996,
+   "end": 33.169999999999995
+  },
+  {
+   "text": "26",
+   "start": 33.169999999999995,
+   "end": 33.56999999999999
+  },
+  {
+   "text": "de",
+   "start": 35.36,
+   "end": 35.43
+  },
+  {
+   "text": "octubre.",
+   "start": 35.43,
+   "end": 35.73
+  },
+  {
+   "text": "Sin",
+   "start": 35.73,
+   "end": 36.029999999999994
+  },
+  {
+   "text": "escaños",
+   "start": 36.029999999999994,
+   "end": 36.32999999999999
+  },
+  {
+   "text": "previos,",
+   "start": 36.32999999999999,
+   "end": 36.62999999999999
+  },
+  {
+   "text": "necesita",
+   "start": 36.62999999999999,
+   "end": 36.929999999999986
+  },
+  {
+   "text": "firmas:",
+   "start": 36.929999999999986,
+   "end": 37.22999999999998
+  },
+  {
+   "text": "una",
+   "start": 37.22999999999998,
+   "end": 37.52999999999998
+  },
+  {
+   "text": "de",
+   "start": 37.52999999999998,
+   "end": 37.82999999999998
+  },
+  {
+   "text": "cada",
+   "start": 37.82999999999998,
+   "end": 38.129999999999974
+  },
+  {
+   "text": "mil",
+   "start": 38.129999999999974,
+   "end": 38.42999999999997
+  },
+  {
+   "text": "votantes",
+   "start": 38.42999999999997,
+   "end": 38.72999999999997
+  },
+  {
+   "text": "de",
+   "start": 38.72999999999997,
+   "end": 39.029999999999966
+  },
+  {
+   "text": "la",
+   "start": 39.029999999999966,
+   "end": 39.32999999999996
+  },
+  {
+   "text": "provincia.",
+   "start": 39.32999999999996,
+   "end": 39.62999999999996
+  },
+  {
+   "text": "Tú",
+   "start": 39.62999999999996,
+   "end": 39.92999999999996
+  },
+  {
+   "text": "traes",
+   "start": 39.92999999999996,
+   "end": 40.229999999999954
+  },
+  {
+   "text": "las",
+   "start": 40.229999999999954,
+   "end": 40.52999999999995
+  },
+  {
+   "text": "dudas",
+   "start": 40.52999999999995,
+   "end": 40.82999999999995
+  },
+  {
+   "text": "y",
+   "start": 40.82999999999995,
+   "end": 41.129999999999946
+  },
+  {
+   "text": "nosotros",
+   "start": 41.129999999999946,
+   "end": 41.42999999999994
+  },
+  {
+   "text": "te",
+   "start": 41.42999999999994,
+   "end": 41.72999999999994
+  },
+  {
+   "text": "damos",
+   "start": 41.72999999999994,
+   "end": 42.02999999999994
+  },
+  {
+   "text": "el",
+   "start": 42.02999999999994,
+   "end": 42.329999999999934
+  },
+  {
+   "text": "truco.",
+   "start": 42.329999999999934,
+   "end": 42.62999999999993
+  },
+  {
+   "text": "Síguenos",
+   "start": 42.62999999999993,
+   "end": 42.92999999999993
+  },
+  {
+   "text": "y",
+   "start": 42.92999999999993,
+   "end": 43.229999999999926
+  },
+  {
+   "text": "las",
+   "start": 43.229999999999926,
+   "end": 43.52999999999992
+  },
+  {
+   "text": "resolvemos.",
+   "start": 43.52999999999992,
+   "end": 43.82999999999992
+  },
+  {
+   "text": "¿Cómo",
+   "start": 43.82999999999992,
+   "end": 44.12999999999992
+  },
+  {
+   "text": "se",
+   "start": 44.12999999999992,
+   "end": 44.429999999999914
+  },
+  {
+   "text": "llamaría",
+   "start": 44.429999999999914,
+   "end": 44.72999999999991
+  },
+  {
+   "text": "tu",
+   "start": 44.72999999999991,
+   "end": 45.02999999999991
+  },
+  {
+   "text": "partido?",
+   "start": 45.02999999999991,
+   "end": 45.329999999999906
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 45.83,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "¿Llega al *29-N*?",
+  "scene": 0
+ },
+ "duration": 48.43,
+ "cover_offset_ms": 48730
+}
