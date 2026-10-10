@@ -252,6 +252,28 @@
         "tiktok": "6ac98005bba9419ccbe4ec93",
         "instagram": "6ac98007c4de2d2b120d46c8"
       }
+    },
+    {
+      "slug": "lote5-03-efecto-stroop",
+      "category": "psicologia",
+      "due": "2026-10-10T18:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote5-03-efecto-stroop/lote5-03-efecto-stroop-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac99376b07d37ac9758f21c",
+        "tiktok": "6ac99377c4de2d2b12103394",
+        "instagram": "6ac99378ed92ed8fa5b29631"
+      }
+    },
+    {
+      "slug": "lote5-04-decreto-ley",
+      "category": "politica",
+      "due": "2026-10-10T21:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote5-04-decreto-ley/lote5-04-decreto-ley-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac9937fbba9419ccbe7d333",
+        "tiktok": "6ac99380b07d37ac9758f3db",
+        "instagram": "6ac99381c4de2d2b12103496"
+      }
     }
   ]
 }
