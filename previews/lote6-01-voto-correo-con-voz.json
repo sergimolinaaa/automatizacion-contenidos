@@ -667,99 +667,109 @@
   {
    "text": "Tú",
    "start": 44.41,
-   "end": 44.55
+   "end": 44.54
   },
   {
    "text": "traes",
-   "start": 44.56,
-   "end": 44.82
+   "start": 44.55,
+   "end": 44.8
   },
   {
    "text": "las",
-   "start": 44.83,
-   "end": 44.97
+   "start": 44.81,
+   "end": 44.96
   },
   {
    "text": "dudas",
-   "start": 44.98,
-   "end": 45.25
+   "start": 44.97,
+   "end": 45.24
   },
   {
    "text": "y",
-   "start": 45.26,
-   "end": 45.3
+   "start": 45.25,
+   "end": 45.29
   },
   {
-   "text": "nosotros,",
-   "start": 45.31,
-   "end": 45.800000000000004
+   "text": "nosotros",
+   "start": 45.3,
+   "end": 45.72
+  },
+  {
+   "text": "te",
+   "start": 45.73,
+   "end": 45.82
+  },
+  {
+   "text": "damos",
+   "start": 45.83,
+   "end": 46.1
   },
   {
    "text": "el",
-   "start": 45.9,
-   "end": 46.059999999999995
+   "start": 46.11,
+   "end": 46.21
   },
   {
    "text": "truco.",
-   "start": 46.07,
-   "end": 46.45
+   "start": 46.22,
+   "end": 46.6
   },
   {
    "text": "Síguenos",
-   "start": 47.15,
-   "end": 47.66
+   "start": 47.29,
+   "end": 47.8
   },
   {
    "text": "y",
-   "start": 47.67,
-   "end": 47.72
-  },
-  {
-   "text": "las",
-   "start": 47.73,
+   "start": 47.81,
    "end": 47.86
   },
   {
-   "text": "resolvemos.",
+   "text": "las",
    "start": 47.87,
-   "end": 48.529999999999994
+   "end": 48.0
+  },
+  {
+   "text": "resolvemos.",
+   "start": 48.01,
+   "end": 48.669999999999995
   },
   {
    "text": "¿Votarías",
-   "start": 49.22,
-   "end": 49.74
+   "start": 49.36,
+   "end": 49.88
   },
   {
    "text": "en",
-   "start": 49.75,
-   "end": 49.85
+   "start": 49.89,
+   "end": 49.99
   },
   {
    "text": "pijama",
-   "start": 49.86,
-   "end": 50.17
+   "start": 50.0,
+   "end": 50.31
   },
   {
    "text": "desde",
-   "start": 50.18,
-   "end": 50.39
+   "start": 50.32,
+   "end": 50.53
   },
   {
    "text": "el",
-   "start": 50.4,
-   "end": 50.49
+   "start": 50.54,
+   "end": 50.63
   },
   {
    "text": "sofá?",
-   "start": 50.5,
-   "end": 50.84
+   "start": 50.64,
+   "end": 50.980000000000004
   }
  ],
  "audio": "audio/voz.mp3",
  "music": "audio/music.wav",
  "musicVolume": 0.1,
  "outro": {
-  "at": 51.34,
+  "at": 51.48,
   "cta": "Todo tiene un truco"
  },
  "sfx": "audio/sfx.wav",
@@ -767,6 +777,6 @@
   "text": "¿Tu voto *se pierde*?",
   "scene": 0
  },
- "duration": 53.940000000000005,
- "cover_offset_ms": 54240
+ "duration": 54.08,
+ "cover_offset_ms": 54379
 }

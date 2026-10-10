@@ -707,109 +707,119 @@
   {
    "text": "Tú",
    "start": 52.98,
-   "end": 53.12
+   "end": 53.11
   },
   {
    "text": "traes",
-   "start": 53.13,
-   "end": 53.39
+   "start": 53.12,
+   "end": 53.37
   },
   {
    "text": "las",
-   "start": 53.4,
-   "end": 53.54
+   "start": 53.38,
+   "end": 53.53
   },
   {
    "text": "dudas",
-   "start": 53.55,
-   "end": 53.82
+   "start": 53.54,
+   "end": 53.81
   },
   {
    "text": "y",
-   "start": 53.83,
-   "end": 53.87
+   "start": 53.82,
+   "end": 53.86
   },
   {
-   "text": "nosotros,",
-   "start": 53.88,
-   "end": 54.370000000000005
+   "text": "nosotros",
+   "start": 53.87,
+   "end": 54.29
+  },
+  {
+   "text": "te",
+   "start": 54.3,
+   "end": 54.39
+  },
+  {
+   "text": "damos",
+   "start": 54.4,
+   "end": 54.67
   },
   {
    "text": "el",
-   "start": 54.47,
-   "end": 54.629999999999995
+   "start": 54.68,
+   "end": 54.78
   },
   {
    "text": "truco.",
-   "start": 54.64,
-   "end": 55.02
+   "start": 54.79,
+   "end": 55.17
   },
   {
    "text": "Síguenos",
-   "start": 55.72,
-   "end": 56.23
+   "start": 55.86,
+   "end": 56.37
   },
   {
    "text": "y",
-   "start": 56.24,
-   "end": 56.29
-  },
-  {
-   "text": "las",
-   "start": 56.3,
+   "start": 56.38,
    "end": 56.43
   },
   {
-   "text": "resolvemos.",
+   "text": "las",
    "start": 56.44,
-   "end": 57.099999999999994
+   "end": 56.57
+  },
+  {
+   "text": "resolvemos.",
+   "start": 56.58,
+   "end": 57.239999999999995
   },
   {
    "text": "¿Quién",
-   "start": 57.79,
-   "end": 58.0
+   "start": 57.93,
+   "end": 58.14
   },
   {
    "text": "diría",
-   "start": 58.01,
-   "end": 58.269999999999996
+   "start": 58.15,
+   "end": 58.41
   },
   {
    "text": "que",
-   "start": 58.28,
-   "end": 58.39
+   "start": 58.42,
+   "end": 58.53
   },
   {
    "text": "un",
-   "start": 58.4,
-   "end": 58.51
+   "start": 58.54,
+   "end": 58.65
   },
   {
    "text": "sobre",
-   "start": 58.52,
-   "end": 58.7
+   "start": 58.66,
+   "end": 58.839999999999996
   },
   {
    "text": "vacío",
-   "start": 58.71,
-   "end": 59.02
+   "start": 58.85,
+   "end": 59.160000000000004
   },
   {
    "text": "pesa",
-   "start": 59.03,
-   "end": 59.230000000000004
+   "start": 59.17,
+   "end": 59.370000000000005
   },
   {
    "text": "tanto?",
-   "start": 59.24,
-   "end": 59.61
+   "start": 59.38,
+   "end": 59.75
   }
  ],
  "audio": "audio/voz.mp3",
  "music": "audio/music.wav",
  "musicVolume": 0.1,
  "outro": {
-  "at": 60.11,
+  "at": 60.25,
   "cta": "Todo tiene un truco"
  },
  "sfx": "audio/sfx.wav",
@@ -817,6 +827,6 @@
   "text": "Blanco: *no es lo que crees*",
   "scene": 0
  },
- "duration": 62.71,
- "cover_offset_ms": 63010
+ "duration": 62.85,
+ "cover_offset_ms": 63150
 }
