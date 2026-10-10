@@ -265,7 +265,8 @@
   {
     "tema": "El efecto Stroop: por qué te cuesta decir el color de la palabra ROJO escrita en azul",
     "categoria": "psicologia",
-    "pista": "lectura automática que interfiere; Stroop 1935"
+    "pista": "lectura automática que interfiere; Stroop 1935",
+    "hecho": true
   },
   {
     "tema": "Por qué los botones de los cruces a veces no hacen nada",
@@ -309,7 +310,8 @@
   {
     "tema": "Cómo puede el Congreso tumbar una ley que ya está en vigor: el decreto ley",
     "categoria": "politica",
-    "pista": "Constitución art. 86: el Gobierno aprueba un decreto ley que entra en vigor ya, pero el Congreso debe convalidarlo en 30 días o queda derogado (como los decretos de vivienda del 2 oct 2026). Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+    "pista": "Constitución art. 86: el Gobierno aprueba un decreto ley que entra en vigor ya, pero el Congreso debe convalidarlo en 30 días o queda derogado (como los decretos de vivienda del 2 oct 2026). Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido.",
+    "hecho": true
   },
   {
     "tema": "La jornada de reflexión: por qué el sábado nadie te puede pedir el voto",

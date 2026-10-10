@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+<defs>
+<linearGradient id="urnaGlass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF8FF" stop-opacity="0.75"/><stop offset="1" stop-color="#9FD3F2" stop-opacity="0.55"/></linearGradient><linearGradient id="urnaSide" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C4E6FA" stop-opacity="0.7"/><stop offset="1" stop-color="#7DB8DE" stop-opacity="0.6"/></linearGradient><linearGradient id="urnaLid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A6B8C"/><stop offset="1" stop-color="#2C3954"/></linearGradient><linearGradient id="paperG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEFF5"/></linearGradient><linearGradient id="sobreG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E3E6EE"/></linearGradient><linearGradient id="woodG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C98B55"/><stop offset="1" stop-color="#8A5A31"/></linearGradient><radialGradient id="shadowR" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0B0B14" stop-opacity="0.35"/><stop offset="1" stop-color="#0B0B14" stop-opacity="0"/></radialGradient><linearGradient id="steelG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EDF3"/><stop offset="0.5" stop-color="#B7C0CC"/><stop offset="1" stop-color="#7D8794"/></linearGradient><linearGradient id="brassG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6D27A"/><stop offset="0.5" stop-color="#D4A23A"/><stop offset="1" stop-color="#8E6516"/></linearGradient><radialGradient id="burstG" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E9FF8A"/><stop offset="1" stop-color="#C8FF2E"/></radialGradient><linearGradient id="wallL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3EAD6"/><stop offset="1" stop-color="#C9D5BA"/></linearGradient><linearGradient id="deskT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B87A47"/><stop offset="1" stop-color="#8C552A"/></linearGradient><linearGradient id="deskF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7A4520"/><stop offset="1" stop-color="#5A3014"/></linearGradient><linearGradient id="cardW" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F0ECE2"/></linearGradient><linearGradient id="lightG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6C8" stop-opacity="0.75"/><stop offset="1" stop-color="#FFF6C8" stop-opacity="0"/></linearGradient><linearGradient id="bookG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7F1E2"/><stop offset="1" stop-color="#E6DCC4"/></linearGradient><linearGradient id="calG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDE7DA"/></linearGradient>
+</defs>
+<rect width="1000" height="700" fill="url(#wallL)"/>
+<g fill="#D4DDC4" opacity="0.8"><rect x="30" y="0" width="26" height="430"/><rect x="110" y="0" width="26" height="430"/><rect x="190" y="0" width="26" height="430"/><rect x="270" y="0" width="26" height="430"/><rect x="350" y="0" width="26" height="430"/><rect x="430" y="0" width="26" height="430"/><rect x="510" y="0" width="26" height="430"/><rect x="590" y="0" width="26" height="430"/><rect x="670" y="0" width="26" height="430"/><rect x="750" y="0" width="26" height="430"/><rect x="830" y="0" width="26" height="430"/><rect x="910" y="0" width="26" height="430"/><rect x="990" y="0" width="26" height="430"/></g>
+<rect y="330" width="1000" height="100" fill="#B9C6A6"/><path d="M 0 330 L 1000 330" stroke="#93A27E" stroke-width="6"/>
+<g opacity="0.9"><rect x="560" y="70" width="190" height="210" rx="6" fill="#CFE9FA" stroke="#8C9C7C" stroke-width="8"/><path d="M 655 70 L 655 280 M 560 175 L 750 175" stroke="#8C9C7C" stroke-width="7"/><path d="M 580 250 L 640 110 M 600 260 L 650 160" stroke="#FFFFFF" stroke-width="8" opacity="0.6" stroke-linecap="round"/></g>
+<path d="M 470 0 L 470 70" stroke="#0B0B14" stroke-width="5"/>
+<path d="M 470 135 L 300 430 L 640 430 Z" fill="url(#lightG)"/>
+<path d="M 420 135 C 420 92, 520 92, 520 135 Z" fill="#2F6B4F" stroke="#0B0B14" stroke-width="6" stroke-linejoin="round"/><path d="M 436 116 C 446 104, 470 100, 490 104" stroke="#7FC4A0" stroke-width="5" fill="none" stroke-linecap="round"/><ellipse cx="470" cy="138" rx="18" ry="8" fill="#FFF3A6" stroke="#0B0B14" stroke-width="4"/><rect x="458" y="66" width="24" height="30" rx="5" fill="#C9A44A" stroke="#0B0B14" stroke-width="5"/>
+<g id="cal"><rect x="822" y="108" width="140" height="150" rx="10" fill="#0B0B14" opacity="0.25" transform="translate(7 8)"/><rect x="822" y="108" width="140" height="150" rx="10" fill="url(#calG)" stroke="#0B0B14" stroke-width="6"/><path d="M 822 118 Q 822 108 832 108 L 952 108 Q 962 108 962 118 L 962 150 L 822 150 Z" fill="#FF5A36" stroke="#0B0B14" stroke-width="6" stroke-linejoin="round"/><text x="892" y="140" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="22" fill="#FFFFFF" >AÑO</text><text x="892" y="218" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="33" fill="#0B0B14" >1935</text><circle cx="892" cy="96" r="8" fill="#8A8F99" stroke="#0B0B14" stroke-width="4"/></g>
+<path d="M 0 430 L 1000 430 L 1000 640 L 0 640 Z" fill="url(#deskT)"/>
+<g stroke="#6E3E1A" stroke-width="3" opacity="0.45" fill="none"><path d="M 0 470 C 300 462, 650 480, 1000 466"/><path d="M 0 512 C 300 504, 650 522, 1000 508"/><path d="M 0 556 C 300 548, 650 566, 1000 552"/><path d="M 0 598 C 300 590, 650 608, 1000 594"/></g>
+<path d="M 0 430 L 1000 430" stroke="#0B0B14" stroke-width="7"/><path d="M 0 438 L 1000 438" stroke="#D99A62" stroke-width="4"/>
+<rect x="0" y="640" width="1000" height="60" fill="url(#deskF)"/><path d="M 0 640 L 1000 640" stroke="#0B0B14" stroke-width="7"/>
+<ellipse cx="340" cy="496" rx="250" ry="16" fill="#0B0B14" opacity="0.25"/>
+<g id="tarjeta"><rect x="130" y="144" width="440" height="360" rx="12" fill="#0B0B14" opacity="0.25"/><rect x="120" y="132" width="440" height="360" rx="12" fill="url(#cardW)" stroke="#0B0B14" stroke-width="7"/>
+<text x="160" y="172" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">MARRÓN</text>
+<text x="200" y="172" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MARRÓN</text>
+<text x="240" y="172" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">AZUL</text>
+<text x="280" y="172" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MORADO</text>
+<text x="320" y="172" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">ROJO</text>
+<text x="360" y="172" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">VERDE</text>
+<text x="400" y="172" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">ROJO</text>
+<text x="440" y="172" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">MORADO</text>
+<text x="480" y="172" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MARRÓN</text>
+<text x="520" y="172" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MORADO</text>
+<text x="160" y="205.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MORADO</text>
+<text x="200" y="205.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">ROJO</text>
+<text x="240" y="205.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">AZUL</text>
+<text x="280" y="205.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MORADO</text>
+<text x="320" y="205.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">MARRÓN</text>
+<text x="360" y="205.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MARRÓN</text>
+<text x="400" y="205.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MORADO</text>
+<text x="440" y="205.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">VERDE</text>
+<text x="480" y="205.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">ROJO</text>
+<text x="520" y="205.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">MARRÓN</text>
+<text x="160" y="239" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MARRÓN</text>
+<text x="200" y="239" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">VERDE</text>
+<text x="240" y="239" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">AZUL</text>
+<text x="280" y="239" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">ROJO</text>
+<text x="320" y="239" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MORADO</text>
+<text x="360" y="239" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MARRÓN</text>
+<text x="400" y="239" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">VERDE</text>
+<text x="440" y="239" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">ROJO</text>
+<text x="480" y="239" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">ROJO</text>
+<text x="520" y="239" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">AZUL</text>
+<text x="160" y="272.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">MARRÓN</text>
+<text x="200" y="272.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">MARRÓN</text>
+<text x="240" y="272.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">ROJO</text>
+<text x="280" y="272.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">VERDE</text>
+<text x="320" y="272.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">ROJO</text>
+<text x="360" y="272.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">VERDE</text>
+<text x="400" y="272.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MARRÓN</text>
+<text x="440" y="272.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">AZUL</text>
+<text x="480" y="272.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">ROJO</text>
+<text x="520" y="272.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">ROJO</text>
+<text x="160" y="306" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MARRÓN</text>
+<text x="200" y="306" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MORADO</text>
+<text x="240" y="306" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MARRÓN</text>
+<text x="280" y="306" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">AZUL</text>
+<text x="320" y="306" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MARRÓN</text>
+<text x="360" y="306" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">MARRÓN</text>
+<text x="400" y="306" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">AZUL</text>
+<text x="440" y="306" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">VERDE</text>
+<text x="480" y="306" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">ROJO</text>
+<text x="520" y="306" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">AZUL</text>
+<text x="160" y="339.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MORADO</text>
+<text x="200" y="339.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">ROJO</text>
+<text x="240" y="339.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">AZUL</text>
+<text x="280" y="339.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">VERDE</text>
+<text x="320" y="339.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">MORADO</text>
+<text x="360" y="339.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">VERDE</text>
+<text x="400" y="339.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">ROJO</text>
+<text x="440" y="339.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">ROJO</text>
+<text x="480" y="339.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MORADO</text>
+<text x="520" y="339.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">ROJO</text>
+<text x="160" y="373" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">VERDE</text>
+<text x="200" y="373" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">AZUL</text>
+<text x="240" y="373" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MORADO</text>
+<text x="280" y="373" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MARRÓN</text>
+<text x="320" y="373" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">AZUL</text>
+<text x="360" y="373" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">AZUL</text>
+<text x="400" y="373" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">AZUL</text>
+<text x="440" y="373" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MORADO</text>
+<text x="480" y="373" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">MARRÓN</text>
+<text x="520" y="373" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MORADO</text>
+<text x="160" y="406.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MARRÓN</text>
+<text x="200" y="406.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">ROJO</text>
+<text x="240" y="406.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">ROJO</text>
+<text x="280" y="406.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">AZUL</text>
+<text x="320" y="406.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">VERDE</text>
+<text x="360" y="406.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">MORADO</text>
+<text x="400" y="406.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">VERDE</text>
+<text x="440" y="406.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">ROJO</text>
+<text x="480" y="406.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">AZUL</text>
+<text x="520" y="406.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MORADO</text>
+<text x="160" y="440" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">VERDE</text>
+<text x="200" y="440" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">AZUL</text>
+<text x="240" y="440" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">ROJO</text>
+<text x="280" y="440" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">MARRÓN</text>
+<text x="320" y="440" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">AZUL</text>
+<text x="360" y="440" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#16904A">ROJO</text>
+<text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">VERDE</text>
+<text x="440" y="440" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">MORADO</text>
+<text x="480" y="440" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">ROJO</text>
+<text x="520" y="440" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">AZUL</text>
+<text x="160" y="473.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">VERDE</text>
+<text x="200" y="473.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MORADO</text>
+<text x="240" y="473.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">ROJO</text>
+<text x="280" y="473.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">VERDE</text>
+<text x="320" y="473.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#1F4FD0">ROJO</text>
+<text x="360" y="473.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MORADO</text>
+<text x="400" y="473.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">MARRÓN</text>
+<text x="440" y="473.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A4A22">VERDE</text>
+<text x="480" y="473.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#D8262B">AZUL</text>
+<text x="520" y="473.5" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="9" fill="#7A32B8">ROJO</text>
+<path d="M 134 142 L 546 142" stroke="#FFFFFF" stroke-width="4" opacity="0.8"/></g>
+<rect x="135" y="482" width="410" height="24" rx="6" fill="#9C6334" stroke="#0B0B14" stroke-width="6"/><path d="M 145 488 L 535 488" stroke="#D49A68" stroke-width="3"/>
+<rect x="300.0" y="118" width="80" height="26" rx="6" fill="#B8BCC4" stroke="#0B0B14" stroke-width="5"/>
+<g id="cuaderno"><path d="M 600 548 L 930 548 L 960 628 L 570 628 Z" fill="#0B0B14" opacity="0.25" transform="translate(6 6)"/><path d="M 600 548 L 765 548 L 765 628 L 570 628 Z" fill="url(#bookG)" stroke="#0B0B14" stroke-width="6" stroke-linejoin="round"/><path d="M 765 548 L 930 548 L 960 628 L 765 628 Z" fill="url(#bookG)" stroke="#0B0B14" stroke-width="6" stroke-linejoin="round"/><text x="668" y="580" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="18" fill="#2A3A6A" >J. R. STROOP</text><text x="668" y="610" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="18" fill="#2A3A6A" >1935</text><g stroke="#2A3A6A" stroke-width="3" stroke-linecap="round"><path d="M 790 570 L 796 604"/><path d="M 804 570 L 810 604"/><path d="M 818 570 L 824 604"/><path d="M 832 570 L 838 604"/><path d="M 784 600 L 856 574"/></g><path d="M 880 566 L 930 566 M 886 586 L 936 586 M 892 606 L 940 606" stroke="#9AA3B5" stroke-width="3"/></g>
+<path d="M 905 520 L 990 600" fill="none" stroke="#0B0B14" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/><path d="M 905 520 L 990 600" fill="none" stroke="#2C3954" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M 905 520 L 914 530" stroke="#C9A44A" stroke-width="8" stroke-linecap="round"/>
+<g id="crono"><ellipse cx="798" cy="522" rx="73.8" ry="13.1" fill="#0B0B14" opacity="0.2"/><rect x="776.9" y="320.1" width="26.2" height="23" rx="4.9" fill="url(#brassG)" stroke="#0B0B14" stroke-width="6"/><rect x="768.7" y="310.3" width="42.6" height="13.1" rx="6.6" fill="url(#brassG)" stroke="#0B0B14" stroke-width="6"/><g transform="rotate(45 848 372)"><rect x="839.8" y="355.6" width="16.4" height="21.3" rx="4.1" fill="url(#brassG)" stroke="#0B0B14" stroke-width="5"/></g><circle cx="790" cy="430" r="82" fill="url(#brassG)" stroke="#0B0B14" stroke-width="7"/><circle cx="790" cy="430" r="67.2" fill="#FFFFFF" stroke="#0B0B14" stroke-width="5"/><path d="M 740.8 393.1 A 61.5 61.5 0 0 1 806.4 371" fill="none" stroke="#FFFFFF" stroke-width="5.7" stroke-linecap="round" opacity="0.9"/><line x1="790" y1="372.6" x2="790" y2="382.4" stroke="#0B0B14" stroke-width="4" stroke-linecap="round"/><line x1="818.7" y1="380.3" x2="816.2" y2="384.6" stroke="#0B0B14" stroke-width="2.5" stroke-linecap="round"/><line x1="839.7" y1="401.3" x2="835.4" y2="403.8" stroke="#0B0B14" stroke-width="2.5" stroke-linecap="round"/><line x1="847.4" y1="430" x2="837.6" y2="430" stroke="#0B0B14" stroke-width="4" stroke-linecap="round"/><line x1="839.7" y1="458.7" x2="835.4" y2="456.2" stroke="#0B0B14" stroke-width="2.5" stroke-linecap="round"/><line x1="818.7" y1="479.7" x2="816.2" y2="475.4" stroke="#0B0B14" stroke-width="2.5" stroke-linecap="round"/><line x1="790" y1="487.4" x2="790" y2="477.6" stroke="#0B0B14" stroke-width="4" stroke-linecap="round"/><line x1="761.3" y1="479.7" x2="763.8" y2="475.4" stroke="#0B0B14" stroke-width="2.5" stroke-linecap="round"/><line x1="740.3" y1="458.7" x2="744.6" y2="456.2" stroke="#0B0B14" stroke-width="2.5" stroke-linecap="round"/><line x1="732.6" y1="430" x2="742.4" y2="430" stroke="#0B0B14" stroke-width="4" stroke-linecap="round"/><line x1="740.3" y1="401.3" x2="744.6" y2="403.8" stroke="#0B0B14" stroke-width="2.5" stroke-linecap="round"/><line x1="761.3" y1="380.3" x2="763.8" y2="384.6" stroke="#0B0B14" stroke-width="2.5" stroke-linecap="round"/><g id="aguja"><circle cx="790" cy="430" r="49.2" fill="none" stroke="none"/><line x1="790" y1="442.3" x2="790" y2="380.8" stroke="#0B0B14" stroke-width="9" stroke-linecap="round"/><line x1="790" y1="442.3" x2="790" y2="380.8" stroke="#FF5A36" stroke-width="4.1" stroke-linecap="round"/></g><circle cx="790" cy="430" r="6.6" fill="#0B0B14"/></g>
+<g id="l100"><line x1="340" y1="552" x2="340" y2="506" stroke="#0B0B14" stroke-width="5" stroke-linecap="round"/><circle cx="340" cy="506" r="9" fill="#C8FF2E" stroke="#0B0B14" stroke-width="4"/><rect x="210" y="551" width="260" height="58" rx="12" fill="#0B0B14" stroke="#0B0B14" stroke-width="3"/><text x="340" y="590.8" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="30" fill="#C8FF2E" >100 PALABRAS</text></g>
+</svg>

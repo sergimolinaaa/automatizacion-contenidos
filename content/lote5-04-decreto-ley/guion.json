@@ -1,0 +1,923 @@
+{
+  "topic": "Cómo puede el Congreso tumbar una ley que ya está en vigor: el decreto ley",
+  "categoria": "politica",
+  "title": "¿Cómo puede el Congreso tumbar una ley en vigor? ⚖️",
+  "source": "Fuentes: Constitución Española, arts. 78.2 y 86 · Reglamento del Congreso, art. 151 · BOE, 2/10/2026 (derogación de los RDL 26/2026 y 27/2026) · Congreso de los Diputados",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Cómo se *tumba* una ley en vigor?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Una norma puede entrar en vigor… y caer a los pocos días ⚖️ Es el decreto ley: lo aprueba el Gobierno, se aplica ya y el Congreso tiene 30 días para convalidarlo o derogarlo. Sin posicionarnos: solo explicamos cómo funciona. ¿Sabías que una ley podía caducar como un yogur?",
+    "description": "El artículo 86 de la Constitución permite al Gobierno, «en caso de extraordinaria y urgente necesidad», dictar decretos-leyes: normas provisionales con rango de ley que se publican en el BOE y se aplican desde su entrada en vigor, sin pasar antes por las Cortes. En los 30 días siguientes a su promulgación, el Congreso debe votarlos: si gana el sí, quedan convalidados; si gana el no, quedan derogados. La derogación no es retroactiva: lo aplicado mientras estuvieron en vigor, en principio, se mantiene. El 2 de octubre de 2026, el Pleno del Congreso no convalidó dos decretos-leyes de vivienda (RDL 26/2026 y 27/2026), que quedaron derogados. Con las Cortes disueltas, esa votación corresponde a la Diputación Permanente (art. 78.2). Sin posicionarnos: solo explicamos cómo funciona. Fuentes: Constitución Española, arts. 78.2 y 86; Reglamento del Congreso, art. 151; BOE (resoluciones de derogación, 2 de octubre de 2026).",
+    "hashtags": [
+      "decretoley",
+      "congreso",
+      "constitucion",
+      "politica",
+      "leyes",
+      "curiosidades",
+      "aprendeentiktok",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Cómo se *tumba* una ley en vigor?",
+      "narration": "Una norma entra en vigor… y días después el Congreso la tumba. ¿Cómo es posible?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · En vigor y derogada",
+        "anims": [
+          {
+            "target": "derogado",
+            "effect": "hide"
+          },
+          {
+            "target": "boe",
+            "effect": "punch",
+            "trigger": "norma",
+            "amount": 0.12
+          },
+          {
+            "target": "vigor",
+            "effect": "pop",
+            "trigger": "vigor",
+            "sfx": "sello"
+          },
+          {
+            "target": "cal",
+            "effect": "punch",
+            "trigger": "días",
+            "amount": 0.3
+          },
+          {
+            "target": "cal",
+            "effect": "wiggle",
+            "amount": 0.3
+          },
+          {
+            "target": "congreso",
+            "effect": "punch",
+            "trigger": "Congreso",
+            "amount": 0.3
+          },
+          {
+            "target": "lcong",
+            "effect": "punch",
+            "trigger": "Congreso",
+            "amount": 0.3
+          },
+          {
+            "target": "derogado",
+            "effect": "pop",
+            "trigger": "tumba",
+            "sfx": "sello"
+          },
+          {
+            "target": "boe",
+            "effect": "shake",
+            "trigger": "tumba",
+            "amount": 0.5
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "Cómo",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "duda",
+            "effect": "wiggle",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El camino *largo*",
+      "narration": "Sin posicionarnos, solo cómo funciona. Normalmente, una ley se debate y se vota en las Cortes antes de aplicarse.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "SIN POSICIONARNOS",
+          "tone": "ink",
+          "trigger": "posicionarnos"
+        }
+      ],
+      "illustration": {
+        "svg_file": "camino.svg",
+        "caption": "Fig. 2 · Ley ordinaria",
+        "anims": [
+          {
+            "target": "atajo",
+            "effect": "hide"
+          },
+          {
+            "target": "latajo",
+            "effect": "hide"
+          },
+          {
+            "target": "vigor",
+            "effect": "hide"
+          },
+          {
+            "target": "reloj",
+            "effect": "sway",
+            "amount": 0.5
+          },
+          {
+            "target": "llargo",
+            "effect": "pop",
+            "trigger": "Normalmente",
+            "sfx": "pop"
+          },
+          {
+            "target": "inicio",
+            "effect": "punch",
+            "trigger": "ley",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              240
+            ],
+            "amount": 1.3,
+            "trigger": "debate",
+            "dur": 0.8
+          },
+          {
+            "target": "viajero",
+            "effect": "move",
+            "to": [
+              250,
+              -180
+            ],
+            "trigger": "debate",
+            "dur": 0.7,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "congreso",
+            "effect": "punch",
+            "trigger": "debate",
+            "amount": 0.3
+          },
+          {
+            "target": "viajero",
+            "effect": "move",
+            "to": [
+              240,
+              0
+            ],
+            "trigger": "vota",
+            "dur": 0.7,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "senado",
+            "effect": "punch",
+            "trigger": "vota",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "antes",
+            "dur": 0.7
+          },
+          {
+            "target": "viajero",
+            "effect": "move",
+            "to": [
+              220,
+              140
+            ],
+            "trigger": "antes",
+            "dur": 0.7
+          },
+          {
+            "target": "boe",
+            "effect": "punch",
+            "trigger": "aplicarse",
+            "amount": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El *atajo*: artículo 86",
+      "narration": "Pero el artículo 86 de la Constitución da un atajo para casos urgentes: el Gobierno aprueba un decreto ley.",
+      "illustration": {
+        "svg_file": "constitucion_free.svg",
+        "layout": "free",
+        "height": 857,
+        "caption": "Fig. 3 · Constitución, art. 86",
+        "anims": [
+          {
+            "target": "subr30",
+            "effect": "hide"
+          },
+          {
+            "target": "chispas",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "tab86",
+            "effect": "pop",
+            "trigger": "86",
+            "sfx": "pop"
+          },
+          {
+            "target": "libro",
+            "effect": "punch",
+            "trigger": "Constitución",
+            "amount": 0.12
+          },
+          {
+            "target": "art",
+            "effect": "punch",
+            "trigger": "atajo",
+            "amount": 0.25
+          },
+          {
+            "target": "subr",
+            "effect": "draw",
+            "trigger": "casos",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "subr2",
+            "effect": "draw",
+            "trigger": "urgentes",
+            "dur": 0.4
+          },
+          {
+            "target": "urgente",
+            "effect": "pop",
+            "trigger": "urgentes",
+            "sfx": "sello"
+          },
+          {
+            "target": "subr3",
+            "effect": "draw",
+            "trigger": "Gobierno",
+            "dur": 0.3,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "decreto",
+            "effect": "slide-up",
+            "trigger": "decreto",
+            "sfx": "papel"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "En vigor, *ya*",
+      "narration": "Se publica en el BOE y entra en vigor casi al instante: ya hay que cumplirlo.",
+      "illustration": {
+        "svg_file": "camino.svg",
+        "caption": "Fig. 4 · Decreto ley",
+        "anims": [
+          {
+            "target": "viajero",
+            "effect": "hide"
+          },
+          {
+            "target": "vigor",
+            "effect": "hide"
+          },
+          {
+            "target": "reloj",
+            "effect": "sway",
+            "amount": 0.5
+          },
+          {
+            "target": "inicio",
+            "effect": "punch",
+            "trigger": "Se",
+            "amount": 0.3
+          },
+          {
+            "target": "atajo",
+            "effect": "draw",
+            "trigger": "publica",
+            "dur": 0.7,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "latajo",
+            "effect": "pop",
+            "trigger": "publica"
+          },
+          {
+            "target": "boe",
+            "effect": "punch",
+            "trigger": "BOE",
+            "amount": 0.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              790,
+              420
+            ],
+            "amount": 1.4,
+            "trigger": "entra",
+            "dur": 0.7
+          },
+          {
+            "target": "vigor",
+            "effect": "pop",
+            "trigger": "vigor",
+            "sfx": "sello"
+          },
+          {
+            "target": "vigor",
+            "effect": "punch",
+            "trigger": "instante",
+            "amount": 0.3
+          },
+          {
+            "target": "latajo",
+            "effect": "hide",
+            "trigger": "entra"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "cumplirlo",
+            "dur": 0.7
+          },
+          {
+            "target": "latajo",
+            "effect": "pop",
+            "trigger": "cumplirlo",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*30 días* de plazo",
+      "narration": "Pero es provisional: el Congreso tiene 30 días para votarlo.",
+      "illustration": {
+        "svg_file": "plazo.svg",
+        "caption": "Fig. 5 · Art. 86.2",
+        "anims": [
+          {
+            "target": "verde",
+            "effect": "hide"
+          },
+          {
+            "target": "gris",
+            "effect": "hide"
+          },
+          {
+            "target": "corte",
+            "effect": "hide"
+          },
+          {
+            "target": "derogado",
+            "effect": "hide"
+          },
+          {
+            "target": "mantiene",
+            "effect": "hide"
+          },
+          {
+            "target": "lmant",
+            "effect": "hide"
+          },
+          {
+            "target": "atras",
+            "effect": "hide"
+          },
+          {
+            "target": "tache",
+            "effect": "hide"
+          },
+          {
+            "target": "latras",
+            "effect": "hide"
+          },
+          {
+            "target": "reloj",
+            "effect": "wiggle",
+            "amount": 0.4
+          },
+          {
+            "target": "lprov",
+            "effect": "pop",
+            "trigger": "provisional",
+            "sfx": "pop"
+          },
+          {
+            "target": "reloj",
+            "effect": "punch",
+            "trigger": "provisional",
+            "amount": 0.3
+          },
+          {
+            "target": "hemi30",
+            "effect": "punch",
+            "trigger": "Congreso",
+            "amount": 0.3
+          },
+          {
+            "target": "lvota",
+            "effect": "pop",
+            "trigger": "Congreso"
+          },
+          {
+            "target": "plazo",
+            "effect": "draw",
+            "trigger": "30",
+            "dur": 1.3,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "marca",
+            "effect": "move",
+            "to": [
+              800,
+              0
+            ],
+            "trigger": "30",
+            "dur": 1.5
+          },
+          {
+            "target": "l30",
+            "effect": "pop",
+            "trigger": "días",
+            "sfx": "ding"
+          },
+          {
+            "target": "hemi30",
+            "effect": "punch",
+            "trigger": "votarlo",
+            "amount": 0.35
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "votarlo",
+        "pose": "point",
+        "note": "Tic, tac, señorías",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "¿*Sí* o *no*?",
+      "narration": "Si gana el sí, se convalida y sigue. Si gana el no, queda derogado.",
+      "illustration": {
+        "svg_file": "hemiciclo_free.svg",
+        "layout": "free",
+        "height": 818,
+        "caption": "Fig. 6 · Votación en el Congreso",
+        "anims": [
+          {
+            "target": "votos",
+            "effect": "hide"
+          },
+          {
+            "target": "velo",
+            "effect": "hide"
+          },
+          {
+            "target": "dp",
+            "effect": "hide"
+          },
+          {
+            "target": "disuelta",
+            "effect": "hide"
+          },
+          {
+            "target": "ldp",
+            "effect": "hide"
+          },
+          {
+            "target": "asientos",
+            "effect": "breathe",
+            "amount": 0.3
+          },
+          {
+            "target": "bsi",
+            "effect": "punch",
+            "trigger": "el sí",
+            "amount": 0.3
+          },
+          {
+            "target": "fsi",
+            "effect": "draw",
+            "trigger": "convalida",
+            "dur": 0.4
+          },
+          {
+            "target": "conv",
+            "effect": "pop",
+            "trigger": "convalida",
+            "sfx": "sello"
+          },
+          {
+            "target": "conv",
+            "effect": "punch",
+            "trigger": "sigue",
+            "amount": 0.3
+          },
+          {
+            "target": "bno",
+            "effect": "punch",
+            "trigger": "el no",
+            "amount": 0.3
+          },
+          {
+            "target": "fno",
+            "effect": "draw",
+            "trigger": "queda",
+            "dur": 0.4
+          },
+          {
+            "target": "derog",
+            "effect": "pop",
+            "trigger": "derogado",
+            "sfx": "sello"
+          },
+          {
+            "target": "derog",
+            "effect": "shake",
+            "trigger": "derogado",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "El *2 de octubre*",
+      "narration": "Eso pasó el 2 de octubre con dos decretos ley de vivienda: no se convalidaron y quedaron derogados.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Congreso · 2/10/2026",
+          "tone": "ink",
+          "trigger": "octubre"
+        }
+      ],
+      "illustration": {
+        "svg_file": "hemiciclo_free.svg",
+        "layout": "free",
+        "height": 818,
+        "caption": "Fig. 7 · 2 de octubre",
+        "anims": [
+          {
+            "target": "velo",
+            "effect": "hide"
+          },
+          {
+            "target": "dp",
+            "effect": "hide"
+          },
+          {
+            "target": "disuelta",
+            "effect": "hide"
+          },
+          {
+            "target": "ldp",
+            "effect": "hide"
+          },
+          {
+            "target": "conv",
+            "effect": "hide"
+          },
+          {
+            "target": "fsi",
+            "effect": "hide"
+          },
+          {
+            "target": "sala",
+            "effect": "punch",
+            "trigger": "pasó",
+            "amount": 0.08
+          },
+          {
+            "target": "votos",
+            "effect": "fade",
+            "trigger": "decretos",
+            "dur": 0.6,
+            "sfx": "brillo"
+          },
+          {
+            "target": "votos",
+            "effect": "breathe",
+            "amount": 0.3
+          },
+          {
+            "target": "bsi",
+            "effect": "punch",
+            "trigger": "vivienda",
+            "amount": 0.2
+          },
+          {
+            "target": "bno",
+            "effect": "punch",
+            "trigger": "no",
+            "amount": 0.35
+          },
+          {
+            "target": "fno",
+            "effect": "draw",
+            "trigger": "convalidaron",
+            "dur": 0.4
+          },
+          {
+            "target": "derog",
+            "effect": "pop",
+            "trigger": "derogados",
+            "sfx": "sello"
+          },
+          {
+            "target": "derog",
+            "effect": "shake",
+            "trigger": "derogados",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "No va *hacia atrás*",
+      "narration": "Ojo: no va hacia atrás. Lo aplicado mientras estuvo en vigor, en principio, se mantiene.",
+      "illustration": {
+        "svg_file": "plazo.svg",
+        "caption": "Fig. 8 · Sin efecto retroactivo",
+        "anims": [
+          {
+            "target": "plazo",
+            "effect": "hide"
+          },
+          {
+            "target": "marca",
+            "effect": "hide"
+          },
+          {
+            "target": "hemi30",
+            "effect": "hide"
+          },
+          {
+            "target": "lvota",
+            "effect": "hide"
+          },
+          {
+            "target": "reloj",
+            "effect": "hide"
+          },
+          {
+            "target": "lprov",
+            "effect": "hide"
+          },
+          {
+            "target": "l30",
+            "effect": "hide"
+          },
+          {
+            "target": "lmant",
+            "effect": "hide"
+          },
+          {
+            "target": "latras",
+            "effect": "hide"
+          },
+          {
+            "target": "derogado",
+            "effect": "wiggle",
+            "amount": 0.25
+          },
+          {
+            "target": "corte",
+            "effect": "punch",
+            "trigger": "Ojo",
+            "amount": 0.4
+          },
+          {
+            "target": "atras",
+            "effect": "draw",
+            "trigger": "va",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tache",
+            "effect": "pop",
+            "trigger": "atrás",
+            "sfx": "sello"
+          },
+          {
+            "target": "latras",
+            "effect": "pop",
+            "trigger": "atrás"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              380
+            ],
+            "amount": 1.1,
+            "trigger": "aplicado",
+            "dur": 0.7
+          },
+          {
+            "target": "verde",
+            "effect": "punch",
+            "trigger": "aplicado",
+            "amount": 0.2
+          },
+          {
+            "target": "mantiene",
+            "effect": "draw",
+            "trigger": "vigor",
+            "dur": 0.6
+          },
+          {
+            "target": "lmant",
+            "effect": "pop",
+            "trigger": "mantiene",
+            "sfx": "ding"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "mantiene",
+            "dur": 0.8
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "mantiene",
+        "pose": "explain",
+        "note": "Lo hecho, hecho está",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Con las Cortes *disueltas*",
+      "narration": "Y con las Cortes disueltas, como ahora, la que vota es la Diputación Permanente.",
+      "illustration": {
+        "svg_file": "hemiciclo_free.svg",
+        "layout": "free",
+        "height": 818,
+        "caption": "Fig. 9 · Art. 78.2",
+        "anims": [
+          {
+            "target": "votos",
+            "effect": "hide"
+          },
+          {
+            "target": "bsi",
+            "effect": "hide"
+          },
+          {
+            "target": "bno",
+            "effect": "hide"
+          },
+          {
+            "target": "fsi",
+            "effect": "hide"
+          },
+          {
+            "target": "fno",
+            "effect": "hide"
+          },
+          {
+            "target": "conv",
+            "effect": "hide"
+          },
+          {
+            "target": "derog",
+            "effect": "hide"
+          },
+          {
+            "target": "asientos",
+            "effect": "breathe",
+            "amount": 0.3
+          },
+          {
+            "target": "velo",
+            "effect": "fade",
+            "trigger": "disueltas",
+            "dur": 0.5
+          },
+          {
+            "target": "disuelta",
+            "effect": "pop",
+            "trigger": "disueltas",
+            "sfx": "sello"
+          },
+          {
+            "target": "disuelta",
+            "effect": "punch",
+            "trigger": "ahora",
+            "amount": 0.3
+          },
+          {
+            "target": "sala",
+            "effect": "punch",
+            "trigger": "vota",
+            "amount": 0.06
+          },
+          {
+            "target": "dp",
+            "effect": "pop",
+            "trigger": "Diputación",
+            "sfx": "brillo"
+          },
+          {
+            "target": "dp",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "ldp",
+            "effect": "pop",
+            "trigger": "Permanente",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos para más trucos. Confiesa: ¿sabías que una ley podía caducar como un yogur?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Sabías que una ley podía *caducar* como un yogur?",
+          "trigger": "Confiesa"
+        }
+      ]
+    }
+  ]
+}

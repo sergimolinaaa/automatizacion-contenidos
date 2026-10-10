@@ -1,0 +1,892 @@
+{
+  "topic": "El efecto Stroop: por qué te cuesta decir el color de la palabra ROJO escrita en azul",
+  "categoria": "psicologia",
+  "title": "¿Puedes decir el color sin leer la palabra? 🎨",
+  "source": "Fuentes: Stroop, J. R. (1935), Journal of Experimental Psychology, 18, 643-662 · MacLeod, C. M. (1991), Psychological Bulletin, 109, 163-203",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Di el *color*, no la palabra",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Di en voz alta el color de cada palabra, no lo que pone… ¿a que te trabas? 🎨 Es el efecto Stroop: leer es tan automático que se cuela aunque no quieras. ¿Cuántos colores has dicho mal?",
+    "description": "En 1935, John Ridley Stroop publicó en el Journal of Experimental Psychology un experimento ya clásico: decir el color de la tinta de 100 palabras que nombran otro color costaba de media unos 110 segundos, frente a unos 63 con cuadrados de color (casi un 75 % más). Al revés apenas hay efecto: leer esas palabras ignorando su color solo añadía unos 2 segundos. La explicación más aceptada es que, con años de práctica, leer se vuelve automático: la palabra se procesa sin querer y compite con el color, así que el cerebro tiene que frenarla, y eso lleva tiempo. Fuentes: Stroop (1935), Journal of Experimental Psychology, 18, 643-662; MacLeod (1991), Psychological Bulletin, 109, 163-203.",
+    "hashtags": [
+      "efectostroop",
+      "psicologia",
+      "cerebro",
+      "reto",
+      "ilusiones",
+      "curiosidades",
+      "ciencia",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Di el *color*, no la palabra",
+      "narration": "Reto: di en voz alta el color de cada palabra, no lo que pone. ¿Listo? ¡Ya! ¿A que te trabas?",
+      "illustration": {
+        "svg_file": "reto_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · El reto",
+        "anims": [
+          {
+            "target": "set2",
+            "effect": "hide"
+          },
+          {
+            "target": "hdr2",
+            "effect": "hide"
+          },
+          {
+            "target": "hdr1",
+            "effect": "punch",
+            "trigger": "Reto",
+            "amount": 0.3
+          },
+          {
+            "target": "set1",
+            "effect": "punch",
+            "trigger": "palabra",
+            "amount": 0.08
+          },
+          {
+            "target": "foco",
+            "effect": "pop",
+            "trigger": "color",
+            "sfx": "pop"
+          },
+          {
+            "target": "foco",
+            "effect": "move",
+            "to": [
+              470,
+              0
+            ],
+            "trigger": "pone",
+            "dur": 0.3
+          },
+          {
+            "target": "foco",
+            "effect": "move",
+            "to": [
+              -470,
+              165
+            ],
+            "trigger": "Listo",
+            "dur": 0.3
+          },
+          {
+            "target": "foco",
+            "effect": "move",
+            "to": [
+              470,
+              0
+            ],
+            "trigger": "Ya",
+            "dur": 0.3
+          },
+          {
+            "target": "foco",
+            "effect": "move",
+            "to": [
+              -470,
+              165
+            ],
+            "trigger": "A que",
+            "dur": 0.3
+          },
+          {
+            "target": "foco",
+            "effect": "move",
+            "to": [
+              470,
+              0
+            ],
+            "trigger": "te",
+            "dur": 0.3
+          },
+          {
+            "target": "aguja",
+            "effect": "spin",
+            "trigger": "Ya",
+            "amount": 3
+          },
+          {
+            "target": "crono",
+            "effect": "punch",
+            "trigger": "Ya",
+            "amount": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "bocadillo",
+            "effect": "pop",
+            "trigger": "trabas",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "bocadillo",
+            "effect": "wiggle",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Leer es *automático*",
+      "narration": "Tu cerebro lee sin pedirte permiso: con años de práctica, leer se ha vuelto automático.",
+      "illustration": {
+        "svg_file": "cerebro.svg",
+        "caption": "Fig. 2 · Lectura automática",
+        "anims": [
+          {
+            "target": "vcolor",
+            "effect": "hide"
+          },
+          {
+            "target": "choque",
+            "effect": "hide"
+          },
+          {
+            "target": "freno",
+            "effect": "hide"
+          },
+          {
+            "target": "bocadillo",
+            "effect": "hide"
+          },
+          {
+            "target": "bocadillo2",
+            "effect": "hide"
+          },
+          {
+            "target": "lcolor",
+            "effect": "hide"
+          },
+          {
+            "target": "salida",
+            "effect": "hide"
+          },
+          {
+            "target": "lleer",
+            "effect": "hide"
+          },
+          {
+            "target": "ojo",
+            "effect": "blink"
+          },
+          {
+            "target": "cerebro",
+            "effect": "breathe",
+            "amount": 0.5
+          },
+          {
+            "target": "cerebro",
+            "effect": "punch",
+            "trigger": "cerebro",
+            "amount": 0.25
+          },
+          {
+            "target": "mirada",
+            "effect": "fade",
+            "trigger": "lee",
+            "dur": 0.4
+          },
+          {
+            "target": "vleer",
+            "effect": "draw",
+            "trigger": "lee",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              520,
+              340
+            ],
+            "amount": 1.25,
+            "trigger": "permiso",
+            "dur": 0.8
+          },
+          {
+            "target": "tarjeta",
+            "effect": "punch",
+            "trigger": "práctica",
+            "amount": 0.3
+          },
+          {
+            "target": "vleer",
+            "effect": "punch",
+            "trigger": "leer",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "vuelto",
+            "dur": 0.7
+          },
+          {
+            "target": "lleer",
+            "effect": "pop",
+            "trigger": "automático",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Dos respuestas *chocan*",
+      "narration": "Así que lees «rojo» mientras ves azul… y las dos respuestas chocan.",
+      "illustration": {
+        "svg_file": "cerebro.svg",
+        "caption": "Fig. 3 · Interferencia",
+        "anims": [
+          {
+            "target": "freno",
+            "effect": "hide"
+          },
+          {
+            "target": "bocadillo2",
+            "effect": "hide"
+          },
+          {
+            "target": "lcolor",
+            "effect": "hide"
+          },
+          {
+            "target": "ojo",
+            "effect": "blink"
+          },
+          {
+            "target": "cerebro",
+            "effect": "breathe",
+            "amount": 0.5
+          },
+          {
+            "target": "vleer",
+            "effect": "punch",
+            "trigger": "lees",
+            "amount": 0.3
+          },
+          {
+            "target": "tarjeta",
+            "effect": "punch",
+            "trigger": "rojo",
+            "amount": 0.3
+          },
+          {
+            "target": "vcolor",
+            "effect": "draw",
+            "trigger": "ves",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lcolor",
+            "effect": "pop",
+            "trigger": "azul",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              540,
+              400
+            ],
+            "amount": 1.2,
+            "trigger": "respuestas",
+            "dur": 0.7
+          },
+          {
+            "target": "lleer",
+            "effect": "hide",
+            "trigger": "respuestas"
+          },
+          {
+            "target": "lcolor",
+            "effect": "hide",
+            "trigger": "respuestas"
+          },
+          {
+            "target": "choque",
+            "effect": "pop",
+            "trigger": "chocan",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "choque",
+            "effect": "shake",
+            "trigger": "chocan",
+            "amount": 0.6
+          },
+          {
+            "target": "salida",
+            "effect": "draw",
+            "trigger": "chocan",
+            "dur": 0.4
+          },
+          {
+            "target": "bocadillo",
+            "effect": "pop",
+            "trigger": "chocan"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "chocan",
+        "pose": "surprise",
+        "note": "Cortocircuito en 3, 2, 1…",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Stroop, *1935*",
+      "narration": "En 1935, John Ridley Stroop lo midió con tarjetas de cien palabras.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "J. Exp. Psychol., 1935",
+          "tone": "ink",
+          "trigger": "Stroop"
+        }
+      ],
+      "illustration": {
+        "svg_file": "lab.svg",
+        "caption": "Fig. 4 · El experimento",
+        "anims": [
+          {
+            "target": "aguja",
+            "effect": "spin",
+            "amount": 0.5
+          },
+          {
+            "target": "cal",
+            "effect": "pop",
+            "trigger": "1935",
+            "sfx": "pop"
+          },
+          {
+            "target": "cal",
+            "effect": "punch",
+            "trigger": "John",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              700,
+              560
+            ],
+            "amount": 1.5,
+            "trigger": "Ridley",
+            "dur": 0.7
+          },
+          {
+            "target": "cuaderno",
+            "effect": "punch",
+            "trigger": "Stroop",
+            "amount": 0.2
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              790,
+              440
+            ],
+            "amount": 1.4,
+            "trigger": "midió",
+            "dur": 0.6
+          },
+          {
+            "target": "crono",
+            "effect": "punch",
+            "trigger": "midió",
+            "amount": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              340,
+              340
+            ],
+            "amount": 1.25,
+            "trigger": "tarjetas",
+            "dur": 0.7
+          },
+          {
+            "target": "tarjeta",
+            "effect": "punch",
+            "trigger": "tarjetas",
+            "amount": 0.15
+          },
+          {
+            "target": "l100",
+            "effect": "pop",
+            "trigger": "cien",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*63* contra *110* segundos",
+      "narration": "Decir el color de cien cuadrados costaba unos 63 segundos. Con palabras de otro color, ¡110! Casi un 75 % más.",
+      "illustration": {
+        "svg_file": "tiempos_free.svg",
+        "layout": "free",
+        "height": 781,
+        "caption": "Fig. 5 · 100 elementos",
+        "anims": [
+          {
+            "target": "a1",
+            "effect": "spin",
+            "amount": 1
+          },
+          {
+            "target": "a2",
+            "effect": "spin",
+            "amount": 1.2
+          },
+          {
+            "target": "c1",
+            "effect": "punch",
+            "trigger": "cuadrados",
+            "amount": 0.2
+          },
+          {
+            "target": "b1",
+            "effect": "draw",
+            "trigger": "costaba",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "t1",
+            "effect": "pop",
+            "trigger": "63",
+            "sfx": "pop"
+          },
+          {
+            "target": "c2",
+            "effect": "punch",
+            "trigger": "palabras",
+            "amount": 0.2
+          },
+          {
+            "target": "b2",
+            "effect": "draw",
+            "trigger": "otro",
+            "dur": 1.1,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "t2",
+            "effect": "pop",
+            "trigger": "110",
+            "sfx": "pop"
+          },
+          {
+            "target": "badge",
+            "effect": "pop",
+            "trigger": "75",
+            "sfx": "sello"
+          },
+          {
+            "target": "badge",
+            "effect": "wiggle",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Hay que *frenar*",
+      "narration": "Para acertar, tu cerebro tiene que frenar la lectura… y frenar cuesta tiempo.",
+      "illustration": {
+        "svg_file": "cerebro.svg",
+        "caption": "Fig. 6 · Freno a la lectura",
+        "anims": [
+          {
+            "target": "bocadillo",
+            "effect": "hide"
+          },
+          {
+            "target": "bocadillo2",
+            "effect": "hide"
+          },
+          {
+            "target": "ojo",
+            "effect": "blink"
+          },
+          {
+            "target": "cerebro",
+            "effect": "breathe",
+            "amount": 0.5
+          },
+          {
+            "target": "choque",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "lcolor",
+            "effect": "punch",
+            "trigger": "acertar",
+            "amount": 0.3
+          },
+          {
+            "target": "cerebro",
+            "effect": "punch",
+            "trigger": "cerebro",
+            "amount": 0.2
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              700,
+              330
+            ],
+            "amount": 1.45,
+            "trigger": "frenar",
+            "dur": 0.7
+          },
+          {
+            "target": "freno",
+            "effect": "pop",
+            "trigger": "frenar",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "lleer",
+            "effect": "hide",
+            "trigger": "frenar"
+          },
+          {
+            "target": "lcolor",
+            "effect": "hide",
+            "trigger": "frenar"
+          },
+          {
+            "target": "vleer",
+            "effect": "shake",
+            "trigger": "lectura",
+            "amount": 0.4
+          },
+          {
+            "target": "choque",
+            "effect": "hide",
+            "trigger": "lectura"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "cuesta",
+            "dur": 0.7
+          },
+          {
+            "target": "freno",
+            "effect": "punch",
+            "trigger": "tiempo",
+            "amount": 0.4
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "cuesta",
+        "pose": "think",
+        "note": "Freno de mano mental",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Al revés, *ni se nota*",
+      "narration": "Al revés casi no pasa: leer cien palabras ignorando su color solo costó dos segundos más.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Leer: solo 2 segundos más",
+          "tone": "accent",
+          "trigger": "dos"
+        }
+      ],
+      "illustration": {
+        "svg_file": "cerebro.svg",
+        "caption": "Fig. 7 · Solo leer",
+        "anims": [
+          {
+            "target": "vcolor",
+            "effect": "hide"
+          },
+          {
+            "target": "choque",
+            "effect": "hide"
+          },
+          {
+            "target": "freno",
+            "effect": "hide"
+          },
+          {
+            "target": "bocadillo",
+            "effect": "hide"
+          },
+          {
+            "target": "lcolor",
+            "effect": "hide"
+          },
+          {
+            "target": "salida",
+            "effect": "hide"
+          },
+          {
+            "target": "bocadillo2",
+            "effect": "hide"
+          },
+          {
+            "target": "ojo",
+            "effect": "blink"
+          },
+          {
+            "target": "cerebro",
+            "effect": "breathe",
+            "amount": 0.5
+          },
+          {
+            "target": "lleer",
+            "effect": "punch",
+            "trigger": "revés",
+            "amount": 0.3
+          },
+          {
+            "target": "vleer",
+            "effect": "draw",
+            "trigger": "leer",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              330,
+              400
+            ],
+            "amount": 1.2,
+            "trigger": "ignorando",
+            "dur": 0.7
+          },
+          {
+            "target": "lleer",
+            "effect": "hide",
+            "trigger": "ignorando"
+          },
+          {
+            "target": "tarjeta",
+            "effect": "punch",
+            "trigger": "color",
+            "amount": 0.3
+          },
+          {
+            "target": "salida",
+            "effect": "draw",
+            "trigger": "solo",
+            "dur": 0.4
+          },
+          {
+            "target": "bocadillo2",
+            "effect": "pop",
+            "trigger": "solo",
+            "sfx": "ding"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "segundos",
+            "dur": 0.7
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Segunda *ronda*",
+      "narration": "Segunda ronda, ahora que conoces el truco. Di solo el color, sin leer. ¡Ya! ¿Mejor?",
+      "illustration": {
+        "svg_file": "reto_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · Ronda 2",
+        "anims": [
+          {
+            "target": "set1",
+            "effect": "hide"
+          },
+          {
+            "target": "hdr1",
+            "effect": "hide"
+          },
+          {
+            "target": "bocadillo",
+            "effect": "hide"
+          },
+          {
+            "target": "hdr2",
+            "effect": "punch",
+            "trigger": "ronda",
+            "amount": 0.3
+          },
+          {
+            "target": "set2",
+            "effect": "punch",
+            "trigger": "truco",
+            "amount": 0.08
+          },
+          {
+            "target": "foco",
+            "effect": "pop",
+            "trigger": "Di",
+            "sfx": "pop"
+          },
+          {
+            "target": "foco",
+            "effect": "move",
+            "to": [
+              470,
+              0
+            ],
+            "trigger": "solo",
+            "dur": 0.3
+          },
+          {
+            "target": "foco",
+            "effect": "move",
+            "to": [
+              -470,
+              165
+            ],
+            "trigger": "color",
+            "dur": 0.3
+          },
+          {
+            "target": "foco",
+            "effect": "move",
+            "to": [
+              470,
+              0
+            ],
+            "trigger": "sin",
+            "dur": 0.3
+          },
+          {
+            "target": "foco",
+            "effect": "move",
+            "to": [
+              -470,
+              165
+            ],
+            "trigger": "Ya",
+            "dur": 0.3
+          },
+          {
+            "target": "foco",
+            "effect": "move",
+            "to": [
+              470,
+              0
+            ],
+            "trigger": "Mejor",
+            "dur": 0.3
+          },
+          {
+            "target": "aguja",
+            "effect": "spin",
+            "trigger": "Ya",
+            "amount": 3
+          },
+          {
+            "target": "crono",
+            "effect": "punch",
+            "trigger": "Di",
+            "amount": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "crono",
+            "effect": "shake",
+            "trigger": "Mejor",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos para más trucos. Confiesa: ¿cuántos colores has dicho mal?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Cuántos *colores* has dicho mal?",
+          "trigger": "Confiesa"
+        }
+      ]
+    }
+  ]
+}
