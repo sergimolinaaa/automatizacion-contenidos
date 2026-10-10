@@ -3,6 +3,7 @@ import { FPS, brand } from "../brand";
 import { exitOut, formatNumber, pop, sec, seeded } from "../anim";
 import { Icon } from "../icons";
 import type { Element } from "../types";
+import { Trick } from "./Trick";
 
 const { colors, fonts, border, shadow, radius } = brand;
 
@@ -350,6 +351,7 @@ export const ElementView: React.FC<{ el: Element; ctx: Ctx }> = ({ el, ctx }) =>
     case "quiz": return <Quiz el={el} ctx={ctx} />;
     case "ask": return <Ask el={el} ctx={ctx} />;
     case "follow": return <Follow el={el} ctx={ctx} />;
+    case "trick": return <Trick el={el} />;
     case "stamp": return <Stamp el={el} ctx={ctx} />;
     default: return null;
   }

@@ -13,7 +13,9 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 - Reglas completas de guion, ilustración y DSL de animación: constante `SYSTEM` en `autocontent/generate.py`. Motor: `video/src/components/Illustration.tsx`, tipos en `video/src/types.ts`.
 - guion.json: topic, categoria, title, source (fuentes reales), chapters `["?","1","2","3","+","TÚ"]`, outro_cta, cover, publish, scenes.
 - 9-12 escenas, **135-150 palabras** (40-55 s), frases cortas. Voz Edge TTS a +25 % (`config.yaml`): ritmo rápido. Escena 1 = firma `{"chapter":0,"signature":true,"headline":"El truco es…","narration":"El truco es…"}`.
-- Final (capítulo 5 «TÚ», sin mascota): narración `"Tú traes las dudas y nosotros, el truco. Síguenos y las resolvemos. <UNA pregunta corta y graciosa>"`,
+- Cierre en 2 escenas (capítulo 5 «TÚ»): (1) narración "Tú traes las dudas y nosotros te damos el truco.", headline "Dudas → *truco*",
+  elements `[{"type":"trick","trigger":"Tú","reveal_trigger":"nosotros"}]` (animación con 4 variantes, cambia sola en cada vídeo);
+  (2) final sin mascota: narración `"Síguenos y las resolvemos. <UNA pregunta corta y graciosa>"`,
   elements `[{"type":"follow","trigger":"Síguenos"},{"type":"ask","text":"¿… *clave* …?","trigger":"<1ª palabra de la pregunta>"}]`.
 - **Para todos, de 10 a 90 años**: cada palabra técnica, la primera vez que sale, va con una definición de pocas palabras o una
   comparación cotidiana, en la narración y si cabe en una etiqueta («escaño: cada asiento del Congreso», «hipotálamo: el termostato

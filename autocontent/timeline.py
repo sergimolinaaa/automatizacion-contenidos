@@ -60,6 +60,10 @@ def build_props(script: dict, scene_words: list[list[dict]], end_padding: float 
                 at = s["start"] + 0.25 + 0.6 * k
             el["at"] = round(max(s["start"], at - 0.1), 3)
             cursor = el["at"]
+            if "reveal_trigger" in el:  # segundo momento del elemento (p. ej. «nosotros» en la tarjeta trick)
+                t_rev = find_trigger(el.pop("reveal_trigger"), ws, cursor)
+                if t_rev is not None:
+                    el["reveal"] = round(t_rev - 0.05, 3)
             sub = NESTED.get(el["type"])
             for j, item in enumerate(el.get(sub, []) if sub else []):
                 t_item = find_trigger(item.pop("trigger", None), ws, cursor)

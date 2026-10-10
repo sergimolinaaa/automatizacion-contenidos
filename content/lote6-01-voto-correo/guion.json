@@ -752,9 +752,21 @@
     },
     {
       "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
       "number": "TÚ",
       "headline": "*Confiesa*",
-      "narration": "Tú traes las dudas y nosotros, el truco. Síguenos y las resolvemos. ¿Votarías en pijama desde el sofá?",
+      "narration": "Síguenos y las resolvemos. ¿Votarías en pijama desde el sofá?",
       "elements": [
         {
           "type": "follow",

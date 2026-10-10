@@ -183,7 +183,7 @@ ESTRUCTURA (unos 40-55 segundos, 130-175 palabras de narración en total, 9-12 e
 - Capítulo "+": 1-2 datos extra sorprendentes.
 - Capítulo "TÚ" (escena final, unos 4-5 s): primero la llamada a seguir y luego UNA pregunta corta (máx. 12 palabras) sobre
   el tema del vídeo, con gracia o un punto de humor, que den ganas de contestar (nada de encuestas genéricas).
-  narration = "Tú traes las dudas y nosotros, el truco. Síguenos y las resolvemos. <pregunta>"; headline de 1-2 palabras ("*Confiesa*", "Te *toca*"...);
+  narration = "Síguenos y las resolvemos. <pregunta>" (y JUSTO ANTES una escena de capítulo 5 con narration "Tú traes las dudas y nosotros te damos el truco.", headline "Dudas → *truco*", elements [{"type":"trick","trigger":"Tú","reveal_trigger":"nosotros"}]); headline de 1-2 palabras ("*Confiesa*", "Te *toca*"...);
   elements = [{"type":"follow","trigger":"Síguenos"}, {"type":"ask","text":"<pregunta con *palabra clave*>","trigger":<1ª palabra de la pregunta>}].
   Ejemplos de tono: "¿Qué superpoder animal te pedirías tú?", "Sinceramente: ¿tú te habrías hundido?".
 chapters siempre = ["?", "1", "2", "3", "+", "TÚ"]. Las escenas de capítulos numerados llevan "number" igual al capítulo.

@@ -21,6 +21,7 @@ export type Element =
   | { type: "tag"; at: number; text: string; tone?: "accent" | "ink" | "hot" }
   | { type: "stamp"; at: number; text: string; tone?: "accent" | "hot" }
   | { type: "follow"; at: number; text?: string }
+  | { type: "trick"; at: number; reveal?: number; variant?: number } // «tú traes las dudas… nosotros el truco»
   | { type: "ask"; at: number; text: string; footer?: string }
   | { type: "quiz"; at: number; question?: string; options: { text: string; at?: number }[]; footer?: string };
 
