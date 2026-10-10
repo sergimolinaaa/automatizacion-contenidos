@@ -24,7 +24,7 @@ API = "https://api.buffer.com"
 STATE = ROOT / "data" / "publicaciones.json"
 PREVIEWS = ROOT / "previews"
 TZ = ZoneInfo("Europe/Madrid")
-SLOTS = (9, 14, 21)  # horas locales de publicación: mañana, mediodía y tarde-noche
+SLOTS = (14,)  # 1 al día (ahorro de créditos); antes (9, 14, 21)
 MIN_GAP = timedelta(hours=2)  # separación mínima con la publicación anterior
 MAX_QUEUE = 8  # publicaciones futuras por canal (el plan de Buffer permite 10)
 HASHTAG = "#eltrucoes"

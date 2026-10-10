@@ -6,7 +6,7 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 ## Reparto del trabajo
 - **Claude (sesión)**: escribe `content/<loteN-NN-tema>/guion.json` + sus SVG, revisa y hace commit+push.
 - **GitHub Actions**: `render-ejemplo.yml` (al hacer push de `content/**`) pone voz Edge TTS, efectos y renderiza con Remotion;
-  `programar.yml` (cron :37) programa en Buffer (YouTube, Instagram, TikTok) **3 al día: 9, 14 y 21 h de Madrid** (`SLOTS` en `autocontent/publish.py`).
+  `programar.yml` (cron :37) programa en Buffer (YouTube, Instagram, TikTok) **1 al día a las 14 h de Madrid** (ahorro; antes 9, 14 y 21 h) (`SLOTS` en `autocontent/publish.py`).
   Estado de la cola: `data/publicaciones.json`. Banco de temas: `data/temas.json` (marca `"hecho": true` al subir).
 
 ## Fórmula y estructura (el nivel MÍNIMO es `content/lote3-01-zapatero`; cópialo como plantilla)
