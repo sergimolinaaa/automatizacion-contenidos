@@ -1,0 +1,771 @@
+{
+  "topic": "Cómo funciona el voto por correo en las generales del 29 de noviembre de 2026",
+  "categoria": "politica",
+  "title": "¿Votar por correo es seguro? Así viaja tu voto 🗳️✉️",
+  "source": "Fuentes: LOREG (LO 5/1985), arts. 72, 73 y 88 · BOE 6/10/2026 (Real Decreto 806/2026) · Correos y Oficina del Censo Electoral (INE): plazos del voto por correo 29-N",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Tu voto *se pierde*?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "¿Votas por correo el 29-N? ✉️🗳️ Pídelo en Correos con tu DNI hasta el 19 de noviembre, te llega certificado desde el 9 y lo entregas gratis hasta el 25. El domingo va a tu mesa y entra en la urna sin abrir. Sin posicionarnos: solo explicamos cómo funciona. ¿Votarías en pijama desde el sofá?",
+    "description": "Así viaja el voto por correo en las elecciones generales del 29 de noviembre de 2026 (Real Decreto 806/2026, BOE del 6 de octubre). 1) Se solicita en persona en cualquier oficina de Correos con DNI (o por internet con certificado digital o DNIe) hasta el jueves 19 de noviembre. 2) La Oficina del Censo Electoral envía la documentación por correo certificado a partir del 9 de noviembre y solo se entrega al interesado, acreditando su identidad. 3) La papeleta va en el sobre de votación; ese sobre, junto con el certificado de inscripción en el censo, va en un segundo sobre dirigido a la mesa. 4) Se entrega en Correos, por correo certificado y sin franqueo, hasta el 25 de noviembre. 5) Correos lo custodia hasta el día de la votación y lo lleva a la mesa a las nueve. 6) Al terminar la votación, el presidente comprueba que el elector está en el censo e introduce el sobre de votación en la urna, sin abrirlo. Sin posicionarnos: solo explicamos cómo funciona. Fuentes: LOREG, arts. 72, 73 y 88; BOE (Real Decreto 806/2026); Correos y Oficina del Censo Electoral.",
+    "hashtags": [
+      "votoporcorreo",
+      "elecciones",
+      "eleccionesgenerales",
+      "29N",
+      "leyelectoral",
+      "politica",
+      "aprendeentiktok",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Tu voto *se pierde*?",
+      "narration": "¿Votas por correo el 29-N? Mucha gente teme que su voto se pierda por el camino.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Del buzón a la urna",
+        "anims": [
+          {
+            "target": "nubes",
+            "effect": "drift",
+            "amount": 0.5
+          },
+          {
+            "target": "sobre",
+            "effect": "bob",
+            "amount": 0.7
+          },
+          {
+            "target": "buzon",
+            "effect": "punch",
+            "trigger": "Votas",
+            "amount": 0.3
+          },
+          {
+            "target": "sobre",
+            "effect": "punch",
+            "trigger": "correo",
+            "amount": 0.25
+          },
+          {
+            "target": "ruta",
+            "effect": "draw",
+            "trigger": "Mucha",
+            "dur": 1.0,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "punta",
+            "effect": "pop",
+            "trigger": "gente"
+          },
+          {
+            "target": "dudas",
+            "effect": "pop",
+            "trigger": "teme",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "dudas",
+            "effect": "pulse",
+            "amount": 0.7
+          },
+          {
+            "target": "urna",
+            "effect": "punch",
+            "trigger": "voto",
+            "amount": 0.3
+          },
+          {
+            "target": "tpierde",
+            "effect": "pop",
+            "trigger": "pierda",
+            "sfx": "pop"
+          },
+          {
+            "target": "sobre",
+            "effect": "shake",
+            "trigger": "camino",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Pídelo en *Correos*",
+      "narration": "Sin posicionarnos: solo cómo funciona. Primero, pides el voto en Correos, con tu DNI, hasta el 19 de noviembre.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "SIN POSICIONARNOS",
+          "tone": "ink",
+          "trigger": "posicionarnos"
+        }
+      ],
+      "illustration": {
+        "svg_file": "oficina.svg",
+        "caption": "Fig. 2 · LOREG, art. 72",
+        "anims": [
+          {
+            "target": "l25",
+            "effect": "hide"
+          },
+          {
+            "target": "lgratis",
+            "effect": "hide"
+          },
+          {
+            "target": "sello",
+            "effect": "hide"
+          },
+          {
+            "target": "lcust",
+            "effect": "hide"
+          },
+          {
+            "target": "sobreE",
+            "effect": "hide"
+          },
+          {
+            "target": "l19",
+            "effect": "hide"
+          },
+          {
+            "target": "form",
+            "effect": "hide"
+          },
+          {
+            "target": "dni",
+            "effect": "hide"
+          },
+          {
+            "target": "saca",
+            "effect": "breathe",
+            "amount": 0.3
+          },
+          {
+            "target": "rotulo",
+            "effect": "punch",
+            "trigger": "Primero",
+            "amount": 0.25
+          },
+          {
+            "target": "form",
+            "effect": "pop",
+            "trigger": "pides",
+            "sfx": "papel"
+          },
+          {
+            "target": "rotulo",
+            "effect": "punch",
+            "trigger": "Correos",
+            "amount": 0.3
+          },
+          {
+            "target": "dni",
+            "effect": "pop",
+            "trigger": "DNI",
+            "sfx": "pop"
+          },
+          {
+            "target": "dni",
+            "effect": "wiggle",
+            "amount": 0.3
+          },
+          {
+            "target": "l19",
+            "effect": "pop",
+            "trigger": "19",
+            "sfx": "ding"
+          },
+          {
+            "target": "l19",
+            "effect": "punch",
+            "trigger": "noviembre",
+            "amount": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Te llega *certificado*",
+      "narration": "Desde el 9 de noviembre, te llega a casa por correo certificado. Solo te lo dan a ti, con DNI.",
+      "illustration": {
+        "svg_file": "sobres_free.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 3 · LOREG, art. 73",
+        "anims": [
+          {
+            "target": "papeleta",
+            "effect": "hide"
+          },
+          {
+            "target": "lpap",
+            "effect": "hide"
+          },
+          {
+            "target": "sobrev",
+            "effect": "hide"
+          },
+          {
+            "target": "lvot",
+            "effect": "hide"
+          },
+          {
+            "target": "a1",
+            "effect": "hide"
+          },
+          {
+            "target": "cert",
+            "effect": "hide"
+          },
+          {
+            "target": "sobremesa",
+            "effect": "hide"
+          },
+          {
+            "target": "a2",
+            "effect": "hide"
+          },
+          {
+            "target": "a3",
+            "effect": "hide"
+          },
+          {
+            "target": "l9",
+            "effect": "pop",
+            "trigger": "9",
+            "sfx": "ding"
+          },
+          {
+            "target": "paquete",
+            "effect": "slide-right",
+            "trigger": "llega",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "paquete",
+            "effect": "bob",
+            "amount": 0.5
+          },
+          {
+            "target": "paquete",
+            "effect": "punch",
+            "trigger": "certificado",
+            "amount": 0.2
+          },
+          {
+            "target": "lsolo",
+            "effect": "pop",
+            "trigger": "Solo",
+            "sfx": "pop"
+          },
+          {
+            "target": "dniB",
+            "effect": "pop",
+            "trigger": "ti",
+            "sfx": "pop"
+          },
+          {
+            "target": "chk",
+            "effect": "pop",
+            "trigger": "DNI",
+            "sfx": "ding"
+          },
+          {
+            "target": "chk",
+            "effect": "pulse",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Sobre dentro de *sobre*",
+      "narration": "Dentro: la papeleta va al sobre de votación. Ese sobre, con tu certificado del censo, va a otro dirigido a tu mesa.",
+      "illustration": {
+        "svg_file": "sobres_free.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 4 · Dos sobres",
+        "anims": [
+          {
+            "target": "paquete",
+            "effect": "hide"
+          },
+          {
+            "target": "l9",
+            "effect": "hide"
+          },
+          {
+            "target": "dniB",
+            "effect": "hide"
+          },
+          {
+            "target": "chk",
+            "effect": "hide"
+          },
+          {
+            "target": "lsolo",
+            "effect": "hide"
+          },
+          {
+            "target": "papeleta",
+            "effect": "pop",
+            "trigger": "papeleta",
+            "sfx": "papel"
+          },
+          {
+            "target": "lpap",
+            "effect": "pop",
+            "trigger": "papeleta"
+          },
+          {
+            "target": "a1",
+            "effect": "draw",
+            "trigger": "va",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sobrev",
+            "effect": "pop",
+            "trigger": "votación",
+            "sfx": "pop"
+          },
+          {
+            "target": "lvot",
+            "effect": "pop",
+            "trigger": "votación"
+          },
+          {
+            "target": "cert",
+            "effect": "pop",
+            "trigger": "certificado",
+            "sfx": "papel"
+          },
+          {
+            "target": "a3",
+            "effect": "draw",
+            "trigger": "censo",
+            "dur": 0.4
+          },
+          {
+            "target": "sobremesa",
+            "effect": "pop",
+            "trigger": "otro",
+            "sfx": "pop"
+          },
+          {
+            "target": "a2",
+            "effect": "draw",
+            "trigger": "dirigido",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sobremesa",
+            "effect": "punch",
+            "trigger": "mesa",
+            "amount": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Entrégalo *gratis*",
+      "narration": "Lo entregas en Correos, certificado y gratis, hasta el 25 de noviembre.",
+      "illustration": {
+        "svg_file": "oficina.svg",
+        "caption": "Fig. 5 · Sin franqueo",
+        "anims": [
+          {
+            "target": "l19",
+            "effect": "hide"
+          },
+          {
+            "target": "lcust",
+            "effect": "hide"
+          },
+          {
+            "target": "form",
+            "effect": "hide"
+          },
+          {
+            "target": "dni",
+            "effect": "hide"
+          },
+          {
+            "target": "sello",
+            "effect": "hide"
+          },
+          {
+            "target": "lgratis",
+            "effect": "hide"
+          },
+          {
+            "target": "l25",
+            "effect": "hide"
+          },
+          {
+            "target": "saca",
+            "effect": "breathe",
+            "amount": 0.3
+          },
+          {
+            "target": "sobreE",
+            "effect": "slide-up",
+            "trigger": "entregas",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rotulo",
+            "effect": "punch",
+            "trigger": "Correos",
+            "amount": 0.3
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "certificado",
+            "sfx": "sello"
+          },
+          {
+            "target": "lgratis",
+            "effect": "pop",
+            "trigger": "gratis",
+            "sfx": "ding"
+          },
+          {
+            "target": "l25",
+            "effect": "pop",
+            "trigger": "25",
+            "sfx": "pop"
+          },
+          {
+            "target": "l25",
+            "effect": "pulse",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Bajo *custodia*",
+      "narration": "Correos lo guarda bajo custodia hasta el día de la votación.",
+      "illustration": {
+        "svg_file": "oficina.svg",
+        "caption": "Fig. 6 · Custodia postal",
+        "anims": [
+          {
+            "target": "l19",
+            "effect": "hide"
+          },
+          {
+            "target": "l25",
+            "effect": "hide"
+          },
+          {
+            "target": "lgratis",
+            "effect": "hide"
+          },
+          {
+            "target": "sello",
+            "effect": "hide"
+          },
+          {
+            "target": "form",
+            "effect": "hide"
+          },
+          {
+            "target": "dni",
+            "effect": "hide"
+          },
+          {
+            "target": "lcust",
+            "effect": "hide"
+          },
+          {
+            "target": "rueda",
+            "effect": "wiggle",
+            "amount": 0.3
+          },
+          {
+            "target": "sobreE",
+            "effect": "move",
+            "trigger": "guarda",
+            "to": [
+              330,
+              -150
+            ],
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sobreE",
+            "effect": "hide",
+            "trigger": "bajo"
+          },
+          {
+            "target": "caja",
+            "effect": "punch",
+            "trigger": "bajo",
+            "amount": 0.15
+          },
+          {
+            "target": "rotulo",
+            "effect": "hide",
+            "trigger": "custodia"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "custodia",
+            "to": [
+              790,
+              300
+            ],
+            "amount": 1.35,
+            "dur": 0.7
+          },
+          {
+            "target": "lcust",
+            "effect": "pop",
+            "trigger": "custodia",
+            "sfx": "sello"
+          },
+          {
+            "target": "candado",
+            "effect": "punch",
+            "trigger": "votación",
+            "amount": 0.3
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "día",
+        "pose": "think",
+        "note": "Ni yo tengo la llave",
+        "side": "left"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Domingo, *9:00*",
+      "narration": "El domingo 29, a las nueve, lo lleva a tu mesa electoral.",
+      "illustration": {
+        "svg_file": "colegio_full.svg",
+        "layout": "full",
+        "caption": "Fig. 7 · Colegio electoral",
+        "anims": [
+          {
+            "target": "t20",
+            "effect": "hide"
+          },
+          {
+            "target": "lsin",
+            "effect": "hide"
+          },
+          {
+            "target": "voto",
+            "effect": "hide"
+          },
+          {
+            "target": "chkc",
+            "effect": "hide"
+          },
+          {
+            "target": "urnas",
+            "effect": "breathe",
+            "amount": 0.2
+          },
+          {
+            "target": "t29",
+            "effect": "pop",
+            "trigger": "domingo",
+            "sfx": "pop"
+          },
+          {
+            "target": "reloj",
+            "effect": "punch",
+            "trigger": "nueve",
+            "amount": 0.2
+          },
+          {
+            "target": "thora",
+            "effect": "pop",
+            "trigger": "nueve",
+            "sfx": "ding"
+          },
+          {
+            "target": "saca",
+            "effect": "slide-right",
+            "trigger": "lleva",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "saca",
+            "effect": "punch",
+            "trigger": "mesa",
+            "amount": 0.25
+          },
+          {
+            "target": "cartel",
+            "effect": "punch",
+            "trigger": "electoral",
+            "amount": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Sin *abrirlo*",
+      "narration": "Al cerrar, el presidente comprueba el censo y mete tu sobre en la urna. Sin abrirlo.",
+      "illustration": {
+        "svg_file": "colegio_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · LOREG, art. 88",
+        "anims": [
+          {
+            "target": "t29",
+            "effect": "hide"
+          },
+          {
+            "target": "thora",
+            "effect": "hide"
+          },
+          {
+            "target": "voto",
+            "effect": "hide"
+          },
+          {
+            "target": "chkc",
+            "effect": "hide"
+          },
+          {
+            "target": "lsin",
+            "effect": "hide"
+          },
+          {
+            "target": "t20",
+            "effect": "hide"
+          },
+          {
+            "target": "urnas",
+            "effect": "breathe",
+            "amount": 0.2
+          },
+          {
+            "target": "horaria",
+            "effect": "move",
+            "trigger": "cerrar",
+            "rotate": 330,
+            "origin": "center",
+            "dur": 1.0,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "t20",
+            "effect": "pop",
+            "trigger": "presidente",
+            "sfx": "ding"
+          },
+          {
+            "target": "censo",
+            "effect": "punch",
+            "trigger": "comprueba",
+            "amount": 0.25
+          },
+          {
+            "target": "chkc",
+            "effect": "pop",
+            "trigger": "censo",
+            "sfx": "ding"
+          },
+          {
+            "target": "voto",
+            "effect": "pop",
+            "trigger": "mete",
+            "sfx": "papel"
+          },
+          {
+            "target": "voto",
+            "effect": "move",
+            "trigger": "urna",
+            "to": [
+              0,
+              42
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "lsin",
+            "effect": "pop",
+            "trigger": "Sin",
+            "sfx": "sello"
+          },
+          {
+            "target": "lsin",
+            "effect": "pulse",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos para más trucos. ¿Votarías en pijama desde el sofá?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Votarías en *pijama* desde el sofá?",
+          "trigger": "Votarías"
+        }
+      ]
+    }
+  ]
+}
