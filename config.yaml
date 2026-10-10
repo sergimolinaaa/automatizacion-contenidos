@@ -30,7 +30,7 @@ video:
 voice:
   # Voces gratuitas de Microsoft Edge TTS. Lista: `edge-tts --list-voices`
   name: "es-ES-XimenaNeural"
-  rate: "+14%"
+  rate: "+25%"   # más rápido: la imagen sigue a la voz, así que todo el vídeo acelera
   pitch: "-4Hz"
 
 claude:

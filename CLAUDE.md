@@ -12,7 +12,7 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 ## Fórmula y estructura (el nivel MÍNIMO es `content/lote3-01-zapatero`; cópialo como plantilla)
 - Reglas completas de guion, ilustración y DSL de animación: constante `SYSTEM` en `autocontent/generate.py`. Motor: `video/src/components/Illustration.tsx`, tipos en `video/src/types.ts`.
 - guion.json: topic, categoria, title, source (fuentes reales), chapters `["?","1","2","3","+","TÚ"]`, outro_cta, cover, publish, scenes.
-- 9-12 escenas, **135-150 palabras** (40-55 s), frases cortas. Escena 1 = firma `{"chapter":0,"signature":true,"headline":"El truco es…","narration":"El truco es…"}`.
+- 9-12 escenas, **135-150 palabras** (40-55 s), frases cortas. Voz Edge TTS a +25 % (`config.yaml`): ritmo rápido. Escena 1 = firma `{"chapter":0,"signature":true,"headline":"El truco es…","narration":"El truco es…"}`.
 - Final (capítulo 5 «TÚ», sin mascota): narración `"Síguenos para más trucos. <UNA pregunta corta y graciosa>"`,
   elements `[{"type":"follow","trigger":"Síguenos"},{"type":"ask","text":"¿… *clave* …?","trigger":"<1ª palabra de la pregunta>"}]`.
 - Triggers = palabras EXACTAS de la narración de esa escena. Solo datos verdaderos y verificables (WebSearch si dudas).
