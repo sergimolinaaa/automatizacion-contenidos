@@ -276,7 +276,8 @@
   {
     "tema": "Por qué las palomitas explotan",
     "categoria": "cocina",
-    "pista": "agua dentro del grano se convierte en vapor; la cáscara aguanta hasta ~180 °C y revienta; sonido por liberación de vapor (Virot y Ponomarenko 2015)"
+    "pista": "agua dentro del grano se convierte en vapor; la cáscara aguanta hasta ~180 °C y revienta; sonido por liberación de vapor (Virot y Ponomarenko 2015)",
+    "hecho": true
   },
   {
     "tema": "El efecto IKEA: valoramos más lo que montamos nosotros",
@@ -321,7 +322,8 @@
   {
     "tema": "Gerrymandering: ganar unas elecciones dibujando el mapa",
     "categoria": "politica",
-    "pista": "EE. UU., elecciones de mitad de mandato del 3 nov 2026 y la guerra de redistribución de distritos (Texas, California Prop. 50). Técnicas 'cracking' y 'packing'; nombre por Elbridge Gerry y la salamandra de 1812. Ejemplo con cuadrícula de votantes de colores. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+    "pista": "EE. UU., elecciones de mitad de mandato del 3 nov 2026 y la guerra de redistribución de distritos (Texas, California Prop. 50). Técnicas 'cracking' y 'packing'; nombre por Elbridge Gerry y la salamandra de 1812. Ejemplo con cuadrícula de votantes de colores. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido.",
+    "hecho": true
   },
   {
     "tema": "La moción de censura constructiva: para echar a un presidente tienes que traer otro",

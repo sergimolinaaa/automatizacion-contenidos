@@ -1,0 +1,869 @@
+{
+  "topic": "Por qué las palomitas explotan",
+  "categoria": "cocina",
+  "title": "¿Por qué explotan las palomitas? La física del «pop» 🍿",
+  "source": "Fuentes: Virot & Ponomarenko, «Popcorn: critical temperature, jump and sound», J. R. Soc. Interface 12: 20141247 (2015) · Hoseney, Zeleznak & Abdelrahman, «Mechanism of popcorn popping», Journal of Cereal Science 1: 43-52 (1983)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Por qué *explotan*?",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Un grano duro como una piedra… y ¡pop!, una nube blanca 🍿 Dentro hay una olla a presión diminuta: agua, vapor y una cáscara que aguanta hasta reventar. ¿Tú también te comes los granos que no explotan?",
+    "description": "Cada grano de maíz palomero guarda un poco de agua entre el almidón, encerrada por una cáscara muy dura y poco porosa, el pericarpio. Al calentarlo, el agua se convierte en vapor y la presión sube hasta unas 9 atmósferas; hacia los 180 °C la cáscara revienta y el almidón, blando y caliente, se hincha como una espuma que se endurece al enfriarse. En 2015, Emmanuel Virot y Alexandre Ponomarenko lo filmaron a cámara superlenta: el «pop» lo produce el vapor que escapa de golpe, y el salto, una «pata» de almidón que empuja contra la sartén. A 170 °C explotó un 34 % de los granos; a 180 °C, un 96 %. Fuentes: Virot & Ponomarenko, J. R. Soc. Interface 12: 20141247 (2015); Hoseney et al., Journal of Cereal Science (1983).",
+    "hashtags": [
+      "palomitas",
+      "ciencia",
+      "fisica",
+      "cocina",
+      "curiosidades",
+      "cienciaencasa",
+      "aprendeentiktok",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Un grano… y *¡pop!*",
+      "narration": "Un grano duro como una piedra… y, de repente, ¡pop!, salta hecho una nube.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Maíz palomero",
+        "anims": [
+          {
+            "target": "llamas",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "vapor",
+            "effect": "float",
+            "amount": 0.8
+          },
+          {
+            "target": "granos",
+            "effect": "shake",
+            "amount": 0.3
+          },
+          {
+            "target": "granoi",
+            "effect": "wiggle",
+            "amount": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              600,
+              760
+            ],
+            "amount": 1.3,
+            "trigger": "duro",
+            "dur": 0.7
+          },
+          {
+            "target": "grano",
+            "effect": "punch",
+            "trigger": "piedra",
+            "amount": 0.4
+          },
+          {
+            "target": "grano",
+            "effect": "hide",
+            "trigger": "pop"
+          },
+          {
+            "target": "estrella",
+            "effect": "pop",
+            "trigger": "pop",
+            "sfx": "pop"
+          },
+          {
+            "target": "salta",
+            "effect": "pop",
+            "trigger": "pop"
+          },
+          {
+            "target": "popt",
+            "effect": "pop",
+            "trigger": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              540,
+              900
+            ],
+            "amount": 1,
+            "trigger": "salta",
+            "dur": 0.7
+          },
+          {
+            "target": "tray",
+            "effect": "draw",
+            "trigger": "salta",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "saltai",
+            "effect": "move",
+            "to": [
+              0,
+              -40
+            ],
+            "trigger": "salta",
+            "dur": 0.6
+          },
+          {
+            "target": "salta",
+            "effect": "punch",
+            "trigger": "nube",
+            "amount": 0.3
+          },
+          {
+            "target": "estrella",
+            "effect": "pulse",
+            "trigger": "nube",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Agua *encerrada*",
+      "narration": "Dentro de cada grano, entre el almidón, hay un poquito de agua. Y lo encierra una cáscara durísima: el pericarpio.",
+      "illustration": {
+        "svg_file": "grano.svg",
+        "caption": "Fig. 2 · Corte de un grano",
+        "anims": [
+          {
+            "target": "vapor",
+            "effect": "hide"
+          },
+          {
+            "target": "presion",
+            "effect": "hide"
+          },
+          {
+            "target": "lvapor",
+            "effect": "hide"
+          },
+          {
+            "target": "calor",
+            "effect": "hide"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              345,
+              340
+            ],
+            "amount": 1.35,
+            "trigger": "Dentro",
+            "dur": 0.8
+          },
+          {
+            "target": "grano",
+            "effect": "punch",
+            "trigger": "grano",
+            "amount": 0.15
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "almidón",
+            "dur": 0.7
+          },
+          {
+            "target": "lalm",
+            "effect": "pop",
+            "trigger": "almidón",
+            "sfx": "pop"
+          },
+          {
+            "target": "agua",
+            "effect": "pop",
+            "trigger": "poquito",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "agua",
+            "effect": "float",
+            "amount": 0.3
+          },
+          {
+            "target": "lagua",
+            "effect": "pop",
+            "trigger": "agua",
+            "sfx": "pop"
+          },
+          {
+            "target": "grano",
+            "effect": "punch",
+            "trigger": "encierra",
+            "amount": 0.2
+          },
+          {
+            "target": "lperi",
+            "effect": "pop",
+            "trigger": "pericarpio",
+            "sfx": "pop"
+          },
+          {
+            "target": "aguja",
+            "effect": "wiggle",
+            "amount": 0.1,
+            "origin": "center"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Una *olla a presión*",
+      "narration": "Al calentarlo, el agua se convierte en vapor. Pero no puede escapar… y la presión sube y sube.",
+      "illustration": {
+        "svg_file": "grano.svg",
+        "caption": "Fig. 3 · Vapor atrapado",
+        "anims": [
+          {
+            "target": "lalm",
+            "effect": "hide"
+          },
+          {
+            "target": "lagua",
+            "effect": "hide"
+          },
+          {
+            "target": "lperi",
+            "effect": "hide"
+          },
+          {
+            "target": "calor",
+            "effect": "draw",
+            "trigger": "calentarlo",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "calor",
+            "effect": "drift",
+            "amount": 0.3
+          },
+          {
+            "target": "agua",
+            "effect": "hide",
+            "trigger": "vapor"
+          },
+          {
+            "target": "vapor",
+            "effect": "pop",
+            "trigger": "vapor",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "lvapor",
+            "effect": "pop",
+            "trigger": "vapor"
+          },
+          {
+            "target": "vapor",
+            "effect": "pulse",
+            "trigger": "escapar",
+            "amount": 0.4
+          },
+          {
+            "target": "grano",
+            "effect": "shake",
+            "trigger": "escapar",
+            "amount": 0.4
+          },
+          {
+            "target": "presion",
+            "effect": "pop",
+            "trigger": "presión",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              760,
+              260
+            ],
+            "amount": 1.45,
+            "trigger": "sube",
+            "dur": 0.7
+          },
+          {
+            "target": "aguja",
+            "effect": "move",
+            "rotate": 216,
+            "origin": "center",
+            "trigger": "sube",
+            "dur": 1.6
+          },
+          {
+            "target": "mano",
+            "effect": "punch",
+            "trigger": "y sube",
+            "amount": 0.2
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "presión",
+        "pose": "explain",
+        "note": "Una olla exprés en miniatura",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*9 atmósferas*",
+      "narration": "Hacia los 180 grados, llega a unas 9 atmósferas: nueve veces la del aire que respiras.",
+      "illustration": {
+        "svg_file": "revienta_free.svg",
+        "layout": "free",
+        "height": 857,
+        "caption": "Fig. 4 · Al límite",
+        "anims": [
+          {
+            "target": "estallido",
+            "effect": "hide"
+          },
+          {
+            "target": "puff",
+            "effect": "hide"
+          },
+          {
+            "target": "trozos",
+            "effect": "hide"
+          },
+          {
+            "target": "lespuma",
+            "effect": "hide"
+          },
+          {
+            "target": "grietas",
+            "effect": "hide"
+          },
+          {
+            "target": "granoi",
+            "effect": "breathe",
+            "amount": 1.2
+          },
+          {
+            "target": "mercurio",
+            "effect": "grow",
+            "trigger": "Hacia",
+            "dur": 1.0
+          },
+          {
+            "target": "l180",
+            "effect": "pop",
+            "trigger": "180",
+            "sfx": "pop"
+          },
+          {
+            "target": "termo",
+            "effect": "punch",
+            "trigger": "grados",
+            "amount": 0.1
+          },
+          {
+            "target": "aguja",
+            "effect": "move",
+            "rotate": 216,
+            "origin": "center",
+            "trigger": "llega",
+            "dur": 1.4
+          },
+          {
+            "target": "mano",
+            "effect": "punch",
+            "trigger": "unas",
+            "amount": 0.2
+          },
+          {
+            "target": "l9",
+            "effect": "pop",
+            "trigger": "9",
+            "sfx": "ding"
+          },
+          {
+            "target": "mano",
+            "effect": "punch",
+            "trigger": "nueve",
+            "amount": 0.2
+          },
+          {
+            "target": "l9",
+            "effect": "pulse",
+            "trigger": "aire",
+            "amount": 0.5
+          },
+          {
+            "target": "grano",
+            "effect": "shake",
+            "trigger": "respiras",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*¡Crac!* Espuma",
+      "narration": "Y la cáscara revienta: el almidón, blando y caliente, se hincha como una espuma… que se endurece al enfriarse.",
+      "illustration": {
+        "svg_file": "revienta_free.svg",
+        "layout": "free",
+        "height": 857,
+        "caption": "Fig. 5 · Estallido",
+        "anims": [
+          {
+            "target": "aguja",
+            "effect": "move",
+            "rotate": 216,
+            "origin": "center",
+            "dur": 0.3
+          },
+          {
+            "target": "grano",
+            "effect": "shake",
+            "amount": 0.6
+          },
+          {
+            "target": "grietas",
+            "effect": "draw",
+            "trigger": "cáscara",
+            "dur": 0.3,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "grano",
+            "effect": "hide",
+            "trigger": "revienta"
+          },
+          {
+            "target": "grietas",
+            "effect": "hide",
+            "trigger": "revienta"
+          },
+          {
+            "target": "estallido",
+            "effect": "pop",
+            "trigger": "revienta",
+            "sfx": "pop"
+          },
+          {
+            "target": "puff",
+            "effect": "pop",
+            "trigger": "revienta"
+          },
+          {
+            "target": "trozos",
+            "effect": "pop",
+            "trigger": "revienta"
+          },
+          {
+            "target": "trozos",
+            "effect": "move",
+            "to": [
+              0,
+              -30
+            ],
+            "trigger": "almidón",
+            "dur": 0.8
+          },
+          {
+            "target": "puffi",
+            "effect": "punch",
+            "trigger": "almidón",
+            "amount": 0.25
+          },
+          {
+            "target": "puffi",
+            "effect": "pulse",
+            "trigger": "hincha",
+            "amount": 0.6
+          },
+          {
+            "target": "lespuma",
+            "effect": "pop",
+            "trigger": "espuma",
+            "sfx": "pop"
+          },
+          {
+            "target": "estallido",
+            "effect": "hide",
+            "trigger": "endurece"
+          },
+          {
+            "target": "puff",
+            "effect": "punch",
+            "trigger": "enfriarse",
+            "amount": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "¿De dónde sale el *pop*?",
+      "narration": "¿Y el ruido? Dos físicos lo grabaron a cámara superlenta en 2015: el «pop» es el vapor escapando.",
+      "illustration": {
+        "svg_file": "salto.svg",
+        "caption": "Fig. 6 · A cámara superlenta",
+        "anims": [
+          {
+            "target": "b",
+            "effect": "hide"
+          },
+          {
+            "target": "lpata",
+            "effect": "hide"
+          },
+          {
+            "target": "tray",
+            "effect": "hide"
+          },
+          {
+            "target": "c",
+            "effect": "hide"
+          },
+          {
+            "target": "calor",
+            "effect": "float",
+            "amount": 0.3
+          },
+          {
+            "target": "a",
+            "effect": "punch",
+            "trigger": "ruido",
+            "amount": 0.3
+          },
+          {
+            "target": "camara",
+            "effect": "pop",
+            "trigger": "físicos",
+            "sfx": "pop"
+          },
+          {
+            "target": "rec",
+            "effect": "pop",
+            "trigger": "grabaron"
+          },
+          {
+            "target": "rec",
+            "effect": "pulse",
+            "amount": 2
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              300,
+              380
+            ],
+            "amount": 1.35,
+            "trigger": "2015",
+            "dur": 0.7
+          },
+          {
+            "target": "pop",
+            "effect": "pop",
+            "trigger": "pop",
+            "sfx": "pop"
+          },
+          {
+            "target": "ondas1",
+            "effect": "fade",
+            "trigger": "pop",
+            "dur": 0.2
+          },
+          {
+            "target": "ondas2",
+            "effect": "fade",
+            "trigger": "pop",
+            "dur": 0.2
+          },
+          {
+            "target": "ondas1",
+            "effect": "ripple",
+            "amount": 0.5
+          },
+          {
+            "target": "ondas2",
+            "effect": "ripple",
+            "amount": 0.5,
+            "phase": 0.5
+          },
+          {
+            "target": "chorro",
+            "effect": "slide-up",
+            "trigger": "vapor",
+            "sfx": "chorro"
+          },
+          {
+            "target": "lvapor",
+            "effect": "pop",
+            "trigger": "vapor"
+          },
+          {
+            "target": "chorro",
+            "effect": "move",
+            "to": [
+              0,
+              -25
+            ],
+            "trigger": "escapando",
+            "dur": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Una *pata* para saltar",
+      "narration": "Y el salto: de la grieta sale una «pata» de almidón que empuja contra la sartén… y lo lanza por los aires.",
+      "illustration": {
+        "svg_file": "salto.svg",
+        "caption": "Fig. 7 · Salto con pata",
+        "anims": [
+          {
+            "target": "chorro",
+            "effect": "hide"
+          },
+          {
+            "target": "ondas1",
+            "effect": "hide"
+          },
+          {
+            "target": "ondas2",
+            "effect": "hide"
+          },
+          {
+            "target": "pop",
+            "effect": "hide"
+          },
+          {
+            "target": "lvapor",
+            "effect": "hide"
+          },
+          {
+            "target": "rec",
+            "effect": "pulse",
+            "amount": 2
+          },
+          {
+            "target": "calor",
+            "effect": "float",
+            "amount": 0.3
+          },
+          {
+            "target": "a",
+            "effect": "punch",
+            "trigger": "grieta",
+            "amount": 0.3
+          },
+          {
+            "target": "b",
+            "effect": "pop",
+            "trigger": "sale",
+            "sfx": "pop"
+          },
+          {
+            "target": "lpata",
+            "effect": "pop",
+            "trigger": "pata",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              560,
+              420
+            ],
+            "amount": 1.25,
+            "trigger": "empuja",
+            "dur": 0.7
+          },
+          {
+            "target": "b",
+            "effect": "punch",
+            "trigger": "sartén",
+            "amount": 0.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "trigger": "lanza",
+            "dur": 0.7
+          },
+          {
+            "target": "tray",
+            "effect": "draw",
+            "trigger": "lanza",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "c",
+            "effect": "pop",
+            "trigger": "aires",
+            "sfx": "boing"
+          },
+          {
+            "target": "ci",
+            "effect": "wiggle",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "*10 grados* lo cambian todo",
+      "narration": "Extra: a 170 grados solo explota un tercio de los granos; a 180, casi todos.",
+      "illustration": {
+        "svg_file": "termo.svg",
+        "caption": "Fig. 8 · 170 contra 180 °C",
+        "anims": [
+          {
+            "target": "izq",
+            "effect": "punch",
+            "trigger": "Extra",
+            "amount": 0.12
+          },
+          {
+            "target": "t170",
+            "effect": "pop",
+            "trigger": "170",
+            "sfx": "pop"
+          },
+          {
+            "target": "ix",
+            "effect": "hide",
+            "trigger": "explota"
+          },
+          {
+            "target": "ip",
+            "effect": "pop",
+            "trigger": "explota",
+            "sfx": "pop"
+          },
+          {
+            "target": "p34",
+            "effect": "pop",
+            "trigger": "tercio",
+            "sfx": "pop"
+          },
+          {
+            "target": "ik",
+            "effect": "shake",
+            "trigger": "granos",
+            "amount": 0.3
+          },
+          {
+            "target": "der",
+            "effect": "punch",
+            "trigger": "180",
+            "amount": 0.12
+          },
+          {
+            "target": "t180",
+            "effect": "pop",
+            "trigger": "180",
+            "sfx": "pop"
+          },
+          {
+            "target": "dx",
+            "effect": "hide",
+            "trigger": "casi"
+          },
+          {
+            "target": "dp",
+            "effect": "pop",
+            "trigger": "casi",
+            "sfx": "pop"
+          },
+          {
+            "target": "p96",
+            "effect": "pop",
+            "trigger": "todos",
+            "sfx": "ding"
+          },
+          {
+            "target": "dp",
+            "effect": "pulse",
+            "trigger": "todos",
+            "amount": 0.3
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "casi",
+        "pose": "surprise",
+        "note": "Diez gradillos de nada",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos para más trucos. Confiesa: ¿tú también te comes los granos que no explotan?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Te comes los granos *que no explotan*?",
+          "trigger": "Confiesa"
+        }
+      ]
+    }
+  ]
+}

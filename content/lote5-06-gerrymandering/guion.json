@@ -1,0 +1,763 @@
+{
+  "topic": "Gerrymandering: ganar unas elecciones dibujando el mapa",
+  "categoria": "politica",
+  "title": "Gerrymandering: ganar unas elecciones dibujando el mapa 🗺️",
+  "source": "Fuentes: Library of Congress, «Elbridge Gerry and the Monstrous Gerrymander» (2017) · NCSL, redistribución de distritos 2025-2026 · U.S. House of Representatives (435 escaños; elecciones del 3/11/2026) · Ejemplo numérico inventado",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Gana quien *dibuja* el mapa",
+    "scene": 0
+  },
+  "publish": {
+    "caption": "Mismos votantes, mismos votos… y otro ganador según cómo dibujes los distritos 🗺️ Así funcionan el «cracking» y el «packing», con un ejemplo inventado. Sin posicionarnos: solo explicamos cómo funciona. ¿Tú cómo lo dibujarías: filas, columnas… o salamandra?",
+    "description": "Cuando cada distrito elige a un solo representante, el trazado de los límites puede cambiar el resultado sin cambiar un solo voto. En nuestro ejemplo inventado, 25 votantes (15 turquesas y 10 rosas) se reparten en 5 distritos: en filas sale 3 a 2, como los votos; en columnas, los rosas quedan partidos en minoría y turquesa gana 5 a 0 («cracking»); y amontonando turquesas en dos distritos, rosa gana 3 a 2 con menos votos («packing»). El nombre viene de 1812, cuando el gobernador de Massachusetts Elbridge Gerry firmó un mapa con un distrito tan retorcido que el Boston Gazette lo dibujó como un monstruo: el «Gerry-mander». Hoy es actualidad porque Estados Unidos elige su Cámara de Representantes (435 escaños) el 3 de noviembre de 2026 y varios estados han redibujado sus distritos antes de votar. Los colores son ficticios. Sin posicionarnos: solo explicamos cómo funciona. Fuentes: Library of Congress; NCSL; U.S. House of Representatives.",
+    "hashtags": [
+      "gerrymandering",
+      "elecciones",
+      "estadosunidos",
+      "politica",
+      "matematicas",
+      "curiosidades",
+      "aprendeentiktok",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Gana quien *dibuja* el mapa",
+      "narration": "Mismos votantes, mismos votos… y gana uno u otro según cómo dibujes el mapa.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Dos mapas, un electorado",
+        "anims": [
+          {
+            "target": "lapiz",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "mismos",
+            "effect": "pop",
+            "trigger": "Mismos",
+            "sfx": "pop"
+          },
+          {
+            "target": "vta",
+            "effect": "punch",
+            "trigger": "votantes",
+            "amount": 0.08
+          },
+          {
+            "target": "vtb",
+            "effect": "punch",
+            "trigger": "votantes",
+            "amount": 0.08
+          },
+          {
+            "target": "mismos",
+            "effect": "punch",
+            "trigger": "votos",
+            "amount": 0.4
+          },
+          {
+            "target": "lina",
+            "effect": "draw",
+            "trigger": "gana",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "filla",
+            "effect": "fade",
+            "trigger": "gana",
+            "dur": 0.4
+          },
+          {
+            "target": "resa",
+            "effect": "pop",
+            "trigger": "uno",
+            "sfx": "ding"
+          },
+          {
+            "target": "linb",
+            "effect": "draw",
+            "trigger": "otro",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "fillb",
+            "effect": "fade",
+            "trigger": "otro",
+            "dur": 0.4
+          },
+          {
+            "target": "resb",
+            "effect": "pop",
+            "trigger": "según",
+            "sfx": "ding"
+          },
+          {
+            "target": "distinto",
+            "effect": "pop",
+            "trigger": "dibujes",
+            "sfx": "sello"
+          },
+          {
+            "target": "lapiz",
+            "effect": "move",
+            "to": [
+              -20,
+              30
+            ],
+            "trigger": "mapa",
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "*25* votantes, *5* distritos",
+      "narration": "Sin posicionarnos, solo cómo funciona. Imagina 25 votantes: 15 turquesas y 10 rosas, en 5 distritos.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "SIN POSICIONARNOS",
+          "tone": "ink",
+          "trigger": "posicionarnos"
+        }
+      ],
+      "illustration": {
+        "svg_file": "rejilla.svg",
+        "caption": "Fig. 2 · Ejemplo inventado",
+        "anims": [
+          {
+            "target": "filasf",
+            "effect": "hide"
+          },
+          {
+            "target": "filasl",
+            "effect": "hide"
+          },
+          {
+            "target": "dist",
+            "effect": "hide"
+          },
+          {
+            "target": "rfilas",
+            "effect": "hide"
+          },
+          {
+            "target": "lmas",
+            "effect": "hide"
+          },
+          {
+            "target": "cuenta",
+            "effect": "hide"
+          },
+          {
+            "target": "vt",
+            "effect": "punch",
+            "trigger": "25",
+            "amount": 0.1
+          },
+          {
+            "target": "vr",
+            "effect": "punch",
+            "trigger": "25",
+            "amount": 0.1
+          },
+          {
+            "target": "legt",
+            "effect": "pop",
+            "trigger": "15",
+            "sfx": "pop"
+          },
+          {
+            "target": "vt",
+            "effect": "punch",
+            "trigger": "turquesas",
+            "amount": 0.2
+          },
+          {
+            "target": "legr",
+            "effect": "pop",
+            "trigger": "10",
+            "sfx": "pop"
+          },
+          {
+            "target": "vr",
+            "effect": "punch",
+            "trigger": "rosas",
+            "amount": 0.2
+          },
+          {
+            "target": "l5",
+            "effect": "pop",
+            "trigger": "distritos",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "En filas: *3 a 2*",
+      "narration": "Cada distrito elige a quien saque más votos. En filas: turquesa 3, rosa 2. Cuadra con los votos.",
+      "illustration": {
+        "svg_file": "rejilla.svg",
+        "caption": "Fig. 3 · Reparto en filas",
+        "anims": [
+          {
+            "target": "legt",
+            "effect": "hide"
+          },
+          {
+            "target": "legr",
+            "effect": "hide"
+          },
+          {
+            "target": "l5",
+            "effect": "hide"
+          },
+          {
+            "target": "dist",
+            "effect": "pop",
+            "trigger": "distrito",
+            "sfx": "pop"
+          },
+          {
+            "target": "dist",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "lmas",
+            "effect": "pop",
+            "trigger": "más",
+            "sfx": "pop"
+          },
+          {
+            "target": "cuenta",
+            "effect": "pop",
+            "trigger": "votos",
+            "sfx": "ding"
+          },
+          {
+            "target": "dist",
+            "effect": "hide",
+            "trigger": "filas"
+          },
+          {
+            "target": "cuenta",
+            "effect": "hide",
+            "trigger": "filas"
+          },
+          {
+            "target": "filasl",
+            "effect": "draw",
+            "trigger": "filas",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "filasf",
+            "effect": "fade",
+            "trigger": "filas",
+            "dur": 0.4
+          },
+          {
+            "target": "rfilas",
+            "effect": "pop",
+            "trigger": "turquesa",
+            "sfx": "ding"
+          },
+          {
+            "target": "rfilas",
+            "effect": "punch",
+            "trigger": "Cuadra",
+            "amount": 0.3
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "Cuadra",
+        "pose": "point",
+        "note": "Hasta aquí, todo cuadra",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*Cracking*: partir",
+      "narration": "Ahora, en columnas: los rosas quedan partidos, en minoría en todas. Turquesa gana 5 a 0. Eso es cracking.",
+      "illustration": {
+        "svg_file": "mapa_free.svg",
+        "layout": "free",
+        "height": 857,
+        "caption": "Fig. 4 · Mismos votantes",
+        "anims": [
+          {
+            "target": "packf",
+            "effect": "hide"
+          },
+          {
+            "target": "packl",
+            "effect": "hide"
+          },
+          {
+            "target": "tpack",
+            "effect": "hide"
+          },
+          {
+            "target": "rpack",
+            "effect": "hide"
+          },
+          {
+            "target": "coll",
+            "effect": "draw",
+            "trigger": "columnas",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "colf",
+            "effect": "fade",
+            "trigger": "columnas",
+            "dur": 0.5
+          },
+          {
+            "target": "vr",
+            "effect": "punch",
+            "trigger": "rosas",
+            "amount": 0.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              430
+            ],
+            "amount": 1.25,
+            "trigger": "partidos",
+            "dur": 0.6
+          },
+          {
+            "target": "vr",
+            "effect": "shake",
+            "trigger": "minoría",
+            "amount": 0.3
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              450
+            ],
+            "amount": 1,
+            "trigger": "Turquesa",
+            "dur": 0.6
+          },
+          {
+            "target": "rcol",
+            "effect": "pop",
+            "trigger": "Turquesa",
+            "sfx": "ding"
+          },
+          {
+            "target": "vt",
+            "effect": "punch",
+            "trigger": "gana",
+            "amount": 0.15
+          },
+          {
+            "target": "tcrack",
+            "effect": "pop",
+            "trigger": "cracking",
+            "sfx": "sello"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*Packing*: amontonar",
+      "narration": "Y al revés: amontona turquesas en dos distritos, con votos de sobra. Rosa gana 3 a 2… con menos votos. Eso es packing.",
+      "illustration": {
+        "svg_file": "mapa_free.svg",
+        "layout": "free",
+        "height": 857,
+        "caption": "Fig. 5 · Mismos votantes",
+        "anims": [
+          {
+            "target": "colf",
+            "effect": "hide"
+          },
+          {
+            "target": "coll",
+            "effect": "hide"
+          },
+          {
+            "target": "tcrack",
+            "effect": "hide"
+          },
+          {
+            "target": "rcol",
+            "effect": "hide"
+          },
+          {
+            "target": "packl",
+            "effect": "draw",
+            "trigger": "amontona",
+            "dur": 0.7,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "packf",
+            "effect": "fade",
+            "trigger": "amontona",
+            "dur": 0.5
+          },
+          {
+            "target": "vt",
+            "effect": "punch",
+            "trigger": "turquesas",
+            "amount": 0.15
+          },
+          {
+            "target": "packf3",
+            "effect": "punch",
+            "trigger": "dos",
+            "amount": 0.12
+          },
+          {
+            "target": "packf4",
+            "effect": "punch",
+            "trigger": "dos",
+            "amount": 0.12
+          },
+          {
+            "target": "packf3",
+            "effect": "pulse",
+            "trigger": "sobra",
+            "amount": 0.3
+          },
+          {
+            "target": "packf4",
+            "effect": "pulse",
+            "trigger": "sobra",
+            "amount": 0.3
+          },
+          {
+            "target": "rpack",
+            "effect": "pop",
+            "trigger": "Rosa",
+            "sfx": "ding"
+          },
+          {
+            "target": "vr",
+            "effect": "punch",
+            "trigger": "menos",
+            "amount": 0.25
+          },
+          {
+            "target": "tpack",
+            "effect": "pop",
+            "trigger": "packing",
+            "sfx": "sello"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "*1812*: un mapa retorcido",
+      "narration": "El nombre viene de 1812. El gobernador Elbridge Gerry firmó un mapa con un distrito tan retorcido…",
+      "illustration": {
+        "svg_file": "salamandra.svg",
+        "caption": "Fig. 6 · Massachusetts, 1812",
+        "anims": [
+          {
+            "target": "garras",
+            "effect": "hide"
+          },
+          {
+            "target": "alas",
+            "effect": "hide"
+          },
+          {
+            "target": "cabeza",
+            "effect": "hide"
+          },
+          {
+            "target": "cola",
+            "effect": "hide"
+          },
+          {
+            "target": "mas",
+            "effect": "hide"
+          },
+          {
+            "target": "lsal",
+            "effect": "hide"
+          },
+          {
+            "target": "igual",
+            "effect": "hide"
+          },
+          {
+            "target": "lgm",
+            "effect": "hide"
+          },
+          {
+            "target": "anio",
+            "effect": "pop",
+            "trigger": "1812",
+            "sfx": "sello"
+          },
+          {
+            "target": "lgerry",
+            "effect": "pop",
+            "trigger": "Gerry",
+            "sfx": "pop"
+          },
+          {
+            "target": "lgerry",
+            "effect": "punch",
+            "trigger": "firmó",
+            "amount": 0.3
+          },
+          {
+            "target": "distrito",
+            "effect": "punch",
+            "trigger": "mapa",
+            "amount": 0.08
+          },
+          {
+            "target": "distrito",
+            "effect": "punch",
+            "trigger": "distrito",
+            "amount": 0.12
+          },
+          {
+            "target": "ldist",
+            "effect": "pop",
+            "trigger": "distrito",
+            "sfx": "pop"
+          },
+          {
+            "target": "distrito",
+            "effect": "wiggle",
+            "trigger": "retorcido",
+            "amount": 0.3
+          },
+          {
+            "target": "ldist",
+            "effect": "pulse",
+            "trigger": "retorcido",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Gerry + *salamandra*",
+      "narration": "…que un periódico lo dibujó como un monstruo: Gerry más salamandra. Gerrymander.",
+      "illustration": {
+        "svg_file": "salamandra.svg",
+        "caption": "Fig. 7 · El «Gerry-mander»",
+        "anims": [
+          {
+            "target": "ldist",
+            "effect": "hide"
+          },
+          {
+            "target": "distrito",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "cabeza",
+            "effect": "pop",
+            "trigger": "dibujó",
+            "sfx": "pop"
+          },
+          {
+            "target": "alas",
+            "effect": "pop",
+            "trigger": "monstruo",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "garras",
+            "effect": "pop",
+            "trigger": "monstruo"
+          },
+          {
+            "target": "cola",
+            "effect": "draw",
+            "trigger": "monstruo",
+            "dur": 0.5
+          },
+          {
+            "target": "lgerry",
+            "effect": "punch",
+            "trigger": "Gerry",
+            "amount": 0.3
+          },
+          {
+            "target": "mas",
+            "effect": "pop",
+            "trigger": "más"
+          },
+          {
+            "target": "lsal",
+            "effect": "pop",
+            "trigger": "salamandra",
+            "sfx": "pop"
+          },
+          {
+            "target": "igual",
+            "effect": "pop",
+            "trigger": "Gerrymander"
+          },
+          {
+            "target": "lgm",
+            "effect": "pop",
+            "trigger": "Gerrymander",
+            "sfx": "ding"
+          },
+          {
+            "target": "alas",
+            "effect": "sway",
+            "amount": 0.3
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "monstruo",
+        "pose": "surprise",
+        "note": "Eso tiene alas y garras",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Y es *actualidad*",
+      "narration": "Y es actualidad: el 3 de noviembre, Estados Unidos elige su Cámara de Representantes, y varios estados han redibujado sus distritos.",
+      "illustration": {
+        "svg_file": "eeuu.svg",
+        "caption": "Fig. 8 · Elecciones del 3/11/2026",
+        "anims": [
+          {
+            "target": "nuevas",
+            "effect": "hide"
+          },
+          {
+            "target": "lnuevo",
+            "effect": "hide"
+          },
+          {
+            "target": "cal",
+            "effect": "punch",
+            "trigger": "3",
+            "amount": 0.2,
+            "sfx": "pop"
+          },
+          {
+            "target": "cal",
+            "effect": "wiggle",
+            "amount": 0.2
+          },
+          {
+            "target": "l435",
+            "effect": "pop",
+            "trigger": "Cámara",
+            "sfx": "pop"
+          },
+          {
+            "target": "viejas",
+            "effect": "pulse",
+            "trigger": "varios",
+            "amount": 0.4
+          },
+          {
+            "target": "estado",
+            "effect": "punch",
+            "trigger": "estados han",
+            "amount": 0.08
+          },
+          {
+            "target": "nuevas",
+            "effect": "draw",
+            "trigger": "redibujado",
+            "dur": 0.8,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "lapiz",
+            "effect": "drift",
+            "trigger": "redibujado",
+            "amount": 0.6
+          },
+          {
+            "target": "estado",
+            "effect": "punch",
+            "trigger": "sus",
+            "amount": 0.06
+          },
+          {
+            "target": "lnuevo",
+            "effect": "pop",
+            "trigger": "distritos",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "Te *toca*",
+      "narration": "Síguenos para más trucos. Y tú, ¿cómo lo dibujarías: filas, columnas… o salamandra?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Filas, columnas… o *salamandra*?",
+          "trigger": "cómo"
+        }
+      ]
+    }
+  ]
+}
