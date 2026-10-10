@@ -1,0 +1,910 @@
+{
+  "topic": "Por qué tiritamos y qué son los escalofríos (frío, fiebre y música)",
+  "categoria": "cuerpo",
+  "title": "¿Y los escalofríos? Por qué tiritas, incluso con fiebre 🥶",
+  "source": "Fuentes: fisiología de la termorregulación y la fiebre (hipotálamo, prostaglandina E2) · Salimpoor et al., Nature Neuroscience (2011), Universidad McGill",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Por qué *tiritamos*?",
+    "badge": "RESPONDEMOS EN COMENTARIOS",
+    "scene": 3
+  },
+  "publish": {
+    "caption": "Respondemos a la pregunta de @Pianobert en los comentarios del vídeo de la piel de gallina: ¿y los escalofríos? 🥶 Tu hipotálamo es un termostato: si te enfrías, tus músculos tiritan para fabricar calor. Con fiebre sube el termostato, y por eso tiritas aunque estés caliente. ¿Qué rareza de tu cuerpo te explicamos ahora? Déjala en comentarios.",
+    "description": "Respondemos a la pregunta que nos dejó @Pianobert en los comentarios del vídeo de la piel de gallina: ¿y los escalofríos? El hipotálamo funciona como un termostato que intenta mantenerte a unos 37 °C. Cuando te enfrías, ordena a los músculos contraerse y relajarse muy rápido: eso es tiritar, y ese movimiento no hace trabajo útil, así que su energía sale como calor. Con fiebre, las sustancias que liberan tus defensas (pirógenos, a través de la prostaglandina E2) suben el punto de consigna del hipotálamo: el cuerpo, aún a 37, se siente frío y tirita hasta alcanzar la nueva temperatura. Es el mismo «modo frío» que pone la piel de gallina. El escalofrío con la música es otra cosa, el frisson: en 2011, un equipo de la Universidad McGill (Montreal) vio que en esos picos de emoción el cerebro libera dopamina en el estriado. Fuentes: fisiología de la termorregulación y la fiebre; Salimpoor et al., Nature Neuroscience (2011). ¿Qué rareza de tu cuerpo te explicamos ahora? Déjala en comentarios.",
+    "hashtags": [
+      "escalofrios",
+      "fiebre",
+      "cuerpohumano",
+      "ciencia",
+      "curiosidades",
+      "biologia",
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Y los *escalofríos*?",
+      "narration": "Pianobert nos pregunta: ¿y los escalofríos? Te explicamos el truco.",
+      "illustration": {
+        "svg_file": "comentario_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Vuestra pregunta",
+        "anims": [
+          {
+            "target": "snowtop",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "snowbot",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "corazon",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "lpregunta",
+            "effect": "pop",
+            "trigger": "pregunta",
+            "sfx": "pop"
+          },
+          {
+            "target": "temblor",
+            "effect": "fade",
+            "trigger": "escalofríos",
+            "dur": 0.2,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "temblor",
+            "effect": "shake",
+            "trigger": "escalofríos",
+            "amount": 1.2
+          },
+          {
+            "target": "card",
+            "effect": "punch",
+            "trigger": "escalofríos",
+            "amount": 0.25
+          },
+          {
+            "target": "respuesta",
+            "effect": "slide-left",
+            "trigger": "explicamos",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "corazon",
+            "effect": "punch",
+            "trigger": "truco",
+            "amount": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 0,
+      "signature": true,
+      "headline": "El truco es…",
+      "narration": "El truco es…"
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Un *termostato* en la cabeza",
+      "narration": "En tu cerebro, el hipotálamo funciona como un termostato: quiere tenerte a unos 37 grados.",
+      "illustration": {
+        "svg_file": "cerebro.svg",
+        "caption": "Fig. 2 · El hipotálamo",
+        "anims": [
+          {
+            "target": "cascos",
+            "effect": "hide"
+          },
+          {
+            "target": "notas",
+            "effect": "hide"
+          },
+          {
+            "target": "dopa",
+            "effect": "hide"
+          },
+          {
+            "target": "ldopa",
+            "effect": "hide"
+          },
+          {
+            "target": "virus",
+            "effect": "hide"
+          },
+          {
+            "target": "l39",
+            "effect": "hide"
+          },
+          {
+            "target": "orden",
+            "effect": "hide"
+          },
+          {
+            "target": "hipo",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "cerebro",
+            "effect": "punch",
+            "trigger": "cerebro",
+            "amount": 0.2,
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              480,
+              360
+            ],
+            "amount": 1.5,
+            "dur": 0.8,
+            "trigger": "hipotálamo"
+          },
+          {
+            "target": "hipo",
+            "effect": "punch",
+            "trigger": "hipotálamo",
+            "amount": 1.2,
+            "sfx": "brillo"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.6,
+            "trigger": "funciona"
+          },
+          {
+            "target": "lhipo",
+            "effect": "pop",
+            "trigger": "funciona",
+            "sfx": "rotulador"
+          },
+          {
+            "target": "guia",
+            "effect": "draw",
+            "trigger": "termostato",
+            "dur": 0.5
+          },
+          {
+            "target": "termo",
+            "effect": "punch",
+            "trigger": "termostato",
+            "amount": 0.4,
+            "sfx": "ding"
+          },
+          {
+            "target": "aguja",
+            "effect": "wiggle",
+            "trigger": "quiere",
+            "amount": 0.4
+          },
+          {
+            "target": "l37",
+            "effect": "pop",
+            "trigger": "37",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Músculos *a tope*",
+      "narration": "Si te enfrías, da la orden: tus músculos se contraen y relajan sin parar, muy rápido.",
+      "illustration": {
+        "svg_file": "persona_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 3 · La orden de tiritar",
+        "anims": [
+          {
+            "target": "calor",
+            "effect": "hide"
+          },
+          {
+            "target": "lcalor",
+            "effect": "hide"
+          },
+          {
+            "target": "ltiritar",
+            "effect": "hide"
+          },
+          {
+            "target": "nieve",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "vaho",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "temblor",
+            "effect": "fade",
+            "trigger": "enfrías",
+            "dur": 0.2,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "persona",
+            "effect": "shake",
+            "trigger": "orden",
+            "amount": 0.8
+          },
+          {
+            "target": "boca",
+            "effect": "shake",
+            "trigger": "orden",
+            "amount": 1.2
+          },
+          {
+            "target": "lineas",
+            "effect": "pop",
+            "trigger": "músculos",
+            "sfx": "pop"
+          },
+          {
+            "target": "lmusculo",
+            "effect": "pop",
+            "trigger": "músculos"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              800,
+              600
+            ],
+            "amount": 1.5,
+            "dur": 0.8,
+            "trigger": "contraen"
+          },
+          {
+            "target": "relajado",
+            "effect": "hide",
+            "trigger": "contraen"
+          },
+          {
+            "target": "contraido",
+            "effect": "fade",
+            "trigger": "contraen",
+            "dur": 0.15,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "tira",
+            "effect": "pop",
+            "trigger": "contraen"
+          },
+          {
+            "target": "contraido",
+            "effect": "shake",
+            "trigger": "parar",
+            "amount": 1.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              550
+            ],
+            "amount": 1,
+            "dur": 0.6,
+            "trigger": "rápido"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Tiritar *calienta*",
+      "narration": "Eso es tiritar: un movimiento que no te lleva a ningún sitio, pero fabrica calor.",
+      "illustration": {
+        "svg_file": "persona_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 4 · Calor de músculo",
+        "anims": [
+          {
+            "target": "relajado",
+            "effect": "hide"
+          },
+          {
+            "target": "persona",
+            "effect": "shake",
+            "amount": 1.0
+          },
+          {
+            "target": "boca",
+            "effect": "shake",
+            "amount": 1.4
+          },
+          {
+            "target": "temblor",
+            "effect": "shake",
+            "amount": 1.0
+          },
+          {
+            "target": "contraido",
+            "effect": "shake",
+            "amount": 1.6
+          },
+          {
+            "target": "nieve",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "ltiritar",
+            "effect": "pop",
+            "trigger": "tiritar",
+            "sfx": "pop"
+          },
+          {
+            "target": "vaho",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "persona",
+            "effect": "punch",
+            "trigger": "movimiento",
+            "amount": 0.15
+          },
+          {
+            "target": "calor",
+            "effect": "draw",
+            "trigger": "calor",
+            "dur": 0.6,
+            "sfx": "brillo"
+          },
+          {
+            "target": "calor",
+            "effect": "float",
+            "trigger": "calor",
+            "amount": 0.5
+          },
+          {
+            "target": "lcalor",
+            "effect": "pop",
+            "trigger": "calor"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "¿Y con *fiebre*?",
+      "narration": "¿Y con fiebre? Tus defensas suben el termostato, por ejemplo a 39 grados.",
+      "illustration": {
+        "svg_file": "cerebro.svg",
+        "caption": "Fig. 5 · Termostato con fiebre",
+        "anims": [
+          {
+            "target": "cascos",
+            "effect": "hide"
+          },
+          {
+            "target": "notas",
+            "effect": "hide"
+          },
+          {
+            "target": "dopa",
+            "effect": "hide"
+          },
+          {
+            "target": "ldopa",
+            "effect": "hide"
+          },
+          {
+            "target": "lhipo",
+            "effect": "hide"
+          },
+          {
+            "target": "orden",
+            "effect": "hide"
+          },
+          {
+            "target": "virus",
+            "effect": "pop",
+            "trigger": "fiebre",
+            "sfx": "pop"
+          },
+          {
+            "target": "virus",
+            "effect": "float",
+            "trigger": "fiebre",
+            "amount": 0.6
+          },
+          {
+            "target": "hipo",
+            "effect": "pulse",
+            "trigger": "defensas",
+            "amount": 1.2
+          },
+          {
+            "target": "guia",
+            "effect": "draw",
+            "trigger": "defensas",
+            "dur": 0.5
+          },
+          {
+            "target": "termo",
+            "effect": "punch",
+            "trigger": "termostato",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              840,
+              300
+            ],
+            "amount": 1.4,
+            "dur": 0.8,
+            "trigger": "suben"
+          },
+          {
+            "target": "aguja",
+            "effect": "move",
+            "trigger": "suben",
+            "rotate": 90,
+            "origin": "center",
+            "dur": 1.2,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "l37",
+            "effect": "hide",
+            "trigger": "39"
+          },
+          {
+            "target": "l39",
+            "effect": "pop",
+            "trigger": "39",
+            "sfx": "ding"
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Pirógenos",
+          "tone": "hot",
+          "trigger": "defensas"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Fiebre… y *tiritas*",
+      "narration": "Tu cuerpo sigue a 37, así que el cerebro cree que tienes frío. Por eso tiritas hasta llegar a 39.",
+      "illustration": {
+        "svg_file": "fiebre_full.svg",
+        "layout": "full",
+        "caption": "Fig. 6 · Fiebre que sube",
+        "anims": [
+          {
+            "target": "lfiebre",
+            "effect": "pop",
+            "trigger": "cuerpo",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              800,
+              860
+            ],
+            "amount": 1.25,
+            "dur": 0.8,
+            "trigger": "37"
+          },
+          {
+            "target": "t37",
+            "effect": "punch",
+            "trigger": "37",
+            "amount": 0.5,
+            "sfx": "ding"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              540,
+              760
+            ],
+            "amount": 1,
+            "dur": 0.6,
+            "trigger": "cerebro"
+          },
+          {
+            "target": "bocadillo",
+            "effect": "pop",
+            "trigger": "frío",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "bocadillo",
+            "effect": "float",
+            "trigger": "frío",
+            "amount": 0.4
+          },
+          {
+            "target": "temblor",
+            "effect": "fade",
+            "trigger": "tiritas",
+            "dur": 0.2
+          },
+          {
+            "target": "temblor",
+            "effect": "shake",
+            "trigger": "tiritas",
+            "amount": 1.2
+          },
+          {
+            "target": "persona",
+            "effect": "shake",
+            "trigger": "tiritas",
+            "amount": 1.0
+          },
+          {
+            "target": "t37",
+            "effect": "hide",
+            "trigger": "39"
+          },
+          {
+            "target": "t39",
+            "effect": "fade",
+            "trigger": "39",
+            "dur": 0.2,
+            "sfx": "ding"
+          },
+          {
+            "target": "termometro",
+            "effect": "punch",
+            "trigger": "39",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Primo de la *piel de gallina*",
+      "narration": "Es el mismo modo frío de la piel de gallina: tu cuerpo intenta guardar calor.",
+      "illustration": {
+        "svg_file": "brazo.svg",
+        "caption": "Fig. 7 · Mismo modo frío",
+        "anims": [
+          {
+            "target": "notes",
+            "effect": "hide"
+          },
+          {
+            "target": "snow1",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "snow2",
+            "effect": "drift",
+            "amount": 0.5
+          },
+          {
+            "target": "snow1",
+            "effect": "punch",
+            "trigger": "frío",
+            "amount": 1.2,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "hairflat",
+            "effect": "hide",
+            "trigger": "gallina"
+          },
+          {
+            "target": "hairup",
+            "effect": "fade",
+            "trigger": "gallina",
+            "dur": 0.3
+          },
+          {
+            "target": "bumps",
+            "effect": "fade",
+            "trigger": "gallina",
+            "dur": 0.3,
+            "sfx": "brillo"
+          },
+          {
+            "target": "lgallina",
+            "effect": "pop",
+            "trigger": "gallina"
+          },
+          {
+            "target": "lupa",
+            "effect": "pop",
+            "trigger": "cuerpo",
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              690,
+              230
+            ],
+            "amount": 1.4,
+            "dur": 0.8,
+            "trigger": "guardar"
+          },
+          {
+            "target": "bumps",
+            "effect": "punch",
+            "trigger": "calor",
+            "amount": 0.3
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "calor",
+        "pose": "point",
+        "note": "Mismo botón, otro efecto",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Escalofrío *musical*",
+      "narration": "¿Y el escalofrío con tu canción favorita? Eso es otra cosa: se llama frisson.",
+      "illustration": {
+        "svg_file": "brazo_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · Frisson",
+        "anims": [
+          {
+            "target": "snow1",
+            "effect": "hide"
+          },
+          {
+            "target": "snow2",
+            "effect": "hide"
+          },
+          {
+            "target": "snowtop",
+            "effect": "hide"
+          },
+          {
+            "target": "snowbot",
+            "effect": "hide"
+          },
+          {
+            "target": "lgallina",
+            "effect": "hide"
+          },
+          {
+            "target": "notes",
+            "effect": "bob",
+            "amount": 0.5
+          },
+          {
+            "target": "notes",
+            "effect": "punch",
+            "trigger": "canción",
+            "amount": 1.0,
+            "sfx": "ding"
+          },
+          {
+            "target": "notes",
+            "effect": "wiggle",
+            "trigger": "favorita",
+            "amount": 0.6
+          },
+          {
+            "target": "hairflat",
+            "effect": "hide",
+            "trigger": "frisson"
+          },
+          {
+            "target": "hairup",
+            "effect": "fade",
+            "trigger": "frisson",
+            "dur": 0.2
+          },
+          {
+            "target": "bumps",
+            "effect": "fade",
+            "trigger": "frisson",
+            "dur": 0.2,
+            "sfx": "brillo"
+          },
+          {
+            "target": "lupa",
+            "effect": "pop",
+            "trigger": "frisson"
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "Frisson",
+          "tone": "accent",
+          "trigger": "cosa"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Chute de *dopamina*",
+      "narration": "En 2011, en Montreal, vieron que en ese momento el cerebro libera dopamina, la de la recompensa.",
+      "illustration": {
+        "svg_file": "cerebro.svg",
+        "caption": "Fig. 9 · Música y dopamina",
+        "anims": [
+          {
+            "target": "virus",
+            "effect": "hide"
+          },
+          {
+            "target": "l39",
+            "effect": "hide"
+          },
+          {
+            "target": "l37",
+            "effect": "hide"
+          },
+          {
+            "target": "termo",
+            "effect": "hide"
+          },
+          {
+            "target": "aguja",
+            "effect": "hide"
+          },
+          {
+            "target": "guia",
+            "effect": "hide"
+          },
+          {
+            "target": "lhipo",
+            "effect": "hide"
+          },
+          {
+            "target": "orden",
+            "effect": "hide"
+          },
+          {
+            "target": "hipo",
+            "effect": "hide"
+          },
+          {
+            "target": "notas",
+            "effect": "bob",
+            "amount": 0.5
+          },
+          {
+            "target": "cascos",
+            "effect": "breathe",
+            "amount": 0.6
+          },
+          {
+            "target": "notas",
+            "effect": "punch",
+            "trigger": "Montreal",
+            "amount": 0.6
+          },
+          {
+            "target": "cerebro",
+            "effect": "punch",
+            "trigger": "cerebro",
+            "amount": 0.2,
+            "sfx": "pop"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              470,
+              290
+            ],
+            "amount": 1.4,
+            "dur": 0.8,
+            "trigger": "libera"
+          },
+          {
+            "target": "dopa",
+            "effect": "pop",
+            "trigger": "dopamina",
+            "sfx": "brillo"
+          },
+          {
+            "target": "dopa",
+            "effect": "pulse",
+            "trigger": "dopamina",
+            "amount": 1.2
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "to": [
+              500,
+              350
+            ],
+            "amount": 1,
+            "dur": 0.6,
+            "trigger": "recompensa"
+          },
+          {
+            "target": "ldopa",
+            "effect": "pop",
+            "trigger": "recompensa",
+            "sfx": "rotulador"
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "McGill · 2011",
+          "tone": "ink",
+          "trigger": "Montreal"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "Te *toca*",
+      "narration": "Síguenos para más trucos. ¿Qué rareza de tu cuerpo te explicamos ahora?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Qué *rareza* de tu cuerpo te explicamos ahora?",
+          "trigger": "Qué"
+        }
+      ]
+    }
+  ]
+}

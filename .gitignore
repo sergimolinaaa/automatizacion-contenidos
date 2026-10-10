@@ -9,3 +9,4 @@ token*.json
 node_modules/
 video/out/
 video/public/audio/
+.claude/settings.local.json

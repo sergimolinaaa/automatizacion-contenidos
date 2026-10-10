@@ -19,7 +19,7 @@ export function sanitizeSvg(svg: string, prefix: string): string {
     .replace(/<script[\s\S]*?<\/script>/gi, "")
     .replace(/<foreignObject[\s\S]*?<\/foreignObject>/gi, "")
     .replace(/\son[a-z]+\s*=\s*("[^"]*"|'[^']*')/gi, "")
-    .replace(/(href|xlink:href)\s*=\s*"(?!#)[^"]*"/gi, "")
+    .replace(/(href|xlink:href)\s*=\s*"(?!#|data:image\/(?:png|jpeg);base64,)[^"]*"/gi, "") // solo anclas o imágenes incrustadas (nada externo)
     .replace(/@import[^;]*;/gi, "");
   s = s.replace(/\bid="([^"]+)"/g, `id="${prefix}-$1"`);
   s = s.replace(/url\(#([^)]+)\)/g, `url(#${prefix}-$1)`);
