@@ -307,6 +307,28 @@
         "tiktok": "6ac9e925b07d37ac9764a222",
         "instagram": "6ac9e925ed92ed8fa5be5506"
       }
+    },
+    {
+      "slug": "lote5-08-pulpo-color",
+      "category": "animales",
+      "due": "2026-10-11T12:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote5-08-pulpo-color/lote5-08-pulpo-color-con-voz.mp4",
+      "posts": {
+        "youtube": "6aca2b4ff91f772d4591b01b",
+        "tiktok": "6aca2b4fc4de2d2b122793b1",
+        "instagram": "6aca2b50d9cab260a7c2d8ef"
+      }
+    },
+    {
+      "slug": "lote6-01-voto-correo",
+      "category": "politica",
+      "due": "2026-10-11T19:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote6-01-voto-correo/lote6-01-voto-correo-con-voz.mp4",
+      "posts": {
+        "youtube": "6aca2b58bba9419ccbffb4e8",
+        "tiktok": "6aca2b58f91f772d4591b1ef",
+        "instagram": "6aca2b59d9cab260a7c2da81"
+      }
     }
   ]
 }
