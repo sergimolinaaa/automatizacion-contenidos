@@ -230,6 +230,28 @@
         "tiktok": "6ac97983bba9419ccbe440f0",
         "instagram": "6ac97983ed92ed8fa5af0ceb"
       }
+    },
+    {
+      "slug": "lote5-01-elecciones-54-dias",
+      "category": "politica",
+      "due": "2026-10-10T12:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote5-01-elecciones-54-dias/lote5-01-elecciones-54-dias-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac97ffdd9cab260a7a87ac0",
+        "tiktok": "6ac97ffdc4de2d2b120d3cdd",
+        "instagram": "6ac97ffef91f772d4577264e"
+      }
+    },
+    {
+      "slug": "lote5-02-ley-dhondt",
+      "category": "politica",
+      "due": "2026-10-10T15:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote5-02-ley-dhondt/lote5-02-ley-dhondt-con-voz.mp4",
+      "posts": {
+        "youtube": "6ac98004bba9419ccbe4eb22",
+        "tiktok": "6ac98005bba9419ccbe4ec93",
+        "instagram": "6ac98007c4de2d2b120d46c8"
+      }
     }
   ]
 }
