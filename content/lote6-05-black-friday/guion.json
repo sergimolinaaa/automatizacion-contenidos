@@ -111,14 +111,7 @@
       "chapter": 1,
       "number": "1",
       "headline": "Subir… y *rebajar*",
-      "narration": "El truco es… subir el precio unas semanas antes, y luego «rebajarlo».",
-      "elements": [
-        {
-          "type": "tag",
-          "text": "EL TRUCO ES…",
-          "trigger": "truco"
-        }
-      ],
+      "narration": "Primero, subir el precio unas semanas antes, y luego «rebajarlo».",
       "illustration": {
         "svg_file": "grafica.svg",
         "caption": "Fig. 2 · Precio día a día",
@@ -159,7 +152,7 @@
           {
             "target": "bf",
             "effect": "pop",
-            "trigger": "truco",
+            "trigger": "Primero",
             "sfx": "pop"
           },
           {

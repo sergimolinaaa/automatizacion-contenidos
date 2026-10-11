@@ -14,8 +14,7 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 - guion.json: topic, categoria, title, source (fuentes reales), chapters `["?","1","2","3","+","TÚ"]`, outro_cta, cover, publish, scenes.
 - 7-10 escenas, **100-115 palabras** (35-45 s), frases cortas; escena "+" solo si es muy buena. Voz Edge TTS a +25 % (`config.yaml`).
 - Escena 0 = GANCHO: la frase más impactante, en grande desde el primer fotograma.
-- Escena 1 = «El truco es…» YA EN ACCIÓN (sin firma/ventanilla aparte): la narración empieza por "El truco es…" y sigue explicando sobre
-  su ilustración, con el elemento `{"type":"tag","text":"EL TRUCO ES…","trigger":"truco"}`.
+- Escena 1 = directamente la explicación sobre su ilustración. NUNCA decir ni poner «El truco es…» (ni firma, ni etiqueta).
 - Cierre en 2 escenas (capítulo 5 «TÚ»): (1) narración "Tú traes las dudas y nosotros te damos el truco.", headline "Dudas → *truco*",
   elements `[{"type":"trick","trigger":"Tú","reveal_trigger":"nosotros"}]` (animación con 4 variantes, cambia sola en cada vídeo);
   (2) final sin mascota: narración `"Síguenos y las resolvemos. <UNA pregunta corta y graciosa>"`,
@@ -40,7 +39,7 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 Solo el mecanismo (D'Hondt, decreto ley, fechas…) con fuentes oficiales (Constitución, LOREG, BOE, INE); fechas y cifras comprobadas el mismo día.
 Elecciones generales del **29-N** (RD 806/2026): 1 vídeo de política al día + 2 de otros temas. Gancho llamativo ligado al 29-N
 («Votar en blanco no hace lo que crees», «¿Votar por correo es seguro?»), adaptado al formato, nunca copiado.
-Sin opinión, sin partidos ni políticos reales (nada de «si votas a X esto proponen»), sin caricaturas: partidos ficticios de colores. **Obligatorio**: tras «El truco es…»,
+Sin opinión, sin partidos ni políticos reales (nada de «si votas a X esto proponen»), sin caricaturas: partidos ficticios de colores. **Obligatorio**: en la escena 1,
 narración «Sin posicionarnos: solo cómo funciona.» + sello visible «SIN POSICIONARNOS»; y en cada texto de publicación
 «Sin posicionarnos: solo explicamos cómo funciona.».
 

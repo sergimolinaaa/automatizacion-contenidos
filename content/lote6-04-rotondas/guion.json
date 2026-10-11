@@ -152,14 +152,7 @@
       "chapter": 1,
       "number": "1",
       "headline": "Dentro *manda*",
-      "narration": "El truco es… quien ya está dentro manda. Si vas a entrar, cedes el paso.",
-      "elements": [
-        {
-          "type": "tag",
-          "text": "EL TRUCO ES…",
-          "trigger": "truco"
-        }
-      ],
+      "narration": "Quien ya está dentro manda. Si vas a entrar, cedes el paso.",
       "illustration": {
         "svg_file": "rotonda_full.svg",
         "layout": "full",

@@ -171,15 +171,14 @@ POLÍTICA ACTUAL: también el truco de las reglas detrás de la noticia (cómo s
 qué es un decreto ley...). NEUTRALIDAD TOTAL: explica el mecanismo con fuentes oficiales (Constitución, LOREG, BOE), sin opinar,
 sin favorecer ni ridiculizar a ningún partido o persona, sin caricaturas de políticos reales; en ejemplos numéricos usa partidos
 ficticios de colores. Fechas y cifras de actualidad, comprobadas el mismo día.
-Y DILO EXPLÍCITAMENTE: tras «El truco es…», una frase corta tipo «Sin posicionarnos: solo cómo funciona.» con un sello/etiqueta
+Y DILO EXPLÍCITAMENTE: en la escena 1, una frase corta tipo «Sin posicionarnos: solo cómo funciona.» con un sello/etiqueta
 visible «SIN POSICIONARNOS», y en el texto de publicación de cada red «Sin posicionarnos: solo explicamos cómo funciona.».
 Tono: cercano, con chispa y humor suave; frases cortas que se entienden a la primera; nada de relleno ni clickbait falso.
 NUNCA inventes datos: usa solo los de la ficha de investigación; si un dato está marcado como dudoso, no lo uses.
 
 ESTRUCTURA (unos 35-45 segundos, 100-115 palabras de narración en total, 7-10 escenas cortas de 1-2 frases: ritmo rápido; la escena "+" solo si es muy buena):
 - Escena 0, capítulo 0 "?": GANCHO. Lo más impactante en una frase (máx. 12 palabras), en grande desde el primer fotograma. Con ilustración.
-- Escena 1, capítulo 1: «El truco es…» YA EN ACCIÓN: la narración empieza por "El truco es…" y sigue con la explicación sobre su ilustración
-  (nada de ventanilla/firma aparte); añade el elemento {"type":"tag","text":"EL TRUCO ES…","trigger":"truco"}.
+- Escena 1, capítulo 1: directamente la explicación sobre su ilustración. NUNCA digas ni pongas «El truco es…» (ni firma ni etiqueta).
 - Capítulos "1", "2", "3": el truco explicado paso a paso (1-2 escenas por capítulo). Usa ilustraciones de detalle.
 - Capítulo "+": 1-2 datos extra sorprendentes.
 - Capítulo "TÚ" (escena final, unos 4-5 s): primero la llamada a seguir y luego UNA pregunta corta (máx. 12 palabras) sobre
@@ -336,8 +335,8 @@ def validate(script: dict) -> tuple[list[str], list[str]]:
     scenes = script["scenes"]
     if not 7 <= len(scenes) <= 11:
         errors.append(f"Hay {len(scenes)} escenas; deben ser entre 7 y 12.")
-    if len(scenes) > 1 and not scenes[1].get("narration", "").startswith("El truco es"):
-        warnings.append("La escena 1 debería empezar su narración por «El truco es…» (en acción, con ilustración).")
+    if any("el truco es" in sc.get("narration", "").lower() for sc in scenes):
+        warnings.append("No digas «El truco es…» en la narración.")
     for i, sc in enumerate(scenes[1:], start=1):
         if sc.get("chapter") != 5 and not sc.get("signature") and not sc.get("illustration"):
             errors.append(f"Escena {i}: todas las escenas (salvo el cierre TÚ) deben llevar ilustración.")
