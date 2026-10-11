@@ -1,0 +1,753 @@
+{
+  "topic": "Qué propone Vox para las elecciones generales del 29-N de 2026 según su último programa electoral oficial (generales de 2023) y qué necesita para presentarse",
+  "categoria": "politica",
+  "title": "¿Qué propone Vox para el 29-N? 🗳️",
+  "source": "Fuentes: Programa electoral de Vox para las elecciones generales del 23-J de 2023 (voxespana.es, 7/7/2023; recogido por The Objective, Público y El Debate) · Candidatura: declaraciones de Vox del 5/10/2026 (Diario de León) · LOREG (LO 5/1985), arts. 45 y 169.3 · BOE 6/10/2026 (Real Decreto 806/2026)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Qué propone *Vox*?",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-12T21:00:00+02:00",
+    "caption": "¿Sabes qué propone Vox para el 29-N? 🗳️ Su programa para 2026 aún no se ha publicado, así que miramos el último oficial, el de las generales de 2023. Según ese programa, proponen bajar el IRPF y suprimir el impuesto de sucesiones (herencias), un desalojo exprés de viviendas ocupadas ilegalmente, expulsar a quien entre en España de forma ilegal y devolver al Estado sanidad, educación, seguridad y justicia. Como ya tiene escaños, no necesita firmas: presenta sus listas del 21 al 26 de octubre. Sin posicionarnos: solo explicamos qué propone. ¿Qué propondrías tú en tu comunidad de vecinos?",
+    "description": "Qué propone Vox para las elecciones generales del 29 de noviembre de 2026 (Real Decreto 806/2026, BOE del 6 de octubre). A fecha de este vídeo, Vox no ha publicado su programa para 2026, así que resumimos su último programa electoral oficial, el de las generales del 23 de julio de 2023. Su candidato a la Presidencia del Gobierno, según el partido, es Santiago Abascal. Según ese programa: 1) Impuestos: bajar el IRPF (el impuesto sobre la renta, lo que ganas) y suprimir el Impuesto sobre el Patrimonio, el de Sucesiones y Donaciones (herencias y regalos) y las plusvalías municipales. 2) Vivienda: más medios para desalojar viviendas ocupadas ilegalmente, con una medida cautelar que permita el un desalojo exprés de viviendas ocupadas ilegalmente. 3) Inmigración: la expulsión inmediata de quienes entren ilegalmente en España. 4) Organización territorial: devolver al Estado las competencias de educación, sanidad, seguridad y justicia, que hoy gestionan en gran parte las comunidades autónomas. 5) Para presentarse: los partidos que obtuvieron representación en las últimas elecciones no necesitan reunir firmas (LOREG, art. 169.3); Vox obtuvo 33 escaños en el Congreso en 2023. Las candidaturas se presentan del 21 al 26 de octubre. Sin posicionarnos: solo explicamos qué propone. Fuentes: programa electoral de Vox para el 23-J de 2023; LOREG, arts. 45 y 169.3; BOE (Real Decreto 806/2026).",
+    "hashtags": [
+      "eltrucoes"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Qué propone *Vox*?",
+      "narration": "¿Qué propone Vox para el 29-N? Su programa nuevo aún no ha salido.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Generales del 29-N",
+        "anims": [
+          {
+            "target": "prog23",
+            "effect": "hide"
+          },
+          {
+            "target": "lupa",
+            "effect": "hide"
+          },
+          {
+            "target": "tult",
+            "effect": "hide"
+          },
+          {
+            "target": "t23j",
+            "effect": "hide"
+          },
+          {
+            "target": "tcand",
+            "effect": "hide"
+          },
+          {
+            "target": "nov",
+            "effect": "hide"
+          },
+          {
+            "target": "t29",
+            "effect": "hide"
+          },
+          {
+            "target": "prog26",
+            "effect": "hide"
+          },
+          {
+            "target": "aun",
+            "effect": "hide"
+          },
+          {
+            "target": "aun2",
+            "effect": "hide"
+          },
+          {
+            "target": "tque",
+            "effect": "wiggle",
+            "amount": 0.3
+          },
+          {
+            "target": "atril",
+            "effect": "punch",
+            "trigger": "Vox",
+            "amount": 0.2
+          },
+          {
+            "target": "tcand",
+            "effect": "pop",
+            "trigger": "Vox",
+            "sfx": "pop"
+          },
+          {
+            "target": "nov",
+            "effect": "pop",
+            "trigger": "29-N",
+            "sfx": "sello"
+          },
+          {
+            "target": "t29",
+            "effect": "pop",
+            "trigger": "29-N"
+          },
+          {
+            "target": "prog26",
+            "effect": "slide-up",
+            "trigger": "programa",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "prog26",
+            "effect": "bob",
+            "amount": 0.3
+          },
+          {
+            "target": "aun",
+            "effect": "pop",
+            "trigger": "aún",
+            "sfx": "sello"
+          },
+          {
+            "target": "aun2",
+            "effect": "pop",
+            "trigger": "salido",
+            "sfx": "sello"
+          },
+          {
+            "target": "nov",
+            "effect": "shake",
+            "trigger": "salido",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Su *último* programa",
+      "narration": "Sin posicionarnos: solo te contamos qué propone. Miramos su último programa, el de 2023.",
+      "elements": [
+        {
+          "type": "tag",
+          "text": "SIN POSICIONARNOS",
+          "tone": "ink",
+          "trigger": "posicionarnos"
+        }
+      ],
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 2 · Programa electoral de 2023",
+        "anims": [
+          {
+            "target": "tque",
+            "effect": "hide"
+          },
+          {
+            "target": "atril",
+            "effect": "hide"
+          },
+          {
+            "target": "tcand",
+            "effect": "hide"
+          },
+          {
+            "target": "nov",
+            "effect": "hide"
+          },
+          {
+            "target": "t29",
+            "effect": "hide"
+          },
+          {
+            "target": "prog26",
+            "effect": "hide"
+          },
+          {
+            "target": "aun",
+            "effect": "hide"
+          },
+          {
+            "target": "aun2",
+            "effect": "hide"
+          },
+          {
+            "target": "prog23",
+            "effect": "hide"
+          },
+          {
+            "target": "lupa",
+            "effect": "hide"
+          },
+          {
+            "target": "tult",
+            "effect": "hide"
+          },
+          {
+            "target": "t23j",
+            "effect": "hide"
+          },
+          {
+            "target": "prog23",
+            "effect": "slide-up",
+            "trigger": "contamos",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "prog23",
+            "effect": "punch",
+            "trigger": "propone",
+            "amount": 0.12
+          },
+          {
+            "target": "lupa",
+            "effect": "pop",
+            "trigger": "Miramos",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tult",
+            "effect": "pop",
+            "trigger": "último",
+            "sfx": "pop"
+          },
+          {
+            "target": "lupa",
+            "effect": "move",
+            "trigger": "programa",
+            "to": [
+              -260,
+              -160
+            ],
+            "dur": 0.7
+          },
+          {
+            "target": "t23j",
+            "effect": "pop",
+            "trigger": "2023",
+            "sfx": "ding"
+          },
+          {
+            "target": "lupa",
+            "effect": "move",
+            "trigger": "2023",
+            "to": [
+              180,
+              120
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "t23j",
+            "effect": "pulse",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*Impuestos*",
+      "narration": "Según ese programa: bajar el IRPF, el impuesto de lo que ganas, y quitar el de herencias.",
+      "illustration": {
+        "svg_file": "carteles.svg",
+        "caption": "Fig. 3 · Programa de Vox, 23-J 2023",
+        "anims": [
+          {
+            "target": "tsegun",
+            "effect": "hide"
+          },
+          {
+            "target": "c1",
+            "effect": "hide"
+          },
+          {
+            "target": "c2",
+            "effect": "hide"
+          },
+          {
+            "target": "c3",
+            "effect": "hide"
+          },
+          {
+            "target": "tirpf",
+            "effect": "hide"
+          },
+          {
+            "target": "tsuc",
+            "effect": "hide"
+          },
+          {
+            "target": "tokupa",
+            "effect": "hide"
+          },
+          {
+            "target": "tileg",
+            "effect": "hide"
+          },
+          {
+            "target": "nombre",
+            "effect": "punch",
+            "trigger": "programa",
+            "amount": 0.15
+          },
+          {
+            "target": "tsegun",
+            "effect": "pop",
+            "trigger": "Según",
+            "sfx": "sello"
+          },
+          {
+            "target": "c1",
+            "effect": "pop",
+            "trigger": "bajar",
+            "sfx": "pop"
+          },
+          {
+            "target": "tirpf",
+            "effect": "pop",
+            "trigger": "IRPF",
+            "sfx": "pop"
+          },
+          {
+            "target": "tirpf",
+            "effect": "punch",
+            "trigger": "ganas",
+            "amount": 0.15
+          },
+          {
+            "target": "c1",
+            "effect": "wiggle",
+            "trigger": "quitar",
+            "amount": 0.3
+          },
+          {
+            "target": "tsuc",
+            "effect": "pop",
+            "trigger": "herencias",
+            "sfx": "pop"
+          },
+          {
+            "target": "tsuc",
+            "effect": "pulse",
+            "amount": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*Vivienda*",
+      "narration": "En vivienda, desalojo exprés de casas ocupadas.",
+      "illustration": {
+        "svg_file": "carteles.svg",
+        "caption": "Fig. 4 · Programa de Vox, 23-J 2023",
+        "anims": [
+          {
+            "target": "c2",
+            "effect": "hide"
+          },
+          {
+            "target": "c3",
+            "effect": "hide"
+          },
+          {
+            "target": "tirpf",
+            "effect": "hide"
+          },
+          {
+            "target": "tsuc",
+            "effect": "hide"
+          },
+          {
+            "target": "tokupa",
+            "effect": "hide"
+          },
+          {
+            "target": "tileg",
+            "effect": "hide"
+          },
+          {
+            "target": "c2",
+            "effect": "pop",
+            "trigger": "vivienda",
+            "sfx": "pop"
+          },
+          {
+            "target": "c2",
+            "effect": "punch",
+            "trigger": "desalojo",
+            "amount": 0.2
+          },
+          {
+            "target": "tokupa",
+            "effect": "pop",
+            "trigger": "ocupadas",
+            "sfx": "pop"
+          },
+          {
+            "target": "c2",
+            "effect": "wiggle",
+            "trigger": "casas",
+            "amount": 0.2
+          },
+          {
+            "target": "c1",
+            "effect": "breathe",
+            "amount": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "*Inmigración*",
+      "narration": "En inmigración, expulsar a quien entre ilegalmente.",
+      "illustration": {
+        "svg_file": "carteles.svg",
+        "caption": "Fig. 5 · Programa de Vox, 23-J 2023",
+        "anims": [
+          {
+            "target": "c3",
+            "effect": "hide"
+          },
+          {
+            "target": "tirpf",
+            "effect": "hide"
+          },
+          {
+            "target": "tsuc",
+            "effect": "hide"
+          },
+          {
+            "target": "tokupa",
+            "effect": "hide"
+          },
+          {
+            "target": "tileg",
+            "effect": "hide"
+          },
+          {
+            "target": "c3",
+            "effect": "pop",
+            "trigger": "inmigración",
+            "sfx": "pop"
+          },
+          {
+            "target": "c3",
+            "effect": "punch",
+            "trigger": "expulsar",
+            "amount": 0.2
+          },
+          {
+            "target": "c3",
+            "effect": "wiggle",
+            "trigger": "entre",
+            "amount": 0.25
+          },
+          {
+            "target": "tileg",
+            "effect": "pop",
+            "trigger": "ilegalmente",
+            "sfx": "pop"
+          },
+          {
+            "target": "tileg",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "c1",
+            "effect": "breathe",
+            "amount": 0.2
+          },
+          {
+            "target": "c2",
+            "effect": "breathe",
+            "amount": 0.2
+          },
+          {
+            "target": "nombre",
+            "effect": "punch",
+            "trigger": "quien",
+            "amount": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Del Estado o *regional*",
+      "narration": "Y devolver al Estado sanidad y educación, que hoy llevan las comunidades.",
+      "illustration": {
+        "svg_file": "competencias_free.svg",
+        "layout": "free",
+        "height": 840,
+        "caption": "Fig. 6 · Programa de Vox, 23-J 2023",
+        "anims": [
+          {
+            "target": "fl",
+            "effect": "hide"
+          },
+          {
+            "target": "tdev",
+            "effect": "hide"
+          },
+          {
+            "target": "tdefca",
+            "effect": "hide"
+          },
+          {
+            "target": "tmas",
+            "effect": "hide"
+          },
+          {
+            "target": "fl",
+            "effect": "draw",
+            "trigger": "devolver",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tdev",
+            "effect": "pop",
+            "trigger": "Estado",
+            "sfx": "pop"
+          },
+          {
+            "target": "estado",
+            "effect": "punch",
+            "trigger": "Estado",
+            "amount": 0.15
+          },
+          {
+            "target": "fsan",
+            "effect": "move",
+            "trigger": "sanidad",
+            "to": [
+              90,
+              -490
+            ],
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "fedu",
+            "effect": "move",
+            "trigger": "educación",
+            "to": [
+              30,
+              -490
+            ],
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "fl",
+            "effect": "hide",
+            "trigger": "hoy"
+          },
+          {
+            "target": "tdev",
+            "effect": "hide",
+            "trigger": "hoy"
+          },
+          {
+            "target": "ccaa",
+            "effect": "punch",
+            "trigger": "hoy",
+            "amount": 0.15
+          },
+          {
+            "target": "tdefca",
+            "effect": "pop",
+            "trigger": "llevan",
+            "sfx": "pop"
+          },
+          {
+            "target": "tmas",
+            "effect": "pop",
+            "trigger": "comunidades",
+            "sfx": "pop"
+          },
+          {
+            "target": "fseg",
+            "effect": "move",
+            "trigger": "comunidades",
+            "to": [
+              -30,
+              -490
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "fjus",
+            "effect": "move",
+            "trigger": "comunidades",
+            "to": [
+              -90,
+              -490
+            ],
+            "dur": 0.6
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "comunidades",
+        "pose": "cheer",
+        "note": "¡Apuntado!",
+        "side": "left"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "*Sin* firmas",
+      "narration": "¿Y para presentarse? Ya tiene escaños, asientos del Congreso: no necesita firmas. Solo su lista, del 21 al 26 de octubre.",
+      "illustration": {
+        "svg_file": "calendario_full.svg",
+        "layout": "full",
+        "caption": "Fig. 7 · LOREG, arts. 45 y 169.3",
+        "anims": [
+          {
+            "target": "hemi",
+            "effect": "hide"
+          },
+          {
+            "target": "tesc",
+            "effect": "hide"
+          },
+          {
+            "target": "tdefesc",
+            "effect": "hide"
+          },
+          {
+            "target": "firmas",
+            "effect": "hide"
+          },
+          {
+            "target": "cruz",
+            "effect": "hide"
+          },
+          {
+            "target": "tnofirm",
+            "effect": "hide"
+          },
+          {
+            "target": "rango",
+            "effect": "hide"
+          },
+          {
+            "target": "tplazo",
+            "effect": "hide"
+          },
+          {
+            "target": "tpreg",
+            "effect": "wiggle",
+            "amount": 0.25
+          },
+          {
+            "target": "hemi",
+            "effect": "pop",
+            "trigger": "escaños",
+            "sfx": "pop"
+          },
+          {
+            "target": "tesc",
+            "effect": "pop",
+            "trigger": "escaños"
+          },
+          {
+            "target": "tdefesc",
+            "effect": "pop",
+            "trigger": "asientos",
+            "sfx": "pop"
+          },
+          {
+            "target": "firmas",
+            "effect": "slide-up",
+            "trigger": "necesita",
+            "dur": 0.4,
+            "sfx": "papel"
+          },
+          {
+            "target": "cruz",
+            "effect": "pop",
+            "trigger": "firmas",
+            "sfx": "sello"
+          },
+          {
+            "target": "tnofirm",
+            "effect": "pop",
+            "trigger": "firmas"
+          },
+          {
+            "target": "rango",
+            "effect": "pop",
+            "trigger": "21",
+            "sfx": "ding"
+          },
+          {
+            "target": "rango",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "tplazo",
+            "effect": "pop",
+            "trigger": "octubre",
+            "sfx": "sello"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Qué propondrías en tu comunidad de vecinos?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Qué propondrías en tu *comunidad de vecinos*?",
+          "trigger": "Qué"
+        }
+      ]
+    }
+  ]
+}
