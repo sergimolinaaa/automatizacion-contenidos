@@ -1,0 +1,587 @@
+{
+ "source": "Fuentes: Programa electoral de Vox para las elecciones generales del 23-J de 2023 (voxespana.es, 7/7/2023; recogido por The Objective, Público y El Debate) · Candidatura: declaraciones de Vox del 5/10/2026 (Diario de León) · LOREG (LO 5/1985), arts. 45 y 169.3 · BOE 6/10/2026 (Real Decreto 806/2026)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Qué",
+   "start": 0.1,
+   "end": 0.25
+  },
+  {
+   "text": "propone",
+   "start": 0.26,
+   "end": 0.5800000000000001
+  },
+  {
+   "text": "Vox",
+   "start": 0.59,
+   "end": 0.8099999999999999
+  },
+  {
+   "text": "para",
+   "start": 0.82,
+   "end": 0.97
+  },
+  {
+   "text": "el",
+   "start": 0.98,
+   "end": 1.04
+  },
+  {
+   "text": "29-N?",
+   "start": 1.05,
+   "end": 1.81
+  },
+  {
+   "text": "Su",
+   "start": 2.51,
+   "end": 2.6999999999999997
+  },
+  {
+   "text": "programa",
+   "start": 2.71,
+   "end": 3.06
+  },
+  {
+   "text": "nuevo",
+   "start": 3.07,
+   "end": 3.33
+  },
+  {
+   "text": "aún",
+   "start": 3.34,
+   "end": 3.5
+  },
+  {
+   "text": "no",
+   "start": 3.51,
+   "end": 3.5999999999999996
+  },
+  {
+   "text": "ha",
+   "start": 3.61,
+   "end": 3.6599999999999997
+  },
+  {
+   "text": "salido.",
+   "start": 3.67,
+   "end": 4.09
+  },
+  {
+   "text": "Sin",
+   "start": 4.79,
+   "end": 5.04
+  },
+  {
+   "text": "posicionarnos:",
+   "start": 5.05,
+   "end": 5.76
+  },
+  {
+   "text": "solo",
+   "start": 5.88,
+   "end": 6.11
+  },
+  {
+   "text": "te",
+   "start": 6.12,
+   "end": 6.2
+  },
+  {
+   "text": "contamos",
+   "start": 6.21,
+   "end": 6.61
+  },
+  {
+   "text": "qué",
+   "start": 6.62,
+   "end": 6.7
+  },
+  {
+   "text": "propone.",
+   "start": 6.71,
+   "end": 7.16
+  },
+  {
+   "text": "Miramos",
+   "start": 7.86,
+   "end": 8.290000000000001
+  },
+  {
+   "text": "su",
+   "start": 8.3,
+   "end": 8.4
+  },
+  {
+   "text": "último",
+   "start": 8.41,
+   "end": 8.7
+  },
+  {
+   "text": "programa,",
+   "start": 8.71,
+   "end": 9.14
+  },
+  {
+   "text": "el",
+   "start": 9.25,
+   "end": 9.36
+  },
+  {
+   "text": "de",
+   "start": 9.37,
+   "end": 9.45
+  },
+  {
+   "text": "2023.",
+   "start": 9.46,
+   "end": 10.370000000000001
+  },
+  {
+   "text": "Según",
+   "start": 11.07,
+   "end": 11.42
+  },
+  {
+   "text": "ese",
+   "start": 11.43,
+   "end": 11.58
+  },
+  {
+   "text": "programa:",
+   "start": 11.59,
+   "end": 11.99
+  },
+  {
+   "text": "bajar",
+   "start": 12.14,
+   "end": 12.4
+  },
+  {
+   "text": "el",
+   "start": 12.41,
+   "end": 12.51
+  },
+  {
+   "text": "IRPF,",
+   "start": 12.52,
+   "end": 13.15
+  },
+  {
+   "text": "el",
+   "start": 13.25,
+   "end": 13.35
+  },
+  {
+   "text": "impuesto",
+   "start": 13.36,
+   "end": 13.7
+  },
+  {
+   "text": "de",
+   "start": 13.71,
+   "end": 13.770000000000001
+  },
+  {
+   "text": "lo",
+   "start": 13.78,
+   "end": 13.86
+  },
+  {
+   "text": "que",
+   "start": 13.87,
+   "end": 13.959999999999999
+  },
+  {
+   "text": "ganas,",
+   "start": 13.97,
+   "end": 14.33
+  },
+  {
+   "text": "y",
+   "start": 14.42,
+   "end": 14.47
+  },
+  {
+   "text": "quitar",
+   "start": 14.48,
+   "end": 14.74
+  },
+  {
+   "text": "el",
+   "start": 14.75,
+   "end": 14.83
+  },
+  {
+   "text": "de",
+   "start": 14.84,
+   "end": 14.91
+  },
+  {
+   "text": "herencias.",
+   "start": 14.92,
+   "end": 15.44
+  },
+  {
+   "text": "En",
+   "start": 16.13,
+   "end": 16.33
+  },
+  {
+   "text": "vivienda,",
+   "start": 16.34,
+   "end": 16.76
+  },
+  {
+   "text": "desalojo",
+   "start": 16.88,
+   "end": 17.29
+  },
+  {
+   "text": "exprés",
+   "start": 17.3,
+   "end": 17.59
+  },
+  {
+   "text": "de",
+   "start": 17.6,
+   "end": 17.67
+  },
+  {
+   "text": "casas",
+   "start": 17.68,
+   "end": 17.95
+  },
+  {
+   "text": "ocupadas.",
+   "start": 17.96,
+   "end": 18.48
+  },
+  {
+   "text": "En",
+   "start": 19.18,
+   "end": 19.38
+  },
+  {
+   "text": "inmigración,",
+   "start": 19.39,
+   "end": 19.94
+  },
+  {
+   "text": "expulsar",
+   "start": 20.07,
+   "end": 20.48
+  },
+  {
+   "text": "a",
+   "start": 20.49,
+   "end": 20.54
+  },
+  {
+   "text": "quien",
+   "start": 20.55,
+   "end": 20.73
+  },
+  {
+   "text": "entre",
+   "start": 20.74,
+   "end": 20.95
+  },
+  {
+   "text": "ilegalmente.",
+   "start": 20.96,
+   "end": 21.62
+  },
+  {
+   "text": "Y",
+   "start": 22.32,
+   "end": 22.45
+  },
+  {
+   "text": "devolver",
+   "start": 22.46,
+   "end": 22.810000000000002
+  },
+  {
+   "text": "al",
+   "start": 22.82,
+   "end": 22.9
+  },
+  {
+   "text": "Estado",
+   "start": 22.91,
+   "end": 23.19
+  },
+  {
+   "text": "sanidad",
+   "start": 23.2,
+   "end": 23.599999999999998
+  },
+  {
+   "text": "y",
+   "start": 23.61,
+   "end": 23.669999999999998
+  },
+  {
+   "text": "educación,",
+   "start": 23.68,
+   "end": 24.22
+  },
+  {
+   "text": "que",
+   "start": 24.36,
+   "end": 24.48
+  },
+  {
+   "text": "hoy",
+   "start": 24.49,
+   "end": 24.599999999999998
+  },
+  {
+   "text": "llevan",
+   "start": 24.61,
+   "end": 24.84
+  },
+  {
+   "text": "las",
+   "start": 24.85,
+   "end": 24.970000000000002
+  },
+  {
+   "text": "comunidades.",
+   "start": 24.98,
+   "end": 25.63
+  },
+  {
+   "text": "¿Y",
+   "start": 26.32,
+   "end": 26.44
+  },
+  {
+   "text": "para",
+   "start": 26.45,
+   "end": 26.61
+  },
+  {
+   "text": "presentarse?",
+   "start": 26.62,
+   "end": 27.26
+  },
+  {
+   "text": "Ya",
+   "start": 27.96,
+   "end": 28.16
+  },
+  {
+   "text": "tiene",
+   "start": 28.17,
+   "end": 28.37
+  },
+  {
+   "text": "escaños,",
+   "start": 28.38,
+   "end": 28.86
+  },
+  {
+   "text": "asientos",
+   "start": 28.97,
+   "end": 29.38
+  },
+  {
+   "text": "del",
+   "start": 29.39,
+   "end": 29.5
+  },
+  {
+   "text": "Congreso:",
+   "start": 29.51,
+   "end": 29.990000000000002
+  },
+  {
+   "text": "no",
+   "start": 30.11,
+   "end": 30.21
+  },
+  {
+   "text": "necesita",
+   "start": 30.22,
+   "end": 30.64
+  },
+  {
+   "text": "firmas.",
+   "start": 30.65,
+   "end": 31.139999999999997
+  },
+  {
+   "text": "Solo",
+   "start": 31.86,
+   "end": 32.19
+  },
+  {
+   "text": "su",
+   "start": 32.2,
+   "end": 32.31
+  },
+  {
+   "text": "lista,",
+   "start": 32.32,
+   "end": 32.65
+  },
+  {
+   "text": "del",
+   "start": 32.77,
+   "end": 34.39
+  },
+  {
+   "text": "21",
+   "start": 34.39,
+   "end": 34.79
+  },
+  {
+   "text": "al",
+   "start": 34.79,
+   "end": 35.19
+  },
+  {
+   "text": "26",
+   "start": 35.19,
+   "end": 35.589999999999996
+  },
+  {
+   "text": "de",
+   "start": 41.31,
+   "end": 41.38
+  },
+  {
+   "text": "octubre.",
+   "start": 41.38,
+   "end": 41.68
+  },
+  {
+   "text": "Tú",
+   "start": 41.68,
+   "end": 41.98
+  },
+  {
+   "text": "traes",
+   "start": 41.98,
+   "end": 42.279999999999994
+  },
+  {
+   "text": "las",
+   "start": 42.279999999999994,
+   "end": 42.57999999999999
+  },
+  {
+   "text": "dudas",
+   "start": 42.57999999999999,
+   "end": 42.87999999999999
+  },
+  {
+   "text": "y",
+   "start": 42.87999999999999,
+   "end": 43.179999999999986
+  },
+  {
+   "text": "nosotros",
+   "start": 43.179999999999986,
+   "end": 43.47999999999998
+  },
+  {
+   "text": "te",
+   "start": 43.47999999999998,
+   "end": 43.77999999999998
+  },
+  {
+   "text": "damos",
+   "start": 43.77999999999998,
+   "end": 44.07999999999998
+  },
+  {
+   "text": "el",
+   "start": 44.07999999999998,
+   "end": 44.379999999999974
+  },
+  {
+   "text": "truco.",
+   "start": 44.379999999999974,
+   "end": 44.67999999999997
+  },
+  {
+   "text": "Síguenos",
+   "start": 44.67999999999997,
+   "end": 44.97999999999997
+  },
+  {
+   "text": "y",
+   "start": 44.97999999999997,
+   "end": 45.279999999999966
+  },
+  {
+   "text": "las",
+   "start": 45.279999999999966,
+   "end": 45.57999999999996
+  },
+  {
+   "text": "resolvemos.",
+   "start": 45.57999999999996,
+   "end": 45.87999999999996
+  },
+  {
+   "text": "¿Qué",
+   "start": 45.87999999999996,
+   "end": 46.17999999999996
+  },
+  {
+   "text": "propondrías",
+   "start": 46.17999999999996,
+   "end": 46.479999999999954
+  },
+  {
+   "text": "en",
+   "start": 46.479999999999954,
+   "end": 46.77999999999995
+  },
+  {
+   "text": "tu",
+   "start": 46.77999999999995,
+   "end": 47.07999999999995
+  },
+  {
+   "text": "comunidad",
+   "start": 47.07999999999995,
+   "end": 47.379999999999946
+  },
+  {
+   "text": "de",
+   "start": 47.379999999999946,
+   "end": 47.67999999999994
+  },
+  {
+   "text": "vecinos?",
+   "start": 47.67999999999994,
+   "end": 47.97999999999994
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 48.48,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "¿Qué propone *Vox*?",
+  "scene": 0
+ },
+ "duration": 51.08,
+ "cover_offset_ms": 51379
+}
