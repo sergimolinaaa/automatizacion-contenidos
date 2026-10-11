@@ -373,6 +373,17 @@
         "tiktok": "6acaef57c4de2d2b1247e3c1",
         "instagram": "6acaef58bba9419ccb1ff2b9"
       }
+    },
+    {
+      "slug": "lote6-05-black-friday",
+      "category": "consumo",
+      "due": "2026-10-15T12:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote6-05-black-friday/lote6-05-black-friday-con-voz.mp4",
+      "posts": {
+        "youtube": "6acb21c4ed92ed8fa5f194a9",
+        "tiktok": "6acb21c4c4de2d2b124e9523",
+        "instagram": "6acb21c5b07d37ac9797d7a5"
+      }
     }
   ]
 }
