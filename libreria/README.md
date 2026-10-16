@@ -78,7 +78,9 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 - `pelo_color`: castano, negro, rubio, pelirrojo, canoso, blanco o hex · `ropa`: camiseta, jersey, camisa, chaqueta, vestido, abrigo
 - `accesorios`: gafas, gafas_sol, gorro, bufanda, pendientes, baston, barba, bigote · `expresion`: neutral, sorpresa, risa, duda, frio, sueno, triste, enfado,
   **bostezo** (ojos apretados, cejas arriba, bocaza con dientes, lengua y campanilla + lagrimilla `{id}_lagrima`; para «abrir la boca» usa `grow` origin top en `{id}_boca`)
-- `pose`: de_pie, sentado (con `silla=True` dibuja la silla), busto · `brazos`: abajo, cintura, arriba, saluda, senala, barbilla, **boca** (mano tapando el bostezo, por delante de la cara), coge, cruzados
+- `pose`: de_pie, sentado (con `silla=True` dibuja la silla), busto · `brazos`: abajo, cintura, arriba, saluda, senala, barbilla, **boca** (mano tapando el bostezo, por delante de la cara), coge, cruzados,
+  **relajado** (codo algo doblado: mejor que «abajo», menos rígido), **explica** (antebrazo adelante, palma abierta), **apunta_arriba** (índice al cielo), **sujeta** (puño a la altura del hombro)
+- Que no parezcan estatuas: mezcla poses distintas en cada brazo y usa la receta «Persona natural» de `recetas.md` (breathe + blink + sway suave del cuerpo + gesto con move/wiggle).
 - Sentado: el asiento queda a `128*escala` (adulto) / `63*escala` (niño) sobre `y`; úsalo con `casa.sofa(asiento=...)` / `casa.banco(asiento=...)`.
 - Cambiar solo la cara: dibuja dos `persona()` iguales con distinta `expresion` en el mismo sitio y alterna `hide` + `fade` (`dur` 0.15) con el mismo trigger.
 - Ids: `{id}`, `{id}_cuerpo`, `{id}_piernas`, `{id}_cabeza`, `{id}_ojos`, `{id}_cejas`, `{id}_boca`, `{id}_brazo_izq`, `{id}_brazo_der`,
@@ -119,6 +121,12 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 `perro(id_, cx, base, s, pelaje="labrador|chocolate|negro|blanco", collar, bostezo=True)` — sentado de frente, alto ≈ 430*s; ids `_cabeza`, `_cola` (sway origin bottom-left),
 `_ojos` / `_ojos_cerrados`, `_boca` (bocaza con lengua enroscada: `grow` origin top), `_orejas` · `icono_perro(id_, cx, cy, s, col)` (cabeza para cuadrículas: gris/dorado)
 
+## objetos/vuelo.py (propulsión, «coches que vuelan», acción y reacción)
+`roadster(id_, cx, base, s, col="rojo|blanco|negro", toberas=None|"abajo"|"atras", logo=True, rot_)` (deportivo de perfil, morro a la derecha; .puntos toberas/centro/morro/cola; `_ruedas`, `_faro`) ·
+`chorro(id_, x, y, largo, ancho, ang)` (aire a presión; 90 = abajo, 180 = izquierda; `_lineas` para flow, `_soplos`) · `deposito_aire(id_, cx, cy, w, h, nivel)` (bombona con moléculas `_moleculas` y manómetro `_aguja`) ·
+`rampa(id_, x0, x1, base, alto)` · `avion(id_, cx, cy, s)` (`_ala`) · `globo_aire(id_, cx, cy, r, ang)` (.puntos boquilla) · `extintor(id_, cx, base, h)` (.puntos boquilla) ·
+`pesa(id_, cx, base, w, "KG")` · `logo_tesla(id_, cx, cy, r)` (pegatina simplificada) · `pista_pruebas(W, H, suelo_y)` (fondo: atardecer, mesetas, arena y asfalto)
+
 ## objetos/tienda.py (consumo, súper, precios)
 `cartel_precio(id_, cx, cy, w, entero="9", cent="99", moneda="€", col, cinta=None)` (cartel del lineal: entero grande + céntimos pequeños; sub-ids `_entero`, `_cent`; `cent=None` → «10 €»; .puntos entero/cent) ·
 `producto(tipo="caja|bote|botella|lata|brick", cx, base, s, col)` · `estanteria(id_, x0, x1, top, baldas, alto, seed, col)` (.puntos["baldas"] = y de cada balda para colgar precios) ·
@@ -156,4 +164,5 @@ lote5/pol.py, lote5/d/partidos.py, voto-correo/vc.py, voto-blanco/vb.py, papelet
 vox/vx.py, escalofrios/persona.py y cerebro.py, lote3-04/brazo.py, lote4-01-bebe-carrito/dib.py, hielo-cruje/hc.py y vaso.py,
 black-friday/bf.py, ikea/lib.py, rotondas/rot.py, cielo/paisaje.py y atardecer.py, lib.py (utilidades).
 lote7-03-bostezo (sistema nuevo): bostezo + mano a la boca + gafas de sol en personajes, animales.py, sofá, banco, cronómetro, pizarra, zapatos/huella, portapapeles y bandera.
+lote7-10-tesla-vuela: vuelo.py y brazos relajado/explica/apunta_arriba/sujeta en personajes.
 lote7-08-precios-99: tienda.py (cartel_precio, producto, estanteria, carrito, ticket, recta_numerica, supermercado).

@@ -28,7 +28,10 @@ Variantes:
     accesorios: gafas, gafas_sol, gorro, bufanda, pendientes, baston, barba, bigote
     expresion: neutral, sorpresa, risa, duda, frio, sueno, triste, enfado, bostezo (ojos apretados, bocaza, lágrima {id}_lagrima)
     pose: de_pie, sentado, busto
-    brazos (izq, der): abajo, cintura, arriba, saluda, senala, barbilla, boca (tapa el bostezo), coge, cruzados (los dos: abrazarse de frío)
+    brazos (izq, der): abajo, cintura, arriba, saluda, senala, barbilla, boca (tapa el bostezo), coge, cruzados (los dos: abrazarse de frío),
+        relajado (codo algo doblado, mano por delante del muslo: menos rígido que «abajo»), explica (antebrazo hacia delante,
+        mano abierta a la altura de la cintura: gesto de contar algo), apunta_arriba (dedo índice hacia el cielo),
+        sujeta (puño a la altura del hombro, hacia fuera: sujetar un hilo, un globo, una pancarta)
     mira: -1 izquierda, 0 frente, 1 derecha (pupilas)
 Sale de: escalofrios/persona.py (gorro de lana, bufanda, cara de frío, castañeteo), lote4-01-bebe-carrito/dib.py
 (bebé y mamá: degradados de piel y pelo, mejillas, brillos) y nuevo-partido/np.py (pictograma).
@@ -323,6 +326,8 @@ def _mano(x, y, r, piel, tipo="puno", k=1):
     s = ""
     if tipo == "senala":
         s += trazo(f"M {f(x)} {f(y)} L {f(x+k*r*1.7)} {f(y-r*0.1)}", r * 0.55, pb, 6)
+    if tipo == "dedo_arriba":
+        s += trazo(f"M {f(x)} {f(y)} L {f(x+k*r*0.25)} {f(y-r*1.75)}", r * 0.55, pb, 6)
     if tipo == "abierta":
         for i, a in enumerate((-50, -20, 8, 34)):
             aa = math.radians(-90 + a * k)
@@ -466,7 +471,8 @@ def _silla(e, sdy, col="#C98B55"):
     return s
 
 
-_BRAZOS = ("abajo", "cintura", "arriba", "saluda", "senala", "barbilla", "coge", "cruzados")
+_BRAZOS = ("abajo", "cintura", "arriba", "saluda", "senala", "barbilla", "coge", "cruzados", "boca",
+           "relajado", "explica", "apunta_arriba", "sujeta")
 
 
 def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media", pelo="corto", pelo_color="castano",
@@ -511,6 +517,14 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
             return (k * (sw + 6), e["cy"] + sdy - 70), "puno"
         if pose_b == "cruzados":
             return (-k * (sw - 14), sy + (e["cy"] - e["sy"]) * 0.42), "puno"
+        if pose_b == "relajado":  # codo un poco doblado, mano delante del muslo
+            return (k * (sw - 4), sy + 18 + (lu + lf) * 0.84), "puno"
+        if pose_b == "explica":  # antebrazo adelante, palma abierta a la altura de la cintura
+            return (k * (sw + lf * 0.62), sy + lu * 1.02), "abierta"
+        if pose_b == "apunta_arriba":
+            return (k * (sw + 46), hy - ry * 0.55), "dedo_arriba"
+        if pose_b == "sujeta":
+            return (k * (sw + lu * 0.95), sy - 6), "puno"
         if sentado:
             return (k * (e["cw"] * 0.75), e["cy"] + sdy + 20), "puno"
         L = (lu + lf) * 0.97  # brazo casi recto, un poco abierto
@@ -525,7 +539,7 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
             E = (k * (sw + 4), sy + (e["cy"] - e["sy"]) * 0.55)
             Hm = Ht
         else:
-            E, Hm = _ik(S, Ht, lu, lf, k, abajo=pb_ == "boca")
+            E, Hm = _ik(S, Ht, lu, lf, k, abajo=pb_ in ("boca", "relajado", "explica"))
         arms[lado] = (S, E, Hm, mt, pb_)
         puntos[f"mano_{lado}"] = Hm
         puntos[f"hombro_{lado}"] = S

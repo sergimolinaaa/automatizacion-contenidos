@@ -1,0 +1,1181 @@
+{
+  "topic": "Tesla Roadster «volador» (15 oct 2026): por qué un coche puede saltar con propulsores de aire comprimido (acción y reacción)",
+  "categoria": "actualidad",
+  "title": "¿Un coche que vuela? Así salta el nuevo Tesla Roadster",
+  "source": "Fuentes: CBS News (15/10/2026), «With Tesla Roadster debut, Elon Musk shows flying cars are real» · TechCrunch (15/10/2026), «Tesla reveals SpaceX powered Roadster that flies and falls with style» · Fox Business (15/10/2026), «Tesla's new Roadster takes flight» · Dezeen (16/10/2026), «Tesla launches flying Roadster concept car» · Electrek (13/10/2026 y 15/10/2026) · NASA Glenn Research Center, «Newton's Third Law of Motion»",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Cómo *vuela* el Tesla Roadster",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-18T21:00:00+02:00",
+    "caption": "¿Un coche que vuela? El 15 de octubre Tesla enseñó en Texas su nuevo Roadster: subió una rampa, dio una vuelta en el aire y cayó de ruedas (CBS News, Fox Business, Dezeen). No tiene alas: es un salto con propulsores de aire comprimido. El aire sale hacia abajo y empuja el coche hacia arriba, como un globo que se escapa, y dura segundos porque el depósito se vacía. Tesla habla de 0 a 97 km/h en 0,81 s (Dezeen, TechCrunch); fabricarlo en 2028 lo dice Musk, no confirmado al 100 %. ¿Te subirías?",
+    "description": "¿Un coche que vuela? El 15 de octubre de 2026 Tesla presentó en Texas su nuevo Roadster: subió por una rampa, dio una vuelta en el aire y aterrizó sobre las ruedas (CBS News, Fox Business, Dezeen). Elon Musk lo resumió con «flying cars are real», los coches voladores son reales. Pero no tiene alas: es un salto con propulsores que disparan aire comprimido guardado en depósitos (TechCrunch, Electrek). Es acción y reacción, la tercera ley de Newton (NASA Glenn Research Center): el aire sale hacia abajo y empuja el coche hacia arriba, como un globo que se te escapa o un extintor que te empuja. Por eso dura solo unos segundos: el depósito se vacía. Tesla habla de 0 a 97 km/h en 0,81 s en la demostración (Dezeen, TechCrunch) y de más de 370 km/h (más de 230 mph) en la versión más potente (TechCrunch, Electrek). Musk habla de fabricarlo en 2028 (CBS News, Fox Business), pero Electrek señala que no hay fecha ni precio cerrados: no confirmado al 100 %. Fuentes: CBS News, TechCrunch, Fox Business, Dezeen, Electrek y NASA Glenn Research Center. ¿Te subirías a un coche que salta?",
+    "hashtags": [
+      "tesla",
+      "coches",
+      "fisica",
+      "ciencia",
+      "actualidad"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Un coche que *vuela*?",
+      "narration": "¿Un coche que vuela? Tesla acaba de enseñarlo.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Pista de pruebas",
+        "anims": [
+          {
+            "target": "ca",
+            "effect": "hide"
+          },
+          {
+            "target": "tray",
+            "effect": "hide"
+          },
+          {
+            "target": "cb",
+            "effect": "hide"
+          },
+          {
+            "target": "cc",
+            "effect": "hide"
+          },
+          {
+            "target": "plaf",
+            "effect": "hide"
+          },
+          {
+            "target": "fan2",
+            "effect": "hide"
+          },
+          {
+            "target": "tfecha",
+            "effect": "hide"
+          },
+          {
+            "target": "cita",
+            "effect": "hide"
+          },
+          {
+            "target": "tcita",
+            "effect": "hide"
+          },
+          {
+            "target": "tmusk",
+            "effect": "hide"
+          },
+          {
+            "target": "fan",
+            "effect": "breathe",
+            "phase": 0.0
+          },
+          {
+            "target": "fan_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "fan",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "cv",
+            "effect": "float",
+            "amount": 0.9
+          },
+          {
+            "target": "chorros_v",
+            "effect": "float",
+            "amount": 0.9
+          },
+          {
+            "target": "cv",
+            "effect": "punch",
+            "trigger": "coche",
+            "amount": 0.25,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "vuela",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "trigger": "vuela",
+            "amount": 0.4
+          },
+          {
+            "target": "fan_brazo_der",
+            "effect": "wiggle",
+            "trigger": "vuela",
+            "origin": "bottom-left",
+            "amount": 0.7
+          },
+          {
+            "target": "logo",
+            "effect": "pop",
+            "trigger": "Tesla",
+            "sfx": "ding"
+          },
+          {
+            "target": "logo",
+            "effect": "pulse",
+            "trigger": "Tesla",
+            "amount": 0.5
+          },
+          {
+            "target": "fan_cabeza",
+            "effect": "sway",
+            "trigger": "acaba",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "enseñarlo",
+            "to": [
+              640,
+              860
+            ],
+            "amount": 1.25,
+            "dur": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Rampa, *vuelta* y al suelo",
+      "narration": "En Texas, el Roadster subió una rampa, dio una vuelta en el aire y cayó de ruedas.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 2 · 15 de octubre de 2026",
+        "anims": [
+          {
+            "target": "cv",
+            "effect": "hide"
+          },
+          {
+            "target": "chorros_v",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "cita",
+            "effect": "hide"
+          },
+          {
+            "target": "tcita",
+            "effect": "hide"
+          },
+          {
+            "target": "tmusk",
+            "effect": "hide"
+          },
+          {
+            "target": "fan2",
+            "effect": "hide"
+          },
+          {
+            "target": "fan",
+            "effect": "breathe",
+            "phase": 0.3
+          },
+          {
+            "target": "fan_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "fan",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "tfecha",
+            "effect": "pop",
+            "trigger": "Texas",
+            "sfx": "pop"
+          },
+          {
+            "target": "ca",
+            "effect": "slide-right",
+            "trigger": "Roadster",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rampa",
+            "effect": "punch",
+            "trigger": "rampa",
+            "amount": 0.15
+          },
+          {
+            "target": "ca",
+            "effect": "move",
+            "trigger": "rampa",
+            "to": [
+              50,
+              -45
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "fan_cabeza",
+            "effect": "sway",
+            "trigger": "subió",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "ca",
+            "effect": "hide",
+            "trigger": "dio"
+          },
+          {
+            "target": "tray",
+            "effect": "draw",
+            "trigger": "dio",
+            "dur": 1.2,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "cb",
+            "effect": "pop",
+            "trigger": "vuelta",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cb",
+            "effect": "move",
+            "trigger": "vuelta",
+            "rotate": 360,
+            "origin": "center",
+            "dur": 1.1
+          },
+          {
+            "target": "fan_brazo_der",
+            "effect": "wiggle",
+            "trigger": "aire",
+            "origin": "bottom-left",
+            "amount": 0.8
+          },
+          {
+            "target": "cb",
+            "effect": "hide",
+            "trigger": "cayó"
+          },
+          {
+            "target": "cc",
+            "effect": "slide-down",
+            "trigger": "cayó",
+            "dur": 0.4,
+            "sfx": "boing"
+          },
+          {
+            "target": "plaf",
+            "effect": "pop",
+            "trigger": "ruedas",
+            "sfx": "pop"
+          },
+          {
+            "target": "cc",
+            "effect": "punch",
+            "trigger": "ruedas",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "¿Coches *voladores*?",
+      "narration": "Musk lo resumió: «los coches voladores son reales».",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 3 · La frase del evento",
+        "anims": [
+          {
+            "target": "cv",
+            "effect": "hide"
+          },
+          {
+            "target": "chorros_v",
+            "effect": "hide"
+          },
+          {
+            "target": "ca",
+            "effect": "hide"
+          },
+          {
+            "target": "cb",
+            "effect": "hide"
+          },
+          {
+            "target": "tray",
+            "effect": "hide"
+          },
+          {
+            "target": "plaf",
+            "effect": "hide"
+          },
+          {
+            "target": "tfecha",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "fan2",
+            "effect": "hide"
+          },
+          {
+            "target": "fan",
+            "effect": "breathe",
+            "phase": 0.6
+          },
+          {
+            "target": "fan_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "fan",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "cita",
+            "effect": "pop",
+            "trigger": "Musk",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "cita",
+            "effect": "float",
+            "trigger": "Musk",
+            "amount": 0.4
+          },
+          {
+            "target": "tmusk",
+            "effect": "pop",
+            "trigger": "resumió",
+            "sfx": "pop"
+          },
+          {
+            "target": "tmusk",
+            "effect": "punch",
+            "trigger": "coches",
+            "amount": 0.3
+          },
+          {
+            "target": "tcita",
+            "effect": "pop",
+            "trigger": "voladores",
+            "sfx": "papel"
+          },
+          {
+            "target": "fan",
+            "effect": "hide",
+            "trigger": "reales"
+          },
+          {
+            "target": "fan2",
+            "effect": "fade",
+            "trigger": "reales",
+            "dur": 0.15,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "fan2",
+            "effect": "breathe"
+          },
+          {
+            "target": "fan2_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "fan2_brazo_der",
+            "effect": "move",
+            "trigger": "reales",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "fan2_cabeza",
+            "effect": "sway",
+            "trigger": "reales",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "logo",
+            "effect": "punch",
+            "trigger": "reales",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Sin alas: un *salto*",
+      "narration": "Pero no tiene alas: es un salto con propulsores.",
+      "illustration": {
+        "svg_file": "salto_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 4 · Salto, no vuelo",
+        "anims": [
+          {
+            "target": "avion_g",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "aspa",
+            "effect": "draw",
+            "trigger": "alas",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "avion_g",
+            "effect": "shake",
+            "trigger": "alas",
+            "amount": 0.5
+          },
+          {
+            "target": "coche",
+            "effect": "slide-up",
+            "trigger": "salto",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sombra_c",
+            "effect": "pop",
+            "trigger": "salto"
+          },
+          {
+            "target": "tsalto",
+            "effect": "pop",
+            "trigger": "salto",
+            "sfx": "sello"
+          },
+          {
+            "target": "tsalto",
+            "effect": "punch",
+            "trigger": "salto",
+            "amount": 0.4
+          },
+          {
+            "target": "tprop",
+            "effect": "pop",
+            "trigger": "propulsores",
+            "sfx": "pop"
+          },
+          {
+            "target": "chorros",
+            "effect": "pop",
+            "trigger": "propulsores",
+            "origin": "top",
+            "sfx": "chorro",
+            "delay": 0
+          },
+          {
+            "target": "coche",
+            "effect": "move",
+            "trigger": "propulsores",
+            "to": [
+              0,
+              -50
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "chorros",
+            "effect": "move",
+            "trigger": "propulsores",
+            "to": [
+              0,
+              -50
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "coche",
+            "effect": "float",
+            "trigger": "propulsores",
+            "amount": 0.4
+          },
+          {
+            "target": "chorros",
+            "effect": "float",
+            "trigger": "propulsores",
+            "amount": 0.4
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "salto",
+        "pose": "explain",
+        "note": "Salta, no vuela",
+        "side": "left"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Aire *abajo*, coche *arriba*",
+      "narration": "Lleva depósitos de aire comprimido. Al soltarlo, sale hacia abajo y empuja el coche hacia arriba.",
+      "illustration": {
+        "svg_file": "corte_free.svg",
+        "layout": "free",
+        "height": 1000,
+        "caption": "Fig. 5 · Por dentro",
+        "anims": [
+          {
+            "target": "vacios",
+            "effect": "hide"
+          },
+          {
+            "target": "tvacio",
+            "effect": "hide"
+          },
+          {
+            "target": "crono",
+            "effect": "hide"
+          },
+          {
+            "target": "tseg",
+            "effect": "hide"
+          },
+          {
+            "target": "taire",
+            "effect": "pop",
+            "trigger": "depósitos",
+            "sfx": "pop"
+          },
+          {
+            "target": "llenos",
+            "effect": "punch",
+            "trigger": "comprimido",
+            "amount": 0.25
+          },
+          {
+            "target": "d1_moleculas",
+            "effect": "shake",
+            "trigger": "aire",
+            "amount": 0.6
+          },
+          {
+            "target": "d2_moleculas",
+            "effect": "shake",
+            "trigger": "aire",
+            "amount": 0.6
+          },
+          {
+            "target": "chorros",
+            "effect": "pop",
+            "trigger": "soltarlo",
+            "origin": "top",
+            "sfx": "chorro"
+          },
+          {
+            "target": "ch0_lineas",
+            "effect": "flow",
+            "amount": 1.2
+          },
+          {
+            "target": "ch1_lineas",
+            "effect": "flow",
+            "amount": 1.2
+          },
+          {
+            "target": "ch2_lineas",
+            "effect": "flow",
+            "amount": 1.2
+          },
+          {
+            "target": "fabajo",
+            "effect": "draw",
+            "trigger": "abajo",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tabajo",
+            "effect": "pop",
+            "trigger": "abajo"
+          },
+          {
+            "target": "farriba",
+            "effect": "slide-up",
+            "trigger": "empuja",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tcoche",
+            "effect": "pop",
+            "trigger": "empuja"
+          },
+          {
+            "target": "coche",
+            "effect": "move",
+            "trigger": "arriba",
+            "to": [
+              0,
+              -80
+            ],
+            "dur": 0.7
+          },
+          {
+            "target": "sombra_c",
+            "effect": "punch",
+            "trigger": "arriba",
+            "amount": -0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Acción y *reacción*",
+      "narration": "Como un globo que se escapa: el aire va hacia atrás y el globo sale disparado. O un extintor, que te empuja.",
+      "illustration": {
+        "svg_file": "globo_full.svg",
+        "layout": "full",
+        "caption": "Fig. 6 · Acción y reacción",
+        "anims": [
+          {
+            "target": "nino",
+            "effect": "breathe",
+            "phase": 0.0
+          },
+          {
+            "target": "nino_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "nino",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.25
+          },
+          {
+            "target": "adulta",
+            "effect": "breathe",
+            "phase": 0.5
+          },
+          {
+            "target": "adulta_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "adulta",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15
+          },
+          {
+            "target": "globo_t",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "nino_cabeza",
+            "effect": "sway",
+            "trigger": "globo",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "aire_g",
+            "effect": "pop",
+            "trigger": "escapa",
+            "origin": "top-right",
+            "sfx": "chorro"
+          },
+          {
+            "target": "nino_brazo_der",
+            "effect": "wiggle",
+            "trigger": "escapa",
+            "origin": "bottom-left",
+            "amount": 0.8
+          },
+          {
+            "target": "taccion",
+            "effect": "pop",
+            "trigger": "aire",
+            "sfx": "pop"
+          },
+          {
+            "target": "globo_t",
+            "effect": "move",
+            "trigger": "disparado",
+            "to": [
+              330,
+              -260
+            ],
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "treac",
+            "effect": "pop",
+            "trigger": "disparado",
+            "sfx": "pop"
+          },
+          {
+            "target": "chorro_e",
+            "effect": "pop",
+            "trigger": "extintor",
+            "origin": "left",
+            "sfx": "chorro"
+          },
+          {
+            "target": "adulta_cabeza",
+            "effect": "sway",
+            "trigger": "extintor",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "fempuja",
+            "effect": "slide-left",
+            "trigger": "empuja",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tempuja",
+            "effect": "pop",
+            "trigger": "empuja",
+            "sfx": "pop"
+          },
+          {
+            "target": "adulta_t",
+            "effect": "move",
+            "trigger": "empuja",
+            "to": [
+              -70,
+              0
+            ],
+            "dur": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Depósito *vacío*",
+      "narration": "¿Y por qué dura tan poco? El depósito se vacía en segundos, y sin empuje, el coche baja.",
+      "illustration": {
+        "svg_file": "corte_free.svg",
+        "layout": "free",
+        "height": 1000,
+        "caption": "Fig. 7 · Sin aire, abajo",
+        "anims": [
+          {
+            "target": "taire",
+            "effect": "hide"
+          },
+          {
+            "target": "fabajo",
+            "effect": "hide"
+          },
+          {
+            "target": "farriba",
+            "effect": "hide"
+          },
+          {
+            "target": "tabajo",
+            "effect": "hide"
+          },
+          {
+            "target": "tcoche",
+            "effect": "hide"
+          },
+          {
+            "target": "vacios",
+            "effect": "hide"
+          },
+          {
+            "target": "coche",
+            "effect": "move",
+            "to": [
+              0,
+              -80
+            ],
+            "dur": 0.05
+          },
+          {
+            "target": "ch0_lineas",
+            "effect": "flow",
+            "amount": 1.2
+          },
+          {
+            "target": "ch1_lineas",
+            "effect": "flow",
+            "amount": 1.2
+          },
+          {
+            "target": "ch2_lineas",
+            "effect": "flow",
+            "amount": 1.2
+          },
+          {
+            "target": "crono",
+            "effect": "pop",
+            "trigger": "dura",
+            "sfx": "pop"
+          },
+          {
+            "target": "crono_aguja",
+            "effect": "move",
+            "trigger": "poco",
+            "rotate": 300,
+            "origin": "bottom",
+            "dur": 2.2
+          },
+          {
+            "target": "tseg",
+            "effect": "pop",
+            "trigger": "segundos",
+            "sfx": "ding"
+          },
+          {
+            "target": "llenos",
+            "effect": "hide",
+            "trigger": "vacía"
+          },
+          {
+            "target": "vacios",
+            "effect": "fade",
+            "trigger": "vacía",
+            "dur": 0.3
+          },
+          {
+            "target": "tvacio",
+            "effect": "pop",
+            "trigger": "vacía",
+            "sfx": "sello"
+          },
+          {
+            "target": "tvacio",
+            "effect": "punch",
+            "trigger": "vacía",
+            "amount": 0.4
+          },
+          {
+            "target": "chorros",
+            "effect": "hide",
+            "trigger": "sin"
+          },
+          {
+            "target": "coche",
+            "effect": "shake",
+            "trigger": "sin",
+            "amount": 0.4
+          },
+          {
+            "target": "coche",
+            "effect": "move",
+            "trigger": "baja",
+            "to": [
+              0,
+              80
+            ],
+            "dur": 0.5,
+            "sfx": "boing"
+          },
+          {
+            "target": "sombra_c",
+            "effect": "punch",
+            "trigger": "baja",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "0 a 97 en *0,81 s*",
+      "narration": "Según Tesla, va de 0 a 97 kilómetros por hora en 0,81 segundos: los propulsores dan un empujón extra, y con menos peso, cunde más.",
+      "illustration": {
+        "svg_file": "acelera_free.svg",
+        "layout": "free",
+        "height": 850,
+        "caption": "Fig. 8 · Según Tesla",
+        "anims": [
+          {
+            "target": "coche",
+            "effect": "slide-right",
+            "trigger": "Según",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "vel",
+            "effect": "pop",
+            "trigger": "va"
+          },
+          {
+            "target": "vel",
+            "effect": "drift",
+            "trigger": "va",
+            "amount": 0.5
+          },
+          {
+            "target": "cr",
+            "effect": "pop",
+            "trigger": "97",
+            "sfx": "pop"
+          },
+          {
+            "target": "crono_aguja",
+            "effect": "move",
+            "trigger": "0,81",
+            "rotate": 290,
+            "origin": "bottom",
+            "dur": 0.8
+          },
+          {
+            "target": "t081",
+            "effect": "pop",
+            "trigger": "0,81",
+            "sfx": "ding"
+          },
+          {
+            "target": "t081",
+            "effect": "punch",
+            "trigger": "segundos",
+            "amount": 0.3
+          },
+          {
+            "target": "chorro_t",
+            "effect": "pop",
+            "trigger": "propulsores",
+            "origin": "right",
+            "sfx": "chorro"
+          },
+          {
+            "target": "chorro_lineas",
+            "effect": "flow",
+            "trigger": "propulsores",
+            "amount": 1.4
+          },
+          {
+            "target": "fempuje",
+            "effect": "slide-right",
+            "trigger": "empujón",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "temp",
+            "effect": "pop",
+            "trigger": "extra",
+            "sfx": "pop"
+          },
+          {
+            "target": "coche",
+            "effect": "shake",
+            "trigger": "extra",
+            "amount": 0.4
+          },
+          {
+            "target": "pesa",
+            "effect": "slide-down",
+            "trigger": "peso",
+            "dur": 0.4,
+            "sfx": "boing"
+          },
+          {
+            "target": "tpeso",
+            "effect": "pop",
+            "trigger": "peso"
+          },
+          {
+            "target": "coche",
+            "effect": "move",
+            "trigger": "cunde",
+            "to": [
+              60,
+              0
+            ],
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "¿2028? *Por ver*",
+      "narration": "Tesla promete más de 370 kilómetros por hora y Musk, fabricarlo en 2028: no confirmado al 100 %.",
+      "illustration": {
+        "svg_file": "futuro.svg",
+        "caption": "Fig. 9 · Estimaciones",
+        "anims": [
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "logo",
+            "effect": "pop",
+            "trigger": "Tesla",
+            "sfx": "ding"
+          },
+          {
+            "target": "velo",
+            "effect": "pop",
+            "trigger": "370",
+            "sfx": "pop"
+          },
+          {
+            "target": "velo",
+            "effect": "pulse",
+            "trigger": "370",
+            "amount": 0.4
+          },
+          {
+            "target": "ttesla",
+            "effect": "pop",
+            "trigger": "kilómetros",
+            "sfx": "pop"
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "Musk",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "tdice",
+            "effect": "pop",
+            "trigger": "Musk",
+            "sfx": "pop"
+          },
+          {
+            "target": "cal",
+            "effect": "slide-down",
+            "trigger": "2028",
+            "dur": 0.4,
+            "sfx": "papel"
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "confirmado",
+            "rotate": -14,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "confirmado",
+            "sfx": "sello"
+          },
+          {
+            "target": "sello",
+            "effect": "punch",
+            "trigger": "confirmado",
+            "amount": 0.4
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "100",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "trigger": "100",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Te subirías a un coche que salta?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Te subirías a un coche que *salta*?",
+          "trigger": "subirías"
+        }
+      ]
+    }
+  ]
+}

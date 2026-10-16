@@ -131,6 +131,21 @@ Política (obligatorio, escena 1): `{"type": "tag", "text": "SIN POSICIONARNOS",
 `ripple` va con `base.onda_expansiva()` (dos anillos, phase 0 y 0,5). `breathe` + `blink` dan vida a cualquier `persona()`.
 Temblar de frío: `{"target":"p1","effect":"shake","amount":0.5}` + `{"target":"temblor","effect":"wiggle"}`.
 
+## 11. Persona natural (que no parezca una estatua)
+```json
+{"target": "ana", "effect": "breathe", "phase": 0.3},
+{"target": "ana_ojos", "effect": "blink"},
+{"target": "ana", "effect": "sway", "origin": "bottom", "amount": 0.2},
+{"target": "ana_cabeza", "effect": "sway", "trigger": "…", "origin": "bottom", "amount": 0.5},
+{"target": "ana_brazo_der", "effect": "move", "trigger": "…", "rotate": -12, "origin": "top-left", "dur": 0.5},
+{"target": "ana_brazo_der", "effect": "wiggle", "trigger": "…", "origin": "bottom-left", "amount": 0.7}
+```
+- Brazos distintos en cada lado: `("relajado", "explica")`, `("cintura", "apunta_arriba")`, `("relajado", "sujeta")`. Evita `("abajo", "abajo")`.
+- `sway` del cuerpo entero con amount 0,15-0,25 (más da mareo); `phase` distinta para cada persona de la escena.
+- Gesto puntual en la palabra clave: `move` con `rotate` ±10-15 desde el hombro (brazo der: `top-left`; brazo izq: `top-right`;
+  si la mano está por encima del hombro, `bottom-left` / `bottom-right`). Cambio de cara: dos `persona()` + `hide`/`fade`.
+- Nunca la mano tapando la boca salvo en un bostezo.
+
 ## Extras útiles
 - Saludo: `{"target":"p1_brazo_der","effect":"wiggle","origin":"bottom-left","amount":1.5}` con `brazos=("abajo","saluda")`.
 - Asentir: `{"target":"p1_cabeza","effect":"sway","origin":"bottom","amount":0.6}`.
