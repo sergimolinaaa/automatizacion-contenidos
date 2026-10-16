@@ -1,0 +1,849 @@
+{
+  "topic": "Por qué los superdeportivos llevan el motor en medio (momento de inercia, reparto de peso y tracción), a partir del prototipo Porsche Mission S",
+  "categoria": "objetos",
+  "title": "¿Por qué los superdeportivos llevan el motor en medio? El truco del patinador",
+  "source": "Fuentes: Porsche Newsroom (15/10/2026) · Motorpasión · CNBC (15/10/2026) · Autonoción · evo · duPont Registry · Car Throttle, «Engineering Explained: Why Engine Placement Is Important» · Motor1, «Why Mid Engine Cars Handle So Well» · Wikipedia, «Automobile handling» · Outlook India Luxe, «The secret behind mid engine cars»",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué el motor va *en medio*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-16T21:00:00+02:00",
+    "caption": "¿Por qué los superdeportivos llevan el motor en medio? Porsche acaba de enseñar el Mission S, un prototipo de motor central (sin motor ni potencia confirmados). Con el peso entre los dos ejes, el coche gira con menos esfuerzo, como un patinador que recoge los brazos, y las ruedas de atrás agarran más. A cambio, poco maletero y más difícil al límite. ¿Tú qué prefieres?",
+    "description": "¿Por qué los superdeportivos llevan el motor en medio? Porsche acaba de enseñar el Mission S, un prototipo de motor central que irá por encima del 911; la marca aún no ha confirmado ni el motor ni la potencia (Porsche Newsroom, Motorpasión, CNBC, Autonoción). Con el motor entre los dos ejes, el peso queda cerca del centro y el coche gira con menos esfuerzo: es el momento de inercia, lo mismo que hace un patinador al recoger los brazos (Car Throttle, Motor1). El 911 lo lleva detrás del eje trasero, y un coche de motor delantero lo lleva en el morro, así que su peso queda más lejos del centro (Car Throttle, Wikipedia). Además, el peso del motor carga las ruedas traseras y agarran mejor al acelerar; a cambio hay poco maletero y, al límite, la zaga puede soltarse de golpe (Outlook India, Wikipedia). Fuentes: Porsche Newsroom, Motorpasión, CNBC, Autonoción, evo, duPont Registry, Car Throttle, Motor1, Wikipedia, Outlook India. ¿Tú lo prefieres delante, en medio o detrás?",
+    "hashtags": [
+      "porsche",
+      "coches",
+      "superdeportivos",
+      "fisica",
+      "motor"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Por qué el motor va *en medio*?",
+      "narration": "Porsche acaba de enseñar el Mission S. ¿Por qué lleva el motor a tu espalda?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Presentación del Mission S",
+        "anims": [
+          {
+            "target": "cochex",
+            "effect": "hide"
+          },
+          {
+            "target": "destellos",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "coche",
+            "effect": "slide-left",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "escudo",
+            "effect": "pop",
+            "trigger": "Porsche",
+            "sfx": "pop"
+          },
+          {
+            "target": "escudo",
+            "effect": "float",
+            "trigger": "Porsche",
+            "amount": 0.3
+          },
+          {
+            "target": "mision",
+            "effect": "pop",
+            "trigger": "Mission",
+            "sfx": "pop"
+          },
+          {
+            "target": "tproto",
+            "effect": "pop",
+            "trigger": "S",
+            "sfx": "papel"
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "Por",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "trigger": "Por",
+            "amount": 0.4
+          },
+          {
+            "target": "coche",
+            "effect": "hide",
+            "trigger": "motor"
+          },
+          {
+            "target": "cochex",
+            "effect": "fade",
+            "trigger": "motor",
+            "dur": 0.2,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "tmotor0",
+            "effect": "pop",
+            "trigger": "motor"
+          },
+          {
+            "target": "espalda",
+            "effect": "draw",
+            "trigger": "espalda",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "cochex_motor",
+            "effect": "pulse",
+            "trigger": "espalda",
+            "amount": 0.5
+          },
+          {
+            "target": "cochex_piloto",
+            "effect": "punch",
+            "trigger": "tu",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Motor *central*",
+      "narration": "Es un prototipo de motor central: va entre las ruedas de delante y las de atrás.",
+      "illustration": {
+        "svg_file": "corte.svg",
+        "caption": "Fig. 2 · El coche en corte",
+        "anims": [
+          {
+            "target": "car",
+            "effect": "pop",
+            "sfx": "pop"
+          },
+          {
+            "target": "car_piloto",
+            "effect": "bob",
+            "amount": 0.2
+          },
+          {
+            "target": "sproto",
+            "effect": "pop",
+            "trigger": "prototipo",
+            "sfx": "sello"
+          },
+          {
+            "target": "sproto",
+            "effect": "punch",
+            "trigger": "prototipo",
+            "amount": 0.4
+          },
+          {
+            "target": "tsin",
+            "effect": "pop",
+            "trigger": "motor",
+            "sfx": "papel"
+          },
+          {
+            "target": "car_motor",
+            "effect": "pulse",
+            "trigger": "central",
+            "amount": 0.5
+          },
+          {
+            "target": "tmotor",
+            "effect": "pop",
+            "trigger": "central",
+            "sfx": "pop"
+          },
+          {
+            "target": "entre",
+            "effect": "draw",
+            "trigger": "entre",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "car_rueda_del",
+            "effect": "punch",
+            "trigger": "delante",
+            "amount": 0.4
+          },
+          {
+            "target": "tdel",
+            "effect": "pop",
+            "trigger": "delante",
+            "sfx": "pop"
+          },
+          {
+            "target": "car_rueda_tras",
+            "effect": "punch",
+            "trigger": "atrás",
+            "amount": 0.4
+          },
+          {
+            "target": "tatras",
+            "effect": "pop",
+            "trigger": "atrás",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El peso, *al centro*",
+      "narration": "Así casi todo el peso queda cerca del centro, y el coche gira más fácil.",
+      "illustration": {
+        "svg_file": "giro_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 3 · Visto desde arriba",
+        "anims": [
+          {
+            "target": "auto",
+            "effect": "pop",
+            "sfx": "pop"
+          },
+          {
+            "target": "anillo",
+            "effect": "ripple"
+          },
+          {
+            "target": "p0",
+            "effect": "draw",
+            "trigger": "peso",
+            "dur": 0.35,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "p1",
+            "effect": "draw",
+            "trigger": "peso",
+            "dur": 0.35,
+            "delay": 0.1
+          },
+          {
+            "target": "p2",
+            "effect": "draw",
+            "trigger": "queda",
+            "dur": 0.35
+          },
+          {
+            "target": "p3",
+            "effect": "draw",
+            "trigger": "queda",
+            "dur": 0.35
+          },
+          {
+            "target": "tpeso",
+            "effect": "pop",
+            "trigger": "casi",
+            "sfx": "pop"
+          },
+          {
+            "target": "auto_cg",
+            "effect": "pulse",
+            "trigger": "centro",
+            "amount": 0.6
+          },
+          {
+            "target": "tcentro",
+            "effect": "pop",
+            "trigger": "centro",
+            "sfx": "ding"
+          },
+          {
+            "target": "giro",
+            "effect": "draw",
+            "trigger": "gira",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "auto",
+            "effect": "move",
+            "trigger": "gira",
+            "rotate": 35,
+            "dur": 0.8
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "fácil",
+            "sfx": "ding"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "fácil",
+        "pose": "cheer",
+        "note": "Peso al centro, giro fácil",
+        "side": "left"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Brazos fuera *cuesta*",
+      "narration": "Gira sobre ti mismo con los brazos estirados y bolsas: cuesta. Con los brazos pegados, giras rápido.",
+      "illustration": {
+        "svg_file": "brazos_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 4 · Pruébalo tú",
+        "anims": [
+          {
+            "target": "cerrado",
+            "effect": "hide"
+          },
+          {
+            "target": "tpegados",
+            "effect": "hide"
+          },
+          {
+            "target": "g2",
+            "effect": "hide"
+          },
+          {
+            "target": "abierto",
+            "effect": "pop",
+            "trigger": "Gira",
+            "sfx": "pop"
+          },
+          {
+            "target": "abierto",
+            "effect": "move",
+            "trigger": "estirados",
+            "rotate": 22,
+            "dur": 2.2
+          },
+          {
+            "target": "tbolsas",
+            "effect": "pop",
+            "trigger": "bolsas",
+            "sfx": "papel"
+          },
+          {
+            "target": "abierto_brazos",
+            "effect": "shake",
+            "trigger": "bolsas",
+            "amount": 0.3
+          },
+          {
+            "target": "g1",
+            "effect": "draw",
+            "trigger": "estirados",
+            "dur": 1.5
+          },
+          {
+            "target": "cuesta",
+            "effect": "pop",
+            "trigger": "cuesta",
+            "sfx": "sello"
+          },
+          {
+            "target": "cuesta",
+            "effect": "punch",
+            "trigger": "cuesta",
+            "amount": 0.5
+          },
+          {
+            "target": "cerrado",
+            "effect": "slide-up",
+            "trigger": "pegados",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tpegados",
+            "effect": "pop",
+            "trigger": "pegados"
+          },
+          {
+            "target": "g2",
+            "effect": "pop",
+            "trigger": "giras",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cerrado",
+            "effect": "spin",
+            "trigger": "giras",
+            "amount": 1.5
+          },
+          {
+            "target": "rapido",
+            "effect": "pop",
+            "trigger": "rápido",
+            "sfx": "ding"
+          },
+          {
+            "target": "vel",
+            "effect": "pop",
+            "trigger": "rápido"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Momento de *inercia*",
+      "narration": "Como un patinador que recoge los brazos. Se llama momento de inercia.",
+      "illustration": {
+        "svg_file": "patinador_full.svg",
+        "layout": "full",
+        "caption": "Fig. 5 · El patinador",
+        "anims": [
+          {
+            "target": "patb",
+            "effect": "hide"
+          },
+          {
+            "target": "velp",
+            "effect": "hide"
+          },
+          {
+            "target": "pata",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.35
+          },
+          {
+            "target": "pata_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "pata_brazo_izq",
+            "effect": "wiggle",
+            "origin": "bottom-right",
+            "amount": 0.4
+          },
+          {
+            "target": "pata_brazo_der",
+            "effect": "wiggle",
+            "origin": "bottom-left",
+            "amount": 0.4,
+            "phase": 0.5
+          },
+          {
+            "target": "orbita",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "gp",
+            "effect": "draw",
+            "trigger": "patinador",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "pata",
+            "effect": "hide",
+            "trigger": "recoge"
+          },
+          {
+            "target": "patb",
+            "effect": "fade",
+            "trigger": "recoge",
+            "dur": 0.15,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "patb",
+            "effect": "bob",
+            "trigger": "recoge",
+            "amount": 0.4
+          },
+          {
+            "target": "patb_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "velp",
+            "effect": "pop",
+            "trigger": "brazos",
+            "sfx": "pop"
+          },
+          {
+            "target": "velp",
+            "effect": "shake",
+            "trigger": "brazos",
+            "amount": 0.3
+          },
+          {
+            "target": "inercia",
+            "effect": "pop",
+            "trigger": "momento",
+            "sfx": "pop"
+          },
+          {
+            "target": "tdef",
+            "effect": "pop",
+            "trigger": "inercia",
+            "sfx": "ding"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "Se",
+            "to": [
+              540,
+              760
+            ],
+            "amount": 1.1,
+            "dur": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Peso en la *punta*",
+      "narration": "Con el motor delante, o detrás como el nueve once, el peso se aleja del centro y cuesta más girar.",
+      "illustration": {
+        "svg_file": "comparar.svg",
+        "caption": "Fig. 6 · Delante, en medio, detrás",
+        "anims": [
+          {
+            "target": "cmed",
+            "effect": "pop",
+            "sfx": "pop"
+          },
+          {
+            "target": "tmd",
+            "effect": "pop",
+            "delay": 0.2
+          },
+          {
+            "target": "cdel",
+            "effect": "slide-left",
+            "trigger": "delante",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tdl",
+            "effect": "pop",
+            "trigger": "delante"
+          },
+          {
+            "target": "ctras",
+            "effect": "slide-right",
+            "trigger": "detrás",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ttr",
+            "effect": "pop",
+            "trigger": "detrás"
+          },
+          {
+            "target": "t911",
+            "effect": "pop",
+            "trigger": "once",
+            "sfx": "papel"
+          },
+          {
+            "target": "lc",
+            "effect": "draw",
+            "trigger": "peso",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "d_cdel",
+            "effect": "draw",
+            "trigger": "aleja",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "d_ctras",
+            "effect": "draw",
+            "trigger": "aleja",
+            "dur": 0.4
+          },
+          {
+            "target": "no1",
+            "effect": "pop",
+            "trigger": "cuesta",
+            "sfx": "pop"
+          },
+          {
+            "target": "no2",
+            "effect": "pop",
+            "trigger": "cuesta"
+          },
+          {
+            "target": "si",
+            "effect": "pop",
+            "trigger": "girar",
+            "sfx": "ding"
+          },
+          {
+            "target": "cmed",
+            "effect": "punch",
+            "trigger": "girar",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Más *agarre*",
+      "narration": "Además, el motor carga las ruedas de atrás, que agarran mejor al acelerar.",
+      "illustration": {
+        "svg_file": "traccion_free.svg",
+        "layout": "free",
+        "height": 850,
+        "caption": "Fig. 7 · El peso empuja las ruedas",
+        "anims": [
+          {
+            "target": "trac",
+            "effect": "pop",
+            "sfx": "pop"
+          },
+          {
+            "target": "trac_piloto",
+            "effect": "bob",
+            "amount": 0.2
+          },
+          {
+            "target": "trac_motor",
+            "effect": "pulse",
+            "trigger": "motor",
+            "amount": 0.6
+          },
+          {
+            "target": "tcarga",
+            "effect": "pop",
+            "trigger": "motor",
+            "sfx": "pop"
+          },
+          {
+            "target": "peso",
+            "effect": "slide-down",
+            "trigger": "carga",
+            "dur": 0.5,
+            "sfx": "boing"
+          },
+          {
+            "target": "trac_rueda_tras",
+            "effect": "punch",
+            "trigger": "ruedas",
+            "amount": 0.4
+          },
+          {
+            "target": "agarre",
+            "effect": "pop",
+            "trigger": "agarran",
+            "sfx": "brillo"
+          },
+          {
+            "target": "tagarre",
+            "effect": "pop",
+            "trigger": "mejor",
+            "sfx": "pop"
+          },
+          {
+            "target": "trac_rueda_del",
+            "effect": "spin",
+            "trigger": "acelerar",
+            "amount": 2
+          },
+          {
+            "target": "trac_rueda_tras",
+            "effect": "spin",
+            "trigger": "acelerar",
+            "amount": 2
+          },
+          {
+            "target": "vel6",
+            "effect": "pop",
+            "trigger": "acelerar",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "trac",
+            "effect": "move",
+            "trigger": "acelerar",
+            "to": [
+              -50,
+              0
+            ],
+            "dur": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Lo que *pierdes*",
+      "narration": "A cambio: poco maletero y, si derrapa, es más difícil de controlar.",
+      "illustration": {
+        "svg_file": "cambio_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · El precio del motor central",
+        "anims": [
+          {
+            "target": "anas",
+            "effect": "hide"
+          },
+          {
+            "target": "derr",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.25
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "punch",
+            "trigger": "cambio",
+            "amount": 0.3
+          },
+          {
+            "target": "maleta",
+            "effect": "bob",
+            "trigger": "maletero",
+            "amount": 0.3
+          },
+          {
+            "target": "tmal",
+            "effect": "pop",
+            "trigger": "maletero",
+            "sfx": "pop"
+          },
+          {
+            "target": "nomal",
+            "effect": "pop",
+            "trigger": "poco",
+            "sfx": "pop"
+          },
+          {
+            "target": "derr",
+            "effect": "pop",
+            "trigger": "derrapa",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "marcas",
+            "effect": "draw",
+            "trigger": "derrapa",
+            "dur": 0.6
+          },
+          {
+            "target": "cdr",
+            "effect": "move",
+            "trigger": "derrapa",
+            "rotate": 40,
+            "dur": 0.7
+          },
+          {
+            "target": "ana",
+            "effect": "hide",
+            "trigger": "difícil"
+          },
+          {
+            "target": "anas",
+            "effect": "fade",
+            "trigger": "difícil",
+            "dur": 0.15,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "anas",
+            "effect": "sway",
+            "trigger": "difícil",
+            "origin": "bottom",
+            "amount": 0.3
+          },
+          {
+            "target": "alerta",
+            "effect": "pop",
+            "trigger": "difícil",
+            "sfx": "pop"
+          },
+          {
+            "target": "alerta",
+            "effect": "pulse",
+            "trigger": "controlar",
+            "amount": 0.5
+          },
+          {
+            "target": "tdificil",
+            "effect": "pop",
+            "trigger": "controlar",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Elige*",
+      "narration": "Síguenos y las resolvemos. ¿Delante, en medio o detrás: cuál prefieres?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Motor delante, en medio o *detrás*?",
+          "trigger": "Delante"
+        }
+      ]
+    }
+  ]
+}

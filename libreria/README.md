@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · casa.py · cuerpo.py · escenarios.py · animales.py · tienda.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · casa.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -134,6 +134,15 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 `ticket(id_, cx, top, w, lineas=[(concepto, precio)], total, titulo)` (`_l<i>`, `_total` para cascada) ·
 `recta_numerica(id_, x0, x1, y, a, b, paso, etiquetas)` (.puntos["x"](valor) → x, para poner marcadores) · `supermercado(W, H, suelo_y, seed, rotulo)` (fondo: pasillo con estantería llena y suelo de baldosas)
 
+## objetos/coches.py (coches, motor y física del giro)
+`deportivo_lateral(id_, cx, base, s, col="rojo", motor="centro|delante|detras", corte=True, logo=False, piloto=True, aleron=True)` (superdeportivo genérico de perfil
+mirando a la izquierda, ≈ 920×230 a s=1; `corte` = rayos X con piloto, asiento y motor; sub-ids `_carroceria`, `_motor`, `_piloto`, `_rueda_del`, `_rueda_tras` (spin), `_cg`;
+.puntos eje_del/eje_tras/motor/cg/piloto/morro/cola/techo/maletero) · `deportivo_cenital(id_, cx, cy, s, col, motor, cg, rumbo)` (desde arriba, motor bajo tapa de cristal,
+`_motor`, `_cg`; para girarlo `{"effect":"move","rotate":35}`) · `motor_bloque(id_, cx, cy, w, h)` · `centro_gravedad(id_, cx, cy, r)` (símbolo a cuartos) ·
+`escudo_porsche(id_, cx, cy, s)` (escudo simplificado estilo pegatina, ≈ 200×240) · `persona_cenital(id_, cx, cy, s, brazos="estirados|pegados", bolsas)` (`_brazos`; spin para girar) ·
+`flecha_giro(id_, cx, cy, r, a0, a1, col)` (flecha en arco) · `maleta(id_, cx, base, w, h)` · `marcas_derrape(id_, p0, p1, ctrl)` (draw) ·
+fondos `sala_presentacion(W, H, suelo_y)`, `carretera(W, H, y0, y1)`, `pista_hielo(W, H, y0)`.
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -166,3 +175,4 @@ black-friday/bf.py, ikea/lib.py, rotondas/rot.py, cielo/paisaje.py y atardecer.p
 lote7-03-bostezo (sistema nuevo): bostezo + mano a la boca + gafas de sol en personajes, animales.py, sofá, banco, cronómetro, pizarra, zapatos/huella, portapapeles y bandera.
 lote7-10-tesla-vuela: vuelo.py y brazos relajado/explica/apunta_arriba/sujeta en personajes.
 lote7-08-precios-99: tienda.py (cartel_precio, producto, estanteria, carrito, ticket, recta_numerica, supermercado).
+lote7-09-motor-central: coches.py (deportivo en corte y cenital, motor, centro de gravedad, escudo Porsche, persona cenital, flecha de giro, maleta, derrape, sala, carretera, pista de hielo).
