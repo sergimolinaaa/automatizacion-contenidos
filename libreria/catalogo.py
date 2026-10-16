@@ -14,7 +14,7 @@ sys.path.insert(0, ROOT)
 from libreria.svg import base as B  # noqa: E402
 from libreria.svg.base import *  # noqa: E402,F401
 from libreria.svg.personajes import persona, pictograma, multitud  # noqa: E402
-from libreria.svg.objetos import politica as P, casa as C, cuerpo as CU, escenarios as E, animales as AN  # noqa: E402
+from libreria.svg.objetos import politica as P, casa as C, cuerpo as CU, escenarios as E, animales as AN, tienda as TI  # noqa: E402
 
 CHROME = "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell"
 COLS = 6
@@ -142,6 +142,12 @@ def celdas():
     add("sofa · banco · cronometro · pizarra", 1000, 700, s)
     s = C.huella("hu", 300, 350, 1.5, espejo=True) + C.zapato_arriba("za", 520, 350, 1.5, CORAL) + C.zapato_arriba("zb", 720, 350, 1.5, TEAL, espejo=True)
     add("huella · zapato_arriba", 1000, 700, s)
+    s = TI.cartel_precio("cp", 200, 130, 280, "9", "99") + TI.cartel_precio("cp10", 520, 130, 240, "10", None, col=LIME, cinta="OFERTA")
+    s += "".join(TI.producto(t, 120 + i * 110, 420, 0.9, c) for i, (t, c) in enumerate(zip(("caja", "bote", "botella", "lata", "brick"), TI.COLS_PROD)))
+    s += TI.carrito("car", 790, 470, 300) + TI.ticket("tk", 830, 480, 200, total="2,48", size=18)
+    s += TI.recta_numerica("rn", 120, 560, 590, 9, 10, 0.1, {9: "9", 10: "10"}, size=26)
+    add("tienda: cartel_precio · producto · carrito · ticket · recta_numerica", 1000, 700, s)
+    add("tienda.supermercado() + estanteria", 1080, 1920, TI.supermercado(), False)
 
     # ---------------- escenarios (miniaturas de 1080x1920)
     for nombre, fondo in (("habitacion()", E.habitacion()), ("cocina()", E.cocina()), ("oficina()", E.oficina()),

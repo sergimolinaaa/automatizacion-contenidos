@@ -411,7 +411,8 @@
     "tema": "Por qué los precios acaban en ,99",
     "categoria": "consumo",
     "pista": "Efecto del dígito izquierdo: 9,99 se lee como 9 y no como 10 (estudios de Thomas y Morwitz, 2005, verificar).",
-    "prioridad": true
+    "prioridad": true,
+    "hecho": true
   },
   {
     "tema": "Los trucos del supermercado para que compres más",

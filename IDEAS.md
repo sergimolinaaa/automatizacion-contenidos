@@ -63,7 +63,6 @@ Cada idea lleva la pista del mecanismo a explicar; los datos se verifican antes 
 - **Cómo el airbag se infla más rápido que un parpadeo**: sensor de aceleración y reacción química que libera gas en milisegundos
 
 ## Consumo y Black Friday (27-N) (3)
-- **Por qué los precios acaban en ,99**: Efecto del dígito izquierdo: 9,99 se lee como 9 y no como 10 (estudios de Thomas y Morwitz, 2005, verificar).
 - **Los trucos del supermercado para que compres más**: Leche y pan al fondo, productos caros a la altura de los ojos, carros grandes, música lenta (Milliman, 1982, verificar).
 
 ## Bulos del día a día (3)

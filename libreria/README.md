@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · casa.py · cuerpo.py · escenarios.py · animales.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · casa.py · cuerpo.py · escenarios.py · animales.py · tienda.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -119,6 +119,13 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 `perro(id_, cx, base, s, pelaje="labrador|chocolate|negro|blanco", collar, bostezo=True)` — sentado de frente, alto ≈ 430*s; ids `_cabeza`, `_cola` (sway origin bottom-left),
 `_ojos` / `_ojos_cerrados`, `_boca` (bocaza con lengua enroscada: `grow` origin top), `_orejas` · `icono_perro(id_, cx, cy, s, col)` (cabeza para cuadrículas: gris/dorado)
 
+## objetos/tienda.py (consumo, súper, precios)
+`cartel_precio(id_, cx, cy, w, entero="9", cent="99", moneda="€", col, cinta=None)` (cartel del lineal: entero grande + céntimos pequeños; sub-ids `_entero`, `_cent`; `cent=None` → «10 €»; .puntos entero/cent) ·
+`producto(tipo="caja|bote|botella|lata|brick", cx, base, s, col)` · `estanteria(id_, x0, x1, top, baldas, alto, seed, col)` (.puntos["baldas"] = y de cada balda para colgar precios) ·
+`carrito(id_, cx, base, w, col, lleno, espejo)` (`_compra`, `_ruedas`; .puntos asa/cesta; con `espejo=True` el asa queda a la izquierda, junto a `persona(brazos=(…, "coge"))`) ·
+`ticket(id_, cx, top, w, lineas=[(concepto, precio)], total, titulo)` (`_l<i>`, `_total` para cascada) ·
+`recta_numerica(id_, x0, x1, y, a, b, paso, etiquetas)` (.puntos["x"](valor) → x, para poner marcadores) · `supermercado(W, H, suelo_y, seed, rotulo)` (fondo: pasillo con estantería llena y suelo de baldosas)
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -149,3 +156,4 @@ lote5/pol.py, lote5/d/partidos.py, voto-correo/vc.py, voto-blanco/vb.py, papelet
 vox/vx.py, escalofrios/persona.py y cerebro.py, lote3-04/brazo.py, lote4-01-bebe-carrito/dib.py, hielo-cruje/hc.py y vaso.py,
 black-friday/bf.py, ikea/lib.py, rotondas/rot.py, cielo/paisaje.py y atardecer.py, lib.py (utilidades).
 lote7-03-bostezo (sistema nuevo): bostezo + mano a la boca + gafas de sol en personajes, animales.py, sofá, banco, cronómetro, pizarra, zapatos/huella, portapapeles y bandera.
+lote7-08-precios-99: tienda.py (cartel_precio, producto, estanteria, carrito, ticket, recta_numerica, supermercado).

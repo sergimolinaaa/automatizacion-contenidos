@@ -1,0 +1,760 @@
+{
+  "topic": "Por qué los precios acaban en ,99 (efecto del dígito izquierdo y señal de oferta)",
+  "categoria": "consumo",
+  "title": "¿Por qué los precios acaban en ,99? Tu cerebro lee de izquierda a derecha",
+  "source": "Fuentes: Thomas y Morwitz, Journal of Consumer Research 32(1), 2005, «Penny Wise and Pound Foolish: The Left Digit Effect in Price Cognition» · ScienceDaily (07/06/2005) · Anderson y Simester, Quantitative Marketing and Economics 1, 2003, «Effects of $9 Price Endings on Retail Sales» · Kellogg School of Management · Anderson y Simester, Harvard Business Review 81(9), 2003, «Mind Your Pricing Cues» · Chicago Booth Review, «Yours for only $19.99»",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué los precios acaban en *,99*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-17T21:00:00+02:00",
+    "caption": "¿Por qué los precios acaban en ,99? Leemos de izquierda a derecha y el 9 de 9,99 pesa más que los céntimos (Thomas y Morwitz, Journal of Consumer Research 2005). En tres experimentos reales, acabar en 9 subió las ventas (Anderson y Simester, 2003). Y algunas tiendas guardan el 9 para las rebajas. ¿Cuál te ha pillado?",
+    "description": "¿Por qué los precios acaban en ,99? Leemos de izquierda a derecha y la primera cifra pesa más: 9,99 € se siente más cerca de 9 que de 10. Es el efecto del dígito izquierdo (Thomas y Morwitz, Journal of Consumer Research, 2005), que solo aparece cuando cambia esa primera cifra, como de 2,99 a 3. En tres experimentos de campo, acabar el precio en 9 subió las ventas (Anderson y Simester, Quantitative Marketing and Economics, 2003), y algunas tiendas reservan el 9 para las rebajas, así que lo leemos como oferta (Harvard Business Review, 2003). Fuentes: Journal of Consumer Research, ScienceDaily, Quantitative Marketing and Economics, Kellogg School of Management, Harvard Business Review, Chicago Booth Review. ¿Qué precio acabado en 9 te ha pillado a ti?",
+    "hashtags": [
+      "precios",
+      "supermercado",
+      "psicologia",
+      "consumo",
+      "ahorro"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Por qué todo cuesta *9,99*?",
+      "narration": "¿Por qué casi nada cuesta diez euros y todo cuesta nueve con noventa y nueve?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Pasillo del súper",
+        "anims": [
+          {
+            "target": "anas",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "breathe"
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "brillos",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "Por",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "trigger": "Por",
+            "amount": 0.4
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "qué",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "p10",
+            "effect": "pop",
+            "trigger": "casi",
+            "sfx": "pop"
+          },
+          {
+            "target": "p10",
+            "effect": "punch",
+            "trigger": "nada",
+            "amount": 0.3
+          },
+          {
+            "target": "aspa10",
+            "effect": "draw",
+            "trigger": "diez",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "p10",
+            "effect": "shake",
+            "trigger": "euros",
+            "amount": 0.5
+          },
+          {
+            "target": "p0",
+            "effect": "pop",
+            "trigger": "todo",
+            "sfx": "pop"
+          },
+          {
+            "target": "p1",
+            "effect": "pop",
+            "trigger": "cuesta nueve",
+            "sfx": "pop"
+          },
+          {
+            "target": "p2",
+            "effect": "pop",
+            "trigger": "con",
+            "sfx": "pop"
+          },
+          {
+            "target": "p3",
+            "effect": "pop",
+            "trigger": "noventa",
+            "sfx": "pop"
+          },
+          {
+            "target": "p4",
+            "effect": "pop",
+            "trigger": "y nueve",
+            "sfx": "pop"
+          },
+          {
+            "target": "ana",
+            "effect": "hide",
+            "trigger": "noventa"
+          },
+          {
+            "target": "anas",
+            "effect": "fade",
+            "trigger": "noventa",
+            "dur": 0.15,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "y nueve",
+            "to": [
+              540,
+              760
+            ],
+            "amount": 1.12,
+            "dur": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Lees de *izquierda* a derecha",
+      "narration": "Por cómo lees: de izquierda a derecha, y la primera cifra se queda grabada.",
+      "illustration": {
+        "svg_file": "lectura_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 2 · Cómo lees un precio",
+        "anims": [
+          {
+            "target": "ojo",
+            "effect": "pop",
+            "sfx": "pop"
+          },
+          {
+            "target": "precio",
+            "effect": "float",
+            "amount": 0.3
+          },
+          {
+            "target": "ojo",
+            "effect": "punch",
+            "trigger": "lees",
+            "amount": 0.4
+          },
+          {
+            "target": "lect",
+            "effect": "draw",
+            "trigger": "izquierda",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tizq",
+            "effect": "pop",
+            "trigger": "izquierda"
+          },
+          {
+            "target": "ojo_pupila",
+            "effect": "move",
+            "trigger": "derecha",
+            "to": [
+              120,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "tder",
+            "effect": "pop",
+            "trigger": "derecha",
+            "sfx": "pop"
+          },
+          {
+            "target": "ojo_pupila",
+            "effect": "move",
+            "trigger": "primera",
+            "to": [
+              -120,
+              0
+            ],
+            "dur": 0.4
+          },
+          {
+            "target": "foco",
+            "effect": "pop",
+            "trigger": "primera",
+            "sfx": "ding"
+          },
+          {
+            "target": "foco",
+            "effect": "pulse",
+            "trigger": "primera",
+            "amount": 0.5
+          },
+          {
+            "target": "tcifra",
+            "effect": "pop",
+            "trigger": "cifra",
+            "sfx": "pop"
+          },
+          {
+            "target": "grab",
+            "effect": "pop",
+            "trigger": "grabada",
+            "sfx": "sello"
+          },
+          {
+            "target": "precio_entero",
+            "effect": "punch",
+            "trigger": "grabada",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El *9* pesa más",
+      "narration": "Ves el nueve antes que los céntimos, y nueve con noventa y nueve parece más cerca de nueve que de diez.",
+      "illustration": {
+        "svg_file": "recta.svg",
+        "caption": "Fig. 3 · Lo que sientes y lo real",
+        "anims": [
+          {
+            "target": "yo",
+            "effect": "breathe"
+          },
+          {
+            "target": "yo_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "precio",
+            "effect": "pop",
+            "trigger": "Ves",
+            "sfx": "pop"
+          },
+          {
+            "target": "precio_entero",
+            "effect": "punch",
+            "trigger": "nueve",
+            "amount": 0.6
+          },
+          {
+            "target": "precio_cent",
+            "effect": "punch",
+            "trigger": "céntimos",
+            "amount": 0.2
+          },
+          {
+            "target": "recta",
+            "effect": "slide-up",
+            "trigger": "y nueve",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "pin_siente",
+            "effect": "slide-down",
+            "trigger": "parece",
+            "dur": 0.4,
+            "sfx": "boing"
+          },
+          {
+            "target": "tsiente",
+            "effect": "pop",
+            "trigger": "más"
+          },
+          {
+            "target": "piensa",
+            "effect": "pop",
+            "trigger": "cerca",
+            "sfx": "pop"
+          },
+          {
+            "target": "yo_cabeza",
+            "effect": "sway",
+            "trigger": "cerca",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "salto",
+            "effect": "draw",
+            "trigger": "que de",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "pin_real",
+            "effect": "slide-down",
+            "trigger": "que de",
+            "dur": 0.4
+          },
+          {
+            "target": "treal",
+            "effect": "pop",
+            "trigger": "diez",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Efecto del *dígito izquierdo*",
+      "narration": "Se llama efecto del dígito izquierdo. Thomas y Morwitz lo publicaron en dos mil cinco: solo funciona si cambia esa primera cifra.",
+      "illustration": {
+        "svg_file": "estudio_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 4 · El estudio",
+        "anims": [
+          {
+            "target": "doc",
+            "effect": "pop",
+            "trigger": "llama",
+            "sfx": "papel"
+          },
+          {
+            "target": "doc",
+            "effect": "float",
+            "trigger": "llama",
+            "amount": 0.3
+          },
+          {
+            "target": "doc",
+            "effect": "punch",
+            "trigger": "izquierdo",
+            "amount": 0.3
+          },
+          {
+            "target": "tautores",
+            "effect": "pop",
+            "trigger": "Thomas",
+            "sfx": "pop"
+          },
+          {
+            "target": "trevista",
+            "effect": "pop",
+            "trigger": "publicaron",
+            "sfx": "pop"
+          },
+          {
+            "target": "anio",
+            "effect": "pop",
+            "trigger": "dos mil cinco",
+            "sfx": "ding"
+          },
+          {
+            "target": "f1",
+            "effect": "slide-up",
+            "trigger": "solo",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "f1_icon",
+            "effect": "pop",
+            "trigger": "funciona",
+            "sfx": "ding"
+          },
+          {
+            "target": "f1_t",
+            "effect": "pop",
+            "trigger": "funciona"
+          },
+          {
+            "target": "anillo",
+            "effect": "pop",
+            "trigger": "cambia",
+            "sfx": "rotulador"
+          },
+          {
+            "target": "anillo",
+            "effect": "pulse",
+            "trigger": "cambia",
+            "amount": 0.5
+          },
+          {
+            "target": "f2",
+            "effect": "slide-up",
+            "trigger": "esa",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "f2_icon",
+            "effect": "pop",
+            "trigger": "primera",
+            "sfx": "pop"
+          },
+          {
+            "target": "f2_t",
+            "effect": "pop",
+            "trigger": "cifra"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "El 9 *vende*",
+      "narration": "Además, el nueve vende: en tres experimentos con clientes reales, acabar el precio en nueve subió las ventas.",
+      "illustration": {
+        "svg_file": "ventas.svg",
+        "caption": "Fig. 5 · Más ventas con 9",
+        "anims": [
+          {
+            "target": "brillo",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "clientes",
+            "effect": "slide-up",
+            "trigger": "Además",
+            "dur": 0.5,
+            "sfx": "pop"
+          },
+          {
+            "target": "exp0",
+            "effect": "pop",
+            "trigger": "tres",
+            "sfx": "pop"
+          },
+          {
+            "target": "exp1",
+            "effect": "pop",
+            "trigger": "experimentos",
+            "sfx": "pop"
+          },
+          {
+            "target": "exp2",
+            "effect": "pop",
+            "trigger": "con",
+            "sfx": "pop"
+          },
+          {
+            "target": "texp",
+            "effect": "pop",
+            "trigger": "experimentos"
+          },
+          {
+            "target": "clientes",
+            "effect": "punch",
+            "trigger": "clientes",
+            "amount": 0.4
+          },
+          {
+            "target": "b_sin",
+            "effect": "grow",
+            "trigger": "acabar",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "b_con",
+            "effect": "grow",
+            "trigger": "precio",
+            "dur": 0.8,
+            "sfx": "pop"
+          },
+          {
+            "target": "tag9",
+            "effect": "pop",
+            "trigger": "en nueve",
+            "sfx": "papel"
+          },
+          {
+            "target": "sube",
+            "effect": "draw",
+            "trigger": "subió",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bolsa1",
+            "effect": "slide-down",
+            "trigger": "las",
+            "dur": 0.4,
+            "sfx": "boing"
+          },
+          {
+            "target": "bolsa2",
+            "effect": "slide-down",
+            "trigger": "ventas",
+            "dur": 0.4,
+            "sfx": "boing"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "9 = *oferta*",
+      "narration": "Y algunas tiendas guardan el nueve para las rebajas: tu cerebro lo lee como oferta.",
+      "illustration": {
+        "svg_file": "rebajas_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 6 · La señal de rebaja",
+        "anims": [
+          {
+            "target": "clir",
+            "effect": "hide"
+          },
+          {
+            "target": "cli",
+            "effect": "breathe"
+          },
+          {
+            "target": "cli_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "jersey",
+            "effect": "slide-down",
+            "trigger": "tiendas",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "jersey",
+            "effect": "sway",
+            "trigger": "tiendas",
+            "origin": "top",
+            "amount": 0.3
+          },
+          {
+            "target": "tagc",
+            "effect": "pop",
+            "trigger": "guardan",
+            "sfx": "papel"
+          },
+          {
+            "target": "tagc",
+            "effect": "sway",
+            "trigger": "guardan",
+            "origin": "top",
+            "amount": 0.4
+          },
+          {
+            "target": "tagc",
+            "effect": "punch",
+            "trigger": "nueve",
+            "amount": 0.4
+          },
+          {
+            "target": "rebajas",
+            "effect": "pop",
+            "trigger": "rebajas",
+            "sfx": "pop"
+          },
+          {
+            "target": "piensa",
+            "effect": "pop",
+            "trigger": "cerebro",
+            "sfx": "pop"
+          },
+          {
+            "target": "cli_cabeza",
+            "effect": "sway",
+            "trigger": "cerebro",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "cli",
+            "effect": "hide",
+            "trigger": "lee"
+          },
+          {
+            "target": "clir",
+            "effect": "fade",
+            "trigger": "lee",
+            "dur": 0.15,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "oferta",
+            "sfx": "sello"
+          },
+          {
+            "target": "sello",
+            "effect": "punch",
+            "trigger": "oferta",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Redondea *hacia arriba*",
+      "narration": "En el súper, redondea hacia arriba: nueve con noventa y nueve son diez euros.",
+      "illustration": {
+        "svg_file": "final_full.svg",
+        "layout": "full",
+        "caption": "Fig. 7 · Tu truco en el súper",
+        "anims": [
+          {
+            "target": "anar",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "breathe"
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "tk",
+            "effect": "pop",
+            "trigger": "súper",
+            "sfx": "papel"
+          },
+          {
+            "target": "p999",
+            "effect": "pop",
+            "trigger": "redondea",
+            "sfx": "pop"
+          },
+          {
+            "target": "arriba",
+            "effect": "draw",
+            "trigger": "arriba",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "p999_entero",
+            "effect": "punch",
+            "trigger": "nueve",
+            "amount": 0.5
+          },
+          {
+            "target": "aprox",
+            "effect": "pop",
+            "trigger": "son",
+            "sfx": "pop"
+          },
+          {
+            "target": "p10",
+            "effect": "pop",
+            "trigger": "son",
+            "sfx": "pop"
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "diez",
+            "sfx": "ding"
+          },
+          {
+            "target": "p10",
+            "effect": "pulse",
+            "trigger": "diez",
+            "amount": 0.5
+          },
+          {
+            "target": "ana",
+            "effect": "hide",
+            "trigger": "euros"
+          },
+          {
+            "target": "anar",
+            "effect": "fade",
+            "trigger": "euros",
+            "dur": 0.15
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "arriba",
+        "pose": "point",
+        "note": "Y no te la cuelan",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Qué precio con nueve te ha pillado?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Qué precio con *9* te ha pillado?",
+          "trigger": "Qué"
+        }
+      ]
+    }
+  ]
+}
