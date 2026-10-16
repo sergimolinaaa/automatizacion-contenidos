@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · casa.py · cuerpo.py · escenarios.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · casa.py · cuerpo.py · escenarios.py · animales.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -61,7 +61,7 @@ Revisa con `bash scripts/shot.sh in.svg out.png` (para `full` usa `--window-size
 - `onomatopeya(id_, cx, cy, "¡CRAC!", r=110, size=48)` · `ondas_sonido(id_, cx, cy, r0, n, a0, a1)`
 
 **Iconos de reacción**: `icono_duda` (?), `icono_alerta` (!), `icono_ok` (✓), `icono_no` (✗) — todos `(id_, cx, cy, r=40)`; `aspa(id_, cx, cy, r)`,
-`corazon(id_, cx, cy, s)`, `chispa(id_, cx, cy, r, col, puntas=4)`, `destellos(id_, cx, cy, r)`, `rayos(id_, cx, cy, r1, r2, n, col)`, `confeti(id_, caja, n)`
+`corazon(id_, cx, cy, s)`, `chispa(id_, cx, cy, r, col, puntas=4)`, `bandera(id_, cx, cy, w, h, cols=Italia)` (mástil; `sway` origin left), `destellos(id_, cx, cy, r)`, `rayos(id_, cx, cy, r1, r2, n, col)`, `confeti(id_, caja, n)`
 
 **Contadores y medidores**: `contador(id_, cx, cy, "3.270", etiqueta_txt)` (pantalla digital), `marcador(id_, cx, cy, izq, der, txt_izq, txt_der)`,
 `barra(id_, x, base, w, h, col, texto, valor)` (para `grow`), `medidor(id_, cx, cy, r, nivel)` (aguja en `<id>_aguja`)
@@ -76,8 +76,11 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 - (x, y) = suelo entre los pies (busto: centro del corte inferior). Alto a escala 1: adulto 600, mayor 575, niño 400.
 - `edad`: nino, joven, adulto, mayor · `piel`: clara, media, morena, oscura · `pelo`: corto, largo, rizado, coleta, mono, calvo, rapado, None
 - `pelo_color`: castano, negro, rubio, pelirrojo, canoso, blanco o hex · `ropa`: camiseta, jersey, camisa, chaqueta, vestido, abrigo
-- `accesorios`: gafas, gorro, bufanda, pendientes, baston, barba, bigote · `expresion`: neutral, sorpresa, risa, duda, frio, sueno, triste, enfado
-- `pose`: de_pie, sentado (con `silla=True` dibuja la silla), busto · `brazos`: abajo, cintura, arriba, saluda, senala, barbilla, coge, cruzados
+- `accesorios`: gafas, gafas_sol, gorro, bufanda, pendientes, baston, barba, bigote · `expresion`: neutral, sorpresa, risa, duda, frio, sueno, triste, enfado,
+  **bostezo** (ojos apretados, cejas arriba, bocaza con dientes, lengua y campanilla + lagrimilla `{id}_lagrima`; para «abrir la boca» usa `grow` origin top en `{id}_boca`)
+- `pose`: de_pie, sentado (con `silla=True` dibuja la silla), busto · `brazos`: abajo, cintura, arriba, saluda, senala, barbilla, **boca** (mano tapando el bostezo, por delante de la cara), coge, cruzados
+- Sentado: el asiento queda a `128*escala` (adulto) / `63*escala` (niño) sobre `y`; úsalo con `casa.sofa(asiento=...)` / `casa.banco(asiento=...)`.
+- Cambiar solo la cara: dibuja dos `persona()` iguales con distinta `expresion` en el mismo sitio y alterna `hide` + `fade` (`dur` 0.15) con el mismo trigger.
 - Ids: `{id}`, `{id}_cuerpo`, `{id}_piernas`, `{id}_cabeza`, `{id}_ojos`, `{id}_cejas`, `{id}_boca`, `{id}_brazo_izq`, `{id}_brazo_der`,
   `{id}_mano_izq/der`, `{id}_acc_<accesorio>` (izq/der = lado de la pantalla).
 - `.puntos`: cabeza, boca, ojos, cima, pies, mano_izq, mano_der, hombro_izq, hombro_der, alto.
@@ -101,12 +104,20 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 `mesa(id_, cx, y_tablero, w, alto)` · `ventana(id_, cx, cy, w, h, cortinas, noche)` · `movil(id_, cx, cy, w, pantalla=svg)` (.puntos["pantalla"]) ·
 `reloj(id_, cx, cy, r, hora, minuto)` (`_horaria`, `_minutero`; para girarlas dibújalas a las 12:00 y usa spin/move rotate) · `bombilla(id_, cx, cy, s, encendida)` ·
 `casita(id_, cx, base, w)` · `etiqueta_precio(id_, cx, cy, w, h, "19 €", tachado="40 €")` · `bolsa(id_, cx, base, w, h, col, texto)` ·
-`caja_madera(id_, x0, yb, w, h)` · `llave_allen(id_, x, y, s, ang)` · `tornillo(id_, x, y, s, ang)`
+`caja_madera(id_, x0, yb, w, h)` · `llave_allen(id_, x, y, s, ang)` · `tornillo(id_, x, y, s, ang)` ·
+`sofa(id_, cx, base, w, asiento, col, respaldo)` (.puntos asiento/izq/der) · `banco(id_, cx, base, w, asiento)` (parque) ·
+`cronometro(id_, cx, cy, r, col)` (aguja `_aguja` a las 12: `{"effect":"move","rotate":300,"origin":"bottom","dur":2}`) ·
+`pizarra(id_, cx, cy, w, h, contenido)` · `zapato_arriba(id_, cx, cy, s, col, espejo)` + `huella(id_, cx, cy, s, espejo)` (ponerse en el lugar del otro) ·
+`portapapeles(id_, cx, cy, w, h, filas, marcadas)` (✓ en `_c<i>`)
 
 ## objetos/cuerpo.py
 `cerebro(id_, cx, cy, s, hipotalamo=True)` (`_hipotalamo`; .puntos hipotalamo/cerebelo/frente) · `cabeza_perfil(id_, x, y, s, piel, con_cerebro)` ·
 `musculo(id_, cx, cy, largo, grosor, contraido)` · `antebrazo(id_, p0, p1, ancho, piel, vello, gallina, manga)` (`_vello`, `_erizado`, `_bultos`) ·
 `piel_lupa(cx, cy, r, erizado)` (contenido para `lupa`) · `termometro(id_, cx, top, h, nivel, col, texto)` (`_columna`)
+
+## objetos/animales.py
+`perro(id_, cx, base, s, pelaje="labrador|chocolate|negro|blanco", collar, bostezo=True)` — sentado de frente, alto ≈ 430*s; ids `_cabeza`, `_cola` (sway origin bottom-left),
+`_ojos` / `_ojos_cerrados`, `_boca` (bocaza con lengua enroscada: `grow` origin top), `_orejas` · `icono_perro(id_, cx, cy, s, col)` (cabeza para cuadrículas: gris/dorado)
 
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
@@ -137,3 +148,4 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 lote5/pol.py, lote5/d/partidos.py, voto-correo/vc.py, voto-blanco/vb.py, papeleta-nula/pn.py y senado.py, nuevo-partido/np.py y gancho.py,
 vox/vx.py, escalofrios/persona.py y cerebro.py, lote3-04/brazo.py, lote4-01-bebe-carrito/dib.py, hielo-cruje/hc.py y vaso.py,
 black-friday/bf.py, ikea/lib.py, rotondas/rot.py, cielo/paisaje.py y atardecer.py, lib.py (utilidades).
+lote7-03-bostezo (sistema nuevo): bostezo + mano a la boca + gafas de sol en personajes, animales.py, sofá, banco, cronómetro, pizarra, zapatos/huella, portapapeles y bandera.

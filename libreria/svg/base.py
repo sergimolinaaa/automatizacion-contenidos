@@ -749,3 +749,25 @@ def guardar(path, doc):
         fh.write(doc)
     print("ok", path, len(doc))
     return path
+
+
+def bandera(id_, cx, cy, w=150, h=100, cols=("#009246", "#FFFFFF", "#CE2B37"), vertical=True, mastil=True):
+    """Bandera ondeando de franjas (por defecto Italia: verde, blanco, rojo en vertical). (cx, cy) = centro de la tela;
+    el mástil sale por la izquierda hacia abajo. Para que ondee: {"effect":"sway","origin":"left","amount":0.4}."""
+    x0, y0 = cx - w / 2, cy - h / 2
+    a = h * 0.08
+    def tela(xa, xb):
+        return (f"M {f(xa)} {f(y0 + a*math.sin((xa-x0)/w*6.28))} L {f(xb)} {f(y0 + a*math.sin((xb-x0)/w*6.28))} "
+                f"L {f(xb)} {f(y0 + h + a*math.sin((xb-x0)/w*6.28))} L {f(xa)} {f(y0 + h + a*math.sin((xa-x0)/w*6.28))} Z")
+    o = ""
+    if mastil:
+        o += trazo(f"M {f(x0-6)} {f(y0-16)} L {f(x0-6)} {f(y0+h*2.1)}", 9, "#8A93A6", 5)
+        o += f'<circle cx="{f(x0-6)}" cy="{f(y0-18)}" r="9" fill="url(#amarilloG)" stroke="{INK}" stroke-width="4"/>'
+    n = len(cols)
+    for i, c in enumerate(cols):
+        xa, xb = x0 + w * i / n, x0 + w * (i + 1) / n
+        o += f'<path d="{tela(xa, xb)}" fill="{c}"/>'
+    o += f'<path d="{tela(x0, x0 + w)}" fill="none" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+    o += f'<path d="M {f(x0+w*0.25)} {f(y0+h*0.15)} L {f(x0+w*0.25)} {f(y0+h*0.85)}" stroke="{INK}" stroke-width="3" opacity="0.12"/>'
+    o += brillo(f"M {f(x0+8)} {f(y0+12)} L {f(x0+w*0.4)} {f(y0+10)}", 4, 0.5)
+    return g(id_, o)

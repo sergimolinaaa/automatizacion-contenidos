@@ -1,0 +1,1067 @@
+{
+  "topic": "Por qué se contagia el bostezo (contagio social y empatía)",
+  "categoria": "cuerpo",
+  "title": "¿Por qué bostezar se contagia? Tu cerebro copia a los tuyos",
+  "source": "Fuentes: Norscia y Palagi, PLoS ONE 2011, «Yawn contagion and empathy in Homo sapiens» · Universidad de Pisa, «If you care, yawn back» · ScienceDaily (12/12/2011) · Joly-Mascheroni, Senju y Shepherd, Biology Letters 2008 · Live Science, «Dogs Catch Human Yawns» · National Geographic",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué se *contagia* el bostezo",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-20T14:00:00+02:00",
+    "caption": "¿Por qué bostezar se contagia? Tu cerebro copia el gesto, y lo hace más con tu familia que con un desconocido (Universidad de Pisa, PLoS ONE 2011). Por eso se relaciona con la empatía. Hasta 21 de 29 perros bostezaron al ver bostezar a una persona (Biology Letters 2008). ¿Has bostezado al leer esto?",
+    "description": "¿Por qué bostezar se contagia? Un estudio de la Universidad de Pisa con más de cien adultos (Norscia y Palagi, PLoS ONE, 2011) vio que el bostezo se contagia sobre todo entre familiares, después entre amigos y conocidos, y mucho menos entre desconocidos, con los que además tarda más en llegar. Por eso muchos investigadores lo relacionan con la empatía. Y no es solo cosa de humanos: en un experimento publicado en Biology Letters (2008), 21 de 29 perros bostezaron al ver bostezar a una persona. Fuentes: PLoS ONE, Universidad de Pisa, ScienceDaily, Biology Letters, Live Science. ¿A quién le contagias tú los bostezos?",
+    "hashtags": [
+      "bostezo",
+      "cerebro",
+      "empatia",
+      "curiosidades",
+      "ciencia"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Has bostezado *solo* de verlo?",
+      "narration": "¿Te ha pasado? Alguien bosteza delante de ti y, sin querer, bostezas tú.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Contagio en la oficina",
+        "anims": [
+          {
+            "target": "chico_s",
+            "effect": "hide"
+          },
+          {
+            "target": "chico_b",
+            "effect": "hide"
+          },
+          {
+            "target": "alerta",
+            "effect": "hide"
+          },
+          {
+            "target": "ondas",
+            "effect": "hide"
+          },
+          {
+            "target": "lampara_luz",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "chico_n",
+            "effect": "breathe"
+          },
+          {
+            "target": "chico_n_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "mujer",
+            "effect": "pop",
+            "trigger": "Te",
+            "sfx": "pop"
+          },
+          {
+            "target": "mujer",
+            "effect": "breathe",
+            "trigger": "pasado"
+          },
+          {
+            "target": "mujer_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.5,
+            "trigger": "pasado"
+          },
+          {
+            "target": "reloj",
+            "effect": "punch",
+            "trigger": "pasado",
+            "amount": 0.4
+          },
+          {
+            "target": "ondas",
+            "effect": "draw",
+            "trigger": "bosteza",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ondas",
+            "effect": "pulse",
+            "trigger": "delante",
+            "amount": 1.2
+          },
+          {
+            "target": "chico_n",
+            "effect": "punch",
+            "trigger": "ti",
+            "amount": 0.3
+          },
+          {
+            "target": "chico_n",
+            "effect": "hide",
+            "trigger": "sin"
+          },
+          {
+            "target": "chico_s",
+            "effect": "fade",
+            "trigger": "sin",
+            "dur": 0.15,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "alerta",
+            "effect": "pop",
+            "trigger": "querer"
+          },
+          {
+            "target": "alerta",
+            "effect": "wiggle",
+            "trigger": "querer",
+            "amount": 0.8
+          },
+          {
+            "target": "chico_s",
+            "effect": "hide",
+            "trigger": "bostezas"
+          },
+          {
+            "target": "alerta",
+            "effect": "hide",
+            "trigger": "bostezas"
+          },
+          {
+            "target": "chico_b",
+            "effect": "fade",
+            "trigger": "bostezas",
+            "dur": 0.15
+          },
+          {
+            "target": "chico_b_boca",
+            "effect": "grow",
+            "trigger": "bostezas",
+            "origin": "top",
+            "dur": 0.5
+          },
+          {
+            "target": "chico_b_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.5,
+            "trigger": "bostezas"
+          },
+          {
+            "target": "chico_b_lagrima",
+            "effect": "pop",
+            "trigger": "tú",
+            "sfx": "pop"
+          },
+          {
+            "target": "chico_b_lagrima",
+            "effect": "bob",
+            "trigger": "tú",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Copia *automática*",
+      "narration": "Es un contagio social: tu cerebro copia el gesto de quien tienes delante, como un eco.",
+      "illustration": {
+        "svg_file": "cerebro_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 2 · Tu cerebro copia",
+        "anims": [
+          {
+            "target": "caraB",
+            "effect": "hide"
+          },
+          {
+            "target": "zona",
+            "effect": "hide"
+          },
+          {
+            "target": "lcopia",
+            "effect": "hide"
+          },
+          {
+            "target": "caraA",
+            "effect": "breathe"
+          },
+          {
+            "target": "caraB_n_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "lcontagio",
+            "effect": "pop",
+            "trigger": "contagio",
+            "sfx": "pop"
+          },
+          {
+            "target": "caraA",
+            "effect": "punch",
+            "trigger": "social",
+            "amount": 0.3
+          },
+          {
+            "target": "cerebro",
+            "effect": "punch",
+            "trigger": "cerebro",
+            "amount": 0.5
+          },
+          {
+            "target": "zona",
+            "effect": "fade",
+            "trigger": "copia",
+            "dur": 0.4,
+            "sfx": "brillo"
+          },
+          {
+            "target": "zona",
+            "effect": "pulse",
+            "trigger": "copia",
+            "amount": 0.8
+          },
+          {
+            "target": "lcopia",
+            "effect": "pop",
+            "trigger": "copia"
+          },
+          {
+            "target": "flecha",
+            "effect": "draw",
+            "trigger": "gesto",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "caraB_n",
+            "effect": "hide",
+            "trigger": "delante"
+          },
+          {
+            "target": "caraB",
+            "effect": "fade",
+            "trigger": "delante",
+            "dur": 0.15
+          },
+          {
+            "target": "caraB_boca",
+            "effect": "grow",
+            "trigger": "delante",
+            "origin": "top",
+            "dur": 0.4
+          },
+          {
+            "target": "caraB_lagrima",
+            "effect": "pop",
+            "trigger": "delante"
+          },
+          {
+            "target": "montana",
+            "effect": "pop",
+            "trigger": "como",
+            "sfx": "pop"
+          },
+          {
+            "target": "eco1",
+            "effect": "grow",
+            "trigger": "como",
+            "origin": "right"
+          },
+          {
+            "target": "eco2",
+            "effect": "grow",
+            "trigger": "un eco",
+            "origin": "right"
+          },
+          {
+            "target": "eco3",
+            "effect": "grow",
+            "trigger": "eco",
+            "origin": "right",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "eco3",
+            "effect": "pulse",
+            "trigger": "eco",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Más con los *tuyos*",
+      "narration": "Y no copia a todos igual. En un estudio italiano con más de cien adultos, se contagiaba más entre familiares, luego amigos y por último desconocidos.",
+      "illustration": {
+        "svg_file": "barras_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 3 · Cuánto se contagia",
+        "anims": [
+          {
+            "target": "tb1",
+            "effect": "punch",
+            "trigger": "copia",
+            "amount": 0.4
+          },
+          {
+            "target": "tb2",
+            "effect": "punch",
+            "trigger": "todos",
+            "amount": 0.4
+          },
+          {
+            "target": "tb3",
+            "effect": "punch",
+            "trigger": "igual",
+            "amount": 0.4
+          },
+          {
+            "target": "tb4",
+            "effect": "punch",
+            "trigger": "igual",
+            "amount": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "bandera",
+            "effect": "pop",
+            "trigger": "estudio",
+            "sfx": "pop"
+          },
+          {
+            "target": "bandera",
+            "effect": "sway",
+            "trigger": "estudio",
+            "origin": "left",
+            "amount": 0.4
+          },
+          {
+            "target": "lupa",
+            "effect": "slide-left",
+            "trigger": "italiano",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ladultos",
+            "effect": "pop",
+            "trigger": "cien",
+            "sfx": "ding"
+          },
+          {
+            "target": "b1",
+            "effect": "grow",
+            "trigger": "contagiaba",
+            "dur": 0.7,
+            "sfx": "pop"
+          },
+          {
+            "target": "abuela",
+            "effect": "pop",
+            "trigger": "familiares",
+            "sfx": "pop"
+          },
+          {
+            "target": "abuela_cabeza",
+            "effect": "sway",
+            "trigger": "familiares",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "b2",
+            "effect": "grow",
+            "trigger": "luego",
+            "dur": 0.7
+          },
+          {
+            "target": "amigas",
+            "effect": "pop",
+            "trigger": "amigos",
+            "sfx": "pop"
+          },
+          {
+            "target": "b3",
+            "effect": "grow",
+            "trigger": "por",
+            "dur": 0.6
+          },
+          {
+            "target": "conocido",
+            "effect": "pop",
+            "trigger": "último"
+          },
+          {
+            "target": "b4",
+            "effect": "grow",
+            "trigger": "desconocidos",
+            "dur": 0.6
+          },
+          {
+            "target": "desconocido",
+            "effect": "slide-up",
+            "trigger": "desconocidos",
+            "dur": 0.5,
+            "sfx": "boing"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Cuanto más *cerca*, más *rápido*",
+      "narration": "Con la familia, además, el bostezo de vuelta llega antes. Con un extraño tarda más.",
+      "illustration": {
+        "svg_file": "sofa_banco.svg",
+        "caption": "Fig. 4 · Cuánto tarda",
+        "anims": [
+          {
+            "target": "hija_b",
+            "effect": "hide"
+          },
+          {
+            "target": "extr_b",
+            "effect": "hide"
+          },
+          {
+            "target": "trapido",
+            "effect": "hide"
+          },
+          {
+            "target": "tlento",
+            "effect": "hide"
+          },
+          {
+            "target": "madre",
+            "effect": "breathe"
+          },
+          {
+            "target": "hija_n_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "extr_n",
+            "effect": "breathe",
+            "phase": 0.4
+          },
+          {
+            "target": "tfam",
+            "effect": "pop",
+            "trigger": "familia",
+            "sfx": "pop"
+          },
+          {
+            "target": "ondas1",
+            "effect": "draw",
+            "trigger": "bostezo",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ondas1",
+            "effect": "pulse",
+            "trigger": "bostezo",
+            "amount": 1
+          },
+          {
+            "target": "crono1_aguja",
+            "effect": "move",
+            "trigger": "vuelta",
+            "rotate": 70,
+            "dur": 0.5,
+            "origin": "bottom",
+            "sfx": "tic"
+          },
+          {
+            "target": "hija_n",
+            "effect": "hide",
+            "trigger": "antes"
+          },
+          {
+            "target": "hija_b",
+            "effect": "fade",
+            "trigger": "antes",
+            "dur": 0.15,
+            "sfx": "pop"
+          },
+          {
+            "target": "hija_b_boca",
+            "effect": "grow",
+            "trigger": "antes",
+            "origin": "top",
+            "dur": 0.35
+          },
+          {
+            "target": "trapido",
+            "effect": "pop",
+            "trigger": "antes",
+            "sfx": "ding"
+          },
+          {
+            "target": "textr",
+            "effect": "pop",
+            "trigger": "extraño",
+            "sfx": "pop"
+          },
+          {
+            "target": "crono2_aguja",
+            "effect": "move",
+            "trigger": "extraño",
+            "rotate": 300,
+            "dur": 2.2,
+            "origin": "bottom",
+            "sfx": "tic"
+          },
+          {
+            "target": "tlento",
+            "effect": "pop",
+            "trigger": "extraño"
+          },
+          {
+            "target": "tlento",
+            "effect": "pulse",
+            "trigger": "extraño",
+            "amount": 0.8
+          },
+          {
+            "target": "extr_n",
+            "effect": "hide",
+            "trigger": "tarda"
+          },
+          {
+            "target": "extr_b",
+            "effect": "fade",
+            "trigger": "tarda",
+            "dur": 0.15
+          },
+          {
+            "target": "extr_b_boca",
+            "effect": "grow",
+            "trigger": "tarda",
+            "origin": "top",
+            "dur": 0.6
+          },
+          {
+            "target": "extr_b",
+            "effect": "breathe",
+            "trigger": "tarda"
+          },
+          {
+            "target": "crono2",
+            "effect": "punch",
+            "trigger": "más",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Por eso, *empatía*",
+      "narration": "Por eso muchos científicos lo ligan a la empatía: ponerte en el lugar del otro.",
+      "illustration": {
+        "svg_file": "empatia.svg",
+        "caption": "Fig. 5 · Empatía",
+        "anims": [
+          {
+            "target": "huella",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "cientifica",
+            "effect": "slide-right",
+            "trigger": "científicos",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cientifica_brazo_der",
+            "effect": "wiggle",
+            "trigger": "ligan",
+            "origin": "left",
+            "amount": 0.6
+          },
+          {
+            "target": "tiza",
+            "effect": "draw",
+            "trigger": "ligan",
+            "dur": 0.8,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "lemp",
+            "effect": "pop",
+            "trigger": "empatía",
+            "sfx": "pop"
+          },
+          {
+            "target": "corazon",
+            "effect": "pop",
+            "trigger": "empatía"
+          },
+          {
+            "target": "corazon",
+            "effect": "pulse",
+            "trigger": "empatía",
+            "amount": 1.4
+          },
+          {
+            "target": "zapato",
+            "effect": "move",
+            "trigger": "ponerte",
+            "to": [
+              125,
+              -50
+            ],
+            "dur": 0.8,
+            "sfx": "boing"
+          },
+          {
+            "target": "huella",
+            "effect": "punch",
+            "trigger": "lugar",
+            "amount": 0.4
+          },
+          {
+            "target": "zapato_otro",
+            "effect": "punch",
+            "trigger": "otro",
+            "amount": 0.4
+          },
+          {
+            "target": "corazon",
+            "effect": "punch",
+            "trigger": "otro",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Hasta tu *perro*",
+      "narration": "Y no solo pasa entre personas: en otro experimento, veintiún perros de veintinueve bostezaron al ver bostezar a una persona.",
+      "illustration": {
+        "svg_file": "perros_free.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 6 · Perros contagiados",
+        "anims": [
+          {
+            "target": "l2129",
+            "effect": "hide"
+          },
+          {
+            "target": "perro_ojos_cerrados",
+            "effect": "hide"
+          },
+          {
+            "target": "hombre",
+            "effect": "breathe"
+          },
+          {
+            "target": "perro_cola",
+            "effect": "sway",
+            "origin": "bottom-left",
+            "amount": 1.2
+          },
+          {
+            "target": "perro_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "hombre_lagrima",
+            "effect": "pop",
+            "trigger": "personas",
+            "sfx": "pop"
+          },
+          {
+            "target": "hombre",
+            "effect": "punch",
+            "trigger": "personas",
+            "amount": 0.3
+          },
+          {
+            "target": "clip",
+            "effect": "pop",
+            "trigger": "otro",
+            "sfx": "papel"
+          },
+          {
+            "target": "grid",
+            "effect": "fade",
+            "trigger": "experimento",
+            "dur": 0.4
+          },
+          {
+            "target": "d0",
+            "effect": "pop",
+            "trigger": "veintiún",
+            "sfx": "pop"
+          },
+          {
+            "target": "d1",
+            "effect": "pop",
+            "trigger": "veintiún"
+          },
+          {
+            "target": "d2",
+            "effect": "pop",
+            "trigger": "veintiún"
+          },
+          {
+            "target": "d3",
+            "effect": "pop",
+            "trigger": "veintiún"
+          },
+          {
+            "target": "d4",
+            "effect": "pop",
+            "trigger": "perros",
+            "sfx": "pop"
+          },
+          {
+            "target": "d5",
+            "effect": "pop",
+            "trigger": "perros"
+          },
+          {
+            "target": "d6",
+            "effect": "pop",
+            "trigger": "perros"
+          },
+          {
+            "target": "d7",
+            "effect": "pop",
+            "trigger": "perros"
+          },
+          {
+            "target": "d8",
+            "effect": "pop",
+            "trigger": "de",
+            "sfx": "pop"
+          },
+          {
+            "target": "d9",
+            "effect": "pop",
+            "trigger": "de"
+          },
+          {
+            "target": "d10",
+            "effect": "pop",
+            "trigger": "de"
+          },
+          {
+            "target": "d11",
+            "effect": "pop",
+            "trigger": "veintinueve",
+            "sfx": "pop"
+          },
+          {
+            "target": "d12",
+            "effect": "pop",
+            "trigger": "veintinueve"
+          },
+          {
+            "target": "d13",
+            "effect": "pop",
+            "trigger": "veintinueve"
+          },
+          {
+            "target": "d14",
+            "effect": "pop",
+            "trigger": "veintinueve"
+          },
+          {
+            "target": "d15",
+            "effect": "pop",
+            "trigger": "bostezaron",
+            "sfx": "pop"
+          },
+          {
+            "target": "d16",
+            "effect": "pop",
+            "trigger": "bostezaron"
+          },
+          {
+            "target": "d17",
+            "effect": "pop",
+            "trigger": "bostezaron"
+          },
+          {
+            "target": "d18",
+            "effect": "pop",
+            "trigger": "al",
+            "sfx": "pop"
+          },
+          {
+            "target": "d19",
+            "effect": "pop",
+            "trigger": "al"
+          },
+          {
+            "target": "d20",
+            "effect": "pop",
+            "trigger": "al"
+          },
+          {
+            "target": "l2129",
+            "effect": "pop",
+            "trigger": "veintinueve",
+            "sfx": "ding"
+          },
+          {
+            "target": "perro_ojos",
+            "effect": "hide",
+            "trigger": "bostezaron"
+          },
+          {
+            "target": "perro_ojos_cerrados",
+            "effect": "pop",
+            "trigger": "bostezaron"
+          },
+          {
+            "target": "perro_boca",
+            "effect": "grow",
+            "trigger": "bostezaron",
+            "origin": "top",
+            "dur": 0.6,
+            "sfx": "boing"
+          },
+          {
+            "target": "perro_cabeza",
+            "effect": "sway",
+            "trigger": "ver",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "hombre",
+            "effect": "punch",
+            "trigger": "una persona",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Si bostezas ahora… *empatía*",
+      "narration": "Así que si ahora estás bostezando, tranquilo: puede que solo sea empatía.",
+      "illustration": {
+        "svg_file": "cadena_full.svg",
+        "layout": "full",
+        "caption": "Fig. 7 · Y ahora tú",
+        "anims": [
+          {
+            "target": "c_mujer",
+            "effect": "hide"
+          },
+          {
+            "target": "c_chico",
+            "effect": "hide"
+          },
+          {
+            "target": "c_abuela",
+            "effect": "hide"
+          },
+          {
+            "target": "c_perro_ojos_cerrados",
+            "effect": "hide"
+          },
+          {
+            "target": "c_perro_cola",
+            "effect": "sway",
+            "origin": "bottom-left",
+            "amount": 1
+          },
+          {
+            "target": "c_chico_n_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "c_perro_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "c_mujer_n",
+            "effect": "hide",
+            "trigger": "Así"
+          },
+          {
+            "target": "c_mujer",
+            "effect": "fade",
+            "trigger": "Así",
+            "dur": 0.15,
+            "sfx": "pop"
+          },
+          {
+            "target": "c_mujer_boca",
+            "effect": "grow",
+            "trigger": "Así",
+            "origin": "top",
+            "dur": 0.4
+          },
+          {
+            "target": "f1",
+            "effect": "draw",
+            "trigger": "si",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "c_chico_n",
+            "effect": "hide",
+            "trigger": "ahora"
+          },
+          {
+            "target": "c_chico",
+            "effect": "fade",
+            "trigger": "ahora",
+            "dur": 0.15,
+            "sfx": "pop"
+          },
+          {
+            "target": "c_chico_boca",
+            "effect": "grow",
+            "trigger": "ahora",
+            "origin": "top",
+            "dur": 0.4
+          },
+          {
+            "target": "f2",
+            "effect": "draw",
+            "trigger": "estás",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "c_perro_ojos",
+            "effect": "hide",
+            "trigger": "bostezando"
+          },
+          {
+            "target": "c_perro_ojos_cerrados",
+            "effect": "pop",
+            "trigger": "bostezando"
+          },
+          {
+            "target": "c_perro_boca",
+            "effect": "grow",
+            "trigger": "bostezando",
+            "origin": "top",
+            "dur": 0.5,
+            "sfx": "boing"
+          },
+          {
+            "target": "f3",
+            "effect": "draw",
+            "trigger": "tranquilo",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "c_abuela_n",
+            "effect": "hide",
+            "trigger": "puede"
+          },
+          {
+            "target": "c_abuela",
+            "effect": "fade",
+            "trigger": "puede",
+            "dur": 0.15,
+            "sfx": "pop"
+          },
+          {
+            "target": "c_abuela_boca",
+            "effect": "grow",
+            "trigger": "puede",
+            "origin": "top",
+            "dur": 0.4
+          },
+          {
+            "target": "f4",
+            "effect": "draw",
+            "trigger": "solo",
+            "dur": 0.4
+          },
+          {
+            "target": "c_corazon",
+            "effect": "pop",
+            "trigger": "empatía",
+            "sfx": "ding"
+          },
+          {
+            "target": "c_corazon",
+            "effect": "pulse",
+            "trigger": "empatía",
+            "amount": 1.4
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "tranquilo",
+        "pose": "surprise",
+        "note": "¡Aaaah! Me lo has pegado",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿A quién le contagias tú los bostezos?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿A quién le *contagias* tú los bostezos?",
+          "trigger": "A"
+        }
+      ]
+    }
+  ]
+}

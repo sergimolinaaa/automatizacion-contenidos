@@ -7,7 +7,7 @@ vox/vx.py (reloj, casa), nuevo-partido/np.py (bombilla), ikea/lib.py (caja de ma
 import math
 import random
 from ..base import (INK, LIME, CORAL, YEL, f, g, gt, T, MONO, DISP, shade, trazo, sombra, sombra_caja, brillo, brillo_arco,
-                    lg, rg, registrar_defs, degradado, Pieza, poly)
+                    lg, rg, registrar_defs, degradado, Pieza, poly, smooth)
 
 ICE_EDGE = "#2B6E9E"
 registrar_defs(
@@ -337,3 +337,129 @@ def tornillo(id_, x, y, s=1.0, ang=0):
     b += f'<ellipse cx="0" cy="0" rx="{f(16*s)}" ry="{f(8*s)}" fill="#E4E7EF" stroke="{INK}" stroke-width="4"/>'
     b += f'<path d="M {f(-8*s)} 0 L {f(8*s)} 0 M 0 {f(-4*s)} L 0 {f(4*s)}" stroke="{INK}" stroke-width="3"/>'
     return gt(id_, f"translate({f(x)} {f(y)}) rotate({f(ang)})", b)
+
+
+# ------------------------------------------------------------------ añadidos de bostezo (lote7-03)
+def sofa(id_, cx, base, w=560, asiento=150, col="#5B7FD6", respaldo=210):
+    """Sofá de frente. `asiento` = altura del cojín sobre el suelo (para persona sentada a escala e: 128*e).
+    Devuelve Pieza con .puntos['asiento'] = (cx, y del cojín) y ['izq'], ['der'] (centros de las dos plazas)."""
+    sy = base - asiento
+    o = sombra(cx, base + 2, w * 0.55, 18, 0.2)
+    # respaldo
+    o += f'<rect x="{f(cx-w*0.44)}" y="{f(sy-respaldo)}" width="{f(w*0.88)}" height="{f(respaldo+20)}" rx="34" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="7"/>'
+    o += "".join(f'<rect x="{f(cx-w*0.42 + i*w*0.42 + 6)}" y="{f(sy-respaldo+14)}" width="{f(w*0.42-12)}" height="{f(respaldo-40)}" rx="26" fill="{degradado(shade(col, 0.12), 0.2)}" stroke="{INK}" stroke-width="5"/>' for i in range(2))
+    o += brillo(f"M {f(cx-w*0.36)} {f(sy-respaldo+26)} L {f(cx-w*0.1)} {f(sy-respaldo+26)}", 6, 0.5)
+    # base y cojines del asiento
+    o += f'<rect x="{f(cx-w*0.46)}" y="{f(sy-8)}" width="{f(w*0.92)}" height="{f(asiento-22)}" rx="18" fill="{degradado(shade(col, -0.15), 0.2)}" stroke="{INK}" stroke-width="7"/>'
+    o += "".join(f'<rect x="{f(cx-w*0.42 + i*w*0.42 + 4)}" y="{f(sy-24)}" width="{f(w*0.42-8)}" height="46" rx="18" fill="{degradado(shade(col, 0.2), 0.2)}" stroke="{INK}" stroke-width="5"/>' for i in range(2))
+    # brazos
+    for k in (-1, 1):
+        x = cx + k * w * 0.46
+        o += f'<rect x="{f(x-40)}" y="{f(sy-90)}" width="80" height="{f(asiento+70)}" rx="30" fill="{degradado(col, 0.25, "h")}" stroke="{INK}" stroke-width="7"/>'
+        o += brillo(f"M {f(x-20)} {f(sy-74)} L {f(x-20)} {f(sy-10)}", 5, 0.45)
+    # patas
+    for k in (-1, 1):
+        o += f'<rect x="{f(cx+k*w*0.42-9)}" y="{f(base-16)}" width="18" height="16" rx="4" fill="#5A3A22" stroke="{INK}" stroke-width="4"/>'
+    return Pieza(g(id_, o), {"asiento": (cx, sy), "izq": (cx - w * 0.21, sy), "der": (cx + w * 0.21, sy)},
+                 (cx - w * 0.5 - 40, sy - respaldo, cx + w * 0.5 + 40, base))
+
+
+def banco(id_, cx, base, w=420, asiento=128, col="#C98B55", hierro="#3A4256"):
+    """Banco de parque de listones con patas de hierro. .puntos['asiento'] = (cx, y del asiento)."""
+    sy = base - asiento
+    o = sombra(cx, base + 2, w * 0.55, 16, 0.2)
+    for k in (-1, 1):  # patas y apoyabrazos de hierro
+        x = cx + k * w * 0.42
+        o += trazo(f"M {f(x)} {f(base)} L {f(x)} {f(sy-150)}", 12, hierro, 5)
+        o += trazo(f"M {f(x)} {f(sy-60)} Q {f(x + k*30)} {f(sy-64)} {f(x + k*36)} {f(sy-36)} L {f(x + k*30)} {f(base)}", 10, hierro, 5)
+    for i in range(3):  # respaldo
+        y = sy - 150 + i * 40
+        o += f'<rect x="{f(cx-w*0.5)}" y="{f(y)}" width="{f(w)}" height="28" rx="8" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="5"/>'
+    for i in range(2):  # asiento
+        y = sy - 6 + i * 22
+        o += f'<rect x="{f(cx-w*0.52)}" y="{f(y)}" width="{f(w*1.04)}" height="22" rx="7" fill="{degradado(shade(col, -0.08), 0.25)}" stroke="{INK}" stroke-width="5"/>'
+    o += brillo(f"M {f(cx-w*0.44)} {f(sy-142)} L {f(cx-w*0.1)} {f(sy-142)}", 4, 0.5)
+    return Pieza(g(id_, o), {"asiento": (cx, sy)}, (cx - w * 0.55, sy - 150, cx + w * 0.55, base))
+
+
+def cronometro(id_, cx, cy, r=80, col=CORAL, texto=None):
+    """Cronómetro con botón y corona. Aguja en id_+'_aguja' dibujada a las 12: gírala con
+    {"effect":"move","rotate":90,"origin":"bottom"} (o spin, origin bottom). Arco de tiempo en id_+'_arco' si texto=None."""
+    o = f'<circle cx="{f(cx+r*0.06)}" cy="{f(cy+r*0.08)}" r="{f(r*1.12)}" fill="{INK}" opacity="0.22"/>'
+    o += f'<rect x="{f(cx-r*0.16)}" y="{f(cy-r*1.42)}" width="{f(r*0.32)}" height="{f(r*0.36)}" rx="{f(r*0.06)}" fill="url(#metalG)" stroke="{INK}" stroke-width="5"/>'
+    o += f'<rect x="{f(cx-r*0.28)}" y="{f(cy-r*1.56)}" width="{f(r*0.56)}" height="{f(r*0.18)}" rx="{f(r*0.08)}" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="5"/>'
+    o += f'<g transform="rotate(40 {f(cx)} {f(cy)})"><rect x="{f(cx-r*0.12)}" y="{f(cy-r*1.3)}" width="{f(r*0.24)}" height="{f(r*0.26)}" rx="{f(r*0.05)}" fill="url(#metalG)" stroke="{INK}" stroke-width="4.5"/></g>'
+    o += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r*1.12)}" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="7"/>'
+    o += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="#FFFFFF" stroke="{INK}" stroke-width="5"/>'
+    for i in range(12):
+        a = math.radians(i * 30)
+        r1 = r * (0.74 if i % 3 == 0 else 0.84)
+        o += f'<path d="M {f(cx+r1*math.sin(a))} {f(cy-r1*math.cos(a))} L {f(cx+r*0.92*math.sin(a))} {f(cy-r*0.92*math.cos(a))}" stroke="{INK}" stroke-width="{6 if i % 3 == 0 else 3.5}" stroke-linecap="round"/>'
+    if texto:
+        o += T(cx, cy + r * 0.5, texto, r * 0.22, CORAL, font=DISP)
+    o += g(f"{id_}_aguja" if id_ else None, trazo(f"M {f(cx)} {f(cy)} L {f(cx)} {f(cy-r*0.8)}", r * 0.06, CORAL, 4))
+    o += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r*0.09)}" fill="{INK}"/>'
+    o += brillo_arco(cx, cy, r * 0.86, 200, 250, r * 0.05, 0.6)
+    return g(id_, o)
+
+
+def pizarra(id_, cx, cy, w=380, h=250, contenido="", col="#24463A", marco="#B07A45"):
+    """Pizarra verde con marco de madera, bandeja y tiza. `contenido` va encima (dibújalo en coordenadas finales,
+    trazos claros tipo tiza, p. ej. stroke '#F4F1E6')."""
+    x0, y0 = cx - w / 2, cy - h / 2
+    o = sombra_caja(x0, y0, w, h)
+    o += f'<rect x="{f(x0-14)}" y="{f(y0-14)}" width="{f(w+28)}" height="{f(h+28)}" rx="12" fill="{degradado(marco, 0.25)}" stroke="{INK}" stroke-width="7"/>'
+    registrar_defs(lg("pizG", [(0, shade(col, 0.15)), (1, shade(col, -0.15))], 0, 0, 1, 1))
+    o += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="6" fill="url(#pizG)" stroke="{INK}" stroke-width="5"/>'
+    o += f'<path d="M {f(x0+20)} {f(y0+h*0.75)} Q {f(cx)} {f(y0+h*0.68)} {f(x0+w-30)} {f(y0+h*0.8)}" fill="none" stroke="#FFFFFF" stroke-width="10" opacity="0.06" stroke-linecap="round"/>'
+    o += f'<rect x="{f(x0-6)}" y="{f(y0+h+10)}" width="{f(w+12)}" height="16" rx="5" fill="{shade(marco, -0.2)}" stroke="{INK}" stroke-width="5"/>'
+    o += f'<rect x="{f(x0+w*0.7)}" y="{f(y0+h+2)}" width="40" height="10" rx="4" fill="#FFFFFF" stroke="{INK}" stroke-width="3"/>'
+    return g(id_, o + contenido)
+
+
+def _suela(cx, cy, s, espejo=False):
+    k = -1 if espejo else 1
+    p = [(0, -95), (26, -86), (36, -50), (30, -6), (26, 40), (28, 74), (14, 96), (-12, 96), (-26, 72), (-24, 30), (-30, -10), (-34, -56), (-22, -88)]
+    p = [(cx + k * x * s, cy + y * s) for x, y in p]
+    return smooth(p, True)
+
+
+def zapato_arriba(id_, cx, cy, s=1.0, col=CORAL, rot_=0, espejo=False):
+    """Zapatilla vista desde arriba (puntera hacia arriba), unos 70×190 px a s=1. espejo=True: pie izquierdo."""
+    d = _suela(cx, cy, s, espejo)
+    o = f'<path d="{d}" fill="#FFFFFF" stroke="{INK}" stroke-width="7"/>'
+    d2 = _suela(cx, cy + 4 * s, s * 0.86, espejo)
+    o += f'<path d="{d2}" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="5"/>'
+    o += f'<ellipse cx="{f(cx)}" cy="{f(cy+46*s)}" rx="{f(17*s)}" ry="{f(28*s)}" fill="{shade(col, -0.45)}" stroke="{INK}" stroke-width="4"/>'
+    o += "".join(f'<path d="M {f(cx-14*s)} {f(cy+y*s)} L {f(cx+14*s)} {f(cy+(y+8)*s)} M {f(cx+14*s)} {f(cy+y*s)} L {f(cx-14*s)} {f(cy+(y+8)*s)}" stroke="#FFFFFF" stroke-width="{f(3.5*s)}" stroke-linecap="round"/>' for y in (-30, -12, 6))
+    o += brillo(f"M {f(cx-14*s)} {f(cy-70*s)} Q {f(cx)} {f(cy-82*s)} {f(cx+12*s)} {f(cy-72*s)}", 4, 0.7)
+    tr = f' transform="rotate({f(rot_)} {f(cx)} {f(cy)})"' if rot_ else ""
+    return g(id_, f"<g{tr}>{o}</g>")
+
+
+def huella(id_, cx, cy, s=1.0, col="#7C879C", espejo=False):
+    """Huella (contorno discontinuo de una suela) donde encaja zapato_arriba(cx, cy, s)."""
+    d = _suela(cx, cy, s * 1.06, espejo)
+    return g(id_, f'<path d="{d}" fill="{col}" fill-opacity="0.18" stroke="{col}" stroke-width="6" stroke-dasharray="14 10" stroke-linecap="round"/>')
+
+
+def portapapeles(id_, cx, cy, w=200, h=260, filas=4, marcadas=(0, 1, 2), col="#B07A45", titulo=None):
+    """Portapapeles con hoja y casillas; las marcadas llevan ✓ en id_+'_c<i>' (para pop en cascada)."""
+    x0, y0 = cx - w / 2, cy - h / 2
+    o = sombra_caja(x0, y0, w, h, 14)
+    o += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="14" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="7"/>'
+    o += f'<rect x="{f(x0+w*0.08)}" y="{f(y0+h*0.1)}" width="{f(w*0.84)}" height="{f(h*0.84)}" rx="4" fill="url(#papelG)" stroke="{INK}" stroke-width="4"/>'
+    o += f'<rect x="{f(cx-w*0.22)}" y="{f(y0-12)}" width="{f(w*0.44)}" height="{f(h*0.12)}" rx="8" fill="url(#metalG)" stroke="{INK}" stroke-width="5"/>'
+    top = y0 + h * 0.2
+    if titulo:
+        o += T(cx, top + 6, titulo, w * 0.11, INK)
+        top += h * 0.1
+    step = (y0 + h * 0.88 - top) / filas
+    for i in range(filas):
+        y = top + step * (i + 0.5)
+        bx = x0 + w * 0.16
+        o += f'<rect x="{f(bx)}" y="{f(y-step*0.25)}" width="{f(step*0.5)}" height="{f(step*0.5)}" rx="4" fill="#FFFFFF" stroke="{INK}" stroke-width="3.5"/>'
+        o += f'<path d="M {f(bx+step*0.7)} {f(y)} L {f(x0+w*0.84)} {f(y)}" stroke="#AEB6C6" stroke-width="5" stroke-linecap="round"/>'
+        if i in marcadas:
+            o += g(f"{id_}_c{i}", f'<path d="M {f(bx+step*0.06)} {f(y-step*0.02)} L {f(bx+step*0.22)} {f(y+step*0.18)} L {f(bx+step*0.6)} {f(y-step*0.36)}" fill="none" stroke="#1FA35A" stroke-width="{f(max(4, step*0.12))}" stroke-linecap="round" stroke-linejoin="round"/>')
+    return g(id_, o)

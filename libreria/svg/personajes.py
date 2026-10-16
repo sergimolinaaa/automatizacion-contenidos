@@ -25,10 +25,10 @@ Variantes:
     pelo: corto, largo, rizado, coleta, mono (moño), calvo, rapado, None
     pelo_color: castano, negro, rubio, pelirrojo, canoso, blanco o un hex
     ropa: camiseta, jersey, camisa, chaqueta, vestido, abrigo
-    accesorios: gafas, gorro, bufanda, pendientes, baston, barba, bigote
-    expresion: neutral, sorpresa, risa, duda, frio, sueno, triste, enfado
+    accesorios: gafas, gafas_sol, gorro, bufanda, pendientes, baston, barba, bigote
+    expresion: neutral, sorpresa, risa, duda, frio, sueno, triste, enfado, bostezo (ojos apretados, bocaza, lágrima {id}_lagrima)
     pose: de_pie, sentado, busto
-    brazos (izq, der): abajo, cintura, arriba, saluda, senala, barbilla, coge, cruzados (los dos: abrazarse de frío)
+    brazos (izq, der): abajo, cintura, arriba, saluda, senala, barbilla, boca (tapa el bostezo), coge, cruzados (los dos: abrazarse de frío)
     mira: -1 izquierda, 0 frente, 1 derecha (pupilas)
 Sale de: escalofrios/persona.py (gorro de lana, bufanda, cara de frío, castañeteo), lote4-01-bebe-carrito/dib.py
 (bebé y mamá: degradados de piel y pelo, mejillas, brillos) y nuevo-partido/np.py (pictograma).
@@ -65,7 +65,7 @@ def _col_pelo(c):
     return PELOS.get(c, c) if c else None
 
 
-def _ik(S, H, a, b, k):
+def _ik(S, H, a, b, k, abajo=False):
     """Codo de un brazo de dos tramos (a, b) del hombro S a la mano H; el codo sale hacia fuera (k = -1 izq, 1 der)."""
     dx, dy = H[0] - S[0], H[1] - S[1]
     d = math.hypot(dx, dy)
@@ -75,7 +75,7 @@ def _ik(S, H, a, b, k):
     A = math.acos(ca)
     base = math.atan2(dy, dx)
     cands = [(S[0] + a * math.cos(base + s * A), S[1] + a * math.sin(base + s * A)) for s in (1, -1)]
-    E = max(cands, key=lambda p: k * p[0] + 0.3 * p[1])  # hacia fuera y algo hacia abajo
+    E = max(cands, key=(lambda p: p[1] + 0.3 * k * p[0]) if abajo else (lambda p: k * p[0] + 0.3 * p[1]))  # hacia fuera y algo hacia abajo
     return E, H
 
 
@@ -94,6 +94,9 @@ def _ojos(e, rx, ry, hy, exp, mira, tinta=INK):
         elif exp == "frio":
             s = -k  # > <
             o += f'<path d="M {f(x-s*rx*0.14)} {f(ey-ry*0.09)} L {f(x+s*rx*0.12)} {f(ey)} L {f(x-s*rx*0.14)} {f(ey+ry*0.09)}" fill="none" stroke="{tinta}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>'
+        elif exp == "bostezo":  # ojos apretados (arco hacia arriba) con arruguitas en el rabillo
+            o += f'<path d="M {f(x-rx*0.16)} {f(ey+ry*0.03)} Q {f(x)} {f(ey-ry*0.09)} {f(x+rx*0.16)} {f(ey+ry*0.03)}" fill="none" stroke="{tinta}" stroke-width="6" stroke-linecap="round"/>'
+            o += "".join(f'<path d="M {f(x+k*rx*0.2)} {f(ey+dy_)} l {f(k*rx*0.09)} {f(dy_*0.6)}" stroke="{tinta}" stroke-width="3.2" stroke-linecap="round" opacity="0.75"/>' for dy_ in (-ry*0.06, ry*0.05))
         elif exp == "sueno":
             o += f'<path d="M {f(x-rx*0.15)} {f(ey)} Q {f(x)} {f(ey+ry*0.1)} {f(x+rx*0.15)} {f(ey)}" fill="none" stroke="{tinta}" stroke-width="5.5" stroke-linecap="round"/>'
             o += f'<path d="M {f(x-rx*0.17)} {f(ey-ry*0.05)} L {f(x+rx*0.17)} {f(ey-ry*0.05)}" stroke="{tinta}" stroke-width="3" stroke-linecap="round" opacity="0.5"/>'
@@ -118,6 +121,8 @@ def _cejas(rx, ry, hy, exp, col):
         elif exp == "duda":
             d = (f"M {f(x0)} {f(by-ry*0.14)} Q {f((x0+x1)/2)} {f(by-ry*0.26)} {f(x1)} {f(by-ry*0.12)}" if k < 0
                  else f"M {f(x0)} {f(by+ry*0.02)} L {f(x1)} {f(by+ry*0.02)}")
+        elif exp == "bostezo":  # muy subidas, la parte de dentro más alta
+            d = f"M {f(x0)} {f(by-ry*0.2)} Q {f((x0+x1)/2)} {f(by-ry*0.22)} {f(x1)} {f(by-ry*0.08)}"
         elif exp == "sueno":
             d = f"M {f(x0)} {f(by+ry*0.05)} Q {f((x0+x1)/2)} {f(by)} {f(x1)} {f(by+ry*0.06)}"
         else:
@@ -142,6 +147,15 @@ def _boca(rx, ry, hy, exp):
         return (f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(ww)}" height="{f(hh)}" rx="{f(hh*0.3)}" fill="#FFFFFF" stroke="{INK}" stroke-width="4.5"/>'
                 f'<line x1="{f(x0)}" y1="{f(y0+hh/2)}" x2="{f(x0+ww)}" y2="{f(y0+hh/2)}" stroke="{INK}" stroke-width="3"/>'
                 + "".join(f'<line x1="{f(x0+ww*t)}" y1="{f(y0+2)}" x2="{f(x0+ww*t)}" y2="{f(y0+hh-2)}" stroke="{INK}" stroke-width="2.5"/>' for t in (0.25, 0.5, 0.75)))
+    if exp == "bostezo":  # bocaza ovalada: paladar oscuro, dientes de arriba, lengua y campanilla
+        cy_, bw, bh = hy + ry * 0.6, rx * 0.34, ry * 0.31
+        oval = f"M 0 {f(cy_-bh)} C {f(bw*0.75)} {f(cy_-bh)}, {f(bw)} {f(cy_-bh*0.45)}, {f(bw)} {f(cy_+bh*0.1)} C {f(bw)} {f(cy_+bh*0.75)}, {f(bw*0.6)} {f(cy_+bh)}, 0 {f(cy_+bh)} C {f(-bw*0.6)} {f(cy_+bh)}, {f(-bw)} {f(cy_+bh*0.75)}, {f(-bw)} {f(cy_+bh*0.1)} C {f(-bw)} {f(cy_-bh*0.45)}, {f(-bw*0.75)} {f(cy_-bh)}, 0 {f(cy_-bh)} Z"
+        return (f'<path d="{oval}" fill="#5A1420" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>'
+                f'<path d="M {f(-bw*0.62)} {f(cy_-bh*0.78)} Q 0 {f(cy_-bh*1.02)} {f(bw*0.62)} {f(cy_-bh*0.78)} L {f(bw*0.5)} {f(cy_-bh*0.6)} Q 0 {f(cy_-bh*0.78)} {f(-bw*0.5)} {f(cy_-bh*0.6)} Z" fill="#FFFFFF"/>'
+                f'<path d="M 0 {f(cy_-bh*0.72)} q {f(-bw*0.1)} {f(bh*0.28)} 0 {f(bh*0.34)} q {f(bw*0.1)} {f(-bh*0.06)} 0 {f(-bh*0.34)}" fill="#C2405A"/>'
+                f'<path d="M {f(-bw*0.78)} {f(cy_+bh*0.62)} C {f(-bw*0.5)} {f(cy_+bh*0.12)}, {f(bw*0.5)} {f(cy_+bh*0.12)}, {f(bw*0.78)} {f(cy_+bh*0.62)} C {f(bw*0.45)} {f(cy_+bh*1.0)}, {f(-bw*0.45)} {f(cy_+bh*1.0)}, {f(-bw*0.78)} {f(cy_+bh*0.62)} Z" fill="#FF7F95"/>'
+                f'<path d="M 0 {f(cy_+bh*0.4)} L 0 {f(cy_+bh*0.75)}" stroke="#D9566E" stroke-width="3" stroke-linecap="round"/>'
+                f'<path d="{oval}" fill="none" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>')
     if exp == "sueno":
         return f'<ellipse cx="{f(w*0.1)}" cy="{f(my+ry*0.03)}" rx="{f(rx*0.1)}" ry="{f(ry*0.12)}" fill="#7A1F2B" stroke="{INK}" stroke-width="4"/>'
     if exp == "duda":
@@ -249,6 +263,10 @@ def cabeza(id_, rx, ry, hy, piel="media", pelo="corto", pelo_color="castano", ex
     if pcol and pelo_color in ("canoso", "blanco"):
         ceja_col = "#9AA0AA"
     o += g(f"{id_}_cejas", _cejas(rx, ry, hy, exp, ceja_col))
+    if exp == "bostezo":  # lagrimilla en el rabillo del ojo (grupo animable)
+        lx, ly = rx * 0.58, hy + ry * 0.12
+        o += g(f"{id_}_lagrima", f'<path d="M {f(lx)} {f(ly-ry*0.12)} C {f(lx+rx*0.1)} {f(ly)}, {f(lx+rx*0.08)} {f(ly+ry*0.09)}, {f(lx)} {f(ly+ry*0.09)} C {f(lx-rx*0.08)} {f(ly+ry*0.09)}, {f(lx-rx*0.1)} {f(ly)}, {f(lx)} {f(ly-ry*0.12)} Z" fill="#8FD3FF" stroke="{INK}" stroke-width="3.5"/>'
+               f'<circle cx="{f(lx-rx*0.025)}" cy="{f(ly+ry*0.02)}" r="{f(rx*0.025)}" fill="#FFFFFF"/>')
     if "barba" in accesorios:
         bc = degradado(pcol or "#5A3A22", 0.2)
         d = (f"M {f(-rx*0.98)} {f(hy+ry*0.05)} C {f(-rx*0.95)} {f(hy+ry*0.9)}, {f(-rx*0.4)} {f(hy+ry*1.22)}, 0 {f(hy+ry*1.22)} "
@@ -269,17 +287,19 @@ def cabeza(id_, rx, ry, hy, piel="media", pelo="corto", pelo_color="castano", ex
         o += _pelo_delante(pelo, rx, ry, hy, pcol)
     elif pelo == "largo" or pelo == "rizado":
         o += _pelo_delante(pelo, rx, ry, hy, pcol)
-    if "gafas" in accesorios:
+    if "gafas" in accesorios or "gafas_sol" in accesorios:
+        sol = "gafas_sol" in accesorios
         ey = hy - ry * 0.02
         r = rx * 0.27
         gs = ""
         for k in (-1, 1):
             cx = k * rx * 0.36
-            gs += f'<circle cx="{f(cx)}" cy="{f(ey)}" r="{f(r)}" fill="#DDF3FF" fill-opacity="0.25" stroke="{INK}" stroke-width="5.5"/>'
+            gs += (f'<circle cx="{f(cx)}" cy="{f(ey)}" r="{f(r)}" fill="#DDF3FF" fill-opacity="0.25" stroke="{INK}" stroke-width="5.5"/>' if not sol else
+                   f'<path d="M {f(cx-r*1.1)} {f(ey-r*0.7)} L {f(cx+r*1.1)} {f(ey-r*0.7)} Q {f(cx+r*1.1)} {f(ey+r*0.95)} {f(cx)} {f(ey+r*0.95)} Q {f(cx-r*1.1)} {f(ey+r*0.95)} {f(cx-r*1.1)} {f(ey-r*0.7)} Z" fill="url(#gafasSol)" stroke="{INK}" stroke-width="5.5" stroke-linejoin="round"/>')
             gs += f'<path d="M {f(cx-r*0.55)} {f(ey-r*0.25)} Q {f(cx-r*0.35)} {f(ey-r*0.62)} {f(cx)} {f(ey-r*0.68)}" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.9"/>'
             gs += f'<path d="M {f(k*(rx*0.36+r))} {f(ey-r*0.2)} L {f(k*rx*0.98)} {f(ey-r*0.1)}" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>'
         gs += f'<path d="M {f(-rx*0.36+r)} {f(ey-r*0.1)} Q 0 {f(ey-r*0.45)} {f(rx*0.36-r)} {f(ey-r*0.1)}" fill="none" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>'
-        o += g(f"{id_}_acc_gafas", gs)
+        o += g(f"{id_}_acc_{'gafas_sol' if sol else 'gafas'}", gs)
     if "gorro" in accesorios:  # gorro de lana con pompón (escalofrios/persona.py)
         top = hy - ry * 1.18
         d = f"M {f(-rx*1.02)} {f(hy-ry*0.32)} C {f(-rx*1.05)} {f(top-ry*0.1)}, {f(rx*1.05)} {f(top-ry*0.1)}, {f(rx*1.02)} {f(hy-ry*0.32)} Z"
@@ -294,7 +314,7 @@ def cabeza(id_, rx, ry, hy, piel="media", pelo="corto", pelo_color="castano", ex
     return o
 
 
-registrar_defs(lg("lanaR", [(0, "#F0645A"), (1, "#A82A22")]))
+registrar_defs(lg("lanaR", [(0, "#F0645A"), (1, "#A82A22")]), lg("gafasSol", [(0, "#4A5470"), (1, "#0F1220")]))
 
 
 # ------------------------------------------------------------------ cuerpo
@@ -485,6 +505,8 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
             return (k * (sw + lu + lf - 16), sy + 8), "senala"
         if pose_b == "barbilla":
             return (k * rx * 0.25, hy + ry * 1.12), "puno"
+        if pose_b == "boca":  # mano tapándose el bostezo (al lado de la boca)
+            return (k * rx * 0.66, hy + ry * 0.88), "abierta"
         if pose_b == "coge":
             return (k * (sw + 6), e["cy"] + sdy - 70), "puno"
         if pose_b == "cruzados":
@@ -503,12 +525,12 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
             E = (k * (sw + 4), sy + (e["cy"] - e["sy"]) * 0.55)
             Hm = Ht
         else:
-            E, Hm = _ik(S, Ht, lu, lf, k)
+            E, Hm = _ik(S, Ht, lu, lf, k, abajo=pb_ == "boca")
         arms[lado] = (S, E, Hm, mt, pb_)
         puntos[f"mano_{lado}"] = Hm
         puntos[f"hombro_{lado}"] = S
     # orden: brazos detrás del cuerpo si están abajo/cintura/arriba/saluda/señala; delante si cruzan el pecho
-    front = {l for l, a in arms.items() if a[4] in ("barbilla", "cruzados", "coge")}
+    front = {l for l, a in arms.items() if a[4] in ("barbilla", "cruzados", "coge", "boca")}
     cuerpo = []
     for lado in ("izq", "der"):
         if lado not in front:
@@ -532,13 +554,17 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
     o.append("".join(cuerpo))
     o.append(cuerpo_svg)
     for lado in ("izq", "der"):
-        if lado in front:
+        if lado in front and arms[lado][4] != "boca":
             S, E, Hm, mt, _ = arms[lado]
             o.append(_brazo(id_, lado, S, Hm, E, aw, piel, ropa, ropa_color, mt))
     if "baston" in accesorios and not busto:
         Hm = arms["der"][2]
         o.append(g(f"{id_}_acc_baston", _baston(Hm, aw)))
     o.append(g(f"{id_}_cabeza", cabeza(id_, rx, ry, hy, piel, pelo, pelo_color, expresion, mira, accesorios, edad)))
+    for lado in ("izq", "der"):  # la mano que tapa la boca va por delante de la cara
+        if arms[lado][4] == "boca":
+            S, E, Hm, mt, _ = arms[lado]
+            o.append(_brazo(id_, lado, S, Hm, E, aw, piel, ropa, ropa_color, mt))
     inner = "".join(o)
     cut = None
     if busto:

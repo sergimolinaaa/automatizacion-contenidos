@@ -14,7 +14,7 @@ sys.path.insert(0, ROOT)
 from libreria.svg import base as B  # noqa: E402
 from libreria.svg.base import *  # noqa: E402,F401
 from libreria.svg.personajes import persona, pictograma, multitud  # noqa: E402
-from libreria.svg.objetos import politica as P, casa as C, cuerpo as CU, escenarios as E  # noqa: E402
+from libreria.svg.objetos import politica as P, casa as C, cuerpo as CU, escenarios as E, animales as AN  # noqa: E402
 
 CHROME = "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell"
 COLS = 6
@@ -128,6 +128,20 @@ def celdas():
     s = CU.antebrazo("ab", (-40, 520), (1040, 320), 110, gallina=True)
     s += f'<g opacity="1">{lupa(None, 700, 180, 120, contenido=CU.piel_lupa(700, 180, 120))}</g>'
     add("antebrazo con vello + piel de gallina · piel_lupa", 1000, 700, s)
+
+    # ---------------- bostezo (lote7-03): expresión bostezo, mano a la boca, gafas de sol, perro, muebles
+    s = persona("pb1", 190, 660, 0.95, "adulto", "clara", "largo", "castano", "chaqueta", "#8A93A6", expresion="bostezo", brazos=("boca", "abajo"))
+    s += persona("pb2", 500, 660, 0.95, "joven", "morena", "corto", "negro", "jersey", "#2FA36B", expresion="bostezo", brazos=("arriba", "arriba"))
+    s += persona("pb3", 810, 660, 0.95, "adulto", "media", "corto", "negro", "abrigo", "#C9A86A", accesorios=("gafas_sol", "bigote"))
+    add("persona: expresion='bostezo' · brazos 'boca' · gafas_sol", 1000, 700, s)
+    s = AN.perro("pe", 250, 660, 1.2) + "".join(AN.icono_perro(None, 560 + 80 * (i % 5), 140 + 80 * (i // 5), 54, "#FFC83D" if i < 7 else "#C9CED8") for i in range(15))
+    s += C.portapapeles("pp", 760, 520, 170, 220) + bandera("bd", 560, 470, 130, 86)
+    add("perro (bostezo) · icono_perro · portapapeles · bandera", 1000, 700, s)
+    s = C.sofa("so", 260, 640, 440, 120, respaldo=170) + C.banco("bn", 740, 640, 380, 120)
+    s += C.cronometro("cr", 260, 150, 70) + C.pizarra("pz", 740, 170, 260, 150)
+    add("sofa · banco · cronometro · pizarra", 1000, 700, s)
+    s = C.huella("hu", 300, 350, 1.5, espejo=True) + C.zapato_arriba("za", 520, 350, 1.5, CORAL) + C.zapato_arriba("zb", 720, 350, 1.5, TEAL, espejo=True)
+    add("huella · zapato_arriba", 1000, 700, s)
 
     # ---------------- escenarios (miniaturas de 1080x1920)
     for nombre, fondo in (("habitacion()", E.habitacion()), ("cocina()", E.cocina()), ("oficina()", E.oficina()),

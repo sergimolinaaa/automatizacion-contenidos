@@ -15,7 +15,7 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-10-17 14:00 | ¿Por qué cruje el hielo al echarle bebida? | content/lote7-01-hielo-cruje | sí | sí | pendiente | no | previews/lote7-01-hielo-cruje-con-voz.mp4 |
 | 2026-10-18 14:00 | RESPUESTA A COMENTARIO |  | no | no | no | no | |
 | 2026-10-19 14:00 | ¿Qué pasa si votas con la papeleta rota o escrita? |  | no | no | no | no | |
-| 2026-10-20 14:00 | ¿Por qué bostezar se contagia? |  | no | no | no | no | |
+| 2026-10-20 14:00 | ¿Por qué bostezar se contagia? (piloto sistema nuevo) | content/lote7-03-bostezo | sí | sí | pendiente | no | previews/lote7-03-bostezo-con-voz.mp4 |
 | 2026-10-21 14:00 | ¿Por qué la leche está al fondo del súper? |  | no | no | no | no | |
 | 2026-10-22 14:00 | ¿Por qué te pica una picadura y rascarte lo empeora? |  | no | no | no | no | |
 | 2026-10-23 14:00 | ¿Por qué entras en una habitación y olvidas a qué ibas? |  | no | no | no | no | |
@@ -33,3 +33,11 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-11-04 14:00 | ¿Por qué no se cae el agua al girar un cubo? |  | no | no | no | no | |
 | 2026-11-28 14:00 | Noche electoral: cómo se cuentan los votos en tu mesa |  | no | no | no | no | |
 | 2026-10-16 21:00 | ¿Funciona la regla de los cinco segundos? (extra) | content/lote7-02-cinco-segundos | sí | sí | pendiente | no | previews/lote7-02-cinco-segundos-con-voz.mp4 |
+
+## Coste por fase (tokens de subagente, aprox.)
+| Fecha | Fase | Coste |
+|---|---|---|
+| 2026-10-16 | Librería (una vez) | 360.000 |
+| 2026-10-16 | Guiones semana 20-24 oct (5 vídeos) | 100.000 |
+| 2026-10-16 | Montaje piloto bostezo (incluye 10 piezas nuevas de librería) | 225.000 + correcciones |
+| referencia | Vídeo con sistema antiguo | 150.000-215.000 |
