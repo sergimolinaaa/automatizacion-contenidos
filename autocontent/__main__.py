@@ -4,6 +4,7 @@
   python -m autocontent diario             # generar + render
   python -m autocontent canales            # lista los canales de Buffer
   python -m autocontent programar [-n N]   # programa en Buffer los vídeos pendientes, uno cada 2 horas
+  python -m autocontent mover SLUG ISO     # cambia la hora de un vídeo ya programado
 """
 import argparse
 from pathlib import Path
@@ -23,14 +24,19 @@ def main() -> None:
     sub.add_parser("canales")
     pr = sub.add_parser("programar")
     pr.add_argument("-n", type=int, default=None, help="máximo de vídeos a programar")
+    mv = sub.add_parser("mover")
+    mv.add_argument("slug")
+    mv.add_argument("cuando", help="nueva hora ISO, p. ej. 2026-10-17T21:00:00+02:00")
     a = ap.parse_args()
 
-    if a.cmd in ("canales", "programar"):
+    if a.cmd in ("canales", "programar", "mover"):
         from . import publish
 
         if a.cmd == "canales":
             for c in publish.channels():
                 print(f"{c['service']:<10} {c['name']:<30} {c['id']}")
+        elif a.cmd == "mover":
+            publish.move(a.slug, a.cuando)
         else:
             publish.schedule_all(a.n)
         return

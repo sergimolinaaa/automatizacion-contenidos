@@ -12,6 +12,9 @@ on:
       n:
         description: "Máximo de vídeos a programar (vacío = todos)"
         required: false
+      mover:
+        description: "Mover un vídeo ya programado: «slug ISO» (p. ej. lote7-02-cinco-segundos 2026-10-17T21:00:00+02:00)"
+        required: false
   workflow_run:
     workflows: ["Render de ejemplo", "Vídeo diario"]
     types: [completed]
@@ -62,6 +65,10 @@ jobs:
         run: pip install requests PyYAML
       - if: env.SKIP != '1'
         run: python -m autocontent canales
+      - if: env.SKIP != '1' && github.event.inputs.mover
+        env:
+          MOVER: ${{ github.event.inputs.mover }}
+        run: python -m autocontent mover $MOVER
       - if: env.SKIP != '1'
         run: python -m autocontent programar ${{ github.event.inputs.n && format('-n {0}', github.event.inputs.n) || '' }}
       - name: Guardar el estado

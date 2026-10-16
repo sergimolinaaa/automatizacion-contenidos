@@ -304,3 +304,64 @@ def complete_missing(state: dict, chans: list[dict], now: datetime) -> None:
         info_p = PREVIEWS / f"{entry['slug']}-con-voz.json"
         thumb = json.loads(info_p.read_text(encoding="utf-8")).get("cover_offset_ms", 0) if info_p.exists() else 0
         fill_channels(state, entry, script, chans, thumb)
+
+
+# ------------------------------------------------------------------ mover una publicación ya programada
+
+def _mutation(names: tuple[str, ...]) -> tuple[str, dict] | None:
+    """Busca en el esquema de Buffer la primera mutación de la lista y devuelve (nombre, argumentos)."""
+    q = """query { __schema { mutationType { fields { name args { name type { kind name ofType { kind name ofType { name } } } } } } } }"""
+    fields = {f["name"]: f for f in gql(q)["__schema"]["mutationType"]["fields"]}
+    print("Mutaciones de Buffer con «post»:", ", ".join(n for n in fields if "post" in n.lower()))
+    for n in names:
+        if n in fields:
+            return n, fields[n]
+    return None
+
+
+def _type_name(t: dict) -> str:
+    while t.get("ofType"):
+        t = t["ofType"]
+    return t["name"]
+
+
+def delete_post(post_id: str) -> None:
+    found = _mutation(("deletePost", "removePost"))
+    if not found:
+        raise RuntimeError("Buffer no tiene mutación para borrar publicaciones")
+    name, field = found
+    arg = field["args"][0]
+    if arg["name"] == "input":
+        tname = _type_name(arg["type"])
+        inner = gql('query($n: String!) { __type(name: $n) { inputFields { name } } }', {"n": tname})["__type"]["inputFields"]
+        key = next(f["name"] for f in inner if f["name"] in ("id", "postId"))
+        value, decl = {key: post_id}, f"$v: {tname}!"
+    else:
+        value, decl = post_id, f"$v: {_type_name(arg['type'])}!"
+    res = gql(f"mutation({decl}) {{ {name}({arg['name']}: $v) {{ __typename ... on MutationError {{ message }} }} }}", {"v": value})
+    out = res.get(name) or {}
+    if out.get("message"):
+        raise RuntimeError(f"Buffer no borró {post_id}: {out['message']}")
+
+
+def move(slug: str, when: str) -> None:
+    """Cambia la hora de un vídeo ya programado: borra sus publicaciones y las vuelve a crear a la nueva hora.
+    Si algo falla a medias, el estado queda guardado y «programar» completa los canales que falten."""
+    state = load_state()
+    entry = next(p for p in state["posts"] if p["slug"] == slug)
+    due = datetime.fromisoformat(when).astimezone(timezone.utc)
+    if due < datetime.now(timezone.utc) + timedelta(minutes=30):
+        raise SystemExit("La nueva hora debe ser al menos dentro de 30 minutos")
+    print(f"{slug}: {entry['due']} → {due.isoformat()}")
+    for service, pid in list(entry["posts"].items()):
+        delete_post(pid)
+        del entry["posts"][service]
+        save_state(state)
+        print(f"  borrada en {service}")
+    entry["due"] = due.isoformat()
+    save_state(state)
+    folder = next(p for p in [ROOT / "content" / slug, ROOT / "examples" / slug] if (p / "guion.json").exists())
+    script = json.loads((folder / "guion.json").read_text(encoding="utf-8"))
+    info_p = PREVIEWS / f"{slug}-con-voz.json"
+    thumb = json.loads(info_p.read_text(encoding="utf-8")).get("cover_offset_ms", 0) if info_p.exists() else 0
+    fill_channels(state, entry, script, channels(), thumb)
