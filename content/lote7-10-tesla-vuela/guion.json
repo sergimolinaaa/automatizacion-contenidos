@@ -166,7 +166,7 @@
       "chapter": 1,
       "number": "1",
       "headline": "Rampa, *vuelta* y al suelo",
-      "narration": "En Texas, el Roadster subió una rampa, dio una vuelta en el aire y cayó de ruedas.",
+      "narration": "El Roadster subió una rampa, dio una vuelta en el aire y cayó de ruedas.",
       "illustration": {
         "svg_file": "gancho_full.svg",
         "layout": "full",
@@ -218,7 +218,7 @@
           {
             "target": "tfecha",
             "effect": "pop",
-            "trigger": "Texas",
+            "trigger": "Roadster",
             "sfx": "pop"
           },
           {
@@ -315,7 +315,7 @@
       "chapter": 1,
       "number": "1",
       "headline": "¿Coches *voladores*?",
-      "narration": "Musk lo resumió: «los coches voladores son reales».",
+      "narration": "Musk dijo: «los coches voladores son reales».",
       "illustration": {
         "svg_file": "gancho_full.svg",
         "layout": "full",
@@ -388,7 +388,7 @@
           {
             "target": "tmusk",
             "effect": "pop",
-            "trigger": "resumió",
+            "trigger": "dijo",
             "sfx": "pop"
           },
           {
@@ -451,7 +451,7 @@
       "chapter": 2,
       "number": "2",
       "headline": "Sin alas: un *salto*",
-      "narration": "Pero no tiene alas: es un salto con propulsores.",
+      "narration": "No tiene alas: es un salto con propulsores.",
       "illustration": {
         "svg_file": "salto_free.svg",
         "layout": "free",
@@ -559,7 +559,7 @@
       "chapter": 2,
       "number": "2",
       "headline": "Aire *abajo*, coche *arriba*",
-      "narration": "Lleva depósitos de aire comprimido. Al soltarlo, sale hacia abajo y empuja el coche hacia arriba.",
+      "narration": "Lleva depósitos de aire comprimido: al soltarlo, sale hacia abajo y empuja hacia arriba.",
       "illustration": {
         "svg_file": "corte_free.svg",
         "layout": "free",
@@ -675,7 +675,7 @@
       "chapter": 3,
       "number": "3",
       "headline": "Acción y *reacción*",
-      "narration": "Como un globo que se escapa: el aire va hacia atrás y el globo sale disparado. O un extintor, que te empuja.",
+      "narration": "Como un globo que se escapa y sale disparado. O un extintor, que empuja.",
       "illustration": {
         "svg_file": "globo_full.svg",
         "layout": "full",
@@ -740,7 +740,7 @@
           {
             "target": "taccion",
             "effect": "pop",
-            "trigger": "aire",
+            "trigger": "escapa",
             "sfx": "pop"
           },
           {
@@ -804,7 +804,7 @@
       "chapter": 3,
       "number": "3",
       "headline": "Depósito *vacío*",
-      "narration": "¿Y por qué dura tan poco? El depósito se vacía en segundos, y sin empuje, el coche baja.",
+      "narration": "¿Por qué dura tan poco? Se vacía en segundos y, sin empuje, baja.",
       "illustration": {
         "svg_file": "corte_free.svg",
         "layout": "free",
@@ -937,7 +937,7 @@
       "chapter": 4,
       "number": "+",
       "headline": "0 a 97 en *0,81 s*",
-      "narration": "Según Tesla, va de 0 a 97 kilómetros por hora en 0,81 segundos: los propulsores dan un empujón extra, y con menos peso, cunde más.",
+      "narration": "Según Tesla, llega a casi cien kilómetros por hora en menos de un segundo: empujón extra de los propulsores y poco peso.",
       "illustration": {
         "svg_file": "acelera_free.svg",
         "layout": "free",
@@ -954,24 +954,24 @@
           {
             "target": "vel",
             "effect": "pop",
-            "trigger": "va"
+            "trigger": "llega"
           },
           {
             "target": "vel",
             "effect": "drift",
-            "trigger": "va",
+            "trigger": "llega",
             "amount": 0.5
           },
           {
             "target": "cr",
             "effect": "pop",
-            "trigger": "97",
+            "trigger": "cien",
             "sfx": "pop"
           },
           {
             "target": "crono_aguja",
             "effect": "move",
-            "trigger": "0,81",
+            "trigger": "menos",
             "rotate": 290,
             "origin": "bottom",
             "dur": 0.8
@@ -979,13 +979,13 @@
           {
             "target": "t081",
             "effect": "pop",
-            "trigger": "0,81",
+            "trigger": "menos",
             "sfx": "ding"
           },
           {
             "target": "t081",
             "effect": "punch",
-            "trigger": "segundos",
+            "trigger": "segundo",
             "amount": 0.3
           },
           {
@@ -1035,7 +1035,7 @@
           {
             "target": "coche",
             "effect": "move",
-            "trigger": "cunde",
+            "trigger": "peso",
             "to": [
               60,
               0
