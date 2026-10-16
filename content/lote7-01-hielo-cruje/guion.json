@@ -1,0 +1,879 @@
+{
+  "topic": "Por qué cruje el hielo al echarle la bebida (choque térmico)",
+  "categoria": "fisica",
+  "title": "¿Por qué cruje el hielo al echarle la bebida? 🧊",
+  "source": "Fuentes: The Conversation, serie Curious Kids (Daniel Southam, Universidad Curtin) · ScienceABC · Mental Floss · Engineering ToolBox y Wikipedia (dilatación térmica del hielo y del vidrio) · IDAE y fabricantes (congelador a 18 °C bajo cero)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué *cruje* el hielo",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-17T14:00:00+02:00",
+    "caption": "¿Por qué cruje el hielo al echarle la bebida? 🧊 El cubito sale del congelador a unos 18 °C bajo cero y, al mojarse, su capa de fuera se calienta y se dilata mientras el centro sigue helado. Ese choque térmico lo agrieta, y cada grieta suena; lo oyes tan bien porque el cubito flota arriba y se va rompiendo durante segundos (The Conversation, ScienceABC). ¿Qué otro ruido de tu cocina te explicamos?",
+    "description": "¿Por qué cruje el hielo al echarle la bebida? El cubito sale del congelador a unos 18 °C bajo cero (IDAE) y, al caerle encima la bebida, su capa de fuera se calienta y se dilata, mientras el centro sigue helado porque el calor avanza despacio dentro del hielo. Ese choque térmico crea tensiones que el hielo, frágil como el cristal, no aguanta: se abren grietas y cada una suena, y como el cubito flota arriba y se agrieta durante segundos, lo oyes perfectamente (The Conversation, Daniel Southam, Universidad Curtin; ScienceABC; Mental Floss). Dato: por cada grado, el hielo se dilata más de cinco veces que el vidrio de una ventana (Engineering ToolBox; Wikipedia, dilatación térmica). ¿Qué otro ruido de tu cocina quieres que te expliquemos?",
+    "hashtags": [
+      "hielo",
+      "fisica",
+      "cienciaencasa",
+      "curiosidades"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Y ese *crac*?",
+      "narration": "¿Has oído cómo cruje el hielo al echarle la bebida? Tiene explicación.",
+      "illustration": {
+        "svg_file": "vaso_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Hielo y refresco",
+        "anims": [
+          {
+            "target": "ondas",
+            "effect": "hide"
+          },
+          {
+            "target": "ondasW",
+            "effect": "hide"
+          },
+          {
+            "target": "oreja",
+            "effect": "hide"
+          },
+          {
+            "target": "lflota",
+            "effect": "hide"
+          },
+          {
+            "target": "crono",
+            "effect": "hide"
+          },
+          {
+            "target": "aguja",
+            "effect": "hide"
+          },
+          {
+            "target": "lseg",
+            "effect": "hide"
+          },
+          {
+            "target": "burbujas",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "botella",
+            "effect": "wiggle",
+            "amount": 0.2,
+            "origin": "right"
+          },
+          {
+            "target": "chorro",
+            "effect": "flow",
+            "amount": 1.2
+          },
+          {
+            "target": "gotas",
+            "effect": "pop",
+            "trigger": "oído",
+            "sfx": "splash"
+          },
+          {
+            "target": "gotas",
+            "effect": "bob",
+            "trigger": "oído",
+            "amount": 0.5
+          },
+          {
+            "target": "grieta1",
+            "effect": "draw",
+            "trigger": "cruje",
+            "dur": 0.35
+          },
+          {
+            "target": "crac1",
+            "effect": "pop",
+            "trigger": "cruje",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "cubo1",
+            "effect": "shake",
+            "trigger": "hielo",
+            "amount": 0.6
+          },
+          {
+            "target": "grieta2",
+            "effect": "draw",
+            "trigger": "echarle",
+            "dur": 0.35
+          },
+          {
+            "target": "crac2",
+            "effect": "pop",
+            "trigger": "echarle",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "crac1",
+            "effect": "wiggle",
+            "trigger": "bebida",
+            "amount": 0.5
+          },
+          {
+            "target": "grieta1b",
+            "effect": "draw",
+            "trigger": "Tiene",
+            "dur": 0.3
+          },
+          {
+            "target": "crac3",
+            "effect": "pop",
+            "trigger": "Tiene",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "grieta2b",
+            "effect": "draw",
+            "trigger": "explicación",
+            "dur": 0.3
+          },
+          {
+            "target": "crac2",
+            "effect": "wiggle",
+            "trigger": "explicación",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "De *18 bajo cero*",
+      "narration": "El hielo sale del congelador a unos 18 grados bajo cero. La bebida está mucho más templada.",
+      "illustration": {
+        "svg_file": "termos.svg",
+        "caption": "Fig. 2 · Frío contra templado",
+        "anims": [
+          {
+            "target": "vaho",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "bandeja",
+            "effect": "move",
+            "trigger": "sale",
+            "to": [
+              40,
+              0
+            ],
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "congelador",
+            "effect": "punch",
+            "trigger": "congelador",
+            "amount": 0.15
+          },
+          {
+            "target": "fillF",
+            "effect": "grow",
+            "trigger": "18",
+            "sfx": "tic"
+          },
+          {
+            "target": "lfrio",
+            "effect": "pop",
+            "trigger": "bajo",
+            "sfx": "ding"
+          },
+          {
+            "target": "termoF",
+            "effect": "shake",
+            "trigger": "cero",
+            "amount": 0.4
+          },
+          {
+            "target": "bebida",
+            "effect": "slide-left",
+            "trigger": "bebida",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "termoC",
+            "effect": "pop",
+            "trigger": "bebida"
+          },
+          {
+            "target": "fillC",
+            "effect": "grow",
+            "trigger": "mucho",
+            "sfx": "tic"
+          },
+          {
+            "target": "rayo",
+            "effect": "pop",
+            "trigger": "más",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "lcalor",
+            "effect": "pop",
+            "trigger": "templada",
+            "sfx": "pop"
+          },
+          {
+            "target": "rayo",
+            "effect": "pulse",
+            "trigger": "templada",
+            "amount": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Fuera templado, dentro *helado*",
+      "narration": "Al caerle encima, la capa de fuera se calienta de golpe. Pero el centro sigue helado: el calor entra despacio.",
+      "illustration": {
+        "svg_file": "corte_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 3 · Cubito por dentro",
+        "anims": [
+          {
+            "target": "crecer",
+            "effect": "hide"
+          },
+          {
+            "target": "tension",
+            "effect": "hide"
+          },
+          {
+            "target": "lcrecer",
+            "effect": "hide"
+          },
+          {
+            "target": "lnodeja",
+            "effect": "hide"
+          },
+          {
+            "target": "lchoque",
+            "effect": "hide"
+          },
+          {
+            "target": "g1",
+            "effect": "hide"
+          },
+          {
+            "target": "g2",
+            "effect": "hide"
+          },
+          {
+            "target": "g3",
+            "effect": "hide"
+          },
+          {
+            "target": "g4",
+            "effect": "hide"
+          },
+          {
+            "target": "crac1",
+            "effect": "hide"
+          },
+          {
+            "target": "crac2",
+            "effect": "hide"
+          },
+          {
+            "target": "lfragil",
+            "effect": "hide"
+          },
+          {
+            "target": "gotas",
+            "effect": "slide-down",
+            "trigger": "caerle",
+            "dur": 0.5,
+            "sfx": "splash"
+          },
+          {
+            "target": "gotas",
+            "effect": "float",
+            "trigger": "encima",
+            "amount": 0.5
+          },
+          {
+            "target": "capa",
+            "effect": "fade",
+            "trigger": "capa",
+            "dur": 0.6,
+            "sfx": "brillo"
+          },
+          {
+            "target": "lfuera",
+            "effect": "pop",
+            "trigger": "calienta",
+            "sfx": "pop"
+          },
+          {
+            "target": "capa",
+            "effect": "pulse",
+            "trigger": "golpe",
+            "amount": 0.3
+          },
+          {
+            "target": "nucleo",
+            "effect": "pulse",
+            "trigger": "centro",
+            "amount": 0.6
+          },
+          {
+            "target": "ldentro",
+            "effect": "pop",
+            "trigger": "helado",
+            "sfx": "ding"
+          },
+          {
+            "target": "calor",
+            "effect": "draw",
+            "trigger": "calor",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "caracol",
+            "effect": "slide-left",
+            "trigger": "despacio",
+            "dur": 0.6,
+            "sfx": "boing"
+          },
+          {
+            "target": "caracol",
+            "effect": "bob",
+            "trigger": "despacio",
+            "amount": 0.3
+          },
+          {
+            "target": "capa",
+            "effect": "punch",
+            "trigger": "golpe"
+          },
+          {
+            "target": "nucleo",
+            "effect": "punch",
+            "trigger": "centro"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "El hielo *se estira*",
+      "narration": "Y el hielo, al calentarse, se estira un poquito: sus moléculas se mueven más y se separan, como gente bailando.",
+      "illustration": {
+        "svg_file": "micro.svg",
+        "caption": "Fig. 4 · Moléculas de agua en el hielo",
+        "anims": [
+          {
+            "target": "lfrio",
+            "effect": "pop",
+            "trigger": "hielo",
+            "sfx": "pop"
+          },
+          {
+            "target": "lupaC",
+            "effect": "pop",
+            "trigger": "calentarse",
+            "sfx": "pop"
+          },
+          {
+            "target": "ltemp",
+            "effect": "pop",
+            "trigger": "calentarse"
+          },
+          {
+            "target": "separan",
+            "effect": "pop",
+            "trigger": "estira",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "separan",
+            "effect": "pulse",
+            "trigger": "estira",
+            "amount": 0.8
+          },
+          {
+            "target": "lexag",
+            "effect": "pop",
+            "trigger": "poquito"
+          },
+          {
+            "target": "molsC",
+            "effect": "shake",
+            "trigger": "moléculas",
+            "amount": 0.5
+          },
+          {
+            "target": "lquietas",
+            "effect": "pop",
+            "trigger": "mueven",
+            "sfx": "pop"
+          },
+          {
+            "target": "lseparan",
+            "effect": "pop",
+            "trigger": "separan",
+            "sfx": "pop"
+          },
+          {
+            "target": "notas",
+            "effect": "pop",
+            "trigger": "gente",
+            "sfx": "ding"
+          },
+          {
+            "target": "notas",
+            "effect": "bob",
+            "trigger": "bailando",
+            "amount": 0.6
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "bailando",
+        "pose": "surprise",
+        "note": "Fiesta en el hielo",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Un *tira y afloja*",
+      "narration": "La capa de fuera quiere crecer y el centro no la deja. Es un choque térmico: un tira y afloja.",
+      "illustration": {
+        "svg_file": "corte_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 5 · Choque térmico",
+        "anims": [
+          {
+            "target": "gotas",
+            "effect": "hide"
+          },
+          {
+            "target": "calor",
+            "effect": "hide"
+          },
+          {
+            "target": "caracol",
+            "effect": "hide"
+          },
+          {
+            "target": "lfuera",
+            "effect": "hide"
+          },
+          {
+            "target": "ldentro",
+            "effect": "hide"
+          },
+          {
+            "target": "g1",
+            "effect": "hide"
+          },
+          {
+            "target": "g2",
+            "effect": "hide"
+          },
+          {
+            "target": "g3",
+            "effect": "hide"
+          },
+          {
+            "target": "g4",
+            "effect": "hide"
+          },
+          {
+            "target": "crac1",
+            "effect": "hide"
+          },
+          {
+            "target": "crac2",
+            "effect": "hide"
+          },
+          {
+            "target": "lfragil",
+            "effect": "hide"
+          },
+          {
+            "target": "capa",
+            "effect": "pulse",
+            "trigger": "capa",
+            "amount": 0.4
+          },
+          {
+            "target": "crecer",
+            "effect": "pop",
+            "trigger": "quiere",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lcrecer",
+            "effect": "pop",
+            "trigger": "crecer",
+            "sfx": "pop"
+          },
+          {
+            "target": "crecer",
+            "effect": "pulse",
+            "trigger": "crecer",
+            "amount": 0.7
+          },
+          {
+            "target": "nucleo",
+            "effect": "punch",
+            "trigger": "centro",
+            "amount": 0.4
+          },
+          {
+            "target": "tension",
+            "effect": "draw",
+            "trigger": "deja",
+            "dur": 0.6
+          },
+          {
+            "target": "lnodeja",
+            "effect": "pop",
+            "trigger": "deja",
+            "sfx": "sello"
+          },
+          {
+            "target": "lcrecer",
+            "effect": "hide",
+            "trigger": "choque"
+          },
+          {
+            "target": "lchoque",
+            "effect": "pop",
+            "trigger": "choque",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "tension",
+            "effect": "shake",
+            "trigger": "choque",
+            "amount": 0.6
+          },
+          {
+            "target": "lnodeja",
+            "effect": "punch",
+            "trigger": "tira",
+            "amount": 0.3
+          },
+          {
+            "target": "lchoque",
+            "effect": "punch",
+            "trigger": "afloja",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Frágil: *¡crac!*",
+      "narration": "Y el hielo es frágil, como el cristal: no se dobla, se rompe. Se abren grietas, y cada una suena: ¡crac!",
+      "illustration": {
+        "svg_file": "corte_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 6 · Grietas",
+        "anims": [
+          {
+            "target": "gotas",
+            "effect": "hide"
+          },
+          {
+            "target": "calor",
+            "effect": "hide"
+          },
+          {
+            "target": "caracol",
+            "effect": "hide"
+          },
+          {
+            "target": "lfuera",
+            "effect": "hide"
+          },
+          {
+            "target": "ldentro",
+            "effect": "hide"
+          },
+          {
+            "target": "crecer",
+            "effect": "hide"
+          },
+          {
+            "target": "tension",
+            "effect": "hide"
+          },
+          {
+            "target": "lcrecer",
+            "effect": "hide"
+          },
+          {
+            "target": "lnodeja",
+            "effect": "hide"
+          },
+          {
+            "target": "lchoque",
+            "effect": "hide"
+          },
+          {
+            "target": "lfragil",
+            "effect": "pop",
+            "trigger": "frágil",
+            "sfx": "pop"
+          },
+          {
+            "target": "nucleo",
+            "effect": "pulse",
+            "trigger": "cristal",
+            "amount": 0.4
+          },
+          {
+            "target": "lfragil",
+            "effect": "punch",
+            "trigger": "dobla",
+            "amount": 0.3
+          },
+          {
+            "target": "g1",
+            "effect": "draw",
+            "trigger": "rompe",
+            "dur": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "g2",
+            "effect": "draw",
+            "trigger": "abren",
+            "dur": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "g3",
+            "effect": "draw",
+            "trigger": "grietas",
+            "dur": 0.4
+          },
+          {
+            "target": "g4",
+            "effect": "draw",
+            "trigger": "cada",
+            "dur": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "crac2",
+            "effect": "pop",
+            "trigger": "suena",
+            "sfx": "pop"
+          },
+          {
+            "target": "crac1",
+            "effect": "pop",
+            "trigger": "crac",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "crac1",
+            "effect": "wiggle",
+            "trigger": "crac",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Flota y *suena*",
+      "narration": "Y lo oyes porque el cubito flota arriba y se agrieta durante segundos.",
+      "illustration": {
+        "svg_file": "vaso_full.svg",
+        "layout": "full",
+        "caption": "Fig. 7 · Lo oyes",
+        "anims": [
+          {
+            "target": "botella",
+            "effect": "hide"
+          },
+          {
+            "target": "chorro",
+            "effect": "hide"
+          },
+          {
+            "target": "gotas",
+            "effect": "hide"
+          },
+          {
+            "target": "crac1",
+            "effect": "hide"
+          },
+          {
+            "target": "crac2",
+            "effect": "hide"
+          },
+          {
+            "target": "crac3",
+            "effect": "hide"
+          },
+          {
+            "target": "grieta1b",
+            "effect": "hide"
+          },
+          {
+            "target": "grieta2b",
+            "effect": "hide"
+          },
+          {
+            "target": "burbujas",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "oreja",
+            "effect": "slide-left",
+            "trigger": "oyes",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ondasW",
+            "effect": "pop",
+            "trigger": "porque"
+          },
+          {
+            "target": "ondas",
+            "effect": "pop",
+            "trigger": "porque",
+            "sfx": "pop"
+          },
+          {
+            "target": "ondas",
+            "effect": "pulse",
+            "trigger": "porque",
+            "amount": 0.6
+          },
+          {
+            "target": "ondasW",
+            "effect": "pulse",
+            "trigger": "porque",
+            "amount": 0.6
+          },
+          {
+            "target": "lflota",
+            "effect": "pop",
+            "trigger": "flota",
+            "sfx": "pop"
+          },
+          {
+            "target": "cubos",
+            "effect": "bob",
+            "trigger": "flota",
+            "amount": 0.3
+          },
+          {
+            "target": "grieta1b",
+            "effect": "draw",
+            "trigger": "agrieta",
+            "dur": 0.3,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "crac3",
+            "effect": "pop",
+            "trigger": "agrieta"
+          },
+          {
+            "target": "crono",
+            "effect": "pop",
+            "trigger": "durante",
+            "sfx": "tic"
+          },
+          {
+            "target": "aguja",
+            "effect": "pop",
+            "trigger": "durante"
+          },
+          {
+            "target": "aguja",
+            "effect": "spin",
+            "trigger": "segundos",
+            "amount": 1.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "lseg",
+            "effect": "pop",
+            "trigger": "segundos",
+            "sfx": "ding"
+          },
+          {
+            "target": "grieta2b",
+            "effect": "draw",
+            "trigger": "segundos",
+            "dur": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Tu hielo también se queja con el refresco?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Tu hielo también se *queja* con el refresco?",
+          "trigger": "Tu"
+        }
+      ]
+    }
+  ]
+}

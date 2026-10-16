@@ -12,7 +12,7 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-10-14 14:00 | lote6-02-escalofrios | content/lote6-02-escalofrios | sí | sí | sí | sí | previews/lote6-02-escalofrios-con-voz.mp4 |
 | 2026-10-15 14:00 | lote6-05-black-friday | content/lote6-05-black-friday | sí | sí | sí | sí | previews/lote6-05-black-friday-con-voz.mp4 |
 | 2026-10-16 14:00 | lote6-08-papeleta-nula | content/lote6-08-papeleta-nula | sí | sí | sí | pendiente | previews/lote6-08-papeleta-nula-con-voz.mp4 |
-| 2026-10-17 14:00 | ¿Por qué cruje el hielo al echarle bebida? |  | en curso | no | no | no | |
+| 2026-10-17 14:00 | ¿Por qué cruje el hielo al echarle bebida? | content/lote7-01-hielo-cruje | sí | sí | pendiente | no | previews/lote7-01-hielo-cruje-con-voz.mp4 |
 | 2026-10-18 14:00 | RESPUESTA A COMENTARIO |  | no | no | no | no | |
 | 2026-10-19 14:00 | ¿Qué pasa si votas con la papeleta rota o escrita? |  | no | no | no | no | |
 | 2026-10-20 14:00 | ¿Por qué bostezar se contagia? |  | no | no | no | no | |
