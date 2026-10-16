@@ -1,0 +1,707 @@
+{
+ "source": "Fuentes: Miranda y Schaffner (2016), Applied and Environmental Microbiology (Sociedad Americana de Microbiología), «Longer contact times increase cross contamination of Enterobacter aerogenes from surfaces to food» · Universidad Rutgers, nota de prensa «Rutgers researchers debunk five second rule» (2016) · Mental Floss · Infection Control Today · Xataka",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Se",
+   "start": 0.1,
+   "end": 0.30000000000000004
+  },
+  {
+   "text": "te",
+   "start": 0.31,
+   "end": 0.39
+  },
+  {
+   "text": "ha",
+   "start": 0.4,
+   "end": 0.45
+  },
+  {
+   "text": "caído",
+   "start": 0.46,
+   "end": 0.75
+  },
+  {
+   "text": "la",
+   "start": 0.76,
+   "end": 0.84
+  },
+  {
+   "text": "galleta",
+   "start": 0.85,
+   "end": 1.17
+  },
+  {
+   "text": "y",
+   "start": 1.18,
+   "end": 1.23
+  },
+  {
+   "text": "la",
+   "start": 1.24,
+   "end": 1.35
+  },
+  {
+   "text": "has",
+   "start": 1.36,
+   "end": 1.4700000000000002
+  },
+  {
+   "text": "cogido",
+   "start": 1.48,
+   "end": 1.82
+  },
+  {
+   "text": "en",
+   "start": 1.83,
+   "end": 1.8900000000000001
+  },
+  {
+   "text": "menos",
+   "start": 1.9,
+   "end": 2.1399999999999997
+  },
+  {
+   "text": "de",
+   "start": 2.15,
+   "end": 2.23
+  },
+  {
+   "text": "cinco",
+   "start": 2.24,
+   "end": 2.4600000000000004
+  },
+  {
+   "text": "segundos?",
+   "start": 2.47,
+   "end": 3.0100000000000002
+  },
+  {
+   "text": "Las",
+   "start": 3.69,
+   "end": 3.94
+  },
+  {
+   "text": "bacterias",
+   "start": 3.95,
+   "end": 4.4
+  },
+  {
+   "text": "fueron",
+   "start": 4.41,
+   "end": 4.63
+  },
+  {
+   "text": "más",
+   "start": 4.64,
+   "end": 4.779999999999999
+  },
+  {
+   "text": "rápidas.",
+   "start": 4.79,
+   "end": 5.26
+  },
+  {
+   "text": "En",
+   "start": 5.95,
+   "end": 6.13
+  },
+  {
+   "text": "la",
+   "start": 6.14,
+   "end": 6.22
+  },
+  {
+   "text": "Universidad",
+   "start": 6.23,
+   "end": 6.74
+  },
+  {
+   "text": "Rutgers",
+   "start": 6.75,
+   "end": 7.11
+  },
+  {
+   "text": "tiraron",
+   "start": 7.12,
+   "end": 7.43
+  },
+  {
+   "text": "sandía,",
+   "start": 7.44,
+   "end": 7.8500000000000005
+  },
+  {
+   "text": "pan",
+   "start": 7.97,
+   "end": 8.12
+  },
+  {
+   "text": "y",
+   "start": 8.13,
+   "end": 8.16
+  },
+  {
+   "text": "gominolas",
+   "start": 8.17,
+   "end": 8.61
+  },
+  {
+   "text": "a",
+   "start": 8.62,
+   "end": 8.67
+  },
+  {
+   "text": "suelos",
+   "start": 8.68,
+   "end": 8.98
+  },
+  {
+   "text": "con",
+   "start": 8.99,
+   "end": 9.11
+  },
+  {
+   "text": "bacterias.",
+   "start": 9.12,
+   "end": 9.67
+  },
+  {
+   "text": "Las",
+   "start": 10.37,
+   "end": 10.62
+  },
+  {
+   "text": "bacterias,",
+   "start": 10.63,
+   "end": 11.110000000000001
+  },
+  {
+   "text": "bichos",
+   "start": 11.19,
+   "end": 11.469999999999999
+  },
+  {
+   "text": "tan",
+   "start": 11.48,
+   "end": 11.620000000000001
+  },
+  {
+   "text": "pequeños",
+   "start": 11.63,
+   "end": 12.020000000000001
+  },
+  {
+   "text": "que",
+   "start": 12.03,
+   "end": 12.09
+  },
+  {
+   "text": "no",
+   "start": 12.1,
+   "end": 12.19
+  },
+  {
+   "text": "se",
+   "start": 12.2,
+   "end": 12.299999999999999
+  },
+  {
+   "text": "ven,",
+   "start": 12.31,
+   "end": 12.540000000000001
+  },
+  {
+   "text": "pueden",
+   "start": 12.71,
+   "end": 12.96
+  },
+  {
+   "text": "saltar",
+   "start": 12.97,
+   "end": 13.25
+  },
+  {
+   "text": "a",
+   "start": 13.26,
+   "end": 13.28
+  },
+  {
+   "text": "la",
+   "start": 13.29,
+   "end": 13.37
+  },
+  {
+   "text": "comida",
+   "start": 13.38,
+   "end": 13.690000000000001
+  },
+  {
+   "text": "en",
+   "start": 13.7,
+   "end": 13.78
+  },
+  {
+   "text": "menos",
+   "start": 13.79,
+   "end": 14.04
+  },
+  {
+   "text": "de",
+   "start": 14.05,
+   "end": 14.13
+  },
+  {
+   "text": "un",
+   "start": 14.14,
+   "end": 14.24
+  },
+  {
+   "text": "segundo.",
+   "start": 14.25,
+   "end": 14.68
+  },
+  {
+   "text": "Cuantos",
+   "start": 15.37,
+   "end": 15.729999999999999
+  },
+  {
+   "text": "más",
+   "start": 15.74,
+   "end": 15.870000000000001
+  },
+  {
+   "text": "segundos,",
+   "start": 15.88,
+   "end": 16.34
+  },
+  {
+   "text": "más",
+   "start": 16.44,
+   "end": 16.62
+  },
+  {
+   "text": "bacterias.",
+   "start": 16.63,
+   "end": 17.169999999999998
+  },
+  {
+   "text": "Cinco",
+   "start": 17.87,
+   "end": 18.21
+  },
+  {
+   "text": "no",
+   "start": 18.22,
+   "end": 18.34
+  },
+  {
+   "text": "es",
+   "start": 18.35,
+   "end": 18.43
+  },
+  {
+   "text": "ninguna",
+   "start": 18.44,
+   "end": 18.76
+  },
+  {
+   "text": "frontera",
+   "start": 18.77,
+   "end": 19.13
+  },
+  {
+   "text": "mágica.",
+   "start": 19.14,
+   "end": 19.61
+  },
+  {
+   "text": "Lo",
+   "start": 20.3,
+   "end": 20.5
+  },
+  {
+   "text": "que",
+   "start": 20.51,
+   "end": 20.59
+  },
+  {
+   "text": "más",
+   "start": 20.6,
+   "end": 20.76
+  },
+  {
+   "text": "cuenta",
+   "start": 20.77,
+   "end": 21.02
+  },
+  {
+   "text": "es",
+   "start": 21.03,
+   "end": 21.12
+  },
+  {
+   "text": "la",
+   "start": 21.13,
+   "end": 21.22
+  },
+  {
+   "text": "humedad:",
+   "start": 21.23,
+   "end": 21.57
+  },
+  {
+   "text": "las",
+   "start": 21.71,
+   "end": 21.87
+  },
+  {
+   "text": "bacterias",
+   "start": 21.88,
+   "end": 22.279999999999998
+  },
+  {
+   "text": "viajan",
+   "start": 22.29,
+   "end": 22.619999999999997
+  },
+  {
+   "text": "en",
+   "start": 22.63,
+   "end": 22.72
+  },
+  {
+   "text": "el",
+   "start": 22.73,
+   "end": 22.82
+  },
+  {
+   "text": "agua,",
+   "start": 22.83,
+   "end": 23.099999999999998
+  },
+  {
+   "text": "como",
+   "start": 23.22,
+   "end": 23.43
+  },
+  {
+   "text": "en",
+   "start": 23.44,
+   "end": 23.52
+  },
+  {
+   "text": "un",
+   "start": 23.53,
+   "end": 23.62
+  },
+  {
+   "text": "tobogán.",
+   "start": 23.63,
+   "end": 24.08
+  },
+  {
+   "text": "La",
+   "start": 24.78,
+   "end": 24.990000000000002
+  },
+  {
+   "text": "sandía",
+   "start": 25.0,
+   "end": 25.32
+  },
+  {
+   "text": "cogió",
+   "start": 25.33,
+   "end": 25.59
+  },
+  {
+   "text": "más;",
+   "start": 25.6,
+   "end": 25.85
+  },
+  {
+   "text": "la",
+   "start": 25.96,
+   "end": 26.09
+  },
+  {
+   "text": "gominola,",
+   "start": 26.1,
+   "end": 26.520000000000003
+  },
+  {
+   "text": "menos.",
+   "start": 26.64,
+   "end": 27.060000000000002
+  },
+  {
+   "text": "Y",
+   "start": 27.75,
+   "end": 27.9
+  },
+  {
+   "text": "el",
+   "start": 27.91,
+   "end": 28.01
+  },
+  {
+   "text": "suelo",
+   "start": 28.02,
+   "end": 28.25
+  },
+  {
+   "text": "importa:",
+   "start": 28.26,
+   "end": 28.66
+  },
+  {
+   "text": "la",
+   "start": 28.81,
+   "end": 28.889999999999997
+  },
+  {
+   "text": "moqueta",
+   "start": 28.9,
+   "end": 29.209999999999997
+  },
+  {
+   "text": "pasó",
+   "start": 29.22,
+   "end": 29.439999999999998
+  },
+  {
+   "text": "menos",
+   "start": 29.45,
+   "end": 29.689999999999998
+  },
+  {
+   "text": "bacterias",
+   "start": 29.7,
+   "end": 30.13
+  },
+  {
+   "text": "que",
+   "start": 30.14,
+   "end": 30.21
+  },
+  {
+   "text": "la",
+   "start": 30.22,
+   "end": 30.29
+  },
+  {
+   "text": "baldosa",
+   "start": 30.3,
+   "end": 30.71
+  },
+  {
+   "text": "o",
+   "start": 30.72,
+   "end": 30.82
+  },
+  {
+   "text": "el",
+   "start": 30.83,
+   "end": 30.9
+  },
+  {
+   "text": "acero.",
+   "start": 30.91,
+   "end": 31.29
+  },
+  {
+   "text": "Así",
+   "start": 31.98,
+   "end": 32.28
+  },
+  {
+   "text": "que",
+   "start": 32.29,
+   "end": 32.37
+  },
+  {
+   "text": "la",
+   "start": 32.38,
+   "end": 32.46
+  },
+  {
+   "text": "regla",
+   "start": 32.47,
+   "end": 32.75
+  },
+  {
+   "text": "es",
+   "start": 32.76,
+   "end": 32.87
+  },
+  {
+   "text": "un",
+   "start": 32.88,
+   "end": 32.96
+  },
+  {
+   "text": "mito:",
+   "start": 32.97,
+   "end": 33.25
+  },
+  {
+   "text": "importa",
+   "start": 33.37,
+   "end": 33.71
+  },
+  {
+   "text": "qué",
+   "start": 33.72,
+   "end": 33.82
+  },
+  {
+   "text": "cae",
+   "start": 33.83,
+   "end": 34.05
+  },
+  {
+   "text": "y",
+   "start": 34.06,
+   "end": 34.11
+  },
+  {
+   "text": "dónde.",
+   "start": 34.12,
+   "end": 34.46
+  },
+  {
+   "text": "Tú",
+   "start": 35.21,
+   "end": 35.34
+  },
+  {
+   "text": "traes",
+   "start": 35.35,
+   "end": 35.6
+  },
+  {
+   "text": "las",
+   "start": 35.61,
+   "end": 35.76
+  },
+  {
+   "text": "dudas",
+   "start": 35.77,
+   "end": 36.040000000000006
+  },
+  {
+   "text": "y",
+   "start": 36.05,
+   "end": 36.089999999999996
+  },
+  {
+   "text": "nosotros",
+   "start": 36.1,
+   "end": 36.52
+  },
+  {
+   "text": "te",
+   "start": 36.53,
+   "end": 36.620000000000005
+  },
+  {
+   "text": "damos",
+   "start": 36.63,
+   "end": 36.900000000000006
+  },
+  {
+   "text": "el",
+   "start": 36.91,
+   "end": 37.01
+  },
+  {
+   "text": "truco.",
+   "start": 37.02,
+   "end": 37.400000000000006
+  },
+  {
+   "text": "Síguenos",
+   "start": 38.09,
+   "end": 38.6
+  },
+  {
+   "text": "y",
+   "start": 38.61,
+   "end": 38.66
+  },
+  {
+   "text": "las",
+   "start": 38.67,
+   "end": 38.800000000000004
+  },
+  {
+   "text": "resolvemos.",
+   "start": 38.81,
+   "end": 39.47
+  },
+  {
+   "text": "¿Tú",
+   "start": 40.16,
+   "end": 40.309999999999995
+  },
+  {
+   "text": "también",
+   "start": 40.32,
+   "end": 40.660000000000004
+  },
+  {
+   "text": "soplas",
+   "start": 40.67,
+   "end": 40.97
+  },
+  {
+   "text": "la",
+   "start": 40.98,
+   "end": 41.07
+  },
+  {
+   "text": "galleta",
+   "start": 41.08,
+   "end": 41.39
+  },
+  {
+   "text": "antes",
+   "start": 41.4,
+   "end": 41.629999999999995
+  },
+  {
+   "text": "de",
+   "start": 41.64,
+   "end": 41.7
+  },
+  {
+   "text": "comértela?",
+   "start": 41.71,
+   "end": 42.24
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 42.74,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "La regla de los *5 segundos*",
+  "scene": 0
+ },
+ "duration": 45.34,
+ "cover_offset_ms": 45640
+}
