@@ -1,0 +1,732 @@
+{
+ "source": "Fuentes: Porsche Newsroom (15/10/2026) · Motorpasión · CNBC (15/10/2026) · Autonoción · evo · duPont Registry · Car Throttle, «Engineering Explained: Why Engine Placement Is Important» · Motor1, «Why Mid Engine Cars Handle So Well» · Wikipedia, «Automobile handling» · Outlook India Luxe, «The secret behind mid engine cars»",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "Porsche",
+   "start": 0.1,
+   "end": 0.43000000000000005
+  },
+  {
+   "text": "acaba",
+   "start": 0.44,
+   "end": 0.69
+  },
+  {
+   "text": "de",
+   "start": 0.7,
+   "end": 0.7799999999999999
+  },
+  {
+   "text": "enseñar",
+   "start": 0.79,
+   "end": 1.17
+  },
+  {
+   "text": "el",
+   "start": 1.18,
+   "end": 1.25
+  },
+  {
+   "text": "Mission",
+   "start": 1.26,
+   "end": 1.6099999999999999
+  },
+  {
+   "text": "S.",
+   "start": 1.62,
+   "end": 1.82
+  },
+  {
+   "text": "¿Por",
+   "start": 1.84,
+   "end": 1.99
+  },
+  {
+   "text": "qué",
+   "start": 2.0,
+   "end": 2.1
+  },
+  {
+   "text": "lleva",
+   "start": 2.11,
+   "end": 2.32
+  },
+  {
+   "text": "el",
+   "start": 2.33,
+   "end": 2.4
+  },
+  {
+   "text": "motor",
+   "start": 2.41,
+   "end": 2.67
+  },
+  {
+   "text": "a",
+   "start": 2.68,
+   "end": 2.73
+  },
+  {
+   "text": "tu",
+   "start": 2.74,
+   "end": 2.8200000000000003
+  },
+  {
+   "text": "espalda?",
+   "start": 2.83,
+   "end": 3.3
+  },
+  {
+   "text": "Es",
+   "start": 3.99,
+   "end": 4.19
+  },
+  {
+   "text": "un",
+   "start": 4.2,
+   "end": 4.28
+  },
+  {
+   "text": "prototipo",
+   "start": 4.29,
+   "end": 4.71
+  },
+  {
+   "text": "de",
+   "start": 4.72,
+   "end": 4.79
+  },
+  {
+   "text": "motor",
+   "start": 4.8,
+   "end": 5.07
+  },
+  {
+   "text": "central:",
+   "start": 5.08,
+   "end": 5.49
+  },
+  {
+   "text": "va",
+   "start": 5.65,
+   "end": 5.760000000000001
+  },
+  {
+   "text": "entre",
+   "start": 5.77,
+   "end": 5.9799999999999995
+  },
+  {
+   "text": "las",
+   "start": 5.99,
+   "end": 6.12
+  },
+  {
+   "text": "ruedas",
+   "start": 6.13,
+   "end": 6.39
+  },
+  {
+   "text": "de",
+   "start": 6.4,
+   "end": 6.46
+  },
+  {
+   "text": "delante",
+   "start": 6.47,
+   "end": 6.819999999999999
+  },
+  {
+   "text": "y",
+   "start": 6.83,
+   "end": 6.88
+  },
+  {
+   "text": "las",
+   "start": 6.89,
+   "end": 7.029999999999999
+  },
+  {
+   "text": "de",
+   "start": 7.04,
+   "end": 7.1
+  },
+  {
+   "text": "atrás.",
+   "start": 7.11,
+   "end": 7.48
+  },
+  {
+   "text": "Así",
+   "start": 8.19,
+   "end": 8.469999999999999
+  },
+  {
+   "text": "casi",
+   "start": 8.48,
+   "end": 8.68
+  },
+  {
+   "text": "todo",
+   "start": 8.69,
+   "end": 8.9
+  },
+  {
+   "text": "el",
+   "start": 8.91,
+   "end": 8.99
+  },
+  {
+   "text": "peso",
+   "start": 9.0,
+   "end": 9.23
+  },
+  {
+   "text": "queda",
+   "start": 9.24,
+   "end": 9.450000000000001
+  },
+  {
+   "text": "cerca",
+   "start": 9.46,
+   "end": 9.72
+  },
+  {
+   "text": "del",
+   "start": 9.73,
+   "end": 9.860000000000001
+  },
+  {
+   "text": "centro,",
+   "start": 9.87,
+   "end": 10.229999999999999
+  },
+  {
+   "text": "y",
+   "start": 10.34,
+   "end": 10.39
+  },
+  {
+   "text": "el",
+   "start": 10.4,
+   "end": 10.5
+  },
+  {
+   "text": "coche",
+   "start": 10.51,
+   "end": 10.75
+  },
+  {
+   "text": "gira",
+   "start": 10.76,
+   "end": 11.0
+  },
+  {
+   "text": "más",
+   "start": 11.01,
+   "end": 11.17
+  },
+  {
+   "text": "fácil.",
+   "start": 11.18,
+   "end": 11.56
+  },
+  {
+   "text": "Gira",
+   "start": 12.28,
+   "end": 12.58
+  },
+  {
+   "text": "sobre",
+   "start": 12.59,
+   "end": 12.82
+  },
+  {
+   "text": "ti",
+   "start": 12.83,
+   "end": 12.91
+  },
+  {
+   "text": "mismo",
+   "start": 12.92,
+   "end": 13.2
+  },
+  {
+   "text": "con",
+   "start": 13.21,
+   "end": 13.350000000000001
+  },
+  {
+   "text": "los",
+   "start": 13.36,
+   "end": 13.469999999999999
+  },
+  {
+   "text": "brazos",
+   "start": 13.48,
+   "end": 13.790000000000001
+  },
+  {
+   "text": "estirados",
+   "start": 13.8,
+   "end": 14.280000000000001
+  },
+  {
+   "text": "y",
+   "start": 14.29,
+   "end": 14.329999999999998
+  },
+  {
+   "text": "bolsas:",
+   "start": 14.34,
+   "end": 14.77
+  },
+  {
+   "text": "cuesta.",
+   "start": 14.88,
+   "end": 15.31
+  },
+  {
+   "text": "Con",
+   "start": 16.01,
+   "end": 16.19
+  },
+  {
+   "text": "los",
+   "start": 16.2,
+   "end": 16.31
+  },
+  {
+   "text": "brazos",
+   "start": 16.32,
+   "end": 16.62
+  },
+  {
+   "text": "pegados,",
+   "start": 16.63,
+   "end": 17.05
+  },
+  {
+   "text": "giras",
+   "start": 17.14,
+   "end": 17.41
+  },
+  {
+   "text": "rápido.",
+   "start": 17.42,
+   "end": 17.860000000000003
+  },
+  {
+   "text": "Como",
+   "start": 18.58,
+   "end": 18.83
+  },
+  {
+   "text": "un",
+   "start": 18.84,
+   "end": 18.919999999999998
+  },
+  {
+   "text": "patinador",
+   "start": 18.93,
+   "end": 19.4
+  },
+  {
+   "text": "que",
+   "start": 19.41,
+   "end": 19.49
+  },
+  {
+   "text": "recoge",
+   "start": 19.5,
+   "end": 19.83
+  },
+  {
+   "text": "los",
+   "start": 19.84,
+   "end": 19.96
+  },
+  {
+   "text": "brazos.",
+   "start": 19.97,
+   "end": 20.419999999999998
+  },
+  {
+   "text": "Se",
+   "start": 21.11,
+   "end": 21.33
+  },
+  {
+   "text": "llama",
+   "start": 21.34,
+   "end": 21.55
+  },
+  {
+   "text": "momento",
+   "start": 21.56,
+   "end": 21.9
+  },
+  {
+   "text": "de",
+   "start": 21.91,
+   "end": 21.99
+  },
+  {
+   "text": "inercia.",
+   "start": 22.0,
+   "end": 22.49
+  },
+  {
+   "text": "Con",
+   "start": 23.19,
+   "end": 23.37
+  },
+  {
+   "text": "el",
+   "start": 23.38,
+   "end": 23.45
+  },
+  {
+   "text": "motor",
+   "start": 23.46,
+   "end": 23.73
+  },
+  {
+   "text": "delante,",
+   "start": 23.74,
+   "end": 24.13
+  },
+  {
+   "text": "o",
+   "start": 24.27,
+   "end": 24.31
+  },
+  {
+   "text": "detrás",
+   "start": 24.32,
+   "end": 24.61
+  },
+  {
+   "text": "como",
+   "start": 24.62,
+   "end": 24.82
+  },
+  {
+   "text": "el",
+   "start": 24.83,
+   "end": 24.889999999999997
+  },
+  {
+   "text": "nueve",
+   "start": 24.9,
+   "end": 25.119999999999997
+  },
+  {
+   "text": "once,",
+   "start": 25.13,
+   "end": 25.43
+  },
+  {
+   "text": "el",
+   "start": 25.56,
+   "end": 25.669999999999998
+  },
+  {
+   "text": "peso",
+   "start": 25.68,
+   "end": 25.919999999999998
+  },
+  {
+   "text": "se",
+   "start": 25.93,
+   "end": 26.04
+  },
+  {
+   "text": "aleja",
+   "start": 26.05,
+   "end": 26.310000000000002
+  },
+  {
+   "text": "del",
+   "start": 26.32,
+   "end": 26.46
+  },
+  {
+   "text": "centro",
+   "start": 26.47,
+   "end": 26.779999999999998
+  },
+  {
+   "text": "y",
+   "start": 26.79,
+   "end": 26.83
+  },
+  {
+   "text": "cuesta",
+   "start": 26.84,
+   "end": 27.1
+  },
+  {
+   "text": "más",
+   "start": 27.11,
+   "end": 27.259999999999998
+  },
+  {
+   "text": "girar.",
+   "start": 27.27,
+   "end": 27.59
+  },
+  {
+   "text": "Además,",
+   "start": 28.28,
+   "end": 28.77
+  },
+  {
+   "text": "el",
+   "start": 28.86,
+   "end": 28.98
+  },
+  {
+   "text": "motor",
+   "start": 28.99,
+   "end": 29.25
+  },
+  {
+   "text": "carga",
+   "start": 29.26,
+   "end": 29.490000000000002
+  },
+  {
+   "text": "las",
+   "start": 29.5,
+   "end": 29.64
+  },
+  {
+   "text": "ruedas",
+   "start": 29.65,
+   "end": 29.91
+  },
+  {
+   "text": "de",
+   "start": 29.92,
+   "end": 29.98
+  },
+  {
+   "text": "atrás,",
+   "start": 29.99,
+   "end": 30.319999999999997
+  },
+  {
+   "text": "que",
+   "start": 30.48,
+   "end": 30.57
+  },
+  {
+   "text": "agarran",
+   "start": 30.58,
+   "end": 30.849999999999998
+  },
+  {
+   "text": "mejor",
+   "start": 30.86,
+   "end": 31.12
+  },
+  {
+   "text": "al",
+   "start": 31.13,
+   "end": 31.2
+  },
+  {
+   "text": "acelerar.",
+   "start": 31.21,
+   "end": 31.69
+  },
+  {
+   "text": "A",
+   "start": 32.42,
+   "end": 32.550000000000004
+  },
+  {
+   "text": "cambio:",
+   "start": 32.56,
+   "end": 32.95
+  },
+  {
+   "text": "poco",
+   "start": 33.08,
+   "end": 33.29
+  },
+  {
+   "text": "maletero",
+   "start": 33.3,
+   "end": 33.72
+  },
+  {
+   "text": "y,",
+   "start": 33.73,
+   "end": 33.79
+  },
+  {
+   "text": "si",
+   "start": 33.91,
+   "end": 34.019999999999996
+  },
+  {
+   "text": "derrapa,",
+   "start": 34.03,
+   "end": 34.42
+  },
+  {
+   "text": "es",
+   "start": 34.53,
+   "end": 34.65
+  },
+  {
+   "text": "más",
+   "start": 34.66,
+   "end": 34.809999999999995
+  },
+  {
+   "text": "difícil",
+   "start": 34.82,
+   "end": 35.17
+  },
+  {
+   "text": "de",
+   "start": 35.18,
+   "end": 35.25
+  },
+  {
+   "text": "controlar.",
+   "start": 35.26,
+   "end": 35.75
+  },
+  {
+   "text": "Tú",
+   "start": 36.46,
+   "end": 36.59
+  },
+  {
+   "text": "traes",
+   "start": 36.6,
+   "end": 36.85
+  },
+  {
+   "text": "las",
+   "start": 36.86,
+   "end": 37.01
+  },
+  {
+   "text": "dudas",
+   "start": 37.02,
+   "end": 37.290000000000006
+  },
+  {
+   "text": "y",
+   "start": 37.3,
+   "end": 37.339999999999996
+  },
+  {
+   "text": "nosotros",
+   "start": 37.35,
+   "end": 37.77
+  },
+  {
+   "text": "te",
+   "start": 37.78,
+   "end": 37.870000000000005
+  },
+  {
+   "text": "damos",
+   "start": 37.88,
+   "end": 38.150000000000006
+  },
+  {
+   "text": "el",
+   "start": 38.16,
+   "end": 38.26
+  },
+  {
+   "text": "truco.",
+   "start": 38.27,
+   "end": 38.650000000000006
+  },
+  {
+   "text": "Síguenos",
+   "start": 39.34,
+   "end": 39.85
+  },
+  {
+   "text": "y",
+   "start": 39.86,
+   "end": 39.91
+  },
+  {
+   "text": "las",
+   "start": 39.92,
+   "end": 40.050000000000004
+  },
+  {
+   "text": "resolvemos.",
+   "start": 40.06,
+   "end": 40.72
+  },
+  {
+   "text": "¿Delante,",
+   "start": 41.41,
+   "end": 41.91
+  },
+  {
+   "text": "en",
+   "start": 41.99,
+   "end": 42.09
+  },
+  {
+   "text": "medio",
+   "start": 42.1,
+   "end": 42.39
+  },
+  {
+   "text": "o",
+   "start": 42.4,
+   "end": 42.44
+  },
+  {
+   "text": "detrás:",
+   "start": 42.45,
+   "end": 42.81
+  },
+  {
+   "text": "cuál",
+   "start": 42.93,
+   "end": 43.089999999999996
+  },
+  {
+   "text": "prefieres?",
+   "start": 43.1,
+   "end": 43.64
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 44.14,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué el motor va *en medio*",
+  "scene": 0
+ },
+ "duration": 46.74,
+ "cover_offset_ms": 47040
+}
