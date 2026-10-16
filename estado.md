@@ -32,3 +32,4 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-11-03 14:00 | ¿Por qué una canción se te queda pegada? |  | no | no | no | no | |
 | 2026-11-04 14:00 | ¿Por qué no se cae el agua al girar un cubo? |  | no | no | no | no | |
 | 2026-11-28 14:00 | Noche electoral: cómo se cuentan los votos en tu mesa |  | no | no | no | no | |
+| 2026-10-16 21:00 | ¿Funciona la regla de los cinco segundos? (extra) | content/lote7-02-cinco-segundos | sí | sí | pendiente | no | previews/lote7-02-cinco-segundos-con-voz.mp4 |

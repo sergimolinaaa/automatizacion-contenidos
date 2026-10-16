@@ -67,7 +67,6 @@ Cada idea lleva la pista del mecanismo a explicar; los datos se verifican antes 
 - **Los trucos del supermercado para que compres más**: Leche y pan al fondo, productos caros a la altura de los ojos, carros grandes, música lenta (Milliman, 1982, verificar).
 
 ## Bulos del día a día (3)
-- **¿La regla de los cinco segundos funciona?**: Estudio de Rutgers (Schaffner, 2016): las bacterias pasan en menos de 1 s; depende de humedad y superficie.
 - **¿El Bluetooth gasta mucha batería?**: Bluetooth Low Energy consume muy poco; la pantalla y la señal móvil gastan mucho más (verificar cifras).
 - **¿El agua caliente se congela antes que la fría?**: Efecto Mpemba: observado a veces, sigue en debate; depende de evaporación, convección y recipiente.
 

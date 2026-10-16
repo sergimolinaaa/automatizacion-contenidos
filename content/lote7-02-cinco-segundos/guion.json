@@ -1,0 +1,707 @@
+{
+  "topic": "La regla de los cinco segundos: ¿vale coger rápido la comida del suelo?",
+  "categoria": "bulos",
+  "title": "¿Funciona la regla de los cinco segundos? 🍪",
+  "source": "Fuentes: Miranda y Schaffner (2016), Applied and Environmental Microbiology (Sociedad Americana de Microbiología), «Longer contact times increase cross contamination of Enterobacter aerogenes from surfaces to food» · Universidad Rutgers, nota de prensa «Rutgers researchers debunk five second rule» (2016) · Mental Floss · Infection Control Today · Xataka",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "La regla de los *5 segundos*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-16T21:00:00+02:00",
+    "caption": "¿Funciona la regla de los cinco segundos? Un estudio de la Universidad Rutgers (2016) vio que las bacterias pueden pasar del suelo a la comida en menos de un segundo. Más tiempo, más bacterias, y la humedad manda: la sandía cogió más que nadie y la gominola, la que menos; la moqueta pasó menos que la baldosa (Applied and Environmental Microbiology; Rutgers). ¿Tú también soplas la galleta?",
+    "description": "¿Funciona la regla de los cinco segundos? No: en la Universidad Rutgers dejaron caer sandía, pan, pan con mantequilla y gominolas sobre acero, baldosa, madera y moqueta con bacterias, y en algunos casos las bacterias pasaron a la comida en menos de un segundo. Cuanto más tiempo en el suelo, más bacterias, pero lo que más pesa es la humedad: la sandía fue la que más cogió y la gominola, la que menos; y la moqueta pasó menos bacterias que la baldosa o el acero. Fuentes: Miranda y Schaffner, Applied and Environmental Microbiology (2016); Universidad Rutgers; Mental Floss; Infection Control Today. ¿Tú también soplas la galleta antes de comértela?",
+    "hashtags": [
+      "reglacincosegundos",
+      "bacterias",
+      "mitos",
+      "ciencia"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿*5 segundos*?",
+      "narration": "¿Se te ha caído la galleta y la has cogido en menos de cinco segundos? Las bacterias fueron más rápidas.",
+      "illustration": {
+        "svg_file": "cocina_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · La galleta al suelo",
+        "anims": [
+          {
+            "target": "galleta2",
+            "effect": "hide"
+          },
+          {
+            "target": "mito",
+            "effect": "hide"
+          },
+          {
+            "target": "lque",
+            "effect": "hide"
+          },
+          {
+            "target": "ldonde",
+            "effect": "hide"
+          },
+          {
+            "target": "nina_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "galleta",
+            "effect": "move",
+            "trigger": "caído",
+            "to": [
+              135,
+              305
+            ],
+            "rotate": 160,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "plaf",
+            "effect": "pop",
+            "trigger": "galleta",
+            "sfx": "pop"
+          },
+          {
+            "target": "migas",
+            "effect": "pop",
+            "trigger": "galleta"
+          },
+          {
+            "target": "nina",
+            "effect": "punch",
+            "trigger": "cogido",
+            "amount": 0.3
+          },
+          {
+            "target": "crono",
+            "effect": "pop",
+            "trigger": "menos",
+            "sfx": "tic"
+          },
+          {
+            "target": "aguja",
+            "effect": "spin",
+            "trigger": "cinco",
+            "amount": 1.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "bacs",
+            "effect": "pop",
+            "trigger": "bacterias",
+            "sfx": "pop"
+          },
+          {
+            "target": "bacs",
+            "effect": "bob",
+            "trigger": "bacterias",
+            "amount": 0.4
+          },
+          {
+            "target": "bacs2",
+            "effect": "pop",
+            "trigger": "fueron",
+            "sfx": "pop"
+          },
+          {
+            "target": "lbac",
+            "effect": "pop",
+            "trigger": "rápidas",
+            "sfx": "ding"
+          },
+          {
+            "target": "bacs2",
+            "effect": "wiggle",
+            "trigger": "rápidas",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Lo *probaron*",
+      "narration": "En la Universidad Rutgers tiraron sandía, pan y gominolas a suelos con bacterias.",
+      "illustration": {
+        "svg_file": "lab.svg",
+        "caption": "Fig. 2 · El experimento",
+        "anims": [
+          {
+            "target": "sci",
+            "effect": "breathe"
+          },
+          {
+            "target": "sci_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "lrut",
+            "effect": "pop",
+            "trigger": "Universidad",
+            "sfx": "ding"
+          },
+          {
+            "target": "sci",
+            "effect": "punch",
+            "trigger": "tiraron",
+            "amount": 0.15
+          },
+          {
+            "target": "sandia",
+            "effect": "slide-down",
+            "trigger": "sandía",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "pan",
+            "effect": "slide-down",
+            "trigger": "pan",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "gomi",
+            "effect": "slide-down",
+            "trigger": "gominolas",
+            "dur": 0.4,
+            "sfx": "boing"
+          },
+          {
+            "target": "bacsLab",
+            "effect": "pop",
+            "trigger": "suelos",
+            "sfx": "pop"
+          },
+          {
+            "target": "sandia",
+            "effect": "move",
+            "trigger": "con",
+            "to": [
+              0,
+              140
+            ],
+            "dur": 0.35
+          },
+          {
+            "target": "pan",
+            "effect": "move",
+            "trigger": "con",
+            "to": [
+              0,
+              170
+            ],
+            "dur": 0.35
+          },
+          {
+            "target": "gomi",
+            "effect": "move",
+            "trigger": "con",
+            "to": [
+              0,
+              170
+            ],
+            "dur": 0.35
+          },
+          {
+            "target": "lbacl",
+            "effect": "pop",
+            "trigger": "bacterias",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Saltan *al instante*",
+      "narration": "Las bacterias, bichos tan pequeños que no se ven, pueden saltar a la comida en menos de un segundo.",
+      "illustration": {
+        "svg_file": "micro_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 3 · Al microscopio",
+        "anims": [
+          {
+            "target": "graf",
+            "effect": "hide"
+          },
+          {
+            "target": "bar0",
+            "effect": "hide"
+          },
+          {
+            "target": "bar1",
+            "effect": "hide"
+          },
+          {
+            "target": "bar2",
+            "effect": "hide"
+          },
+          {
+            "target": "bar3",
+            "effect": "hide"
+          },
+          {
+            "target": "nomagia",
+            "effect": "hide"
+          },
+          {
+            "target": "lmas",
+            "effect": "hide"
+          },
+          {
+            "target": "salto3",
+            "effect": "hide"
+          },
+          {
+            "target": "bsuelo",
+            "effect": "pop",
+            "trigger": "bacterias",
+            "sfx": "pop"
+          },
+          {
+            "target": "bsuelo",
+            "effect": "wiggle",
+            "trigger": "bacterias",
+            "amount": 0.3
+          },
+          {
+            "target": "ldim",
+            "effect": "pop",
+            "trigger": "bichos",
+            "sfx": "pop"
+          },
+          {
+            "target": "lgall",
+            "effect": "punch",
+            "trigger": "ven",
+            "amount": 0.3
+          },
+          {
+            "target": "fsalto",
+            "effect": "draw",
+            "trigger": "pueden",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "salto1",
+            "effect": "slide-up",
+            "trigger": "saltar",
+            "dur": 0.4,
+            "sfx": "boing"
+          },
+          {
+            "target": "salto2",
+            "effect": "slide-up",
+            "trigger": "comida",
+            "dur": 0.4,
+            "sfx": "boing"
+          },
+          {
+            "target": "cron2",
+            "effect": "pop",
+            "trigger": "menos",
+            "sfx": "tic"
+          },
+          {
+            "target": "aguja2",
+            "effect": "spin",
+            "trigger": "menos",
+            "amount": 1.2,
+            "origin": "bottom"
+          },
+          {
+            "target": "lmenos",
+            "effect": "pop",
+            "trigger": "segundo",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Más tiempo, *más bichos*",
+      "narration": "Cuantos más segundos, más bacterias. Cinco no es ninguna frontera mágica.",
+      "illustration": {
+        "svg_file": "micro_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 4 · Tiempo en el suelo",
+        "anims": [
+          {
+            "target": "lmenos",
+            "effect": "hide"
+          },
+          {
+            "target": "ldim",
+            "effect": "hide"
+          },
+          {
+            "target": "fsalto",
+            "effect": "hide"
+          },
+          {
+            "target": "cron2",
+            "effect": "hide"
+          },
+          {
+            "target": "bsuelo",
+            "effect": "wiggle",
+            "amount": 0.3
+          },
+          {
+            "target": "graf",
+            "effect": "fade",
+            "trigger": "Cuantos",
+            "dur": 0.3,
+            "sfx": "papel"
+          },
+          {
+            "target": "bar0",
+            "effect": "grow",
+            "trigger": "Cuantos",
+            "origin": "bottom"
+          },
+          {
+            "target": "bar1",
+            "effect": "grow",
+            "trigger": "segundos",
+            "origin": "bottom",
+            "sfx": "tic"
+          },
+          {
+            "target": "bar2",
+            "effect": "grow",
+            "trigger": "bacterias",
+            "origin": "bottom",
+            "sfx": "tic"
+          },
+          {
+            "target": "salto3",
+            "effect": "slide-up",
+            "trigger": "bacterias",
+            "dur": 0.4,
+            "sfx": "boing"
+          },
+          {
+            "target": "bar3",
+            "effect": "grow",
+            "trigger": "Cinco",
+            "origin": "bottom",
+            "sfx": "tic"
+          },
+          {
+            "target": "lmas",
+            "effect": "pop",
+            "trigger": "Cinco",
+            "sfx": "pop"
+          },
+          {
+            "target": "nomagia",
+            "effect": "pop",
+            "trigger": "frontera",
+            "sfx": "sello"
+          },
+          {
+            "target": "nomagia",
+            "effect": "punch",
+            "trigger": "mágica",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "La *humedad* manda",
+      "narration": "Lo que más cuenta es la humedad: las bacterias viajan en el agua, como en un tobogán. La sandía cogió más; la gominola, menos.",
+      "illustration": {
+        "svg_file": "comidas.svg",
+        "caption": "Fig. 5 · Mojado contra seco",
+        "anims": [
+          {
+            "target": "suelos",
+            "effect": "hide"
+          },
+          {
+            "target": "gotas",
+            "effect": "pop",
+            "trigger": "humedad",
+            "sfx": "splash"
+          },
+          {
+            "target": "gotas",
+            "effect": "bob",
+            "trigger": "humedad",
+            "amount": 0.4
+          },
+          {
+            "target": "bacgota",
+            "effect": "slide-down",
+            "trigger": "viajan",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lhum",
+            "effect": "pop",
+            "trigger": "tobogán",
+            "sfx": "pop"
+          },
+          {
+            "target": "csand",
+            "effect": "punch",
+            "trigger": "sandía",
+            "amount": 0.3
+          },
+          {
+            "target": "m1",
+            "effect": "grow",
+            "trigger": "sandía",
+            "origin": "left",
+            "sfx": "tic"
+          },
+          {
+            "target": "lmasC",
+            "effect": "pop",
+            "trigger": "cogió",
+            "sfx": "ding"
+          },
+          {
+            "target": "m2",
+            "effect": "grow",
+            "trigger": "cogió",
+            "origin": "left"
+          },
+          {
+            "target": "cgomi",
+            "effect": "punch",
+            "trigger": "gominola",
+            "amount": 0.3
+          },
+          {
+            "target": "m3",
+            "effect": "grow",
+            "trigger": "gominola",
+            "origin": "left",
+            "sfx": "tic"
+          },
+          {
+            "target": "lmenosC",
+            "effect": "pop",
+            "trigger": "menos",
+            "sfx": "pop"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "tobogán",
+        "pose": "cheer",
+        "note": "¡Yujuuu!",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Y el *suelo*",
+      "narration": "Y el suelo importa: la moqueta pasó menos bacterias que la baldosa o el acero.",
+      "illustration": {
+        "svg_file": "comidas.svg",
+        "caption": "Fig. 6 · Tres suelos",
+        "anims": [
+          {
+            "target": "comidas",
+            "effect": "hide"
+          },
+          {
+            "target": "sb2",
+            "effect": "pop",
+            "trigger": "suelo",
+            "sfx": "pop"
+          },
+          {
+            "target": "sb1",
+            "effect": "pop",
+            "trigger": "moqueta",
+            "sfx": "pop"
+          },
+          {
+            "target": "n1",
+            "effect": "grow",
+            "trigger": "pasó",
+            "origin": "left",
+            "sfx": "tic"
+          },
+          {
+            "target": "lmoq",
+            "effect": "pop",
+            "trigger": "menos",
+            "sfx": "ding"
+          },
+          {
+            "target": "n2",
+            "effect": "grow",
+            "trigger": "baldosa",
+            "origin": "left",
+            "sfx": "tic"
+          },
+          {
+            "target": "sb3",
+            "effect": "pop",
+            "trigger": "acero",
+            "sfx": "pop"
+          },
+          {
+            "target": "n3",
+            "effect": "grow",
+            "trigger": "acero",
+            "origin": "left"
+          },
+          {
+            "target": "lbal",
+            "effect": "pop",
+            "trigger": "acero",
+            "sfx": "pop"
+          },
+          {
+            "target": "sb2",
+            "effect": "wiggle",
+            "trigger": "baldosa",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Es un *mito*",
+      "narration": "Así que la regla es un mito: importa qué cae y dónde.",
+      "illustration": {
+        "svg_file": "cocina_full.svg",
+        "layout": "full",
+        "caption": "Fig. 7 · Veredicto",
+        "anims": [
+          {
+            "target": "galleta",
+            "effect": "hide"
+          },
+          {
+            "target": "crono",
+            "effect": "hide"
+          },
+          {
+            "target": "plaf",
+            "effect": "hide"
+          },
+          {
+            "target": "lbac",
+            "effect": "hide"
+          },
+          {
+            "target": "nina_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "bacs",
+            "effect": "bob",
+            "amount": 0.4
+          },
+          {
+            "target": "nina",
+            "effect": "punch",
+            "trigger": "regla",
+            "amount": 0.2
+          },
+          {
+            "target": "mito",
+            "effect": "pop",
+            "trigger": "mito",
+            "sfx": "sello"
+          },
+          {
+            "target": "mito",
+            "effect": "punch",
+            "trigger": "importa",
+            "amount": 0.25
+          },
+          {
+            "target": "lque",
+            "effect": "pop",
+            "trigger": "qué",
+            "sfx": "pop"
+          },
+          {
+            "target": "galleta2",
+            "effect": "punch",
+            "trigger": "cae",
+            "amount": 0.3
+          },
+          {
+            "target": "ldonde",
+            "effect": "pop",
+            "trigger": "dónde",
+            "sfx": "pop"
+          },
+          {
+            "target": "bacs2",
+            "effect": "wiggle",
+            "trigger": "dónde",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Tú también soplas la galleta antes de comértela?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Tú también *soplas* la galleta antes de comértela?",
+          "trigger": "Tú"
+        }
+      ]
+    }
+  ]
+}

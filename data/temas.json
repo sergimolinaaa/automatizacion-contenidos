@@ -422,7 +422,8 @@
   {
     "tema": "¿La regla de los cinco segundos funciona?",
     "categoria": "bulos",
-    "pista": "Estudio de Rutgers (Schaffner, 2016): las bacterias pasan en menos de 1 s; depende de humedad y superficie."
+    "pista": "Estudio de Rutgers (Schaffner, 2016): las bacterias pasan en menos de 1 s; depende de humedad y superficie.",
+    "hecho": true
   },
   {
     "tema": "¿El Bluetooth gasta mucha batería?",
