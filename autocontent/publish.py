@@ -164,12 +164,26 @@ def interleave(items: list[dict]) -> list[dict]:
     return out
 
 
+def no_dashes(text: str) -> str:
+    """Estilo de la cuenta: ningún guion en los textos (se cambian por comas o espacios)."""
+    text = re.sub(r"^\s*[-–—•]\s+", "", text, flags=re.M)  # viñetas
+    text = re.sub(r"(?<=[.?!:;,])\s*[–—]\s*", " ", text)  # raya tras puntuación
+    text = re.sub(r"\s*[–—]\s*", ", ", text)  # rayas y semirrayas
+    text = re.sub(r"\s+-\s+", ", ", text)  # guion suelto entre espacios
+    return re.sub(r"(?<=\w)-(?=\w)", " ", text)  # guion dentro de palabra (29-N -> 29 N)
+
+
 def caption(script: dict, service: str) -> str:
+    """Texto de cada red: el del guion sin hashtags sueltos, y al final 3-5 hashtags del tema + el nuestro."""
     pub = script.get("publish", {})
-    # Solo nuestro hashtag: se ignoran los del guion y se quitan los que vengan dentro del texto.
     text = pub.get("description" if service.lower() == "youtube" else "caption", script["title"])
-    text = re.sub(r"[ \t]*#\w+", "", text).strip()
-    return f"{text}\n\n{HASHTAG}"
+    text = no_dashes(re.sub(r"[ \t]*#\w+", "", text).strip())
+    tags = []
+    for h in pub.get("hashtags", []):
+        h = "#" + re.sub(r"[^\wáéíóúüñ]", "", h.lstrip("#"), flags=re.I).lower()
+        if len(h) > 1 and h != HASHTAG and h not in tags:
+            tags.append(h)
+    return f"{text}\n\n{' '.join(tags[:5] + [HASHTAG])}"
 
 
 def refresh_hosted(state: dict) -> None:
@@ -230,6 +244,11 @@ def schedule_all(limit: int | None = None) -> list[dict]:
         fixed_due = datetime.fromisoformat(fixed).astimezone(timezone.utc) if fixed else None
         if fixed_due and fixed_due < now + timedelta(minutes=30):
             fixed_due = now + timedelta(minutes=30)
+        # máximo 1 vídeo al día: si ese día ya hay otro, la fecha fija no se usa
+        if fixed_due and any(datetime.fromisoformat(p["due"]).astimezone(TZ).date() == fixed_due.astimezone(TZ).date()
+                             for p in state["posts"]):
+            print(f"  {item['slug']}: ya hay un vídeo el {fixed_due.astimezone(TZ).date()}, va a la cola normal")
+            fixed_due = None
         entry = {"slug": item["slug"], "category": item["category"], "due": (fixed_due or due).isoformat(), "url": url, "posts": {}}
         state["posts"].append(entry)  # se guarda ANTES de crear nada: un fallo nunca provoca duplicados
         save_state(state)

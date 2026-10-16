@@ -6,45 +6,48 @@ psicología, objetos, cocina, animales y reglas de la política actual). Lema: *
 ## Reparto del trabajo
 - **Claude (sesión)**: escribe `content/<loteN-NN-tema>/guion.json` + sus SVG, revisa y hace commit+push.
 - **GitHub Actions**: `render-ejemplo.yml` (al hacer push de `content/**`) pone voz Edge TTS, efectos y renderiza con Remotion;
-  `programar.yml` (cron :37) programa en Buffer (YouTube, Instagram, TikTok) **1 al día a las 14 h de Madrid** (ahorro; antes 9, 14 y 21 h) (`SLOTS` en `autocontent/publish.py`).
+  `programar.yml` (cron :37) programa en Buffer (YouTube, Instagram, TikTok) **1 al día a las 14 h de Madrid**, máximo 1 por día (`SLOTS` en `autocontent/publish.py`).
   Estado de la cola: `data/publicaciones.json`. Banco de temas: `data/temas.json` (marca `"hecho": true` al subir).
 
-## Fórmula y estructura (el nivel MÍNIMO es `content/lote3-01-zapatero`; cópialo como plantilla)
-- Reglas completas de guion, ilustración y DSL de animación: constante `SYSTEM` en `autocontent/generate.py`. Motor: `video/src/components/Illustration.tsx`, tipos en `video/src/types.ts`.
-- guion.json: topic, categoria, title, source (fuentes reales), chapters `["?","1","2","3","+","TÚ"]`, outro_cta, cover, publish, scenes.
-- 7-10 escenas, **100-115 palabras** (35-45 s), frases cortas; escena "+" solo si es muy buena. Voz Edge TTS a +25 % (`config.yaml`).
-- Escena 0 = GANCHO: la frase más impactante, en grande desde el primer fotograma.
-- Escena 1 = directamente la explicación sobre su ilustración. NUNCA decir ni poner «El truco es…» (ni firma, ni etiqueta).
-- Cierre en 2 escenas (capítulo 5 «TÚ»): (1) narración "Tú traes las dudas y nosotros te damos el truco.", headline "Dudas → *truco*",
-  elements `[{"type":"trick","trigger":"Tú","reveal_trigger":"nosotros"}]` (animación con 4 variantes, cambia sola en cada vídeo);
-  (2) final sin mascota: narración `"Síguenos y las resolvemos. <UNA pregunta corta y graciosa>"`,
-  elements `[{"type":"follow","trigger":"Síguenos"},{"type":"ask","text":"¿… *clave* …?","trigger":"<1ª palabra de la pregunta>"}]`.
-- **Para todos, de 10 a 90 años**: cada palabra técnica, la primera vez que sale, va con una definición de pocas palabras o una
-  comparación cotidiana, en la narración y si cabe en una etiqueta («escaño: cada asiento del Congreso», «hipotálamo: el termostato
-  de tu cerebro», «el pistón es como la rodilla del motor»). Si se puede decir sin jerga, sin jerga.
-- Urgente: `"publish": {"at": "2026-10-11T09:00:00+02:00", …}` publica a esa hora sin mover la cola.
-- Texto de publicación: la 1ª frase pica la curiosidad (pregunta o dato sorprendente). Hashtags: SOLO #eltrucoes (lo pone `publish.py`; los del guion se ignoran).
-- Triggers = palabras EXACTAS de la narración de esa escena. Solo datos verdaderos y verificables (WebSearch si dudas).
-- Mascota (matraz): 1-2 cameos graciosos, nunca junto a ilustración + tarjetas.
+## Qué funciona (datos de la cuenta, oct 2026)
+- Lo que habla de «tú»: tu cuerpo, tu mente, tu voto, tu dinero, tu día a día (algo que el espectador ha vivido).
+- Elecciones: SOLO cómo funciona el sistema (voto en blanco, escaños, fechas). NUNCA programas ni propuestas de partidos.
+- Curiosidades visuales «¿cómo es posible?» (piedras que se mueven, palomitas…).
+- Responder preguntas de comentarios (el de los escalofríos rindió muy por encima de la media).
+- 1 vídeo al día a las 14:00, el mismo en las 3 redes. Nunca más de uno al día (`publish.py` lo impide).
 
-## Estilo visual
-- Pegatina realista: degradados, brillos, sombras, anatomía/física correctas; 3-4 SVG por vídeo generados con un script Python que calcula coordenadas.
-- TODAS las escenas (salvo las dos del cierre) llevan dibujo; la mitad inferior queda libre para subtítulos; nada solapado ni cortado.
-- Varía `illustration.layout`: `panel` (1000x700, nada importante fuera de y 45-655, esquina 0-340×0-70 reservada a «Fig.»),
-  `free` (transparente, vertical, height 800-900) y `full` (1080x1920, lo importante entre y 450-1250). Mínimo 2 free/full por vídeo.
-- 6-12 anims por escena (pop/fade/grow/slide/draw, move, hide con trigger, bucles): algo nuevo cada 1-1,5 s.
-- Portada: no tocar (va al final, sin bocadillo).
+## Calendario
+`data/calendario.json` manda (fecha → tema). Cada vídeo lleva `"publish": {"at": "<fecha>T14:00:00+02:00"}` (+01:00 desde el 25-oct).
+Al hacerlo, rellena su `"carpeta"` en el calendario. Si una noticia muy relevante encaja, AVISA al usuario antes de cambiar el calendario.
+DOMINGOS («RESPUESTA A COMENTARIO»): el usuario pasa capturas de comentarios (no tenemos acceso a las redes); se elige la pregunta
+con más likes que encaje y el vídeo empieza «Respondemos a la pregunta de @usuario…». Si no hay pregunta válida, avisar y proponer tema.
 
-## Política actual (categoría "politica")
-Solo el mecanismo (D'Hondt, decreto ley, fechas…) con fuentes oficiales (Constitución, LOREG, BOE, INE); fechas y cifras comprobadas el mismo día.
-Elecciones generales del **29-N** (RD 806/2026): 1 vídeo de política al día + 2 de otros temas. Gancho llamativo ligado al 29-N
-(«Votar en blanco no hace lo que crees», «¿Votar por correo es seguro?»), adaptado al formato, nunca copiado.
-Sin opinión, sin partidos ni políticos reales (nada de «si votas a X esto proponen»), sin caricaturas: partidos ficticios de colores. **Obligatorio**: en la escena 1,
-narración «Sin posicionarnos: solo cómo funciona.» + sello visible «SIN POSICIONARNOS»; y en cada texto de publicación
-«Sin posicionarnos: solo explicamos cómo funciona.».
+## Guion y textos
+- 40-60 s (unas 110-150 palabras), 7-11 escenas. Voz Edge TTS a +25 % (`config.yaml`).
+- GANCHO en los 2 primeros segundos: pregunta directa al espectador («¿Por qué…?», «¿Te ha pasado…?»).
+- Explica el mecanismo de forma sencilla con un ejemplo cotidiano. Para todos, de 10 a 90 años: cada palabra técnica con
+  definición corta o comparación cotidiana. NUNCA decir «El truco es…» en la narración.
+- Cierre en 2 escenas (capítulo 5 «TÚ»): (1) "Tú traes las dudas y nosotros te damos el truco.", headline "Dudas → *truco*",
+  elements `[{"type":"trick","trigger":"Tú","reveal_trigger":"nosotros"}]`; (2) "Síguenos y las resolvemos. <pregunta que invite a comentar>"
+  con `[{"type":"follow","trigger":"Síguenos"},{"type":"ask",...}]`.
+- Cada dato verificado con AL MENOS 2 fuentes fiables, citadas en la descripción y en "source".
+- `cover.text`: título de portada corto, como búsqueda real («Por qué cruje el hielo»).
+- `publish.description` (YouTube) y `publish.caption`: empiezan con la pregunta del título, resumen en 3-4 frases con datos concretos,
+  citan las fuentes y acaban con una pregunta. `publish.hashtags`: 3-5 concretos (sin #); `publish.py` añade #eltrucoes.
+- SIN GUIONES de ningún tipo en textos, títulos ni descripciones (ni -, ni –, ni —): comas, dos puntos o punto y seguido.
+- Triggers = palabras EXACTAS de la narración de esa escena. Mascota: 1-2 cameos, nunca junto a ilustración + tarjetas.
+- Política: neutral, escena 1 «Sin posicionarnos: solo cómo funciona.» + sello; partidos ficticios de colores.
+- Entrega de cada vídeo: `python3 scripts/entrega.py content/<carpeta>` (genera `entregas/<carpeta>.md`).
+
+## Estilo visual (estética azul: fondo azul con cuadrícula, título blanco con bloques lima, ilustración en viñeta)
+- El nivel MÍNIMO es `content/lote3-01-zapatero`. Pegatina realista: degradados, brillos, sombras; 3-4 SVG por vídeo hechos con Python.
+- NUNCA un momento vacío: cada frase tiene algo en pantalla que la ilustra. NUNCA más de 3 s sin que algo aparezca, se mueva o cambie.
+- Todas las escenas (salvo las 2 del cierre) llevan dibujo; mitad inferior libre para subtítulos; nada solapado ni cortado.
+- Layouts `panel` (1000x700), `free` (transparente, vertical) y `full` (1080x1920, lo importante entre y 450-1250). Mínimo 2 free/full.
+- Motor: `video/src/components/Illustration.tsx`, tipos en `video/src/types.ts`, reglas de DSL en `SYSTEM` de `autocontent/generate.py`.
 
 ## Proceso
-1. Elige el siguiente tema no hecho de `data/temas.json` (`prioridad` primero; cada día 1 de política y 2 de otras categorías).
+1. Toma el siguiente día del calendario (`data/calendario.json`) sin carpeta asignada.
 2. Crea la carpeta `content/loteN-NN-tema/` (no renombres carpetas ya subidas: identifican vídeos programados).
 3. Revisa un SVG: `bash scripts/shot.sh in.svg out.png`. Revisa el vídeo entero (sin voz, ~3-6 min):
    `python3 scripts/qa_frames.py content/<carpeta> <scratchpad>/qa_<tema>` y mira TODAS las `hoja_N.png`. Corrige y repite (≥2 rondas).
@@ -62,5 +65,5 @@ narración «Sin posicionarnos: solo cómo funciona.» + sello visible «SIN POS
 - NUNCA `git stash pop` a ciegas (hay stashes viejos que no deben aplicarse); usa `pull --rebase --autostash`.
 - Zooms de cámara (`"camera"`) que tapan el titular o cortan etiquetas: oculta etiquetas con `hide` o quita el zoom.
 - `hide` sin trigger oculta desde el principio de la escena; los `move` se suman; en grupos rotados van en coordenadas locales.
-- Vídeos demasiado largos (>45 s): recorta palabras y la escena "+".
+- Vídeos demasiado largos (>60 s): recorta palabras y la escena "+".
 - **Secretos**: la clave de Buffer vive solo en el secreto `BUFFER_API_KEY` de GitHub. Nunca la escribas en archivos ni pidas claves por chat.

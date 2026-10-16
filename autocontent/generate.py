@@ -259,7 +259,7 @@ Escribe los números de la narración con cifras (42, 5.000) solo si se leen bie
 ADEMÁS:
 - "title": título para YouTube (máx. 70 caracteres, con gancho, sin mentir) que puede llevar 1 emoji al final.
 - "publish": {"caption": texto para Instagram/TikTok (la 1ª frase es una pregunta o dato que pique la curiosidad; 2-3 frases + pregunta), "description": descripción para YouTube
-  (3-5 frases + fuente), "hashtags": ["eltrucoes"]} (solo nuestro hashtag; ninguno dentro del texto).
+  (3-5 frases + fuente), "hashtags": 3-5 hashtags concretos sin #} (publish.py añade #eltrucoes; ninguno dentro del texto; sin guiones en ningún texto).
 - "cover": {"text": gancho de portada de 3-6 palabras con *palabra clave*, "badge": "¿CÓMO LO HACE?" o similar, "scene": 0}.
 - "source": línea corta de fuentes.
 
