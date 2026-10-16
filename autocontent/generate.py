@@ -169,10 +169,12 @@ PARA TODOS (de 10 a 90 años): cada palabra técnica, la primera vez que sale, v
 cotidiana («escaño: cada asiento del Congreso», «el pistón es como la rodilla del motor»). Si se puede decir sin jerga, sin jerga.
 POLÍTICA ACTUAL: también el truco de las reglas detrás de la noticia (cómo se reparten escaños, por qué la fecha de las elecciones,
 qué es un decreto ley...). NEUTRALIDAD TOTAL: explica el mecanismo con fuentes oficiales (Constitución, LOREG, BOE), sin opinar,
-sin favorecer ni ridiculizar a ningún partido o persona, sin caricaturas de políticos reales; en ejemplos numéricos usa partidos
-ficticios de colores. Fechas y cifras de actualidad, comprobadas el mismo día.
-Y DILO EXPLÍCITAMENTE: en la escena 1, una frase corta tipo «Sin posicionarnos: solo cómo funciona.» con un sello/etiqueta
-visible «SIN POSICIONARNOS», y en el texto de publicación de cada red «Sin posicionarnos: solo explicamos cómo funciona.».
+sin favorecer ni ridiculizar a ningún partido o persona, sin caricaturas de políticos reales; los partidos pueden salir con su
+nombre y colores reales, todos tratados igual. Fechas y cifras de actualidad, comprobadas el mismo día.
+Y DILO EXPLÍCITAMENTE: en la escena 1, una frase ENTERA que varíe de un vídeo a otro, tipo «Te lo explicamos sin posicionarnos,
+simplemente con los datos publicados.», con un sello/etiqueta visible «SIN POSICIONARNOS», y lo mismo en el texto de publicación.
+MARCAS: se pueden nombrar y dibujar sus logotipos reales. Precios o cifras estimadas o dichas por alguien: valen si se dice
+claramente que no están confirmados al 100 % y quién lo dice.
 Tono: cercano, con chispa y humor suave; frases cortas que se entienden a la primera; nada de relleno ni clickbait falso.
 NUNCA inventes datos: usa solo los de la ficha de investigación; si un dato está marcado como dudoso, no lo uses.
 

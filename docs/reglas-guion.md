@@ -21,7 +21,11 @@
   citan las fuentes y acaban con una pregunta. `publish.hashtags`: 3-5 concretos (sin #); `publish.py` añade #eltrucoes.
 - SIN GUIONES de ningún tipo en textos, títulos ni descripciones (ni -, ni –, ni —): comas, dos puntos o punto y seguido.
 - Triggers = palabras EXACTAS de la narración de esa escena. Mascota: 1-2 cameos, nunca junto a ilustración + tarjetas.
-- Política: neutral, escena 1 «Sin posicionarnos: solo cómo funciona.» + sello; partidos ficticios de colores.
+- Política: neutral. En la escena 1 una frase ENTERA que varíe de un vídeo a otro: «Te lo explicamos sin posicionarnos, simplemente
+  con los datos publicados.», «Sin posicionarnos: solo con los datos que ya sabemos.»… + sello. Partidos con su NOMBRE y COLORES reales
+  (decisión del usuario, 16-oct), tratados todos igual.
+- Marcas: nombre y logotipo reales permitidos aunque parezca anuncio (dibujado en SVG estilo pegatina). Precios y cifras estimadas o
+  dichas por alguien: valen, pero dilo claro en narración o tarjeta («estimado, no confirmado al 100 %») y cita quién lo dice.
 - Entrega de cada vídeo: `python3 scripts/entrega.py content/<carpeta>` (genera `entregas/<carpeta>.md`).
 ## Calendario
 `data/calendario.json` manda (fecha → tema). Cada vídeo lleva `"publish": {"at": "<fecha>T14:00:00+02:00"}` (+01:00 desde el 25-oct).
