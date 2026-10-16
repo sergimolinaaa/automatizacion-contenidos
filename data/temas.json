@@ -352,7 +352,8 @@
     "tema": "Qué anula tu papeleta (y qué no)",
     "categoria": "politica",
     "prioridad": true,
-    "pista": "Gancho: «Un tachón y tu voto el 29-N no vale». Nulo: papeleta de otro proceso, dos papeletas de partidos distintos, sobre alterado, tachaduras o escritos en Congreso (lista cerrada); dos papeletas iguales = un voto válido. LOREG art. 96. Generales del 29-N (RD 806/2026, BOE 6-10-2026): verifica fechas y cifras el mismo día con fuentes oficiales (JEC, BOE, LOREG, Correos, INE). Neutral: solo el mecanismo, partidos ficticios de colores, «Sin posicionarnos»."
+    "pista": "Gancho: «Un tachón y tu voto el 29-N no vale». Nulo: papeleta de otro proceso, dos papeletas de partidos distintos, sobre alterado, tachaduras o escritos en Congreso (lista cerrada); dos papeletas iguales = un voto válido. LOREG art. 96. Generales del 29-N (RD 806/2026, BOE 6-10-2026): verifica fechas y cifras el mismo día con fuentes oficiales (JEC, BOE, LOREG, Correos, INE). Neutral: solo el mecanismo, partidos ficticios de colores, «Sin posicionarnos».",
+    "hecho": true
   },
   {
     "tema": "Me ha tocado mesa electoral el 29-N: ¿me puedo librar?",
