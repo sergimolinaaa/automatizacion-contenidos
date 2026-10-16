@@ -1,0 +1,717 @@
+{
+ "source": "Fuentes: Norscia y Palagi, PLoS ONE 2011, «Yawn contagion and empathy in Homo sapiens» · Universidad de Pisa, «If you care, yawn back» · ScienceDaily (12/12/2011) · Joly-Mascheroni, Senju y Shepherd, Biology Letters 2008 · Live Science, «Dogs Catch Human Yawns» · National Geographic",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Te",
+   "start": 0.1,
+   "end": 0.25
+  },
+  {
+   "text": "ha",
+   "start": 0.26,
+   "end": 0.3
+  },
+  {
+   "text": "pasado?",
+   "start": 0.31,
+   "end": 0.73
+  },
+  {
+   "text": "Alguien",
+   "start": 1.42,
+   "end": 1.77
+  },
+  {
+   "text": "bosteza",
+   "start": 1.78,
+   "end": 2.15
+  },
+  {
+   "text": "delante",
+   "start": 2.16,
+   "end": 2.48
+  },
+  {
+   "text": "de",
+   "start": 2.49,
+   "end": 2.5900000000000003
+  },
+  {
+   "text": "ti",
+   "start": 2.6,
+   "end": 2.73
+  },
+  {
+   "text": "y,",
+   "start": 2.74,
+   "end": 2.8200000000000003
+  },
+  {
+   "text": "sin",
+   "start": 2.93,
+   "end": 3.0900000000000003
+  },
+  {
+   "text": "querer,",
+   "start": 3.1,
+   "end": 3.3600000000000003
+  },
+  {
+   "text": "bostezas",
+   "start": 3.47,
+   "end": 3.9000000000000004
+  },
+  {
+   "text": "tú.",
+   "start": 3.91,
+   "end": 4.12
+  },
+  {
+   "text": "Es",
+   "start": 4.81,
+   "end": 5.0
+  },
+  {
+   "text": "un",
+   "start": 5.01,
+   "end": 5.1
+  },
+  {
+   "text": "contagio",
+   "start": 5.11,
+   "end": 5.49
+  },
+  {
+   "text": "social:",
+   "start": 5.5,
+   "end": 5.9
+  },
+  {
+   "text": "tu",
+   "start": 6.04,
+   "end": 6.13
+  },
+  {
+   "text": "cerebro",
+   "start": 6.14,
+   "end": 6.449999999999999
+  },
+  {
+   "text": "copia",
+   "start": 6.46,
+   "end": 6.74
+  },
+  {
+   "text": "el",
+   "start": 6.75,
+   "end": 6.83
+  },
+  {
+   "text": "gesto",
+   "start": 6.84,
+   "end": 7.109999999999999
+  },
+  {
+   "text": "de",
+   "start": 7.12,
+   "end": 7.21
+  },
+  {
+   "text": "quien",
+   "start": 7.22,
+   "end": 7.3999999999999995
+  },
+  {
+   "text": "tienes",
+   "start": 7.41,
+   "end": 7.66
+  },
+  {
+   "text": "delante,",
+   "start": 7.67,
+   "end": 8.07
+  },
+  {
+   "text": "como",
+   "start": 8.16,
+   "end": 8.370000000000001
+  },
+  {
+   "text": "un",
+   "start": 8.38,
+   "end": 8.5
+  },
+  {
+   "text": "eco.",
+   "start": 8.51,
+   "end": 8.81
+  },
+  {
+   "text": "Y",
+   "start": 9.49,
+   "end": 9.620000000000001
+  },
+  {
+   "text": "no",
+   "start": 9.63,
+   "end": 9.74
+  },
+  {
+   "text": "copia",
+   "start": 9.75,
+   "end": 10.03
+  },
+  {
+   "text": "a",
+   "start": 10.04,
+   "end": 10.09
+  },
+  {
+   "text": "todos",
+   "start": 10.1,
+   "end": 10.35
+  },
+  {
+   "text": "igual.",
+   "start": 10.36,
+   "end": 10.719999999999999
+  },
+  {
+   "text": "En",
+   "start": 11.43,
+   "end": 11.629999999999999
+  },
+  {
+   "text": "un",
+   "start": 11.64,
+   "end": 11.72
+  },
+  {
+   "text": "estudio",
+   "start": 11.73,
+   "end": 12.09
+  },
+  {
+   "text": "italiano",
+   "start": 12.1,
+   "end": 12.52
+  },
+  {
+   "text": "con",
+   "start": 12.53,
+   "end": 12.66
+  },
+  {
+   "text": "más",
+   "start": 12.67,
+   "end": 12.82
+  },
+  {
+   "text": "de",
+   "start": 12.83,
+   "end": 12.91
+  },
+  {
+   "text": "cien",
+   "start": 12.92,
+   "end": 13.1
+  },
+  {
+   "text": "adultos,",
+   "start": 13.11,
+   "end": 13.549999999999999
+  },
+  {
+   "text": "se",
+   "start": 13.68,
+   "end": 13.79
+  },
+  {
+   "text": "contagiaba",
+   "start": 13.8,
+   "end": 14.270000000000001
+  },
+  {
+   "text": "más",
+   "start": 14.28,
+   "end": 14.469999999999999
+  },
+  {
+   "text": "entre",
+   "start": 14.48,
+   "end": 14.690000000000001
+  },
+  {
+   "text": "familiares,",
+   "start": 14.7,
+   "end": 15.27
+  },
+  {
+   "text": "luego",
+   "start": 15.41,
+   "end": 15.72
+  },
+  {
+   "text": "amigos",
+   "start": 15.73,
+   "end": 16.080000000000002
+  },
+  {
+   "text": "y",
+   "start": 16.09,
+   "end": 16.13
+  },
+  {
+   "text": "por",
+   "start": 16.14,
+   "end": 16.27
+  },
+  {
+   "text": "último",
+   "start": 16.28,
+   "end": 16.57
+  },
+  {
+   "text": "desconocidos.",
+   "start": 16.58,
+   "end": 17.34
+  },
+  {
+   "text": "Con",
+   "start": 18.03,
+   "end": 18.220000000000002
+  },
+  {
+   "text": "la",
+   "start": 18.23,
+   "end": 18.31
+  },
+  {
+   "text": "familia,",
+   "start": 18.32,
+   "end": 18.75
+  },
+  {
+   "text": "además,",
+   "start": 18.84,
+   "end": 19.21
+  },
+  {
+   "text": "el",
+   "start": 19.3,
+   "end": 19.42
+  },
+  {
+   "text": "bostezo",
+   "start": 19.43,
+   "end": 19.79
+  },
+  {
+   "text": "de",
+   "start": 19.8,
+   "end": 19.87
+  },
+  {
+   "text": "vuelta",
+   "start": 19.88,
+   "end": 20.13
+  },
+  {
+   "text": "llega",
+   "start": 20.14,
+   "end": 20.39
+  },
+  {
+   "text": "antes.",
+   "start": 20.4,
+   "end": 20.81
+  },
+  {
+   "text": "Con",
+   "start": 21.51,
+   "end": 21.71
+  },
+  {
+   "text": "un",
+   "start": 21.72,
+   "end": 21.799999999999997
+  },
+  {
+   "text": "extraño",
+   "start": 21.81,
+   "end": 22.189999999999998
+  },
+  {
+   "text": "tarda",
+   "start": 22.2,
+   "end": 22.43
+  },
+  {
+   "text": "más.",
+   "start": 22.44,
+   "end": 22.77
+  },
+  {
+   "text": "Por",
+   "start": 23.46,
+   "end": 23.650000000000002
+  },
+  {
+   "text": "eso",
+   "start": 23.66,
+   "end": 23.8
+  },
+  {
+   "text": "muchos",
+   "start": 23.81,
+   "end": 24.11
+  },
+  {
+   "text": "científicos",
+   "start": 24.12,
+   "end": 24.7
+  },
+  {
+   "text": "lo",
+   "start": 24.71,
+   "end": 24.8
+  },
+  {
+   "text": "ligan",
+   "start": 24.81,
+   "end": 25.07
+  },
+  {
+   "text": "a",
+   "start": 25.08,
+   "end": 25.11
+  },
+  {
+   "text": "la",
+   "start": 25.12,
+   "end": 25.2
+  },
+  {
+   "text": "empatía:",
+   "start": 25.21,
+   "end": 25.68
+  },
+  {
+   "text": "ponerte",
+   "start": 25.82,
+   "end": 26.2
+  },
+  {
+   "text": "en",
+   "start": 26.21,
+   "end": 26.29
+  },
+  {
+   "text": "el",
+   "start": 26.3,
+   "end": 26.37
+  },
+  {
+   "text": "lugar",
+   "start": 26.38,
+   "end": 26.61
+  },
+  {
+   "text": "del",
+   "start": 26.62,
+   "end": 26.75
+  },
+  {
+   "text": "otro.",
+   "start": 26.76,
+   "end": 27.060000000000002
+  },
+  {
+   "text": "Y",
+   "start": 27.76,
+   "end": 27.900000000000002
+  },
+  {
+   "text": "no",
+   "start": 27.91,
+   "end": 28.02
+  },
+  {
+   "text": "solo",
+   "start": 28.03,
+   "end": 28.240000000000002
+  },
+  {
+   "text": "pasa",
+   "start": 28.25,
+   "end": 28.5
+  },
+  {
+   "text": "entre",
+   "start": 28.51,
+   "end": 28.720000000000002
+  },
+  {
+   "text": "personas:",
+   "start": 28.73,
+   "end": 29.2
+  },
+  {
+   "text": "en",
+   "start": 29.3,
+   "end": 29.42
+  },
+  {
+   "text": "otro",
+   "start": 29.43,
+   "end": 29.59
+  },
+  {
+   "text": "experimento,",
+   "start": 29.6,
+   "end": 30.23
+  },
+  {
+   "text": "veintiún",
+   "start": 30.43,
+   "end": 30.919999999999998
+  },
+  {
+   "text": "perros",
+   "start": 30.93,
+   "end": 31.21
+  },
+  {
+   "text": "de",
+   "start": 31.22,
+   "end": 31.279999999999998
+  },
+  {
+   "text": "veintinueve",
+   "start": 31.29,
+   "end": 31.75
+  },
+  {
+   "text": "bostezaron",
+   "start": 31.76,
+   "end": 32.260000000000005
+  },
+  {
+   "text": "al",
+   "start": 32.27,
+   "end": 32.35
+  },
+  {
+   "text": "ver",
+   "start": 32.36,
+   "end": 32.5
+  },
+  {
+   "text": "bostezar",
+   "start": 32.51,
+   "end": 32.9
+  },
+  {
+   "text": "a",
+   "start": 32.91,
+   "end": 32.949999999999996
+  },
+  {
+   "text": "una",
+   "start": 32.96,
+   "end": 33.13
+  },
+  {
+   "text": "persona.",
+   "start": 33.14,
+   "end": 33.62
+  },
+  {
+   "text": "Así",
+   "start": 34.32,
+   "end": 34.62
+  },
+  {
+   "text": "que",
+   "start": 34.63,
+   "end": 34.730000000000004
+  },
+  {
+   "text": "si",
+   "start": 34.74,
+   "end": 34.870000000000005
+  },
+  {
+   "text": "ahora",
+   "start": 34.88,
+   "end": 35.120000000000005
+  },
+  {
+   "text": "estás",
+   "start": 35.13,
+   "end": 35.38
+  },
+  {
+   "text": "bostezando,",
+   "start": 35.39,
+   "end": 35.97
+  },
+  {
+   "text": "tranquilo:",
+   "start": 36.06,
+   "end": 36.5
+  },
+  {
+   "text": "puede",
+   "start": 36.62,
+   "end": 36.82
+  },
+  {
+   "text": "que",
+   "start": 36.83,
+   "end": 36.92
+  },
+  {
+   "text": "solo",
+   "start": 36.93,
+   "end": 37.14
+  },
+  {
+   "text": "sea",
+   "start": 37.15,
+   "end": 37.37
+  },
+  {
+   "text": "empatía.",
+   "start": 37.38,
+   "end": 37.88
+  },
+  {
+   "text": "Tú",
+   "start": 38.6,
+   "end": 38.730000000000004
+  },
+  {
+   "text": "traes",
+   "start": 38.74,
+   "end": 38.99
+  },
+  {
+   "text": "las",
+   "start": 39.0,
+   "end": 39.15
+  },
+  {
+   "text": "dudas",
+   "start": 39.16,
+   "end": 39.43
+  },
+  {
+   "text": "y",
+   "start": 39.44,
+   "end": 39.48
+  },
+  {
+   "text": "nosotros",
+   "start": 39.49,
+   "end": 39.910000000000004
+  },
+  {
+   "text": "te",
+   "start": 39.92,
+   "end": 40.010000000000005
+  },
+  {
+   "text": "damos",
+   "start": 40.02,
+   "end": 40.290000000000006
+  },
+  {
+   "text": "el",
+   "start": 40.3,
+   "end": 40.4
+  },
+  {
+   "text": "truco.",
+   "start": 40.41,
+   "end": 40.79
+  },
+  {
+   "text": "Síguenos",
+   "start": 41.48,
+   "end": 41.989999999999995
+  },
+  {
+   "text": "y",
+   "start": 42.0,
+   "end": 42.05
+  },
+  {
+   "text": "las",
+   "start": 42.06,
+   "end": 42.190000000000005
+  },
+  {
+   "text": "resolvemos.",
+   "start": 42.2,
+   "end": 42.86
+  },
+  {
+   "text": "¿A",
+   "start": 43.55,
+   "end": 43.69
+  },
+  {
+   "text": "quién",
+   "start": 43.7,
+   "end": 43.88
+  },
+  {
+   "text": "le",
+   "start": 43.89,
+   "end": 43.96
+  },
+  {
+   "text": "contagias",
+   "start": 43.97,
+   "end": 44.4
+  },
+  {
+   "text": "tú",
+   "start": 44.41,
+   "end": 44.489999999999995
+  },
+  {
+   "text": "los",
+   "start": 44.5,
+   "end": 44.62
+  },
+  {
+   "text": "bostezos?",
+   "start": 44.63,
+   "end": 45.2
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 45.7,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué se *contagia* el bostezo",
+  "scene": 0
+ },
+ "duration": 48.300000000000004,
+ "cover_offset_ms": 48600
+}
