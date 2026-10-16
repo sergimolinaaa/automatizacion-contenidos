@@ -54,6 +54,23 @@ def align(tokens: list[str], tts_words: list[dict]) -> list[dict]:
                     out[k]["end"] = w["end"]
                 j = k + 1 if tk == key or key.startswith(tk) else k
                 break
+    # el TTS a veces devuelve un bloque para varias palabras («370 kilómetros por hora»): si tras una palabra con tiempo
+    # vienen otras sin él y no hay hueco hasta la siguiente, el bloque se reparte a partes iguales entre todas
+    k = 0
+    while k < len(out):
+        if out[k] is not None or k == 0 or out[k - 1] is None:
+            k += 1
+            continue
+        r = k
+        while r < len(out) and out[r] is None:
+            r += 1
+        prev = out[k - 1]
+        nxt = out[r]["start"] if r < len(out) else None
+        if nxt is None or nxt - prev["end"] < 0.1 * (r - k):
+            s, e, n = prev["start"], prev["end"], r - k + 1
+            for i in range(k - 1, r):
+                out[i] = {"text": tokens[i], "start": s + (e - s) * (i - k + 1) / n, "end": s + (e - s) * (i - k + 2) / n}
+        k = r
     # palabras que el TTS no devolvió: reparten el hueco entre sus vecinas
     for k, item in enumerate(out):
         if item is None:
