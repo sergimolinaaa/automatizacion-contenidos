@@ -1,0 +1,597 @@
+{
+ "source": "Fuentes: LOREG (LO 5/1985), art. 96 (apartados 1, 2, 4 y 5) · Instrucción 1/2012 de la Junta Electoral Central (BOE 19/3/2012) sobre alteraciones en las papeletas · BOE 6/10/2026 (Real Decreto 806/2026) · Ejemplo con partidos ficticios",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "Un",
+   "start": 0.1,
+   "end": 0.30000000000000004
+  },
+  {
+   "text": "tachón",
+   "start": 0.31,
+   "end": 0.62
+  },
+  {
+   "text": "y",
+   "start": 0.63,
+   "end": 0.67
+  },
+  {
+   "text": "tu",
+   "start": 0.68,
+   "end": 0.78
+  },
+  {
+   "text": "voto",
+   "start": 0.79,
+   "end": 1.01
+  },
+  {
+   "text": "del",
+   "start": 1.02,
+   "end": 1.1400000000000001
+  },
+  {
+   "text": "29-N",
+   "start": 1.15,
+   "end": 1.8599999999999999
+  },
+  {
+   "text": "no",
+   "start": 1.87,
+   "end": 1.9800000000000002
+  },
+  {
+   "text": "vale",
+   "start": 1.99,
+   "end": 2.17
+  },
+  {
+   "text": "nada.",
+   "start": 2.18,
+   "end": 2.5
+  },
+  {
+   "text": "Sin",
+   "start": 3.18,
+   "end": 3.43
+  },
+  {
+   "text": "posicionarnos:",
+   "start": 3.44,
+   "end": 4.16
+  },
+  {
+   "text": "solo",
+   "start": 4.28,
+   "end": 4.49
+  },
+  {
+   "text": "cómo",
+   "start": 4.5,
+   "end": 4.69
+  },
+  {
+   "text": "funciona.",
+   "start": 4.7,
+   "end": 5.24
+  },
+  {
+   "text": "El",
+   "start": 5.93,
+   "end": 6.13
+  },
+  {
+   "text": "Congreso",
+   "start": 6.14,
+   "end": 6.569999999999999
+  },
+  {
+   "text": "es",
+   "start": 6.58,
+   "end": 6.67
+  },
+  {
+   "text": "de",
+   "start": 6.68,
+   "end": 6.739999999999999
+  },
+  {
+   "text": "lista",
+   "start": 6.75,
+   "end": 7.0
+  },
+  {
+   "text": "cerrada:",
+   "start": 7.01,
+   "end": 7.3999999999999995
+  },
+  {
+   "text": "nombres",
+   "start": 7.51,
+   "end": 7.89
+  },
+  {
+   "text": "y",
+   "start": 7.9,
+   "end": 8.01
+  },
+  {
+   "text": "orden",
+   "start": 8.02,
+   "end": 8.27
+  },
+  {
+   "text": "los",
+   "start": 8.28,
+   "end": 8.41
+  },
+  {
+   "text": "pone",
+   "start": 8.42,
+   "end": 8.63
+  },
+  {
+   "text": "el",
+   "start": 8.64,
+   "end": 8.71
+  },
+  {
+   "text": "partido.",
+   "start": 8.72,
+   "end": 9.180000000000001
+  },
+  {
+   "text": "Si",
+   "start": 9.88,
+   "end": 10.08
+  },
+  {
+   "text": "tachas",
+   "start": 10.09,
+   "end": 10.4
+  },
+  {
+   "text": "un",
+   "start": 10.41,
+   "end": 10.48
+  },
+  {
+   "text": "nombre,",
+   "start": 10.49,
+   "end": 10.82
+  },
+  {
+   "text": "añades",
+   "start": 10.93,
+   "end": 11.29
+  },
+  {
+   "text": "otro",
+   "start": 11.3,
+   "end": 11.510000000000002
+  },
+  {
+   "text": "o",
+   "start": 11.52,
+   "end": 11.59
+  },
+  {
+   "text": "escribes",
+   "start": 11.6,
+   "end": 12.01
+  },
+  {
+   "text": "algo,",
+   "start": 12.02,
+   "end": 12.29
+  },
+  {
+   "text": "es",
+   "start": 12.39,
+   "end": 12.530000000000001
+  },
+  {
+   "text": "nulo:",
+   "start": 12.54,
+   "end": 12.799999999999999
+  },
+  {
+   "text": "no",
+   "start": 12.92,
+   "end": 13.03
+  },
+  {
+   "text": "cuenta.",
+   "start": 13.04,
+   "end": 13.459999999999999
+  },
+  {
+   "text": "Dos",
+   "start": 14.15,
+   "end": 14.4
+  },
+  {
+   "text": "papeletas",
+   "start": 14.41,
+   "end": 14.870000000000001
+  },
+  {
+   "text": "de",
+   "start": 14.88,
+   "end": 14.950000000000001
+  },
+  {
+   "text": "partidos",
+   "start": 14.96,
+   "end": 15.350000000000001
+  },
+  {
+   "text": "distintos",
+   "start": 15.36,
+   "end": 15.82
+  },
+  {
+   "text": "en",
+   "start": 15.83,
+   "end": 15.91
+  },
+  {
+   "text": "el",
+   "start": 15.92,
+   "end": 16.0
+  },
+  {
+   "text": "mismo",
+   "start": 16.01,
+   "end": 16.26
+  },
+  {
+   "text": "sobre:",
+   "start": 16.27,
+   "end": 16.55
+  },
+  {
+   "text": "nulo.",
+   "start": 16.67,
+   "end": 17.0
+  },
+  {
+   "text": "Pero",
+   "start": 17.7,
+   "end": 17.919999999999998
+  },
+  {
+   "text": "dos",
+   "start": 17.93,
+   "end": 18.1
+  },
+  {
+   "text": "iguales",
+   "start": 18.11,
+   "end": 18.46
+  },
+  {
+   "text": "cuentan",
+   "start": 18.47,
+   "end": 18.779999999999998
+  },
+  {
+   "text": "como",
+   "start": 18.79,
+   "end": 18.98
+  },
+  {
+   "text": "un",
+   "start": 18.99,
+   "end": 19.09
+  },
+  {
+   "text": "solo",
+   "start": 19.1,
+   "end": 19.3
+  },
+  {
+   "text": "voto.",
+   "start": 19.31,
+   "end": 19.65
+  },
+  {
+   "text": "El",
+   "start": 20.34,
+   "end": 20.56
+  },
+  {
+   "text": "sobre",
+   "start": 20.57,
+   "end": 20.76
+  },
+  {
+   "text": "vacío",
+   "start": 20.77,
+   "end": 21.08
+  },
+  {
+   "text": "no",
+   "start": 21.09,
+   "end": 21.22
+  },
+  {
+   "text": "es",
+   "start": 21.23,
+   "end": 21.32
+  },
+  {
+   "text": "nulo:",
+   "start": 21.33,
+   "end": 21.569999999999997
+  },
+  {
+   "text": "es",
+   "start": 21.67,
+   "end": 21.790000000000003
+  },
+  {
+   "text": "voto",
+   "start": 21.8,
+   "end": 22.04
+  },
+  {
+   "text": "en",
+   "start": 22.05,
+   "end": 22.12
+  },
+  {
+   "text": "blanco.",
+   "start": 22.13,
+   "end": 22.55
+  },
+  {
+   "text": "Pero",
+   "start": 23.24,
+   "end": 23.45
+  },
+  {
+   "text": "con",
+   "start": 23.46,
+   "end": 23.59
+  },
+  {
+   "text": "un",
+   "start": 23.6,
+   "end": 23.69
+  },
+  {
+   "text": "folio",
+   "start": 23.7,
+   "end": 23.97
+  },
+  {
+   "text": "en",
+   "start": 23.98,
+   "end": 24.05
+  },
+  {
+   "text": "blanco",
+   "start": 24.06,
+   "end": 24.349999999999998
+  },
+  {
+   "text": "dentro,",
+   "start": 24.36,
+   "end": 24.71
+  },
+  {
+   "text": "sí",
+   "start": 24.81,
+   "end": 24.95
+  },
+  {
+   "text": "es",
+   "start": 24.96,
+   "end": 25.060000000000002
+  },
+  {
+   "text": "nulo.",
+   "start": 25.07,
+   "end": 25.38
+  },
+  {
+   "text": "¿Y",
+   "start": 26.09,
+   "end": 26.26
+  },
+  {
+   "text": "el",
+   "start": 26.27,
+   "end": 26.37
+  },
+  {
+   "text": "Senado?",
+   "start": 26.38,
+   "end": 26.779999999999998
+  },
+  {
+   "text": "Ahí",
+   "start": 27.47,
+   "end": 27.709999999999997
+  },
+  {
+   "text": "sí",
+   "start": 27.72,
+   "end": 27.83
+  },
+  {
+   "text": "se",
+   "start": 27.84,
+   "end": 27.94
+  },
+  {
+   "text": "marcan",
+   "start": 27.95,
+   "end": 28.25
+  },
+  {
+   "text": "cruces:",
+   "start": 28.26,
+   "end": 28.650000000000002
+  },
+  {
+   "text": "hasta",
+   "start": 28.78,
+   "end": 28.990000000000002
+  },
+  {
+   "text": "tres",
+   "start": 29.0,
+   "end": 29.2
+  },
+  {
+   "text": "nombres.",
+   "start": 29.21,
+   "end": 29.7
+  },
+  {
+   "text": "Más",
+   "start": 30.4,
+   "end": 30.68
+  },
+  {
+   "text": "de",
+   "start": 30.69,
+   "end": 30.76
+  },
+  {
+   "text": "tres,",
+   "start": 30.77,
+   "end": 31.04
+  },
+  {
+   "text": "nulo.",
+   "start": 31.13,
+   "end": 31.47
+  },
+  {
+   "text": "Tú",
+   "start": 32.17,
+   "end": 32.300000000000004
+  },
+  {
+   "text": "traes",
+   "start": 32.31,
+   "end": 32.56
+  },
+  {
+   "text": "las",
+   "start": 32.57,
+   "end": 32.72
+  },
+  {
+   "text": "dudas",
+   "start": 32.73,
+   "end": 33.0
+  },
+  {
+   "text": "y",
+   "start": 33.01,
+   "end": 33.05
+  },
+  {
+   "text": "nosotros",
+   "start": 33.06,
+   "end": 33.480000000000004
+  },
+  {
+   "text": "te",
+   "start": 33.49,
+   "end": 33.580000000000005
+  },
+  {
+   "text": "damos",
+   "start": 33.59,
+   "end": 33.86000000000001
+  },
+  {
+   "text": "el",
+   "start": 33.87,
+   "end": 33.97
+  },
+  {
+   "text": "truco.",
+   "start": 33.98,
+   "end": 34.36
+  },
+  {
+   "text": "Síguenos",
+   "start": 35.05,
+   "end": 35.559999999999995
+  },
+  {
+   "text": "y",
+   "start": 35.57,
+   "end": 35.62
+  },
+  {
+   "text": "las",
+   "start": 35.63,
+   "end": 35.760000000000005
+  },
+  {
+   "text": "resolvemos.",
+   "start": 35.77,
+   "end": 36.43
+  },
+  {
+   "text": "¿Tu",
+   "start": 37.12,
+   "end": 37.269999999999996
+  },
+  {
+   "text": "abuela",
+   "start": 37.28,
+   "end": 37.53
+  },
+  {
+   "text": "también",
+   "start": 37.54,
+   "end": 37.86
+  },
+  {
+   "text": "plancha",
+   "start": 37.87,
+   "end": 38.15
+  },
+  {
+   "text": "las",
+   "start": 38.16,
+   "end": 38.279999999999994
+  },
+  {
+   "text": "papeletas?",
+   "start": 38.29,
+   "end": 38.87
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 39.37,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Un tachón y *adiós* voto",
+  "scene": 0
+ },
+ "duration": 41.97,
+ "cover_offset_ms": 42269
+}
