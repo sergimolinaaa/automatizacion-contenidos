@@ -5,7 +5,7 @@
 - Elecciones: SOLO cómo funciona el sistema (voto en blanco, escaños, fechas). NUNCA programas ni propuestas de partidos.
 - Curiosidades visuales «¿cómo es posible?» (piedras que se mueven, palomitas…).
 - Responder preguntas de comentarios (el de los escalofríos rindió muy por encima de la media).
-- 1 vídeo al día a las 14:00, el mismo en las 3 redes. Nunca más de uno al día (`publish.py` lo impide).
+- 2 vídeos al día (14:00 calendario, 21:00 extra), el mismo en las 3 redes. `publish.py` impide más de 2 al día. (Prueba desde el 16-oct: comparar media y total con la semana de 1 al día.)
 
 ## Guion y textos
 - 40-60 s (unas 110-150 palabras), 7-11 escenas. Voz Edge TTS a +25 % (`config.yaml`).

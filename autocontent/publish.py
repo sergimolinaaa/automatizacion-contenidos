@@ -24,8 +24,8 @@ API = "https://api.buffer.com"
 STATE = ROOT / "data" / "publicaciones.json"
 PREVIEWS = ROOT / "previews"
 TZ = ZoneInfo("Europe/Madrid")
-SLOTS = (14,)  # 1 al día (ahorro de créditos); antes (9, 14, 21)
-MIN_GAP = timedelta(hours=12)  # separación mínima con la publicación anterior (1 al día)
+SLOTS = (14, 21)  # 2 al día: mediodía y noche (hora de Madrid)
+MIN_GAP = timedelta(hours=2)  # separación mínima entre publicaciones
 MAX_QUEUE = 8  # publicaciones futuras por canal (el plan de Buffer permite 10)
 HASHTAG = "#eltrucoes"
 CATEGORY_ORDER = ["psicologia", "animales", "objetos", "fisica", "plantas", "cuerpo", "cocina", "tierra", "politica", "consumo", "bulos", "moviles", "dinero"]
@@ -227,8 +227,19 @@ def schedule_all(limit: int | None = None) -> list[dict]:
     chans = channels()
     print("Canales:", ", ".join(f"{c['service']} ({c['name']})" for c in chans))
     now = datetime.now(timezone.utc)
-    last = max((datetime.fromisoformat(p["due"]) for p in state["posts"]), default=None)
-    due = next_slot(max(now + timedelta(minutes=30), (last + MIN_GAP) if last else now))
+
+    def busy(t: datetime) -> bool:
+        """Franja ocupada: ya hay una publicación a menos de MIN_GAP o el día ya tiene len(SLOTS) vídeos."""
+        dues = [datetime.fromisoformat(p["due"]) for p in state["posts"]]
+        same_day = sum(1 for d in dues if d.astimezone(TZ).date() == t.astimezone(TZ).date())
+        return same_day >= len(SLOTS) or any(abs(d - t) < MIN_GAP for d in dues)
+
+    def free_slot(after: datetime) -> datetime:
+        t = next_slot(after)
+        while busy(t):
+            t = next_slot(t)
+        return t
+
     future = sum(1 for p in state["posts"] if datetime.fromisoformat(p["due"]) > now)
     room = max(0, MAX_QUEUE - future)
     limit = room if limit is None else min(limit, room)
@@ -244,18 +255,16 @@ def schedule_all(limit: int | None = None) -> list[dict]:
         fixed_due = datetime.fromisoformat(fixed).astimezone(timezone.utc) if fixed else None
         if fixed_due and fixed_due < now + timedelta(minutes=30):
             fixed_due = now + timedelta(minutes=30)
-        # máximo 1 vídeo al día: si ese día ya hay otro, la fecha fija no se usa
-        if fixed_due and any(datetime.fromisoformat(p["due"]).astimezone(TZ).date() == fixed_due.astimezone(TZ).date()
-                             for p in state["posts"]):
-            print(f"  {item['slug']}: ya hay un vídeo el {fixed_due.astimezone(TZ).date()}, va a la cola normal")
+        # máximo len(SLOTS) vídeos al día y separados: si la fecha fija choca, va a la primera franja libre
+        if fixed_due and busy(fixed_due):
+            print(f"  {item['slug']}: {fixed_due.astimezone(TZ):%d/%m %H:%M} ocupado, va a la primera franja libre")
             fixed_due = None
-        entry = {"slug": item["slug"], "category": item["category"], "due": (fixed_due or due).isoformat(), "url": url, "posts": {}}
+        due = fixed_due or free_slot(now + timedelta(minutes=30))
+        entry = {"slug": item["slug"], "category": item["category"], "due": due.isoformat(), "url": url, "posts": {}}
         state["posts"].append(entry)  # se guarda ANTES de crear nada: un fallo nunca provoca duplicados
         save_state(state)
         full = fill_channels(state, entry, item["script"], chans, item["thumb_ms"])
         scheduled.append(entry)
-        if not fixed_due:
-            due = next_slot(due + MIN_GAP)
         if not full:
             print("  Buffer está lleno en algún canal; los canales que faltan se completarán en la próxima ejecución.")
             break

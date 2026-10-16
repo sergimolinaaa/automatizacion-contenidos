@@ -17,7 +17,8 @@ Empieza SIEMPRE leyendo `estado.md` (qué está guionizado, montado, programado 
 ## Reglas que nunca se rompen
 - Calidad de guion, ilustración y animación al nivel de `content/lote3-01-zapatero` y `content/lote6-03-voto-en-blanco`.
 - Nunca un momento vacío; nunca más de 3 s sin que algo aparezca, se mueva o cambie.
-- 1 vídeo al día a las 14:00 (`publish.at`), el mismo en las 3 redes; `publish.py` impide 2 el mismo día.
+- 2 vídeos al día, el mismo en las 3 redes: 14:00 el del calendario (`publish.at`) y 21:00 uno extra de `data/temas.json`
+  (sin `publish.at`; va a la primera franja libre). `publish.py` impide más de 2 al día.
 - Elecciones: solo cómo funciona el sistema, neutral («Sin posicionarnos»), nunca programas de partidos.
 - Nunca decir «El truco es…» en la narración. Sin guiones (-, –, —) en ningún texto. Hashtags: 3-5 + #eltrucoes.
 - Solo datos verificados con 2 fuentes fiables. Errores típicos: `docs/errores.md`.
