@@ -12,7 +12,7 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-10-14 14:00 | lote6-02-escalofrios | content/lote6-02-escalofrios | sí | sí | sí | sí | previews/lote6-02-escalofrios-con-voz.mp4 |
 | 2026-10-15 14:00 | lote6-05-black-friday | content/lote6-05-black-friday | sí | sí | sí | sí | previews/lote6-05-black-friday-con-voz.mp4 |
 | 2026-10-16 14:00 | lote6-08-papeleta-nula | content/lote6-08-papeleta-nula | sí | sí | sí | pendiente | previews/lote6-08-papeleta-nula-con-voz.mp4 |
-| 2026-10-17 14:00 | ¿Por qué cruje el hielo al echarle bebida? | content/lote7-01-hielo-cruje | sí | sí | pendiente | no | previews/lote7-01-hielo-cruje-con-voz.mp4 |
+| 2026-10-17 21:00 | ¿Por qué cruje el hielo al echarle bebida? (movido a la noche) | content/lote7-01-hielo-cruje | sí | sí | pendiente | no | previews/lote7-01-hielo-cruje-con-voz.mp4 |
 | 2026-10-18 14:00 | ¿Por qué te crujen los nudillos? |  | no | no | no | no | |
 | 2026-10-19 14:00 | Te ha tocado mesa electoral el 29-N: ¿te puedes librar? |  | no | no | no | no | |
 | 2026-10-20 14:00 | ¿Por qué bostezar se contagia? (piloto sistema nuevo) | content/lote7-03-bostezo | sí | sí | pendiente | no | previews/lote7-03-bostezo-con-voz.mp4 |
@@ -32,11 +32,11 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-11-03 14:00 | ¿Por qué una canción se te queda pegada? |  | no | no | no | no | |
 | 2026-11-04 14:00 | ¿Por qué no se cae el agua al girar un cubo? |  | no | no | no | no | |
 | 2026-11-28 14:00 | Noche electoral: cómo se cuentan los votos en tu mesa |  | no | no | no | no | |
-| 2026-10-17 21:00 | ¿Funciona la regla de los cinco segundos? (extra, movido desde el vie 21:00) | content/lote7-02-cinco-segundos | sí | sí | pendiente | no | previews/lote7-02-cinco-segundos-con-voz.mp4 |
+| 2026-10-18 21:00 | ¿Funciona la regla de los cinco segundos? (extra, movido al dom) | content/lote7-02-cinco-segundos | sí | sí | pendiente | no | previews/lote7-02-cinco-segundos-con-voz.mp4 |
 
 | 2026-10-19 21:00 | ¿Por qué los precios acaban en ,99? (extra) | content/lote7-08-precios-99 | sí | sí | pendiente | no | previews/lote7-08-precios-99-con-voz.mp4 |
 | 2026-10-16 21:00 | Porsche Mission S: ¿por qué los superdeportivos llevan el motor en medio? (actualidad) | content/lote7-09-motor-central | en curso |
-| 2026-10-18 21:00 | Tesla Roadster: ¿cómo puede «volar» un coche? (actualidad) | content/lote7-10-tesla-vuela | sí | sí | pendiente | no | previews/lote7-10-tesla-vuela-con-voz.mp4 |
+| 2026-10-17 14:00 | Tesla Roadster: ¿cómo puede «volar» un coche? (actualidad, 140 palabras tras recorte) | content/lote7-10-tesla-vuela | sí | sí | pendiente | no | previews/lote7-10-tesla-vuela-con-voz.mp4 |
 ## Coste por fase (tokens de subagente, aprox.)
 | Fecha | Fase | Coste |
 |---|---|---|
