@@ -1,0 +1,136 @@
+import json
+def A(target, effect, trigger=None, **k):
+    d = {"target": target, "effect": effect}
+    if trigger: d["trigger"] = trigger
+    d.update(k); return d
+def Z(x, y, amount, trigger=None, dur=0.8):
+    d = {"target": "camera", "effect": "zoom", "to": [x, y], "amount": amount, "dur": dur}
+    if trigger: d["trigger"] = trigger
+    return d
+bano_loops = [A("riph1", "ripple", phase=0.0), A("riph2", "ripple", phase=0.5), A("ripf1", "ripple", phase=0.25), A("ripf2", "ripple", phase=0.75),
+              A("duck", "bob", amount=0.5), A("steam", "drift", amount=0.6)]
+g = {
+ "topic": "Por qué se arrugan los dedos en el agua",
+ "categoria": "cuerpo",
+ "title": "¿Por qué se arrugan los dedos en el agua? 🛁",
+ "source": "Fuentes: Kareklas et al., Biology Letters (2013) · Haseleu et al., PLOS ONE (2014) · estudios con lesiones del nervio mediano · German et al., J. Mech. Behav. Biomed. Mater. (2025)",
+ "chapters": ["?", "1", "2", "3", "+", "TÚ"],
+ "outro_cta": "Tu cuerpo también tiene trucos",
+ "cover": {"text": "Tus dedos *no se empapan*", "badge": "¿ENTONCES QUÉ PASA?", "scene": 0},
+ "publish": {
+  "caption": "No, tus dedos no se arrugan solo porque se empapen 🛁 Lo ordena tu sistema nervioso… y puede que sea para agarrar mejor. ¿Cuánto aguantas tú en la bañera?",
+  "description": "Las arrugas de los dedos en el agua no son solo piel empapada: las provoca el sistema nervioso al estrechar los vasos sanguíneos de la yema, que pierde volumen y hace que la piel se pliegue. Si el nervio del dedo está dañado, no aparecen. Una hipótesis es que funcionan como el dibujo de un neumático y mejoran el agarre en mojado: un experimento de 2013 lo apoyó, pero otro de 2014 no encontró diferencias. Fuentes: Kareklas et al., Biology Letters (2013); Haseleu et al., PLOS ONE (2014); German et al., J. Mech. Behav. Biomed. Mater. (2025).",
+  "hashtags": ["cuerpohumano", "curiosidades", "ciencia", "biologia", "sabiasque", "eltrucoes"]
+ },
+ "scenes": [
+  {"chapter": 0, "headline": "Tus dedos *se arrugan*",
+   "narration": "Pasa un rato en la bañera… y tus dedos acaban como pasas.",
+   "illustration": {"svg_file": "bano.svg", "caption": "Fig. 1 · Hora del baño", "anims": [
+     A("lmanos", "hide"), A("lpies", "hide"), *bano_loops,
+     A("hand", "float", amount=0.25), A("foot", "float", amount=0.2),
+     A("duck", "punch", "bañera"),
+     Z(405, 190, 1.6, "dedos"),
+     A("wrinkles", "draw", "acaban", dur=0.9, sfx="rotulador"),
+     A("larrugas", "pop", "pasas", sfx="pop"),
+     A("toewr", "draw", "pasas", dur=0.7)]}},
+  {"chapter": 0, "signature": True, "headline": "El truco es…", "narration": "El truco es…"},
+  {"chapter": 1, "number": "1", "headline": "No es *el agua*",
+   "narration": "Parece que la piel se empapa de agua y ya está. Pero no es tan simple.",
+   "illustration": {"svg_file": "corte.svg", "caption": "Fig. 2 · La piel por dentro", "anims": [
+     *[A(x, "hide") for x in ["wavy", "vthin", "shrink", "larrugas", "lmenos", "signal", "lvasos", "lnervio"]],
+     A("vwide", "pulse", amount=0.25), A("soak", "float", amount=0.4),
+     Z(380, 280, 1.4, "empapa"),
+     A("lpiel", "pop", "Pero"),
+     A("soak", "pop", "empapa", sfx="burbujas"),
+     A("soak", "punch", "agua"),
+     Z(500, 350, 1, "Pero"),
+     A("nox", "pop", "simple", sfx="none")]},
+   "elements": [{"type": "stamp", "text": "Mito", "tone": "hot", "trigger": "simple"}]},
+  {"chapter": 1, "number": "1", "headline": "La *prueba*",
+   "narration": "La prueba: si el nervio del dedo está dañado, ese dedo no se arruga. Ni un poquito.",
+   "illustration": {"svg_file": "nervio.svg", "caption": "Fig. 3 · Dos dedos en remojo", "anims": [
+     *[A(x, "hide") for x in ["cut", "ldanado", "lsano", "lliso"]],
+     A("ripl1", "ripple", phase=0.0), A("ripl2", "ripple", phase=0.5), A("ripr1", "ripple", phase=0.2), A("ripr2", "ripple", phase=0.7),
+     A("larrugas", "pop", "prueba"),
+     A("lsano", "pop", "nervio"), A("nervel", "punch", "nervio"),
+     A("sigl", "move", "nervio", to=[0, -360], dur=1.3),
+     A("cut", "pop", "dañado", sfx="chasquido"), A("ldanado", "pop", "dañado"),
+     A("sigr", "move", "dañado", to=[0, -128], dur=0.6),
+     A("sigr", "shake", "arruga", amount=0.8),
+     A("lliso", "pop", "arruga"),
+     Z(700, 230, 1.5, "poquito"),
+     A("smooth", "punch", "poquito")]}},
+  {"chapter": 2, "number": "2", "headline": "Lo ordenan *tus nervios*",
+   "narration": "Es una orden de tu sistema nervioso: estrecha los vasos sanguíneos de la yema.",
+   "illustration": {"svg_file": "corte.svg", "caption": "Fig. 4 · La orden", "anims": [
+     *[A(x, "hide") for x in ["wavy", "vthin", "soak", "nox", "shrink", "larrugas", "lmenos", "lpiel", "lvasos", "lnervio"]],
+     A("vwide", "pulse", amount=0.25),
+     A("signal", "pop", "orden", sfx="brillo"),
+     A("signal", "move", "sistema", to=[540, 0], dur=1.3),
+     A("lnervio", "pop", "nervioso"),
+     A("branches", "pulse", "estrecha", amount=1.2),
+     A("vwide", "hide", "estrecha"), A("vthin", "pop", "estrecha", sfx="whoosh"),
+     Z(560, 400, 1.4, "estrecha"),
+     A("lvasos", "pop", "vasos"),
+     Z(500, 350, 1, "yema"),
+     A("inset", "punch", "yema")]}},
+  {"chapter": 2, "number": "2", "headline": "La piel *se pliega*",
+   "narration": "La yema pierde volumen, a la piel le sobra sitio… y se pliega en arrugas.",
+   "illustration": {"svg_file": "corte.svg", "caption": "Fig. 5 · Piel de sobra", "anims": [
+     *[A(x, "hide") for x in ["wavy", "vwide", "soak", "nox", "signal", "larrugas", "lmenos", "shrink", "lpiel", "lvasos", "lnervio"]],
+     A("vthin", "pulse", amount=0.2),
+     A("inset", "punch", "yema"),
+     A("shrink", "pop", "pierde", sfx="whoosh"), A("lmenos", "pop", "volumen"),
+     A("shrink", "float", "volumen", amount=0.6),
+     A("lpiel", "pop", "piel"),
+     A("flat", "hide", "pliega"), A("wavy", "fade", "pliega", dur=0.35),
+     Z(330, 300, 1.4, "pliega"),
+     A("larrugas", "pop", "arrugas", sfx="ding"),
+     A("wavy", "punch", "arrugas", amount=0.4)]}},
+  {"chapter": 3, "number": "3", "headline": "Como un *neumático*",
+   "narration": "¿Para qué? Una hipótesis: funcionan como el dibujo de un neumático.",
+   "illustration": {"svg_file": "neumatico.svg", "caption": "Fig. 6 · Dedo y rueda", "anims": [
+     *[A(x, "hide") for x in ["ldedo", "lneum", "outl", "outr", "eq"]],
+     A("tire", "spin", amount=0.8), A("spray", "drift", amount=0.5),
+     Z(500, 200, 1.4),
+     A("ldedo", "pop", "funcionan"),
+     A("lneum", "pop", "neumático", sfx="pop"),
+     A("tire", "punch", "neumático"),
+     Z(500, 350, 1, "dibujo"),
+     A("eq", "pop", "dibujo", sfx="ding"),
+     A("channels", "punch", "neumático"), A("channels2", "punch", "neumático")]},
+   "elements": [{"type": "tag", "text": "Hipótesis", "tone": "ink", "trigger": "hipótesis"}]},
+  {"chapter": 3, "number": "3", "headline": "Surcos de *desagüe*",
+   "narration": "Al apretar, el agua escapa por los surcos, como en una carretera mojada, y agarras mejor.",
+   "illustration": {"svg_file": "neumatico.svg", "caption": "Fig. 7 · Vista desde abajo", "anims": [
+     A("outl", "hide"), A("outr", "hide"), A("squirt", "hide"),
+     A("tire", "spin", amount=0.8), A("spray", "drift", amount=0.5),
+     A("finger", "punch", "apretar"), A("squirt", "pop", "apretar", sfx="splash"),
+     Z(250, 500, 1.6, "agua"),
+     A("channels", "flow", "escapa", amount=1.2), A("outl", "pop", "escapa", sfx="chorro"),
+     A("channels", "punch", "surcos"),
+     Z(750, 500, 1.6, "carretera"),
+     A("channels2", "flow", "carretera", amount=1.2), A("outr", "pop", "carretera"),
+     Z(500, 350, 1, "agarras"),
+     A("finger", "punch", "agarras")]}},
+  {"chapter": 4, "number": "+", "headline": "¿Funciona? *Debate*",
+   "narration": "¿Funciona? En un experimento movían canicas mojadas un 12 % más rápido… pero otro estudio no lo confirmó.",
+   "elements": [
+     {"type": "stat", "label": "Canicas mojadas, más rápido", "value": 12, "from": 0, "prefix": "+", "unit": "%", "note": "con dedos arrugados (2013)", "trigger": "Funciona"},
+     {"type": "fact", "label": "Pero", "text": "En 2014, otro estudio no vio ninguna diferencia", "tone": "paper", "trigger": "otro"}],
+   "mascot": {"trigger": "confirmó", "pose": "think", "note": "Ciencia en pleno debate", "side": "right"}},
+  {"chapter": 4, "number": "+", "headline": "Solo *manos y pies*",
+   "narration": "Y solo pasa en dedos de manos y pies. Además, tus arrugas salen siempre con el mismo dibujo.",
+   "illustration": {"svg_file": "bano.svg", "caption": "Fig. 8 · Siempre igual", "anims": [
+     A("lmanos", "hide"), A("lpies", "hide"), A("larrugas", "hide"), *bano_loops,
+     A("hand", "float", amount=0.25),
+     A("lmanos", "pop", "manos"), A("hand", "punch", "manos"),
+     Z(800, 270, 1.7, "pies"), A("lpies", "pop", "pies"), A("toewr", "punch", "pies"),
+     A("lmanos", "hide", "arrugas"),
+     Z(405, 190, 1.6, "arrugas"), A("larrugas", "pop", "arrugas"),
+     A("wrinkles", "draw", "mismo", dur=0.9, sfx="rotulador")]}},
+  {"chapter": 5, "number": "TÚ", "headline": "*Confiesa*",
+   "narration": "Confiesa: ¿cuánto aguantas en la bañera antes de ser una pasa? Te leo.",
+   "elements": [{"type": "ask", "text": "¿Cuánto aguantas en la bañera antes de ser una *pasa*?", "trigger": "Confiesa"}]}
+ ]}
+open("/home/user/automatizacion-contenidos/content/lote1-03-dedos-arrugados/guion.json", "w").write(json.dumps(g, ensure_ascii=False, indent=2))
