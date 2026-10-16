@@ -255,10 +255,11 @@ def schedule_all(limit: int | None = None) -> list[dict]:
         fixed_due = datetime.fromisoformat(fixed).astimezone(timezone.utc) if fixed else None
         if fixed_due and fixed_due < now + timedelta(minutes=30):
             fixed_due = now + timedelta(minutes=30)
-        # máximo len(SLOTS) vídeos al día y separados: si la fecha fija choca, va a la primera franja libre
+        # máximo len(SLOTS) vídeos al día y separados: si la fecha fija choca, va a la primera franja libre DESDE esa
+        # fecha (nunca antes, para no quitarle el hueco a otro vídeo con hora fija que aún se está renderizando)
         if fixed_due and busy(fixed_due):
-            print(f"  {item['slug']}: {fixed_due.astimezone(TZ):%d/%m %H:%M} ocupado, va a la primera franja libre")
-            fixed_due = None
+            print(f"  {item['slug']}: {fixed_due.astimezone(TZ):%d/%m %H:%M} ocupado, va a la primera franja libre desde entonces")
+            fixed_due = free_slot(fixed_due - timedelta(minutes=1))
         due = fixed_due or free_slot(now + timedelta(minutes=30))
         entry = {"slug": item["slug"], "category": item["category"], "due": due.isoformat(), "url": url, "posts": {}}
         state["posts"].append(entry)  # se guarda ANTES de crear nada: un fallo nunca provoca duplicados
