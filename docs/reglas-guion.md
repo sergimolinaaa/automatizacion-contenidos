@@ -26,5 +26,5 @@
 ## Calendario
 `data/calendario.json` manda (fecha → tema). Cada vídeo lleva `"publish": {"at": "<fecha>T14:00:00+02:00"}` (+01:00 desde el 25-oct).
 Al hacerlo, rellena su `"carpeta"` en el calendario. Si una noticia muy relevante encaja, AVISA al usuario antes de cambiar el calendario.
-DOMINGOS («RESPUESTA A COMENTARIO»): el usuario pasa capturas de comentarios (no tenemos acceso a las redes); se elige la pregunta
+DOMINGOS: de momento SIN respuestas a comentarios (decisión del usuario, 16-oct); se usa un tema de los pilares. Si se reactivan: el usuario pasa capturas de comentarios (no tenemos acceso a las redes); se elige la pregunta
 con más likes que encaje y el vídeo empieza «Respondemos a la pregunta de @usuario…». Si no hay pregunta válida, avisar y proponer tema.

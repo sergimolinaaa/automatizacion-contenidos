@@ -13,21 +13,21 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-10-15 14:00 | lote6-05-black-friday | content/lote6-05-black-friday | sí | sí | sí | sí | previews/lote6-05-black-friday-con-voz.mp4 |
 | 2026-10-16 14:00 | lote6-08-papeleta-nula | content/lote6-08-papeleta-nula | sí | sí | sí | pendiente | previews/lote6-08-papeleta-nula-con-voz.mp4 |
 | 2026-10-17 14:00 | ¿Por qué cruje el hielo al echarle bebida? | content/lote7-01-hielo-cruje | sí | sí | pendiente | no | previews/lote7-01-hielo-cruje-con-voz.mp4 |
-| 2026-10-18 14:00 | RESPUESTA A COMENTARIO |  | no | no | no | no | |
-| 2026-10-19 14:00 | ¿Qué pasa si votas con la papeleta rota o escrita? |  | no | no | no | no | |
+| 2026-10-18 14:00 | ¿Por qué te crujen los nudillos? |  | no | no | no | no | |
+| 2026-10-19 14:00 | Te ha tocado mesa electoral el 29-N: ¿te puedes librar? |  | no | no | no | no | |
 | 2026-10-20 14:00 | ¿Por qué bostezar se contagia? (piloto sistema nuevo) | content/lote7-03-bostezo | sí | sí | pendiente | no | previews/lote7-03-bostezo-con-voz.mp4 |
 | 2026-10-21 14:00 | ¿Por qué la leche está al fondo del súper? |  | no | no | no | no | |
 | 2026-10-22 14:00 | ¿Por qué te pica una picadura y rascarte lo empeora? |  | no | no | no | no | |
 | 2026-10-23 14:00 | ¿Por qué entras en una habitación y olvidas a qué ibas? |  | no | no | no | no | |
 | 2026-10-24 14:00 | ¿Cómo vuela un avión de 400 toneladas? |  | no | no | no | no | |
-| 2026-10-25 14:00 | RESPUESTA A COMENTARIO |  | no | no | no | no | |
+| 2026-10-25 14:00 | (tema de pilares) |  | no | no | no | no | |
 | 2026-10-26 14:00 | Esa sacudida al dormirte: ¿por qué sientes que caes? |  | no | no | no | no | |
 | 2026-10-27 14:00 | ¿Por qué se te duerme la pierna? |  | no | no | no | no | |
 | 2026-10-28 14:00 | Pack ahorro que sale más caro: mira el precio por kilo |  | no | no | no | no | |
 | 2026-10-29 14:00 | ¿Por qué te ruge la tripa? |  | no | no | no | no | |
 | 2026-10-30 14:00 | ¿Por qué no puedes hacerte cosquillas a ti mismo? |  | no | no | no | no | |
 | 2026-10-31 14:00 | ¿Por qué el agua caliente puede congelarse antes? |  | no | no | no | no | |
-| 2026-11-01 14:00 | RESPUESTA A COMENTARIO |  | no | no | no | no | |
+| 2026-11-01 14:00 | (tema de pilares) |  | no | no | no | no | |
 | 2026-11-02 14:00 | ¿Por qué ves caras en los enchufes? |  | no | no | no | no | |
 | 2026-11-03 14:00 | ¿Por qué una canción se te queda pegada? |  | no | no | no | no | |
 | 2026-11-04 14:00 | ¿Por qué no se cae el agua al girar un cubo? |  | no | no | no | no | |
