@@ -42,5 +42,7 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 |---|---|---|
 | 2026-10-16 | Librería (una vez) | 360.000 |
 | 2026-10-16 | Guiones semana 20-24 oct (5 vídeos) | 100.000 |
+| 2026-10-16 | Montaje Tesla Roadster (guion + montaje + 10 piezas) | 190.000 |
+| 2026-10-16 | Montaje Porsche Mission S (guion + montaje + 12 piezas, en 2 tandas) | 186.000 + tanda fallida |
 | 2026-10-16 | Montaje piloto bostezo (incluye 10 piezas nuevas de librería) | 225.000 + correcciones |
 | referencia | Vídeo con sistema antiguo | 150.000-215.000 |
