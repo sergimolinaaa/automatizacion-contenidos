@@ -36,7 +36,7 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 
 | 2026-10-19 21:00 | ¿Por qué los precios acaban en ,99? (extra) | content/lote7-08-precios-99 | sí | sí | pendiente | no | previews/lote7-08-precios-99-con-voz.mp4 |
 | 2026-10-16 21:00 | Porsche Mission S: ¿por qué los superdeportivos llevan el motor en medio? (actualidad) | content/lote7-09-motor-central | en curso |
-| 2026-10-18 21:00 | Tesla Roadster: ¿cómo puede «volar» un coche? (actualidad) | content/lote7-10-tesla-vuela | en curso | no | no | no | | no | no | no | |
+| 2026-10-18 21:00 | Tesla Roadster: ¿cómo puede «volar» un coche? (actualidad) | content/lote7-10-tesla-vuela | sí | sí | pendiente | no | previews/lote7-10-tesla-vuela-con-voz.mp4 |
 ## Coste por fase (tokens de subagente, aprox.)
 | Fecha | Fase | Coste |
 |---|---|---|
