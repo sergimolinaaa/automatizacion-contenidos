@@ -1,0 +1,752 @@
+{
+ "source": "Fuentes: The Conversation, serie Curious Kids (Daniel Southam, Universidad Curtin) · ScienceABC · Mental Floss · Engineering ToolBox y Wikipedia (dilatación térmica del hielo y del vidrio) · IDAE y fabricantes (congelador a 18 °C bajo cero)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Has",
+   "start": 0.1,
+   "end": 0.33
+  },
+  {
+   "text": "oído",
+   "start": 0.34,
+   "end": 0.5900000000000001
+  },
+  {
+   "text": "cómo",
+   "start": 0.6,
+   "end": 0.79
+  },
+  {
+   "text": "cruje",
+   "start": 0.8,
+   "end": 1.06
+  },
+  {
+   "text": "el",
+   "start": 1.07,
+   "end": 1.1600000000000001
+  },
+  {
+   "text": "hielo",
+   "start": 1.17,
+   "end": 1.3699999999999999
+  },
+  {
+   "text": "al",
+   "start": 1.38,
+   "end": 1.46
+  },
+  {
+   "text": "echarle",
+   "start": 1.47,
+   "end": 1.78
+  },
+  {
+   "text": "la",
+   "start": 1.79,
+   "end": 1.87
+  },
+  {
+   "text": "bebida?",
+   "start": 1.88,
+   "end": 2.27
+  },
+  {
+   "text": "Tiene",
+   "start": 2.96,
+   "end": 3.2199999999999998
+  },
+  {
+   "text": "explicación.",
+   "start": 3.23,
+   "end": 3.9299999999999997
+  },
+  {
+   "text": "El",
+   "start": 4.63,
+   "end": 4.85
+  },
+  {
+   "text": "hielo",
+   "start": 4.86,
+   "end": 5.050000000000001
+  },
+  {
+   "text": "sale",
+   "start": 5.06,
+   "end": 5.29
+  },
+  {
+   "text": "del",
+   "start": 5.3,
+   "end": 5.41
+  },
+  {
+   "text": "congelador",
+   "start": 5.42,
+   "end": 5.93
+  },
+  {
+   "text": "a",
+   "start": 5.94,
+   "end": 5.99
+  },
+  {
+   "text": "unos",
+   "start": 6.0,
+   "end": 7.04
+  },
+  {
+   "text": "18",
+   "start": 7.04,
+   "end": 7.09
+  },
+  {
+   "text": "grados",
+   "start": 7.09,
+   "end": 7.14
+  },
+  {
+   "text": "bajo",
+   "start": 7.05,
+   "end": 7.29
+  },
+  {
+   "text": "cero.",
+   "start": 7.3,
+   "end": 7.63
+  },
+  {
+   "text": "La",
+   "start": 8.32,
+   "end": 8.530000000000001
+  },
+  {
+   "text": "bebida",
+   "start": 8.54,
+   "end": 8.809999999999999
+  },
+  {
+   "text": "está",
+   "start": 8.82,
+   "end": 9.01
+  },
+  {
+   "text": "mucho",
+   "start": 9.02,
+   "end": 9.25
+  },
+  {
+   "text": "más",
+   "start": 9.26,
+   "end": 9.4
+  },
+  {
+   "text": "templada.",
+   "start": 9.41,
+   "end": 9.89
+  },
+  {
+   "text": "Al",
+   "start": 10.59,
+   "end": 10.77
+  },
+  {
+   "text": "caerle",
+   "start": 10.78,
+   "end": 11.09
+  },
+  {
+   "text": "encima,",
+   "start": 11.1,
+   "end": 11.48
+  },
+  {
+   "text": "la",
+   "start": 11.6,
+   "end": 11.7
+  },
+  {
+   "text": "capa",
+   "start": 11.71,
+   "end": 11.91
+  },
+  {
+   "text": "de",
+   "start": 11.92,
+   "end": 12.0
+  },
+  {
+   "text": "fuera",
+   "start": 12.01,
+   "end": 12.23
+  },
+  {
+   "text": "se",
+   "start": 12.24,
+   "end": 12.33
+  },
+  {
+   "text": "calienta",
+   "start": 12.34,
+   "end": 12.69
+  },
+  {
+   "text": "de",
+   "start": 12.7,
+   "end": 12.78
+  },
+  {
+   "text": "golpe.",
+   "start": 12.79,
+   "end": 13.18
+  },
+  {
+   "text": "Pero",
+   "start": 13.87,
+   "end": 14.08
+  },
+  {
+   "text": "el",
+   "start": 14.09,
+   "end": 14.18
+  },
+  {
+   "text": "centro",
+   "start": 14.19,
+   "end": 14.479999999999999
+  },
+  {
+   "text": "sigue",
+   "start": 14.49,
+   "end": 14.74
+  },
+  {
+   "text": "helado:",
+   "start": 14.75,
+   "end": 15.05
+  },
+  {
+   "text": "el",
+   "start": 15.16,
+   "end": 15.290000000000001
+  },
+  {
+   "text": "calor",
+   "start": 15.3,
+   "end": 15.55
+  },
+  {
+   "text": "entra",
+   "start": 15.56,
+   "end": 15.75
+  },
+  {
+   "text": "despacio.",
+   "start": 15.76,
+   "end": 16.31
+  },
+  {
+   "text": "Y",
+   "start": 17.02,
+   "end": 17.169999999999998
+  },
+  {
+   "text": "el",
+   "start": 17.18,
+   "end": 17.28
+  },
+  {
+   "text": "hielo,",
+   "start": 17.29,
+   "end": 17.55
+  },
+  {
+   "text": "al",
+   "start": 17.65,
+   "end": 17.75
+  },
+  {
+   "text": "calentarse,",
+   "start": 17.76,
+   "end": 18.35
+  },
+  {
+   "text": "se",
+   "start": 18.44,
+   "end": 18.55
+  },
+  {
+   "text": "estira",
+   "start": 18.56,
+   "end": 18.869999999999997
+  },
+  {
+   "text": "un",
+   "start": 18.88,
+   "end": 18.97
+  },
+  {
+   "text": "poquito:",
+   "start": 18.98,
+   "end": 19.37
+  },
+  {
+   "text": "sus",
+   "start": 19.52,
+   "end": 19.669999999999998
+  },
+  {
+   "text": "moléculas",
+   "start": 19.68,
+   "end": 20.12
+  },
+  {
+   "text": "se",
+   "start": 20.13,
+   "end": 20.22
+  },
+  {
+   "text": "mueven",
+   "start": 20.23,
+   "end": 20.490000000000002
+  },
+  {
+   "text": "más",
+   "start": 20.5,
+   "end": 20.69
+  },
+  {
+   "text": "y",
+   "start": 20.7,
+   "end": 20.75
+  },
+  {
+   "text": "se",
+   "start": 20.76,
+   "end": 20.860000000000003
+  },
+  {
+   "text": "separan,",
+   "start": 20.87,
+   "end": 21.290000000000003
+  },
+  {
+   "text": "como",
+   "start": 21.44,
+   "end": 21.630000000000003
+  },
+  {
+   "text": "gente",
+   "start": 21.64,
+   "end": 21.89
+  },
+  {
+   "text": "bailando.",
+   "start": 21.9,
+   "end": 22.389999999999997
+  },
+  {
+   "text": "La",
+   "start": 23.08,
+   "end": 23.259999999999998
+  },
+  {
+   "text": "capa",
+   "start": 23.27,
+   "end": 23.46
+  },
+  {
+   "text": "de",
+   "start": 23.47,
+   "end": 23.56
+  },
+  {
+   "text": "fuera",
+   "start": 23.57,
+   "end": 23.79
+  },
+  {
+   "text": "quiere",
+   "start": 23.8,
+   "end": 24.02
+  },
+  {
+   "text": "crecer",
+   "start": 24.03,
+   "end": 24.35
+  },
+  {
+   "text": "y",
+   "start": 24.36,
+   "end": 24.419999999999998
+  },
+  {
+   "text": "el",
+   "start": 24.43,
+   "end": 24.52
+  },
+  {
+   "text": "centro",
+   "start": 24.53,
+   "end": 24.830000000000002
+  },
+  {
+   "text": "no",
+   "start": 24.84,
+   "end": 24.94
+  },
+  {
+   "text": "la",
+   "start": 24.95,
+   "end": 25.029999999999998
+  },
+  {
+   "text": "deja.",
+   "start": 25.04,
+   "end": 25.41
+  },
+  {
+   "text": "Es",
+   "start": 26.1,
+   "end": 26.3
+  },
+  {
+   "text": "un",
+   "start": 26.31,
+   "end": 26.389999999999997
+  },
+  {
+   "text": "choque",
+   "start": 26.4,
+   "end": 26.61
+  },
+  {
+   "text": "térmico:",
+   "start": 26.62,
+   "end": 27.060000000000002
+  },
+  {
+   "text": "un",
+   "start": 27.17,
+   "end": 27.290000000000003
+  },
+  {
+   "text": "tira",
+   "start": 27.3,
+   "end": 27.51
+  },
+  {
+   "text": "y",
+   "start": 27.52,
+   "end": 27.59
+  },
+  {
+   "text": "afloja.",
+   "start": 27.6,
+   "end": 28.03
+  },
+  {
+   "text": "Y",
+   "start": 28.72,
+   "end": 28.88
+  },
+  {
+   "text": "el",
+   "start": 28.89,
+   "end": 28.990000000000002
+  },
+  {
+   "text": "hielo",
+   "start": 29.0,
+   "end": 29.21
+  },
+  {
+   "text": "es",
+   "start": 29.22,
+   "end": 29.33
+  },
+  {
+   "text": "frágil,",
+   "start": 29.34,
+   "end": 29.72
+  },
+  {
+   "text": "como",
+   "start": 29.81,
+   "end": 30.009999999999998
+  },
+  {
+   "text": "el",
+   "start": 30.02,
+   "end": 30.09
+  },
+  {
+   "text": "cristal:",
+   "start": 30.1,
+   "end": 30.5
+  },
+  {
+   "text": "no",
+   "start": 30.62,
+   "end": 30.73
+  },
+  {
+   "text": "se",
+   "start": 30.74,
+   "end": 30.849999999999998
+  },
+  {
+   "text": "dobla,",
+   "start": 30.86,
+   "end": 31.16
+  },
+  {
+   "text": "se",
+   "start": 31.26,
+   "end": 31.37
+  },
+  {
+   "text": "rompe.",
+   "start": 31.38,
+   "end": 31.779999999999998
+  },
+  {
+   "text": "Se",
+   "start": 32.48,
+   "end": 32.699999999999996
+  },
+  {
+   "text": "abren",
+   "start": 32.71,
+   "end": 32.92
+  },
+  {
+   "text": "grietas,",
+   "start": 32.93,
+   "end": 33.37
+  },
+  {
+   "text": "y",
+   "start": 33.46,
+   "end": 33.52
+  },
+  {
+   "text": "cada",
+   "start": 33.53,
+   "end": 33.71
+  },
+  {
+   "text": "una",
+   "start": 33.72,
+   "end": 33.9
+  },
+  {
+   "text": "suena:",
+   "start": 33.91,
+   "end": 34.19
+  },
+  {
+   "text": "¡crac!",
+   "start": 34.37,
+   "end": 34.629999999999995
+  },
+  {
+   "text": "Y",
+   "start": 35.32,
+   "end": 35.47
+  },
+  {
+   "text": "lo",
+   "start": 35.48,
+   "end": 35.61
+  },
+  {
+   "text": "oyes",
+   "start": 35.62,
+   "end": 35.879999999999995
+  },
+  {
+   "text": "porque",
+   "start": 35.89,
+   "end": 36.11
+  },
+  {
+   "text": "el",
+   "start": 36.12,
+   "end": 36.19
+  },
+  {
+   "text": "cubito",
+   "start": 36.2,
+   "end": 36.5
+  },
+  {
+   "text": "flota",
+   "start": 36.51,
+   "end": 36.769999999999996
+  },
+  {
+   "text": "arriba",
+   "start": 36.78,
+   "end": 37.1
+  },
+  {
+   "text": "y",
+   "start": 37.11,
+   "end": 37.16
+  },
+  {
+   "text": "se",
+   "start": 37.17,
+   "end": 37.27
+  },
+  {
+   "text": "agrieta",
+   "start": 37.28,
+   "end": 37.57
+  },
+  {
+   "text": "durante",
+   "start": 37.58,
+   "end": 37.879999999999995
+  },
+  {
+   "text": "segundos.",
+   "start": 37.89,
+   "end": 38.43
+  },
+  {
+   "text": "Tú",
+   "start": 39.12,
+   "end": 39.25
+  },
+  {
+   "text": "traes",
+   "start": 39.26,
+   "end": 39.51
+  },
+  {
+   "text": "las",
+   "start": 39.52,
+   "end": 39.67
+  },
+  {
+   "text": "dudas",
+   "start": 39.68,
+   "end": 39.95
+  },
+  {
+   "text": "y",
+   "start": 39.96,
+   "end": 40.0
+  },
+  {
+   "text": "nosotros",
+   "start": 40.01,
+   "end": 40.43
+  },
+  {
+   "text": "te",
+   "start": 40.44,
+   "end": 40.53
+  },
+  {
+   "text": "damos",
+   "start": 40.54,
+   "end": 40.81
+  },
+  {
+   "text": "el",
+   "start": 40.82,
+   "end": 40.92
+  },
+  {
+   "text": "truco.",
+   "start": 40.93,
+   "end": 41.31
+  },
+  {
+   "text": "Síguenos",
+   "start": 42.0,
+   "end": 42.51
+  },
+  {
+   "text": "y",
+   "start": 42.52,
+   "end": 42.57
+  },
+  {
+   "text": "las",
+   "start": 42.58,
+   "end": 42.71
+  },
+  {
+   "text": "resolvemos.",
+   "start": 42.72,
+   "end": 43.379999999999995
+  },
+  {
+   "text": "¿Tu",
+   "start": 44.07,
+   "end": 44.23
+  },
+  {
+   "text": "hielo",
+   "start": 44.24,
+   "end": 44.440000000000005
+  },
+  {
+   "text": "también",
+   "start": 44.45,
+   "end": 44.77
+  },
+  {
+   "text": "se",
+   "start": 44.78,
+   "end": 44.88
+  },
+  {
+   "text": "queja",
+   "start": 44.89,
+   "end": 45.12
+  },
+  {
+   "text": "con",
+   "start": 45.13,
+   "end": 45.260000000000005
+  },
+  {
+   "text": "el",
+   "start": 45.27,
+   "end": 45.35
+  },
+  {
+   "text": "refresco?",
+   "start": 45.36,
+   "end": 45.89
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 46.39,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué *cruje* el hielo",
+  "scene": 0
+ },
+ "duration": 48.99,
+ "cover_offset_ms": 49290
+}
