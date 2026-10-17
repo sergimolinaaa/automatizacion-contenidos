@@ -31,7 +31,8 @@ Variantes:
     brazos (izq, der): abajo, cintura, arriba, saluda, senala, barbilla, boca (tapa el bostezo), coge, cruzados (los dos: abrazarse de frío),
         relajado (codo algo doblado, mano por delante del muslo: menos rígido que «abajo»), explica (antebrazo hacia delante,
         mano abierta a la altura de la cintura: gesto de contar algo), apunta_arriba (dedo índice hacia el cielo),
-        sujeta (puño a la altura del hombro, hacia fuera: sujetar un hilo, un globo, una pancarta)
+        sujeta (puño a la altura del hombro, hacia fuera: sujetar un hilo, un globo, una pancarta),
+        junta (manos delante del pecho; con las dos en «junta» dibuja los dedos entrelazados en {id}_manos y .puntos["manos"])
     mira: -1 izquierda, 0 frente, 1 derecha (pupilas)
 Sale de: escalofrios/persona.py (gorro de lana, bufanda, cara de frío, castañeteo), lote4-01-bebe-carrito/dib.py
 (bebé y mamá: degradados de piel y pelo, mejillas, brillos) y nuevo-partido/np.py (pictograma).
@@ -338,6 +339,33 @@ def _mano(x, y, r, piel, tipo="puno", k=1):
     return s
 
 
+def manos_entrelazadas(id_, cx, cy, s=1.0, piel="media"):
+    """Dos manos con los dedos entrelazados vistas de frente (≈ 230×150 a s=1): cuatro dedos de cada mano cruzan
+    alternados por encima de la otra y los pulgares se cruzan arriba. Sub-id id_+'_nudillos' (pliegues de los nudillos:
+    pulse o punch al «crujir»). persona(brazos=("junta", "junta")) ya las dibuja en {id}_manos."""
+    pa, pb, pc, pl = PIELES.get(piel, PIELES["media"])
+    def P(x, y):
+        return f"{f(cx + x * s)} {f(cy + y * s)}"
+    o = ""
+    for k in (-1, 1):  # dorso de cada mano
+        o += (f'<path d="M {P(k*8, -48)} C {P(k*60, -62)}, {P(k*112, -40)}, {P(k*112, 8)} C {P(k*112, 52)}, {P(k*70, 66)}, '
+              f'{P(k*20, 60)} Z" fill="url(#piel_{piel if piel in PIELES else "media"})" stroke="{INK}" stroke-width="{f(6*s)}" stroke-linejoin="round"/>')
+    nud = ""
+    for i in range(8):  # dedos alternos: pares de la mano izquierda, impares de la derecha
+        k = -1 if i % 2 == 0 else 1
+        y = -38 + i * 14
+        x0, x1 = k * 34, -k * 78
+        col = pb if i % 2 == 0 else shade(pb, -0.14)
+        o += trazo(f"M {P(x0, y)} L {P(x1, y + 2)}", 13 * s, col, 4.5 * s)
+        o += f'<ellipse cx="{f(cx + (x1 + k*5) * s)}" cy="{f(cy + (y + 2) * s)}" rx="{f(4.5*s)}" ry="{f(3.6*s)}" fill="{pa}" opacity="0.9"/>'
+        nud += f'<circle cx="{f(cx + (x0 + k*14) * s)}" cy="{f(cy + y * s)}" r="{f(6*s)}" fill="{pa}" stroke="{pl}" stroke-width="{f(2.5*s)}"/>'
+    for k in (-1, 1):  # pulgares hacia arriba, juntos
+        o += trazo(f"M {P(k*70, -36)} Q {P(k*44, -70)} {P(k*14, -76)}", 19 * s, pb if k < 0 else shade(pb, -0.14), 5 * s)
+    o += g(f"{id_}_nudillos" if id_ else None, nud)
+    o += f'<path d="M {P(-96, -18)} Q {P(-90, -40)} {P(-70, -48)}" fill="none" stroke="#FFFFFF" stroke-width="{f(5*s)}" stroke-linecap="round" opacity="0.5"/>'
+    return g(id_, o) if id_ else o
+
+
 def _brazo(id_, lado, S, Hm, E, aw, piel, ropa, ropa_col, mano_tipo):
     """Brazo hombro S → codo E → mano Hm. Manga según ropa."""
     pa, pb, pc, pl = PIELES.get(piel, PIELES["media"])
@@ -525,6 +553,8 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
             return (k * (sw + 46), hy - ry * 0.55), "dedo_arriba"
         if pose_b == "sujeta":
             return (k * (sw + lu * 0.95), sy - 6), "puno"
+        if pose_b == "junta":  # manos juntas delante del pecho (con las dos en «junta»: dedos entrelazados, {id}_manos)
+            return (k * aw * 1.9, sy + lu * 1.55), "puno"
         if sentado:
             return (k * (e["cw"] * 0.75), e["cy"] + sdy + 20), "puno"
         L = (lu + lf) * 0.97  # brazo casi recto, un poco abierto
@@ -539,12 +569,12 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
             E = (k * (sw + 4), sy + (e["cy"] - e["sy"]) * 0.55)
             Hm = Ht
         else:
-            E, Hm = _ik(S, Ht, lu, lf, k, abajo=pb_ in ("boca", "relajado", "explica"))
+            E, Hm = _ik(S, Ht, lu, lf, k, abajo=pb_ in ("boca", "relajado", "explica", "junta"))
         arms[lado] = (S, E, Hm, mt, pb_)
         puntos[f"mano_{lado}"] = Hm
         puntos[f"hombro_{lado}"] = S
     # orden: brazos detrás del cuerpo si están abajo/cintura/arriba/saluda/señala; delante si cruzan el pecho
-    front = {l for l, a in arms.items() if a[4] in ("barbilla", "cruzados", "coge", "boca")}
+    front = {l for l, a in arms.items() if a[4] in ("barbilla", "cruzados", "coge", "boca", "junta")}
     cuerpo = []
     for lado in ("izq", "der"):
         if lado not in front:
@@ -571,6 +601,9 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
         if lado in front and arms[lado][4] != "boca":
             S, E, Hm, mt, _ = arms[lado]
             o.append(_brazo(id_, lado, S, Hm, E, aw, piel, ropa, ropa_color, mt))
+    if brazos[0] == "junta" and brazos[1] == "junta":
+        o.append(g(f"{id_}_manos", manos_entrelazadas(None, 0, sy + lu * 1.55, aw / 46, piel)))
+        puntos["manos"] = (0, sy + lu * 1.55)
     if "baston" in accesorios and not busto:
         Hm = arms["der"][2]
         o.append(g(f"{id_}_acc_baston", _baston(Hm, aw)))

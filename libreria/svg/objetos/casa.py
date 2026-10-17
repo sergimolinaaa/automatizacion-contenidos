@@ -463,3 +463,29 @@ def portapapeles(id_, cx, cy, w=200, h=260, filas=4, marcadas=(0, 1, 2), col="#B
         if i in marcadas:
             o += g(f"{id_}_c{i}", f'<path d="M {f(bx+step*0.06)} {f(y-step*0.02)} L {f(bx+step*0.22)} {f(y+step*0.18)} L {f(bx+step*0.6)} {f(y-step*0.36)}" fill="none" stroke="#1FA35A" stroke-width="{f(max(4, step*0.12))}" stroke-linecap="round" stroke-linejoin="round"/>')
     return g(id_, o)
+
+
+def trofeo(id_, cx, base, h=300, texto="PREMIO", col="#FFC83D"):
+    """Copa de premio dorada con asas, peana de madera y placa con `texto` (≈ 0.9h de ancho). Sub-id _brillo (destello: pulse).
+    .puntos: copa (centro de la copa), placa."""
+    w = h * 0.62
+    top = base - h
+    o = sombra(cx, base + 4, w * 0.75, h * 0.05)
+    cg = degradado(col, 0.3, "h")
+    # peana
+    o += f'<rect x="{f(cx - w*0.55)}" y="{f(base - h*0.18)}" width="{f(w*1.1)}" height="{f(h*0.18)}" rx="10" fill="url(#maderaOsc)" stroke="{INK}" stroke-width="7"/>'
+    o += f'<rect x="{f(cx - w*0.38)}" y="{f(base - h*0.145)}" width="{f(w*0.76)}" height="{f(h*0.11)}" rx="6" fill="url(#metalG)" stroke="{INK}" stroke-width="4"/>'
+    o += T(cx, base - h * 0.067, texto, min(h * 0.07, w * 1.3 / max(4, len(texto))), INK, font=DISP)
+    # pie y tallo
+    o += f'<path d="M {f(cx - w*0.3)} {f(base - h*0.18)} L {f(cx + w*0.3)} {f(base - h*0.18)} L {f(cx + w*0.16)} {f(base - h*0.27)} L {f(cx - w*0.16)} {f(base - h*0.27)} Z" fill="{cg}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+    o += f'<rect x="{f(cx - w*0.07)}" y="{f(base - h*0.42)}" width="{f(w*0.14)}" height="{f(h*0.16)}" fill="{cg}" stroke="{INK}" stroke-width="6"/>'
+    # asas
+    for k in (-1, 1):
+        o += trazo(f"M {f(cx + k*w*0.42)} {f(top + h*0.1)} C {f(cx + k*w*0.78)} {f(top + h*0.08)}, {f(cx + k*w*0.75)} {f(top + h*0.38)}, {f(cx + k*w*0.3)} {f(top + h*0.42)}", h * 0.035, col, 6)
+    # copa
+    o += (f'<path d="M {f(cx - w*0.5)} {f(top)} L {f(cx + w*0.5)} {f(top)} C {f(cx + w*0.5)} {f(top + h*0.38)}, {f(cx + w*0.2)} {f(top + h*0.56)}, {f(cx)} {f(top + h*0.58)} '
+          f'C {f(cx - w*0.2)} {f(top + h*0.56)}, {f(cx - w*0.5)} {f(top + h*0.38)}, {f(cx - w*0.5)} {f(top)} Z" fill="{cg}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>')
+    o += f'<ellipse cx="{f(cx)}" cy="{f(top)}" rx="{f(w*0.5)}" ry="{f(h*0.045)}" fill="{shade(col, -0.25)}" stroke="{INK}" stroke-width="6"/>'
+    o += brillo(f"M {f(cx - w*0.32)} {f(top + h*0.08)} C {f(cx - w*0.32)} {f(top + h*0.28)}, {f(cx - w*0.18)} {f(top + h*0.42)}, {f(cx - w*0.08)} {f(top + h*0.47)}", h * 0.025, 0.75)
+    o += g(f"{id_}_brillo", f'<path d="M {f(cx + w*0.22)} {f(top + h*0.1)} l 8 22 l 22 8 l -22 8 l -8 22 l -8 -22 l -22 -8 l 22 -8 Z" fill="#FFFFFF" stroke="{INK}" stroke-width="3"/>')
+    return Pieza(g(id_, o), {"copa": (cx, top + h * 0.25), "placa": (cx, base - h * 0.09)}, (cx - w * 0.8, top - 10, cx + w * 0.8, base + 10))

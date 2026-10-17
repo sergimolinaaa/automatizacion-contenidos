@@ -207,3 +207,123 @@ def termometro(id_, cx, top, h=300, nivel=0.5, col=CORAL, marcas=8, texto=None):
     if texto:
         s += T(cx + w * 0.5 + 24, ftop + 12, texto, max(24, h * 0.09), INK, anchor="start", font='font-family="Unbounded" font-weight="900"')
     return Pieza(g(id_, s), {"bulbo": (cx, bot + br * 0.6), "nivel": (cx, ftop)}, (cx - br, top, cx + br, bot + br * 1.6))
+
+
+# --------------------------------------------------------------- articulación en corte (nudillos)
+registrar_defs(
+    lg("huesoG", [(0, "#FFF8E8"), (0.55, "#F1E2BF"), (1, "#CDB586")])
+    + lg("cartilagoG", [(0, "#F2FBFF"), (1, "#B9DCEB")])
+    + rg("sinovialR", [(0, "#FFF4C2", 0.95), (1, "#F7D774", 0.9)], 0.5, 0.5, 0.6)
+    + rg("burbujaR", [(0, "#FFFFFF", 0.95), (0.6, "#D9F4FF", 0.75), (1, "#7CC8EE", 0.9)], 0.38, 0.32, 0.7)
+    + lg("escanerG", [(0, "#FFFFFF"), (1, "#C9D3E3")])
+    + rg("tuboR", [(0, "#4D6FB8"), (1, "#101A33")], 0.5, 0.5, 0.6)
+)
+
+
+def articulacion(id_, cx, cy, s=1.0, abierta=0, burbuja=False, gas=True, capsula=True):
+    """Articulación de un nudillo en CORTE, horizontal (≈ 780×330 a s=1): hueso de la mano a la izquierda (cabeza redonda con
+    cartílago) y falange a la derecha (base cóncava), dentro de la cápsula llena de líquido sinovial con gas disuelto.
+    Sub-ids: _hueso (izq), _falange (der: muévela con move [60, 0] = «separar»), _liquido, _capsula, _gas (puntitos), _burbuja.
+    abierta = separación ya aplicada (px locales); la burbuja se dibuja en el hueco de una separación de 60 (o `abierta`).
+    Las sub-ids van dentro de un grupo escalado: los move son en unidades locales (× s en pantalla).
+    .puntos: hueco (centro de la junta en reposo), burbuja, hueso, falange, capsula (borde de arriba), liquido."""
+    o = ""
+    ab = abierta
+    if capsula:
+        cap = (f'd="M -215 -40 C -215 -150, -60 -175, 30 -160 C 120 -150, {f(170+ab)} -120, {f(175+ab)} -40 '
+               f'L {f(175+ab)} 40 C {f(170+ab)} 120, 120 150, 30 160 C -60 175, -215 150, -215 40 Z"')
+        o += g(f"{id_}_liquido", f'<path {cap} fill="url(#sinovialR)"/>')
+        o += g(f"{id_}_capsula", f'<path {cap} fill="none" stroke="{INK}" stroke-width="16" stroke-linejoin="round"/>'
+               f'<path {cap} fill="none" stroke="#F08FA4" stroke-width="9" stroke-linejoin="round"/>'
+               f'<path d="M -150 -138 C -80 -160, 0 -162, 60 -150" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.6"/>')
+    # hueso de la mano (metacarpo): unión de diáfisis + cabeza (contorno limpio con doble capa)
+    hx = -110
+    hb = (f'<rect x="-400" y="-68" width="300" height="136" fill="{INK}" stroke="{INK}" stroke-width="14"/>'
+          f'<circle cx="{hx}" cy="0" r="105" fill="{INK}" stroke="{INK}" stroke-width="14"/>'
+          f'<rect x="-400" y="-68" width="300" height="136" fill="url(#huesoG)"/>'
+          f'<circle cx="{hx}" cy="0" r="105" fill="url(#cartilagoG)"/>'
+          f'<circle cx="{hx - 6}" cy="0" r="90" fill="url(#huesoG)"/>'
+          f'<rect x="-400" y="-68" width="290" height="136" fill="url(#huesoG)"/>'
+          f'<path d="M -380 -40 L -170 -40" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.55"/>'
+          f'<path d="M -165 -70 A 90 90 0 0 1 -60 -60" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.55"/>'
+          + "".join(f'<circle cx="{x}" cy="{y}" r="{r}" fill="#D9C18F" opacity="0.6"/>' for x, y, r in
+                    ((-330, 20, 7), (-280, -10, 5), (-230, 30, 6), (-190, -20, 5), (-140, 35, 6))))
+    o += g(f"{id_}_hueso", hb)
+    # falange: base cóncava que abraza la cabeza (arco de radio 135 centrado en la cabeza)
+    fb = (f'<path d="M -14 -95 L 400 -72 L 400 72 L -14 95 A 135 135 0 0 0 -14 -95 Z" fill="url(#cartilagoG)" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+          f'<path d="M 12 -88 L 396 -68 L 396 68 L 12 88 A 152 152 0 0 0 12 -88 Z" fill="url(#huesoG)"/>'
+          f'<path d="M 60 -55 L 380 -45" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.55"/>'
+          + "".join(f'<circle cx="{x}" cy="{y}" r="{r}" fill="#D9C18F" opacity="0.6"/>' for x, y, r in
+                    ((120, 25, 6), (190, -15, 5), (260, 30, 7), (330, -5, 5))))
+    o += f'<g transform="translate({f(ab)} 0)">' + g(f"{id_}_falange", fb) + "</g>"
+    if gas:
+        gp = ((-20, -120), (40, -128), (95, -100), (-60, -138), (10, 125), (70, 112), (-45, 130), (125, 70), (130, -60), (25, -95), (20, 100))
+        o += g(f"{id_}_gas", "".join(f'<circle cx="{x + (ab if x > 0 else 0)}" cy="{y}" r="7" fill="#FFFFFF" stroke="#4FA6D6" stroke-width="3"/>' for x, y in gp))
+    sep = ab or 60
+    bx, br = (-5 + 25 + sep) / 2, 22 + sep * 0.36
+    if burbuja:
+        o += g(f"{id_}_burbuja", f'<ellipse cx="{f(bx)}" cy="0" rx="{f(br * 0.95)}" ry="{f(br * 1.5)}" fill="url(#burbujaR)" stroke="{INK}" stroke-width="6"/>'
+               f'<ellipse cx="{f(bx - br*0.35)}" cy="{f(-br*0.6)}" rx="{f(br*0.2)}" ry="{f(br*0.35)}" fill="#FFFFFF" opacity="0.9"/>')
+    def P(x, y):
+        return (cx + x * s, cy + y * s)
+    pz = {"hueco": P(10, 0), "burbuja": P(bx, 0), "hueso": P(-280, 0), "falange": P(250 + ab, 0), "capsula": P(-20, -165),
+          "liquido": P(60, -135)}
+    return Pieza(g(id_, f'<g transform="translate({f(cx)} {f(cy)}) scale({f(s)})">{o}</g>'), pz,
+                 (cx - 400 * s, cy - 175 * s, cx + (400 + ab) * s, cy + 175 * s))
+
+
+def mano(id_, cx, cy, s=1.0, piel="media", espejo=False, puntos_nudillo=True):
+    """Mano abierta vista por el dorso, dedos hacia arriba (≈ 260×330 a s=1; (cx, cy) = centro del dorso). espejo=True: pulgar a
+    la derecha (otra mano). Sub-ids: _dedos, _pulgar, _nudillos (círculos en los nudillos: pulse/punch al crujir).
+    .puntos: nudillos (lista de 4), centro, muneca, puntas (lista de 4)."""
+    pa, pb, pc, pl = PIELES.get(piel, PIELES["media"])
+    k = -1 if espejo else 1
+    def X(x):
+        return cx + k * x * s
+    def Y(y):
+        return cy + y * s
+    gp = f"url(#piel_{piel if piel in PIELES else 'media'})"
+    o = f'<ellipse cx="{f(cx)}" cy="{f(Y(185))}" rx="{f(110*s)}" ry="{f(14*s)}" fill="{INK}" opacity="0.15"/>'
+    o += trazo(f"M {f(X(0))} {f(Y(110))} L {f(X(0))} {f(Y(175))}", 92 * s, pb, 6 * s, cap="butt")  # muñeca
+    dedos, nud, puntas, nudp = "", "", [], []
+    for i, (x, L) in enumerate(((-54, 112), (-18, 128), (18, 120), (52, 96))):
+        y0 = -38
+        dedos += trazo(f"M {f(X(x))} {f(Y(y0))} L {f(X(x + (x*0.06)))} {f(Y(y0 - L))}", 31 * s, pb, 6 * s)
+        tx, ty = X(x + x * 0.06), Y(y0 - L)
+        dedos += f'<ellipse cx="{f(tx)}" cy="{f(ty + 4*s)}" rx="{f(9*s)}" ry="{f(11*s)}" fill="{pa}" stroke="{pl}" stroke-width="{f(2.5*s)}"/>'
+        for fr in (0.42, 0.72):  # pliegues de las falanges
+            yy = Y(y0 - L * fr)
+            dedos += f'<path d="M {f(X(x) - 8*s)} {f(yy)} Q {f(X(x))} {f(yy - 4*s)} {f(X(x) + 8*s)} {f(yy)}" fill="none" stroke="{pl}" stroke-width="{f(3*s)}" stroke-linecap="round"/>'
+        nud += f'<circle cx="{f(X(x))}" cy="{f(Y(y0 + 6))}" r="{f(13*s)}" fill="{pa}" stroke="{pl}" stroke-width="{f(3*s)}"/>'
+        puntas.append((tx, ty)); nudp.append((X(x), Y(y0 + 6)))
+    o += g(f"{id_}_dedos", dedos)
+    o += g(f"{id_}_pulgar", trazo(f"M {f(X(-62))} {f(Y(55))} Q {f(X(-112))} {f(Y(30))} {f(X(-128))} {f(Y(-30))}", 34 * s, pb, 6 * s))
+    o += (f'<path d="M {f(X(-75))} {f(Y(-40))} C {f(X(-80))} {f(Y(40))}, {f(X(-55))} {f(Y(110))}, {f(X(0))} {f(Y(112))} '
+          f'C {f(X(55))} {f(Y(110))}, {f(X(78))} {f(Y(40))}, {f(X(72))} {f(Y(-40))} C {f(X(40))} {f(Y(-56))}, {f(X(-40))} {f(Y(-56))}, {f(X(-75))} {f(Y(-40))} Z" '
+          f'fill="{gp}" stroke="{INK}" stroke-width="{f(6*s)}" stroke-linejoin="round"/>')
+    o += f'<path d="M {f(X(-50))} {f(Y(-20))} Q {f(X(-60))} {f(Y(40))} {f(X(-35))} {f(Y(85))}" fill="none" stroke="#FFFFFF" stroke-width="{f(6*s)}" stroke-linecap="round" opacity="0.45"/>'
+    if puntos_nudillo:
+        o += g(f"{id_}_nudillos", nud)
+    return Pieza(g(id_, o), {"nudillos": nudp, "centro": (cx, cy), "muneca": (cx, Y(170)), "puntas": puntas},
+                 (cx - 140 * s, cy - 175 * s, cx + 140 * s, cy + 190 * s))
+
+
+def escaner_resonancia(id_, cx, cy, w=520, texto="RM"):
+    """Escáner de resonancia magnética de frente (carcasa blanca, túnel oscuro y camilla), ≈ w × 0.95w.
+    Sub-ids: _anillo (luz del túnel: pulse), _pantalla (pilotito con texto). .puntos: hueco (centro del túnel), camilla."""
+    h = w * 0.86
+    r = w * 0.29
+    x0, y0 = cx - w / 2, cy - h / 2
+    o = f'<rect x="{f(x0 + 14)}" y="{f(y0 + 18)}" width="{f(w)}" height="{f(h)}" rx="{f(w*0.16)}" fill="{INK}" opacity="0.22"/>'
+    o += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="{f(w*0.16)}" fill="url(#escanerG)" stroke="{INK}" stroke-width="8"/>'
+    o += f'<path d="M {f(x0 + w*0.12)} {f(y0 + 22)} L {f(x0 + w*0.6)} {f(y0 + 22)}" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.8"/>'
+    o += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r + 26)}" fill="#E4EAF4" stroke="{INK}" stroke-width="6"/>'
+    o += g(f"{id_}_anillo", f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r + 12)}" fill="none" stroke="#5BE0FF" stroke-width="10" opacity="0.85"/>')
+    o += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="url(#tuboR)" stroke="{INK}" stroke-width="7"/>'
+    cy_c = cy + r * 0.45
+    o += (f'<path d="M {f(cx - r*0.8)} {f(cy_c)} L {f(cx + r*0.8)} {f(cy_c)} L {f(cx + r*1.25)} {f(y0 + h + 40)} L {f(cx - r*1.25)} {f(y0 + h + 40)} Z" '
+          f'fill="url(#metalG)" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>')
+    o += f'<rect x="{f(cx - r*1.3)}" y="{f(y0 + h + 34)}" width="{f(r*2.6)}" height="26" rx="10" fill="#8F9BB3" stroke="{INK}" stroke-width="6"/>'
+    o += g(f"{id_}_pantalla", f'<rect x="{f(x0 + w*0.72)}" y="{f(y0 + h*0.08)}" width="{f(w*0.18)}" height="{f(h*0.1)}" rx="8" fill="#1B1E2B" stroke="{INK}" stroke-width="5"/>'
+           + T(x0 + w * 0.81, y0 + h * 0.155, texto, h * 0.06, LIME))
+    return Pieza(g(id_, o), {"hueco": (cx, cy), "camilla": (cx, cy_c)}, (x0, y0, x0 + w, y0 + h + 60))

@@ -1,0 +1,760 @@
+{
+  "topic": "Por qué nos crujen los nudillos (burbuja de gas en el líquido sinovial)",
+  "categoria": "cuerpo",
+  "title": "¿Por qué te crujen los nudillos? Una burbuja de gas",
+  "source": "Fuentes: Kawchuk et al., PLOS ONE 2015, «Real-Time Visualization of Joint Cavitation» · Pharmaceutical Journal · Banner Health · Unger, Arthritis & Rheumatism 1998, «Does knuckle cracking lead to arthritis of the fingers?» · Improbable Research, Ig Nobel de Medicina 2009 · Scientific American · Harvard Health",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué te *crujen* los nudillos",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-18T14:00:00+02:00",
+    "caption": "¿Por qué te crujen los nudillos? Al estirar el dedo se forma de golpe una burbuja de gas en el líquido de la articulación (resonancia en directo, PLOS ONE 2015). Tarda unos veinte minutos en disolverse, por eso no puedes repetirlo. Y un médico se crujió una sola mano durante cincuenta años sin artrosis en ninguna: Ig Nobel 2009. ¿Tú te los crujes o te da grima?",
+    "description": "¿Por qué te crujen los nudillos? Dentro de cada nudillo hay líquido sinovial, que lubrica la articulación y lleva gas disuelto. Al estirar el dedo los huesos se separan, baja la presión y se forma de golpe una burbuja de gas: en 2015 un equipo de la Universidad de Alberta lo grabó con resonancia magnética en tiempo real y vio que el chasquido coincide con la aparición de esa cavidad (Kawchuk et al., PLOS ONE). Por eso no puedes repetirlo enseguida: el gas tarda unos veinte minutos en volver a disolverse. ¿Y la artrosis? El médico Donald Unger se crujió los nudillos de la mano izquierda al menos dos veces al día durante cincuenta años y dejó la derecha como control: ninguna de las dos tuvo artrosis (Arthritis & Rheumatism, 1998), y ganó el Ig Nobel de Medicina en 2009. Fuentes: PLOS ONE, Pharmaceutical Journal, Banner Health, Arthritis & Rheumatism, Improbable Research, Scientific American, Harvard Health. ¿Tú te los crujes o te da grima?",
+    "hashtags": [
+      "nudillos",
+      "cuerpohumano",
+      "ciencia",
+      "curiosidades",
+      "artrosis"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Por qué *crujen*?",
+      "narration": "¿Te crujes los nudillos? Ese crac no es un hueso rompiéndose.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · El crujido",
+        "anims": [
+          {
+            "target": "chico_r",
+            "effect": "hide"
+          },
+          {
+            "target": "crac",
+            "effect": "hide"
+          },
+          {
+            "target": "chico_n",
+            "effect": "breathe"
+          },
+          {
+            "target": "chico_n_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "chico_n",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "chico_n_cabeza",
+            "effect": "sway",
+            "trigger": "Te",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "chico_n_manos",
+            "effect": "punch",
+            "trigger": "crujes",
+            "amount": 0.4
+          },
+          {
+            "target": "ondas",
+            "effect": "pop",
+            "trigger": "nudillos",
+            "sfx": "pop"
+          },
+          {
+            "target": "ondas2",
+            "effect": "pop",
+            "trigger": "nudillos"
+          },
+          {
+            "target": "ondas",
+            "effect": "pulse",
+            "trigger": "nudillos",
+            "amount": 0.8
+          },
+          {
+            "target": "chico_n",
+            "effect": "hide",
+            "trigger": "crac"
+          },
+          {
+            "target": "chico_r",
+            "effect": "fade",
+            "trigger": "crac",
+            "dur": 0.15
+          },
+          {
+            "target": "chico_r",
+            "effect": "breathe",
+            "trigger": "crac"
+          },
+          {
+            "target": "chico_r_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "crac",
+            "effect": "pop",
+            "trigger": "crac",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "crac",
+            "effect": "punch",
+            "trigger": "crac",
+            "amount": 0.5
+          },
+          {
+            "target": "chico_r_manos",
+            "effect": "punch",
+            "trigger": "crac",
+            "amount": 0.4
+          },
+          {
+            "target": "roto",
+            "effect": "pop",
+            "trigger": "hueso",
+            "sfx": "pop"
+          },
+          {
+            "target": "roto",
+            "effect": "wiggle",
+            "trigger": "hueso",
+            "amount": 0.5
+          },
+          {
+            "target": "aspa",
+            "effect": "pop",
+            "trigger": "rompiéndose",
+            "sfx": "sello"
+          },
+          {
+            "target": "aspa",
+            "effect": "punch",
+            "trigger": "rompiéndose",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Líquido *sinovial*",
+      "narration": "Dentro hay un líquido que lubrica, como el aceite de una bisagra, y lleva gas disuelto.",
+      "illustration": {
+        "svg_file": "liquido.svg",
+        "caption": "Fig. 2 · Dentro del nudillo",
+        "anims": [
+          {
+            "target": "art_hueso",
+            "effect": "punch",
+            "trigger": "Dentro",
+            "amount": 0.3
+          },
+          {
+            "target": "lhueso",
+            "effect": "pop",
+            "trigger": "Dentro",
+            "sfx": "pop"
+          },
+          {
+            "target": "art_falange",
+            "effect": "punch",
+            "trigger": "hay",
+            "amount": 0.3
+          },
+          {
+            "target": "art_liquido",
+            "effect": "fade",
+            "trigger": "líquido",
+            "dur": 0.4,
+            "sfx": "burbujas"
+          },
+          {
+            "target": "lsinovial",
+            "effect": "pop",
+            "trigger": "líquido"
+          },
+          {
+            "target": "art_falange",
+            "effect": "move",
+            "trigger": "lubrica",
+            "to": [
+              8,
+              0
+            ],
+            "dur": 0.4
+          },
+          {
+            "target": "art_falange",
+            "effect": "wiggle",
+            "trigger": "lubrica",
+            "amount": 0.3
+          },
+          {
+            "target": "bisagra",
+            "effect": "slide-left",
+            "trigger": "aceite",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "gota",
+            "effect": "slide-down",
+            "trigger": "bisagra",
+            "dur": 0.5,
+            "sfx": "pop"
+          },
+          {
+            "target": "gota",
+            "effect": "bob",
+            "trigger": "bisagra",
+            "amount": 0.5
+          },
+          {
+            "target": "lbis",
+            "effect": "pop",
+            "trigger": "bisagra"
+          },
+          {
+            "target": "art_gas",
+            "effect": "pop",
+            "trigger": "gas",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "art_gas",
+            "effect": "pulse",
+            "trigger": "gas",
+            "amount": 0.6
+          },
+          {
+            "target": "lgas",
+            "effect": "pop",
+            "trigger": "disuelto",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Nace una *burbuja*",
+      "narration": "Al estirar el dedo, los huesos se separan, baja la presión y nace de golpe una burbuja.",
+      "illustration": {
+        "svg_file": "burbuja_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 3 · Separar los huesos",
+        "anims": [
+          {
+            "target": "art_capsula",
+            "effect": "pulse",
+            "amount": 0.2
+          },
+          {
+            "target": "tirar",
+            "effect": "draw",
+            "trigger": "estirar",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ltirar",
+            "effect": "pop",
+            "trigger": "estirar"
+          },
+          {
+            "target": "tirar",
+            "effect": "flow",
+            "trigger": "dedo",
+            "amount": 0.6
+          },
+          {
+            "target": "art_falange",
+            "effect": "move",
+            "trigger": "separan",
+            "to": [
+              60,
+              0
+            ],
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "pres",
+            "effect": "pop",
+            "trigger": "baja",
+            "sfx": "pop"
+          },
+          {
+            "target": "lpres",
+            "effect": "pop",
+            "trigger": "baja"
+          },
+          {
+            "target": "pres_aguja",
+            "effect": "move",
+            "trigger": "presión",
+            "rotate": -80,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "crac",
+            "effect": "pop",
+            "trigger": "golpe",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "crac",
+            "effect": "punch",
+            "trigger": "golpe",
+            "amount": 0.5
+          },
+          {
+            "target": "art_gas",
+            "effect": "hide",
+            "trigger": "burbuja"
+          },
+          {
+            "target": "art_burbuja",
+            "effect": "pop",
+            "trigger": "burbuja",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "art_burbuja",
+            "effect": "pulse",
+            "trigger": "burbuja",
+            "amount": 0.6
+          },
+          {
+            "target": "lburbuja",
+            "effect": "pop",
+            "trigger": "burbuja",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Grabado en *directo*",
+      "narration": "En dos mil quince lo grabaron con resonancia: el crac suena justo cuando nace la burbuja.",
+      "illustration": {
+        "svg_file": "resonancia.svg",
+        "caption": "Fig. 4 · Resonancia en directo",
+        "anims": [
+          {
+            "target": "mini_burbuja",
+            "effect": "hide"
+          },
+          {
+            "target": "rm_anillo",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "dedo",
+            "effect": "slide-up",
+            "trigger": "lo",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rm",
+            "effect": "punch",
+            "trigger": "quince",
+            "amount": 0.3
+          },
+          {
+            "target": "monitor",
+            "effect": "slide-left",
+            "trigger": "grabaron",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rec",
+            "effect": "pulse",
+            "trigger": "resonancia",
+            "amount": 1
+          },
+          {
+            "target": "l2015",
+            "effect": "pop",
+            "trigger": "dos",
+            "sfx": "ding"
+          },
+          {
+            "target": "mini_falange",
+            "effect": "move",
+            "trigger": "crac",
+            "to": [
+              60,
+              0
+            ],
+            "dur": 0.4
+          },
+          {
+            "target": "ondas",
+            "effect": "pop",
+            "trigger": "suena",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "ondas",
+            "effect": "pulse",
+            "trigger": "suena",
+            "amount": 1
+          },
+          {
+            "target": "lalavez",
+            "effect": "pop",
+            "trigger": "justo",
+            "sfx": "pop"
+          },
+          {
+            "target": "mini_burbuja",
+            "effect": "pop",
+            "trigger": "nace",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "mini_burbuja",
+            "effect": "pulse",
+            "trigger": "burbuja",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Espera *veinte* minutos",
+      "narration": "Por eso no puedes repetirlo enseguida: el gas tarda unos veinte minutos en disolverse.",
+      "illustration": {
+        "svg_file": "espera_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 5 · Tiempo de espera",
+        "anims": [
+          {
+            "target": "art_burbuja",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "mano_nudillos",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "mano",
+            "effect": "punch",
+            "trigger": "puedes",
+            "amount": 0.3
+          },
+          {
+            "target": "globo",
+            "effect": "pop",
+            "trigger": "repetirlo",
+            "origin": "top-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "no",
+            "effect": "pop",
+            "trigger": "enseguida",
+            "sfx": "sello"
+          },
+          {
+            "target": "mano",
+            "effect": "shake",
+            "trigger": "enseguida",
+            "amount": 0.4
+          },
+          {
+            "target": "crono",
+            "effect": "punch",
+            "trigger": "gas",
+            "amount": 0.3
+          },
+          {
+            "target": "crono_aguja",
+            "effect": "move",
+            "trigger": "veinte",
+            "rotate": 330,
+            "origin": "bottom",
+            "dur": 2.0
+          },
+          {
+            "target": "l20",
+            "effect": "pop",
+            "trigger": "veinte",
+            "sfx": "ding"
+          },
+          {
+            "target": "art_burbuja",
+            "effect": "hide",
+            "trigger": "disolverse"
+          },
+          {
+            "target": "art_gas",
+            "effect": "pop",
+            "trigger": "disolverse",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "ldisuelve",
+            "effect": "pop",
+            "trigger": "disolverse",
+            "sfx": "pop"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "tarda",
+        "pose": "think",
+        "note": "Paciencia: veinte minutos",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "¿Da *artrosis*?",
+      "narration": "¿Y da artrosis? El médico Donald Unger se crujió los nudillos de una sola mano durante cincuenta años.",
+      "illustration": {
+        "svg_file": "unger_full.svg",
+        "layout": "full",
+        "caption": "Fig. 6 · El experimento",
+        "anims": [
+          {
+            "target": "doc",
+            "effect": "breathe"
+          },
+          {
+            "target": "doc_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "doc",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "artrosis",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "trigger": "artrosis",
+            "amount": 0.4
+          },
+          {
+            "target": "doc_cabeza",
+            "effect": "sway",
+            "trigger": "médico",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "lnombre",
+            "effect": "pop",
+            "trigger": "Donald",
+            "sfx": "pop"
+          },
+          {
+            "target": "fondo_mano",
+            "effect": "pop",
+            "trigger": "crujió",
+            "sfx": "pop"
+          },
+          {
+            "target": "mgrande",
+            "effect": "slide-up",
+            "trigger": "crujió",
+            "dur": 0.4
+          },
+          {
+            "target": "crac",
+            "effect": "pop",
+            "trigger": "nudillos",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "crac",
+            "effect": "punch",
+            "trigger": "nudillos",
+            "amount": 0.5
+          },
+          {
+            "target": "mgrande_nudillos",
+            "effect": "pulse",
+            "trigger": "nudillos",
+            "amount": 0.8
+          },
+          {
+            "target": "lsola",
+            "effect": "pop",
+            "trigger": "sola",
+            "sfx": "pop"
+          },
+          {
+            "target": "doc_brazo_der",
+            "effect": "wiggle",
+            "trigger": "mano",
+            "origin": "bottom-left",
+            "amount": 0.8
+          },
+          {
+            "target": "c50",
+            "effect": "pop",
+            "trigger": "cincuenta",
+            "sfx": "ding"
+          },
+          {
+            "target": "c50",
+            "effect": "punch",
+            "trigger": "años",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Ni rastro de *artrosis*",
+      "narration": "Ninguna de las dos tenía artrosis, y ganó un premio Ig Nobel.",
+      "illustration": {
+        "svg_file": "premio.svg",
+        "caption": "Fig. 7 · El resultado",
+        "anims": [
+          {
+            "target": "lm0",
+            "effect": "pop",
+            "sfx": "pop"
+          },
+          {
+            "target": "lm1",
+            "effect": "pop",
+            "delay": 0.2
+          },
+          {
+            "target": "ok0",
+            "effect": "pop",
+            "trigger": "Ninguna",
+            "sfx": "ding"
+          },
+          {
+            "target": "ok1",
+            "effect": "pop",
+            "trigger": "dos",
+            "sfx": "ding"
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "artrosis",
+            "sfx": "sello"
+          },
+          {
+            "target": "sello",
+            "effect": "punch",
+            "trigger": "artrosis",
+            "amount": 0.5
+          },
+          {
+            "target": "trofeo",
+            "effect": "slide-up",
+            "trigger": "ganó",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "trofeo_brillo",
+            "effect": "pulse",
+            "trigger": "premio",
+            "amount": 1
+          },
+          {
+            "target": "confeti",
+            "effect": "pop",
+            "trigger": "Nobel",
+            "sfx": "brillo"
+          },
+          {
+            "target": "confeti",
+            "effect": "drift",
+            "trigger": "Nobel",
+            "amount": 0.5
+          },
+          {
+            "target": "trofeo",
+            "effect": "punch",
+            "trigger": "Nobel",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Tú te los crujes?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Tú te los *crujes*?",
+          "trigger": "Tú"
+        }
+      ]
+    }
+  ]
+}

@@ -79,14 +79,15 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 - `accesorios`: gafas, gafas_sol, gorro, bufanda, pendientes, baston, barba, bigote · `expresion`: neutral, sorpresa, risa, duda, frio, sueno, triste, enfado,
   **bostezo** (ojos apretados, cejas arriba, bocaza con dientes, lengua y campanilla + lagrimilla `{id}_lagrima`; para «abrir la boca» usa `grow` origin top en `{id}_boca`)
 - `pose`: de_pie, sentado (con `silla=True` dibuja la silla), busto · `brazos`: abajo, cintura, arriba, saluda, senala, barbilla, **boca** (mano tapando el bostezo, por delante de la cara), coge, cruzados,
-  **relajado** (codo algo doblado: mejor que «abajo», menos rígido), **explica** (antebrazo adelante, palma abierta), **apunta_arriba** (índice al cielo), **sujeta** (puño a la altura del hombro)
+  **relajado** (codo algo doblado: mejor que «abajo», menos rígido), **explica** (antebrazo adelante, palma abierta), **apunta_arriba** (índice al cielo), **sujeta** (puño a la altura del hombro),
+  **junta** (manos delante de la tripa; con `("junta", "junta")` dibuja los dedos entrelazados en `{id}_manos` y `.puntos["manos"]`: punch al crujirse los nudillos)
 - Que no parezcan estatuas: mezcla poses distintas en cada brazo y usa la receta «Persona natural» de `recetas.md` (breathe + blink + sway suave del cuerpo + gesto con move/wiggle).
 - Sentado: el asiento queda a `128*escala` (adulto) / `63*escala` (niño) sobre `y`; úsalo con `casa.sofa(asiento=...)` / `casa.banco(asiento=...)`.
 - Cambiar solo la cara: dibuja dos `persona()` iguales con distinta `expresion` en el mismo sitio y alterna `hide` + `fade` (`dur` 0.15) con el mismo trigger.
 - Ids: `{id}`, `{id}_cuerpo`, `{id}_piernas`, `{id}_cabeza`, `{id}_ojos`, `{id}_cejas`, `{id}_boca`, `{id}_brazo_izq`, `{id}_brazo_der`,
   `{id}_mano_izq/der`, `{id}_acc_<accesorio>` (izq/der = lado de la pantalla).
 - `.puntos`: cabeza, boca, ojos, cima, pies, mano_izq, mano_der, hombro_izq, hombro_der, alto.
-- También: `cabeza(id_, rx, ry, hy, …)` (solo la cabeza, coordenadas locales), `pictograma(id_, cx, cy, s, col)`, `multitud(id_, x0, x1, base, n, s)`.
+- También: `manos_entrelazadas(id_, cx, cy, s, piel)` (sueltas, ≈ 230×150; `_nudillos`), `cabeza(id_, rx, ry, hy, …)` (solo la cabeza, coordenadas locales), `pictograma(id_, cx, cy, s, col)`, `multitud(id_, x0, x1, base, n, s)`.
 
 ## objetos/politica.py (solo partidos ficticios)
 - `PARTIDOS` [(nombre, color, forma)]: ESTRELLA #FFC83D star · CÍRCULO #2EC4B6 circle · TRIÁNGULO #FF7EB6 tri · CUADRADO #C7894B square · ROMBO #9AA3B5 diamond; `COLOR`, `NOMBRE`, `FORMA`
@@ -110,12 +111,15 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 `sofa(id_, cx, base, w, asiento, col, respaldo)` (.puntos asiento/izq/der) · `banco(id_, cx, base, w, asiento)` (parque) ·
 `cronometro(id_, cx, cy, r, col)` (aguja `_aguja` a las 12: `{"effect":"move","rotate":300,"origin":"bottom","dur":2}`) ·
 `pizarra(id_, cx, cy, w, h, contenido)` · `zapato_arriba(id_, cx, cy, s, col, espejo)` + `huella(id_, cx, cy, s, espejo)` (ponerse en el lugar del otro) ·
-`portapapeles(id_, cx, cy, w, h, filas, marcadas)` (✓ en `_c<i>`)
+`portapapeles(id_, cx, cy, w, h, filas, marcadas)` (✓ en `_c<i>`) · `trofeo(id_, cx, base, h, texto, col)` (copa dorada con placa; `_brillo`)
 
 ## objetos/cuerpo.py
 `cerebro(id_, cx, cy, s, hipotalamo=True)` (`_hipotalamo`; .puntos hipotalamo/cerebelo/frente) · `cabeza_perfil(id_, x, y, s, piel, con_cerebro)` ·
 `musculo(id_, cx, cy, largo, grosor, contraido)` · `antebrazo(id_, p0, p1, ancho, piel, vello, gallina, manga)` (`_vello`, `_erizado`, `_bultos`) ·
-`piel_lupa(cx, cy, r, erizado)` (contenido para `lupa`) · `termometro(id_, cx, top, h, nivel, col, texto)` (`_columna`)
+`piel_lupa(cx, cy, r, erizado)` (contenido para `lupa`) · `termometro(id_, cx, top, h, nivel, col, texto)` (`_columna`) ·
+`articulacion(id_, cx, cy, s, abierta=0, burbuja=False, gas=True)` (nudillo en corte ≈ 780×350: `_hueso`, `_falange` (move [60,0] = separar, unidades locales),
+`_liquido` (sinovial), `_capsula`, `_gas`, `_burbuja`; .puntos hueco/burbuja/hueso/falange/liquido) · `mano(id_, cx, cy, s, piel, espejo)` (mano abierta de frente,
+dedos arriba ≈ 260×360: `_dedos`, `_pulgar`, `_nudillos`; .puntos nudillos/puntas/muneca) · `escaner_resonancia(id_, cx, cy, w, texto="RM")` (`_anillo`, `_pantalla`; .puntos hueco/camilla)
 
 ## objetos/animales.py
 `perro(id_, cx, base, s, pelaje="labrador|chocolate|negro|blanco", collar, bostezo=True)` — sentado de frente, alto ≈ 430*s; ids `_cabeza`, `_cola` (sway origin bottom-left),
@@ -175,4 +179,5 @@ black-friday/bf.py, ikea/lib.py, rotondas/rot.py, cielo/paisaje.py y atardecer.p
 lote7-03-bostezo (sistema nuevo): bostezo + mano a la boca + gafas de sol en personajes, animales.py, sofá, banco, cronómetro, pizarra, zapatos/huella, portapapeles y bandera.
 lote7-10-tesla-vuela: vuelo.py y brazos relajado/explica/apunta_arriba/sujeta en personajes.
 lote7-08-precios-99: tienda.py (cartel_precio, producto, estanteria, carrito, ticket, recta_numerica, supermercado).
+lote7-11-nudillos (archivo/nudillos/dib.py): articulación en corte, mano, escáner de resonancia, trofeo, manos entrelazadas y brazos «junta».
 lote7-09-motor-central: coches.py (deportivo en corte y cenital, motor, centro de gravedad, escudo Porsche, persona cenital, flecha de giro, maleta, derrape, sala, carretera, pista de hielo).
