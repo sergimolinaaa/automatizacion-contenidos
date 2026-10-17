@@ -83,22 +83,30 @@ def escudo_porsche(id_, cx, cy, s=1.0):
         for k in range(4):
             col = "url(#rojoEscudo)" if k % 2 == 0 else INK
             q += f'<rect x="{x0}" y="{f(y0 + k*22.5)}" width="{W}" height="22.5" fill="{col}"/>'
-    # astas (arriba derecha y abajo izquierda)
-    for (ax, ay) in ((50, -18), (-50, 72)):
+    # astas de ciervo (arriba derecha y abajo izquierda): 3 por cuartel, viga curva que adelgaza y 4 puntas hacia arriba
+    for (ax, ay) in ((50, -24), (-50, 66)):
         for k in (-1, 0, 1):
-            yy = ay + k * 22
-            q += f'<path d="M {ax-34} {yy+6} Q {ax} {yy-4} {ax+34} {yy+6}" fill="none" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>'
-            for j in (-18, 0, 18):
-                q += f'<path d="M {ax+j} {yy} L {ax+j+5} {yy-9}" stroke="{INK}" stroke-width="4" stroke-linecap="round"/>'
+            yy = ay + k * 24
+            q += (f'<path d="M {ax-38} {yy+9} Q {ax-6} {yy-6} {ax+38} {yy+1} L {ax+38} {yy+5} '
+                  f'Q {ax-6} {yy} {ax-38} {yy+13} Z" fill="{INK}"/>')
+            for j, h in ((-24, 11), (-9, 13), (6, 13), (21, 11)):
+                bx, by = ax + j, yy + (2 if j < 0 else 0)
+                q += (f'<path d="M {bx-3} {by} Q {bx-1} {by-h*0.6} {bx+4} {by-h} Q {bx+2} {by-h*0.5} {bx+3} {by} Z" '
+                      f'fill="{INK}"/>')
     o += f'<g clip-path="url(#{cid})">{q}</g>'
     o += f'<path d="{inner}" fill="none" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>'
     o += f'<line x1="0" y1="-62" x2="0" y2="{H-16}" stroke="{INK}" stroke-width="4"/><line x1="{-W+14}" y1="28" x2="{W-14}" y2="28" stroke="{INK}" stroke-width="4"/>'
-    # escudo central con caballo
-    cs = "M -34 -8 L 34 -8 L 34 30 Q 30 62 0 76 Q -30 62 -34 30 Z"
+    # escudo central (escudo de Stuttgart): rótulo STUTTGART y caballo negro encabritado mirando a la izquierda
+    cs = "M -40 -16 L 40 -16 L 40 28 Q 36 66 0 82 Q -36 66 -40 28 Z"
     o += f'<path d="{cs}" fill="url(#oroEscudo)" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>'
-    horse = ("M -14 64 L -10 44 Q -18 36 -16 24 L -24 14 Q -22 8 -16 10 L -10 14 Q -6 4 2 0 L 0 -4 L 6 -2 L 8 2 "
-             "Q 16 4 18 12 L 20 22 Q 14 22 12 18 Q 8 26 10 34 L 18 44 L 14 48 L 6 40 L 2 48 L 6 64 Z")
-    o += f'<path d="{horse}" fill="{INK}"/>'
+    o += T(0, -4, "STUTTGART", 9.5, INK, font=DISP, extra='letter-spacing="0.6"')
+    horse = ("M 6 32 Q 8 20 18 11 L 22 0 L 28 6 L 31 4 L 32 10 Q 42 12 47 24 Q 50 32 56 36 Q 68 42 74 54 Q 84 44 96 50 "
+             "Q 100 60 92 72 Q 90 62 80 64 Q 84 80 80 90 L 84 108 L 88 116 L 76 116 L 74 100 L 68 90 L 64 102 "
+             "L 62 116 L 52 116 L 54 102 L 56 86 Q 50 76 42 70 L 30 70 L 22 76 L 20 86 L 13 86 L 15 78 L 22 68 "
+             "L 32 64 L 34 58 L 24 56 L 16 60 L 10 70 L 5 68 L 9 56 L 18 50 L 30 48 Q 32 40 30 32 "
+             "Q 26 34 14 37 Q 7 37 6 32 Z")
+    o += (f'<path d="{horse}" transform="translate(-28 4) scale(0.56)" fill="{INK}" stroke="{INK}" stroke-width="2.5" '
+          f'stroke-linejoin="round"/>')
     o += brillo(f"M {-W+16} {-H+30} Q -40 {-H+12} 0 {-H+10}", 5, 0.75)
     return gt(id_, f"translate({f(cx)} {f(cy)}) scale({f(s)})", o)
 
