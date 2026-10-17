@@ -1,0 +1,637 @@
+{
+ "source": "Fuentes: Kawchuk et al., PLOS ONE 2015, «Real-Time Visualization of Joint Cavitation» · Pharmaceutical Journal · Banner Health · Unger, Arthritis & Rheumatism 1998, «Does knuckle cracking lead to arthritis of the fingers?» · Improbable Research, Ig Nobel de Medicina 2009 · Scientific American · Harvard Health",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Te",
+   "start": 0.1,
+   "end": 0.26
+  },
+  {
+   "text": "crujes",
+   "start": 0.27,
+   "end": 0.5700000000000001
+  },
+  {
+   "text": "los",
+   "start": 0.58,
+   "end": 0.71
+  },
+  {
+   "text": "nudillos?",
+   "start": 0.72,
+   "end": 1.22
+  },
+  {
+   "text": "Ese",
+   "start": 1.91,
+   "end": 2.1799999999999997
+  },
+  {
+   "text": "crac",
+   "start": 2.19,
+   "end": 2.4299999999999997
+  },
+  {
+   "text": "no",
+   "start": 2.44,
+   "end": 2.55
+  },
+  {
+   "text": "es",
+   "start": 2.56,
+   "end": 2.67
+  },
+  {
+   "text": "un",
+   "start": 2.68,
+   "end": 2.77
+  },
+  {
+   "text": "hueso",
+   "start": 2.78,
+   "end": 2.9899999999999998
+  },
+  {
+   "text": "rompiéndose.",
+   "start": 3.0,
+   "end": 3.65
+  },
+  {
+   "text": "Dentro",
+   "start": 4.35,
+   "end": 4.75
+  },
+  {
+   "text": "hay",
+   "start": 4.76,
+   "end": 4.87
+  },
+  {
+   "text": "un",
+   "start": 4.88,
+   "end": 4.95
+  },
+  {
+   "text": "líquido",
+   "start": 4.96,
+   "end": 5.26
+  },
+  {
+   "text": "que",
+   "start": 5.27,
+   "end": 5.35
+  },
+  {
+   "text": "lubrica,",
+   "start": 5.36,
+   "end": 5.760000000000001
+  },
+  {
+   "text": "como",
+   "start": 5.88,
+   "end": 6.08
+  },
+  {
+   "text": "el",
+   "start": 6.09,
+   "end": 6.1499999999999995
+  },
+  {
+   "text": "aceite",
+   "start": 6.16,
+   "end": 6.47
+  },
+  {
+   "text": "de",
+   "start": 6.48,
+   "end": 6.590000000000001
+  },
+  {
+   "text": "una",
+   "start": 6.6,
+   "end": 6.75
+  },
+  {
+   "text": "bisagra,",
+   "start": 6.76,
+   "end": 7.18
+  },
+  {
+   "text": "y",
+   "start": 7.3,
+   "end": 7.34
+  },
+  {
+   "text": "lleva",
+   "start": 7.35,
+   "end": 7.56
+  },
+  {
+   "text": "gas",
+   "start": 7.57,
+   "end": 7.71
+  },
+  {
+   "text": "disuelto.",
+   "start": 7.72,
+   "end": 8.209999999999999
+  },
+  {
+   "text": "Al",
+   "start": 8.9,
+   "end": 9.09
+  },
+  {
+   "text": "estirar",
+   "start": 9.1,
+   "end": 9.4
+  },
+  {
+   "text": "el",
+   "start": 9.41,
+   "end": 9.49
+  },
+  {
+   "text": "dedo,",
+   "start": 9.5,
+   "end": 9.74
+  },
+  {
+   "text": "los",
+   "start": 9.84,
+   "end": 9.98
+  },
+  {
+   "text": "huesos",
+   "start": 9.99,
+   "end": 10.25
+  },
+  {
+   "text": "se",
+   "start": 10.26,
+   "end": 10.34
+  },
+  {
+   "text": "separan,",
+   "start": 10.35,
+   "end": 10.75
+  },
+  {
+   "text": "baja",
+   "start": 10.89,
+   "end": 11.100000000000001
+  },
+  {
+   "text": "la",
+   "start": 11.11,
+   "end": 11.19
+  },
+  {
+   "text": "presión",
+   "start": 11.2,
+   "end": 11.549999999999999
+  },
+  {
+   "text": "y",
+   "start": 11.56,
+   "end": 11.59
+  },
+  {
+   "text": "nace",
+   "start": 11.6,
+   "end": 11.83
+  },
+  {
+   "text": "de",
+   "start": 11.84,
+   "end": 11.91
+  },
+  {
+   "text": "golpe",
+   "start": 11.92,
+   "end": 12.209999999999999
+  },
+  {
+   "text": "una",
+   "start": 12.22,
+   "end": 12.38
+  },
+  {
+   "text": "burbuja.",
+   "start": 12.39,
+   "end": 12.870000000000001
+  },
+  {
+   "text": "En",
+   "start": 13.56,
+   "end": 13.770000000000001
+  },
+  {
+   "text": "dos",
+   "start": 13.78,
+   "end": 13.91
+  },
+  {
+   "text": "mil",
+   "start": 13.92,
+   "end": 14.06
+  },
+  {
+   "text": "quince",
+   "start": 14.07,
+   "end": 14.35
+  },
+  {
+   "text": "lo",
+   "start": 14.36,
+   "end": 14.44
+  },
+  {
+   "text": "grabaron",
+   "start": 14.45,
+   "end": 14.809999999999999
+  },
+  {
+   "text": "con",
+   "start": 14.82,
+   "end": 14.94
+  },
+  {
+   "text": "resonancia:",
+   "start": 14.95,
+   "end": 15.5
+  },
+  {
+   "text": "el",
+   "start": 15.63,
+   "end": 15.75
+  },
+  {
+   "text": "crac",
+   "start": 15.76,
+   "end": 15.97
+  },
+  {
+   "text": "suena",
+   "start": 15.98,
+   "end": 16.19
+  },
+  {
+   "text": "justo",
+   "start": 16.2,
+   "end": 16.47
+  },
+  {
+   "text": "cuando",
+   "start": 16.48,
+   "end": 16.72
+  },
+  {
+   "text": "nace",
+   "start": 16.73,
+   "end": 16.95
+  },
+  {
+   "text": "la",
+   "start": 16.96,
+   "end": 17.04
+  },
+  {
+   "text": "burbuja.",
+   "start": 17.05,
+   "end": 17.53
+  },
+  {
+   "text": "Por",
+   "start": 18.22,
+   "end": 18.41
+  },
+  {
+   "text": "eso",
+   "start": 18.42,
+   "end": 18.560000000000002
+  },
+  {
+   "text": "no",
+   "start": 18.57,
+   "end": 18.66
+  },
+  {
+   "text": "puedes",
+   "start": 18.67,
+   "end": 18.94
+  },
+  {
+   "text": "repetirlo",
+   "start": 18.95,
+   "end": 19.39
+  },
+  {
+   "text": "enseguida:",
+   "start": 19.4,
+   "end": 19.869999999999997
+  },
+  {
+   "text": "el",
+   "start": 19.98,
+   "end": 20.12
+  },
+  {
+   "text": "gas",
+   "start": 20.13,
+   "end": 20.29
+  },
+  {
+   "text": "tarda",
+   "start": 20.3,
+   "end": 20.54
+  },
+  {
+   "text": "unos",
+   "start": 20.55,
+   "end": 20.77
+  },
+  {
+   "text": "veinte",
+   "start": 20.78,
+   "end": 21.02
+  },
+  {
+   "text": "minutos",
+   "start": 21.03,
+   "end": 21.39
+  },
+  {
+   "text": "en",
+   "start": 21.4,
+   "end": 21.479999999999997
+  },
+  {
+   "text": "disolverse.",
+   "start": 21.49,
+   "end": 22.099999999999998
+  },
+  {
+   "text": "¿Y",
+   "start": 22.79,
+   "end": 22.95
+  },
+  {
+   "text": "da",
+   "start": 22.96,
+   "end": 23.07
+  },
+  {
+   "text": "artrosis?",
+   "start": 23.08,
+   "end": 23.65
+  },
+  {
+   "text": "El",
+   "start": 24.35,
+   "end": 24.540000000000003
+  },
+  {
+   "text": "médico",
+   "start": 24.55,
+   "end": 24.85
+  },
+  {
+   "text": "Donald",
+   "start": 24.86,
+   "end": 25.14
+  },
+  {
+   "text": "Unger",
+   "start": 25.15,
+   "end": 25.459999999999997
+  },
+  {
+   "text": "se",
+   "start": 25.47,
+   "end": 25.57
+  },
+  {
+   "text": "crujió",
+   "start": 25.58,
+   "end": 25.849999999999998
+  },
+  {
+   "text": "los",
+   "start": 25.86,
+   "end": 25.98
+  },
+  {
+   "text": "nudillos",
+   "start": 25.99,
+   "end": 26.349999999999998
+  },
+  {
+   "text": "de",
+   "start": 26.36,
+   "end": 26.439999999999998
+  },
+  {
+   "text": "una",
+   "start": 26.45,
+   "end": 26.62
+  },
+  {
+   "text": "sola",
+   "start": 26.63,
+   "end": 26.849999999999998
+  },
+  {
+   "text": "mano",
+   "start": 26.86,
+   "end": 27.09
+  },
+  {
+   "text": "durante",
+   "start": 27.1,
+   "end": 27.400000000000002
+  },
+  {
+   "text": "cincuenta",
+   "start": 27.41,
+   "end": 27.830000000000002
+  },
+  {
+   "text": "años.",
+   "start": 27.84,
+   "end": 28.25
+  },
+  {
+   "text": "Ninguna",
+   "start": 28.94,
+   "end": 29.35
+  },
+  {
+   "text": "de",
+   "start": 29.36,
+   "end": 29.419999999999998
+  },
+  {
+   "text": "las",
+   "start": 29.43,
+   "end": 29.58
+  },
+  {
+   "text": "dos",
+   "start": 29.59,
+   "end": 29.76
+  },
+  {
+   "text": "tenía",
+   "start": 29.77,
+   "end": 30.03
+  },
+  {
+   "text": "artrosis,",
+   "start": 30.04,
+   "end": 30.54
+  },
+  {
+   "text": "y",
+   "start": 30.63,
+   "end": 30.709999999999997
+  },
+  {
+   "text": "ganó",
+   "start": 30.72,
+   "end": 30.91
+  },
+  {
+   "text": "un",
+   "start": 30.92,
+   "end": 31.01
+  },
+  {
+   "text": "premio",
+   "start": 31.02,
+   "end": 31.3
+  },
+  {
+   "text": "Ig",
+   "start": 31.31,
+   "end": 31.58
+  },
+  {
+   "text": "Nobel.",
+   "start": 31.59,
+   "end": 31.94
+  },
+  {
+   "text": "Tú",
+   "start": 32.65,
+   "end": 32.78
+  },
+  {
+   "text": "traes",
+   "start": 32.79,
+   "end": 33.04
+  },
+  {
+   "text": "las",
+   "start": 33.05,
+   "end": 33.199999999999996
+  },
+  {
+   "text": "dudas",
+   "start": 33.21,
+   "end": 33.480000000000004
+  },
+  {
+   "text": "y",
+   "start": 33.49,
+   "end": 33.53
+  },
+  {
+   "text": "nosotros",
+   "start": 33.54,
+   "end": 33.96
+  },
+  {
+   "text": "te",
+   "start": 33.97,
+   "end": 34.06
+  },
+  {
+   "text": "damos",
+   "start": 34.07,
+   "end": 34.34
+  },
+  {
+   "text": "el",
+   "start": 34.35,
+   "end": 34.45
+  },
+  {
+   "text": "truco.",
+   "start": 34.46,
+   "end": 34.84
+  },
+  {
+   "text": "Síguenos",
+   "start": 35.53,
+   "end": 36.04
+  },
+  {
+   "text": "y",
+   "start": 36.05,
+   "end": 36.099999999999994
+  },
+  {
+   "text": "las",
+   "start": 36.11,
+   "end": 36.24
+  },
+  {
+   "text": "resolvemos.",
+   "start": 36.25,
+   "end": 36.91
+  },
+  {
+   "text": "¿Tú",
+   "start": 37.6,
+   "end": 37.75
+  },
+  {
+   "text": "te",
+   "start": 37.76,
+   "end": 37.839999999999996
+  },
+  {
+   "text": "los",
+   "start": 37.85,
+   "end": 37.99
+  },
+  {
+   "text": "crujes?",
+   "start": 38.0,
+   "end": 38.45
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 38.95,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué te *crujen* los nudillos",
+  "scene": 0
+ },
+ "duration": 41.550000000000004,
+ "cover_offset_ms": 41850
+}
