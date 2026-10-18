@@ -1,0 +1,697 @@
+{
+ "source": "Fuentes: LOREG (LO 5/1985), arts. 26, 27 y 143 · Junta Electoral Central, calendario de las elecciones generales del 29 N y Instrucción 6/2011 · Infoelectoral (Ministerio del Interior) · Orden INT/650/2026 (BOE 27/6/2026) · Real Decreto 806/2026 (BOE 6/10/2026)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Te",
+   "start": 0.1,
+   "end": 0.27
+  },
+  {
+   "text": "ha",
+   "start": 0.28,
+   "end": 0.32
+  },
+  {
+   "text": "llegado",
+   "start": 0.33,
+   "end": 0.63
+  },
+  {
+   "text": "esta",
+   "start": 0.64,
+   "end": 0.81
+  },
+  {
+   "text": "carta?",
+   "start": 0.82,
+   "end": 1.21
+  },
+  {
+   "text": "Te",
+   "start": 1.9,
+   "end": 2.04
+  },
+  {
+   "text": "ha",
+   "start": 2.05,
+   "end": 2.0999999999999996
+  },
+  {
+   "text": "tocado",
+   "start": 2.11,
+   "end": 2.4099999999999997
+  },
+  {
+   "text": "mesa",
+   "start": 2.42,
+   "end": 2.65
+  },
+  {
+   "text": "el",
+   "start": 2.66,
+   "end": 2.72
+  },
+  {
+   "text": "veintinueve",
+   "start": 2.73,
+   "end": 3.19
+  },
+  {
+   "text": "de",
+   "start": 3.2,
+   "end": 3.2600000000000002
+  },
+  {
+   "text": "noviembre.",
+   "start": 3.27,
+   "end": 3.76
+  },
+  {
+   "text": "Te",
+   "start": 4.47,
+   "end": 4.62
+  },
+  {
+   "text": "lo",
+   "start": 4.63,
+   "end": 4.72
+  },
+  {
+   "text": "explicamos",
+   "start": 4.73,
+   "end": 5.220000000000001
+  },
+  {
+   "text": "sin",
+   "start": 5.23,
+   "end": 5.340000000000001
+  },
+  {
+   "text": "posicionarnos,",
+   "start": 5.35,
+   "end": 6.05
+  },
+  {
+   "text": "simplemente",
+   "start": 6.17,
+   "end": 6.68
+  },
+  {
+   "text": "con",
+   "start": 6.69,
+   "end": 6.8100000000000005
+  },
+  {
+   "text": "lo",
+   "start": 6.82,
+   "end": 6.890000000000001
+  },
+  {
+   "text": "que",
+   "start": 6.9,
+   "end": 6.99
+  },
+  {
+   "text": "dice",
+   "start": 7.0,
+   "end": 7.19
+  },
+  {
+   "text": "la",
+   "start": 7.2,
+   "end": 7.28
+  },
+  {
+   "text": "ley.",
+   "start": 7.29,
+   "end": 7.54
+  },
+  {
+   "text": "El",
+   "start": 8.23,
+   "end": 8.440000000000001
+  },
+  {
+   "text": "ayuntamiento",
+   "start": 8.45,
+   "end": 8.989999999999998
+  },
+  {
+   "text": "sortea",
+   "start": 9.0,
+   "end": 9.33
+  },
+  {
+   "text": "las",
+   "start": 9.34,
+   "end": 9.47
+  },
+  {
+   "text": "mesas",
+   "start": 9.48,
+   "end": 9.74
+  },
+  {
+   "text": "del",
+   "start": 9.75,
+   "end": 9.87
+  },
+  {
+   "text": "treinta",
+   "start": 9.88,
+   "end": 10.17
+  },
+  {
+   "text": "y",
+   "start": 10.18,
+   "end": 10.27
+  },
+  {
+   "text": "uno",
+   "start": 10.28,
+   "end": 10.41
+  },
+  {
+   "text": "de",
+   "start": 10.42,
+   "end": 10.5
+  },
+  {
+   "text": "octubre",
+   "start": 10.51,
+   "end": 10.85
+  },
+  {
+   "text": "al",
+   "start": 10.86,
+   "end": 10.94
+  },
+  {
+   "text": "cuatro",
+   "start": 10.95,
+   "end": 11.209999999999999
+  },
+  {
+   "text": "de",
+   "start": 11.22,
+   "end": 11.280000000000001
+  },
+  {
+   "text": "noviembre.",
+   "start": 11.29,
+   "end": 11.78
+  },
+  {
+   "text": "Te",
+   "start": 12.48,
+   "end": 12.610000000000001
+  },
+  {
+   "text": "lo",
+   "start": 12.62,
+   "end": 12.69
+  },
+  {
+   "text": "notifican",
+   "start": 12.7,
+   "end": 13.139999999999999
+  },
+  {
+   "text": "en",
+   "start": 13.15,
+   "end": 13.24
+  },
+  {
+   "text": "tres",
+   "start": 13.25,
+   "end": 13.44
+  },
+  {
+   "text": "días",
+   "start": 13.45,
+   "end": 13.69
+  },
+  {
+   "text": "y",
+   "start": 13.7,
+   "end": 13.739999999999998
+  },
+  {
+   "text": "tienes",
+   "start": 13.75,
+   "end": 13.99
+  },
+  {
+   "text": "siete",
+   "start": 14.0,
+   "end": 14.24
+  },
+  {
+   "text": "para",
+   "start": 14.25,
+   "end": 14.41
+  },
+  {
+   "text": "alegar",
+   "start": 14.42,
+   "end": 14.69
+  },
+  {
+   "text": "ante",
+   "start": 14.7,
+   "end": 14.86
+  },
+  {
+   "text": "la",
+   "start": 14.87,
+   "end": 14.959999999999999
+  },
+  {
+   "text": "Junta",
+   "start": 14.97,
+   "end": 15.21
+  },
+  {
+   "text": "Electoral",
+   "start": 15.22,
+   "end": 15.63
+  },
+  {
+   "text": "de",
+   "start": 15.64,
+   "end": 15.72
+  },
+  {
+   "text": "Zona.",
+   "start": 15.73,
+   "end": 16.06
+  },
+  {
+   "text": "¿Qué",
+   "start": 16.77,
+   "end": 16.94
+  },
+  {
+   "text": "vale?",
+   "start": 16.95,
+   "end": 17.27
+  },
+  {
+   "text": "Con",
+   "start": 17.98,
+   "end": 18.19
+  },
+  {
+   "text": "sesenta",
+   "start": 18.2,
+   "end": 18.529999999999998
+  },
+  {
+   "text": "y",
+   "start": 18.54,
+   "end": 18.58
+  },
+  {
+   "text": "cinco",
+   "start": 18.59,
+   "end": 18.86
+  },
+  {
+   "text": "años",
+   "start": 18.87,
+   "end": 19.12
+  },
+  {
+   "text": "o",
+   "start": 19.13,
+   "end": 19.16
+  },
+  {
+   "text": "más,",
+   "start": 19.17,
+   "end": 19.44
+  },
+  {
+   "text": "puedes",
+   "start": 19.53,
+   "end": 19.790000000000003
+  },
+  {
+   "text": "renunciar.",
+   "start": 19.8,
+   "end": 20.32
+  },
+  {
+   "text": "También",
+   "start": 21.03,
+   "end": 21.380000000000003
+  },
+  {
+   "text": "el",
+   "start": 21.39,
+   "end": 21.46
+  },
+  {
+   "text": "embarazo,",
+   "start": 21.47,
+   "end": 21.919999999999998
+  },
+  {
+   "text": "la",
+   "start": 22.04,
+   "end": 22.119999999999997
+  },
+  {
+   "text": "lactancia,",
+   "start": 22.13,
+   "end": 22.65
+  },
+  {
+   "text": "una",
+   "start": 22.78,
+   "end": 22.92
+  },
+  {
+   "text": "causa",
+   "start": 22.93,
+   "end": 23.22
+  },
+  {
+   "text": "médica",
+   "start": 23.23,
+   "end": 23.59
+  },
+  {
+   "text": "o",
+   "start": 23.6,
+   "end": 23.69
+  },
+  {
+   "text": "un",
+   "start": 23.7,
+   "end": 23.83
+  },
+  {
+   "text": "evento",
+   "start": 23.84,
+   "end": 24.12
+  },
+  {
+   "text": "familiar",
+   "start": 24.13,
+   "end": 24.509999999999998
+  },
+  {
+   "text": "o",
+   "start": 24.52,
+   "end": 24.55
+  },
+  {
+   "text": "profesional",
+   "start": 24.56,
+   "end": 25.07
+  },
+  {
+   "text": "justificado.",
+   "start": 25.08,
+   "end": 25.729999999999997
+  },
+  {
+   "text": "No",
+   "start": 26.43,
+   "end": 26.69
+  },
+  {
+   "text": "vale",
+   "start": 26.7,
+   "end": 26.89
+  },
+  {
+   "text": "no",
+   "start": 26.9,
+   "end": 27.0
+  },
+  {
+   "text": "tener",
+   "start": 27.01,
+   "end": 27.220000000000002
+  },
+  {
+   "text": "ganas.",
+   "start": 27.23,
+   "end": 27.66
+  },
+  {
+   "text": "Faltar",
+   "start": 28.36,
+   "end": 28.75
+  },
+  {
+   "text": "sin",
+   "start": 28.76,
+   "end": 28.900000000000002
+  },
+  {
+   "text": "excusa",
+   "start": 28.91,
+   "end": 29.3
+  },
+  {
+   "text": "es",
+   "start": 29.31,
+   "end": 29.4
+  },
+  {
+   "text": "delito:",
+   "start": 29.41,
+   "end": 29.75
+  },
+  {
+   "text": "cárcel",
+   "start": 29.86,
+   "end": 30.169999999999998
+  },
+  {
+   "text": "de",
+   "start": 30.18,
+   "end": 30.259999999999998
+  },
+  {
+   "text": "tres",
+   "start": 30.27,
+   "end": 30.47
+  },
+  {
+   "text": "meses",
+   "start": 30.48,
+   "end": 30.78
+  },
+  {
+   "text": "a",
+   "start": 30.79,
+   "end": 30.84
+  },
+  {
+   "text": "un",
+   "start": 30.85,
+   "end": 30.990000000000002
+  },
+  {
+   "text": "año,",
+   "start": 31.0,
+   "end": 31.25
+  },
+  {
+   "text": "o",
+   "start": 31.37,
+   "end": 31.400000000000002
+  },
+  {
+   "text": "multa.",
+   "start": 31.41,
+   "end": 31.81
+  },
+  {
+   "text": "Los",
+   "start": 32.51,
+   "end": 32.76
+  },
+  {
+   "text": "suplentes",
+   "start": 32.77,
+   "end": 33.17
+  },
+  {
+   "text": "también",
+   "start": 33.18,
+   "end": 33.48
+  },
+  {
+   "text": "van.",
+   "start": 33.49,
+   "end": 33.75
+  },
+  {
+   "text": "Y",
+   "start": 34.44,
+   "end": 34.57
+  },
+  {
+   "text": "quien",
+   "start": 34.58,
+   "end": 34.76
+  },
+  {
+   "text": "se",
+   "start": 34.77,
+   "end": 34.86000000000001
+  },
+  {
+   "text": "sienta",
+   "start": 34.87,
+   "end": 35.16
+  },
+  {
+   "text": "cobra",
+   "start": 35.17,
+   "end": 35.410000000000004
+  },
+  {
+   "text": "setenta",
+   "start": 35.42,
+   "end": 35.72
+  },
+  {
+   "text": "y",
+   "start": 35.73,
+   "end": 35.769999999999996
+  },
+  {
+   "text": "cinco",
+   "start": 35.78,
+   "end": 36.09
+  },
+  {
+   "text": "euros.",
+   "start": 36.1,
+   "end": 36.5
+  },
+  {
+   "text": "Tú",
+   "start": 37.19,
+   "end": 37.32
+  },
+  {
+   "text": "traes",
+   "start": 37.33,
+   "end": 37.58
+  },
+  {
+   "text": "las",
+   "start": 37.59,
+   "end": 37.74
+  },
+  {
+   "text": "dudas",
+   "start": 37.75,
+   "end": 38.02
+  },
+  {
+   "text": "y",
+   "start": 38.03,
+   "end": 38.07
+  },
+  {
+   "text": "nosotros",
+   "start": 38.08,
+   "end": 38.5
+  },
+  {
+   "text": "te",
+   "start": 38.51,
+   "end": 38.6
+  },
+  {
+   "text": "damos",
+   "start": 38.61,
+   "end": 38.88
+  },
+  {
+   "text": "el",
+   "start": 38.89,
+   "end": 38.99
+  },
+  {
+   "text": "truco.",
+   "start": 39.0,
+   "end": 39.38
+  },
+  {
+   "text": "Síguenos",
+   "start": 40.07,
+   "end": 40.58
+  },
+  {
+   "text": "y",
+   "start": 40.59,
+   "end": 40.64
+  },
+  {
+   "text": "las",
+   "start": 40.65,
+   "end": 40.78
+  },
+  {
+   "text": "resolvemos.",
+   "start": 40.79,
+   "end": 41.449999999999996
+  },
+  {
+   "text": "¿Te",
+   "start": 42.14,
+   "end": 42.3
+  },
+  {
+   "text": "ha",
+   "start": 42.31,
+   "end": 42.36
+  },
+  {
+   "text": "tocado",
+   "start": 42.37,
+   "end": 42.68
+  },
+  {
+   "text": "alguna",
+   "start": 42.69,
+   "end": 42.949999999999996
+  },
+  {
+   "text": "vez?",
+   "start": 42.96,
+   "end": 43.19
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 43.69,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "¿Te puedes librar de la *mesa*?",
+  "scene": 0
+ },
+ "duration": 46.29,
+ "cover_offset_ms": 46589
+}
