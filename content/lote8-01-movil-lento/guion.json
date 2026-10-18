@@ -1,0 +1,866 @@
+{
+  "topic": "Por qué el móvil va más lento con los años (batería, apps más pesadas y memoria llena)",
+  "categoria": "moviles",
+  "title": "¿Por qué tu móvil va más lento con los años? Tres culpables",
+  "source": "Fuentes: Apple Soporte, «Batería y rendimiento del iPhone» · TechCrunch (20 dic 2017) · DGCCRF, Francia (feb 2020) · The Register · Sensor Tower, «iOS app size growth» (2017) · MacStories · SamMobile · Honor",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué tu móvil va *lento*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-20T21:00:00+02:00",
+    "caption": "¿Por qué tu móvil va más lento con los años? Tres culpables. Uno: la batería de litio envejece y ya no da picos fuertes de energía, así que el sistema frena el procesador para que no se apague (Apple lo hizo en 2017 sin avisar y en 2020 pagó 25 millones de euros de multa en Francia). Dos: las apps engordan; las 10 más instaladas del iPhone pesaban 11 veces más en 4 años (Sensor Tower). Tres: la memoria casi llena. ¿Cuántos años tiene tu móvil?",
+    "description": "¿Por qué tu móvil va más lento con los años? Hay tres culpables. El primero es la batería de litio: con el tiempo envejece y ya no entrega picos fuertes de potencia; si una app pide mucho de golpe, el móvil se apagaría, así que el sistema reduce el rendimiento del procesador. Apple lo explica en su página de soporte «Batería y rendimiento del iPhone»: lo activó con iOS 10.2.1 en 2017 sin avisar con claridad, y en febrero de 2020 aceptó pagar 25 millones de euros a la autoridad francesa de consumo (DGCCRF) por práctica comercial engañosa por omisión. El segundo: las apps y el sistema engordan; según Sensor Tower, las 10 apps más instaladas del iPhone en Estados Unidos pasaron de 164 MB en 2013 a unos 1,8 GB en 2017, once veces más. El tercero: el almacenamiento casi lleno, porque el sistema necesita espacio libre para trabajar con archivos temporales y reorganizar datos. Qué puedes hacer: mira la salud de la batería en Ajustes y libera espacio. Fuentes: Apple Soporte, TechCrunch, DGCCRF, The Register, Sensor Tower, MacStories, SamMobile, Honor. ¿Cuántos años tiene tu móvil?",
+    "hashtags": [
+      "movil",
+      "bateria",
+      "iphone",
+      "tecnologia",
+      "trucos"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Por qué va *lento*?",
+      "narration": "¿Tu móvil va más lento que cuando lo compraste? Tiene tres culpables.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · El móvil que no arranca",
+        "anims": [
+          {
+            "target": "ana_e",
+            "effect": "hide"
+          },
+          {
+            "target": "onda",
+            "effect": "hide"
+          },
+          {
+            "target": "globo",
+            "effect": "hide"
+          },
+          {
+            "target": "c1",
+            "effect": "hide"
+          },
+          {
+            "target": "c2",
+            "effect": "hide"
+          },
+          {
+            "target": "c3",
+            "effect": "hide"
+          },
+          {
+            "target": "ana_n",
+            "effect": "breathe"
+          },
+          {
+            "target": "ana_n_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana_n",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "tel_rueda",
+            "effect": "spin",
+            "amount": 0.6
+          },
+          {
+            "target": "tel",
+            "effect": "punch",
+            "trigger": "móvil",
+            "amount": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "vel_aguja",
+            "effect": "move",
+            "trigger": "móvil",
+            "rotate": 70,
+            "origin": "bottom",
+            "dur": 0.4
+          },
+          {
+            "target": "ana_n",
+            "effect": "hide",
+            "trigger": "lento"
+          },
+          {
+            "target": "ana_e",
+            "effect": "fade",
+            "trigger": "lento",
+            "dur": 0.15
+          },
+          {
+            "target": "ana_e",
+            "effect": "breathe",
+            "trigger": "lento"
+          },
+          {
+            "target": "ana_e_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "vel_aguja",
+            "effect": "move",
+            "trigger": "lento",
+            "rotate": -140,
+            "origin": "bottom",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "onda",
+            "effect": "pop",
+            "trigger": "lento"
+          },
+          {
+            "target": "onda",
+            "effect": "ripple",
+            "trigger": "lento"
+          },
+          {
+            "target": "globo",
+            "effect": "pop",
+            "trigger": "compraste",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "ana_e_cabeza",
+            "effect": "sway",
+            "trigger": "compraste",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "c1",
+            "effect": "slide-left",
+            "trigger": "Tiene",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "c2",
+            "effect": "slide-left",
+            "trigger": "tres",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "c3",
+            "effect": "slide-left",
+            "trigger": "culpables",
+            "dur": 0.4,
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "La batería *envejece*",
+      "narration": "Primero, la batería de litio: al envejecer ya no da picos fuertes de energía.",
+      "illustration": {
+        "svg_file": "bateria.svg",
+        "caption": "Fig. 2 · Batería nueva y con años",
+        "anims": [
+          {
+            "target": "vieja",
+            "effect": "hide"
+          },
+          {
+            "target": "lvieja",
+            "effect": "hide"
+          },
+          {
+            "target": "pico_n",
+            "effect": "hide"
+          },
+          {
+            "target": "pico_v",
+            "effect": "hide"
+          },
+          {
+            "target": "lpico_n",
+            "effect": "hide"
+          },
+          {
+            "target": "lpico_v",
+            "effect": "hide"
+          },
+          {
+            "target": "rayo_n",
+            "effect": "hide"
+          },
+          {
+            "target": "nueva_rayo",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "nueva",
+            "effect": "pop",
+            "trigger": "Primero",
+            "sfx": "pop"
+          },
+          {
+            "target": "lnueva",
+            "effect": "pop",
+            "trigger": "batería"
+          },
+          {
+            "target": "llitio",
+            "effect": "pop",
+            "trigger": "litio",
+            "sfx": "pop"
+          },
+          {
+            "target": "vieja",
+            "effect": "slide-left",
+            "trigger": "envejecer",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lvieja",
+            "effect": "pop",
+            "trigger": "envejecer"
+          },
+          {
+            "target": "pico_n",
+            "effect": "grow",
+            "trigger": "picos",
+            "origin": "bottom",
+            "dur": 0.5,
+            "sfx": "pop"
+          },
+          {
+            "target": "lpico_n",
+            "effect": "pop",
+            "trigger": "picos"
+          },
+          {
+            "target": "pico_v",
+            "effect": "grow",
+            "trigger": "fuertes",
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "lpico_v",
+            "effect": "pop",
+            "trigger": "fuertes"
+          },
+          {
+            "target": "rayo_n",
+            "effect": "pop",
+            "trigger": "energía",
+            "sfx": "brillo"
+          },
+          {
+            "target": "vieja",
+            "effect": "shake",
+            "trigger": "energía",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Frena para no *apagarse*",
+      "narration": "Si una app pide mucho de golpe, se apagaría. Por eso el sistema frena el procesador.",
+      "illustration": {
+        "svg_file": "freno_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 3 · Gestión del rendimiento",
+        "anims": [
+          {
+            "target": "negro",
+            "effect": "hide"
+          },
+          {
+            "target": "pide",
+            "effect": "hide"
+          },
+          {
+            "target": "lpide",
+            "effect": "hide"
+          },
+          {
+            "target": "zas",
+            "effect": "hide"
+          },
+          {
+            "target": "freno",
+            "effect": "hide"
+          },
+          {
+            "target": "lsis",
+            "effect": "hide"
+          },
+          {
+            "target": "tel_rueda",
+            "effect": "spin",
+            "amount": 0.6
+          },
+          {
+            "target": "cpu_nucleo",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "tel",
+            "effect": "punch",
+            "trigger": "app",
+            "amount": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "pide",
+            "effect": "draw",
+            "trigger": "pide",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lpide",
+            "effect": "pop",
+            "trigger": "mucho"
+          },
+          {
+            "target": "zas",
+            "effect": "pop",
+            "trigger": "golpe",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "bat",
+            "effect": "shake",
+            "trigger": "golpe",
+            "amount": 0.6
+          },
+          {
+            "target": "negro",
+            "effect": "fade",
+            "trigger": "apagaría",
+            "dur": 0.2
+          },
+          {
+            "target": "bat_carga",
+            "effect": "pulse",
+            "trigger": "apagaría",
+            "amount": 0.8
+          },
+          {
+            "target": "negro",
+            "effect": "hide",
+            "trigger": "Por"
+          },
+          {
+            "target": "lsis",
+            "effect": "pop",
+            "trigger": "sistema",
+            "sfx": "pop"
+          },
+          {
+            "target": "freno",
+            "effect": "pop",
+            "trigger": "frena",
+            "sfx": "sello"
+          },
+          {
+            "target": "vel_aguja",
+            "effect": "move",
+            "trigger": "frena",
+            "rotate": -60,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "cpu",
+            "effect": "punch",
+            "trigger": "procesador",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Multa de *25 millones*",
+      "narration": "Apple lo hizo en dos mil diecisiete sin avisar, y en Francia acabó pagando veinticinco millones de euros de multa.",
+      "illustration": {
+        "svg_file": "multa.svg",
+        "caption": "Fig. 4 · El caso Apple",
+        "anims": [
+          {
+            "target": "cal",
+            "effect": "hide"
+          },
+          {
+            "target": "avisar",
+            "effect": "hide"
+          },
+          {
+            "target": "fr",
+            "effect": "hide"
+          },
+          {
+            "target": "billetes",
+            "effect": "hide"
+          },
+          {
+            "target": "c25",
+            "effect": "hide"
+          },
+          {
+            "target": "apple",
+            "effect": "pop",
+            "trigger": "Apple",
+            "sfx": "pop"
+          },
+          {
+            "target": "apple",
+            "effect": "float",
+            "amount": 0.3
+          },
+          {
+            "target": "cal",
+            "effect": "slide-down",
+            "trigger": "dos",
+            "dur": 0.4,
+            "sfx": "papel"
+          },
+          {
+            "target": "avisar",
+            "effect": "pop",
+            "trigger": "avisar",
+            "sfx": "sello"
+          },
+          {
+            "target": "avisar",
+            "effect": "punch",
+            "trigger": "avisar",
+            "amount": 0.5
+          },
+          {
+            "target": "fr",
+            "effect": "pop",
+            "trigger": "Francia",
+            "sfx": "pop"
+          },
+          {
+            "target": "fr",
+            "effect": "sway",
+            "trigger": "Francia",
+            "origin": "left",
+            "amount": 0.4
+          },
+          {
+            "target": "billetes",
+            "effect": "slide-up",
+            "trigger": "pagando",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "c25",
+            "effect": "pop",
+            "trigger": "veinticinco",
+            "sfx": "ding"
+          },
+          {
+            "target": "c25",
+            "effect": "punch",
+            "trigger": "multa",
+            "amount": 0.4
+          },
+          {
+            "target": "apple",
+            "effect": "shake",
+            "trigger": "multa",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Apps que *engordan*",
+      "narration": "Segundo: las apps y el sistema engordan. Las diez más instaladas del iPhone llegaron a pesar once veces más en cuatro años.",
+      "illustration": {
+        "svg_file": "apps.svg",
+        "caption": "Fig. 5 · El peso de las apps",
+        "anims": [
+          {
+            "target": "app0",
+            "effect": "pop",
+            "delay": 0.0
+          },
+          {
+            "target": "app1",
+            "effect": "pop",
+            "delay": 0.15
+          },
+          {
+            "target": "app2",
+            "effect": "pop",
+            "delay": 0.3
+          },
+          {
+            "target": "app3",
+            "effect": "pop",
+            "delay": 0.44999999999999996
+          },
+          {
+            "target": "app4",
+            "effect": "pop",
+            "delay": 0.6
+          },
+          {
+            "target": "app5",
+            "effect": "pop",
+            "delay": 0.75
+          },
+          {
+            "target": "app6",
+            "effect": "pop",
+            "delay": 0.8999999999999999
+          },
+          {
+            "target": "app7",
+            "effect": "pop",
+            "delay": 1.05
+          },
+          {
+            "target": "app8",
+            "effect": "pop",
+            "delay": 1.2
+          },
+          {
+            "target": "b13",
+            "effect": "hide"
+          },
+          {
+            "target": "b17",
+            "effect": "hide"
+          },
+          {
+            "target": "x11",
+            "effect": "hide"
+          },
+          {
+            "target": "ltop",
+            "effect": "hide"
+          },
+          {
+            "target": "app0",
+            "effect": "pulse",
+            "trigger": "engordan",
+            "amount": 0.8
+          },
+          {
+            "target": "app4",
+            "effect": "pulse",
+            "trigger": "engordan",
+            "amount": 0.8
+          },
+          {
+            "target": "app8",
+            "effect": "pulse",
+            "trigger": "engordan",
+            "amount": 0.8
+          },
+          {
+            "target": "tel",
+            "effect": "punch",
+            "trigger": "sistema",
+            "amount": 0.3,
+            "sfx": "boing"
+          },
+          {
+            "target": "ltop",
+            "effect": "pop",
+            "trigger": "instaladas",
+            "sfx": "pop"
+          },
+          {
+            "target": "b13",
+            "effect": "grow",
+            "trigger": "iPhone",
+            "origin": "bottom",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "b17",
+            "effect": "grow",
+            "trigger": "pesar",
+            "origin": "bottom",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "x11",
+            "effect": "pop",
+            "trigger": "once",
+            "sfx": "sello"
+          },
+          {
+            "target": "x11",
+            "effect": "punch",
+            "trigger": "veces",
+            "amount": 0.5
+          },
+          {
+            "target": "b17",
+            "effect": "pulse",
+            "trigger": "años",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Memoria *llena*",
+      "narration": "Tercero: la memoria casi llena. El móvil necesita hueco libre para ordenar archivos, como un armario a reventar.",
+      "illustration": {
+        "svg_file": "memoria_full.svg",
+        "layout": "full",
+        "caption": "Fig. 6 · Sin hueco",
+        "anims": [
+          {
+            "target": "arm",
+            "effect": "hide"
+          },
+          {
+            "target": "plof",
+            "effect": "hide"
+          },
+          {
+            "target": "archivos",
+            "effect": "hide"
+          },
+          {
+            "target": "lhueco",
+            "effect": "hide"
+          },
+          {
+            "target": "tel_aviso",
+            "effect": "hide"
+          },
+          {
+            "target": "tel",
+            "effect": "slide-up",
+            "trigger": "Tercero",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tel_barra",
+            "effect": "pulse",
+            "trigger": "memoria",
+            "amount": 0.5
+          },
+          {
+            "target": "tel_aviso",
+            "effect": "pop",
+            "trigger": "llena",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "tel",
+            "effect": "shake",
+            "trigger": "llena",
+            "amount": 0.4
+          },
+          {
+            "target": "archivos",
+            "effect": "pop",
+            "trigger": "hueco",
+            "sfx": "pop"
+          },
+          {
+            "target": "archivos",
+            "effect": "wiggle",
+            "trigger": "ordenar",
+            "amount": 0.8
+          },
+          {
+            "target": "lhueco",
+            "effect": "pop",
+            "trigger": "archivos",
+            "sfx": "pop"
+          },
+          {
+            "target": "arm",
+            "effect": "slide-left",
+            "trigger": "armario",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "arm",
+            "effect": "shake",
+            "trigger": "reventar",
+            "amount": 0.6
+          },
+          {
+            "target": "arm_ropa",
+            "effect": "wiggle",
+            "trigger": "reventar",
+            "amount": 0.8
+          },
+          {
+            "target": "plof",
+            "effect": "pop",
+            "trigger": "reventar",
+            "sfx": "boing"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Batería y *espacio*",
+      "narration": "Si va lento, mira la salud de la batería y libera espacio.",
+      "illustration": {
+        "svg_file": "consejo.svg",
+        "caption": "Fig. 7 · Qué puedes hacer",
+        "anims": [
+          {
+            "target": "ok1",
+            "effect": "hide"
+          },
+          {
+            "target": "ok2",
+            "effect": "hide"
+          },
+          {
+            "target": "lespacio",
+            "effect": "hide"
+          },
+          {
+            "target": "lsalud",
+            "effect": "hide"
+          },
+          {
+            "target": "tel",
+            "effect": "punch",
+            "trigger": "lento",
+            "amount": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "lsalud",
+            "effect": "pop",
+            "trigger": "mira",
+            "sfx": "pop"
+          },
+          {
+            "target": "tel_pct",
+            "effect": "pulse",
+            "trigger": "salud",
+            "amount": 0.6
+          },
+          {
+            "target": "ok1",
+            "effect": "pop",
+            "trigger": "batería",
+            "sfx": "ding"
+          },
+          {
+            "target": "archivos",
+            "effect": "move",
+            "trigger": "libera",
+            "to": [
+              0,
+              330
+            ],
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "pap_tapa",
+            "effect": "punch",
+            "trigger": "libera",
+            "amount": 0.4
+          },
+          {
+            "target": "lespacio",
+            "effect": "pop",
+            "trigger": "espacio",
+            "sfx": "pop"
+          },
+          {
+            "target": "ok2",
+            "effect": "pop",
+            "trigger": "espacio",
+            "sfx": "ding"
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "mira",
+        "pose": "explain",
+        "note": "Ajustes, batería y espacio",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Cuántos años tiene tu móvil?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Cuántos *años* tiene tu móvil?",
+          "trigger": "Cuántos"
+        }
+      ]
+    }
+  ]
+}

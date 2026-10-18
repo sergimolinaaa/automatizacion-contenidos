@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · casa.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · casa.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -152,6 +152,14 @@ mirando a la izquierda, ≈ 920×230 a s=1; `corte` = rayos X con piloto, asient
 `flecha_giro(id_, cx, cy, r, a0, a1, col)` (flecha en arco) · `maleta(id_, cx, base, w, h)` · `marcas_derrape(id_, p0, p1, ctrl)` (draw) ·
 fondos `sala_presentacion(W, H, suelo_y)`, `carretera(W, H, y0, y1)`, `pista_hielo(W, H, y0)`.
 
+## objetos/tecnologia.py (móviles, batería, almacenamiento)
+`pantalla_movil(cx, cy, w)` → caja de la pantalla de `casa.movil()` para preparar su contenido · `bateria(id_, cx, cy, w, h, nivel, col, rayo, gastada, texto)` (pila de litio vertical;
+`gastada=True` hinchada y amarillenta; `_carga` grow, `_rayo` pulse; .puntos borne/centro/base) · `chip(id_, cx, cy, s, "CPU")` (procesador con patillas, `_nucleo` pulse) ·
+`logo_apple(id_, cx, cy, s)` (manzana mordida, pegatina) · `icono_app(id_, cx, cy, s, col, glifo="play|chat|foto|mapa|nota|juego|camara|estrella")` ·
+`barra_almacenamiento(id_, x, y, w, h, frac, col, texto)` (`_lleno`) · pantallas para `movil(pantalla=…)`: `pantalla_cargando` (icono + rueda `{id}_rueda` spin),
+`pantalla_almacenamiento` (casi lleno: `{id}_barra`, `{id}_aviso`), `pantalla_salud` (salud de la batería, `{id}_pct`) · `papelera(id_, cx, base, w)` (`_tapa`) ·
+`armario(id_, cx, base, w, h, lleno, abierto)` (a reventar, ropa asomando en `_ropa`: shake/wiggle)
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -187,3 +195,4 @@ lote7-08-precios-99: tienda.py (cartel_precio, producto, estanteria, carrito, ti
 lote7-11-nudillos (archivo/nudillos/dib.py): articulación en corte, mano, escáner de resonancia, trofeo, manos entrelazadas y brazos «junta».
 lote7-12-mesa-electoral: carta de notificación, calendario de plazos, formulario, bombo, mesa y colegio electoral (politica.py) y billete (tienda.py).
 lote7-09-motor-central: coches.py (deportivo en corte y cenital, motor, centro de gravedad, escudo Porsche, persona cenital, flecha de giro, maleta, derrape, sala, carretera, pista de hielo).
+lote8-01-movil-lento (archivo/movil-lento/dib.py): tecnologia.py (batería nueva y gastada, chip, logo de Apple, iconos de app, pantallas de móvil, barra de almacenamiento, papelera y armario).
