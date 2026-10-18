@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · casa.py · frio.py · compra.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · casa.py · frio.py · compra.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py · memoria.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -200,6 +200,13 @@ Truco: regla o barra que se alarga en horizontal = grupo dibujado en vertical de
 `coche_aereo(id_, x, y, rumbo, color="rojo|blanco|amarillo|azul|verde", intermitente="der")` (`_inter`) · `carriles_rotonda()` ·
 `punto_en_anillo(cx, cy, r, ang)` → (x, y, rumbo) · `arbol_aereo(x, y, r)` · `edificio_aereo(x, y, w, h)`
 
+## objetos/memoria.py (memoria, psicología cotidiana, «cambiar de habitación»)
+`puerta(id_, cx, base, w, h, estado="abierta|cerrada|ambas", placa=None, luz=True, marco)` (puerta de madera de frente con luz de la otra habitación; `_hoja` abierta, `_cerrada` para «cerrar la puerta» con hide/pop, `_placa` dorada; .puntos hueco/pomo/placa/suelo) ·
+`tijeras(id_, cx, cy, s, rot_, col)` · `caja_colores(id_, cx, cy, w, h, col, lazo, borrosa)` (borrosa = recuerdo desvaído) · `bocadillo_piensa(id_, cx, cy, w, h, contenido=svg, cola)` (nube de pensamiento con DIBUJO dentro; `_nube`, `_burbujas`) ·
+`humo(id_, cx, cy, s)` («se deshace en humo») · `gota_esfuerzo(id_, cx, cy, s)` · `mando_consola(id_, cx, cy, s)` · `sala_pixel(x0, y0, w, h, px)` (fondo de videojuego) + `bloque_pixel(cx, base, w, h, col)` + `avatar_pixel(id_, cx, base, px)` ·
+`tele_antigua(id_, cx, base, w, texto, patas)` (`_pantalla`) · `tira_pelicula(id_, x0, cy, [f(cx, cy, w, h)…], fw, fh, sep)` (fotogramas `_f<i>`, números `_n<i>`, cortes `_corte<i>` para draw; .puntos corte<i> = x) ·
+`edificio_cupula(id_, cx, base, w)` (universidad clásica con cúpula dorada) · `archivador(id_, cx, base, w, h, etiqueta=(l1, l2))` (`_carpeta`; .puntos carpeta/asa) · `birrete(id_, cx, cy, s)` (graduado; cy = base del gorro, pon `persona.puntos["cima"]` + 38*s)
+
 ## Lo que ya hace el motor Remotion (no se dibuja)
 - **Fondo**: azul `#2347FF` con cuadrícula milimetrada que se desplaza despacio + viñeteado (`Background.tsx`).
 - **Titular**: `headline` con `*palabra*` en bloque lima, y `number` grande al lado (`Headline.tsx`). 2-6 palabras.
@@ -235,3 +242,4 @@ lote8-02-voto-soria: territorio.py (mapa de España con capitales, balanza, ciud
 lote7-05-picadura (archivo/picadura/dib.py): piel.py (corte de piel, habón, mosquito, mastocito, histamina, sirena, bacteria, ratón, mano rascando, reloj de arena, gorra, delantal, piscina).
 lote8-04-agua-caliente (archivo/agua-caliente/dib.py): frio.py (congelador, cuenco de helado, vapor, escarcha, corrientes de convección, burbujas de gas y gráfica de enfriamiento).
 lote8-03-gatos-caen: gato de perfil con giro por mitades (animales.py), oído interno (cuerpo.py), nivel de burbuja y red de ventana (casa.py).
+lote7-06-puerta-olvido (archivo/puerta-olvido/dib.py): memoria.py (puerta abierta/cerrada con placa, tijeras, caja, bocadillo con dibujo, humo, mando, sala pixelada, tele antigua, tira de película, universidad con cúpula, archivador y birrete).

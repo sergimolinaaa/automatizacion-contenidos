@@ -1,0 +1,973 @@
+{
+  "topic": "Por qué entras en una habitación y olvidas a qué ibas (el efecto puerta)",
+  "categoria": "psicologia",
+  "title": "¿Por qué entras en una habitación y olvidas a qué ibas?",
+  "source": "Fuentes: Gabriel Radvansky (Universidad de Notre Dame), Quarterly Journal of Experimental Psychology 2011 · BPS Research Digest, «How walking through a doorway increases forgetting» · ZME Science · Philadelphia Magazine · Kurzweil AI",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué *olvidas* a qué ibas",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-23T14:00:00+02:00",
+    "caption": "¿Por qué entras en una habitación y olvidas a qué ibas? Es el efecto puerta: en los experimentos de Gabriel Radvansky (Notre Dame, 2011) se olvidaba más al cruzar una puerta que al andar lo mismo en una sola sala. Tu cerebro trocea el día en capítulos y la puerta cierra uno (BPS Research Digest). ¿Qué es lo más raro que has olvidado?",
+    "description": "¿Por qué entras en una habitación y olvidas a qué ibas? Se llama efecto puerta y lo estudió el psicólogo Gabriel Radvansky, de la Universidad de Notre Dame (Quarterly Journal of Experimental Psychology, 2011). Sus voluntarios, estudiantes universitarios, llevaban objetos de una mesa a otra en salas reales y virtuales, y olvidaban más al cruzar una puerta que al recorrer la misma distancia dentro de una sola sala. La explicación: el cerebro divide lo que vives en episodios, y una puerta marca el final de uno, así que lo que pensaste antes queda archivado y cuesta más recuperarlo. Fuentes: BPS Research Digest, ZME Science, Philadelphia Magazine. ¿Qué es lo más raro que has olvidado al cruzar una puerta?",
+    "hashtags": [
+      "memoria",
+      "psicologia",
+      "cerebro",
+      "efectopuerta",
+      "curiosidades"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿A qué *venías*?",
+      "narration": "¿Te ha pasado? Entras en la cocina y de repente no sabes a qué venías.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Cruzas la puerta y…",
+        "anims": [
+          {
+            "target": "mujer_d",
+            "effect": "hide"
+          },
+          {
+            "target": "humo",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "puerta",
+            "effect": "fade",
+            "trigger": "Te",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "puerta_hoja",
+            "effect": "punch",
+            "trigger": "pasado",
+            "amount": 0.15
+          },
+          {
+            "target": "mujer_n",
+            "effect": "slide-right",
+            "trigger": "Entras",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mujer_n",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "mujer_n_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "mujer_n",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18
+          },
+          {
+            "target": "piensa",
+            "effect": "pop",
+            "trigger": "cocina",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "piensa",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "piensa",
+            "effect": "hide",
+            "trigger": "repente"
+          },
+          {
+            "target": "humo",
+            "effect": "pop",
+            "trigger": "repente",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "humo",
+            "effect": "drift",
+            "amount": 0.6
+          },
+          {
+            "target": "mujer_n",
+            "effect": "hide",
+            "trigger": "no"
+          },
+          {
+            "target": "mujer_d",
+            "effect": "fade",
+            "trigger": "no",
+            "dur": 0.15,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "mujer_d",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "mujer_d_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "humo",
+            "effect": "hide",
+            "trigger": "sabes"
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "sabes",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "wiggle",
+            "trigger": "sabes",
+            "amount": 0.8
+          },
+          {
+            "target": "mujer_d_brazo_der",
+            "effect": "wiggle",
+            "trigger": "venías",
+            "origin": "bottom-left",
+            "amount": 0.7
+          },
+          {
+            "target": "mujer_d_cabeza",
+            "effect": "sway",
+            "trigger": "venías",
+            "origin": "bottom",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Efecto *puerta*",
+      "narration": "Tiene nombre: el efecto puerta. Lo estudió el psicólogo Gabriel Radvansky en la Universidad de Notre Dame.",
+      "illustration": {
+        "svg_file": "radvansky.svg",
+        "caption": "Fig. 2 · Radvansky, 2011",
+        "anims": [
+          {
+            "target": "puerta",
+            "effect": "pop",
+            "trigger": "Tiene",
+            "sfx": "pop"
+          },
+          {
+            "target": "puerta_placa",
+            "effect": "pop",
+            "trigger": "efecto",
+            "sfx": "ding"
+          },
+          {
+            "target": "puerta_placa",
+            "effect": "punch",
+            "trigger": "puerta",
+            "amount": 0.3
+          },
+          {
+            "target": "psico",
+            "effect": "slide-right",
+            "trigger": "estudió",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cuaderno",
+            "effect": "slide-right",
+            "trigger": "estudió",
+            "dur": 0.6
+          },
+          {
+            "target": "psico",
+            "effect": "breathe",
+            "phase": 0.4
+          },
+          {
+            "target": "psico_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "psico",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15
+          },
+          {
+            "target": "tpsico",
+            "effect": "pop",
+            "trigger": "psicólogo",
+            "sfx": "pop"
+          },
+          {
+            "target": "cuaderno",
+            "effect": "wiggle",
+            "trigger": "Gabriel",
+            "amount": 0.5
+          },
+          {
+            "target": "psico_cabeza",
+            "effect": "sway",
+            "trigger": "Radvansky",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "uni",
+            "effect": "fade",
+            "trigger": "Universidad",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tuni",
+            "effect": "pop",
+            "trigger": "Notre",
+            "sfx": "pop"
+          },
+          {
+            "target": "uni",
+            "effect": "punch",
+            "trigger": "Dame",
+            "amount": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Prueba con *objetos*",
+      "narration": "Sus voluntarios llevaban objetos de una mesa a otra, en salas reales y en un videojuego.",
+      "illustration": {
+        "svg_file": "experimento.svg",
+        "caption": "Fig. 3 · El experimento",
+        "anims": [
+          {
+            "target": "treal",
+            "effect": "hide"
+          },
+          {
+            "target": "tvirt",
+            "effect": "hide"
+          },
+          {
+            "target": "virtual",
+            "effect": "hide"
+          },
+          {
+            "target": "cajapix",
+            "effect": "hide"
+          },
+          {
+            "target": "mando",
+            "effect": "hide"
+          },
+          {
+            "target": "chica",
+            "effect": "pop",
+            "trigger": "voluntarios",
+            "sfx": "pop"
+          },
+          {
+            "target": "chica",
+            "effect": "breathe",
+            "phase": 0.1
+          },
+          {
+            "target": "chica_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "caja",
+            "effect": "punch",
+            "trigger": "objetos",
+            "amount": 0.3
+          },
+          {
+            "target": "caja",
+            "effect": "move",
+            "trigger": "mesa",
+            "to": [
+              280,
+              0
+            ],
+            "dur": 1.0,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "chica",
+            "effect": "move",
+            "trigger": "mesa",
+            "to": [
+              40,
+              0
+            ],
+            "dur": 1.0
+          },
+          {
+            "target": "mesa2",
+            "effect": "punch",
+            "trigger": "otra",
+            "amount": 0.15
+          },
+          {
+            "target": "treal",
+            "effect": "pop",
+            "trigger": "reales",
+            "sfx": "pop"
+          },
+          {
+            "target": "apagada",
+            "effect": "hide",
+            "trigger": "videojuego"
+          },
+          {
+            "target": "virtual",
+            "effect": "fade",
+            "trigger": "videojuego",
+            "dur": 0.3,
+            "sfx": "brillo"
+          },
+          {
+            "target": "tvirt",
+            "effect": "pop",
+            "trigger": "videojuego"
+          },
+          {
+            "target": "mando",
+            "effect": "pop",
+            "trigger": "videojuego"
+          },
+          {
+            "target": "cajapix",
+            "effect": "fade",
+            "trigger": "videojuego",
+            "dur": 0.3
+          },
+          {
+            "target": "cajapix",
+            "effect": "move",
+            "trigger": "videojuego",
+            "to": [
+              270,
+              0
+            ],
+            "dur": 1.0
+          },
+          {
+            "target": "mando",
+            "effect": "bob",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Puerta = más *olvido*",
+      "narration": "Al cruzar una puerta olvidaban más que al andar la misma distancia en una sola sala.",
+      "illustration": {
+        "svg_file": "comparativa_free.svg",
+        "layout": "free",
+        "height": 840,
+        "caption": "Fig. 4 · Misma distancia",
+        "anims": [
+          {
+            "target": "nube1",
+            "effect": "hide"
+          },
+          {
+            "target": "nube2",
+            "effect": "hide"
+          },
+          {
+            "target": "barra_roja",
+            "effect": "hide"
+          },
+          {
+            "target": "barra_verde",
+            "effect": "hide"
+          },
+          {
+            "target": "regla",
+            "effect": "hide"
+          },
+          {
+            "target": "tregla",
+            "effect": "hide"
+          },
+          {
+            "target": "t2",
+            "effect": "hide"
+          },
+          {
+            "target": "t1",
+            "effect": "pop",
+            "delay": 0.1,
+            "sfx": "pop"
+          },
+          {
+            "target": "chica1",
+            "effect": "move",
+            "trigger": "cruzar",
+            "to": [
+              440,
+              0
+            ],
+            "dur": 1.1,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "chica1",
+            "effect": "bob",
+            "amount": 0.4
+          },
+          {
+            "target": "puerta",
+            "effect": "punch",
+            "trigger": "puerta",
+            "amount": 0.2
+          },
+          {
+            "target": "nube1",
+            "effect": "pop",
+            "trigger": "olvidaban",
+            "origin": "bottom",
+            "sfx": "pop"
+          },
+          {
+            "target": "barra_roja",
+            "effect": "grow",
+            "trigger": "más",
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "t2",
+            "effect": "pop",
+            "trigger": "andar",
+            "sfx": "pop"
+          },
+          {
+            "target": "chica2",
+            "effect": "move",
+            "trigger": "andar",
+            "to": [
+              440,
+              0
+            ],
+            "dur": 1.1,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "chica2",
+            "effect": "bob",
+            "amount": 0.4
+          },
+          {
+            "target": "regla",
+            "effect": "draw",
+            "trigger": "distancia",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tregla",
+            "effect": "pop",
+            "trigger": "misma"
+          },
+          {
+            "target": "nube2",
+            "effect": "pop",
+            "trigger": "sola",
+            "origin": "bottom",
+            "sfx": "ding"
+          },
+          {
+            "target": "barra_verde",
+            "effect": "grow",
+            "trigger": "sala",
+            "origin": "bottom",
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Capítulos en tu *memoria*",
+      "narration": "Tu cerebro trocea el día en capítulos, como una serie. Una puerta marca el final de uno.",
+      "illustration": {
+        "svg_file": "capitulos_full.svg",
+        "layout": "full",
+        "caption": "Fig. 5 · Tu día, por capítulos",
+        "anims": [
+          {
+            "target": "tira_corte1",
+            "effect": "hide"
+          },
+          {
+            "target": "tira_corte2",
+            "effect": "hide"
+          },
+          {
+            "target": "tira_n0",
+            "effect": "hide"
+          },
+          {
+            "target": "tira_n1",
+            "effect": "hide"
+          },
+          {
+            "target": "tira_n2",
+            "effect": "hide"
+          },
+          {
+            "target": "tele",
+            "effect": "hide"
+          },
+          {
+            "target": "puerta",
+            "effect": "hide"
+          },
+          {
+            "target": "puerta_cerrada",
+            "effect": "hide"
+          },
+          {
+            "target": "tira",
+            "effect": "slide-left",
+            "delay": 0,
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cerebro",
+            "effect": "pop",
+            "trigger": "cerebro",
+            "sfx": "pop"
+          },
+          {
+            "target": "cerebro",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "tira_corte1",
+            "effect": "draw",
+            "trigger": "trocea",
+            "dur": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "tira_corte2",
+            "effect": "draw",
+            "trigger": "día",
+            "dur": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "tira_n0",
+            "effect": "pop",
+            "trigger": "capítulos",
+            "sfx": "pop"
+          },
+          {
+            "target": "tira_n1",
+            "effect": "pop",
+            "trigger": "capítulos"
+          },
+          {
+            "target": "tele",
+            "effect": "fade",
+            "trigger": "serie",
+            "dur": 0.4,
+            "sfx": "brillo"
+          },
+          {
+            "target": "tele_pantalla",
+            "effect": "pulse",
+            "trigger": "serie",
+            "amount": 0.3
+          },
+          {
+            "target": "puerta",
+            "effect": "pop",
+            "trigger": "puerta",
+            "sfx": "pop"
+          },
+          {
+            "target": "puerta_hoja",
+            "effect": "hide",
+            "trigger": "final"
+          },
+          {
+            "target": "puerta_cerrada",
+            "effect": "pop",
+            "trigger": "final",
+            "sfx": "boing"
+          },
+          {
+            "target": "tira_n1",
+            "effect": "punch",
+            "trigger": "uno",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Se queda en el *salón*",
+      "narration": "La idea que tuviste en el salón queda archivada en el capítulo anterior, y cuesta más rescatarla.",
+      "illustration": {
+        "svg_file": "archivo.svg",
+        "caption": "Fig. 6 · Archivada",
+        "anims": [
+          {
+            "target": "mujer_b",
+            "effect": "hide"
+          },
+          {
+            "target": "cuerda",
+            "effect": "hide"
+          },
+          {
+            "target": "gota",
+            "effect": "hide"
+          },
+          {
+            "target": "idea",
+            "effect": "hide"
+          },
+          {
+            "target": "mujer_a",
+            "effect": "breathe",
+            "phase": 0.3
+          },
+          {
+            "target": "mujer_a_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "mujer_a",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18
+          },
+          {
+            "target": "idea",
+            "effect": "pop",
+            "trigger": "idea",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "mujer_a_brazo_der",
+            "effect": "wiggle",
+            "trigger": "idea",
+            "origin": "bottom-left",
+            "amount": 0.6
+          },
+          {
+            "target": "sofa",
+            "effect": "punch",
+            "trigger": "salón",
+            "amount": 0.15
+          },
+          {
+            "target": "idea",
+            "effect": "move",
+            "trigger": "archivada",
+            "to": [
+              85,
+              215
+            ],
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "idea",
+            "effect": "hide",
+            "trigger": "capítulo"
+          },
+          {
+            "target": "arch_carpeta",
+            "effect": "punch",
+            "trigger": "capítulo",
+            "amount": 0.35,
+            "sfx": "papel"
+          },
+          {
+            "target": "mujer_a",
+            "effect": "hide",
+            "trigger": "anterior"
+          },
+          {
+            "target": "mujer_b",
+            "effect": "slide-left",
+            "trigger": "anterior",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mujer_b",
+            "effect": "breathe",
+            "phase": 0.6
+          },
+          {
+            "target": "mujer_b_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "cuerda",
+            "effect": "draw",
+            "trigger": "cuesta",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "mujer_b",
+            "effect": "move",
+            "trigger": "más",
+            "to": [
+              18,
+              0
+            ],
+            "dur": 0.4
+          },
+          {
+            "target": "mujer_b_brazo_izq",
+            "effect": "wiggle",
+            "trigger": "más",
+            "origin": "bottom-right",
+            "amount": 0.6
+          },
+          {
+            "target": "arch_carpeta",
+            "effect": "wiggle",
+            "trigger": "rescatarla",
+            "amount": 0.6
+          },
+          {
+            "target": "gota",
+            "effect": "pop",
+            "trigger": "rescatarla",
+            "sfx": "pop"
+          },
+          {
+            "target": "gota",
+            "effect": "bob",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "No es la *edad*",
+      "narration": "No es cosa de la edad: los voluntarios eran estudiantes universitarios.",
+      "illustration": {
+        "svg_file": "edad_free.svg",
+        "layout": "free",
+        "height": 840,
+        "caption": "Fig. 7 · Estudiantes",
+        "anims": [
+          {
+            "target": "aspa",
+            "effect": "hide"
+          },
+          {
+            "target": "tuni",
+            "effect": "hide"
+          },
+          {
+            "target": "bir1",
+            "effect": "hide"
+          },
+          {
+            "target": "bir2",
+            "effect": "hide"
+          },
+          {
+            "target": "bir3",
+            "effect": "hide"
+          },
+          {
+            "target": "puerta",
+            "effect": "fade",
+            "delay": 0,
+            "dur": 0.3
+          },
+          {
+            "target": "tedad",
+            "effect": "pop",
+            "trigger": "No",
+            "sfx": "pop"
+          },
+          {
+            "target": "tedad",
+            "effect": "shake",
+            "trigger": "cosa",
+            "amount": 0.4
+          },
+          {
+            "target": "aspa",
+            "effect": "pop",
+            "trigger": "edad",
+            "sfx": "sello"
+          },
+          {
+            "target": "est1",
+            "effect": "slide-up",
+            "trigger": "voluntarios",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "est2",
+            "effect": "slide-up",
+            "trigger": "voluntarios",
+            "dur": 0.4
+          },
+          {
+            "target": "est3",
+            "effect": "slide-up",
+            "trigger": "voluntarios",
+            "dur": 0.4
+          },
+          {
+            "target": "est1",
+            "effect": "breathe",
+            "phase": 0.1
+          },
+          {
+            "target": "est2",
+            "effect": "breathe",
+            "phase": 0.5
+          },
+          {
+            "target": "est3",
+            "effect": "breathe",
+            "phase": 0.8
+          },
+          {
+            "target": "est1_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "est2_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "est3_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "bir1",
+            "effect": "slide-down",
+            "trigger": "estudiantes",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "bir2",
+            "effect": "slide-down",
+            "trigger": "estudiantes",
+            "dur": 0.4
+          },
+          {
+            "target": "bir3",
+            "effect": "slide-down",
+            "trigger": "estudiantes",
+            "dur": 0.4
+          },
+          {
+            "target": "tuni",
+            "effect": "pop",
+            "trigger": "universitarios",
+            "sfx": "ding"
+          },
+          {
+            "target": "est2_brazo_der",
+            "effect": "wiggle",
+            "trigger": "universitarios",
+            "origin": "top-left",
+            "amount": 0.6
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "universitarios",
+        "pose": "surprise",
+        "note": "¡Y eran jóvenes!",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Qué es lo más raro que has olvidado al cruzar una puerta?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Qué es lo más *raro* que has olvidado al cruzar una puerta?",
+          "trigger": "Qué"
+        }
+      ]
+    }
+  ]
+}
