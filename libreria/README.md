@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · casa.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · casa.py · compra.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -160,6 +160,16 @@ fondos `sala_presentacion(W, H, suelo_y)`, `carretera(W, H, y0, y1)`, `pista_hie
 `pantalla_almacenamiento` (casi lleno: `{id}_barra`, `{id}_aviso`), `pantalla_salud` (salud de la batería, `{id}_pct`) · `papelera(id_, cx, base, w)` (`_tapa`) ·
 `armario(id_, cx, base, w, h, lleno, abierto)` (a reventar, ropa asomando en `_ropa`: shake/wiggle)
 
+## objetos/compra.py (la compra: leche, pan, caprichos, reparto en frío)
+`brick_leche(id_, cx, base, s, col, texto="LECHE", rot_)` (brik de 1 L con techo a dos aguas, ≈ 110×235 a s=1; `_gota`; .puntos tapon/centro/base) ·
+`nevera(id_, x0, top, w, h, puertas, baldas, rotulo="LÁCTEOS")` (nevera de súper con puertas de cristal y briks; `_luz` (pulse), `_briks`, `_rotulo`) ·
+`ancla(id_, cx, cy, s, col)` · `cana_pescar(id_, mango, punta, sedal)` (.puntos anzuelo; `_sedal`) · `galletas(id_, cx, cy, s, col, texto, rot_)` ·
+`chocolate(id_, cx, cy, s, rot_, col)` · `lista_compra(id_, cx, cy, w, h, items, tachadas, titulo)` (tachones `_t<i>` para draw, líneas `_i<i>`) ·
+`barra_pan(id_, cx, cy, L, rot_)` · `horno_pan(id_, cx, base, w, h)` (`_vapor` float, `_fuego` pulse, `_barras`) ·
+`camion_frigorifico(id_, cx, base, s, espejo)` (cabina a la izquierda; `_ruedas`, `_frio`; .puntos trasera/cabina; para que llegue marcha atrás: slide-right) ·
+`carretilla(id_, x, base, s, cajas)` (diablo con cajas; .puntos asa: alto del asa = 286*s) · `caja_carton(cx, base, w, h, texto)` · `palet(id_, cx, base, w, filas)`.
+Truco: regla o barra que se alarga en horizontal = grupo dibujado en vertical dentro de un `<g transform="rotate(-90)">` + `grow` con origin top (ver archivo/leche-fondo).
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -196,3 +206,4 @@ lote7-11-nudillos (archivo/nudillos/dib.py): articulación en corte, mano, escá
 lote7-12-mesa-electoral: carta de notificación, calendario de plazos, formulario, bombo, mesa y colegio electoral (politica.py) y billete (tienda.py).
 lote7-09-motor-central: coches.py (deportivo en corte y cenital, motor, centro de gravedad, escudo Porsche, persona cenital, flecha de giro, maleta, derrape, sala, carretera, pista de hielo).
 lote8-01-movil-lento (archivo/movil-lento/dib.py): tecnologia.py (batería nueva y gastada, chip, logo de Apple, iconos de app, pantallas de móvil, barra de almacenamiento, papelera y armario).
+lote7-04-leche-fondo (archivo/leche-fondo/dib.py): compra.py (brik, nevera de lácteos, ancla, caña, galletas, chocolate, lista, pan, horno, camión frigorífico, carretilla, palé).

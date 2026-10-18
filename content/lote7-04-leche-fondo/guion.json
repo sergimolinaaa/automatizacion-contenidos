@@ -1,0 +1,802 @@
+{
+  "topic": "Por qué la leche está al fondo del supermercado (producto ancla, compras de impulso y logística del frío)",
+  "categoria": "consumo",
+  "title": "¿Por qué la leche está al fondo del súper? El camino largo",
+  "source": "Fuentes: Mental Floss, «Why grocery stores put dairy in the back» · Tasting Table, «Why Is Milk Always At The Back Of The Grocery Store?» · Directo al Paladar, «Esta es la razón por la que el pan suele estar al fondo del supermercado» · Qué.es (29/08/2024) · Euribor.com.es (25/05/2026)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué la leche está al *fondo*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-21T14:00:00+02:00",
+    "caption": "¿Por qué la leche está al fondo del súper? Es un producto ancla: casi todos la compran, y para llegar cruzas toda la tienda. Por el camino caen galletas, ofertas y caprichos. Además, los camiones descargan por detrás, donde están las cámaras de frío (Mental Floss, Tasting Table, Directo al Paladar). ¿Qué te llevas siempre sin estar en la lista?",
+    "description": "¿Por qué la leche está al fondo del súper? La leche es un «producto ancla»: casi todo el mundo la compra, así que si está en la otra punta te obliga a recorrer pasillos llenos de tentaciones y aumentan las compras que no estaban en tu lista. Muchos supermercados hacen lo mismo con el pan. Pero también hay una razón práctica: los camiones descargan por la parte de atrás y allí están las cámaras frigoríficas, así que reponer es más rápido y se rompe menos la cadena de frío. Fuentes: Mental Floss, Tasting Table, Directo al Paladar, Qué.es. ¿Qué te llevas siempre sin estar en la lista?",
+    "hashtags": [
+      "supermercado",
+      "consumo",
+      "marketing",
+      "compras",
+      "curiosidades"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Siempre al *fondo*?",
+      "narration": "¿Te has fijado? Vas a por leche y siempre está en la otra punta del súper.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · El pasillo eterno",
+        "anims": [
+          {
+            "target": "pasillo",
+            "effect": "fade",
+            "dur": 0.5
+          },
+          {
+            "target": "clit",
+            "effect": "hide"
+          },
+          {
+            "target": "cli",
+            "effect": "breathe"
+          },
+          {
+            "target": "cli_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "cli",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18
+          },
+          {
+            "target": "clit",
+            "effect": "breathe",
+            "phase": 0.3
+          },
+          {
+            "target": "glow",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "nevera_luz",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "fijado",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "trigger": "fijado",
+            "amount": 0.4
+          },
+          {
+            "target": "cliente",
+            "effect": "slide-up",
+            "trigger": "Vas",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bolsa_g",
+            "effect": "sway",
+            "trigger": "leche",
+            "origin": "top",
+            "amount": 0.4
+          },
+          {
+            "target": "nevera",
+            "effect": "punch",
+            "trigger": "leche",
+            "amount": 0.4
+          },
+          {
+            "target": "brillos",
+            "effect": "pop",
+            "trigger": "siempre",
+            "sfx": "brillo"
+          },
+          {
+            "target": "brillos",
+            "effect": "pulse",
+            "trigger": "siempre",
+            "amount": 0.8
+          },
+          {
+            "target": "ruta",
+            "effect": "draw",
+            "trigger": "otra",
+            "dur": 0.7,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tlejos",
+            "effect": "pop",
+            "trigger": "punta",
+            "sfx": "pop"
+          },
+          {
+            "target": "cli",
+            "effect": "hide",
+            "trigger": "súper"
+          },
+          {
+            "target": "clit",
+            "effect": "fade",
+            "trigger": "súper",
+            "dur": 0.15,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "súper",
+            "to": [
+              540,
+              820
+            ],
+            "amount": 1.12,
+            "dur": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Producto *ancla*",
+      "narration": "La leche es un producto ancla: algo que casi todos compran, como el cebo de una caña de pescar.",
+      "illustration": {
+        "svg_file": "ancla.svg",
+        "caption": "Fig. 2 · El cebo del súper",
+        "anims": [
+          {
+            "target": "brik",
+            "effect": "pop",
+            "delay": 0.1,
+            "sfx": "pop"
+          },
+          {
+            "target": "brik",
+            "effect": "float",
+            "amount": 0.25
+          },
+          {
+            "target": "ancla",
+            "effect": "pop",
+            "trigger": "ancla",
+            "sfx": "sello"
+          },
+          {
+            "target": "brik",
+            "effect": "punch",
+            "trigger": "ancla",
+            "amount": 0.4
+          },
+          {
+            "target": "tancla",
+            "effect": "pop",
+            "trigger": "algo",
+            "sfx": "pop"
+          },
+          {
+            "target": "carro0",
+            "effect": "slide-up",
+            "trigger": "casi",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "carro1",
+            "effect": "slide-up",
+            "trigger": "todos",
+            "dur": 0.4
+          },
+          {
+            "target": "carro2",
+            "effect": "slide-up",
+            "trigger": "compran",
+            "dur": 0.4
+          },
+          {
+            "target": "carro3",
+            "effect": "slide-up",
+            "trigger": "como",
+            "dur": 0.4
+          },
+          {
+            "target": "carro4",
+            "effect": "slide-up",
+            "trigger": "el",
+            "dur": 0.4
+          },
+          {
+            "target": "cana_g",
+            "effect": "slide-down",
+            "trigger": "cebo",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cebo",
+            "effect": "slide-down",
+            "trigger": "cebo",
+            "dur": 0.5
+          },
+          {
+            "target": "cebo",
+            "effect": "sway",
+            "trigger": "caña",
+            "origin": "top",
+            "amount": 0.5
+          },
+          {
+            "target": "pez",
+            "effect": "slide-left",
+            "trigger": "pescar",
+            "dur": 0.5,
+            "sfx": "splash"
+          },
+          {
+            "target": "pez",
+            "effect": "float",
+            "trigger": "pescar",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El camino *largo*",
+      "narration": "Si está al fondo, cruzas la tienda entera. Y cada pasillo es un escaparate.",
+      "illustration": {
+        "svg_file": "plano_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 3 · Visto desde arriba",
+        "anims": [
+          {
+            "target": "luz0",
+            "effect": "hide"
+          },
+          {
+            "target": "luz1",
+            "effect": "hide"
+          },
+          {
+            "target": "luz2",
+            "effect": "hide"
+          },
+          {
+            "target": "tl0",
+            "effect": "hide"
+          },
+          {
+            "target": "tl1",
+            "effect": "hide"
+          },
+          {
+            "target": "tl2",
+            "effect": "hide"
+          },
+          {
+            "target": "punto",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "tlac",
+            "effect": "pop",
+            "trigger": "fondo",
+            "sfx": "ding"
+          },
+          {
+            "target": "tlac",
+            "effect": "pulse",
+            "trigger": "fondo",
+            "amount": 0.5
+          },
+          {
+            "target": "ruta",
+            "effect": "draw",
+            "trigger": "cruzas",
+            "dur": 2.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "punto",
+            "effect": "move",
+            "trigger": "cruzas",
+            "to": [
+              0,
+              -80
+            ],
+            "dur": 0.3
+          },
+          {
+            "target": "punto",
+            "effect": "move",
+            "trigger": "tienda",
+            "to": [
+              290,
+              0
+            ],
+            "dur": 0.4
+          },
+          {
+            "target": "punto",
+            "effect": "move",
+            "trigger": "entera",
+            "to": [
+              0,
+              -170
+            ],
+            "dur": 0.4
+          },
+          {
+            "target": "luz0",
+            "effect": "fade",
+            "trigger": "cada",
+            "dur": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "tl0",
+            "effect": "pop",
+            "trigger": "cada"
+          },
+          {
+            "target": "punto",
+            "effect": "move",
+            "trigger": "cada",
+            "to": [
+              -575,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "luz1",
+            "effect": "fade",
+            "trigger": "pasillo",
+            "dur": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "tl1",
+            "effect": "pop",
+            "trigger": "pasillo"
+          },
+          {
+            "target": "punto",
+            "effect": "move",
+            "trigger": "pasillo",
+            "to": [
+              0,
+              -170
+            ],
+            "dur": 0.4
+          },
+          {
+            "target": "luz2",
+            "effect": "fade",
+            "trigger": "escaparate",
+            "dur": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "tl2",
+            "effect": "pop",
+            "trigger": "escaparate"
+          },
+          {
+            "target": "punto",
+            "effect": "move",
+            "trigger": "escaparate",
+            "to": [
+              575,
+              0
+            ],
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Compras de *impulso*",
+      "narration": "Así caen las compras de impulso: lo que no estaba en tu lista. Unas galletas, una oferta, un capricho.",
+      "illustration": {
+        "svg_file": "impulso.svg",
+        "caption": "Fig. 4 · El carro que crece",
+        "anims": [
+          {
+            "target": "carro",
+            "effect": "slide-right",
+            "delay": 0.1,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "brikc",
+            "effect": "pop",
+            "trigger": "caen",
+            "sfx": "pop"
+          },
+          {
+            "target": "timp",
+            "effect": "pop",
+            "trigger": "impulso",
+            "sfx": "pop"
+          },
+          {
+            "target": "lista",
+            "effect": "slide-up",
+            "trigger": "no",
+            "dur": 0.4,
+            "sfx": "papel"
+          },
+          {
+            "target": "lista_t0",
+            "effect": "draw",
+            "trigger": "lista",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "gall",
+            "effect": "pop",
+            "trigger": "Unas",
+            "sfx": "pop"
+          },
+          {
+            "target": "gall",
+            "effect": "move",
+            "trigger": "galletas",
+            "to": [
+              200,
+              170
+            ],
+            "rotate": -15,
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "oferta",
+            "effect": "pop",
+            "trigger": "oferta",
+            "sfx": "ding"
+          },
+          {
+            "target": "oferta",
+            "effect": "sway",
+            "trigger": "oferta",
+            "origin": "bottom-left",
+            "amount": 0.5
+          },
+          {
+            "target": "choco",
+            "effect": "slide-down",
+            "trigger": "capricho",
+            "dur": 0.5,
+            "sfx": "boing"
+          },
+          {
+            "target": "carro",
+            "effect": "punch",
+            "trigger": "capricho",
+            "amount": 0.3
+          },
+          {
+            "target": "lista",
+            "effect": "punch",
+            "delay": 5.2,
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "El *pan*, igual",
+      "narration": "Muchos supermercados hacen lo mismo con el pan: lo básico, lejos de la entrada.",
+      "illustration": {
+        "svg_file": "pan.svg",
+        "caption": "Fig. 5 · La otra punta",
+        "anims": [
+          {
+            "target": "puerta",
+            "effect": "pop",
+            "delay": 0.1,
+            "sfx": "pop"
+          },
+          {
+            "target": "horno_vapor",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "horno_fuego",
+            "effect": "pulse",
+            "amount": 0.8
+          },
+          {
+            "target": "horno",
+            "effect": "slide-left",
+            "trigger": "supermercados",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "horno_barras",
+            "effect": "punch",
+            "trigger": "pan",
+            "amount": 0.5
+          },
+          {
+            "target": "basicos",
+            "effect": "pop",
+            "trigger": "lo",
+            "sfx": "pop"
+          },
+          {
+            "target": "sbas",
+            "effect": "pop",
+            "trigger": "básico",
+            "sfx": "sello"
+          },
+          {
+            "target": "sbas",
+            "effect": "punch",
+            "trigger": "básico",
+            "amount": 0.5
+          },
+          {
+            "target": "regla",
+            "effect": "grow",
+            "trigger": "lejos",
+            "origin": "top",
+            "dur": 0.9,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tlejos",
+            "effect": "pop",
+            "trigger": "entrada",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Y el *frío*",
+      "narration": "Hay otra razón práctica: los camiones descargan detrás, donde están las cámaras frigoríficas, neveras del tamaño de una habitación.",
+      "illustration": {
+        "svg_file": "frio_full.svg",
+        "layout": "full",
+        "caption": "Fig. 6 · La trastienda",
+        "anims": [
+          {
+            "target": "copos",
+            "effect": "drift",
+            "amount": 0.4
+          },
+          {
+            "target": "rep",
+            "effect": "breathe"
+          },
+          {
+            "target": "rep_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "nev_luz",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "reparto",
+            "effect": "hide"
+          },
+          {
+            "target": "camara",
+            "effect": "fade",
+            "delay": 0.1,
+            "dur": 0.4
+          },
+          {
+            "target": "camion",
+            "effect": "slide-right",
+            "trigger": "camiones",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camion_frio",
+            "effect": "pulse",
+            "trigger": "camiones",
+            "amount": 0.8
+          },
+          {
+            "target": "tdet",
+            "effect": "pop",
+            "trigger": "detrás",
+            "sfx": "pop"
+          },
+          {
+            "target": "tcam",
+            "effect": "pop",
+            "trigger": "cámaras",
+            "sfx": "pop"
+          },
+          {
+            "target": "copos",
+            "effect": "pulse",
+            "trigger": "frigoríficas",
+            "amount": 1.2
+          },
+          {
+            "target": "thab",
+            "effect": "pop",
+            "trigger": "tamaño",
+            "sfx": "ding"
+          },
+          {
+            "target": "reparto",
+            "effect": "slide-right",
+            "trigger": "neveras",
+            "dur": 0.5
+          },
+          {
+            "target": "reparto",
+            "effect": "move",
+            "trigger": "habitación",
+            "to": [
+              70,
+              0
+            ],
+            "dur": 0.9
+          },
+          {
+            "target": "ttienda",
+            "effect": "pop",
+            "trigger": "habitación",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Tu *defensa*",
+      "narration": "Tu defensa: lleva lista y ve directo a lo que necesitas.",
+      "illustration": {
+        "svg_file": "defensa_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 7 · Lista y directo",
+        "anims": [
+          {
+            "target": "cli",
+            "effect": "breathe"
+          },
+          {
+            "target": "cli_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "oferta",
+            "effect": "pulse",
+            "amount": 1.2
+          },
+          {
+            "target": "oferta",
+            "effect": "shake",
+            "amount": 0.4
+          },
+          {
+            "target": "lista",
+            "effect": "pop",
+            "trigger": "lista",
+            "sfx": "papel"
+          },
+          {
+            "target": "lista",
+            "effect": "sway",
+            "trigger": "lista",
+            "origin": "bottom",
+            "amount": 0.4
+          },
+          {
+            "target": "oferta",
+            "effect": "hide",
+            "trigger": "directo"
+          },
+          {
+            "target": "cliente",
+            "effect": "move",
+            "trigger": "directo",
+            "to": [
+              380,
+              0
+            ],
+            "dur": 1.0,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "necesitas",
+            "sfx": "ding"
+          },
+          {
+            "target": "nev",
+            "effect": "punch",
+            "trigger": "necesitas",
+            "amount": 0.3
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "Tu",
+        "pose": "point",
+        "note": "Ni un pasillo de más",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Qué te llevas siempre sin estar en la lista?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Qué te llevas siempre sin estar en la *lista*?",
+          "trigger": "Qué"
+        }
+      ]
+    }
+  ]
+}
