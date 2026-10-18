@@ -106,6 +106,12 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
   `mesa_electoral(id_, cx, y_tablero, w, alto, cartel, urna_dx)` (mantel, cartel, urna; personas `pose="busto"` antes para que la mesa las tape) ·
   `colegio_electoral(W, H, suelo_y, rotulo)` (fondo: aula con pizarra, ventanales, cabina con cortina y suelo de baldosas)
 
+## objetos/territorio.py (mapa, balanza y ciudad frente a pueblo)
+`mapa_espana(id_, cx, cy, w, puntos, ids, destacar=("Madrid","Soria"))` (Península, Portugal en gris, Baleares, Ceuta, Melilla y recuadro de Canarias; capitales en `_puntos`,
+con `ids=True` cada una en `_p_<slug>`; las de `destacar` van aparte en `_<slug>` en coral; .puntos[nombre] = (x, y), `CAPITALES`) ·
+`balanza(id_, cx, base, w, inclina, izq=svg, der=svg, txt_izq, txt_der)` (dos platillos; contenido en coordenadas del platillo; para inclinarla, dos balanzas + hide/fade;
+.puntos plato_izq/plato_der/fiel) · `ciudad(id_, x0, x1, base, alto, n)` (rascacielos `_t<i>` para grow en cascada) · `pueblo(id_, cx, base, w)` (casas de piedra `_c<i>` y `_iglesia`)
+
 ## objetos/casa.py
 `vaso(id_, cx, base, alto, ancho, nivel, liquido="agua|refresco|cola|leche|zumo|cafe", cubitos=0..3)` (ids `_liquido`, `_burbujas`, `_cubo<i>`) ·
 `cubito(id_, cx, cy, s, ang)` · `grieta(id_, p0, p1, amp)` · `botella(id_, cx, base, alto, col, etiqueta_col, texto)` · `taza(id_, cx, base, w, liquido)` (`_vapor`) ·
@@ -207,3 +213,4 @@ lote7-12-mesa-electoral: carta de notificación, calendario de plazos, formulari
 lote7-09-motor-central: coches.py (deportivo en corte y cenital, motor, centro de gravedad, escudo Porsche, persona cenital, flecha de giro, maleta, derrape, sala, carretera, pista de hielo).
 lote8-01-movil-lento (archivo/movil-lento/dib.py): tecnologia.py (batería nueva y gastada, chip, logo de Apple, iconos de app, pantallas de móvil, barra de almacenamiento, papelera y armario).
 lote7-04-leche-fondo (archivo/leche-fondo/dib.py): compra.py (brik, nevera de lácteos, ancla, caña, galletas, chocolate, lista, pan, horno, camión frigorífico, carretilla, palé).
+lote8-02-voto-soria: territorio.py (mapa de España con capitales, balanza, ciudad y pueblo).

@@ -1,0 +1,893 @@
+{
+  "topic": "Por qué un voto en Soria pesa más que uno en Madrid: 2 escaños fijos por provincia y reparto por población (LOREG art. 162), elecciones generales del 29 de noviembre de 2026",
+  "categoria": "politica",
+  "title": "¿Por qué un voto en Soria pesa más que uno en Madrid?",
+  "source": "Fuentes: LOREG (LO 5/1985), art. 162 · Real Decreto 806/2026 (BOE 6/10/2026) y referencia del Consejo de Ministros · INE, cifras oficiales de población a 1/1/2025 (RD 1117/2025)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Por qué tu voto *pesa* más en Soria?",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-21T21:00:00+02:00",
+    "caption": "¿Por qué un voto en Soria pesa más que uno en Madrid? 🗳️ Cada provincia tiene 2 diputados fijos (Ceuta y Melilla, 1) y los 248 restantes van por población (LOREG, art. 162). El 29 N Madrid elige 38 y Soria 2 (Real Decreto 806/2026). Con datos del INE: en Soria hay un diputado por cada 45.000 habitantes; en Madrid, por cada 185.000. Sin posicionarnos, solo la ley y los datos oficiales. ¿Cuántos diputados elige tu provincia?",
+    "description": "¿Por qué un voto en Soria pesa más que uno en Madrid? El Congreso tiene 350 diputados. La ley electoral (LOREG, art. 162) da primero 2 escaños fijos a cada provincia y 1 a Ceuta y otro a Melilla; los 248 restantes se reparten según la población. Para el 29 N, el Real Decreto 806/2026 (BOE del 6 de octubre) asigna 38 diputados a Madrid y 2 a Soria. Con las cifras oficiales del INE a 1 de enero de 2025, la provincia de Soria tiene 90.234 habitantes: unos 45.000 por diputado. Madrid supera los 7 millones: unos 185.000 por diputado, unas cuatro veces más. Te lo explicamos sin posicionarnos, solo con la ley y los datos oficiales. Fuentes: LOREG; Real Decreto 806/2026 (BOE) y referencia del Consejo de Ministros (La Moncloa); INE, cifras oficiales de población (Real Decreto 1117/2025); Europa Press. ¿Cuántos diputados elige tu provincia?",
+    "hashtags": [
+      "eleccionesgenerales",
+      "29N",
+      "Soria",
+      "leyelectoral"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Pesa *más*?",
+      "narration": "¿Sabías que un voto en Soria pesa más que uno en Madrid?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Un voto, dos pesos",
+        "anims": [
+          {
+            "target": "bal_ti",
+            "effect": "hide"
+          },
+          {
+            "target": "x4",
+            "effect": "hide"
+          },
+          {
+            "target": "tley",
+            "effect": "hide"
+          },
+          {
+            "target": "fbaja",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.2
+          },
+          {
+            "target": "globo",
+            "effect": "pop",
+            "trigger": "Sabías",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "Sabías",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "tvoto",
+            "effect": "pop",
+            "trigger": "voto",
+            "sfx": "pop"
+          },
+          {
+            "target": "bal_eq",
+            "effect": "punch",
+            "trigger": "Soria",
+            "amount": 0.15
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "Soria",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "bal_eq",
+            "effect": "hide",
+            "trigger": "pesa"
+          },
+          {
+            "target": "bal_ti",
+            "effect": "fade",
+            "trigger": "pesa",
+            "dur": 0.2,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "fbaja",
+            "effect": "draw",
+            "trigger": "pesa",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "mas",
+            "effect": "pop",
+            "trigger": "más",
+            "sfx": "sello"
+          },
+          {
+            "target": "mas",
+            "effect": "punch",
+            "trigger": "más",
+            "amount": 0.4
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "Madrid",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "globo",
+            "effect": "float",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Solo *datos*",
+      "narration": "Te lo explicamos sin posicionarnos, solo con la ley y los datos oficiales.",
+      "illustration": {
+        "svg_file": "ley_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 2 · Ley y cifras oficiales",
+        "anims": [
+          {
+            "target": "urna",
+            "effect": "slide-up",
+            "trigger": "Te",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "urna",
+            "effect": "float",
+            "amount": 0.3
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "posicionarnos",
+            "sfx": "sello"
+          },
+          {
+            "target": "sello",
+            "effect": "punch",
+            "trigger": "posicionarnos",
+            "amount": 0.5
+          },
+          {
+            "target": "doc",
+            "effect": "slide-right",
+            "trigger": "ley",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "toficial",
+            "effect": "pop",
+            "trigger": "datos",
+            "sfx": "pop"
+          },
+          {
+            "target": "ine",
+            "effect": "slide-left",
+            "trigger": "oficiales",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "*2* fijos",
+      "narration": "El Congreso tiene trescientos cincuenta diputados y cada provincia arranca con dos fijos.",
+      "illustration": {
+        "svg_file": "hemi.svg",
+        "caption": "Fig. 3 · 350 escaños",
+        "anims": [
+          {
+            "target": "hemi",
+            "effect": "grow",
+            "trigger": "Congreso",
+            "dur": 0.6,
+            "origin": "bottom",
+            "sfx": "pop"
+          },
+          {
+            "target": "c350",
+            "effect": "pop",
+            "trigger": "trescientos",
+            "sfx": "ding"
+          },
+          {
+            "target": "tdip",
+            "effect": "pop",
+            "trigger": "diputados",
+            "sfx": "pop"
+          },
+          {
+            "target": "hemi",
+            "effect": "punch",
+            "trigger": "provincia",
+            "amount": 0.12
+          },
+          {
+            "target": "fijos",
+            "effect": "pop",
+            "trigger": "dos",
+            "sfx": "ding"
+          },
+          {
+            "target": "fijos",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "tfijos",
+            "effect": "slide-down",
+            "trigger": "fijos",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "El resto, por *población*",
+      "narration": "Ceuta y Melilla, uno. Los otros doscientos cuarenta y ocho, según la población.",
+      "illustration": {
+        "svg_file": "mapa.svg",
+        "caption": "Fig. 4 · LOREG, art. 162",
+        "anims": [
+          {
+            "target": "t2",
+            "effect": "pop",
+            "delay": 0.2,
+            "sfx": "pop"
+          },
+          {
+            "target": "mapa_ceuta",
+            "effect": "pop",
+            "trigger": "Ceuta",
+            "sfx": "pop"
+          },
+          {
+            "target": "tce",
+            "effect": "pop",
+            "trigger": "Ceuta"
+          },
+          {
+            "target": "mapa_melilla",
+            "effect": "pop",
+            "trigger": "Melilla",
+            "sfx": "pop"
+          },
+          {
+            "target": "tme",
+            "effect": "pop",
+            "trigger": "Melilla"
+          },
+          {
+            "target": "mapa_ceuta",
+            "effect": "punch",
+            "trigger": "uno",
+            "amount": 0.5
+          },
+          {
+            "target": "mapa_melilla",
+            "effect": "punch",
+            "trigger": "uno",
+            "amount": 0.5
+          },
+          {
+            "target": "c248",
+            "effect": "pop",
+            "trigger": "doscientos",
+            "sfx": "ding"
+          },
+          {
+            "target": "tpob",
+            "effect": "pop",
+            "trigger": "según",
+            "sfx": "pop"
+          },
+          {
+            "target": "b0",
+            "effect": "pop",
+            "trigger": "otros",
+            "sfx": "pop"
+          },
+          {
+            "target": "b1",
+            "effect": "pop",
+            "trigger": "otros"
+          },
+          {
+            "target": "b2",
+            "effect": "pop",
+            "trigger": "doscientos",
+            "sfx": "pop"
+          },
+          {
+            "target": "b3",
+            "effect": "pop",
+            "trigger": "doscientos"
+          },
+          {
+            "target": "b4",
+            "effect": "pop",
+            "trigger": "cuarenta",
+            "sfx": "pop"
+          },
+          {
+            "target": "b5",
+            "effect": "pop",
+            "trigger": "cuarenta"
+          },
+          {
+            "target": "b6",
+            "effect": "pop",
+            "trigger": "ocho",
+            "sfx": "pop"
+          },
+          {
+            "target": "b7",
+            "effect": "pop",
+            "trigger": "ocho"
+          },
+          {
+            "target": "b8",
+            "effect": "pop",
+            "trigger": "según",
+            "sfx": "pop"
+          },
+          {
+            "target": "b9",
+            "effect": "pop",
+            "trigger": "según"
+          },
+          {
+            "target": "b10",
+            "effect": "pop",
+            "trigger": "la",
+            "sfx": "pop"
+          },
+          {
+            "target": "b11",
+            "effect": "pop",
+            "trigger": "la"
+          },
+          {
+            "target": "b12",
+            "effect": "pop",
+            "trigger": "población",
+            "sfx": "pop"
+          },
+          {
+            "target": "b13",
+            "effect": "pop",
+            "trigger": "población"
+          },
+          {
+            "target": "burbujas",
+            "effect": "pulse",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Madrid: *38*",
+      "narration": "Madrid, con unos siete millones de habitantes, elige treinta y ocho diputados.",
+      "illustration": {
+        "svg_file": "versus_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 5 · Real Decreto 806/2026",
+        "anims": [
+          {
+            "target": "soria",
+            "effect": "hide"
+          },
+          {
+            "target": "vs",
+            "effect": "hide"
+          },
+          {
+            "target": "tm7",
+            "effect": "hide"
+          },
+          {
+            "target": "tmad",
+            "effect": "pop",
+            "trigger": "Madrid",
+            "sfx": "pop"
+          },
+          {
+            "target": "ciudad_t0",
+            "effect": "grow",
+            "trigger": "Madrid",
+            "origin": "bottom",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ciudad_t1",
+            "effect": "grow",
+            "trigger": "Madrid",
+            "origin": "bottom",
+            "dur": 0.62
+          },
+          {
+            "target": "ciudad_t2",
+            "effect": "grow",
+            "trigger": "Madrid",
+            "origin": "bottom",
+            "dur": 0.74
+          },
+          {
+            "target": "ciudad_t3",
+            "effect": "grow",
+            "trigger": "Madrid",
+            "origin": "bottom",
+            "dur": 0.86
+          },
+          {
+            "target": "ciudad_t4",
+            "effect": "grow",
+            "trigger": "Madrid",
+            "origin": "bottom",
+            "dur": 0.98
+          },
+          {
+            "target": "ciudad_t5",
+            "effect": "grow",
+            "trigger": "Madrid",
+            "origin": "bottom",
+            "dur": 1.1
+          },
+          {
+            "target": "tm7",
+            "effect": "pop",
+            "trigger": "siete",
+            "sfx": "pop"
+          },
+          {
+            "target": "gentem",
+            "effect": "slide-up",
+            "trigger": "habitantes",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "c38",
+            "effect": "pop",
+            "trigger": "treinta",
+            "sfx": "ding"
+          },
+          {
+            "target": "tdm",
+            "effect": "pop",
+            "trigger": "diputados"
+          },
+          {
+            "target": "c38",
+            "effect": "pulse",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Soria: *2*",
+      "narration": "Soria, con noventa mil, solo elige dos: los fijos.",
+      "illustration": {
+        "svg_file": "versus_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 6 · Real Decreto 806/2026",
+        "anims": [
+          {
+            "target": "vs",
+            "effect": "pop",
+            "delay": 0.1,
+            "sfx": "pop"
+          },
+          {
+            "target": "tsor",
+            "effect": "pop",
+            "trigger": "Soria",
+            "sfx": "pop"
+          },
+          {
+            "target": "pueblo",
+            "effect": "pop",
+            "trigger": "Soria",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ts90",
+            "effect": "pop",
+            "trigger": "noventa",
+            "sfx": "pop"
+          },
+          {
+            "target": "gentes",
+            "effect": "slide-up",
+            "trigger": "solo",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "c2",
+            "effect": "pop",
+            "trigger": "dos",
+            "sfx": "ding"
+          },
+          {
+            "target": "tds",
+            "effect": "pop",
+            "trigger": "dos"
+          },
+          {
+            "target": "tsolo",
+            "effect": "pop",
+            "trigger": "fijos",
+            "sfx": "sello"
+          },
+          {
+            "target": "tsolo",
+            "effect": "punch",
+            "trigger": "fijos",
+            "amount": 0.4
+          },
+          {
+            "target": "madrid",
+            "effect": "punch",
+            "trigger": "solo",
+            "amount": 0.08
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Haz la *cuenta*",
+      "narration": "Haz la cuenta: en Soria, un diputado por cada cuarenta y cinco mil habitantes.",
+      "illustration": {
+        "svg_file": "cuenta.svg",
+        "caption": "Fig. 7 · INE, población a 1 de enero de 2025",
+        "anims": [
+          {
+            "target": "lmad",
+            "effect": "hide"
+          },
+          {
+            "target": "em",
+            "effect": "hide"
+          },
+          {
+            "target": "fm0",
+            "effect": "hide"
+          },
+          {
+            "target": "fm1",
+            "effect": "hide"
+          },
+          {
+            "target": "fm2",
+            "effect": "hide"
+          },
+          {
+            "target": "fm3",
+            "effect": "hide"
+          },
+          {
+            "target": "vm185",
+            "effect": "hide"
+          },
+          {
+            "target": "tpor",
+            "effect": "hide"
+          },
+          {
+            "target": "leyenda",
+            "effect": "pop",
+            "trigger": "cuenta",
+            "sfx": "pop"
+          },
+          {
+            "target": "lsor",
+            "effect": "pop",
+            "trigger": "Soria",
+            "sfx": "pop"
+          },
+          {
+            "target": "es",
+            "effect": "pop",
+            "trigger": "diputado",
+            "sfx": "ding"
+          },
+          {
+            "target": "fs0",
+            "effect": "slide-up",
+            "trigger": "cada",
+            "dur": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "fs1",
+            "effect": "slide-up",
+            "trigger": "cada",
+            "dur": 0.44999999999999996
+          },
+          {
+            "target": "fs2",
+            "effect": "slide-up",
+            "trigger": "cada",
+            "dur": 0.6
+          },
+          {
+            "target": "fs3",
+            "effect": "slide-up",
+            "trigger": "cada",
+            "dur": 0.75
+          },
+          {
+            "target": "vs45",
+            "effect": "pop",
+            "trigger": "cuarenta",
+            "sfx": "ding"
+          },
+          {
+            "target": "vs45",
+            "effect": "punch",
+            "trigger": "habitantes",
+            "amount": 0.3
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "Haz",
+        "pose": "think",
+        "note": "Habitantes entre escaños",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Madrid: *185.000*",
+      "narration": "En Madrid, uno por cada ciento ochenta y cinco mil.",
+      "illustration": {
+        "svg_file": "cuenta.svg",
+        "caption": "Fig. 8 · INE, población a 1 de enero de 2025",
+        "anims": [
+          {
+            "target": "lmad",
+            "effect": "pop",
+            "trigger": "Madrid",
+            "sfx": "pop"
+          },
+          {
+            "target": "em",
+            "effect": "pop",
+            "trigger": "uno",
+            "sfx": "ding"
+          },
+          {
+            "target": "fm0",
+            "effect": "slide-up",
+            "trigger": "cada",
+            "dur": 0.3,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "fm1",
+            "effect": "slide-up",
+            "trigger": "cada",
+            "dur": 0.5
+          },
+          {
+            "target": "fm2",
+            "effect": "slide-up",
+            "trigger": "cada",
+            "dur": 0.7
+          },
+          {
+            "target": "fm3",
+            "effect": "slide-up",
+            "trigger": "cada",
+            "dur": 0.9000000000000001
+          },
+          {
+            "target": "vm185",
+            "effect": "pop",
+            "trigger": "ciento",
+            "sfx": "ding"
+          },
+          {
+            "target": "tpor",
+            "effect": "pop",
+            "trigger": "mil",
+            "sfx": "pop"
+          },
+          {
+            "target": "vm185",
+            "effect": "pulse",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Pesa *4 veces* más",
+      "narration": "Por eso cada voto soriano pesa unas cuatro veces más. Lo marca la ley electoral, artículo ciento sesenta y dos.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 9 · LOREG, art. 162",
+        "anims": [
+          {
+            "target": "bal_eq",
+            "effect": "hide"
+          },
+          {
+            "target": "globo",
+            "effect": "hide"
+          },
+          {
+            "target": "mas",
+            "effect": "hide"
+          },
+          {
+            "target": "tvoto",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.4
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.4
+          },
+          {
+            "target": "bal_ti",
+            "effect": "punch",
+            "trigger": "voto",
+            "amount": 0.12
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "soriano",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "fbaja",
+            "effect": "draw",
+            "trigger": "pesa",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "fbaja",
+            "effect": "flow",
+            "amount": 0.5
+          },
+          {
+            "target": "x4",
+            "effect": "pop",
+            "trigger": "cuatro",
+            "sfx": "sello"
+          },
+          {
+            "target": "x4",
+            "effect": "punch",
+            "trigger": "cuatro",
+            "amount": 0.5
+          },
+          {
+            "target": "tley",
+            "effect": "pop",
+            "trigger": "ley",
+            "sfx": "pop"
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "artículo",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "tley",
+            "effect": "punch",
+            "trigger": "ciento",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Cuéntanos*",
+      "narration": "Síguenos y las resolvemos. ¿Cuántos diputados elige tu provincia?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Cuántos diputados elige *tu provincia*?",
+          "trigger": "Cuántos"
+        }
+      ]
+    }
+  ]
+}
