@@ -494,6 +494,17 @@
         "tiktok": "6ad42dc2938409f1d0b15193",
         "instagram": "6ad42dc3ae173d6e00e266c5"
       }
+    },
+    {
+      "slug": "lote8-01-movil-lento",
+      "category": "moviles",
+      "due": "2026-10-20T19:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote8-01-movil-lento/lote8-01-movil-lento-con-voz.mp4",
+      "posts": {
+        "youtube": "6ad53401938409f1d0e83e81",
+        "tiktok": "6ad53401769b457934dc8ad8",
+        "instagram": "6ad53402769b457934dc8b09"
+      }
     }
   ]
 }
