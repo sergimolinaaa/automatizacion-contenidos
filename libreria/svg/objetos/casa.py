@@ -489,3 +489,37 @@ def trofeo(id_, cx, base, h=300, texto="PREMIO", col="#FFC83D"):
     o += brillo(f"M {f(cx - w*0.32)} {f(top + h*0.08)} C {f(cx - w*0.32)} {f(top + h*0.28)}, {f(cx - w*0.18)} {f(top + h*0.42)}, {f(cx - w*0.08)} {f(top + h*0.47)}", h * 0.025, 0.75)
     o += g(f"{id_}_brillo", f'<path d="M {f(cx + w*0.22)} {f(top + h*0.1)} l 8 22 l 22 8 l -22 8 l -8 22 l -8 -22 l -22 -8 l 22 -8 Z" fill="#FFFFFF" stroke="{INK}" stroke-width="3"/>')
     return Pieza(g(id_, o), {"copa": (cx, top + h * 0.25), "placa": (cx, base - h * 0.09)}, (cx - w * 0.8, top - 10, cx + w * 0.8, base + 10))
+
+
+def nivel_burbuja(id_, cx, cy, w=360, h=90, col=YEL, inclinado=0):
+    """Nivel de burbuja de albañil. La burbuja va en {id}_burbuja (move horizontal: [±w*0.12, 0] = desnivel).
+    inclinado: grados de giro del nivel entero. Sale de lote8-03-gatos-caen (oído interno = nivel)."""
+    x, y = -w / 2, -h / 2
+    o = f'<rect x="{f(x+8)}" y="{f(y+10)}" width="{f(w)}" height="{f(h)}" rx="14" fill="{INK}" opacity="0.2"/>'
+    o += f'<rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" rx="14" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="7"/>'
+    o += brillo(f"M {f(x+20)} {f(y+14)} L {f(x+w-20)} {f(y+14)}", 6, 0.7)
+    vw, vh = w * 0.36, h * 0.48
+    o += f'<rect x="{f(-vw/2)}" y="{f(-vh/2)}" width="{f(vw)}" height="{f(vh)}" rx="{f(vh/2)}" fill="#B9F06A" stroke="{INK}" stroke-width="6"/>'
+    o += f'<path d="M -14 {f(-vh/2)} L -14 {f(vh/2)} M 14 {f(-vh/2)} L 14 {f(vh/2)}" stroke="{INK}" stroke-width="4"/>'
+    o += g(f"{id_}_burbuja", f'<ellipse cx="0" cy="0" rx="{f(vh*0.42)}" ry="{f(vh*0.3)}" fill="#FFFFFF" stroke="{INK}" stroke-width="3" opacity="0.95"/>')
+    for k in (-1, 1):
+        o += f'<circle cx="{f(k*w*0.38)}" cy="0" r="{f(h*0.16)}" fill="{shade(col, -0.35)}" stroke="{INK}" stroke-width="4"/>'
+    return gt(id_, f"translate({f(cx)} {f(cy)}) rotate({f(inclinado)})", o)
+
+
+def red_ventana(id_, x, y, w, h, paso=34, col="#E9EEF7"):
+    """Red/malla protectora para ventanas y balcones (rombos finos con marco). (x, y) = esquina superior izquierda.
+    Anímala con fade o draw. Sale de lote8-03-gatos-caen."""
+    o = ""
+    lines = ""
+    n = int((w + h) / paso) + 1
+    for i in range(n):
+        d = i * paso
+        lines += f'<line x1="{f(x + d)}" y1="{f(y)}" x2="{f(x + d - h)}" y2="{f(y + h)}"/>'
+        lines += f'<line x1="{f(x + d - h)}" y1="{f(y)}" x2="{f(x + d)}" y2="{f(y + h)}"/>'
+    cid = f"clip_{id_}"
+    o += f'<clipPath id="{cid}"><rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}"/></clipPath>'
+    o += f'<g clip-path="url(#{cid})"><g stroke="{INK}" stroke-width="6" opacity="0.55">{lines}</g><g stroke="{col}" stroke-width="3">{lines}</g></g>'
+    o += f'<rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" rx="6" fill="none" stroke="{INK}" stroke-width="10"/>'
+    o += f'<rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" rx="6" fill="none" stroke="#C9D2E2" stroke-width="5"/>'
+    return g(id_, o)

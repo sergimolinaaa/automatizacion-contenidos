@@ -327,3 +327,42 @@ def escaner_resonancia(id_, cx, cy, w=520, texto="RM"):
     o += g(f"{id_}_pantalla", f'<rect x="{f(x0 + w*0.72)}" y="{f(y0 + h*0.08)}" width="{f(w*0.18)}" height="{f(h*0.1)}" rx="8" fill="#1B1E2B" stroke="{INK}" stroke-width="5"/>'
            + T(x0 + w * 0.81, y0 + h * 0.155, texto, h * 0.06, LIME))
     return Pieza(g(id_, o), {"hueco": (cx, cy), "camilla": (cx, cy_c)}, (x0, y0, x0 + w, y0 + h + 60))
+
+
+def oido_interno(id_, cx, cy, s=1.0):
+    """Oído interno (laberinto) estilo pegatina: tres canales semicirculares de colores (equilibrio), vestíbulo y caracol.
+    ≈ 380×330 a s=1. Ids: {id}_canales (pulse/wiggle), {id}_liquido (bolitas de líquido: move o flow), {id}_caracol,
+    {id}_vestibulo. .puntos: vestibulo, caracol, canales. Sale de lote8-03-gatos-caen (equilibrio del gato)."""
+    import math as _mm
+    from ..base import TEAL, YEL, smooth as _sm
+    o = ""
+    canales = ""
+    arcos = [  # (centro, rx, ry, ángulo, color)
+        ((-30, -70), 62, 84, -10, CORAL), ((70, -52), 82, 56, 20, TEAL), ((96, 34), 70, 42, -8, YEL)]
+    liq = ""
+    for (ax, ay), rx, ry, an, col in arcos:
+        d = (f"M {f(ax-rx)} {f(ay)} A {f(rx)} {f(ry)} 0 1 1 {f(ax+rx)} {f(ay)}")
+        tr = f' transform="rotate({an} {ax} {ay})"'
+        canales += trazo(d, 26, col, 14, extra=tr)
+        canales += f'<path d="{d}" fill="none" stroke="#FFFFFF" stroke-width="5" opacity="0.5" stroke-dasharray="2 22" stroke-linecap="round"{tr}/>'
+        canales += f'<circle cx="{f(ax-rx)}" cy="{f(ay)}" r="20" fill="{shade(col, 0.15)}" stroke="{INK}" stroke-width="6"{tr}/>'
+        for t in (0.25, 0.5, 0.75):
+            a = _mm.pi + _mm.pi * t
+            px, py = ax + rx * _mm.cos(a), ay + ry * _mm.sin(a)
+            liq += f'<circle cx="{f(px)}" cy="{f(py)}" r="6" fill="#5BC0FF" stroke="{INK}" stroke-width="2.5"{tr}/>'
+    o += g(f"{id_}_canales", canales)
+    o += g(f"{id_}_liquido", liq)
+    # caracol (cóclea)
+    sp = []
+    for i in range(0, 60):
+        a = i * 0.22
+        r = 62 - i * 0.85
+        sp.append((-120 + r * _mm.cos(a + 1.2), 96 + r * _mm.sin(a + 1.2) * 0.9))
+    car = trazo(_sm(sp), 22, "#FFB3C1", 14) + brillo(_sm(sp[:18]), 4, 0.6)
+    # vestíbulo (centro)
+    ves = (f'<ellipse cx="0" cy="40" rx="66" ry="48" fill="{degradado("#FFB3C1", 0.25)}" stroke="{INK}" stroke-width="8"/>'
+           + brillo("M -40 22 Q -10 4 24 12", 6, 0.7))
+    o += g(f"{id_}_caracol", car) + g(f"{id_}_vestibulo", ves)
+    pts_ = {"vestibulo": (cx, cy + 40 * s), "caracol": (cx - 120 * s, cy + 96 * s), "canales": (cx + 20 * s, cy - 90 * s)}
+    return Pieza(gt(id_, f"translate({f(cx)} {f(cy)}) scale({f(s)})", o), pts_,
+                 (cx - 190 * s, cy - 170 * s, cx + 190 * s, cy + 165 * s))

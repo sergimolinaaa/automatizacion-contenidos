@@ -106,3 +106,143 @@ def icono_perro(id_, cx, cy, s=60, col="#C9CED8", sw=4):
     o += "".join(f'<circle cx="{f(cx+d*10*k)}" cy="{f(cy-5*k)}" r="{f(3.4*k)}" fill="{INK}"/>' for d in (-1, 1))
     o += f'<path d="M {f(cx-12*k)} {f(cy-16*k)} Q {f(cx)} {f(cy-22*k)} {f(cx+12*k)} {f(cy-16*k)}" fill="none" stroke="#FFFFFF" stroke-width="{f(2.5*k)}" opacity="0.6" stroke-linecap="round"/>'
     return g(id_, o)
+
+
+# ------------------------------------------------------------------ gato (lote8-03-gatos-caen)
+import math as _m
+from ..base import trazo, gt
+
+GATOS = {  # claro, medio, oscuro, rayas
+    "naranja": ("#FFD39A", "#F5A24A", "#C9701F", "#B5561A"),
+    "gris": ("#D9DDE6", "#A3AAB8", "#6B7283", "#545A69"),
+    "negro": ("#5A5F70", "#2E3240", "#15171F", None),
+    "blanco": ("#FFFFFF", "#ECE8E0", "#C9C2B4", None),
+}
+for _k, (_a, _b, _c, _r) in GATOS.items():
+    registrar_defs(lg(f"gatoG_{_k}", [(0, _a), (0.55, _b), (1, _c)]),
+                   rg(f"gatoR_{_k}", [(0, _a), (0.7, _b), (1, _c)], 0.4, 0.3, 0.8))
+
+# patas: (cadera/hombro, rodilla, pie) en coordenadas locales (patas abajo, morro a la derecha)
+_PATAS = {
+    "normal": {"del_lejos": [(78, 20), (74, 90), (72, 150)], "del_cerca": [(118, 20), (120, 90), (124, 150)],
+               "tras_lejos": [(-70, 20), (-52, 92), (-78, 150)], "tras_cerca": [(-112, 24), (-92, 96), (-120, 150)]},
+    "encogidas": {"del_lejos": [(80, 20), (118, 70), (84, 96)], "del_cerca": [(118, 20), (156, 70), (120, 98)],
+                  "tras_lejos": [(-70, 20), (-30, 70), (-68, 96)], "tras_cerca": [(-112, 24), (-70, 74), (-110, 100)]},
+    "estiradas": {"del_lejos": [(84, 20), (132, 96), (128, 158)], "del_cerca": [(118, 20), (172, 92), (170, 156)],
+                  "tras_lejos": [(-74, 20), (-120, 92), (-112, 158)], "tras_cerca": [(-112, 24), (-162, 90), (-160, 156)]},
+}
+
+
+def _kgiro(giro):
+    k = _m.cos(_m.radians(giro))
+    return (1 if k >= 0 else -1) * max(abs(k), 0.3)
+
+
+def gato(id_, cx, cy, s=1.0, pelaje="naranja", giro_del=0, giro_tras=0, doblez=0, patas="normal", cola=0,
+         rot_=0, expresion="normal", cria=False, espejo=False):
+    """Gato de perfil (morro a la derecha) pensado para la secuencia de caída. (cx, cy) = centro del cuerpo (cintura);
+    largo ≈ 520*s (cola incluida), alto de pie ≈ 360*s (el suelo queda en cy + 165*s con patas="normal").
+    giro_del / giro_tras: giro de cada mitad alrededor de la columna en grados (0 = patas abajo, 180 = patas arriba;
+    90 aplastado = a medio girar). doblez: grados que se dobla por la cintura (V). patas: normal | encogidas | estiradas.
+    cola: grados que gira la cola. expresion: normal | susto | feliz. cria: cabeza grande (gatito). espejo: mira a la izquierda.
+    Ids: {id}, {id}_cabeza, {id}_ojos (blink), {id}_cola (sway origin bottom-right). .puntos: cabeza, oreja, cola, centro, suelo."""
+    cl, md, os_, ry = GATOS.get(pelaje, GATOS["naranja"])
+    pg = f"url(#gatoG_{pelaje if pelaje in GATOS else 'naranja'})"
+    pr = f"url(#gatoR_{pelaje if pelaje in GATOS else 'naranja'})"
+    kd, kt = _kgiro(giro_del), _kgiro(giro_tras)
+    tf_d = f"rotate({f(doblez / 2)}) scale(1 {f(kd)})"
+    tf_t = f"rotate({f(-doblez / 2)}) scale(1 {f(kt)})"
+    P = _PATAS.get(patas, _PATAS["normal"])
+    W = 38
+
+    def pata(p, col, ancho=W):
+        d = f"M {f(p[0][0])} {f(p[0][1])} Q {f(p[1][0])} {f(p[1][1])} {f(p[2][0])} {f(p[2][1])}"
+        x, y = p[2]
+        px, py = p[1]
+        ang = _m.degrees(_m.atan2(y - py, x - px)) - 90
+        return (trazo(d, ancho, col, 14)
+                + f'<ellipse cx="{f(x)}" cy="{f(y)}" rx="{f(ancho*0.66)}" ry="{f(ancho*0.42)}" transform="rotate({f(ang)} {f(x)} {f(y)})" '
+                  f'fill="{cl}" stroke="{INK}" stroke-width="6"/>')
+
+    tor_d = smooth([(-34, -50), (40, -60), (112, -54), (160, -28), (174, 8), (152, 46), (92, 60), (20, 56), (-34, 48)], True)
+    tor_t = smooth([(34, -50), (-40, -60), (-122, -56), (-172, -26), (-182, 14), (-154, 52), (-84, 62), (-20, 56), (34, 48)], True)
+    o = ""
+    # cola (detrás de todo, sale del lomo trasero)
+    cd = smooth([(-166, -24), (-222, -40), (-256, -92), (-250, -150), (-222, -184)])
+    c_body = trazo(cd, 30, md, 14) + brillo(smooth([(-200, -46), (-236, -84), (-240, -130)]), 5, 0.45)
+    if ry:
+        for t_ in ((-236, -64), (-252, -110), (-240, -158)):
+            c_body += f'<circle cx="{f(t_[0])}" cy="{f(t_[1])}" r="9" fill="{ry}" opacity="0.7"/>'
+    c_body += f'<circle cx="-222" cy="-184" r="15" fill="{os_}"/>'
+    o += f'<g transform="{tf_t}">{gt(f"{id_}_cola", f"rotate({f(cola)} -166 -24)", c_body)}</g>'
+    # patas del lado lejano (más oscuras)
+    o += f'<g transform="{tf_t}">{pata(P["tras_lejos"], os_)}</g><g transform="{tf_d}">{pata(P["del_lejos"], os_)}</g>'
+    # silueta: contorno de las dos mitades a la vez y relleno encima (sin costura en la cintura)
+    o += f'<g transform="{tf_t}"><path d="{tor_t}" fill="{INK}" stroke="{INK}" stroke-width="16" stroke-linejoin="round"/></g>'
+    o += f'<g transform="{tf_d}"><path d="{tor_d}" fill="{INK}" stroke="{INK}" stroke-width="16" stroke-linejoin="round"/></g>'
+    o += f'<g transform="{tf_t}"><path d="{tor_t}" fill="{pg}"/></g><g transform="{tf_d}"><path d="{tor_d}" fill="{pg}"/></g>'
+    # tripa clara, muslo y rayas
+    det_t = f'<ellipse cx="-70" cy="44" rx="70" ry="13" fill="{cl}" opacity="0.85"/>'
+    det_t += f'<ellipse cx="-118" cy="6" rx="52" ry="50" fill="{pr}" stroke="{os_}" stroke-width="4" opacity="0.95"/>'
+    det_d = f'<ellipse cx="80" cy="44" rx="66" ry="13" fill="{cl}" opacity="0.85"/>'
+    det_d += f'<ellipse cx="116" cy="10" rx="40" ry="44" fill="{pr}" stroke="{os_}" stroke-width="4" opacity="0.95"/>'
+    det_d += brillo("M 10 -50 Q 70 -60 128 -46", 7, 0.55)
+    det_t += brillo("M -10 -50 Q -70 -60 -130 -48", 7, 0.45)
+    if ry:
+        for x in (-150, -104, -58):
+            det_t += f'<path d="M {x} -56 Q {x+10} -36 {x+2} -16" fill="none" stroke="{ry}" stroke-width="9" stroke-linecap="round" opacity="0.8"/>'
+        for x in (-12, 34, 80, 122):
+            det_d += f'<path d="M {x} -58 Q {x+10} -38 {x+2} -18" fill="none" stroke="{ry}" stroke-width="9" stroke-linecap="round" opacity="0.8"/>'
+    o += f'<g transform="{tf_t}">{det_t}</g><g transform="{tf_d}">{det_d}</g>'
+    # patas cercanas
+    o += f'<g transform="{tf_t}">{pata(P["tras_cerca"], md)}</g><g transform="{tf_d}">{pata(P["del_cerca"], md)}</g>'
+    # cabeza (3/4, mirando al frente y algo a la derecha)
+    hs = 1.32 if cria else 1.0
+    hx, hy = 196, -70
+    cab = ""
+    for (a, b, c) in (((-50, -26), (-44, -92), (-6, -48)), ((14, -50), (48, -90), (58, -24))):
+        cab += f'<path d="M {a[0]} {a[1]} L {b[0]} {b[1]} L {c[0]} {c[1]} Z" fill="{pg}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+        mx, my = (a[0] + b[0] + c[0]) / 3, (a[1] + b[1] + c[1]) / 3
+        cab += (f'<path d="M {f((a[0]+mx)/2)} {f((a[1]+my)/2+4)} L {f((b[0]*2+mx)/3)} {f((b[1]*2+my)/3)} L {f((c[0]+mx)/2)} {f((c[1]+my)/2+4)} Z" '
+                f'fill="#FF9DB0"/>')
+    cab += f'<ellipse cx="0" cy="0" rx="66" ry="56" fill="{pr}" stroke="{INK}" stroke-width="8"/>'
+    if ry:
+        cab += "".join(f'<path d="M {x} -54 Q {x+2} -40 {x} -28" stroke="{ry}" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.8"/>' for x in (-14, 0, 14))
+    cab += brillo("M -42 -32 Q -20 -50 8 -50", 6, 0.6)
+    cab += f'<ellipse cx="6" cy="24" rx="34" ry="20" fill="{cl}"/>'
+    # ojos
+    ojos = ""
+    for ex in (-22, 30):
+        if expresion == "feliz":
+            ojos += f'<path d="M {ex-12} -4 Q {ex} -18 {ex+12} -4" fill="none" stroke="{INK}" stroke-width="6" stroke-linecap="round"/>'
+        else:
+            r_ = 15 if expresion == "susto" else 12
+            ojos += (f'<ellipse cx="{ex}" cy="-6" rx="{r_}" ry="{r_+3}" fill="#B9E85A" stroke="{INK}" stroke-width="4"/>'
+                     f'<ellipse cx="{ex+1}" cy="-6" rx="{3.5 if expresion == "susto" else 4.5}" ry="{r_}" fill="{INK}"/>'
+                     f'<circle cx="{ex+4}" cy="-12" r="4" fill="#FFFFFF"/>')
+    cab += g(f"{id_}_ojos", ojos)
+    # nariz, boca y bigotes
+    cab += f'<path d="M -2 12 L 14 12 L 6 22 Z" fill="#FF7F95" stroke="{INK}" stroke-width="3.5" stroke-linejoin="round"/>'
+    if expresion == "susto":
+        cab += f'<ellipse cx="6" cy="34" rx="8" ry="9" fill="#5A1420" stroke="{INK}" stroke-width="3.5"/>'
+    else:
+        cab += f'<path d="M 6 22 L 6 28 M -6 30 Q 0 36 6 28 Q 12 36 18 30" fill="none" stroke="{INK}" stroke-width="3.5" stroke-linecap="round"/>'
+    for dy in (-4, 6):
+        cab += f'<path d="M 34 {22+dy} Q 70 {16+dy*1.6} 96 {14+dy*2.4}" fill="none" stroke="{INK}" stroke-width="3" stroke-linecap="round"/>'
+        cab += f'<path d="M -22 {22+dy} Q -56 {16+dy*1.6} -80 {14+dy*2.4}" fill="none" stroke="{INK}" stroke-width="3" stroke-linecap="round"/>'
+    cab_g = gt(f"{id_}_cabeza", f"translate({hx} {hy}) scale({f(hs)})", cab)
+    o += f'<g transform="{tf_d}">{cab_g}</g>'
+    sx = -s if espejo else s
+    tr = f"translate({f(cx)} {f(cy)}) rotate({f(rot_)}) scale({f(sx)} {f(s)})"
+
+    def P_(x, y, half=1):
+        k = kd if half else kt
+        a = _m.radians((doblez / 2 if half else -doblez / 2))
+        x2, y2 = x, y * k
+        x3, y3 = x2 * _m.cos(a) - y2 * _m.sin(a), x2 * _m.sin(a) + y2 * _m.cos(a)
+        x3 *= (-1 if espejo else 1)
+        r = _m.radians(rot_)
+        return (cx + s * (x3 * _m.cos(r) - y3 * _m.sin(r)), cy + s * (x3 * _m.sin(r) + y3 * _m.cos(r)))
+    pts_ = {"cabeza": P_(hx, hy), "oreja": P_(hx - 44, hy - 92), "cola": P_(-222, -184, 0), "centro": (cx, cy),
+            "suelo": (cx, cy + 165 * s), "patas_del": P_(124, 150), "patas_tras": P_(-120, 150, 0)}
+    return Pieza(g(id_, f'<g transform="{tr}">{o}</g>'), pts_, (cx - 270 * s, cy - 200 * s, cx + 270 * s, cy + 170 * s))

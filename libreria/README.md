@@ -122,7 +122,8 @@ con `ids=True` cada una en `_p_<slug>`; las de `destacar` van aparte en `_<slug>
 `sofa(id_, cx, base, w, asiento, col, respaldo)` (.puntos asiento/izq/der) · `banco(id_, cx, base, w, asiento)` (parque) ·
 `cronometro(id_, cx, cy, r, col)` (aguja `_aguja` a las 12: `{"effect":"move","rotate":300,"origin":"bottom","dur":2}`) ·
 `pizarra(id_, cx, cy, w, h, contenido)` · `zapato_arriba(id_, cx, cy, s, col, espejo)` + `huella(id_, cx, cy, s, espejo)` (ponerse en el lugar del otro) ·
-`portapapeles(id_, cx, cy, w, h, filas, marcadas)` (✓ en `_c<i>`) · `trofeo(id_, cx, base, h, texto, col)` (copa dorada con placa; `_brillo`)
+`portapapeles(id_, cx, cy, w, h, filas, marcadas)` (✓ en `_c<i>`) · `trofeo(id_, cx, base, h, texto, col)` (copa dorada con placa; `_brillo`) ·
+`nivel_burbuja(id_, cx, cy, w, h, col, inclinado)` (burbuja en `_burbuja`: move horizontal) · `red_ventana(id_, x, y, w, h, paso)` (malla protectora para ventanas y balcones; fade)
 
 ## objetos/cuerpo.py
 `cerebro(id_, cx, cy, s, hipotalamo=True)` (`_hipotalamo`; .puntos hipotalamo/cerebelo/frente) · `cabeza_perfil(id_, x, y, s, piel, con_cerebro)` ·
@@ -130,11 +131,14 @@ con `ids=True` cada una en `_p_<slug>`; las de `destacar` van aparte en `_<slug>
 `piel_lupa(cx, cy, r, erizado)` (contenido para `lupa`) · `termometro(id_, cx, top, h, nivel, col, texto)` (`_columna`) ·
 `articulacion(id_, cx, cy, s, abierta=0, burbuja=False, gas=True)` (nudillo en corte ≈ 780×350: `_hueso`, `_falange` (move [60,0] = separar, unidades locales),
 `_liquido` (sinovial), `_capsula`, `_gas`, `_burbuja`; .puntos hueco/burbuja/hueso/falange/liquido) · `mano(id_, cx, cy, s, piel, espejo)` (mano abierta de frente,
-dedos arriba ≈ 260×360: `_dedos`, `_pulgar`, `_nudillos`; .puntos nudillos/puntas/muneca) · `escaner_resonancia(id_, cx, cy, w, texto="RM")` (`_anillo`, `_pantalla`; .puntos hueco/camilla)
+dedos arriba ≈ 260×360: `_dedos`, `_pulgar`, `_nudillos`; .puntos nudillos/puntas/muneca) · `escaner_resonancia(id_, cx, cy, w, texto="RM")` (`_anillo`, `_pantalla`; .puntos hueco/camilla) ·
+`oido_interno(id_, cx, cy, s)` (laberinto ≈ 380×330: canales semicirculares `_canales`, líquido `_liquido` (wiggle), `_caracol`, `_vestibulo`; cabe en una `lupa` con s≈0.6)
 
 ## objetos/animales.py
 `perro(id_, cx, base, s, pelaje="labrador|chocolate|negro|blanco", collar, bostezo=True)` — sentado de frente, alto ≈ 430*s; ids `_cabeza`, `_cola` (sway origin bottom-left),
 `_ojos` / `_ojos_cerrados`, `_boca` (bocaza con lengua enroscada: `grow` origin top), `_orejas` · `icono_perro(id_, cx, cy, s, col)` (cabeza para cuadrículas: gris/dorado)
+`gato(id_, cx, cy, s, pelaje="naranja|gris|negro|blanco", giro_del, giro_tras, doblez, patas="normal|encogidas|estiradas", cola, rot_, expresion="normal|susto|feliz", cria, espejo)` — de perfil (morro a la derecha), (cx, cy) = cintura, suelo en cy+165*s;
+cada mitad gira sobre la columna (0 = patas abajo, 180 = boca arriba) y `doblez` lo dobla en V: fotogramas de la caída en el aire. Ids `_cabeza`, `_ojos` (blink), `_cola` (sway origin bottom-right)
 
 ## objetos/vuelo.py (propulsión, «coches que vuelan», acción y reacción)
 `roadster(id_, cx, base, s, col="rojo|blanco|negro", toberas=None|"abajo"|"atras", logo=True, rot_)` (deportivo de perfil, morro a la derecha; .puntos toberas/centro/morro/cola; `_ruedas`, `_faro`) ·
@@ -230,3 +234,4 @@ lote7-04-leche-fondo (archivo/leche-fondo/dib.py): compra.py (brik, nevera de l�
 lote8-02-voto-soria: territorio.py (mapa de España con capitales, balanza, ciudad y pueblo).
 lote7-05-picadura (archivo/picadura/dib.py): piel.py (corte de piel, habón, mosquito, mastocito, histamina, sirena, bacteria, ratón, mano rascando, reloj de arena, gorra, delantal, piscina).
 lote8-04-agua-caliente (archivo/agua-caliente/dib.py): frio.py (congelador, cuenco de helado, vapor, escarcha, corrientes de convección, burbujas de gas y gráfica de enfriamiento).
+lote8-03-gatos-caen: gato de perfil con giro por mitades (animales.py), oído interno (cuerpo.py), nivel de burbuja y red de ventana (casa.py).
