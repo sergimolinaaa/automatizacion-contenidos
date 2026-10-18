@@ -1,0 +1,702 @@
+{
+ "source": "Fuentes: Universidad de Yamaguchi, The Anatomical Record (2026) · Smithsonian · ScienceAlert · Wikipedia «Cat righting reflex» · Purina · Hepper · VCA Animal Hospitals · Animal Medical Center NY · JAVMA (1987)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Por",
+   "start": 0.1,
+   "end": 0.29000000000000004
+  },
+  {
+   "text": "qué",
+   "start": 0.3,
+   "end": 0.4
+  },
+  {
+   "text": "los",
+   "start": 0.41,
+   "end": 0.55
+  },
+  {
+   "text": "gatos",
+   "start": 0.56,
+   "end": 0.8400000000000001
+  },
+  {
+   "text": "casi",
+   "start": 0.85,
+   "end": 1.05
+  },
+  {
+   "text": "siempre",
+   "start": 1.06,
+   "end": 1.35
+  },
+  {
+   "text": "caen",
+   "start": 1.36,
+   "end": 1.57
+  },
+  {
+   "text": "de",
+   "start": 1.58,
+   "end": 1.6600000000000001
+  },
+  {
+   "text": "pie?",
+   "start": 1.67,
+   "end": 1.92
+  },
+  {
+   "text": "Por",
+   "start": 2.62,
+   "end": 2.81
+  },
+  {
+   "text": "un",
+   "start": 2.82,
+   "end": 2.9099999999999997
+  },
+  {
+   "text": "giro",
+   "start": 2.92,
+   "end": 3.19
+  },
+  {
+   "text": "en",
+   "start": 3.2,
+   "end": 3.27
+  },
+  {
+   "text": "el",
+   "start": 3.28,
+   "end": 3.36
+  },
+  {
+   "text": "aire.",
+   "start": 3.37,
+   "end": 3.68
+  },
+  {
+   "text": "Primero,",
+   "start": 4.38,
+   "end": 4.83
+  },
+  {
+   "text": "su",
+   "start": 4.93,
+   "end": 5.05
+  },
+  {
+   "text": "oído",
+   "start": 5.06,
+   "end": 5.31
+  },
+  {
+   "text": "interno",
+   "start": 5.32,
+   "end": 5.65
+  },
+  {
+   "text": "funciona",
+   "start": 5.66,
+   "end": 6.08
+  },
+  {
+   "text": "como",
+   "start": 6.09,
+   "end": 6.28
+  },
+  {
+   "text": "un",
+   "start": 6.29,
+   "end": 6.36
+  },
+  {
+   "text": "nivel",
+   "start": 6.37,
+   "end": 6.61
+  },
+  {
+   "text": "de",
+   "start": 6.62,
+   "end": 6.68
+  },
+  {
+   "text": "burbuja:",
+   "start": 6.69,
+   "end": 7.1000000000000005
+  },
+  {
+   "text": "le",
+   "start": 7.25,
+   "end": 7.34
+  },
+  {
+   "text": "dice",
+   "start": 7.35,
+   "end": 7.55
+  },
+  {
+   "text": "dónde",
+   "start": 7.56,
+   "end": 7.779999999999999
+  },
+  {
+   "text": "está",
+   "start": 7.79,
+   "end": 7.98
+  },
+  {
+   "text": "el",
+   "start": 7.99,
+   "end": 8.08
+  },
+  {
+   "text": "suelo.",
+   "start": 8.09,
+   "end": 8.41
+  },
+  {
+   "text": "Entonces",
+   "start": 9.1,
+   "end": 9.629999999999999
+  },
+  {
+   "text": "dobla",
+   "start": 9.64,
+   "end": 9.88
+  },
+  {
+   "text": "el",
+   "start": 9.89,
+   "end": 9.98
+  },
+  {
+   "text": "cuerpo",
+   "start": 9.99,
+   "end": 10.35
+  },
+  {
+   "text": "y",
+   "start": 10.36,
+   "end": 10.41
+  },
+  {
+   "text": "gira",
+   "start": 10.42,
+   "end": 10.65
+  },
+  {
+   "text": "primero",
+   "start": 10.66,
+   "end": 10.96
+  },
+  {
+   "text": "la",
+   "start": 10.97,
+   "end": 11.05
+  },
+  {
+   "text": "parte",
+   "start": 11.06,
+   "end": 11.290000000000001
+  },
+  {
+   "text": "delantera.",
+   "start": 11.3,
+   "end": 11.83
+  },
+  {
+   "text": "Después",
+   "start": 12.52,
+   "end": 12.969999999999999
+  },
+  {
+   "text": "gira",
+   "start": 12.98,
+   "end": 13.16
+  },
+  {
+   "text": "la",
+   "start": 13.17,
+   "end": 13.25
+  },
+  {
+   "text": "trasera,",
+   "start": 13.26,
+   "end": 13.67
+  },
+  {
+   "text": "encoge",
+   "start": 13.79,
+   "end": 14.11
+  },
+  {
+   "text": "las",
+   "start": 14.12,
+   "end": 14.27
+  },
+  {
+   "text": "patas",
+   "start": 14.28,
+   "end": 14.559999999999999
+  },
+  {
+   "text": "y",
+   "start": 14.57,
+   "end": 14.61
+  },
+  {
+   "text": "las",
+   "start": 14.62,
+   "end": 14.77
+  },
+  {
+   "text": "estira",
+   "start": 14.78,
+   "end": 15.1
+  },
+  {
+   "text": "para",
+   "start": 15.11,
+   "end": 15.27
+  },
+  {
+   "text": "aterrizar.",
+   "start": 15.28,
+   "end": 15.79
+  },
+  {
+   "text": "Puede",
+   "start": 16.5,
+   "end": 16.75
+  },
+  {
+   "text": "hacerlo",
+   "start": 16.76,
+   "end": 17.080000000000002
+  },
+  {
+   "text": "porque",
+   "start": 17.09,
+   "end": 17.32
+  },
+  {
+   "text": "su",
+   "start": 17.33,
+   "end": 17.439999999999998
+  },
+  {
+   "text": "columna",
+   "start": 17.45,
+   "end": 17.81
+  },
+  {
+   "text": "es",
+   "start": 17.82,
+   "end": 17.92
+  },
+  {
+   "text": "muy",
+   "start": 17.93,
+   "end": 18.07
+  },
+  {
+   "text": "flexible",
+   "start": 18.08,
+   "end": 18.56
+  },
+  {
+   "text": "y",
+   "start": 18.57,
+   "end": 18.63
+  },
+  {
+   "text": "su",
+   "start": 18.64,
+   "end": 18.740000000000002
+  },
+  {
+   "text": "clavícula",
+   "start": 18.75,
+   "end": 19.22
+  },
+  {
+   "text": "es",
+   "start": 19.23,
+   "end": 19.330000000000002
+  },
+  {
+   "text": "diminuta",
+   "start": 19.34,
+   "end": 19.72
+  },
+  {
+   "text": "y",
+   "start": 19.73,
+   "end": 19.78
+  },
+  {
+   "text": "suelta.",
+   "start": 19.79,
+   "end": 20.2
+  },
+  {
+   "text": "Lo",
+   "start": 20.9,
+   "end": 21.099999999999998
+  },
+  {
+   "text": "aprenden",
+   "start": 21.11,
+   "end": 21.46
+  },
+  {
+   "text": "pronto:",
+   "start": 21.47,
+   "end": 21.81
+  },
+  {
+   "text": "empieza",
+   "start": 21.93,
+   "end": 22.3
+  },
+  {
+   "text": "a",
+   "start": 22.31,
+   "end": 22.34
+  },
+  {
+   "text": "las",
+   "start": 22.35,
+   "end": 22.48
+  },
+  {
+   "text": "tres",
+   "start": 22.49,
+   "end": 22.7
+  },
+  {
+   "text": "o",
+   "start": 22.71,
+   "end": 22.75
+  },
+  {
+   "text": "cuatro",
+   "start": 22.76,
+   "end": 23.01
+  },
+  {
+   "text": "semanas",
+   "start": 23.02,
+   "end": 23.45
+  },
+  {
+   "text": "y",
+   "start": 23.46,
+   "end": 23.53
+  },
+  {
+   "text": "a",
+   "start": 23.54,
+   "end": 23.57
+  },
+  {
+   "text": "las",
+   "start": 23.58,
+   "end": 23.7
+  },
+  {
+   "text": "siete",
+   "start": 23.71,
+   "end": 23.92
+  },
+  {
+   "text": "lo",
+   "start": 23.93,
+   "end": 24.009999999999998
+  },
+  {
+   "text": "dominan.",
+   "start": 24.02,
+   "end": 24.46
+  },
+  {
+   "text": "Pero",
+   "start": 25.16,
+   "end": 25.39
+  },
+  {
+   "text": "no",
+   "start": 25.4,
+   "end": 25.509999999999998
+  },
+  {
+   "text": "es",
+   "start": 25.52,
+   "end": 25.63
+  },
+  {
+   "text": "infalible:",
+   "start": 25.64,
+   "end": 26.13
+  },
+  {
+   "text": "en",
+   "start": 26.26,
+   "end": 26.360000000000003
+  },
+  {
+   "text": "caídas",
+   "start": 26.37,
+   "end": 26.7
+  },
+  {
+   "text": "cortas",
+   "start": 26.71,
+   "end": 27.03
+  },
+  {
+   "text": "no",
+   "start": 27.04,
+   "end": 27.14
+  },
+  {
+   "text": "les",
+   "start": 27.15,
+   "end": 27.29
+  },
+  {
+   "text": "da",
+   "start": 27.3,
+   "end": 27.38
+  },
+  {
+   "text": "tiempo",
+   "start": 27.39,
+   "end": 27.67
+  },
+  {
+   "text": "a",
+   "start": 27.68,
+   "end": 27.72
+  },
+  {
+   "text": "girarse,",
+   "start": 27.73,
+   "end": 28.18
+  },
+  {
+   "text": "y",
+   "start": 28.36,
+   "end": 28.39
+  },
+  {
+   "text": "desde",
+   "start": 28.4,
+   "end": 28.61
+  },
+  {
+   "text": "muy",
+   "start": 28.62,
+   "end": 28.76
+  },
+  {
+   "text": "alto",
+   "start": 28.77,
+   "end": 28.99
+  },
+  {
+   "text": "se",
+   "start": 29.0,
+   "end": 29.13
+  },
+  {
+   "text": "hacen",
+   "start": 29.14,
+   "end": 29.34
+  },
+  {
+   "text": "daño",
+   "start": 29.35,
+   "end": 29.57
+  },
+  {
+   "text": "igual.",
+   "start": 29.58,
+   "end": 29.93
+  },
+  {
+   "text": "Nunca",
+   "start": 30.65,
+   "end": 31.009999999999998
+  },
+  {
+   "text": "los",
+   "start": 31.02,
+   "end": 31.16
+  },
+  {
+   "text": "tires",
+   "start": 31.17,
+   "end": 31.470000000000002
+  },
+  {
+   "text": "y",
+   "start": 31.48,
+   "end": 31.53
+  },
+  {
+   "text": "pon",
+   "start": 31.54,
+   "end": 31.689999999999998
+  },
+  {
+   "text": "redes",
+   "start": 31.7,
+   "end": 31.95
+  },
+  {
+   "text": "en",
+   "start": 31.96,
+   "end": 32.03
+  },
+  {
+   "text": "balcones",
+   "start": 32.04,
+   "end": 32.46
+  },
+  {
+   "text": "y",
+   "start": 32.47,
+   "end": 32.51
+  },
+  {
+   "text": "ventanas.",
+   "start": 32.52,
+   "end": 33.06
+  },
+  {
+   "text": "Tú",
+   "start": 33.77,
+   "end": 33.900000000000006
+  },
+  {
+   "text": "traes",
+   "start": 33.91,
+   "end": 34.16
+  },
+  {
+   "text": "las",
+   "start": 34.17,
+   "end": 34.32
+  },
+  {
+   "text": "dudas",
+   "start": 34.33,
+   "end": 34.6
+  },
+  {
+   "text": "y",
+   "start": 34.61,
+   "end": 34.65
+  },
+  {
+   "text": "nosotros",
+   "start": 34.66,
+   "end": 35.08
+  },
+  {
+   "text": "te",
+   "start": 35.09,
+   "end": 35.18000000000001
+  },
+  {
+   "text": "damos",
+   "start": 35.19,
+   "end": 35.46
+  },
+  {
+   "text": "el",
+   "start": 35.47,
+   "end": 35.57
+  },
+  {
+   "text": "truco.",
+   "start": 35.58,
+   "end": 35.96
+  },
+  {
+   "text": "Síguenos",
+   "start": 36.65,
+   "end": 37.16
+  },
+  {
+   "text": "y",
+   "start": 37.17,
+   "end": 37.22
+  },
+  {
+   "text": "las",
+   "start": 37.23,
+   "end": 37.36
+  },
+  {
+   "text": "resolvemos.",
+   "start": 37.37,
+   "end": 38.029999999999994
+  },
+  {
+   "text": "¿Tu",
+   "start": 38.72,
+   "end": 38.86
+  },
+  {
+   "text": "gato",
+   "start": 38.87,
+   "end": 39.089999999999996
+  },
+  {
+   "text": "ha",
+   "start": 39.1,
+   "end": 39.14
+  },
+  {
+   "text": "tenido",
+   "start": 39.15,
+   "end": 39.43
+  },
+  {
+   "text": "algún",
+   "start": 39.44,
+   "end": 39.669999999999995
+  },
+  {
+   "text": "susto?",
+   "start": 39.68,
+   "end": 40.02
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 40.52,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué los gatos caen de *pie*",
+  "scene": 0
+ },
+ "duration": 43.120000000000005,
+ "cover_offset_ms": 43420
+}
