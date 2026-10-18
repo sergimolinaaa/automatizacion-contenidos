@@ -14,7 +14,7 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-10-16 14:00 | lote6-08-papeleta-nula | content/lote6-08-papeleta-nula | sí | sí | sí | pendiente | previews/lote6-08-papeleta-nula-con-voz.mp4 |
 | 2026-10-17 21:00 | ¿Por qué cruje el hielo al echarle bebida? (movido a la noche) | content/lote7-01-hielo-cruje | sí | sí | pendiente | no | previews/lote7-01-hielo-cruje-con-voz.mp4 |
 | 2026-10-18 14:00 | ¿Por qué te crujen los nudillos? (42,2 s) | content/lote7-11-nudillos | sí | sí | sí | no | previews/lote7-11-nudillos-con-voz.mp4 |
-| 2026-10-19 14:00 | Te ha tocado mesa electoral el 29 N: ¿te puedes librar? (134 palabras, ≈47 s) | content/lote7-12-mesa-electoral | sí | sí | pendiente | no | previews/lote7-12-mesa-electoral-con-voz.mp4 |
+| 2026-10-19 14:00 | Te ha tocado mesa electoral el 29 N: ¿te puedes librar? (46,9 s) | content/lote7-12-mesa-electoral | sí | sí | sí | no | previews/lote7-12-mesa-electoral-con-voz.mp4 |
 | 2026-10-20 14:00 | ¿Por qué bostezar se contagia? (piloto sistema nuevo) | content/lote7-03-bostezo | sí | sí | pendiente | no | previews/lote7-03-bostezo-con-voz.mp4 |
 | 2026-10-21 14:00 | ¿Por qué la leche está al fondo del súper? |  | no | no | no | no | |
 | 2026-10-22 14:00 | ¿Por qué te pica una picadura y rascarte lo empeora? |  | no | no | no | no | |
