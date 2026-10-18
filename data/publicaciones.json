@@ -505,6 +505,39 @@
         "tiktok": "6ad53401769b457934dc8ad8",
         "instagram": "6ad53402769b457934dc8b09"
       }
+    },
+    {
+      "slug": "lote7-05-picadura",
+      "category": "cuerpo",
+      "due": "2026-10-22T12:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote7-05-picadura/lote7-05-picadura-con-voz.mp4",
+      "posts": {
+        "youtube": "6ad536cba48c8f8371b45aa6",
+        "tiktok": "6ad536cbae173d6e001abf03",
+        "instagram": "6ad536cc0b0d72757a3c00e0"
+      }
+    },
+    {
+      "slug": "lote8-02-voto-soria",
+      "category": "politica",
+      "due": "2026-10-21T19:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote8-02-voto-soria/lote8-02-voto-soria-con-voz.mp4",
+      "posts": {
+        "youtube": "6ad536d3a48c8f8371b45b4a",
+        "tiktok": "6ad536d30b0d72757a3c0170",
+        "instagram": "6ad536d5938409f1d0e8c6d1"
+      }
+    },
+    {
+      "slug": "lote7-04-leche-fondo",
+      "category": "consumo",
+      "due": "2026-10-21T12:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote7-04-leche-fondo/lote7-04-leche-fondo-con-voz.mp4",
+      "posts": {
+        "youtube": "6ad536db938409f1d0e8ccc7",
+        "tiktok": "6ad536dcae173d6e001ac27f",
+        "instagram": "6ad536dd938409f1d0e8cd47"
+      }
     }
   ]
 }
