@@ -1,0 +1,692 @@
+{
+ "source": "Fuentes: Apple Soporte, «Batería y rendimiento del iPhone» · TechCrunch (20 dic 2017) · DGCCRF, Francia (feb 2020) · The Register · Sensor Tower, «iOS app size growth» (2017) · MacStories · SamMobile · Honor",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Tu",
+   "start": 0.1,
+   "end": 0.24000000000000002
+  },
+  {
+   "text": "móvil",
+   "start": 0.25,
+   "end": 0.51
+  },
+  {
+   "text": "va",
+   "start": 0.52,
+   "end": 0.61
+  },
+  {
+   "text": "más",
+   "start": 0.62,
+   "end": 0.78
+  },
+  {
+   "text": "lento",
+   "start": 0.79,
+   "end": 1.04
+  },
+  {
+   "text": "que",
+   "start": 1.05,
+   "end": 1.1500000000000001
+  },
+  {
+   "text": "cuando",
+   "start": 1.16,
+   "end": 1.41
+  },
+  {
+   "text": "lo",
+   "start": 1.42,
+   "end": 1.49
+  },
+  {
+   "text": "compraste?",
+   "start": 1.5,
+   "end": 2.02
+  },
+  {
+   "text": "Tiene",
+   "start": 2.7,
+   "end": 2.95
+  },
+  {
+   "text": "tres",
+   "start": 2.96,
+   "end": 3.15
+  },
+  {
+   "text": "culpables.",
+   "start": 3.16,
+   "end": 3.74
+  },
+  {
+   "text": "Primero,",
+   "start": 4.45,
+   "end": 4.87
+  },
+  {
+   "text": "la",
+   "start": 4.97,
+   "end": 5.06
+  },
+  {
+   "text": "batería",
+   "start": 5.07,
+   "end": 5.42
+  },
+  {
+   "text": "de",
+   "start": 5.43,
+   "end": 5.489999999999999
+  },
+  {
+   "text": "litio:",
+   "start": 5.5,
+   "end": 5.8
+  },
+  {
+   "text": "al",
+   "start": 5.92,
+   "end": 6.05
+  },
+  {
+   "text": "envejecer",
+   "start": 6.06,
+   "end": 6.489999999999999
+  },
+  {
+   "text": "ya",
+   "start": 6.5,
+   "end": 6.62
+  },
+  {
+   "text": "no",
+   "start": 6.63,
+   "end": 6.74
+  },
+  {
+   "text": "da",
+   "start": 6.75,
+   "end": 6.83
+  },
+  {
+   "text": "picos",
+   "start": 6.84,
+   "end": 7.109999999999999
+  },
+  {
+   "text": "fuertes",
+   "start": 7.12,
+   "end": 7.42
+  },
+  {
+   "text": "de",
+   "start": 7.43,
+   "end": 7.5
+  },
+  {
+   "text": "energía.",
+   "start": 7.51,
+   "end": 8.05
+  },
+  {
+   "text": "Si",
+   "start": 8.74,
+   "end": 8.97
+  },
+  {
+   "text": "una",
+   "start": 8.98,
+   "end": 9.14
+  },
+  {
+   "text": "app",
+   "start": 9.15,
+   "end": 9.26
+  },
+  {
+   "text": "pide",
+   "start": 9.27,
+   "end": 9.44
+  },
+  {
+   "text": "mucho",
+   "start": 9.45,
+   "end": 9.67
+  },
+  {
+   "text": "de",
+   "start": 9.68,
+   "end": 9.75
+  },
+  {
+   "text": "golpe,",
+   "start": 9.76,
+   "end": 10.12
+  },
+  {
+   "text": "se",
+   "start": 10.21,
+   "end": 10.31
+  },
+  {
+   "text": "apagaría.",
+   "start": 10.32,
+   "end": 10.86
+  },
+  {
+   "text": "Por",
+   "start": 11.56,
+   "end": 11.74
+  },
+  {
+   "text": "eso",
+   "start": 11.75,
+   "end": 11.91
+  },
+  {
+   "text": "el",
+   "start": 11.92,
+   "end": 12.0
+  },
+  {
+   "text": "sistema",
+   "start": 12.01,
+   "end": 12.37
+  },
+  {
+   "text": "frena",
+   "start": 12.38,
+   "end": 12.63
+  },
+  {
+   "text": "el",
+   "start": 12.64,
+   "end": 12.72
+  },
+  {
+   "text": "procesador.",
+   "start": 12.73,
+   "end": 13.3
+  },
+  {
+   "text": "Apple",
+   "start": 14.0,
+   "end": 14.28
+  },
+  {
+   "text": "lo",
+   "start": 14.29,
+   "end": 14.399999999999999
+  },
+  {
+   "text": "hizo",
+   "start": 14.41,
+   "end": 14.59
+  },
+  {
+   "text": "en",
+   "start": 14.6,
+   "end": 14.69
+  },
+  {
+   "text": "dos",
+   "start": 14.7,
+   "end": 14.83
+  },
+  {
+   "text": "mil",
+   "start": 14.84,
+   "end": 14.98
+  },
+  {
+   "text": "diecisiete",
+   "start": 14.99,
+   "end": 15.46
+  },
+  {
+   "text": "sin",
+   "start": 15.47,
+   "end": 15.620000000000001
+  },
+  {
+   "text": "avisar,",
+   "start": 15.63,
+   "end": 15.96
+  },
+  {
+   "text": "y",
+   "start": 16.11,
+   "end": 16.16
+  },
+  {
+   "text": "en",
+   "start": 16.17,
+   "end": 16.26
+  },
+  {
+   "text": "Francia",
+   "start": 16.27,
+   "end": 16.63
+  },
+  {
+   "text": "acabó",
+   "start": 16.64,
+   "end": 16.900000000000002
+  },
+  {
+   "text": "pagando",
+   "start": 16.91,
+   "end": 17.23
+  },
+  {
+   "text": "veinticinco",
+   "start": 17.24,
+   "end": 17.729999999999997
+  },
+  {
+   "text": "millones",
+   "start": 17.74,
+   "end": 18.099999999999998
+  },
+  {
+   "text": "de",
+   "start": 18.11,
+   "end": 18.21
+  },
+  {
+   "text": "euros",
+   "start": 18.22,
+   "end": 18.48
+  },
+  {
+   "text": "de",
+   "start": 18.49,
+   "end": 18.549999999999997
+  },
+  {
+   "text": "multa.",
+   "start": 18.56,
+   "end": 18.93
+  },
+  {
+   "text": "Segundo:",
+   "start": 19.63,
+   "end": 20.16
+  },
+  {
+   "text": "las",
+   "start": 20.28,
+   "end": 20.44
+  },
+  {
+   "text": "apps",
+   "start": 20.45,
+   "end": 20.66
+  },
+  {
+   "text": "y",
+   "start": 20.67,
+   "end": 20.73
+  },
+  {
+   "text": "el",
+   "start": 20.74,
+   "end": 20.819999999999997
+  },
+  {
+   "text": "sistema",
+   "start": 20.83,
+   "end": 21.169999999999998
+  },
+  {
+   "text": "engordan.",
+   "start": 21.18,
+   "end": 21.669999999999998
+  },
+  {
+   "text": "Las",
+   "start": 22.36,
+   "end": 22.61
+  },
+  {
+   "text": "diez",
+   "start": 22.62,
+   "end": 22.790000000000003
+  },
+  {
+   "text": "más",
+   "start": 22.8,
+   "end": 22.95
+  },
+  {
+   "text": "instaladas",
+   "start": 22.96,
+   "end": 23.42
+  },
+  {
+   "text": "del",
+   "start": 23.43,
+   "end": 23.54
+  },
+  {
+   "text": "iPhone",
+   "start": 23.55,
+   "end": 23.84
+  },
+  {
+   "text": "llegaron",
+   "start": 23.85,
+   "end": 24.17
+  },
+  {
+   "text": "a",
+   "start": 24.18,
+   "end": 24.23
+  },
+  {
+   "text": "pesar",
+   "start": 24.24,
+   "end": 24.52
+  },
+  {
+   "text": "once",
+   "start": 24.53,
+   "end": 24.740000000000002
+  },
+  {
+   "text": "veces",
+   "start": 24.75,
+   "end": 25.01
+  },
+  {
+   "text": "más",
+   "start": 25.02,
+   "end": 25.21
+  },
+  {
+   "text": "en",
+   "start": 25.22,
+   "end": 25.31
+  },
+  {
+   "text": "cuatro",
+   "start": 25.32,
+   "end": 25.6
+  },
+  {
+   "text": "años.",
+   "start": 25.61,
+   "end": 25.98
+  },
+  {
+   "text": "Tercero:",
+   "start": 26.66,
+   "end": 27.12
+  },
+  {
+   "text": "la",
+   "start": 27.24,
+   "end": 27.319999999999997
+  },
+  {
+   "text": "memoria",
+   "start": 27.33,
+   "end": 27.68
+  },
+  {
+   "text": "casi",
+   "start": 27.69,
+   "end": 27.92
+  },
+  {
+   "text": "llena.",
+   "start": 27.93,
+   "end": 28.28
+  },
+  {
+   "text": "El",
+   "start": 28.98,
+   "end": 29.17
+  },
+  {
+   "text": "móvil",
+   "start": 29.18,
+   "end": 29.419999999999998
+  },
+  {
+   "text": "necesita",
+   "start": 29.43,
+   "end": 29.86
+  },
+  {
+   "text": "hueco",
+   "start": 29.87,
+   "end": 30.11
+  },
+  {
+   "text": "libre",
+   "start": 30.12,
+   "end": 30.37
+  },
+  {
+   "text": "para",
+   "start": 30.38,
+   "end": 30.54
+  },
+  {
+   "text": "ordenar",
+   "start": 30.55,
+   "end": 30.86
+  },
+  {
+   "text": "archivos,",
+   "start": 30.87,
+   "end": 31.35
+  },
+  {
+   "text": "como",
+   "start": 31.46,
+   "end": 31.67
+  },
+  {
+   "text": "un",
+   "start": 31.68,
+   "end": 31.78
+  },
+  {
+   "text": "armario",
+   "start": 31.79,
+   "end": 32.12
+  },
+  {
+   "text": "a",
+   "start": 32.13,
+   "end": 32.160000000000004
+  },
+  {
+   "text": "reventar.",
+   "start": 32.17,
+   "end": 32.64
+  },
+  {
+   "text": "Si",
+   "start": 33.34,
+   "end": 33.540000000000006
+  },
+  {
+   "text": "va",
+   "start": 33.55,
+   "end": 33.64
+  },
+  {
+   "text": "lento,",
+   "start": 33.65,
+   "end": 33.97
+  },
+  {
+   "text": "mira",
+   "start": 34.1,
+   "end": 34.26
+  },
+  {
+   "text": "la",
+   "start": 34.27,
+   "end": 34.35
+  },
+  {
+   "text": "salud",
+   "start": 34.36,
+   "end": 34.62
+  },
+  {
+   "text": "de",
+   "start": 34.63,
+   "end": 34.690000000000005
+  },
+  {
+   "text": "la",
+   "start": 34.7,
+   "end": 34.77
+  },
+  {
+   "text": "batería",
+   "start": 34.78,
+   "end": 35.160000000000004
+  },
+  {
+   "text": "y",
+   "start": 35.17,
+   "end": 35.22
+  },
+  {
+   "text": "libera",
+   "start": 35.23,
+   "end": 35.51
+  },
+  {
+   "text": "espacio.",
+   "start": 35.52,
+   "end": 36.02
+  },
+  {
+   "text": "Tú",
+   "start": 36.71,
+   "end": 36.84
+  },
+  {
+   "text": "traes",
+   "start": 36.85,
+   "end": 37.1
+  },
+  {
+   "text": "las",
+   "start": 37.11,
+   "end": 37.26
+  },
+  {
+   "text": "dudas",
+   "start": 37.27,
+   "end": 37.540000000000006
+  },
+  {
+   "text": "y",
+   "start": 37.55,
+   "end": 37.589999999999996
+  },
+  {
+   "text": "nosotros",
+   "start": 37.6,
+   "end": 38.02
+  },
+  {
+   "text": "te",
+   "start": 38.03,
+   "end": 38.120000000000005
+  },
+  {
+   "text": "damos",
+   "start": 38.13,
+   "end": 38.400000000000006
+  },
+  {
+   "text": "el",
+   "start": 38.41,
+   "end": 38.51
+  },
+  {
+   "text": "truco.",
+   "start": 38.52,
+   "end": 38.900000000000006
+  },
+  {
+   "text": "Síguenos",
+   "start": 39.59,
+   "end": 40.1
+  },
+  {
+   "text": "y",
+   "start": 40.11,
+   "end": 40.16
+  },
+  {
+   "text": "las",
+   "start": 40.17,
+   "end": 40.300000000000004
+  },
+  {
+   "text": "resolvemos.",
+   "start": 40.31,
+   "end": 40.97
+  },
+  {
+   "text": "¿Cuántos",
+   "start": 41.66,
+   "end": 42.04
+  },
+  {
+   "text": "años",
+   "start": 42.05,
+   "end": 42.26
+  },
+  {
+   "text": "tiene",
+   "start": 42.27,
+   "end": 42.480000000000004
+  },
+  {
+   "text": "tu",
+   "start": 42.49,
+   "end": 42.57
+  },
+  {
+   "text": "móvil?",
+   "start": 42.58,
+   "end": 42.96
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 43.46,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué tu móvil va *lento*",
+  "scene": 0
+ },
+ "duration": 46.06,
+ "cover_offset_ms": 46360
+}
