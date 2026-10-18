@@ -176,6 +176,14 @@ fondos `sala_presentacion(W, H, suelo_y)`, `carretera(W, H, y0, y1)`, `pista_hie
 `carretilla(id_, x, base, s, cajas)` (diablo con cajas; .puntos asa: alto del asa = 286*s) · `caja_carton(cx, base, w, h, texto)` · `palet(id_, cx, base, w, filas)`.
 Truco: regla o barra que se alarga en horizontal = grupo dibujado en vertical dentro de un `<g transform="rotate(-90)">` + `grow` con origin top (ver archivo/leche-fondo).
 
+## objetos/piel.py (piel, picaduras y bichos)
+`piel_corte(id_, x0, y0, w, h, vaso, pelos, grasa)` (epidermis, dermis, vaso con glóbulos `_globulos` para drift, grasa; .puntos sup/vaso/dermis) ·
+`habon(id_, cx, base, w, h, corte, herida, arriba)` (bulto rojo: grow origin bottom; `arriba=True` mancha redonda; `_herida` para draw) · `rayitas_picor(id_, cx, cy, r, n)` ·
+`mosquito(id_, cx, cy, s, ang)` (mosquito tigre, `_alas` pulse; .puntos trompa/cabeza) · `gota_saliva(id_, cx, cy, r)` · `mastocito(id_, cx, cy, r)` (célula de defensa, `_granulos`, `_ojos`) ·
+`histamina(id_, cx, cy, r, n)` · `sirena(id_, cx, base, s)` (`_luz` spin) · `bacteria(id_, cx, cy, s, ang)` · `raton_lab(id_, cx, base, s)` (`_pata` wiggle) ·
+`mano_rasca(id_, cx, cy, s, piel, manga)` (uñas rascando: shake) · `reloj_arena(id_, cx, cy, h)` (`_abajo` grow, `_chorro`) ·
+`gorra(id_, cx, cy, r, col)` y `delantal(id_, x, y, escala, edad, col, busto)` (encima de persona(), en su mismo grupo) · fondo `piscina(W, H, agua_y0, agua_y1)`.
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -214,3 +222,4 @@ lote7-09-motor-central: coches.py (deportivo en corte y cenital, motor, centro d
 lote8-01-movil-lento (archivo/movil-lento/dib.py): tecnologia.py (batería nueva y gastada, chip, logo de Apple, iconos de app, pantallas de móvil, barra de almacenamiento, papelera y armario).
 lote7-04-leche-fondo (archivo/leche-fondo/dib.py): compra.py (brik, nevera de lácteos, ancla, caña, galletas, chocolate, lista, pan, horno, camión frigorífico, carretilla, palé).
 lote8-02-voto-soria: territorio.py (mapa de España con capitales, balanza, ciudad y pueblo).
+lote7-05-picadura (archivo/picadura/dib.py): piel.py (corte de piel, habón, mosquito, mastocito, histamina, sirena, bacteria, ratón, mano rascando, reloj de arena, gorra, delantal, piscina).

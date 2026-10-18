@@ -1,0 +1,780 @@
+{
+  "topic": "Por qué pica una picadura de mosquito y por qué rascarse empeora el picor (histamina y serotonina)",
+  "categoria": "cuerpo",
+  "title": "¿Por qué te pica una picadura y rascarte lo empeora?",
+  "source": "Fuentes: Healthline, «Why mosquito bites itch» · Mayo Clinic, «Mosquito bites» · Washington University in St. Louis, Zhou Feng Chen, Neuron 2014 · Medical News Today · Science News",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué *pica* una picadura",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-22T14:00:00+02:00",
+    "caption": "¿Por qué te pica una picadura y rascarte lo empeora? La saliva del mosquito activa tus defensas, que sueltan histamina: bulto y picor. Rascar duele un poco y alivia un momento, pero el cerebro suelta serotonina, que en ratones encendía todavía más el picor (Neuron 2014, Healthline). ¿Tú eres de hacer la cruz con la uña?",
+    "description": "¿Por qué te pica una picadura y rascarte lo empeora? Cuando un mosquito te pica, inyecta saliva con un anticoagulante y proteínas extrañas; tus defensas responden soltando histamina, que hincha la zona y activa los nervios del picor. Al rascarte provocas un dolor leve que tapa el picor unos segundos, pero el cerebro responde a ese dolor con serotonina, y un estudio de la Universidad de Washington en San Luis (Neuron, 2014) vio en ratones que esa serotonina también activa las neuronas del picor. Además, si haces herida pueden entrar bacterias. Fuentes: Healthline, Mayo Clinic, Washington University, Medical News Today. ¿Tú eres de hacer la cruz con la uña o de aguantar?",
+    "hashtags": [
+      "mosquitos",
+      "picaduras",
+      "cuerpohumano",
+      "verano",
+      "salud"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Rascar lo *empeora*",
+      "narration": "¿Te rascas una picadura y te pica todavía más? Hay un motivo.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · La picadura",
+        "anims": [
+          {
+            "target": "nino",
+            "effect": "breathe"
+          },
+          {
+            "target": "nino_p_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "nino",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "nino_p_brazo_izq",
+            "effect": "bob",
+            "trigger": "rascas",
+            "amount": 1.0
+          },
+          {
+            "target": "bulto",
+            "effect": "pop",
+            "trigger": "picadura",
+            "sfx": "pop"
+          },
+          {
+            "target": "bulto",
+            "effect": "pulse",
+            "trigger": "pica",
+            "amount": 1.2
+          },
+          {
+            "target": "picor",
+            "effect": "pop",
+            "trigger": "todavía",
+            "sfx": "boing"
+          },
+          {
+            "target": "picor",
+            "effect": "shake",
+            "trigger": "todavía",
+            "amount": 0.8
+          },
+          {
+            "target": "mosq",
+            "effect": "slide-right",
+            "trigger": "Hay",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mosq",
+            "effect": "float",
+            "trigger": "Hay",
+            "amount": 1.2
+          },
+          {
+            "target": "mosq_alas",
+            "effect": "pulse",
+            "amount": 3
+          },
+          {
+            "target": "zumbido",
+            "effect": "pop",
+            "trigger": "motivo"
+          },
+          {
+            "target": "zumbido",
+            "effect": "pulse",
+            "trigger": "motivo",
+            "amount": 1
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Saliva de *mosquito*",
+      "narration": "Cuando un mosquito te pica, mete saliva bajo tu piel. Lleva un anticoagulante: una sustancia que impide que la sangre se cuaje.",
+      "illustration": {
+        "svg_file": "saliva.svg",
+        "caption": "Fig. 2 · La picadura por dentro",
+        "anims": [
+          {
+            "target": "mosq_alas",
+            "effect": "pulse",
+            "amount": 3
+          },
+          {
+            "target": "piel_globulos",
+            "effect": "drift",
+            "amount": 0.8
+          },
+          {
+            "target": "mosq_g",
+            "effect": "slide-down",
+            "trigger": "mosquito",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "aguja",
+            "effect": "draw",
+            "trigger": "pica",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "sal0",
+            "effect": "pop",
+            "trigger": "saliva",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "sal1",
+            "effect": "pop",
+            "trigger": "saliva",
+            "delay": 0.15
+          },
+          {
+            "target": "sal2",
+            "effect": "pop",
+            "trigger": "bajo"
+          },
+          {
+            "target": "sal3",
+            "effect": "pop",
+            "trigger": "piel"
+          },
+          {
+            "target": "lsal",
+            "effect": "pop",
+            "trigger": "mete"
+          },
+          {
+            "target": "lanti",
+            "effect": "pop",
+            "trigger": "anticoagulante",
+            "sfx": "ding"
+          },
+          {
+            "target": "lanti2",
+            "effect": "fade",
+            "trigger": "sustancia"
+          },
+          {
+            "target": "fsangre",
+            "effect": "draw",
+            "trigger": "sangre",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "fsangre",
+            "effect": "flow",
+            "trigger": "sangre",
+            "amount": 0.6
+          },
+          {
+            "target": "lanti",
+            "effect": "punch",
+            "trigger": "cuaje",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Alarma de *histamina*",
+      "narration": "Tus defensas detectan esas proteínas extrañas y sueltan histamina, la alarma del cuerpo.",
+      "illustration": {
+        "svg_file": "histamina.svg",
+        "caption": "Fig. 3 · Tus defensas",
+        "anims": [
+          {
+            "target": "mast",
+            "effect": "pop",
+            "trigger": "Tus",
+            "sfx": "pop"
+          },
+          {
+            "target": "mast",
+            "effect": "breathe"
+          },
+          {
+            "target": "mast_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ldef",
+            "effect": "pop",
+            "trigger": "defensas"
+          },
+          {
+            "target": "prot",
+            "effect": "fade",
+            "trigger": "proteínas",
+            "dur": 0.4
+          },
+          {
+            "target": "prot",
+            "effect": "wiggle",
+            "trigger": "extrañas",
+            "amount": 0.6
+          },
+          {
+            "target": "hist1",
+            "effect": "pop",
+            "trigger": "sueltan",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "hist1",
+            "effect": "move",
+            "trigger": "sueltan",
+            "to": [
+              60,
+              -30
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "hist2",
+            "effect": "pop",
+            "trigger": "histamina"
+          },
+          {
+            "target": "hist2",
+            "effect": "move",
+            "trigger": "histamina",
+            "to": [
+              80,
+              30
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "lhist",
+            "effect": "pop",
+            "trigger": "histamina",
+            "sfx": "ding"
+          },
+          {
+            "target": "sirena",
+            "effect": "pop",
+            "trigger": "alarma",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "sirena_luz",
+            "effect": "spin",
+            "trigger": "alarma",
+            "amount": 1.5
+          },
+          {
+            "target": "lalarma",
+            "effect": "pop",
+            "trigger": "cuerpo"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "El *bulto*",
+      "narration": "La histamina hincha la zona y avisa a los nervios del picor. De ahí el bulto rojo.",
+      "illustration": {
+        "svg_file": "bulto_free.svg",
+        "layout": "free",
+        "height": 840,
+        "caption": "Fig. 4 · Hinchazón y picor",
+        "anims": [
+          {
+            "target": "bulto",
+            "effect": "grow",
+            "trigger": "hincha",
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "nervio",
+            "effect": "draw",
+            "trigger": "avisa",
+            "dur": 0.7,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "nervio_on",
+            "effect": "draw",
+            "trigger": "nervios",
+            "dur": 0.6
+          },
+          {
+            "target": "nervio_on",
+            "effect": "flow",
+            "trigger": "nervios",
+            "amount": 0.8
+          },
+          {
+            "target": "lnervio",
+            "effect": "pop",
+            "trigger": "nervios"
+          },
+          {
+            "target": "picor_cer",
+            "effect": "pop",
+            "trigger": "picor",
+            "sfx": "boing"
+          },
+          {
+            "target": "picor_cer",
+            "effect": "pulse",
+            "trigger": "picor",
+            "amount": 1
+          },
+          {
+            "target": "brazo",
+            "effect": "slide-left",
+            "trigger": "ahí",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bulto_ext",
+            "effect": "pop",
+            "trigger": "bulto",
+            "sfx": "pop"
+          },
+          {
+            "target": "bulto_ext",
+            "effect": "pulse",
+            "trigger": "rojo",
+            "amount": 1
+          },
+          {
+            "target": "lbulto",
+            "effect": "pop",
+            "trigger": "rojo"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Rascar = *dolor* leve",
+      "narration": "Al rascarte, produces un poco de dolor que tapa el picor un momento.",
+      "illustration": {
+        "svg_file": "rascar.svg",
+        "caption": "Fig. 5 · Rascarse",
+        "anims": [
+          {
+            "target": "picor",
+            "effect": "shake",
+            "amount": 0.7
+          },
+          {
+            "target": "lpicor",
+            "effect": "pop",
+            "delay": 0.2
+          },
+          {
+            "target": "mano",
+            "effect": "slide-down",
+            "trigger": "Al",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mano",
+            "effect": "shake",
+            "trigger": "rascarte",
+            "amount": 2.5
+          },
+          {
+            "target": "rayas",
+            "effect": "draw",
+            "trigger": "rascarte",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "chispas",
+            "effect": "pop",
+            "trigger": "dolor",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "chispas",
+            "effect": "pulse",
+            "trigger": "dolor",
+            "amount": 1.2
+          },
+          {
+            "target": "ldolor",
+            "effect": "pop",
+            "trigger": "poco"
+          },
+          {
+            "target": "picor",
+            "effect": "hide",
+            "trigger": "tapa"
+          },
+          {
+            "target": "lpicor",
+            "effect": "hide",
+            "trigger": "tapa"
+          },
+          {
+            "target": "hab",
+            "effect": "punch",
+            "trigger": "tapa",
+            "amount": 0.3
+          },
+          {
+            "target": "reloj",
+            "effect": "pop",
+            "trigger": "momento",
+            "sfx": "pop"
+          },
+          {
+            "target": "lmomento",
+            "effect": "pop",
+            "trigger": "momento"
+          },
+          {
+            "target": "reloj_abajo",
+            "effect": "grow",
+            "trigger": "momento",
+            "origin": "bottom",
+            "dur": 0.8
+          },
+          {
+            "target": "reloj_chorro",
+            "effect": "pulse",
+            "amount": 1
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "La trampa: *serotonina*",
+      "narration": "Para calmar ese dolor, el cerebro suelta serotonina, un mensajero químico. Pero en ratones también enciende los nervios del picor.",
+      "illustration": {
+        "svg_file": "serotonina_full.svg",
+        "layout": "full",
+        "caption": "Fig. 6 · Cerebro y médula",
+        "anims": [
+          {
+            "target": "c_rojo",
+            "effect": "pulse",
+            "trigger": "dolor",
+            "amount": 0.8
+          },
+          {
+            "target": "ldolor",
+            "effect": "pop",
+            "trigger": "dolor",
+            "sfx": "pop"
+          },
+          {
+            "target": "cer",
+            "effect": "punch",
+            "trigger": "cerebro",
+            "amount": 0.3
+          },
+          {
+            "target": "sero",
+            "effect": "pop",
+            "trigger": "suelta",
+            "sfx": "burbujas"
+          },
+          {
+            "target": "sero",
+            "effect": "move",
+            "trigger": "serotonina",
+            "to": [
+              0,
+              110
+            ],
+            "dur": 0.8
+          },
+          {
+            "target": "lsero",
+            "effect": "pop",
+            "trigger": "serotonina",
+            "sfx": "ding"
+          },
+          {
+            "target": "lmens",
+            "effect": "pop",
+            "trigger": "mensajero"
+          },
+          {
+            "target": "raton",
+            "effect": "pop",
+            "trigger": "ratones",
+            "sfx": "pop"
+          },
+          {
+            "target": "raton_pata",
+            "effect": "wiggle",
+            "trigger": "ratones",
+            "amount": 1.5
+          },
+          {
+            "target": "lraton",
+            "effect": "pop",
+            "trigger": "ratones"
+          },
+          {
+            "target": "sero",
+            "effect": "move",
+            "trigger": "enciende",
+            "to": [
+              70,
+              40
+            ],
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "amar_on",
+            "effect": "fade",
+            "trigger": "enciende",
+            "dur": 0.3
+          },
+          {
+            "target": "amar_on",
+            "effect": "pulse",
+            "trigger": "nervios",
+            "amount": 1.5
+          },
+          {
+            "target": "lpicor",
+            "effect": "pop",
+            "trigger": "picor",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "lpicor",
+            "effect": "punch",
+            "trigger": "picor",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Círculo *vicioso*",
+      "narration": "Resultado: más picor, más rascar. Y si haces herida, pueden entrar bacterias.",
+      "illustration": {
+        "svg_file": "circulo_free.svg",
+        "layout": "free",
+        "height": 800,
+        "caption": "Fig. 7 · El círculo",
+        "anims": [
+          {
+            "target": "ciclo",
+            "effect": "draw",
+            "trigger": "Resultado",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "ciclo",
+            "effect": "spin",
+            "trigger": "Resultado",
+            "amount": 0.3
+          },
+          {
+            "target": "ic_picor",
+            "effect": "pop",
+            "trigger": "picor",
+            "sfx": "pop"
+          },
+          {
+            "target": "lmas1",
+            "effect": "pop",
+            "trigger": "picor"
+          },
+          {
+            "target": "ic_mano",
+            "effect": "pop",
+            "trigger": "rascar",
+            "sfx": "pop"
+          },
+          {
+            "target": "lmas2",
+            "effect": "pop",
+            "trigger": "rascar"
+          },
+          {
+            "target": "ic_mano",
+            "effect": "shake",
+            "trigger": "rascar",
+            "amount": 1.5
+          },
+          {
+            "target": "hab",
+            "effect": "pop",
+            "trigger": "Y",
+            "sfx": "pop"
+          },
+          {
+            "target": "abuela",
+            "effect": "slide-up",
+            "trigger": "si",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "abu",
+            "effect": "breathe",
+            "phase": 0.4
+          },
+          {
+            "target": "abu_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "abu",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2,
+            "phase": 0.4
+          },
+          {
+            "target": "abu_brazo_der",
+            "effect": "wiggle",
+            "trigger": "haces",
+            "origin": "bottom-left",
+            "amount": 1.5
+          },
+          {
+            "target": "hab_herida",
+            "effect": "draw",
+            "trigger": "herida",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "bac0",
+            "effect": "pop",
+            "trigger": "pueden",
+            "sfx": "pop"
+          },
+          {
+            "target": "bac1",
+            "effect": "pop",
+            "trigger": "pueden",
+            "delay": 0.15
+          },
+          {
+            "target": "bac2",
+            "effect": "pop",
+            "trigger": "pueden",
+            "delay": 0.3
+          },
+          {
+            "target": "bac0",
+            "effect": "move",
+            "trigger": "entrar",
+            "to": [
+              130,
+              140
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "bac1",
+            "effect": "move",
+            "trigger": "entrar",
+            "to": [
+              -150,
+              140
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "bac2",
+            "effect": "move",
+            "trigger": "bacterias",
+            "to": [
+              -150,
+              -160
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "globo",
+            "effect": "pop",
+            "trigger": "bacterias",
+            "origin": "right",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Tú eres de hacer la cruz con la uña o de aguantar?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Tú eres de hacer la *cruz* con la uña o de aguantar?",
+          "trigger": "Tú"
+        }
+      ]
+    }
+  ]
+}
