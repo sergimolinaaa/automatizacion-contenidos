@@ -1,0 +1,702 @@
+{
+ "source": "Fuentes: Mental Floss, «Why grocery stores put dairy in the back» · Tasting Table, «Why Is Milk Always At The Back Of The Grocery Store?» · Directo al Paladar, «Esta es la razón por la que el pan suele estar al fondo del supermercado» · Qué.es (29/08/2024) · Euribor.com.es (25/05/2026)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Te",
+   "start": 0.1,
+   "end": 0.26
+  },
+  {
+   "text": "has",
+   "start": 0.27,
+   "end": 0.38
+  },
+  {
+   "text": "fijado?",
+   "start": 0.39,
+   "end": 0.8
+  },
+  {
+   "text": "Vas",
+   "start": 1.5,
+   "end": 1.77
+  },
+  {
+   "text": "a",
+   "start": 1.78,
+   "end": 1.82
+  },
+  {
+   "text": "por",
+   "start": 1.83,
+   "end": 1.9700000000000002
+  },
+  {
+   "text": "leche",
+   "start": 1.98,
+   "end": 2.24
+  },
+  {
+   "text": "y",
+   "start": 2.25,
+   "end": 2.3
+  },
+  {
+   "text": "siempre",
+   "start": 2.31,
+   "end": 2.62
+  },
+  {
+   "text": "está",
+   "start": 2.63,
+   "end": 2.84
+  },
+  {
+   "text": "en",
+   "start": 2.85,
+   "end": 2.93
+  },
+  {
+   "text": "la",
+   "start": 2.94,
+   "end": 3.04
+  },
+  {
+   "text": "otra",
+   "start": 3.05,
+   "end": 3.2399999999999998
+  },
+  {
+   "text": "punta",
+   "start": 3.25,
+   "end": 3.49
+  },
+  {
+   "text": "del",
+   "start": 3.5,
+   "end": 3.63
+  },
+  {
+   "text": "súper.",
+   "start": 3.64,
+   "end": 4.01
+  },
+  {
+   "text": "La",
+   "start": 4.71,
+   "end": 4.91
+  },
+  {
+   "text": "leche",
+   "start": 4.92,
+   "end": 5.1899999999999995
+  },
+  {
+   "text": "es",
+   "start": 5.2,
+   "end": 5.3100000000000005
+  },
+  {
+   "text": "un",
+   "start": 5.32,
+   "end": 5.4
+  },
+  {
+   "text": "producto",
+   "start": 5.41,
+   "end": 5.7700000000000005
+  },
+  {
+   "text": "ancla:",
+   "start": 5.78,
+   "end": 6.08
+  },
+  {
+   "text": "algo",
+   "start": 6.22,
+   "end": 6.4399999999999995
+  },
+  {
+   "text": "que",
+   "start": 6.45,
+   "end": 6.53
+  },
+  {
+   "text": "casi",
+   "start": 6.54,
+   "end": 6.74
+  },
+  {
+   "text": "todos",
+   "start": 6.75,
+   "end": 7.01
+  },
+  {
+   "text": "compran,",
+   "start": 7.02,
+   "end": 7.42
+  },
+  {
+   "text": "como",
+   "start": 7.54,
+   "end": 7.75
+  },
+  {
+   "text": "el",
+   "start": 7.76,
+   "end": 7.85
+  },
+  {
+   "text": "cebo",
+   "start": 7.86,
+   "end": 8.08
+  },
+  {
+   "text": "de",
+   "start": 8.09,
+   "end": 8.2
+  },
+  {
+   "text": "una",
+   "start": 8.21,
+   "end": 8.370000000000001
+  },
+  {
+   "text": "caña",
+   "start": 8.38,
+   "end": 8.600000000000001
+  },
+  {
+   "text": "de",
+   "start": 8.61,
+   "end": 8.69
+  },
+  {
+   "text": "pescar.",
+   "start": 8.7,
+   "end": 9.08
+  },
+  {
+   "text": "Si",
+   "start": 9.77,
+   "end": 9.969999999999999
+  },
+  {
+   "text": "está",
+   "start": 9.98,
+   "end": 10.18
+  },
+  {
+   "text": "al",
+   "start": 10.19,
+   "end": 10.29
+  },
+  {
+   "text": "fondo,",
+   "start": 10.3,
+   "end": 10.63
+  },
+  {
+   "text": "cruzas",
+   "start": 10.72,
+   "end": 11.05
+  },
+  {
+   "text": "la",
+   "start": 11.06,
+   "end": 11.16
+  },
+  {
+   "text": "tienda",
+   "start": 11.17,
+   "end": 11.43
+  },
+  {
+   "text": "entera.",
+   "start": 11.44,
+   "end": 11.84
+  },
+  {
+   "text": "Y",
+   "start": 12.54,
+   "end": 12.659999999999998
+  },
+  {
+   "text": "cada",
+   "start": 12.67,
+   "end": 12.86
+  },
+  {
+   "text": "pasillo",
+   "start": 12.87,
+   "end": 13.239999999999998
+  },
+  {
+   "text": "es",
+   "start": 13.25,
+   "end": 13.36
+  },
+  {
+   "text": "un",
+   "start": 13.37,
+   "end": 13.45
+  },
+  {
+   "text": "escaparate.",
+   "start": 13.46,
+   "end": 14.100000000000001
+  },
+  {
+   "text": "Así",
+   "start": 14.82,
+   "end": 15.1
+  },
+  {
+   "text": "caen",
+   "start": 15.11,
+   "end": 15.29
+  },
+  {
+   "text": "las",
+   "start": 15.3,
+   "end": 15.440000000000001
+  },
+  {
+   "text": "compras",
+   "start": 15.45,
+   "end": 15.77
+  },
+  {
+   "text": "de",
+   "start": 15.78,
+   "end": 15.84
+  },
+  {
+   "text": "impulso:",
+   "start": 15.85,
+   "end": 16.28
+  },
+  {
+   "text": "lo",
+   "start": 16.41,
+   "end": 16.49
+  },
+  {
+   "text": "que",
+   "start": 16.5,
+   "end": 16.59
+  },
+  {
+   "text": "no",
+   "start": 16.6,
+   "end": 16.720000000000002
+  },
+  {
+   "text": "estaba",
+   "start": 16.73,
+   "end": 17.04
+  },
+  {
+   "text": "en",
+   "start": 17.05,
+   "end": 17.14
+  },
+  {
+   "text": "tu",
+   "start": 17.15,
+   "end": 17.22
+  },
+  {
+   "text": "lista.",
+   "start": 17.23,
+   "end": 17.64
+  },
+  {
+   "text": "Unas",
+   "start": 18.33,
+   "end": 18.599999999999998
+  },
+  {
+   "text": "galletas,",
+   "start": 18.61,
+   "end": 19.07
+  },
+  {
+   "text": "una",
+   "start": 19.17,
+   "end": 19.340000000000003
+  },
+  {
+   "text": "oferta,",
+   "start": 19.35,
+   "end": 19.73
+  },
+  {
+   "text": "un",
+   "start": 19.83,
+   "end": 19.909999999999997
+  },
+  {
+   "text": "capricho.",
+   "start": 19.92,
+   "end": 20.39
+  },
+  {
+   "text": "Muchos",
+   "start": 21.08,
+   "end": 21.43
+  },
+  {
+   "text": "supermercados",
+   "start": 21.44,
+   "end": 22.05
+  },
+  {
+   "text": "hacen",
+   "start": 22.06,
+   "end": 22.25
+  },
+  {
+   "text": "lo",
+   "start": 22.26,
+   "end": 22.34
+  },
+  {
+   "text": "mismo",
+   "start": 22.35,
+   "end": 22.610000000000003
+  },
+  {
+   "text": "con",
+   "start": 22.62,
+   "end": 22.75
+  },
+  {
+   "text": "el",
+   "start": 22.76,
+   "end": 22.85
+  },
+  {
+   "text": "pan:",
+   "start": 22.86,
+   "end": 23.08
+  },
+  {
+   "text": "lo",
+   "start": 23.21,
+   "end": 23.29
+  },
+  {
+   "text": "básico,",
+   "start": 23.3,
+   "end": 23.69
+  },
+  {
+   "text": "lejos",
+   "start": 23.79,
+   "end": 24.07
+  },
+  {
+   "text": "de",
+   "start": 24.08,
+   "end": 24.139999999999997
+  },
+  {
+   "text": "la",
+   "start": 24.15,
+   "end": 24.22
+  },
+  {
+   "text": "entrada.",
+   "start": 24.23,
+   "end": 24.67
+  },
+  {
+   "text": "Hay",
+   "start": 25.38,
+   "end": 25.63
+  },
+  {
+   "text": "otra",
+   "start": 25.64,
+   "end": 25.82
+  },
+  {
+   "text": "razón",
+   "start": 25.83,
+   "end": 26.09
+  },
+  {
+   "text": "práctica:",
+   "start": 26.1,
+   "end": 26.53
+  },
+  {
+   "text": "los",
+   "start": 26.69,
+   "end": 26.810000000000002
+  },
+  {
+   "text": "camiones",
+   "start": 26.82,
+   "end": 27.19
+  },
+  {
+   "text": "descargan",
+   "start": 27.2,
+   "end": 27.61
+  },
+  {
+   "text": "detrás,",
+   "start": 27.62,
+   "end": 27.98
+  },
+  {
+   "text": "donde",
+   "start": 28.13,
+   "end": 28.33
+  },
+  {
+   "text": "están",
+   "start": 28.34,
+   "end": 28.57
+  },
+  {
+   "text": "las",
+   "start": 28.58,
+   "end": 28.72
+  },
+  {
+   "text": "cámaras",
+   "start": 28.73,
+   "end": 29.04
+  },
+  {
+   "text": "frigoríficas,",
+   "start": 29.05,
+   "end": 29.740000000000002
+  },
+  {
+   "text": "neveras",
+   "start": 29.92,
+   "end": 30.340000000000003
+  },
+  {
+   "text": "del",
+   "start": 30.35,
+   "end": 30.470000000000002
+  },
+  {
+   "text": "tamaño",
+   "start": 30.48,
+   "end": 30.81
+  },
+  {
+   "text": "de",
+   "start": 30.82,
+   "end": 30.91
+  },
+  {
+   "text": "una",
+   "start": 30.92,
+   "end": 31.1
+  },
+  {
+   "text": "habitación.",
+   "start": 31.11,
+   "end": 31.68
+  },
+  {
+   "text": "Tu",
+   "start": 32.38,
+   "end": 32.52
+  },
+  {
+   "text": "defensa:",
+   "start": 32.53,
+   "end": 32.99
+  },
+  {
+   "text": "lleva",
+   "start": 33.12,
+   "end": 33.309999999999995
+  },
+  {
+   "text": "lista",
+   "start": 33.32,
+   "end": 33.58
+  },
+  {
+   "text": "y",
+   "start": 33.59,
+   "end": 33.64
+  },
+  {
+   "text": "ve",
+   "start": 33.65,
+   "end": 33.74
+  },
+  {
+   "text": "directo",
+   "start": 33.75,
+   "end": 34.06
+  },
+  {
+   "text": "a",
+   "start": 34.07,
+   "end": 34.1
+  },
+  {
+   "text": "lo",
+   "start": 34.11,
+   "end": 34.19
+  },
+  {
+   "text": "que",
+   "start": 34.2,
+   "end": 34.290000000000006
+  },
+  {
+   "text": "necesitas.",
+   "start": 34.3,
+   "end": 34.949999999999996
+  },
+  {
+   "text": "Tú",
+   "start": 35.65,
+   "end": 35.78
+  },
+  {
+   "text": "traes",
+   "start": 35.79,
+   "end": 36.04
+  },
+  {
+   "text": "las",
+   "start": 36.05,
+   "end": 36.199999999999996
+  },
+  {
+   "text": "dudas",
+   "start": 36.21,
+   "end": 36.480000000000004
+  },
+  {
+   "text": "y",
+   "start": 36.49,
+   "end": 36.53
+  },
+  {
+   "text": "nosotros",
+   "start": 36.54,
+   "end": 36.96
+  },
+  {
+   "text": "te",
+   "start": 36.97,
+   "end": 37.06
+  },
+  {
+   "text": "damos",
+   "start": 37.07,
+   "end": 37.34
+  },
+  {
+   "text": "el",
+   "start": 37.35,
+   "end": 37.45
+  },
+  {
+   "text": "truco.",
+   "start": 37.46,
+   "end": 37.84
+  },
+  {
+   "text": "Síguenos",
+   "start": 38.53,
+   "end": 39.04
+  },
+  {
+   "text": "y",
+   "start": 39.05,
+   "end": 39.099999999999994
+  },
+  {
+   "text": "las",
+   "start": 39.11,
+   "end": 39.24
+  },
+  {
+   "text": "resolvemos.",
+   "start": 39.25,
+   "end": 39.91
+  },
+  {
+   "text": "¿Qué",
+   "start": 40.6,
+   "end": 40.76
+  },
+  {
+   "text": "te",
+   "start": 40.77,
+   "end": 40.85
+  },
+  {
+   "text": "llevas",
+   "start": 40.86,
+   "end": 41.12
+  },
+  {
+   "text": "siempre",
+   "start": 41.13,
+   "end": 41.410000000000004
+  },
+  {
+   "text": "sin",
+   "start": 41.42,
+   "end": 41.57
+  },
+  {
+   "text": "estar",
+   "start": 41.58,
+   "end": 41.82
+  },
+  {
+   "text": "en",
+   "start": 41.83,
+   "end": 41.89
+  },
+  {
+   "text": "la",
+   "start": 41.9,
+   "end": 41.96
+  },
+  {
+   "text": "lista?",
+   "start": 41.97,
+   "end": 42.37
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 42.87,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué la leche está al *fondo*",
+  "scene": 0
+ },
+ "duration": 45.47,
+ "cover_offset_ms": 45769
+}

@@ -1,0 +1,702 @@
+{
+ "source": "Fuentes: Healthline, «Why mosquito bites itch» · Mayo Clinic, «Mosquito bites» · Washington University in St. Louis, Zhou Feng Chen, Neuron 2014 · Medical News Today · Science News",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Te",
+   "start": 0.1,
+   "end": 0.25
+  },
+  {
+   "text": "rascas",
+   "start": 0.26,
+   "end": 0.6000000000000001
+  },
+  {
+   "text": "una",
+   "start": 0.61,
+   "end": 0.75
+  },
+  {
+   "text": "picadura",
+   "start": 0.76,
+   "end": 1.18
+  },
+  {
+   "text": "y",
+   "start": 1.19,
+   "end": 1.24
+  },
+  {
+   "text": "te",
+   "start": 1.25,
+   "end": 1.34
+  },
+  {
+   "text": "pica",
+   "start": 1.35,
+   "end": 1.55
+  },
+  {
+   "text": "todavía",
+   "start": 1.56,
+   "end": 1.9000000000000001
+  },
+  {
+   "text": "más?",
+   "start": 1.91,
+   "end": 2.2199999999999998
+  },
+  {
+   "text": "Hay",
+   "start": 2.92,
+   "end": 3.15
+  },
+  {
+   "text": "un",
+   "start": 3.16,
+   "end": 3.23
+  },
+  {
+   "text": "motivo.",
+   "start": 3.24,
+   "end": 3.68
+  },
+  {
+   "text": "Cuando",
+   "start": 4.38,
+   "end": 4.66
+  },
+  {
+   "text": "un",
+   "start": 4.67,
+   "end": 4.75
+  },
+  {
+   "text": "mosquito",
+   "start": 4.76,
+   "end": 5.109999999999999
+  },
+  {
+   "text": "te",
+   "start": 5.12,
+   "end": 5.21
+  },
+  {
+   "text": "pica,",
+   "start": 5.22,
+   "end": 5.49
+  },
+  {
+   "text": "mete",
+   "start": 5.62,
+   "end": 5.8100000000000005
+  },
+  {
+   "text": "saliva",
+   "start": 5.82,
+   "end": 6.12
+  },
+  {
+   "text": "bajo",
+   "start": 6.13,
+   "end": 6.35
+  },
+  {
+   "text": "tu",
+   "start": 6.36,
+   "end": 6.45
+  },
+  {
+   "text": "piel.",
+   "start": 6.46,
+   "end": 6.74
+  },
+  {
+   "text": "Lleva",
+   "start": 7.43,
+   "end": 7.75
+  },
+  {
+   "text": "un",
+   "start": 7.76,
+   "end": 7.859999999999999
+  },
+  {
+   "text": "anticoagulante:",
+   "start": 7.87,
+   "end": 8.61
+  },
+  {
+   "text": "una",
+   "start": 8.76,
+   "end": 8.9
+  },
+  {
+   "text": "sustancia",
+   "start": 8.91,
+   "end": 9.370000000000001
+  },
+  {
+   "text": "que",
+   "start": 9.38,
+   "end": 9.46
+  },
+  {
+   "text": "impide",
+   "start": 9.47,
+   "end": 9.770000000000001
+  },
+  {
+   "text": "que",
+   "start": 9.78,
+   "end": 9.85
+  },
+  {
+   "text": "la",
+   "start": 9.86,
+   "end": 9.94
+  },
+  {
+   "text": "sangre",
+   "start": 9.95,
+   "end": 10.239999999999998
+  },
+  {
+   "text": "se",
+   "start": 10.25,
+   "end": 10.35
+  },
+  {
+   "text": "cuaje.",
+   "start": 10.36,
+   "end": 10.75
+  },
+  {
+   "text": "Tus",
+   "start": 11.44,
+   "end": 11.62
+  },
+  {
+   "text": "defensas",
+   "start": 11.63,
+   "end": 12.040000000000001
+  },
+  {
+   "text": "detectan",
+   "start": 12.05,
+   "end": 12.42
+  },
+  {
+   "text": "esas",
+   "start": 12.43,
+   "end": 12.629999999999999
+  },
+  {
+   "text": "proteínas",
+   "start": 12.64,
+   "end": 13.08
+  },
+  {
+   "text": "extrañas",
+   "start": 13.09,
+   "end": 13.56
+  },
+  {
+   "text": "y",
+   "start": 13.57,
+   "end": 13.620000000000001
+  },
+  {
+   "text": "sueltan",
+   "start": 13.63,
+   "end": 13.940000000000001
+  },
+  {
+   "text": "histamina,",
+   "start": 13.95,
+   "end": 14.389999999999999
+  },
+  {
+   "text": "la",
+   "start": 14.53,
+   "end": 14.629999999999999
+  },
+  {
+   "text": "alarma",
+   "start": 14.64,
+   "end": 14.940000000000001
+  },
+  {
+   "text": "del",
+   "start": 14.95,
+   "end": 15.059999999999999
+  },
+  {
+   "text": "cuerpo.",
+   "start": 15.07,
+   "end": 15.47
+  },
+  {
+   "text": "La",
+   "start": 16.16,
+   "end": 16.34
+  },
+  {
+   "text": "histamina",
+   "start": 16.35,
+   "end": 16.78
+  },
+  {
+   "text": "hincha",
+   "start": 16.79,
+   "end": 16.99
+  },
+  {
+   "text": "la",
+   "start": 17.0,
+   "end": 17.1
+  },
+  {
+   "text": "zona",
+   "start": 17.11,
+   "end": 17.38
+  },
+  {
+   "text": "y",
+   "start": 17.39,
+   "end": 17.46
+  },
+  {
+   "text": "avisa",
+   "start": 17.47,
+   "end": 17.74
+  },
+  {
+   "text": "a",
+   "start": 17.75,
+   "end": 17.78
+  },
+  {
+   "text": "los",
+   "start": 17.79,
+   "end": 17.919999999999998
+  },
+  {
+   "text": "nervios",
+   "start": 17.93,
+   "end": 18.259999999999998
+  },
+  {
+   "text": "del",
+   "start": 18.27,
+   "end": 18.38
+  },
+  {
+   "text": "picor.",
+   "start": 18.39,
+   "end": 18.740000000000002
+  },
+  {
+   "text": "De",
+   "start": 19.44,
+   "end": 19.630000000000003
+  },
+  {
+   "text": "ahí",
+   "start": 19.64,
+   "end": 19.8
+  },
+  {
+   "text": "el",
+   "start": 19.81,
+   "end": 19.9
+  },
+  {
+   "text": "bulto",
+   "start": 19.91,
+   "end": 20.16
+  },
+  {
+   "text": "rojo.",
+   "start": 20.17,
+   "end": 20.580000000000002
+  },
+  {
+   "text": "Al",
+   "start": 21.27,
+   "end": 21.47
+  },
+  {
+   "text": "rascarte,",
+   "start": 21.48,
+   "end": 21.95
+  },
+  {
+   "text": "produces",
+   "start": 22.11,
+   "end": 22.509999999999998
+  },
+  {
+   "text": "un",
+   "start": 22.52,
+   "end": 22.61
+  },
+  {
+   "text": "poco",
+   "start": 22.62,
+   "end": 22.830000000000002
+  },
+  {
+   "text": "de",
+   "start": 22.84,
+   "end": 22.91
+  },
+  {
+   "text": "dolor",
+   "start": 22.92,
+   "end": 23.19
+  },
+  {
+   "text": "que",
+   "start": 23.2,
+   "end": 23.29
+  },
+  {
+   "text": "tapa",
+   "start": 23.3,
+   "end": 23.51
+  },
+  {
+   "text": "el",
+   "start": 23.52,
+   "end": 23.599999999999998
+  },
+  {
+   "text": "picor",
+   "start": 23.61,
+   "end": 23.86
+  },
+  {
+   "text": "un",
+   "start": 23.87,
+   "end": 23.94
+  },
+  {
+   "text": "momento.",
+   "start": 23.95,
+   "end": 24.4
+  },
+  {
+   "text": "Para",
+   "start": 25.09,
+   "end": 25.29
+  },
+  {
+   "text": "calmar",
+   "start": 25.3,
+   "end": 25.6
+  },
+  {
+   "text": "ese",
+   "start": 25.61,
+   "end": 25.759999999999998
+  },
+  {
+   "text": "dolor,",
+   "start": 25.77,
+   "end": 26.06
+  },
+  {
+   "text": "el",
+   "start": 26.2,
+   "end": 26.29
+  },
+  {
+   "text": "cerebro",
+   "start": 26.3,
+   "end": 26.6
+  },
+  {
+   "text": "suelta",
+   "start": 26.61,
+   "end": 26.88
+  },
+  {
+   "text": "serotonina,",
+   "start": 26.89,
+   "end": 27.43
+  },
+  {
+   "text": "un",
+   "start": 27.54,
+   "end": 27.619999999999997
+  },
+  {
+   "text": "mensajero",
+   "start": 27.63,
+   "end": 28.099999999999998
+  },
+  {
+   "text": "químico.",
+   "start": 28.11,
+   "end": 28.57
+  },
+  {
+   "text": "Pero",
+   "start": 29.26,
+   "end": 29.48
+  },
+  {
+   "text": "en",
+   "start": 29.49,
+   "end": 29.56
+  },
+  {
+   "text": "ratones",
+   "start": 29.57,
+   "end": 29.93
+  },
+  {
+   "text": "también",
+   "start": 29.94,
+   "end": 30.25
+  },
+  {
+   "text": "enciende",
+   "start": 30.26,
+   "end": 30.6
+  },
+  {
+   "text": "los",
+   "start": 30.61,
+   "end": 30.74
+  },
+  {
+   "text": "nervios",
+   "start": 30.75,
+   "end": 31.07
+  },
+  {
+   "text": "del",
+   "start": 31.08,
+   "end": 31.189999999999998
+  },
+  {
+   "text": "picor.",
+   "start": 31.2,
+   "end": 31.54
+  },
+  {
+   "text": "Resultado:",
+   "start": 32.23,
+   "end": 32.86
+  },
+  {
+   "text": "más",
+   "start": 32.97,
+   "end": 33.129999999999995
+  },
+  {
+   "text": "picor,",
+   "start": 33.14,
+   "end": 33.45
+  },
+  {
+   "text": "más",
+   "start": 33.56,
+   "end": 33.71
+  },
+  {
+   "text": "rascar.",
+   "start": 33.72,
+   "end": 34.11
+  },
+  {
+   "text": "Y",
+   "start": 34.81,
+   "end": 34.940000000000005
+  },
+  {
+   "text": "si",
+   "start": 34.95,
+   "end": 35.080000000000005
+  },
+  {
+   "text": "haces",
+   "start": 35.09,
+   "end": 35.31
+  },
+  {
+   "text": "herida,",
+   "start": 35.32,
+   "end": 35.65
+  },
+  {
+   "text": "pueden",
+   "start": 35.74,
+   "end": 35.99
+  },
+  {
+   "text": "entrar",
+   "start": 36.0,
+   "end": 36.27
+  },
+  {
+   "text": "bacterias.",
+   "start": 36.28,
+   "end": 36.800000000000004
+  },
+  {
+   "text": "Tú",
+   "start": 37.49,
+   "end": 37.620000000000005
+  },
+  {
+   "text": "traes",
+   "start": 37.63,
+   "end": 37.88
+  },
+  {
+   "text": "las",
+   "start": 37.89,
+   "end": 38.04
+  },
+  {
+   "text": "dudas",
+   "start": 38.05,
+   "end": 38.32
+  },
+  {
+   "text": "y",
+   "start": 38.33,
+   "end": 38.37
+  },
+  {
+   "text": "nosotros",
+   "start": 38.38,
+   "end": 38.800000000000004
+  },
+  {
+   "text": "te",
+   "start": 38.81,
+   "end": 38.900000000000006
+  },
+  {
+   "text": "damos",
+   "start": 38.91,
+   "end": 39.18
+  },
+  {
+   "text": "el",
+   "start": 39.19,
+   "end": 39.29
+  },
+  {
+   "text": "truco.",
+   "start": 39.3,
+   "end": 39.68
+  },
+  {
+   "text": "Síguenos",
+   "start": 40.37,
+   "end": 40.879999999999995
+  },
+  {
+   "text": "y",
+   "start": 40.89,
+   "end": 40.94
+  },
+  {
+   "text": "las",
+   "start": 40.95,
+   "end": 41.080000000000005
+  },
+  {
+   "text": "resolvemos.",
+   "start": 41.09,
+   "end": 41.75
+  },
+  {
+   "text": "¿Tú",
+   "start": 42.44,
+   "end": 42.61
+  },
+  {
+   "text": "eres",
+   "start": 42.62,
+   "end": 42.79
+  },
+  {
+   "text": "de",
+   "start": 42.8,
+   "end": 42.86
+  },
+  {
+   "text": "hacer",
+   "start": 42.87,
+   "end": 43.059999999999995
+  },
+  {
+   "text": "la",
+   "start": 43.07,
+   "end": 43.160000000000004
+  },
+  {
+   "text": "cruz",
+   "start": 43.17,
+   "end": 43.38
+  },
+  {
+   "text": "con",
+   "start": 43.39,
+   "end": 43.51
+  },
+  {
+   "text": "la",
+   "start": 43.52,
+   "end": 43.620000000000005
+  },
+  {
+   "text": "uña",
+   "start": 43.63,
+   "end": 43.910000000000004
+  },
+  {
+   "text": "o",
+   "start": 43.92,
+   "end": 43.99
+  },
+  {
+   "text": "de",
+   "start": 44.0,
+   "end": 44.09
+  },
+  {
+   "text": "aguantar?",
+   "start": 44.1,
+   "end": 44.56
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 45.06,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué *pica* una picadura",
+  "scene": 0
+ },
+ "duration": 47.660000000000004,
+ "cover_offset_ms": 47960
+}
