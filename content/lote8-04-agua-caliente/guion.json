@@ -1,0 +1,1004 @@
+{
+  "topic": "¿El agua caliente se congela antes que la fría? El efecto Mpemba",
+  "categoria": "bulos",
+  "title": "¿El agua caliente se congela antes que la fría? 🧊",
+  "source": "Fuentes: Mpemba y Osborne, «Cool?», Physics Education (1969) · Physics World · Burridge y Linden, «Questioning the Mpemba effect», Scientific Reports (2016) · Chemistry World · Physics FAQ de la Universidad de California en Riverside (Jeng) · Royal Society of Chemistry",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿El agua caliente se *congela antes*?",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-23T21:00:00+02:00",
+    "caption": "¿El agua caliente se congela antes que la fría? A veces sí, y depende. Es el efecto Mpemba: un estudiante de Tanzania lo vio en 1963 con helado y lo publicó en 1969. Explicaciones: evaporación, corrientes, menos gases y escarcha derretida. Un estudio de 2016 no lo reprodujo y no hay consenso (Physics Education; Scientific Reports; Physics World; Chemistry World). ¿Lo vas a probar en tu congelador?",
+    "description": "¿El agua caliente se congela antes que la fría? A veces sí, y depende. En 1963 Erasto Mpemba, un estudiante de Tanzania, vio que su mezcla de helado caliente se congelaba antes que la fría, y en 1969 lo publicó con el físico Denis Osborne en Physics Education: es el efecto Mpemba. Se han propuesto varias explicaciones: el agua caliente se evapora más y queda menos que enfriar, las corrientes de convección sacan el calor más rápido, lleva menos gases disueltos y derrite la escarcha, así que toca mejor el congelador. Pero no siempre se repite: en 2016 Burridge y Linden (Scientific Reports) no encontraron pruebas sólidas, y la ciencia sigue sin consenso. Fuentes: Physics Education (1969); Physics World; Scientific Reports (2016); Chemistry World; Physics FAQ de la Universidad de California en Riverside. ¿Lo vas a probar en tu congelador?",
+    "hashtags": [
+      "efectompemba",
+      "agua",
+      "mitos",
+      "ciencia"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Cuál se *congela antes*?",
+      "narration": "¿Agua caliente y agua fría en el congelador: cuál se congela antes? A veces, la caliente.",
+      "illustration": {
+        "svg_file": "cocina_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Dos vasos al congelador",
+        "anims": [
+          {
+            "target": "veredicto",
+            "effect": "hide"
+          },
+          {
+            "target": "lvaso",
+            "effect": "hide"
+          },
+          {
+            "target": "lagua",
+            "effect": "hide"
+          },
+          {
+            "target": "lcong",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "cong_frio",
+            "effect": "drift",
+            "amount": 0.5
+          },
+          {
+            "target": "cong_luz",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "vcal",
+            "effect": "pop",
+            "trigger": "caliente",
+            "sfx": "pop"
+          },
+          {
+            "target": "tcal",
+            "effect": "pop",
+            "trigger": "caliente"
+          },
+          {
+            "target": "vapor",
+            "effect": "fade",
+            "trigger": "caliente",
+            "dur": 0.4
+          },
+          {
+            "target": "vapor",
+            "effect": "float",
+            "trigger": "caliente",
+            "amount": 0.5
+          },
+          {
+            "target": "vfri",
+            "effect": "pop",
+            "trigger": "fría",
+            "sfx": "pop"
+          },
+          {
+            "target": "tfri",
+            "effect": "pop",
+            "trigger": "fría"
+          },
+          {
+            "target": "frioicon",
+            "effect": "pop",
+            "trigger": "congelador",
+            "sfx": "brillo"
+          },
+          {
+            "target": "frioicon",
+            "effect": "spin",
+            "trigger": "congelador",
+            "amount": 0.2
+          },
+          {
+            "target": "globo",
+            "effect": "pop",
+            "trigger": "cuál",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "globo",
+            "effect": "float",
+            "trigger": "cuál",
+            "amount": 0.3
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "congela",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "antes",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "trigger": "antes",
+            "amount": 0.4
+          },
+          {
+            "target": "aveces",
+            "effect": "pop",
+            "trigger": "veces",
+            "sfx": "sello"
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "la caliente",
+            "sfx": "ding"
+          },
+          {
+            "target": "vcal",
+            "effect": "punch",
+            "trigger": "la caliente",
+            "amount": 0.3
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "la caliente",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El chaval de *Tanzania*",
+      "narration": "En mil novecientos sesenta y tres, Erasto Mpemba, un chaval de Tanzania, metió su helado caliente.",
+      "illustration": {
+        "svg_file": "mpemba.svg",
+        "caption": "Fig. 2 · Tanzania, 1963",
+        "anims": [
+          {
+            "target": "erasto",
+            "effect": "breathe",
+            "phase": 0.4
+          },
+          {
+            "target": "erasto_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "erasto",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "cong_frio",
+            "effect": "drift",
+            "amount": 0.5
+          },
+          {
+            "target": "helado",
+            "effect": "bob",
+            "amount": 0.15
+          },
+          {
+            "target": "l1963",
+            "effect": "pop",
+            "trigger": "mil",
+            "sfx": "pop"
+          },
+          {
+            "target": "l1963",
+            "effect": "punch",
+            "trigger": "tres",
+            "amount": 0.3
+          },
+          {
+            "target": "lerasto",
+            "effect": "pop",
+            "trigger": "Erasto",
+            "sfx": "ding"
+          },
+          {
+            "target": "erasto",
+            "effect": "punch",
+            "trigger": "Mpemba",
+            "amount": 0.15
+          },
+          {
+            "target": "bandera",
+            "effect": "pop",
+            "trigger": "chaval",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bandera",
+            "effect": "sway",
+            "trigger": "chaval",
+            "origin": "left",
+            "amount": 0.3
+          },
+          {
+            "target": "ltz",
+            "effect": "pop",
+            "trigger": "Tanzania",
+            "sfx": "pop"
+          },
+          {
+            "target": "lcal",
+            "effect": "pop",
+            "trigger": "helado",
+            "sfx": "pop"
+          },
+          {
+            "target": "cong_puerta",
+            "effect": "punch",
+            "trigger": "metió",
+            "amount": 0.2
+          },
+          {
+            "target": "helado",
+            "effect": "move",
+            "trigger": "caliente",
+            "to": [
+              438,
+              -21
+            ],
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lcal",
+            "effect": "hide",
+            "trigger": "caliente"
+          },
+          {
+            "target": "erasto_brazo_der",
+            "effect": "move",
+            "trigger": "caliente",
+            "rotate": 10,
+            "origin": "top-left",
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El *efecto Mpemba*",
+      "narration": "Y se congeló antes. En mil novecientos sesenta y nueve lo publicó con un físico: el efecto Mpemba.",
+      "illustration": {
+        "svg_file": "helado_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 3 · Se congeló antes",
+        "anims": [
+          {
+            "target": "chel_a",
+            "effect": "hide"
+          },
+          {
+            "target": "lsuyo",
+            "effect": "pop",
+            "delay": 0.1,
+            "sfx": "pop"
+          },
+          {
+            "target": "lotro",
+            "effect": "pop",
+            "delay": 0.3
+          },
+          {
+            "target": "cliq_a",
+            "effect": "hide",
+            "trigger": "congeló"
+          },
+          {
+            "target": "chel_a",
+            "effect": "pop",
+            "trigger": "congeló",
+            "sfx": "brillo"
+          },
+          {
+            "target": "copos",
+            "effect": "pop",
+            "trigger": "congeló"
+          },
+          {
+            "target": "copos",
+            "effect": "spin",
+            "trigger": "congeló",
+            "amount": 0.15
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "antes",
+            "sfx": "ding"
+          },
+          {
+            "target": "cliq_b",
+            "effect": "wiggle",
+            "trigger": "antes",
+            "amount": 0.3
+          },
+          {
+            "target": "revista",
+            "effect": "slide-up",
+            "trigger": "mil",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "lcool",
+            "effect": "pop",
+            "trigger": "nueve"
+          },
+          {
+            "target": "revista",
+            "effect": "punch",
+            "trigger": "publicó",
+            "amount": 0.2
+          },
+          {
+            "target": "lfisico",
+            "effect": "pop",
+            "trigger": "físico",
+            "sfx": "pop"
+          },
+          {
+            "target": "efecto",
+            "effect": "pop",
+            "trigger": "efecto",
+            "sfx": "sello"
+          },
+          {
+            "target": "efecto",
+            "effect": "punch",
+            "trigger": "Mpemba",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Pierde *agua*",
+      "narration": "¿Posibles motivos? El agua caliente se evapora más: queda menos agua que enfriar.",
+      "illustration": {
+        "svg_file": "vaso_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 4 · Se evapora",
+        "anims": [
+          {
+            "target": "vaso_b",
+            "effect": "hide"
+          },
+          {
+            "target": "corr",
+            "effect": "hide"
+          },
+          {
+            "target": "lcorr",
+            "effect": "hide"
+          },
+          {
+            "target": "fcal1",
+            "effect": "hide"
+          },
+          {
+            "target": "fcal2",
+            "effect": "hide"
+          },
+          {
+            "target": "lcalor",
+            "effect": "hide"
+          },
+          {
+            "target": "gases",
+            "effect": "hide"
+          },
+          {
+            "target": "lgas",
+            "effect": "hide"
+          },
+          {
+            "target": "lcontacto",
+            "effect": "hide"
+          },
+          {
+            "target": "charco",
+            "effect": "hide"
+          },
+          {
+            "target": "vaso_a",
+            "effect": "punch",
+            "trigger": "Posibles",
+            "amount": 0.2,
+            "sfx": "pop"
+          },
+          {
+            "target": "vapor",
+            "effect": "fade",
+            "trigger": "caliente",
+            "dur": 0.4
+          },
+          {
+            "target": "vapor",
+            "effect": "float",
+            "trigger": "caliente",
+            "amount": 0.6
+          },
+          {
+            "target": "fevap",
+            "effect": "draw",
+            "trigger": "evapora",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "levap",
+            "effect": "pop",
+            "trigger": "evapora",
+            "sfx": "pop"
+          },
+          {
+            "target": "vaso_a",
+            "effect": "hide",
+            "trigger": "queda"
+          },
+          {
+            "target": "vaso_b",
+            "effect": "fade",
+            "trigger": "queda",
+            "dur": 0.3
+          },
+          {
+            "target": "fnivel",
+            "effect": "draw",
+            "trigger": "queda",
+            "dur": 0.4
+          },
+          {
+            "target": "lmenos",
+            "effect": "pop",
+            "trigger": "menos",
+            "sfx": "ding"
+          },
+          {
+            "target": "lmenos",
+            "effect": "punch",
+            "trigger": "enfriar",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Corrientes *dentro*",
+      "narration": "Y dentro, unas corrientes sacan el calor más rápido.",
+      "illustration": {
+        "svg_file": "vaso_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 5 · Convección",
+        "anims": [
+          {
+            "target": "vaso_a",
+            "effect": "hide"
+          },
+          {
+            "target": "fevap",
+            "effect": "hide"
+          },
+          {
+            "target": "levap",
+            "effect": "hide"
+          },
+          {
+            "target": "lmenos",
+            "effect": "hide"
+          },
+          {
+            "target": "fnivel",
+            "effect": "hide"
+          },
+          {
+            "target": "gases",
+            "effect": "hide"
+          },
+          {
+            "target": "lgas",
+            "effect": "hide"
+          },
+          {
+            "target": "lcontacto",
+            "effect": "hide"
+          },
+          {
+            "target": "charco",
+            "effect": "hide"
+          },
+          {
+            "target": "vapor",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "vaso_b",
+            "effect": "punch",
+            "trigger": "dentro",
+            "amount": 0.15
+          },
+          {
+            "target": "corr",
+            "effect": "draw",
+            "trigger": "corrientes",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "corr",
+            "effect": "flow",
+            "trigger": "corrientes",
+            "amount": 0.6
+          },
+          {
+            "target": "lcorr",
+            "effect": "pop",
+            "trigger": "corrientes",
+            "sfx": "pop"
+          },
+          {
+            "target": "fcal1",
+            "effect": "draw",
+            "trigger": "calor",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "fcal2",
+            "effect": "draw",
+            "trigger": "calor",
+            "dur": 0.4
+          },
+          {
+            "target": "lcalor",
+            "effect": "pop",
+            "trigger": "rápido",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Mejor *contacto*",
+      "narration": "Tiene menos gases disueltos y derrite la escarcha, así toca mejor el congelador.",
+      "illustration": {
+        "svg_file": "vaso_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 6 · Gas y escarcha",
+        "anims": [
+          {
+            "target": "vaso_a",
+            "effect": "hide"
+          },
+          {
+            "target": "fevap",
+            "effect": "hide"
+          },
+          {
+            "target": "levap",
+            "effect": "hide"
+          },
+          {
+            "target": "lmenos",
+            "effect": "hide"
+          },
+          {
+            "target": "fnivel",
+            "effect": "hide"
+          },
+          {
+            "target": "corr",
+            "effect": "hide"
+          },
+          {
+            "target": "lcorr",
+            "effect": "hide"
+          },
+          {
+            "target": "fcal1",
+            "effect": "hide"
+          },
+          {
+            "target": "fcal2",
+            "effect": "hide"
+          },
+          {
+            "target": "lcalor",
+            "effect": "hide"
+          },
+          {
+            "target": "charco",
+            "effect": "hide"
+          },
+          {
+            "target": "vapor",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "gases",
+            "effect": "slide-up",
+            "trigger": "menos",
+            "dur": 0.5,
+            "sfx": "burbujas"
+          },
+          {
+            "target": "gases",
+            "effect": "float",
+            "trigger": "gases",
+            "amount": 0.5
+          },
+          {
+            "target": "lgas",
+            "effect": "pop",
+            "trigger": "disueltos",
+            "sfx": "pop"
+          },
+          {
+            "target": "escarcha",
+            "effect": "punch",
+            "trigger": "derrite",
+            "amount": 0.3
+          },
+          {
+            "target": "escarcha",
+            "effect": "hide",
+            "trigger": "escarcha"
+          },
+          {
+            "target": "charco",
+            "effect": "fade",
+            "trigger": "escarcha",
+            "dur": 0.3,
+            "sfx": "splash"
+          },
+          {
+            "target": "vaso_b",
+            "effect": "move",
+            "trigger": "toca",
+            "to": [
+              0,
+              14
+            ],
+            "dur": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "lcontacto",
+            "effect": "pop",
+            "trigger": "toca",
+            "sfx": "ding"
+          },
+          {
+            "target": "lcontacto",
+            "effect": "punch",
+            "trigger": "congelador",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Sin *consenso*",
+      "narration": "Pero en dos mil dieciséis, un estudio cuidadoso no lo vio. No hay consenso.",
+      "illustration": {
+        "svg_file": "estudio.svg",
+        "caption": "Fig. 7 · El estudio de 2016",
+        "anims": [
+          {
+            "target": "gsi",
+            "effect": "hide"
+          },
+          {
+            "target": "gno",
+            "effect": "hide"
+          },
+          {
+            "target": "cienA",
+            "effect": "breathe",
+            "phase": 0.1
+          },
+          {
+            "target": "cienA_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "cienA",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "cienB",
+            "effect": "breathe",
+            "phase": 0.6
+          },
+          {
+            "target": "cienB_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "cienB",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "l2016",
+            "effect": "pop",
+            "trigger": "dos",
+            "sfx": "ding"
+          },
+          {
+            "target": "ccal",
+            "effect": "draw",
+            "trigger": "estudio",
+            "dur": 0.8,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "ccal_r",
+            "effect": "pop",
+            "trigger": "estudio"
+          },
+          {
+            "target": "cfri",
+            "effect": "draw",
+            "trigger": "cuidadoso",
+            "dur": 0.7
+          },
+          {
+            "target": "cfri_r",
+            "effect": "pop",
+            "trigger": "cuidadoso"
+          },
+          {
+            "target": "nolovio",
+            "effect": "pop",
+            "trigger": "vio",
+            "sfx": "sello"
+          },
+          {
+            "target": "nolovio",
+            "effect": "punch",
+            "trigger": "vio",
+            "amount": 0.3
+          },
+          {
+            "target": "gsi",
+            "effect": "pop",
+            "trigger": "No hay",
+            "origin": "bottom",
+            "sfx": "pop"
+          },
+          {
+            "target": "cienA_brazo_der",
+            "effect": "wiggle",
+            "trigger": "No hay",
+            "origin": "bottom-left",
+            "amount": 0.7
+          },
+          {
+            "target": "gno",
+            "effect": "pop",
+            "trigger": "consenso",
+            "origin": "bottom",
+            "sfx": "pop"
+          },
+          {
+            "target": "cienB",
+            "effect": "shake",
+            "trigger": "consenso",
+            "amount": 0.3
+          },
+          {
+            "target": "lcons",
+            "effect": "pop",
+            "trigger": "consenso",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "¿Mito o *verdad*?",
+      "narration": "Veredicto: a veces sí, y depende del vaso, del agua y del congelador.",
+      "illustration": {
+        "svg_file": "cocina_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · Veredicto",
+        "anims": [
+          {
+            "target": "globo",
+            "effect": "hide"
+          },
+          {
+            "target": "aveces",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "ok",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.5
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "cong_frio",
+            "effect": "drift",
+            "amount": 0.5
+          },
+          {
+            "target": "vapor",
+            "effect": "float",
+            "amount": 0.5
+          },
+          {
+            "target": "veredicto",
+            "effect": "pop",
+            "trigger": "Veredicto",
+            "sfx": "sello"
+          },
+          {
+            "target": "veredicto",
+            "effect": "punch",
+            "trigger": "sí",
+            "amount": 0.3
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "depende",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "lvaso",
+            "effect": "pop",
+            "trigger": "vaso",
+            "sfx": "pop"
+          },
+          {
+            "target": "vcal",
+            "effect": "punch",
+            "trigger": "vaso",
+            "amount": 0.3
+          },
+          {
+            "target": "lagua",
+            "effect": "pop",
+            "trigger": "agua",
+            "sfx": "pop"
+          },
+          {
+            "target": "vfri",
+            "effect": "punch",
+            "trigger": "agua",
+            "amount": 0.3
+          },
+          {
+            "target": "lcong",
+            "effect": "pop",
+            "trigger": "congelador",
+            "sfx": "ding"
+          },
+          {
+            "target": "cong",
+            "effect": "punch",
+            "trigger": "congelador",
+            "amount": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Pruébalo*",
+      "narration": "Síguenos y las resolvemos. ¿Lo vas a probar en tu congelador?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Lo vas a *probar* en tu congelador?",
+          "trigger": "Lo"
+        }
+      ]
+    }
+  ]
+}

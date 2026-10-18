@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · casa.py · compra.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · casa.py · frio.py · compra.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -184,6 +184,12 @@ Truco: regla o barra que se alarga en horizontal = grupo dibujado en vertical de
 `mano_rasca(id_, cx, cy, s, piel, manga)` (uñas rascando: shake) · `reloj_arena(id_, cx, cy, h)` (`_abajo` grow, `_chorro`) ·
 `gorra(id_, cx, cy, r, col)` y `delantal(id_, x, y, escala, edad, col, busto)` (encima de persona(), en su mismo grupo) · fondo `piscina(W, H, agua_y0, agua_y1)`.
 
+## objetos/frio.py (frío y calor en casa: congelador, helado, convección)
+`congelador(id_, cx, base, w, h, baldas, puerta, escarcha, rotulo)` (vertical abierto con baldas de rejilla y escarcha; `_puerta`, `_frio` (drift), `_luz` (pulse);
+.puntos baldas (y de cada balda)/interior/centro) · `cuenco(id_, cx, base, w, estado="liquido|helado", vapor)` (`_vapor`) · `vapor_subiendo(id_, cx, y, w, alto, n)` (float) ·
+`escarcha(id_, x0, x1, y, grosor, derretida)` (picos blancos o charquito: hide + fade para «derretir») · `corrientes(id_, cx, cy, w, h)` (bucles de convección: draw + flow) ·
+`burbujas_gas(id_, cx, y0, y1, w, n, texto)` · `grafica_enfriamiento(id_, x0, y0, w, h, curvas=[(id, [(t, °C)], col, rótulo)])` (curvas en su id para draw, rótulo `_r`, línea de 0 °C).
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -223,3 +229,4 @@ lote8-01-movil-lento (archivo/movil-lento/dib.py): tecnologia.py (batería nueva
 lote7-04-leche-fondo (archivo/leche-fondo/dib.py): compra.py (brik, nevera de lácteos, ancla, caña, galletas, chocolate, lista, pan, horno, camión frigorífico, carretilla, palé).
 lote8-02-voto-soria: territorio.py (mapa de España con capitales, balanza, ciudad y pueblo).
 lote7-05-picadura (archivo/picadura/dib.py): piel.py (corte de piel, habón, mosquito, mastocito, histamina, sirena, bacteria, ratón, mano rascando, reloj de arena, gorra, delantal, piscina).
+lote8-04-agua-caliente (archivo/agua-caliente/dib.py): frio.py (congelador, cuenco de helado, vapor, escarcha, corrientes de convección, burbujas de gas y gráfica de enfriamiento).
