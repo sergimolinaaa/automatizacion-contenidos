@@ -4,6 +4,7 @@ de un pasillo de supermercado.
 
 Sale de: lote7-08-precios-99 (por qué los precios acaban en ,99).
 """
+import math
 import random
 from ..base import (INK, LIME, CORAL, YEL, TEAL, VIO, f, g, gt, T, MONO, DISP, shade, trazo, sombra, sombra_caja, brillo,
                     lg, registrar_defs, degradado, Pieza)
@@ -257,3 +258,30 @@ def supermercado(W=1080, H=1920, suelo_y=None, seed=5, rotulo="PASILLO 4"):
         f'<line x1="0" y1="{f(y)}" x2="{W}" y2="{f(y)}"/>' for y in [sy + (H - sy) * k for k in (0.12, 0.28, 0.48, 0.72)])
     o += "".join(f'<line x1="{f(W/2 + (x - W/2) * 0.55)}" y1="{f(sy)}" x2="{f(W/2 + (x - W/2) * 1.6)}" y2="{H}"/>' for x in range(-90, W + 200, 180)) + "</g>"
     return o
+
+
+# ------------------------------------------------------------------ billetes (lote7-12-mesa-electoral)
+BILLETES = {"5": "#9AA7A0", "10": "#E0525A", "20": "#4A86D9", "50": "#F29B3A", "100": "#3FAE6A", "200": "#E8C14A"}
+
+
+def billete(id_, cx, cy, w=300, valor="50", rot_=0, col=None):
+    """Billete de euro estilizado (no es copia del real): color por valor, cifra grande, «EURO», arco y anillo de
+    estrellas. Proporción ≈ 2:1. Sub-id {id}_cifra (pulse). .puntos: centro."""
+    col = col or BILLETES.get(valor, "#3FAE6A")
+    h = w * 0.52
+    x0, y0 = cx - w / 2, cy - h / 2
+    s = sombra_caja(x0, y0, w, h, 12, 8, 10, 0.25)
+    s += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="12" fill="{degradado(col, 0.22, "d")}" stroke="{INK}" stroke-width="6"/>'
+    s += f'<rect x="{f(x0+w*0.04)}" y="{f(y0+h*0.08)}" width="{f(w*0.92)}" height="{f(h*0.84)}" rx="8" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.55"/>'
+    ax = x0 + w * 0.62
+    s += (f'<path d="M {f(ax-w*0.13)} {f(y0+h*0.86)} L {f(ax-w*0.13)} {f(y0+h*0.42)} A {f(w*0.13)} {f(w*0.13)} 0 0 1 {f(ax+w*0.13)} {f(y0+h*0.42)} '
+          f'L {f(ax+w*0.13)} {f(y0+h*0.86)} Z" fill="#FFFFFF" fill-opacity="0.35" stroke="{INK}" stroke-width="4"/>')
+    for k in range(12):
+        a = k * math.pi / 6
+        s += f'<circle cx="{f(x0+w*0.84+w*0.07*math.cos(a))}" cy="{f(y0+h*0.3+w*0.07*math.sin(a))}" r="{f(w*0.011)}" fill="#FFE15A" stroke="{INK}" stroke-width="1.5"/>'
+    s += f'<rect x="{f(x0+w*0.42)}" y="{f(y0)}" width="{f(w*0.035)}" height="{f(h)}" fill="#E9EDF5" opacity="0.7"/>'
+    s += g(f"{id_}_cifra", T(x0 + w * 0.22, y0 + h * 0.6, valor, h * 0.5 * min(1, 2.4 / max(1, len(valor))), "#FFFFFF", font=DISP))
+    s += T(x0 + w * 0.22, y0 + h * 0.84, "EURO", h * 0.13, INK, font=DISP)
+    s += T(x0 + w * 0.88, y0 + h * 0.86, valor, h * 0.16, INK, font=DISP)
+    s += brillo(f"M {f(x0+12)} {f(y0+12)} L {f(x0+w*0.35)} {f(y0+12)}", 5, 0.6)
+    return Pieza(gt(id_, f"rotate({f(rot_)} {f(cx)} {f(cy)})", s), {"centro": (cx, cy)}, (x0, y0, x0 + w, y0 + h))

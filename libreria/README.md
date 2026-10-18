@@ -100,6 +100,11 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 - `calendario(id_, cx, cy, w, h, "NOV", "29")` · `atril(id_, cx, base, w, h, mic, frontal)` · `logo_generico(cx, cy, r, "D21")` · `placa(cx, cy, w, h, "ABC")`
 - `documento(id_, cx, cy, w, h, titulo, sub)` · `carpeta(id_, cx, cy, w, h, texto)` · `boli(id_, cx, cy, L, rot_)` · `garabato(id_, x0, x1, yc, amp)` · `candado(id_, cx, cy, s)`
 - `sin_posicionarnos(id_, cx, cy, size)` — sello obligatorio de la escena 1 de política.
+- Mesas electorales: `carta_notificacion(id_, cx, cy, w, h, titulo, cargo, fecha, remite)` (sobre con hoja que sale: move `{id}_hoja` [0,-h*0.55]; `{id}_cargo`) ·
+  `calendario_plazos(id_, cx, cy, n=7, cw, ch, titulo)` (casillas `_d<i>`, marca de día gastado `_m<i>` para pop en cascada) ·
+  `formulario(id_, cx, cy, w, h, titulo, sub, filas)` (✓ en `_c<i>`, firma `_firma` para draw) · `bombo(id_, cx, cy, r, texto, bola_txt)` (`_jaula`/`_manivela` spin, `_bola` move) ·
+  `mesa_electoral(id_, cx, y_tablero, w, alto, cartel, urna_dx)` (mantel, cartel, urna; personas `pose="busto"` antes para que la mesa las tape) ·
+  `colegio_electoral(W, H, suelo_y, rotulo)` (fondo: aula con pizarra, ventanales, cabina con cortina y suelo de baldosas)
 
 ## objetos/casa.py
 `vaso(id_, cx, base, alto, ancho, nivel, liquido="agua|refresco|cola|leche|zumo|cafe", cubitos=0..3)` (ids `_liquido`, `_burbujas`, `_cubo<i>`) ·
@@ -136,7 +141,7 @@ dedos arriba ≈ 260×360: `_dedos`, `_pulgar`, `_nudillos`; .puntos nudillos/pu
 `producto(tipo="caja|bote|botella|lata|brick", cx, base, s, col)` · `estanteria(id_, x0, x1, top, baldas, alto, seed, col)` (.puntos["baldas"] = y de cada balda para colgar precios) ·
 `carrito(id_, cx, base, w, col, lleno, espejo)` (`_compra`, `_ruedas`; .puntos asa/cesta; con `espejo=True` el asa queda a la izquierda, junto a `persona(brazos=(…, "coge"))`) ·
 `ticket(id_, cx, top, w, lineas=[(concepto, precio)], total, titulo)` (`_l<i>`, `_total` para cascada) ·
-`recta_numerica(id_, x0, x1, y, a, b, paso, etiquetas)` (.puntos["x"](valor) → x, para poner marcadores) · `supermercado(W, H, suelo_y, seed, rotulo)` (fondo: pasillo con estantería llena y suelo de baldosas)
+`recta_numerica(id_, x0, x1, y, a, b, paso, etiquetas)` · `billete(id_, cx, cy, w, valor="50", rot_)` (billete de euro estilizado, color por valor; `_cifra`) (.puntos["x"](valor) → x, para poner marcadores) · `supermercado(W, H, suelo_y, seed, rotulo)` (fondo: pasillo con estantería llena y suelo de baldosas)
 
 ## objetos/coches.py (coches, motor y física del giro)
 `deportivo_lateral(id_, cx, base, s, col="rojo", motor="centro|delante|detras", corte=True, logo=False, piloto=True, aleron=True)` (superdeportivo genérico de perfil
@@ -180,4 +185,5 @@ lote7-03-bostezo (sistema nuevo): bostezo + mano a la boca + gafas de sol en per
 lote7-10-tesla-vuela: vuelo.py y brazos relajado/explica/apunta_arriba/sujeta en personajes.
 lote7-08-precios-99: tienda.py (cartel_precio, producto, estanteria, carrito, ticket, recta_numerica, supermercado).
 lote7-11-nudillos (archivo/nudillos/dib.py): articulación en corte, mano, escáner de resonancia, trofeo, manos entrelazadas y brazos «junta».
+lote7-12-mesa-electoral: carta de notificación, calendario de plazos, formulario, bombo, mesa y colegio electoral (politica.py) y billete (tienda.py).
 lote7-09-motor-central: coches.py (deportivo en corte y cenital, motor, centro de gravedad, escudo Porsche, persona cenital, flecha de giro, maleta, derrape, sala, carretera, pista de hielo).

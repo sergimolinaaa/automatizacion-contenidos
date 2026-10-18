@@ -1,0 +1,983 @@
+{
+  "topic": "Me ha tocado mesa electoral en las generales del 29 de noviembre de 2026: plazos, excusas válidas, dieta y sanción",
+  "categoria": "politica",
+  "title": "Te ha tocado mesa electoral el 29 N: ¿te puedes librar?",
+  "source": "Fuentes: LOREG (LO 5/1985), arts. 26, 27 y 143 · Junta Electoral Central, calendario de las elecciones generales del 29 N y Instrucción 6/2011 · Infoelectoral (Ministerio del Interior) · Orden INT/650/2026 (BOE 27/6/2026) · Real Decreto 806/2026 (BOE 6/10/2026)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Te puedes librar de la *mesa*?",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-19T14:00:00+02:00",
+    "caption": "¿Te ha tocado mesa electoral el 29 N? 🗳️ El ayuntamiento sortea las mesas del 31 de octubre al 4 de noviembre. Te lo notifican en tres días y tienes siete para alegar ante la Junta Electoral de Zona. Con 65 años o más puedes renunciar; también valen el embarazo, la lactancia, una causa médica o un evento justificado. Faltar sin excusa es delito (LOREG, art. 143), también para los suplentes. La dieta: 75 euros. Sin posicionarnos, solo la ley. ¿Te ha tocado alguna vez?",
+    "description": "¿Te ha tocado mesa electoral el 29 N? ¿Te puedes librar? Las elecciones generales son el 29 de noviembre de 2026 (Real Decreto 806/2026, BOE del 6 de octubre). Cada ayuntamiento sortea en público quién preside y quién es vocal en cada mesa, entre los días 25 y 29 tras la convocatoria: del 31 de octubre al 4 de noviembre, según el calendario de la Junta Electoral Central (LOREG, art. 26). Te lo notifican en los tres días siguientes y tienes siete días para alegar ante la Junta Electoral de Zona una causa justificada y documentada; la Junta resuelve en cinco días (art. 27). Si tienes 65 años o más, puedes renunciar en ese plazo (art. 26.2). Valen, entre otras, el embarazo, la lactancia, una baja o causa médica y los eventos familiares o profesionales que puedas justificar; no vale no tener ganas (Instrucción 6/2011 de la JEC). Si faltas sin causa, es delito: de tres meses a un año de prisión o multa de seis a veinticuatro meses, y vale también para los suplentes, que deben presentarse para cubrir a los titulares (art. 143). Quien forma parte de la mesa cobra una dieta de 75 euros (Orden INT/650/2026). Te lo explicamos sin posicionarnos, solo con lo que dice la ley. Fuentes: LOREG, Junta Electoral Central, Infoelectoral del Ministerio del Interior, BOE. ¿Te ha tocado alguna vez?",
+    "hashtags": [
+      "mesaelectoral",
+      "elecciones",
+      "29N",
+      "eleccionesgenerales"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Te toca *mesa*?",
+      "narration": "¿Te ha llegado esta carta? Te ha tocado mesa el veintinueve de noviembre.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · La carta",
+        "anims": [
+          {
+            "target": "ana_s",
+            "effect": "hide"
+          },
+          {
+            "target": "globo",
+            "effect": "hide"
+          },
+          {
+            "target": "ana_n",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "ana_n_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana_n",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.2
+          },
+          {
+            "target": "ana_n_cabeza",
+            "effect": "sway",
+            "trigger": "Te",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "ana_n_brazo_der",
+            "effect": "move",
+            "trigger": "llegado",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "carta",
+            "effect": "slide-up",
+            "trigger": "Te",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "carta_hoja",
+            "effect": "move",
+            "trigger": "carta",
+            "to": [
+              0,
+              -160
+            ],
+            "dur": 0.6,
+            "sfx": "papel"
+          },
+          {
+            "target": "ana_n",
+            "effect": "hide",
+            "trigger": "tocado"
+          },
+          {
+            "target": "ana_s",
+            "effect": "fade",
+            "trigger": "tocado",
+            "dur": 0.15
+          },
+          {
+            "target": "ana_s",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "ana_s_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana_s",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.2
+          },
+          {
+            "target": "ana_s_cabeza",
+            "effect": "sway",
+            "trigger": "noviembre",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "globo",
+            "effect": "pop",
+            "trigger": "tocado",
+            "origin": "bottom-left",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "carta_cargo",
+            "effect": "punch",
+            "trigger": "mesa",
+            "amount": 0.4
+          },
+          {
+            "target": "cal",
+            "effect": "pop",
+            "trigger": "veintinueve",
+            "sfx": "ding"
+          },
+          {
+            "target": "cal",
+            "effect": "punch",
+            "trigger": "noviembre",
+            "amount": 0.3
+          },
+          {
+            "target": "globo",
+            "effect": "float",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Solo la *ley*",
+      "narration": "Te lo explicamos sin posicionarnos, simplemente con lo que dice la ley.",
+      "illustration": {
+        "svg_file": "ley_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 2 · Ley Electoral (LOREG)",
+        "anims": [
+          {
+            "target": "doc",
+            "effect": "pop",
+            "trigger": "Te",
+            "sfx": "papel"
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "posicionarnos",
+            "sfx": "sello"
+          },
+          {
+            "target": "sello",
+            "effect": "punch",
+            "trigger": "posicionarnos",
+            "amount": 0.5
+          },
+          {
+            "target": "urna",
+            "effect": "slide-right",
+            "trigger": "simplemente",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tarts",
+            "effect": "pop",
+            "trigger": "dice",
+            "sfx": "pop"
+          },
+          {
+            "target": "chisp",
+            "effect": "pop",
+            "trigger": "dice"
+          },
+          {
+            "target": "doc",
+            "effect": "punch",
+            "trigger": "ley",
+            "amount": 0.15
+          },
+          {
+            "target": "chisp",
+            "effect": "pulse",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Un *sorteo*",
+      "narration": "El ayuntamiento sortea las mesas del treinta y uno de octubre al cuatro de noviembre.",
+      "illustration": {
+        "svg_file": "sorteo.svg",
+        "caption": "Fig. 3 · LOREG, art. 26",
+        "anims": [
+          {
+            "target": "bombo",
+            "effect": "pop",
+            "trigger": "El",
+            "sfx": "pop"
+          },
+          {
+            "target": "tayto",
+            "effect": "pop",
+            "trigger": "ayuntamiento",
+            "sfx": "pop"
+          },
+          {
+            "target": "bombo_jaula",
+            "effect": "spin",
+            "trigger": "sortea",
+            "amount": 0.6
+          },
+          {
+            "target": "bombo_manivela",
+            "effect": "spin",
+            "trigger": "sortea",
+            "amount": 0.6
+          },
+          {
+            "target": "bombo_bola",
+            "effect": "move",
+            "trigger": "mesas",
+            "to": [
+              70,
+              40
+            ],
+            "dur": 0.5,
+            "sfx": "boing"
+          },
+          {
+            "target": "tmesa",
+            "effect": "pop",
+            "trigger": "mesas",
+            "sfx": "pop"
+          },
+          {
+            "target": "cal1",
+            "effect": "pop",
+            "trigger": "treinta",
+            "sfx": "ding"
+          },
+          {
+            "target": "fl",
+            "effect": "draw",
+            "trigger": "al",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "cal2",
+            "effect": "pop",
+            "trigger": "cuatro",
+            "sfx": "ding"
+          },
+          {
+            "target": "cal2",
+            "effect": "punch",
+            "trigger": "noviembre",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*7 días* para alegar",
+      "narration": "Te lo notifican en tres días y tienes siete para alegar ante la Junta Electoral de Zona.",
+      "illustration": {
+        "svg_file": "plazos.svg",
+        "caption": "Fig. 4 · LOREG, art. 27",
+        "anims": [
+          {
+            "target": "plazo_m0",
+            "effect": "hide"
+          },
+          {
+            "target": "plazo_m1",
+            "effect": "hide"
+          },
+          {
+            "target": "plazo_m2",
+            "effect": "hide"
+          },
+          {
+            "target": "plazo_m3",
+            "effect": "hide"
+          },
+          {
+            "target": "plazo_m4",
+            "effect": "hide"
+          },
+          {
+            "target": "plazo_m5",
+            "effect": "hide"
+          },
+          {
+            "target": "plazo_m6",
+            "effect": "hide"
+          },
+          {
+            "target": "carta2",
+            "effect": "pop",
+            "trigger": "notifican",
+            "sfx": "papel"
+          },
+          {
+            "target": "s3",
+            "effect": "pop",
+            "trigger": "tres",
+            "sfx": "sello"
+          },
+          {
+            "target": "plazo",
+            "effect": "slide-up",
+            "trigger": "tienes",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "plazo_m0",
+            "effect": "pop",
+            "trigger": "siete",
+            "sfx": "pop"
+          },
+          {
+            "target": "plazo_m1",
+            "effect": "pop",
+            "trigger": "para",
+            "sfx": "none"
+          },
+          {
+            "target": "plazo_m2",
+            "effect": "pop",
+            "trigger": "alegar",
+            "sfx": "pop"
+          },
+          {
+            "target": "plazo_m3",
+            "effect": "pop",
+            "trigger": "ante",
+            "sfx": "none"
+          },
+          {
+            "target": "plazo_m4",
+            "effect": "pop",
+            "trigger": "Junta",
+            "sfx": "pop"
+          },
+          {
+            "target": "plazo_m5",
+            "effect": "pop",
+            "trigger": "Electoral",
+            "sfx": "none"
+          },
+          {
+            "target": "plazo_m6",
+            "effect": "pop",
+            "trigger": "Zona",
+            "sfx": "pop"
+          },
+          {
+            "target": "fj",
+            "effect": "draw",
+            "trigger": "ante",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tjunta",
+            "effect": "pop",
+            "trigger": "Junta",
+            "sfx": "pop"
+          },
+          {
+            "target": "plazo_d6",
+            "effect": "pulse",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "¿Qué *vale*?",
+      "narration": "¿Qué vale? Con sesenta y cinco años o más, puedes renunciar.",
+      "illustration": {
+        "svg_file": "form_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 5 · LOREG, art. 26.2",
+        "anims": [
+          {
+            "target": "ana",
+            "effect": "hide"
+          },
+          {
+            "target": "sjus",
+            "effect": "hide"
+          },
+          {
+            "target": "form_firma",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c1",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c2",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c3",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c4",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c5",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c0",
+            "effect": "hide"
+          },
+          {
+            "target": "form",
+            "effect": "slide-left",
+            "trigger": "Qué",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "abu",
+            "effect": "breathe",
+            "phase": 0.1
+          },
+          {
+            "target": "abu_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "abu",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.1
+          },
+          {
+            "target": "abu_cabeza",
+            "effect": "sway",
+            "trigger": "años",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "abu_brazo_der",
+            "effect": "move",
+            "trigger": "renunciar",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "s65",
+            "effect": "pop",
+            "trigger": "sesenta",
+            "sfx": "sello"
+          },
+          {
+            "target": "form_c0",
+            "effect": "pop",
+            "trigger": "más",
+            "sfx": "ding"
+          },
+          {
+            "target": "tren",
+            "effect": "pop",
+            "trigger": "renunciar",
+            "sfx": "pop"
+          },
+          {
+            "target": "s65",
+            "effect": "pulse",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Causas que *valen*",
+      "narration": "También el embarazo, la lactancia, una causa médica o un evento familiar o profesional justificado.",
+      "illustration": {
+        "svg_file": "form_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 6 · Instrucción 6/2011 de la JEC",
+        "anims": [
+          {
+            "target": "abu",
+            "effect": "hide"
+          },
+          {
+            "target": "s65",
+            "effect": "hide"
+          },
+          {
+            "target": "tren",
+            "effect": "hide"
+          },
+          {
+            "target": "sjus",
+            "effect": "hide"
+          },
+          {
+            "target": "form_firma",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c1",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c2",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c3",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c4",
+            "effect": "hide"
+          },
+          {
+            "target": "form_c5",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "fade",
+            "trigger": "También",
+            "dur": 0.3
+          },
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.3
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.3
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "familiar",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "médica",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "form_c1",
+            "effect": "pop",
+            "trigger": "embarazo",
+            "sfx": "ding"
+          },
+          {
+            "target": "form_c2",
+            "effect": "pop",
+            "trigger": "lactancia",
+            "sfx": "pop"
+          },
+          {
+            "target": "form_c3",
+            "effect": "pop",
+            "trigger": "médica",
+            "sfx": "ding"
+          },
+          {
+            "target": "form_c4",
+            "effect": "pop",
+            "trigger": "familiar",
+            "sfx": "pop"
+          },
+          {
+            "target": "form_c5",
+            "effect": "pop",
+            "trigger": "profesional",
+            "sfx": "ding"
+          },
+          {
+            "target": "form_firma",
+            "effect": "draw",
+            "trigger": "justificado",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "sjus",
+            "effect": "pop",
+            "trigger": "justificado",
+            "sfx": "sello"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Faltar es *delito*",
+      "narration": "No vale no tener ganas. Faltar sin excusa es delito: cárcel de tres meses a un año, o multa.",
+      "illustration": {
+        "svg_file": "delito.svg",
+        "caption": "Fig. 7 · LOREG, art. 143",
+        "anims": [
+          {
+            "target": "leo_b",
+            "effect": "hide"
+          },
+          {
+            "target": "leo_a",
+            "effect": "breathe",
+            "phase": 0.0
+          },
+          {
+            "target": "leo_a_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "leo_a",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.0
+          },
+          {
+            "target": "leo_a_cabeza",
+            "effect": "sway",
+            "trigger": "ganas",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "no",
+            "effect": "pop",
+            "trigger": "vale",
+            "sfx": "pop"
+          },
+          {
+            "target": "glo",
+            "effect": "pop",
+            "trigger": "ganas",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "leo_a",
+            "effect": "hide",
+            "trigger": "Faltar"
+          },
+          {
+            "target": "glo",
+            "effect": "hide",
+            "trigger": "Faltar"
+          },
+          {
+            "target": "leo_b",
+            "effect": "fade",
+            "trigger": "Faltar",
+            "dur": 0.15
+          },
+          {
+            "target": "leo_b",
+            "effect": "breathe",
+            "phase": 0.0
+          },
+          {
+            "target": "leo_b_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "leo_b",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.0
+          },
+          {
+            "target": "leo_b_brazo_der",
+            "effect": "move",
+            "trigger": "cárcel",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "delito",
+            "effect": "pop",
+            "trigger": "delito",
+            "sfx": "sello"
+          },
+          {
+            "target": "delito",
+            "effect": "punch",
+            "trigger": "delito",
+            "amount": 0.5
+          },
+          {
+            "target": "carcel",
+            "effect": "slide-left",
+            "trigger": "cárcel",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "carcel",
+            "effect": "punch",
+            "trigger": "año",
+            "amount": 0.2
+          },
+          {
+            "target": "multa",
+            "effect": "slide-left",
+            "trigger": "multa",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Y te *pagan*",
+      "narration": "Los suplentes también van. Y quien se sienta cobra setenta y cinco euros.",
+      "illustration": {
+        "svg_file": "colegio_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · Orden INT/650/2026",
+        "anims": [
+          {
+            "target": "m0",
+            "effect": "breathe",
+            "phase": 0.1
+          },
+          {
+            "target": "m0_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "m0",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.1
+          },
+          {
+            "target": "m1",
+            "effect": "breathe",
+            "phase": 0.5
+          },
+          {
+            "target": "m1_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "m1",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.5
+          },
+          {
+            "target": "m1_cabeza",
+            "effect": "sway",
+            "trigger": "sienta",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "m2",
+            "effect": "breathe",
+            "phase": 0.8
+          },
+          {
+            "target": "m2_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "m2",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.8
+          },
+          {
+            "target": "sup1",
+            "effect": "slide-left",
+            "trigger": "suplentes",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sup2",
+            "effect": "slide-left",
+            "trigger": "suplentes",
+            "dur": 0.6
+          },
+          {
+            "target": "sup1",
+            "effect": "breathe",
+            "phase": 0.3
+          },
+          {
+            "target": "sup1_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "sup1",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.3
+          },
+          {
+            "target": "sup1_cabeza",
+            "effect": "sway",
+            "trigger": "van",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "sup2",
+            "effect": "breathe",
+            "phase": 0.6
+          },
+          {
+            "target": "sup2_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "sup2",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.6
+          },
+          {
+            "target": "tsup",
+            "effect": "pop",
+            "trigger": "también",
+            "sfx": "pop"
+          },
+          {
+            "target": "mesa",
+            "effect": "punch",
+            "trigger": "sienta",
+            "amount": 0.08
+          },
+          {
+            "target": "b50",
+            "effect": "pop",
+            "trigger": "cobra",
+            "sfx": "pop"
+          },
+          {
+            "target": "b20",
+            "effect": "pop",
+            "trigger": "setenta",
+            "sfx": "pop"
+          },
+          {
+            "target": "b5",
+            "effect": "pop",
+            "trigger": "cinco",
+            "sfx": "pop"
+          },
+          {
+            "target": "tdieta",
+            "effect": "pop",
+            "trigger": "euros",
+            "sfx": "ding"
+          },
+          {
+            "target": "tdieta",
+            "effect": "pulse",
+            "trigger": "euros",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Cuéntanos*",
+      "narration": "Síguenos y las resolvemos. ¿Te ha tocado alguna vez?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Te ha tocado *mesa* alguna vez?",
+          "trigger": "Te"
+        }
+      ]
+    }
+  ]
+}

@@ -448,3 +448,235 @@ def sin_posicionarnos(id_, cx, cy, size=40, rot_=-6):
     """Sello obligatorio de los vídeos de política: «SIN POSICIONARNOS» (lima sobre tinta)."""
     from ..base import sello
     return sello(id_, cx, cy, "SIN POSICIONARNOS", size, rot_, col=INK, fondo=LIME)
+
+
+# ------------------------------------------------------------------ mesas electorales (lote7-12-mesa-electoral)
+registrar_defs(
+    lg("cartaSobre", [(0, "#F3E6C4"), (1, "#D9C08A")]) + lg("cartaSobreIn", [(0, "#BFA36A"), (1, "#E2CC97")])
+    + lg("bomboG", [(0, "#FFE38A"), (1, "#E0A21A")]) + lg("manteG", [(0, "#FFFFFF"), (1, "#DCE2EE")])
+    + lg("bolaG", [(0, "#FFFFFF"), (1, "#D5DAE6")])
+)
+
+
+def carta_notificacion(id_, cx, cy, w=420, h=300, titulo="MESA ELECTORAL", cargo="VOCAL", fecha="29 NOV", remite="AYUNTAMIENTO"):
+    """Carta oficial de notificación: sobre crema abierto y hoja que asoma.
+    Sub-ids: {id}_hoja (para que salga del sobre: move [0, -h*0.55], está tapada abajo por el bolsillo),
+    {id}_cargo (recuadro coral con el cargo: pulse/punch), {id}_sobre. .puntos: hoja (centro final tras salir), cargo, solapa.
+    (cx, cy) = centro del sobre."""
+    x0, y0 = cx - w / 2, cy - h / 2
+    o = sombra(cx, y0 + h + 12, w * 0.52, 16, 0.25)
+    back = (f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="14" fill="url(#cartaSobreIn)" stroke="{INK}" stroke-width="7"/>'
+            f'<path d="M {f(x0+6)} {f(y0+4)} L {f(cx)} {f(y0-h*0.42)} L {f(x0+w-6)} {f(y0+4)} Z" fill="url(#cartaSobre)" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>')
+    # hoja
+    hw, hh = w * 0.84, h * 1.05
+    hx, hy = cx - hw / 2, y0 + h * 0.08
+    hoja = f'<rect x="{f(hx)}" y="{f(hy)}" width="{f(hw)}" height="{f(hh)}" rx="8" fill="url(#papelG)" stroke="{INK}" stroke-width="6"/>'
+    bh = hh * 0.16
+    hoja += f'<rect x="{f(hx)}" y="{f(hy)}" width="{f(hw)}" height="{f(bh)}" rx="8" fill="url(#navyG)" stroke="{INK}" stroke-width="6"/>'
+    fs = min(bh * 0.5, hw * 0.8 / (len(remite) * 0.8))
+    hoja += T(cx, hy + bh * 0.66, remite, fs, "#FFFFFF", font=DISP)
+    fs2 = min(hh * 0.085, hw * 0.86 / (len(titulo) * 0.78))
+    hoja += T(cx, hy + bh + hh * 0.12, titulo, fs2, INK, font=DISP)
+    cw_, ch_ = hw * 0.62, hh * 0.15
+    cyy = hy + bh + hh * 0.18
+    cargo_g = (f'<rect x="{f(cx-cw_/2)}" y="{f(cyy)}" width="{f(cw_)}" height="{f(ch_)}" rx="10" fill="{CORAL}" stroke="{INK}" stroke-width="5"/>'
+               + T(cx, cyy + ch_ * 0.7, cargo, min(ch_ * 0.6, cw_ * 0.85 / (len(cargo) * 0.8)), "#FFFFFF", font=DISP))
+    hoja += g(f"{id_}_cargo", cargo_g)
+    if fecha:
+        hoja += T(cx, cyy + ch_ + hh * 0.1, fecha, hh * 0.07, "#5A6170", font=DISP)
+    for i in range(3):
+        yy = cyy + ch_ + hh * (0.17 + i * 0.075)
+        hoja += f'<path d="M {f(hx+hw*0.12)} {f(yy)} L {f(hx+hw*(0.88-0.18*(i==2)))} {f(yy)}" stroke="#AEB6C6" stroke-width="{f(max(4,hh*0.02))}" stroke-linecap="round"/>'
+    hoja += brillo(f"M {f(hx+10)} {f(hy+bh+12)} L {f(hx+10)} {f(hy+hh-14)}", 5, 0.8)
+    front = (f'<path d="M {f(x0)} {f(y0+h*0.3)} L {f(cx)} {f(y0+h*0.62)} L {f(x0+w)} {f(y0+h*0.3)} L {f(x0+w)} {f(y0+h-14)} '
+             f'Q {f(x0+w)} {f(y0+h)} {f(x0+w-14)} {f(y0+h)} L {f(x0+14)} {f(y0+h)} Q {f(x0)} {f(y0+h)} {f(x0)} {f(y0+h-14)} Z" '
+             f'fill="url(#cartaSobre)" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+             f'<path d="M {f(x0+16)} {f(y0+h*0.42)} L {f(x0+16)} {f(y0+h-20)}" stroke="#FFF6DC" stroke-width="7" stroke-linecap="round" opacity="0.8"/>'
+             f'<rect x="{f(x0+w-w*0.22)}" y="{f(y0+h*0.66)}" width="{f(w*0.14)}" height="{f(h*0.2)}" rx="4" fill="{CORAL}" stroke="{INK}" stroke-width="4"/>'
+             f'<circle cx="{f(x0+w*0.2)}" cy="{f(y0+h*0.76)}" r="{f(h*0.1)}" fill="none" stroke="#9A7A3A" stroke-width="4" stroke-dasharray="6 5"/>')
+    body = o + g(f"{id_}_sobre", back) + g(f"{id_}_hoja", hoja) + front
+    return Pieza(g(id_, body), {"hoja": (cx, hy + hh / 2 - h * 0.55), "cargo": (cx, cyy + ch_ / 2 - h * 0.55), "solapa": (cx, y0)},
+                 (x0, y0 - h * 0.6, x0 + w, y0 + h + 20))
+
+
+def calendario_plazos(id_, cx, cy, n=7, cw=110, ch=118, titulo="7 DÍAS PARA ALEGAR", inicio=1, col=LIME):
+    """Tira de calendario con n casillas numeradas (plazos). Cada casilla `{id}_d<i>`; la marca de «día gastado»
+    (relleno de color con ✓) en `{id}_m<i>` (oculta con hide y haz pop en cascada). Cabecera `{id}_tit` con el título.
+    .puntos: casillas (centros), ultima. Ancho total ≈ n*cw + 40."""
+    W = n * cw + 40
+    x0, y0 = cx - W / 2, cy - (ch + 90) / 2
+    o = f'<rect x="{f(x0+10)}" y="{f(y0+14)}" width="{f(W)}" height="{f(ch+90)}" rx="18" fill="{INK}" opacity="0.22"/>'
+    o += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(W)}" height="{f(ch+90)}" rx="18" fill="url(#calG)" stroke="{INK}" stroke-width="7"/>'
+    o += (f'<path d="M {f(x0)} {f(y0+66)} L {f(x0)} {f(y0+18)} Q {f(x0)} {f(y0)} {f(x0+18)} {f(y0)} L {f(x0+W-18)} {f(y0)} '
+          f'Q {f(x0+W)} {f(y0)} {f(x0+W)} {f(y0+18)} L {f(x0+W)} {f(y0+66)} Z" fill="url(#calR)" stroke="{INK}" stroke-width="7"/>')
+    o += g(f"{id_}_tit", T(cx, y0 + 46, titulo, min(36, (W - 40) / (len(titulo) * 0.8)), "#FFFFFF", font=DISP))
+    for k in range(4):
+        rx_ = x0 + W * (0.15 + 0.233 * k)
+        o += f'<rect x="{f(rx_-8)}" y="{f(y0-20)}" width="16" height="40" rx="8" fill="#9AA3B5" stroke="{INK}" stroke-width="5"/>'
+    cs = []
+    for i in range(n):
+        x = x0 + 20 + i * cw
+        y = y0 + 78
+        cs.append((x + cw / 2, y + ch / 2))
+        cel = f'<rect x="{f(x+5)}" y="{f(y)}" width="{f(cw-10)}" height="{f(ch-6)}" rx="10" fill="#FFFFFF" stroke="{INK}" stroke-width="5"/>'
+        cel += T(x + cw / 2, y + ch * 0.62, str(inicio + i), ch * 0.42, INK, font=DISP)
+        o += g(f"{id_}_d{i}", cel)
+        m = (f'<rect x="{f(x+5)}" y="{f(y)}" width="{f(cw-10)}" height="{f(ch-6)}" rx="10" fill="{col}" stroke="{INK}" stroke-width="5"/>'
+             + T(x + cw / 2, y + ch * 0.5, str(inicio + i), ch * 0.3, INK, font=DISP)
+             + f'<path d="M {f(x+cw*0.3)} {f(y+ch*0.68)} L {f(x+cw*0.45)} {f(y+ch*0.82)} L {f(x+cw*0.72)} {f(y+ch*0.58)}" fill="none" stroke="{INK}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>')
+        o += g(f"{id_}_m{i}", m)
+    return Pieza(g(id_, o), {"casillas": cs, "ultima": cs[-1]}, (x0, y0 - 20, x0 + W, y0 + ch + 90))
+
+
+def formulario(id_, cx, cy, w=520, h=700, titulo="ALEGACIÓN", sub="JUNTA ELECTORAL DE ZONA", filas=("65 AÑOS O MÁS", "EMBARAZO"),
+               firma=True, rot_=0):
+    """Formulario oficial con casillas: banda de título, filas con casilla + texto, firma.
+    Sub-ids: ✓ de cada fila en `{id}_c<i>` (pop en cascada), fila entera `{id}_f<i>`, garabato de firma `{id}_firma` (draw),
+    clip `{id}_clip`. .puntos: casillas (centros), firma."""
+    x0, y0 = cx - w / 2, cy - h / 2
+    o = f'<rect x="{f(x0+12)}" y="{f(y0+16)}" width="{f(w)}" height="{f(h)}" rx="12" fill="{INK}" opacity="0.22"/>'
+    o += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="12" fill="url(#docG)" stroke="{INK}" stroke-width="7"/>'
+    bh = h * 0.17
+    o += (f'<path d="M {f(x0)} {f(y0+bh)} L {f(x0)} {f(y0+12)} Q {f(x0)} {f(y0)} {f(x0+12)} {f(y0)} L {f(x0+w-12)} {f(y0)} '
+          f'Q {f(x0+w)} {f(y0)} {f(x0+w)} {f(y0+12)} L {f(x0+w)} {f(y0+bh)} Z" fill="url(#navyG)" stroke="{INK}" stroke-width="7"/>')
+    o += T(cx, y0 + bh * 0.5, titulo, min(bh * 0.4, w * 0.8 / (len(titulo) * 0.8)), "#FFFFFF", font=DISP)
+    o += T(cx, y0 + bh * 0.84, sub, min(bh * 0.22, w * 0.86 / (len(sub) * 0.72)), LIME, font=DISP)
+    n = len(filas)
+    zona = h * (0.66 if firma else 0.76)
+    paso = zona / max(n, 1)
+    cs = []
+    s_box = min(paso * 0.62, 56)
+    for i, txt in enumerate(filas):
+        yy = y0 + bh + h * 0.04 + paso * (i + 0.5)
+        bx = x0 + w * 0.08
+        cs.append((bx + s_box / 2, yy))
+        fila = f'<rect x="{f(bx)}" y="{f(yy-s_box/2)}" width="{f(s_box)}" height="{f(s_box)}" rx="8" fill="#FFFFFF" stroke="{INK}" stroke-width="5"/>'
+        tx = bx + s_box + w * 0.04
+        fs = min(s_box * 0.62, (x0 + w * 0.95 - tx) / (len(txt) * 0.66))
+        fila += T(tx, yy + fs * 0.36, txt, fs, INK, anchor="start", font=DISP)
+        o += g(f"{id_}_f{i}", fila)
+        o += g(f"{id_}_c{i}", f'<path d="M {f(bx+s_box*0.18)} {f(yy)} L {f(bx+s_box*0.42)} {f(yy+s_box*0.3)} L {f(bx+s_box*0.95)} {f(yy-s_box*0.42)}" '
+                                f'fill="none" stroke="#1F9E55" stroke-width="{f(s_box*0.2)}" stroke-linecap="round" stroke-linejoin="round"/>')
+    fp = (cx + w * 0.12, y0 + h * 0.9)
+    if firma:
+        o += f'<path d="M {f(x0+w*0.4)} {f(y0+h*0.93)} L {f(x0+w*0.92)} {f(y0+h*0.93)}" stroke="#AEB6C6" stroke-width="5" stroke-linecap="round"/>'
+        o += T(x0 + w * 0.08, y0 + h * 0.93, "FIRMA", h * 0.03, "#7A8194", anchor="start", font=DISP)
+        P = [(x0 + w * 0.44, y0 + h * 0.92), (x0 + w * 0.5, y0 + h * 0.86), (x0 + w * 0.54, y0 + h * 0.92), (x0 + w * 0.6, y0 + h * 0.85),
+             (x0 + w * 0.64, y0 + h * 0.92), (x0 + w * 0.72, y0 + h * 0.87), (x0 + w * 0.8, y0 + h * 0.91), (x0 + w * 0.88, y0 + h * 0.88)]
+        d = "M " + " L ".join(f"{f(a)} {f(b)}" for a, b in P)
+        o += g(f"{id_}_firma", f'<path d="{d}" fill="none" stroke="#2D5BD1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>')
+    o += g(f"{id_}_clip", f'<rect x="{f(cx-w*0.14)}" y="{f(y0-16)}" width="{f(w*0.28)}" height="30" rx="8" fill="url(#metalG)" stroke="{INK}" stroke-width="5"/>')
+    o += brillo(f"M {f(x0+12)} {f(y0+bh+14)} L {f(x0+12)} {f(y0+h-16)}", 6, 0.9)
+    return Pieza(gt(id_, f"rotate({f(rot_)} {f(cx)} {f(cy)})", o), {"casillas": cs, "firma": fp}, (x0, y0 - 16, x0 + w, y0 + h + 16))
+
+
+def bombo(id_, cx, cy, r=170, n_bolas=9, seed=3, texto=None, bola_txt="TÚ"):
+    """Bombo de sorteo (jaula con bolas, manivela y soporte). Sub-ids: {id}_jaula (spin), {id}_manivela,
+    {id}_bola (bola que sale por la boca: move hacia abajo/derecha), texto opcional en una placa del soporte.
+    .puntos: boca (salida de la bola), centro."""
+    rnd = random.Random(seed)
+    o = sombra(cx, cy + r * 1.42, r * 1.05, r * 0.12, 0.25)
+    o += (f'<path d="M {f(cx-r*0.9)} {f(cy+r*1.4)} L {f(cx-r*0.35)} {f(cy+r*0.2)} M {f(cx+r*0.9)} {f(cy+r*1.4)} L {f(cx+r*0.35)} {f(cy+r*0.2)}" '
+          f'stroke="{INK}" stroke-width="22" stroke-linecap="round"/>'
+          f'<path d="M {f(cx-r*0.9)} {f(cy+r*1.4)} L {f(cx-r*0.35)} {f(cy+r*0.2)} M {f(cx+r*0.9)} {f(cy+r*1.4)} L {f(cx+r*0.35)} {f(cy+r*0.2)}" '
+          f'stroke="#8C96AA" stroke-width="10" stroke-linecap="round"/>')
+    o += f'<rect x="{f(cx-r*1.05)}" y="{f(cy+r*1.32)}" width="{f(r*2.1)}" height="{f(r*0.18)}" rx="10" fill="url(#maderaG)" stroke="{INK}" stroke-width="6"/>'
+    if texto:
+        tw_ = len(texto) * r * 0.1 + 40
+        o += f'<rect x="{f(cx-tw_/2)}" y="{f(cy+r*1.05)}" width="{f(tw_)}" height="{f(r*0.24)}" rx="8" fill="#FFFFFF" stroke="{INK}" stroke-width="4"/>'
+        o += T(cx, cy + r * 1.23, texto, r * 0.14, INK, font=DISP)
+    jau = f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="#EAF6FF" fill-opacity="0.55" stroke="{INK}" stroke-width="8"/>'
+    for i in range(n_bolas):
+        a, d = rnd.uniform(0, 6.28), rnd.uniform(0.15, 0.7) * r
+        bx, by = cx + d * math.cos(a), cy + abs(d * math.sin(a)) * 0.8 + r * 0.1
+        col = (CORAL, YEL, TEAL, "#FFFFFF", "#7B5CFF", "#FF7EB6")[i % 6]
+        jau += f'<circle cx="{f(bx)}" cy="{f(by)}" r="{f(r*0.15)}" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="4"/>'
+        jau += f'<circle cx="{f(bx-r*0.05)}" cy="{f(by-r*0.05)}" r="{f(r*0.04)}" fill="#FFFFFF" opacity="0.8"/>'
+    for k in range(-2, 3):
+        jau += f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(r*abs(k)/2.6+2)}" ry="{f(r)}" fill="none" stroke="{INK}" stroke-width="4" opacity="0.75"/>'
+    for k in (-0.5, 0, 0.5):
+        yy = cy + k * r
+        rr = math.sqrt(max(r * r - (k * r) ** 2, 1))
+        jau += f'<path d="M {f(cx-rr)} {f(yy)} L {f(cx+rr)} {f(yy)}" stroke="{INK}" stroke-width="4" opacity="0.75"/>'
+    jau += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="none" stroke="{YEL}" stroke-width="5" opacity="0.7"/>'
+    jau += brillo(f"M {f(cx-r*0.62)} {f(cy-r*0.5)} A {f(r*0.8)} {f(r*0.8)} 0 0 1 {f(cx-r*0.1)} {f(cy-r*0.8)}", r * 0.06, 0.8)
+    o += g(f"{id_}_jaula", jau)
+    o += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r*0.12)}" fill="url(#bomboG)" stroke="{INK}" stroke-width="6"/>'
+    man = (f'<path d="M {f(cx)} {f(cy)} L {f(cx+r*0.55)} {f(cy-r*0.35)}" stroke="{INK}" stroke-width="16" stroke-linecap="round"/>'
+           f'<path d="M {f(cx)} {f(cy)} L {f(cx+r*0.55)} {f(cy-r*0.35)}" stroke="#C9CED8" stroke-width="6" stroke-linecap="round"/>'
+           f'<rect x="{f(cx+r*0.5)}" y="{f(cy-r*0.55)}" width="{f(r*0.14)}" height="{f(r*0.3)}" rx="{f(r*0.06)}" fill="{CORAL}" stroke="{INK}" stroke-width="5"/>')
+    o += g(f"{id_}_manivela", man)
+    bxx, byy = cx + r * 0.7, cy + r * 0.72
+    o += f'<path d="M {f(bxx-r*0.18)} {f(byy-r*0.2)} L {f(bxx+r*0.22)} {f(byy+r*0.1)}" stroke="{INK}" stroke-width="20" stroke-linecap="round"/>'
+    o += f'<path d="M {f(bxx-r*0.18)} {f(byy-r*0.2)} L {f(bxx+r*0.22)} {f(byy+r*0.1)}" stroke="#8C96AA" stroke-width="9" stroke-linecap="round"/>'
+    bol = (f'<circle cx="{f(bxx+r*0.3)}" cy="{f(byy+r*0.16)}" r="{f(r*0.2)}" fill="url(#limaG)" stroke="{INK}" stroke-width="6"/>'
+           + T(bxx + r * 0.3, byy + r * 0.16 + r * 0.07, bola_txt, r * 0.17 * min(1, 2.2 / max(1, len(bola_txt))), INK, font=DISP)
+           + f'<circle cx="{f(bxx+r*0.24)}" cy="{f(byy+r*0.08)}" r="{f(r*0.05)}" fill="#FFFFFF" opacity="0.85"/>')
+    o += g(f"{id_}_bola", bol)
+    return Pieza(g(id_, o), {"boca": (bxx + r * 0.3, byy + r * 0.16), "centro": (cx, cy)}, (cx - r * 1.05, cy - r, cx + r * 1.05, cy + r * 1.5))
+
+
+def mesa_electoral(id_, cx, y_tablero, w=680, alto=230, cartel="MESA A", urna_=True, urna_texto="CONGRESO", urna_dx=0.0):
+    """Mesa electoral de frente: tablero con mantel hasta el suelo, cartel con la letra de la mesa, urna encima y
+    papeles/lista del censo. urna_dx = desplazamiento de la urna (fracción de w; 0,3 la lleva a la derecha). Pon las personas sentadas (persona(pose="busto")) ANTES en el SVG para que la mesa las tape.
+    Sub-ids: {id}_urna, {id}_cartel, {id}_lista. .puntos: tablero (y), ranura, izq, der, base."""
+    x0 = cx - w / 2
+    base = y_tablero + alto
+    o = sombra(cx, base + 6, w * 0.56, 18, 0.25)
+    u = ""
+    if urna_:
+        u = urna(f"{id_}_urna", cx + urna_dx * w, y_tablero + 8, w * 0.27, w * 0.27, texto=urna_texto)
+    o += (f'<path d="M {f(x0-10)} {f(y_tablero)} L {f(x0+w+10)} {f(y_tablero)} L {f(x0+w+26)} {f(base)} L {f(x0-26)} {f(base)} Z" '
+          f'fill="url(#manteG)" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>')
+    for k in range(1, 6):
+        xx = x0 - 18 + (w + 36) * k / 6
+        o += f'<path d="M {f(xx)} {f(y_tablero+20)} L {f(xx + (xx-cx)*0.03)} {f(base-6)}" stroke="#C5CCDB" stroke-width="5" stroke-linecap="round"/>'
+    o += f'<rect x="{f(x0-16)}" y="{f(y_tablero-14)}" width="{f(w+32)}" height="26" rx="8" fill="#F4F6FA" stroke="{INK}" stroke-width="6"/>'
+    cw_ = max(150, len(cartel) * 30 + 40)
+    car = (f'<rect x="{f(cx-cw_/2)}" y="{f(y_tablero+alto*0.3)}" width="{f(cw_)}" height="{f(alto*0.3)}" rx="10" fill="url(#navyG)" stroke="{INK}" stroke-width="5"/>'
+           + T(cx, y_tablero + alto * 0.3 + alto * 0.21, cartel, alto * 0.16, "#FFFFFF", font=DISP))
+    lista = (f'<rect x="{f(x0+w*0.06)}" y="{f(y_tablero-34)}" width="{f(w*0.18)}" height="26" rx="4" fill="#FFFFFF" stroke="{INK}" stroke-width="4" transform="rotate(-4 {f(x0+w*0.15)} {f(y_tablero-20)})"/>'
+             f'<rect x="{f(x0+w*0.76)}" y="{f(y_tablero-30)}" width="{f(w*0.16)}" height="22" rx="4" fill="#FFF3C9" stroke="{INK}" stroke-width="4" transform="rotate(5 {f(x0+w*0.84)} {f(y_tablero-20)})"/>')
+    body = o + g(f"{id_}_lista", lista) + g(f"{id_}_cartel", car) + u
+    pr = u.puntos["ranura"] if urna_ else (cx, y_tablero)
+    return Pieza(g(id_, body), {"tablero": y_tablero, "ranura": pr, "izq": (x0, y_tablero), "der": (x0 + w, y_tablero), "base": base},
+                 (x0 - 26, y_tablero - w * 0.4, x0 + w + 26, base))
+
+
+def colegio_electoral(W=1080, H=1920, suelo_y=None, rotulo="COLEGIO ELECTORAL"):
+    """Fondo: aula de colegio convertida en colegio electoral (pared bicolor, pizarra, ventanales, reloj, cabina con cortina
+    a la derecha, rótulo arriba y suelo de baldosas). Sin ids. Lo importante delante, entre y 450 y 1250."""
+    sy = suelo_y or H * 0.62
+    registrar_defs(lg("aulaPared", [(0, "#FFF4DE"), (1, "#F3DDB4")]), lg("aulaZoc", [(0, "#8FC9B9"), (1, "#5FA694")]),
+                   lg("aulaSuelo", [(0, "#D9DEE8"), (1, "#AEB7C8")]), lg("aulaWin", [(0, "#A9DBFF"), (1, "#E6F5FF")]),
+                   lg("cortinaC", [(0, "#3D6FD8"), (1, "#22409A")], 0, 0, 1, 0))
+    o = f'<rect width="{W}" height="{H}" fill="url(#aulaPared)"/>'
+    o += f'<rect x="0" y="{f(sy-H*0.12)}" width="{W}" height="{f(H*0.12)}" fill="url(#aulaZoc)"/><path d="M 0 {f(sy-H*0.12)} L {W} {f(sy-H*0.12)}" stroke="{INK}" stroke-width="5"/>'
+    for i in range(2):
+        wx = W * (0.06 + 0.3 * i)
+        o += f'<rect x="{f(wx)}" y="{f(H*0.2)}" width="{f(W*0.24)}" height="{f(H*0.2)}" rx="8" fill="url(#aulaWin)" stroke="{INK}" stroke-width="7"/>'
+        o += f'<path d="M {f(wx+W*0.12)} {f(H*0.2)} L {f(wx+W*0.12)} {f(H*0.4)} M {f(wx)} {f(H*0.3)} L {f(wx+W*0.24)} {f(H*0.3)}" stroke="{INK}" stroke-width="6"/>'
+        o += f'<path d="M {f(wx+16)} {f(H*0.215)} L {f(wx+16)} {f(H*0.29)}" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity="0.8"/>'
+    px, py, pw, ph = W * 0.66, H * 0.2, W * 0.3, H * 0.13
+    o += f'<rect x="{f(px-10)}" y="{f(py-10)}" width="{f(pw+20)}" height="{f(ph+20)}" rx="8" fill="#B07A45" stroke="{INK}" stroke-width="6"/>'
+    o += f'<rect x="{f(px)}" y="{f(py)}" width="{f(pw)}" height="{f(ph)}" rx="4" fill="#2C5446" stroke="{INK}" stroke-width="4"/>'
+    o += (f'<path d="M {f(px+pw*0.12)} {f(py+ph*0.35)} L {f(px+pw*0.6)} {f(py+ph*0.35)} M {f(px+pw*0.12)} {f(py+ph*0.6)} L {f(px+pw*0.8)} {f(py+ph*0.6)}" '
+          f'stroke="#F4F1E6" stroke-width="5" stroke-linecap="round" opacity="0.6"/>')
+    o += f'<circle cx="{f(W*0.81)}" cy="{f(H*0.39)}" r="46" fill="#FFFFFF" stroke="{INK}" stroke-width="7"/>'
+    o += f'<path d="M {f(W*0.81)} {f(H*0.39)} L {f(W*0.81)} {f(H*0.39-30)} M {f(W*0.81)} {f(H*0.39)} L {f(W*0.81+22)} {f(H*0.39+8)}" stroke="{INK}" stroke-width="6" stroke-linecap="round"/>'
+    # cabina de votación
+    cx_, cw_ = W * 0.93, W * 0.2
+    o += f'<rect x="{f(cx_-cw_/2)}" y="{f(sy-H*0.24)}" width="{f(cw_)}" height="16" rx="6" fill="#8C96AA" stroke="{INK}" stroke-width="5"/>'
+    for k in range(5):
+        xx = cx_ - cw_ / 2 + 8 + k * (cw_ - 16) / 4
+        o += f'<path d="M {f(xx)} {f(sy-H*0.235)} Q {f(xx+14)} {f(sy-H*0.12)} {f(xx)} {f(sy-12)}" stroke="#1B2F70" stroke-width="5" fill="none" opacity="0.6"/>'
+    o += f'<rect x="{f(cx_-cw_/2+6)}" y="{f(sy-H*0.232)}" width="{f(cw_-12)}" height="{f(H*0.22)}" rx="6" fill="url(#cortinaC)" stroke="{INK}" stroke-width="6" opacity="0.92"/>'
+    if rotulo:
+        rw = len(rotulo) * 32 + 80
+        o += f'<rect x="{f(W/2-rw/2)}" y="{f(H*0.115)}" width="{f(rw)}" height="70" rx="14" fill="{LIME}" stroke="{INK}" stroke-width="6"/>'
+        o += T(W / 2, H * 0.115 + 48, rotulo, 34, INK, font=DISP)
+    o += f'<rect x="0" y="{f(sy)}" width="{W}" height="{f(H-sy)}" fill="url(#aulaSuelo)"/><path d="M 0 {f(sy)} L {W} {f(sy)}" stroke="{INK}" stroke-width="8"/>'
+    o += f'<g stroke="#9AA4B8" stroke-width="4">' + "".join(
+        f'<line x1="0" y1="{f(y)}" x2="{W}" y2="{f(y)}"/>' for y in [sy + (H - sy) * k for k in (0.14, 0.32, 0.55, 0.8)])
+    o += "".join(f'<line x1="{f(W/2 + (x - W/2) * 0.55)}" y1="{f(sy)}" x2="{f(W/2 + (x - W/2) * 1.6)}" y2="{H}"/>' for x in range(-90, W + 200, 180)) + "</g>"
+    return o
