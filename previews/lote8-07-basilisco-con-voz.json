@@ -1,0 +1,677 @@
+{
+ "source": "Fuentes: Glasheen y McMahon, Nature (1996) · Hsieh, Journal of Experimental Biology (2003) · National Geographic · Discover Magazine · Zoo de Singapur (Mandai) · Wikipedia «Common basilisk» · Minetti y otros, PLOS ONE (2012)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Cómo",
+   "start": 0.1,
+   "end": 0.36
+  },
+  {
+   "text": "puede",
+   "start": 0.37,
+   "end": 0.58
+  },
+  {
+   "text": "un",
+   "start": 0.59,
+   "end": 0.6699999999999999
+  },
+  {
+   "text": "lagarto",
+   "start": 0.68,
+   "end": 1.0
+  },
+  {
+   "text": "correr",
+   "start": 1.01,
+   "end": 1.27
+  },
+  {
+   "text": "sobre",
+   "start": 1.28,
+   "end": 1.49
+  },
+  {
+   "text": "el",
+   "start": 1.5,
+   "end": 1.58
+  },
+  {
+   "text": "agua?",
+   "start": 1.59,
+   "end": 1.9000000000000001
+  },
+  {
+   "text": "Le",
+   "start": 2.58,
+   "end": 2.81
+  },
+  {
+   "text": "llaman",
+   "start": 2.82,
+   "end": 3.08
+  },
+  {
+   "text": "lagarto",
+   "start": 3.09,
+   "end": 3.42
+  },
+  {
+   "text": "Jesucristo.",
+   "start": 3.43,
+   "end": 4.08
+  },
+  {
+   "text": "Sus",
+   "start": 4.77,
+   "end": 5.02
+  },
+  {
+   "text": "patas",
+   "start": 5.03,
+   "end": 5.2700000000000005
+  },
+  {
+   "text": "traseras",
+   "start": 5.28,
+   "end": 5.7
+  },
+  {
+   "text": "tienen",
+   "start": 5.71,
+   "end": 5.96
+  },
+  {
+   "text": "flecos",
+   "start": 5.97,
+   "end": 6.27
+  },
+  {
+   "text": "de",
+   "start": 6.28,
+   "end": 6.34
+  },
+  {
+   "text": "escamas",
+   "start": 6.35,
+   "end": 6.739999999999999
+  },
+  {
+   "text": "que",
+   "start": 6.75,
+   "end": 6.83
+  },
+  {
+   "text": "se",
+   "start": 6.84,
+   "end": 6.97
+  },
+  {
+   "text": "abren",
+   "start": 6.98,
+   "end": 7.220000000000001
+  },
+  {
+   "text": "y",
+   "start": 7.23,
+   "end": 7.28
+  },
+  {
+   "text": "agrandan",
+   "start": 7.29,
+   "end": 7.63
+  },
+  {
+   "text": "la",
+   "start": 7.64,
+   "end": 7.71
+  },
+  {
+   "text": "pisada.",
+   "start": 7.72,
+   "end": 8.16
+  },
+  {
+   "text": "Luego,",
+   "start": 8.9,
+   "end": 9.3
+  },
+  {
+   "text": "en",
+   "start": 9.39,
+   "end": 9.51
+  },
+  {
+   "text": "cada",
+   "start": 9.52,
+   "end": 9.69
+  },
+  {
+   "text": "paso",
+   "start": 9.7,
+   "end": 9.94
+  },
+  {
+   "text": "golpea",
+   "start": 9.95,
+   "end": 10.299999999999999
+  },
+  {
+   "text": "el",
+   "start": 10.31,
+   "end": 10.42
+  },
+  {
+   "text": "agua",
+   "start": 10.43,
+   "end": 10.629999999999999
+  },
+  {
+   "text": "hacia",
+   "start": 10.64,
+   "end": 10.84
+  },
+  {
+   "text": "abajo,",
+   "start": 10.85,
+   "end": 11.2
+  },
+  {
+   "text": "muy",
+   "start": 11.32,
+   "end": 11.47
+  },
+  {
+   "text": "rápido,",
+   "start": 11.48,
+   "end": 11.88
+  },
+  {
+   "text": "como",
+   "start": 11.97,
+   "end": 12.17
+  },
+  {
+   "text": "una",
+   "start": 12.18,
+   "end": 12.33
+  },
+  {
+   "text": "palmada.",
+   "start": 12.34,
+   "end": 12.81
+  },
+  {
+   "text": "Al",
+   "start": 13.51,
+   "end": 13.7
+  },
+  {
+   "text": "bajar,",
+   "start": 13.71,
+   "end": 14.020000000000001
+  },
+  {
+   "text": "abre",
+   "start": 14.14,
+   "end": 14.32
+  },
+  {
+   "text": "una",
+   "start": 14.33,
+   "end": 14.48
+  },
+  {
+   "text": "bolsa",
+   "start": 14.49,
+   "end": 14.75
+  },
+  {
+   "text": "de",
+   "start": 14.76,
+   "end": 14.86
+  },
+  {
+   "text": "aire,",
+   "start": 14.87,
+   "end": 15.139999999999999
+  },
+  {
+   "text": "y",
+   "start": 15.24,
+   "end": 15.3
+  },
+  {
+   "text": "el",
+   "start": 15.31,
+   "end": 15.4
+  },
+  {
+   "text": "agua",
+   "start": 15.41,
+   "end": 15.6
+  },
+  {
+   "text": "que",
+   "start": 15.61,
+   "end": 15.7
+  },
+  {
+   "text": "empuja",
+   "start": 15.71,
+   "end": 16.03
+  },
+  {
+   "text": "lo",
+   "start": 16.04,
+   "end": 16.119999999999997
+  },
+  {
+   "text": "sostiene.",
+   "start": 16.13,
+   "end": 16.63
+  },
+  {
+   "text": "Y",
+   "start": 17.32,
+   "end": 17.46
+  },
+  {
+   "text": "lo",
+   "start": 17.47,
+   "end": 17.57
+  },
+  {
+   "text": "clave:",
+   "start": 17.58,
+   "end": 17.88
+  },
+  {
+   "text": "saca",
+   "start": 18.01,
+   "end": 18.220000000000002
+  },
+  {
+   "text": "la",
+   "start": 18.23,
+   "end": 18.31
+  },
+  {
+   "text": "pata",
+   "start": 18.32,
+   "end": 18.55
+  },
+  {
+   "text": "antes",
+   "start": 18.56,
+   "end": 18.82
+  },
+  {
+   "text": "de",
+   "start": 18.83,
+   "end": 18.9
+  },
+  {
+   "text": "que",
+   "start": 18.91,
+   "end": 18.98
+  },
+  {
+   "text": "la",
+   "start": 18.99,
+   "end": 19.069999999999997
+  },
+  {
+   "text": "bolsa",
+   "start": 19.08,
+   "end": 19.34
+  },
+  {
+   "text": "se",
+   "start": 19.35,
+   "end": 19.450000000000003
+  },
+  {
+   "text": "cierre.",
+   "start": 19.46,
+   "end": 19.84
+  },
+  {
+   "text": "Lo",
+   "start": 20.54,
+   "end": 20.71
+  },
+  {
+   "text": "describieron",
+   "start": 20.72,
+   "end": 21.209999999999997
+  },
+  {
+   "text": "Glasheen",
+   "start": 21.22,
+   "end": 21.64
+  },
+  {
+   "text": "y",
+   "start": 21.65,
+   "end": 21.68
+  },
+  {
+   "text": "McMahon",
+   "start": 21.69,
+   "end": 22.02
+  },
+  {
+   "text": "en",
+   "start": 22.03,
+   "end": 22.1
+  },
+  {
+   "text": "Nature,",
+   "start": 22.11,
+   "end": 22.47
+  },
+  {
+   "text": "en",
+   "start": 22.59,
+   "end": 22.68
+  },
+  {
+   "text": "mil",
+   "start": 22.69,
+   "end": 22.84
+  },
+  {
+   "text": "novecientos",
+   "start": 22.85,
+   "end": 23.330000000000002
+  },
+  {
+   "text": "noventa",
+   "start": 23.34,
+   "end": 23.62
+  },
+  {
+   "text": "y",
+   "start": 23.63,
+   "end": 23.689999999999998
+  },
+  {
+   "text": "seis:",
+   "start": 23.7,
+   "end": 24.02
+  },
+  {
+   "text": "así",
+   "start": 24.22,
+   "end": 24.47
+  },
+  {
+   "text": "recorre",
+   "start": 24.48,
+   "end": 24.85
+  },
+  {
+   "text": "unos",
+   "start": 24.86,
+   "end": 25.07
+  },
+  {
+   "text": "cuatro",
+   "start": 25.08,
+   "end": 25.319999999999997
+  },
+  {
+   "text": "metros",
+   "start": 25.33,
+   "end": 25.639999999999997
+  },
+  {
+   "text": "y",
+   "start": 25.65,
+   "end": 25.689999999999998
+  },
+  {
+   "text": "medio.",
+   "start": 25.7,
+   "end": 26.08
+  },
+  {
+   "text": "Una",
+   "start": 26.77,
+   "end": 27.009999999999998
+  },
+  {
+   "text": "persona",
+   "start": 27.02,
+   "end": 27.38
+  },
+  {
+   "text": "no",
+   "start": 27.39,
+   "end": 27.490000000000002
+  },
+  {
+   "text": "podría:",
+   "start": 27.5,
+   "end": 27.92
+  },
+  {
+   "text": "tendría",
+   "start": 28.06,
+   "end": 28.4
+  },
+  {
+   "text": "que",
+   "start": 28.41,
+   "end": 28.5
+  },
+  {
+   "text": "correr",
+   "start": 28.51,
+   "end": 28.76
+  },
+  {
+   "text": "a",
+   "start": 28.77,
+   "end": 28.8
+  },
+  {
+   "text": "más",
+   "start": 28.81,
+   "end": 28.959999999999997
+  },
+  {
+   "text": "de",
+   "start": 28.97,
+   "end": 29.049999999999997
+  },
+  {
+   "text": "cien",
+   "start": 29.06,
+   "end": 29.259999999999998
+  },
+  {
+   "text": "kilómetros",
+   "start": 29.27,
+   "end": 29.74
+  },
+  {
+   "text": "por",
+   "start": 29.75,
+   "end": 29.9
+  },
+  {
+   "text": "hora,",
+   "start": 29.91,
+   "end": 30.16
+  },
+  {
+   "text": "con",
+   "start": 30.37,
+   "end": 30.57
+  },
+  {
+   "text": "quince",
+   "start": 30.58,
+   "end": 30.84
+  },
+  {
+   "text": "veces",
+   "start": 30.85,
+   "end": 31.110000000000003
+  },
+  {
+   "text": "la",
+   "start": 31.12,
+   "end": 31.21
+  },
+  {
+   "text": "potencia",
+   "start": 31.22,
+   "end": 31.619999999999997
+  },
+  {
+   "text": "de",
+   "start": 31.63,
+   "end": 31.7
+  },
+  {
+   "text": "sus",
+   "start": 31.71,
+   "end": 31.87
+  },
+  {
+   "text": "piernas.",
+   "start": 31.88,
+   "end": 32.339999999999996
+  },
+  {
+   "text": "Tú",
+   "start": 33.05,
+   "end": 33.18
+  },
+  {
+   "text": "traes",
+   "start": 33.19,
+   "end": 33.44
+  },
+  {
+   "text": "las",
+   "start": 33.45,
+   "end": 33.6
+  },
+  {
+   "text": "dudas",
+   "start": 33.61,
+   "end": 33.88
+  },
+  {
+   "text": "y",
+   "start": 33.89,
+   "end": 33.93
+  },
+  {
+   "text": "nosotros",
+   "start": 33.94,
+   "end": 34.36
+  },
+  {
+   "text": "te",
+   "start": 34.37,
+   "end": 34.46
+  },
+  {
+   "text": "damos",
+   "start": 34.47,
+   "end": 34.74
+  },
+  {
+   "text": "el",
+   "start": 34.75,
+   "end": 34.85
+  },
+  {
+   "text": "truco.",
+   "start": 34.86,
+   "end": 35.24
+  },
+  {
+   "text": "Síguenos",
+   "start": 35.93,
+   "end": 36.44
+  },
+  {
+   "text": "y",
+   "start": 36.45,
+   "end": 36.5
+  },
+  {
+   "text": "las",
+   "start": 36.51,
+   "end": 36.64
+  },
+  {
+   "text": "resolvemos.",
+   "start": 36.65,
+   "end": 37.309999999999995
+  },
+  {
+   "text": "¿Qué",
+   "start": 38.0,
+   "end": 38.18
+  },
+  {
+   "text": "otro",
+   "start": 38.19,
+   "end": 38.36
+  },
+  {
+   "text": "animal",
+   "start": 38.37,
+   "end": 38.64
+  },
+  {
+   "text": "imposible",
+   "start": 38.65,
+   "end": 39.07
+  },
+  {
+   "text": "quieres",
+   "start": 39.08,
+   "end": 39.35
+  },
+  {
+   "text": "que",
+   "start": 39.36,
+   "end": 39.44
+  },
+  {
+   "text": "expliquemos?",
+   "start": 39.45,
+   "end": 40.080000000000005
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 40.58,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Cómo corre sobre el *agua*",
+  "scene": 0
+ },
+ "duration": 43.18,
+ "cover_offset_ms": 43480
+}
