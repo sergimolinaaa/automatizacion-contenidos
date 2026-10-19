@@ -1,0 +1,818 @@
+{
+  "topic": "Cómo corre el basilisco (lagarto Jesucristo) sobre el agua: flecos en las patas, golpe que abre una bolsa de aire y sacar la pata antes de que se cierre",
+  "categoria": "animales",
+  "title": "¿Cómo corre el basilisco sobre el agua? El lagarto Jesucristo",
+  "source": "Fuentes: Glasheen y McMahon, Nature (1996) · Hsieh, Journal of Experimental Biology (2003) · National Geographic · Discover Magazine · Zoo de Singapur (Mandai) · Wikipedia «Common basilisk» · Minetti y otros, PLOS ONE (2012)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Cómo corre sobre el *agua*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-25T21:00:00+01:00",
+    "caption": "¿Cómo corre el basilisco sobre el agua? Flecos de escamas en las patas que agrandan la pisada, un golpe rapidísimo que abre una bolsa de aire y sacar la pata antes de que se cierre (Glasheen y McMahon, Nature 1996). Recorre unos 4,5 metros (National Geographic, Zoo de Singapur). Una persona tendría que ir a más de 100 km/h con 15 veces su potencia (PLOS ONE, 2012). ¿Qué otro animal imposible quieres que expliquemos?",
+    "description": "¿Cómo corre el basilisco sobre el agua? Este lagarto de Centroamérica, al que llaman lagarto Jesucristo, tiene en las patas traseras unos flecos de escamas que se abren en el agua y agrandan la pisada. En cada paso golpea el agua hacia abajo muy rápido, abre una bolsa de aire y el agua que empuja lo sostiene; después saca la pata antes de que la bolsa se cierre. Lo describieron Glasheen y McMahon en la revista Nature en 1996. Así recorre unos 4,5 metros antes de hundirse y ponerse a nadar (National Geographic, Zoo de Singapur). Una persona no podría: según sus cálculos, tendría que golpear el agua a más de 30 metros por segundo (más de 100 km/h), con unas 15 veces la potencia muscular que tenemos (Minetti y otros, PLOS ONE, 2012). Fuentes: Glasheen y McMahon (Nature, 1996), Hsieh (Journal of Experimental Biology, 2003), National Geographic, Discover Magazine, Zoo de Singapur (Mandai), Wikipedia (Common basilisk), Minetti y otros (PLOS ONE, 2012). ¿Qué otro animal imposible quieres que expliquemos?",
+    "hashtags": [
+      "basilisco",
+      "animales",
+      "curiosidades",
+      "ciencia"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Correr sobre el *agua*?",
+      "narration": "¿Cómo puede un lagarto correr sobre el agua? Le llaman lagarto Jesucristo.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · El basilisco",
+        "anims": [
+          {
+            "target": "bb",
+            "effect": "hide"
+          },
+          {
+            "target": "corre",
+            "effect": "slide-right",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ba",
+            "effect": "bob",
+            "amount": 0.6
+          },
+          {
+            "target": "bb",
+            "effect": "bob",
+            "amount": 0.6
+          },
+          {
+            "target": "ba_cola",
+            "effect": "sway",
+            "origin": "right",
+            "amount": 0.4
+          },
+          {
+            "target": "ba_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "vel",
+            "effect": "flow",
+            "amount": 0.6
+          },
+          {
+            "target": "estela",
+            "effect": "pulse",
+            "amount": 0.4
+          },
+          {
+            "target": "spl",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "Cómo",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "ba",
+            "effect": "hide",
+            "trigger": "lagarto"
+          },
+          {
+            "target": "bb",
+            "effect": "fade",
+            "trigger": "lagarto",
+            "dur": 0.1
+          },
+          {
+            "target": "ba_cabeza",
+            "effect": "sway",
+            "trigger": "lagarto",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "bb",
+            "effect": "hide",
+            "trigger": "correr"
+          },
+          {
+            "target": "ba",
+            "effect": "fade",
+            "trigger": "correr",
+            "dur": 0.1
+          },
+          {
+            "target": "corre",
+            "effect": "move",
+            "trigger": "correr",
+            "to": [
+              60,
+              0
+            ],
+            "dur": 1.2
+          },
+          {
+            "target": "sagua",
+            "effect": "pop",
+            "trigger": "agua",
+            "sfx": "sello"
+          },
+          {
+            "target": "sagua",
+            "effect": "punch",
+            "trigger": "agua",
+            "amount": 0.4
+          },
+          {
+            "target": "ba",
+            "effect": "hide",
+            "trigger": "Le"
+          },
+          {
+            "target": "bb",
+            "effect": "fade",
+            "trigger": "Le",
+            "dur": 0.1
+          },
+          {
+            "target": "cjesus",
+            "effect": "pop",
+            "trigger": "Jesucristo",
+            "sfx": "ding"
+          },
+          {
+            "target": "cjesus",
+            "effect": "punch",
+            "trigger": "Jesucristo",
+            "amount": 0.3
+          },
+          {
+            "target": "bb",
+            "effect": "hide",
+            "trigger": "Jesucristo"
+          },
+          {
+            "target": "ba",
+            "effect": "fade",
+            "trigger": "Jesucristo",
+            "dur": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Pies con *flecos*",
+      "narration": "Sus patas traseras tienen flecos de escamas que se abren y agrandan la pisada.",
+      "illustration": {
+        "svg_file": "pata.svg",
+        "caption": "Fig. 2 · La pata trasera",
+        "anims": [
+          {
+            "target": "po",
+            "effect": "hide"
+          },
+          {
+            "target": "pc",
+            "effect": "punch",
+            "trigger": "patas",
+            "amount": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "pc",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3
+          },
+          {
+            "target": "lflecos",
+            "effect": "pop",
+            "trigger": "flecos",
+            "sfx": "pop"
+          },
+          {
+            "target": "hpeq",
+            "effect": "pop",
+            "trigger": "escamas",
+            "sfx": "pop"
+          },
+          {
+            "target": "lpisada",
+            "effect": "pop",
+            "trigger": "escamas"
+          },
+          {
+            "target": "pc",
+            "effect": "hide",
+            "trigger": "abren"
+          },
+          {
+            "target": "po",
+            "effect": "pop",
+            "trigger": "abren",
+            "dur": 0.3,
+            "sfx": "brillo"
+          },
+          {
+            "target": "po_flecos",
+            "effect": "pulse",
+            "trigger": "abren",
+            "amount": 0.3
+          },
+          {
+            "target": "fgrande",
+            "effect": "draw",
+            "trigger": "agrandan",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "hgran",
+            "effect": "pop",
+            "trigger": "pisada",
+            "sfx": "ding"
+          },
+          {
+            "target": "hgran",
+            "effect": "pulse",
+            "trigger": "pisada",
+            "amount": 0.3
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "agrandan",
+        "pose": "explain",
+        "note": "Como raquetas de nieve",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "1 · *Golpe*",
+      "narration": "Luego, en cada paso golpea el agua hacia abajo, muy rápido, como una palmada.",
+      "illustration": {
+        "svg_file": "secuencia_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 3 · La pisada",
+        "anims": [
+          {
+            "target": "f2",
+            "effect": "hide"
+          },
+          {
+            "target": "f3",
+            "effect": "hide"
+          },
+          {
+            "target": "f1_lab",
+            "effect": "pop",
+            "trigger": "Luego",
+            "sfx": "pop"
+          },
+          {
+            "target": "f1_vel",
+            "effect": "pop",
+            "trigger": "paso"
+          },
+          {
+            "target": "f1_vel",
+            "effect": "flow",
+            "amount": 0.6
+          },
+          {
+            "target": "f1_pierna",
+            "effect": "move",
+            "trigger": "golpea",
+            "to": [
+              0,
+              120
+            ],
+            "dur": 0.2,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "f1_spl",
+            "effect": "pop",
+            "trigger": "agua",
+            "sfx": "splash"
+          },
+          {
+            "target": "f1_spl",
+            "effect": "pulse",
+            "trigger": "agua",
+            "amount": 0.4
+          },
+          {
+            "target": "f1_flecha",
+            "effect": "draw",
+            "trigger": "abajo",
+            "dur": 0.3,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "f1_flecha",
+            "effect": "punch",
+            "trigger": "rápido",
+            "amount": 0.4
+          },
+          {
+            "target": "f1_plaf",
+            "effect": "pop",
+            "trigger": "palmada",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "f1_plaf",
+            "effect": "punch",
+            "trigger": "palmada",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "2 · Bolsa de *aire*",
+      "narration": "Al bajar, abre una bolsa de aire, y el agua que empuja lo sostiene.",
+      "illustration": {
+        "svg_file": "secuencia_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 4 · La pisada",
+        "anims": [
+          {
+            "target": "f3",
+            "effect": "hide"
+          },
+          {
+            "target": "f1_plaf",
+            "effect": "hide"
+          },
+          {
+            "target": "f1_flecha",
+            "effect": "hide"
+          },
+          {
+            "target": "f1_pierna",
+            "effect": "move",
+            "delay": 0.05,
+            "to": [
+              0,
+              120
+            ],
+            "dur": 0.3
+          },
+          {
+            "target": "f1_spl",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "f2_pie",
+            "effect": "slide-down",
+            "trigger": "bajar",
+            "dur": 0.35,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "f2_bolsa",
+            "effect": "grow",
+            "trigger": "abre",
+            "origin": "top",
+            "dur": 0.5,
+            "sfx": "burbujas"
+          },
+          {
+            "target": "f2_lab",
+            "effect": "pop",
+            "trigger": "bolsa",
+            "sfx": "pop"
+          },
+          {
+            "target": "f2_aire",
+            "effect": "pop",
+            "trigger": "aire",
+            "sfx": "pop"
+          },
+          {
+            "target": "f2_aire",
+            "effect": "float",
+            "trigger": "aire",
+            "amount": 0.4
+          },
+          {
+            "target": "f2_ag1",
+            "effect": "draw",
+            "trigger": "agua",
+            "dur": 0.3
+          },
+          {
+            "target": "f2_ag2",
+            "effect": "draw",
+            "trigger": "agua",
+            "dur": 0.3
+          },
+          {
+            "target": "f2_up",
+            "effect": "slide-up",
+            "trigger": "empuja",
+            "dur": 0.35,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "f2_up",
+            "effect": "punch",
+            "trigger": "sostiene",
+            "amount": 0.5
+          },
+          {
+            "target": "f2_pie",
+            "effect": "punch",
+            "trigger": "sostiene",
+            "amount": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "3 · Sácala *antes*",
+      "narration": "Y lo clave: saca la pata antes de que la bolsa se cierre.",
+      "illustration": {
+        "svg_file": "secuencia_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 5 · La pisada",
+        "anims": [
+          {
+            "target": "f3_ce",
+            "effect": "hide"
+          },
+          {
+            "target": "f1_plaf",
+            "effect": "hide"
+          },
+          {
+            "target": "f1_flecha",
+            "effect": "hide"
+          },
+          {
+            "target": "f1_pierna",
+            "effect": "move",
+            "delay": 0.05,
+            "to": [
+              0,
+              120
+            ],
+            "dur": 0.3
+          },
+          {
+            "target": "f2_aire",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "f3_lab",
+            "effect": "pop",
+            "trigger": "clave",
+            "sfx": "pop"
+          },
+          {
+            "target": "f3_pie",
+            "effect": "move",
+            "trigger": "saca",
+            "to": [
+              0,
+              -270
+            ],
+            "dur": 0.35,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "f3_up",
+            "effect": "draw",
+            "trigger": "pata",
+            "dur": 0.3
+          },
+          {
+            "target": "f3_gotas",
+            "effect": "pop",
+            "trigger": "pata"
+          },
+          {
+            "target": "f3_gotas",
+            "effect": "float",
+            "trigger": "pata",
+            "amount": 0.5
+          },
+          {
+            "target": "f3_up",
+            "effect": "punch",
+            "trigger": "antes",
+            "amount": 0.4
+          },
+          {
+            "target": "f3_ab",
+            "effect": "hide",
+            "trigger": "cierre"
+          },
+          {
+            "target": "f3_ce",
+            "effect": "pop",
+            "trigger": "cierre",
+            "dur": 0.25,
+            "sfx": "burbujas"
+          },
+          {
+            "target": "f3_ok",
+            "effect": "pop",
+            "trigger": "cierre",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Unos *4,5 metros*",
+      "narration": "Lo describieron Glasheen y McMahon en Nature, en mil novecientos noventa y seis: así recorre unos cuatro metros y medio.",
+      "illustration": {
+        "svg_file": "nature.svg",
+        "caption": "Fig. 6 · Lo que midieron",
+        "anims": [
+          {
+            "target": "hunde",
+            "effect": "hide"
+          },
+          {
+            "target": "rv",
+            "effect": "slide-up",
+            "trigger": "describieron",
+            "dur": 0.4,
+            "sfx": "papel"
+          },
+          {
+            "target": "lnom",
+            "effect": "pop",
+            "trigger": "Glasheen",
+            "sfx": "pop"
+          },
+          {
+            "target": "rv",
+            "effect": "punch",
+            "trigger": "Nature",
+            "amount": 0.3
+          },
+          {
+            "target": "s96",
+            "effect": "pop",
+            "trigger": "noventa",
+            "sfx": "sello"
+          },
+          {
+            "target": "s96",
+            "effect": "punch",
+            "trigger": "seis",
+            "amount": 0.4
+          },
+          {
+            "target": "mb",
+            "effect": "bob",
+            "amount": 0.6
+          },
+          {
+            "target": "mini",
+            "effect": "move",
+            "trigger": "así",
+            "to": [
+              340,
+              0
+            ],
+            "dur": 1.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "estela",
+            "effect": "draw",
+            "trigger": "recorre",
+            "dur": 1.4
+          },
+          {
+            "target": "regla",
+            "effect": "grow",
+            "trigger": "cuatro",
+            "origin": "left",
+            "dur": 0.5,
+            "sfx": "pop"
+          },
+          {
+            "target": "l45",
+            "effect": "pop",
+            "trigger": "metros",
+            "sfx": "ding"
+          },
+          {
+            "target": "mini",
+            "effect": "hide",
+            "trigger": "medio"
+          },
+          {
+            "target": "hunde",
+            "effect": "pop",
+            "trigger": "medio",
+            "sfx": "splash"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "¿Y una *persona*?",
+      "narration": "Una persona no podría: tendría que correr a más de cien kilómetros por hora, con quince veces la potencia de sus piernas.",
+      "illustration": {
+        "svg_file": "persona_full.svg",
+        "layout": "full",
+        "caption": "Fig. 7 · ¿Y tú?",
+        "anims": [
+          {
+            "target": "yo",
+            "effect": "breathe",
+            "phase": 0.3
+          },
+          {
+            "target": "yo_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "yo_brazo_der",
+            "effect": "wiggle",
+            "origin": "bottom-left",
+            "amount": 1.2
+          },
+          {
+            "target": "ondas",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "yo_g",
+            "effect": "move",
+            "trigger": "persona",
+            "to": [
+              0,
+              40
+            ],
+            "dur": 0.4,
+            "sfx": "splash"
+          },
+          {
+            "target": "no",
+            "effect": "pop",
+            "trigger": "podría",
+            "sfx": "pop"
+          },
+          {
+            "target": "no",
+            "effect": "punch",
+            "trigger": "podría",
+            "amount": 0.4
+          },
+          {
+            "target": "yo_g",
+            "effect": "move",
+            "trigger": "tendría",
+            "to": [
+              0,
+              50
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "vel",
+            "effect": "pop",
+            "trigger": "correr",
+            "sfx": "pop"
+          },
+          {
+            "target": "vel_aguja",
+            "effect": "move",
+            "trigger": "correr",
+            "rotate": -80,
+            "origin": "bottom",
+            "dur": 0.2
+          },
+          {
+            "target": "vel_aguja",
+            "effect": "move",
+            "trigger": "cien",
+            "rotate": 165,
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "c100",
+            "effect": "pop",
+            "trigger": "kilómetros",
+            "sfx": "ding"
+          },
+          {
+            "target": "vel_aguja",
+            "effect": "shake",
+            "trigger": "hora",
+            "amount": 0.5
+          },
+          {
+            "target": "b1",
+            "effect": "grow",
+            "trigger": "quince",
+            "dur": 0.3
+          },
+          {
+            "target": "b2",
+            "effect": "grow",
+            "trigger": "veces",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "lpot",
+            "effect": "pop",
+            "trigger": "potencia"
+          },
+          {
+            "target": "b2",
+            "effect": "pulse",
+            "trigger": "piernas",
+            "amount": 0.4
+          },
+          {
+            "target": "yo_cabeza",
+            "effect": "sway",
+            "trigger": "piernas",
+            "origin": "bottom",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "headline": "*Cuéntanos*",
+      "narration": "Síguenos y las resolvemos. ¿Qué otro animal imposible quieres que expliquemos?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Qué otro *animal* quieres?",
+          "trigger": "Qué"
+        }
+      ]
+    }
+  ]
+}

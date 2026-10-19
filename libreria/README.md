@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · casa.py · frio.py · compra.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py · memoria.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · casa.py · frio.py · compra.py · reptiles.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py · memoria.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -220,6 +220,14 @@ Truco: para que el ala «se incline», dibújala a 0° y anímala con `move` `ro
 `tele_antigua(id_, cx, base, w, texto, patas)` (`_pantalla`) · `tira_pelicula(id_, x0, cy, [f(cx, cy, w, h)…], fw, fh, sep)` (fotogramas `_f<i>`, números `_n<i>`, cortes `_corte<i>` para draw; .puntos corte<i> = x) ·
 `edificio_cupula(id_, cx, base, w)` (universidad clásica con cúpula dorada) · `archivador(id_, cx, base, w, h, etiqueta=(l1, l2))` (`_carpeta`; .puntos carpeta/asa) · `birrete(id_, cx, cy, s)` (graduado; cy = base del gorro, pon `persona.puntos["cima"]` + 38*s)
 
+## objetos/reptiles.py (basilisco, pisada sobre el agua, revista científica, río en la selva)
+`basilisco(id_, cx, cy, s, pose="a|b", espejo, rot_)` (lagarto Jesucristo corriendo a dos patas, morro a la derecha; (cx, cy) = cadera, pie apoyado en cy+150*s;
+alterna pose a/b con hide/fade para que corra; `_cola`, `_cabeza`, `_ojos`, `_cresta`, `_brazos`, `_pata_apoyo`, `_pata_aire`; .puntos pie/cabeza/ojo/cola/agua) ·
+`pata_basilisco(id_, cx, cy, s, abiertos)` (planta con dedos en abanico y flecos de escamas `_flecos`; abiertos/plegados para hide/pop; .puntos dedos) ·
+`pie_lateral(id_, cx, cy, s, pierna, ang)` (pierna + pie de lado, (cx, cy) = planta) · `bolsa_aire(id_, cx, sup_y, w, h, cierre=0..1)` (cavidad de aire que se cierra) ·
+`salpicadura(id_, cx, cy, s)` (corona con gotas) · `agua_corte(x0, x1, sup_y, fondo_y)` (agua en corte, sin id) ·
+`revista(id_, cx, cy, w, h, titulo="nature", fecha, contenido)` (portada de revista científica) · fondo `selva_rio(W, H, agua_y)`.
+
 ## Lo que ya hace el motor Remotion (no se dibuja)
 - **Fondo**: azul `#2347FF` con cuadrícula milimetrada que se desplaza despacio + viñeteado (`Background.tsx`).
 - **Titular**: `headline` con `*palabra*` en bloque lima, y `number` grande al lado (`Headline.tsx`). 2-6 palabras.
@@ -259,3 +267,4 @@ lote8-03-gatos-caen: gato de perfil con giro por mitades (animales.py), oído in
 lote7-06-puerta-olvido (archivo/puerta-olvido/dib.py): memoria.py (puerta abierta/cerrada con placa, tijeras, caja, bocadillo con dibujo, humo, mando, sala pixelada, tele antigua, tira de película, universidad con cúpula, archivador y birrete).
 lote7-07-avion (archivo/avion/dib.py): aviones.py (jumbo, perfil de ala, líneas de corriente, signos de presión, cochecito, manzana, retrato de Newton, pista, aula).
 lote8-05-hipoteca (archivo/hipoteca/dib.py): dinero.py (banco, torres del BCE, bandera y estrellas UE, moneda, ficha de fórmula, recibo de hipoteca, palanca).
+lote8-07-basilisco (archivo/basilisco/dib.py): reptiles.py (basilisco, pata con flecos, pie lateral, bolsa de aire, salpicadura, agua en corte, revista y río en la selva).
