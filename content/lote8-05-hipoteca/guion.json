@@ -1,0 +1,1018 @@
+{
+  "topic": "¿Por qué tu hipoteca sube o baja? Euríbor más diferencial",
+  "categoria": "dinero",
+  "title": "¿Por qué tu hipoteca sube o baja? 🏠",
+  "source": "Fuentes: Banco de España (Portal del Cliente Bancario y notas del Euríbor) · BCE, tipos de interés oficiales · EMMI, administrador del Euríbor · BBVA y Bankinter, guías del Euríbor · HelpMyCash",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Por qué tu hipoteca *sube o baja*?",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-24T21:00:00+02:00",
+    "caption": "¿Por qué tu hipoteca sube o baja? Si es variable, tu interés es Euríbor más diferencial. El Euríbor es el interés al que se prestan dinero los bancos europeos a un año y sigue los tipos del BCE; el diferencial lo pactas con tu banco y no cambia. Cada 6 o 12 meses el banco recalcula tu cuota con el último Euríbor. Ejemplo inventado: 150.000 € a 25 años, con el Euríbor del 2 % al 3 % la cuota pasa de unos 710 € a unos 790 € (Banco de España; BCE; BBVA; Bankinter). ¿Tu hipoteca es fija o variable?",
+    "description": "¿Por qué tu hipoteca sube o baja? Si tienes una hipoteca variable, tu tipo de interés tiene dos piezas: el Euríbor más un diferencial. El diferencial es el margen que pactas con tu banco al firmar y no cambia. El Euríbor es el tipo de interés al que se prestan dinero los bancos europeos; para las hipotecas se usa el plazo de doce meses. Se mueve siguiendo los tipos del Banco Central Europeo, que los sube para frenar la inflación y los baja para animar la economía. En la fecha de revisión del contrato, normalmente cada seis o doce meses, el banco toma el último Euríbor mensual publicado y recalcula tu cuota. Ejemplo inventado con cifras redondas, no es un consejo financiero: 150.000 € a 25 años con Euríbor más 1 %. Con el Euríbor al 2 % pagarías unos 710 € al mes; al 3 %, unos 790 €. Fuentes: Banco de España (Portal del Cliente Bancario); BCE; EMMI; BBVA; Bankinter; HelpMyCash. ¿Tu hipoteca es fija o variable?",
+    "hashtags": [
+      "hipoteca",
+      "euribor",
+      "dinero",
+      "finanzaspersonales"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Por qué *sube o baja*?",
+      "narration": "¿Por qué tu hipoteca sube un año y otro baja?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · La carta del banco",
+        "anims": [
+          {
+            "target": "c1",
+            "effect": "hide"
+          },
+          {
+            "target": "c2",
+            "effect": "hide"
+          },
+          {
+            "target": "fsube",
+            "effect": "hide"
+          },
+          {
+            "target": "fbaja",
+            "effect": "hide"
+          },
+          {
+            "target": "cal",
+            "effect": "hide"
+          },
+          {
+            "target": "lcada",
+            "effect": "hide"
+          },
+          {
+            "target": "feur",
+            "effect": "hide"
+          },
+          {
+            "target": "srecal",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "globo",
+            "effect": "pop",
+            "trigger": "Por",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "globo",
+            "effect": "float",
+            "trigger": "Por",
+            "amount": 0.3
+          },
+          {
+            "target": "recibo",
+            "effect": "slide-up",
+            "trigger": "hipoteca",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "casa",
+            "effect": "pop",
+            "trigger": "hipoteca",
+            "sfx": "pop"
+          },
+          {
+            "target": "lcasa",
+            "effect": "pop",
+            "trigger": "tu"
+          },
+          {
+            "target": "c0",
+            "effect": "hide",
+            "trigger": "sube"
+          },
+          {
+            "target": "c1",
+            "effect": "pop",
+            "trigger": "sube",
+            "sfx": "ding"
+          },
+          {
+            "target": "fsube",
+            "effect": "draw",
+            "trigger": "sube",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "año",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "otro",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "trigger": "otro",
+            "amount": 0.4
+          },
+          {
+            "target": "fsube",
+            "effect": "hide",
+            "trigger": "baja"
+          },
+          {
+            "target": "c1",
+            "effect": "hide",
+            "trigger": "baja"
+          },
+          {
+            "target": "c2",
+            "effect": "pop",
+            "trigger": "baja",
+            "sfx": "ding"
+          },
+          {
+            "target": "fbaja",
+            "effect": "draw",
+            "trigger": "baja",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "baja",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Dos *piezas*",
+      "narration": "Si es variable, tu interés tiene dos piezas: Euríbor más diferencial.",
+      "illustration": {
+        "svg_file": "formula_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 2 · La fórmula",
+        "anims": [
+          {
+            "target": "candado",
+            "effect": "hide"
+          },
+          {
+            "target": "nocambia",
+            "effect": "hide"
+          },
+          {
+            "target": "banco",
+            "effect": "hide"
+          },
+          {
+            "target": "fpacto",
+            "effect": "hide"
+          },
+          {
+            "target": "tu",
+            "effect": "breathe",
+            "phase": 0.4
+          },
+          {
+            "target": "tu_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "tu",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "lvar",
+            "effect": "pop",
+            "trigger": "variable",
+            "sfx": "pop"
+          },
+          {
+            "target": "lint",
+            "effect": "pop",
+            "trigger": "interés",
+            "sfx": "pop"
+          },
+          {
+            "target": "ltu",
+            "effect": "pop",
+            "trigger": "tu"
+          },
+          {
+            "target": "tu_brazo_der",
+            "effect": "move",
+            "trigger": "piezas",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "feur",
+            "effect": "slide-up",
+            "trigger": "Euríbor",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "fup",
+            "effect": "draw",
+            "trigger": "Euríbor",
+            "dur": 0.3
+          },
+          {
+            "target": "fdown",
+            "effect": "draw",
+            "trigger": "Euríbor",
+            "dur": 0.3
+          },
+          {
+            "target": "mas",
+            "effect": "pop",
+            "trigger": "más",
+            "sfx": "pop"
+          },
+          {
+            "target": "fdif",
+            "effect": "slide-up",
+            "trigger": "diferencial",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "feur",
+            "effect": "bob",
+            "trigger": "diferencial",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El diferencial: *fijo*",
+      "narration": "El diferencial lo pactas con tu banco: no cambia.",
+      "illustration": {
+        "svg_file": "formula_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 3 · El diferencial",
+        "anims": [
+          {
+            "target": "tu",
+            "effect": "breathe",
+            "phase": 0.4
+          },
+          {
+            "target": "tu_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "tu",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "feur",
+            "effect": "bob",
+            "amount": 0.3
+          },
+          {
+            "target": "fup",
+            "effect": "bob",
+            "amount": 0.3
+          },
+          {
+            "target": "fdown",
+            "effect": "bob",
+            "amount": 0.3,
+            "phase": 0.5
+          },
+          {
+            "target": "fdif",
+            "effect": "punch",
+            "trigger": "diferencial",
+            "amount": 0.25,
+            "sfx": "pop"
+          },
+          {
+            "target": "fpacto",
+            "effect": "draw",
+            "trigger": "pactas",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tu_brazo_der",
+            "effect": "wiggle",
+            "trigger": "pactas",
+            "origin": "bottom-left",
+            "amount": 0.7
+          },
+          {
+            "target": "banco",
+            "effect": "slide-left",
+            "trigger": "banco",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "candado",
+            "effect": "pop",
+            "trigger": "no",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "nocambia",
+            "effect": "pop",
+            "trigger": "cambia",
+            "sfx": "sello"
+          },
+          {
+            "target": "nocambia",
+            "effect": "punch",
+            "amount": 0.3,
+            "delay": 2.6
+          },
+          {
+            "target": "candado",
+            "effect": "shake",
+            "amount": 0.3,
+            "delay": 2.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "¿Qué es el *Euríbor*?",
+      "narration": "El Euríbor es el interés al que se prestan dinero los bancos europeos, a un año.",
+      "illustration": {
+        "svg_file": "bancos.svg",
+        "caption": "Fig. 4 · Bancos que se prestan",
+        "anims": [
+          {
+            "target": "fpresta",
+            "effect": "hide"
+          },
+          {
+            "target": "billete",
+            "effect": "hide"
+          },
+          {
+            "target": "ue",
+            "effect": "hide"
+          },
+          {
+            "target": "cal",
+            "effect": "hide"
+          },
+          {
+            "target": "lano",
+            "effect": "hide"
+          },
+          {
+            "target": "leur",
+            "effect": "pop",
+            "trigger": "Euríbor",
+            "sfx": "pop"
+          },
+          {
+            "target": "leur",
+            "effect": "punch",
+            "trigger": "interés",
+            "amount": 0.3
+          },
+          {
+            "target": "bA",
+            "effect": "punch",
+            "trigger": "prestan",
+            "amount": 0.15
+          },
+          {
+            "target": "fpresta",
+            "effect": "draw",
+            "trigger": "prestan",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "billete",
+            "effect": "pop",
+            "trigger": "dinero",
+            "sfx": "pop"
+          },
+          {
+            "target": "billete",
+            "effect": "move",
+            "trigger": "bancos",
+            "to": [
+              340,
+              40
+            ],
+            "dur": 0.7,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bB",
+            "effect": "punch",
+            "trigger": "europeos",
+            "amount": 0.15
+          },
+          {
+            "target": "ue",
+            "effect": "pop",
+            "trigger": "europeos",
+            "sfx": "brillo"
+          },
+          {
+            "target": "cal",
+            "effect": "pop",
+            "trigger": "un",
+            "sfx": "pop"
+          },
+          {
+            "target": "lano",
+            "effect": "pop",
+            "trigger": "año",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Lo mueve el *BCE*",
+      "narration": "Y sigue al Banco Central Europeo: sube tipos para frenar la inflación y los baja para animar la economía.",
+      "illustration": {
+        "svg_file": "bce.svg",
+        "caption": "Fig. 5 · El Banco Central Europeo",
+        "anims": [
+          {
+            "target": "tB",
+            "effect": "hide"
+          },
+          {
+            "target": "lsube",
+            "effect": "hide"
+          },
+          {
+            "target": "lbaja",
+            "effect": "hide"
+          },
+          {
+            "target": "chis",
+            "effect": "hide"
+          },
+          {
+            "target": "b0",
+            "effect": "hide"
+          },
+          {
+            "target": "b1",
+            "effect": "hide"
+          },
+          {
+            "target": "b2",
+            "effect": "hide"
+          },
+          {
+            "target": "leco",
+            "effect": "hide"
+          },
+          {
+            "target": "lsigue",
+            "effect": "hide"
+          },
+          {
+            "target": "torre_luces",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "lsigue",
+            "effect": "pop",
+            "trigger": "sigue",
+            "sfx": "pop"
+          },
+          {
+            "target": "torre",
+            "effect": "punch",
+            "trigger": "Banco",
+            "amount": 0.15
+          },
+          {
+            "target": "lbce",
+            "effect": "pop",
+            "trigger": "Central",
+            "sfx": "ding"
+          },
+          {
+            "target": "pal_mango",
+            "effect": "move",
+            "trigger": "sube",
+            "rotate": 25,
+            "origin": "bottom",
+            "dur": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "lsube",
+            "effect": "pop",
+            "trigger": "tipos",
+            "sfx": "pop"
+          },
+          {
+            "target": "tA",
+            "effect": "shake",
+            "trigger": "frenar",
+            "amount": 0.4
+          },
+          {
+            "target": "tA",
+            "effect": "hide",
+            "trigger": "inflación"
+          },
+          {
+            "target": "tB",
+            "effect": "fade",
+            "trigger": "inflación",
+            "dur": 0.3,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lsube",
+            "effect": "hide",
+            "trigger": "baja"
+          },
+          {
+            "target": "lbaja",
+            "effect": "pop",
+            "trigger": "baja",
+            "sfx": "pop"
+          },
+          {
+            "target": "pal_mango",
+            "effect": "move",
+            "trigger": "baja",
+            "rotate": -50,
+            "origin": "bottom",
+            "dur": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "b0",
+            "effect": "grow",
+            "trigger": "animar",
+            "dur": 0.4,
+            "origin": "bottom",
+            "sfx": "pop"
+          },
+          {
+            "target": "b1",
+            "effect": "grow",
+            "trigger": "animar",
+            "delay": 0.2,
+            "dur": 0.4,
+            "origin": "bottom"
+          },
+          {
+            "target": "b2",
+            "effect": "grow",
+            "trigger": "economía",
+            "dur": 0.4,
+            "origin": "bottom",
+            "sfx": "pop"
+          },
+          {
+            "target": "leco",
+            "effect": "pop",
+            "trigger": "economía",
+            "sfx": "ding"
+          },
+          {
+            "target": "chis",
+            "effect": "pop",
+            "trigger": "economía"
+          },
+          {
+            "target": "chis",
+            "effect": "spin",
+            "trigger": "economía",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Se *revisa*",
+      "narration": "Cada seis o doce meses, el banco recalcula tu cuota con el último Euríbor.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 6 · La revisión",
+        "anims": [
+          {
+            "target": "globo",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "casa",
+            "effect": "hide"
+          },
+          {
+            "target": "lcasa",
+            "effect": "hide"
+          },
+          {
+            "target": "c1",
+            "effect": "hide"
+          },
+          {
+            "target": "c2",
+            "effect": "hide"
+          },
+          {
+            "target": "fsube",
+            "effect": "hide"
+          },
+          {
+            "target": "fbaja",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.5
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2
+          },
+          {
+            "target": "cal",
+            "effect": "pop",
+            "trigger": "Cada",
+            "sfx": "pop"
+          },
+          {
+            "target": "lcada",
+            "effect": "pop",
+            "trigger": "seis",
+            "sfx": "pop"
+          },
+          {
+            "target": "cal",
+            "effect": "punch",
+            "trigger": "doce",
+            "amount": 0.3
+          },
+          {
+            "target": "recibo",
+            "effect": "punch",
+            "trigger": "banco",
+            "amount": 0.1
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "recalcula",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "feur",
+            "effect": "pop",
+            "trigger": "último",
+            "sfx": "ding"
+          },
+          {
+            "target": "feur",
+            "effect": "float",
+            "trigger": "Euríbor",
+            "amount": 0.3
+          },
+          {
+            "target": "c0",
+            "effect": "hide",
+            "trigger": "recalcula"
+          },
+          {
+            "target": "c1",
+            "effect": "pop",
+            "trigger": "recalcula",
+            "sfx": "ding"
+          },
+          {
+            "target": "srecal",
+            "effect": "pop",
+            "trigger": "cuota",
+            "sfx": "sello"
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "cuota",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Un *ejemplo*",
+      "narration": "Ejemplo inventado: ciento cincuenta mil euros, veinticinco años, Euríbor más uno por ciento.",
+      "illustration": {
+        "svg_file": "ejemplo.svg",
+        "caption": "Fig. 7 · Ejemplo inventado",
+        "anims": [
+          {
+            "target": "e3",
+            "effect": "hide"
+          },
+          {
+            "target": "e2",
+            "effect": "hide"
+          },
+          {
+            "target": "c710",
+            "effect": "hide"
+          },
+          {
+            "target": "c790",
+            "effect": "hide"
+          },
+          {
+            "target": "lmas80",
+            "effect": "hide"
+          },
+          {
+            "target": "fup",
+            "effect": "hide"
+          },
+          {
+            "target": "igual",
+            "effect": "hide"
+          },
+          {
+            "target": "mas1",
+            "effect": "hide"
+          },
+          {
+            "target": "dif",
+            "effect": "hide"
+          },
+          {
+            "target": "casa",
+            "effect": "bob",
+            "amount": 0.2
+          },
+          {
+            "target": "inventado",
+            "effect": "pop",
+            "trigger": "inventado",
+            "sfx": "sello"
+          },
+          {
+            "target": "l150",
+            "effect": "pop",
+            "trigger": "ciento",
+            "sfx": "pop"
+          },
+          {
+            "target": "l150",
+            "effect": "punch",
+            "trigger": "euros",
+            "amount": 0.3
+          },
+          {
+            "target": "cal",
+            "effect": "pop",
+            "trigger": "veinticinco",
+            "sfx": "pop"
+          },
+          {
+            "target": "e2",
+            "effect": "slide-up",
+            "trigger": "Euríbor",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mas1",
+            "effect": "pop",
+            "trigger": "más"
+          },
+          {
+            "target": "dif",
+            "effect": "slide-up",
+            "trigger": "uno",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "dif",
+            "effect": "punch",
+            "trigger": "por",
+            "amount": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Un punto más: *+80 €*",
+      "narration": "Con el Euríbor al dos, pagas unos setecientos diez al mes. Al tres, unos setecientos noventa.",
+      "illustration": {
+        "svg_file": "ejemplo.svg",
+        "caption": "Fig. 8 · Sube un punto",
+        "anims": [
+          {
+            "target": "e3",
+            "effect": "hide"
+          },
+          {
+            "target": "c710",
+            "effect": "hide"
+          },
+          {
+            "target": "c790",
+            "effect": "hide"
+          },
+          {
+            "target": "lmas80",
+            "effect": "hide"
+          },
+          {
+            "target": "fup",
+            "effect": "hide"
+          },
+          {
+            "target": "igual",
+            "effect": "hide"
+          },
+          {
+            "target": "casa",
+            "effect": "bob",
+            "amount": 0.2
+          },
+          {
+            "target": "e2",
+            "effect": "punch",
+            "trigger": "dos",
+            "amount": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "igual",
+            "effect": "pop",
+            "trigger": "pagas"
+          },
+          {
+            "target": "c710",
+            "effect": "pop",
+            "trigger": "setecientos",
+            "sfx": "ding"
+          },
+          {
+            "target": "c710",
+            "effect": "pulse",
+            "trigger": "mes",
+            "amount": 0.3
+          },
+          {
+            "target": "e2",
+            "effect": "hide",
+            "trigger": "tres"
+          },
+          {
+            "target": "e3",
+            "effect": "pop",
+            "trigger": "tres",
+            "sfx": "pop"
+          },
+          {
+            "target": "fup",
+            "effect": "draw",
+            "trigger": "Al",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "c710",
+            "effect": "hide",
+            "trigger": "noventa"
+          },
+          {
+            "target": "c790",
+            "effect": "pop",
+            "trigger": "noventa",
+            "sfx": "ding"
+          },
+          {
+            "target": "lmas80",
+            "effect": "pop",
+            "trigger": "noventa",
+            "delay": 0.4,
+            "sfx": "sorpresa"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "¿Fija o *variable*?",
+      "narration": "Síguenos y las resolvemos. ¿Tu hipoteca es fija o variable?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Tu hipoteca es *fija* o *variable*?",
+          "trigger": "Tu"
+        }
+      ]
+    }
+  ]
+}

@@ -204,6 +204,9 @@ Truco: regla o barra que se alarga en horizontal = grupo dibujado en vertical de
 `retrato_newton(id_, cx, cy, s)` (marco ovalado con placa; persona en `{id}_p`) · `pista_despegue(id_, W, H, horizonte)` (pista en perspectiva, `_marcas`) · fondo `aula(W, H, suelo_y)`.
 Truco: para que el ala «se incline», dibújala a 0° y anímala con `move` `rotate` (origin center); las líneas de corriente se calculan con otro `perfil_ala` ya inclinado.
 
+## objetos/dinero.py (hipotecas, bancos, BCE)
+`banco(id_, cx, base, w, rotulo, col_friso, euro, ue)` (fachada clásica con columnas y frontón con € o estrellas UE; `_puerta`; .puntos puerta/rotulo/cima/izq/der) · `torre_bce(id_, cx, base, h, rotulo)` (torres de cristal del BCE, `_luces` pulse) · `estrellas_ue(id_, cx, cy, r)` · `bandera_ue(id_, cx, cy, w, h)` · `moneda_euro(id_, cx, cy, r)` · `ficha(id_, cx, cy, w, h, titulo, sub, col, fg)` (bloque grueso para fórmulas: «EURÍBOR» + «DIFERENCIAL») · `recibo_hipoteca(id_, cx, cy, w, h, titulo, banco_txt, concepto)` (carta del banco con casilla vacía en .puntos["cifra"] para cifras con hide/pop) · `palanca(id_, cx, base, h, texto)` (mando con `_mango`: move rotate ±25 origin bottom).
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -255,3 +258,4 @@ lote8-04-agua-caliente (archivo/agua-caliente/dib.py): frio.py (congelador, cuen
 lote8-03-gatos-caen: gato de perfil con giro por mitades (animales.py), oído interno (cuerpo.py), nivel de burbuja y red de ventana (casa.py).
 lote7-06-puerta-olvido (archivo/puerta-olvido/dib.py): memoria.py (puerta abierta/cerrada con placa, tijeras, caja, bocadillo con dibujo, humo, mando, sala pixelada, tele antigua, tira de película, universidad con cúpula, archivador y birrete).
 lote7-07-avion (archivo/avion/dib.py): aviones.py (jumbo, perfil de ala, líneas de corriente, signos de presión, cochecito, manzana, retrato de Newton, pista, aula).
+lote8-05-hipoteca (archivo/hipoteca/dib.py): dinero.py (banco, torres del BCE, bandera y estrellas UE, moneda, ficha de fórmula, recibo de hipoteca, palanca).
