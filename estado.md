@@ -16,11 +16,6 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-10-18 14:00 | ¿Por qué te crujen los nudillos? (42,2 s) | content/lote7-11-nudillos | sí | sí | sí | no | previews/lote7-11-nudillos-con-voz.mp4 |
 | 2026-10-19 14:00 | Te ha tocado mesa electoral el 29 N: ¿te puedes librar? (46,9 s) | content/lote7-12-mesa-electoral | sí | sí | sí | no | previews/lote7-12-mesa-electoral-con-voz.mp4 |
 | 2026-10-20 14:00 | ¿Por qué bostezar se contagia? (piloto sistema nuevo) | content/lote7-03-bostezo | sí | sí | pendiente | no | previews/lote7-03-bostezo-con-voz.mp4 |
-| 2026-10-21 14:00 | ¿Por qué la leche está al fondo del súper? |  | no | no | no | no | |
-| 2026-10-22 14:00 | ¿Por qué te pica una picadura y rascarte lo empeora? |  | no | no | no | no | |
-| 2026-10-23 14:00 | ¿Por qué entras en una habitación y olvidas a qué ibas? |  | no | no | no | no | |
-| 2026-10-24 14:00 | ¿Cómo vuela un avión de 400 toneladas? |  | no | no | no | no | |
-| 2026-10-25 14:00 | (tema de pilares) |  | no | no | no | no | |
 | 2026-10-26 14:00 | Esa sacudida al dormirte: ¿por qué sientes que caes? |  | no | no | no | no | |
 | 2026-10-27 14:00 | ¿Por qué se te duerme la pierna? |  | no | no | no | no | |
 | 2026-10-28 14:00 | Pack ahorro que sale más caro: mira el precio por kilo |  | no | no | no | no | |
@@ -41,23 +36,24 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 ### Semana 20-25 oct (lanzada el 18-oct, 3 tandas)
 | Fecha | Tema | Carpeta | Guion | Montado | Programado | Publicado | Vídeo |
 |---|---|---|---|---|---|---|---|
-| 2026-10-20 21:00 | ¿Por qué tu móvil va más lento con los años? (extra) | content/lote8-01-movil-lento | en curso | no | no | no | |
-| 2026-10-21 14:00 | ¿Por qué la leche está al fondo del súper? | content/lote7-04-leche-fondo | sí | en curso | no | no | |
-| 2026-10-21 21:00 | ¿Por qué un voto en Soria pesa más que uno en Madrid? (extra) | content/lote8-02-voto-soria | en curso | no | no | no | |
-| 2026-10-22 14:00 | ¿Por qué te pica una picadura? | content/lote7-05-picadura | sí | en curso | no | no | |
-| 2026-10-22 21:00 | ¿Por qué los gatos caen de pie? (extra) | content/lote8-03-gatos-caen | no | no | no | no | |
-| 2026-10-23 14:00 | ¿Por qué olvidas a qué ibas al entrar en una habitación? | content/lote7-06-puerta-olvido | sí | no | no | no | |
-| 2026-10-23 21:00 | ¿El agua caliente se congela antes que la fría? (extra) | content/lote8-04-agua-caliente | no | no | no | no | |
-| 2026-10-24 14:00 | ¿Cómo vuela un avión de 400 toneladas? | content/lote7-07-avion | sí | no | no | no | |
-| 2026-10-24 21:00 | ¿Por qué tu hipoteca sube o baja? (extra) | content/lote8-05-hipoteca | no | no | no | no | |
-| 2026-10-25 14:00 | ¿Y si nadie gana el 29 N? Así funciona la investidura | content/lote8-06-investidura | no | no | no | no | |
-| 2026-10-25 21:00 | El basilisco corre sobre el agua (extra) | content/lote8-07-basilisco | no | no | no | no | |
+| 2026-10-20 21:00 | ¿Por qué tu móvil va más lento con los años? (extra) | content/lote8-01-movil-lento | sí | sí | sí | no | previews/lote8-01-movil-lento-con-voz.mp4 (46,7 s) |
+| 2026-10-21 14:00 | ¿Por qué la leche está al fondo del súper? | content/lote7-04-leche-fondo | sí | sí | sí | no | previews/lote7-04-leche-fondo-con-voz.mp4 (46,1 s) |
+| 2026-10-21 21:00 | ¿Por qué un voto en Soria pesa más que uno en Madrid? (extra) | content/lote8-02-voto-soria | sí | sí | sí | no | previews/lote8-02-voto-soria-con-voz.mp4 (49,5 s) |
+| 2026-10-22 14:00 | ¿Por qué te pica una picadura? | content/lote7-05-picadura | sí | sí | sí | no | previews/lote7-05-picadura-con-voz.mp4 (48,3 s) |
+| 2026-10-22 21:00 | ¿Por qué los gatos caen de pie? (extra) | content/lote8-03-gatos-caen | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-03-gatos-caen-con-voz.mp4 (43,7 s) |
+| 2026-10-23 14:00 | ¿Por qué olvidas a qué ibas al entrar en una habitación? | content/lote7-06-puerta-olvido | sí | sí | sí | no | previews/lote7-06-puerta-olvido-con-voz.mp4 (45,1 s) |
+| 2026-10-23 21:00 | ¿El agua caliente se congela antes que la fría? (extra) | content/lote8-04-agua-caliente | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-04-agua-caliente-con-voz.mp4 (49,1 s) |
+| 2026-10-24 14:00 | ¿Cómo vuela un avión de 400 toneladas? | content/lote7-07-avion | sí | sí | pendiente (cola de Buffer) | no | previews/lote7-07-avion-con-voz.mp4 |
+| 2026-10-24 21:00 | ¿Por qué tu hipoteca sube o baja? (extra) | content/lote8-05-hipoteca | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-05-hipoteca-con-voz.mp4 |
+| 2026-10-25 14:00 | ¿Y si nadie gana el 29 N? Así funciona la investidura | content/lote8-06-investidura | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-06-investidura-con-voz.mp4 |
+| 2026-10-25 21:00 | El basilisco corre sobre el agua (extra) | content/lote8-07-basilisco | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-07-basilisco-con-voz.mp4 |
 
 ## Coste por fase (tokens de subagente, aprox.)
 | Fecha | Fase | Coste |
 |---|---|---|
 | 2026-10-16 | Librería (una vez) | 360.000 |
 | 2026-10-16 | Guiones semana 20-24 oct (5 vídeos) | 100.000 |
+| 2026-10-19 | Semana 20-25 oct: 11 vídeos (4 montajes de guion ≈ 180-217k c/u; 7 guion+montaje ≈ 160-195k c/u) | ≈ 2.010.000 |
 | 2026-10-17 | Nudillos (guion + montaje + 5 piezas) | 188.000 |
 | 2026-10-18 | Mesa electoral (guion + montaje + 7 piezas) | 110.000 |
 | 2026-10-16 | Montaje Tesla Roadster (guion + montaje + 10 piezas) | 190.000 |

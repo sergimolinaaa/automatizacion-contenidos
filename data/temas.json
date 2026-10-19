@@ -57,7 +57,8 @@
   {
     "tema": "El basilisco corre sobre el agua",
     "categoria": "animales",
-    "pista": "golpea muy rápido con patas grandes; crea bolsas de aire; saca la pata antes de que se cierren"
+    "pista": "golpea muy rápido con patas grandes; crea bolsas de aire; saca la pata antes de que se cierren",
+    "hecho": true
   },
   {
     "tema": "El pulpo cambia de color en un instante",
@@ -128,7 +129,8 @@
   {
     "tema": "Los gatos casi siempre caen de pie",
     "categoria": "animales",
-    "pista": "reflejo de enderezamiento: giran primero la parte delantera y luego la trasera"
+    "pista": "reflejo de enderezamiento: giran primero la parte delantera y luego la trasera",
+    "hecho": true
   },
   {
     "tema": "El perro se seca sacudiéndose en segundos",
@@ -311,7 +313,8 @@
   {
     "tema": "Por qué un voto en Soria pesa más que uno en Madrid",
     "categoria": "politica",
-    "pista": "LOREG art. 162: 350 diputados, mínimo 2 por provincia (Ceuta y Melilla 1) y el resto según población; calcular votantes por escaño con datos oficiales del INE/Ministerio del Interior. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido."
+    "pista": "LOREG art. 162: 350 diputados, mínimo 2 por provincia (Ceuta y Melilla 1) y el resto según población; calcular votantes por escaño con datos oficiales del INE/Ministerio del Interior. Fuentes oficiales (BOE/LOREG/Constitución). Neutral: explicar la regla, sin opinar ni favorecer a ningún partido.",
+    "hecho": true
   },
   {
     "tema": "Cómo puede el Congreso tumbar una ley que ya está en vigor: el decreto ley",
@@ -379,7 +382,8 @@
     "tema": "¿Y si nadie gana el 29-N? Así funciona la investidura",
     "categoria": "politica",
     "prioridad": true,
-    "pista": "Gancho: «Gana uno y gobierna otro: ¿cómo puede pasar?». Constitución art. 99: el Rey propone candidato, mayoría absoluta en 1ª votación, simple en 2ª (48 h); si en 2 meses no hay presidente, nuevas elecciones. Sin nombres de partidos reales. Generales del 29-N (RD 806/2026, BOE 6-10-2026): verifica fechas y cifras el mismo día con fuentes oficiales (JEC, BOE, LOREG, Correos, INE). Neutral: solo el mecanismo, partidos ficticios de colores, «Sin posicionarnos»."
+    "pista": "Gancho: «Gana uno y gobierna otro: ¿cómo puede pasar?». Constitución art. 99: el Rey propone candidato, mayoría absoluta en 1ª votación, simple en 2ª (48 h); si en 2 meses no hay presidente, nuevas elecciones. Sin nombres de partidos reales. Generales del 29-N (RD 806/2026, BOE 6-10-2026): verifica fechas y cifras el mismo día con fuentes oficiales (JEC, BOE, LOREG, Correos, INE). Neutral: solo el mecanismo, partidos ficticios de colores, «Sin posicionarnos».",
+    "hecho": true
   },
   {
     "tema": "Cómo se cuentan 25 millones de votos en una noche",
@@ -436,12 +440,14 @@
   {
     "tema": "¿El agua caliente se congela antes que la fría?",
     "categoria": "bulos",
-    "pista": "Efecto Mpemba: observado a veces, sigue en debate; depende de evaporación, convección y recipiente."
+    "pista": "Efecto Mpemba: observado a veces, sigue en debate; depende de evaporación, convección y recipiente.",
+    "hecho": true
   },
   {
     "tema": "Por qué el móvil va más lento con los años",
     "categoria": "moviles",
-    "pista": "Batería que envejece y limita picos de potencia, apps más pesadas, almacenamiento lleno (verificar)."
+    "pista": "Batería que envejece y limita picos de potencia, apps más pesadas, almacenamiento lleno (verificar).",
+    "hecho": true
   },
   {
     "tema": "Por qué cargar el móvil al 100 % no es lo ideal",
@@ -451,6 +457,7 @@
   {
     "tema": "El truco de los tipos de interés: por qué tu hipoteca sube o baja",
     "categoria": "dinero",
-    "pista": "Euríbor: lo que se prestan los bancos entre sí; tu cuota = euríbor + diferencial. Comparaciones cotidianas."
+    "pista": "Euríbor: lo que se prestan los bancos entre sí; tu cuota = euríbor + diferencial. Comparaciones cotidianas.",
+    "hecho": true
   }
 ]
