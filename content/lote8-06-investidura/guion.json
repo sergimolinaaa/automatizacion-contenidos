@@ -1,0 +1,839 @@
+{
+  "topic": "¿Y si nadie gana el 29 N? Así funciona la investidura (Constitución, art. 99)",
+  "categoria": "politica",
+  "title": "¿Y si nadie gana el 29 N? Así funciona la investidura",
+  "source": "Fuentes: Constitución Española, art. 99 (BOE) · Congreso de los Diputados, Reglamento, arts. 170 a 172 · Real Decreto 184/2016 y Real Decreto 551/2019 de disolución de las Cortes (BOE)",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Y si *nadie* gana?",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-25T14:00:00+01:00",
+    "caption": "¿Y si nadie gana el 29 N? 🗳️ El Rey consulta a los grupos y propone un candidato. Primera votación: hacen falta 176 síes de 350. Si no, 48 horas después basta con más síes que noes. Y si en dos meses desde la primera votación nadie lo logra, se disuelven las Cortes y hay nuevas elecciones, como en 2016 y 2019 (Constitución, art. 99). Sin posicionarnos, solo la Constitución. ¿Conocías la regla de los dos meses?",
+    "description": "¿Y si nadie gana el 29 N? Así funciona la investidura según el artículo 99 de la Constitución. Tras las elecciones, el Rey consulta a los representantes de los grupos con escaño y, a través de la presidencia del Congreso, propone un candidato. En la primera votación necesita mayoría absoluta: 176 votos a favor de 350. Si no la logra, 48 horas después se vota otra vez y basta la mayoría simple: más síes que noes, sin contar las abstenciones. Si tampoco sale, se pueden proponer más candidatos, y si pasados dos meses desde la primera votación nadie consigue la confianza del Congreso, el Rey disuelve las Cortes y se convocan nuevas elecciones. Pasó en 2016 (Real Decreto 184/2016, elecciones del 26 de junio) y en 2019 (Real Decreto 551/2019, elecciones del 10 de noviembre). Te lo contamos sin posicionarnos, solo con lo que marca la Constitución. Fuentes: Constitución Española (BOE), Reglamento del Congreso, Congreso de los Diputados y BOE. ¿Conocías la regla de los dos meses?",
+    "hashtags": [
+      "investidura",
+      "elecciones",
+      "29N",
+      "constitucion"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Y si nadie *gana*?",
+      "narration": "¿Y si el veintinueve de noviembre nadie saca mayoría? ¿Quién gobierna?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · El día después",
+        "anims": [
+          {
+            "target": "ana_d",
+            "effect": "hide"
+          },
+          {
+            "target": "globo",
+            "effect": "hide"
+          },
+          {
+            "target": "mix",
+            "effect": "hide"
+          },
+          {
+            "target": "ana_n",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "ana_n_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana_n",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.2
+          },
+          {
+            "target": "ana_n_cabeza",
+            "effect": "sway",
+            "trigger": "Y",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "ana_n_brazo_der",
+            "effect": "move",
+            "trigger": "veintinueve",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "cal",
+            "effect": "pop",
+            "trigger": "veintinueve",
+            "sfx": "ding"
+          },
+          {
+            "target": "cal",
+            "effect": "punch",
+            "trigger": "noviembre",
+            "amount": 0.3
+          },
+          {
+            "target": "hemi",
+            "effect": "slide-up",
+            "trigger": "nadie",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tmay",
+            "effect": "pop",
+            "trigger": "mayoría",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "mayoría",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "ana_n",
+            "effect": "hide",
+            "trigger": "Quién"
+          },
+          {
+            "target": "ana_d",
+            "effect": "fade",
+            "trigger": "Quién",
+            "dur": 0.15
+          },
+          {
+            "target": "ana_d",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "ana_d_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana_d",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.2
+          },
+          {
+            "target": "ana_d_cabeza",
+            "effect": "sway",
+            "trigger": "gobierna",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "globo",
+            "effect": "pop",
+            "trigger": "Quién",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "globo",
+            "effect": "float",
+            "amount": 0.4
+          },
+          {
+            "target": "duda",
+            "effect": "pulse",
+            "trigger": "gobierna",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Solo la *Constitución*",
+      "narration": "Te lo contamos sin posicionarnos, solo con lo que marca la Constitución.",
+      "illustration": {
+        "svg_file": "ley_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 2 · Constitución, art. 99",
+        "anims": [
+          {
+            "target": "doc",
+            "effect": "pop",
+            "trigger": "Te",
+            "sfx": "papel"
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "posicionarnos",
+            "sfx": "sello"
+          },
+          {
+            "target": "sello",
+            "effect": "punch",
+            "trigger": "posicionarnos",
+            "amount": 0.5
+          },
+          {
+            "target": "ban",
+            "effect": "slide-left",
+            "trigger": "solo",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ban",
+            "effect": "sway",
+            "origin": "left",
+            "amount": 0.4
+          },
+          {
+            "target": "tcomo",
+            "effect": "pop",
+            "trigger": "marca",
+            "sfx": "pop"
+          },
+          {
+            "target": "chisp",
+            "effect": "pop",
+            "trigger": "Constitución"
+          },
+          {
+            "target": "doc",
+            "effect": "punch",
+            "trigger": "Constitución",
+            "amount": 0.15
+          },
+          {
+            "target": "chisp",
+            "effect": "pulse",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El Rey *consulta*",
+      "narration": "Primero, el Rey consulta a los grupos del Congreso y propone un candidato.",
+      "illustration": {
+        "svg_file": "consultas.svg",
+        "caption": "Fig. 3 · Art. 99.1",
+        "anims": [
+          {
+            "target": "rey",
+            "effect": "breathe",
+            "phase": 0.1
+          },
+          {
+            "target": "rey_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "rey",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.1
+          },
+          {
+            "target": "rey_cabeza",
+            "effect": "sway",
+            "trigger": "consulta",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "rey_brazo_der",
+            "effect": "move",
+            "trigger": "propone",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "cor",
+            "effect": "pop",
+            "trigger": "Rey",
+            "sfx": "brillo"
+          },
+          {
+            "target": "cor_joyas",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "trey",
+            "effect": "pop",
+            "trigger": "Rey",
+            "sfx": "pop"
+          },
+          {
+            "target": "rep0",
+            "effect": "slide-left",
+            "trigger": "grupos",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rep1",
+            "effect": "slide-left",
+            "trigger": "grupos",
+            "dur": 0.55
+          },
+          {
+            "target": "rep2",
+            "effect": "slide-left",
+            "trigger": "Congreso",
+            "dur": 0.4
+          },
+          {
+            "target": "tgrup",
+            "effect": "pop",
+            "trigger": "Congreso",
+            "sfx": "pop"
+          },
+          {
+            "target": "fcand",
+            "effect": "draw",
+            "trigger": "propone",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "cand",
+            "effect": "pop",
+            "trigger": "candidato",
+            "sfx": "ding"
+          },
+          {
+            "target": "cand",
+            "effect": "punch",
+            "trigger": "candidato",
+            "amount": 0.3
+          },
+          {
+            "target": "r0",
+            "effect": "breathe",
+            "phase": 0.3
+          },
+          {
+            "target": "r0_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "r1",
+            "effect": "breathe",
+            "phase": 0.6
+          },
+          {
+            "target": "r1_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "r2",
+            "effect": "breathe",
+            "phase": 0.9
+          },
+          {
+            "target": "r2_ojos",
+            "effect": "blink"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*176* de 350",
+      "narration": "En la primera votación necesita mayoría absoluta: ciento setenta y seis síes de trescientos cincuenta.",
+      "illustration": {
+        "svg_file": "votacion1.svg",
+        "caption": "Fig. 4 · Art. 99.3",
+        "anims": [
+          {
+            "target": "t1v",
+            "effect": "pop",
+            "trigger": "primera",
+            "sfx": "pop"
+          },
+          {
+            "target": "hemi",
+            "effect": "pulse",
+            "trigger": "votación",
+            "amount": 0.15
+          },
+          {
+            "target": "tabs",
+            "effect": "pop",
+            "trigger": "mayoría",
+            "sfx": "pop"
+          },
+          {
+            "target": "si0",
+            "effect": "pop",
+            "trigger": "absoluta",
+            "sfx": "pop"
+          },
+          {
+            "target": "si1",
+            "effect": "pop",
+            "trigger": "ciento"
+          },
+          {
+            "target": "si2",
+            "effect": "pop",
+            "trigger": "setenta"
+          },
+          {
+            "target": "si3",
+            "effect": "pop",
+            "trigger": "seis",
+            "sfx": "ding"
+          },
+          {
+            "target": "c176",
+            "effect": "pop",
+            "trigger": "ciento",
+            "sfx": "ding"
+          },
+          {
+            "target": "c176",
+            "effect": "punch",
+            "trigger": "síes",
+            "amount": 0.3
+          },
+          {
+            "target": "fmit",
+            "effect": "draw",
+            "trigger": "seis",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tmit",
+            "effect": "pop",
+            "trigger": "síes"
+          },
+          {
+            "target": "tde",
+            "effect": "pop",
+            "trigger": "trescientos",
+            "sfx": "pop"
+          },
+          {
+            "target": "c176",
+            "effect": "pulse",
+            "trigger": "cincuenta",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "*48 horas* después",
+      "narration": "Si no llega, cuarenta y ocho horas después se vota otra vez.",
+      "illustration": {
+        "svg_file": "horas48_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 5 · Segunda votación",
+        "anims": [
+          {
+            "target": "rel",
+            "effect": "pop",
+            "trigger": "Si",
+            "sfx": "pop"
+          },
+          {
+            "target": "nolle",
+            "effect": "pop",
+            "trigger": "llega",
+            "sfx": "sello"
+          },
+          {
+            "target": "tnolle",
+            "effect": "pop",
+            "trigger": "llega"
+          },
+          {
+            "target": "rel_minutero",
+            "effect": "spin",
+            "trigger": "cuarenta",
+            "amount": 2.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "rel_horaria",
+            "effect": "spin",
+            "trigger": "horas",
+            "amount": 0.6,
+            "origin": "bottom"
+          },
+          {
+            "target": "c48",
+            "effect": "pop",
+            "trigger": "ocho",
+            "sfx": "ding"
+          },
+          {
+            "target": "c48",
+            "effect": "punch",
+            "trigger": "después",
+            "amount": 0.3
+          },
+          {
+            "target": "t2v",
+            "effect": "pop",
+            "trigger": "vota",
+            "sfx": "pop"
+          },
+          {
+            "target": "urna",
+            "effect": "slide-up",
+            "trigger": "vota",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "urna",
+            "effect": "punch",
+            "trigger": "vez",
+            "amount": 0.15
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "después",
+        "pose": "think",
+        "note": "Segunda oportunidad",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Más *sí* que no",
+      "narration": "Ahora basta con más síes que noes. Las abstenciones no cuentan.",
+      "illustration": {
+        "svg_file": "simple.svg",
+        "caption": "Fig. 6 · Mayoría simple",
+        "anims": [
+          {
+            "target": "bal_ti",
+            "effect": "hide"
+          },
+          {
+            "target": "tmas",
+            "effect": "pop",
+            "trigger": "basta",
+            "sfx": "pop"
+          },
+          {
+            "target": "bal_eq",
+            "effect": "hide",
+            "trigger": "síes"
+          },
+          {
+            "target": "bal_ti",
+            "effect": "fade",
+            "trigger": "síes",
+            "dur": 0.2,
+            "sfx": "boing"
+          },
+          {
+            "target": "bal_ti",
+            "effect": "punch",
+            "trigger": "noes",
+            "amount": 0.1
+          },
+          {
+            "target": "tsimp",
+            "effect": "pop",
+            "trigger": "noes",
+            "sfx": "pop"
+          },
+          {
+            "target": "abst",
+            "effect": "slide-left",
+            "trigger": "abstenciones",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "nocuenta",
+            "effect": "pop",
+            "trigger": "cuentan",
+            "sfx": "sello"
+          },
+          {
+            "target": "nocuenta",
+            "effect": "punch",
+            "trigger": "cuentan",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "*2 meses* de plazo",
+      "narration": "Si tampoco sale, puede haber más candidatos durante dos meses desde la primera votación.",
+      "illustration": {
+        "svg_file": "dosmeses.svg",
+        "caption": "Fig. 7 · Art. 99.4 y 99.5",
+        "anims": [
+          {
+            "target": "cal1",
+            "effect": "pop",
+            "trigger": "Si",
+            "sfx": "papel"
+          },
+          {
+            "target": "cand0",
+            "effect": "slide-up",
+            "trigger": "candidatos",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "cand1",
+            "effect": "slide-up",
+            "trigger": "candidatos",
+            "dur": 0.55
+          },
+          {
+            "target": "cand2",
+            "effect": "slide-up",
+            "trigger": "durante",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "fpl",
+            "effect": "draw",
+            "trigger": "dos",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "t2m",
+            "effect": "pop",
+            "trigger": "meses",
+            "sfx": "ding"
+          },
+          {
+            "target": "cal2",
+            "effect": "pop",
+            "trigger": "meses",
+            "sfx": "papel"
+          },
+          {
+            "target": "arena",
+            "effect": "pop",
+            "trigger": "durante"
+          },
+          {
+            "target": "arena_abajo",
+            "effect": "grow",
+            "trigger": "dos",
+            "dur": 2.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "arena_chorro",
+            "effect": "pulse",
+            "amount": 0.6
+          },
+          {
+            "target": "tdesde",
+            "effect": "pop",
+            "trigger": "primera",
+            "sfx": "pop"
+          },
+          {
+            "target": "cal1",
+            "effect": "punch",
+            "trigger": "votación",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Nuevas *elecciones*",
+      "narration": "Si nadie lo consigue, se disuelven las Cortes y toca votar otra vez. Pasó en dos mil dieciséis y en dos mil diecinueve.",
+      "illustration": {
+        "svg_file": "disolucion_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · Art. 99.5",
+        "anims": [
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.4
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.4
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "Pasó",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "votar",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "hemi",
+            "effect": "shake",
+            "trigger": "nadie",
+            "amount": 0.4
+          },
+          {
+            "target": "tcortes",
+            "effect": "pop",
+            "trigger": "Cortes",
+            "sfx": "pop"
+          },
+          {
+            "target": "disu",
+            "effect": "pop",
+            "trigger": "disuelven",
+            "sfx": "sello"
+          },
+          {
+            "target": "disu",
+            "effect": "punch",
+            "trigger": "disuelven",
+            "amount": 0.5
+          },
+          {
+            "target": "urna",
+            "effect": "slide-up",
+            "trigger": "toca",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sobre",
+            "effect": "pop",
+            "trigger": "votar",
+            "sfx": "papel"
+          },
+          {
+            "target": "sobre",
+            "effect": "move",
+            "trigger": "otra",
+            "to": [
+              0,
+              120
+            ],
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sobre",
+            "effect": "hide",
+            "trigger": "Pasó"
+          },
+          {
+            "target": "totra",
+            "effect": "pop",
+            "trigger": "vez",
+            "sfx": "pop"
+          },
+          {
+            "target": "t16",
+            "effect": "pop",
+            "trigger": "dieciséis",
+            "sfx": "ding"
+          },
+          {
+            "target": "t16",
+            "effect": "punch",
+            "trigger": "y",
+            "amount": 0.2
+          },
+          {
+            "target": "t19",
+            "effect": "pop",
+            "trigger": "diecinueve",
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Cuéntanos*",
+      "narration": "Síguenos y las resolvemos. ¿Conocías la regla de los dos meses?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Conocías la regla de los *dos meses*?",
+          "trigger": "Conocías"
+        }
+      ]
+    }
+  ]
+}

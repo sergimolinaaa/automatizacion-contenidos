@@ -100,6 +100,8 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 - `calendario(id_, cx, cy, w, h, "NOV", "29")` · `atril(id_, cx, base, w, h, mic, frontal)` · `logo_generico(cx, cy, r, "D21")` · `placa(cx, cy, w, h, "ABC")`
 - `documento(id_, cx, cy, w, h, titulo, sub)` · `carpeta(id_, cx, cy, w, h, texto)` · `boli(id_, cx, cy, L, rot_)` · `garabato(id_, x0, x1, yc, amp)` · `candado(id_, cx, cy, s)`
 - `sin_posicionarnos(id_, cx, cy, size)` — sello obligatorio de la escena 1 de política.
+- Investidura: `corona(id_, cx, base, w)` (corona real genérica; `_joyas` pulse; ponla en `persona.puntos["cima"][1] + 0.16*w`) ·
+  `capa_escanos(id_, puntos, n, col, r, grupos=4, desde=0)` (pinta n escaños de un `hemiciclo()` de izquierda a derecha en capas `id_0…` para que se llenen en cascada: 176 síes de 350)
 - Mesas electorales: `carta_notificacion(id_, cx, cy, w, h, titulo, cargo, fecha, remite)` (sobre con hoja que sale: move `{id}_hoja` [0,-h*0.55]; `{id}_cargo`) ·
   `calendario_plazos(id_, cx, cy, n=7, cw, ch, titulo)` (casillas `_d<i>`, marca de día gastado `_m<i>` para pop en cascada) ·
   `formulario(id_, cx, cy, w, h, titulo, sub, filas)` (✓ en `_c<i>`, firma `_firma` para draw) · `bombo(id_, cx, cy, r, texto, bola_txt)` (`_jaula`/`_manivela` spin, `_bola` move) ·
@@ -246,6 +248,7 @@ lote7-12-mesa-electoral: carta de notificación, calendario de plazos, formulari
 lote7-09-motor-central: coches.py (deportivo en corte y cenital, motor, centro de gravedad, escudo Porsche, persona cenital, flecha de giro, maleta, derrape, sala, carretera, pista de hielo).
 lote8-01-movil-lento (archivo/movil-lento/dib.py): tecnologia.py (batería nueva y gastada, chip, logo de Apple, iconos de app, pantallas de móvil, barra de almacenamiento, papelera y armario).
 lote7-04-leche-fondo (archivo/leche-fondo/dib.py): compra.py (brik, nevera de lácteos, ancla, caña, galletas, chocolate, lista, pan, horno, camión frigorífico, carretilla, palé).
+lote8-06-investidura (archivo/investidura/dib.py): corona y capa_escanos (politica.py).
 lote8-02-voto-soria: territorio.py (mapa de España con capitales, balanza, ciudad y pueblo).
 lote7-05-picadura (archivo/picadura/dib.py): piel.py (corte de piel, habón, mosquito, mastocito, histamina, sirena, bacteria, ratón, mano rascando, reloj de arena, gorra, delantal, piscina).
 lote8-04-agua-caliente (archivo/agua-caliente/dib.py): frio.py (congelador, cuenco de helado, vapor, escarcha, corrientes de convección, burbujas de gas y gráfica de enfriamiento).

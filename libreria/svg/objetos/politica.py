@@ -680,3 +680,43 @@ def colegio_electoral(W=1080, H=1920, suelo_y=None, rotulo="COLEGIO ELECTORAL"):
         f'<line x1="0" y1="{f(y)}" x2="{W}" y2="{f(y)}"/>' for y in [sy + (H - sy) * k for k in (0.14, 0.32, 0.55, 0.8)])
     o += "".join(f'<line x1="{f(W/2 + (x - W/2) * 0.55)}" y1="{f(sy)}" x2="{f(W/2 + (x - W/2) * 1.6)}" y2="{H}"/>' for x in range(-90, W + 200, 180)) + "</g>"
     return o
+
+
+# ------------------------------------------------------------------ investidura (lote8-06-investidura)
+registrar_defs(lg("coronaG", [(0, "#FFE58A"), (1, "#D99A12")]) + lg("terciopeloG", [(0, "#E2453B"), (1, "#9E1F1A")]))
+
+
+def corona(id_, cx, base, w=120):
+    """Corona real genérica (oro con terciopelo rojo y joyas). (cx, base) = centro del aro inferior; alto ≈ 0,8*w.
+    Ponla sobre una persona: base = persona.puntos["cima"][1] + 0.12*w. Para que brille: pulse en id_+'_joyas'."""
+    h = w * 0.8
+    x0, x1 = cx - w / 2, cx + w / 2
+    top = base - h
+    o = f'<path d="M {f(x0+w*0.1)} {f(base-h*0.3)} Q {f(cx)} {f(top-h*0.05)} {f(x1-w*0.1)} {f(base-h*0.3)} Z" fill="url(#terciopeloG)" stroke="{INK}" stroke-width="5"/>'
+    puntas = (f"M {f(x0)} {f(base)} L {f(x0-w*0.04)} {f(top+h*0.2)} L {f(x0+w*0.2)} {f(base-h*0.42)} L {f(cx-w*0.14)} {f(top+h*0.08)} "
+              f"L {f(cx)} {f(base-h*0.5)} L {f(cx+w*0.14)} {f(top+h*0.08)} L {f(x1-w*0.2)} {f(base-h*0.42)} L {f(x1+w*0.04)} {f(top+h*0.2)} L {f(x1)} {f(base)} Z")
+    o += f'<path d="{puntas}" fill="url(#coronaG)" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+    o += f'<rect x="{f(x0-w*0.03)}" y="{f(base-h*0.24)}" width="{f(w*1.06)}" height="{f(h*0.26)}" rx="{f(h*0.08)}" fill="url(#coronaG)" stroke="{INK}" stroke-width="6"/>'
+    o += f'<circle cx="{f(cx)}" cy="{f(top-h*0.04)}" r="{f(w*0.06)}" fill="url(#coronaG)" stroke="{INK}" stroke-width="4"/>'
+    o += brillo(f"M {f(x0+w*0.06)} {f(base-h*0.17)} L {f(x1-w*0.3)} {f(base-h*0.17)}", w * 0.035, 0.75)
+    joyas = ""
+    for k, col in ((-0.3, "#2EC4B6"), (0, CORAL), (0.3, "#2EC4B6")):
+        joyas += f'<circle cx="{f(cx+k*w)}" cy="{f(base-h*0.11)}" r="{f(w*0.055)}" fill="{col}" stroke="{INK}" stroke-width="3.5"/>'
+    for k in (-0.5, 0, 0.5):
+        joyas += f'<circle cx="{f(cx+k*w*0.58+ (0 if k == 0 else 0))}" cy="{f(top+h*(0.08 if k else -0.04) + (h*0.12 if k else 0))}" r="{f(w*0.035)}" fill="#FFFFFF" opacity="0.85"/>'
+    o += g(f"{id_}_joyas", joyas)
+    return Pieza(g(id_, o), {"base": (cx, base), "cima": (cx, top)}, (x0 - w * 0.05, top - h * 0.1, x1 + w * 0.05, base))
+
+
+def capa_escanos(id_, puntos, n, col, r, grupos=4, desde=0, sw=4):
+    """Recolorea escaños de un hemiciclo() (de izquierda a derecha) en `grupos` capas id_+'0'…, para que «se llenen»
+    en cascada (pop con delay o trigger). puntos = hemiciclo(...).puntos['escanos']; n = cuántos se pintan desde `desde`.
+    Ej.: 176 síes de 350 → capa_escanos('si', pos, 176, LIME, r)."""
+    sel = list(range(desde, min(len(puntos), desde + n)))
+    out = ""
+    for k in range(grupos):
+        part = sel[k * len(sel) // grupos:(k + 1) * len(sel) // grupos]
+        s = "".join(f'<circle cx="{f(puntos[i][0])}" cy="{f(puntos[i][1])}" r="{f(r)}" fill="{col}" stroke="{INK}" stroke-width="{sw}"/>'
+                    f'<circle cx="{f(puntos[i][0]-r*0.3)}" cy="{f(puntos[i][1]-r*0.35)}" r="{f(r*0.28)}" fill="#FFFFFF" opacity="0.6"/>' for i in part)
+        out += g(f"{id_}{k}", s)
+    return g(id_, out)
