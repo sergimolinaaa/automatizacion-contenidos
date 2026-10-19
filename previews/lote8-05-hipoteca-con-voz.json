@@ -1,0 +1,667 @@
+{
+ "source": "Fuentes: Banco de España (Portal del Cliente Bancario y notas del Euríbor) · BCE, tipos de interés oficiales · EMMI, administrador del Euríbor · BBVA y Bankinter, guías del Euríbor · HelpMyCash",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Por",
+   "start": 0.1,
+   "end": 0.28
+  },
+  {
+   "text": "qué",
+   "start": 0.29,
+   "end": 0.39
+  },
+  {
+   "text": "tu",
+   "start": 0.4,
+   "end": 0.5
+  },
+  {
+   "text": "hipoteca",
+   "start": 0.51,
+   "end": 0.87
+  },
+  {
+   "text": "sube",
+   "start": 0.88,
+   "end": 1.12
+  },
+  {
+   "text": "un",
+   "start": 1.13,
+   "end": 1.24
+  },
+  {
+   "text": "año",
+   "start": 1.25,
+   "end": 1.48
+  },
+  {
+   "text": "y",
+   "start": 1.49,
+   "end": 1.57
+  },
+  {
+   "text": "otro",
+   "start": 1.58,
+   "end": 1.75
+  },
+  {
+   "text": "baja?",
+   "start": 1.76,
+   "end": 2.13
+  },
+  {
+   "text": "Si",
+   "start": 2.81,
+   "end": 3.05
+  },
+  {
+   "text": "es",
+   "start": 3.06,
+   "end": 3.15
+  },
+  {
+   "text": "variable,",
+   "start": 3.16,
+   "end": 3.6100000000000003
+  },
+  {
+   "text": "tu",
+   "start": 3.7,
+   "end": 3.81
+  },
+  {
+   "text": "interés",
+   "start": 3.82,
+   "end": 4.14
+  },
+  {
+   "text": "tiene",
+   "start": 4.15,
+   "end": 4.36
+  },
+  {
+   "text": "dos",
+   "start": 4.37,
+   "end": 4.54
+  },
+  {
+   "text": "piezas:",
+   "start": 4.55,
+   "end": 4.92
+  },
+  {
+   "text": "Euríbor",
+   "start": 5.03,
+   "end": 5.42
+  },
+  {
+   "text": "más",
+   "start": 5.43,
+   "end": 5.569999999999999
+  },
+  {
+   "text": "diferencial.",
+   "start": 5.58,
+   "end": 6.19
+  },
+  {
+   "text": "El",
+   "start": 6.91,
+   "end": 7.12
+  },
+  {
+   "text": "diferencial",
+   "start": 7.13,
+   "end": 7.62
+  },
+  {
+   "text": "lo",
+   "start": 7.63,
+   "end": 7.72
+  },
+  {
+   "text": "pactas",
+   "start": 7.73,
+   "end": 8.05
+  },
+  {
+   "text": "con",
+   "start": 8.06,
+   "end": 8.200000000000001
+  },
+  {
+   "text": "tu",
+   "start": 8.21,
+   "end": 8.280000000000001
+  },
+  {
+   "text": "banco:",
+   "start": 8.29,
+   "end": 8.629999999999999
+  },
+  {
+   "text": "no",
+   "start": 8.75,
+   "end": 8.85
+  },
+  {
+   "text": "cambia.",
+   "start": 8.86,
+   "end": 9.28
+  },
+  {
+   "text": "El",
+   "start": 9.98,
+   "end": 10.17
+  },
+  {
+   "text": "Euríbor",
+   "start": 10.18,
+   "end": 10.53
+  },
+  {
+   "text": "es",
+   "start": 10.54,
+   "end": 10.649999999999999
+  },
+  {
+   "text": "el",
+   "start": 10.66,
+   "end": 10.75
+  },
+  {
+   "text": "interés",
+   "start": 10.76,
+   "end": 11.11
+  },
+  {
+   "text": "al",
+   "start": 11.12,
+   "end": 11.209999999999999
+  },
+  {
+   "text": "que",
+   "start": 11.22,
+   "end": 11.3
+  },
+  {
+   "text": "se",
+   "start": 11.31,
+   "end": 11.41
+  },
+  {
+   "text": "prestan",
+   "start": 11.42,
+   "end": 11.73
+  },
+  {
+   "text": "dinero",
+   "start": 11.74,
+   "end": 12.0
+  },
+  {
+   "text": "los",
+   "start": 12.01,
+   "end": 12.129999999999999
+  },
+  {
+   "text": "bancos",
+   "start": 12.14,
+   "end": 12.440000000000001
+  },
+  {
+   "text": "europeos,",
+   "start": 12.45,
+   "end": 12.959999999999999
+  },
+  {
+   "text": "a",
+   "start": 13.08,
+   "end": 13.14
+  },
+  {
+   "text": "un",
+   "start": 13.15,
+   "end": 13.290000000000001
+  },
+  {
+   "text": "año.",
+   "start": 13.3,
+   "end": 13.600000000000001
+  },
+  {
+   "text": "Y",
+   "start": 14.3,
+   "end": 14.4
+  },
+  {
+   "text": "sigue",
+   "start": 14.41,
+   "end": 14.64
+  },
+  {
+   "text": "al",
+   "start": 14.65,
+   "end": 14.73
+  },
+  {
+   "text": "Banco",
+   "start": 14.74,
+   "end": 14.98
+  },
+  {
+   "text": "Central",
+   "start": 14.99,
+   "end": 15.31
+  },
+  {
+   "text": "Europeo:",
+   "start": 15.32,
+   "end": 15.75
+  },
+  {
+   "text": "sube",
+   "start": 15.88,
+   "end": 16.09
+  },
+  {
+   "text": "tipos",
+   "start": 16.1,
+   "end": 16.37
+  },
+  {
+   "text": "para",
+   "start": 16.38,
+   "end": 16.529999999999998
+  },
+  {
+   "text": "frenar",
+   "start": 16.54,
+   "end": 16.8
+  },
+  {
+   "text": "la",
+   "start": 16.81,
+   "end": 16.88
+  },
+  {
+   "text": "inflación",
+   "start": 16.89,
+   "end": 17.330000000000002
+  },
+  {
+   "text": "y",
+   "start": 17.34,
+   "end": 17.37
+  },
+  {
+   "text": "los",
+   "start": 17.38,
+   "end": 17.52
+  },
+  {
+   "text": "baja",
+   "start": 17.53,
+   "end": 17.77
+  },
+  {
+   "text": "para",
+   "start": 17.78,
+   "end": 17.950000000000003
+  },
+  {
+   "text": "animar",
+   "start": 17.96,
+   "end": 18.240000000000002
+  },
+  {
+   "text": "la",
+   "start": 18.25,
+   "end": 18.34
+  },
+  {
+   "text": "economía.",
+   "start": 18.35,
+   "end": 18.900000000000002
+  },
+  {
+   "text": "Cada",
+   "start": 19.61,
+   "end": 19.849999999999998
+  },
+  {
+   "text": "seis",
+   "start": 19.86,
+   "end": 20.099999999999998
+  },
+  {
+   "text": "o",
+   "start": 20.11,
+   "end": 20.15
+  },
+  {
+   "text": "doce",
+   "start": 20.16,
+   "end": 20.38
+  },
+  {
+   "text": "meses,",
+   "start": 20.39,
+   "end": 20.79
+  },
+  {
+   "text": "el",
+   "start": 20.88,
+   "end": 21.009999999999998
+  },
+  {
+   "text": "banco",
+   "start": 21.02,
+   "end": 21.25
+  },
+  {
+   "text": "recalcula",
+   "start": 21.26,
+   "end": 21.740000000000002
+  },
+  {
+   "text": "tu",
+   "start": 21.75,
+   "end": 21.84
+  },
+  {
+   "text": "cuota",
+   "start": 21.85,
+   "end": 22.09
+  },
+  {
+   "text": "con",
+   "start": 22.1,
+   "end": 22.23
+  },
+  {
+   "text": "el",
+   "start": 22.24,
+   "end": 22.33
+  },
+  {
+   "text": "último",
+   "start": 22.34,
+   "end": 22.65
+  },
+  {
+   "text": "Euríbor.",
+   "start": 22.66,
+   "end": 23.12
+  },
+  {
+   "text": "Ejemplo",
+   "start": 23.82,
+   "end": 24.28
+  },
+  {
+   "text": "inventado:",
+   "start": 24.29,
+   "end": 24.779999999999998
+  },
+  {
+   "text": "ciento",
+   "start": 24.87,
+   "end": 25.150000000000002
+  },
+  {
+   "text": "cincuenta",
+   "start": 25.16,
+   "end": 25.55
+  },
+  {
+   "text": "mil",
+   "start": 25.56,
+   "end": 25.709999999999997
+  },
+  {
+   "text": "euros,",
+   "start": 25.72,
+   "end": 26.07
+  },
+  {
+   "text": "veinticinco",
+   "start": 26.16,
+   "end": 26.71
+  },
+  {
+   "text": "años,",
+   "start": 26.72,
+   "end": 27.04
+  },
+  {
+   "text": "Euríbor",
+   "start": 27.14,
+   "end": 27.55
+  },
+  {
+   "text": "más",
+   "start": 27.56,
+   "end": 27.74
+  },
+  {
+   "text": "uno",
+   "start": 27.75,
+   "end": 27.9
+  },
+  {
+   "text": "por",
+   "start": 27.91,
+   "end": 28.05
+  },
+  {
+   "text": "ciento.",
+   "start": 28.06,
+   "end": 28.459999999999997
+  },
+  {
+   "text": "Con",
+   "start": 29.15,
+   "end": 29.349999999999998
+  },
+  {
+   "text": "el",
+   "start": 29.36,
+   "end": 29.43
+  },
+  {
+   "text": "Euríbor",
+   "start": 29.44,
+   "end": 29.78
+  },
+  {
+   "text": "al",
+   "start": 29.79,
+   "end": 29.88
+  },
+  {
+   "text": "dos,",
+   "start": 29.89,
+   "end": 30.14
+  },
+  {
+   "text": "pagas",
+   "start": 30.27,
+   "end": 30.55
+  },
+  {
+   "text": "unos",
+   "start": 30.56,
+   "end": 30.73
+  },
+  {
+   "text": "setecientos",
+   "start": 30.74,
+   "end": 31.25
+  },
+  {
+   "text": "diez",
+   "start": 31.26,
+   "end": 31.450000000000003
+  },
+  {
+   "text": "al",
+   "start": 31.46,
+   "end": 31.54
+  },
+  {
+   "text": "mes.",
+   "start": 31.55,
+   "end": 31.86
+  },
+  {
+   "text": "Al",
+   "start": 32.56,
+   "end": 32.77
+  },
+  {
+   "text": "tres,",
+   "start": 32.78,
+   "end": 33.07
+  },
+  {
+   "text": "unos",
+   "start": 33.16,
+   "end": 33.339999999999996
+  },
+  {
+   "text": "setecientos",
+   "start": 33.35,
+   "end": 33.86
+  },
+  {
+   "text": "noventa.",
+   "start": 33.87,
+   "end": 34.349999999999994
+  },
+  {
+   "text": "Tú",
+   "start": 35.04,
+   "end": 35.17
+  },
+  {
+   "text": "traes",
+   "start": 35.18,
+   "end": 35.43
+  },
+  {
+   "text": "las",
+   "start": 35.44,
+   "end": 35.589999999999996
+  },
+  {
+   "text": "dudas",
+   "start": 35.6,
+   "end": 35.870000000000005
+  },
+  {
+   "text": "y",
+   "start": 35.88,
+   "end": 35.92
+  },
+  {
+   "text": "nosotros",
+   "start": 35.93,
+   "end": 36.35
+  },
+  {
+   "text": "te",
+   "start": 36.36,
+   "end": 36.45
+  },
+  {
+   "text": "damos",
+   "start": 36.46,
+   "end": 36.730000000000004
+  },
+  {
+   "text": "el",
+   "start": 36.74,
+   "end": 36.84
+  },
+  {
+   "text": "truco.",
+   "start": 36.85,
+   "end": 37.230000000000004
+  },
+  {
+   "text": "Síguenos",
+   "start": 37.92,
+   "end": 38.43
+  },
+  {
+   "text": "y",
+   "start": 38.44,
+   "end": 38.489999999999995
+  },
+  {
+   "text": "las",
+   "start": 38.5,
+   "end": 38.63
+  },
+  {
+   "text": "resolvemos.",
+   "start": 38.64,
+   "end": 39.3
+  },
+  {
+   "text": "¿Tu",
+   "start": 39.99,
+   "end": 40.160000000000004
+  },
+  {
+   "text": "hipoteca",
+   "start": 40.17,
+   "end": 40.58
+  },
+  {
+   "text": "es",
+   "start": 40.59,
+   "end": 40.71
+  },
+  {
+   "text": "fija",
+   "start": 40.72,
+   "end": 40.99
+  },
+  {
+   "text": "o",
+   "start": 41.0,
+   "end": 41.04
+  },
+  {
+   "text": "variable?",
+   "start": 41.05,
+   "end": 41.559999999999995
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 42.06,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "¿Por qué tu hipoteca *sube o baja*?",
+  "scene": 0
+ },
+ "duration": 44.660000000000004,
+ "cover_offset_ms": 44960
+}

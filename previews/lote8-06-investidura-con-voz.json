@@ -1,0 +1,687 @@
+{
+ "source": "Fuentes: Constitución Española, art. 99 (BOE) · Congreso de los Diputados, Reglamento, arts. 170 a 172 · Real Decreto 184/2016 y Real Decreto 551/2019 de disolución de las Cortes (BOE)",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Y",
+   "start": 0.1,
+   "end": 0.22
+  },
+  {
+   "text": "si",
+   "start": 0.23,
+   "end": 0.34
+  },
+  {
+   "text": "el",
+   "start": 0.35,
+   "end": 0.42
+  },
+  {
+   "text": "veintinueve",
+   "start": 0.43,
+   "end": 0.89
+  },
+  {
+   "text": "de",
+   "start": 0.9,
+   "end": 0.97
+  },
+  {
+   "text": "noviembre",
+   "start": 0.98,
+   "end": 1.37
+  },
+  {
+   "text": "nadie",
+   "start": 1.38,
+   "end": 1.65
+  },
+  {
+   "text": "saca",
+   "start": 1.66,
+   "end": 1.8699999999999999
+  },
+  {
+   "text": "mayoría?",
+   "start": 1.88,
+   "end": 2.4
+  },
+  {
+   "text": "¿Quién",
+   "start": 3.09,
+   "end": 3.31
+  },
+  {
+   "text": "gobierna?",
+   "start": 3.32,
+   "end": 3.8099999999999996
+  },
+  {
+   "text": "Te",
+   "start": 4.5,
+   "end": 4.63
+  },
+  {
+   "text": "lo",
+   "start": 4.64,
+   "end": 4.71
+  },
+  {
+   "text": "contamos",
+   "start": 4.72,
+   "end": 5.1
+  },
+  {
+   "text": "sin",
+   "start": 5.11,
+   "end": 5.21
+  },
+  {
+   "text": "posicionarnos,",
+   "start": 5.22,
+   "end": 5.93
+  },
+  {
+   "text": "solo",
+   "start": 6.04,
+   "end": 6.26
+  },
+  {
+   "text": "con",
+   "start": 6.27,
+   "end": 6.3999999999999995
+  },
+  {
+   "text": "lo",
+   "start": 6.41,
+   "end": 6.47
+  },
+  {
+   "text": "que",
+   "start": 6.48,
+   "end": 6.57
+  },
+  {
+   "text": "marca",
+   "start": 6.58,
+   "end": 6.8100000000000005
+  },
+  {
+   "text": "la",
+   "start": 6.82,
+   "end": 6.91
+  },
+  {
+   "text": "Constitución.",
+   "start": 6.92,
+   "end": 7.6
+  },
+  {
+   "text": "Primero,",
+   "start": 8.29,
+   "end": 8.729999999999999
+  },
+  {
+   "text": "el",
+   "start": 8.83,
+   "end": 8.96
+  },
+  {
+   "text": "Rey",
+   "start": 8.97,
+   "end": 9.110000000000001
+  },
+  {
+   "text": "consulta",
+   "start": 9.12,
+   "end": 9.549999999999999
+  },
+  {
+   "text": "a",
+   "start": 9.56,
+   "end": 9.59
+  },
+  {
+   "text": "los",
+   "start": 9.6,
+   "end": 9.73
+  },
+  {
+   "text": "grupos",
+   "start": 9.74,
+   "end": 10.02
+  },
+  {
+   "text": "del",
+   "start": 10.03,
+   "end": 10.139999999999999
+  },
+  {
+   "text": "Congreso",
+   "start": 10.15,
+   "end": 10.620000000000001
+  },
+  {
+   "text": "y",
+   "start": 10.63,
+   "end": 10.680000000000001
+  },
+  {
+   "text": "propone",
+   "start": 10.69,
+   "end": 11.03
+  },
+  {
+   "text": "un",
+   "start": 11.04,
+   "end": 11.129999999999999
+  },
+  {
+   "text": "candidato.",
+   "start": 11.14,
+   "end": 11.71
+  },
+  {
+   "text": "En",
+   "start": 12.4,
+   "end": 12.57
+  },
+  {
+   "text": "la",
+   "start": 12.58,
+   "end": 12.66
+  },
+  {
+   "text": "primera",
+   "start": 12.67,
+   "end": 12.95
+  },
+  {
+   "text": "votación",
+   "start": 12.96,
+   "end": 13.340000000000002
+  },
+  {
+   "text": "necesita",
+   "start": 13.35,
+   "end": 13.76
+  },
+  {
+   "text": "mayoría",
+   "start": 13.77,
+   "end": 14.139999999999999
+  },
+  {
+   "text": "absoluta:",
+   "start": 14.15,
+   "end": 14.620000000000001
+  },
+  {
+   "text": "ciento",
+   "start": 14.78,
+   "end": 15.049999999999999
+  },
+  {
+   "text": "setenta",
+   "start": 15.06,
+   "end": 15.38
+  },
+  {
+   "text": "y",
+   "start": 15.39,
+   "end": 15.450000000000001
+  },
+  {
+   "text": "seis",
+   "start": 15.46,
+   "end": 15.670000000000002
+  },
+  {
+   "text": "síes",
+   "start": 15.68,
+   "end": 15.94
+  },
+  {
+   "text": "de",
+   "start": 15.95,
+   "end": 16.02
+  },
+  {
+   "text": "trescientos",
+   "start": 16.03,
+   "end": 16.51
+  },
+  {
+   "text": "cincuenta.",
+   "start": 16.52,
+   "end": 17.06
+  },
+  {
+   "text": "Si",
+   "start": 17.75,
+   "end": 17.95
+  },
+  {
+   "text": "no",
+   "start": 17.96,
+   "end": 18.07
+  },
+  {
+   "text": "llega,",
+   "start": 18.08,
+   "end": 18.38
+  },
+  {
+   "text": "cuarenta",
+   "start": 18.46,
+   "end": 18.76
+  },
+  {
+   "text": "y",
+   "start": 18.77,
+   "end": 18.84
+  },
+  {
+   "text": "ocho",
+   "start": 18.85,
+   "end": 19.05
+  },
+  {
+   "text": "horas",
+   "start": 19.06,
+   "end": 19.259999999999998
+  },
+  {
+   "text": "después",
+   "start": 19.27,
+   "end": 19.58
+  },
+  {
+   "text": "se",
+   "start": 19.59,
+   "end": 19.68
+  },
+  {
+   "text": "vota",
+   "start": 19.69,
+   "end": 19.91
+  },
+  {
+   "text": "otra",
+   "start": 19.92,
+   "end": 20.1
+  },
+  {
+   "text": "vez.",
+   "start": 20.11,
+   "end": 20.37
+  },
+  {
+   "text": "Ahora",
+   "start": 21.07,
+   "end": 21.41
+  },
+  {
+   "text": "basta",
+   "start": 21.42,
+   "end": 21.66
+  },
+  {
+   "text": "con",
+   "start": 21.67,
+   "end": 21.790000000000003
+  },
+  {
+   "text": "más",
+   "start": 21.8,
+   "end": 21.95
+  },
+  {
+   "text": "síes",
+   "start": 21.96,
+   "end": 22.23
+  },
+  {
+   "text": "que",
+   "start": 22.24,
+   "end": 22.319999999999997
+  },
+  {
+   "text": "noes.",
+   "start": 22.33,
+   "end": 22.72
+  },
+  {
+   "text": "Las",
+   "start": 23.42,
+   "end": 23.680000000000003
+  },
+  {
+   "text": "abstenciones",
+   "start": 23.69,
+   "end": 24.240000000000002
+  },
+  {
+   "text": "no",
+   "start": 24.25,
+   "end": 24.35
+  },
+  {
+   "text": "cuentan.",
+   "start": 24.36,
+   "end": 24.82
+  },
+  {
+   "text": "Si",
+   "start": 25.52,
+   "end": 25.72
+  },
+  {
+   "text": "tampoco",
+   "start": 25.73,
+   "end": 26.080000000000002
+  },
+  {
+   "text": "sale,",
+   "start": 26.09,
+   "end": 26.39
+  },
+  {
+   "text": "puede",
+   "start": 26.51,
+   "end": 26.700000000000003
+  },
+  {
+   "text": "haber",
+   "start": 26.71,
+   "end": 26.89
+  },
+  {
+   "text": "más",
+   "start": 26.9,
+   "end": 27.06
+  },
+  {
+   "text": "candidatos",
+   "start": 27.07,
+   "end": 27.56
+  },
+  {
+   "text": "durante",
+   "start": 27.57,
+   "end": 27.87
+  },
+  {
+   "text": "dos",
+   "start": 27.88,
+   "end": 28.04
+  },
+  {
+   "text": "meses",
+   "start": 28.05,
+   "end": 28.34
+  },
+  {
+   "text": "desde",
+   "start": 28.35,
+   "end": 28.53
+  },
+  {
+   "text": "la",
+   "start": 28.54,
+   "end": 28.619999999999997
+  },
+  {
+   "text": "primera",
+   "start": 28.63,
+   "end": 28.919999999999998
+  },
+  {
+   "text": "votación.",
+   "start": 28.93,
+   "end": 29.46
+  },
+  {
+   "text": "Si",
+   "start": 30.15,
+   "end": 30.34
+  },
+  {
+   "text": "nadie",
+   "start": 30.35,
+   "end": 30.57
+  },
+  {
+   "text": "lo",
+   "start": 30.58,
+   "end": 30.65
+  },
+  {
+   "text": "consigue,",
+   "start": 30.66,
+   "end": 31.12
+  },
+  {
+   "text": "se",
+   "start": 31.21,
+   "end": 31.310000000000002
+  },
+  {
+   "text": "disuelven",
+   "start": 31.32,
+   "end": 31.73
+  },
+  {
+   "text": "las",
+   "start": 31.74,
+   "end": 31.88
+  },
+  {
+   "text": "Cortes",
+   "start": 31.89,
+   "end": 32.21
+  },
+  {
+   "text": "y",
+   "start": 32.22,
+   "end": 32.26
+  },
+  {
+   "text": "toca",
+   "start": 32.27,
+   "end": 32.480000000000004
+  },
+  {
+   "text": "votar",
+   "start": 32.49,
+   "end": 32.730000000000004
+  },
+  {
+   "text": "otra",
+   "start": 32.74,
+   "end": 32.89
+  },
+  {
+   "text": "vez.",
+   "start": 32.9,
+   "end": 33.17
+  },
+  {
+   "text": "Pasó",
+   "start": 33.86,
+   "end": 34.19
+  },
+  {
+   "text": "en",
+   "start": 34.2,
+   "end": 34.290000000000006
+  },
+  {
+   "text": "dos",
+   "start": 34.3,
+   "end": 34.43
+  },
+  {
+   "text": "mil",
+   "start": 34.44,
+   "end": 34.58
+  },
+  {
+   "text": "dieciséis",
+   "start": 34.59,
+   "end": 35.09
+  },
+  {
+   "text": "y",
+   "start": 35.1,
+   "end": 35.17
+  },
+  {
+   "text": "en",
+   "start": 35.18,
+   "end": 35.27
+  },
+  {
+   "text": "dos",
+   "start": 35.28,
+   "end": 35.410000000000004
+  },
+  {
+   "text": "mil",
+   "start": 35.42,
+   "end": 35.57
+  },
+  {
+   "text": "diecinueve.",
+   "start": 35.58,
+   "end": 36.12
+  },
+  {
+   "text": "Tú",
+   "start": 36.82,
+   "end": 36.95
+  },
+  {
+   "text": "traes",
+   "start": 36.96,
+   "end": 37.21
+  },
+  {
+   "text": "las",
+   "start": 37.22,
+   "end": 37.37
+  },
+  {
+   "text": "dudas",
+   "start": 37.38,
+   "end": 37.650000000000006
+  },
+  {
+   "text": "y",
+   "start": 37.66,
+   "end": 37.699999999999996
+  },
+  {
+   "text": "nosotros",
+   "start": 37.71,
+   "end": 38.13
+  },
+  {
+   "text": "te",
+   "start": 38.14,
+   "end": 38.230000000000004
+  },
+  {
+   "text": "damos",
+   "start": 38.24,
+   "end": 38.510000000000005
+  },
+  {
+   "text": "el",
+   "start": 38.52,
+   "end": 38.620000000000005
+  },
+  {
+   "text": "truco.",
+   "start": 38.63,
+   "end": 39.010000000000005
+  },
+  {
+   "text": "Síguenos",
+   "start": 39.7,
+   "end": 40.21
+  },
+  {
+   "text": "y",
+   "start": 40.22,
+   "end": 40.269999999999996
+  },
+  {
+   "text": "las",
+   "start": 40.28,
+   "end": 40.410000000000004
+  },
+  {
+   "text": "resolvemos.",
+   "start": 40.42,
+   "end": 41.08
+  },
+  {
+   "text": "¿Conocías",
+   "start": 41.77,
+   "end": 42.290000000000006
+  },
+  {
+   "text": "la",
+   "start": 42.3,
+   "end": 42.39
+  },
+  {
+   "text": "regla",
+   "start": 42.4,
+   "end": 42.65
+  },
+  {
+   "text": "de",
+   "start": 42.66,
+   "end": 42.72
+  },
+  {
+   "text": "los",
+   "start": 42.73,
+   "end": 42.86
+  },
+  {
+   "text": "dos",
+   "start": 42.87,
+   "end": 43.01
+  },
+  {
+   "text": "meses?",
+   "start": 43.02,
+   "end": 43.410000000000004
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 43.91,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "¿Y si *nadie* gana?",
+  "scene": 0
+ },
+ "duration": 46.51,
+ "cover_offset_ms": 46809
+}
