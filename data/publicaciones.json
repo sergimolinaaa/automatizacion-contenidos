@@ -560,6 +560,17 @@
         "tiktok": "6ad615f7e21b24048f4a76a9",
         "instagram": "6ad615f8f8ab1a79632036ec"
       }
+    },
+    {
+      "slug": "lote8-07-basilisco",
+      "category": "animales",
+      "due": "2026-10-25T20:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote8-07-basilisco/lote8-07-basilisco-con-voz.mp4",
+      "posts": {
+        "youtube": "6ad675feb87e2d180250fc87",
+        "tiktok": "6ad675fec3743e7cff6fbf71",
+        "instagram": "6ad675ffb87e2d180250fcb3"
+      }
     }
   ]
 }
