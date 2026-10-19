@@ -1,0 +1,774 @@
+{
+  "topic": "Cómo vuela un avión de 400 toneladas: las alas desvían aire hacia abajo (acción y reacción), menos presión arriba y el mito de que el aire llega a la vez",
+  "categoria": "fisica",
+  "title": "¿Cómo vuela un avión de 400 toneladas? Las alas empujan el aire",
+  "source": "Fuentes: NASA Glenn Research Center, Beginner's Guide to Aeronautics («Lift from Flow Turning», «Incorrect Lift Theory», «The Lift Equation») · Universidad de Cambridge, Holger Babinsky, «How wings really work» (2012) · Avweb, «Theories of Lift» · BBVA OpenMind · KN Aviation y Blackjet (A380 vs 747) · Migflug",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Cómo *vuela* un avión",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-24T14:00:00+02:00",
+    "caption": "¿Cómo vuela un avión de 400 toneladas? Las alas desvían muchísimo aire hacia abajo y el aire las empuja hacia arriba: acción y reacción. Encima del ala el aire va más rápido y aprieta menos. Y no, el aire de arriba no llega a la vez que el de abajo: llega antes (NASA, Universidad de Cambridge). ¿Tú miras por la ventanilla o te agarras al asiento?",
+    "description": "¿Cómo vuela un avión de 400 toneladas? Un Boeing 747 de la serie 400 puede despegar con unas 400 toneladas, y un Airbus A380 con 575. Sus alas, inclinadas y curvadas, desvían hacia abajo una enorme cantidad de aire, y por la tercera ley de Newton el aire empuja el ala hacia arriba; a la vez, encima del ala el aire va más rápido y aprieta menos que por debajo. Ojo al mito del cole: el aire de arriba no llega al final a la vez que el de abajo, llega antes, como mostró la Universidad de Cambridge con humo. Fuentes: NASA Glenn Research Center, Universidad de Cambridge (Holger Babinsky), Avweb. ¿Tú miras por la ventanilla o te agarras al asiento?",
+    "hashtags": [
+      "aviones",
+      "fisica",
+      "volar",
+      "ciencia",
+      "curiosidades"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿400 toneladas *volando*?",
+      "narration": "¿Cómo vuela un avión que pesa casi como trescientos coches?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · 400 toneladas en el aire",
+        "anims": [
+          {
+            "target": "nubes",
+            "effect": "drift",
+            "amount": 0.5
+          },
+          {
+            "target": "nina",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "nina",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.2
+          },
+          {
+            "target": "nina_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "Cómo",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "amount": 0.4
+          },
+          {
+            "target": "jumbo",
+            "effect": "slide-left",
+            "trigger": "vuela",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "jumbo",
+            "effect": "float",
+            "amount": 0.6
+          },
+          {
+            "target": "nina_brazo_der",
+            "effect": "wiggle",
+            "trigger": "vuela",
+            "origin": "bottom-left",
+            "amount": 0.7
+          },
+          {
+            "target": "mini",
+            "effect": "pop",
+            "trigger": "avión",
+            "sfx": "pop"
+          },
+          {
+            "target": "t400",
+            "effect": "pop",
+            "trigger": "pesa",
+            "sfx": "ding"
+          },
+          {
+            "target": "jumbo",
+            "effect": "move",
+            "trigger": "pesa",
+            "to": [
+              60,
+              -15
+            ],
+            "dur": 1.6
+          },
+          {
+            "target": "car0",
+            "effect": "pop",
+            "trigger": "casi",
+            "dur": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "car1",
+            "effect": "pop",
+            "trigger": "casi",
+            "dur": 0.5
+          },
+          {
+            "target": "car2",
+            "effect": "pop",
+            "trigger": "trescientos",
+            "dur": 0.3
+          },
+          {
+            "target": "car3",
+            "effect": "pop",
+            "trigger": "trescientos",
+            "dur": 0.5
+          },
+          {
+            "target": "car4",
+            "effect": "pop",
+            "trigger": "coches",
+            "dur": 0.3
+          },
+          {
+            "target": "car5",
+            "effect": "pop",
+            "trigger": "coches",
+            "dur": 0.4
+          },
+          {
+            "target": "t300",
+            "effect": "pop",
+            "trigger": "coches",
+            "sfx": "pop"
+          },
+          {
+            "target": "bal",
+            "effect": "punch",
+            "trigger": "coches",
+            "amount": 0.15
+          },
+          {
+            "target": "nina_cabeza",
+            "effect": "sway",
+            "trigger": "trescientos",
+            "origin": "bottom",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El ala *empuja* aire",
+      "narration": "El ala está inclinada y curvada, y desvía hacia abajo muchísimo aire cada segundo.",
+      "illustration": {
+        "svg_file": "desvia.svg",
+        "caption": "Fig. 2 · El ala, en corte",
+        "anims": [
+          {
+            "target": "ala",
+            "effect": "float",
+            "amount": 0.3
+          },
+          {
+            "target": "ala",
+            "effect": "move",
+            "trigger": "inclinada",
+            "rotate": 9,
+            "origin": "center",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "angulo",
+            "effect": "pop",
+            "trigger": "inclinada"
+          },
+          {
+            "target": "ala_curva",
+            "effect": "draw",
+            "trigger": "curvada",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tcurva",
+            "effect": "pop",
+            "trigger": "curvada"
+          },
+          {
+            "target": "aire_l0",
+            "effect": "draw",
+            "trigger": "desvía",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "aire_l1",
+            "effect": "draw",
+            "trigger": "desvía",
+            "dur": 0.7
+          },
+          {
+            "target": "aire_l2",
+            "effect": "draw",
+            "trigger": "hacia",
+            "dur": 0.6
+          },
+          {
+            "target": "aire_l3",
+            "effect": "draw",
+            "trigger": "hacia",
+            "dur": 0.7
+          },
+          {
+            "target": "tabajo",
+            "effect": "pop",
+            "trigger": "abajo",
+            "sfx": "pop"
+          },
+          {
+            "target": "aire",
+            "effect": "punch",
+            "trigger": "muchísimo",
+            "amount": 0.12
+          },
+          {
+            "target": "crono",
+            "effect": "pop",
+            "trigger": "cada",
+            "sfx": "ding"
+          },
+          {
+            "target": "crono_aguja",
+            "effect": "move",
+            "trigger": "segundo",
+            "rotate": 360,
+            "origin": "bottom",
+            "dur": 1.0
+          },
+          {
+            "target": "tseg",
+            "effect": "pop",
+            "trigger": "segundo"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Acción y *reacción*",
+      "narration": "Si el ala empuja el aire hacia abajo, el aire la empuja hacia arriba: acción y reacción, como dijo Newton.",
+      "illustration": {
+        "svg_file": "newton_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 3 · Tercera ley de Newton",
+        "anims": [
+          {
+            "target": "aire",
+            "effect": "flow",
+            "amount": 0.6
+          },
+          {
+            "target": "ala",
+            "effect": "float",
+            "amount": 0.3
+          },
+          {
+            "target": "ala",
+            "effect": "punch",
+            "trigger": "empuja",
+            "amount": 0.2
+          },
+          {
+            "target": "fabajo",
+            "effect": "grow",
+            "trigger": "abajo",
+            "origin": "top",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "farriba",
+            "effect": "grow",
+            "trigger": "arriba",
+            "origin": "bottom",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ala",
+            "effect": "move",
+            "trigger": "arriba",
+            "to": [
+              0,
+              -24
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "tsust",
+            "effect": "pop",
+            "trigger": "arriba",
+            "sfx": "pop"
+          },
+          {
+            "target": "taccion",
+            "effect": "pop",
+            "trigger": "acción",
+            "sfx": "pop"
+          },
+          {
+            "target": "treac",
+            "effect": "pop",
+            "trigger": "reacción",
+            "sfx": "ding"
+          },
+          {
+            "target": "farriba",
+            "effect": "pulse",
+            "trigger": "reacción",
+            "amount": 0.4
+          },
+          {
+            "target": "newton",
+            "effect": "pop",
+            "trigger": "como",
+            "sfx": "pop"
+          },
+          {
+            "target": "manzana",
+            "effect": "pop",
+            "trigger": "dijo",
+            "sfx": "pop"
+          },
+          {
+            "target": "manzana",
+            "effect": "move",
+            "trigger": "Newton",
+            "to": [
+              0,
+              -60
+            ],
+            "dur": 0.7,
+            "sfx": "boing"
+          },
+          {
+            "target": "newton_p_cabeza",
+            "effect": "sway",
+            "trigger": "Newton",
+            "origin": "bottom",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "La mano por la *ventanilla*",
+      "narration": "Lo has sentido: saca la mano por la ventanilla, inclínala y verás cómo sube.",
+      "illustration": {
+        "svg_file": "ventanilla.svg",
+        "caption": "Fig. 4 · Pruébalo en el coche",
+        "anims": [
+          {
+            "target": "coche",
+            "effect": "bob",
+            "amount": 0.3
+          },
+          {
+            "target": "rueda1",
+            "effect": "spin",
+            "amount": 2
+          },
+          {
+            "target": "rueda2",
+            "effect": "spin",
+            "amount": 2
+          },
+          {
+            "target": "marcas",
+            "effect": "drift",
+            "amount": 1.5
+          },
+          {
+            "target": "nubes",
+            "effect": "drift",
+            "amount": 0.5
+          },
+          {
+            "target": "velo",
+            "effect": "wiggle",
+            "amount": 0.6
+          },
+          {
+            "target": "cond",
+            "effect": "breathe",
+            "phase": 0.1
+          },
+          {
+            "target": "copg",
+            "effect": "breathe",
+            "phase": 0.5
+          },
+          {
+            "target": "cop_cabeza",
+            "effect": "sway",
+            "trigger": "sentido",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "brazo",
+            "effect": "slide-left",
+            "trigger": "saca",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cond_cabeza",
+            "effect": "sway",
+            "trigger": "ventanilla",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "mano",
+            "effect": "move",
+            "trigger": "inclínala",
+            "rotate": -14,
+            "origin": "center",
+            "dur": 0.4
+          },
+          {
+            "target": "aire",
+            "effect": "draw",
+            "trigger": "verás",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "brazo",
+            "effect": "move",
+            "trigger": "sube",
+            "to": [
+              0,
+              -60
+            ],
+            "dur": 0.6,
+            "sfx": "boing"
+          },
+          {
+            "target": "tsube",
+            "effect": "pop",
+            "trigger": "sube",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Menos presión *arriba*",
+      "narration": "Encima del ala, el aire va más rápido y aprieta menos que debajo. Esa diferencia la sostiene.",
+      "illustration": {
+        "svg_file": "presion.svg",
+        "caption": "Fig. 5 · Presión",
+        "anims": [
+          {
+            "target": "ala",
+            "effect": "float",
+            "amount": 0.3
+          },
+          {
+            "target": "rapido",
+            "effect": "slide-left",
+            "trigger": "Encima",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rapido",
+            "effect": "drift",
+            "amount": 0.8
+          },
+          {
+            "target": "trap",
+            "effect": "pop",
+            "trigger": "rápido",
+            "sfx": "pop"
+          },
+          {
+            "target": "tpres",
+            "effect": "pop",
+            "trigger": "aprieta",
+            "sfx": "papel"
+          },
+          {
+            "target": "menos",
+            "effect": "pop",
+            "trigger": "menos",
+            "sfx": "pop"
+          },
+          {
+            "target": "mas",
+            "effect": "pop",
+            "trigger": "debajo",
+            "sfx": "pop"
+          },
+          {
+            "target": "lento",
+            "effect": "slide-left",
+            "trigger": "debajo",
+            "dur": 0.5
+          },
+          {
+            "target": "mas",
+            "effect": "pulse",
+            "trigger": "diferencia",
+            "amount": 0.4
+          },
+          {
+            "target": "flarriba",
+            "effect": "grow",
+            "trigger": "sostiene",
+            "origin": "bottom",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ala",
+            "effect": "move",
+            "trigger": "sostiene",
+            "to": [
+              0,
+              -25
+            ],
+            "dur": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Mito: llegan *a la vez*",
+      "narration": "Un mito del cole: el aire de arriba no llega a la vez que el de abajo. Llega antes.",
+      "illustration": {
+        "svg_file": "mito_full.svg",
+        "layout": "full",
+        "caption": "Fig. 6 · El mito del cole",
+        "anims": [
+          {
+            "target": "prof",
+            "effect": "breathe",
+            "phase": 0.3
+          },
+          {
+            "target": "prof",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.18,
+            "phase": 0.3
+          },
+          {
+            "target": "prof_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "tache",
+            "effect": "draw",
+            "trigger": "mito",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "smito",
+            "effect": "pop",
+            "trigger": "mito",
+            "sfx": "sello"
+          },
+          {
+            "target": "prof_brazo_izq",
+            "effect": "wiggle",
+            "trigger": "cole",
+            "origin": "top-right",
+            "amount": 0.7
+          },
+          {
+            "target": "humo_az",
+            "effect": "move",
+            "trigger": "arriba",
+            "to": [
+              580,
+              50
+            ],
+            "dur": 1.0,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "humo_gr",
+            "effect": "move",
+            "trigger": "arriba",
+            "to": [
+              580,
+              8
+            ],
+            "dur": 2.4
+          },
+          {
+            "target": "smito",
+            "effect": "punch",
+            "trigger": "vez",
+            "amount": 0.4
+          },
+          {
+            "target": "prof_cabeza",
+            "effect": "sway",
+            "trigger": "abajo",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "meta",
+            "effect": "pop",
+            "trigger": "antes",
+            "sfx": "ding"
+          },
+          {
+            "target": "meta",
+            "effect": "sway",
+            "origin": "left",
+            "amount": 0.4
+          },
+          {
+            "target": "tantes",
+            "effect": "pop",
+            "trigger": "antes",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Necesita *velocidad*",
+      "narration": "Cuanto más rápido va, más aire desvía. Por eso acelera por la pista.",
+      "mascot": {
+        "trigger": "eso",
+        "pose": "cheer",
+        "note": "¡Ventanilla para mí!",
+        "side": "right"
+      },
+      "illustration": {
+        "svg_file": "pista_free.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 7 · El despegue",
+        "anims": [
+          {
+            "target": "marcas",
+            "effect": "drift",
+            "amount": 1.5
+          },
+          {
+            "target": "avion",
+            "effect": "shake",
+            "amount": 0.15
+          },
+          {
+            "target": "velo_aguja",
+            "effect": "move",
+            "trigger": "rápido",
+            "rotate": 150,
+            "origin": "right",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "d0",
+            "effect": "pop",
+            "trigger": "va",
+            "sfx": "pop"
+          },
+          {
+            "target": "d1",
+            "effect": "pop",
+            "trigger": "aire"
+          },
+          {
+            "target": "d2",
+            "effect": "pop",
+            "trigger": "aire",
+            "dur": 0.4
+          },
+          {
+            "target": "d3",
+            "effect": "pop",
+            "trigger": "desvía"
+          },
+          {
+            "target": "avion",
+            "effect": "move",
+            "trigger": "acelera",
+            "to": [
+              330,
+              -330
+            ],
+            "rotate": -12,
+            "dur": 1.6,
+            "sfx": "whoosh"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Tú miras por la ventanilla o te agarras al asiento?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Tú miras por la *ventanilla* o te agarras al asiento?",
+          "trigger": "miras"
+        }
+      ]
+    }
+  ]
+}

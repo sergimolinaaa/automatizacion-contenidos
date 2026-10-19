@@ -194,6 +194,14 @@ Truco: regla o barra que se alarga en horizontal = grupo dibujado en vertical de
 `escarcha(id_, x0, x1, y, grosor, derretida)` (picos blancos o charquito: hide + fade para «derretir») · `corrientes(id_, cx, cy, w, h)` (bucles de convección: draw + flow) ·
 `burbujas_gas(id_, cx, y0, y1, w, n, texto)` · `grafica_enfriamiento(id_, x0, y0, w, h, curvas=[(id, [(t, °C)], col, rótulo)])` (curvas en su id para draw, rótulo `_r`, línea de 0 °C).
 
+## objetos/aviones.py (aviones y aerodinámica)
+`jumbo(id_, cx, cy, s, franja, rot_)` (747 de cuatro motores de perfil, morro a la derecha, ≈ 1000×450 a s=1; `_motores`, `_ventanillas`, `_ala`; .puntos morro/cola/ala/ventanilla/tren) ·
+`perfil_ala(id_, cx, cy, L, ang, t, m, curva=True)` (corte NACA del ala; `ang` = ángulo de ataque, positivo morro arriba; `_curva` lima para draw; .puntos ataque/salida/arriba/abajo/sup/inf) ·
+`lineas_corriente(id_, ala, x0, x1, arriba, abajo, bajada)` (aire que rodea el ala y sale desviado hacia abajo; `_l<i>` para draw escalonado, flow) ·
+`signo_presion(id_, cx, cy, r, "+"|"-")` · `cochecito(id_, cx, base, s, col)` (turismo pequeño para pilas) · `manzana(id_, cx, cy, r)` ·
+`retrato_newton(id_, cx, cy, s)` (marco ovalado con placa; persona en `{id}_p`) · `pista_despegue(id_, W, H, horizonte)` (pista en perspectiva, `_marcas`) · fondo `aula(W, H, suelo_y)`.
+Truco: para que el ala «se incline», dibújala a 0° y anímala con `move` `rotate` (origin center); las líneas de corriente se calculan con otro `perfil_ala` ya inclinado.
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -243,3 +251,4 @@ lote7-05-picadura (archivo/picadura/dib.py): piel.py (corte de piel, habón, mos
 lote8-04-agua-caliente (archivo/agua-caliente/dib.py): frio.py (congelador, cuenco de helado, vapor, escarcha, corrientes de convección, burbujas de gas y gráfica de enfriamiento).
 lote8-03-gatos-caen: gato de perfil con giro por mitades (animales.py), oído interno (cuerpo.py), nivel de burbuja y red de ventana (casa.py).
 lote7-06-puerta-olvido (archivo/puerta-olvido/dib.py): memoria.py (puerta abierta/cerrada con placa, tijeras, caja, bocadillo con dibujo, humo, mando, sala pixelada, tele antigua, tira de película, universidad con cúpula, archivador y birrete).
+lote7-07-avion (archivo/avion/dib.py): aviones.py (jumbo, perfil de ala, líneas de corriente, signos de presión, cochecito, manzana, retrato de Newton, pista, aula).
