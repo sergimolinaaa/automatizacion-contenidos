@@ -1,0 +1,682 @@
+{
+ "source": "Fuentes: NASA Glenn Research Center, Beginner's Guide to Aeronautics («Lift from Flow Turning», «Incorrect Lift Theory», «The Lift Equation») · Universidad de Cambridge, Holger Babinsky, «How wings really work» (2012) · Avweb, «Theories of Lift» · BBVA OpenMind · KN Aviation y Blackjet (A380 vs 747) · Migflug",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Cómo",
+   "start": 0.1,
+   "end": 0.35
+  },
+  {
+   "text": "vuela",
+   "start": 0.36,
+   "end": 0.58
+  },
+  {
+   "text": "un",
+   "start": 0.59,
+   "end": 0.7
+  },
+  {
+   "text": "avión",
+   "start": 0.71,
+   "end": 0.97
+  },
+  {
+   "text": "que",
+   "start": 0.98,
+   "end": 1.07
+  },
+  {
+   "text": "pesa",
+   "start": 1.08,
+   "end": 1.28
+  },
+  {
+   "text": "casi",
+   "start": 1.29,
+   "end": 1.51
+  },
+  {
+   "text": "como",
+   "start": 1.52,
+   "end": 1.69
+  },
+  {
+   "text": "trescientos",
+   "start": 1.7,
+   "end": 2.17
+  },
+  {
+   "text": "coches?",
+   "start": 2.18,
+   "end": 2.6100000000000003
+  },
+  {
+   "text": "El",
+   "start": 3.3,
+   "end": 3.52
+  },
+  {
+   "text": "ala",
+   "start": 3.53,
+   "end": 3.6799999999999997
+  },
+  {
+   "text": "está",
+   "start": 3.69,
+   "end": 3.89
+  },
+  {
+   "text": "inclinada",
+   "start": 3.9,
+   "end": 4.36
+  },
+  {
+   "text": "y",
+   "start": 4.37,
+   "end": 4.41
+  },
+  {
+   "text": "curvada,",
+   "start": 4.42,
+   "end": 4.83
+  },
+  {
+   "text": "y",
+   "start": 4.95,
+   "end": 4.98
+  },
+  {
+   "text": "desvía",
+   "start": 4.99,
+   "end": 5.33
+  },
+  {
+   "text": "hacia",
+   "start": 5.34,
+   "end": 5.54
+  },
+  {
+   "text": "abajo",
+   "start": 5.55,
+   "end": 5.82
+  },
+  {
+   "text": "muchísimo",
+   "start": 5.83,
+   "end": 6.33
+  },
+  {
+   "text": "aire",
+   "start": 6.34,
+   "end": 6.53
+  },
+  {
+   "text": "cada",
+   "start": 6.54,
+   "end": 6.73
+  },
+  {
+   "text": "segundo.",
+   "start": 6.74,
+   "end": 7.2
+  },
+  {
+   "text": "Si",
+   "start": 7.9,
+   "end": 8.110000000000001
+  },
+  {
+   "text": "el",
+   "start": 8.12,
+   "end": 8.209999999999999
+  },
+  {
+   "text": "ala",
+   "start": 8.22,
+   "end": 8.360000000000001
+  },
+  {
+   "text": "empuja",
+   "start": 8.37,
+   "end": 8.719999999999999
+  },
+  {
+   "text": "el",
+   "start": 8.73,
+   "end": 8.82
+  },
+  {
+   "text": "aire",
+   "start": 8.83,
+   "end": 9.03
+  },
+  {
+   "text": "hacia",
+   "start": 9.04,
+   "end": 9.239999999999998
+  },
+  {
+   "text": "abajo,",
+   "start": 9.25,
+   "end": 9.61
+  },
+  {
+   "text": "el",
+   "start": 9.72,
+   "end": 9.850000000000001
+  },
+  {
+   "text": "aire",
+   "start": 9.86,
+   "end": 10.04
+  },
+  {
+   "text": "la",
+   "start": 10.05,
+   "end": 10.14
+  },
+  {
+   "text": "empuja",
+   "start": 10.15,
+   "end": 10.51
+  },
+  {
+   "text": "hacia",
+   "start": 10.52,
+   "end": 10.709999999999999
+  },
+  {
+   "text": "arriba:",
+   "start": 10.72,
+   "end": 11.040000000000001
+  },
+  {
+   "text": "acción",
+   "start": 11.17,
+   "end": 11.51
+  },
+  {
+   "text": "y",
+   "start": 11.52,
+   "end": 11.559999999999999
+  },
+  {
+   "text": "reacción,",
+   "start": 11.57,
+   "end": 12.1
+  },
+  {
+   "text": "como",
+   "start": 12.22,
+   "end": 12.42
+  },
+  {
+   "text": "dijo",
+   "start": 12.43,
+   "end": 12.64
+  },
+  {
+   "text": "Newton.",
+   "start": 12.65,
+   "end": 13.08
+  },
+  {
+   "text": "Lo",
+   "start": 13.78,
+   "end": 13.979999999999999
+  },
+  {
+   "text": "has",
+   "start": 13.99,
+   "end": 14.07
+  },
+  {
+   "text": "sentido:",
+   "start": 14.08,
+   "end": 14.5
+  },
+  {
+   "text": "saca",
+   "start": 14.63,
+   "end": 14.840000000000002
+  },
+  {
+   "text": "la",
+   "start": 14.85,
+   "end": 14.93
+  },
+  {
+   "text": "mano",
+   "start": 14.94,
+   "end": 15.15
+  },
+  {
+   "text": "por",
+   "start": 15.16,
+   "end": 15.3
+  },
+  {
+   "text": "la",
+   "start": 15.31,
+   "end": 15.38
+  },
+  {
+   "text": "ventanilla,",
+   "start": 15.39,
+   "end": 15.89
+  },
+  {
+   "text": "inclínala",
+   "start": 15.98,
+   "end": 16.47
+  },
+  {
+   "text": "y",
+   "start": 16.48,
+   "end": 16.54
+  },
+  {
+   "text": "verás",
+   "start": 16.55,
+   "end": 16.8
+  },
+  {
+   "text": "cómo",
+   "start": 16.81,
+   "end": 17.0
+  },
+  {
+   "text": "sube.",
+   "start": 17.01,
+   "end": 17.34
+  },
+  {
+   "text": "Encima",
+   "start": 18.04,
+   "end": 18.46
+  },
+  {
+   "text": "del",
+   "start": 18.47,
+   "end": 18.599999999999998
+  },
+  {
+   "text": "ala,",
+   "start": 18.61,
+   "end": 18.82
+  },
+  {
+   "text": "el",
+   "start": 18.92,
+   "end": 19.03
+  },
+  {
+   "text": "aire",
+   "start": 19.04,
+   "end": 19.23
+  },
+  {
+   "text": "va",
+   "start": 19.24,
+   "end": 19.33
+  },
+  {
+   "text": "más",
+   "start": 19.34,
+   "end": 19.49
+  },
+  {
+   "text": "rápido",
+   "start": 19.5,
+   "end": 19.84
+  },
+  {
+   "text": "y",
+   "start": 19.85,
+   "end": 19.91
+  },
+  {
+   "text": "aprieta",
+   "start": 19.92,
+   "end": 20.23
+  },
+  {
+   "text": "menos",
+   "start": 20.24,
+   "end": 20.509999999999998
+  },
+  {
+   "text": "que",
+   "start": 20.52,
+   "end": 20.59
+  },
+  {
+   "text": "debajo.",
+   "start": 20.6,
+   "end": 21.03
+  },
+  {
+   "text": "Esa",
+   "start": 21.72,
+   "end": 21.959999999999997
+  },
+  {
+   "text": "diferencia",
+   "start": 21.97,
+   "end": 22.439999999999998
+  },
+  {
+   "text": "la",
+   "start": 22.45,
+   "end": 22.529999999999998
+  },
+  {
+   "text": "sostiene.",
+   "start": 22.54,
+   "end": 23.05
+  },
+  {
+   "text": "Un",
+   "start": 23.75,
+   "end": 23.92
+  },
+  {
+   "text": "mito",
+   "start": 23.93,
+   "end": 24.13
+  },
+  {
+   "text": "del",
+   "start": 24.14,
+   "end": 24.26
+  },
+  {
+   "text": "cole:",
+   "start": 24.27,
+   "end": 24.55
+  },
+  {
+   "text": "el",
+   "start": 24.68,
+   "end": 24.78
+  },
+  {
+   "text": "aire",
+   "start": 24.79,
+   "end": 24.98
+  },
+  {
+   "text": "de",
+   "start": 24.99,
+   "end": 25.08
+  },
+  {
+   "text": "arriba",
+   "start": 25.09,
+   "end": 25.39
+  },
+  {
+   "text": "no",
+   "start": 25.4,
+   "end": 25.52
+  },
+  {
+   "text": "llega",
+   "start": 25.53,
+   "end": 25.78
+  },
+  {
+   "text": "a",
+   "start": 25.79,
+   "end": 25.83
+  },
+  {
+   "text": "la",
+   "start": 25.84,
+   "end": 25.919999999999998
+  },
+  {
+   "text": "vez",
+   "start": 25.93,
+   "end": 26.11
+  },
+  {
+   "text": "que",
+   "start": 26.12,
+   "end": 26.21
+  },
+  {
+   "text": "el",
+   "start": 26.22,
+   "end": 26.299999999999997
+  },
+  {
+   "text": "de",
+   "start": 26.31,
+   "end": 26.369999999999997
+  },
+  {
+   "text": "abajo.",
+   "start": 26.38,
+   "end": 26.779999999999998
+  },
+  {
+   "text": "Llega",
+   "start": 27.47,
+   "end": 27.82
+  },
+  {
+   "text": "antes.",
+   "start": 27.83,
+   "end": 28.279999999999998
+  },
+  {
+   "text": "Cuanto",
+   "start": 28.98,
+   "end": 29.26
+  },
+  {
+   "text": "más",
+   "start": 29.27,
+   "end": 29.419999999999998
+  },
+  {
+   "text": "rápido",
+   "start": 29.43,
+   "end": 29.74
+  },
+  {
+   "text": "va,",
+   "start": 29.75,
+   "end": 29.93
+  },
+  {
+   "text": "más",
+   "start": 30.05,
+   "end": 30.220000000000002
+  },
+  {
+   "text": "aire",
+   "start": 30.23,
+   "end": 30.42
+  },
+  {
+   "text": "desvía.",
+   "start": 30.43,
+   "end": 30.9
+  },
+  {
+   "text": "Por",
+   "start": 31.6,
+   "end": 31.790000000000003
+  },
+  {
+   "text": "eso",
+   "start": 31.8,
+   "end": 31.96
+  },
+  {
+   "text": "acelera",
+   "start": 31.97,
+   "end": 32.29
+  },
+  {
+   "text": "por",
+   "start": 32.3,
+   "end": 32.44
+  },
+  {
+   "text": "la",
+   "start": 32.45,
+   "end": 32.53
+  },
+  {
+   "text": "pista.",
+   "start": 32.54,
+   "end": 32.96
+  },
+  {
+   "text": "Tú",
+   "start": 33.66,
+   "end": 33.79
+  },
+  {
+   "text": "traes",
+   "start": 33.8,
+   "end": 34.05
+  },
+  {
+   "text": "las",
+   "start": 34.06,
+   "end": 34.21
+  },
+  {
+   "text": "dudas",
+   "start": 34.22,
+   "end": 34.49
+  },
+  {
+   "text": "y",
+   "start": 34.5,
+   "end": 34.54
+  },
+  {
+   "text": "nosotros",
+   "start": 34.55,
+   "end": 34.97
+  },
+  {
+   "text": "te",
+   "start": 34.98,
+   "end": 35.07
+  },
+  {
+   "text": "damos",
+   "start": 35.08,
+   "end": 35.35
+  },
+  {
+   "text": "el",
+   "start": 35.36,
+   "end": 35.46
+  },
+  {
+   "text": "truco.",
+   "start": 35.47,
+   "end": 35.85
+  },
+  {
+   "text": "Síguenos",
+   "start": 36.54,
+   "end": 37.05
+  },
+  {
+   "text": "y",
+   "start": 37.06,
+   "end": 37.11
+  },
+  {
+   "text": "las",
+   "start": 37.12,
+   "end": 37.25
+  },
+  {
+   "text": "resolvemos.",
+   "start": 37.26,
+   "end": 37.919999999999995
+  },
+  {
+   "text": "¿Tú",
+   "start": 38.61,
+   "end": 38.74
+  },
+  {
+   "text": "miras",
+   "start": 38.75,
+   "end": 39.01
+  },
+  {
+   "text": "por",
+   "start": 39.02,
+   "end": 39.150000000000006
+  },
+  {
+   "text": "la",
+   "start": 39.16,
+   "end": 39.23
+  },
+  {
+   "text": "ventanilla",
+   "start": 39.24,
+   "end": 39.72
+  },
+  {
+   "text": "o",
+   "start": 39.73,
+   "end": 39.779999999999994
+  },
+  {
+   "text": "te",
+   "start": 39.79,
+   "end": 39.89
+  },
+  {
+   "text": "agarras",
+   "start": 39.9,
+   "end": 40.199999999999996
+  },
+  {
+   "text": "al",
+   "start": 40.21,
+   "end": 40.28
+  },
+  {
+   "text": "asiento?",
+   "start": 40.29,
+   "end": 40.73
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 41.23,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Cómo *vuela* un avión",
+  "scene": 0
+ },
+ "duration": 43.83,
+ "cover_offset_ms": 44129
+}
