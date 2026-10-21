@@ -593,6 +593,17 @@
         "tiktok": "6ad7d42f652214940ffff83f",
         "instagram": "6ad7d42fa2af9351fbbf5a1b"
       }
+    },
+    {
+      "slug": "lote8-04-agua-caliente",
+      "category": "bulos",
+      "due": "2026-10-23T19:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote8-04-agua-caliente/lote8-04-agua-caliente-con-voz.mp4",
+      "posts": {
+        "youtube": "6ad8c244df27e4a2784b8723",
+        "tiktok": "6ad8c2457b5905295c282d33",
+        "instagram": "6ad8c2467b5905295c282d60"
+      }
     }
   ]
 }
