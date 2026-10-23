@@ -44,9 +44,11 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-10-23 14:00 | ¿Por qué olvidas a qué ibas al entrar en una habitación? | content/lote7-06-puerta-olvido | sí | sí | sí | no | previews/lote7-06-puerta-olvido-con-voz.mp4 (45,1 s) |
 | 2026-10-23 21:00 | ¿El agua caliente se congela antes que la fría? (extra) | content/lote8-04-agua-caliente | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-04-agua-caliente-con-voz.mp4 (49,1 s) |
 | 2026-10-24 14:00 | ¿Cómo vuela un avión de 400 toneladas? | content/lote7-07-avion | sí | sí | pendiente (cola de Buffer) | no | previews/lote7-07-avion-con-voz.mp4 (44,4 s) |
-| 2026-10-24 21:00 | ¿Por qué tu hipoteca sube o baja? (extra) | content/lote8-05-hipoteca | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-05-hipoteca-con-voz.mp4 (45,3 s) |
+| 2026-10-26 21:00 | ¿Por qué tu hipoteca sube o baja? (extra, movido para dejar sitio al cambio de hora) | content/lote8-05-hipoteca | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-05-hipoteca-con-voz.mp4 (45,3 s) |
 | 2026-10-25 14:00 | ¿Y si nadie gana el 29 N? Así funciona la investidura | content/lote8-06-investidura | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-06-investidura-con-voz.mp4 (47,1 s) |
 | 2026-10-25 21:00 | El basilisco corre sobre el agua (extra) | content/lote8-07-basilisco | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-07-basilisco-con-voz.mp4 (43,8 s) |
+| 2026-10-24 21:00 | ¿Este domingo es el último cambio de hora? (actualidad) | content/lote8-08-cambio-hora | sí | sí | sí | no | previews/lote8-08-cambio-hora-con-voz.mp4 (49,3 s) |
+| 2026-10-27 21:00 | ¿Cuánto puede gastar un partido en campaña? (actualidad, rehecho con rossark; OK del usuario) | content/lote8-09-gasto-campana | sí | sí | sí | no | previews/lote8-09-gasto-campana-con-voz.mp4 (45,5 s) |
 
 ### Semana 26 oct al 1 nov (guiones en guiones/semana-2026-10-26.md)
 | Fecha | Tema | Carpeta | Guion | Montado | Programado | Publicado | Vídeo |
@@ -64,6 +66,7 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 |---|---|---|
 | 2026-10-16 | Librería (una vez) | 360.000 |
 | 2026-10-16 | Guiones semana 20-24 oct (5 vídeos) | 100.000 |
+| 2026-10-23 | Actualidad: cambio de hora 203k, gasto campaña 200k + rehecho 242k | ≈ 645.000 |
 | 2026-10-23 | Guiones semana 26 oct al 1 nov (7 vídeos) | ≈ 150.000 |
 | 2026-10-19 | Semana 20-25 oct: 11 vídeos (4 montajes de guion ≈ 180-217k c/u; 7 guion+montaje ≈ 160-195k c/u) | ≈ 2.010.000 |
 | 2026-10-17 | Nudillos (guion + montaje + 5 piezas) | 188.000 |
