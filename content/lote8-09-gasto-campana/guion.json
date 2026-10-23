@@ -1,189 +1,1700 @@
 {
-  "topic": "¿Cuánto puede gastar un partido en campaña? Tope de gasto y subvenciones (LOREG art. 175, Orden HAC/1062/2026) y gasto de 2023 (Tribunal de Cuentas)",
+  "topic": "¿Cuánto puede gastar un partido en campaña? Tope de gasto y subvenciones (LOREG art. 175, Orden HAC/1062/2026), gasto de 2023 y recortes propuestos por el Tribunal de Cuentas",
   "categoria": "politica",
   "title": "¿Cuánto puede gastar un partido en campaña?",
-  "source": "Fuentes: LOREG, art. 175 · Orden HAC/1062/2026 (BOE) · Europa Press · Tribunal de Cuentas, informe 1.616 · EFE · INE",
-  "chapters": ["?", "1", "2", "3", "+", "TÚ"],
+  "source": "Fuentes: LOREG, art. 175 · Orden HAC/1062/2026 (BOE) · Europa Press · Tribunal de Cuentas, informe 1.616 · EFE (Infobae) · The Objective · INE",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
   "outro_cta": "Todo tiene un truco",
-  "cover": {"text": "¿Cuánto puede *gastar* un partido?", "scene": 0},
+  "cover": {
+    "text": "¿Cuánto puede *gastar* un partido?",
+    "scene": 0
+  },
   "publish": {
     "at": "2026-10-27T21:00:00+01:00",
-    "caption": "¿Cuánto puede gastar un partido en campaña? 🗳️ La ley electoral pone un tope de 0,37 € por habitante de las circunscripciones donde se presenta: en toda España, unos 18 millones (aproximado). Después el Estado paga 21.167,64 € por escaño y 0,81 € por voto al Congreso si saca diputado (Orden HAC/1062/2026). En 2023 los 16 partidos con escaño justificaron unos 58 millones y ninguno superó el tope (Tribunal de Cuentas). Sin posicionarnos, solo con las cuentas oficiales. ¿Sabías que había un tope de gasto?",
-    "description": "¿Cuánto puede gastar un partido en la campaña del 29 de noviembre? El artículo 175 de la ley electoral (LOREG) fija un tope: para estas generales, 0,37 euros por cada habitante de las circunscripciones donde el partido presenta candidatura, según la Orden HAC/1062/2026 publicada en el BOE. Si se presenta en toda España, con unos 49,1 millones de habitantes (INE, 1 de enero de 2025), el tope ronda los 18 millones de euros (cálculo aproximado). Después, el Estado subvenciona 21.167,64 euros por cada escaño en el Congreso o el Senado, 0,81 euros por cada voto al Congreso si la candidatura saca al menos un diputado y 0,32 euros por voto a cada senador electo. El envío de papeletas a casa tiene una ayuda aparte. En las generales de 2023, el Tribunal de Cuentas dio por justificados unos 58 millones de gasto de los 16 partidos con representación (33 millones de campaña y 25 de envíos) y ninguno superó el límite. Lo vigilan las juntas electorales durante el proceso y el Tribunal de Cuentas después; si un partido se pasa o tiene irregularidades, puede proponer quitarle o reducirle la subvención (LOREG, art. 134). Te lo contamos sin posicionarnos, solo con las cuentas oficiales. Fuentes: LOREG (BOE), Orden HAC/1062/2026 (BOE, vía Noticias Jurídicas), Europa Press (Infobae), Tribunal de Cuentas (informe 1.616 y nota de prensa), EFE e INE. ¿Sabías que había un tope de gasto?",
-    "hashtags": ["elecciones", "29N", "campañaelectoral", "tribunaldecuentas"]
+    "caption": "¿Cuánto puede gastar un partido en campaña? 🗳️ La ley electoral pone un tope de 0,37 € por habitante de las circunscripciones donde se presenta: en toda España, unos 18 millones (aproximado). Después el Estado paga 21.167,64 € por escaño y 0,81 € por voto al Congreso si saca diputado (Orden HAC/1062/2026). En 2023 los 16 partidos con escaño justificaron unos 58 millones y ninguno superó el tope, pero el Tribunal de Cuentas propuso recortar la subvención a seis partidos por irregularidades: Junts 178.508 €, UPN 11.261 €, Sumar 7.418 €, PSOE 7.139 €, Vox 3.915 € y PSC 55 € (EFE y The Objective). Sin posicionarnos, solo con las cuentas oficiales. ¿Sabías que había un tope de gasto?",
+    "description": "¿Cuánto puede gastar un partido en la campaña del 29 de noviembre? El artículo 175 de la ley electoral (LOREG) fija un tope: para estas generales, 0,37 euros por cada habitante de las circunscripciones donde el partido presenta candidatura, según la Orden HAC/1062/2026 publicada en el BOE. Si se presenta en toda España, con unos 49,1 millones de habitantes (INE, 1 de enero de 2025), el tope ronda los 18 millones de euros (cálculo aproximado). Después, el Estado subvenciona 21.167,64 euros por cada escaño en el Congreso o el Senado, 0,81 euros por cada voto al Congreso si la candidatura saca al menos un diputado y 0,32 euros por voto a cada senador electo. El envío de papeletas a casa tiene una ayuda aparte. En las generales de 2023, el Tribunal de Cuentas dio por justificados unos 58 millones de gasto de los 16 partidos con representación (33 millones de campaña y 25 de envíos) y ninguno superó el límite. Lo vigilan las juntas electorales durante el proceso y el Tribunal de Cuentas después; si un partido se pasa o tiene irregularidades, puede proponer quitarle o reducirle la subvención (LOREG, art. 134). En su informe sobre el 23J, publicado en marzo de 2025, el Tribunal de Cuentas propuso reducir la subvención a seis partidos por irregularidades: Junts 178.508 euros, UPN 11.261, Sumar 7.418, PSOE 7.139, Vox 3.915 y PSC 55 (EFE, vía Infobae, y The Objective, 28 de marzo de 2025). Te lo contamos sin posicionarnos, solo con las cuentas oficiales. Fuentes: LOREG (BOE), Orden HAC/1062/2026 (BOE, vía Noticias Jurídicas), Europa Press (Infobae), Tribunal de Cuentas (informe 1.616 y nota de prensa), EFE (Infobae), The Objective e INE. ¿Sabías que había un tope de gasto?",
+    "hashtags": [
+      "elecciones",
+      "29N",
+      "campañaelectoral",
+      "tribunaldecuentas"
+    ]
   },
   "scenes": [
     {
       "chapter": 0,
-      "headline": "¿Cuánto puede *gastar*?",
+      "headline": "¿Cuánto puede *gastar?*",
       "narration": "¿Cuánto puede gastar un partido en la campaña del veintinueve de noviembre?",
       "illustration": {
-        "svg_file": "gancho_full.svg", "layout": "full", "caption": "Fig. 1 · Campaña del 29 N",
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Campaña del 29 N",
         "anims": [
-          {"target": "ana", "effect": "breathe", "phase": 0.2},
-          {"target": "ana_ojos", "effect": "blink"},
-          {"target": "ana", "effect": "sway", "origin": "bottom", "amount": 0.18, "phase": 0.2},
-          {"target": "ana_cabeza", "effect": "sway", "trigger": "Cuánto", "origin": "bottom", "amount": 0.5},
-          {"target": "globo", "effect": "pop", "trigger": "Cuánto", "origin": "bottom-left", "sfx": "pop"},
-          {"target": "globo", "effect": "float", "amount": 0.4},
-          {"target": "saco", "effect": "slide-up", "trigger": "gastar", "dur": 0.5, "sfx": "whoosh"},
-          {"target": "saco_nudo", "effect": "sway", "origin": "bottom", "amount": 0.4},
-          {"target": "mon0", "effect": "pop", "trigger": "partido", "sfx": "ding"},
-          {"target": "mon1", "effect": "pop", "trigger": "partido", "delay": 0.15},
-          {"target": "mon2", "effect": "pop", "trigger": "campaña"},
-          {"target": "ana_brazo_der", "effect": "move", "trigger": "partido", "rotate": -12, "origin": "top-left", "dur": 0.5},
-          {"target": "tcamp", "effect": "pop", "trigger": "campaña", "sfx": "pop"},
-          {"target": "cal", "effect": "pop", "trigger": "veintinueve", "sfx": "papel"},
-          {"target": "cal", "effect": "punch", "trigger": "noviembre", "amount": 0.3},
-          {"target": "duda", "effect": "pop", "trigger": "noviembre", "sfx": "sorpresa"},
-          {"target": "duda", "effect": "pulse", "amount": 0.5}
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "origin": "bottom",
+            "phase": 0.2,
+            "amount": 0.8
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.35,
+            "delay": 0.18
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink",
+            "delay": 0.6
+          },
+          {
+            "target": "ana_brazo_izq",
+            "effect": "sway",
+            "origin": "top-right",
+            "amount": 0.18,
+            "delay": 0.9
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.3,
+            "delay": 0.35
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "Cuánto",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "duda",
+            "effect": "float",
+            "amount": 0.4,
+            "trigger": "Cuánto"
+          },
+          {
+            "target": "mon0",
+            "effect": "slide-down",
+            "delay": 0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mon1",
+            "effect": "slide-down",
+            "delay": 0.25,
+            "dur": 0.5
+          },
+          {
+            "target": "mon2",
+            "effect": "slide-down",
+            "delay": 0.5,
+            "dur": 0.5
+          },
+          {
+            "target": "mon1",
+            "effect": "float",
+            "amount": 0.3,
+            "delay": 0.6
+          },
+          {
+            "target": "mon2",
+            "effect": "float",
+            "amount": 0.25,
+            "delay": 0.9
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "gastar",
+            "rotate": -14,
+            "origin": "top-left",
+            "dur": 0.6
+          },
+          {
+            "target": "mon0",
+            "effect": "move",
+            "trigger": "gastar",
+            "to": [
+              70,
+              270
+            ],
+            "rotate": 40,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mon0",
+            "effect": "hide",
+            "trigger": "partido"
+          },
+          {
+            "target": "saco",
+            "effect": "punch",
+            "trigger": "partido",
+            "amount": 0.15
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "move",
+            "trigger": "partido",
+            "rotate": 6,
+            "origin": "bottom",
+            "dur": 0.7
+          },
+          {
+            "target": "mon1",
+            "effect": "move",
+            "trigger": "partido",
+            "to": [
+              -60,
+              345
+            ],
+            "rotate": -35,
+            "dur": 0.5
+          },
+          {
+            "target": "mon1",
+            "effect": "hide",
+            "trigger": "la"
+          },
+          {
+            "target": "saco",
+            "effect": "punch",
+            "trigger": "la",
+            "amount": 0.12
+          },
+          {
+            "target": "ana_mano_der",
+            "effect": "wiggle",
+            "trigger": "campaña",
+            "origin": "bottom-left",
+            "amount": 0.35
+          },
+          {
+            "target": "mon2",
+            "effect": "move",
+            "trigger": "campaña",
+            "to": [
+              10,
+              435
+            ],
+            "rotate": 30,
+            "dur": 0.5
+          },
+          {
+            "target": "mon2",
+            "effect": "hide",
+            "trigger": "del"
+          },
+          {
+            "target": "saco",
+            "effect": "punch",
+            "trigger": "del",
+            "amount": 0.18
+          },
+          {
+            "target": "saco",
+            "effect": "breathe",
+            "origin": "bottom",
+            "phase": 0.6,
+            "amount": 0.5
+          },
+          {
+            "target": "saco_nudo",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.4,
+            "delay": 0.3
+          },
+          {
+            "target": "cal",
+            "effect": "pop",
+            "trigger": "veintinueve",
+            "sfx": "papel"
+          },
+          {
+            "target": "cal",
+            "effect": "sway",
+            "trigger": "veintinueve",
+            "origin": "top",
+            "amount": 0.25
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "veintinueve",
+            "rotate": 8,
+            "origin": "top-left",
+            "dur": 0.7
+          },
+          {
+            "target": "cal",
+            "effect": "punch",
+            "trigger": "noviembre",
+            "amount": 0.3
+          }
         ]
       }
     },
     {
-      "chapter": 1, "number": "1",
-      "headline": "Solo las *cuentas*",
+      "chapter": 1,
+      "number": "1",
+      "headline": "Solo *cuentas*",
       "narration": "Te lo contamos sin posicionarnos, solo con las cuentas oficiales.",
       "illustration": {
-        "svg_file": "neutral_free.svg", "layout": "free", "height": 900, "caption": "Fig. 2 · Ley electoral",
+        "svg_file": "neutral_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 2 · Sin posicionarnos",
         "anims": [
-          {"target": "doc", "effect": "pop", "trigger": "Te", "sfx": "papel"},
-          {"target": "doc", "effect": "float", "amount": 0.3},
-          {"target": "sello", "effect": "pop", "trigger": "posicionarnos", "sfx": "sello"},
-          {"target": "sello", "effect": "punch", "trigger": "posicionarnos", "amount": 0.5},
-          {"target": "car", "effect": "slide-left", "trigger": "solo", "dur": 0.5, "sfx": "whoosh"},
-          {"target": "toficial", "effect": "pop", "trigger": "oficiales", "sfx": "pop"},
-          {"target": "chisp", "effect": "pop", "trigger": "cuentas"},
-          {"target": "chisp", "effect": "pulse", "amount": 0.6},
-          {"target": "car", "effect": "punch", "trigger": "oficiales", "amount": 0.15}
+          {
+            "target": "bal",
+            "effect": "slide-up",
+            "trigger": "Te",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bal",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.12,
+            "delay": 0.6
+          },
+          {
+            "target": "pl_doc",
+            "effect": "float",
+            "amount": 0.25,
+            "delay": 0.2
+          },
+          {
+            "target": "pl_car",
+            "effect": "float",
+            "amount": 0.2,
+            "delay": 0.9
+          },
+          {
+            "target": "chisp",
+            "effect": "pop",
+            "trigger": "contamos"
+          },
+          {
+            "target": "chisp",
+            "effect": "pulse",
+            "trigger": "contamos",
+            "amount": 0.6
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "posicionarnos",
+            "sfx": "sello"
+          },
+          {
+            "target": "sello",
+            "effect": "punch",
+            "trigger": "posicionarnos",
+            "amount": 0.5
+          },
+          {
+            "target": "sello",
+            "effect": "sway",
+            "trigger": "solo",
+            "amount": 0.12
+          },
+          {
+            "target": "pl_car",
+            "effect": "punch",
+            "trigger": "cuentas",
+            "amount": 0.3
+          },
+          {
+            "target": "toficial",
+            "effect": "pop",
+            "trigger": "cuentas",
+            "sfx": "pop"
+          },
+          {
+            "target": "toficial",
+            "effect": "punch",
+            "trigger": "oficiales",
+            "amount": 0.25
+          }
         ]
       }
     },
     {
-      "chapter": 1, "number": "1",
-      "headline": "Un *tope* por persona",
+      "chapter": 1,
+      "number": "1",
+      "headline": "Tope por *habitante*",
       "narration": "La ley pone un tope: treinta y siete céntimos por cada habitante de donde se presenta.",
       "illustration": {
-        "svg_file": "tope.svg", "caption": "Fig. 3 · LOREG, art. 175",
+        "svg_file": "tope.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 3 · LOREG, art. 175",
         "anims": [
-          {"target": "tley", "effect": "pop", "trigger": "ley", "sfx": "pop"},
-          {"target": "tope_linea", "effect": "draw", "trigger": "tope", "dur": 0.5, "sfx": "rotulador"},
-          {"target": "tope_cartel", "effect": "pop", "trigger": "tope", "sfx": "sello"},
-          {"target": "c37", "effect": "pop", "trigger": "treinta", "sfx": "ding"},
-          {"target": "c37", "effect": "punch", "trigger": "céntimos", "amount": 0.3},
-          {"target": "hab0", "effect": "slide-up", "trigger": "cada", "dur": 0.4, "sfx": "pop"},
-          {"target": "hab1", "effect": "slide-up", "trigger": "cada", "delay": 0.15, "dur": 0.4},
-          {"target": "hab2", "effect": "slide-up", "trigger": "habitante", "dur": 0.4},
-          {"target": "hab3", "effect": "slide-up", "trigger": "habitante", "delay": 0.15, "dur": 0.4},
-          {"target": "hab4", "effect": "slide-up", "trigger": "habitante", "delay": 0.3, "dur": 0.4},
-          {"target": "tdonde", "effect": "pop", "trigger": "presenta", "sfx": "pop"},
-          {"target": "tope_cartel", "effect": "pulse", "amount": 0.4}
+          {
+            "target": "hab0",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "hab1",
+            "effect": "slide-up",
+            "delay": 0.08,
+            "dur": 0.5
+          },
+          {
+            "target": "hab2",
+            "effect": "slide-up",
+            "delay": 0.16,
+            "dur": 0.5
+          },
+          {
+            "target": "hab3",
+            "effect": "slide-up",
+            "delay": 0.24,
+            "dur": 0.5
+          },
+          {
+            "target": "hab4",
+            "effect": "slide-up",
+            "delay": 0.32,
+            "dur": 0.5
+          },
+          {
+            "target": "hab0",
+            "effect": "breathe",
+            "origin": "bottom",
+            "phase": 0.1,
+            "amount": 0.7
+          },
+          {
+            "target": "hab1",
+            "effect": "breathe",
+            "origin": "bottom",
+            "phase": 0.31,
+            "amount": 0.7
+          },
+          {
+            "target": "hab2",
+            "effect": "breathe",
+            "origin": "bottom",
+            "phase": 0.52,
+            "amount": 0.7
+          },
+          {
+            "target": "hab3",
+            "effect": "breathe",
+            "origin": "bottom",
+            "phase": 0.73,
+            "amount": 0.7
+          },
+          {
+            "target": "hab4",
+            "effect": "breathe",
+            "origin": "bottom",
+            "phase": 0.94,
+            "amount": 0.7
+          },
+          {
+            "target": "tley",
+            "effect": "pop",
+            "trigger": "ley",
+            "sfx": "pop"
+          },
+          {
+            "target": "tope_linea",
+            "effect": "draw",
+            "trigger": "pone",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tope_cartel",
+            "effect": "pop",
+            "trigger": "tope",
+            "sfx": "sello"
+          },
+          {
+            "target": "tope_cartel",
+            "effect": "sway",
+            "trigger": "tope",
+            "origin": "bottom",
+            "amount": 0.15
+          },
+          {
+            "target": "c37_0",
+            "effect": "fade",
+            "trigger": "treinta",
+            "dur": 0.15,
+            "sfx": "ding"
+          },
+          {
+            "target": "c37_0",
+            "effect": "hide",
+            "trigger": "siete"
+          },
+          {
+            "target": "c37_1",
+            "effect": "fade",
+            "trigger": "siete",
+            "dur": 0.15
+          },
+          {
+            "target": "c37_1",
+            "effect": "hide",
+            "trigger": "céntimos"
+          },
+          {
+            "target": "c37",
+            "effect": "fade",
+            "trigger": "céntimos",
+            "dur": 0.15
+          },
+          {
+            "target": "c37",
+            "effect": "punch",
+            "trigger": "céntimos",
+            "amount": 0.3
+          },
+          {
+            "target": "tpor",
+            "effect": "pop",
+            "trigger": "por",
+            "sfx": "pop"
+          },
+          {
+            "target": "mon0",
+            "effect": "pop",
+            "trigger": "cada",
+            "sfx": "ding"
+          },
+          {
+            "target": "mon1",
+            "effect": "pop",
+            "trigger": "habitante"
+          },
+          {
+            "target": "mon2",
+            "effect": "pop",
+            "trigger": "de"
+          },
+          {
+            "target": "mon3",
+            "effect": "pop",
+            "trigger": "donde"
+          },
+          {
+            "target": "mon4",
+            "effect": "pop",
+            "trigger": "se"
+          },
+          {
+            "target": "mon0",
+            "effect": "float",
+            "trigger": "cada",
+            "amount": 0.3
+          },
+          {
+            "target": "mon1",
+            "effect": "float",
+            "trigger": "habitante",
+            "amount": 0.4
+          },
+          {
+            "target": "mon2",
+            "effect": "float",
+            "trigger": "de",
+            "amount": 0.3
+          },
+          {
+            "target": "mon3",
+            "effect": "float",
+            "trigger": "donde",
+            "amount": 0.4
+          },
+          {
+            "target": "mon4",
+            "effect": "float",
+            "trigger": "se",
+            "amount": 0.3
+          },
+          {
+            "target": "tdonde",
+            "effect": "pop",
+            "trigger": "presenta",
+            "sfx": "pop"
+          }
         ]
       }
     },
     {
-      "chapter": 2, "number": "2",
-      "headline": "Toda España: *18 M*",
+      "chapter": 1,
+      "number": "1",
+      "headline": "Toda *España*",
       "narration": "En toda España, con unos cuarenta y nueve millones de personas, son unos dieciocho millones.",
       "illustration": {
-        "svg_file": "espana_full.svg", "layout": "full", "caption": "Fig. 4 · Cálculo aproximado",
+        "svg_file": "espana_full.svg",
+        "layout": "full",
+        "caption": "Fig. 4 · Cálculo aproximado",
         "anims": [
-          {"target": "mapa", "effect": "pop", "trigger": "En", "sfx": "whoosh"},
-          {"target": "mapa_puntos", "effect": "pulse", "trigger": "España", "amount": 0.4},
-          {"target": "c49", "effect": "pop", "trigger": "cuarenta", "sfx": "ding"},
-          {"target": "thab", "effect": "pop", "trigger": "personas", "sfx": "pop"},
-          {"target": "c49", "effect": "punch", "trigger": "millones", "amount": 0.2},
-          {"target": "tpor", "effect": "slide-right", "trigger": "personas", "dur": 0.4, "sfx": "whoosh"},
-          {"target": "fpor", "effect": "draw", "trigger": "son", "dur": 0.4, "sfx": "rotulador"},
-          {"target": "c18", "effect": "pop", "trigger": "dieciocho", "sfx": "ding"},
-          {"target": "taprox", "effect": "pop", "trigger": "dieciocho", "delay": 0.4},
-          {"target": "c18", "effect": "pulse", "amount": 0.3}
+          {
+            "target": "mapa",
+            "effect": "slide-up",
+            "trigger": "En",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mapa",
+            "effect": "float",
+            "amount": 0.2,
+            "delay": 0.5
+          },
+          {
+            "target": "mapa_puntos",
+            "effect": "pulse",
+            "trigger": "España",
+            "amount": 0.5
+          },
+          {
+            "target": "c49_0",
+            "effect": "fade",
+            "trigger": "cuarenta",
+            "dur": 0.15,
+            "sfx": "ding"
+          },
+          {
+            "target": "c49_0",
+            "effect": "hide",
+            "trigger": "nueve"
+          },
+          {
+            "target": "c49",
+            "effect": "fade",
+            "trigger": "nueve",
+            "dur": 0.15
+          },
+          {
+            "target": "c49",
+            "effect": "punch",
+            "trigger": "millones",
+            "amount": 0.25
+          },
+          {
+            "target": "thab",
+            "effect": "pop",
+            "trigger": "millones",
+            "sfx": "pop"
+          },
+          {
+            "target": "tpor",
+            "effect": "slide-right",
+            "trigger": "personas",
+            "dur": 0.45,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "fpor",
+            "effect": "draw",
+            "trigger": "son",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "fpor",
+            "effect": "flow",
+            "trigger": "son",
+            "amount": 0.5
+          },
+          {
+            "target": "c18_0",
+            "effect": "fade",
+            "trigger": "son",
+            "dur": 0.15
+          },
+          {
+            "target": "c18_0",
+            "effect": "hide",
+            "trigger": "dieciocho"
+          },
+          {
+            "target": "c18",
+            "effect": "fade",
+            "trigger": "dieciocho",
+            "dur": 0.15,
+            "sfx": "ding"
+          },
+          {
+            "target": "c18",
+            "effect": "pulse",
+            "trigger": "dieciocho",
+            "amount": 0.3
+          },
+          {
+            "target": "taprox",
+            "effect": "pop",
+            "trigger": "dieciocho"
+          }
         ]
       }
     },
     {
-      "chapter": 2, "number": "2",
-      "headline": "Dinero por *escaño*",
-      "narration": "Después, el Estado le paga unos veintiún mil euros por cada escaño conseguido,",
+      "chapter": 2,
+      "number": "2",
+      "headline": "Pago por *escaño*",
+      "narration": "Después, el Estado le paga unos veintiún mil euros por escaño,",
       "illustration": {
-        "svg_file": "escano.svg", "caption": "Fig. 5 · Orden HAC/1062/2026",
+        "svg_file": "escano.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 5 · Orden HAC/1062/2026",
         "anims": [
-          {"target": "hemi", "effect": "pop", "trigger": "Después", "sfx": "pop"},
-          {"target": "estado", "effect": "slide-left", "trigger": "Estado", "dur": 0.5, "sfx": "whoosh"},
-          {"target": "fpago", "effect": "draw", "trigger": "paga", "dur": 0.5, "sfx": "rotulador"},
-          {"target": "bil0", "effect": "slide-left", "trigger": "paga", "dur": 0.5},
-          {"target": "bil1", "effect": "slide-left", "trigger": "veintiún", "dur": 0.5},
-          {"target": "bil0", "effect": "float", "amount": 0.4},
-          {"target": "c21", "effect": "pop", "trigger": "veintiún", "sfx": "ding"},
-          {"target": "esc", "effect": "pop", "trigger": "escaño", "sfx": "pop"},
-          {"target": "esc", "effect": "pulse", "amount": 0.6},
-          {"target": "tesc", "effect": "pop", "trigger": "escaño"},
-          {"target": "tsen", "effect": "pop", "trigger": "conseguido", "sfx": "pop"}
+          {
+            "target": "hemi",
+            "effect": "slide-up",
+            "trigger": "Después",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "estado",
+            "effect": "slide-right",
+            "trigger": "Estado",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bandera",
+            "effect": "pop",
+            "trigger": "le"
+          },
+          {
+            "target": "bandera",
+            "effect": "sway",
+            "trigger": "le",
+            "origin": "left",
+            "amount": 0.45
+          },
+          {
+            "target": "c21_0",
+            "effect": "fade",
+            "trigger": "le",
+            "dur": 0.15
+          },
+          {
+            "target": "c21_0",
+            "effect": "hide",
+            "trigger": "paga"
+          },
+          {
+            "target": "c21_1",
+            "effect": "fade",
+            "trigger": "paga",
+            "dur": 0.15
+          },
+          {
+            "target": "c21_1",
+            "effect": "hide",
+            "trigger": "unos"
+          },
+          {
+            "target": "c21_2",
+            "effect": "fade",
+            "trigger": "unos",
+            "dur": 0.15
+          },
+          {
+            "target": "c21_2",
+            "effect": "hide",
+            "trigger": "veintiún"
+          },
+          {
+            "target": "c21",
+            "effect": "fade",
+            "trigger": "veintiún",
+            "dur": 0.15,
+            "sfx": "ding"
+          },
+          {
+            "target": "c21",
+            "effect": "punch",
+            "trigger": "euros",
+            "amount": 0.25
+          },
+          {
+            "target": "bil0",
+            "effect": "pop",
+            "trigger": "paga",
+            "sfx": "papel"
+          },
+          {
+            "target": "bil1",
+            "effect": "pop",
+            "trigger": "unos"
+          },
+          {
+            "target": "bil0",
+            "effect": "float",
+            "trigger": "paga",
+            "amount": 0.3
+          },
+          {
+            "target": "bil0",
+            "effect": "move",
+            "trigger": "veintiún",
+            "to": [
+              469,
+              161
+            ],
+            "rotate": 20,
+            "dur": 0.7,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bil0",
+            "effect": "hide",
+            "trigger": "euros"
+          },
+          {
+            "target": "bil1",
+            "effect": "move",
+            "trigger": "mil",
+            "to": [
+              489,
+              151
+            ],
+            "rotate": -15,
+            "dur": 0.7
+          },
+          {
+            "target": "bil1",
+            "effect": "hide",
+            "trigger": "escaño"
+          },
+          {
+            "target": "tesc",
+            "effect": "pop",
+            "trigger": "por",
+            "sfx": "pop"
+          },
+          {
+            "target": "esc",
+            "effect": "pop",
+            "trigger": "escaño",
+            "sfx": "ding"
+          },
+          {
+            "target": "esc",
+            "effect": "pulse",
+            "trigger": "escaño",
+            "amount": 0.6
+          },
+          {
+            "target": "onda",
+            "effect": "ripple",
+            "trigger": "escaño"
+          },
+          {
+            "target": "tsen",
+            "effect": "pop",
+            "trigger": "escaño"
+          }
         ]
       }
     },
     {
-      "chapter": 3, "number": "3",
+      "chapter": 2,
+      "number": "2",
       "headline": "Y por cada *voto*",
-      "narration": "y ochenta y un céntimos por cada voto al Congreso, si saca diputado.",
+      "narration": "y ochenta y un céntimos por cada voto, si saca diputado.",
       "illustration": {
-        "svg_file": "voto_free.svg", "layout": "free", "height": 900, "caption": "Fig. 6 · LOREG, art. 175",
+        "svg_file": "voto_free.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 6 · LOREG, art. 175",
         "anims": [
-          {"target": "urna", "effect": "slide-up", "trigger": "y", "dur": 0.5, "sfx": "whoosh"},
-          {"target": "c81", "effect": "pop", "trigger": "ochenta", "sfx": "ding"},
-          {"target": "m0", "effect": "slide-down", "trigger": "céntimos", "dur": 0.4, "sfx": "pop"},
-          {"target": "m1", "effect": "slide-down", "trigger": "céntimos", "delay": 0.2, "dur": 0.4},
-          {"target": "m2", "effect": "slide-down", "trigger": "voto", "dur": 0.4},
-          {"target": "m1", "effect": "bob", "amount": 0.4},
-          {"target": "sobre", "effect": "pop", "trigger": "cada", "sfx": "papel"},
-          {"target": "sobre", "effect": "move", "trigger": "voto", "to": [0, 160], "dur": 0.6, "sfx": "whoosh"},
-          {"target": "sobre", "effect": "hide", "trigger": "Congreso"},
-          {"target": "tvoto", "effect": "pop", "trigger": "Congreso", "sfx": "pop"},
-          {"target": "urna", "effect": "punch", "trigger": "Congreso", "amount": 0.15},
-          {"target": "tdip", "effect": "pop", "trigger": "diputado", "sfx": "sello"},
-          {"target": "ok", "effect": "pop", "trigger": "diputado", "delay": 0.2},
-          {"target": "tsen", "effect": "fade", "trigger": "saca", "dur": 0.3}
+          {
+            "target": "urna",
+            "effect": "slide-up",
+            "trigger": "y",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sobre",
+            "effect": "slide-down",
+            "trigger": "y",
+            "dur": 0.5
+          },
+          {
+            "target": "sobre",
+            "effect": "float",
+            "trigger": "y",
+            "amount": 0.3
+          },
+          {
+            "target": "c81_0",
+            "effect": "fade",
+            "trigger": "y",
+            "dur": 0.15
+          },
+          {
+            "target": "c81_0",
+            "effect": "hide",
+            "trigger": "ochenta"
+          },
+          {
+            "target": "c81_1",
+            "effect": "fade",
+            "trigger": "ochenta",
+            "dur": 0.15
+          },
+          {
+            "target": "c81_1",
+            "effect": "hide",
+            "trigger": "un"
+          },
+          {
+            "target": "c81",
+            "effect": "fade",
+            "trigger": "un",
+            "dur": 0.15,
+            "sfx": "ding"
+          },
+          {
+            "target": "c81",
+            "effect": "punch",
+            "trigger": "céntimos",
+            "amount": 0.25
+          },
+          {
+            "target": "m0",
+            "effect": "slide-up",
+            "trigger": "céntimos",
+            "dur": 0.45,
+            "sfx": "pop"
+          },
+          {
+            "target": "m1",
+            "effect": "slide-up",
+            "trigger": "por",
+            "dur": 0.45
+          },
+          {
+            "target": "m2",
+            "effect": "slide-up",
+            "trigger": "cada",
+            "dur": 0.45
+          },
+          {
+            "target": "m0",
+            "effect": "float",
+            "trigger": "céntimos",
+            "amount": 0.35
+          },
+          {
+            "target": "m1",
+            "effect": "float",
+            "trigger": "por",
+            "amount": 0.25
+          },
+          {
+            "target": "m2",
+            "effect": "float",
+            "trigger": "cada",
+            "amount": 0.3
+          },
+          {
+            "target": "sobre",
+            "effect": "move",
+            "trigger": "cada",
+            "to": [
+              0,
+              230
+            ],
+            "rotate": 6,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sobre",
+            "effect": "hide",
+            "trigger": "voto"
+          },
+          {
+            "target": "urna",
+            "effect": "punch",
+            "trigger": "voto",
+            "amount": 0.15
+          },
+          {
+            "target": "tvoto",
+            "effect": "pop",
+            "trigger": "voto",
+            "sfx": "pop"
+          },
+          {
+            "target": "tdip",
+            "effect": "pop",
+            "trigger": "saca",
+            "sfx": "sello"
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "diputado",
+            "sfx": "ding"
+          },
+          {
+            "target": "ok",
+            "effect": "pulse",
+            "trigger": "diputado",
+            "amount": 0.4
+          }
         ]
       }
     },
     {
-      "chapter": 3, "number": "3",
-      "headline": "En *2023*: 58 M",
-      "narration": "En dos mil veintitrés, los dieciséis partidos con escaño gastaron unos cincuenta y ocho millones entre todos.",
+      "chapter": 3,
+      "number": "3",
+      "headline": "Las cuentas de *2023*",
+      "narration": "En dos mil veintitrés, los dieciséis partidos con escaño justificaron unos cincuenta y ocho millones.",
       "illustration": {
-        "svg_file": "gasto2023.svg", "caption": "Fig. 7 · Tribunal de Cuentas, informe 1.616",
+        "svg_file": "gasto2023.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 7 · Tribunal de Cuentas",
         "anims": [
-          {"target": "t2023", "effect": "pop", "trigger": "veintitrés", "sfx": "pop"},
-          {"target": "t16", "effect": "pop", "trigger": "dieciséis", "sfx": "pop"},
-          {"target": "b33", "effect": "grow", "trigger": "partidos", "dur": 0.6, "origin": "bottom", "sfx": "pop"},
-          {"target": "b25", "effect": "grow", "trigger": "escaño", "dur": 0.6, "origin": "bottom", "sfx": "pop"},
-          {"target": "signos", "effect": "fade", "trigger": "gastaron", "dur": 0.3},
-          {"target": "b58", "effect": "grow", "trigger": "cincuenta", "dur": 0.8, "origin": "bottom", "sfx": "ding"},
-          {"target": "tjust", "effect": "slide-left", "trigger": "millones", "dur": 0.5, "sfx": "whoosh"},
-          {"target": "b58", "effect": "punch", "trigger": "todos", "amount": 0.15}
+          {
+            "target": "t2023",
+            "effect": "pop",
+            "trigger": "En",
+            "sfx": "pop"
+          },
+          {
+            "target": "p0",
+            "effect": "pop",
+            "delay": 0.12,
+            "sfx": "pop"
+          },
+          {
+            "target": "p1",
+            "effect": "pop",
+            "delay": 0.17
+          },
+          {
+            "target": "p2",
+            "effect": "pop",
+            "delay": 0.22
+          },
+          {
+            "target": "p3",
+            "effect": "pop",
+            "delay": 0.27
+          },
+          {
+            "target": "p4",
+            "effect": "pop",
+            "delay": 0.32
+          },
+          {
+            "target": "p5",
+            "effect": "pop",
+            "delay": 0.37
+          },
+          {
+            "target": "p6",
+            "effect": "pop",
+            "delay": 0.42
+          },
+          {
+            "target": "p7",
+            "effect": "pop",
+            "delay": 0.47
+          },
+          {
+            "target": "p8",
+            "effect": "pop",
+            "delay": 0.52
+          },
+          {
+            "target": "p9",
+            "effect": "pop",
+            "delay": 0.57
+          },
+          {
+            "target": "p10",
+            "effect": "pop",
+            "delay": 0.62
+          },
+          {
+            "target": "p11",
+            "effect": "pop",
+            "delay": 0.67
+          },
+          {
+            "target": "p12",
+            "effect": "pop",
+            "delay": 0.72
+          },
+          {
+            "target": "p13",
+            "effect": "pop",
+            "delay": 0.77
+          },
+          {
+            "target": "p14",
+            "effect": "pop",
+            "delay": 0.82
+          },
+          {
+            "target": "p15",
+            "effect": "pop",
+            "delay": 0.87
+          },
+          {
+            "target": "p0",
+            "effect": "float",
+            "delay": 0.4,
+            "amount": 0.2
+          },
+          {
+            "target": "p1",
+            "effect": "float",
+            "delay": 0.56,
+            "amount": 0.2
+          },
+          {
+            "target": "p2",
+            "effect": "float",
+            "delay": 0.72,
+            "amount": 0.2
+          },
+          {
+            "target": "p3",
+            "effect": "float",
+            "delay": 0.55,
+            "amount": 0.2
+          },
+          {
+            "target": "p4",
+            "effect": "float",
+            "delay": 0.71,
+            "amount": 0.2
+          },
+          {
+            "target": "p5",
+            "effect": "float",
+            "delay": 0.87,
+            "amount": 0.2
+          },
+          {
+            "target": "p6",
+            "effect": "float",
+            "delay": 0.7,
+            "amount": 0.2
+          },
+          {
+            "target": "p7",
+            "effect": "float",
+            "delay": 0.86,
+            "amount": 0.2
+          },
+          {
+            "target": "p8",
+            "effect": "float",
+            "delay": 1.02,
+            "amount": 0.2
+          },
+          {
+            "target": "p9",
+            "effect": "float",
+            "delay": 0.85,
+            "amount": 0.2
+          },
+          {
+            "target": "p10",
+            "effect": "float",
+            "delay": 1.01,
+            "amount": 0.2
+          },
+          {
+            "target": "p11",
+            "effect": "float",
+            "delay": 1.17,
+            "amount": 0.2
+          },
+          {
+            "target": "p12",
+            "effect": "float",
+            "delay": 1.0,
+            "amount": 0.2
+          },
+          {
+            "target": "p13",
+            "effect": "float",
+            "delay": 1.16,
+            "amount": 0.2
+          },
+          {
+            "target": "p14",
+            "effect": "float",
+            "delay": 1.32,
+            "amount": 0.2
+          },
+          {
+            "target": "p15",
+            "effect": "float",
+            "delay": 1.15,
+            "amount": 0.2
+          },
+          {
+            "target": "t16",
+            "effect": "pop",
+            "trigger": "dieciséis",
+            "sfx": "pop"
+          },
+          {
+            "target": "b33",
+            "effect": "move",
+            "trigger": "mil",
+            "to": [
+              0,
+              -198.0
+            ],
+            "dur": 0.7,
+            "sfx": "pop"
+          },
+          {
+            "target": "b25",
+            "effect": "move",
+            "trigger": "veintitrés",
+            "to": [
+              0,
+              -150.0
+            ],
+            "dur": 0.7
+          },
+          {
+            "target": "signos",
+            "effect": "fade",
+            "trigger": "partidos",
+            "dur": 0.3
+          },
+          {
+            "target": "v33",
+            "effect": "fade",
+            "trigger": "los",
+            "dur": 0.25
+          },
+          {
+            "target": "b58",
+            "effect": "move",
+            "trigger": "justificaron",
+            "to": [
+              0,
+              -348.0
+            ],
+            "dur": 1.2,
+            "sfx": "ding"
+          },
+          {
+            "target": "v25",
+            "effect": "fade",
+            "trigger": "dieciséis",
+            "dur": 0.25
+          },
+          {
+            "target": "v58_0",
+            "effect": "fade",
+            "trigger": "unos",
+            "dur": 0.15
+          },
+          {
+            "target": "v58_0",
+            "effect": "hide",
+            "trigger": "ocho"
+          },
+          {
+            "target": "v58",
+            "effect": "fade",
+            "trigger": "ocho",
+            "dur": 0.15
+          },
+          {
+            "target": "v58",
+            "effect": "punch",
+            "trigger": "millones",
+            "amount": 0.3
+          },
+          {
+            "target": "b33",
+            "effect": "breathe",
+            "trigger": "los",
+            "origin": "bottom",
+            "amount": 0.35,
+            "phase": 0
+          },
+          {
+            "target": "b25",
+            "effect": "breathe",
+            "trigger": "dieciséis",
+            "origin": "bottom",
+            "amount": 0.35,
+            "phase": 0.33
+          },
+          {
+            "target": "b58",
+            "effect": "breathe",
+            "trigger": "ocho",
+            "origin": "bottom",
+            "amount": 0.3,
+            "phase": 0.66
+          },
+          {
+            "target": "tjust",
+            "effect": "pop",
+            "trigger": "millones",
+            "sfx": "sello"
+          }
         ]
       }
     },
     {
-      "chapter": 4, "number": "+",
-      "headline": "Quién lo *vigila*",
-      "narration": "Lo vigilan las juntas electorales y el Tribunal de Cuentas. Quien se pasa puede perder la subvención.",
+      "chapter": 3,
+      "number": "3",
+      "headline": "Nadie superó el *tope*",
+      "narration": "Nadie superó el tope, pero el Tribunal de Cuentas lo revisó,",
       "illustration": {
-        "svg_file": "control_full.svg", "layout": "full", "caption": "Fig. 8 · LOREG, arts. 132 y 134",
+        "svg_file": "control_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · Tribunal de Cuentas",
         "anims": [
-          {"target": "luis", "effect": "breathe", "phase": 0.4},
-          {"target": "luis_ojos", "effect": "blink"},
-          {"target": "luis", "effect": "sway", "origin": "bottom", "amount": 0.16, "phase": 0.4},
-          {"target": "luis_cabeza", "effect": "sway", "trigger": "Cuentas", "origin": "bottom", "amount": 0.5},
-          {"target": "luis_brazo_izq", "effect": "move", "trigger": "pasa", "rotate": 10, "origin": "top-right", "dur": 0.5},
-          {"target": "lupa", "effect": "pop", "trigger": "vigilan", "sfx": "pop"},
-          {"target": "lupa", "effect": "wiggle", "amount": 0.5},
-          {"target": "tjun", "effect": "pop", "trigger": "juntas", "sfx": "pop"},
-          {"target": "tcu", "effect": "slide-up", "trigger": "Tribunal", "dur": 0.5, "sfx": "whoosh"},
-          {"target": "ttcu", "effect": "pop", "trigger": "Cuentas", "sfx": "pop"},
-          {"target": "tnadie", "effect": "pop", "trigger": "Quien", "sfx": "ding"},
-          {"target": "spasa", "effect": "pop", "trigger": "perder", "sfx": "sello"},
-          {"target": "spasa", "effect": "punch", "trigger": "subvención", "amount": 0.4}
+          {
+            "target": "tope_linea",
+            "effect": "draw",
+            "trigger": "Nadie",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tope_cartel",
+            "effect": "pop",
+            "trigger": "Nadie"
+          },
+          {
+            "target": "cb0",
+            "effect": "move",
+            "delay": 0.2,
+            "to": [
+              0,
+              -115
+            ],
+            "dur": 0.7,
+            "sfx": "pop"
+          },
+          {
+            "target": "cb1",
+            "effect": "move",
+            "delay": 0.3,
+            "to": [
+              0,
+              -70
+            ],
+            "dur": 0.7
+          },
+          {
+            "target": "cb2",
+            "effect": "move",
+            "delay": 0.4,
+            "to": [
+              0,
+              -150
+            ],
+            "dur": 0.7
+          },
+          {
+            "target": "cb3",
+            "effect": "move",
+            "delay": 0.5,
+            "to": [
+              0,
+              -95
+            ],
+            "dur": 0.7
+          },
+          {
+            "target": "cb4",
+            "effect": "move",
+            "delay": 0.6,
+            "to": [
+              0,
+              -55
+            ],
+            "dur": 0.7
+          },
+          {
+            "target": "cb5",
+            "effect": "move",
+            "delay": 0.7,
+            "to": [
+              0,
+              -130
+            ],
+            "dur": 0.7
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "tope",
+            "sfx": "ding"
+          },
+          {
+            "target": "ok",
+            "effect": "pulse",
+            "trigger": "tope",
+            "amount": 0.4
+          },
+          {
+            "target": "tope_cartel",
+            "effect": "punch",
+            "trigger": "tope",
+            "amount": 0.3
+          },
+          {
+            "target": "luis",
+            "effect": "breathe",
+            "origin": "bottom",
+            "phase": 0.4
+          },
+          {
+            "target": "luis",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "delay": 0.1
+          },
+          {
+            "target": "luis_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3,
+            "delay": 0.3
+          },
+          {
+            "target": "luis_ojos",
+            "effect": "blink",
+            "delay": 0.4
+          },
+          {
+            "target": "luis_brazo_izq",
+            "effect": "sway",
+            "origin": "top-right",
+            "amount": 0.2,
+            "delay": 0.8
+          },
+          {
+            "target": "luis_brazo_der",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.12,
+            "delay": 0.2
+          },
+          {
+            "target": "lupa",
+            "effect": "sway",
+            "origin": "bottom-left",
+            "amount": 0.25,
+            "delay": 0.2
+          },
+          {
+            "target": "tcu",
+            "effect": "slide-left",
+            "trigger": "pero",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "luis_cabeza",
+            "effect": "move",
+            "trigger": "Tribunal",
+            "rotate": 5,
+            "origin": "bottom",
+            "dur": 0.7
+          },
+          {
+            "target": "lupa",
+            "effect": "wiggle",
+            "trigger": "Cuentas",
+            "origin": "bottom-left",
+            "amount": 0.35
+          },
+          {
+            "target": "lupa",
+            "effect": "punch",
+            "trigger": "revisó",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Seis *partidos*",
+      "narration": "y propuso recortar la subvención a seis partidos por irregularidades.",
+      "illustration": {
+        "svg_file": "partidos_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 9 · Recorte propuesto, 23J",
+        "anims": [
+          {
+            "target": "tlab",
+            "effect": "pop",
+            "trigger": "y",
+            "sfx": "pop"
+          },
+          {
+            "target": "ttc",
+            "effect": "slide-up",
+            "trigger": "propuso",
+            "dur": 0.4
+          },
+          {
+            "target": "chip0",
+            "effect": "slide-right",
+            "delay": 0.0,
+            "dur": 0.45,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "chip1",
+            "effect": "slide-right",
+            "delay": 0.07,
+            "dur": 0.45
+          },
+          {
+            "target": "chip2",
+            "effect": "slide-right",
+            "delay": 0.14,
+            "dur": 0.45
+          },
+          {
+            "target": "chip3",
+            "effect": "slide-right",
+            "delay": 0.21,
+            "dur": 0.45
+          },
+          {
+            "target": "chip4",
+            "effect": "slide-right",
+            "delay": 0.28,
+            "dur": 0.45
+          },
+          {
+            "target": "chip5",
+            "effect": "slide-right",
+            "delay": 0.35,
+            "dur": 0.45
+          },
+          {
+            "target": "chip0",
+            "effect": "float",
+            "delay": 0.6,
+            "amount": 0.15
+          },
+          {
+            "target": "chip1",
+            "effect": "float",
+            "delay": 0.83,
+            "amount": 0.2
+          },
+          {
+            "target": "chip2",
+            "effect": "float",
+            "delay": 1.06,
+            "amount": 0.15
+          },
+          {
+            "target": "chip3",
+            "effect": "float",
+            "delay": 1.29,
+            "amount": 0.2
+          },
+          {
+            "target": "chip4",
+            "effect": "float",
+            "delay": 1.52,
+            "amount": 0.15
+          },
+          {
+            "target": "chip5",
+            "effect": "float",
+            "delay": 1.75,
+            "amount": 0.2
+          },
+          {
+            "target": "bar0",
+            "effect": "move",
+            "trigger": "recortar",
+            "to": [
+              470.0,
+              0
+            ],
+            "dur": 0.8,
+            "sfx": "pop"
+          },
+          {
+            "target": "bar1",
+            "effect": "move",
+            "trigger": "la",
+            "to": [
+              29.6,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "bar2",
+            "effect": "move",
+            "trigger": "subvención",
+            "to": [
+              19.5,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "bar3",
+            "effect": "move",
+            "trigger": "a",
+            "to": [
+              18.8,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "bar4",
+            "effect": "move",
+            "trigger": "seis",
+            "to": [
+              10.3,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "bar5",
+            "effect": "move",
+            "trigger": "partidos",
+            "to": [
+              8,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "val0_0",
+            "effect": "fade",
+            "trigger": "subvención",
+            "dur": 0.15
+          },
+          {
+            "target": "val0_0",
+            "effect": "hide",
+            "trigger": "a"
+          },
+          {
+            "target": "val0_1",
+            "effect": "fade",
+            "trigger": "a",
+            "dur": 0.15
+          },
+          {
+            "target": "val0_1",
+            "effect": "hide",
+            "trigger": "seis"
+          },
+          {
+            "target": "val0",
+            "effect": "fade",
+            "trigger": "seis",
+            "dur": 0.15,
+            "sfx": "ding"
+          },
+          {
+            "target": "val0",
+            "effect": "punch",
+            "trigger": "partidos",
+            "amount": 0.25
+          },
+          {
+            "target": "bar0",
+            "effect": "breathe",
+            "trigger": "subvención",
+            "origin": "left",
+            "amount": 0.35
+          },
+          {
+            "target": "val1",
+            "effect": "fade",
+            "trigger": "subvención",
+            "dur": 0.25
+          },
+          {
+            "target": "val2",
+            "effect": "fade",
+            "trigger": "a",
+            "dur": 0.25
+          },
+          {
+            "target": "val3",
+            "effect": "fade",
+            "trigger": "seis",
+            "dur": 0.25
+          },
+          {
+            "target": "val4",
+            "effect": "fade",
+            "trigger": "partidos",
+            "dur": 0.25
+          },
+          {
+            "target": "val5",
+            "effect": "fade",
+            "trigger": "por",
+            "dur": 0.25
+          },
+          {
+            "target": "tirr",
+            "effect": "pop",
+            "trigger": "irregularidades",
+            "sfx": "sello"
+          }
         ]
       }
     },
@@ -191,15 +1702,29 @@
       "chapter": 5,
       "headline": "Dudas → *truco*",
       "narration": "Tú traes las dudas y nosotros te damos el truco.",
-      "elements": [{"type": "trick", "trigger": "Tú", "reveal_trigger": "nosotros"}]
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
     },
     {
-      "chapter": 5, "number": "TÚ",
+      "chapter": 5,
+      "number": "TÚ",
       "headline": "*Cuéntanos*",
       "narration": "Síguenos y las resolvemos. ¿Sabías que había un tope de gasto?",
       "elements": [
-        {"type": "follow", "trigger": "Síguenos"},
-        {"type": "ask", "text": "¿Sabías que había un *tope* de gasto?", "trigger": "Sabías"}
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Sabías que había un *tope* de gasto?",
+          "trigger": "Sabías"
+        }
       ]
     }
   ]
