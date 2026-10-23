@@ -215,3 +215,46 @@ def palanca(id_, cx, base, h=260, texto="TIPOS", col=CORAL):
 
 def degradado_col(col):
     return degradado(col, 0.3)
+
+
+# ------------------------------------------------------------------ gasto de campaña (lote8-09-gasto-campana)
+registrar_defs(
+    lg("sacoTela", [(0, "#F3DFA8"), (0.6, "#D9B76A"), (1, "#B28C45")], 0, 0, 1, 1)
+    + lg("topeCinta", [(0, "#FF7A5C"), (1, "#E0391A")])
+)
+
+
+def saco_dinero(id_, cx, base, w=260, texto="€", col_texto="#7A5A1E"):
+    """Saco de tela atado con cuerda y símbolo € (o una cifra corta), estilo pegatina. Alto ≈ 1,15·w.
+    Sub-ids: {id}_nudo (sway origin bottom), {id}_texto (pulse). .puntos: boca (nudo), centro, base."""
+    h = w * 1.15
+    top = base - h
+    o = sombra(cx + 6, base + 6, w * 0.5, 16, 0.26)
+    cuerpo = (f"M {f(cx-w*0.16)} {f(top+h*0.22)} C {f(cx-w*0.62)} {f(top+h*0.36)} {f(cx-w*0.6)} {f(base)} {f(cx)} {f(base)} "
+              f"C {f(cx+w*0.6)} {f(base)} {f(cx+w*0.62)} {f(top+h*0.36)} {f(cx+w*0.16)} {f(top+h*0.22)} Z")
+    o += f'<path d="{cuerpo}" fill="url(#sacoTela)" stroke="{INK}" stroke-width="8" stroke-linejoin="round"/>'
+    o += f'<path d="M {f(cx+w*0.3)} {f(top+h*0.42)} Q {f(cx+w*0.42)} {f(top+h*0.7)} {f(cx+w*0.22)} {f(base-h*0.06)}" fill="none" stroke="#9C7838" stroke-width="5" opacity="0.6" stroke-linecap="round"/>'
+    o += brillo(f"M {f(cx-w*0.3)} {f(top+h*0.45)} Q {f(cx-w*0.36)} {f(top+h*0.65)} {f(cx-w*0.26)} {f(top+h*0.82)}", 8, 0.65)
+    nudo = (f'<path d="M {f(cx-w*0.16)} {f(top+h*0.22)} L {f(cx-w*0.26)} {f(top+h*0.04)} Q {f(cx)} {f(top+h*0.12)} {f(cx+w*0.26)} {f(top+h*0.04)} '
+            f'L {f(cx+w*0.16)} {f(top+h*0.22)} Z" fill="url(#sacoTela)" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+            f'<rect x="{f(cx-w*0.2)}" y="{f(top+h*0.18)}" width="{f(w*0.4)}" height="{f(h*0.06)}" rx="{f(h*0.03)}" fill="{CORAL}" stroke="{INK}" stroke-width="5"/>')
+    o += g(f"{id_}_nudo" if id_ else None, nudo)
+    fs = w * (0.42 if len(texto) <= 2 else min(0.42, 1.1 / max(1, len(texto)) * 0.95))
+    o += g(f"{id_}_texto" if id_ else None, T(cx, top + h * 0.7, texto, fs, col_texto, font=DISP))
+    return Pieza(g(id_, o), {"boca": (cx, top + h * 0.12), "centro": (cx, top + h * 0.62), "base": (cx, base)},
+                 (cx - w * 0.6, top, cx + w * 0.6, base))
+
+
+def linea_tope(id_, x0, x1, y, texto="TOPE", col=CORAL):
+    """Línea roja discontinua de límite máximo con cartel a la derecha (tope de gasto, máximo legal…).
+    Sub-ids: {id}_linea (draw), {id}_cartel (pop). .puntos: izq, der, cartel."""
+    o = g(f"{id_}_linea" if id_ else None,
+          f'<path d="M {f(x0)} {f(y)} L {f(x1)} {f(y)}" stroke="{INK}" stroke-width="14" stroke-linecap="round"/>'
+          f'<path d="M {f(x0)} {f(y)} L {f(x1)} {f(y)}" stroke="{col}" stroke-width="7" stroke-dasharray="26 16" stroke-linecap="round"/>')
+    tw = max(120, len(texto) * 22 + 40)
+    cx = x1 - tw / 2
+    cart = (sombra_caja(cx - tw / 2, y - 76, tw, 56, 12, 6, 8, 0.25)
+            + f'<rect x="{f(cx-tw/2)}" y="{f(y-76)}" width="{f(tw)}" height="56" rx="12" fill="url(#topeCinta)" stroke="{INK}" stroke-width="6"/>'
+            + T(cx, y - 37, texto, 30, "#FFFFFF", font=DISP))
+    o += g(f"{id_}_cartel" if id_ else None, cart)
+    return Pieza(g(id_, o), {"izq": (x0, y), "der": (x1, y), "cartel": (cx, y - 48)}, (x0, y - 80, x1, y + 8))
