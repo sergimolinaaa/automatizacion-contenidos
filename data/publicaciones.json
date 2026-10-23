@@ -615,6 +615,17 @@
         "tiktok": "6adb0a5b672070330b7df7e8",
         "instagram": "6adb0a5c1e4eba0473734c0a"
       }
+    },
+    {
+      "slug": "lote8-08-cambio-hora",
+      "category": "actualidad",
+      "due": "2026-10-24T19:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote8-08-cambio-hora/lote8-08-cambio-hora-con-voz.mp4",
+      "posts": {
+        "youtube": "6adb142505fef8cb0a2de31a",
+        "tiktok": "6adb14260b4dd2dd0c0aa84c",
+        "instagram": "6adb14261e4eba0473755a4f"
+      }
     }
   ]
 }
