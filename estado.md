@@ -48,11 +48,23 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-10-25 14:00 | ¿Y si nadie gana el 29 N? Así funciona la investidura | content/lote8-06-investidura | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-06-investidura-con-voz.mp4 (47,1 s) |
 | 2026-10-25 21:00 | El basilisco corre sobre el agua (extra) | content/lote8-07-basilisco | sí | sí | pendiente (cola de Buffer) | no | previews/lote8-07-basilisco-con-voz.mp4 (43,8 s) |
 
+### Semana 26 oct al 1 nov (guiones en guiones/semana-2026-10-26.md)
+| Fecha | Tema | Carpeta | Guion | Montado | Programado | Publicado | Vídeo |
+|---|---|---|---|---|---|---|---|
+| 2026-10-26 14:00 | ¿Por qué das un respingo al dormirte? | content/lote9-01-sacudida-dormir | sí | no | no | no | |
+| 2026-10-27 14:00 | ¿Por qué se te duerme la pierna? | content/lote9-02-pierna-dormida | sí | no | no | no | |
+| 2026-10-28 14:00 | Pack ahorro: mira el precio por kilo | content/lote9-03-precio-kilo | sí | no | no | no | |
+| 2026-10-29 14:00 | ¿Por qué te ruge la tripa? | content/lote9-04-tripa-ruge | sí | no | no | no | |
+| 2026-10-30 14:00 | ¿Por qué no puedes hacerte cosquillas? | content/lote9-05-cosquillas | sí | no | no | no | |
+| 2026-10-31 14:00 | ¿Por qué te da miedo la oscuridad? | content/lote9-06-miedo-oscuridad | sí | no | no | no | |
+| 2026-11-01 14:00 | ¿Por qué la tostada cae por la mantequilla? | content/lote9-07-tostada-mantequilla | sí | no | no | no | |
+
 ## Coste por fase (tokens de subagente, aprox.)
 | Fecha | Fase | Coste |
 |---|---|---|
 | 2026-10-16 | Librería (una vez) | 360.000 |
 | 2026-10-16 | Guiones semana 20-24 oct (5 vídeos) | 100.000 |
+| 2026-10-23 | Guiones semana 26 oct al 1 nov (7 vídeos) | ≈ 150.000 |
 | 2026-10-19 | Semana 20-25 oct: 11 vídeos (4 montajes de guion ≈ 180-217k c/u; 7 guion+montaje ≈ 160-195k c/u) | ≈ 2.010.000 |
 | 2026-10-17 | Nudillos (guion + montaje + 5 piezas) | 188.000 |
 | 2026-10-18 | Mesa electoral (guion + montaje + 7 piezas) | 110.000 |
