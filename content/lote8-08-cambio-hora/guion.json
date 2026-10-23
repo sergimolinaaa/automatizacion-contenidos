@@ -1,0 +1,1385 @@
+{
+  "topic": "¿Este domingo es el último cambio de hora? Por qué cambiamos, cuánto se ahorra y qué decide Europa",
+  "categoria": "actualidad",
+  "title": "¿Este domingo es el último cambio de hora? ⏰",
+  "source": "Fuentes: BOE (Orden PCM/186/2022) · Público · IDAE y Ministerio de Industria · Consumer · Parlamento Europeo · Europa Press · SEN · Sociedad Española de Sueño",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "¿Último *cambio de hora*?",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-24T21:00:00+02:00",
+    "caption": "¿Este domingo es el último cambio de hora? Esta madrugada, a las 3:00 serán las 2:00 (en Canarias, a las 2:00 la 1:00). Se cambia para aprovechar la luz del sol: el IDAE estimó hasta un 5 % de ahorro en iluminación, una cifra antigua y no confirmada al 100 %. El calendario del BOE acaba el 25 de octubre, pero quitarlo no está decidido: la Eurocámara lo votó en 2019 y la UE sigue sin acuerdo. Hoy duermes una hora más (BOE; Público; IDAE; Parlamento Europeo; SEN). ¿Prefieres horario de verano o de invierno?",
+    "description": "¿Este domingo es el último cambio de hora? En la madrugada del sábado 24 al domingo 25 de octubre de 2026, a las 3:00 vuelven a ser las 2:00 (en Canarias, a las 2:00 será la 1:00). Cambiamos la hora para aprovechar mejor la luz del sol y gastar menos en iluminación: el IDAE estimó un ahorro de hasta el 5 % de la electricidad de iluminación, unos 6 € por hogar, pero es una estimación antigua, no confirmada al 100 %, y los estudios europeos ven el ahorro pequeño. El calendario del BOE (Orden PCM/186/2022) termina este 25 de octubre, pero quitar el cambio no está decidido: la Eurocámara lo votó en 2019 (410 votos a favor) y los países de la UE siguen sin acuerdo. Tu reloj interno tarda unos días en ajustarse, como un pequeño jet lag; esta noche duermes una hora más y mañana te ayuda salir a la luz del sol. Fuentes: BOE; Público; Vandal; IDAE y Ministerio de Industria; Consumer; Parlamento Europeo; Europa Press; Sociedad Española de Neurología; Sociedad Española de Sueño. ¿Prefieres horario de verano o de invierno?",
+    "hashtags": [
+      "cambiodehora",
+      "horariodeinvierno",
+      "sueño",
+      "curiosidades"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿El *último* cambio?",
+      "narration": "¿Es el último cambio de hora? Esta madrugada, a las tres, serán las dos.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · La noche del cambio",
+        "anims": [
+          {
+            "target": "d2",
+            "effect": "hide"
+          },
+          {
+            "target": "d1",
+            "effect": "hide"
+          },
+          {
+            "target": "can",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "lmenos",
+            "effect": "hide"
+          },
+          {
+            "target": "cal",
+            "effect": "hide"
+          },
+          {
+            "target": "lmadr",
+            "effect": "hide"
+          },
+          {
+            "target": "fatras",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.2
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "phase": 0.5
+          },
+          {
+            "target": "globo",
+            "effect": "pop",
+            "trigger": "Es",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "globo",
+            "effect": "float",
+            "trigger": "Es",
+            "amount": 0.3
+          },
+          {
+            "target": "cal",
+            "effect": "pop",
+            "trigger": "último",
+            "sfx": "pop"
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "último",
+            "rotate": -8,
+            "origin": "top-left",
+            "dur": 0.6
+          },
+          {
+            "target": "rel",
+            "effect": "punch",
+            "trigger": "hora",
+            "amount": 0.2
+          },
+          {
+            "target": "lmadr",
+            "effect": "pop",
+            "trigger": "madrugada",
+            "sfx": "pop"
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "madrugada",
+            "origin": "bottom",
+            "amount": 0.5
+          },
+          {
+            "target": "d3",
+            "effect": "punch",
+            "trigger": "tres",
+            "amount": 0.3,
+            "sfx": "ding"
+          },
+          {
+            "target": "d3",
+            "effect": "pulse",
+            "trigger": "tres",
+            "amount": 0.3
+          },
+          {
+            "target": "fatras",
+            "effect": "draw",
+            "trigger": "serán",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rel_minutero",
+            "effect": "move",
+            "trigger": "serán",
+            "rotate": -360,
+            "origin": "bottom",
+            "dur": 1.1
+          },
+          {
+            "target": "rel_horaria",
+            "effect": "move",
+            "trigger": "serán",
+            "rotate": -30,
+            "origin": "left",
+            "dur": 1.1
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "serán",
+            "rotate": 8,
+            "origin": "top-left",
+            "dur": 0.7
+          },
+          {
+            "target": "d3",
+            "effect": "hide",
+            "trigger": "dos"
+          },
+          {
+            "target": "d2",
+            "effect": "pop",
+            "trigger": "dos",
+            "sfx": "ding"
+          },
+          {
+            "target": "lmenos",
+            "effect": "pop",
+            "trigger": "dos",
+            "delay": 0.3,
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Canarias: de *2 a 1*",
+      "narration": "En Canarias, a las dos, la una. ¿Y para qué?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 2 · Canarias",
+        "anims": [
+          {
+            "target": "d3",
+            "effect": "hide"
+          },
+          {
+            "target": "d1",
+            "effect": "hide"
+          },
+          {
+            "target": "globo",
+            "effect": "hide"
+          },
+          {
+            "target": "cal",
+            "effect": "hide"
+          },
+          {
+            "target": "lmadr",
+            "effect": "hide"
+          },
+          {
+            "target": "rel",
+            "effect": "hide"
+          },
+          {
+            "target": "fatras",
+            "effect": "hide"
+          },
+          {
+            "target": "lmenos",
+            "effect": "hide"
+          },
+          {
+            "target": "can",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "phase": 0.5
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "phase": 0.8
+          },
+          {
+            "target": "can",
+            "effect": "pop",
+            "trigger": "Canarias",
+            "sfx": "pop"
+          },
+          {
+            "target": "can",
+            "effect": "float",
+            "trigger": "Canarias",
+            "amount": 0.25
+          },
+          {
+            "target": "d2",
+            "effect": "punch",
+            "trigger": "dos",
+            "amount": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "d2",
+            "effect": "hide",
+            "trigger": "una"
+          },
+          {
+            "target": "d1",
+            "effect": "pop",
+            "trigger": "una",
+            "sfx": "ding"
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "trigger": "Para",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "Para",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "trigger": "Para",
+            "amount": 0.4
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "qué",
+            "rotate": -10,
+            "origin": "top-left",
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Para qué: *luz del sol*",
+      "narration": "Para aprovechar la luz del sol y encender menos bombillas.",
+      "illustration": {
+        "svg_file": "sol_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 3 · La luz del día",
+        "anims": [
+          {
+            "target": "boff0",
+            "effect": "hide"
+          },
+          {
+            "target": "boff1",
+            "effect": "hide"
+          },
+          {
+            "target": "boff2",
+            "effect": "hide"
+          },
+          {
+            "target": "lmenos",
+            "effect": "hide"
+          },
+          {
+            "target": "lsol",
+            "effect": "hide"
+          },
+          {
+            "target": "fluz",
+            "effect": "hide"
+          },
+          {
+            "target": "sol",
+            "effect": "slide-up",
+            "trigger": "aprovechar",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sol_rayos",
+            "effect": "spin",
+            "amount": 0.15
+          },
+          {
+            "target": "bon0",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "bon1",
+            "effect": "pulse",
+            "amount": 0.3,
+            "phase": 0.33
+          },
+          {
+            "target": "bon2",
+            "effect": "pulse",
+            "amount": 0.3,
+            "phase": 0.66
+          },
+          {
+            "target": "lsol",
+            "effect": "pop",
+            "trigger": "luz",
+            "sfx": "pop"
+          },
+          {
+            "target": "fluz",
+            "effect": "draw",
+            "trigger": "sol",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "casa",
+            "effect": "punch",
+            "trigger": "sol",
+            "delay": 0.4,
+            "amount": 0.15
+          },
+          {
+            "target": "bon0",
+            "effect": "hide",
+            "trigger": "menos"
+          },
+          {
+            "target": "boff0",
+            "effect": "fade",
+            "trigger": "menos",
+            "dur": 0.2,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "bon1",
+            "effect": "hide",
+            "trigger": "menos",
+            "delay": 0.3
+          },
+          {
+            "target": "boff1",
+            "effect": "fade",
+            "trigger": "menos",
+            "delay": 0.3,
+            "dur": 0.2
+          },
+          {
+            "target": "bon2",
+            "effect": "hide",
+            "trigger": "bombillas",
+            "delay": 0.2
+          },
+          {
+            "target": "boff2",
+            "effect": "fade",
+            "trigger": "bombillas",
+            "delay": 0.2,
+            "dur": 0.2,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "lmenos",
+            "effect": "pop",
+            "trigger": "bombillas",
+            "delay": 0.5,
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Ahorro: hasta *5 %*",
+      "narration": "El IDAE calculó un ahorro de hasta el cinco por ciento en iluminación.",
+      "illustration": {
+        "svg_file": "ahorro.svg",
+        "caption": "Fig. 4 · Lo que se ahorra",
+        "anims": [
+          {
+            "target": "sest",
+            "effect": "hide"
+          },
+          {
+            "target": "lnoconf",
+            "effect": "hide"
+          },
+          {
+            "target": "lantigua",
+            "effect": "hide"
+          },
+          {
+            "target": "ue",
+            "effect": "hide"
+          },
+          {
+            "target": "lpeq",
+            "effect": "hide"
+          },
+          {
+            "target": "l6",
+            "effect": "hide"
+          },
+          {
+            "target": "lidae",
+            "effect": "hide"
+          },
+          {
+            "target": "liluz",
+            "effect": "hide"
+          },
+          {
+            "target": "b100",
+            "effect": "hide"
+          },
+          {
+            "target": "b95",
+            "effect": "hide"
+          },
+          {
+            "target": "l5",
+            "effect": "hide"
+          },
+          {
+            "target": "bomb",
+            "effect": "pulse",
+            "amount": 0.25
+          },
+          {
+            "target": "lidae",
+            "effect": "pop",
+            "trigger": "IDAE",
+            "sfx": "pop"
+          },
+          {
+            "target": "b100",
+            "effect": "grow",
+            "trigger": "calculó",
+            "dur": 0.5,
+            "origin": "bottom",
+            "sfx": "pop"
+          },
+          {
+            "target": "b95",
+            "effect": "grow",
+            "trigger": "ahorro",
+            "dur": 0.5,
+            "origin": "bottom",
+            "sfx": "pop"
+          },
+          {
+            "target": "l5",
+            "effect": "pop",
+            "trigger": "cinco",
+            "sfx": "ding"
+          },
+          {
+            "target": "b95",
+            "effect": "punch",
+            "trigger": "ciento",
+            "amount": 0.2
+          },
+          {
+            "target": "liluz",
+            "effect": "pop",
+            "trigger": "iluminación",
+            "sfx": "pop"
+          },
+          {
+            "target": "l6",
+            "effect": "pop",
+            "trigger": "iluminación",
+            "delay": 0.6,
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Una *estimación*",
+      "narration": "Es una estimación antigua, no confirmada al cien por cien, y Europa lo ve pequeño.",
+      "illustration": {
+        "svg_file": "ahorro.svg",
+        "caption": "Fig. 5 · Solo una estimación",
+        "anims": [
+          {
+            "target": "sest",
+            "effect": "hide"
+          },
+          {
+            "target": "lnoconf",
+            "effect": "hide"
+          },
+          {
+            "target": "lantigua",
+            "effect": "hide"
+          },
+          {
+            "target": "ue",
+            "effect": "hide"
+          },
+          {
+            "target": "lpeq",
+            "effect": "hide"
+          },
+          {
+            "target": "lidae",
+            "effect": "hide"
+          },
+          {
+            "target": "liluz",
+            "effect": "hide"
+          },
+          {
+            "target": "bomb",
+            "effect": "pulse",
+            "amount": 0.25
+          },
+          {
+            "target": "sest",
+            "effect": "pop",
+            "trigger": "estimación",
+            "sfx": "sello"
+          },
+          {
+            "target": "sest",
+            "effect": "punch",
+            "trigger": "estimación",
+            "amount": 0.4
+          },
+          {
+            "target": "lantigua",
+            "effect": "pop",
+            "trigger": "antigua",
+            "sfx": "pop"
+          },
+          {
+            "target": "lnoconf",
+            "effect": "pop",
+            "trigger": "confirmada",
+            "sfx": "pop"
+          },
+          {
+            "target": "lnoconf",
+            "effect": "punch",
+            "trigger": "cien",
+            "amount": 0.2
+          },
+          {
+            "target": "ue",
+            "effect": "pop",
+            "trigger": "Europa",
+            "sfx": "brillo"
+          },
+          {
+            "target": "ue",
+            "effect": "bob",
+            "trigger": "Europa",
+            "amount": 0.3
+          },
+          {
+            "target": "lpeq",
+            "effect": "pop",
+            "trigger": "pequeño",
+            "sfx": "pop"
+          },
+          {
+            "target": "b95",
+            "effect": "shake",
+            "trigger": "pequeño",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "El BOE: hasta *el 25*",
+      "narration": "¿Último? El calendario del BOE termina este veinticinco de octubre.",
+      "illustration": {
+        "svg_file": "boe.svg",
+        "caption": "Fig. 6 · El calendario oficial",
+        "anims": [
+          {
+            "target": "a0",
+            "effect": "hide"
+          },
+          {
+            "target": "a1",
+            "effect": "hide"
+          },
+          {
+            "target": "a2",
+            "effect": "hide"
+          },
+          {
+            "target": "a3",
+            "effect": "hide"
+          },
+          {
+            "target": "a4",
+            "effect": "hide"
+          },
+          {
+            "target": "cal",
+            "effect": "hide"
+          },
+          {
+            "target": "lult",
+            "effect": "hide"
+          },
+          {
+            "target": "a27",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "lorden",
+            "effect": "hide"
+          },
+          {
+            "target": "doc",
+            "effect": "slide-up",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "a0",
+            "effect": "slide-up",
+            "trigger": "calendario",
+            "dur": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "a1",
+            "effect": "slide-up",
+            "trigger": "calendario",
+            "delay": 0.15,
+            "dur": 0.3
+          },
+          {
+            "target": "a2",
+            "effect": "slide-up",
+            "trigger": "calendario",
+            "delay": 0.3,
+            "dur": 0.3
+          },
+          {
+            "target": "a3",
+            "effect": "slide-up",
+            "trigger": "calendario",
+            "delay": 0.45,
+            "dur": 0.3
+          },
+          {
+            "target": "a4",
+            "effect": "slide-up",
+            "trigger": "calendario",
+            "delay": 0.6,
+            "dur": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "doc",
+            "effect": "punch",
+            "trigger": "BOE",
+            "amount": 0.2
+          },
+          {
+            "target": "lorden",
+            "effect": "pop",
+            "trigger": "BOE",
+            "delay": 0.2,
+            "sfx": "pop"
+          },
+          {
+            "target": "a4",
+            "effect": "punch",
+            "trigger": "termina",
+            "amount": 0.4,
+            "sfx": "ding"
+          },
+          {
+            "target": "cal",
+            "effect": "pop",
+            "trigger": "veinticinco",
+            "sfx": "pop"
+          },
+          {
+            "target": "lult",
+            "effect": "pop",
+            "trigger": "octubre",
+            "sfx": "ding"
+          },
+          {
+            "target": "a27",
+            "effect": "fade",
+            "trigger": "octubre",
+            "delay": 0.5,
+            "dur": 0.3
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "octubre",
+            "delay": 0.8,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "duda",
+            "effect": "bob",
+            "trigger": "octubre",
+            "delay": 0.8,
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Europa: *sin acuerdo*",
+      "narration": "Pero quitarlo no está decidido: la Eurocámara lo votó en dos mil diecinueve y los países siguen sin acuerdo.",
+      "illustration": {
+        "svg_file": "ue.svg",
+        "caption": "Fig. 7 · La decisión pendiente",
+        "anims": [
+          {
+            "target": "sacuerdo",
+            "effect": "hide"
+          },
+          {
+            "target": "lsi",
+            "effect": "hide"
+          },
+          {
+            "target": "lvoto",
+            "effect": "hide"
+          },
+          {
+            "target": "lnodec",
+            "effect": "hide"
+          },
+          {
+            "target": "f0",
+            "effect": "hide"
+          },
+          {
+            "target": "f1",
+            "effect": "hide"
+          },
+          {
+            "target": "f2",
+            "effect": "hide"
+          },
+          {
+            "target": "f3",
+            "effect": "hide"
+          },
+          {
+            "target": "f4",
+            "effect": "hide"
+          },
+          {
+            "target": "f5",
+            "effect": "hide"
+          },
+          {
+            "target": "q0",
+            "effect": "hide"
+          },
+          {
+            "target": "q1",
+            "effect": "hide"
+          },
+          {
+            "target": "q2",
+            "effect": "hide"
+          },
+          {
+            "target": "q3",
+            "effect": "hide"
+          },
+          {
+            "target": "q4",
+            "effect": "hide"
+          },
+          {
+            "target": "q5",
+            "effect": "hide"
+          },
+          {
+            "target": "ue",
+            "effect": "bob",
+            "amount": 0.25
+          },
+          {
+            "target": "lnodec",
+            "effect": "pop",
+            "trigger": "decidido",
+            "sfx": "sello"
+          },
+          {
+            "target": "hemi",
+            "effect": "punch",
+            "trigger": "Eurocámara",
+            "amount": 0.12,
+            "sfx": "pop"
+          },
+          {
+            "target": "lvoto",
+            "effect": "pop",
+            "trigger": "votó",
+            "sfx": "pop"
+          },
+          {
+            "target": "lsi",
+            "effect": "pop",
+            "trigger": "diecinueve",
+            "sfx": "ding"
+          },
+          {
+            "target": "f0",
+            "effect": "slide-up",
+            "trigger": "países",
+            "delay": 0.0,
+            "dur": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "f1",
+            "effect": "slide-up",
+            "trigger": "países",
+            "delay": 0.12,
+            "dur": 0.3
+          },
+          {
+            "target": "f2",
+            "effect": "slide-up",
+            "trigger": "países",
+            "delay": 0.24,
+            "dur": 0.3
+          },
+          {
+            "target": "f3",
+            "effect": "slide-up",
+            "trigger": "países",
+            "delay": 0.36,
+            "dur": 0.3
+          },
+          {
+            "target": "f4",
+            "effect": "slide-up",
+            "trigger": "países",
+            "delay": 0.48,
+            "dur": 0.3
+          },
+          {
+            "target": "f5",
+            "effect": "slide-up",
+            "trigger": "países",
+            "delay": 0.6,
+            "dur": 0.3
+          },
+          {
+            "target": "f0",
+            "effect": "sway",
+            "trigger": "países",
+            "origin": "left",
+            "amount": 0.3,
+            "phase": 0.0
+          },
+          {
+            "target": "f1",
+            "effect": "sway",
+            "trigger": "países",
+            "origin": "left",
+            "amount": 0.3,
+            "phase": 0.17
+          },
+          {
+            "target": "f2",
+            "effect": "sway",
+            "trigger": "países",
+            "origin": "left",
+            "amount": 0.3,
+            "phase": 0.34
+          },
+          {
+            "target": "f3",
+            "effect": "sway",
+            "trigger": "países",
+            "origin": "left",
+            "amount": 0.3,
+            "phase": 0.51
+          },
+          {
+            "target": "f4",
+            "effect": "sway",
+            "trigger": "países",
+            "origin": "left",
+            "amount": 0.3,
+            "phase": 0.68
+          },
+          {
+            "target": "f5",
+            "effect": "sway",
+            "trigger": "países",
+            "origin": "left",
+            "amount": 0.3,
+            "phase": 0.8500000000000001
+          },
+          {
+            "target": "q0",
+            "effect": "pop",
+            "trigger": "siguen",
+            "delay": 0.0,
+            "sfx": "pop"
+          },
+          {
+            "target": "q1",
+            "effect": "pop",
+            "trigger": "siguen",
+            "delay": 0.1
+          },
+          {
+            "target": "q2",
+            "effect": "pop",
+            "trigger": "siguen",
+            "delay": 0.2
+          },
+          {
+            "target": "q3",
+            "effect": "pop",
+            "trigger": "siguen",
+            "delay": 0.30000000000000004
+          },
+          {
+            "target": "q4",
+            "effect": "pop",
+            "trigger": "siguen",
+            "delay": 0.4
+          },
+          {
+            "target": "q5",
+            "effect": "pop",
+            "trigger": "siguen",
+            "delay": 0.5
+          },
+          {
+            "target": "sacuerdo",
+            "effect": "pop",
+            "trigger": "acuerdo",
+            "sfx": "sello"
+          },
+          {
+            "target": "sacuerdo",
+            "effect": "punch",
+            "trigger": "acuerdo",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Tu cuerpo: *jet lag*",
+      "narration": "Tu reloj interno se desajusta unos días, como un pequeño jet lag.",
+      "illustration": {
+        "svg_file": "sueno_full.svg",
+        "layout": "full",
+        "caption": "Fig. 8 · Tu reloj interno",
+        "anims": [
+          {
+            "target": "pd",
+            "effect": "hide"
+          },
+          {
+            "target": "pw",
+            "effect": "hide"
+          },
+          {
+            "target": "zz",
+            "effect": "hide"
+          },
+          {
+            "target": "lmas",
+            "effect": "hide"
+          },
+          {
+            "target": "vdia",
+            "effect": "hide"
+          },
+          {
+            "target": "lluz",
+            "effect": "hide"
+          },
+          {
+            "target": "piensa",
+            "effect": "hide"
+          },
+          {
+            "target": "lreloj",
+            "effect": "hide"
+          },
+          {
+            "target": "avion",
+            "effect": "hide"
+          },
+          {
+            "target": "ljet",
+            "effect": "hide"
+          },
+          {
+            "target": "ldias",
+            "effect": "hide"
+          },
+          {
+            "target": "pc",
+            "effect": "breathe",
+            "phase": 0.1
+          },
+          {
+            "target": "pc_ojos",
+            "effect": "blink"
+          },
+          {
+            "target": "pc",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "phase": 0.4
+          },
+          {
+            "target": "piensa",
+            "effect": "pop",
+            "trigger": "reloj",
+            "origin": "bottom-right",
+            "sfx": "pop"
+          },
+          {
+            "target": "piensa",
+            "effect": "float",
+            "trigger": "reloj",
+            "amount": 0.25
+          },
+          {
+            "target": "lreloj",
+            "effect": "pop",
+            "trigger": "interno",
+            "sfx": "pop"
+          },
+          {
+            "target": "ri_minutero",
+            "effect": "spin",
+            "trigger": "desajusta",
+            "amount": 1.2
+          },
+          {
+            "target": "ri",
+            "effect": "shake",
+            "trigger": "desajusta",
+            "amount": 0.4
+          },
+          {
+            "target": "pc_cabeza",
+            "effect": "sway",
+            "trigger": "desajusta",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "ldias",
+            "effect": "pop",
+            "trigger": "días",
+            "sfx": "ding"
+          },
+          {
+            "target": "avion",
+            "effect": "slide-left",
+            "trigger": "como",
+            "dur": 0.7,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "avion",
+            "effect": "float",
+            "trigger": "como",
+            "amount": 0.4
+          },
+          {
+            "target": "ljet",
+            "effect": "pop",
+            "trigger": "jet",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Hoy: *+1 hora*",
+      "narration": "Consejo: hoy duermes una hora más. Aprovéchala y mañana busca luz.",
+      "illustration": {
+        "svg_file": "sueno_full.svg",
+        "layout": "full",
+        "caption": "Fig. 9 · Duerme esa hora",
+        "anims": [
+          {
+            "target": "pc",
+            "effect": "hide"
+          },
+          {
+            "target": "pw",
+            "effect": "hide"
+          },
+          {
+            "target": "piensa",
+            "effect": "hide"
+          },
+          {
+            "target": "lreloj",
+            "effect": "hide"
+          },
+          {
+            "target": "avion",
+            "effect": "hide"
+          },
+          {
+            "target": "ljet",
+            "effect": "hide"
+          },
+          {
+            "target": "ldias",
+            "effect": "hide"
+          },
+          {
+            "target": "vdia",
+            "effect": "hide"
+          },
+          {
+            "target": "lluz",
+            "effect": "hide"
+          },
+          {
+            "target": "zz",
+            "effect": "hide"
+          },
+          {
+            "target": "lmas",
+            "effect": "hide"
+          },
+          {
+            "target": "pd",
+            "effect": "breathe",
+            "phase": 0.1,
+            "amount": 1.3
+          },
+          {
+            "target": "pd",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.1
+          },
+          {
+            "target": "cama_manta",
+            "effect": "breathe",
+            "phase": 0.4,
+            "amount": 0.6
+          },
+          {
+            "target": "d2",
+            "effect": "pulse",
+            "amount": 0.3
+          },
+          {
+            "target": "zz",
+            "effect": "pop",
+            "trigger": "duermes",
+            "sfx": "pop"
+          },
+          {
+            "target": "zz",
+            "effect": "float",
+            "trigger": "duermes",
+            "amount": 0.6
+          },
+          {
+            "target": "lmas",
+            "effect": "pop",
+            "trigger": "hora",
+            "sfx": "ding"
+          },
+          {
+            "target": "lmas",
+            "effect": "punch",
+            "trigger": "más",
+            "amount": 0.3
+          },
+          {
+            "target": "pd_cabeza",
+            "effect": "sway",
+            "trigger": "Aprovéchala",
+            "origin": "bottom",
+            "amount": 0.4
+          },
+          {
+            "target": "vdia",
+            "effect": "fade",
+            "trigger": "mañana",
+            "dur": 0.4,
+            "sfx": "brillo"
+          },
+          {
+            "target": "zz",
+            "effect": "hide",
+            "trigger": "mañana"
+          },
+          {
+            "target": "pd",
+            "effect": "hide",
+            "trigger": "mañana"
+          },
+          {
+            "target": "pw",
+            "effect": "fade",
+            "trigger": "mañana",
+            "dur": 0.25
+          },
+          {
+            "target": "pw",
+            "effect": "breathe",
+            "trigger": "mañana",
+            "phase": 0.3
+          },
+          {
+            "target": "pw_brazo_der",
+            "effect": "wiggle",
+            "trigger": "busca",
+            "origin": "bottom-left",
+            "amount": 1.0
+          },
+          {
+            "target": "pw_brazo_izq",
+            "effect": "sway",
+            "trigger": "busca",
+            "origin": "bottom",
+            "amount": 0.4,
+            "phase": 0.5
+          },
+          {
+            "target": "lluz",
+            "effect": "pop",
+            "trigger": "luz",
+            "sfx": "pop"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "¿Verano o *invierno*?",
+      "narration": "Síguenos y las resolvemos. ¿Prefieres horario de verano o de invierno?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Prefieres horario de *verano* o de *invierno*?",
+          "trigger": "Prefieres"
+        }
+      ]
+    }
+  ]
+}

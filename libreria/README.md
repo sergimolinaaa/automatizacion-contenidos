@@ -207,6 +207,11 @@ Truco: para que el ala «se incline», dibújala a 0° y anímala con `move` `ro
 ## objetos/dinero.py (hipotecas, bancos, BCE)
 `banco(id_, cx, base, w, rotulo, col_friso, euro, ue)` (fachada clásica con columnas y frontón con € o estrellas UE; `_puerta`; .puntos puerta/rotulo/cima/izq/der) · `torre_bce(id_, cx, base, h, rotulo)` (torres de cristal del BCE, `_luces` pulse) · `estrellas_ue(id_, cx, cy, r)` · `bandera_ue(id_, cx, cy, w, h)` · `moneda_euro(id_, cx, cy, r)` · `ficha(id_, cx, cy, w, h, titulo, sub, col, fg)` (bloque grueso para fórmulas: «EURÍBOR» + «DIFERENCIAL») · `recibo_hipoteca(id_, cx, cy, w, h, titulo, banco_txt, concepto)` (carta del banco con casilla vacía en .puntos["cifra"] para cifras con hide/pop) · `palanca(id_, cx, base, h, texto)` (mando con `_mango`: move rotate ±25 origin bottom).
 
+## objetos/tiempo.py (horas, sueño, cambio de hora)
+`cama(id_, cx, base, w, col)` → (detras, delante): cabecero y almohada / edredón (`{id}_manta`); entre medias una `persona(pose="busto")` en `detras.puntos["persona"]` (varias en el mismo sitio con distinta cara para hide/fade) ·
+`mesilla(id_, cx, base, w, h)` (.puntos tablero) · `despertador(id_, cx, base, w, texto="3:00", col_txt)` (digital; dos en el mismo sitio + hide/pop para cambiar la hora; `_hora`) ·
+`luna(id_, cx, cy, r)` · `flecha_atras(id_, cx, cy, r, a0, a1)` (arco antihorario alrededor de `casa.reloj`: «retrasar la hora», para draw; las agujas: `move rotate -360` origin bottom en `_minutero` y `-30` origin left en `_horaria` si está a las 3).
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -268,3 +273,4 @@ lote7-06-puerta-olvido (archivo/puerta-olvido/dib.py): memoria.py (puerta abiert
 lote7-07-avion (archivo/avion/dib.py): aviones.py (jumbo, perfil de ala, líneas de corriente, signos de presión, cochecito, manzana, retrato de Newton, pista, aula).
 lote8-05-hipoteca (archivo/hipoteca/dib.py): dinero.py (banco, torres del BCE, bandera y estrellas UE, moneda, ficha de fórmula, recibo de hipoteca, palanca).
 lote8-07-basilisco (archivo/basilisco/dib.py): reptiles.py (basilisco, pata con flecos, pie lateral, bolsa de aire, salpicadura, agua en corte, revista y río en la selva).
+lote8-08-cambio-hora (archivo/cambio-hora/dib.py): tiempo.py (cama con persona dentro, mesilla, despertador digital, luna, flecha de retrasar la hora).
