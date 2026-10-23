@@ -1,0 +1,702 @@
+{
+ "source": "Fuentes: BOE (Orden PCM/186/2022) · Público · IDAE y Ministerio de Industria · Consumer · Parlamento Europeo · Europa Press · SEN · Sociedad Española de Sueño",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Es",
+   "start": 0.1,
+   "end": 0.32
+  },
+  {
+   "text": "el",
+   "start": 0.33,
+   "end": 0.43000000000000005
+  },
+  {
+   "text": "último",
+   "start": 0.44,
+   "end": 0.71
+  },
+  {
+   "text": "cambio",
+   "start": 0.72,
+   "end": 1.01
+  },
+  {
+   "text": "de",
+   "start": 1.02,
+   "end": 1.12
+  },
+  {
+   "text": "hora?",
+   "start": 1.13,
+   "end": 1.4
+  },
+  {
+   "text": "Esta",
+   "start": 2.09,
+   "end": 2.38
+  },
+  {
+   "text": "madrugada,",
+   "start": 2.39,
+   "end": 2.88
+  },
+  {
+   "text": "a",
+   "start": 2.98,
+   "end": 3.03
+  },
+  {
+   "text": "las",
+   "start": 3.04,
+   "end": 3.17
+  },
+  {
+   "text": "tres,",
+   "start": 3.18,
+   "end": 3.48
+  },
+  {
+   "text": "serán",
+   "start": 3.57,
+   "end": 3.8499999999999996
+  },
+  {
+   "text": "las",
+   "start": 3.86,
+   "end": 4.0
+  },
+  {
+   "text": "dos.",
+   "start": 4.01,
+   "end": 4.31
+  },
+  {
+   "text": "En",
+   "start": 5.0,
+   "end": 5.2
+  },
+  {
+   "text": "Canarias,",
+   "start": 5.21,
+   "end": 5.68
+  },
+  {
+   "text": "a",
+   "start": 5.78,
+   "end": 5.82
+  },
+  {
+   "text": "las",
+   "start": 5.83,
+   "end": 5.96
+  },
+  {
+   "text": "dos,",
+   "start": 5.97,
+   "end": 6.2
+  },
+  {
+   "text": "la",
+   "start": 6.3,
+   "end": 6.46
+  },
+  {
+   "text": "una.",
+   "start": 6.47,
+   "end": 6.8
+  },
+  {
+   "text": "¿Y",
+   "start": 7.5,
+   "end": 7.64
+  },
+  {
+   "text": "para",
+   "start": 7.65,
+   "end": 7.840000000000001
+  },
+  {
+   "text": "qué?",
+   "start": 7.85,
+   "end": 8.1
+  },
+  {
+   "text": "Para",
+   "start": 8.81,
+   "end": 9.020000000000001
+  },
+  {
+   "text": "aprovechar",
+   "start": 9.03,
+   "end": 9.459999999999999
+  },
+  {
+   "text": "la",
+   "start": 9.47,
+   "end": 9.55
+  },
+  {
+   "text": "luz",
+   "start": 9.56,
+   "end": 9.71
+  },
+  {
+   "text": "del",
+   "start": 9.72,
+   "end": 9.860000000000001
+  },
+  {
+   "text": "sol",
+   "start": 9.87,
+   "end": 10.059999999999999
+  },
+  {
+   "text": "y",
+   "start": 10.07,
+   "end": 10.120000000000001
+  },
+  {
+   "text": "encender",
+   "start": 10.13,
+   "end": 10.510000000000002
+  },
+  {
+   "text": "menos",
+   "start": 10.52,
+   "end": 10.76
+  },
+  {
+   "text": "bombillas.",
+   "start": 10.77,
+   "end": 11.33
+  },
+  {
+   "text": "El",
+   "start": 12.03,
+   "end": 12.24
+  },
+  {
+   "text": "IDAE",
+   "start": 12.25,
+   "end": 12.47
+  },
+  {
+   "text": "calculó",
+   "start": 12.48,
+   "end": 12.82
+  },
+  {
+   "text": "un",
+   "start": 12.83,
+   "end": 12.93
+  },
+  {
+   "text": "ahorro",
+   "start": 12.94,
+   "end": 13.19
+  },
+  {
+   "text": "de",
+   "start": 13.2,
+   "end": 13.29
+  },
+  {
+   "text": "hasta",
+   "start": 13.3,
+   "end": 13.48
+  },
+  {
+   "text": "el",
+   "start": 13.49,
+   "end": 13.59
+  },
+  {
+   "text": "cinco",
+   "start": 13.6,
+   "end": 13.84
+  },
+  {
+   "text": "por",
+   "start": 13.85,
+   "end": 14.0
+  },
+  {
+   "text": "ciento",
+   "start": 14.01,
+   "end": 14.31
+  },
+  {
+   "text": "en",
+   "start": 14.32,
+   "end": 14.39
+  },
+  {
+   "text": "iluminación.",
+   "start": 14.4,
+   "end": 15.030000000000001
+  },
+  {
+   "text": "Es",
+   "start": 15.72,
+   "end": 15.92
+  },
+  {
+   "text": "una",
+   "start": 15.93,
+   "end": 16.07
+  },
+  {
+   "text": "estimación",
+   "start": 16.08,
+   "end": 16.59
+  },
+  {
+   "text": "antigua,",
+   "start": 16.6,
+   "end": 17.01
+  },
+  {
+   "text": "no",
+   "start": 17.14,
+   "end": 17.23
+  },
+  {
+   "text": "confirmada",
+   "start": 17.24,
+   "end": 17.74
+  },
+  {
+   "text": "al",
+   "start": 17.75,
+   "end": 17.85
+  },
+  {
+   "text": "cien",
+   "start": 17.86,
+   "end": 18.04
+  },
+  {
+   "text": "por",
+   "start": 18.05,
+   "end": 18.18
+  },
+  {
+   "text": "cien,",
+   "start": 18.19,
+   "end": 18.42
+  },
+  {
+   "text": "y",
+   "start": 18.56,
+   "end": 18.61
+  },
+  {
+   "text": "Europa",
+   "start": 18.62,
+   "end": 18.93
+  },
+  {
+   "text": "lo",
+   "start": 18.94,
+   "end": 19.02
+  },
+  {
+   "text": "ve",
+   "start": 19.03,
+   "end": 19.12
+  },
+  {
+   "text": "pequeño.",
+   "start": 19.13,
+   "end": 19.58
+  },
+  {
+   "text": "¿Último?",
+   "start": 20.27,
+   "end": 20.79
+  },
+  {
+   "text": "El",
+   "start": 21.48,
+   "end": 21.69
+  },
+  {
+   "text": "calendario",
+   "start": 21.7,
+   "end": 22.12
+  },
+  {
+   "text": "del",
+   "start": 22.13,
+   "end": 22.25
+  },
+  {
+   "text": "BOE",
+   "start": 22.26,
+   "end": 22.48
+  },
+  {
+   "text": "termina",
+   "start": 22.49,
+   "end": 22.86
+  },
+  {
+   "text": "este",
+   "start": 22.87,
+   "end": 23.05
+  },
+  {
+   "text": "veinticinco",
+   "start": 23.06,
+   "end": 23.54
+  },
+  {
+   "text": "de",
+   "start": 23.55,
+   "end": 23.63
+  },
+  {
+   "text": "octubre.",
+   "start": 23.64,
+   "end": 24.09
+  },
+  {
+   "text": "Pero",
+   "start": 24.78,
+   "end": 24.990000000000002
+  },
+  {
+   "text": "quitarlo",
+   "start": 25.0,
+   "end": 25.34
+  },
+  {
+   "text": "no",
+   "start": 25.35,
+   "end": 25.450000000000003
+  },
+  {
+   "text": "está",
+   "start": 25.46,
+   "end": 25.650000000000002
+  },
+  {
+   "text": "decidido:",
+   "start": 25.66,
+   "end": 26.12
+  },
+  {
+   "text": "la",
+   "start": 26.28,
+   "end": 26.380000000000003
+  },
+  {
+   "text": "Eurocámara",
+   "start": 26.39,
+   "end": 26.84
+  },
+  {
+   "text": "lo",
+   "start": 26.85,
+   "end": 26.93
+  },
+  {
+   "text": "votó",
+   "start": 26.94,
+   "end": 27.16
+  },
+  {
+   "text": "en",
+   "start": 27.17,
+   "end": 27.26
+  },
+  {
+   "text": "dos",
+   "start": 27.27,
+   "end": 27.4
+  },
+  {
+   "text": "mil",
+   "start": 27.41,
+   "end": 27.55
+  },
+  {
+   "text": "diecinueve",
+   "start": 27.56,
+   "end": 28.04
+  },
+  {
+   "text": "y",
+   "start": 28.05,
+   "end": 28.09
+  },
+  {
+   "text": "los",
+   "start": 28.1,
+   "end": 28.25
+  },
+  {
+   "text": "países",
+   "start": 28.26,
+   "end": 28.610000000000003
+  },
+  {
+   "text": "siguen",
+   "start": 28.62,
+   "end": 28.89
+  },
+  {
+   "text": "sin",
+   "start": 28.9,
+   "end": 29.029999999999998
+  },
+  {
+   "text": "acuerdo.",
+   "start": 29.04,
+   "end": 29.47
+  },
+  {
+   "text": "Tu",
+   "start": 30.17,
+   "end": 30.310000000000002
+  },
+  {
+   "text": "reloj",
+   "start": 30.32,
+   "end": 30.61
+  },
+  {
+   "text": "interno",
+   "start": 30.62,
+   "end": 31.01
+  },
+  {
+   "text": "se",
+   "start": 31.02,
+   "end": 31.13
+  },
+  {
+   "text": "desajusta",
+   "start": 31.14,
+   "end": 31.580000000000002
+  },
+  {
+   "text": "unos",
+   "start": 31.59,
+   "end": 31.81
+  },
+  {
+   "text": "días,",
+   "start": 31.82,
+   "end": 32.11
+  },
+  {
+   "text": "como",
+   "start": 32.24,
+   "end": 32.43
+  },
+  {
+   "text": "un",
+   "start": 32.44,
+   "end": 32.53
+  },
+  {
+   "text": "pequeño",
+   "start": 32.54,
+   "end": 32.87
+  },
+  {
+   "text": "jet",
+   "start": 32.88,
+   "end": 33.04
+  },
+  {
+   "text": "lag.",
+   "start": 33.05,
+   "end": 33.3
+  },
+  {
+   "text": "Consejo:",
+   "start": 34.0,
+   "end": 34.52
+  },
+  {
+   "text": "hoy",
+   "start": 34.61,
+   "end": 34.73
+  },
+  {
+   "text": "duermes",
+   "start": 34.74,
+   "end": 35.080000000000005
+  },
+  {
+   "text": "una",
+   "start": 35.09,
+   "end": 35.27
+  },
+  {
+   "text": "hora",
+   "start": 35.28,
+   "end": 35.43
+  },
+  {
+   "text": "más.",
+   "start": 35.44,
+   "end": 35.76
+  },
+  {
+   "text": "Aprovéchala",
+   "start": 36.46,
+   "end": 37.1
+  },
+  {
+   "text": "y",
+   "start": 37.11,
+   "end": 37.16
+  },
+  {
+   "text": "mañana",
+   "start": 37.17,
+   "end": 37.5
+  },
+  {
+   "text": "busca",
+   "start": 37.51,
+   "end": 37.76
+  },
+  {
+   "text": "luz.",
+   "start": 37.77,
+   "end": 38.050000000000004
+  },
+  {
+   "text": "Tú",
+   "start": 38.76,
+   "end": 38.89
+  },
+  {
+   "text": "traes",
+   "start": 38.9,
+   "end": 39.15
+  },
+  {
+   "text": "las",
+   "start": 39.16,
+   "end": 39.309999999999995
+  },
+  {
+   "text": "dudas",
+   "start": 39.32,
+   "end": 39.59
+  },
+  {
+   "text": "y",
+   "start": 39.6,
+   "end": 39.64
+  },
+  {
+   "text": "nosotros",
+   "start": 39.65,
+   "end": 40.07
+  },
+  {
+   "text": "te",
+   "start": 40.08,
+   "end": 40.17
+  },
+  {
+   "text": "damos",
+   "start": 40.18,
+   "end": 40.45
+  },
+  {
+   "text": "el",
+   "start": 40.46,
+   "end": 40.56
+  },
+  {
+   "text": "truco.",
+   "start": 40.57,
+   "end": 40.95
+  },
+  {
+   "text": "Síguenos",
+   "start": 41.64,
+   "end": 42.15
+  },
+  {
+   "text": "y",
+   "start": 42.16,
+   "end": 42.209999999999994
+  },
+  {
+   "text": "las",
+   "start": 42.22,
+   "end": 42.35
+  },
+  {
+   "text": "resolvemos.",
+   "start": 42.36,
+   "end": 43.019999999999996
+  },
+  {
+   "text": "¿Prefieres",
+   "start": 43.71,
+   "end": 44.15
+  },
+  {
+   "text": "horario",
+   "start": 44.16,
+   "end": 44.44
+  },
+  {
+   "text": "de",
+   "start": 44.45,
+   "end": 44.52
+  },
+  {
+   "text": "verano",
+   "start": 44.53,
+   "end": 44.89
+  },
+  {
+   "text": "o",
+   "start": 44.9,
+   "end": 44.97
+  },
+  {
+   "text": "de",
+   "start": 44.98,
+   "end": 45.059999999999995
+  },
+  {
+   "text": "invierno?",
+   "start": 45.07,
+   "end": 45.54
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 46.04,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "¿Último *cambio de hora*?",
+  "scene": 0
+ },
+ "duration": 48.64,
+ "cover_offset_ms": 48940
+}
