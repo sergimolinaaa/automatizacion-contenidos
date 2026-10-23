@@ -1,0 +1,697 @@
+{
+ "source": "Fuentes: LOREG, art. 175 · Orden HAC/1062/2026 (BOE) · Europa Press · Tribunal de Cuentas, informe 1.616 · EFE · INE",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Cuánto",
+   "start": 0.1,
+   "end": 0.4
+  },
+  {
+   "text": "puede",
+   "start": 0.41,
+   "end": 0.59
+  },
+  {
+   "text": "gastar",
+   "start": 0.6,
+   "end": 0.88
+  },
+  {
+   "text": "un",
+   "start": 0.89,
+   "end": 0.96
+  },
+  {
+   "text": "partido",
+   "start": 0.97,
+   "end": 1.31
+  },
+  {
+   "text": "en",
+   "start": 1.32,
+   "end": 1.37
+  },
+  {
+   "text": "la",
+   "start": 1.38,
+   "end": 1.45
+  },
+  {
+   "text": "campaña",
+   "start": 1.46,
+   "end": 1.83
+  },
+  {
+   "text": "del",
+   "start": 1.84,
+   "end": 1.9500000000000002
+  },
+  {
+   "text": "veintinueve",
+   "start": 1.96,
+   "end": 2.39
+  },
+  {
+   "text": "de",
+   "start": 2.4,
+   "end": 2.46
+  },
+  {
+   "text": "noviembre?",
+   "start": 2.47,
+   "end": 2.97
+  },
+  {
+   "text": "Te",
+   "start": 3.66,
+   "end": 3.8000000000000003
+  },
+  {
+   "text": "lo",
+   "start": 3.81,
+   "end": 3.89
+  },
+  {
+   "text": "contamos",
+   "start": 3.9,
+   "end": 4.28
+  },
+  {
+   "text": "sin",
+   "start": 4.29,
+   "end": 4.4
+  },
+  {
+   "text": "posicionarnos,",
+   "start": 4.41,
+   "end": 5.12
+  },
+  {
+   "text": "solo",
+   "start": 5.22,
+   "end": 5.4399999999999995
+  },
+  {
+   "text": "con",
+   "start": 5.45,
+   "end": 5.58
+  },
+  {
+   "text": "las",
+   "start": 5.59,
+   "end": 5.71
+  },
+  {
+   "text": "cuentas",
+   "start": 5.72,
+   "end": 6.01
+  },
+  {
+   "text": "oficiales.",
+   "start": 6.02,
+   "end": 6.58
+  },
+  {
+   "text": "La",
+   "start": 7.27,
+   "end": 7.47
+  },
+  {
+   "text": "ley",
+   "start": 7.48,
+   "end": 7.640000000000001
+  },
+  {
+   "text": "pone",
+   "start": 7.65,
+   "end": 7.880000000000001
+  },
+  {
+   "text": "un",
+   "start": 7.89,
+   "end": 8.0
+  },
+  {
+   "text": "tope:",
+   "start": 8.01,
+   "end": 8.299999999999999
+  },
+  {
+   "text": "treinta",
+   "start": 8.38,
+   "end": 8.66
+  },
+  {
+   "text": "y",
+   "start": 8.67,
+   "end": 8.73
+  },
+  {
+   "text": "siete",
+   "start": 8.74,
+   "end": 8.98
+  },
+  {
+   "text": "céntimos",
+   "start": 8.99,
+   "end": 9.4
+  },
+  {
+   "text": "por",
+   "start": 9.41,
+   "end": 9.540000000000001
+  },
+  {
+   "text": "cada",
+   "start": 9.55,
+   "end": 9.74
+  },
+  {
+   "text": "habitante",
+   "start": 9.75,
+   "end": 10.14
+  },
+  {
+   "text": "de",
+   "start": 10.15,
+   "end": 10.24
+  },
+  {
+   "text": "donde",
+   "start": 10.25,
+   "end": 10.47
+  },
+  {
+   "text": "se",
+   "start": 10.48,
+   "end": 10.58
+  },
+  {
+   "text": "presenta.",
+   "start": 10.59,
+   "end": 11.1
+  },
+  {
+   "text": "En",
+   "start": 11.79,
+   "end": 12.02
+  },
+  {
+   "text": "toda",
+   "start": 12.03,
+   "end": 12.229999999999999
+  },
+  {
+   "text": "España,",
+   "start": 12.24,
+   "end": 12.66
+  },
+  {
+   "text": "con",
+   "start": 12.79,
+   "end": 12.93
+  },
+  {
+   "text": "unos",
+   "start": 12.94,
+   "end": 13.12
+  },
+  {
+   "text": "cuarenta",
+   "start": 13.13,
+   "end": 13.42
+  },
+  {
+   "text": "y",
+   "start": 13.43,
+   "end": 13.469999999999999
+  },
+  {
+   "text": "nueve",
+   "start": 13.48,
+   "end": 13.690000000000001
+  },
+  {
+   "text": "millones",
+   "start": 13.7,
+   "end": 14.049999999999999
+  },
+  {
+   "text": "de",
+   "start": 14.06,
+   "end": 14.13
+  },
+  {
+   "text": "personas,",
+   "start": 14.14,
+   "end": 14.64
+  },
+  {
+   "text": "son",
+   "start": 14.75,
+   "end": 14.95
+  },
+  {
+   "text": "unos",
+   "start": 14.96,
+   "end": 15.14
+  },
+  {
+   "text": "dieciocho",
+   "start": 15.15,
+   "end": 15.59
+  },
+  {
+   "text": "millones.",
+   "start": 15.6,
+   "end": 16.1
+  },
+  {
+   "text": "Después,",
+   "start": 16.8,
+   "end": 17.32
+  },
+  {
+   "text": "el",
+   "start": 17.41,
+   "end": 17.53
+  },
+  {
+   "text": "Estado",
+   "start": 17.54,
+   "end": 17.81
+  },
+  {
+   "text": "le",
+   "start": 17.82,
+   "end": 17.91
+  },
+  {
+   "text": "paga",
+   "start": 17.92,
+   "end": 18.14
+  },
+  {
+   "text": "unos",
+   "start": 18.15,
+   "end": 18.36
+  },
+  {
+   "text": "veintiún",
+   "start": 18.37,
+   "end": 18.73
+  },
+  {
+   "text": "mil",
+   "start": 18.74,
+   "end": 18.88
+  },
+  {
+   "text": "euros",
+   "start": 18.89,
+   "end": 19.17
+  },
+  {
+   "text": "por",
+   "start": 19.18,
+   "end": 19.31
+  },
+  {
+   "text": "cada",
+   "start": 19.32,
+   "end": 19.48
+  },
+  {
+   "text": "escaño",
+   "start": 19.49,
+   "end": 19.819999999999997
+  },
+  {
+   "text": "conseguido,",
+   "start": 19.83,
+   "end": 20.369999999999997
+  },
+  {
+   "text": "y",
+   "start": 20.57,
+   "end": 20.73
+  },
+  {
+   "text": "ochenta",
+   "start": 20.74,
+   "end": 21.04
+  },
+  {
+   "text": "y",
+   "start": 21.05,
+   "end": 21.14
+  },
+  {
+   "text": "un",
+   "start": 21.15,
+   "end": 21.25
+  },
+  {
+   "text": "céntimos",
+   "start": 21.26,
+   "end": 21.67
+  },
+  {
+   "text": "por",
+   "start": 21.68,
+   "end": 21.81
+  },
+  {
+   "text": "cada",
+   "start": 21.82,
+   "end": 22.0
+  },
+  {
+   "text": "voto",
+   "start": 22.01,
+   "end": 22.220000000000002
+  },
+  {
+   "text": "al",
+   "start": 22.23,
+   "end": 22.3
+  },
+  {
+   "text": "Congreso,",
+   "start": 22.31,
+   "end": 22.82
+  },
+  {
+   "text": "si",
+   "start": 22.91,
+   "end": 23.01
+  },
+  {
+   "text": "saca",
+   "start": 23.02,
+   "end": 23.23
+  },
+  {
+   "text": "diputado.",
+   "start": 23.24,
+   "end": 23.75
+  },
+  {
+   "text": "En",
+   "start": 24.44,
+   "end": 24.66
+  },
+  {
+   "text": "dos",
+   "start": 24.67,
+   "end": 24.8
+  },
+  {
+   "text": "mil",
+   "start": 24.81,
+   "end": 24.939999999999998
+  },
+  {
+   "text": "veintitrés,",
+   "start": 24.95,
+   "end": 25.48
+  },
+  {
+   "text": "los",
+   "start": 25.57,
+   "end": 25.740000000000002
+  },
+  {
+   "text": "dieciséis",
+   "start": 25.75,
+   "end": 26.16
+  },
+  {
+   "text": "partidos",
+   "start": 26.17,
+   "end": 26.57
+  },
+  {
+   "text": "con",
+   "start": 26.58,
+   "end": 26.7
+  },
+  {
+   "text": "escaño",
+   "start": 26.71,
+   "end": 27.09
+  },
+  {
+   "text": "gastaron",
+   "start": 27.1,
+   "end": 27.490000000000002
+  },
+  {
+   "text": "unos",
+   "start": 27.5,
+   "end": 27.68
+  },
+  {
+   "text": "cincuenta",
+   "start": 27.69,
+   "end": 28.060000000000002
+  },
+  {
+   "text": "y",
+   "start": 28.07,
+   "end": 28.15
+  },
+  {
+   "text": "ocho",
+   "start": 28.16,
+   "end": 28.330000000000002
+  },
+  {
+   "text": "millones",
+   "start": 28.34,
+   "end": 28.7
+  },
+  {
+   "text": "entre",
+   "start": 28.71,
+   "end": 28.93
+  },
+  {
+   "text": "todos.",
+   "start": 28.94,
+   "end": 29.34
+  },
+  {
+   "text": "Lo",
+   "start": 30.04,
+   "end": 30.25
+  },
+  {
+   "text": "vigilan",
+   "start": 30.26,
+   "end": 30.6
+  },
+  {
+   "text": "las",
+   "start": 30.61,
+   "end": 30.75
+  },
+  {
+   "text": "juntas",
+   "start": 30.76,
+   "end": 31.040000000000003
+  },
+  {
+   "text": "electorales",
+   "start": 31.05,
+   "end": 31.59
+  },
+  {
+   "text": "y",
+   "start": 31.6,
+   "end": 31.66
+  },
+  {
+   "text": "el",
+   "start": 31.67,
+   "end": 31.75
+  },
+  {
+   "text": "Tribunal",
+   "start": 31.76,
+   "end": 32.11
+  },
+  {
+   "text": "de",
+   "start": 32.12,
+   "end": 32.19
+  },
+  {
+   "text": "Cuentas.",
+   "start": 32.2,
+   "end": 32.7
+  },
+  {
+   "text": "Quien",
+   "start": 33.4,
+   "end": 33.62
+  },
+  {
+   "text": "se",
+   "start": 33.63,
+   "end": 33.730000000000004
+  },
+  {
+   "text": "pasa",
+   "start": 33.74,
+   "end": 33.95
+  },
+  {
+   "text": "puede",
+   "start": 33.96,
+   "end": 34.15
+  },
+  {
+   "text": "perder",
+   "start": 34.16,
+   "end": 34.44
+  },
+  {
+   "text": "la",
+   "start": 34.45,
+   "end": 34.53
+  },
+  {
+   "text": "subvención.",
+   "start": 34.54,
+   "end": 35.16
+  },
+  {
+   "text": "Tú",
+   "start": 35.85,
+   "end": 35.980000000000004
+  },
+  {
+   "text": "traes",
+   "start": 35.99,
+   "end": 36.24
+  },
+  {
+   "text": "las",
+   "start": 36.25,
+   "end": 36.4
+  },
+  {
+   "text": "dudas",
+   "start": 36.41,
+   "end": 36.68
+  },
+  {
+   "text": "y",
+   "start": 36.69,
+   "end": 36.73
+  },
+  {
+   "text": "nosotros",
+   "start": 36.74,
+   "end": 37.160000000000004
+  },
+  {
+   "text": "te",
+   "start": 37.17,
+   "end": 37.260000000000005
+  },
+  {
+   "text": "damos",
+   "start": 37.27,
+   "end": 37.540000000000006
+  },
+  {
+   "text": "el",
+   "start": 37.55,
+   "end": 37.65
+  },
+  {
+   "text": "truco.",
+   "start": 37.66,
+   "end": 38.04
+  },
+  {
+   "text": "Síguenos",
+   "start": 38.73,
+   "end": 39.239999999999995
+  },
+  {
+   "text": "y",
+   "start": 39.25,
+   "end": 39.3
+  },
+  {
+   "text": "las",
+   "start": 39.31,
+   "end": 39.440000000000005
+  },
+  {
+   "text": "resolvemos.",
+   "start": 39.45,
+   "end": 40.11
+  },
+  {
+   "text": "¿Sabías",
+   "start": 40.8,
+   "end": 41.26
+  },
+  {
+   "text": "que",
+   "start": 41.27,
+   "end": 41.36000000000001
+  },
+  {
+   "text": "había",
+   "start": 41.37,
+   "end": 41.589999999999996
+  },
+  {
+   "text": "un",
+   "start": 41.6,
+   "end": 41.7
+  },
+  {
+   "text": "tope",
+   "start": 41.71,
+   "end": 41.9
+  },
+  {
+   "text": "de",
+   "start": 41.91,
+   "end": 41.98
+  },
+  {
+   "text": "gasto?",
+   "start": 41.99,
+   "end": 42.370000000000005
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 42.87,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "¿Cuánto puede *gastar* un partido?",
+  "scene": 0
+ },
+ "duration": 45.47,
+ "cover_offset_ms": 45769
+}
