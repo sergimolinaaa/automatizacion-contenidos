@@ -1,5 +1,5 @@
 {
- "source": "Fuentes: LOREG, art. 175 · Orden HAC/1062/2026 (BOE) · Europa Press · Tribunal de Cuentas, informe 1.616 · EFE · INE",
+ "source": "Fuentes: LOREG, art. 175 · Orden HAC/1062/2026 (BOE) · Europa Press · Tribunal de Cuentas, informe 1.616 · EFE (Infobae) · The Objective · INE",
  "chapters": [
   "?",
   "1",
@@ -277,414 +277,404 @@
   {
    "text": "Después,",
    "start": 16.8,
-   "end": 17.32
+   "end": 17.34
   },
   {
    "text": "el",
-   "start": 17.41,
-   "end": 17.53
+   "start": 17.43,
+   "end": 17.55
   },
   {
    "text": "Estado",
-   "start": 17.54,
-   "end": 17.81
+   "start": 17.56,
+   "end": 17.84
   },
   {
    "text": "le",
-   "start": 17.82,
-   "end": 17.91
+   "start": 17.85,
+   "end": 17.94
   },
   {
    "text": "paga",
-   "start": 17.92,
-   "end": 18.14
+   "start": 17.95,
+   "end": 18.169999999999998
   },
   {
    "text": "unos",
-   "start": 18.15,
-   "end": 18.36
+   "start": 18.18,
+   "end": 18.39
   },
   {
    "text": "veintiún",
-   "start": 18.37,
-   "end": 18.73
+   "start": 18.4,
+   "end": 18.74
   },
   {
    "text": "mil",
-   "start": 18.74,
-   "end": 18.88
+   "start": 18.75,
+   "end": 18.89
   },
   {
    "text": "euros",
-   "start": 18.89,
-   "end": 19.17
+   "start": 18.9,
+   "end": 19.16
   },
   {
    "text": "por",
-   "start": 19.18,
-   "end": 19.31
+   "start": 19.17,
+   "end": 19.290000000000003
   },
   {
-   "text": "cada",
-   "start": 19.32,
-   "end": 19.48
-  },
-  {
-   "text": "escaño",
-   "start": 19.49,
-   "end": 19.819999999999997
-  },
-  {
-   "text": "conseguido,",
-   "start": 19.83,
-   "end": 20.369999999999997
+   "text": "escaño,",
+   "start": 19.3,
+   "end": 19.7
   },
   {
    "text": "y",
-   "start": 20.57,
-   "end": 20.73
+   "start": 19.81,
+   "end": 19.86
   },
   {
    "text": "ochenta",
-   "start": 20.74,
-   "end": 21.04
+   "start": 19.87,
+   "end": 20.17
   },
   {
    "text": "y",
-   "start": 21.05,
-   "end": 21.14
+   "start": 20.18,
+   "end": 20.259999999999998
   },
   {
    "text": "un",
-   "start": 21.15,
-   "end": 21.25
+   "start": 20.27,
+   "end": 20.37
   },
   {
    "text": "céntimos",
-   "start": 21.26,
-   "end": 21.67
+   "start": 20.38,
+   "end": 20.77
   },
   {
    "text": "por",
-   "start": 21.68,
-   "end": 21.81
+   "start": 20.78,
+   "end": 20.91
   },
   {
    "text": "cada",
-   "start": 21.82,
-   "end": 22.0
+   "start": 20.92,
+   "end": 21.090000000000003
   },
   {
-   "text": "voto",
-   "start": 22.01,
-   "end": 22.220000000000002
-  },
-  {
-   "text": "al",
-   "start": 22.23,
-   "end": 22.3
-  },
-  {
-   "text": "Congreso,",
-   "start": 22.31,
-   "end": 22.82
+   "text": "voto,",
+   "start": 21.1,
+   "end": 21.43
   },
   {
    "text": "si",
-   "start": 22.91,
-   "end": 23.01
+   "start": 21.63,
+   "end": 21.84
   },
   {
    "text": "saca",
-   "start": 23.02,
-   "end": 23.23
+   "start": 21.85,
+   "end": 22.07
   },
   {
    "text": "diputado.",
-   "start": 23.24,
-   "end": 23.75
+   "start": 22.08,
+   "end": 22.61
   },
   {
    "text": "En",
-   "start": 24.44,
-   "end": 24.66
+   "start": 23.3,
+   "end": 23.52
   },
   {
    "text": "dos",
-   "start": 24.67,
-   "end": 24.8
+   "start": 23.53,
+   "end": 23.66
   },
   {
    "text": "mil",
-   "start": 24.81,
-   "end": 24.939999999999998
+   "start": 23.67,
+   "end": 23.8
   },
   {
    "text": "veintitrés,",
-   "start": 24.95,
-   "end": 25.48
+   "start": 23.81,
+   "end": 24.34
   },
   {
    "text": "los",
-   "start": 25.57,
-   "end": 25.740000000000002
+   "start": 24.44,
+   "end": 24.610000000000003
   },
   {
    "text": "dieciséis",
-   "start": 25.75,
-   "end": 26.16
+   "start": 24.62,
+   "end": 25.03
   },
   {
    "text": "partidos",
-   "start": 26.17,
-   "end": 26.57
+   "start": 25.04,
+   "end": 25.45
   },
   {
    "text": "con",
-   "start": 26.58,
-   "end": 26.7
+   "start": 25.46,
+   "end": 25.580000000000002
   },
   {
    "text": "escaño",
-   "start": 26.71,
-   "end": 27.09
+   "start": 25.59,
+   "end": 25.95
   },
   {
-   "text": "gastaron",
-   "start": 27.1,
-   "end": 27.490000000000002
+   "text": "justificaron",
+   "start": 25.96,
+   "end": 26.53
   },
   {
    "text": "unos",
-   "start": 27.5,
-   "end": 27.68
+   "start": 26.54,
+   "end": 26.74
   },
   {
    "text": "cincuenta",
-   "start": 27.69,
-   "end": 28.060000000000002
+   "start": 26.75,
+   "end": 27.12
   },
   {
    "text": "y",
-   "start": 28.07,
-   "end": 28.15
+   "start": 27.13,
+   "end": 27.209999999999997
   },
   {
    "text": "ocho",
-   "start": 28.16,
-   "end": 28.330000000000002
+   "start": 27.22,
+   "end": 27.39
   },
   {
-   "text": "millones",
-   "start": 28.34,
-   "end": 28.7
+   "text": "millones.",
+   "start": 27.4,
+   "end": 27.91
   },
   {
-   "text": "entre",
-   "start": 28.71,
-   "end": 28.93
+   "text": "Nadie",
+   "start": 28.61,
+   "end": 28.98
   },
   {
-   "text": "todos.",
-   "start": 28.94,
-   "end": 29.34
-  },
-  {
-   "text": "Lo",
-   "start": 30.04,
-   "end": 30.25
-  },
-  {
-   "text": "vigilan",
-   "start": 30.26,
-   "end": 30.6
-  },
-  {
-   "text": "las",
-   "start": 30.61,
-   "end": 30.75
-  },
-  {
-   "text": "juntas",
-   "start": 30.76,
-   "end": 31.040000000000003
-  },
-  {
-   "text": "electorales",
-   "start": 31.05,
-   "end": 31.59
-  },
-  {
-   "text": "y",
-   "start": 31.6,
-   "end": 31.66
+   "text": "superó",
+   "start": 28.99,
+   "end": 29.29
   },
   {
    "text": "el",
-   "start": 31.67,
-   "end": 31.75
+   "start": 29.3,
+   "end": 29.39
+  },
+  {
+   "text": "tope,",
+   "start": 29.4,
+   "end": 29.689999999999998
+  },
+  {
+   "text": "pero",
+   "start": 29.85,
+   "end": 30.020000000000003
+  },
+  {
+   "text": "el",
+   "start": 30.03,
+   "end": 30.09
   },
   {
    "text": "Tribunal",
-   "start": 31.76,
-   "end": 32.11
+   "start": 30.1,
+   "end": 30.450000000000003
   },
   {
    "text": "de",
-   "start": 32.12,
-   "end": 32.19
+   "start": 30.46,
+   "end": 30.53
   },
   {
-   "text": "Cuentas.",
-   "start": 32.2,
-   "end": 32.7
+   "text": "Cuentas",
+   "start": 30.54,
+   "end": 30.849999999999998
   },
   {
-   "text": "Quien",
-   "start": 33.4,
-   "end": 33.62
+   "text": "lo",
+   "start": 30.86,
+   "end": 30.939999999999998
   },
   {
-   "text": "se",
-   "start": 33.63,
-   "end": 33.730000000000004
+   "text": "revisó,",
+   "start": 30.95,
+   "end": 31.349999999999998
   },
   {
-   "text": "pasa",
-   "start": 33.74,
-   "end": 33.95
+   "text": "y",
+   "start": 31.5,
+   "end": 31.63
   },
   {
-   "text": "puede",
-   "start": 33.96,
-   "end": 34.15
+   "text": "propuso",
+   "start": 31.64,
+   "end": 32.0
   },
   {
-   "text": "perder",
-   "start": 34.16,
-   "end": 34.44
+   "text": "recortar",
+   "start": 32.01,
+   "end": 32.419999999999995
   },
   {
    "text": "la",
-   "start": 34.45,
-   "end": 34.53
+   "start": 32.43,
+   "end": 32.51
   },
   {
-   "text": "subvención.",
-   "start": 34.54,
-   "end": 35.16
+   "text": "subvención",
+   "start": 32.52,
+   "end": 32.99
+  },
+  {
+   "text": "a",
+   "start": 33.0,
+   "end": 33.04
+  },
+  {
+   "text": "seis",
+   "start": 33.05,
+   "end": 33.239999999999995
+  },
+  {
+   "text": "partidos",
+   "start": 33.25,
+   "end": 33.67
+  },
+  {
+   "text": "por",
+   "start": 33.68,
+   "end": 33.8
+  },
+  {
+   "text": "irregularidades.",
+   "start": 33.81,
+   "end": 34.620000000000005
   },
   {
    "text": "Tú",
-   "start": 35.85,
-   "end": 35.980000000000004
+   "start": 35.3,
+   "end": 35.43
   },
   {
    "text": "traes",
-   "start": 35.99,
-   "end": 36.24
+   "start": 35.44,
+   "end": 35.69
   },
   {
    "text": "las",
-   "start": 36.25,
-   "end": 36.4
+   "start": 35.7,
+   "end": 35.85
   },
   {
    "text": "dudas",
-   "start": 36.41,
-   "end": 36.68
+   "start": 35.86,
+   "end": 36.13
   },
   {
    "text": "y",
-   "start": 36.69,
-   "end": 36.73
+   "start": 36.14,
+   "end": 36.18
   },
   {
    "text": "nosotros",
-   "start": 36.74,
-   "end": 37.160000000000004
+   "start": 36.19,
+   "end": 36.61
   },
   {
    "text": "te",
-   "start": 37.17,
-   "end": 37.260000000000005
+   "start": 36.62,
+   "end": 36.71
   },
   {
    "text": "damos",
-   "start": 37.27,
-   "end": 37.540000000000006
+   "start": 36.72,
+   "end": 36.99
   },
   {
    "text": "el",
-   "start": 37.55,
-   "end": 37.65
+   "start": 37.0,
+   "end": 37.1
   },
   {
    "text": "truco.",
-   "start": 37.66,
-   "end": 38.04
+   "start": 37.11,
+   "end": 37.49
   },
   {
    "text": "Síguenos",
-   "start": 38.73,
-   "end": 39.239999999999995
+   "start": 38.18,
+   "end": 38.69
   },
   {
    "text": "y",
-   "start": 39.25,
-   "end": 39.3
+   "start": 38.7,
+   "end": 38.75
   },
   {
    "text": "las",
-   "start": 39.31,
-   "end": 39.440000000000005
+   "start": 38.76,
+   "end": 38.89
   },
   {
    "text": "resolvemos.",
-   "start": 39.45,
-   "end": 40.11
+   "start": 38.9,
+   "end": 39.559999999999995
   },
   {
    "text": "¿Sabías",
-   "start": 40.8,
-   "end": 41.26
+   "start": 40.25,
+   "end": 40.71
   },
   {
    "text": "que",
-   "start": 41.27,
-   "end": 41.36000000000001
+   "start": 40.72,
+   "end": 40.81
   },
   {
    "text": "había",
-   "start": 41.37,
-   "end": 41.589999999999996
+   "start": 40.82,
+   "end": 41.04
   },
   {
    "text": "un",
-   "start": 41.6,
-   "end": 41.7
+   "start": 41.05,
+   "end": 41.15
   },
   {
    "text": "tope",
-   "start": 41.71,
-   "end": 41.9
+   "start": 41.16,
+   "end": 41.349999999999994
   },
   {
    "text": "de",
-   "start": 41.91,
-   "end": 41.98
+   "start": 41.36,
+   "end": 41.43
   },
   {
    "text": "gasto?",
-   "start": 41.99,
-   "end": 42.370000000000005
+   "start": 41.44,
+   "end": 41.82
   }
  ],
  "audio": "audio/voz.mp3",
  "music": "audio/music.wav",
  "musicVolume": 0.1,
  "outro": {
-  "at": 42.87,
+  "at": 42.32,
   "cta": "Todo tiene un truco"
  },
  "sfx": "audio/sfx.wav",
@@ -692,6 +682,6 @@
   "text": "¿Cuánto puede *gastar* un partido?",
   "scene": 0
  },
- "duration": 45.47,
- "cover_offset_ms": 45769
+ "duration": 44.92,
+ "cover_offset_ms": 45220
 }
