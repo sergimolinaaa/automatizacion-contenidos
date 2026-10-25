@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · casa.py · frio.py · compra.py · reptiles.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py · memoria.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · sueno.py · casa.py · frio.py · compra.py · reptiles.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py · memoria.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -212,6 +212,15 @@ Truco: para que el ala «se incline», dibújala a 0° y anímala con `move` `ro
 `mesilla(id_, cx, base, w, h)` (.puntos tablero) · `despertador(id_, cx, base, w, texto="3:00", col_txt)` (digital; dos en el mismo sitio + hide/pop para cambiar la hora; `_hora`) ·
 `luna(id_, cx, cy, r)` · `flecha_atras(id_, cx, cy, r, a0, a1)` (arco antihorario alrededor de `casa.reloj`: «retrasar la hora», para draw; las agujas: `move rotate -360` origin bottom en `_minutero` y `-30` origin left en `_horaria` si está a las 3).
 
+## objetos/sueno.py (sueño, cuerpo dormido, marioneta y árbol)
+`cama_lateral(id_, x0, x1, base, col, alto)` → (detras, delante): cama de lado (cabecero a la izquierda, colchón, almohada, edredón con el bulto del cuerpo; `_manta` breathe; .puntos cabeza/colchon/pecho) ·
+`durmiente(id_, cx, cy, s, expresiones=("sueno","sorpresa"), piel, pelo, pelo_color, pijama)` → (cuerpo, brazo): persona tumbada en pijama de rayas, cara hacia nosotros; dibuja detras + cuerpo + delante + brazo;
+`_cabeza` (sway origin right = cuello), `_cara_<exp>` (hide/fade para despertarse), `_<exp>_ojos`, `_torso` (breathe), `_brazo` (origin top-left), `_antebrazo` (origin left) ·
+`marioneta(id_, cx, cy, s, col, hilos, cruz_y)` (de madera con cruceta: `_cruz`, `_hilos` (hide = soltar), `{id}` con `_cabeza` (origin bottom), `_tronco`, `_brazo_izq/der` y `_pierna_izq/der` (origin top); .puntos suelo) ·
+`arbol_rama(id_, x_tronco, base, rama_y, rama_x1, ancho)` → (fondo, rama): tronco y copa (`_copa` sway) + rama larga en `_rama` (mete encima lo que va sobre ella y anímalo con sway origin left; .puntos["y"](x) = y de la parte de arriba) ·
+`pierna_corte(id_, x0, cy, L, s, piel)` (pierna estirada con ventana en el muslo: `_muslo`, `_tibia` (origin left = rodilla), `_pie`; .puntos ventana) + `musculo_ventana(id_, caja, contraido)` (dos en el mismo sitio + hide/fade = contracción).
+`animales.mono(id_, cx, cy, s, pose="duerme|agarra")`: mono pardo tumbado en una rama (cx, cy = parte de arriba de la rama); `_cuerpo`, `_cabeza` (origin bottom-left), `_ojos`, `_cola` (origin top-right), `_brazo/_brazo2/_pierna/_pierna2` (origin top); «agarra» = despierto y abrazado a la rama.
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -275,3 +284,4 @@ lote8-05-hipoteca (archivo/hipoteca/dib.py): dinero.py (banco, torres del BCE, b
 lote8-07-basilisco (archivo/basilisco/dib.py): reptiles.py (basilisco, pata con flecos, pie lateral, bolsa de aire, salpicadura, agua en corte, revista y río en la selva).
 lote8-09-gasto-campana (archivo/gasto-campana/dib.py): saco_dinero y linea_tope (dinero.py).
 lote8-08-cambio-hora (archivo/cambio-hora/dib.py): tiempo.py (cama con persona dentro, mesilla, despertador digital, luna, flecha de retrasar la hora).
+lote9-01-sacudida-dormir (archivo/sacudida-dormir/dib.py): sueno.py (cama de lado, durmiente en pijama, marioneta, árbol con rama, pierna en corte) y mono (animales.py).

@@ -1,0 +1,1730 @@
+{
+  "topic": "¿Por qué das un respingo al dormirte y sientes que caes? Mioclonía hípnica: qué es, cuánta gente la nota, la teoría del primate que cae y qué la favorece",
+  "categoria": "cuerpo",
+  "title": "¿Por qué das un respingo al dormirte y sientes que caes?",
+  "source": "Fuentes: Sleep Foundation · Live Science · NBC News · The Conversation · Wikipedia",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué sientes que *caes* al dormirte",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-26T14:00:00+01:00",
+    "caption": "¿Por qué sientes que caes al dormirte? Es la mioclonía hípnica: hasta siete de cada diez personas la notan. Una teoría dice que el cerebro confunde la relajación con una caída y tensa todo para agarrarse. La cafeína, el estrés y el cansancio la favorecen (Sleep Foundation, Live Science). ¿A ti te pasa mucho?",
+    "description": "¿Por qué das un respingo al dormirte y sientes que caes? Se llama mioclonía hípnica, una sacudida breve de los músculos justo al quedarte dormido, y la han notado entre el 60 y el 70 % de las personas. Una teoría evolutiva dice que el cerebro confunde la relajación muscular con una caída, como un primate que resbala de una rama, aunque no está demostrada. Es más frecuente con cafeína, estrés, falta de sueño o ejercicio intenso por la noche, y suele ser inofensiva. Fuentes: Sleep Foundation, Live Science, NBC News, The Conversation. ¿A ti te pasa mucho al dormirte?",
+    "hashtags": [
+      "sueño",
+      "cerebro",
+      "cuerpohumano",
+      "dormir",
+      "curiosidades"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Sientes que *caes*?",
+      "narration": "¿Te ha pasado? Te estás durmiendo y, de golpe, sientes que caes y das un respingo.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · El respingo",
+        "anims": [
+          {
+            "target": "cama_manta",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.7,
+            "phase": 0.1
+          },
+          {
+            "target": "dani_torso",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.5,
+            "phase": 0.35
+          },
+          {
+            "target": "dani_cabeza",
+            "effect": "sway",
+            "origin": "right",
+            "amount": 0.22,
+            "delay": 0.25
+          },
+          {
+            "target": "dani_brazo",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.1,
+            "delay": 0.7
+          },
+          {
+            "target": "dani_antebrazo",
+            "effect": "sway",
+            "origin": "left",
+            "amount": 0.14,
+            "delay": 1.0
+          },
+          {
+            "target": "dani_cara_sorpresa",
+            "effect": "hide"
+          },
+          {
+            "target": "dani_sorpresa_ojos",
+            "effect": "blink",
+            "delay": 0.5
+          },
+          {
+            "target": "desp_hora",
+            "effect": "pulse",
+            "amount": 0.25,
+            "delay": 0.2
+          },
+          {
+            "target": "z0",
+            "effect": "pop",
+            "delay": 0.0,
+            "sfx": "pop"
+          },
+          {
+            "target": "z1",
+            "effect": "pop",
+            "delay": 0.3
+          },
+          {
+            "target": "z2",
+            "effect": "pop",
+            "delay": 0.6
+          },
+          {
+            "target": "z0",
+            "effect": "float",
+            "amount": 0.5,
+            "delay": 0.2
+          },
+          {
+            "target": "z1",
+            "effect": "float",
+            "amount": 0.6,
+            "delay": 0.55
+          },
+          {
+            "target": "z2",
+            "effect": "float",
+            "amount": 0.45,
+            "delay": 0.9
+          },
+          {
+            "target": "z1",
+            "effect": "sway",
+            "amount": 0.4,
+            "delay": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "durmiendo",
+            "to": [
+              470,
+              1060
+            ],
+            "amount": 1.12,
+            "dur": 1.4
+          },
+          {
+            "target": "cama_manta",
+            "effect": "punch",
+            "trigger": "golpe",
+            "amount": 0.25,
+            "sfx": "boing"
+          },
+          {
+            "target": "dani",
+            "effect": "move",
+            "trigger": "golpe",
+            "to": [
+              0,
+              -40
+            ],
+            "dur": 0.25
+          },
+          {
+            "target": "dani_brazo",
+            "effect": "move",
+            "trigger": "golpe",
+            "to": [
+              0,
+              -40
+            ],
+            "dur": 0.3
+          },
+          {
+            "target": "z0",
+            "effect": "hide",
+            "trigger": "golpe"
+          },
+          {
+            "target": "z1",
+            "effect": "hide",
+            "trigger": "golpe"
+          },
+          {
+            "target": "z2",
+            "effect": "hide",
+            "trigger": "golpe"
+          },
+          {
+            "target": "dani_cara_sueno",
+            "effect": "hide",
+            "trigger": "golpe"
+          },
+          {
+            "target": "dani_cara_sorpresa",
+            "effect": "fade",
+            "trigger": "golpe",
+            "dur": 0.15
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "sientes",
+            "amount": 1,
+            "dur": 0.6
+          },
+          {
+            "target": "dani",
+            "effect": "move",
+            "trigger": "sientes",
+            "to": [
+              0,
+              40
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "dani_brazo",
+            "effect": "move",
+            "trigger": "sientes",
+            "to": [
+              0,
+              40
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "dani_brazo",
+            "effect": "move",
+            "trigger": "sientes",
+            "rotate": -14,
+            "origin": "top-left",
+            "dur": 0.6
+          },
+          {
+            "target": "dani_cabeza",
+            "effect": "move",
+            "trigger": "que",
+            "rotate": 6,
+            "origin": "right",
+            "dur": 0.5
+          },
+          {
+            "target": "burbuja",
+            "effect": "pop",
+            "trigger": "sientes",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "pcae",
+            "effect": "move",
+            "trigger": "caes",
+            "to": [
+              0,
+              60
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "fcae",
+            "effect": "draw",
+            "trigger": "caes",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "burbuja",
+            "effect": "hide",
+            "trigger": "das"
+          },
+          {
+            "target": "dani",
+            "effect": "move",
+            "trigger": "das",
+            "to": [
+              0,
+              -22
+            ],
+            "dur": 0.2
+          },
+          {
+            "target": "dani_brazo",
+            "effect": "move",
+            "trigger": "das",
+            "to": [
+              0,
+              -22
+            ],
+            "dur": 0.2
+          },
+          {
+            "target": "dani_antebrazo",
+            "effect": "move",
+            "trigger": "un",
+            "rotate": -16,
+            "origin": "left",
+            "dur": 0.35
+          },
+          {
+            "target": "boing",
+            "effect": "pop",
+            "trigger": "respingo",
+            "sfx": "boing"
+          },
+          {
+            "target": "boing",
+            "effect": "punch",
+            "trigger": "respingo",
+            "amount": 0.5
+          },
+          {
+            "target": "temb",
+            "effect": "pop",
+            "trigger": "respingo"
+          },
+          {
+            "target": "temb",
+            "effect": "shake",
+            "trigger": "respingo",
+            "amount": 0.8
+          },
+          {
+            "target": "dani",
+            "effect": "move",
+            "trigger": "respingo",
+            "to": [
+              0,
+              22
+            ],
+            "dur": 0.35
+          },
+          {
+            "target": "dani_brazo",
+            "effect": "move",
+            "trigger": "respingo",
+            "to": [
+              0,
+              22
+            ],
+            "dur": 0.35
+          },
+          {
+            "target": "camaG",
+            "effect": "shake",
+            "trigger": "respingo",
+            "amount": 0.45
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Mioclonía *hípnica*",
+      "narration": "Se llama mioclonía hípnica, una sacudida muscular al dormirte. Hasta siete de cada diez personas la notan.",
+      "illustration": {
+        "svg_file": "mioclonia_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 2 · Mioclonía hípnica",
+        "anims": [
+          {
+            "target": "piernaG",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "piernaG",
+            "effect": "sway",
+            "origin": "left",
+            "amount": 0.05,
+            "delay": 0.6
+          },
+          {
+            "target": "mus_rel",
+            "effect": "breathe",
+            "amount": 0.6,
+            "phase": 0.2
+          },
+          {
+            "target": "mus_con",
+            "effect": "hide"
+          },
+          {
+            "target": "tnombre",
+            "effect": "pop",
+            "trigger": "mioclonía",
+            "sfx": "pop"
+          },
+          {
+            "target": "tnombre",
+            "effect": "float",
+            "trigger": "hípnica",
+            "amount": 0.15
+          },
+          {
+            "target": "tsub",
+            "effect": "slide-up",
+            "trigger": "una",
+            "dur": 0.4
+          },
+          {
+            "target": "mus_rel",
+            "effect": "hide",
+            "trigger": "sacudida"
+          },
+          {
+            "target": "mus_con",
+            "effect": "fade",
+            "trigger": "sacudida",
+            "dur": 0.12
+          },
+          {
+            "target": "pierna_tibia",
+            "effect": "move",
+            "trigger": "sacudida",
+            "rotate": -14,
+            "origin": "left",
+            "dur": 0.25
+          },
+          {
+            "target": "pierna_pie",
+            "effect": "move",
+            "trigger": "muscular",
+            "rotate": -12,
+            "origin": "left",
+            "dur": 0.3
+          },
+          {
+            "target": "golpes",
+            "effect": "pop",
+            "trigger": "sacudida",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "golpes",
+            "effect": "pulse",
+            "trigger": "muscular",
+            "amount": 0.6
+          },
+          {
+            "target": "tmus",
+            "effect": "pop",
+            "trigger": "muscular"
+          },
+          {
+            "target": "pierna_tibia",
+            "effect": "move",
+            "trigger": "al",
+            "rotate": 14,
+            "origin": "left",
+            "dur": 0.6
+          },
+          {
+            "target": "pierna_pie",
+            "effect": "move",
+            "trigger": "dormirte",
+            "rotate": 12,
+            "origin": "left",
+            "dur": 0.6
+          },
+          {
+            "target": "golpes",
+            "effect": "hide",
+            "trigger": "dormirte"
+          },
+          {
+            "target": "mus_con",
+            "effect": "hide",
+            "trigger": "dormirte"
+          },
+          {
+            "target": "mus_rel",
+            "effect": "fade",
+            "trigger": "dormirte",
+            "dur": 0.2
+          },
+          {
+            "target": "c7_0",
+            "effect": "pop",
+            "trigger": "Hasta",
+            "sfx": "ding"
+          },
+          {
+            "target": "pg0",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.0
+          },
+          {
+            "target": "pg1",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.1
+          },
+          {
+            "target": "pg2",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.2
+          },
+          {
+            "target": "pg3",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.3
+          },
+          {
+            "target": "pg4",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.4
+          },
+          {
+            "target": "pg5",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.5
+          },
+          {
+            "target": "pg6",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.6
+          },
+          {
+            "target": "pg7",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.7
+          },
+          {
+            "target": "pg8",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.8
+          },
+          {
+            "target": "pg9",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.9
+          },
+          {
+            "target": "pl0",
+            "effect": "pop",
+            "trigger": "Hasta"
+          },
+          {
+            "target": "pl0",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.0,
+            "trigger": "Hasta"
+          },
+          {
+            "target": "pl1",
+            "effect": "pop",
+            "trigger": "siete",
+            "sfx": "pop"
+          },
+          {
+            "target": "pl1",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.1,
+            "trigger": "siete"
+          },
+          {
+            "target": "c7_0",
+            "effect": "hide",
+            "trigger": "siete"
+          },
+          {
+            "target": "c7_1",
+            "effect": "fade",
+            "trigger": "siete",
+            "dur": 0.12
+          },
+          {
+            "target": "pl2",
+            "effect": "pop",
+            "trigger": "de"
+          },
+          {
+            "target": "pl2",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.2,
+            "trigger": "de"
+          },
+          {
+            "target": "c7_1",
+            "effect": "hide",
+            "trigger": "de"
+          },
+          {
+            "target": "c7_2",
+            "effect": "fade",
+            "trigger": "de",
+            "dur": 0.12
+          },
+          {
+            "target": "pl3",
+            "effect": "pop",
+            "trigger": "cada"
+          },
+          {
+            "target": "pl3",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.3,
+            "trigger": "cada"
+          },
+          {
+            "target": "c7_2",
+            "effect": "hide",
+            "trigger": "cada"
+          },
+          {
+            "target": "c7_3",
+            "effect": "fade",
+            "trigger": "cada",
+            "dur": 0.12
+          },
+          {
+            "target": "pl4",
+            "effect": "pop",
+            "trigger": "diez",
+            "sfx": "pop"
+          },
+          {
+            "target": "pl4",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.4,
+            "trigger": "diez"
+          },
+          {
+            "target": "c7_3",
+            "effect": "hide",
+            "trigger": "diez"
+          },
+          {
+            "target": "c7_4",
+            "effect": "fade",
+            "trigger": "diez",
+            "dur": 0.12
+          },
+          {
+            "target": "pl5",
+            "effect": "pop",
+            "trigger": "personas"
+          },
+          {
+            "target": "pl5",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.5,
+            "trigger": "personas"
+          },
+          {
+            "target": "c7_4",
+            "effect": "hide",
+            "trigger": "personas"
+          },
+          {
+            "target": "c7_5",
+            "effect": "fade",
+            "trigger": "personas",
+            "dur": 0.12
+          },
+          {
+            "target": "pl6",
+            "effect": "pop",
+            "trigger": "la"
+          },
+          {
+            "target": "pl6",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.6,
+            "trigger": "la"
+          },
+          {
+            "target": "c7_5",
+            "effect": "hide",
+            "trigger": "la"
+          },
+          {
+            "target": "c7",
+            "effect": "fade",
+            "trigger": "la",
+            "dur": 0.12
+          },
+          {
+            "target": "c7",
+            "effect": "punch",
+            "trigger": "notan",
+            "amount": 0.35,
+            "sfx": "ding"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Músculos *flojos*",
+      "narration": "Al dormirte, tus músculos se relajan de golpe, como una marioneta a la que sueltan los hilos.",
+      "illustration": {
+        "svg_file": "marioneta_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 3 · Sin hilos",
+        "anims": [
+          {
+            "target": "luna",
+            "effect": "slide-down",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "luna",
+            "effect": "float",
+            "amount": 0.3,
+            "delay": 0.5
+          },
+          {
+            "target": "tit_cruz",
+            "effect": "slide-down",
+            "delay": 0.1,
+            "dur": 0.6
+          },
+          {
+            "target": "tit_hilos",
+            "effect": "slide-down",
+            "delay": 0.1,
+            "dur": 0.6
+          },
+          {
+            "target": "tit",
+            "effect": "slide-down",
+            "delay": 0.1,
+            "dur": 0.6
+          },
+          {
+            "target": "sombra_lejos",
+            "effect": "fade",
+            "delay": 0.3,
+            "dur": 0.4
+          },
+          {
+            "target": "sombra_cerca",
+            "effect": "hide"
+          },
+          {
+            "target": "mflojo",
+            "effect": "hide"
+          },
+          {
+            "target": "tit_cruz",
+            "effect": "sway",
+            "amount": 0.15,
+            "delay": 0.3
+          },
+          {
+            "target": "tit",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.12,
+            "delay": 0.6
+          },
+          {
+            "target": "tit_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3,
+            "delay": 0.85
+          },
+          {
+            "target": "tit_brazo_izq",
+            "effect": "sway",
+            "origin": "top-right",
+            "amount": 0.2,
+            "delay": 0.5
+          },
+          {
+            "target": "tit_brazo_der",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.16,
+            "delay": 1.1
+          },
+          {
+            "target": "tit_pierna_izq",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.14,
+            "delay": 0.75
+          },
+          {
+            "target": "tit_pierna_der",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.12,
+            "delay": 1.35
+          },
+          {
+            "target": "tdorm",
+            "effect": "pop",
+            "trigger": "dormirte",
+            "sfx": "pop"
+          },
+          {
+            "target": "mtenso",
+            "effect": "pop",
+            "trigger": "músculos",
+            "sfx": "pop"
+          },
+          {
+            "target": "mtenso",
+            "effect": "pulse",
+            "trigger": "músculos",
+            "amount": 0.5
+          },
+          {
+            "target": "mtenso",
+            "effect": "hide",
+            "trigger": "relajan"
+          },
+          {
+            "target": "mflojo",
+            "effect": "fade",
+            "trigger": "relajan",
+            "dur": 0.25
+          },
+          {
+            "target": "mflojo",
+            "effect": "breathe",
+            "trigger": "relajan",
+            "amount": 0.5
+          },
+          {
+            "target": "tflojo",
+            "effect": "pop",
+            "trigger": "relajan"
+          },
+          {
+            "target": "mflojo",
+            "effect": "punch",
+            "trigger": "golpe",
+            "amount": 0.3
+          },
+          {
+            "target": "tij",
+            "effect": "slide-left",
+            "trigger": "una",
+            "dur": 0.45,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tij",
+            "effect": "wiggle",
+            "trigger": "marioneta",
+            "amount": 0.5
+          },
+          {
+            "target": "tit_cabeza",
+            "effect": "move",
+            "trigger": "marioneta",
+            "rotate": -6,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "tij",
+            "effect": "punch",
+            "trigger": "la",
+            "amount": 0.4,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "cortes",
+            "effect": "pop",
+            "trigger": "la"
+          },
+          {
+            "target": "tit_hilos",
+            "effect": "hide",
+            "trigger": "que"
+          },
+          {
+            "target": "cortes",
+            "effect": "hide",
+            "trigger": "sueltan"
+          },
+          {
+            "target": "tit",
+            "effect": "move",
+            "trigger": "sueltan",
+            "to": [
+              0,
+              136
+            ],
+            "dur": 0.35,
+            "sfx": "boing"
+          },
+          {
+            "target": "sombra_lejos",
+            "effect": "hide",
+            "trigger": "sueltan"
+          },
+          {
+            "target": "sombra_cerca",
+            "effect": "fade",
+            "trigger": "sueltan",
+            "dur": 0.3
+          },
+          {
+            "target": "tit",
+            "effect": "move",
+            "trigger": "los",
+            "to": [
+              0,
+              24
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "tit_pierna_izq",
+            "effect": "move",
+            "trigger": "los",
+            "rotate": 26,
+            "origin": "top",
+            "dur": 0.5
+          },
+          {
+            "target": "tit_pierna_der",
+            "effect": "move",
+            "trigger": "los",
+            "rotate": -32,
+            "origin": "top",
+            "dur": 0.55
+          },
+          {
+            "target": "tit_tronco",
+            "effect": "move",
+            "trigger": "los",
+            "rotate": 6,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "tit_brazo_izq",
+            "effect": "move",
+            "trigger": "hilos",
+            "rotate": 12,
+            "origin": "top-right",
+            "dur": 0.45
+          },
+          {
+            "target": "tit_brazo_der",
+            "effect": "move",
+            "trigger": "hilos",
+            "rotate": -14,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "tit_cabeza",
+            "effect": "move",
+            "trigger": "hilos",
+            "rotate": 24,
+            "origin": "bottom",
+            "dur": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "¿Te *caes* del árbol?",
+      "narration": "Una teoría dice que el cerebro confunde esa relajación con una caída, como un mono que resbala de una rama, y tensa todo para agarrarse.",
+      "illustration": {
+        "svg_file": "mono_full.svg",
+        "layout": "full",
+        "caption": "Fig. 4 · La teoría del mono",
+        "anims": [
+          {
+            "target": "mz0",
+            "effect": "pop",
+            "delay": 0.0,
+            "sfx": "pop"
+          },
+          {
+            "target": "mz1",
+            "effect": "pop",
+            "delay": 0.3
+          },
+          {
+            "target": "mz2",
+            "effect": "pop",
+            "delay": 0.6
+          },
+          {
+            "target": "mz0",
+            "effect": "float",
+            "amount": 0.5,
+            "delay": 0.2
+          },
+          {
+            "target": "mz1",
+            "effect": "float",
+            "amount": 0.6,
+            "delay": 0.5
+          },
+          {
+            "target": "mz2",
+            "effect": "float",
+            "amount": 0.45,
+            "delay": 0.85
+          },
+          {
+            "target": "arbol_copa",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.1
+          },
+          {
+            "target": "ramaG",
+            "effect": "sway",
+            "origin": "left",
+            "amount": 0.05,
+            "delay": 0.4
+          },
+          {
+            "target": "mono_cuerpo",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.9,
+            "phase": 0.2
+          },
+          {
+            "target": "mono_cabeza",
+            "effect": "sway",
+            "origin": "bottom-left",
+            "amount": 0.22,
+            "delay": 0.3
+          },
+          {
+            "target": "mono_cola",
+            "effect": "sway",
+            "origin": "top-right",
+            "amount": 0.45,
+            "delay": 0.6
+          },
+          {
+            "target": "mono_brazo",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.35,
+            "delay": 0.95
+          },
+          {
+            "target": "mono_brazo2",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.3,
+            "delay": 0.2
+          },
+          {
+            "target": "mono_pierna",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.3,
+            "delay": 1.4
+          },
+          {
+            "target": "mono_pierna2",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.25,
+            "delay": 0.55
+          },
+          {
+            "target": "monoA",
+            "effect": "hide"
+          },
+          {
+            "target": "cereG",
+            "effect": "pop",
+            "trigger": "cerebro",
+            "sfx": "pop"
+          },
+          {
+            "target": "cereG",
+            "effect": "float",
+            "trigger": "cerebro",
+            "amount": 0.3
+          },
+          {
+            "target": "alerta",
+            "effect": "pop",
+            "trigger": "confunde",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "alerta",
+            "effect": "wiggle",
+            "trigger": "confunde",
+            "amount": 0.5
+          },
+          {
+            "target": "tcaida",
+            "effect": "pop",
+            "trigger": "caída",
+            "sfx": "pop"
+          },
+          {
+            "target": "tcaida",
+            "effect": "punch",
+            "trigger": "como",
+            "amount": 0.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "mono",
+            "to": [
+              620,
+              900
+            ],
+            "amount": 1.22,
+            "dur": 0.9
+          },
+          {
+            "target": "mz0",
+            "effect": "hide",
+            "trigger": "resbala"
+          },
+          {
+            "target": "mz1",
+            "effect": "hide",
+            "trigger": "resbala"
+          },
+          {
+            "target": "mz2",
+            "effect": "hide",
+            "trigger": "resbala"
+          },
+          {
+            "target": "mono",
+            "effect": "move",
+            "trigger": "resbala",
+            "to": [
+              -12,
+              24
+            ],
+            "rotate": 7,
+            "dur": 0.55,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mono_cabeza",
+            "effect": "move",
+            "trigger": "de",
+            "rotate": -8,
+            "origin": "bottom-left",
+            "dur": 0.4
+          },
+          {
+            "target": "grieta",
+            "effect": "draw",
+            "trigger": "rama",
+            "dur": 0.35,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "ramaG",
+            "effect": "punch",
+            "trigger": "rama",
+            "amount": 0.08
+          },
+          {
+            "target": "mono",
+            "effect": "hide",
+            "trigger": "tensa"
+          },
+          {
+            "target": "monoA",
+            "effect": "fade",
+            "trigger": "tensa",
+            "dur": 0.15
+          },
+          {
+            "target": "rayos",
+            "effect": "pop",
+            "trigger": "tensa",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "rayos",
+            "effect": "pulse",
+            "trigger": "tensa",
+            "amount": 0.6
+          },
+          {
+            "target": "monoA_cuerpo",
+            "effect": "breathe",
+            "trigger": "tensa",
+            "origin": "bottom",
+            "amount": 1.4,
+            "phase": 0.5
+          },
+          {
+            "target": "monoA_ojos",
+            "effect": "blink",
+            "trigger": "todo"
+          },
+          {
+            "target": "monoA",
+            "effect": "punch",
+            "trigger": "todo",
+            "amount": 0.3
+          },
+          {
+            "target": "monoA_cola",
+            "effect": "sway",
+            "trigger": "todo",
+            "origin": "top-right",
+            "amount": 0.3
+          },
+          {
+            "target": "monoA_cabeza",
+            "effect": "sway",
+            "trigger": "para",
+            "origin": "bottom-left",
+            "amount": 0.3
+          },
+          {
+            "target": "monoA",
+            "effect": "shake",
+            "trigger": "agarrarse",
+            "amount": 0.35
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "agarrarse",
+            "amount": 1,
+            "dur": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Solo una *teoría*",
+      "narration": "Ojo: es solo una hipótesis, sin demostrar. Los científicos aún discuten.",
+      "illustration": {
+        "svg_file": "hipotesis_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 5 · Sin demostrar",
+        "anims": [
+          {
+            "target": "piz",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "dibtiza",
+            "effect": "fade",
+            "trigger": "Ojo",
+            "dur": 0.4
+          },
+          {
+            "target": "thipo",
+            "effect": "slide-up",
+            "trigger": "solo",
+            "dur": 0.4
+          },
+          {
+            "target": "interr",
+            "effect": "pop",
+            "trigger": "hipótesis",
+            "sfx": "pop"
+          },
+          {
+            "target": "interr",
+            "effect": "wiggle",
+            "trigger": "hipótesis",
+            "amount": 0.4
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "sin",
+            "sfx": "sello"
+          },
+          {
+            "target": "sello",
+            "effect": "punch",
+            "trigger": "demostrar",
+            "amount": 0.4
+          },
+          {
+            "target": "ana",
+            "effect": "slide-right",
+            "trigger": "Los",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "luis",
+            "effect": "slide-left",
+            "trigger": "científicos",
+            "dur": 0.5
+          },
+          {
+            "target": "ana",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.8,
+            "phase": 0.2
+          },
+          {
+            "target": "ana",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "delay": 0.4
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.4,
+            "delay": 0.6
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink",
+            "delay": 0.9
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.25,
+            "delay": 0.8
+          },
+          {
+            "target": "luis",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.7,
+            "phase": 0.65
+          },
+          {
+            "target": "luis",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.12,
+            "delay": 1.1
+          },
+          {
+            "target": "luis_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.35,
+            "delay": 1.3
+          },
+          {
+            "target": "luis_ojos",
+            "effect": "blink",
+            "delay": 1.7
+          },
+          {
+            "target": "luis_brazo_izq",
+            "effect": "sway",
+            "origin": "bottom-right",
+            "amount": 0.3,
+            "delay": 0.7
+          },
+          {
+            "target": "ana_brazo_der",
+            "effect": "move",
+            "trigger": "aún",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "gana",
+            "effect": "pop",
+            "trigger": "aún",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "gana",
+            "effect": "float",
+            "trigger": "aún",
+            "amount": 0.3
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "move",
+            "trigger": "discuten",
+            "rotate": -5,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "gluis",
+            "effect": "pop",
+            "trigger": "discuten",
+            "origin": "bottom-right",
+            "sfx": "pop"
+          },
+          {
+            "target": "gluis",
+            "effect": "float",
+            "trigger": "discuten",
+            "amount": 0.25
+          },
+          {
+            "target": "luis_brazo_izq",
+            "effect": "move",
+            "trigger": "discuten",
+            "rotate": 10,
+            "origin": "bottom-right",
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Lo *empeora*",
+      "narration": "Pasa más con cafeína, estrés, cansancio o ejercicio intenso por la noche.",
+      "illustration": {
+        "svg_file": "empeora_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 6 · Lo que lo empeora",
+        "anims": [
+          {
+            "target": "cama2G",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cama2_manta",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "delay": 0.2
+          },
+          {
+            "target": "dur2_torso",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.5,
+            "phase": 0.4
+          },
+          {
+            "target": "dur2_cabeza",
+            "effect": "sway",
+            "origin": "right",
+            "amount": 0.25,
+            "delay": 0.4
+          },
+          {
+            "target": "dur2_sorpresa_ojos",
+            "effect": "blink",
+            "delay": 0.7
+          },
+          {
+            "target": "dur2_brazo",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.12,
+            "delay": 0.9
+          },
+          {
+            "target": "dur2_antebrazo",
+            "effect": "sway",
+            "origin": "left",
+            "amount": 0.15,
+            "delay": 1.2
+          },
+          {
+            "target": "ic0",
+            "effect": "pop",
+            "trigger": "cafeína",
+            "sfx": "pop"
+          },
+          {
+            "target": "ic0",
+            "effect": "float",
+            "trigger": "cafeína",
+            "amount": 0.3
+          },
+          {
+            "target": "taza_vapor",
+            "effect": "float",
+            "trigger": "cafeína",
+            "amount": 0.5
+          },
+          {
+            "target": "ic1",
+            "effect": "pop",
+            "trigger": "estrés",
+            "sfx": "pop"
+          },
+          {
+            "target": "ic1",
+            "effect": "float",
+            "trigger": "estrés",
+            "amount": 0.25
+          },
+          {
+            "target": "estres_ojos",
+            "effect": "blink",
+            "trigger": "estrés"
+          },
+          {
+            "target": "sudor",
+            "effect": "bob",
+            "trigger": "estrés",
+            "amount": 0.4
+          },
+          {
+            "target": "f0",
+            "effect": "draw",
+            "trigger": "estrés",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "ic2",
+            "effect": "pop",
+            "trigger": "cansancio",
+            "sfx": "pop"
+          },
+          {
+            "target": "ic2",
+            "effect": "float",
+            "trigger": "cansancio",
+            "amount": 0.3
+          },
+          {
+            "target": "zrel",
+            "effect": "float",
+            "trigger": "cansancio",
+            "amount": 0.6
+          },
+          {
+            "target": "rel_minutero",
+            "effect": "spin",
+            "trigger": "cansancio",
+            "origin": "bottom",
+            "amount": 0.05
+          },
+          {
+            "target": "f1",
+            "effect": "draw",
+            "trigger": "cansancio",
+            "dur": 0.4
+          },
+          {
+            "target": "f2",
+            "effect": "draw",
+            "trigger": "o",
+            "dur": 0.4
+          },
+          {
+            "target": "ic3",
+            "effect": "pop",
+            "trigger": "ejercicio",
+            "sfx": "pop"
+          },
+          {
+            "target": "ic3",
+            "effect": "float",
+            "trigger": "ejercicio",
+            "amount": 0.25
+          },
+          {
+            "target": "lunap",
+            "effect": "pulse",
+            "trigger": "ejercicio",
+            "amount": 0.4
+          },
+          {
+            "target": "f3",
+            "effect": "draw",
+            "trigger": "intenso",
+            "dur": 0.4
+          },
+          {
+            "target": "f0",
+            "effect": "flow",
+            "trigger": "por",
+            "amount": 0.5
+          },
+          {
+            "target": "f1",
+            "effect": "flow",
+            "trigger": "por",
+            "amount": 0.5
+          },
+          {
+            "target": "f2",
+            "effect": "flow",
+            "trigger": "por",
+            "amount": 0.5
+          },
+          {
+            "target": "f3",
+            "effect": "flow",
+            "trigger": "por",
+            "amount": 0.5
+          },
+          {
+            "target": "cama2G",
+            "effect": "shake",
+            "trigger": "noche",
+            "amount": 0.6,
+            "sfx": "boing"
+          },
+          {
+            "target": "temb2",
+            "effect": "pop",
+            "trigger": "noche"
+          },
+          {
+            "target": "temb2",
+            "effect": "shake",
+            "trigger": "noche",
+            "amount": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Bote en la cama: *normal*",
+      "narration": "Así que si das un bote en la cama, tranquilo: suele ser inofensivo.",
+      "mascot": {
+        "trigger": "Así",
+        "pose": "cheer",
+        "note": "¡Tranquilo, es normal!",
+        "side": "right"
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "UN BOTE EN LA CAMA",
+          "tone": "ink",
+          "trigger": "bote",
+          "sfx": "pop"
+        },
+        {
+          "type": "stamp",
+          "text": "INOFENSIVO",
+          "tone": "accent",
+          "trigger": "suele",
+          "sfx": "sello"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿A ti te pasa mucho?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿A ti te *pasa* mucho?",
+          "trigger": "¿A"
+        }
+      ]
+    }
+  ]
+}

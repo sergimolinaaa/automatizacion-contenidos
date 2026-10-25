@@ -246,3 +246,104 @@ def gato(id_, cx, cy, s=1.0, pelaje="naranja", giro_del=0, giro_tras=0, doblez=0
     pts_ = {"cabeza": P_(hx, hy), "oreja": P_(hx - 44, hy - 92), "cola": P_(-222, -184, 0), "centro": (cx, cy),
             "suelo": (cx, cy + 165 * s), "patas_del": P_(124, 150), "patas_tras": P_(-120, 150, 0)}
     return Pieza(g(id_, f'<g transform="{tr}">{o}</g>'), pts_, (cx - 270 * s, cy - 200 * s, cx + 270 * s, cy + 170 * s))
+
+
+# ----------------------------------------------------------------------------- mono (lote9-01-sacudida-dormir)
+import math
+registrar_defs(rg("monoPelo", [(0, "#B98660"), (0.7, "#8A5A3B"), (1, "#5C3A24")], 0.42, 0.32, 0.8),
+               rg("monoCara", [(0, "#FBDDBE"), (0.75, "#EFC39A"), (1, "#D49D72")], 0.42, 0.35, 0.8))
+
+
+def mono(id_, cx, cy, s=1.0, pose="duerme"):
+    """Mono pardo tumbado boca abajo sobre una rama, con la cabeza a la derecha y la cara hacia nosotros.
+    (cx, cy) = parte de arriba de la rama bajo la tripa; ancho ≈ 380*s.
+    pose: «duerme» (ojos cerrados, patas y cola colgando sueltas) o «agarra» (despierto del susto: ojos como platos,
+    pelo erizado y las cuatro patas y la cola abrazadas a la rama). Dos en el mismo sitio + hide/fade = «se despierta».
+    Ids: {id}_cuerpo (breathe), {id}_cabeza (cuello: origin bottom-left), {id}_ojos, {id}_cola (raíz: origin top-right),
+    {id}_brazo / {id}_brazo2 / {id}_pierna / {id}_pierna2 (hombro o cadera: origin top). .puntos: cabeza, centro."""
+    P = lambda x, y: (cx + x * s, cy + y * s)  # noqa: E731
+    pelo, osc, claro = "url(#monoPelo)", "#4A2E1C", "#C79A73"
+    sw = 7 * s
+    out = ""
+
+    def miembro(id_m, p0, p1, p2, grosor, col, extremo):
+        a, b_, c = P(*p0), P(*p1), P(*p2)
+        d = f"M {f(a[0])} {f(a[1])} Q {f(b_[0])} {f(b_[1])} {f(c[0])} {f(c[1])}"
+        o = trazo(d, grosor * s, col, sw)
+        o += (f'<ellipse cx="{f(c[0])}" cy="{f(c[1])}" rx="{f(extremo[0]*s)}" ry="{f(extremo[1]*s)}" fill="url(#monoCara)" '
+              f'stroke="{INK}" stroke-width="{f(5.5*s)}"/>')
+        return g(id_m, o)
+
+    agarra = pose == "agarra"
+    if not agarra:
+        cola = trazo(f"M {f(P(-120,-40)[0])} {f(P(-120,-40)[1])} C {f(P(-190,-30)[0])} {f(P(-190,-30)[1])}, {f(P(-175,90)[0])} {f(P(-175,90)[1])}, "
+                     f"{f(P(-140,120)[0])} {f(P(-140,120)[1])} C {f(P(-110,145)[0])} {f(P(-110,145)[1])}, {f(P(-95,105)[0])} {f(P(-95,105)[1])}, "
+                     f"{f(P(-120,100)[0])} {f(P(-120,100)[1])}", 18 * s, "#7A4E31", sw)
+        out += g(f"{id_}_cola", cola)
+        # patas del otro lado (más oscuras), colgando
+        out += miembro(f"{id_}_brazo2", (40, -30), (52, 40), (36, 108), 24, "#6E4529", (22, 16))
+        out += miembro(f"{id_}_pierna2", (-70, -26), (-60, 40), (-74, 96), 26, "#6E4529", (26, 15))
+        body_c, body_r, rot_b = P(-15, -50), (128 * s, 58 * s), -2
+    else:
+        cola = trazo(f"M {f(P(-130,-26)[0])} {f(P(-130,-26)[1])} C {f(P(-200,-20)[0])} {f(P(-200,-20)[1])}, {f(P(-200,62)[0])} {f(P(-200,62)[1])}, "
+                     f"{f(P(-150,58)[0])} {f(P(-150,58)[1])} C {f(P(-110,54)[0])} {f(P(-110,54)[1])}, {f(P(-118,8)[0])} {f(P(-118,8)[1])}, "
+                     f"{f(P(-150,4)[0])} {f(P(-150,4)[1])}", 18 * s, "#7A4E31", sw)
+        out += g(f"{id_}_cola", cola)
+        body_c, body_r, rot_b = P(-15, -36), (124 * s, 54 * s), 4
+    # cuerpo
+    bx, by = body_c
+    if agarra:  # pelo erizado: contorno en picos
+        pts = []
+        for i in range(44):
+            a = 2 * math.pi * i / 44
+            rr = 1.0 if i % 2 else 1.14
+            pts.append((bx + body_r[0] * rr * math.cos(a), by + body_r[1] * rr * math.sin(a)))
+        cuerpo = f'<path d="M {" L ".join(f"{f(x)} {f(y)}" for x, y in pts)} Z" fill="{pelo}" stroke="{INK}" stroke-width="{f(sw)}" stroke-linejoin="round"/>'
+    else:
+        cuerpo = f'<ellipse cx="{f(bx)}" cy="{f(by)}" rx="{f(body_r[0])}" ry="{f(body_r[1])}" fill="{pelo}" stroke="{INK}" stroke-width="{f(sw)}"/>'
+    cuerpo += f'<ellipse cx="{f(bx+10*s)}" cy="{f(by+body_r[1]*0.45)}" rx="{f(body_r[0]*0.62)}" ry="{f(body_r[1]*0.35)}" fill="{claro}" opacity="0.55"/>'
+    cuerpo += brillo(f"M {f(bx-body_r[0]*0.6)} {f(by-body_r[1]*0.55)} Q {f(bx-body_r[0]*0.1)} {f(by-body_r[1]*0.95)} {f(bx+body_r[0]*0.4)} {f(by-body_r[1]*0.75)}", 6 * s, 0.4)
+    out += g(f"{id_}_cuerpo", f'<g transform="rotate({rot_b} {f(bx)} {f(by)})">{cuerpo}</g>')
+    # patas de este lado
+    if not agarra:
+        out += miembro(f"{id_}_pierna", (-90, -30), (-104, 40), (-92, 104), 30, "#8A5A3B", (28, 16))
+        out += miembro(f"{id_}_brazo", (70, -36), (88, 40), (70, 112), 26, "#8A5A3B", (24, 17))
+    else:  # abrazado a la rama: codos fuera, manos y pies agarrando por delante
+        out += miembro(f"{id_}_pierna2", (-60, -30), (-40, 30), (-70, 14), 26, "#6E4529", (26, 18))
+        out += miembro(f"{id_}_brazo2", (36, -36), (70, 20), (36, 12), 24, "#6E4529", (22, 18))
+        out += miembro(f"{id_}_pierna", (-100, -24), (-150, 40), (-112, 16), 30, "#8A5A3B", (28, 19))
+        out += miembro(f"{id_}_brazo", (80, -40), (130, 20), (88, 14), 26, "#8A5A3B", (24, 19))
+    # cabeza
+    hx, hy = P(128, -70 if not agarra else -64)
+    r = 62 * s
+    cab = ""
+    for k in (-1, 1):
+        ex = hx + k * r * 0.98
+        cab += f'<circle cx="{f(ex)}" cy="{f(hy-r*0.05)}" r="{f(r*0.34)}" fill="{pelo}" stroke="{INK}" stroke-width="{f(6*s)}"/>'
+        cab += f'<circle cx="{f(ex)}" cy="{f(hy-r*0.05)}" r="{f(r*0.18)}" fill="url(#monoCara)"/>'
+    cab += f'<circle cx="{f(hx)}" cy="{f(hy)}" r="{f(r)}" fill="{pelo}" stroke="{INK}" stroke-width="{f(sw)}"/>'
+    if agarra:  # mechones de punta
+        cab += "".join(f'<path d="M {f(hx+dx*s-9*s)} {f(hy-r*0.92)} L {f(hx+dx*s)} {f(hy-r*1.32)} L {f(hx+dx*s+9*s)} {f(hy-r*0.92)} Z" fill="#8A5A3B" stroke="{INK}" stroke-width="{f(5*s)}" stroke-linejoin="round"/>' for dx in (-22, 0, 22))
+    # máscara de la cara (forma de corazón) y hocico
+    cab += (f'<path d="M {f(hx)} {f(hy-r*0.38)} C {f(hx-r*0.35)} {f(hy-r*0.85)}, {f(hx-r*0.95)} {f(hy-r*0.45)}, {f(hx-r*0.78)} {f(hy+r*0.15)} '
+            f'C {f(hx-r*0.65)} {f(hy+r*0.75)}, {f(hx+r*0.65)} {f(hy+r*0.75)}, {f(hx+r*0.78)} {f(hy+r*0.15)} '
+            f'C {f(hx+r*0.95)} {f(hy-r*0.45)}, {f(hx+r*0.35)} {f(hy-r*0.85)}, {f(hx)} {f(hy-r*0.38)} Z" fill="url(#monoCara)" stroke="{INK}" stroke-width="{f(5*s)}"/>')
+    cab += f'<ellipse cx="{f(hx)}" cy="{f(hy+r*0.42)}" rx="{f(r*0.42)}" ry="{f(r*0.3)}" fill="#F7D7B6" stroke="{INK}" stroke-width="{f(4*s)}"/>'
+    cab += "".join(f'<ellipse cx="{f(hx+k*r*0.1)}" cy="{f(hy+r*0.3)}" rx="{f(r*0.045)}" ry="{f(r*0.065)}" fill="{INK}"/>' for k in (-1, 1))
+    ojos = ""
+    for k in (-1, 1):
+        ex, ey = hx + k * r * 0.34, hy - r * 0.08
+        if agarra:
+            ojos += f'<ellipse cx="{f(ex)}" cy="{f(ey)}" rx="{f(r*0.2)}" ry="{f(r*0.24)}" fill="#FFFFFF" stroke="{INK}" stroke-width="{f(4.5*s)}"/>'
+            ojos += f'<circle cx="{f(ex+r*0.03)}" cy="{f(ey+r*0.02)}" r="{f(r*0.09)}" fill="{INK}"/><circle cx="{f(ex)}" cy="{f(ey-r*0.04)}" r="{f(r*0.035)}" fill="#FFFFFF"/>'
+        else:
+            ojos += f'<path d="M {f(ex-r*0.16)} {f(ey)} Q {f(ex)} {f(ey+r*0.13)} {f(ex+r*0.16)} {f(ey)}" fill="none" stroke="{INK}" stroke-width="{f(5*s)}" stroke-linecap="round"/>'
+    cab += g(f"{id_}_ojos", ojos)
+    if agarra:
+        cab += "".join(f'<path d="M {f(hx+k*r*0.5)} {f(hy-r*0.42)} Q {f(hx+k*r*0.34)} {f(hy-r*0.58)} {f(hx+k*r*0.16)} {f(hy-r*0.46)}" fill="none" stroke="{osc}" stroke-width="{f(5*s)}" stroke-linecap="round"/>' for k in (-1, 1))
+        cab += f'<ellipse cx="{f(hx)}" cy="{f(hy+r*0.55)}" rx="{f(r*0.16)}" ry="{f(r*0.12)}" fill="#5A1420" stroke="{INK}" stroke-width="{f(4*s)}"/>'
+    else:
+        cab += f'<path d="M {f(hx-r*0.16)} {f(hy+r*0.55)} Q {f(hx)} {f(hy+r*0.63)} {f(hx+r*0.16)} {f(hy+r*0.55)}" fill="none" stroke="{INK}" stroke-width="{f(4*s)}" stroke-linecap="round"/>'
+    cab += brillo(f"M {f(hx-r*0.62)} {f(hy-r*0.5)} Q {f(hx-r*0.35)} {f(hy-r*0.85)} {f(hx)} {f(hy-r*0.88)}", 5 * s, 0.5)
+    out += g(f"{id_}_cabeza", cab)
+    return Pieza(g(id_, out), {"cabeza": (hx, hy), "centro": body_c}, (cx - 210 * s, cy - 140 * s, cx + 200 * s, cy + 150 * s))
