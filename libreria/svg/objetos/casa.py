@@ -523,3 +523,103 @@ def red_ventana(id_, x, y, w, h, paso=34, col="#E9EEF7"):
     o += f'<rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" rx="6" fill="none" stroke="{INK}" stroke-width="10"/>'
     o += f'<rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" rx="6" fill="none" stroke="#C9D2E2" stroke-width="5"/>'
     return g(id_, o)
+
+
+# --------------------------------------------------------------- lote9-04-tripa-ruge: escoba, tambor, pasta, columna y pergamino
+registrar_defs(
+    lg("tamborG", [(0, "#FF8A6B"), (0.5, "#FF5A36"), (1, "#B8341C")], 0, 0, 1, 0)
+    + lg("parcheG", [(0, "#FFFDF4"), (1, "#EDE3C8")])
+    + lg("pastaTuboG", [(0, "#FFFFFF"), (0.5, "#E9EEF6"), (1, "#B9C3D3")], 0, 0, 1, 0)
+    + lg("marmolG", [(0, "#FFFFFF"), (0.55, "#ECE7DC"), (1, "#CFC6B4")], 0, 0, 1, 0)
+    + lg("pergG", [(0, "#FFF4D6"), (1, "#E9CF98")])
+)
+
+
+def escoba(id_, p0, p1, s=1.0, col="#E3B04B", palo="#8A5A2B"):
+    """Escoba de barrendero: palo de p0 (extremo de arriba) a p1 (donde empieza el cepillo), cepillo ancho de cerdas
+    perpendicular al palo. Sub-ids: _palo, _cepillo (wiggle origin top para barrer). .puntos: cepillo, punta."""
+    x0, y0 = p0
+    x1, y1 = p1
+    L = math.hypot(x1 - x0, y1 - y0)
+    ang = math.degrees(math.atan2(y1 - y0, x1 - x0)) - 90
+    o = g(f"{id_}_palo", trazo(f"M {f(x0)} {f(y0)} L {f(x1)} {f(y1)}", 14 * s, palo, 7))
+    w, h = 210 * s, 70 * s
+    cep = (f'<rect x="{f(-w/2)}" y="0" width="{f(w)}" height="{f(26*s)}" rx="{f(8*s)}" fill="{degradado("#3B4A66", 0.3)}" stroke="{INK}" stroke-width="6"/>'
+           + f'<path d="M {f(-w/2+4)} {f(24*s)} L {f(-w/2-10)} {f(h+26*s)} L {f(w/2+10)} {f(h+26*s)} L {f(w/2-4)} {f(24*s)} Z" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+           + "".join(f'<path d="M {f(-w/2 + i*w/9)} {f(34*s)} L {f(-w/2 - 6 + i*w/8.4)} {f(h+20*s)}" stroke="{shade(col, -0.3)}" stroke-width="3"/>' for i in range(1, 9)))
+    o += g(f"{id_}_cepillo", f'<g transform="translate({f(x1)} {f(y1)}) rotate({f(ang)})">{cep}</g>')
+    ux, uy = (x1 - x0) / L, (y1 - y0) / L
+    return Pieza(g(id_, o), {"cepillo": (x1, y1), "punta": (x1 + ux * (h + 26 * s), y1 + uy * (h + 26 * s))},
+                 (min(x0, x1) - w / 2, min(y0, y1), max(x0, x1) + w / 2, max(y0, y1) + h + 26 * s))
+
+
+def tambor(id_, cx, base, w=300, h=220, col="url(#tamborG)"):
+    """Tambor de frente un poco cenital con parche, aros, tensores en zigzag y dos baquetas.
+    Sub-ids: _cuerpo, _parche (pulse al golpear), _baq_izq / _baq_der (move rotate origin bottom-left / bottom-right
+    para golpear). .puntos: parche (centro), golpe_izq, golpe_der."""
+    rx, ry = w / 2, w * 0.17
+    top = base - h
+    o = sombra(cx, base + 6, rx * 1.05, 16, 0.25)
+    o += g(f"{id_}_cuerpo",
+           f'<path d="M {f(cx-rx)} {f(top)} L {f(cx-rx)} {f(base-ry*0.4)} A {f(rx)} {f(ry)} 0 0 0 {f(cx+rx)} {f(base-ry*0.4)} L {f(cx+rx)} {f(top)} Z" fill="{col}" stroke="{INK}" stroke-width="8" stroke-linejoin="round"/>'
+           + "".join(f'<path d="M {f(cx-rx+i*w/6)} {f(top+ry*0.9)} L {f(cx-rx+(i+0.5)*w/6)} {f(base-ry*1.2)} L {f(cx-rx+(i+1)*w/6)} {f(top+ry*0.9)}" fill="none" stroke="#FFF4D6" stroke-width="6" stroke-linejoin="round"/>' for i in range(6))
+           + f'<path d="M {f(cx-rx)} {f(base-ry*0.6)} A {f(rx)} {f(ry)} 0 0 0 {f(cx+rx)} {f(base-ry*0.6)}" fill="none" stroke="{INK}" stroke-width="16"/>'
+           + f'<path d="M {f(cx-rx)} {f(base-ry*0.6)} A {f(rx)} {f(ry)} 0 0 0 {f(cx+rx)} {f(base-ry*0.6)}" fill="none" stroke="#E3B04B" stroke-width="8"/>'
+           + brillo(f"M {f(cx-rx+18)} {f(top+40)} L {f(cx-rx+18)} {f(base-50)}", 8, 0.5))
+    o += g(f"{id_}_parche", f'<ellipse cx="{f(cx)}" cy="{f(top)}" rx="{f(rx)}" ry="{f(ry)}" fill="url(#parcheG)" stroke="{INK}" stroke-width="8"/>'
+           + f'<ellipse cx="{f(cx)}" cy="{f(top)}" rx="{f(rx-6)}" ry="{f(ry-5)}" fill="none" stroke="#E3B04B" stroke-width="6"/>')
+    gi, gd = (cx - rx * 0.32, top), (cx + rx * 0.3, top - 2)
+    o += g(f"{id_}_baq_izq", trazo(f"M {f(gi[0]-150)} {f(top-170)} L {f(gi[0]-6)} {f(gi[1]-14)}", 12, "#D9A066", 6)
+           + f'<circle cx="{f(gi[0]-4)}" cy="{f(gi[1]-14)}" r="15" fill="#FFF4D6" stroke="{INK}" stroke-width="6"/>')
+    o += g(f"{id_}_baq_der", trazo(f"M {f(gd[0]+160)} {f(top-150)} L {f(gd[0]+6)} {f(gd[1]-14)}", 12, "#D9A066", 6)
+           + f'<circle cx="{f(gd[0]+4)}" cy="{f(gd[1]-14)}" r="15" fill="#FFF4D6" stroke="{INK}" stroke-width="6"/>')
+    return Pieza(g(id_, o), {"parche": (cx, top), "golpe_izq": gi, "golpe_der": gd}, (cx - rx - 160, top - 180, cx + rx + 170, base + 20))
+
+
+def tubo_pasta(id_, cx, cy, s=1.0, rot_=0, estrujado=False, col="#2EC4B6", texto="PASTA"):
+    """Tubo de pasta de dientes de pie (tapón abajo, boca arriba). estrujado=True lo dibuja apretado por el medio.
+    Sub-ids: _churro (grow origin bottom: la pasta que sale). .puntos: boca. ≈ 150×330 a s=1, (cx, cy) = centro."""
+    k = 0.55 if estrujado else 1.0
+    pts_tubo = [(-70, 150), (-74 * (0.8 + 0.2 * k), 40), (-60 * k, -40), (-40, -120), (-26, -150), (26, -150), (40, -120), (60 * k, -40),
+                (74 * (0.8 + 0.2 * k), 40), (70, 150)]
+    o = f'<path d="{poly(pts_tubo, True)}" fill="url(#pastaTuboG)" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+    o += f'<rect x="-80" y="140" width="160" height="22" rx="4" fill="{col}" stroke="{INK}" stroke-width="6"/>'
+    o += "".join(f'<path d="M {x} 146 L {x} 158" stroke="{INK}" stroke-width="3"/>' for x in range(-64, 70, 16))
+    o += f'<path d="M -50 {f(-60 if estrujado else -30)} L 50 {f(-60 if estrujado else -30)} L 50 {f(60)} L -50 60 Z" fill="{col}" stroke="{INK}" stroke-width="5" opacity="0.95"/>'
+    o += T(0, 20, texto, 24, "#FFFFFF", font=DISP, extra=f'stroke="{INK}" stroke-width="4" paint-order="stroke"')
+    if estrujado:
+        o += "".join(f'<path d="M {sx*74} {y} q {sx*-12} 8 {sx*-4} 18" fill="none" stroke="{INK}" stroke-width="4" stroke-linecap="round"/>' for sx in (-1, 1) for y in (-40, 0))
+    o += f'<rect x="-30" y="-178" width="60" height="32" rx="6" fill="{degradado("#FFFFFF", 0.25)}" stroke="{INK}" stroke-width="6"/>'
+    o += brillo("M -54 120 L -48 -20", 6, 0.8)
+    churro = (f'<path d="M -20 -176 C -24 -230, -10 -270, 20 -282 C 54 -294, 64 -250, 36 -236 C 16 -226, 18 -200, 22 -176 Z" fill="#FFFFFF" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+              + f'<path d="M -8 -186 C -10 -226, 2 -256, 24 -266" fill="none" stroke="{col}" stroke-width="7" stroke-linecap="round"/>')
+    o += g(f"{id_}_churro", churro)
+    tr = f"translate({f(cx)} {f(cy)}) rotate({f(rot_)}) scale({f(s)})"
+    return Pieza(gt(id_, tr, o), {"boca": (cx, cy - 176 * s)}, (cx - 80 * s, cy - 290 * s, cx + 80 * s, cy + 165 * s))
+
+
+def columna_griega(id_, cx, base, h=520, w=120):
+    """Columna griega de mármol (dórica) con capitel y basa. .puntos: capitel."""
+    top = base - h
+    o = sombra(cx, base + 4, w * 0.95, 14, 0.22)
+    o += f'<rect x="{f(cx-w*0.78)}" y="{f(base-36)}" width="{f(w*1.56)}" height="36" rx="6" fill="url(#marmolG)" stroke="{INK}" stroke-width="7"/>'
+    o += f'<path d="M {f(cx-w*0.5)} {f(base-36)} L {f(cx-w*0.44)} {f(top+46)} L {f(cx+w*0.44)} {f(top+46)} L {f(cx+w*0.5)} {f(base-36)} Z" fill="url(#marmolG)" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+    o += "".join(f'<path d="M {f(cx + k*w*0.47)} {f(base-42)} L {f(cx + k*w*0.41)} {f(top+52)}" stroke="#B8AE98" stroke-width="5" stroke-linecap="round"/>'
+                 for k in (-0.62, -0.25, 0.12, 0.49, 0.82))
+    o += f'<path d="M {f(cx-w*0.62)} {f(top+48)} Q {f(cx)} {f(top+30)} {f(cx+w*0.62)} {f(top+48)} L {f(cx+w*0.7)} {f(top+26)} L {f(cx-w*0.7)} {f(top+26)} Z" fill="url(#marmolG)" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+    o += f'<rect x="{f(cx-w*0.82)}" y="{f(top)}" width="{f(w*1.64)}" height="28" rx="5" fill="url(#marmolG)" stroke="{INK}" stroke-width="7"/>'
+    o += brillo(f"M {f(cx-w*0.3)} {f(top+70)} L {f(cx-w*0.34)} {f(base-60)}", 7, 0.85)
+    return Pieza(g(id_, o), {"capitel": (cx, top)}, (cx - w * 0.82, top, cx + w * 0.82, base))
+
+
+def pergamino(id_, cx, cy, w=420, h=300, texto="", size=46, sub=""):
+    """Pergamino desenrollado con rodillos arriba y abajo (para grow origin top: se desenrolla). Sub-ids: _texto."""
+    x0, y0 = cx - w / 2, cy - h / 2
+    o = f'<rect x="{f(x0+14)}" y="{f(y0+18)}" width="{f(w)}" height="{f(h)}" fill="{INK}" opacity="0.2" rx="8"/>'
+    o += f'<path d="M {f(x0)} {f(y0)} L {f(x0+w)} {f(y0)} Q {f(x0+w-14)} {f(cy)} {f(x0+w)} {f(y0+h)} L {f(x0)} {f(y0+h)} Q {f(x0+14)} {f(cy)} {f(x0)} {f(y0)} Z" fill="url(#pergG)" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+    for yy in (y0, y0 + h):
+        o += f'<rect x="{f(x0-22)}" y="{f(yy-18)}" width="{f(w+44)}" height="36" rx="18" fill="{degradado("#D9A066", 0.3)}" stroke="{INK}" stroke-width="7"/>'
+        o += brillo(f"M {f(x0-6)} {f(yy-8)} L {f(x0+w*0.4)} {f(yy-8)}", 5, 0.7)
+    o += g(f"{id_}_texto", T(cx, cy + size * 0.1 + (0 if not sub else -size * 0.2), texto, size, "#7A4E28", font='font-family="Georgia, serif" font-weight="700" font-style="italic"')
+           + (T(cx, cy + size * 1.05, sub, size * 0.5, "#9A7A50") if sub else ""))
+    return Pieza(g(id_, o), {}, (x0 - 22, y0 - 18, x0 + w + 22, y0 + h + 18))

@@ -1,0 +1,1721 @@
+{
+ "topic": "¿Por qué te ruge la tripa? Borborigmos: contracciones del tubo digestivo, complejo motor migratorio y por qué suena más con hambre",
+ "categoria": "cuerpo",
+ "title": "¿Por qué te ruge la tripa? El barrendero de tu intestino",
+ "source": "Fuentes: Scientific American · Acibadem · Frontiers in Pharmacology · Wikipedia",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "outro_cta": "Todo tiene un truco",
+ "cover": {
+  "text": "Por qué te *ruge* la tripa",
+  "scene": 0
+ },
+ "publish": {
+  "at": "2026-10-29T14:00:00+01:00",
+  "caption": "¿Por qué te ruge la tripa? Son los borborigmos: tu intestino aprieta y empuja aire y líquido. Unas dos horas después de vaciarse, una ola de limpieza barre los restos, y con la tripa vacía resuena como un tambor (Scientific American). ¿En qué peor momento te ha rugido a ti?",
+  "description": "¿Por qué te ruge la tripa? Ese ruido se llama borborigmos y lo hacen los músculos del tubo digestivo al empujar comida, líquido y aire. Unas dos horas después de vaciarse arranca el complejo motor migratorio, una ola de contracciones que barre los restos del estómago y del intestino delgado. Como dentro casi solo queda aire, el ruido resuena más: por eso se oye tanto con hambre, aunque también puede sonar con la tripa llena. Fuentes: Scientific American, Frontiers in Pharmacology, Acibadem. ¿En qué peor momento te ha rugido a ti?",
+  "hashtags": [
+   "cuerpohumano",
+   "digestion",
+   "hambre",
+   "curiosidades",
+   "salud"
+  ]
+ },
+ "scenes": [
+  {
+   "chapter": 0,
+   "headline": "¿En pleno *silencio*?",
+   "narration": "¿Te ruge la tripa justo en el examen, cuando reina el silencio?",
+   "illustration": {
+    "svg_file": "gancho_full.svg",
+    "layout": "full",
+    "caption": "Fig. 1 · El examen",
+    "anims": [
+     {
+      "target": "luG",
+      "effect": "slide-up",
+      "delay": 0.0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "lu",
+      "effect": "breathe",
+      "amount": 0.7,
+      "phase": 0.2
+     },
+     {
+      "target": "lu",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.12,
+      "delay": 0.3
+     },
+     {
+      "target": "lu_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.75
+     },
+     {
+      "target": "lu_ojos",
+      "effect": "blink",
+      "delay": 0.9
+     },
+     {
+      "target": "rubor",
+      "effect": "hide"
+     },
+     {
+      "target": "rel_minutero",
+      "effect": "spin",
+      "amount": 0.04
+     },
+     {
+      "target": "rel_horaria",
+      "effect": "spin",
+      "amount": 0.01,
+      "delay": 0.4
+     },
+     {
+      "target": "c1b",
+      "effect": "hide"
+     },
+     {
+      "target": "c1",
+      "effect": "breathe",
+      "amount": 0.6,
+      "phase": 0.1
+     },
+     {
+      "target": "c1a_ojos",
+      "effect": "blink",
+      "delay": 1.0
+     },
+     {
+      "target": "c1a_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.2,
+      "delay": 0.4
+     },
+     {
+      "target": "c2b",
+      "effect": "hide"
+     },
+     {
+      "target": "c2",
+      "effect": "breathe",
+      "amount": 0.6,
+      "phase": 0.55
+     },
+     {
+      "target": "c2a_ojos",
+      "effect": "blink",
+      "delay": 1.2999999999999998
+     },
+     {
+      "target": "c2a_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.2,
+      "delay": 0.7
+     },
+     {
+      "target": "c3b",
+      "effect": "hide"
+     },
+     {
+      "target": "c3",
+      "effect": "breathe",
+      "amount": 0.6,
+      "phase": 0.8
+     },
+     {
+      "target": "c3a_ojos",
+      "effect": "blink",
+      "delay": 0.8
+     },
+     {
+      "target": "c3a_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.2,
+      "delay": 0.2
+     },
+     {
+      "target": "ondasL",
+      "effect": "pop",
+      "trigger": "ruge",
+      "sfx": "none"
+     },
+     {
+      "target": "ondasR",
+      "effect": "pop",
+      "trigger": "ruge"
+     },
+     {
+      "target": "ondasL",
+      "effect": "pulse",
+      "trigger": "ruge",
+      "amount": 0.8
+     },
+     {
+      "target": "ondasR",
+      "effect": "pulse",
+      "trigger": "tripa",
+      "amount": 0.8
+     },
+     {
+      "target": "grrr",
+      "effect": "pop",
+      "trigger": "ruge",
+      "sfx": "boing"
+     },
+     {
+      "target": "grrr",
+      "effect": "punch",
+      "trigger": "tripa",
+      "amount": 0.5
+     },
+     {
+      "target": "grrr",
+      "effect": "wiggle",
+      "trigger": "tripa",
+      "amount": 0.25,
+      "origin": "center"
+     },
+     {
+      "target": "lu_manos",
+      "effect": "punch",
+      "trigger": "tripa",
+      "amount": 0.6
+     },
+     {
+      "target": "luG",
+      "effect": "punch",
+      "trigger": "justo",
+      "amount": 0.15
+     },
+     {
+      "target": "examen",
+      "effect": "slide-up",
+      "trigger": "examen",
+      "dur": 0.5,
+      "sfx": "papel"
+     },
+     {
+      "target": "boli",
+      "effect": "slide-up",
+      "trigger": "examen",
+      "dur": 0.6
+     },
+     {
+      "target": "boli",
+      "effect": "wiggle",
+      "trigger": "cuando",
+      "amount": 0.2,
+      "origin": "top"
+     },
+     {
+      "target": "c3a",
+      "effect": "hide",
+      "trigger": "cuando"
+     },
+     {
+      "target": "c3b",
+      "effect": "fade",
+      "trigger": "cuando",
+      "dur": 0.2
+     },
+     {
+      "target": "c3b_cabeza",
+      "effect": "move",
+      "trigger": "cuando",
+      "rotate": -8,
+      "origin": "bottom",
+      "dur": 0.6
+     },
+     {
+      "target": "c3b_ojos",
+      "effect": "blink",
+      "trigger": "reina"
+     },
+     {
+      "target": "c1a",
+      "effect": "hide",
+      "trigger": "silencio"
+     },
+     {
+      "target": "c1b",
+      "effect": "fade",
+      "trigger": "silencio",
+      "dur": 0.2
+     },
+     {
+      "target": "c1b_cabeza",
+      "effect": "move",
+      "trigger": "silencio",
+      "rotate": 8,
+      "origin": "bottom",
+      "dur": 0.6
+     },
+     {
+      "target": "c2a",
+      "effect": "hide",
+      "trigger": "reina"
+     },
+     {
+      "target": "c2b",
+      "effect": "fade",
+      "trigger": "reina",
+      "dur": 0.2
+     },
+     {
+      "target": "c2b_cabeza",
+      "effect": "move",
+      "trigger": "reina",
+      "rotate": 7,
+      "origin": "bottom",
+      "dur": 0.6
+     },
+     {
+      "target": "rubor",
+      "effect": "fade",
+      "trigger": "silencio",
+      "dur": 0.4
+     },
+     {
+      "target": "lu_cabeza",
+      "effect": "move",
+      "trigger": "silencio",
+      "rotate": -5,
+      "origin": "bottom",
+      "dur": 0.7
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "silencio",
+      "to": [
+       560,
+       820
+      ],
+      "amount": 1.12,
+      "dur": 0.9
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "*Borborigmos*",
+   "narration": "Ese ruido tiene nombre griego: borborigmos.",
+   "illustration": {
+    "svg_file": "griego_free.svg",
+    "layout": "free",
+    "caption": "Fig. 2 · Borborigmos",
+    "anims": [
+     {
+      "target": "col",
+      "effect": "slide-up",
+      "delay": 0.0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "col",
+      "effect": "breathe",
+      "amount": 0.3,
+      "delay": 0.6
+     },
+     {
+      "target": "truido",
+      "effect": "slide-up",
+      "trigger": "ruido",
+      "dur": 0.4,
+      "sfx": "pop"
+     },
+     {
+      "target": "ondas1",
+      "effect": "pop",
+      "trigger": "ruido"
+     },
+     {
+      "target": "ondas1",
+      "effect": "pulse",
+      "trigger": "tiene",
+      "amount": 0.9
+     },
+     {
+      "target": "perg",
+      "effect": "grow",
+      "trigger": "nombre",
+      "origin": "top",
+      "dur": 0.6,
+      "sfx": "papel"
+     },
+     {
+      "target": "perg",
+      "effect": "float",
+      "trigger": "griego",
+      "amount": 0.25
+     },
+     {
+      "target": "perg_texto",
+      "effect": "punch",
+      "trigger": "griego",
+      "amount": 0.5
+     },
+     {
+      "target": "l0",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "pop"
+     },
+     {
+      "target": "l0",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.3
+     },
+     {
+      "target": "l0",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 0.9
+     },
+     {
+      "target": "l1",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "none"
+     },
+     {
+      "target": "l1",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.41
+     },
+     {
+      "target": "l1",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 1.07
+     },
+     {
+      "target": "l2",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "none"
+     },
+     {
+      "target": "l2",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.52
+     },
+     {
+      "target": "l2",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 1.24
+     },
+     {
+      "target": "l3",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "none"
+     },
+     {
+      "target": "l3",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.63
+     },
+     {
+      "target": "l3",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 1.4100000000000001
+     },
+     {
+      "target": "l4",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "none"
+     },
+     {
+      "target": "l4",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.74
+     },
+     {
+      "target": "l4",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 1.58
+     },
+     {
+      "target": "l5",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "none"
+     },
+     {
+      "target": "l5",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.8500000000000001
+     },
+     {
+      "target": "l5",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 1.75
+     },
+     {
+      "target": "l6",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "none"
+     },
+     {
+      "target": "l6",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.96
+     },
+     {
+      "target": "l6",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 1.92
+     },
+     {
+      "target": "l7",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "none"
+     },
+     {
+      "target": "l7",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 1.07
+     },
+     {
+      "target": "l7",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 2.0900000000000003
+     },
+     {
+      "target": "l8",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "none"
+     },
+     {
+      "target": "l8",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 1.18
+     },
+     {
+      "target": "l8",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 2.2600000000000002
+     },
+     {
+      "target": "l9",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "none"
+     },
+     {
+      "target": "l9",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 1.29
+     },
+     {
+      "target": "l9",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 2.43
+     },
+     {
+      "target": "l10",
+      "effect": "pop",
+      "trigger": "borborigmos",
+      "sfx": "none"
+     },
+     {
+      "target": "l10",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 1.4000000000000001
+     },
+     {
+      "target": "l10",
+      "effect": "wiggle",
+      "amount": 0.25,
+      "delay": 2.6
+     },
+     {
+      "target": "truido",
+      "effect": "punch",
+      "trigger": "borborigmos",
+      "amount": 0.3
+     }
+    ],
+    "height": 820
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "Un tubo que *aprieta*",
+   "narration": "Tu tubo digestivo es un músculo que aprieta y empuja comida, líquido y aire, como cuando estrujas un tubo de pasta de dientes.",
+   "illustration": {
+    "svg_file": "tubo_free.svg",
+    "layout": "free",
+    "caption": "Fig. 3 · Un tubo que aprieta",
+    "anims": [
+     {
+      "target": "ad",
+      "effect": "slide-up",
+      "delay": 0.0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "ad",
+      "effect": "breathe",
+      "amount": 0.5,
+      "delay": 0.5
+     },
+     {
+      "target": "pasta",
+      "effect": "slide-left",
+      "delay": 0.35,
+      "dur": 0.5
+     },
+     {
+      "target": "pasta",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.12,
+      "delay": 0.9
+     },
+     {
+      "target": "pastaE",
+      "effect": "hide"
+     },
+     {
+      "target": "pasta1_churro",
+      "effect": "hide"
+     },
+     {
+      "target": "ad_delgado_luz",
+      "effect": "hide"
+     },
+     {
+      "target": "ad_ola",
+      "effect": "hide"
+     },
+     {
+      "target": "ad_anillo",
+      "effect": "hide"
+     },
+     {
+      "target": "ad_esofago",
+      "effect": "draw",
+      "trigger": "tubo",
+      "dur": 0.6,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "ttubo",
+      "effect": "pop",
+      "trigger": "tubo"
+     },
+     {
+      "target": "ad_estomago",
+      "effect": "pop",
+      "trigger": "digestivo"
+     },
+     {
+      "target": "ad_delgado",
+      "effect": "draw",
+      "trigger": "digestivo",
+      "dur": 1.0
+     },
+     {
+      "target": "ad_grueso",
+      "effect": "draw",
+      "trigger": "músculo",
+      "dur": 0.9
+     },
+     {
+      "target": "ad_anillo",
+      "effect": "pop",
+      "trigger": "músculo"
+     },
+     {
+      "target": "ad_anillo",
+      "effect": "move",
+      "trigger": "aprieta",
+      "to": [
+       6,
+       196
+      ],
+      "dur": 1.2
+     },
+     {
+      "target": "ad_anillo",
+      "effect": "hide",
+      "trigger": "líquido"
+     },
+     {
+      "target": "ad_ola",
+      "effect": "fade",
+      "trigger": "aprieta",
+      "dur": 0.3
+     },
+     {
+      "target": "ad_ola",
+      "effect": "flow",
+      "trigger": "aprieta",
+      "amount": 1.3
+     },
+     {
+      "target": "taprieta",
+      "effect": "pop",
+      "trigger": "empuja",
+      "sfx": "pop"
+     },
+     {
+      "target": "taprieta",
+      "effect": "float",
+      "trigger": "comida",
+      "amount": 0.25
+     },
+     {
+      "target": "com0",
+      "effect": "slide-down",
+      "trigger": "comida",
+      "dur": 0.4,
+      "sfx": "pop"
+     },
+     {
+      "target": "com0",
+      "effect": "move",
+      "trigger": "como",
+      "to": [
+       -14,
+       10
+      ],
+      "dur": 0.8
+     },
+     {
+      "target": "com0",
+      "effect": "wiggle",
+      "amount": 0.35,
+      "delay": 1.0
+     },
+     {
+      "target": "com1",
+      "effect": "slide-down",
+      "trigger": "comida",
+      "dur": 0.4
+     },
+     {
+      "target": "com1",
+      "effect": "move",
+      "trigger": "como",
+      "to": [
+       12,
+       8
+      ],
+      "dur": 0.8
+     },
+     {
+      "target": "com1",
+      "effect": "wiggle",
+      "amount": 0.35,
+      "delay": 1.23
+     },
+     {
+      "target": "com2",
+      "effect": "slide-down",
+      "trigger": "comida",
+      "dur": 0.4
+     },
+     {
+      "target": "com2",
+      "effect": "move",
+      "trigger": "como",
+      "to": [
+       -8,
+       12
+      ],
+      "dur": 0.8
+     },
+     {
+      "target": "com2",
+      "effect": "wiggle",
+      "amount": 0.35,
+      "delay": 1.46
+     },
+     {
+      "target": "liq0",
+      "effect": "slide-down",
+      "trigger": "líquido",
+      "dur": 0.4,
+      "sfx": "pop"
+     },
+     {
+      "target": "liq0",
+      "effect": "move",
+      "trigger": "como",
+      "to": [
+       -14,
+       10
+      ],
+      "dur": 0.8
+     },
+     {
+      "target": "liq0",
+      "effect": "wiggle",
+      "amount": 0.35,
+      "delay": 1.69
+     },
+     {
+      "target": "liq1",
+      "effect": "slide-down",
+      "trigger": "líquido",
+      "dur": 0.4
+     },
+     {
+      "target": "liq1",
+      "effect": "move",
+      "trigger": "como",
+      "to": [
+       12,
+       8
+      ],
+      "dur": 0.8
+     },
+     {
+      "target": "liq1",
+      "effect": "wiggle",
+      "amount": 0.35,
+      "delay": 1.92
+     },
+     {
+      "target": "liq2",
+      "effect": "slide-down",
+      "trigger": "líquido",
+      "dur": 0.4
+     },
+     {
+      "target": "liq2",
+      "effect": "move",
+      "trigger": "como",
+      "to": [
+       -8,
+       12
+      ],
+      "dur": 0.8
+     },
+     {
+      "target": "liq2",
+      "effect": "wiggle",
+      "amount": 0.35,
+      "delay": 2.1500000000000004
+     },
+     {
+      "target": "air0",
+      "effect": "pop",
+      "trigger": "aire",
+      "dur": 0.4,
+      "sfx": "pop"
+     },
+     {
+      "target": "air0",
+      "effect": "move",
+      "trigger": "como",
+      "to": [
+       -14,
+       10
+      ],
+      "dur": 0.8
+     },
+     {
+      "target": "air0",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 2.38
+     },
+     {
+      "target": "air1",
+      "effect": "pop",
+      "trigger": "aire",
+      "dur": 0.4
+     },
+     {
+      "target": "air1",
+      "effect": "move",
+      "trigger": "como",
+      "to": [
+       12,
+       8
+      ],
+      "dur": 0.8
+     },
+     {
+      "target": "air1",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 2.6100000000000003
+     },
+     {
+      "target": "air2",
+      "effect": "pop",
+      "trigger": "aire",
+      "dur": 0.4
+     },
+     {
+      "target": "air2",
+      "effect": "move",
+      "trigger": "como",
+      "to": [
+       -8,
+       12
+      ],
+      "dur": 0.8
+     },
+     {
+      "target": "air2",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 2.84
+     },
+     {
+      "target": "fpi",
+      "effect": "draw",
+      "trigger": "estrujas",
+      "dur": 0.3
+     },
+     {
+      "target": "fpd",
+      "effect": "draw",
+      "trigger": "estrujas",
+      "dur": 0.3
+     },
+     {
+      "target": "fpi",
+      "effect": "move",
+      "trigger": "estrujas",
+      "to": [
+       18,
+       0
+      ],
+      "dur": 0.4
+     },
+     {
+      "target": "fpd",
+      "effect": "move",
+      "trigger": "estrujas",
+      "to": [
+       -18,
+       0
+      ],
+      "dur": 0.4
+     },
+     {
+      "target": "pasta",
+      "effect": "hide",
+      "trigger": "estrujas"
+     },
+     {
+      "target": "pastaE",
+      "effect": "fade",
+      "trigger": "estrujas",
+      "dur": 0.15
+     },
+     {
+      "target": "pastaE",
+      "effect": "sway",
+      "trigger": "estrujas",
+      "origin": "bottom",
+      "amount": 0.12
+     },
+     {
+      "target": "pasta2_churro",
+      "effect": "grow",
+      "trigger": "pasta",
+      "origin": "bottom",
+      "dur": 0.7,
+      "sfx": "chorro"
+     },
+     {
+      "target": "pasta2_churro",
+      "effect": "sway",
+      "trigger": "dientes",
+      "origin": "bottom",
+      "amount": 0.3
+     }
+    ],
+    "height": 900
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "El *barrendero*",
+   "narration": "Unas dos horas después de vaciarse, se enciende una ola de limpieza: el complejo motor migratorio, un barrendero que recorre estómago e intestino.",
+   "illustration": {
+    "svg_file": "barrendero_full.svg",
+    "layout": "full",
+    "caption": "Fig. 4 · El barrendero",
+    "anims": [
+     {
+      "target": "rel",
+      "effect": "pop",
+      "delay": 0.0,
+      "sfx": "pop"
+     },
+     {
+      "target": "barrG",
+      "effect": "slide-right",
+      "delay": 0.2,
+      "dur": 0.6,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "barr",
+      "effect": "breathe",
+      "amount": 0.6,
+      "phase": 0.3
+     },
+     {
+      "target": "barr_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.9
+     },
+     {
+      "target": "barr_ojos",
+      "effect": "blink",
+      "delay": 1.3
+     },
+     {
+      "target": "esc",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.18,
+      "delay": 0.7
+     },
+     {
+      "target": "barr_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.2,
+      "delay": 0.85
+     },
+     {
+      "target": "rel_minutero",
+      "effect": "move",
+      "trigger": "horas",
+      "rotate": 720,
+      "origin": "bottom",
+      "dur": 1.6
+     },
+     {
+      "target": "rel_horaria",
+      "effect": "move",
+      "trigger": "horas",
+      "rotate": 60,
+      "origin": "bottom",
+      "dur": 1.8
+     },
+     {
+      "target": "t2h",
+      "effect": "pop",
+      "trigger": "dos",
+      "sfx": "ding"
+     },
+     {
+      "target": "t2h",
+      "effect": "float",
+      "trigger": "vaciarse",
+      "amount": 0.25
+     },
+     {
+      "target": "anillo0",
+      "effect": "hide"
+     },
+     {
+      "target": "anillo1",
+      "effect": "hide"
+     },
+     {
+      "target": "anillo0",
+      "effect": "fade",
+      "trigger": "enciende",
+      "dur": 0.2
+     },
+     {
+      "target": "anillo1",
+      "effect": "fade",
+      "trigger": "enciende",
+      "dur": 0.2
+     },
+     {
+      "target": "anillo0",
+      "effect": "ripple",
+      "trigger": "enciende",
+      "phase": 0.0
+     },
+     {
+      "target": "anillo1",
+      "effect": "ripple",
+      "trigger": "enciende",
+      "phase": 0.5
+     },
+     {
+      "target": "ola",
+      "effect": "draw",
+      "trigger": "ola",
+      "dur": 0.8,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "ola",
+      "effect": "flow",
+      "trigger": "limpieza",
+      "amount": 0.8
+     },
+     {
+      "target": "ola",
+      "effect": "drift",
+      "trigger": "limpieza",
+      "amount": 0.6
+     },
+     {
+      "target": "tola",
+      "effect": "pop",
+      "trigger": "limpieza",
+      "sfx": "pop"
+     },
+     {
+      "target": "tcmm",
+      "effect": "slide-right",
+      "trigger": "complejo",
+      "dur": 0.5,
+      "sfx": "pop"
+     },
+     {
+      "target": "tcmm",
+      "effect": "punch",
+      "trigger": "migratorio",
+      "amount": 0.4
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "barrendero",
+      "to": [
+       520,
+       1040
+      ],
+      "amount": 1.15,
+      "dur": 0.8
+     },
+     {
+      "target": "barrG",
+      "effect": "punch",
+      "trigger": "barrendero",
+      "amount": 0.15
+     },
+     {
+      "target": "esc_cepillo",
+      "effect": "wiggle",
+      "trigger": "barrendero",
+      "origin": "top",
+      "amount": 0.9
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "intestino",
+      "amount": 1,
+      "dur": 0.8
+     },
+     {
+      "target": "r0",
+      "effect": "move",
+      "trigger": "barrendero",
+      "to": [
+       90,
+       0
+      ],
+      "dur": 0.9
+     },
+     {
+      "target": "r0",
+      "effect": "move",
+      "trigger": "recorre",
+      "to": [
+       160,
+       0
+      ],
+      "dur": 1.0
+     },
+     {
+      "target": "r0",
+      "effect": "wiggle",
+      "amount": 0.4,
+      "delay": 0.3
+     },
+     {
+      "target": "r1",
+      "effect": "move",
+      "trigger": "barrendero",
+      "to": [
+       98,
+       0
+      ],
+      "dur": 0.9
+     },
+     {
+      "target": "r1",
+      "effect": "move",
+      "trigger": "recorre",
+      "to": [
+       160,
+       -4
+      ],
+      "dur": 1.0
+     },
+     {
+      "target": "r1",
+      "effect": "wiggle",
+      "amount": 0.4,
+      "delay": 0.51
+     },
+     {
+      "target": "r2",
+      "effect": "move",
+      "trigger": "barrendero",
+      "to": [
+       106,
+       0
+      ],
+      "dur": 0.9
+     },
+     {
+      "target": "r2",
+      "effect": "move",
+      "trigger": "recorre",
+      "to": [
+       160,
+       -8
+      ],
+      "dur": 1.0
+     },
+     {
+      "target": "r2",
+      "effect": "wiggle",
+      "amount": 0.4,
+      "delay": 0.72
+     },
+     {
+      "target": "r3",
+      "effect": "move",
+      "trigger": "barrendero",
+      "to": [
+       114,
+       0
+      ],
+      "dur": 0.9
+     },
+     {
+      "target": "r3",
+      "effect": "move",
+      "trigger": "recorre",
+      "to": [
+       160,
+       0
+      ],
+      "dur": 1.0
+     },
+     {
+      "target": "r3",
+      "effect": "wiggle",
+      "amount": 0.4,
+      "delay": 0.9299999999999999
+     },
+     {
+      "target": "r4",
+      "effect": "move",
+      "trigger": "barrendero",
+      "to": [
+       122,
+       0
+      ],
+      "dur": 0.9
+     },
+     {
+      "target": "r4",
+      "effect": "move",
+      "trigger": "recorre",
+      "to": [
+       160,
+       -4
+      ],
+      "dur": 1.0
+     },
+     {
+      "target": "r4",
+      "effect": "wiggle",
+      "amount": 0.4,
+      "delay": 1.14
+     },
+     {
+      "target": "r5",
+      "effect": "move",
+      "trigger": "barrendero",
+      "to": [
+       130,
+       0
+      ],
+      "dur": 0.9
+     },
+     {
+      "target": "r5",
+      "effect": "move",
+      "trigger": "recorre",
+      "to": [
+       160,
+       -8
+      ],
+      "dur": 1.0
+     },
+     {
+      "target": "r5",
+      "effect": "wiggle",
+      "amount": 0.4,
+      "delay": 1.35
+     },
+     {
+      "target": "r6",
+      "effect": "move",
+      "trigger": "barrendero",
+      "to": [
+       138,
+       0
+      ],
+      "dur": 0.9
+     },
+     {
+      "target": "r6",
+      "effect": "move",
+      "trigger": "recorre",
+      "to": [
+       160,
+       0
+      ],
+      "dur": 1.0
+     },
+     {
+      "target": "r6",
+      "effect": "wiggle",
+      "amount": 0.4,
+      "delay": 1.56
+     },
+     {
+      "target": "r4",
+      "effect": "hide",
+      "trigger": "intestino"
+     },
+     {
+      "target": "r5",
+      "effect": "hide",
+      "trigger": "intestino"
+     },
+     {
+      "target": "r6",
+      "effect": "hide",
+      "trigger": "intestino"
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "Suena a *tambor*",
+   "narration": "Como casi solo quedan aire y líquido, el ruido resuena más, como un tambor vacío.",
+   "illustration": {
+    "svg_file": "tambor_free.svg",
+    "layout": "free",
+    "caption": "Fig. 5 · Tambor vacío",
+    "anims": [
+     {
+      "target": "ec",
+      "effect": "slide-up",
+      "delay": 0.0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "ec_charco",
+      "effect": "wiggle",
+      "amount": 0.2,
+      "delay": 0.4
+     },
+     {
+      "target": "tam",
+      "effect": "slide-left",
+      "delay": 0.3,
+      "dur": 0.5
+     },
+     {
+      "target": "onda1",
+      "effect": "hide"
+     },
+     {
+      "target": "onda2",
+      "effect": "hide"
+     },
+     {
+      "target": "ec_b0",
+      "effect": "float",
+      "amount": 0.45,
+      "delay": 0.1
+     },
+     {
+      "target": "ec_b1",
+      "effect": "float",
+      "amount": 0.53,
+      "delay": 0.37
+     },
+     {
+      "target": "ec_b2",
+      "effect": "float",
+      "amount": 0.61,
+      "delay": 0.64
+     },
+     {
+      "target": "ec_b3",
+      "effect": "float",
+      "amount": 0.45,
+      "delay": 0.91
+     },
+     {
+      "target": "ec_b4",
+      "effect": "float",
+      "amount": 0.53,
+      "delay": 1.1800000000000002
+     },
+     {
+      "target": "ec_b5",
+      "effect": "float",
+      "amount": 0.61,
+      "delay": 1.4500000000000002
+     },
+     {
+      "target": "taire",
+      "effect": "pop",
+      "trigger": "aire",
+      "sfx": "pop"
+     },
+     {
+      "target": "ec_b2",
+      "effect": "punch",
+      "trigger": "aire",
+      "amount": 0.6
+     },
+     {
+      "target": "tliq",
+      "effect": "pop",
+      "trigger": "líquido",
+      "sfx": "burbujas"
+     },
+     {
+      "target": "tam_baq_izq",
+      "effect": "wiggle",
+      "trigger": "ruido",
+      "origin": "top-left",
+      "amount": 0.9
+     },
+     {
+      "target": "tam_baq_der",
+      "effect": "wiggle",
+      "trigger": "resuena",
+      "origin": "top-right",
+      "amount": 0.9
+     },
+     {
+      "target": "tam_parche",
+      "effect": "pulse",
+      "trigger": "ruido",
+      "amount": 0.5
+     },
+     {
+      "target": "ondasE",
+      "effect": "pop",
+      "trigger": "resuena",
+      "sfx": "boing"
+     },
+     {
+      "target": "ondasE",
+      "effect": "pulse",
+      "trigger": "resuena",
+      "amount": 1.0
+     },
+     {
+      "target": "onda1",
+      "effect": "fade",
+      "trigger": "tambor",
+      "dur": 0.2
+     },
+     {
+      "target": "onda2",
+      "effect": "fade",
+      "trigger": "tambor",
+      "dur": 0.2
+     },
+     {
+      "target": "onda1",
+      "effect": "ripple",
+      "trigger": "tambor",
+      "phase": 0
+     },
+     {
+      "target": "onda2",
+      "effect": "ripple",
+      "trigger": "tambor",
+      "phase": 0.5
+     },
+     {
+      "target": "tam",
+      "effect": "punch",
+      "trigger": "tambor",
+      "amount": 0.3
+     },
+     {
+      "target": "svacio",
+      "effect": "pop",
+      "trigger": "vacío",
+      "sfx": "sello"
+     },
+     {
+      "target": "svacio",
+      "effect": "punch",
+      "trigger": "vacío",
+      "amount": 0.5
+     }
+    ],
+    "height": 860
+   }
+  },
+  {
+   "chapter": 3,
+   "number": "3",
+   "headline": "No es el *estómago*",
+   "narration": "Y muchas veces no suena el estómago, sino el intestino delgado.",
+   "illustration": {
+    "svg_file": "delgado_free.svg",
+    "layout": "free",
+    "caption": "Fig. 6 · El intestino delgado",
+    "anims": [
+     {
+      "target": "ad2",
+      "effect": "slide-up",
+      "delay": 0.0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "ad2",
+      "effect": "breathe",
+      "amount": 0.5,
+      "delay": 0.5
+     },
+     {
+      "target": "ad2_delgado_luz",
+      "effect": "hide"
+     },
+     {
+      "target": "ad2_anillo",
+      "effect": "hide"
+     },
+     {
+      "target": "ad2_ola",
+      "effect": "flow",
+      "amount": 1.1,
+      "delay": 0.2
+     },
+     {
+      "target": "test",
+      "effect": "slide-left",
+      "trigger": "muchas",
+      "dur": 0.4,
+      "sfx": "pop"
+     },
+     {
+      "target": "xest",
+      "effect": "pop",
+      "trigger": "estómago",
+      "sfx": "sello"
+     },
+     {
+      "target": "notest",
+      "effect": "pop",
+      "trigger": "estómago"
+     },
+     {
+      "target": "ad2_estomago",
+      "effect": "punch",
+      "trigger": "suena",
+      "amount": 0.4
+     },
+     {
+      "target": "ad2_delgado_luz",
+      "effect": "fade",
+      "trigger": "intestino",
+      "dur": 0.3
+     },
+     {
+      "target": "ad2_delgado_luz",
+      "effect": "pulse",
+      "trigger": "intestino",
+      "amount": 0.25
+     },
+     {
+      "target": "fdel",
+      "effect": "draw",
+      "trigger": "intestino",
+      "dur": 0.5,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "tdel",
+      "effect": "slide-left",
+      "trigger": "intestino",
+      "dur": 0.4
+     },
+     {
+      "target": "okdel",
+      "effect": "pop",
+      "trigger": "delgado",
+      "sfx": "ding"
+     },
+     {
+      "target": "ruido",
+      "effect": "pop",
+      "trigger": "delgado"
+     },
+     {
+      "target": "ruido2",
+      "effect": "pop",
+      "trigger": "delgado"
+     },
+     {
+      "target": "ruido",
+      "effect": "pulse",
+      "trigger": "delgado",
+      "amount": 0.9
+     },
+     {
+      "target": "ruido2",
+      "effect": "wiggle",
+      "trigger": "delgado",
+      "amount": 0.3
+     },
+     {
+      "target": "fdel",
+      "effect": "flow",
+      "trigger": "delgado",
+      "amount": 0.6
+     }
+    ],
+    "height": 900
+   }
+  },
+  {
+   "chapter": 4,
+   "number": "+",
+   "headline": "También *lleno*",
+   "narration": "Por eso ruge más con hambre, aunque también puede sonar con la tripa llena.",
+   "mascot": {
+    "trigger": "Por",
+    "pose": "surprise",
+    "note": "¡Grrr! ¡Es mi tripa!",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "tag",
+     "text": "CON HAMBRE: MÁS RUIDO",
+     "tone": "ink",
+     "trigger": "ruge",
+     "sfx": "pop"
+    },
+    {
+     "type": "stamp",
+     "text": "TAMBIÉN LLENA",
+     "tone": "accent",
+     "trigger": "puede",
+     "sfx": "sello"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "headline": "Dudas → *truco*",
+   "narration": "Tú traes las dudas y nosotros te damos el truco.",
+   "elements": [
+    {
+     "type": "trick",
+     "trigger": "Tú",
+     "reveal_trigger": "nosotros"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "number": "TÚ",
+   "headline": "*Confiesa*",
+   "narration": "Síguenos y las resolvemos. ¿En qué peor momento te ha rugido a ti?",
+   "elements": [
+    {
+     "type": "follow",
+     "trigger": "Síguenos"
+    },
+    {
+     "type": "ask",
+     "text": "¿En qué peor *momento* te ha rugido a ti?",
+     "trigger": "¿En"
+    }
+   ]
+  }
+ ]
+}
