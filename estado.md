@@ -53,7 +53,7 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 ### Semana 26 oct al 1 nov (guiones en guiones/semana-2026-10-26.md)
 | Fecha | Tema | Carpeta | Guion | Montado | Programado | Publicado | Vídeo |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 14:00 | ¿Por qué das un respingo al dormirte? | content/lote9-01-sacudida-dormir | sí | no | no | no | |
+| 2026-10-26 14:00 | ¿Por qué das un respingo al dormirte? | content/lote9-01-sacudida-dormir | sí | sí | sí | no | previews/lote9-01-sacudida-dormir-con-voz.mp4 (46,7 s, método rossark) |
 | 2026-10-27 14:00 | ¿Por qué se te duerme la pierna? | content/lote9-02-pierna-dormida | sí | no | no | no | |
 | 2026-10-28 14:00 | Pack ahorro: mira el precio por kilo | content/lote9-03-precio-kilo | sí | no | no | no | |
 | 2026-10-29 14:00 | ¿Por qué te ruge la tripa? | content/lote9-04-tripa-ruge | sí | no | no | no | |
@@ -66,6 +66,7 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 |---|---|---|
 | 2026-10-16 | Librería (una vez) | 360.000 |
 | 2026-10-16 | Guiones semana 20-24 oct (5 vídeos) | 100.000 |
+| 2026-10-25 | Montaje respingo con método rossark (6 piezas nuevas) | ≈ 290.000 |
 | 2026-10-23 | Actualidad: cambio de hora 203k, gasto campaña 200k + rehecho 242k | ≈ 645.000 |
 | 2026-10-23 | Guiones semana 26 oct al 1 nov (7 vídeos) | ≈ 150.000 |
 | 2026-10-19 | Semana 20-25 oct: 11 vídeos (4 montajes de guion ≈ 180-217k c/u; 7 guion+montaje ≈ 160-195k c/u) | ≈ 2.010.000 |
