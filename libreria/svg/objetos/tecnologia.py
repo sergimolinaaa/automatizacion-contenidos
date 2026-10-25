@@ -274,3 +274,46 @@ def armario(id_, cx, base, w=420, h=620, lleno=True, abierto=False):
     o += brillo(f"M {f(x0+16)} {f(y0+24)} L {f(x0+16)} {f(y0+h*0.5)}", 6, 0.5)
     return Pieza(g(id_, o), {"centro": (cx, y0 + h / 2), "puerta_izq": (x0 + w * 0.25, y0 + h / 2),
                              "puerta_der": (x0 + w * 0.75, y0 + h / 2), "techo": (cx, y0 - 26)}, (x0 - 14, y0 - 60, x0 + w + 14, base + 20))
+
+
+# ------------------------------------------------------------------ brazo robótico de laboratorio (lote9-05-cosquillas)
+def brazo_robot(id_, bx, base, s=1.0, hombro=-60, codo=70, herramienta="pluma", col="#FF9F2E"):
+    """Brazo robótico de laboratorio sobre su peana, con una pluma (o una pinza) en la punta.
+    (bx, base) = centro de la peana en la mesa; s=1 → unos 300 de alto. hombro = ángulo del brazo (0 = derecha, -90 = arriba),
+    codo = giro del antebrazo respecto al brazo (positivo = hacia abajo, a la derecha de la pantalla).
+    Pivotes listos para el motor (origin "center"): {id}_brazo gira en el hombro, {id}_antebrazo en el codo,
+    {id}_punta (pluma o pinza) en la muñeca; {id}_led (pulse). .puntos: punta, hombro, codo, muneca."""
+    from .mente import pivote, pluma
+    L1, L2 = 150 * s, 135 * s
+    hx, hy = bx, base - 70 * s
+    a1 = math.radians(hombro)
+    ex, ey = hx + L1 * math.cos(a1), hy + L1 * math.sin(a1)
+    a2 = math.radians(hombro + codo)
+    wx, wy = ex + L2 * math.cos(a2), ey + L2 * math.sin(a2)
+    gris = "#C9D0DC"
+    # peana
+    o = sombra(bx, base + 4, 95 * s, 12 * s, 0.25)
+    o += f'<path d="M {f(bx-85*s)} {f(base)} L {f(bx-62*s)} {f(base-40*s)} L {f(bx+62*s)} {f(base-40*s)} L {f(bx+85*s)} {f(base)} Z" fill="{degradado("#3A4258", 0.2)}" stroke="{INK}" stroke-width="{f(7*s)}" stroke-linejoin="round"/>'
+    o += g(f"{id_}_led" if id_ else None, f'<circle cx="{f(bx+42*s)}" cy="{f(base-20*s)}" r="{f(7*s)}" fill="{LIME}" stroke="{INK}" stroke-width="3"/>')
+    o += f'<rect x="{f(bx-34*s)}" y="{f(hy)}" width="{f(68*s)}" height="{f(base-40*s-hy+4)}" fill="url(#metalG)" stroke="{INK}" stroke-width="{f(6*s)}"/>'
+    # muñeca y herramienta
+    if herramienta == "pluma":
+        tool = pluma(f"{id_}_pl" if id_ else None, wx, wy, 150 * s, math.degrees(a2) + 10)
+        punta = tool.puntos["punta"]
+    else:
+        b2 = math.radians(math.degrees(a2) + 90)
+        tool = "".join(trazo(f"M {f(wx)} {f(wy)} L {f(wx + 40*s*math.cos(a2) + k*16*s*math.cos(b2))} {f(wy + 40*s*math.sin(a2) + k*16*s*math.sin(b2))}", 9 * s, gris, 5) for k in (-1, 1))
+        punta = (wx + 40 * s * math.cos(a2), wy + 40 * s * math.sin(a2))
+    punta_g = g(f"{id_}_punta" if id_ else None, pivote(wx, wy, 170 * s) + tool)
+    ante = trazo(f"M {f(ex)} {f(ey)} L {f(wx)} {f(wy)}", 30 * s, col, 7)
+    ante += brillo(f"M {f(ex + 10*s*math.cos(a2))} {f(ey + 10*s*math.sin(a2) - 7*s)} L {f(wx - 16*s*math.cos(a2))} {f(wy - 16*s*math.sin(a2) - 7*s)}", 4 * s, 0.55)
+    ante += f'<circle cx="{f(wx)}" cy="{f(wy)}" r="{f(17*s)}" fill="url(#metalG)" stroke="{INK}" stroke-width="{f(6*s)}"/>'
+    ante_g = g(f"{id_}_antebrazo" if id_ else None, pivote(ex, ey, L2 + 175 * s) + ante + punta_g)
+    brazo = trazo(f"M {f(hx)} {f(hy)} L {f(ex)} {f(ey)}", 38 * s, col, 7)
+    brazo += brillo(f"M {f(hx + 12*s*math.cos(a1) - 8*s)} {f(hy + 12*s*math.sin(a1))} L {f(ex - 20*s*math.cos(a1) - 8*s)} {f(ey - 20*s*math.sin(a1))}", 5 * s, 0.55)
+    codo_c = f'<circle cx="{f(ex)}" cy="{f(ey)}" r="{f(24*s)}" fill="url(#metalG)" stroke="{INK}" stroke-width="{f(6*s)}"/><circle cx="{f(ex)}" cy="{f(ey)}" r="{f(8*s)}" fill="{INK}"/>'
+    hombro_c = f'<circle cx="{f(hx)}" cy="{f(hy)}" r="{f(30*s)}" fill="url(#metalG)" stroke="{INK}" stroke-width="{f(7*s)}"/><circle cx="{f(hx)}" cy="{f(hy)}" r="{f(10*s)}" fill="{INK}"/>'
+    brazo_g = g(f"{id_}_brazo" if id_ else None, pivote(hx, hy, L1 + L2 + 180 * s) + brazo + ante_g + codo_c)
+    o += brazo_g + hombro_c
+    return Pieza(g(id_, o), {"punta": punta, "hombro": (hx, hy), "codo": (ex, ey), "muneca": (wx, wy)},
+                 (min(bx - 90 * s, wx - 60 * s), min(ey, wy, punta[1]) - 60 * s, max(bx + 90 * s, wx + 60 * s, punta[0]), base + 16 * s))

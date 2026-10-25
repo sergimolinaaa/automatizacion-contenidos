@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · sueno.py · casa.py · frio.py · compra.py · reptiles.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py · memoria.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · mente.py · sueno.py · casa.py · frio.py · compra.py · reptiles.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py · memoria.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -125,7 +125,9 @@ con `ids=True` cada una en `_p_<slug>`; las de `destacar` van aparte en `_<slug>
 `cronometro(id_, cx, cy, r, col)` (aguja `_aguja` a las 12: `{"effect":"move","rotate":300,"origin":"bottom","dur":2}`) ·
 `pizarra(id_, cx, cy, w, h, contenido)` · `zapato_arriba(id_, cx, cy, s, col, espejo)` + `huella(id_, cx, cy, s, espejo)` (ponerse en el lugar del otro) ·
 `portapapeles(id_, cx, cy, w, h, filas, marcadas)` (✓ en `_c<i>`) · `trofeo(id_, cx, base, h, texto, col)` (copa dorada con placa; `_brillo`) ·
-`nivel_burbuja(id_, cx, cy, w, h, col, inclinado)` (burbuja en `_burbuja`: move horizontal) · `red_ventana(id_, x, y, w, h, paso)` (malla protectora para ventanas y balcones; fade)
+`nivel_burbuja(id_, cx, cy, w, h, col, inclinado)` (burbuja en `_burbuja`: move horizontal) · `red_ventana(id_, x, y, w, h, paso)` (malla protectora para ventanas y balcones; fade) ·
+`escoba(id_, p0, p1, s)` (palo de p0 a p1 + cepillo `_cepillo`: wiggle origin top para barrer) · `tambor(id_, cx, base, w, h)` (`_parche` pulse, baquetas `_baq_izq`/`_baq_der`: wiggle origin top-left/top-right) ·
+`tubo_pasta(id_, cx, cy, s, rot_, estrujado)` (normal/estrujado en el mismo sitio + hide/fade; churro `_churro`: grow origin bottom) · `columna_griega(id_, cx, base, h, w)` · `pergamino(id_, cx, cy, w, h, texto, size, sub)` (grow origin top = se desenrolla)
 
 ## objetos/cuerpo.py
 `cerebro(id_, cx, cy, s, hipotalamo=True)` (`_hipotalamo`; .puntos hipotalamo/cerebelo/frente) · `cabeza_perfil(id_, x, y, s, piel, con_cerebro)` ·
@@ -134,7 +136,9 @@ con `ids=True` cada una en `_p_<slug>`; las de `destacar` van aparte en `_<slug>
 `articulacion(id_, cx, cy, s, abierta=0, burbuja=False, gas=True)` (nudillo en corte ≈ 780×350: `_hueso`, `_falange` (move [60,0] = separar, unidades locales),
 `_liquido` (sinovial), `_capsula`, `_gas`, `_burbuja`; .puntos hueco/burbuja/hueso/falange/liquido) · `mano(id_, cx, cy, s, piel, espejo)` (mano abierta de frente,
 dedos arriba ≈ 260×360: `_dedos`, `_pulgar`, `_nudillos`; .puntos nudillos/puntas/muneca) · `escaner_resonancia(id_, cx, cy, w, texto="RM")` (`_anillo`, `_pantalla`; .puntos hueco/camilla) ·
-`oido_interno(id_, cx, cy, s)` (laberinto ≈ 380×330: canales semicirculares `_canales`, líquido `_liquido` (wiggle), `_caracol`, `_vestibulo`; cabe en una `lupa` con s≈0.6)
+`oido_interno(id_, cx, cy, s)` (laberinto ≈ 380×330: canales semicirculares `_canales`, líquido `_liquido` (wiggle), `_caracol`, `_vestibulo`; cabe en una `lupa` con s≈0.6) ·
+`aparato_digestivo(id_, cx, cy, s, piel, torso)` (torso de frente ≈ 460×860 con `_esofago`, `_estomago`, `_delgado`, `_grueso` (trazos para draw), `_delgado_luz` (lima: hide + fade), `_ola` (flow = contracción que recorre el delgado), `_anillo` (move hacia abajo por el esófago); .puntos esofago/estomago/delgado/grueso) ·
+`estomago_corte(id_, cx, cy, s, nivel, burbujas)` (estómago casi vacío en corte: `_b<i>` burbujas para float, `_charco` wiggle; .puntos aire/charco) · fondo `intestino_interior(W, H)` (túnel rosa del intestino)
 
 ## objetos/animales.py
 `perro(id_, cx, base, s, pelaje="labrador|chocolate|negro|blanco", collar, bostezo=True)` — sentado de frente, alto ≈ 430*s; ids `_cabeza`, `_cola` (sway origin bottom-left),
@@ -221,6 +225,10 @@ Truco: para que el ala «se incline», dibújala a 0° y anímala con `move` `ro
 `pierna_corte(id_, x0, cy, L, s, piel)` (pierna estirada con ventana en el muslo: `_muslo`, `_tibia` (origin left = rodilla), `_pie`; .puntos ventana) + `musculo_ventana(id_, caja, contraido)` (dos en el mismo sitio + hide/fade = contracción).
 `animales.mono(id_, cx, cy, s, pose="duerme|agarra")`: mono pardo tumbado en una rama (cx, cy = parte de arriba de la rama); `_cuerpo`, `_cabeza` (origin bottom-left), `_ojos`, `_cola` (origin top-right), `_brazo/_brazo2/_pierna/_pierna2` (origin top); «agarra» = despierto y abrazado a la rama.
 
+## objetos/mente.py (cerebro que predice, cosquillas)
+`pivote(px, py, r)` (rect invisible: con él dentro de un grupo, origin "center" = (px, py); para girar sobre hombros, codos, bases) · `pluma(id_, cx, cy, L, ang, col)` (.puntos punta) · `bola_cristal(id_, cx, cy, r, dentro=svg)` (`_halo` pulse, `_dentro` float) · `engranaje(id_, cx, cy, r, dientes, col)` (spin; amount negativo = al revés) · `barra_volumen(id_, x0, base, w, h, n, cols, texto)` (segmentos `_b<i>`: grow escalonado, hide de derecha a izquierda) · `cara_cerebro(id_, cx, cy, s, expresion="aburrido|sorpresa|contento", gafas)` (encima de `cuerpo.cerebro`; `_ojos`, `_boca`, `_gafas`).
+`tecnologia.brazo_robot(id_, bx, base, s, hombro, codo, herramienta="pluma|pinza")` (brazo de laboratorio: `_brazo`, `_antebrazo`, `_punta` giran con origin center sobre hombro, codo y muñeca; `_led`; .puntos punta/hombro/codo/muneca).
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -285,3 +293,5 @@ lote8-07-basilisco (archivo/basilisco/dib.py): reptiles.py (basilisco, pata con 
 lote8-09-gasto-campana (archivo/gasto-campana/dib.py): saco_dinero y linea_tope (dinero.py).
 lote8-08-cambio-hora (archivo/cambio-hora/dib.py): tiempo.py (cama con persona dentro, mesilla, despertador digital, luna, flecha de retrasar la hora).
 lote9-01-sacudida-dormir (archivo/sacudida-dormir/dib.py): sueno.py (cama de lado, durmiente en pijama, marioneta, árbol con rama, pierna en corte) y mono (animales.py).
+lote9-04-tripa-ruge (archivo/tripa-ruge/dib.py): aparato digestivo, estómago en corte e interior del intestino (cuerpo.py); escoba, tambor, tubo de pasta, columna griega y pergamino (casa.py).
+lote9-05-cosquillas (archivo/cosquillas/dib.py): mente.py (pivote, pluma, bola de cristal, engranaje, barra de volumen, cara de cerebro) y brazo_robot (tecnologia.py).

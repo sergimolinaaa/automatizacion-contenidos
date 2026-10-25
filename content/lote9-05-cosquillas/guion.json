@@ -1,0 +1,1172 @@
+{
+  "topic": "¿Por qué no puedes hacerte cosquillas a ti mismo? El cerebelo recibe una copia de la orden motora, predice la sensación y la atenúa; experimento del robot de Sarah Blakemore (UCL, Nature Neuroscience 1998) y el retraso que devuelve las cosquillas",
+  "categoria": "psicologia",
+  "title": "¿Por qué no puedes hacerte cosquillas a ti mismo?",
+  "source": "Fuentes: Nature Neuroscience · Scientific American · ScienceAlert · ABC News",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué no puedes hacerte *cosquillas*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-30T14:00:00+01:00",
+    "caption": "¿Por qué no puedes hacerte cosquillas? Tu cerebelo predice lo que vas a sentir y frena la respuesta: sin sorpresa, no hay cosquillas. Con un robot, un retraso de una fracción de segundo bastaba para que volvieran (Blakemore, Nature Neuroscience 1998). ¿Dónde tienes más cosquillas tú?",
+    "description": "¿Por qué no puedes hacerte cosquillas a ti mismo? Cuando mueves la mano, el cerebelo recibe una copia de la orden y predice lo que vas a sentir; con esa predicción frena la respuesta del cerebro y la sorpresa desaparece. La neurocientífica Sarah Blakemore lo comprobó en el University College London con un robot (Nature Neuroscience, 1998): las cosquillas que se producían los voluntarios se sentían menos que las del robot, y si el robot añadía un retraso de una fracción de segundo, volvían. Fuentes: Nature Neuroscience, Scientific American, ScienceAlert, ABC News. ¿Dónde tienes más cosquillas tú?",
+    "hashtags": [
+      "cosquillas",
+      "cerebro",
+      "psicologia",
+      "neurociencia",
+      "curiosidades"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Tú *solo*? Nada",
+      "narration": "¿Por qué si te haces cosquillas no sientes nada, pero si te las hace otro te partes de risa?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Cosquillas",
+        "anims": [
+          {
+            "target": "chico",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.1
+          },
+          {
+            "target": "chicoN_ojos",
+            "effect": "blink",
+            "delay": 0.5
+          },
+          {
+            "target": "chicoN_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.25,
+            "delay": 0.35
+          },
+          {
+            "target": "chicoN_brazo_der",
+            "effect": "wiggle",
+            "origin": "top-right",
+            "amount": 0.55
+          },
+          {
+            "target": "chicoN_brazo_izq",
+            "effect": "sway",
+            "origin": "bottom-right",
+            "amount": 0.14,
+            "delay": 0.6
+          },
+          {
+            "target": "chicoR",
+            "effect": "hide"
+          },
+          {
+            "target": "gnada",
+            "effect": "pop",
+            "delay": 0.25,
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "gnada",
+            "effect": "float",
+            "amount": 0.35,
+            "delay": 0.5
+          },
+          {
+            "target": "chicoN_cabeza",
+            "effect": "move",
+            "trigger": "cosquillas",
+            "rotate": -5,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "tnada",
+            "effect": "pop",
+            "trigger": "nada",
+            "sfx": "pop"
+          },
+          {
+            "target": "tnada",
+            "effect": "punch",
+            "trigger": "nada",
+            "amount": 0.4
+          },
+          {
+            "target": "gnada",
+            "effect": "hide",
+            "trigger": "pero"
+          },
+          {
+            "target": "hermG",
+            "effect": "slide-right",
+            "trigger": "pero",
+            "dur": 0.55,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "herm",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.5,
+            "phase": 0.6
+          },
+          {
+            "target": "herm",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "delay": 0.9
+          },
+          {
+            "target": "herm_ojos",
+            "effect": "blink",
+            "delay": 1.4
+          },
+          {
+            "target": "herm_cabeza",
+            "effect": "move",
+            "trigger": "te las",
+            "rotate": -6,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "herm_brazo_izq",
+            "effect": "wiggle",
+            "trigger": "otro",
+            "origin": "right",
+            "amount": 0.7
+          },
+          {
+            "target": "tnada",
+            "effect": "hide",
+            "trigger": "otro"
+          },
+          {
+            "target": "chicoN",
+            "effect": "hide",
+            "trigger": "otro"
+          },
+          {
+            "target": "chicoR",
+            "effect": "fade",
+            "trigger": "otro",
+            "dur": 0.15
+          },
+          {
+            "target": "chicoR_cabeza",
+            "effect": "sway",
+            "trigger": "otro",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "chicoR",
+            "effect": "shake",
+            "trigger": "partes",
+            "amount": 0.35
+          },
+          {
+            "target": "chicoR_brazo_izq",
+            "effect": "wiggle",
+            "trigger": "partes",
+            "origin": "bottom-right",
+            "amount": 0.35
+          },
+          {
+            "target": "chicoR_brazo_der",
+            "effect": "sway",
+            "trigger": "partes",
+            "origin": "top-right",
+            "amount": 0.3
+          },
+          {
+            "target": "jaja",
+            "effect": "pop",
+            "trigger": "partes",
+            "sfx": "pop"
+          },
+          {
+            "target": "jaja",
+            "effect": "float",
+            "trigger": "partes",
+            "amount": 0.4
+          },
+          {
+            "target": "dest",
+            "effect": "pop",
+            "trigger": "partes"
+          },
+          {
+            "target": "dest",
+            "effect": "pulse",
+            "trigger": "partes",
+            "amount": 0.6
+          },
+          {
+            "target": "lag0",
+            "effect": "pop",
+            "trigger": "risa"
+          },
+          {
+            "target": "lag1",
+            "effect": "pop",
+            "trigger": "risa"
+          },
+          {
+            "target": "lag0",
+            "effect": "float",
+            "trigger": "risa",
+            "amount": 0.25
+          },
+          {
+            "target": "lag1",
+            "effect": "float",
+            "trigger": "risa",
+            "amount": 0.3
+          },
+          {
+            "target": "jaja",
+            "effect": "punch",
+            "trigger": "risa",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "partes",
+            "to": [
+              470,
+              900
+            ],
+            "amount": 1.12,
+            "dur": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Culpa del *cerebelo*",
+      "narration": "Culpa del cerebelo, la parte de atrás del cerebro que coordina tus movimientos.",
+      "illustration": {
+        "svg_file": "cerebelo_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 2 · El cerebelo",
+        "anims": [
+          {
+            "target": "cabG",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cabG",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.06,
+            "delay": 0.6
+          },
+          {
+            "target": "cbglow",
+            "effect": "fade",
+            "trigger": "cerebelo",
+            "dur": 0.3
+          },
+          {
+            "target": "cbglow",
+            "effect": "pulse",
+            "trigger": "cerebelo",
+            "amount": 0.8
+          },
+          {
+            "target": "tcb",
+            "effect": "pop",
+            "trigger": "cerebelo",
+            "sfx": "pop"
+          },
+          {
+            "target": "tcb",
+            "effect": "float",
+            "trigger": "parte",
+            "amount": 0.2
+          },
+          {
+            "target": "fatras",
+            "effect": "draw",
+            "trigger": "atrás",
+            "dur": 0.45,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "fatras",
+            "effect": "flow",
+            "trigger": "cerebro",
+            "amount": 0.6
+          },
+          {
+            "target": "eng1",
+            "effect": "pop",
+            "trigger": "coordina",
+            "sfx": "pop"
+          },
+          {
+            "target": "eng1",
+            "effect": "spin",
+            "trigger": "coordina",
+            "amount": 0.5
+          },
+          {
+            "target": "eng2",
+            "effect": "pop",
+            "trigger": "tus"
+          },
+          {
+            "target": "eng2",
+            "effect": "spin",
+            "trigger": "tus",
+            "amount": -0.72
+          },
+          {
+            "target": "tcoord",
+            "effect": "pop",
+            "trigger": "coordina"
+          },
+          {
+            "target": "tcoord2",
+            "effect": "pop",
+            "trigger": "tus"
+          },
+          {
+            "target": "manoG",
+            "effect": "slide-left",
+            "trigger": "movimientos",
+            "dur": 0.45
+          },
+          {
+            "target": "mano_dedos",
+            "effect": "wiggle",
+            "trigger": "movimientos",
+            "origin": "bottom",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Recibe una *copia*",
+      "narration": "Cuando mueves la mano, el cerebelo recibe una copia de la orden y predice lo que vas a sentir.",
+      "illustration": {
+        "svg_file": "copia_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 3 · La copia",
+        "anims": [
+          {
+            "target": "cerG",
+            "effect": "slide-down",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cerG",
+            "effect": "float",
+            "amount": 0.2,
+            "delay": 0.5
+          },
+          {
+            "target": "bola",
+            "effect": "slide-up",
+            "delay": 0.15,
+            "dur": 0.5
+          },
+          {
+            "target": "bola_halo",
+            "effect": "pulse",
+            "amount": 0.5,
+            "delay": 0.6
+          },
+          {
+            "target": "mano2G",
+            "effect": "slide-left",
+            "trigger": "mueves",
+            "dur": 0.45,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mano2_dedos",
+            "effect": "wiggle",
+            "trigger": "mano",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "cbglow2",
+            "effect": "fade",
+            "trigger": "cerebelo",
+            "dur": 0.3
+          },
+          {
+            "target": "cbglow2",
+            "effect": "pulse",
+            "trigger": "cerebelo",
+            "amount": 0.8
+          },
+          {
+            "target": "orden",
+            "effect": "pop",
+            "trigger": "recibe",
+            "sfx": "papel"
+          },
+          {
+            "target": "copiaS",
+            "effect": "pop",
+            "trigger": "recibe"
+          },
+          {
+            "target": "copiaS",
+            "effect": "move",
+            "trigger": "copia",
+            "to": [
+              -236,
+              196
+            ],
+            "rotate": -10,
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "fruta",
+            "effect": "draw",
+            "trigger": "orden",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "orden",
+            "effect": "move",
+            "trigger": "orden",
+            "to": [
+              220,
+              160
+            ],
+            "rotate": 12,
+            "dur": 0.8
+          },
+          {
+            "target": "bola",
+            "effect": "punch",
+            "trigger": "predice",
+            "amount": 0.4,
+            "sfx": "brillo"
+          },
+          {
+            "target": "bola_dentro",
+            "effect": "float",
+            "trigger": "predice",
+            "amount": 0.5
+          },
+          {
+            "target": "plb",
+            "effect": "wiggle",
+            "trigger": "predice",
+            "amount": 0.4
+          },
+          {
+            "target": "tpred",
+            "effect": "pop",
+            "trigger": "sentir",
+            "sfx": "pop"
+          },
+          {
+            "target": "copiaS",
+            "effect": "pulse",
+            "trigger": "sentir",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Sin *sorpresa*",
+      "narration": "Con esa predicción, frena la respuesta: tu cerebro ya sabe lo que viene.",
+      "illustration": {
+        "svg_file": "frena_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 4 · El freno",
+        "anims": [
+          {
+            "target": "vol_b0",
+            "effect": "grow",
+            "delay": 0.05,
+            "dur": 0.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "vol_b0",
+            "effect": "breathe",
+            "amount": 0.6,
+            "phase": 0.0,
+            "delay": 0.6
+          },
+          {
+            "target": "vol_b1",
+            "effect": "grow",
+            "delay": 0.12,
+            "dur": 0.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "vol_b1",
+            "effect": "breathe",
+            "amount": 0.6,
+            "phase": 0.13,
+            "delay": 0.6
+          },
+          {
+            "target": "vol_b2",
+            "effect": "grow",
+            "delay": 0.19,
+            "dur": 0.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "vol_b2",
+            "effect": "breathe",
+            "amount": 0.6,
+            "phase": 0.26,
+            "delay": 0.6
+          },
+          {
+            "target": "vol_b3",
+            "effect": "grow",
+            "delay": 0.26,
+            "dur": 0.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "vol_b3",
+            "effect": "breathe",
+            "amount": 0.6,
+            "phase": 0.39,
+            "delay": 0.6
+          },
+          {
+            "target": "vol_b4",
+            "effect": "grow",
+            "delay": 0.33,
+            "dur": 0.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "vol_b4",
+            "effect": "breathe",
+            "amount": 0.6,
+            "phase": 0.52,
+            "delay": 0.6
+          },
+          {
+            "target": "vol_b5",
+            "effect": "grow",
+            "delay": 0.4,
+            "dur": 0.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "vol_b5",
+            "effect": "breathe",
+            "amount": 0.6,
+            "phase": 0.65,
+            "delay": 0.6
+          },
+          {
+            "target": "vol_b6",
+            "effect": "grow",
+            "delay": 0.47,
+            "dur": 0.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "vol_b6",
+            "effect": "breathe",
+            "amount": 0.6,
+            "phase": 0.78,
+            "delay": 0.6
+          },
+          {
+            "target": "fre",
+            "effect": "slide-up",
+            "delay": 0.1,
+            "dur": 0.5
+          },
+          {
+            "target": "cerA",
+            "effect": "slide-left",
+            "delay": 0.2,
+            "dur": 0.5
+          },
+          {
+            "target": "cerA",
+            "effect": "float",
+            "amount": 0.25,
+            "delay": 0.7
+          },
+          {
+            "target": "cara_ojos",
+            "effect": "blink",
+            "delay": 1.0
+          },
+          {
+            "target": "vol",
+            "effect": "punch",
+            "trigger": "predicción",
+            "amount": 0.2
+          },
+          {
+            "target": "fre_mango",
+            "effect": "move",
+            "trigger": "frena",
+            "rotate": 32,
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "fbaja",
+            "effect": "draw",
+            "trigger": "frena",
+            "dur": 0.5
+          },
+          {
+            "target": "vol_b6",
+            "effect": "hide",
+            "trigger": "frena"
+          },
+          {
+            "target": "vol_b5",
+            "effect": "hide",
+            "trigger": "respuesta"
+          },
+          {
+            "target": "vol_b4",
+            "effect": "hide",
+            "trigger": "cerebro"
+          },
+          {
+            "target": "vol_b3",
+            "effect": "hide",
+            "trigger": "ya"
+          },
+          {
+            "target": "vol_b2",
+            "effect": "hide",
+            "trigger": "sabe"
+          },
+          {
+            "target": "cerA",
+            "effect": "punch",
+            "trigger": "cerebro",
+            "amount": 0.3
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "sabe",
+            "sfx": "ding"
+          },
+          {
+            "target": "ok",
+            "effect": "float",
+            "trigger": "sabe",
+            "amount": 0.3
+          },
+          {
+            "target": "tsabe",
+            "effect": "pop",
+            "trigger": "viene",
+            "sfx": "pop"
+          },
+          {
+            "target": "cara_gafas",
+            "effect": "punch",
+            "trigger": "viene",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "El *robot* de Blakemore",
+      "narration": "La neurocientífica Sarah Blakemore lo probó en Londres con un robot: sus voluntarios sentían menos las cosquillas que se hacían ellos.",
+      "illustration": {
+        "svg_file": "robot_full.svg",
+        "layout": "full",
+        "caption": "Fig. 5 · El robot",
+        "anims": [
+          {
+            "target": "rob",
+            "effect": "pop",
+            "delay": 0.05,
+            "sfx": "pop"
+          },
+          {
+            "target": "rob_brazo",
+            "effect": "sway",
+            "amount": 0.12,
+            "delay": 0.4
+          },
+          {
+            "target": "rob_antebrazo",
+            "effect": "sway",
+            "amount": 0.2,
+            "delay": 0.55
+          },
+          {
+            "target": "rob_led",
+            "effect": "pulse",
+            "amount": 2,
+            "delay": 0.3
+          },
+          {
+            "target": "sarahG",
+            "effect": "slide-left",
+            "trigger": "neurocientífica",
+            "dur": 0.55,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sarah",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.5,
+            "phase": 0.2
+          },
+          {
+            "target": "sarah",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.12,
+            "delay": 0.8
+          },
+          {
+            "target": "sarah_ojos",
+            "effect": "blink",
+            "delay": 1.2
+          },
+          {
+            "target": "sarah_cabeza",
+            "effect": "move",
+            "trigger": "Blakemore",
+            "rotate": -5,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "sarah_brazo_der",
+            "effect": "move",
+            "trigger": "probó",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "tlon",
+            "effect": "pop",
+            "trigger": "Londres",
+            "sfx": "pop"
+          },
+          {
+            "target": "tlon",
+            "effect": "float",
+            "trigger": "Londres",
+            "amount": 0.25
+          },
+          {
+            "target": "rob_punta",
+            "effect": "wiggle",
+            "trigger": "robot",
+            "amount": 0.6
+          },
+          {
+            "target": "rob",
+            "effect": "punch",
+            "trigger": "robot",
+            "amount": 0.2,
+            "sfx": "boing"
+          },
+          {
+            "target": "volN",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.5,
+            "phase": 0.7
+          },
+          {
+            "target": "volN_ojos",
+            "effect": "blink",
+            "delay": 0.9
+          },
+          {
+            "target": "volN_cabeza",
+            "effect": "sway",
+            "trigger": "voluntarios",
+            "origin": "bottom",
+            "amount": 0.25
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "voluntarios",
+            "to": [
+              700,
+              880
+            ],
+            "amount": 1.15,
+            "dur": 0.8
+          },
+          {
+            "target": "med",
+            "effect": "pop",
+            "trigger": "sentían",
+            "sfx": "pop"
+          },
+          {
+            "target": "tmed",
+            "effect": "pop",
+            "trigger": "sentían"
+          },
+          {
+            "target": "med_aguja",
+            "effect": "move",
+            "trigger": "menos",
+            "rotate": -62,
+            "origin": "bottom",
+            "dur": 0.7
+          },
+          {
+            "target": "tmenos",
+            "effect": "pop",
+            "trigger": "menos",
+            "sfx": "pop"
+          },
+          {
+            "target": "med_aguja",
+            "effect": "wiggle",
+            "trigger": "cosquillas",
+            "origin": "bottom",
+            "amount": 0.15
+          },
+          {
+            "target": "pal_mango",
+            "effect": "move",
+            "trigger": "hacían",
+            "rotate": -28,
+            "origin": "bottom",
+            "dur": 0.5,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "volN_brazo_der",
+            "effect": "move",
+            "trigger": "hacían",
+            "rotate": -8,
+            "origin": "top-left",
+            "dur": 0.5
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "ellos",
+            "amount": 1,
+            "dur": 0.7
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Un *retraso* lo cambia",
+      "narration": "Y si el robot repetía su movimiento con un pequeño retraso, una fracción de segundo, las cosquillas volvían.",
+      "illustration": {
+        "svg_file": "retraso_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 6 · El retraso",
+        "anims": [
+          {
+            "target": "cron",
+            "effect": "pop",
+            "delay": 0.0,
+            "sfx": "pop"
+          },
+          {
+            "target": "cron",
+            "effect": "float",
+            "amount": 0.2,
+            "delay": 0.4
+          },
+          {
+            "target": "rob2",
+            "effect": "slide-up",
+            "delay": 0.1,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rob2_brazo",
+            "effect": "sway",
+            "amount": 0.12,
+            "delay": 0.6
+          },
+          {
+            "target": "rob2_antebrazo",
+            "effect": "sway",
+            "amount": 0.2,
+            "delay": 0.75
+          },
+          {
+            "target": "rob2_led",
+            "effect": "pulse",
+            "amount": 2,
+            "delay": 0.5
+          },
+          {
+            "target": "palma2G",
+            "effect": "slide-up",
+            "delay": 0.2,
+            "dur": 0.5
+          },
+          {
+            "target": "v2",
+            "effect": "slide-right",
+            "delay": 0.25,
+            "dur": 0.5
+          },
+          {
+            "target": "v2",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.5,
+            "phase": 0.4,
+            "delay": 0.7
+          },
+          {
+            "target": "v2N_ojos",
+            "effect": "blink",
+            "delay": 1.1
+          },
+          {
+            "target": "v2N_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2,
+            "delay": 0.9
+          },
+          {
+            "target": "v2R",
+            "effect": "hide"
+          },
+          {
+            "target": "med2",
+            "effect": "pop",
+            "delay": 0.35
+          },
+          {
+            "target": "tmed2",
+            "effect": "pop",
+            "delay": 0.45
+          },
+          {
+            "target": "med2_aguja",
+            "effect": "move",
+            "delay": 0.5,
+            "rotate": -62,
+            "origin": "bottom",
+            "dur": 0.7
+          },
+          {
+            "target": "rob2_punta",
+            "effect": "wiggle",
+            "trigger": "repetía",
+            "amount": 0.6
+          },
+          {
+            "target": "rob2_brazo",
+            "effect": "move",
+            "trigger": "movimiento",
+            "rotate": 6,
+            "dur": 0.5
+          },
+          {
+            "target": "cron_aguja",
+            "effect": "move",
+            "trigger": "pequeño",
+            "rotate": 35,
+            "origin": "bottom",
+            "dur": 0.5,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "tret",
+            "effect": "pop",
+            "trigger": "retraso",
+            "sfx": "pop"
+          },
+          {
+            "target": "cron",
+            "effect": "punch",
+            "trigger": "retraso",
+            "amount": 0.3
+          },
+          {
+            "target": "tfrac",
+            "effect": "pop",
+            "trigger": "fracción"
+          },
+          {
+            "target": "cron_aguja",
+            "effect": "move",
+            "trigger": "segundo",
+            "rotate": 12,
+            "origin": "bottom",
+            "dur": 0.4
+          },
+          {
+            "target": "med2_aguja",
+            "effect": "move",
+            "trigger": "cosquillas",
+            "rotate": 130,
+            "origin": "bottom",
+            "dur": 0.9,
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "v2N",
+            "effect": "hide",
+            "trigger": "volvían"
+          },
+          {
+            "target": "v2R",
+            "effect": "fade",
+            "trigger": "volvían",
+            "dur": 0.15
+          },
+          {
+            "target": "v2R_cabeza",
+            "effect": "sway",
+            "trigger": "volvían",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "v2R",
+            "effect": "shake",
+            "trigger": "volvían",
+            "amount": 0.3
+          },
+          {
+            "target": "jaja2",
+            "effect": "pop",
+            "trigger": "volvían",
+            "sfx": "pop"
+          },
+          {
+            "target": "jaja2",
+            "effect": "float",
+            "trigger": "volvían",
+            "amount": 0.4
+          },
+          {
+            "target": "dest2",
+            "effect": "pop",
+            "trigger": "volvían"
+          },
+          {
+            "target": "dest2",
+            "effect": "pulse",
+            "trigger": "volvían",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Sin sorpresa, *sin cosquillas*",
+      "narration": "Sin sorpresa, no hay cosquillas.",
+      "mascot": {
+        "trigger": "Sin",
+        "pose": "think",
+        "note": "Pluma en mano… y nada",
+        "side": "right"
+      },
+      "elements": [
+        {
+          "type": "stamp",
+          "text": "SIN COSQUILLAS",
+          "tone": "hot",
+          "trigger": "no",
+          "sfx": "sello"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Dónde tienes más cosquillas tú?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Dónde tienes más *cosquillas* tú?",
+          "trigger": "¿Dónde"
+        }
+      ]
+    }
+  ]
+}
