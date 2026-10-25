@@ -7,6 +7,14 @@
 - Responder preguntas de comentarios (el de los escalofríos rindió muy por encima de la media).
 - 2 vídeos al día (14:00 calendario, 21:00 extra), el mismo en las 3 redes. `publish.py` impide más de 2 al día. (Prueba desde el 16-oct: comparar media y total con la semana de 1 al día.)
 
+### Datos de views (capturas del 25-oct, últimas 2 semanas)
+- Éxitos en las 3 redes: voto en blanco (IG 16,6K, TikTok 8.152), D'Hondt «mismos votos, otro resultado» (TikTok 6.650, IG 2.684), piel de gallina (TikTok 5.363).
+- Fórmula: PARADOJA o MITO que se rompe + algo que le toca al espectador (su voto, su cuerpo).
+- TikTok premia cuerpo y tecnología cotidiana (picadura, móvil lento, tiritar, motor en medio ≈ 2.100-2.500).
+  Instagram premia sistema electoral y fenómenos visuales (rotondas, «¿llega al 29 N?» ≈ 2.150).
+- Flojean: dinero y consumo (rebajas, precios ,99), «tu voto se pierde», vídeos de partidos en IG. YouTube no sirve para decidir temas.
+- Pedido del usuario: más «tecnología cotidiana + causa física sorprendente + estacional» (tipo el frío y la batería del móvil).
+
 ## Guion y textos
 - 40-60 s (unas 110-150 palabras), 7-11 escenas. Voz Edge TTS a +25 % (`config.yaml`).
 - GANCHO en los 2 primeros segundos: pregunta directa al espectador («¿Por qué…?», «¿Te ha pasado…?»).
