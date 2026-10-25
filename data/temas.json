@@ -459,5 +459,47 @@
     "categoria": "dinero",
     "pista": "Euríbor: lo que se prestan los bancos entre sí; tu cuota = euríbor + diferencial. Comparaciones cotidianas.",
     "hecho": true
+  },
+  {
+    "tema": "¿Por qué el móvil se apaga con el 20 % de batería?",
+    "categoria": "moviles",
+    "prioridad": true,
+    "pista": "guion en guiones/semana-2026-11-02.md (lote10-04-movil-20, 2026-10-28 21:00)"
+  },
+  {
+    "tema": "¿Por qué la pantalla del móvil no responde con guantes?",
+    "categoria": "moviles",
+    "prioridad": true,
+    "pista": "guion en guiones/semana-2026-11-02.md (lote10-05-guantes-pantalla, 2026-10-29 21:00)"
+  },
+  {
+    "tema": "¿Por qué te da calambre al tocar el coche?",
+    "categoria": "fisica",
+    "prioridad": true,
+    "pista": "guion en guiones/semana-2026-11-02.md (lote10-06-calambre-coche, 2026-10-30 21:00)"
+  },
+  {
+    "tema": "¿Por qué se empañan por dentro los cristales del coche?",
+    "categoria": "objetos",
+    "prioridad": true,
+    "pista": "guion en guiones/semana-2026-11-02.md (lote10-07-cristal-empanado, 2026-10-31 21:00)"
+  },
+  {
+    "tema": "¿Por qué los coches eléctricos pierden autonomía con frío?",
+    "categoria": "objetos",
+    "prioridad": true,
+    "pista": "guion en guiones/semana-2026-11-02.md (lote10-08-electrico-frio, 2026-11-01 21:00)"
+  },
+  {
+    "tema": "¿Por qué la carga rápida se frena al llegar al 80 %?",
+    "categoria": "moviles",
+    "prioridad": true,
+    "pista": "guion en guiones/semana-2026-11-02.md (lote10-09-carga-80, 2026-11-02 21:00)"
+  },
+  {
+    "tema": "Abstención: ¿a quién le sirve?",
+    "categoria": "politica",
+    "prioridad": true,
+    "pista": "guion en guiones/semana-2026-11-02.md (lote10-10-abstencion, 2026-11-03 21:00)"
   }
 ]
