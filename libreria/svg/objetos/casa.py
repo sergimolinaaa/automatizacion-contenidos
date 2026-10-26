@@ -168,7 +168,7 @@ def mesa(id_, cx, y_tablero, w=700, alto=260, grosor=34, col="#C98B55"):
         lx = x0 + w * k - 18
         o += f'<rect x="{f(lx)}" y="{f(y_tablero)}" width="36" height="{f(alto)}" rx="8" fill="{degradado(shade(col,-0.15), 0.2, "h")}" stroke="{INK}" stroke-width="6"/>'
     o += f'<path d="M {f(x0+30)} {f(y_tablero-prof)} L {f(x0+w-30)} {f(y_tablero-prof)} L {f(x0+w)} {f(y_tablero)} L {f(x0)} {f(y_tablero)} Z" fill="{degradado(shade(col,0.2), 0.12)}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
-    o += "".join(f'<path d="M {f(x0+60+i*w*0.22)} {f(y_tablero-prof*0.6)} C {f(x0+120+i*w*0.22)} {f(y_tablero-prof*0.7)}, {f(x0+180+i*w*0.22)} {f(y_tablero-prof*0.45)}, {f(x0+240+i*w*0.22)} {f(y_tablero-prof*0.55)}" fill="none" stroke="{shade(col,-0.25)}" stroke-width="3" opacity="0.5"/>' for i in range(4))
+    o += "".join(f'<path d="M {f(x0+w*0.086+i*w*0.22)} {f(y_tablero-prof*0.6)} C {f(x0+w*0.17+i*w*0.22)} {f(y_tablero-prof*0.7)}, {f(x0+w*0.26+i*w*0.22)} {f(y_tablero-prof*0.45)}, {f(x0+w*0.34+i*w*0.22)} {f(y_tablero-prof*0.55)}" fill="none" stroke="{shade(col,-0.25)}" stroke-width="3" opacity="0.5"/>' for i in range(4))
     o += f'<rect x="{f(x0)}" y="{f(y_tablero)}" width="{f(w)}" height="{f(grosor)}" rx="6" fill="{degradado(col, 0.2)}" stroke="{INK}" stroke-width="7"/>'
     o += brillo(f"M {f(x0+40)} {f(y_tablero-prof+8)} L {f(x0+w-40)} {f(y_tablero-prof+8)}", 4, 0.6)
     return Pieza(g(id_, o), {"superficie": (cx, y_tablero - prof * 0.5)}, (x0, y_tablero - prof, x0 + w, y_tablero + alto))
@@ -623,3 +623,135 @@ def pergamino(id_, cx, cy, w=420, h=300, texto="", size=46, sub=""):
     o += g(f"{id_}_texto", T(cx, cy + size * 0.1 + (0 if not sub else -size * 0.2), texto, size, "#7A4E28", font='font-family="Georgia, serif" font-weight="700" font-style="italic"')
            + (T(cx, cy + size * 1.05, sub, size * 0.5, "#9A7A50") if sub else ""))
     return Pieza(g(id_, o), {}, (x0 - 22, y0 - 18, x0 + w + 22, y0 + h + 18))
+
+
+# ------------------------------------------------------------------ desayuno: tostada, plato, mesa de perfil, escalera, espejo roto
+# (lote9-07-tostada-mantequilla)
+MIGA, CORTEZA, MANTEQUILLA = "#F3D9A0", "#B9702F", "#FFD84A"
+
+
+def tostada(id_, cx, cy, w=200, vista="lado", rot_=0, mantequilla=True):
+    """Tostada con mantequilla. vista="lado": rebanada de canto (≈ w × 0,2w), mantequilla amarilla arriba
+    (rot_=180 = boca abajo); vista="frente": rebanada de frente (≈ w × 1,05w) con la mantequilla untada
+    (mantequilla=False = cara de miga tostada). (cx, cy) = centro; rot_ gira sobre el centro.
+    Para animarla: grupo exterior con move + otro dentro con move rotate (origin center). .puntos: centro, mantequilla."""
+    if vista == "lado":
+        t = w * 0.17
+        o = (f'<rect x="{f(-w/2)}" y="{f(-t/2)}" width="{f(w)}" height="{f(t)}" rx="{f(t*0.45)}" '
+             f'fill="{degradado(CORTEZA, 0.18)}" stroke="{INK}" stroke-width="6"/>')
+        o += f'<rect x="{f(-w/2+t*0.45)}" y="{f(-t*0.22)}" width="{f(w-t*0.9)}" height="{f(t*0.44)}" rx="{f(t*0.2)}" fill="{MIGA}"/>'
+        o += "".join(f'<circle cx="{f(-w/2+w*k)}" cy="{f(t*0.02*(i%3-1))}" r="{f(t*0.07)}" fill="{shade(MIGA,-0.25)}"/>'
+                     for i, k in enumerate((0.18, 0.31, 0.45, 0.58, 0.72, 0.84)))
+        if mantequilla:
+            bt = t * 0.42
+            d = (f"M {f(-w*0.45)} {f(-t/2+3)} Q {f(-w*0.46)} {f(-t/2-bt)} {f(-w*0.32)} {f(-t/2-bt)} "
+                 f"Q {f(-w*0.12)} {f(-t/2-bt*1.35)} {f(w*0.08)} {f(-t/2-bt)} Q {f(w*0.24)} {f(-t/2-bt*0.75)} {f(w*0.34)} {f(-t/2-bt)} "
+                 f"Q {f(w*0.46)} {f(-t/2-bt)} {f(w*0.45)} {f(-t/2+3)} Z")
+            o += f'<path d="{d}" fill="{degradado(MANTEQUILLA, 0.16)}" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>'
+            o += brillo(f"M {f(-w*0.3)} {f(-t/2-bt*0.6)} L {f(w*0.1)} {f(-t/2-bt*0.65)}", 4, 0.85)
+        else:
+            o += brillo(f"M {f(-w*0.35)} {f(-t*0.3)} L {f(w*0.2)} {f(-t*0.3)}", 3, 0.5)
+        caja = (cx - w / 2, cy - w * 0.25, cx + w / 2, cy + w * 0.25)
+    else:
+        h = w * 1.05
+        x0, y0 = -w / 2, -h / 2
+        d = (f"M {f(x0+w*0.06)} {f(y0+h*0.98)} L {f(x0+w*0.94)} {f(y0+h*0.98)} Q {f(x0+w)} {f(y0+h*0.98)} {f(x0+w*0.98)} {f(y0+h*0.9)} "
+             f"L {f(x0+w*0.95)} {f(y0+h*0.36)} C {f(x0+w*1.1)} {f(y0+h*0.2)}, {f(x0+w*0.85)} {f(y0-h*0.02)}, {f(x0+w*0.5)} {f(y0+h*0.04)} "
+             f"C {f(x0+w*0.15)} {f(y0-h*0.02)}, {f(x0-w*0.1)} {f(y0+h*0.2)}, {f(x0+w*0.05)} {f(y0+h*0.36)} "
+             f"L {f(x0+w*0.02)} {f(y0+h*0.9)} Q {f(x0)} {f(y0+h*0.98)} {f(x0+w*0.06)} {f(y0+h*0.98)} Z")
+        o = f'<path d="{d}" fill="{degradado(CORTEZA, 0.2)}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+        o += f'<g transform="translate(0 {f(h*0.035)}) scale(0.84)"><path d="{d}" fill="{degradado("#E8B866", 0.18)}"/></g>'
+        rnd = random.Random(7)
+        o += "".join(f'<circle cx="{f(rnd.uniform(-w*0.32, w*0.32))}" cy="{f(rnd.uniform(-h*0.25, h*0.35))}" r="{f(w*0.012+rnd.random()*w*0.01)}" fill="#C98A3E" opacity="0.7"/>' for _ in range(16))
+        if mantequilla:
+            pts_ = [(-0.3, -0.2), (-0.05, -0.27), (0.27, -0.18), (0.33, 0.1), (0.22, 0.33), (-0.08, 0.3), (-0.33, 0.25), (-0.36, 0.0)]
+            ub = smooth([(x * w, y * h) for x, y in pts_], True)
+            o += f'<path d="{ub}" fill="{degradado(MANTEQUILLA, 0.14)}" stroke="{shade(MANTEQUILLA,-0.3)}" stroke-width="4"/>'
+            o += brillo(f"M {f(-w*0.2)} {f(-h*0.12)} Q {f(0)} {f(-h*0.2)} {f(w*0.16)} {f(-h*0.1)}", 5, 0.85)
+            o += f'<rect x="{f(w*0.0)}" y="{f(-h*0.02)}" width="{f(w*0.2)}" height="{f(w*0.15)}" rx="{f(w*0.03)}" fill="{degradado("#FFE680", 0.15)}" stroke="{INK}" stroke-width="4" transform="rotate(-12 {f(w*0.1)} {f(h*0.05)})"/>'
+        caja = (cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2)
+    tr = f"translate({f(cx)} {f(cy)})" + (f" rotate({f(rot_)})" if rot_ else "")
+    ang = math.radians(rot_ - 90)
+    lado = (cx + math.cos(ang) * w * 0.12, cy + math.sin(ang) * w * 0.12)
+    return Pieza(gt(id_, tr, o), {"centro": (cx, cy), "mantequilla": lado}, caja)
+
+
+def mancha_mantequilla(id_, cx, cy, s=1.0):
+    """Salpicadura de mantequilla en el suelo (≈ 260×60 a s=1): charquito aplastado y gotitas. Anímala con pop."""
+    rnd = random.Random(3)
+    pts_ = [(cx + math.cos(a) * 120 * s * (0.8 + rnd.random() * 0.35), cy + math.sin(a) * 22 * s * (0.8 + rnd.random() * 0.4))
+            for a in [i * math.pi / 6 for i in range(12)]]
+    o = f'<path d="{smooth(pts_, True)}" fill="{degradado(MANTEQUILLA, 0.14)}" stroke="{INK}" stroke-width="5"/>'
+    for dx, dy, r in ((-150, -18, 11), (148, -24, 9), (-118, -42, 7), (128, -46, 6), (0, -50, 6)):
+        o += f'<ellipse cx="{f(cx+dx*s)}" cy="{f(cy+dy*s)}" rx="{f(r*s*1.3)}" ry="{f(r*s)}" fill="{MANTEQUILLA}" stroke="{INK}" stroke-width="4"/>'
+    o += brillo(f"M {f(cx-60*s)} {f(cy-6*s)} L {f(cx+20*s)} {f(cy-9*s)}", 4, 0.8)
+    return g(id_, o)
+
+
+def plato(id_, cx, cy, w=240, col="#FFFFFF"):
+    """Plato llano visto un poco desde arriba (elipse con ala). (cx, cy) = centro."""
+    o = sombra(cx + 6, cy + w * 0.12, w * 0.5, w * 0.08, 0.25)
+    o += f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(w/2)}" ry="{f(w*0.16)}" fill="{degradado(col, 0.08)}" stroke="{INK}" stroke-width="6"/>'
+    o += f'<ellipse cx="{f(cx)}" cy="{f(cy+2)}" rx="{f(w*0.33)}" ry="{f(w*0.09)}" fill="{shade(col,-0.07)}" stroke="#C9D2E2" stroke-width="3"/>'
+    o += brillo(f"M {f(cx-w*0.38)} {f(cy-w*0.06)} Q {f(cx-w*0.2)} {f(cy-w*0.14)} {f(cx)} {f(cy-w*0.145)}", 4, 0.9)
+    return g(id_, o)
+
+
+def mesa_perfil(id_, x0, x1, y_tablero, alto=380, grosor=34, col="#C98B55", travesano=True):
+    """Mesa de madera vista de perfil: tablero de x0 a x1 en y_tablero y dos patas hasta el suelo (y_tablero + alto).
+    Sirve igual para una mesa normal o una gigante (alto grande). .puntos: borde (esquina de arriba a la derecha), suelo (y)."""
+    suelo = y_tablero + alto
+    o = sombra((x0 + x1) / 2, suelo + 4, (x1 - x0) * 0.55, 14, 0.25)
+    for k in (0.1, 0.86):
+        lx = x0 + (x1 - x0) * k
+        o += f'<rect x="{f(lx)}" y="{f(y_tablero)}" width="34" height="{f(alto)}" rx="7" fill="{degradado(shade(col,-0.12), 0.2, "h")}" stroke="{INK}" stroke-width="6"/>'
+    if travesano:
+        ty = y_tablero + min(70, alto * 0.18)
+        o += f'<rect x="{f(x0+(x1-x0)*0.1+20)}" y="{f(ty)}" width="{f((x1-x0)*0.76)}" height="20" rx="6" fill="{shade(col,-0.2)}" stroke="{INK}" stroke-width="5"/>'
+    o += f'<rect x="{f(x0)}" y="{f(y_tablero)}" width="{f(x1-x0)}" height="{f(grosor)}" rx="7" fill="{degradado(col, 0.2)}" stroke="{INK}" stroke-width="7"/>'
+    o += brillo(f"M {f(x0+16)} {f(y_tablero+9)} L {f(x1-30)} {f(y_tablero+9)}", 4, 0.6)
+    return Pieza(g(id_, o), {"borde": (x1, y_tablero), "suelo": suelo}, (x0, y_tablero, x1, suelo))
+
+
+def escalera(id_, p_base, p_cima, w=110, peldanos=8, col="#C7CDD8"):
+    """Escalera de mano apoyada de p_base (centro de las patas en el suelo) a p_cima. .puntos["peldano"](k) = centro del peldaño k."""
+    (bx, by), (tx, ty) = p_base, p_cima
+    L = math.hypot(tx - bx, ty - by)
+    nx, ny = -(ty - by) / L, (tx - bx) / L  # normal
+    def lado(s):
+        return (bx + nx * s * w / 2, by + ny * s * w / 2), (tx + nx * s * w / 2 * 0.85, ty + ny * s * w / 2 * 0.85)
+    o = ""
+    pts_ = []
+    for k in range(1, peldanos + 1):
+        u = k / (peldanos + 1)
+        (a0, a1), (b0, b1) = lado(-1), lado(1)
+        pa = (a0[0] + (a1[0] - a0[0]) * u, a0[1] + (a1[1] - a0[1]) * u)
+        pb = (b0[0] + (b1[0] - b0[0]) * u, b0[1] + (b1[1] - b0[1]) * u)
+        o += trazo(f"M {f(pa[0])} {f(pa[1])} L {f(pb[0])} {f(pb[1])}", 9, shade(col, -0.1), 6)
+        pts_.append(((pa[0] + pb[0]) / 2, (pa[1] + pb[1]) / 2))
+    for s in (-1, 1):
+        a, b = lado(s)
+        o += trazo(f"M {f(a[0])} {f(a[1])} L {f(b[0])} {f(b[1])}", 14, col, 7)
+    return Pieza(g(id_, o), {"peldano": lambda k: pts_[max(0, min(len(pts_) - 1, k))], "cima": p_cima},
+                 (min(bx, tx) - w, min(by, ty), max(bx, tx) + w, max(by, ty)))
+
+
+def espejo_roto(id_, cx, cy, w=200, h=260):
+    """Espejo ovalado de marco dorado con el cristal roto (grietas desde el golpe). Mala suerte."""
+    o = sombra_caja(cx - w / 2, cy - h / 2, w, h, w / 2, 8, 10, 0.2)
+    o += f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(w/2)}" ry="{f(h/2)}" fill="{degradado("#E7B53C", 0.25)}" stroke="{INK}" stroke-width="7"/>'
+    registrar_defs(lg("espejoG", [(0, "#EAF7FF"), (0.5, "#B8DDF2"), (1, "#7FB4D6")], 0, 0, 1, 1))
+    rx, ry = w / 2 - 18, h / 2 - 18
+    o += f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(rx)}" ry="{f(ry)}" fill="url(#espejoG)" stroke="{INK}" stroke-width="5"/>'
+    ix, iy = cx + w * 0.08, cy - h * 0.08
+    rnd = random.Random(5)
+    grietas = ""
+    for i in range(7):
+        a = i * 2 * math.pi / 7 + rnd.uniform(-0.2, 0.2)
+        mx, my = ix + math.cos(a) * rx * 0.45, iy + math.sin(a) * ry * 0.45 + rnd.uniform(-8, 8)
+        ex, ey = cx + math.cos(a) * rx * 0.97, cy + math.sin(a) * ry * 0.97
+        grietas += f"M {f(ix)} {f(iy)} L {f(mx)} {f(my)} L {f(ex)} {f(ey)} "
+    o += f'<path d="{grietas}" fill="none" stroke="{INK}" stroke-width="4" stroke-linejoin="round"/>'
+    o += f'<path d="M {f(ix)} {f(iy)} L {f(ix+rx*0.3)} {f(iy-ry*0.15)} L {f(ix+rx*0.22)} {f(iy+ry*0.22)} Z" fill="#5E8FB3" stroke="{INK}" stroke-width="4"/>'
+    o += brillo(f"M {f(cx-rx*0.6)} {f(cy+ry*0.1)} L {f(cx-rx*0.35)} {f(cy-ry*0.45)}", 6, 0.8)
+    return g(id_, o)

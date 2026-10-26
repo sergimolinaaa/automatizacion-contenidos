@@ -127,7 +127,8 @@ con `ids=True` cada una en `_p_<slug>`; las de `destacar` van aparte en `_<slug>
 `portapapeles(id_, cx, cy, w, h, filas, marcadas)` (✓ en `_c<i>`) · `trofeo(id_, cx, base, h, texto, col)` (copa dorada con placa; `_brillo`) ·
 `nivel_burbuja(id_, cx, cy, w, h, col, inclinado)` (burbuja en `_burbuja`: move horizontal) · `red_ventana(id_, x, y, w, h, paso)` (malla protectora para ventanas y balcones; fade) ·
 `escoba(id_, p0, p1, s)` (palo de p0 a p1 + cepillo `_cepillo`: wiggle origin top para barrer) · `tambor(id_, cx, base, w, h)` (`_parche` pulse, baquetas `_baq_izq`/`_baq_der`: wiggle origin top-left/top-right) ·
-`tubo_pasta(id_, cx, cy, s, rot_, estrujado)` (normal/estrujado en el mismo sitio + hide/fade; churro `_churro`: grow origin bottom) · `columna_griega(id_, cx, base, h, w)` · `pergamino(id_, cx, cy, w, h, texto, size, sub)` (grow origin top = se desenrolla)
+`tubo_pasta(id_, cx, cy, s, rot_, estrujado)` (normal/estrujado en el mismo sitio + hide/fade; churro `_churro`: grow origin bottom) · `columna_griega(id_, cx, base, h, w)` · `pergamino(id_, cx, cy, w, h, texto, size, sub)` (grow origin top = se desenrolla) ·
+`tostada(id_, cx, cy, w, vista="lado|frente", rot_, mantequilla)` (de canto: mantequilla arriba, rot_=180 boca abajo; para que vuele: grupo de trayectoria con move y dentro `<id>_r` con move rotate origin center) · `mancha_mantequilla(id_, cx, cy, s)` · `plato(id_, cx, cy, w)` · `mesa_perfil(id_, x0, x1, y_tablero, alto)` (mesa de lado, normal o gigante; .puntos borde/suelo) · `escalera(id_, p_base, p_cima, w, peldanos)` (.puntos["peldano"](k)) · `espejo_roto(id_, cx, cy, w, h)`
 
 ## objetos/cuerpo.py
 `cerebro(id_, cx, cy, s, hipotalamo=True)` (`_hipotalamo`; .puntos hipotalamo/cerebelo/frente) · `cabeza_perfil(id_, x, y, s, piel, con_cerebro)` ·
@@ -311,3 +312,4 @@ lote9-04-tripa-ruge (archivo/tripa-ruge/dib.py): aparato digestivo, estómago en
 lote9-03-precio-kilo (archivo/precio-kilo/dib.py y guion.py): etiqueta_lineal, paquete y rollo_papel (tienda.py).
 lote9-05-cosquillas (archivo/cosquillas/dib.py): mente.py (pivote, pluma, bola de cristal, engranaje, barra de volumen, cara de cerebro) y brazo_robot (tecnologia.py).
 lote9-06-miedo-oscuridad (archivo/miedo-oscuridad/dib.py y guion.py): noche.py (ojo, sentidos, interruptor, perchero, sombra de monstruo, sabana, acacia, hoguera, leona, mapa de África, fases de la luna, bandera de Canadá, calabaza, fantasma).
+lote9-07-tostada-mantequilla (archivo/tostada-mantequilla/dib.py y guion.py): tostada, mancha de mantequilla, plato, mesa de perfil, escalera y espejo roto (casa.py).

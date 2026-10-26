@@ -1,0 +1,1019 @@
+{
+  "topic": "¿Por qué la tostada cae por el lado de la mantequilla? Robert Matthews (European Journal of Physics, 1995): gira al resbalar y desde una mesa normal solo da media vuelta; con una mesa de unos tres metros caería boca arriba; experimento de 2001 con más de mil escolares británicos",
+  "categoria": "fisica",
+  "title": "¿Por qué la tostada cae por el lado de la mantequilla?",
+  "source": "Fuentes: European Journal of Physics · Institute of Physics · Science Focus · The Telegraph · NPR",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué la tostada cae del lado de la *mantequilla*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-11-01T14:00:00+01:00",
+    "caption": "¿Por qué la tostada cae por el lado de la mantequilla? No es mala suerte: desde una mesa normal solo le da tiempo a dar media vuelta (Matthews, European Journal of Physics 1995). Con una mesa de unos tres metros caería boca arriba. Más de mil escolares lo comprobaron: casi dos de cada tres veces, mantequilla abajo. ¿Cuántas tostadas has perdido tú así?",
+    "description": "¿Por qué la tostada cae por el lado de la mantequilla? El físico Robert Matthews lo calculó en 1995 (European Journal of Physics): al resbalar del borde, la tostada empieza a girar, y desde una mesa normal solo le da tiempo a dar media vuelta, así que llega al suelo boca abajo. Para que cayera boca arriba, la mesa tendría que medir unos tres metros. En 2001, más de mil escolares británicos lo comprobaron: cayó del lado de la mantequilla casi dos de cada tres veces. La mantequilla apenas pesa: pasaría igual sin ella. Fuentes: European Journal of Physics, Institute of Physics, Science Focus, The Telegraph, NPR. ¿Cuántas tostadas has perdido tú así?",
+    "hashtags": [
+      "fisica",
+      "tostada",
+      "leydemurphy",
+      "ciencia",
+      "curiosidades"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "Siempre *boca abajo*",
+      "narration": "¿Se te cae la tostada y, cómo no, cae por el lado de la mantequilla?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Otra vez",
+        "anims": [
+          {
+            "target": "anaE",
+            "effect": "hide"
+          },
+          {
+            "target": "anaG",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.5,
+            "phase": 0.2
+          },
+          {
+            "target": "taza",
+            "effect": "slide-right",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "taza_vapor",
+            "effect": "float",
+            "amount": 0.5,
+            "delay": 0.3
+          },
+          {
+            "target": "tostada",
+            "effect": "slide-down",
+            "delay": 0.05,
+            "dur": 0.45
+          },
+          {
+            "target": "anaG",
+            "effect": "move",
+            "trigger": "Se",
+            "rotate": 4,
+            "origin": "bottom",
+            "dur": 0.35
+          },
+          {
+            "target": "platoG",
+            "effect": "move",
+            "trigger": "te",
+            "to": [
+              45,
+              0
+            ],
+            "dur": 0.4,
+            "sfx": "papel"
+          },
+          {
+            "target": "anaG",
+            "effect": "move",
+            "trigger": "cae",
+            "rotate": -4,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "tostada",
+            "effect": "move",
+            "trigger": "cae",
+            "to": [
+              70,
+              -70
+            ],
+            "dur": 0.35,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tostada_r",
+            "effect": "move",
+            "trigger": "cae",
+            "rotate": 50,
+            "origin": "center",
+            "dur": 0.4
+          },
+          {
+            "target": "tostada",
+            "effect": "move",
+            "trigger": "tostada",
+            "to": [
+              150,
+              275
+            ],
+            "dur": 0.55
+          },
+          {
+            "target": "tostada_r",
+            "effect": "move",
+            "trigger": "tostada",
+            "rotate": 130,
+            "origin": "center",
+            "dur": 0.55
+          },
+          {
+            "target": "lineas",
+            "effect": "fade",
+            "trigger": "tostada",
+            "dur": 0.15
+          },
+          {
+            "target": "lineas",
+            "effect": "hide",
+            "trigger": "cómo"
+          },
+          {
+            "target": "plaf",
+            "effect": "pop",
+            "trigger": "cómo",
+            "sfx": "boing"
+          },
+          {
+            "target": "plaf",
+            "effect": "wiggle",
+            "trigger": "cómo",
+            "amount": 0.4
+          },
+          {
+            "target": "mancha",
+            "effect": "pop",
+            "trigger": "cómo"
+          },
+          {
+            "target": "tostada",
+            "effect": "punch",
+            "trigger": "cómo",
+            "amount": 0.3
+          },
+          {
+            "target": "ana",
+            "effect": "hide",
+            "trigger": "no"
+          },
+          {
+            "target": "anaE",
+            "effect": "fade",
+            "trigger": "no",
+            "dur": 0.15
+          },
+          {
+            "target": "tabajo",
+            "effect": "pop",
+            "trigger": "lado",
+            "sfx": "pop"
+          },
+          {
+            "target": "tabajo",
+            "effect": "punch",
+            "trigger": "mantequilla",
+            "amount": 0.4
+          },
+          {
+            "target": "tabajo",
+            "effect": "float",
+            "trigger": "mantequilla",
+            "amount": 0.25
+          },
+          {
+            "target": "ana_ojos",
+            "effect": "blink",
+            "delay": 0.7
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.25,
+            "delay": 0.35
+          },
+          {
+            "target": "ana_cabeza",
+            "effect": "move",
+            "trigger": "cae por",
+            "rotate": -6,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "anaE_ojos",
+            "effect": "blink",
+            "delay": 0.7
+          },
+          {
+            "target": "anaE_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.25,
+            "delay": 0.44999999999999996
+          },
+          {
+            "target": "anaE_cabeza",
+            "effect": "move",
+            "trigger": "cae por",
+            "rotate": -6,
+            "origin": "bottom",
+            "dur": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "No es *mala suerte*",
+      "narration": "No es mala suerte: el físico Robert Matthews lo calculó hace más de treinta años.",
+      "illustration": {
+        "svg_file": "matthews.svg",
+        "layout": "panel",
+        "caption": "Fig. 2 · Matthews, 1995",
+        "anims": [
+          {
+            "target": "espejo",
+            "effect": "slide-down",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "espejo",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.12,
+            "delay": 0.5
+          },
+          {
+            "target": "gato",
+            "effect": "slide-right",
+            "delay": 0.1,
+            "dur": 0.55
+          },
+          {
+            "target": "gato_cola",
+            "effect": "sway",
+            "origin": "bottom-right",
+            "amount": 0.5,
+            "delay": 0.4
+          },
+          {
+            "target": "gato_ojos",
+            "effect": "blink",
+            "delay": 0.9
+          },
+          {
+            "target": "tsuerte",
+            "effect": "pop",
+            "trigger": "mala",
+            "sfx": "pop"
+          },
+          {
+            "target": "aspa",
+            "effect": "pop",
+            "trigger": "suerte",
+            "sfx": "sello"
+          },
+          {
+            "target": "aspa",
+            "effect": "punch",
+            "trigger": "suerte",
+            "amount": 0.4
+          },
+          {
+            "target": "rm",
+            "effect": "slide-left",
+            "trigger": "físico",
+            "dur": 0.55,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "piz",
+            "effect": "slide-down",
+            "trigger": "físico",
+            "dur": 0.5
+          },
+          {
+            "target": "dibtiza",
+            "effect": "fade",
+            "trigger": "Robert",
+            "dur": 0.4
+          },
+          {
+            "target": "tnombre",
+            "effect": "pop",
+            "trigger": "Robert",
+            "sfx": "pop"
+          },
+          {
+            "target": "rm_brazo_izq",
+            "effect": "move",
+            "trigger": "Matthews",
+            "rotate": 10,
+            "origin": "top-right",
+            "dur": 0.5
+          },
+          {
+            "target": "revista",
+            "effect": "slide-up",
+            "trigger": "calculó",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "revista",
+            "effect": "float",
+            "trigger": "calculó",
+            "amount": 0.15
+          },
+          {
+            "target": "t30",
+            "effect": "pop",
+            "trigger": "treinta",
+            "sfx": "ding"
+          },
+          {
+            "target": "t30",
+            "effect": "punch",
+            "trigger": "años",
+            "amount": 0.35
+          },
+          {
+            "target": "rm_cabeza",
+            "effect": "move",
+            "trigger": "hace",
+            "rotate": -5,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "rm_ojos",
+            "effect": "blink",
+            "delay": 1.0
+          },
+          {
+            "target": "rm_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.25,
+            "delay": 0.55
+          },
+          {
+            "target": "rm",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.2
+          },
+          {
+            "target": "rm",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "delay": 0.30000000000000004
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Empieza a *girar*",
+      "narration": "Al resbalar del borde de la mesa, la tostada empieza a girar.",
+      "illustration": {
+        "svg_file": "girar_free.svg",
+        "layout": "free",
+        "caption": "Fig. 3 · El borde",
+        "anims": [
+          {
+            "target": "mesa",
+            "effect": "slide-right",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tost",
+            "effect": "slide-down",
+            "delay": 0.15,
+            "dur": 0.45,
+            "sfx": "pop"
+          },
+          {
+            "target": "tost",
+            "effect": "move",
+            "trigger": "resbalar",
+            "to": [
+              190,
+              0
+            ],
+            "dur": 0.9
+          },
+          {
+            "target": "tost_r",
+            "effect": "move",
+            "trigger": "borde",
+            "rotate": 8,
+            "origin": "center",
+            "dur": 0.5
+          },
+          {
+            "target": "tborde",
+            "effect": "pop",
+            "trigger": "borde",
+            "sfx": "pop"
+          },
+          {
+            "target": "peso",
+            "effect": "draw",
+            "trigger": "mesa",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tpeso",
+            "effect": "pop",
+            "trigger": "mesa"
+          },
+          {
+            "target": "fant0",
+            "effect": "pop",
+            "trigger": "tostada",
+            "sfx": "pop"
+          },
+          {
+            "target": "fant1",
+            "effect": "pop",
+            "trigger": "empieza"
+          },
+          {
+            "target": "fant2",
+            "effect": "pop",
+            "trigger": "girar"
+          },
+          {
+            "target": "giro",
+            "effect": "draw",
+            "trigger": "empieza",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tgira",
+            "effect": "pop",
+            "trigger": "girar",
+            "sfx": "ding"
+          },
+          {
+            "target": "tgira",
+            "effect": "float",
+            "trigger": "girar",
+            "amount": 0.3
+          },
+          {
+            "target": "tost_r",
+            "effect": "wiggle",
+            "trigger": "empieza",
+            "origin": "center",
+            "amount": 0.25
+          }
+        ],
+        "height": 860
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Solo *media vuelta*",
+      "narration": "Pero una mesa normal es baja: solo le da tiempo a dar media vuelta. Y media vuelta es mantequilla abajo.",
+      "illustration": {
+        "svg_file": "media_full.svg",
+        "layout": "full",
+        "caption": "Fig. 4 · La caída",
+        "anims": [
+          {
+            "target": "mesa",
+            "effect": "slide-right",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "f0",
+            "effect": "slide-down",
+            "delay": 0.1,
+            "dur": 0.45
+          },
+          {
+            "target": "regla",
+            "effect": "grow",
+            "trigger": "mesa",
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "tnormal",
+            "effect": "pop",
+            "trigger": "normal",
+            "sfx": "pop"
+          },
+          {
+            "target": "regla",
+            "effect": "punch",
+            "trigger": "baja",
+            "amount": 0.3
+          },
+          {
+            "target": "f1",
+            "effect": "pop",
+            "trigger": "solo",
+            "sfx": "pop"
+          },
+          {
+            "target": "f2",
+            "effect": "pop",
+            "trigger": "tiempo",
+            "sfx": "pop"
+          },
+          {
+            "target": "f3",
+            "effect": "pop",
+            "trigger": "dar",
+            "sfx": "pop"
+          },
+          {
+            "target": "arco",
+            "effect": "draw",
+            "trigger": "media",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "f4",
+            "effect": "pop",
+            "trigger": "media",
+            "sfx": "boing"
+          },
+          {
+            "target": "s180",
+            "effect": "pop",
+            "trigger": "vuelta",
+            "sfx": "sello"
+          },
+          {
+            "target": "s180",
+            "effect": "punch",
+            "trigger": "vuelta",
+            "amount": 0.4
+          },
+          {
+            "target": "mancha",
+            "effect": "pop",
+            "trigger": "vuelta es",
+            "sfx": "pop"
+          },
+          {
+            "target": "f4",
+            "effect": "punch",
+            "trigger": "vuelta es",
+            "amount": 0.35
+          },
+          {
+            "target": "tabajo",
+            "effect": "pop",
+            "trigger": "mantequilla",
+            "sfx": "pop"
+          },
+          {
+            "target": "tabajo",
+            "effect": "punch",
+            "trigger": "abajo",
+            "amount": 0.35
+          },
+          {
+            "target": "arco",
+            "effect": "flow",
+            "trigger": "abajo",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Mesa de *tres metros*",
+      "narration": "Para que cayera del lado bueno, la mesa tendría que medir unos tres metros.",
+      "illustration": {
+        "svg_file": "tres_free.svg",
+        "layout": "free",
+        "caption": "Fig. 5 · Vuelta entera",
+        "anims": [
+          {
+            "target": "escalera",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "senor",
+            "effect": "slide-up",
+            "delay": 0.15,
+            "dur": 0.55
+          },
+          {
+            "target": "mesaG",
+            "effect": "grow",
+            "trigger": "cayera",
+            "origin": "bottom",
+            "dur": 0.9,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "t0",
+            "effect": "punch",
+            "trigger": "bueno",
+            "amount": 0.35
+          },
+          {
+            "target": "v0",
+            "effect": "pop",
+            "trigger": "tendría",
+            "sfx": "pop"
+          },
+          {
+            "target": "giro",
+            "effect": "draw",
+            "trigger": "tendría",
+            "dur": 0.9,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "v1",
+            "effect": "pop",
+            "trigger": "medir",
+            "sfx": "pop"
+          },
+          {
+            "target": "altura",
+            "effect": "draw",
+            "trigger": "medir",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "altura2",
+            "effect": "draw",
+            "trigger": "medir",
+            "dur": 0.5
+          },
+          {
+            "target": "v2",
+            "effect": "pop",
+            "trigger": "unos",
+            "sfx": "pop"
+          },
+          {
+            "target": "t3m",
+            "effect": "pop",
+            "trigger": "unos",
+            "sfx": "ding"
+          },
+          {
+            "target": "v3",
+            "effect": "pop",
+            "trigger": "tres",
+            "sfx": "boing"
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "metros",
+            "sfx": "ding"
+          },
+          {
+            "target": "ok",
+            "effect": "pulse",
+            "trigger": "metros",
+            "amount": 0.6
+          },
+          {
+            "target": "senor_brazo_der",
+            "effect": "wiggle",
+            "trigger": "medir",
+            "origin": "bottom-left",
+            "amount": 0.6
+          },
+          {
+            "target": "senor_cabeza",
+            "effect": "move",
+            "trigger": "tres",
+            "rotate": 6,
+            "origin": "bottom",
+            "dur": 0.4
+          },
+          {
+            "target": "senor_ojos",
+            "effect": "blink",
+            "delay": 0.8
+          },
+          {
+            "target": "senor_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.25,
+            "delay": 0.6499999999999999
+          },
+          {
+            "target": "senor",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.3
+          },
+          {
+            "target": "senor",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "delay": 0.4
+          }
+        ],
+        "height": 1000
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Lo comprobaron los *niños*",
+      "narration": "Más de mil escolares británicos lo probaron: cayó del lado de la mantequilla casi dos de cada tres veces.",
+      "illustration": {
+        "svg_file": "ninos.svg",
+        "layout": "panel",
+        "caption": "Fig. 6 · Experimento escolar",
+        "anims": [
+          {
+            "target": "nino",
+            "effect": "slide-right",
+            "delay": 0.0,
+            "dur": 0.55,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mesaN",
+            "effect": "slide-right",
+            "delay": 0.05,
+            "dur": 0.5
+          },
+          {
+            "target": "tn",
+            "effect": "slide-down",
+            "delay": 0.2,
+            "dur": 0.45
+          },
+          {
+            "target": "ninos",
+            "effect": "pop",
+            "trigger": "mil",
+            "sfx": "pop"
+          },
+          {
+            "target": "ninos",
+            "effect": "bob",
+            "trigger": "escolares",
+            "amount": 0.25
+          },
+          {
+            "target": "nino_brazo_der",
+            "effect": "move",
+            "trigger": "probaron",
+            "rotate": -12,
+            "origin": "top-left",
+            "dur": 0.4
+          },
+          {
+            "target": "tn",
+            "effect": "move",
+            "trigger": "probaron",
+            "to": [
+              10,
+              160
+            ],
+            "dur": 0.55,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tn_r",
+            "effect": "move",
+            "trigger": "probaron",
+            "rotate": 180,
+            "origin": "center",
+            "dur": 0.55
+          },
+          {
+            "target": "plafn",
+            "effect": "pop",
+            "trigger": "cayó",
+            "sfx": "boing"
+          },
+          {
+            "target": "plafn",
+            "effect": "wiggle",
+            "trigger": "cayó",
+            "amount": 0.35
+          },
+          {
+            "target": "c0",
+            "effect": "pop",
+            "trigger": "casi",
+            "sfx": "pop"
+          },
+          {
+            "target": "c1",
+            "effect": "pop",
+            "trigger": "dos",
+            "sfx": "pop"
+          },
+          {
+            "target": "c2",
+            "effect": "pop",
+            "trigger": "cada",
+            "sfx": "pop"
+          },
+          {
+            "target": "t23",
+            "effect": "pop",
+            "trigger": "tres",
+            "sfx": "ding"
+          },
+          {
+            "target": "t23",
+            "effect": "punch",
+            "trigger": "veces",
+            "amount": 0.35
+          },
+          {
+            "target": "nino_cabeza",
+            "effect": "move",
+            "trigger": "casi",
+            "rotate": -6,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "cmil_0",
+            "effect": "fade",
+            "trigger": "Más",
+            "dur": 0.12
+          },
+          {
+            "target": "cmil_1",
+            "effect": "fade",
+            "trigger": "de",
+            "dur": 0.12
+          },
+          {
+            "target": "cmil_0",
+            "effect": "hide",
+            "trigger": "de"
+          },
+          {
+            "target": "cmil_2",
+            "effect": "fade",
+            "trigger": "mil",
+            "dur": 0.12
+          },
+          {
+            "target": "cmil_1",
+            "effect": "hide",
+            "trigger": "mil"
+          },
+          {
+            "target": "cmil",
+            "effect": "fade",
+            "trigger": "escolares",
+            "dur": 0.12,
+            "sfx": "ding"
+          },
+          {
+            "target": "cmil_2",
+            "effect": "hide",
+            "trigger": "escolares"
+          },
+          {
+            "target": "nino_ojos",
+            "effect": "blink",
+            "delay": 0.9
+          },
+          {
+            "target": "nino_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.25,
+            "delay": 0.5
+          },
+          {
+            "target": "nino",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.15
+          },
+          {
+            "target": "nino",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "delay": 0.25
+          }
+        ]
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "2001, REINO UNIDO",
+          "tone": "ink",
+          "trigger": "británicos",
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Dale un *manotazo*",
+      "narration": "La mantequilla apenas pesa: pasaría igual sin ella. Su consejo: si cae, dale un manotazo.",
+      "mascot": {
+        "trigger": "si cae",
+        "pose": "point",
+        "note": "¡Dale un manotazo!",
+        "side": "right"
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "LA MANTEQUILLA APENAS PESA",
+          "tone": "ink",
+          "trigger": "apenas",
+          "sfx": "pop"
+        },
+        {
+          "type": "stamp",
+          "text": "IGUAL SIN ELLA",
+          "tone": "hot",
+          "trigger": "igual",
+          "sfx": "sello"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Cuántas tostadas has perdido tú así?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Cuántas *tostadas* has perdido tú así?",
+          "trigger": "¿Cuántas"
+        }
+      ]
+    }
+  ]
+}
