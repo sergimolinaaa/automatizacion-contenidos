@@ -95,6 +95,51 @@
     "carpeta": null
   },
   {
+    "fecha": "2026-11-05",
+    "tema": "¿Por qué tu móvil se apaga con el 20 %? (guion: semana-2026-11-02, lote10-04-movil-20)",
+    "carpeta": null
+  },
+  {
+    "fecha": "2026-11-06",
+    "tema": "¿Por qué la pantalla no responde con guantes? (guion: semana-2026-11-02, lote10-05-guantes-pantalla)",
+    "carpeta": null
+  },
+  {
+    "fecha": "2026-11-07",
+    "tema": "¿Por qué te da calambre al tocar el coche? (guion: semana-2026-11-02, lote10-06-calambre-coche)",
+    "carpeta": null
+  },
+  {
+    "fecha": "2026-11-08",
+    "tema": "¿Por qué se empañan por dentro los cristales del coche? (guion: semana-2026-11-02, lote10-07-cristal-empanado)",
+    "carpeta": null
+  },
+  {
+    "fecha": "2026-11-09",
+    "tema": "¿Por qué el coche eléctrico pierde autonomía con frío? (guion: semana-2026-11-02, lote10-08-electrico-frio)",
+    "carpeta": null
+  },
+  {
+    "fecha": "2026-11-10",
+    "tema": "¿Por qué la carga rápida se frena al 80 %? (guion: semana-2026-11-02, lote10-09-carga-80)",
+    "carpeta": null
+  },
+  {
+    "fecha": "2026-11-11",
+    "tema": "Abstención, voto en blanco o nulo: ¿a quién le sirve? (guion: semana-2026-11-02, lote10-10-abstencion)",
+    "carpeta": null
+  },
+  {
+    "fecha": "2026-11-12",
+    "tema": "¿Por qué tu hipoteca sube o baja? (YA MONTADO: lote8-05-hipoteca, movido)",
+    "carpeta": "lote8-05-hipoteca"
+  },
+  {
+    "fecha": "2026-11-13",
+    "tema": "¿Cuánto puede gastar un partido en campaña? (YA MONTADO: lote8-09-gasto-campana, movido al inicio de la campaña)",
+    "carpeta": "lote8-09-gasto-campana"
+  },
+  {
     "fecha": "2026-11-28",
     "tema": "Noche electoral: cómo se cuentan los votos en tu mesa",
     "carpeta": null

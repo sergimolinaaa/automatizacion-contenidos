@@ -5,7 +5,7 @@
 - Elecciones: SOLO cómo funciona el sistema (voto en blanco, escaños, fechas). NUNCA programas ni propuestas de partidos.
 - Curiosidades visuales «¿cómo es posible?» (piedras que se mueven, palomitas…).
 - Responder preguntas de comentarios (el de los escalofríos rindió muy por encima de la media).
-- 2 vídeos al día (14:00 calendario, 21:00 extra), el mismo en las 3 redes. `publish.py` impide más de 2 al día. (Prueba desde el 16-oct: comparar media y total con la semana de 1 al día.)
+- 1 vídeo al día a las 14:00 (desde el 26-oct; la prueba de 2 al día del 16 al 27-oct se paró por coste). `publish.py` impide más de 1 al día.
 
 ### Datos de views (capturas del 25-oct, últimas 2 semanas)
 - Éxitos en las 3 redes: voto en blanco (IG 16,6K, TikTok 8.152), D'Hondt «mismos votos, otro resultado» (TikTok 6.650, IG 2.684), piel de gallina (TikTok 5.363).

@@ -17,8 +17,8 @@ Empieza SIEMPRE leyendo `estado.md` (qué está guionizado, montado, programado 
 ## Reglas que nunca se rompen
 - Calidad de guion, ilustración y animación al nivel de `content/lote3-01-zapatero` y `content/lote6-03-voto-en-blanco`.
 - Nunca un momento vacío; nunca más de 3 s sin que algo aparezca, se mueva o cambie.
-- 2 vídeos al día, el mismo en las 3 redes: 14:00 el del calendario (`publish.at`) y 21:00 uno extra de `data/temas.json`
-  (sin `publish.at`; va a la primera franja libre). `publish.py` impide más de 2 al día.
+- 1 vídeo al día (desde el 26-oct, por coste), el mismo en las 3 redes, a las 14:00: el del calendario (`publish.at`).
+  Los temas «extra» ya guionizados pasan a ocupar días del calendario. `publish.py` impide más de 1 al día.
 - Elecciones: solo cómo funciona el sistema, neutral, nunca programas de partidos. Partidos con su nombre y colores reales.
   Frase entera y variada, p. ej. «Te lo explicamos sin posicionarnos, simplemente con los datos publicados.»
 - Marcas y logotipos reales permitidos (aunque parezca anuncio). Precios o cifras estimadas valen si se dice que no están confirmados al 100 %.
