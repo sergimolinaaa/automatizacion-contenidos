@@ -1,0 +1,1406 @@
+{
+  "topic": "¿Por qué te da miedo la oscuridad? Dependemos de la vista, la noche era de los depredadores (ataques de leones en Tanzania tras la luna llena, PLoS ONE 2011), el cerebro rellena con amenazas y casi la mitad de los universitarios que dormían mal lo admitió (Carney, SLEEP 2012)",
+  "categoria": "psicologia",
+  "title": "¿Por qué te da miedo la oscuridad? Culpa de tus antepasados",
+  "source": "Fuentes: PLoS ONE · Live Science · National Geographic · ScienceAlert · AASM",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué da miedo la *oscuridad*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-31T14:00:00+01:00",
+    "caption": "¿Por qué te da miedo la oscuridad? Vivimos de la vista, y de noche cazaban los leones: en Tanzania sus ataques eran más frecuentes en las noches más oscuras (PLoS ONE 2011). Tu cerebro rellena lo que no ve con amenazas. Feliz Halloween. ¿Tú duermes con alguna luz encendida?",
+    "description": "¿Por qué te da miedo la oscuridad? Los humanos dependemos sobre todo de la vista, y durante miles de años la noche fue el momento de los depredadores. Un estudio publicado en PLoS ONE (2011) con cientos de ataques de leones en Tanzania vio que eran de dos a cuatro veces más frecuentes en los días tras la luna llena, cuando el anochecer es más oscuro. Por eso, cuando no ve, el cerebro rellena los huecos con amenazas. Y no es cosa de niños: en un estudio piloto de la Universidad Ryerson (2012), casi la mitad de los universitarios que dormían mal admitió miedo a la oscuridad. Fuentes: ScienceAlert, Live Science, National Geographic, American Academy of Sleep Medicine. ¿Tú duermes con alguna luz encendida?",
+    "hashtags": [
+      "halloween",
+      "miedo",
+      "psicologia",
+      "cerebro",
+      "curiosidades"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Un *monstruo*?",
+      "narration": "¿Apagas la luz y cualquier ruido parece un monstruo?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · A oscuras",
+        "anims": [
+          {
+            "target": "nina",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.5,
+            "phase": 0.2
+          },
+          {
+            "target": "ninaN_ojos",
+            "effect": "blink",
+            "delay": 0.35
+          },
+          {
+            "target": "ninaN_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.25,
+            "delay": 0.2
+          },
+          {
+            "target": "ninaS",
+            "effect": "hide"
+          },
+          {
+            "target": "perch_abrigo",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.08,
+            "delay": 0.4
+          },
+          {
+            "target": "sw_tecla",
+            "effect": "move",
+            "delay": 0.0,
+            "to": [
+              0,
+              41
+            ],
+            "dur": 0.05
+          },
+          {
+            "target": "mano",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mano",
+            "effect": "move",
+            "trigger": "Apagas",
+            "to": [
+              0,
+              -26
+            ],
+            "dur": 0.22
+          },
+          {
+            "target": "sw_tecla",
+            "effect": "move",
+            "trigger": "Apagas",
+            "to": [
+              0,
+              -41
+            ],
+            "dur": 0.25,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "mano",
+            "effect": "move",
+            "trigger": "luz",
+            "to": [
+              0,
+              300
+            ],
+            "dur": 0.7
+          },
+          {
+            "target": "velo",
+            "effect": "fade",
+            "trigger": "luz",
+            "dur": 0.4
+          },
+          {
+            "target": "ondas",
+            "effect": "pop",
+            "trigger": "cualquier",
+            "origin": "left",
+            "sfx": "pop"
+          },
+          {
+            "target": "ondas",
+            "effect": "pulse",
+            "trigger": "cualquier",
+            "amount": 0.7
+          },
+          {
+            "target": "cric",
+            "effect": "pop",
+            "trigger": "ruido",
+            "sfx": "boing"
+          },
+          {
+            "target": "cric",
+            "effect": "wiggle",
+            "trigger": "ruido",
+            "amount": 0.4
+          },
+          {
+            "target": "ninaN_cabeza",
+            "effect": "move",
+            "trigger": "ruido",
+            "rotate": -7,
+            "origin": "bottom",
+            "dur": 0.45
+          },
+          {
+            "target": "monstruo",
+            "effect": "fade",
+            "trigger": "parece",
+            "dur": 0.5
+          },
+          {
+            "target": "monstruo",
+            "effect": "sway",
+            "trigger": "parece",
+            "origin": "bottom",
+            "amount": 0.08
+          },
+          {
+            "target": "monstruo_ojos",
+            "effect": "pop",
+            "trigger": "monstruo",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "monstruo_ojos",
+            "effect": "pulse",
+            "trigger": "monstruo",
+            "amount": 0.8
+          },
+          {
+            "target": "ninaN",
+            "effect": "hide",
+            "trigger": "monstruo"
+          },
+          {
+            "target": "ninaS",
+            "effect": "fade",
+            "trigger": "monstruo",
+            "dur": 0.15
+          },
+          {
+            "target": "ninaS_ojos",
+            "effect": "blink",
+            "delay": 3.0
+          },
+          {
+            "target": "cama_manta",
+            "effect": "move",
+            "trigger": "monstruo",
+            "to": [
+              0,
+              -48
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "nina",
+            "effect": "shake",
+            "trigger": "monstruo",
+            "amount": 0.3
+          },
+          {
+            "target": "temb",
+            "effect": "pop",
+            "trigger": "monstruo"
+          },
+          {
+            "target": "temb",
+            "effect": "wiggle",
+            "trigger": "monstruo",
+            "amount": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Vivimos de la *vista*",
+      "narration": "Los humanos dependemos sobre todo de la vista. A oscuras, perdemos nuestro mejor sentido.",
+      "illustration": {
+        "svg_file": "vista_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 2 · La vista",
+        "anims": [
+          {
+            "target": "ojo",
+            "effect": "pop",
+            "delay": 0.0,
+            "dur": 0.5
+          },
+          {
+            "target": "ojo",
+            "effect": "blink",
+            "delay": 1.2
+          },
+          {
+            "target": "ojo_iris",
+            "effect": "move",
+            "delay": 0.5,
+            "to": [
+              34,
+              -6
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "ojo_brillo",
+            "effect": "pulse",
+            "amount": 0.4,
+            "delay": 0.6
+          },
+          {
+            "target": "ojo_iris",
+            "effect": "move",
+            "trigger": "vista",
+            "to": [
+              -34,
+              6
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "velo",
+            "effect": "hide"
+          },
+          {
+            "target": "duda",
+            "effect": "hide"
+          },
+          {
+            "target": "x",
+            "effect": "hide"
+          },
+          {
+            "target": "b0",
+            "effect": "grow",
+            "delay": 0.35,
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "i0",
+            "effect": "pop",
+            "delay": 0.45
+          },
+          {
+            "target": "b1",
+            "effect": "grow",
+            "delay": 0.42,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "i1",
+            "effect": "pop",
+            "delay": 0.52
+          },
+          {
+            "target": "b2",
+            "effect": "grow",
+            "delay": 0.49,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "i2",
+            "effect": "pop",
+            "delay": 0.5900000000000001
+          },
+          {
+            "target": "b3",
+            "effect": "grow",
+            "delay": 0.56,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "i3",
+            "effect": "pop",
+            "delay": 0.66
+          },
+          {
+            "target": "b4",
+            "effect": "grow",
+            "delay": 0.63,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "i4",
+            "effect": "pop",
+            "delay": 0.73
+          },
+          {
+            "target": "b0",
+            "effect": "punch",
+            "trigger": "sobre",
+            "amount": 0.3
+          },
+          {
+            "target": "i0",
+            "effect": "pulse",
+            "trigger": "todo",
+            "amount": 0.6
+          },
+          {
+            "target": "velo",
+            "effect": "fade",
+            "trigger": "oscuras",
+            "dur": 0.4,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "perdemos",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "wiggle",
+            "trigger": "perdemos",
+            "amount": 0.4
+          },
+          {
+            "target": "x",
+            "effect": "pop",
+            "trigger": "mejor",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "b0",
+            "effect": "shake",
+            "trigger": "sentido",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "La noche era *peligrosa*",
+      "narration": "Para nuestros antepasados, la noche era peligrosa: es cuando cazan depredadores como los leones.",
+      "illustration": {
+        "svg_file": "sabana_full.svg",
+        "layout": "full",
+        "caption": "Fig. 3 · La sabana de noche",
+        "anims": [
+          {
+            "target": "fuego_llama",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.6
+          },
+          {
+            "target": "fuego_llama",
+            "effect": "pulse",
+            "amount": 0.35,
+            "phase": 0.3
+          },
+          {
+            "target": "fuego_llama_in",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.9,
+            "phase": 0.55
+          },
+          {
+            "target": "fuego_brillo",
+            "effect": "pulse",
+            "amount": 0.25,
+            "phase": 0.2
+          },
+          {
+            "target": "fuego_chispas",
+            "effect": "float",
+            "amount": 0.8
+          },
+          {
+            "target": "acacia_copa",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.08
+          },
+          {
+            "target": "hierba",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.12,
+            "delay": 0.2
+          },
+          {
+            "target": "padreG",
+            "effect": "slide-right",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "ninoG",
+            "effect": "slide-up",
+            "delay": 0.12,
+            "dur": 0.5
+          },
+          {
+            "target": "madreG",
+            "effect": "slide-left",
+            "delay": 0.2,
+            "dur": 0.5
+          },
+          {
+            "target": "padre",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.0
+          },
+          {
+            "target": "padre_ojos",
+            "effect": "blink",
+            "delay": 0.6
+          },
+          {
+            "target": "padre_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.25,
+            "delay": 0.44999999999999996
+          },
+          {
+            "target": "padre",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "delay": 0.3
+          },
+          {
+            "target": "padre_brazo_izq",
+            "effect": "sway",
+            "origin": "top-right",
+            "amount": 0.18,
+            "delay": 0.5
+          },
+          {
+            "target": "padre_brazo_der",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.12,
+            "delay": 0.85
+          },
+          {
+            "target": "nino",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.35
+          },
+          {
+            "target": "nino_ojos",
+            "effect": "blink",
+            "delay": 0.9
+          },
+          {
+            "target": "nino_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3,
+            "delay": 0.75
+          },
+          {
+            "target": "nino",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "delay": 0.6499999999999999
+          },
+          {
+            "target": "nino_brazo_izq",
+            "effect": "sway",
+            "origin": "top-right",
+            "amount": 0.18,
+            "delay": 0.85
+          },
+          {
+            "target": "nino_brazo_der",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.12,
+            "delay": 1.2
+          },
+          {
+            "target": "madre",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.7
+          },
+          {
+            "target": "madre_ojos",
+            "effect": "blink",
+            "delay": 1.3
+          },
+          {
+            "target": "madre_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.2,
+            "delay": 1.1500000000000001
+          },
+          {
+            "target": "madre",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "delay": 1.0
+          },
+          {
+            "target": "madre_brazo_izq",
+            "effect": "sway",
+            "origin": "top-right",
+            "amount": 0.18,
+            "delay": 1.2
+          },
+          {
+            "target": "madre_brazo_der",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.12,
+            "delay": 1.5499999999999998
+          },
+          {
+            "target": "tant",
+            "effect": "pop",
+            "trigger": "antepasados",
+            "sfx": "pop"
+          },
+          {
+            "target": "tant",
+            "effect": "float",
+            "trigger": "antepasados",
+            "amount": 0.2
+          },
+          {
+            "target": "fuego",
+            "effect": "punch",
+            "trigger": "noche",
+            "amount": 0.15
+          },
+          {
+            "target": "leona",
+            "effect": "hide"
+          },
+          {
+            "target": "ojosh",
+            "effect": "pop",
+            "trigger": "peligrosa",
+            "sfx": "brillo"
+          },
+          {
+            "target": "ojosh",
+            "effect": "pulse",
+            "trigger": "peligrosa",
+            "amount": 0.8
+          },
+          {
+            "target": "ojosh",
+            "effect": "hide",
+            "trigger": "depredadores"
+          },
+          {
+            "target": "leona",
+            "effect": "fade",
+            "trigger": "depredadores",
+            "dur": 0.5
+          },
+          {
+            "target": "leona_ojos",
+            "effect": "pulse",
+            "trigger": "depredadores",
+            "amount": 0.8
+          },
+          {
+            "target": "leona_cuerpo",
+            "effect": "breathe",
+            "trigger": "depredadores",
+            "amount": 0.5
+          },
+          {
+            "target": "leona_cola",
+            "effect": "sway",
+            "trigger": "depredadores",
+            "origin": "left",
+            "amount": 0.5
+          },
+          {
+            "target": "tdep",
+            "effect": "pop",
+            "trigger": "depredadores",
+            "sfx": "pop"
+          },
+          {
+            "target": "leona",
+            "effect": "move",
+            "trigger": "como",
+            "to": [
+              -36,
+              0
+            ],
+            "dur": 1.2
+          },
+          {
+            "target": "leona_cabeza",
+            "effect": "move",
+            "trigger": "leones",
+            "rotate": -4,
+            "origin": "right",
+            "dur": 0.6
+          },
+          {
+            "target": "alerta",
+            "effect": "pop",
+            "trigger": "leones",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "alerta",
+            "effect": "pulse",
+            "trigger": "leones",
+            "amount": 0.7
+          },
+          {
+            "target": "madre_cabeza",
+            "effect": "move",
+            "trigger": "cazan",
+            "rotate": 7,
+            "origin": "bottom",
+            "dur": 0.55
+          },
+          {
+            "target": "nino_cabeza",
+            "effect": "move",
+            "trigger": "leones",
+            "rotate": 6,
+            "origin": "bottom",
+            "dur": 0.55
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Más ataques a *oscuras*",
+      "narration": "En Tanzania, un estudio de cientos de ataques de leones vio que se disparaban tras la luna llena, cuando anochece más oscuro.",
+      "illustration": {
+        "svg_file": "tanzania_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 4 · Leones y luna",
+        "anims": [
+          {
+            "target": "mapa",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mapa_tz",
+            "effect": "hide"
+          },
+          {
+            "target": "mapa_tz",
+            "effect": "pop",
+            "trigger": "Tanzania",
+            "sfx": "pop"
+          },
+          {
+            "target": "mapa_tz",
+            "effect": "pulse",
+            "trigger": "Tanzania",
+            "amount": 0.4
+          },
+          {
+            "target": "ttz",
+            "effect": "pop",
+            "trigger": "Tanzania"
+          },
+          {
+            "target": "cnt_0",
+            "effect": "pop",
+            "delay": 0.15
+          },
+          {
+            "target": "tat",
+            "effect": "slide-up",
+            "trigger": "ataques",
+            "dur": 0.4
+          },
+          {
+            "target": "leon",
+            "effect": "pop",
+            "trigger": "leones",
+            "sfx": "pop"
+          },
+          {
+            "target": "leon",
+            "effect": "wiggle",
+            "trigger": "leones",
+            "amount": 0.3
+          },
+          {
+            "target": "cnt_1",
+            "effect": "hide"
+          },
+          {
+            "target": "cnt_2",
+            "effect": "hide"
+          },
+          {
+            "target": "cnt_3",
+            "effect": "hide"
+          },
+          {
+            "target": "cnt_4",
+            "effect": "hide"
+          },
+          {
+            "target": "cnt",
+            "effect": "hide"
+          },
+          {
+            "target": "cnt_0",
+            "effect": "hide",
+            "trigger": "cientos"
+          },
+          {
+            "target": "cnt_1",
+            "effect": "pop",
+            "trigger": "cientos",
+            "dur": 0.2
+          },
+          {
+            "target": "cnt_1",
+            "effect": "hide",
+            "trigger": "de ataques"
+          },
+          {
+            "target": "cnt_2",
+            "effect": "pop",
+            "trigger": "de ataques",
+            "dur": 0.2
+          },
+          {
+            "target": "cnt_2",
+            "effect": "hide",
+            "trigger": "ataques"
+          },
+          {
+            "target": "cnt_3",
+            "effect": "pop",
+            "trigger": "ataques",
+            "dur": 0.2
+          },
+          {
+            "target": "cnt_3",
+            "effect": "hide",
+            "trigger": "de leones"
+          },
+          {
+            "target": "cnt_4",
+            "effect": "pop",
+            "trigger": "de leones",
+            "dur": 0.2
+          },
+          {
+            "target": "cnt_4",
+            "effect": "hide",
+            "trigger": "vio"
+          },
+          {
+            "target": "cnt",
+            "effect": "pop",
+            "trigger": "vio",
+            "dur": 0.2,
+            "sfx": "ding"
+          },
+          {
+            "target": "cnt",
+            "effect": "pulse",
+            "trigger": "vio",
+            "amount": 0.3
+          },
+          {
+            "target": "luna0",
+            "effect": "pop",
+            "trigger": "un"
+          },
+          {
+            "target": "luna0",
+            "effect": "float",
+            "trigger": "un",
+            "amount": 0.15,
+            "phase": 0.0
+          },
+          {
+            "target": "luna1",
+            "effect": "pop",
+            "trigger": "estudio"
+          },
+          {
+            "target": "luna1",
+            "effect": "float",
+            "trigger": "estudio",
+            "amount": 0.15,
+            "phase": 0.2
+          },
+          {
+            "target": "luna2",
+            "effect": "pop",
+            "trigger": "cientos"
+          },
+          {
+            "target": "luna2",
+            "effect": "float",
+            "trigger": "cientos",
+            "amount": 0.15,
+            "phase": 0.4
+          },
+          {
+            "target": "luna3",
+            "effect": "pop",
+            "trigger": "ataques"
+          },
+          {
+            "target": "luna3",
+            "effect": "float",
+            "trigger": "ataques",
+            "amount": 0.15,
+            "phase": 0.6000000000000001
+          },
+          {
+            "target": "luna4",
+            "effect": "pop",
+            "trigger": "leones"
+          },
+          {
+            "target": "luna4",
+            "effect": "float",
+            "trigger": "leones",
+            "amount": 0.15,
+            "phase": 0.8
+          },
+          {
+            "target": "bar0",
+            "effect": "grow",
+            "trigger": "vio",
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "bar1",
+            "effect": "grow",
+            "trigger": "que",
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "bar2",
+            "effect": "grow",
+            "trigger": "se",
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "bar3",
+            "effect": "grow",
+            "trigger": "disparaban",
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "bar4",
+            "effect": "grow",
+            "trigger": "tras",
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "tdesp",
+            "effect": "pop",
+            "trigger": "disparaban",
+            "sfx": "pop"
+          },
+          {
+            "target": "tllena",
+            "effect": "pop",
+            "trigger": "luna",
+            "sfx": "pop"
+          },
+          {
+            "target": "luna2",
+            "effect": "punch",
+            "trigger": "llena",
+            "amount": 0.3
+          },
+          {
+            "target": "bar4",
+            "effect": "punch",
+            "trigger": "cuando",
+            "amount": 0.15
+          },
+          {
+            "target": "cielo",
+            "effect": "fade",
+            "trigger": "anochece",
+            "dur": 0.4
+          },
+          {
+            "target": "rel",
+            "effect": "pop",
+            "trigger": "anochece",
+            "sfx": "pop"
+          },
+          {
+            "target": "rel_minutero",
+            "effect": "spin",
+            "trigger": "más",
+            "origin": "bottom",
+            "amount": 0.4
+          },
+          {
+            "target": "cielo",
+            "effect": "pulse",
+            "trigger": "oscuro",
+            "amount": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "El cerebro *rellena*",
+      "narration": "Por eso, a oscuras, tu cerebro rellena los huecos con amenazas: mejor asustarse de más.",
+      "illustration": {
+        "svg_file": "rellena_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 5 · Mejor pasarse",
+        "anims": [
+          {
+            "target": "cabG",
+            "effect": "slide-right",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cabG",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.08,
+            "delay": 0.5
+          },
+          {
+            "target": "bal0",
+            "effect": "slide-up",
+            "delay": 0.2,
+            "dur": 0.5
+          },
+          {
+            "target": "bal1",
+            "effect": "hide"
+          },
+          {
+            "target": "hueco",
+            "effect": "pop",
+            "trigger": "oscuras",
+            "sfx": "pop"
+          },
+          {
+            "target": "hueco",
+            "effect": "pulse",
+            "trigger": "oscuras",
+            "amount": 0.15
+          },
+          {
+            "target": "garras",
+            "effect": "pop",
+            "trigger": "rellena",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "garras",
+            "effect": "wiggle",
+            "trigger": "rellena",
+            "amount": 0.3
+          },
+          {
+            "target": "thueco",
+            "effect": "slide-up",
+            "trigger": "rellena",
+            "dur": 0.4
+          },
+          {
+            "target": "ojos0",
+            "effect": "pop",
+            "trigger": "huecos",
+            "sfx": "pop"
+          },
+          {
+            "target": "ojos0",
+            "effect": "blink",
+            "delay": 3.2
+          },
+          {
+            "target": "ojos1",
+            "effect": "pop",
+            "trigger": "con"
+          },
+          {
+            "target": "ojos1",
+            "effect": "blink",
+            "delay": 3.9
+          },
+          {
+            "target": "colmillos",
+            "effect": "pop",
+            "trigger": "amenazas",
+            "sfx": "pop"
+          },
+          {
+            "target": "colmillos",
+            "effect": "bob",
+            "trigger": "amenazas",
+            "amount": 0.3
+          },
+          {
+            "target": "tmejor",
+            "effect": "pop",
+            "trigger": "mejor",
+            "sfx": "pop"
+          },
+          {
+            "target": "bal0",
+            "effect": "hide",
+            "trigger": "asustarse"
+          },
+          {
+            "target": "bal1",
+            "effect": "fade",
+            "trigger": "asustarse",
+            "dur": 0.25,
+            "sfx": "boing"
+          },
+          {
+            "target": "bal1",
+            "effect": "punch",
+            "trigger": "más",
+            "amount": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "No es cosa de *niños*",
+      "narration": "Y no es cosa de niños: en un estudio canadiense, casi la mitad de los universitarios que dormían mal admitió ese miedo.",
+      "illustration": {
+        "svg_file": "adultos_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 6 · Estudio piloto",
+        "anims": [
+          {
+            "target": "cama2G",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "uniG",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.5,
+            "phase": 0.3
+          },
+          {
+            "target": "uni_ojos",
+            "effect": "blink",
+            "delay": 0.6
+          },
+          {
+            "target": "uniG",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.1,
+            "delay": 0.4
+          },
+          {
+            "target": "luna_c",
+            "effect": "pop",
+            "trigger": "cosa",
+            "sfx": "pop"
+          },
+          {
+            "target": "luna_c",
+            "effect": "float",
+            "trigger": "cosa",
+            "amount": 0.25
+          },
+          {
+            "target": "tpiloto",
+            "effect": "pop",
+            "trigger": "estudio",
+            "sfx": "pop"
+          },
+          {
+            "target": "canada",
+            "effect": "slide-right",
+            "trigger": "canadiense",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "canada",
+            "effect": "sway",
+            "trigger": "canadiense",
+            "origin": "left",
+            "amount": 0.4
+          },
+          {
+            "target": "tcan",
+            "effect": "pop",
+            "trigger": "canadiense"
+          },
+          {
+            "target": "arco",
+            "effect": "draw",
+            "trigger": "casi",
+            "dur": 1.2,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tmitad",
+            "effect": "pop",
+            "trigger": "mitad",
+            "sfx": "pop"
+          },
+          {
+            "target": "tuni",
+            "effect": "pop",
+            "trigger": "universitarios",
+            "sfx": "pop"
+          },
+          {
+            "target": "tmal",
+            "effect": "slide-up",
+            "trigger": "dormían",
+            "dur": 0.4
+          },
+          {
+            "target": "uniG",
+            "effect": "shake",
+            "trigger": "miedo",
+            "amount": 0.25
+          },
+          {
+            "target": "tmitad",
+            "effect": "punch",
+            "trigger": "admitió",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Feliz *Halloween*",
+      "narration": "Esta noche de Halloween, si te asustas a oscuras, no eres miedica: es instinto.",
+      "mascot": {
+        "trigger": "miedica",
+        "pose": "cheer",
+        "note": "¡Feliz Halloween!",
+        "side": "right"
+      },
+      "illustration": {
+        "svg_file": "halloween_free.svg",
+        "layout": "free",
+        "height": 640,
+        "caption": "Fig. 7 · Halloween",
+        "anims": [
+          {
+            "target": "cala",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cala_luz",
+            "effect": "pulse",
+            "amount": 0.5,
+            "delay": 0.3
+          },
+          {
+            "target": "cala_tallo",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3,
+            "delay": 0.5
+          },
+          {
+            "target": "luna",
+            "effect": "float",
+            "amount": 0.2
+          },
+          {
+            "target": "fanN",
+            "effect": "slide-left",
+            "delay": 0.1,
+            "dur": 0.55
+          },
+          {
+            "target": "fanN_tela",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.2,
+            "delay": 0.4
+          },
+          {
+            "target": "fanN_ojos",
+            "effect": "blink",
+            "delay": 0.9
+          },
+          {
+            "target": "fanN_cuerpo",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "delay": 0.2
+          },
+          {
+            "target": "fanS",
+            "effect": "hide"
+          },
+          {
+            "target": "sombra",
+            "effect": "grow",
+            "trigger": "Halloween",
+            "origin": "bottom",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "sombra",
+            "effect": "sway",
+            "trigger": "Halloween",
+            "origin": "bottom",
+            "amount": 0.1
+          },
+          {
+            "target": "fanN",
+            "effect": "hide",
+            "trigger": "asustas"
+          },
+          {
+            "target": "fanS",
+            "effect": "fade",
+            "trigger": "asustas",
+            "dur": 0.15
+          },
+          {
+            "target": "fanS",
+            "effect": "shake",
+            "trigger": "asustas",
+            "amount": 0.4
+          },
+          {
+            "target": "fanS_tela",
+            "effect": "sway",
+            "trigger": "asustas",
+            "origin": "top",
+            "amount": 0.3
+          },
+          {
+            "target": "alerta",
+            "effect": "pop",
+            "trigger": "oscuras",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "alerta",
+            "effect": "pulse",
+            "trigger": "oscuras",
+            "amount": 0.6
+          },
+          {
+            "target": "tinst",
+            "effect": "pop",
+            "trigger": "instinto",
+            "sfx": "ding"
+          },
+          {
+            "target": "tinst",
+            "effect": "punch",
+            "trigger": "instinto",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Tú duermes con alguna luz encendida?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Tú duermes con alguna *luz* encendida?",
+          "trigger": "¿Tú"
+        }
+      ]
+    }
+  ]
+}

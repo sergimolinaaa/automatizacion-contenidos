@@ -6,7 +6,7 @@ Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→os
 
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
-- `svg/objetos/politica.py · mente.py · sueno.py · casa.py · frio.py · compra.py · reptiles.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py · memoria.py` — piezas por tema ya aprobadas.
+- `svg/objetos/politica.py · noche.py · mente.py · sueno.py · casa.py · frio.py · compra.py · reptiles.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py · memoria.py` — piezas por tema ya aprobadas.
 - `recetas.md` — bloques JSON de animación listos para pegar (caída, crecer, antes/después, zoom, contador, globo, cascada, flecha, sello, pulso).
 - `catalogo.py` — `python3 libreria/catalogo.py salida.png` → todas las piezas en una imagen (+ `.svg`, `.html`).
 
@@ -234,6 +234,14 @@ Truco: para que el ala «se incline», dibújala a 0° y anímala con `move` `ro
 ## objetos/nervios.py (nervios, hormigueo, pierna dormida)
 `pierna_nervio(id_, x0, cy, L, s, piel, pres)` (pierna sentada de perfil con nervio amarillo y vaso rojo bajo la piel; versiones `_nervio`/`_nervio_apl` y `_vaso`/`_vaso_apl` (estrechados en `pres`) para hide/fade; .puntos presion/apriete/rodilla/tobillo/contorno) · `pierna_encima(id_, x0, y0, x1, y1)` → (espinilla, muslo) de la pierna cruzada encima · `vaso_tubo` / `nervio_tubo(id_, x0, x1, cy, r, estrecho)` (corte con fibras) · `haz_fibras(id_, x0, x1, cy, h, n)` (fibras apagadas `_f<i>` y encendidas `_on<i>` para fade a destiempo) · `rodilla_lateral(id_, cx, cy, s)` (huesos y nervio peroneo `_nervio` para draw; .puntos peroneo) · `nervio_lupa(cx, cy, r)` (contenido para lupa) · `globulo`, `burbuja_o2`, `hormiga` (`_patas` wiggle), `aguja` (pinchazo), `corcho()` (textura).
 
+## objetos/noche.py (miedo a la oscuridad, sabana de noche, Halloween)
+`ojo(id_, cx, cy, w, iris)` (ojo realista de frente: blink en `{id}`, `_iris` move para mirar, `_brillo`) · `icono_sentido(id_, cx, cy, r, tipo="ojo|oreja|nariz|lengua|mano")` ·
+`interruptor(id_, cx, cy, s)` (`_tecla`: move [0, 46*s] = apagar) + `mano_indice(id_, x, y, s, piel, manga, ang)` (yema en (x, y), `_dedo`) · `perchero(id_, cx, base, h)` (abrigo y sombrero en `_abrigo`) ·
+`sombra_monstruo(id_, cx, top, h)` (sombra en la pared con ojos amarillos `_ojos` y boca `_boca`) · `acacia(id_, cx, base, h)` (`_copa` sway) · `matas(id_, x0, x1, base, alto, n)` (hierba alta delante de lo que se esconde) ·
+fondo `sabana_noche(W, H, suelo_y, luna=(x, y))` · `hoguera(id_, cx, base, w)` (`_llama`, `_llama_in`, `_brillo`, `_chispas`) · `leona(id_, cx, base, s)` (agazapada mirando a la izquierda: `_cuerpo`, `_cabeza`, `_ojos` brillantes, `_cola` sway origin left; .puntos ojos) ·
+`cabeza_leon(id_, cx, cy, r)` (icono) · `mapa_africa(id_, cx, cy, w)` (Tanzania en `_tz`; .puntos tanzania) · `fase_luna(id_, cx, cy, r, fase)` (0 nueva, 0.25 cuarto creciente, 0.5 llena, 0.75 cuarto menguante) ·
+`bandera_canada(id_, cx, cy, w, h)` + `hoja_arce(cx, cy, s)` · `calabaza(id_, cx, base, w)` (Halloween tallada: `_luz` pulse, `_tallo`) · `fantasma(id_, cx, base, h, susto)` (sábana: `_tela`, `_cuerpo`, `_ojos`).
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -302,3 +310,4 @@ lote9-01-sacudida-dormir (archivo/sacudida-dormir/dib.py): sueno.py (cama de lad
 lote9-04-tripa-ruge (archivo/tripa-ruge/dib.py): aparato digestivo, estómago en corte e interior del intestino (cuerpo.py); escoba, tambor, tubo de pasta, columna griega y pergamino (casa.py).
 lote9-03-precio-kilo (archivo/precio-kilo/dib.py y guion.py): etiqueta_lineal, paquete y rollo_papel (tienda.py).
 lote9-05-cosquillas (archivo/cosquillas/dib.py): mente.py (pivote, pluma, bola de cristal, engranaje, barra de volumen, cara de cerebro) y brazo_robot (tecnologia.py).
+lote9-06-miedo-oscuridad (archivo/miedo-oscuridad/dib.py y guion.py): noche.py (ojo, sentidos, interruptor, perchero, sombra de monstruo, sabana, acacia, hoguera, leona, mapa de África, fases de la luna, bandera de Canadá, calabaza, fantasma).
