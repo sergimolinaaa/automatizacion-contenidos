@@ -681,6 +681,17 @@
         "tiktok": "6adec5bf3d5b27036b084e49",
         "instagram": "6adec5bf0b5343d07007e1d0"
       }
+    },
+    {
+      "slug": "lote9-03-precio-kilo",
+      "category": "consumo",
+      "due": "2026-10-28T13:00:00+00:00",
+      "url": "https://github.com/sergimolinaaa/automatizacion-contenidos/releases/download/v-lote9-03-precio-kilo/lote9-03-precio-kilo-con-voz.mp4",
+      "posts": {
+        "youtube": "6adec7fd6887a2efc13cd980",
+        "tiktok": "6adec7fd3d5b27036b08d220",
+        "instagram": "6adec7fe3d5b27036b08d24c"
+      }
     }
   ]
 }
