@@ -1,0 +1,1285 @@
+{
+  "topic": "Pack ahorro que sale más caro: el precio por unidad de medida obligatorio en la etiqueta (kilo, litro, lavado, rollo) y el estudio de la OCU",
+  "categoria": "consumo",
+  "title": "¿El pack ahorro sale más caro? Mira el precio por kilo",
+  "source": "Fuentes: BOE (RD 3423/2000) · OCU · Consumoteca · Deia",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Pack ahorro más caro: mira el *precio por kilo*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-28T14:00:00+01:00",
+    "caption": "¿El pack ahorro sale más caro? Mira el número pequeño de la etiqueta: el precio por kilo o por litro, obligatorio en España (Real Decreto 3423/2000). La OCU vio formatos grandes hasta un 82 % más caros por unidad. ¿Qué pack ahorro te ha engañado a ti?",
+    "description": "¿El pack ahorro sale más caro? En España la etiqueta debe mostrar dos precios: el del paquete y el precio por unidad de medida, normalmente por kilo o por litro (Real Decreto 3423/2000). Ese número pequeño es el que te dice qué sale más barato de verdad. La OCU encontró formatos grandes que, por unidad, costaban hasta un 82 % más que los pequeños, sobre todo en hipermercados. Si te venden como ahorro algo que no lo es, haz una foto y pide la hoja de reclamaciones. Fuentes: BOE, OCU, Consumoteca, Deia. ¿Qué pack ahorro te ha engañado a ti?",
+    "hashtags": [
+      "supermercado",
+      "ahorro",
+      "consumo",
+      "compras",
+      "ocu"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Pack *ahorro?*",
+      "narration": "¿Coges el pack ahorro porque sale más barato? Quizá pagas más.",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · El pack ahorro",
+        "anims": [
+          {
+            "target": "h_risa",
+            "effect": "hide"
+          },
+          {
+            "target": "h_sorpresa",
+            "effect": "hide"
+          },
+          {
+            "target": "hombre",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.16,
+            "delay": 0.1
+          },
+          {
+            "target": "hombreB",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.25
+          },
+          {
+            "target": "carro",
+            "effect": "slide-right",
+            "delay": 0.0,
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "carro_ruedas",
+            "effect": "wiggle",
+            "amount": 0.25,
+            "delay": 0.6
+          },
+          {
+            "target": "baldaG",
+            "effect": "slide-left",
+            "delay": 0.05,
+            "dur": 0.5
+          },
+          {
+            "target": "pack",
+            "effect": "slide-left",
+            "delay": 0.05,
+            "dur": 0.5
+          },
+          {
+            "target": "precio1",
+            "effect": "slide-left",
+            "delay": 0.15,
+            "dur": 0.5
+          },
+          {
+            "target": "pack_cinta",
+            "effect": "pulse",
+            "amount": 0.35,
+            "delay": 0.6
+          },
+          {
+            "target": "h_neutral_ojos",
+            "effect": "blink",
+            "delay": 0.5
+          },
+          {
+            "target": "h_neutral_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.28,
+            "delay": 0.35
+          },
+          {
+            "target": "h_neutral_brazo_der",
+            "effect": "wiggle",
+            "origin": "top-left",
+            "amount": 0.12,
+            "delay": 0.9
+          },
+          {
+            "target": "h_neutral_brazo_izq",
+            "effect": "move",
+            "trigger": "barato",
+            "rotate": 14,
+            "origin": "top-right",
+            "dur": 0.5
+          },
+          {
+            "target": "h_neutral_brazo_izq",
+            "effect": "move",
+            "trigger": "Quizá",
+            "rotate": -14,
+            "origin": "top-right",
+            "dur": 0.6
+          },
+          {
+            "target": "h_neutral_cabeza",
+            "effect": "move",
+            "trigger": "pack",
+            "rotate": 5,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "h_neutral_cabeza",
+            "effect": "move",
+            "trigger": "pagas",
+            "rotate": -9,
+            "origin": "bottom",
+            "dur": 0.4
+          },
+          {
+            "target": "h_risa_ojos",
+            "effect": "blink",
+            "delay": 0.6
+          },
+          {
+            "target": "h_risa_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.28,
+            "delay": 0.35
+          },
+          {
+            "target": "h_risa_brazo_der",
+            "effect": "wiggle",
+            "origin": "top-left",
+            "amount": 0.12,
+            "delay": 0.9
+          },
+          {
+            "target": "h_risa_brazo_izq",
+            "effect": "move",
+            "trigger": "barato",
+            "rotate": 14,
+            "origin": "top-right",
+            "dur": 0.5
+          },
+          {
+            "target": "h_risa_brazo_izq",
+            "effect": "move",
+            "trigger": "Quizá",
+            "rotate": -14,
+            "origin": "top-right",
+            "dur": 0.6
+          },
+          {
+            "target": "h_risa_cabeza",
+            "effect": "move",
+            "trigger": "pack",
+            "rotate": 5,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "h_risa_cabeza",
+            "effect": "move",
+            "trigger": "pagas",
+            "rotate": -9,
+            "origin": "bottom",
+            "dur": 0.4
+          },
+          {
+            "target": "h_sorpresa_ojos",
+            "effect": "blink",
+            "delay": 0.7
+          },
+          {
+            "target": "h_sorpresa_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.28,
+            "delay": 0.35
+          },
+          {
+            "target": "h_sorpresa_brazo_der",
+            "effect": "wiggle",
+            "origin": "top-left",
+            "amount": 0.12,
+            "delay": 0.9
+          },
+          {
+            "target": "h_sorpresa_brazo_izq",
+            "effect": "move",
+            "trigger": "barato",
+            "rotate": 14,
+            "origin": "top-right",
+            "dur": 0.5
+          },
+          {
+            "target": "h_sorpresa_brazo_izq",
+            "effect": "move",
+            "trigger": "Quizá",
+            "rotate": -14,
+            "origin": "top-right",
+            "dur": 0.6
+          },
+          {
+            "target": "h_sorpresa_cabeza",
+            "effect": "move",
+            "trigger": "pack",
+            "rotate": 5,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "h_sorpresa_cabeza",
+            "effect": "move",
+            "trigger": "pagas",
+            "rotate": -9,
+            "origin": "bottom",
+            "dur": 0.4
+          },
+          {
+            "target": "pack",
+            "effect": "move",
+            "trigger": "Coges",
+            "to": [
+              -90,
+              -110
+            ],
+            "rotate": -8,
+            "dur": 0.45,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "pack",
+            "effect": "move",
+            "trigger": "ahorro",
+            "to": [
+              -90,
+              470
+            ],
+            "rotate": 8,
+            "dur": 0.55,
+            "sfx": "boing"
+          },
+          {
+            "target": "carro",
+            "effect": "punch",
+            "trigger": "porque",
+            "amount": 0.15
+          },
+          {
+            "target": "h_neutral",
+            "effect": "hide",
+            "trigger": "barato"
+          },
+          {
+            "target": "h_risa",
+            "effect": "fade",
+            "trigger": "barato",
+            "dur": 0.15
+          },
+          {
+            "target": "brilla",
+            "effect": "pop",
+            "trigger": "barato",
+            "sfx": "brillo"
+          },
+          {
+            "target": "brilla",
+            "effect": "spin",
+            "trigger": "barato",
+            "amount": 0.2
+          },
+          {
+            "target": "precio1",
+            "effect": "punch",
+            "trigger": "sale",
+            "amount": 0.25
+          },
+          {
+            "target": "precio1",
+            "effect": "shake",
+            "trigger": "Quizá",
+            "amount": 0.5
+          },
+          {
+            "target": "precio1",
+            "effect": "hide",
+            "trigger": "pagas"
+          },
+          {
+            "target": "precio2",
+            "effect": "pop",
+            "trigger": "pagas",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "h_risa",
+            "effect": "hide",
+            "trigger": "pagas"
+          },
+          {
+            "target": "h_sorpresa",
+            "effect": "fade",
+            "trigger": "pagas",
+            "dur": 0.15
+          },
+          {
+            "target": "alerta",
+            "effect": "pop",
+            "trigger": "pagas",
+            "origin": "bottom"
+          },
+          {
+            "target": "alerta",
+            "effect": "wiggle",
+            "trigger": "pagas",
+            "amount": 0.5,
+            "origin": "bottom"
+          },
+          {
+            "target": "brilla",
+            "effect": "hide",
+            "trigger": "Quizá"
+          },
+          {
+            "target": "ups",
+            "effect": "pop",
+            "trigger": "pagas",
+            "sfx": "pop"
+          },
+          {
+            "target": "ups",
+            "effect": "float",
+            "trigger": "pagas",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Dos *precios*",
+      "narration": "En España la ley obliga a mostrar dos precios: el del paquete y el precio por unidad de medida.",
+      "illustration": {
+        "svg_file": "precios_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 2 · RD 3423/2000",
+        "anims": [
+          {
+            "target": "et",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.55,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "et",
+            "effect": "float",
+            "amount": 0.12,
+            "delay": 0.6
+          },
+          {
+            "target": "bandera",
+            "effect": "slide-down",
+            "trigger": "España",
+            "dur": 0.45
+          },
+          {
+            "target": "bandera",
+            "effect": "sway",
+            "trigger": "España",
+            "origin": "left",
+            "amount": 0.35
+          },
+          {
+            "target": "tesp",
+            "effect": "pop",
+            "trigger": "España"
+          },
+          {
+            "target": "boe",
+            "effect": "slide-right",
+            "trigger": "ley",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "boe",
+            "effect": "float",
+            "trigger": "ley",
+            "amount": 0.15
+          },
+          {
+            "target": "oblig",
+            "effect": "pop",
+            "trigger": "obliga",
+            "sfx": "sello"
+          },
+          {
+            "target": "oblig",
+            "effect": "punch",
+            "trigger": "obliga",
+            "amount": 0.4
+          },
+          {
+            "target": "et_precio",
+            "effect": "pop",
+            "trigger": "precios",
+            "sfx": "pop"
+          },
+          {
+            "target": "et_unidad",
+            "effect": "hide"
+          },
+          {
+            "target": "n1",
+            "effect": "pop",
+            "trigger": "paquete",
+            "sfx": "pop"
+          },
+          {
+            "target": "n1",
+            "effect": "bob",
+            "trigger": "paquete",
+            "amount": 0.3
+          },
+          {
+            "target": "et_precio",
+            "effect": "punch",
+            "trigger": "paquete",
+            "amount": 0.25
+          },
+          {
+            "target": "et_unidad",
+            "effect": "pop",
+            "trigger": "unidad",
+            "sfx": "pop"
+          },
+          {
+            "target": "n2",
+            "effect": "pop",
+            "trigger": "unidad",
+            "sfx": "pop"
+          },
+          {
+            "target": "n2",
+            "effect": "bob",
+            "trigger": "unidad",
+            "amount": 0.3
+          },
+          {
+            "target": "tuni",
+            "effect": "pop",
+            "trigger": "medida",
+            "sfx": "ding"
+          },
+          {
+            "target": "et_unidad",
+            "effect": "pulse",
+            "trigger": "medida",
+            "amount": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "El número *pequeño*",
+      "narration": "Es el número pequeño: lo que cuesta el kilo, el litro, el lavado o el rollo.",
+      "illustration": {
+        "svg_file": "pequeno_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 3 · Precio por unidad",
+        "anims": [
+          {
+            "target": "et",
+            "effect": "slide-down",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "et",
+            "effect": "float",
+            "amount": 0.1,
+            "delay": 0.5
+          },
+          {
+            "target": "lupaG",
+            "effect": "slide-left",
+            "delay": 0.25,
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "lupaG",
+            "effect": "sway",
+            "origin": "bottom-right",
+            "amount": 0.25,
+            "delay": 0.85
+          },
+          {
+            "target": "lupaG",
+            "effect": "punch",
+            "trigger": "pequeño",
+            "amount": 0.3,
+            "sfx": "ding"
+          },
+          {
+            "target": "tcuesta",
+            "effect": "pop",
+            "trigger": "cuesta",
+            "sfx": "pop"
+          },
+          {
+            "target": "ikilo",
+            "effect": "pop",
+            "trigger": "kilo",
+            "sfx": "pop"
+          },
+          {
+            "target": "ikilo_t",
+            "effect": "slide-up",
+            "trigger": "kilo",
+            "dur": 0.35
+          },
+          {
+            "target": "ikilo",
+            "effect": "sway",
+            "trigger": "kilo",
+            "origin": "bottom",
+            "amount": 0.15
+          },
+          {
+            "target": "ilitro",
+            "effect": "pop",
+            "trigger": "litro",
+            "sfx": "pop"
+          },
+          {
+            "target": "ilitro_t",
+            "effect": "slide-up",
+            "trigger": "litro",
+            "dur": 0.35
+          },
+          {
+            "target": "ilitro",
+            "effect": "sway",
+            "trigger": "litro",
+            "origin": "bottom",
+            "amount": 0.18
+          },
+          {
+            "target": "ilavado",
+            "effect": "pop",
+            "trigger": "lavado",
+            "sfx": "pop"
+          },
+          {
+            "target": "ilavado_t",
+            "effect": "slide-up",
+            "trigger": "lavado",
+            "dur": 0.35
+          },
+          {
+            "target": "ilavado",
+            "effect": "sway",
+            "trigger": "lavado",
+            "origin": "bottom",
+            "amount": 0.14
+          },
+          {
+            "target": "irollo",
+            "effect": "pop",
+            "trigger": "rollo",
+            "sfx": "pop"
+          },
+          {
+            "target": "irollo_t",
+            "effect": "slide-up",
+            "trigger": "rollo",
+            "dur": 0.35
+          },
+          {
+            "target": "irollo",
+            "effect": "sway",
+            "trigger": "rollo",
+            "origin": "bottom",
+            "amount": 0.16
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Compara con la *misma regla*",
+      "narration": "Imagina: el paquete pequeño, a dos euros el kilo. El grande, a dos con cincuenta. Gana el pequeño.",
+      "illustration": {
+        "svg_file": "compara_full.svg",
+        "layout": "full",
+        "caption": "Fig. 4 · Ejemplo inventado",
+        "anims": [
+          {
+            "target": "baldaG",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.45
+          },
+          {
+            "target": "pq",
+            "effect": "slide-up",
+            "delay": 0.05,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "gr",
+            "effect": "slide-up",
+            "delay": 0.2,
+            "dur": 0.55
+          },
+          {
+            "target": "tej",
+            "effect": "pop",
+            "delay": 0.3
+          },
+          {
+            "target": "tregla",
+            "effect": "pop",
+            "trigger": "Imagina",
+            "sfx": "pop"
+          },
+          {
+            "target": "tregla",
+            "effect": "float",
+            "trigger": "Imagina",
+            "amount": 0.2
+          },
+          {
+            "target": "pq",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.08,
+            "delay": 0.6
+          },
+          {
+            "target": "gr",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.06,
+            "delay": 0.9
+          },
+          {
+            "target": "pq",
+            "effect": "punch",
+            "trigger": "paquete",
+            "amount": 0.3
+          },
+          {
+            "target": "gr_cinta",
+            "effect": "pulse",
+            "trigger": "grande",
+            "amount": 0.4
+          },
+          {
+            "target": "gr",
+            "effect": "punch",
+            "trigger": "grande",
+            "amount": 0.2
+          },
+          {
+            "target": "tacha",
+            "effect": "draw",
+            "trigger": "cincuenta",
+            "dur": 0.45,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "copa",
+            "effect": "slide-down",
+            "trigger": "Gana",
+            "dur": 0.5,
+            "sfx": "ding"
+          },
+          {
+            "target": "copa",
+            "effect": "float",
+            "trigger": "Gana",
+            "amount": 0.25
+          },
+          {
+            "target": "copa_brillo",
+            "effect": "pulse",
+            "trigger": "Gana",
+            "amount": 0.8
+          },
+          {
+            "target": "conf",
+            "effect": "pop",
+            "trigger": "Gana el pequeño",
+            "sfx": "brillo"
+          },
+          {
+            "target": "conf",
+            "effect": "drift",
+            "trigger": "Gana el pequeño",
+            "amount": 0.5
+          },
+          {
+            "target": "cpq_0",
+            "effect": "fade",
+            "trigger": "dos",
+            "dur": 0.12
+          },
+          {
+            "target": "cpq_1",
+            "effect": "fade",
+            "trigger": "euros",
+            "dur": 0.12
+          },
+          {
+            "target": "cpq_0",
+            "effect": "hide",
+            "trigger": "euros"
+          },
+          {
+            "target": "cpq_2",
+            "effect": "fade",
+            "trigger": "el kilo",
+            "dur": 0.12
+          },
+          {
+            "target": "cpq_1",
+            "effect": "hide",
+            "trigger": "el kilo"
+          },
+          {
+            "target": "cpq",
+            "effect": "fade",
+            "trigger": "kilo",
+            "dur": 0.12,
+            "sfx": "ding"
+          },
+          {
+            "target": "cpq_2",
+            "effect": "hide",
+            "trigger": "kilo"
+          },
+          {
+            "target": "cgr_0",
+            "effect": "fade",
+            "trigger": "El grande",
+            "dur": 0.12
+          },
+          {
+            "target": "cgr_1",
+            "effect": "fade",
+            "trigger": "grande",
+            "dur": 0.12
+          },
+          {
+            "target": "cgr_0",
+            "effect": "hide",
+            "trigger": "grande"
+          },
+          {
+            "target": "cgr_2",
+            "effect": "fade",
+            "trigger": "dos con",
+            "dur": 0.12
+          },
+          {
+            "target": "cgr_1",
+            "effect": "hide",
+            "trigger": "dos con"
+          },
+          {
+            "target": "cgr_3",
+            "effect": "fade",
+            "trigger": "con",
+            "dur": 0.12
+          },
+          {
+            "target": "cgr_2",
+            "effect": "hide",
+            "trigger": "con"
+          },
+          {
+            "target": "cgr",
+            "effect": "fade",
+            "trigger": "cincuenta",
+            "dur": 0.12,
+            "sfx": "ding"
+          },
+          {
+            "target": "cgr_3",
+            "effect": "hide",
+            "trigger": "cincuenta"
+          },
+          {
+            "target": "cpq",
+            "effect": "pulse",
+            "trigger": "Gana",
+            "amount": 0.5
+          },
+          {
+            "target": "cgr",
+            "effect": "shake",
+            "trigger": "cincuenta",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Hasta un *82 %* más",
+      "narration": "La OCU encontró formatos grandes hasta un ochenta y dos por ciento más caros por unidad que los pequeños.",
+      "illustration": {
+        "svg_file": "ocu_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 5 · OCU, formatos ahorro",
+        "anims": [
+          {
+            "target": "eje",
+            "effect": "draw",
+            "delay": 0.0,
+            "dur": 0.5
+          },
+          {
+            "target": "ppq",
+            "effect": "slide-up",
+            "delay": 0.1,
+            "dur": 0.45,
+            "sfx": "pop"
+          },
+          {
+            "target": "pgr",
+            "effect": "slide-up",
+            "delay": 0.3,
+            "dur": 0.5
+          },
+          {
+            "target": "doc",
+            "effect": "slide-right",
+            "delay": 0.05,
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "doc",
+            "effect": "float",
+            "amount": 0.12,
+            "delay": 0.6
+          },
+          {
+            "target": "lupaO",
+            "effect": "pop",
+            "trigger": "encontró",
+            "sfx": "pop"
+          },
+          {
+            "target": "lupaO",
+            "effect": "sway",
+            "trigger": "encontró",
+            "origin": "bottom-right",
+            "amount": 0.4
+          },
+          {
+            "target": "bnor",
+            "effect": "grow",
+            "trigger": "formatos",
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "tnor",
+            "effect": "pop",
+            "trigger": "formatos"
+          },
+          {
+            "target": "bgra",
+            "effect": "grow",
+            "trigger": "grandes",
+            "origin": "bottom",
+            "dur": 0.8,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "pgr",
+            "effect": "punch",
+            "trigger": "grandes",
+            "amount": 0.3
+          },
+          {
+            "target": "pgr",
+            "effect": "sway",
+            "trigger": "grandes",
+            "origin": "bottom",
+            "amount": 0.1
+          },
+          {
+            "target": "ppq",
+            "effect": "sway",
+            "trigger": "grandes",
+            "origin": "bottom",
+            "amount": 0.12
+          },
+          {
+            "target": "bgra",
+            "effect": "pulse",
+            "trigger": "caros",
+            "amount": 0.25
+          },
+          {
+            "target": "tuni",
+            "effect": "pop",
+            "trigger": "unidad",
+            "sfx": "pop"
+          },
+          {
+            "target": "ppq",
+            "effect": "punch",
+            "trigger": "pequeños",
+            "amount": 0.35
+          },
+          {
+            "target": "text",
+            "effect": "slide-right",
+            "trigger": "pequeños",
+            "dur": 0.4
+          },
+          {
+            "target": "text2",
+            "effect": "slide-right",
+            "trigger": "pequeños",
+            "dur": 0.5
+          },
+          {
+            "target": "c82_0",
+            "effect": "fade",
+            "trigger": "hasta",
+            "dur": 0.12
+          },
+          {
+            "target": "c82_1",
+            "effect": "fade",
+            "trigger": "un",
+            "dur": 0.12
+          },
+          {
+            "target": "c82_0",
+            "effect": "hide",
+            "trigger": "un"
+          },
+          {
+            "target": "c82_2",
+            "effect": "fade",
+            "trigger": "ochenta",
+            "dur": 0.12
+          },
+          {
+            "target": "c82_1",
+            "effect": "hide",
+            "trigger": "ochenta"
+          },
+          {
+            "target": "c82_3",
+            "effect": "fade",
+            "trigger": "dos",
+            "dur": 0.12
+          },
+          {
+            "target": "c82_2",
+            "effect": "hide",
+            "trigger": "dos"
+          },
+          {
+            "target": "c82",
+            "effect": "fade",
+            "trigger": "por ciento",
+            "dur": 0.12,
+            "sfx": "ding"
+          },
+          {
+            "target": "c82_3",
+            "effect": "hide",
+            "trigger": "por ciento"
+          },
+          {
+            "target": "c82",
+            "effect": "punch",
+            "trigger": "más caros",
+            "amount": 0.35
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Si no hay ahorro, *reclama*",
+      "narration": "Si te venden como ahorro algo que no lo es, pide la hoja de reclamaciones.",
+      "illustration": {
+        "svg_file": "reclama_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 6 · Foto y reclamación",
+        "anims": [
+          {
+            "target": "mujer",
+            "effect": "slide-left",
+            "delay": 0.0,
+            "dur": 0.55,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mujer",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.16,
+            "delay": 0.6
+          },
+          {
+            "target": "mujerB",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.6
+          },
+          {
+            "target": "movilG",
+            "effect": "slide-left",
+            "delay": 0.1,
+            "dur": 0.6
+          },
+          {
+            "target": "movilG",
+            "effect": "sway",
+            "origin": "bottom-left",
+            "amount": 0.18,
+            "delay": 0.75
+          },
+          {
+            "target": "mu_ojos",
+            "effect": "blink",
+            "delay": 0.7
+          },
+          {
+            "target": "mu_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3,
+            "delay": 0.9
+          },
+          {
+            "target": "packR",
+            "effect": "slide-up",
+            "delay": 0.05,
+            "dur": 0.5,
+            "sfx": "pop"
+          },
+          {
+            "target": "packR",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.1,
+            "delay": 0.6
+          },
+          {
+            "target": "packR_cinta",
+            "effect": "pulse",
+            "amount": 0.4,
+            "delay": 0.6
+          },
+          {
+            "target": "cartel",
+            "effect": "pop",
+            "delay": 0.2
+          },
+          {
+            "target": "cartel",
+            "effect": "punch",
+            "trigger": "venden",
+            "amount": 0.3,
+            "sfx": "pop"
+          },
+          {
+            "target": "cartel",
+            "effect": "pulse",
+            "trigger": "ahorro",
+            "amount": 0.6
+          },
+          {
+            "target": "packR",
+            "effect": "shake",
+            "trigger": "no",
+            "amount": 0.5
+          },
+          {
+            "target": "packR",
+            "effect": "hide",
+            "trigger": "pide"
+          },
+          {
+            "target": "flash",
+            "effect": "fade",
+            "trigger": "algo",
+            "dur": 0.1,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "flash",
+            "effect": "hide",
+            "trigger": "que"
+          },
+          {
+            "target": "foto",
+            "effect": "pop",
+            "trigger": "no"
+          },
+          {
+            "target": "falso",
+            "effect": "pop",
+            "trigger": "es",
+            "sfx": "sello"
+          },
+          {
+            "target": "falso",
+            "effect": "punch",
+            "trigger": "es",
+            "amount": 0.4
+          },
+          {
+            "target": "mu_cabeza",
+            "effect": "move",
+            "trigger": "pide",
+            "rotate": -7,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "hoja",
+            "effect": "slide-up",
+            "trigger": "pide",
+            "dur": 0.5,
+            "sfx": "papel"
+          },
+          {
+            "target": "hoja_c0",
+            "effect": "pop",
+            "trigger": "hoja",
+            "sfx": "pop"
+          },
+          {
+            "target": "hoja_c1",
+            "effect": "pop",
+            "trigger": "de"
+          },
+          {
+            "target": "boli",
+            "effect": "slide-down",
+            "trigger": "hoja",
+            "dur": 0.45
+          },
+          {
+            "target": "hoja_firma",
+            "effect": "draw",
+            "trigger": "reclamaciones",
+            "dur": 0.7,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "boli",
+            "effect": "move",
+            "trigger": "reclamaciones",
+            "to": [
+              95,
+              -10
+            ],
+            "rotate": -6,
+            "dur": 0.7
+          },
+          {
+            "target": "hoja",
+            "effect": "float",
+            "trigger": "reclamaciones",
+            "amount": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Mira el precio *pequeño*",
+      "narration": "No te fíes del precio grande: mira siempre el pequeño.",
+      "mascot": {
+        "trigger": "No",
+        "pose": "point",
+        "note": "¡Mira el €/kg!",
+        "side": "right"
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "PRECIO POR KILO",
+          "tone": "ink",
+          "trigger": "mira",
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Qué pack ahorro te ha engañado a ti?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Qué pack *ahorro* te ha engañado a ti?",
+          "trigger": "¿Qué"
+        }
+      ]
+    }
+  ]
+}

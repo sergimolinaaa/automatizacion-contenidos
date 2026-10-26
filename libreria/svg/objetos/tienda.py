@@ -285,3 +285,116 @@ def billete(id_, cx, cy, w=300, valor="50", rot_=0, col=None):
     s += T(x0 + w * 0.88, y0 + h * 0.86, valor, h * 0.16, INK, font=DISP)
     s += brillo(f"M {f(x0+12)} {f(y0+12)} L {f(x0+w*0.35)} {f(y0+12)}", 5, 0.6)
     return Pieza(gt(id_, f"rotate({f(rot_)} {f(cx)} {f(cy)})", s), {"centro": (cx, cy)}, (x0, y0, x0 + w, y0 + h))
+
+
+# ------------------------------------------------------------------ precio por unidad (lote9-03-precio-kilo)
+def etiqueta_lineal(id_, cx, cy, w=520, nombre="ARROZ 500 g", precio="4,50 €", unidad="9,00 €/kg", col=YEL,
+                    rot_=0, unidad_txt="PRECIO POR KG"):
+    """Etiqueta del lineal del súper como las de verdad: nombre del producto arriba, precio de venta GRANDE y debajo,
+    en pequeño, el precio por unidad de medida (€/kg, €/l, €/lavado…). Alto = 0.62w.
+    Sub-ids animables (sin transform): {id}_nombre, {id}_precio, {id}_unidad. .puntos: precio, unidad, centro."""
+    h = w * 0.62
+    x0, y0 = cx - w / 2, cy - h / 2
+    s = sombra_caja(x0, y0, w, h, 18, 12, 14, 0.26)
+    s += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="18" fill="url(#ticketG)" stroke="{INK}" stroke-width="7"/>'
+    # franja de color con el nombre
+    bh = h * 0.2
+    s += (f'<path d="M {f(x0+3.5)} {f(y0+bh)} L {f(x0+3.5)} {f(y0+18)} Q {f(x0+3.5)} {f(y0+3.5)} {f(x0+18)} {f(y0+3.5)} '
+          f'L {f(x0+w-18)} {f(y0+3.5)} Q {f(x0+w-3.5)} {f(y0+3.5)} {f(x0+w-3.5)} {f(y0+18)} L {f(x0+w-3.5)} {f(y0+bh)} Z" fill="{degradado(col, 0.18)}"/>')
+    s += f'<path d="M {f(x0)} {f(y0+bh)} L {f(x0+w)} {f(y0+bh)}" stroke="{INK}" stroke-width="5"/>'
+    s += g(f"{id_}_nombre" if id_ else None, T(cx, y0 + bh * 0.68, nombre, bh * 0.5, INK, font=DISP))
+    # precio grande
+    ps = min(h * 0.36, w * 0.9 / max(1, len(precio) * 0.78))
+    py = y0 + bh + h * 0.38
+    s += g(f"{id_}_precio" if id_ else None, T(cx, py + ps * 0.36, precio, ps, INK, font=DISP))
+    # precio por unidad: pequeño, abajo a la izquierda, en un recuadro
+    us = h * 0.085
+    uy = y0 + h - h * 0.13
+    uw = max(len(unidad), len(unidad_txt)) * us * 0.72 + 34
+    ux0 = x0 + 22
+    uni = (f'<rect x="{f(ux0)}" y="{f(uy-us*1.95)}" width="{f(uw)}" height="{f(us*2.75)}" rx="8" fill="#F1F3F8" stroke="{INK}" stroke-width="3"/>'
+           + T(ux0 + 17, uy - us * 0.95, unidad_txt, us * 0.72, "#5A6170", "start")
+           + T(ux0 + 17, uy + us * 0.45, unidad, us, INK, "start", MONO))
+    s += g(f"{id_}_unidad" if id_ else None, uni)
+    # código de barras
+    bx = x0 + w - 30
+    for i in range(16):
+        ww = 2 + (i * 7 % 5 == 0) * 3 + (i % 4 == 1) * 2
+        s += f'<rect x="{f(bx - i * 9)}" y="{f(uy-us*1.7)}" width="{ww}" height="{f(us*2.2)}" fill="{INK}"/>'
+    s += brillo(f"M {f(x0+18)} {f(y0+bh+16)} L {f(x0+w*0.5)} {f(y0+bh+16)}", 5, 0.8)
+    pts_ = {"precio": (cx, py), "unidad": (ux0 + uw / 2, uy - us * 0.6), "centro": (cx, cy)}
+    body = gt(id_, f"rotate({f(rot_)} {f(cx)} {f(cy)})", s) if rot_ else g(id_, s)
+    return Pieza(body, pts_, (x0, y0, x0 + w, y0 + h))
+
+
+def paquete(id_, cx, base, w=200, h=280, col="#F4F1E6", texto="ARROZ", peso="1 kg", cinta=None, banda=CORAL, rot_=0):
+    """Paquete blando de súper (arroz, legumbres, pasta) con cierre pinzado arriba, ventana con granos y peso.
+    `cinta` = texto de la cinta amarilla cruzada («PACK AHORRO»), en su sub-id {id}_cinta (para tacharla, pulse…).
+    Sub-ids: {id}_cinta. .puntos: cima, centro, cinta, base."""
+    x0, y0 = cx - w / 2, base - h
+    s = sombra(cx, base + 4, w * 0.56, max(8, w * 0.06), 0.24)
+    pinza = h * 0.1
+    d = (f"M {f(x0+w*0.06)} {f(y0+pinza)} L {f(x0+w*0.94)} {f(y0+pinza)} "
+         f"C {f(x0+w*1.02)} {f(y0+h*0.4)}, {f(x0+w*1.04)} {f(y0+h*0.75)}, {f(x0+w*0.98)} {f(base-8)} "
+         f"Q {f(x0+w*0.97)} {f(base)} {f(x0+w*0.88)} {f(base)} L {f(x0+w*0.12)} {f(base)} "
+         f"Q {f(x0+w*0.03)} {f(base)} {f(x0+w*0.02)} {f(base-8)} "
+         f"C {f(x0-w*0.04)} {f(y0+h*0.75)}, {f(x0-w*0.02)} {f(y0+h*0.4)}, {f(x0+w*0.06)} {f(y0+pinza)} Z")
+    s += f'<path d="{d}" fill="{degradado(col, 0.2, "h")}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+    # pinza dentada arriba
+    zz = " ".join(f"L {f(x0+w*0.06 + w*0.88*(i+0.5)/10)} {f(y0)} L {f(x0+w*0.06 + w*0.88*(i+1)/10)} {f(y0+pinza*0.5)}" for i in range(10))
+    s += f'<path d="M {f(x0+w*0.06)} {f(y0+pinza)} L {f(x0+w*0.06)} {f(y0+pinza*0.5)} {zz} L {f(x0+w*0.94)} {f(y0+pinza)} Z" fill="{shade(col, -0.12)}" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>'
+    # banda con la marca
+    by = y0 + h * 0.2
+    s += f'<rect x="{f(x0+w*0.04)}" y="{f(by)}" width="{f(w*0.92)}" height="{f(h*0.17)}" fill="{degradado(banda, 0.2)}" stroke="{INK}" stroke-width="4"/>'
+    s += T(cx, by + h * 0.125, texto, min(h * 0.1, w * 0.85 / max(1, len(texto) * 0.85)), "#FFFFFF", font=DISP)
+    # ventana con granos
+    wy, wh = y0 + h * 0.44, h * 0.3
+    s += f'<rect x="{f(cx-w*0.32)}" y="{f(wy)}" width="{f(w*0.64)}" height="{f(wh)}" rx="{f(w*0.08)}" fill="#FFFDF4" stroke="{INK}" stroke-width="4"/>'
+    rnd = random.Random(int(w + h))
+    gr = ""
+    for _ in range(int(w * h / 900)):
+        gx = cx + rnd.uniform(-w * 0.27, w * 0.27)
+        gy = wy + rnd.uniform(wh * 0.15, wh * 0.85)
+        gr += f'<ellipse cx="{f(gx)}" cy="{f(gy)}" rx="{f(w*0.022)}" ry="{f(w*0.011)}" transform="rotate({rnd.randint(0,180)} {f(gx)} {f(gy)})" fill="#EADFC4" stroke="#B8A57A" stroke-width="1.5"/>'
+    s += gr
+    s += T(cx, base - h * 0.08, peso, h * 0.075, INK, font=DISP)
+    s += brillo(f"M {f(x0+w*0.1)} {f(y0+h*0.2)} C {f(x0+w*0.04)} {f(y0+h*0.45)}, {f(x0+w*0.05)} {f(y0+h*0.7)}, {f(x0+w*0.1)} {f(base-h*0.1)}", max(4, w * 0.025), 0.7)
+    pc = (cx, y0 + h * 0.62)
+    if cinta:
+        cw_, ch_ = w * 1.12, h * 0.15
+        ccx, ccy = cx, y0 + h * 0.6
+        cin = (f'<g transform="rotate(-16 {f(ccx)} {f(ccy)})">'
+               f'<rect x="{f(ccx-cw_/2)}" y="{f(ccy-ch_/2)}" width="{f(cw_)}" height="{f(ch_)}" rx="6" fill="{degradado(YEL, 0.2)}" stroke="{INK}" stroke-width="6"/>'
+               + T(ccx, ccy + ch_ * 0.22, cinta, min(ch_ * 0.58, cw_ * 0.9 / max(1, len(cinta) * 0.8)), INK, font=DISP) + "</g>")
+        s += g(f"{id_}_cinta" if id_ else None, cin)
+        pc = (ccx, ccy)
+    pts_ = {"cima": (cx, y0), "centro": (cx, y0 + h / 2), "cinta": pc, "base": (cx, base)}
+    body = gt(id_, f"rotate({f(rot_)} {f(cx)} {f(base)})", s) if rot_ else g(id_, s)
+    return Pieza(body, pts_, (x0 - w * 0.06, y0, x0 + w * 1.06, base))
+
+
+def rollo_papel(id_, cx, base, s=1.0, col="#FFFFFF", dibujo="#8FD3FF"):
+    """Rollo de papel de cocina de pie (≈ 120×190 a s=1): cilindro con trepado, tubo de cartón arriba y una hoja
+    que cuelga por delante. Sin sub-ids."""
+    w, h = 120 * s, 190 * s
+    x0, y0 = cx - w / 2, base - h
+    ry = 16 * s
+    o = sombra(cx, base + 3, w * 0.6, 8 * s, 0.22)
+    o += (f'<path d="M {f(x0)} {f(y0+ry)} L {f(x0)} {f(base-ry)} A {f(w/2)} {f(ry)} 0 0 0 {f(x0+w)} {f(base-ry)} L {f(x0+w)} {f(y0+ry)} Z" '
+          f'fill="{degradado("#E9EDF4", 0.12, "h")}" stroke="{INK}" stroke-width="{f(6*s)}" stroke-linejoin="round"/>')
+    for k in range(1, 4):
+        yy = y0 + ry + (h - 2 * ry) * k / 4
+        o += f'<path d="M {f(x0+4*s)} {f(yy)} A {f(w/2)} {f(ry)} 0 0 0 {f(x0+w-4*s)} {f(yy)}" fill="none" stroke="#AEB8C9" stroke-width="{f(3*s)}" stroke-dasharray="{f(6*s)} {f(5*s)}"/>'
+    # dibujito del papel (florecitas)
+    for i, (dx, dy) in enumerate(((-0.22, 0.32), (0.18, 0.46), (-0.1, 0.68))):
+        o += f'<circle cx="{f(cx+dx*w)}" cy="{f(y0+dy*h)}" r="{f(7*s)}" fill="{dibujo}" opacity="0.8"/>'
+    # hoja que cuelga
+    o += (f'<path d="M {f(cx+w*0.08)} {f(y0+h*0.2)} L {f(x0+w+6*s)} {f(y0+h*0.24)} L {f(x0+w+10*s)} {f(y0+h*0.66)} '
+          f'L {f(cx+w*0.14)} {f(y0+h*0.62)} Z" fill="{col}" stroke="{INK}" stroke-width="{f(4.5*s)}" stroke-linejoin="round"/>')
+    o += f'<path d="M {f(cx+w*0.12)} {f(y0+h*0.62)} L {f(x0+w+10*s)} {f(y0+h*0.66)}" stroke="#AEB8C9" stroke-width="{f(3*s)}" stroke-dasharray="{f(5*s)} {f(4*s)}"/>'
+    # tapa de arriba con el tubo de cartón
+    o += f'<ellipse cx="{f(cx)}" cy="{f(y0+ry)}" rx="{f(w/2)}" ry="{f(ry)}" fill="{col}" stroke="{INK}" stroke-width="{f(6*s)}"/>'
+    o += f'<ellipse cx="{f(cx)}" cy="{f(y0+ry)}" rx="{f(w*0.2)}" ry="{f(ry*0.42)}" fill="#C98B55" stroke="{INK}" stroke-width="{f(4*s)}"/>'
+    o += f'<ellipse cx="{f(cx)}" cy="{f(y0+ry+1.5*s)}" rx="{f(w*0.13)}" ry="{f(ry*0.25)}" fill="#6B4423"/>'
+    o += brillo(f"M {f(x0+12*s)} {f(y0+ry+14*s)} L {f(x0+12*s)} {f(base-ry-10*s)}", 5 * s, 0.8)
+    return g(id_, o) if id_ else o

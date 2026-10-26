@@ -157,7 +157,9 @@ cada mitad gira sobre la columna (0 = patas abajo, 180 = boca arriba) y `doblez`
 `producto(tipo="caja|bote|botella|lata|brick", cx, base, s, col)` · `estanteria(id_, x0, x1, top, baldas, alto, seed, col)` (.puntos["baldas"] = y de cada balda para colgar precios) ·
 `carrito(id_, cx, base, w, col, lleno, espejo)` (`_compra`, `_ruedas`; .puntos asa/cesta; con `espejo=True` el asa queda a la izquierda, junto a `persona(brazos=(…, "coge"))`) ·
 `ticket(id_, cx, top, w, lineas=[(concepto, precio)], total, titulo)` (`_l<i>`, `_total` para cascada) ·
-`recta_numerica(id_, x0, x1, y, a, b, paso, etiquetas)` · `billete(id_, cx, cy, w, valor="50", rot_)` (billete de euro estilizado, color por valor; `_cifra`) (.puntos["x"](valor) → x, para poner marcadores) · `supermercado(W, H, suelo_y, seed, rotulo)` (fondo: pasillo con estantería llena y suelo de baldosas)
+`recta_numerica(id_, x0, x1, y, a, b, paso, etiquetas)` · `billete(id_, cx, cy, w, valor="50", rot_)` (billete de euro estilizado, color por valor; `_cifra`) (.puntos["x"](valor) → x, para poner marcadores) · `supermercado(W, H, suelo_y, seed, rotulo)` (fondo: pasillo con estantería llena y suelo de baldosas) ·
+`etiqueta_lineal(id_, cx, cy, w, nombre, precio, unidad)` (etiqueta del lineal: precio grande y debajo el precio por unidad de medida €/kg; `_nombre`, `_precio`, `_unidad` para pop; .puntos precio/unidad) ·
+`paquete(id_, cx, base, w, h, col, texto, peso, cinta="PACK AHORRO", banda)` (bolsa de arroz o legumbres con ventana de granos; cinta amarilla en `_cinta`; .puntos cima/centro/cinta) · `rollo_papel(id_, cx, base, s)` (papel de cocina)
 
 ## objetos/coches.py (coches, motor y física del giro)
 `deportivo_lateral(id_, cx, base, s, col="rojo", motor="centro|delante|detras", corte=True, logo=False, piloto=True, aleron=True)` (superdeportivo genérico de perfil
@@ -298,4 +300,5 @@ lote8-08-cambio-hora (archivo/cambio-hora/dib.py): tiempo.py (cama con persona d
 lote9-02-pierna-dormida (archivo/pierna-dormida/dib.py y guion.py): nervios.py.
 lote9-01-sacudida-dormir (archivo/sacudida-dormir/dib.py): sueno.py (cama de lado, durmiente en pijama, marioneta, árbol con rama, pierna en corte) y mono (animales.py).
 lote9-04-tripa-ruge (archivo/tripa-ruge/dib.py): aparato digestivo, estómago en corte e interior del intestino (cuerpo.py); escoba, tambor, tubo de pasta, columna griega y pergamino (casa.py).
+lote9-03-precio-kilo (archivo/precio-kilo/dib.py y guion.py): etiqueta_lineal, paquete y rollo_papel (tienda.py).
 lote9-05-cosquillas (archivo/cosquillas/dib.py): mente.py (pivote, pluma, bola de cristal, engranaje, barra de volumen, cara de cerebro) y brazo_robot (tecnologia.py).
