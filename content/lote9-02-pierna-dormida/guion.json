@@ -1,0 +1,1742 @@
+{
+  "topic": "¿Por qué se te duerme la pierna? Nervio aplastado, menos oxígeno, parestesia, fibras que despiertan a destiempo y el nervio peroneo",
+  "categoria": "cuerpo",
+  "title": "¿Por qué se te duerme la pierna y luego te hace cosquillas?",
+  "source": "Fuentes: Science Norway · NBC News · KidsHealth · Psicología y Mente · Cureus",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué se *duerme* la pierna",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-10-27T14:00:00+01:00",
+    "caption": "¿Por qué se te duerme la pierna? Aplastas un nervio y los vasos que le dan oxígeno, y deja de mandar mensajes. Al moverte, sus fibras se despiertan a destiempo: pinchazos (Science Norway, KidsHealth). Cruzar por la rodilla castiga al nervio peroneo. ¿Dónde se te duerme más a ti?",
+    "description": "¿Por qué se te duerme la pierna? Al cruzar las piernas o sentarte encima aprietas un nervio y los vasos que lo alimentan, así que le llega menos oxígeno y deja de mandar mensajes al cerebro: es la parestesia. Al moverte, la sangre vuelve y las fibras del nervio se despiertan a destiempo, y eso son los pinchazos. Al cruzar por la rodilla, el más castigado es el nervio peroneo, que pasa por el lado de la rodilla. Unos segundos no hacen daño; si dura mucho o se repite, consulta al médico. Fuentes: Science Norway, NBC News, KidsHealth, Psicología y Mente, Cureus. ¿Dónde se te duerme más a ti?",
+    "hashtags": [
+      "cuerpohumano",
+      "nervios",
+      "salud",
+      "curiosidades",
+      "ciencia"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Pierna de *corcho*?",
+      "narration": "¿Te levantas del sofá y tu pierna parece de corcho, llena de hormiguitas?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · La pierna dormida",
+        "anims": [
+          {
+            "target": "luS",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.7,
+            "phase": 0.2
+          },
+          {
+            "target": "luS_ojos",
+            "effect": "blink",
+            "delay": 0.2
+          },
+          {
+            "target": "luS",
+            "effect": "move",
+            "delay": 0.0,
+            "to": [
+              0,
+              -26
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "luS_cabeza",
+            "effect": "move",
+            "delay": 0.12,
+            "rotate": -5,
+            "origin": "bottom",
+            "dur": 0.45
+          },
+          {
+            "target": "luS",
+            "effect": "hide",
+            "trigger": "levantas"
+          },
+          {
+            "target": "luG",
+            "effect": "move",
+            "delay": 0.0,
+            "to": [
+              0,
+              70
+            ],
+            "dur": 0.05
+          },
+          {
+            "target": "luG",
+            "effect": "fade",
+            "trigger": "levantas",
+            "dur": 0.2,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "luG",
+            "effect": "move",
+            "trigger": "levantas",
+            "to": [
+              0,
+              -70
+            ],
+            "dur": 0.55
+          },
+          {
+            "target": "lu",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.6
+          },
+          {
+            "target": "lu_cabeza",
+            "effect": "move",
+            "trigger": "sofá",
+            "rotate": -5,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "lu_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.3,
+            "delay": 1.5
+          },
+          {
+            "target": "lu_ojos",
+            "effect": "blink",
+            "delay": 1.1
+          },
+          {
+            "target": "lu_brazo_izq",
+            "effect": "sway",
+            "origin": "top-right",
+            "amount": 0.22,
+            "delay": 0.8
+          },
+          {
+            "target": "lu_brazo_der",
+            "effect": "sway",
+            "origin": "top-left",
+            "amount": 0.16,
+            "delay": 1.3
+          },
+          {
+            "target": "fpierna",
+            "effect": "draw",
+            "trigger": "pierna",
+            "dur": 0.45,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "fpierna",
+            "effect": "flow",
+            "trigger": "parece",
+            "amount": 0.5
+          },
+          {
+            "target": "corcho",
+            "effect": "fade",
+            "trigger": "corcho",
+            "dur": 0.35,
+            "sfx": "brillo"
+          },
+          {
+            "target": "luG",
+            "effect": "move",
+            "trigger": "parece",
+            "rotate": -4,
+            "origin": "bottom",
+            "dur": 0.55
+          },
+          {
+            "target": "lu_cabeza",
+            "effect": "move",
+            "trigger": "corcho",
+            "rotate": 8,
+            "origin": "bottom",
+            "dur": 0.5
+          },
+          {
+            "target": "luG",
+            "effect": "sway",
+            "trigger": "corcho",
+            "origin": "bottom",
+            "amount": 0.18
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "parece",
+            "origin": "bottom-left",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "wiggle",
+            "trigger": "parece",
+            "amount": 0.4
+          },
+          {
+            "target": "ay",
+            "effect": "pop",
+            "trigger": "corcho",
+            "sfx": "boing"
+          },
+          {
+            "target": "ay",
+            "effect": "float",
+            "trigger": "corcho",
+            "amount": 0.35
+          },
+          {
+            "target": "hg0",
+            "effect": "pop",
+            "trigger": "llena",
+            "sfx": "pop"
+          },
+          {
+            "target": "hg1",
+            "effect": "pop",
+            "trigger": "de hormiguitas"
+          },
+          {
+            "target": "hg2",
+            "effect": "pop",
+            "trigger": "hormiguitas"
+          },
+          {
+            "target": "hg3",
+            "effect": "pop",
+            "delay": 3.05
+          },
+          {
+            "target": "hg4",
+            "effect": "pop",
+            "delay": 3.3
+          },
+          {
+            "target": "hg0",
+            "effect": "move",
+            "trigger": "llena",
+            "to": [
+              -6,
+              -150
+            ],
+            "dur": 2.6
+          },
+          {
+            "target": "hg1",
+            "effect": "move",
+            "trigger": "de hormiguitas",
+            "to": [
+              4,
+              -120
+            ],
+            "dur": 2.2
+          },
+          {
+            "target": "hg2",
+            "effect": "move",
+            "trigger": "hormiguitas",
+            "to": [
+              -4,
+              -110
+            ],
+            "dur": 2.4
+          },
+          {
+            "target": "hg3",
+            "effect": "move",
+            "delay": 3.05,
+            "to": [
+              6,
+              -140
+            ],
+            "dur": 2.0
+          },
+          {
+            "target": "hg4",
+            "effect": "move",
+            "delay": 3.3,
+            "to": [
+              -2,
+              -90
+            ],
+            "dur": 2.3
+          },
+          {
+            "target": "h0_patas",
+            "effect": "wiggle",
+            "trigger": "llena",
+            "amount": 1.2
+          },
+          {
+            "target": "h1_patas",
+            "effect": "wiggle",
+            "trigger": "hormiguitas",
+            "amount": 1.0
+          },
+          {
+            "target": "h2_patas",
+            "effect": "wiggle",
+            "trigger": "hormiguitas",
+            "amount": 1.3
+          },
+          {
+            "target": "h3_patas",
+            "effect": "wiggle",
+            "delay": 3.1,
+            "amount": 1.1
+          },
+          {
+            "target": "h4_patas",
+            "effect": "wiggle",
+            "delay": 3.35,
+            "amount": 1.2
+          },
+          {
+            "target": "ch0",
+            "effect": "pop",
+            "trigger": "llena"
+          },
+          {
+            "target": "ch1",
+            "effect": "pop",
+            "trigger": "de hormiguitas"
+          },
+          {
+            "target": "ch2",
+            "effect": "pop",
+            "trigger": "hormiguitas",
+            "sfx": "brillo"
+          },
+          {
+            "target": "ch3",
+            "effect": "pop",
+            "delay": 3.2
+          },
+          {
+            "target": "ch0",
+            "effect": "pulse",
+            "trigger": "llena",
+            "amount": 1.4
+          },
+          {
+            "target": "ch1",
+            "effect": "pulse",
+            "trigger": "de hormiguitas",
+            "amount": 1.6
+          },
+          {
+            "target": "ch2",
+            "effect": "pulse",
+            "trigger": "hormiguitas",
+            "amount": 1.2
+          },
+          {
+            "target": "ch3",
+            "effect": "pulse",
+            "delay": 3.2,
+            "amount": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Nervio *aplastado*",
+      "narration": "Al cruzar las piernas o sentarte encima, aplastas un nervio, el cable que lleva mensajes al cerebro.",
+      "illustration": {
+        "svg_file": "cruzar_free.svg",
+        "layout": "free",
+        "height": 880,
+        "caption": "Fig. 2 · Piernas cruzadas",
+        "anims": [
+          {
+            "target": "asientoG",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "pbG",
+            "effect": "slide-up",
+            "delay": 0.06,
+            "dur": 0.5
+          },
+          {
+            "target": "espG",
+            "effect": "slide-up",
+            "delay": 0.06,
+            "dur": 0.5
+          },
+          {
+            "target": "espG",
+            "effect": "move",
+            "delay": 0.0,
+            "to": [
+              0,
+              -80
+            ],
+            "dur": 0.05
+          },
+          {
+            "target": "ptG",
+            "effect": "move",
+            "delay": 0.0,
+            "to": [
+              0,
+              -80
+            ],
+            "dur": 0.05
+          },
+          {
+            "target": "ptG",
+            "effect": "slide-down",
+            "delay": 0.12,
+            "dur": 0.5
+          },
+          {
+            "target": "ptG",
+            "effect": "move",
+            "trigger": "cruzar",
+            "to": [
+              0,
+              80
+            ],
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "espG",
+            "effect": "move",
+            "trigger": "cruzar",
+            "to": [
+              0,
+              80
+            ],
+            "dur": 0.75
+          },
+          {
+            "target": "espG",
+            "effect": "sway",
+            "trigger": "piernas",
+            "origin": "top",
+            "amount": 0.12
+          },
+          {
+            "target": "ptG",
+            "effect": "sway",
+            "trigger": "piernas",
+            "origin": "left",
+            "amount": 0.04
+          },
+          {
+            "target": "pbG",
+            "effect": "sway",
+            "delay": 0.7,
+            "origin": "left",
+            "amount": 0.02
+          },
+          {
+            "target": "asientoG",
+            "effect": "punch",
+            "trigger": "sentarte",
+            "amount": 0.12,
+            "sfx": "boing"
+          },
+          {
+            "target": "pb_nervio_apl",
+            "effect": "hide"
+          },
+          {
+            "target": "pb_vaso_apl",
+            "effect": "hide"
+          },
+          {
+            "target": "fpeso",
+            "effect": "pop",
+            "trigger": "aplastas",
+            "origin": "bottom",
+            "sfx": "pop"
+          },
+          {
+            "target": "fpeso",
+            "effect": "float",
+            "trigger": "aplastas",
+            "amount": 0.35
+          },
+          {
+            "target": "ptG",
+            "effect": "move",
+            "trigger": "aplastas",
+            "to": [
+              0,
+              10
+            ],
+            "dur": 0.3
+          },
+          {
+            "target": "espG",
+            "effect": "move",
+            "trigger": "aplastas",
+            "to": [
+              0,
+              10
+            ],
+            "dur": 0.35
+          },
+          {
+            "target": "gol",
+            "effect": "pop",
+            "trigger": "aplastas",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "gol",
+            "effect": "pulse",
+            "trigger": "aplastas",
+            "amount": 0.8
+          },
+          {
+            "target": "pb_nervio",
+            "effect": "hide",
+            "trigger": "un nervio"
+          },
+          {
+            "target": "pb_nervio_apl",
+            "effect": "fade",
+            "trigger": "un nervio",
+            "dur": 0.18
+          },
+          {
+            "target": "pb_vaso",
+            "effect": "hide",
+            "trigger": "un nervio"
+          },
+          {
+            "target": "pb_vaso_apl",
+            "effect": "fade",
+            "trigger": "un nervio",
+            "dur": 0.18
+          },
+          {
+            "target": "tnervio",
+            "effect": "pop",
+            "trigger": "nervio",
+            "sfx": "pop"
+          },
+          {
+            "target": "tnervio",
+            "effect": "float",
+            "trigger": "nervio",
+            "amount": 0.15
+          },
+          {
+            "target": "tcable",
+            "effect": "slide-up",
+            "trigger": "cable",
+            "dur": 0.4
+          },
+          {
+            "target": "cable",
+            "effect": "draw",
+            "trigger": "cable",
+            "dur": 0.7,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "m0",
+            "effect": "pop",
+            "trigger": "lleva",
+            "sfx": "pop"
+          },
+          {
+            "target": "m1",
+            "effect": "pop",
+            "trigger": "mensajes"
+          },
+          {
+            "target": "m2",
+            "effect": "pop",
+            "trigger": "al cerebro"
+          },
+          {
+            "target": "m0",
+            "effect": "move",
+            "trigger": "lleva",
+            "to": [
+              -52.0,
+              0
+            ],
+            "dur": 0.9
+          },
+          {
+            "target": "m1",
+            "effect": "move",
+            "trigger": "mensajes",
+            "to": [
+              -67.0,
+              0
+            ],
+            "dur": 0.9
+          },
+          {
+            "target": "m2",
+            "effect": "move",
+            "trigger": "al cerebro",
+            "to": [
+              -82.0,
+              0
+            ],
+            "dur": 0.9
+          },
+          {
+            "target": "m0",
+            "effect": "pulse",
+            "trigger": "mensajes",
+            "amount": 1.2
+          },
+          {
+            "target": "m1",
+            "effect": "pulse",
+            "trigger": "al cerebro",
+            "amount": 1.0
+          },
+          {
+            "target": "m2",
+            "effect": "pulse",
+            "trigger": "cerebro",
+            "amount": 1.3
+          },
+          {
+            "target": "cere",
+            "effect": "pop",
+            "trigger": "cerebro",
+            "sfx": "pop"
+          },
+          {
+            "target": "cere",
+            "effect": "float",
+            "trigger": "cerebro",
+            "amount": 0.25
+          },
+          {
+            "target": "cduda",
+            "effect": "pop",
+            "trigger": "cerebro",
+            "origin": "bottom-left"
+          },
+          {
+            "target": "cduda",
+            "effect": "wiggle",
+            "trigger": "cerebro",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Menos *oxígeno*",
+      "narration": "Y aprietas los vasos: al nervio le llega menos oxígeno.",
+      "illustration": {
+        "svg_file": "oxigeno_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 3 · Vasos apretados",
+        "anims": [
+          {
+            "target": "tejG",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rodilla",
+            "effect": "slide-down",
+            "delay": 0.05,
+            "dur": 0.5
+          },
+          {
+            "target": "medG",
+            "effect": "pop",
+            "delay": 0.35
+          },
+          {
+            "target": "vaso_apl",
+            "effect": "hide"
+          },
+          {
+            "target": "nerv_apl",
+            "effect": "hide"
+          },
+          {
+            "target": "dif0",
+            "effect": "flow",
+            "amount": 0.8
+          },
+          {
+            "target": "dif1",
+            "effect": "flow",
+            "amount": 0.7
+          },
+          {
+            "target": "dif2",
+            "effect": "flow",
+            "amount": 0.9
+          },
+          {
+            "target": "rodilla",
+            "effect": "move",
+            "trigger": "aprietas",
+            "to": [
+              0,
+              92
+            ],
+            "dur": 0.45,
+            "sfx": "boing"
+          },
+          {
+            "target": "rodilla",
+            "effect": "sway",
+            "trigger": "vasos",
+            "origin": "bottom",
+            "amount": 0.06
+          },
+          {
+            "target": "presion",
+            "effect": "pop",
+            "trigger": "aprietas"
+          },
+          {
+            "target": "presion",
+            "effect": "pulse",
+            "trigger": "aprietas",
+            "amount": 0.7
+          },
+          {
+            "target": "vaso",
+            "effect": "hide",
+            "trigger": "los vasos"
+          },
+          {
+            "target": "vaso_apl",
+            "effect": "fade",
+            "trigger": "los vasos",
+            "dur": 0.18
+          },
+          {
+            "target": "nerv",
+            "effect": "hide",
+            "trigger": "los vasos"
+          },
+          {
+            "target": "nerv_apl",
+            "effect": "fade",
+            "trigger": "los vasos",
+            "dur": 0.2
+          },
+          {
+            "target": "tvaso",
+            "effect": "pop",
+            "trigger": "vasos",
+            "sfx": "pop"
+          },
+          {
+            "target": "tnerv",
+            "effect": "pop",
+            "trigger": "nervio",
+            "sfx": "pop"
+          },
+          {
+            "target": "oi0",
+            "effect": "drift",
+            "amount": 0.25,
+            "delay": 0.0,
+            "phase": 0.0
+          },
+          {
+            "target": "oi0",
+            "effect": "move",
+            "trigger": "aprietas",
+            "to": [
+              175,
+              0
+            ],
+            "dur": 1.0
+          },
+          {
+            "target": "oi1",
+            "effect": "drift",
+            "amount": 0.25,
+            "delay": 0.1,
+            "phase": 0.23
+          },
+          {
+            "target": "oi1",
+            "effect": "move",
+            "trigger": "los vasos",
+            "to": [
+              130,
+              0
+            ],
+            "dur": 1.15
+          },
+          {
+            "target": "oi2",
+            "effect": "drift",
+            "amount": 0.25,
+            "delay": 0.2,
+            "phase": 0.46
+          },
+          {
+            "target": "oi2",
+            "effect": "move",
+            "trigger": "aprietas",
+            "to": [
+              85,
+              0
+            ],
+            "dur": 1.3
+          },
+          {
+            "target": "oi3",
+            "effect": "drift",
+            "amount": 0.25,
+            "delay": 0.30000000000000004,
+            "phase": 0.6900000000000001
+          },
+          {
+            "target": "oi3",
+            "effect": "move",
+            "trigger": "los vasos",
+            "to": [
+              45,
+              0
+            ],
+            "dur": 1.45
+          },
+          {
+            "target": "od0",
+            "effect": "move",
+            "delay": 0.0,
+            "to": [
+              180,
+              0
+            ],
+            "dur": 2.6
+          },
+          {
+            "target": "od1",
+            "effect": "move",
+            "delay": 0.0,
+            "to": [
+              180,
+              0
+            ],
+            "dur": 2.9
+          },
+          {
+            "target": "od2",
+            "effect": "move",
+            "delay": 0.0,
+            "to": [
+              180,
+              0
+            ],
+            "dur": 3.2
+          },
+          {
+            "target": "od0",
+            "effect": "hide",
+            "trigger": "llega"
+          },
+          {
+            "target": "od1",
+            "effect": "hide",
+            "trigger": "menos"
+          },
+          {
+            "target": "od2",
+            "effect": "hide",
+            "trigger": "oxígeno"
+          },
+          {
+            "target": "dif0",
+            "effect": "hide",
+            "trigger": "llega"
+          },
+          {
+            "target": "dif1",
+            "effect": "hide",
+            "trigger": "menos"
+          },
+          {
+            "target": "dif2",
+            "effect": "hide",
+            "trigger": "oxígeno"
+          },
+          {
+            "target": "aguja",
+            "effect": "move",
+            "trigger": "menos",
+            "rotate": -125,
+            "origin": "center",
+            "dur": 0.9,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "aguja",
+            "effect": "wiggle",
+            "trigger": "oxígeno",
+            "origin": "center",
+            "amount": 0.25
+          },
+          {
+            "target": "medG",
+            "effect": "punch",
+            "trigger": "oxígeno",
+            "amount": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Señal *apagada*",
+      "narration": "El nervio se calla y casi no sientes la pierna. Es la parestesia.",
+      "illustration": {
+        "svg_file": "calla_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 4 · Parestesia",
+        "anims": [
+          {
+            "target": "pcG",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "pc_nervio",
+            "effect": "hide"
+          },
+          {
+            "target": "pc_vaso",
+            "effect": "hide"
+          },
+          {
+            "target": "cere",
+            "effect": "pop",
+            "delay": 0.15
+          },
+          {
+            "target": "cere",
+            "effect": "float",
+            "delay": 0.3,
+            "amount": 0.22
+          },
+          {
+            "target": "cable",
+            "effect": "flow",
+            "amount": 0.6
+          },
+          {
+            "target": "bon",
+            "effect": "pulse",
+            "amount": 0.5
+          },
+          {
+            "target": "boff",
+            "effect": "hide"
+          },
+          {
+            "target": "pcG",
+            "effect": "sway",
+            "delay": 0.6,
+            "origin": "left",
+            "amount": 0.02
+          },
+          {
+            "target": "sob0",
+            "effect": "pop",
+            "trigger": "nervio",
+            "sfx": "papel"
+          },
+          {
+            "target": "sob1",
+            "effect": "pop",
+            "trigger": "se"
+          },
+          {
+            "target": "sob2",
+            "effect": "pop",
+            "trigger": "calla"
+          },
+          {
+            "target": "bon",
+            "effect": "hide",
+            "trigger": "calla"
+          },
+          {
+            "target": "boff",
+            "effect": "fade",
+            "trigger": "calla",
+            "dur": 0.2,
+            "sfx": "chasquido"
+          },
+          {
+            "target": "cable",
+            "effect": "hide",
+            "trigger": "y casi"
+          },
+          {
+            "target": "sob0",
+            "effect": "move",
+            "trigger": "casi",
+            "to": [
+              -22,
+              -170
+            ],
+            "dur": 0.9
+          },
+          {
+            "target": "sob1",
+            "effect": "move",
+            "trigger": "no",
+            "to": [
+              -18,
+              -140
+            ],
+            "dur": 0.9
+          },
+          {
+            "target": "sob2",
+            "effect": "move",
+            "trigger": "sientes",
+            "to": [
+              -14,
+              -110
+            ],
+            "dur": 0.9
+          },
+          {
+            "target": "x",
+            "effect": "pop",
+            "trigger": "sientes",
+            "sfx": "pop"
+          },
+          {
+            "target": "x",
+            "effect": "pulse",
+            "trigger": "sientes",
+            "amount": 0.6
+          },
+          {
+            "target": "gris",
+            "effect": "fade",
+            "trigger": "pierna",
+            "dur": 0.5
+          },
+          {
+            "target": "tpar",
+            "effect": "pop",
+            "trigger": "Es",
+            "sfx": "ding"
+          },
+          {
+            "target": "tpar",
+            "effect": "float",
+            "trigger": "Es",
+            "amount": 0.15
+          },
+          {
+            "target": "tsub1",
+            "effect": "slide-up",
+            "trigger": "la parestesia",
+            "dur": 0.4
+          },
+          {
+            "target": "tsub2",
+            "effect": "slide-up",
+            "trigger": "parestesia",
+            "dur": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Despiertan *a destiempo*",
+      "narration": "Al moverte, la sangre vuelve y las fibras del nervio despiertan a destiempo. De ahí los pinchazos.",
+      "illustration": {
+        "svg_file": "pinchazos_full.svg",
+        "layout": "full",
+        "caption": "Fig. 5 · Los pinchazos",
+        "anims": [
+          {
+            "target": "vasoG",
+            "effect": "slide-left",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "hzG",
+            "effect": "slide-up",
+            "delay": 0.1,
+            "dur": 0.55
+          },
+          {
+            "target": "vabierto",
+            "effect": "hide"
+          },
+          {
+            "target": "vstrecho",
+            "effect": "hide",
+            "trigger": "moverte"
+          },
+          {
+            "target": "vabierto",
+            "effect": "fade",
+            "trigger": "moverte",
+            "dur": 0.25
+          },
+          {
+            "target": "tsangre",
+            "effect": "pop",
+            "trigger": "sangre",
+            "sfx": "pop"
+          },
+          {
+            "target": "gl0",
+            "effect": "drift",
+            "delay": 0.0,
+            "amount": 0.15,
+            "phase": 0.0
+          },
+          {
+            "target": "gl0",
+            "effect": "move",
+            "trigger": "sangre",
+            "to": [
+              620,
+              0
+            ],
+            "dur": 1.8
+          },
+          {
+            "target": "gl1",
+            "effect": "drift",
+            "delay": 0.15,
+            "amount": 0.15,
+            "phase": 0.2
+          },
+          {
+            "target": "gl1",
+            "effect": "move",
+            "trigger": "sangre",
+            "to": [
+              580,
+              0
+            ],
+            "dur": 2.05
+          },
+          {
+            "target": "gl2",
+            "effect": "drift",
+            "delay": 0.3,
+            "amount": 0.15,
+            "phase": 0.4
+          },
+          {
+            "target": "gl2",
+            "effect": "move",
+            "trigger": "sangre",
+            "to": [
+              540,
+              0
+            ],
+            "dur": 2.3
+          },
+          {
+            "target": "gl3",
+            "effect": "drift",
+            "delay": 0.44999999999999996,
+            "amount": 0.15,
+            "phase": 0.6000000000000001
+          },
+          {
+            "target": "gl3",
+            "effect": "move",
+            "trigger": "vuelve",
+            "to": [
+              500,
+              0
+            ],
+            "dur": 2.55
+          },
+          {
+            "target": "gl4",
+            "effect": "drift",
+            "delay": 0.6,
+            "amount": 0.15,
+            "phase": 0.8
+          },
+          {
+            "target": "gl4",
+            "effect": "move",
+            "trigger": "vuelve",
+            "to": [
+              460,
+              0
+            ],
+            "dur": 2.8
+          },
+          {
+            "target": "hz_on0",
+            "effect": "hide"
+          },
+          {
+            "target": "hz_on1",
+            "effect": "hide"
+          },
+          {
+            "target": "hz_on2",
+            "effect": "hide"
+          },
+          {
+            "target": "hz_on3",
+            "effect": "hide"
+          },
+          {
+            "target": "hz_on4",
+            "effect": "hide"
+          },
+          {
+            "target": "hz_on5",
+            "effect": "hide"
+          },
+          {
+            "target": "hz_on6",
+            "effect": "hide"
+          },
+          {
+            "target": "hz_on7",
+            "effect": "hide"
+          },
+          {
+            "target": "hz_on8",
+            "effect": "hide"
+          },
+          {
+            "target": "hz_on9",
+            "effect": "hide"
+          },
+          {
+            "target": "hz_on0",
+            "effect": "fade",
+            "trigger": "destiempo",
+            "dur": 0.25
+          },
+          {
+            "target": "hz_on0",
+            "effect": "pulse",
+            "trigger": "destiempo",
+            "amount": 0.12
+          },
+          {
+            "target": "hz_on1",
+            "effect": "fade",
+            "trigger": "nervio",
+            "dur": 0.25
+          },
+          {
+            "target": "hz_on1",
+            "effect": "pulse",
+            "trigger": "nervio",
+            "amount": 0.12
+          },
+          {
+            "target": "hz_on2",
+            "effect": "fade",
+            "delay": 4.1,
+            "dur": 0.25
+          },
+          {
+            "target": "hz_on2",
+            "effect": "pulse",
+            "delay": 4.1,
+            "amount": 0.12
+          },
+          {
+            "target": "hz_on3",
+            "effect": "fade",
+            "trigger": "fibras",
+            "dur": 0.25
+          },
+          {
+            "target": "hz_on3",
+            "effect": "pulse",
+            "trigger": "fibras",
+            "amount": 0.12
+          },
+          {
+            "target": "hz_on4",
+            "effect": "fade",
+            "delay": 4.35,
+            "dur": 0.25
+          },
+          {
+            "target": "hz_on4",
+            "effect": "pulse",
+            "delay": 4.35,
+            "amount": 0.12
+          },
+          {
+            "target": "hz_on5",
+            "effect": "fade",
+            "trigger": "despiertan",
+            "dur": 0.25
+          },
+          {
+            "target": "hz_on5",
+            "effect": "pulse",
+            "trigger": "despiertan",
+            "amount": 0.12
+          },
+          {
+            "target": "hz_on6",
+            "effect": "fade",
+            "delay": 4.6,
+            "dur": 0.25
+          },
+          {
+            "target": "hz_on6",
+            "effect": "pulse",
+            "delay": 4.6,
+            "amount": 0.12
+          },
+          {
+            "target": "hz_on7",
+            "effect": "fade",
+            "trigger": "del",
+            "dur": 0.25
+          },
+          {
+            "target": "hz_on7",
+            "effect": "pulse",
+            "trigger": "del",
+            "amount": 0.12
+          },
+          {
+            "target": "hz_on8",
+            "effect": "fade",
+            "trigger": "a destiempo",
+            "dur": 0.25
+          },
+          {
+            "target": "hz_on8",
+            "effect": "pulse",
+            "trigger": "a destiempo",
+            "amount": 0.12
+          },
+          {
+            "target": "hz_on9",
+            "effect": "fade",
+            "delay": 4.8,
+            "dur": 0.25
+          },
+          {
+            "target": "hz_on9",
+            "effect": "pulse",
+            "delay": 4.8,
+            "amount": 0.12
+          },
+          {
+            "target": "tfib",
+            "effect": "pop",
+            "trigger": "fibras",
+            "sfx": "pop"
+          },
+          {
+            "target": "tfib",
+            "effect": "float",
+            "trigger": "despiertan",
+            "amount": 0.15
+          },
+          {
+            "target": "ag0",
+            "effect": "slide-down",
+            "dur": 0.3,
+            "trigger": "De ahí",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "ag0",
+            "effect": "wiggle",
+            "amount": 0.35,
+            "trigger": "De ahí"
+          },
+          {
+            "target": "cz0",
+            "effect": "pop",
+            "trigger": "De ahí"
+          },
+          {
+            "target": "cz0",
+            "effect": "pulse",
+            "amount": 1.3,
+            "trigger": "De ahí"
+          },
+          {
+            "target": "ag1",
+            "effect": "slide-down",
+            "dur": 0.3,
+            "trigger": "ahí"
+          },
+          {
+            "target": "ag1",
+            "effect": "wiggle",
+            "amount": 0.35,
+            "trigger": "ahí"
+          },
+          {
+            "target": "cz1",
+            "effect": "pop",
+            "trigger": "ahí"
+          },
+          {
+            "target": "cz1",
+            "effect": "pulse",
+            "amount": 1.3,
+            "trigger": "ahí"
+          },
+          {
+            "target": "ag2",
+            "effect": "slide-down",
+            "dur": 0.3,
+            "trigger": "los"
+          },
+          {
+            "target": "ag2",
+            "effect": "wiggle",
+            "amount": 0.35,
+            "trigger": "los"
+          },
+          {
+            "target": "cz2",
+            "effect": "pop",
+            "trigger": "los"
+          },
+          {
+            "target": "cz2",
+            "effect": "pulse",
+            "amount": 1.3,
+            "trigger": "los"
+          },
+          {
+            "target": "ag3",
+            "effect": "slide-down",
+            "dur": 0.3,
+            "trigger": "pinchazos"
+          },
+          {
+            "target": "ag3",
+            "effect": "wiggle",
+            "amount": 0.35,
+            "trigger": "pinchazos"
+          },
+          {
+            "target": "cz3",
+            "effect": "pop",
+            "trigger": "pinchazos"
+          },
+          {
+            "target": "cz3",
+            "effect": "pulse",
+            "amount": 1.3,
+            "trigger": "pinchazos"
+          },
+          {
+            "target": "ag4",
+            "effect": "slide-down",
+            "dur": 0.3,
+            "trigger": "los"
+          },
+          {
+            "target": "ag4",
+            "effect": "wiggle",
+            "amount": 0.35,
+            "trigger": "los"
+          },
+          {
+            "target": "cz4",
+            "effect": "pop",
+            "trigger": "los"
+          },
+          {
+            "target": "cz4",
+            "effect": "pulse",
+            "amount": 1.3,
+            "trigger": "los"
+          },
+          {
+            "target": "ag5",
+            "effect": "slide-down",
+            "dur": 0.3,
+            "trigger": "pinchazos"
+          },
+          {
+            "target": "ag5",
+            "effect": "wiggle",
+            "amount": 0.35,
+            "trigger": "pinchazos"
+          },
+          {
+            "target": "cz5",
+            "effect": "pop",
+            "trigger": "pinchazos"
+          },
+          {
+            "target": "cz5",
+            "effect": "pulse",
+            "amount": 1.3,
+            "trigger": "pinchazos"
+          },
+          {
+            "target": "zzt",
+            "effect": "pop",
+            "trigger": "pinchazos",
+            "sfx": "boing"
+          },
+          {
+            "target": "zzt",
+            "effect": "punch",
+            "trigger": "pinchazos",
+            "amount": 0.5
+          },
+          {
+            "target": "hzG",
+            "effect": "shake",
+            "trigger": "pinchazos",
+            "amount": 0.35
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "El nervio *peroneo*",
+      "narration": "Si la cruzas por la rodilla, sufre el nervio peroneo, que pasa justo por el lado.",
+      "illustration": {
+        "svg_file": "peroneo_free.svg",
+        "layout": "free",
+        "height": 900,
+        "caption": "Fig. 6 · El nervio peroneo",
+        "anims": [
+          {
+            "target": "rodG",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "rodG",
+            "effect": "sway",
+            "delay": 0.6,
+            "origin": "bottom",
+            "amount": 0.03
+          },
+          {
+            "target": "otra",
+            "effect": "slide-right",
+            "trigger": "cruzas",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "otra",
+            "effect": "move",
+            "trigger": "rodilla",
+            "to": [
+              34,
+              0
+            ],
+            "dur": 0.4,
+            "sfx": "boing"
+          },
+          {
+            "target": "otra",
+            "effect": "sway",
+            "trigger": "rodilla",
+            "origin": "left",
+            "amount": 0.06
+          },
+          {
+            "target": "gol",
+            "effect": "pop",
+            "trigger": "sufre",
+            "sfx": "chasquido"
+          },
+          {
+            "target": "gol",
+            "effect": "pulse",
+            "trigger": "sufre",
+            "amount": 0.8
+          },
+          {
+            "target": "lupa",
+            "effect": "pop",
+            "trigger": "sufre",
+            "sfx": "pop"
+          },
+          {
+            "target": "lupa",
+            "effect": "float",
+            "trigger": "el nervio",
+            "amount": 0.2
+          },
+          {
+            "target": "rod_nervio",
+            "effect": "draw",
+            "trigger": "nervio",
+            "dur": 0.6,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tper",
+            "effect": "pop",
+            "trigger": "peroneo",
+            "sfx": "pop"
+          },
+          {
+            "target": "onda",
+            "effect": "pop",
+            "trigger": "pasa"
+          },
+          {
+            "target": "onda",
+            "effect": "ripple",
+            "trigger": "pasa",
+            "phase": 0
+          },
+          {
+            "target": "rod_nervio",
+            "effect": "flow",
+            "trigger": "justo",
+            "amount": 0.4
+          },
+          {
+            "target": "tlado",
+            "effect": "slide-up",
+            "trigger": "lado",
+            "dur": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Segundos, *sin daño*",
+      "narration": "Unos segundos de hormigueo no hacen daño. Si dura mucho o se repite sin motivo, consulta al médico.",
+      "mascot": {
+        "trigger": "repite",
+        "pose": "point",
+        "note": "¡Si dura, al médico!",
+        "side": "right"
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "UNOS SEGUNDOS",
+          "tone": "ink",
+          "trigger": "segundos",
+          "sfx": "pop"
+        },
+        {
+          "type": "stamp",
+          "text": "SIN DAÑO",
+          "tone": "accent",
+          "trigger": "daño",
+          "sfx": "sello"
+        },
+        {
+          "type": "tag",
+          "text": "SI DURA O SE REPITE",
+          "tone": "hot",
+          "trigger": "dura",
+          "sfx": "pop"
+        },
+        {
+          "type": "stamp",
+          "text": "AL MÉDICO",
+          "tone": "hot",
+          "trigger": "médico",
+          "sfx": "sello"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Dónde se te duerme más a ti?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Dónde se te *duerme* más a ti?",
+          "trigger": "¿Dónde"
+        }
+      ]
+    }
+  ]
+}

@@ -229,6 +229,9 @@ Truco: para que el ala «se incline», dibújala a 0° y anímala con `move` `ro
 `pivote(px, py, r)` (rect invisible: con él dentro de un grupo, origin "center" = (px, py); para girar sobre hombros, codos, bases) · `pluma(id_, cx, cy, L, ang, col)` (.puntos punta) · `bola_cristal(id_, cx, cy, r, dentro=svg)` (`_halo` pulse, `_dentro` float) · `engranaje(id_, cx, cy, r, dientes, col)` (spin; amount negativo = al revés) · `barra_volumen(id_, x0, base, w, h, n, cols, texto)` (segmentos `_b<i>`: grow escalonado, hide de derecha a izquierda) · `cara_cerebro(id_, cx, cy, s, expresion="aburrido|sorpresa|contento", gafas)` (encima de `cuerpo.cerebro`; `_ojos`, `_boca`, `_gafas`).
 `tecnologia.brazo_robot(id_, bx, base, s, hombro, codo, herramienta="pluma|pinza")` (brazo de laboratorio: `_brazo`, `_antebrazo`, `_punta` giran con origin center sobre hombro, codo y muñeca; `_led`; .puntos punta/hombro/codo/muneca).
 
+## objetos/nervios.py (nervios, hormigueo, pierna dormida)
+`pierna_nervio(id_, x0, cy, L, s, piel, pres)` (pierna sentada de perfil con nervio amarillo y vaso rojo bajo la piel; versiones `_nervio`/`_nervio_apl` y `_vaso`/`_vaso_apl` (estrechados en `pres`) para hide/fade; .puntos presion/apriete/rodilla/tobillo/contorno) · `pierna_encima(id_, x0, y0, x1, y1)` → (espinilla, muslo) de la pierna cruzada encima · `vaso_tubo` / `nervio_tubo(id_, x0, x1, cy, r, estrecho)` (corte con fibras) · `haz_fibras(id_, x0, x1, cy, h, n)` (fibras apagadas `_f<i>` y encendidas `_on<i>` para fade a destiempo) · `rodilla_lateral(id_, cx, cy, s)` (huesos y nervio peroneo `_nervio` para draw; .puntos peroneo) · `nervio_lupa(cx, cy, r)` (contenido para lupa) · `globulo`, `burbuja_o2`, `hormiga` (`_patas` wiggle), `aguja` (pinchazo), `corcho()` (textura).
+
 ## objetos/escenarios.py (fondos sin ids; W, H ajustables, por defecto 1080×1920)
 `habitacion(pared, ventana_, cuadro, noche)` · `cocina()` · `oficina()` · `escenario(foco_x)` (cortinas + foco + tarima) ·
 `cielo(hora="dia|tarde|noche", colinas, nubes)` · `sol(id_, cx, cy, r)` (`_rayos`) · `rotonda(cx=540, cy=880, r_isla, r_ext)` ·
@@ -292,6 +295,7 @@ lote8-05-hipoteca (archivo/hipoteca/dib.py): dinero.py (banco, torres del BCE, b
 lote8-07-basilisco (archivo/basilisco/dib.py): reptiles.py (basilisco, pata con flecos, pie lateral, bolsa de aire, salpicadura, agua en corte, revista y río en la selva).
 lote8-09-gasto-campana (archivo/gasto-campana/dib.py): saco_dinero y linea_tope (dinero.py).
 lote8-08-cambio-hora (archivo/cambio-hora/dib.py): tiempo.py (cama con persona dentro, mesilla, despertador digital, luna, flecha de retrasar la hora).
+lote9-02-pierna-dormida (archivo/pierna-dormida/dib.py y guion.py): nervios.py.
 lote9-01-sacudida-dormir (archivo/sacudida-dormir/dib.py): sueno.py (cama de lado, durmiente en pijama, marioneta, árbol con rama, pierna en corte) y mono (animales.py).
 lote9-04-tripa-ruge (archivo/tripa-ruge/dib.py): aparato digestivo, estómago en corte e interior del intestino (cuerpo.py); escoba, tambor, tubo de pasta, columna griega y pergamino (casa.py).
 lote9-05-cosquillas (archivo/cosquillas/dib.py): mente.py (pivote, pluma, bola de cristal, engranaje, barra de volumen, cara de cerebro) y brazo_robot (tecnologia.py).
