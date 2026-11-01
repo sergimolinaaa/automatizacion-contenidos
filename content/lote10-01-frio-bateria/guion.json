@@ -1,0 +1,1810 @@
+{
+  "topic": "¿Por qué el frío se come la batería del móvil? Los iones de litio viajan por un líquido que se espesa con frío, sube la resistencia interna y la batería entrega menos energía; a 20 bajo cero rinde más o menos la mitad, Apple recomienda 0 a 35 °C y es temporal",
+  "categoria": "moviles",
+  "title": "¿Por qué el frío se come la batería del móvil?",
+  "source": "Fuentes: Battery University · Apple Soporte · Drexel University · Universidad de Waterloo (Fortune) · Xataka Móvil",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Por qué el frío gasta la *batería* del móvil",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-11-02T14:00:00+01:00",
+    "caption": "¿Por qué el frío se come la batería del móvil? Con frío, el líquido de dentro se espesa, los iones de litio van más lentos y sube la resistencia interna. A 20 bajo cero rinde más o menos la mitad, pero se recupera al calentarse (Battery University, Apple). ¿A ti se te ha apagado con frío?",
+    "description": "¿Por qué el frío se come la batería del móvil? Dentro de la batería, los iones de litio viajan por un líquido; con frío ese líquido se espesa, los iones van más lentos y sube la resistencia interna, así que la batería entrega menos energía. A unos 20 grados bajo cero, la mayoría rinde más o menos a la mitad, y Apple recomienda usar el iPhone entre 0 y 35 grados. Tranquilo: es temporal, al calentarse se recupera; llévalo en un bolsillo interior y no lo cargues helado. Fuentes: Battery University, Apple, Drexel University, Universidad de Waterloo. ¿A ti se te ha apagado con frío?",
+    "hashtags": [
+      "movil",
+      "bateria",
+      "frio",
+      "tecnologia",
+      "ciencia"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿Se *congela* la batería?",
+      "narration": "¿Sales a la calle con frío y tu móvil se apaga con batería?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · ¡Se apagó!",
+        "anims": [
+          {
+            "target": "chico",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.6,
+            "phase": 0.2
+          },
+          {
+            "target": "chico",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.12,
+            "delay": 0.1
+          },
+          {
+            "target": "chf_ojos",
+            "effect": "blink",
+            "delay": 0.6
+          },
+          {
+            "target": "chf_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.22,
+            "delay": 0.35
+          },
+          {
+            "target": "chf_brazo_izq",
+            "effect": "sway",
+            "origin": "top-right",
+            "amount": 0.12,
+            "delay": 0.8
+          },
+          {
+            "target": "chs_ojos",
+            "effect": "blink",
+            "delay": 0.6
+          },
+          {
+            "target": "chs_cabeza",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.22,
+            "delay": 0.35
+          },
+          {
+            "target": "chs_brazo_izq",
+            "effect": "sway",
+            "origin": "top-right",
+            "amount": 0.12,
+            "delay": 0.8
+          },
+          {
+            "target": "chs",
+            "effect": "hide"
+          },
+          {
+            "target": "cp0",
+            "effect": "slide-down",
+            "delay": 0.0,
+            "dur": 0.6
+          },
+          {
+            "target": "cp0",
+            "effect": "float",
+            "amount": 0.52,
+            "delay": 0.74
+          },
+          {
+            "target": "cp0",
+            "effect": "drift",
+            "amount": 0.72,
+            "phase": 0.6,
+            "delay": 0.0
+          },
+          {
+            "target": "cp1",
+            "effect": "slide-down",
+            "delay": 0.05,
+            "dur": 0.6
+          },
+          {
+            "target": "cp1",
+            "effect": "float",
+            "amount": 0.71,
+            "delay": 0.32
+          },
+          {
+            "target": "cp1",
+            "effect": "drift",
+            "amount": 0.51,
+            "phase": 0.84,
+            "delay": 0.05
+          },
+          {
+            "target": "cp2",
+            "effect": "slide-down",
+            "delay": 0.1,
+            "dur": 0.6
+          },
+          {
+            "target": "cp2",
+            "effect": "float",
+            "amount": 0.53,
+            "delay": 0.53
+          },
+          {
+            "target": "cp2",
+            "effect": "drift",
+            "amount": 1.1,
+            "phase": 0.47,
+            "delay": 0.1
+          },
+          {
+            "target": "cp3",
+            "effect": "slide-down",
+            "delay": 0.15,
+            "dur": 0.6
+          },
+          {
+            "target": "cp3",
+            "effect": "float",
+            "amount": 0.82,
+            "delay": 0.83
+          },
+          {
+            "target": "cp3",
+            "effect": "drift",
+            "amount": 0.88,
+            "phase": 0.15,
+            "delay": 0.15
+          },
+          {
+            "target": "cp4",
+            "effect": "slide-down",
+            "delay": 0.2,
+            "dur": 0.6
+          },
+          {
+            "target": "cp4",
+            "effect": "float",
+            "amount": 0.72,
+            "delay": 1.27
+          },
+          {
+            "target": "cp4",
+            "effect": "drift",
+            "amount": 0.81,
+            "phase": 0.74,
+            "delay": 0.2
+          },
+          {
+            "target": "cp5",
+            "effect": "slide-down",
+            "delay": 0.25,
+            "dur": 0.6
+          },
+          {
+            "target": "cp5",
+            "effect": "float",
+            "amount": 0.74,
+            "delay": 0.51
+          },
+          {
+            "target": "cp5",
+            "effect": "drift",
+            "amount": 0.95,
+            "phase": 0.59,
+            "delay": 0.25
+          },
+          {
+            "target": "cp6",
+            "effect": "slide-down",
+            "delay": 0.3,
+            "dur": 0.6
+          },
+          {
+            "target": "cp6",
+            "effect": "float",
+            "amount": 0.55,
+            "delay": 0.53
+          },
+          {
+            "target": "cp6",
+            "effect": "drift",
+            "amount": 1.02,
+            "phase": 0.47,
+            "delay": 0.3
+          },
+          {
+            "target": "cp7",
+            "effect": "slide-down",
+            "delay": 0.35,
+            "dur": 0.6
+          },
+          {
+            "target": "cp7",
+            "effect": "float",
+            "amount": 0.76,
+            "delay": 1.43
+          },
+          {
+            "target": "cp7",
+            "effect": "drift",
+            "amount": 0.93,
+            "phase": 0.92,
+            "delay": 0.35
+          },
+          {
+            "target": "cp8",
+            "effect": "slide-down",
+            "delay": 0.4,
+            "dur": 0.6
+          },
+          {
+            "target": "cp8",
+            "effect": "float",
+            "amount": 0.6,
+            "delay": 1.4
+          },
+          {
+            "target": "cp8",
+            "effect": "drift",
+            "amount": 0.77,
+            "phase": 0.94,
+            "delay": 0.4
+          },
+          {
+            "target": "cp9",
+            "effect": "slide-down",
+            "delay": 0.45,
+            "dur": 0.6
+          },
+          {
+            "target": "cp9",
+            "effect": "float",
+            "amount": 0.84,
+            "delay": 0.75
+          },
+          {
+            "target": "cp9",
+            "effect": "drift",
+            "amount": 0.58,
+            "phase": 0.22,
+            "delay": 0.45
+          },
+          {
+            "target": "cp10",
+            "effect": "slide-down",
+            "delay": 0.5,
+            "dur": 0.6
+          },
+          {
+            "target": "cp10",
+            "effect": "float",
+            "amount": 0.88,
+            "delay": 1.14
+          },
+          {
+            "target": "cp10",
+            "effect": "drift",
+            "amount": 0.88,
+            "phase": 0.3,
+            "delay": 0.5
+          },
+          {
+            "target": "cp11",
+            "effect": "slide-down",
+            "delay": 0.55,
+            "dur": 0.6
+          },
+          {
+            "target": "cp11",
+            "effect": "float",
+            "amount": 0.65,
+            "delay": 1.14
+          },
+          {
+            "target": "cp11",
+            "effect": "drift",
+            "amount": 0.71,
+            "phase": 0.59,
+            "delay": 0.55
+          },
+          {
+            "target": "cp12",
+            "effect": "slide-down",
+            "delay": 0.6,
+            "dur": 0.6
+          },
+          {
+            "target": "cp12",
+            "effect": "float",
+            "amount": 0.69,
+            "delay": 1.7
+          },
+          {
+            "target": "cp12",
+            "effect": "drift",
+            "amount": 0.91,
+            "phase": 0.93,
+            "delay": 0.6
+          },
+          {
+            "target": "cp13",
+            "effect": "slide-down",
+            "delay": 0.65,
+            "dur": 0.6
+          },
+          {
+            "target": "cp13",
+            "effect": "float",
+            "amount": 0.83,
+            "delay": 1.84
+          },
+          {
+            "target": "cp13",
+            "effect": "drift",
+            "amount": 0.9,
+            "phase": 0.16,
+            "delay": 0.65
+          },
+          {
+            "target": "tel",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "calle",
+            "to": [
+              470,
+              860
+            ],
+            "amount": 1.08,
+            "dur": 1.2
+          },
+          {
+            "target": "chico",
+            "effect": "shake",
+            "trigger": "frío",
+            "amount": 0.3
+          },
+          {
+            "target": "temb",
+            "effect": "pop",
+            "trigger": "frío",
+            "sfx": "pop"
+          },
+          {
+            "target": "temb",
+            "effect": "wiggle",
+            "trigger": "frío",
+            "amount": 0.5
+          },
+          {
+            "target": "vaho",
+            "effect": "pop",
+            "trigger": "frío",
+            "origin": "left"
+          },
+          {
+            "target": "vaho",
+            "effect": "float",
+            "trigger": "frío",
+            "amount": 0.4
+          },
+          {
+            "target": "chf_cabeza",
+            "effect": "move",
+            "trigger": "móvil",
+            "rotate": 5,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "chs_cabeza",
+            "effect": "move",
+            "trigger": "móvil",
+            "rotate": 5,
+            "origin": "bottom",
+            "dur": 0.6
+          },
+          {
+            "target": "tel",
+            "effect": "punch",
+            "trigger": "móvil",
+            "amount": 0.25
+          },
+          {
+            "target": "tel_negro",
+            "effect": "fade",
+            "trigger": "apaga",
+            "dur": 0.15
+          },
+          {
+            "target": "plof",
+            "effect": "pop",
+            "trigger": "apaga",
+            "sfx": "sorpresa"
+          },
+          {
+            "target": "plof",
+            "effect": "punch",
+            "trigger": "apaga",
+            "amount": 0.4
+          },
+          {
+            "target": "plof",
+            "effect": "float",
+            "trigger": "apaga",
+            "amount": 0.3
+          },
+          {
+            "target": "chf",
+            "effect": "hide",
+            "trigger": "apaga"
+          },
+          {
+            "target": "chs",
+            "effect": "fade",
+            "trigger": "apaga",
+            "dur": 0.15
+          },
+          {
+            "target": "chf_brazo_der",
+            "effect": "move",
+            "trigger": "apaga",
+            "rotate": -6,
+            "origin": "top-left",
+            "dur": 0.4
+          },
+          {
+            "target": "chs_brazo_der",
+            "effect": "move",
+            "trigger": "apaga",
+            "rotate": -6,
+            "origin": "top-left",
+            "dur": 0.4
+          },
+          {
+            "target": "tel",
+            "effect": "shake",
+            "trigger": "apaga",
+            "amount": 0.25
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "con batería",
+            "sfx": "pop"
+          },
+          {
+            "target": "duda",
+            "effect": "float",
+            "trigger": "con batería",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Los *iones* viajan",
+      "narration": "Dentro de la batería, los iones de litio, unas partículas con carga, viajan por un líquido.",
+      "illustration": {
+        "svg_file": "iones_full.svg",
+        "layout": "full",
+        "caption": "Fig. 2 · Dentro de la batería",
+        "anims": [
+          {
+            "target": "ib",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cable",
+            "effect": "draw",
+            "delay": 0.35,
+            "dur": 0.7
+          },
+          {
+            "target": "bomb_off",
+            "effect": "pop",
+            "delay": 0.6
+          },
+          {
+            "target": "bomb_on",
+            "effect": "fade",
+            "trigger": "viajan",
+            "dur": 0.4,
+            "sfx": "brillo"
+          },
+          {
+            "target": "bomb_on",
+            "effect": "pulse",
+            "trigger": "viajan",
+            "amount": 0.4
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "Dentro",
+            "to": [
+              540,
+              880
+            ],
+            "amount": 1.1,
+            "dur": 1.6
+          },
+          {
+            "target": "ib_t_anodo",
+            "effect": "pop",
+            "trigger": "batería",
+            "sfx": "pop"
+          },
+          {
+            "target": "ib_anodo",
+            "effect": "punch",
+            "trigger": "batería",
+            "amount": 0.15
+          },
+          {
+            "target": "ib_t_catodo",
+            "effect": "pop",
+            "trigger": "los"
+          },
+          {
+            "target": "ib_catodo",
+            "effect": "punch",
+            "trigger": "los",
+            "amount": 0.15
+          },
+          {
+            "target": "ib_i0",
+            "effect": "pop",
+            "trigger": "iones",
+            "sfx": "pop"
+          },
+          {
+            "target": "ib_i0",
+            "effect": "float",
+            "trigger": "iones",
+            "amount": 0.25
+          },
+          {
+            "target": "ib_i1",
+            "effect": "pop",
+            "trigger": "de litio"
+          },
+          {
+            "target": "ib_i1",
+            "effect": "float",
+            "trigger": "de litio",
+            "amount": 0.31
+          },
+          {
+            "target": "ib_i2",
+            "effect": "pop",
+            "trigger": "litio",
+            "sfx": "pop"
+          },
+          {
+            "target": "ib_i2",
+            "effect": "float",
+            "trigger": "litio",
+            "amount": 0.37
+          },
+          {
+            "target": "ib_i3",
+            "effect": "pop",
+            "trigger": "unas"
+          },
+          {
+            "target": "ib_i3",
+            "effect": "float",
+            "trigger": "unas",
+            "amount": 0.25
+          },
+          {
+            "target": "ib_i4",
+            "effect": "pop",
+            "trigger": "partículas",
+            "sfx": "pop"
+          },
+          {
+            "target": "ib_i4",
+            "effect": "float",
+            "trigger": "partículas",
+            "amount": 0.31
+          },
+          {
+            "target": "ib_i5",
+            "effect": "pop",
+            "trigger": "con"
+          },
+          {
+            "target": "ib_i5",
+            "effect": "float",
+            "trigger": "con",
+            "amount": 0.37
+          },
+          {
+            "target": "ib_i6",
+            "effect": "pop",
+            "trigger": "carga",
+            "sfx": "pop"
+          },
+          {
+            "target": "ib_i6",
+            "effect": "float",
+            "trigger": "carga",
+            "amount": 0.25
+          },
+          {
+            "target": "tiones",
+            "effect": "pop",
+            "trigger": "partículas",
+            "sfx": "ding"
+          },
+          {
+            "target": "ib_iones",
+            "effect": "punch",
+            "trigger": "carga",
+            "amount": 0.2
+          },
+          {
+            "target": "fviaje",
+            "effect": "draw",
+            "trigger": "viajan",
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "fviaje",
+            "effect": "flow",
+            "trigger": "viajan",
+            "amount": 0.6
+          },
+          {
+            "target": "camera",
+            "effect": "zoom",
+            "trigger": "viajan",
+            "amount": 1,
+            "dur": 0.8
+          },
+          {
+            "target": "tliq",
+            "effect": "pop",
+            "trigger": "líquido",
+            "sfx": "pop"
+          },
+          {
+            "target": "ib_liquido",
+            "effect": "punch",
+            "trigger": "líquido",
+            "amount": 0.08
+          },
+          {
+            "target": "ib_i0",
+            "effect": "move",
+            "trigger": "viajan",
+            "to": [
+              256.2,
+              0
+            ],
+            "dur": 0.55
+          },
+          {
+            "target": "ib_i0",
+            "effect": "move",
+            "trigger": "por",
+            "to": [
+              -471.4,
+              0
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "ib_i1",
+            "effect": "move",
+            "trigger": "viajan",
+            "to": [
+              441.6,
+              0
+            ],
+            "dur": 0.63
+          },
+          {
+            "target": "ib_i1",
+            "effect": "move",
+            "trigger": "un líquido",
+            "to": [
+              -471.4,
+              0
+            ],
+            "dur": 0.67
+          },
+          {
+            "target": "ib_i2",
+            "effect": "move",
+            "trigger": "viajan",
+            "to": [
+              452.2,
+              0
+            ],
+            "dur": 0.71
+          },
+          {
+            "target": "ib_i2",
+            "effect": "move",
+            "trigger": "líquido",
+            "to": [
+              -471.4,
+              0
+            ],
+            "dur": 0.74
+          },
+          {
+            "target": "ib_i3",
+            "effect": "move",
+            "trigger": "viajan",
+            "to": [
+              -392.5,
+              0
+            ],
+            "dur": 0.79
+          },
+          {
+            "target": "ib_i3",
+            "effect": "move",
+            "trigger": "por",
+            "to": [
+              471.4,
+              0
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "ib_i4",
+            "effect": "move",
+            "trigger": "viajan",
+            "to": [
+              -343.1,
+              0
+            ],
+            "dur": 0.55
+          },
+          {
+            "target": "ib_i4",
+            "effect": "move",
+            "trigger": "un líquido",
+            "to": [
+              471.4,
+              0
+            ],
+            "dur": 0.67
+          },
+          {
+            "target": "ib_i5",
+            "effect": "move",
+            "trigger": "viajan",
+            "to": [
+              -296.1,
+              0
+            ],
+            "dur": 0.63
+          },
+          {
+            "target": "ib_i5",
+            "effect": "move",
+            "trigger": "líquido",
+            "to": [
+              471.4,
+              0
+            ],
+            "dur": 0.74
+          },
+          {
+            "target": "ib_i6",
+            "effect": "move",
+            "trigger": "viajan",
+            "to": [
+              418.0,
+              0
+            ],
+            "dur": 0.71
+          },
+          {
+            "target": "ib_i6",
+            "effect": "move",
+            "trigger": "por",
+            "to": [
+              -471.4,
+              0
+            ],
+            "dur": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Líquido *espeso*",
+      "narration": "Con frío, ese líquido se espesa, como el aceite en la nevera, y los iones van más lentos.",
+      "illustration": {
+        "svg_file": "aceite.svg",
+        "layout": "panel",
+        "caption": "Fig. 3 · Como el aceite",
+        "anims": [
+          {
+            "target": "bat2",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "terG",
+            "effect": "slide-up",
+            "delay": 0.15,
+            "dur": 0.5
+          },
+          {
+            "target": "neveraG",
+            "effect": "slide-right",
+            "delay": 0.3,
+            "dur": 0.6
+          },
+          {
+            "target": "ic_espeso",
+            "effect": "fade",
+            "trigger": "espesa",
+            "dur": 0.9
+          },
+          {
+            "target": "tesp",
+            "effect": "pop",
+            "trigger": "espesa",
+            "sfx": "pop"
+          },
+          {
+            "target": "ter_baja",
+            "effect": "grow",
+            "trigger": "frío",
+            "origin": "top",
+            "dur": 1.0,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "copoT",
+            "effect": "pop",
+            "trigger": "frío"
+          },
+          {
+            "target": "copoT",
+            "effect": "spin",
+            "trigger": "frío",
+            "amount": 0.15
+          },
+          {
+            "target": "act",
+            "effect": "hide"
+          },
+          {
+            "target": "act",
+            "effect": "fade",
+            "trigger": "aceite",
+            "dur": 0.9
+          },
+          {
+            "target": "neveraG",
+            "effect": "punch",
+            "trigger": "como",
+            "amount": 0.15
+          },
+          {
+            "target": "nev_luz",
+            "effect": "pulse",
+            "amount": 0.4,
+            "delay": 0.4
+          },
+          {
+            "target": "nev_frio",
+            "effect": "fade",
+            "trigger": "nevera",
+            "dur": 0.4
+          },
+          {
+            "target": "nev_frio",
+            "effect": "drift",
+            "trigger": "nevera",
+            "amount": 0.3
+          },
+          {
+            "target": "tnev",
+            "effect": "pop",
+            "trigger": "nevera",
+            "sfx": "pop"
+          },
+          {
+            "target": "gota",
+            "effect": "pop",
+            "trigger": "aceite"
+          },
+          {
+            "target": "gota",
+            "effect": "move",
+            "trigger": "nevera",
+            "to": [
+              0,
+              120
+            ],
+            "dur": 2.6
+          },
+          {
+            "target": "tlento",
+            "effect": "pop",
+            "trigger": "lentos",
+            "sfx": "ding"
+          },
+          {
+            "target": "ic_iones",
+            "effect": "punch",
+            "trigger": "van",
+            "amount": 0.1
+          },
+          {
+            "target": "ic_i0",
+            "effect": "move",
+            "delay": 0.1,
+            "to": [
+              158.6,
+              0
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "ic_i0",
+            "effect": "move",
+            "delay": 0.65,
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "ic_i0",
+            "effect": "move",
+            "delay": 1.2,
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "ic_i0",
+            "effect": "move",
+            "trigger": "espesa",
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 1.0
+          },
+          {
+            "target": "ic_i0",
+            "effect": "move",
+            "trigger": "aceite",
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 1.1
+          },
+          {
+            "target": "ic_i0",
+            "effect": "move",
+            "trigger": "van",
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 2.2
+          },
+          {
+            "target": "ic_i1",
+            "effect": "move",
+            "delay": 0.17,
+            "to": [
+              143.9,
+              0
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "ic_i1",
+            "effect": "move",
+            "delay": 0.72,
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "ic_i1",
+            "effect": "move",
+            "delay": 1.27,
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "ic_i1",
+            "effect": "move",
+            "trigger": "como",
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 1.0
+          },
+          {
+            "target": "ic_i1",
+            "effect": "move",
+            "trigger": "nevera",
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 1.1
+          },
+          {
+            "target": "ic_i1",
+            "effect": "move",
+            "trigger": "van",
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 2.35
+          },
+          {
+            "target": "ic_i2",
+            "effect": "move",
+            "delay": 0.24,
+            "to": [
+              197.2,
+              0
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "ic_i2",
+            "effect": "move",
+            "delay": 0.79,
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "ic_i2",
+            "effect": "move",
+            "delay": 1.34,
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "ic_i2",
+            "effect": "move",
+            "trigger": "se",
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 1.0
+          },
+          {
+            "target": "ic_i2",
+            "effect": "move",
+            "trigger": "en la",
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 1.1
+          },
+          {
+            "target": "ic_i2",
+            "effect": "move",
+            "trigger": "van",
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 2.5
+          },
+          {
+            "target": "ic_i3",
+            "effect": "move",
+            "delay": 0.31,
+            "to": [
+              -125.5,
+              0
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "ic_i3",
+            "effect": "move",
+            "delay": 0.86,
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "ic_i3",
+            "effect": "move",
+            "delay": 1.41,
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "ic_i3",
+            "effect": "move",
+            "trigger": "espesa",
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 1.0
+          },
+          {
+            "target": "ic_i3",
+            "effect": "move",
+            "trigger": "nevera",
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 1.1
+          },
+          {
+            "target": "ic_i3",
+            "effect": "move",
+            "trigger": "van",
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 2.65
+          },
+          {
+            "target": "ic_i4",
+            "effect": "move",
+            "delay": 0.38,
+            "to": [
+              -129.3,
+              0
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "ic_i4",
+            "effect": "move",
+            "delay": 0.93,
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 0.45
+          },
+          {
+            "target": "ic_i4",
+            "effect": "move",
+            "delay": 1.48,
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "ic_i4",
+            "effect": "move",
+            "trigger": "como",
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 1.0
+          },
+          {
+            "target": "ic_i4",
+            "effect": "move",
+            "trigger": "aceite",
+            "to": [
+              -216.5,
+              0
+            ],
+            "dur": 1.1
+          },
+          {
+            "target": "ic_i4",
+            "effect": "move",
+            "trigger": "van",
+            "to": [
+              216.5,
+              0
+            ],
+            "dur": 2.8
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Más *resistencia*",
+      "narration": "Sube la resistencia interna: la batería se esfuerza más y entrega menos energía.",
+      "illustration": {
+        "svg_file": "resistencia.svg",
+        "layout": "panel",
+        "caption": "Fig. 4 · Le cuesta más",
+        "anims": [
+          {
+            "target": "be",
+            "effect": "slide-left",
+            "delay": 0.0,
+            "dur": 0.6,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cajaG",
+            "effect": "slide-right",
+            "delay": 0.1,
+            "dur": 0.6
+          },
+          {
+            "target": "med",
+            "effect": "pop",
+            "delay": 0.3
+          },
+          {
+            "target": "be",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.12,
+            "delay": 0.6
+          },
+          {
+            "target": "be_brazo_der",
+            "effect": "wiggle",
+            "origin": "top-left",
+            "amount": 0.22,
+            "delay": 0.7
+          },
+          {
+            "target": "be_brazo_izq",
+            "effect": "wiggle",
+            "origin": "top-left",
+            "amount": 0.18,
+            "delay": 1.0
+          },
+          {
+            "target": "be_pierna_atras",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.1,
+            "delay": 0.85
+          },
+          {
+            "target": "be_cara",
+            "effect": "pulse",
+            "amount": 0.25,
+            "delay": 0.5
+          },
+          {
+            "target": "pesa",
+            "effect": "slide-down",
+            "trigger": "Sube",
+            "dur": 0.4,
+            "sfx": "boing"
+          },
+          {
+            "target": "cajaG",
+            "effect": "punch",
+            "trigger": "resistencia",
+            "amount": 0.2
+          },
+          {
+            "target": "tres",
+            "effect": "pop",
+            "trigger": "resistencia",
+            "sfx": "pop"
+          },
+          {
+            "target": "tsub",
+            "effect": "slide-up",
+            "trigger": "interna",
+            "dur": 0.4
+          },
+          {
+            "target": "be_cara",
+            "effect": "punch",
+            "trigger": "batería",
+            "amount": 0.3
+          },
+          {
+            "target": "sudor",
+            "effect": "pop",
+            "trigger": "esfuerza",
+            "sfx": "pop"
+          },
+          {
+            "target": "sudor",
+            "effect": "float",
+            "trigger": "esfuerza",
+            "amount": 0.4
+          },
+          {
+            "target": "be",
+            "effect": "move",
+            "trigger": "esfuerza",
+            "to": [
+              14,
+              0
+            ],
+            "dur": 1.0
+          },
+          {
+            "target": "cajaG",
+            "effect": "move",
+            "trigger": "esfuerza",
+            "to": [
+              14,
+              0
+            ],
+            "dur": 1.2
+          },
+          {
+            "target": "sudor",
+            "effect": "move",
+            "trigger": "esfuerza",
+            "to": [
+              14,
+              0
+            ],
+            "dur": 1.0
+          },
+          {
+            "target": "sudor2",
+            "effect": "pop",
+            "trigger": "más"
+          },
+          {
+            "target": "sudor2",
+            "effect": "float",
+            "trigger": "más",
+            "amount": 0.5
+          },
+          {
+            "target": "sudor2",
+            "effect": "move",
+            "trigger": "más",
+            "to": [
+              14,
+              0
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "med_aguja",
+            "effect": "move",
+            "trigger": "entrega",
+            "rotate": -110,
+            "origin": "center",
+            "dur": 1.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tmed",
+            "effect": "punch",
+            "trigger": "menos",
+            "amount": 0.3
+          },
+          {
+            "target": "med",
+            "effect": "punch",
+            "trigger": "energía",
+            "amount": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "A la *mitad*",
+      "narration": "A veinte grados bajo cero, la mayoría de baterías rinde más o menos a la mitad.",
+      "illustration": {
+        "svg_file": "mitad_free.svg",
+        "layout": "free",
+        "height": 860,
+        "caption": "Fig. 5 · A 20 bajo cero",
+        "anims": [
+          {
+            "target": "tgG",
+            "effect": "slide-up",
+            "delay": 0.0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bnG",
+            "effect": "slide-up",
+            "delay": 0.15,
+            "dur": 0.5
+          },
+          {
+            "target": "bfG",
+            "effect": "slide-up",
+            "delay": 0.3,
+            "dur": 0.5
+          },
+          {
+            "target": "copoG",
+            "effect": "pop",
+            "delay": 0.1
+          },
+          {
+            "target": "copoG",
+            "effect": "spin",
+            "amount": 0.12,
+            "delay": 0.1
+          },
+          {
+            "target": "bn_carga",
+            "effect": "grow",
+            "trigger": "baterías",
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "bn_rayo",
+            "effect": "pop",
+            "trigger": "baterías"
+          },
+          {
+            "target": "bf_carga",
+            "effect": "grow",
+            "trigger": "rinde",
+            "origin": "bottom",
+            "dur": 0.6,
+            "sfx": "pop"
+          },
+          {
+            "target": "bf_rayo",
+            "effect": "pop",
+            "trigger": "rinde"
+          },
+          {
+            "target": "bf_rayo",
+            "effect": "pulse",
+            "trigger": "rinde",
+            "amount": 0.5
+          },
+          {
+            "target": "tg_baja",
+            "effect": "grow",
+            "trigger": "veinte",
+            "origin": "top",
+            "dur": 1.2,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "copoG",
+            "effect": "punch",
+            "trigger": "bajo",
+            "amount": 0.4
+          },
+          {
+            "target": "t20",
+            "effect": "pop",
+            "trigger": "cero",
+            "sfx": "ding"
+          },
+          {
+            "target": "bf_hielo",
+            "effect": "pop",
+            "trigger": "cero"
+          },
+          {
+            "target": "bf_hielo",
+            "effect": "float",
+            "trigger": "cero",
+            "amount": 0.3
+          },
+          {
+            "target": "bfG",
+            "effect": "shake",
+            "trigger": "mayoría",
+            "amount": 0.15
+          },
+          {
+            "target": "c50_0",
+            "effect": "pop",
+            "trigger": "rinde"
+          },
+          {
+            "target": "c50_0",
+            "effect": "hide",
+            "trigger": "más"
+          },
+          {
+            "target": "c50_1",
+            "effect": "fade",
+            "trigger": "más",
+            "dur": 0.12
+          },
+          {
+            "target": "c50_1",
+            "effect": "hide",
+            "trigger": "o menos"
+          },
+          {
+            "target": "c50_2",
+            "effect": "fade",
+            "trigger": "o menos",
+            "dur": 0.12
+          },
+          {
+            "target": "c50_2",
+            "effect": "hide",
+            "trigger": "menos"
+          },
+          {
+            "target": "c50_3",
+            "effect": "fade",
+            "trigger": "menos",
+            "dur": 0.12
+          },
+          {
+            "target": "c50_3",
+            "effect": "hide",
+            "trigger": "mitad"
+          },
+          {
+            "target": "c50",
+            "effect": "fade",
+            "trigger": "mitad",
+            "dur": 0.12
+          },
+          {
+            "target": "c50",
+            "effect": "punch",
+            "trigger": "mitad",
+            "amount": 0.35,
+            "sfx": "ding"
+          },
+          {
+            "target": "taprox",
+            "effect": "pop",
+            "trigger": "mitad"
+          },
+          {
+            "target": "lmitad",
+            "effect": "draw",
+            "trigger": "mitad",
+            "dur": 0.5,
+            "sfx": "rotulador"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Entre *0 y 35*",
+      "narration": "Apple recomienda usar el iPhone entre cero y treinta y cinco grados.",
+      "illustration": {
+        "svg_file": "apple.svg",
+        "layout": "panel",
+        "caption": "Fig. 6 · Lo que dice Apple",
+        "anims": [
+          {
+            "target": "apple",
+            "effect": "pop",
+            "delay": 0.0,
+            "sfx": "pop"
+          },
+          {
+            "target": "apple",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.1,
+            "delay": 0.6
+          },
+          {
+            "target": "recta",
+            "effect": "slide-up",
+            "delay": 0.15,
+            "dur": 0.5
+          },
+          {
+            "target": "trec",
+            "effect": "pop",
+            "trigger": "recomienda",
+            "sfx": "pop"
+          },
+          {
+            "target": "iph",
+            "effect": "slide-up",
+            "trigger": "iPhone",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "iph",
+            "effect": "float",
+            "trigger": "iPhone",
+            "amount": 0.3
+          },
+          {
+            "target": "frio",
+            "effect": "pop",
+            "trigger": "usar"
+          },
+          {
+            "target": "frio",
+            "effect": "spin",
+            "trigger": "usar",
+            "amount": 0.12
+          },
+          {
+            "target": "pin0",
+            "effect": "slide-down",
+            "trigger": "cero",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "franja",
+            "effect": "draw",
+            "trigger": "cero",
+            "dur": 1.5,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "pin1",
+            "effect": "slide-down",
+            "trigger": "cinco",
+            "dur": 0.4,
+            "sfx": "pop"
+          },
+          {
+            "target": "calor",
+            "effect": "pop",
+            "trigger": "cinco"
+          },
+          {
+            "target": "calor",
+            "effect": "float",
+            "trigger": "cinco",
+            "amount": 0.3
+          },
+          {
+            "target": "trango",
+            "effect": "pop",
+            "trigger": "grados",
+            "sfx": "ding"
+          },
+          {
+            "target": "franja",
+            "effect": "pulse",
+            "trigger": "grados",
+            "amount": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Es *temporal*",
+      "narration": "Tranquilo: es temporal, al calentarse se recupera. Llévalo en un bolsillo interior y no lo cargues helado.",
+      "mascot": {
+        "trigger": "Tranquilo",
+        "pose": "point",
+        "note": "¡Al bolsillo y calentito!",
+        "side": "right"
+      },
+      "elements": [
+        {
+          "type": "tag",
+          "text": "ES TEMPORAL",
+          "tone": "ink",
+          "trigger": "temporal",
+          "sfx": "pop"
+        },
+        {
+          "type": "stamp",
+          "text": "SE RECUPERA",
+          "tone": "accent",
+          "trigger": "recupera",
+          "sfx": "sello"
+        },
+        {
+          "type": "tag",
+          "text": "BOLSILLO INTERIOR, NO LO CARGUES HELADO",
+          "tone": "hot",
+          "trigger": "interior",
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿A ti se te ha apagado con frío?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿A ti se te ha *apagado* con frío?",
+          "trigger": "¿A"
+        }
+      ]
+    }
+  ]
+}

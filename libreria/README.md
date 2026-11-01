@@ -178,6 +178,9 @@ fondos `sala_presentacion(W, H, suelo_y)`, `carretera(W, H, y0, y1)`, `pista_hie
 `barra_almacenamiento(id_, x, y, w, h, frac, col, texto)` (`_lleno`) · pantallas para `movil(pantalla=…)`: `pantalla_cargando` (icono + rueda `{id}_rueda` spin),
 `pantalla_almacenamiento` (casi lleno: `{id}_barra`, `{id}_aviso`), `pantalla_salud` (salud de la batería, `{id}_pct`) · `papelera(id_, cx, base, w)` (`_tapa`) ·
 `armario(id_, cx, base, w, h, lleno, abierto)` (a reventar, ropa asomando en `_ropa`: shake/wiggle)
+· `iones_bateria(id_, x0, y0, w, h, n, liquido="fluido|espeso|ambos")` (batería de litio en corte: ánodo gris, cátodo cobre, electrolito azul e iones lima con «+» en `_i<k>` (move ±`.puntos["viaje"]` para que crucen);
+«ambos» añade la capa oscura `_espeso` para fade; `_anodo`, `_catodo`, `_liquido`, `_t_anodo`/`_t_catodo`; .puntos liquido/iones/r) · `caja_pesada(id_, x0, base, w, h, texto="ENERGÍA")` ·
+`bateria_esfuerzo(id_, cx, base, s, nivel, inclina)` (pila con cara de esfuerzo empujando: `_cuerpo`, `_cara`, `_brazo_izq/_der` (wiggle origin top-left), `_pierna_atras`; .puntos manos/cabeza/sudor)
 
 ## objetos/compra.py (la compra: leche, pan, caprichos, reparto en frío)
 `brick_leche(id_, cx, base, s, col, texto="LECHE", rot_)` (brik de 1 L con techo a dos aguas, ≈ 110×235 a s=1; `_gota`; .puntos tapon/centro/base) ·
@@ -311,5 +314,6 @@ lote9-01-sacudida-dormir (archivo/sacudida-dormir/dib.py): sueno.py (cama de lad
 lote9-04-tripa-ruge (archivo/tripa-ruge/dib.py): aparato digestivo, estómago en corte e interior del intestino (cuerpo.py); escoba, tambor, tubo de pasta, columna griega y pergamino (casa.py).
 lote9-03-precio-kilo (archivo/precio-kilo/dib.py y guion.py): etiqueta_lineal, paquete y rollo_papel (tienda.py).
 lote9-05-cosquillas (archivo/cosquillas/dib.py): mente.py (pivote, pluma, bola de cristal, engranaje, barra de volumen, cara de cerebro) y brazo_robot (tecnologia.py).
+lote10-01-frio-bateria (archivo/frio-bateria/dib.py): tecnologia.py (batería de litio en corte con iones, caja pesada, batería que empuja con esfuerzo).
 lote9-06-miedo-oscuridad (archivo/miedo-oscuridad/dib.py y guion.py): noche.py (ojo, sentidos, interruptor, perchero, sombra de monstruo, sabana, acacia, hoguera, leona, mapa de África, fases de la luna, bandera de Canadá, calabaza, fantasma).
 lote9-07-tostada-mantequilla (archivo/tostada-mantequilla/dib.py y guion.py): tostada, mancha de mantequilla, plato, mesa de perfil, escalera y espejo roto (casa.py).

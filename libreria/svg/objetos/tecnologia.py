@@ -317,3 +317,159 @@ def brazo_robot(id_, bx, base, s=1.0, hombro=-60, codo=70, herramienta="pluma", 
     o += brazo_g + hombro_c
     return Pieza(g(id_, o), {"punta": punta, "hombro": (hx, hy), "codo": (ex, ey), "muneca": (wx, wy)},
                  (min(bx - 90 * s, wx - 60 * s), min(ey, wy, punta[1]) - 60 * s, max(bx + 90 * s, wx + 60 * s, punta[0]), base + 16 * s))
+
+
+# ------------------------------------------------------------------ interior de una batería de litio (lote10-01-frio-bateria)
+registrar_defs(
+    lg("anodoG", [(0, "#7A8296"), (1, "#3A4052")], 0, 0, 1, 0)
+    + lg("catodoG", [(0, "#F0A06A"), (1, "#A4532A")], 0, 0, 1, 0)
+    + lg("electrolitoG", [(0, "#7FD0FF"), (1, "#2F7FD0")])
+    + lg("electrolitoEsp", [(0, "#2A4F9A"), (1, "#14275A")])
+    + lg("carcasaG", [(0, "#4A5470"), (1, "#20263A")])
+    + lg("ionG", [(0, "#E6FF8A"), (1, "#9BD400")])
+    + lg("cajaPesadaG", [(0, "#8C95A8"), (1, "#4A5266")])
+)
+
+
+def iones_bateria(id_, x0, y0, w, h, n=7, liquido="fluido", seed=3, rotulos=True, size=None):
+    """Batería de litio en corte (≈ w×h): ánodo de grafito gris a la izquierda, cátodo cobre a la derecha, líquido azul
+    (electrolito) entre medias con un separador discontinuo, e iones lima con «+».
+    liquido: "fluido" (azul claro), "espeso" (azul oscuro con grumos) o "ambos" (fluido + capa espesa en {id}_espeso para fade).
+    Sub-ids: {id}_carcasa, {id}_anodo, {id}_catodo, {id}_liquido, {id}_espeso (si «ambos»), {id}_iones (todos) y {id}_i<k> (cada ion:
+    drift para que viajen, o move [±viaje, 0]), {id}_t_anodo / {id}_t_catodo (rótulos, si rotulos=True).
+    .puntos: anodo, catodo, centro, liquido (x0, y0, x1, y1), iones (lista de (x, y)), r (radio del ion), viaje (ancho libre del líquido)."""
+    import random
+    rnd = random.Random(seed)
+    o = sombra_caja(x0, y0, w, h, rx=34, dx=14, dy=16, op=0.3)
+    o += g(f"{id_}_carcasa" if id_ else None,
+           f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="34" fill="url(#carcasaG)" stroke="{INK}" stroke-width="9"/>'
+           + brillo(f"M {f(x0+30)} {f(y0+22)} L {f(x0+w*0.45)} {f(y0+22)}", 6, 0.35))
+    pad = min(w, h) * 0.07
+    pw = w * 0.17
+    ix0, iy0, ix1, iy1 = x0 + pad, y0 + pad, x0 + w - pad, y0 + h - pad
+    lx0, lx1 = ix0 + pw, ix1 - pw
+    # líquido (electrolito)
+    liq = f'<rect x="{f(lx0-6)}" y="{f(iy0)}" width="{f(lx1-lx0+12)}" height="{f(iy1-iy0)}" fill="url(#electrolitoG)"/>'
+    for _ in range(9):
+        bx, by = rnd.uniform(lx0 + 20, lx1 - 20), rnd.uniform(iy0 + 20, iy1 - 20)
+        liq += f'<circle cx="{f(bx)}" cy="{f(by)}" r="{f(rnd.uniform(4, 9))}" fill="#FFFFFF" opacity="0.35"/>'
+    liq += brillo(f"M {f(lx0+18)} {f(iy0+20)} L {f(lx0+18)} {f(iy1-20)}", 5, 0.3)
+    espeso = f'<rect x="{f(lx0-6)}" y="{f(iy0)}" width="{f(lx1-lx0+12)}" height="{f(iy1-iy0)}" fill="url(#electrolitoEsp)"/>'
+    for _ in range(7):
+        bx, by = rnd.uniform(lx0 + 30, lx1 - 30), rnd.uniform(iy0 + 30, iy1 - 30)
+        rx_ = rnd.uniform(18, 34)
+        espeso += f'<ellipse cx="{f(bx)}" cy="{f(by)}" rx="{f(rx_)}" ry="{f(rx_*0.55)}" fill="#3B66B8" opacity="0.55"/>'
+    if liquido == "espeso":
+        o += g(f"{id_}_liquido" if id_ else None, espeso)
+    else:
+        o += g(f"{id_}_liquido" if id_ else None, liq)
+        if liquido == "ambos":
+            o += g(f"{id_}_espeso" if id_ else None, espeso)
+    # separador poroso
+    sx = (lx0 + lx1) / 2
+    o += f'<path d="M {f(sx)} {f(iy0+8)} L {f(sx)} {f(iy1-8)}" stroke="#FFFFFF" stroke-width="6" stroke-dasharray="18 14" stroke-linecap="round" opacity="0.55"/>'
+    # ánodo de grafito (capas) y cátodo (granos)
+    an = f'<rect x="{f(ix0)}" y="{f(iy0)}" width="{f(pw)}" height="{f(iy1-iy0)}" rx="10" fill="url(#anodoG)" stroke="{INK}" stroke-width="6"/>'
+    k = 0
+    yy = iy0 + 26
+    while yy < iy1 - 14:
+        an += f'<path d="M {f(ix0+10)} {f(yy)} L {f(ix0+pw-10)} {f(yy)}" stroke="#A9B1C4" stroke-width="4" opacity="0.6"/>'
+        yy += 30
+        k += 1
+    an += brillo(f"M {f(ix0+12)} {f(iy0+16)} L {f(ix0+12)} {f(iy1-16)}", 5, 0.45)
+    ca = f'<rect x="{f(ix1-pw)}" y="{f(iy0)}" width="{f(pw)}" height="{f(iy1-iy0)}" rx="10" fill="url(#catodoG)" stroke="{INK}" stroke-width="6"/>'
+    for _ in range(int((iy1 - iy0) / 22)):
+        ca += f'<circle cx="{f(rnd.uniform(ix1-pw+14, ix1-14))}" cy="{f(rnd.uniform(iy0+14, iy1-14))}" r="{f(rnd.uniform(5, 9))}" fill="#FFD2B0" opacity="0.5"/>'
+    ca += brillo(f"M {f(ix1-pw+12)} {f(iy0+16)} L {f(ix1-pw+12)} {f(iy1-16)}", 5, 0.45)
+    o += g(f"{id_}_anodo" if id_ else None, an) + g(f"{id_}_catodo" if id_ else None, ca)
+    # iones
+    r = min(h * 0.055, (lx1 - lx0) * 0.07)
+    pos = []
+    filas = n
+    for i in range(n):
+        yy = iy0 + (iy1 - iy0) * (i + 0.5) / filas + rnd.uniform(-0.12, 0.12) * (iy1 - iy0) / filas
+        xx = lx0 + r + 16 + rnd.uniform(0, 1) * (lx1 - lx0 - 2 * r - 32)
+        pos.append((xx, yy))
+    ions = ""
+    for i, (xx, yy) in enumerate(pos):
+        ion = (f'<circle cx="{f(xx+3)}" cy="{f(yy+4)}" r="{f(r)}" fill="{INK}" opacity="0.3"/>'
+               f'<circle cx="{f(xx)}" cy="{f(yy)}" r="{f(r)}" fill="url(#ionG)" stroke="{INK}" stroke-width="5"/>'
+               f'<path d="M {f(xx-r*0.45)} {f(yy)} L {f(xx+r*0.45)} {f(yy)} M {f(xx)} {f(yy-r*0.45)} L {f(xx)} {f(yy+r*0.45)}" stroke="{INK}" stroke-width="{f(max(4, r*0.2))}" stroke-linecap="round"/>'
+               f'<circle cx="{f(xx-r*0.4)}" cy="{f(yy-r*0.42)}" r="{f(r*0.2)}" fill="#FFFFFF" opacity="0.8"/>')
+        ions += g(f"{id_}_i{i}" if id_ else None, ion)
+    o += g(f"{id_}_iones" if id_ else None, ions)
+    if rotulos:
+        sz = size or max(22, min(34, w * 0.032))
+        o += g(f"{id_}_t_anodo" if id_ else None, T(ix0 + pw / 2, y0 + h + sz * 1.5, "ÁNODO", sz, "#FFFFFF", font=DISP,
+                                                    extra=f'stroke="{INK}" stroke-width="6" paint-order="stroke"'))
+        o += g(f"{id_}_t_catodo" if id_ else None, T(ix1 - pw / 2, y0 + h + sz * 1.5, "CÁTODO", sz, "#FFFFFF", font=DISP,
+                                                     extra=f'stroke="{INK}" stroke-width="6" paint-order="stroke"'))
+    return Pieza(g(id_, o), {"anodo": (ix0 + pw / 2, (iy0 + iy1) / 2), "catodo": (ix1 - pw / 2, (iy0 + iy1) / 2),
+                             "centro": (x0 + w / 2, y0 + h / 2), "liquido": (lx0, iy0, lx1, iy1), "iones": pos, "r": r,
+                             "viaje": lx1 - lx0}, (x0, y0, x0 + w, y0 + h + (60 if rotulos else 0)))
+
+
+def caja_pesada(id_, x0, base, w=260, h=200, texto="ENERGÍA", size=None):
+    """Caja metálica pesada con remaches y franjas de aviso (lo que cuesta mover). (x0, base) = esquina inferior izquierda."""
+    y0 = base - h
+    o = sombra(x0 + w / 2 + 10, base + 4, w * 0.6, 14, 0.3)
+    o += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="14" fill="url(#cajaPesadaG)" stroke="{INK}" stroke-width="8"/>'
+    fr = h * 0.16
+    o += f'<rect x="{f(x0+4)}" y="{f(base-fr-4)}" width="{f(w-8)}" height="{f(fr)}" fill="{YEL}"/>'
+    for i in range(int(w / 40) + 1):
+        xx = x0 + 10 + i * 40
+        o += f'<path d="M {f(xx)} {f(base-4)} L {f(min(xx+fr, x0+w-4))} {f(base-fr-4)} L {f(min(xx+fr+16, x0+w-4))} {f(base-fr-4)} L {f(min(xx+16, x0+w-4))} {f(base-4)} Z" fill="{INK}"/>'
+    o += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="14" fill="none" stroke="{INK}" stroke-width="8"/>'
+    for xx, yy in ((x0 + 18, y0 + 18), (x0 + w - 18, y0 + 18), (x0 + 18, base - fr - 20), (x0 + w - 18, base - fr - 20)):
+        o += f'<circle cx="{f(xx)}" cy="{f(yy)}" r="7" fill="#D7DCE6" stroke="{INK}" stroke-width="3"/>'
+    if texto:
+        sz = size or min(42, w * 0.8 / max(1, len(texto)) * 1.55)
+        o += T(x0 + w / 2, y0 + (h - fr) / 2 + sz * 0.36, texto, sz, "#FFFFFF", font=DISP, extra=f'stroke="{INK}" stroke-width="6" paint-order="stroke"')
+    o += brillo(f"M {f(x0+16)} {f(y0+40)} L {f(x0+16)} {f(base-fr-36)}", 6, 0.45)
+    return Pieza(g(id_, o), {"izq": (x0, y0 + h * 0.45), "cima": (x0 + w / 2, y0), "centro": (x0 + w / 2, y0 + h / 2)}, (x0, y0, x0 + w, base))
+
+
+def bateria_esfuerzo(id_, cx, base, s=1.0, nivel=0.3, inclina=10):
+    """Batería con cara de esfuerzo, piernas y brazos, inclinada hacia la derecha empujando algo (metáfora de la resistencia interna).
+    (cx, base) = suelo bajo los pies; s=1 → unos 470 de alto. Pivotes para rossark: {id} (todo, origin bottom: sway/breathe),
+    {id}_cuerpo (la pila con la cara), {id}_brazo_izq / {id}_brazo_der (origin top-left: empujan), {id}_pierna_atras / {id}_pierna_delante
+    (origin top), {id}_cara (ojos apretados y dientes), {id}_carga (grow). .puntos: manos (x, y), cabeza (x, y), sudor (x, y)."""
+    bw, bh = 190 * s, 330 * s
+    hip = base - 115 * s
+    a = math.radians(inclina)
+    rotp = lambda x, y: (cx + (x - cx) * math.cos(a) - (y - base) * math.sin(a), base + (x - cx) * math.sin(a) + (y - base) * math.cos(a))
+    o = sombra(cx + 20 * s, base + 4, 150 * s, 14 * s, 0.28)
+    # piernas (fuera del giro: los pies quedan en el suelo)
+    hx0, hy0 = rotp(cx - 45 * s, hip)
+    hx1, hy1 = rotp(cx + 45 * s, hip)
+    pa = (trazo(f"M {f(hx0)} {f(hy0)} L {f(cx-120*s)} {f(base-14*s)}", 26 * s, "#2A3045", 7)
+          + f'<ellipse cx="{f(cx-138*s)}" cy="{f(base-8*s)}" rx="{f(34*s)}" ry="{f(15*s)}" fill="{INK}"/>')
+    pd = (trazo(f"M {f(hx1)} {f(hy1)} L {f(cx+60*s)} {f(base-60*s)} L {f(cx+52*s)} {f(base-14*s)}", 26 * s, "#2A3045", 7)
+          + f'<ellipse cx="{f(cx+74*s)}" cy="{f(base-8*s)}" rx="{f(34*s)}" ry="{f(15*s)}" fill="{INK}"/>')
+    o += g(f"{id_}_pierna_atras" if id_ else None, pa)
+    by = hip - bh / 2 + 20 * s
+    bat = bateria(f"{id_}_pila" if id_ else None, cx, by, bw, bh, nivel=nivel, rayo=False)
+    # cara: ojos apretados (> <), cejas fruncidas y dientes apretados
+    fy = by - bh * 0.12
+    ex = 40 * s
+    cara = (f'<path d="M {f(cx-ex-20*s)} {f(fy-14*s)} L {f(cx-ex+12*s)} {f(fy)} L {f(cx-ex-20*s)} {f(fy+14*s)}" fill="none" stroke="#FFFFFF" stroke-width="{f(9*s)}" stroke-linecap="round" stroke-linejoin="round"/>'
+            f'<path d="M {f(cx+ex+20*s)} {f(fy-14*s)} L {f(cx+ex-12*s)} {f(fy)} L {f(cx+ex+20*s)} {f(fy+14*s)}" fill="none" stroke="#FFFFFF" stroke-width="{f(9*s)}" stroke-linecap="round" stroke-linejoin="round"/>'
+            f'<path d="M {f(cx-ex-26*s)} {f(fy-36*s)} L {f(cx-ex+16*s)} {f(fy-24*s)} M {f(cx+ex+26*s)} {f(fy-36*s)} L {f(cx+ex-16*s)} {f(fy-24*s)}" stroke="#FFFFFF" stroke-width="{f(8*s)}" stroke-linecap="round"/>'
+            f'<rect x="{f(cx-38*s)}" y="{f(fy+34*s)}" width="{f(76*s)}" height="{f(30*s)}" rx="{f(8*s)}" fill="#FFFFFF" stroke="{INK}" stroke-width="{f(5*s)}"/>'
+            f'<path d="M {f(cx-38*s)} {f(fy+49*s)} L {f(cx+38*s)} {f(fy+49*s)} M {f(cx-13*s)} {f(fy+34*s)} L {f(cx-13*s)} {f(fy+64*s)} M {f(cx+13*s)} {f(fy+34*s)} L {f(cx+13*s)} {f(fy+64*s)}" stroke="{INK}" stroke-width="{f(3.5*s)}"/>')
+    cuerpo = g(f"{id_}_cuerpo" if id_ else None, bat + g(f"{id_}_cara" if id_ else None, cara))
+    # brazos (salen del lado derecho de la pila, hacia delante)
+    shx, shy = cx + bw / 2 - 6 * s, by - bh * 0.05
+    mano_d = (shx + 150 * s, shy + 12 * s)
+    mano_i = (shx + 140 * s, shy + 62 * s)
+    bi = (trazo(f"M {f(shx-10*s)} {f(shy+48*s)} Q {f(shx+60*s)} {f(shy+96*s)} {f(mano_i[0])} {f(mano_i[1])}", 22 * s, "#2A3045", 7)
+          + f'<circle cx="{f(mano_i[0])}" cy="{f(mano_i[1])}" r="{f(20*s)}" fill="#FFFFFF" stroke="{INK}" stroke-width="{f(6*s)}"/>')
+    bd = (trazo(f"M {f(shx-10*s)} {f(shy)} Q {f(shx+70*s)} {f(shy+40*s)} {f(mano_d[0])} {f(mano_d[1])}", 22 * s, "#2A3045", 7)
+          + f'<circle cx="{f(mano_d[0])}" cy="{f(mano_d[1])}" r="{f(21*s)}" fill="#FFFFFF" stroke="{INK}" stroke-width="{f(6*s)}"/>')
+    giro = (g(f"{id_}_brazo_izq" if id_ else None, bi) + cuerpo + g(f"{id_}_brazo_der" if id_ else None, bd))
+    o += f'<g transform="rotate({f(inclina)} {f(cx)} {f(base)})">{giro}</g>'
+    o += g(f"{id_}_pierna_delante" if id_ else None, pd)
+    manos = rotp(*mano_d)
+    cab = rotp(cx, by - bh / 2)
+    sudor = rotp(cx - bw / 2 - 20 * s, by - bh * 0.32)
+    return Pieza(g(id_, o), {"manos": manos, "cabeza": cab, "sudor": sudor}, (cx - 175 * s, cab[1] - 30 * s, manos[0] + 30 * s, base + 10))
