@@ -61,11 +61,17 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-10-31 14:00 | ¿Por qué te da miedo la oscuridad? | content/lote9-06-miedo-oscuridad | sí | sí | pendiente (cola de Buffer) | no | previews/lote9-06-miedo-oscuridad-con-voz.mp4 (45,9 s) |
 | 2026-11-01 14:00 | ¿Por qué la tostada cae por la mantequilla? | content/lote9-07-tostada-mantequilla | sí | sí | pendiente (cola de Buffer) | no | previews/lote9-07-tostada-mantequilla-con-voz.mp4 (render en curso) |
 
+### Semana 2 nov (1 al día; guiones en guiones/semana-2026-11-02.md)
+| Fecha | Tema | Carpeta | Guion | Montado | Programado | Publicado | Vídeo |
+|---|---|---|---|---|---|---|---|
+| 2026-11-02 14:00 | ¿Por qué el frío se come la batería del móvil? | content/lote10-01-frio-bateria | sí | sí | sí | no | previews/lote10-01-frio-bateria-con-voz.mp4 (42,1 s) |
+
 ## Coste por fase (tokens de subagente, aprox.)
 | Fecha | Fase | Coste |
 |---|---|---|
 | 2026-10-16 | Librería (una vez) | 360.000 |
 | 2026-10-16 | Guiones semana 20-24 oct (5 vídeos) | 100.000 |
+| 2026-11-01 | Montaje frío batería (rossark) | ≈ 250.000 |
 | 2026-10-26 | Montajes rossark 27-oct a 1-nov (6 vídeos, ≈ 230-290k c/u) + guiones semana 2-nov (10) 247k | ≈ 1.780.000 |
 | 2026-10-25 | Montaje respingo con método rossark (6 piezas nuevas) | ≈ 290.000 |
 | 2026-10-23 | Actualidad: cambio de hora 203k, gasto campaña 200k + rehecho 242k | ≈ 645.000 |
