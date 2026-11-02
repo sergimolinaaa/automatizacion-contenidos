@@ -17,6 +17,10 @@
 5. Medir: cada lunes el usuario pasa capturas de views (TikTok, IG, YouTube) → se anotan en data/metricas.md y se
    decide 1 cambio por semana (hora, gancho, duración o tema), nunca varios a la vez.
 
+## Estilo
+- Desde el 6-nov TODO en estilo «papel recortado» (elección del usuario, 2-nov). El último vídeo del estilo anterior sale el 5-nov;
+  no se mezclan estilos.
+
 ## Experimentos en cola (uno por semana)
 - Semana 9-nov: gancho «mito en grande» en todos los vídeos.
 - Semana 16-nov: duración ~35 s (100-110 palabras) frente a 45 s.
