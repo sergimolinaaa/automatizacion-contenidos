@@ -1,0 +1,1109 @@
+{
+  "topic": "Empate a votos: ¿quién gana el escaño? Con D'Hondt, si dos cocientes coinciden el escaño va a la candidatura con más votos en total; si también empatan en votos, el primer empate se resuelve por sorteo y los siguientes de forma alternativa (LOREG art. 163.1 d). Caso de Lújar (Granada, 2011) y STC 125/2011",
+  "categoria": "politica",
+  "title": "Empate a votos: ¿quién se lleva el escaño? Lo dice la ley",
+  "source": "Fuentes: BOE, LOREG art. 163 · Junta Electoral Central · STC 125/2011 · LegalToday · Público",
+  "chapters": [
+    "?",
+    "1",
+    "2",
+    "3",
+    "+",
+    "TÚ"
+  ],
+  "outro_cta": "Todo tiene un truco",
+  "cover": {
+    "text": "Empate a votos: quién gana el *escaño*",
+    "scene": 0
+  },
+  "publish": {
+    "at": "2026-11-03T14:00:00+01:00",
+    "caption": "Empate a votos: ¿quién gana el escaño? Sin posicionarnos: la ley (art. 163 LOREG) se lo da al que tenga más votos en total. Si también empatan, el primer empate va a sorteo y los siguientes por turnos. En Lújar, en 2011, un sorteo decidió la alcaldía (BOE, Tribunal Constitucional). ¿Sabías que un empate se decide así?",
+    "description": "Empate a votos: ¿quién se lleva el escaño? Te lo explicamos sin posicionarnos, con el texto de la ley. Con el método D'Hondt, si dos cocientes coinciden, el artículo 163 de la Ley Orgánica del Régimen Electoral General da el escaño a la candidatura con más votos en total; y si también empatan en votos, «el primer empate se resolverá por sorteo y los sucesivos de forma alternativa». Pasó en Lújar (Granada) en 2011: dos candidaturas empataron a 161 votos, un sorteo decidió la alcaldía y el Tribunal Constitucional lo avaló (STC 125/2011). Fuentes: BOE, Junta Electoral Central, Tribunal Constitucional, LegalToday. ¿Sabías que un empate se decide así?",
+    "hashtags": [
+      "elecciones",
+      "leyelectoral",
+      "dhondt",
+      "votar",
+      "politica"
+    ]
+  },
+  "scenes": [
+    {
+      "chapter": 0,
+      "headline": "¿*Empate* a votos?",
+      "narration": "¿Y si dos partidos empatan a votos? ¿Quién gana el escaño?",
+      "illustration": {
+        "svg_file": "gancho_full.svg",
+        "layout": "full",
+        "caption": "Fig. 1 · Empate a votos",
+        "anims": [
+          {
+            "target": "mesa",
+            "effect": "slide-up",
+            "delay": 0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "pilaE_s0",
+            "effect": "slide-down",
+            "delay": 0.12,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaC_s0",
+            "effect": "slide-down",
+            "delay": 0.12,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaE_s1",
+            "effect": "slide-down",
+            "delay": 0.2,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaC_s1",
+            "effect": "slide-down",
+            "delay": 0.2,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaE_s2",
+            "effect": "slide-down",
+            "delay": 0.28,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaC_s2",
+            "effect": "slide-down",
+            "delay": 0.28,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaE_s3",
+            "effect": "slide-down",
+            "delay": 0.36,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaC_s3",
+            "effect": "slide-down",
+            "delay": 0.36,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaE_s4",
+            "effect": "slide-down",
+            "delay": 0.44,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaC_s4",
+            "effect": "slide-down",
+            "delay": 0.44,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaE_s5",
+            "effect": "slide-down",
+            "delay": 0.52,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaC_s5",
+            "effect": "slide-down",
+            "delay": 0.52,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaE_s6",
+            "effect": "slide-down",
+            "delay": 0.6,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaC_s6",
+            "effect": "slide-down",
+            "delay": 0.6,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaE_s7",
+            "effect": "slide-down",
+            "delay": 0.68,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaC_s7",
+            "effect": "slide-down",
+            "delay": 0.68,
+            "dur": 0.3
+          },
+          {
+            "target": "pilaE",
+            "effect": "breathe",
+            "origin": "bottom",
+            "phase": 0.1,
+            "amount": 0.5,
+            "delay": 0.9
+          },
+          {
+            "target": "pilaC",
+            "effect": "breathe",
+            "origin": "bottom",
+            "phase": 0.6,
+            "amount": 0.5,
+            "delay": 1.0
+          },
+          {
+            "target": "pilaE_chip",
+            "effect": "pop",
+            "trigger": "dos",
+            "sfx": "pop"
+          },
+          {
+            "target": "pilaC_chip",
+            "effect": "pop",
+            "trigger": "partidos"
+          },
+          {
+            "target": "marc_0",
+            "effect": "pop",
+            "trigger": "partidos",
+            "sfx": "pop"
+          },
+          {
+            "target": "marc_0",
+            "effect": "hide",
+            "trigger": "empatan"
+          },
+          {
+            "target": "marc_1",
+            "effect": "fade",
+            "trigger": "empatan",
+            "dur": 0.15
+          },
+          {
+            "target": "marc_1",
+            "effect": "hide",
+            "trigger": "votos"
+          },
+          {
+            "target": "marc",
+            "effect": "fade",
+            "trigger": "votos",
+            "dur": 0.15,
+            "sfx": "ding"
+          },
+          {
+            "target": "marc",
+            "effect": "punch",
+            "trigger": "votos",
+            "amount": 0.3
+          },
+          {
+            "target": "marc",
+            "effect": "float",
+            "trigger": "Quién",
+            "amount": 0.2
+          },
+          {
+            "target": "hemi",
+            "effect": "slide-down",
+            "trigger": "Quién",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "duda",
+            "effect": "pop",
+            "trigger": "Quién",
+            "sfx": "sorpresa",
+            "origin": "bottom-left"
+          },
+          {
+            "target": "duda",
+            "effect": "float",
+            "trigger": "gana",
+            "amount": 0.4
+          },
+          {
+            "target": "esc",
+            "effect": "pop",
+            "trigger": "escaño",
+            "sfx": "ding"
+          },
+          {
+            "target": "esc",
+            "effect": "pulse",
+            "trigger": "escaño",
+            "amount": 0.8
+          },
+          {
+            "target": "onda",
+            "effect": "ripple",
+            "trigger": "escaño"
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Sin *posicionarnos*",
+      "narration": "Te lo explicamos sin posicionarnos, simplemente con lo que dice la ley. Se usa el método D'Hondt.",
+      "illustration": {
+        "svg_file": "ley.svg",
+        "layout": "panel",
+        "caption": "Fig. 2 · LOREG",
+        "anims": [
+          {
+            "target": "doc",
+            "effect": "slide-up",
+            "delay": 0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "doc",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.12,
+            "delay": 0.6
+          },
+          {
+            "target": "chisp",
+            "effect": "pop",
+            "trigger": "explicamos"
+          },
+          {
+            "target": "chisp",
+            "effect": "pulse",
+            "trigger": "explicamos",
+            "amount": 0.6
+          },
+          {
+            "target": "sello",
+            "effect": "pop",
+            "trigger": "posicionarnos",
+            "sfx": "sello"
+          },
+          {
+            "target": "sello",
+            "effect": "punch",
+            "trigger": "posicionarnos",
+            "amount": 0.5
+          },
+          {
+            "target": "sello",
+            "effect": "sway",
+            "trigger": "simplemente",
+            "amount": 0.1
+          },
+          {
+            "target": "doc",
+            "effect": "punch",
+            "trigger": "simplemente",
+            "amount": 0.2
+          },
+          {
+            "target": "chisp",
+            "effect": "punch",
+            "trigger": "que",
+            "amount": 0.4
+          },
+          {
+            "target": "tley",
+            "effect": "pop",
+            "trigger": "dice",
+            "sfx": "pop"
+          },
+          {
+            "target": "doc",
+            "effect": "punch",
+            "trigger": "ley",
+            "amount": 0.25
+          },
+          {
+            "target": "tley",
+            "effect": "punch",
+            "trigger": "la",
+            "amount": 0.3
+          },
+          {
+            "target": "hemi",
+            "effect": "slide-up",
+            "trigger": "Se",
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "eg0",
+            "effect": "pop",
+            "trigger": "usa"
+          },
+          {
+            "target": "eg1",
+            "effect": "pop",
+            "trigger": "el"
+          },
+          {
+            "target": "eg2",
+            "effect": "pop",
+            "trigger": "método"
+          },
+          {
+            "target": "hemi",
+            "effect": "breathe",
+            "origin": "bottom",
+            "amount": 0.3,
+            "trigger": "método"
+          },
+          {
+            "target": "tdh",
+            "effect": "pop",
+            "trigger": "D'Hondt",
+            "sfx": "pop"
+          },
+          {
+            "target": "tdh",
+            "effect": "punch",
+            "trigger": "D'Hondt",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 1,
+      "number": "1",
+      "headline": "Ganan los *cocientes*",
+      "narration": "Divides los votos de cada partido entre uno, dos, tres, y los cocientes más altos ganan escaño.",
+      "illustration": {
+        "svg_file": "tabla_free.svg",
+        "layout": "free",
+        "height": 820,
+        "caption": "Fig. 3 · Ejemplo inventado",
+        "anims": [
+          {
+            "target": "tinv",
+            "effect": "pop",
+            "delay": 0,
+            "sfx": "pop"
+          },
+          {
+            "target": "tab_r0",
+            "effect": "slide-right",
+            "delay": 0.05,
+            "dur": 0.45,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "tab_r1",
+            "effect": "slide-right",
+            "delay": 0.18,
+            "dur": 0.45
+          },
+          {
+            "target": "tab_h0",
+            "effect": "pop",
+            "delay": 0.3
+          },
+          {
+            "target": "tab_h1",
+            "effect": "pop",
+            "delay": 0.38
+          },
+          {
+            "target": "tab_h2",
+            "effect": "pop",
+            "delay": 0.46
+          },
+          {
+            "target": "arco",
+            "effect": "slide-up",
+            "delay": 0.35,
+            "dur": 0.5
+          },
+          {
+            "target": "tab_r0",
+            "effect": "float",
+            "amount": 0.15,
+            "delay": 0.7
+          },
+          {
+            "target": "tab_r1",
+            "effect": "float",
+            "amount": 0.2,
+            "delay": 0.95
+          },
+          {
+            "target": "tab_r0",
+            "effect": "punch",
+            "trigger": "votos",
+            "amount": 0.2
+          },
+          {
+            "target": "tab_r1",
+            "effect": "punch",
+            "trigger": "partido",
+            "amount": 0.2
+          },
+          {
+            "target": "tab_c0_0",
+            "effect": "pop",
+            "trigger": "uno",
+            "sfx": "pop"
+          },
+          {
+            "target": "tab_c1_0",
+            "effect": "pop",
+            "trigger": "uno"
+          },
+          {
+            "target": "tab_c0_1",
+            "effect": "pop",
+            "trigger": "dos",
+            "sfx": "pop"
+          },
+          {
+            "target": "tab_c1_1",
+            "effect": "pop",
+            "trigger": "dos"
+          },
+          {
+            "target": "tab_c0_2",
+            "effect": "pop",
+            "trigger": "tres",
+            "sfx": "pop"
+          },
+          {
+            "target": "tab_c1_2",
+            "effect": "pop",
+            "trigger": "tres"
+          },
+          {
+            "target": "tab_o0_0",
+            "effect": "draw",
+            "trigger": "los cocientes",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "tab_o1_0",
+            "effect": "draw",
+            "trigger": "cocientes",
+            "dur": 0.4
+          },
+          {
+            "target": "tab_o0_1",
+            "effect": "draw",
+            "trigger": "más",
+            "dur": 0.4
+          },
+          {
+            "target": "tgana",
+            "effect": "pop",
+            "trigger": "ganan",
+            "sfx": "pop"
+          },
+          {
+            "target": "f0",
+            "effect": "pop",
+            "trigger": "altos",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "f0",
+            "effect": "move",
+            "trigger": "altos",
+            "to": [
+              -115,
+              424
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "f1",
+            "effect": "pop",
+            "trigger": "ganan",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "f1",
+            "effect": "move",
+            "trigger": "ganan",
+            "to": [
+              55,
+              238
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "f2",
+            "effect": "pop",
+            "trigger": "escaño",
+            "sfx": "whoosh"
+          },
+          {
+            "target": "f2",
+            "effect": "move",
+            "trigger": "escaño",
+            "to": [
+              31,
+              424
+            ],
+            "dur": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Gana *el más votado*",
+      "narration": "Si dos cocientes coinciden, el artículo ciento sesenta y tres da el escaño al más votado en total.",
+      "illustration": {
+        "svg_file": "balanza.svg",
+        "layout": "panel",
+        "caption": "Fig. 4 · LOREG, art. 163",
+        "anims": [
+          {
+            "target": "cas0",
+            "effect": "slide-right",
+            "delay": 0,
+            "dur": 0.45,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "cas1",
+            "effect": "slide-left",
+            "delay": 0.12,
+            "dur": 0.45
+          },
+          {
+            "target": "bal0",
+            "effect": "slide-up",
+            "delay": 0.2,
+            "dur": 0.5
+          },
+          {
+            "target": "cas0",
+            "effect": "float",
+            "amount": 0.2,
+            "delay": 0.6
+          },
+          {
+            "target": "cas1",
+            "effect": "float",
+            "amount": 0.25,
+            "delay": 0.85
+          },
+          {
+            "target": "igual",
+            "effect": "pop",
+            "trigger": "coinciden",
+            "sfx": "pop"
+          },
+          {
+            "target": "igual",
+            "effect": "pulse",
+            "trigger": "coinciden",
+            "amount": 0.6
+          },
+          {
+            "target": "cas0",
+            "effect": "punch",
+            "trigger": "coinciden",
+            "amount": 0.25
+          },
+          {
+            "target": "cas1",
+            "effect": "punch",
+            "trigger": "coinciden",
+            "amount": 0.25
+          },
+          {
+            "target": "tart",
+            "effect": "pop",
+            "trigger": "artículo",
+            "sfx": "pop"
+          },
+          {
+            "target": "tart",
+            "effect": "punch",
+            "trigger": "tres",
+            "amount": 0.3
+          },
+          {
+            "target": "bal0",
+            "effect": "punch",
+            "trigger": "escaño",
+            "amount": 0.12
+          },
+          {
+            "target": "bal1",
+            "effect": "fade",
+            "trigger": "más",
+            "dur": 0.12
+          },
+          {
+            "target": "bal0",
+            "effect": "hide",
+            "trigger": "más"
+          },
+          {
+            "target": "bal2",
+            "effect": "fade",
+            "trigger": "votado",
+            "dur": 0.12
+          },
+          {
+            "target": "bal1",
+            "effect": "hide",
+            "trigger": "votado"
+          },
+          {
+            "target": "bal3",
+            "effect": "fade",
+            "trigger": "total",
+            "dur": 0.12
+          },
+          {
+            "target": "bal2",
+            "effect": "hide",
+            "trigger": "total"
+          },
+          {
+            "target": "ttot",
+            "effect": "pop",
+            "trigger": "votado",
+            "sfx": "pop"
+          },
+          {
+            "target": "ok",
+            "effect": "pop",
+            "trigger": "total",
+            "sfx": "ding"
+          },
+          {
+            "target": "ok",
+            "effect": "pulse",
+            "trigger": "total",
+            "amount": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "number": "2",
+      "headline": "Y si no: *sorteo*",
+      "narration": "¿Y si empatan también en votos? Primer empate, por sorteo; los siguientes, por turnos.",
+      "illustration": {
+        "svg_file": "sorteo_full.svg",
+        "layout": "full",
+        "caption": "Fig. 5 · Texto literal de la ley",
+        "anims": [
+          {
+            "target": "bombo",
+            "effect": "slide-up",
+            "delay": 0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bombo_jaula",
+            "effect": "spin",
+            "origin": "center",
+            "amount": 0.6,
+            "delay": 0.2
+          },
+          {
+            "target": "bombo_manivela",
+            "effect": "spin",
+            "origin": "bottom-left",
+            "amount": 0.6,
+            "delay": 0.2
+          },
+          {
+            "target": "filas",
+            "effect": "slide-up",
+            "delay": 0.15,
+            "dur": 0.5
+          },
+          {
+            "target": "marc",
+            "effect": "pop",
+            "trigger": "empatan",
+            "sfx": "pop"
+          },
+          {
+            "target": "marc",
+            "effect": "punch",
+            "trigger": "votos",
+            "amount": 0.3
+          },
+          {
+            "target": "marc",
+            "effect": "float",
+            "trigger": "votos",
+            "amount": 0.2
+          },
+          {
+            "target": "cita",
+            "effect": "pop",
+            "trigger": "Primer",
+            "sfx": "papel"
+          },
+          {
+            "target": "cita",
+            "effect": "float",
+            "trigger": "empate",
+            "amount": 0.12
+          },
+          {
+            "target": "bombo_bola",
+            "effect": "move",
+            "trigger": "sorteo",
+            "to": [
+              40,
+              95
+            ],
+            "dur": 0.6
+          },
+          {
+            "target": "tsort",
+            "effect": "pop",
+            "trigger": "sorteo",
+            "sfx": "ding"
+          },
+          {
+            "target": "t0",
+            "effect": "pop",
+            "trigger": "los",
+            "sfx": "pop"
+          },
+          {
+            "target": "t1",
+            "effect": "pop",
+            "trigger": "siguientes",
+            "sfx": "pop"
+          },
+          {
+            "target": "giro",
+            "effect": "draw",
+            "trigger": "siguientes",
+            "dur": 0.8,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "t2",
+            "effect": "pop",
+            "trigger": "turnos",
+            "sfx": "pop"
+          },
+          {
+            "target": "tturno",
+            "effect": "pop",
+            "trigger": "turnos"
+          },
+          {
+            "target": "t0",
+            "effect": "float",
+            "trigger": "siguientes",
+            "amount": 0.2
+          },
+          {
+            "target": "t1",
+            "effect": "float",
+            "trigger": "turnos",
+            "amount": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "number": "3",
+      "headline": "Pasó en *Lújar*",
+      "narration": "Pasó en Lújar, Granada, en dos mil once: dos candidaturas empataron a ciento sesenta y un votos, y un sorteo decidió la alcaldía.",
+      "illustration": {
+        "svg_file": "lujar.svg",
+        "layout": "panel",
+        "caption": "Fig. 6 · Lújar, 2011",
+        "anims": [
+          {
+            "target": "mapa",
+            "effect": "slide-up",
+            "delay": 0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "mapa",
+            "effect": "float",
+            "amount": 0.15,
+            "delay": 0.6
+          },
+          {
+            "target": "mapa_granada",
+            "effect": "pop",
+            "trigger": "Lújar",
+            "sfx": "pop"
+          },
+          {
+            "target": "onda",
+            "effect": "ripple",
+            "trigger": "Lújar"
+          },
+          {
+            "target": "pueblo_g",
+            "effect": "slide-up",
+            "trigger": "Lújar",
+            "dur": 0.5
+          },
+          {
+            "target": "tluj",
+            "effect": "pop",
+            "trigger": "Granada",
+            "sfx": "pop"
+          },
+          {
+            "target": "t2011",
+            "effect": "pop",
+            "trigger": "once",
+            "sfx": "pop"
+          },
+          {
+            "target": "t2011",
+            "effect": "sway",
+            "trigger": "once",
+            "amount": 0.15
+          },
+          {
+            "target": "marc_0",
+            "effect": "pop",
+            "trigger": "candidaturas",
+            "sfx": "pop"
+          },
+          {
+            "target": "marc_0",
+            "effect": "hide",
+            "trigger": "ciento"
+          },
+          {
+            "target": "marc_1",
+            "effect": "fade",
+            "trigger": "ciento",
+            "dur": 0.15
+          },
+          {
+            "target": "marc_1",
+            "effect": "hide",
+            "trigger": "sesenta"
+          },
+          {
+            "target": "marc",
+            "effect": "fade",
+            "trigger": "sesenta",
+            "dur": 0.15,
+            "sfx": "ding"
+          },
+          {
+            "target": "marc",
+            "effect": "punch",
+            "trigger": "votos",
+            "amount": 0.3
+          },
+          {
+            "target": "tvot",
+            "effect": "pop",
+            "trigger": "votos"
+          },
+          {
+            "target": "bombo",
+            "effect": "pop",
+            "trigger": "sorteo",
+            "sfx": "pop"
+          },
+          {
+            "target": "bombo_jaula",
+            "effect": "spin",
+            "origin": "center",
+            "amount": 0.8,
+            "trigger": "sorteo"
+          },
+          {
+            "target": "talc",
+            "effect": "pop",
+            "trigger": "decidió",
+            "sfx": "sello"
+          },
+          {
+            "target": "baston",
+            "effect": "slide-down",
+            "trigger": "alcaldía",
+            "dur": 0.5,
+            "sfx": "ding"
+          },
+          {
+            "target": "baston",
+            "effect": "sway",
+            "origin": "bottom",
+            "amount": 0.15,
+            "trigger": "alcaldía"
+          },
+          {
+            "target": "baston_borla",
+            "effect": "sway",
+            "origin": "top",
+            "amount": 0.5,
+            "trigger": "alcaldía"
+          },
+          {
+            "target": "dest",
+            "effect": "pop",
+            "trigger": "alcaldía"
+          },
+          {
+            "target": "dest",
+            "effect": "pulse",
+            "trigger": "alcaldía",
+            "amount": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "number": "+",
+      "headline": "Un voto *cuenta*",
+      "narration": "El Constitucional lo avaló: un solo voto puede evitar el sorteo.",
+      "illustration": {
+        "svg_file": "unvoto_free.svg",
+        "layout": "free",
+        "height": 720,
+        "caption": "Fig. 7 · STC 125/2011",
+        "anims": [
+          {
+            "target": "urna",
+            "effect": "slide-up",
+            "delay": 0,
+            "dur": 0.5,
+            "sfx": "whoosh"
+          },
+          {
+            "target": "bombo",
+            "effect": "slide-up",
+            "delay": 0.1,
+            "dur": 0.5
+          },
+          {
+            "target": "bombo_jaula",
+            "effect": "move",
+            "origin": "center",
+            "rotate": 720,
+            "delay": 0.15,
+            "dur": 2.6
+          },
+          {
+            "target": "tstc",
+            "effect": "pop",
+            "trigger": "Constitucional",
+            "sfx": "sello"
+          },
+          {
+            "target": "tstc",
+            "effect": "punch",
+            "trigger": "avaló",
+            "amount": 0.3
+          },
+          {
+            "target": "sobre",
+            "effect": "slide-down",
+            "trigger": "un",
+            "dur": 0.4
+          },
+          {
+            "target": "sobre",
+            "effect": "move",
+            "trigger": "voto",
+            "to": [
+              0,
+              150
+            ],
+            "dur": 0.5
+          },
+          {
+            "target": "sobre",
+            "effect": "hide",
+            "trigger": "puede"
+          },
+          {
+            "target": "urna",
+            "effect": "punch",
+            "trigger": "puede",
+            "amount": 0.15
+          },
+          {
+            "target": "tun",
+            "effect": "pop",
+            "trigger": "voto",
+            "sfx": "pop"
+          },
+          {
+            "target": "tache",
+            "effect": "draw",
+            "trigger": "evitar",
+            "dur": 0.4,
+            "sfx": "rotulador"
+          },
+          {
+            "target": "bombo",
+            "effect": "punch",
+            "trigger": "sorteo",
+            "amount": 0.15
+          }
+        ]
+      },
+      "mascot": {
+        "trigger": "avaló",
+        "pose": "cheer",
+        "note": "¡Un voto evita el sorteo!",
+        "side": "right"
+      }
+    },
+    {
+      "chapter": 5,
+      "headline": "Dudas → *truco*",
+      "narration": "Tú traes las dudas y nosotros te damos el truco.",
+      "elements": [
+        {
+          "type": "trick",
+          "trigger": "Tú",
+          "reveal_trigger": "nosotros"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "number": "TÚ",
+      "headline": "*Confiesa*",
+      "narration": "Síguenos y las resolvemos. ¿Sabías que se decide así?",
+      "elements": [
+        {
+          "type": "follow",
+          "trigger": "Síguenos"
+        },
+        {
+          "type": "ask",
+          "text": "¿Sabías que se *decide* así?",
+          "trigger": "Sabías"
+        }
+      ]
+    }
+  ]
+}

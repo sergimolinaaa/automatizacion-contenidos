@@ -720,3 +720,94 @@ def capa_escanos(id_, puntos, n, col, r, grupos=4, desde=0, sw=4):
                     f'<circle cx="{f(puntos[i][0]-r*0.3)}" cy="{f(puntos[i][1]-r*0.35)}" r="{f(r*0.28)}" fill="#FFFFFF" opacity="0.6"/>' for i in part)
         out += g(f"{id_}{k}", s)
     return g(id_, out)
+
+
+# ------------------------------------------------------------------ empates y D'Hondt en tabla (lote10-02-empate-escano)
+registrar_defs(lg("bastonG", [(0, "#4A3A2E"), (1, "#1E1612")], 0, 0, 1, 0) + lg("pomoG", [(0, "#FFE58A"), (1, "#C98A10")]))
+
+
+def aro_lima(id_, cx, cy, rx, ry, col=LIME, w=9, rot_=-4):
+    """Óvalo a mano alzada (trazo con contorno) para marcar una casilla: anímalo con "draw". Es un <path> (draw no va en <ellipse>)."""
+    pts_ = []
+    for k in range(37):
+        a = math.radians(-100 + k * 10.6)  # da algo más de una vuelta: el final solapa como un rotulador
+        rr = 1 + 0.04 * math.sin(k * 1.7)
+        x, y = rx * rr * math.cos(a), ry * rr * math.sin(a)
+        c, s_ = math.cos(math.radians(rot_)), math.sin(math.radians(rot_))
+        pts_.append((cx + x * c - y * s_, cy + x * s_ + y * c))
+    d = "M " + " L ".join(f"{f(x)} {f(y)}" for x, y in pts_)
+    return g(id_, trazo(d, w, col, 7))
+
+
+def tabla_dhondt(id_, x0, y0, filas, divisores=(1, 2, 3), cw=170, ch=112, lw=270, gap=14, size=None, aros=()):
+    """Tabla D'Hondt animable: una fila por candidatura con su ficha (icono + nombre + votos) y una casilla por divisor.
+    filas = [(forma, nombre, votos)]; aros = [(fila, col)] casillas que llevan óvalo lima (para «los cocientes más altos»).
+    Ids: {id}_h<j> (cabecera «÷j»), {id}_r<i> (ficha de la fila), {id}_c<i>_<j> (casilla, para pop escalonado),
+    {id}_o<i>_<j> (óvalo lima, draw). .puntos: "c<i>_<j>" = centro de cada casilla, "r<i>" = centro de cada ficha."""
+    size = size or ch * 0.4
+    o, pts_ = "", {}
+    hx0 = x0 + lw + gap
+    for j, d in enumerate(divisores):
+        cx = hx0 + j * (cw + gap) + cw / 2
+        hh = ch * 0.6
+        o += g(f"{id_}_h{j}", sombra_caja(cx - cw / 2, y0, cw, hh, 14, 5, 7, 0.22)
+               + f'<rect x="{f(cx-cw/2)}" y="{f(y0)}" width="{f(cw)}" height="{f(hh)}" rx="14" fill="{INK}" stroke="{INK}" stroke-width="6"/>'
+               + T(cx, y0 + hh * 0.7, f"÷{d}", hh * 0.55, LIME, font=DISP))
+    yr = y0 + ch * 0.6 + gap
+    for i, (forma, nombre, votos) in enumerate(filas):
+        cy = yr + i * (ch + gap) + ch / 2
+        col = COLOR.get(forma, "#CCCCCC")
+        r = (sombra_caja(x0, cy - ch / 2, lw, ch, 16, 6, 8, 0.25)
+             + f'<rect x="{f(x0)}" y="{f(cy-ch/2)}" width="{f(lw)}" height="{f(ch)}" rx="16" fill="{degradado(col, 0.2)}" stroke="{INK}" stroke-width="6"/>'
+             + brillo(f"M {f(x0+16)} {f(cy-ch/2+14)} L {f(x0+lw*0.6)} {f(cy-ch/2+14)}", 5, 0.55)
+             + icono_partido(forma, x0 + ch * 0.42, cy, ch * 0.24, sw=4)
+             + T(x0 + ch * 0.78, cy - ch * 0.06, nombre, ch * 0.2, INK, anchor="start", font=DISP)
+             + T(x0 + ch * 0.78, cy + ch * 0.28, f"{miles(votos)} votos", ch * 0.2, INK, anchor="start"))
+        o += g(f"{id_}_r{i}", r)
+        pts_[f"r{i}"] = (x0 + lw / 2, cy)
+        for j, d in enumerate(divisores):
+            cx = hx0 + j * (cw + gap) + cw / 2
+            q = miles(votos / d)
+            o += g(f"{id_}_c{i}_{j}", sombra_caja(cx - cw / 2, cy - ch / 2, cw, ch, 14, 5, 7, 0.22)
+                   + f'<rect x="{f(cx-cw/2)}" y="{f(cy-ch/2)}" width="{f(cw)}" height="{f(ch)}" rx="14" fill="url(#paperB)" stroke="{INK}" stroke-width="6"/>'
+                   + T(cx, cy + size * 0.36, q, size if len(q) <= 5 else size * 0.86, INK, font=DISP))
+            pts_[f"c{i}_{j}"] = (cx, cy)
+    for (i, j) in aros:
+        cx, cy = pts_[f"c{i}_{j}"]
+        o += aro_lima(f"{id_}_o{i}_{j}", cx, cy, cw * 0.56, ch * 0.6)
+    x1 = hx0 + len(divisores) * (cw + gap) - gap
+    y1 = yr + len(filas) * (ch + gap) - gap
+    return Pieza(g(id_, o), pts_, (x0, y0, x1, y1))
+
+
+def baston_mando(id_, cx, cy, L=360, rot_=-30, borla=True):
+    """Bastón de mando de alcalde: vara negra con contera, pomo dorado y cordón con borlas. (cx, cy) = centro de la vara;
+    rot_ = inclinación (0 = vertical, pomo arriba). Sub-ids: {id}_pomo (brillo/pulse), {id}_borla (sway, origin top).
+    .puntos: pomo, punta."""
+    w = L * 0.075
+    top, bot = cy - L / 2, cy + L / 2
+    o = sombra(cx + L * 0.08, bot + L * 0.06, L * 0.3, L * 0.035, 0.22)
+    v = (f'<rect x="{f(cx-w/2)}" y="{f(top+L*0.08)}" width="{f(w)}" height="{f(L*0.9)}" rx="{f(w/2)}" fill="url(#bastonG)" stroke="{INK}" stroke-width="6"/>'
+         + brillo(f"M {f(cx-w*0.18)} {f(top+L*0.16)} L {f(cx-w*0.18)} {f(bot-L*0.08)}", w * 0.16, 0.45)
+         + f'<path d="M {f(cx-w/2)} {f(bot-L*0.06)} L {f(cx+w/2)} {f(bot-L*0.06)} L {f(cx+w*0.22)} {f(bot+L*0.02)} L {f(cx-w*0.22)} {f(bot+L*0.02)} Z" fill="url(#pomoG)" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>')
+    pr = w * 1.05
+    py = top + L * 0.04
+    pomo = (f'<rect x="{f(cx-w*0.75)}" y="{f(py+pr*0.55)}" width="{f(w*1.5)}" height="{f(L*0.05)}" rx="{f(w*0.3)}" fill="url(#pomoG)" stroke="{INK}" stroke-width="5"/>'
+            + f'<circle cx="{f(cx)}" cy="{f(py)}" r="{f(pr)}" fill="url(#pomoG)" stroke="{INK}" stroke-width="6"/>'
+            + f'<circle cx="{f(cx-pr*0.35)}" cy="{f(py-pr*0.35)}" r="{f(pr*0.25)}" fill="#FFFFFF" opacity="0.85"/>'
+            + f'<path d="M {f(cx-pr*0.7)} {f(py+pr*0.1)} Q {f(cx)} {f(py+pr*0.45)} {f(cx+pr*0.7)} {f(py+pr*0.1)}" fill="none" stroke="#B37708" stroke-width="4"/>')
+    bo = ""
+    if borla:
+        ky = py + pr * 0.9
+        bo += (f'<path d="M {f(cx+w*0.6)} {f(ky)} q {f(L*0.06)} {f(L*0.1)} {f(L*0.02)} {f(L*0.2)}" fill="none" stroke="{INK}" stroke-width="9" stroke-linecap="round"/>'
+               f'<path d="M {f(cx+w*0.6)} {f(ky)} q {f(L*0.06)} {f(L*0.1)} {f(L*0.02)} {f(L*0.2)}" fill="none" stroke="#E0A21A" stroke-width="4" stroke-linecap="round"/>')
+        bx, by = cx + w * 0.6 + L * 0.02, ky + L * 0.2
+        bo += (f'<path d="M {f(bx-L*0.03)} {f(by+L*0.02)} L {f(bx-L*0.045)} {f(by+L*0.12)} L {f(bx+L*0.045)} {f(by+L*0.12)} L {f(bx+L*0.03)} {f(by+L*0.02)} Z" fill="url(#pomoG)" stroke="{INK}" stroke-width="4" stroke-linejoin="round"/>'
+               f'<circle cx="{f(bx)}" cy="{f(by)}" r="{f(L*0.03)}" fill="url(#pomoG)" stroke="{INK}" stroke-width="4"/>')
+        for k in range(4):
+            xx = bx - L * 0.03 + k * L * 0.02
+            bo += f'<path d="M {f(xx)} {f(by+L*0.05)} L {f(xx)} {f(by+L*0.11)}" stroke="#B37708" stroke-width="2.5"/>'
+    body = o + gt(None, f"rotate({f(rot_)} {f(cx)} {f(cy)})", v + g(f"{id_}_borla", bo) + g(f"{id_}_pomo", pomo))
+    a = math.radians(rot_)
+    rotp = lambda x, y: (cx + (x - cx) * math.cos(a) - (y - cy) * math.sin(a), cy + (x - cx) * math.sin(a) + (y - cy) * math.cos(a))
+    return Pieza(g(id_, body), {"pomo": rotp(cx, py), "punta": rotp(cx, bot)}, (cx - L * 0.35, top - pr, cx + L * 0.35, bot + L * 0.06))

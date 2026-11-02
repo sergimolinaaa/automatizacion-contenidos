@@ -100,6 +100,8 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 - `calendario(id_, cx, cy, w, h, "NOV", "29")` · `atril(id_, cx, base, w, h, mic, frontal)` · `logo_generico(cx, cy, r, "D21")` · `placa(cx, cy, w, h, "ABC")`
 - `documento(id_, cx, cy, w, h, titulo, sub)` · `carpeta(id_, cx, cy, w, h, texto)` · `boli(id_, cx, cy, L, rot_)` · `garabato(id_, x0, x1, yc, amp)` · `candado(id_, cx, cy, s)`
 - `sin_posicionarnos(id_, cx, cy, size)` — sello obligatorio de la escena 1 de política.
+- Empates y D'Hondt: `tabla_dhondt(id_, x0, y0, filas=[(forma, nombre, votos)], divisores, cw, ch, lw, gap, size, aros=[(fila, col)])` (cabeceras «÷j» `_h<j>`, fichas `_r<i>`, casillas `_c<i>_<j>` para pop por columnas, óvalos lima `_o<i>_<j>` para draw; .puntos["c<i>_<j>"]) ·
+  `aro_lima(id_, cx, cy, rx, ry)` (óvalo a rotulador como <path>, para draw) · `baston_mando(id_, cx, cy, L, rot_)` (bastón de alcalde: `_pomo` pulse, `_borla` sway origin top; .puntos pomo/punta)
 - Investidura: `corona(id_, cx, base, w)` (corona real genérica; `_joyas` pulse; ponla en `persona.puntos["cima"][1] + 0.16*w`) ·
   `capa_escanos(id_, puntos, n, col, r, grupos=4, desde=0)` (pinta n escaños de un `hemiciclo()` de izquierda a derecha en capas `id_0…` para que se llenen en cascada: 176 síes de 350)
 - Mesas electorales: `carta_notificacion(id_, cx, cy, w, h, titulo, cargo, fecha, remite)` (sobre con hoja que sale: move `{id}_hoja` [0,-h*0.55]; `{id}_cargo`) ·
@@ -317,3 +319,4 @@ lote9-05-cosquillas (archivo/cosquillas/dib.py): mente.py (pivote, pluma, bola d
 lote10-01-frio-bateria (archivo/frio-bateria/dib.py): tecnologia.py (batería de litio en corte con iones, caja pesada, batería que empuja con esfuerzo).
 lote9-06-miedo-oscuridad (archivo/miedo-oscuridad/dib.py y guion.py): noche.py (ojo, sentidos, interruptor, perchero, sombra de monstruo, sabana, acacia, hoguera, leona, mapa de África, fases de la luna, bandera de Canadá, calabaza, fantasma).
 lote9-07-tostada-mantequilla (archivo/tostada-mantequilla/dib.py y guion.py): tostada, mancha de mantequilla, plato, mesa de perfil, escalera y espejo roto (casa.py).
+lote10-02-empate-escano (archivo/empate-escano/dib.py y guion.py): tabla_dhondt, aro_lima y baston_mando (politica.py).
