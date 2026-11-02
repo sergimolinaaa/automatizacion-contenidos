@@ -17,7 +17,8 @@
 
 ## Guion y textos
 - 40-60 s (unas 110-150 palabras), 7-11 escenas. Voz Edge TTS a +25 % (`config.yaml`).
-- GANCHO en los 2 primeros segundos: pregunta directa al espectador («¿Por qué…?», «¿Te ha pasado…?»).
+- GANCHO en los 2 primeros segundos: el MITO o la PARADOJA dicha en grande y en pantalla («Tu voto en blanco NO va al que gana»,
+  «¿De verdad el Bluetooth gasta batería?»), no solo una pregunta genérica. Portada en formato mito o «¿De verdad…?». (Decisión 2-nov, docs/estrategia.md)
 - Explica el mecanismo de forma sencilla con un ejemplo cotidiano. Para todos, de 10 a 90 años: cada palabra técnica con
   definición corta o comparación cotidiana. NUNCA decir «El truco es…» en la narración.
 - Cierre en 2 escenas (capítulo 5 «TÚ»): (1) "Tú traes las dudas y nosotros te damos el truco.", headline "Dudas → *truco*",
