@@ -33,12 +33,15 @@ export type IllustrationAnim = {
     | "float" | "bob" | "sway" | "spin" | "pulse" | "shake" | "wiggle" | "flow" | "blink" // bucles
     | "ripple" | "breathe" | "drift" // bucles: onda que se expande, respiración, deriva lateral
     | "move" | "hide" | "punch" // acciones puntuales (punch: golpe de énfasis)
+    | "squash" // entrada: cae estirada y se aplasta al llegar (desde `to`, por defecto [0, -320])
+    | "pan" | "jitter" | "flutter" | "puff" | "fall" // paneo suave (parallax), temblor de cifras, ondear, vaho, copos que caen
     | "zoom"; // solo con target "camera": acerca la cámara a `to` ([x, y] del viewBox) con `amount` = zoom
   phase?: number; // desfase de los bucles (0-1), p. ej. para ondas sucesivas
   at?: number; // segundos (absolutos). Bucles sin `at` empiezan desde el principio de la escena
   dur?: number; // segundos
   to?: [number, number]; // para "move": desplazamiento en unidades del viewBox
   rotate?: number; // para "move": giro final en grados
+  antic?: number; // para "move": anticipación (fracción del gesto que retrocede antes de lanzarse, p. ej. 0,25)
   amount?: number; // intensidad de los bucles (1 = normal)
   origin?: "center" | "bottom" | "top" | "left" | "right" | "bottom-left" | "bottom-right" | "top-left" | "top-right";
 };

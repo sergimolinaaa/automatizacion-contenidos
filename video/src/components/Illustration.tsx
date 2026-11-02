@@ -5,7 +5,7 @@ import type { Illustration as Ill, IllustrationAnim } from "../types";
 
 const { colors, fonts, border, shadow } = brand;
 
-const ENTRANCES = new Set(["pop", "fade", "draw", "grow", "slide-left", "slide-right", "slide-up", "slide-down"]);
+const ENTRANCES = new Set(["pop", "fade", "draw", "grow", "slide-left", "slide-right", "slide-up", "slide-down", "squash"]);
 const ORIGINS: Record<string, string> = {
   center: "center", bottom: "50% 100%", top: "50% 0%", left: "0% 50%", right: "100% 50%",
   "bottom-left": "0% 100%", "bottom-right": "100% 100%", "top-left": "0% 0%", "top-right": "100% 0%",
@@ -78,6 +78,21 @@ function computeStyles(anims: IllustrationAnim[], frame: number, sceneStart: num
       case "slide-right": st.tx += (1 - p) * 260; st.op *= Math.min(1, p * 2); break;
       case "slide-up": st.ty += (1 - p) * 220; st.op *= Math.min(1, p * 2); break;
       case "slide-down": st.ty += (1 - p) * -220; st.op *= Math.min(1, p * 2); break;
+      case "squash": {
+        // cae (o sube) estirado desde `to` (por defecto 320 arriba) y al tocar se aplasta y rebota: squash and stretch
+        const [dx, dy] = a.to ?? [0, -320];
+        const nf = Math.max(4, Math.round(sec(dur) * 0.45));
+        st.origin ??= ORIGINS.bottom;
+        if (f < nf) {
+          const q = f / nf;
+          st.tx += dx * (1 - q * q); st.ty += dy * (1 - q * q);
+          st.sy *= 1.14; st.sx *= 0.9; st.op *= Math.min(1, f / 2);
+        } else {
+          const k = Math.exp(-(f - nf) / 5) * Math.cos((f - nf) * 0.55) * (a.amount ?? 1);
+          st.sy *= 1 - 0.2 * k; st.sx *= 1 + 0.14 * k;
+        }
+        break;
+      }
     }
   }
 
@@ -90,10 +105,24 @@ function computeStyles(anims: IllustrationAnim[], frame: number, sceneStart: num
     const amount = a.amount ?? 1;
     const lt = Math.max(0, t - at);
     if (a.effect === "move") {
-      const p = f < 0 ? 0 : spring({ frame: f, fps: FPS, durationInFrames: sec(a.dur ?? 0.6), config: { damping: 18 } });
+      let p = f < 0 ? 0 : spring({ frame: f, fps: FPS, durationInFrames: sec(a.dur ?? 0.6), config: { damping: 18 } });
+      if (a.antic && f >= 0) {
+        // anticipación: primero retrocede `antic` (fracción del gesto) y luego se lanza al destino
+        const w = Math.max(3, Math.round(sec(a.dur ?? 0.6) * 0.4));
+        p = f < w ? -a.antic * Math.sin((f / w) * (Math.PI / 2))
+          : -a.antic + (1 + a.antic) * spring({ frame: f - w, fps: FPS, durationInFrames: sec(a.dur ?? 0.6), config: { damping: 18 } });
+      }
       st.tx += (a.to?.[0] ?? 0) * p;
       st.ty += (a.to?.[1] ?? 0) * p;
       st.rot += (a.rotate ?? 0) * p;
+      continue;
+    }
+    if (a.effect === "pan") {
+      // desplazamiento lento sin rebote (ease in-out): paneo de cámara por capas = parallax
+      const q = f < 0 ? 0 : interpolate(f, [0, sec(a.dur ?? 6)], [0, 1], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.sin) });
+      st.tx += (a.to?.[0] ?? 0) * q;
+      st.ty += (a.to?.[1] ?? 0) * q;
+      st.rot += (a.rotate ?? 0) * q;
       continue;
     }
     if (a.effect === "punch") {
@@ -122,6 +151,31 @@ function computeStyles(anims: IllustrationAnim[], frame: number, sceneStart: num
       }
       case "breathe": { st.sy *= 1 + Math.sin(lt * 2.4 + (a.phase ?? 0) * 6.28) * 0.03 * amount; st.sx *= 1 + Math.sin(lt * 2.4 + (a.phase ?? 0) * 6.28) * 0.012 * amount; break; }
       case "drift": st.tx += Math.sin(lt * 1.1 + (a.phase ?? 0) * 6.28) * 18 * amount; break;
+      case "jitter": { // temblor nervioso en los dos ejes (cifras que caen)
+        st.tx += (Math.sin(lt * 53) * 4 + Math.sin(lt * 31) * 2) * amount;
+        st.ty += Math.cos(lt * 47) * 3 * amount;
+        st.rot += Math.sin(lt * 39) * 1.5 * amount;
+        break;
+      }
+      case "flutter": { // ondea con viento (bufanda, pelo): dos senos desfasados
+        const ph = (a.phase ?? 0) * 6.28;
+        st.rot += (Math.sin(lt * 7 + ph) * 7 + Math.sin(lt * 12.3 + ph + 1) * 2.5) * amount;
+        break;
+      }
+      case "puff": { // partícula que nace, sube creciendo y se apaga (vaho, humo); `to` = recorrido
+        const c = (lt / 1.8 + (a.phase ?? 0)) % 1;
+        st.tx += (a.to?.[0] ?? 40) * c; st.ty += (a.to?.[1] ?? -90) * c;
+        const k = (0.4 + c * 1.0) * amount; st.sx *= k; st.sy *= k;
+        st.op *= c < 0.15 ? c / 0.15 : 1 - (c - 0.15) / 0.85;
+        break;
+      }
+      case "fall": { // copo que cae en bucle: recorre `to[1]` (por defecto 900) centrado en su sitio
+        const range = a.to?.[1] ?? 900;
+        const c = (lt * 120 * amount / range + (a.phase ?? 0)) % 1;
+        st.ty += (c - 0.5) * range;
+        st.op *= Math.min(1, c / 0.08, (1 - c) / 0.08);
+        break;
+      }
       case "blink": { const c = (lt * FPS) % 90; st.sy *= c < 5 ? Math.max(0.1, Math.abs(Math.cos((c / 5) * Math.PI))) : 1; break; }
     }
   }
