@@ -137,6 +137,28 @@ def main() -> int:
                         problemas.append(f"escena {i} ({ill['svg_file']}): texto «{nombre}» fuera de cuadro")
             # los grupos grandes (fondos, escenarios) pueden salirse a propósito; solo se avisa de textos
 
+    # 4b. triggers que no están en la narración de su escena (la animación caería sin aviso al inicio de la escena)
+    from autocontent.timeline import norm
+    for i, sc in enumerate(raw["scenes"]):
+        keys = [norm(w) for w in sc.get("narration", "").split()]
+        def ok(trig: str) -> bool:
+            t = [norm(w) for w in trig.split() if norm(w)]
+            if not t:
+                return True
+            if len(t) == 1:
+                return any(k.startswith(t[0]) for k in keys)
+            return any(keys[j:j + len(t)] == t for j in range(len(keys)))
+        trigs = []
+        for el in sc.get("elements", []):
+            trigs += [el.get("trigger"), el.get("reveal_trigger")]
+            for sub in ("items", "rows", "options"):
+                trigs += [it.get("trigger") for it in el.get(sub, [])]
+        trigs += [a.get("trigger") for a in (sc.get("illustration") or {}).get("anims", [])]
+        trigs.append((sc.get("mascot") or {}).get("trigger"))
+        for t in sorted({t for t in trigs if t}):
+            if not ok(t):
+                problemas.append(f"escena {i}: trigger «{t}» no está en su narración")
+
     # 5. textos de publicación
     pub = raw.get("publish", {})
     for k in ("caption", "description"):
