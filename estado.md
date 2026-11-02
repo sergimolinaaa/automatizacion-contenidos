@@ -65,12 +65,14 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | Fecha | Tema | Carpeta | Guion | Montado | Programado | Publicado | Vídeo |
 |---|---|---|---|---|---|---|---|
 | 2026-11-02 14:00 | ¿Por qué el frío se come la batería del móvil? | content/lote10-01-frio-bateria | sí | sí | sí | no | previews/lote10-01-frio-bateria-con-voz.mp4 (42,1 s) |
+| 2026-11-03 14:00 | Empate a votos: ¿quién se lleva el escaño? | content/lote10-02-empate-escano | sí | sí | sí | no | previews/lote10-02-empate-escano-con-voz.mp4 (46,6 s) |
 
 ## Coste por fase (tokens de subagente, aprox.)
 | Fecha | Fase | Coste |
 |---|---|---|
 | 2026-10-16 | Librería (una vez) | 360.000 |
 | 2026-10-16 | Guiones semana 20-24 oct (5 vídeos) | 100.000 |
+| 2026-11-02 | Montaje empate escaño (rossark) | ≈ 255.000 |
 | 2026-11-01 | Montaje frío batería (rossark) | ≈ 250.000 |
 | 2026-10-26 | Montajes rossark 27-oct a 1-nov (6 vídeos, ≈ 230-290k c/u) + guiones semana 2-nov (10) 247k | ≈ 1.780.000 |
 | 2026-10-25 | Montaje respingo con método rossark (6 piezas nuevas) | ≈ 290.000 |
