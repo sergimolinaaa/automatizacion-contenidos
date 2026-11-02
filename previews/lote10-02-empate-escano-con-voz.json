@@ -1,0 +1,677 @@
+{
+ "source": "Fuentes: BOE, LOREG art. 163 · Junta Electoral Central · STC 125/2011 · LegalToday · Público",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Y",
+   "start": 0.1,
+   "end": 0.23
+  },
+  {
+   "text": "si",
+   "start": 0.24,
+   "end": 0.33999999999999997
+  },
+  {
+   "text": "dos",
+   "start": 0.35,
+   "end": 0.51
+  },
+  {
+   "text": "partidos",
+   "start": 0.52,
+   "end": 0.94
+  },
+  {
+   "text": "empatan",
+   "start": 0.95,
+   "end": 1.26
+  },
+  {
+   "text": "a",
+   "start": 1.27,
+   "end": 1.3
+  },
+  {
+   "text": "votos?",
+   "start": 1.31,
+   "end": 1.73
+  },
+  {
+   "text": "¿Quién",
+   "start": 2.41,
+   "end": 2.6500000000000004
+  },
+  {
+   "text": "gana",
+   "start": 2.66,
+   "end": 2.8400000000000003
+  },
+  {
+   "text": "el",
+   "start": 2.85,
+   "end": 2.93
+  },
+  {
+   "text": "escaño?",
+   "start": 2.94,
+   "end": 3.4
+  },
+  {
+   "text": "Te",
+   "start": 4.1,
+   "end": 4.25
+  },
+  {
+   "text": "lo",
+   "start": 4.26,
+   "end": 4.35
+  },
+  {
+   "text": "explicamos",
+   "start": 4.36,
+   "end": 4.8500000000000005
+  },
+  {
+   "text": "sin",
+   "start": 4.86,
+   "end": 4.970000000000001
+  },
+  {
+   "text": "posicionarnos,",
+   "start": 4.98,
+   "end": 5.680000000000001
+  },
+  {
+   "text": "simplemente",
+   "start": 5.8,
+   "end": 6.31
+  },
+  {
+   "text": "con",
+   "start": 6.32,
+   "end": 6.44
+  },
+  {
+   "text": "lo",
+   "start": 6.45,
+   "end": 6.5200000000000005
+  },
+  {
+   "text": "que",
+   "start": 6.53,
+   "end": 6.62
+  },
+  {
+   "text": "dice",
+   "start": 6.63,
+   "end": 6.82
+  },
+  {
+   "text": "la",
+   "start": 6.83,
+   "end": 6.91
+  },
+  {
+   "text": "ley.",
+   "start": 6.92,
+   "end": 7.17
+  },
+  {
+   "text": "Se",
+   "start": 7.86,
+   "end": 8.09
+  },
+  {
+   "text": "usa",
+   "start": 8.1,
+   "end": 8.299999999999999
+  },
+  {
+   "text": "el",
+   "start": 8.31,
+   "end": 8.39
+  },
+  {
+   "text": "método",
+   "start": 8.4,
+   "end": 8.700000000000001
+  },
+  {
+   "text": "D'Hondt.",
+   "start": 8.71,
+   "end": 9.100000000000001
+  },
+  {
+   "text": "Divides",
+   "start": 9.79,
+   "end": 10.209999999999999
+  },
+  {
+   "text": "los",
+   "start": 10.22,
+   "end": 10.350000000000001
+  },
+  {
+   "text": "votos",
+   "start": 10.36,
+   "end": 10.62
+  },
+  {
+   "text": "de",
+   "start": 10.63,
+   "end": 10.690000000000001
+  },
+  {
+   "text": "cada",
+   "start": 10.7,
+   "end": 10.87
+  },
+  {
+   "text": "partido",
+   "start": 10.88,
+   "end": 11.270000000000001
+  },
+  {
+   "text": "entre",
+   "start": 11.28,
+   "end": 11.51
+  },
+  {
+   "text": "uno,",
+   "start": 11.52,
+   "end": 11.75
+  },
+  {
+   "text": "dos,",
+   "start": 11.87,
+   "end": 12.129999999999999
+  },
+  {
+   "text": "tres,",
+   "start": 12.23,
+   "end": 12.530000000000001
+  },
+  {
+   "text": "y",
+   "start": 12.62,
+   "end": 12.68
+  },
+  {
+   "text": "los",
+   "start": 12.69,
+   "end": 12.83
+  },
+  {
+   "text": "cocientes",
+   "start": 12.84,
+   "end": 13.26
+  },
+  {
+   "text": "más",
+   "start": 13.27,
+   "end": 13.44
+  },
+  {
+   "text": "altos",
+   "start": 13.45,
+   "end": 13.719999999999999
+  },
+  {
+   "text": "ganan",
+   "start": 13.73,
+   "end": 13.950000000000001
+  },
+  {
+   "text": "escaño.",
+   "start": 13.96,
+   "end": 14.4
+  },
+  {
+   "text": "Si",
+   "start": 15.1,
+   "end": 15.31
+  },
+  {
+   "text": "dos",
+   "start": 15.32,
+   "end": 15.48
+  },
+  {
+   "text": "cocientes",
+   "start": 15.49,
+   "end": 15.92
+  },
+  {
+   "text": "coinciden,",
+   "start": 15.93,
+   "end": 16.41
+  },
+  {
+   "text": "el",
+   "start": 16.53,
+   "end": 16.6
+  },
+  {
+   "text": "artículo",
+   "start": 16.61,
+   "end": 17.02
+  },
+  {
+   "text": "ciento",
+   "start": 17.03,
+   "end": 17.290000000000003
+  },
+  {
+   "text": "sesenta",
+   "start": 17.3,
+   "end": 17.64
+  },
+  {
+   "text": "y",
+   "start": 17.65,
+   "end": 17.7
+  },
+  {
+   "text": "tres",
+   "start": 17.71,
+   "end": 17.92
+  },
+  {
+   "text": "da",
+   "start": 17.93,
+   "end": 18.02
+  },
+  {
+   "text": "el",
+   "start": 18.03,
+   "end": 18.11
+  },
+  {
+   "text": "escaño",
+   "start": 18.12,
+   "end": 18.48
+  },
+  {
+   "text": "al",
+   "start": 18.49,
+   "end": 18.569999999999997
+  },
+  {
+   "text": "más",
+   "start": 18.58,
+   "end": 18.74
+  },
+  {
+   "text": "votado",
+   "start": 18.75,
+   "end": 19.05
+  },
+  {
+   "text": "en",
+   "start": 19.06,
+   "end": 19.139999999999997
+  },
+  {
+   "text": "total.",
+   "start": 19.15,
+   "end": 19.5
+  },
+  {
+   "text": "¿Y",
+   "start": 20.22,
+   "end": 20.34
+  },
+  {
+   "text": "si",
+   "start": 20.35,
+   "end": 20.46
+  },
+  {
+   "text": "empatan",
+   "start": 20.47,
+   "end": 20.779999999999998
+  },
+  {
+   "text": "también",
+   "start": 20.79,
+   "end": 21.09
+  },
+  {
+   "text": "en",
+   "start": 21.1,
+   "end": 21.17
+  },
+  {
+   "text": "votos?",
+   "start": 21.18,
+   "end": 21.6
+  },
+  {
+   "text": "Primer",
+   "start": 22.3,
+   "end": 22.6
+  },
+  {
+   "text": "empate,",
+   "start": 22.61,
+   "end": 22.98
+  },
+  {
+   "text": "por",
+   "start": 23.08,
+   "end": 23.229999999999997
+  },
+  {
+   "text": "sorteo;",
+   "start": 23.24,
+   "end": 23.61
+  },
+  {
+   "text": "los",
+   "start": 23.75,
+   "end": 23.88
+  },
+  {
+   "text": "siguientes,",
+   "start": 23.89,
+   "end": 24.39
+  },
+  {
+   "text": "por",
+   "start": 24.5,
+   "end": 24.66
+  },
+  {
+   "text": "turnos.",
+   "start": 24.67,
+   "end": 25.130000000000003
+  },
+  {
+   "text": "Pasó",
+   "start": 25.84,
+   "end": 26.15
+  },
+  {
+   "text": "en",
+   "start": 26.16,
+   "end": 26.23
+  },
+  {
+   "text": "Lújar,",
+   "start": 26.24,
+   "end": 26.549999999999997
+  },
+  {
+   "text": "Granada,",
+   "start": 26.65,
+   "end": 27.06
+  },
+  {
+   "text": "en",
+   "start": 27.16,
+   "end": 27.28
+  },
+  {
+   "text": "dos",
+   "start": 27.29,
+   "end": 27.419999999999998
+  },
+  {
+   "text": "mil",
+   "start": 27.43,
+   "end": 27.58
+  },
+  {
+   "text": "once:",
+   "start": 27.59,
+   "end": 27.86
+  },
+  {
+   "text": "dos",
+   "start": 28.03,
+   "end": 28.18
+  },
+  {
+   "text": "candidaturas",
+   "start": 28.19,
+   "end": 28.790000000000003
+  },
+  {
+   "text": "empataron",
+   "start": 28.8,
+   "end": 29.220000000000002
+  },
+  {
+   "text": "a",
+   "start": 29.23,
+   "end": 29.28
+  },
+  {
+   "text": "ciento",
+   "start": 29.29,
+   "end": 29.57
+  },
+  {
+   "text": "sesenta",
+   "start": 29.58,
+   "end": 29.93
+  },
+  {
+   "text": "y",
+   "start": 29.94,
+   "end": 30.02
+  },
+  {
+   "text": "un",
+   "start": 30.03,
+   "end": 30.1
+  },
+  {
+   "text": "votos,",
+   "start": 30.11,
+   "end": 30.52
+  },
+  {
+   "text": "y",
+   "start": 30.73,
+   "end": 30.88
+  },
+  {
+   "text": "un",
+   "start": 30.89,
+   "end": 31.0
+  },
+  {
+   "text": "sorteo",
+   "start": 31.01,
+   "end": 31.34
+  },
+  {
+   "text": "decidió",
+   "start": 31.35,
+   "end": 31.69
+  },
+  {
+   "text": "la",
+   "start": 31.7,
+   "end": 31.79
+  },
+  {
+   "text": "alcaldía.",
+   "start": 31.8,
+   "end": 32.33
+  },
+  {
+   "text": "El",
+   "start": 33.02,
+   "end": 33.230000000000004
+  },
+  {
+   "text": "Constitucional",
+   "start": 33.24,
+   "end": 33.89
+  },
+  {
+   "text": "lo",
+   "start": 33.9,
+   "end": 33.98
+  },
+  {
+   "text": "avaló:",
+   "start": 33.99,
+   "end": 34.260000000000005
+  },
+  {
+   "text": "un",
+   "start": 34.39,
+   "end": 34.5
+  },
+  {
+   "text": "solo",
+   "start": 34.51,
+   "end": 34.699999999999996
+  },
+  {
+   "text": "voto",
+   "start": 34.71,
+   "end": 34.94
+  },
+  {
+   "text": "puede",
+   "start": 34.95,
+   "end": 35.190000000000005
+  },
+  {
+   "text": "evitar",
+   "start": 35.2,
+   "end": 35.470000000000006
+  },
+  {
+   "text": "el",
+   "start": 35.48,
+   "end": 35.559999999999995
+  },
+  {
+   "text": "sorteo.",
+   "start": 35.57,
+   "end": 36.02
+  },
+  {
+   "text": "Tú",
+   "start": 36.71,
+   "end": 36.84
+  },
+  {
+   "text": "traes",
+   "start": 36.85,
+   "end": 37.1
+  },
+  {
+   "text": "las",
+   "start": 37.11,
+   "end": 37.26
+  },
+  {
+   "text": "dudas",
+   "start": 37.27,
+   "end": 37.540000000000006
+  },
+  {
+   "text": "y",
+   "start": 37.55,
+   "end": 37.589999999999996
+  },
+  {
+   "text": "nosotros",
+   "start": 37.6,
+   "end": 38.02
+  },
+  {
+   "text": "te",
+   "start": 38.03,
+   "end": 38.120000000000005
+  },
+  {
+   "text": "damos",
+   "start": 38.13,
+   "end": 38.400000000000006
+  },
+  {
+   "text": "el",
+   "start": 38.41,
+   "end": 38.51
+  },
+  {
+   "text": "truco.",
+   "start": 38.52,
+   "end": 38.900000000000006
+  },
+  {
+   "text": "Síguenos",
+   "start": 39.59,
+   "end": 40.1
+  },
+  {
+   "text": "y",
+   "start": 40.11,
+   "end": 40.16
+  },
+  {
+   "text": "las",
+   "start": 40.17,
+   "end": 40.300000000000004
+  },
+  {
+   "text": "resolvemos.",
+   "start": 40.31,
+   "end": 40.97
+  },
+  {
+   "text": "¿Sabías",
+   "start": 41.66,
+   "end": 42.11
+  },
+  {
+   "text": "que",
+   "start": 42.12,
+   "end": 42.199999999999996
+  },
+  {
+   "text": "se",
+   "start": 42.21,
+   "end": 42.300000000000004
+  },
+  {
+   "text": "decide",
+   "start": 42.31,
+   "end": 42.6
+  },
+  {
+   "text": "así?",
+   "start": 42.61,
+   "end": 42.9
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 43.4,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Empate a votos: quién gana el *escaño*",
+  "scene": 0
+ },
+ "duration": 46.0,
+ "cover_offset_ms": 46300
+}
