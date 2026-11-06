@@ -67,12 +67,14 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-11-02 14:00 | ¿Por qué el frío se come la batería del móvil? | content/lote10-01-frio-bateria | sí | sí | sí | no | previews/lote10-01-frio-bateria-con-voz.mp4 (42,1 s) |
 | 2026-11-03 14:00 | Empate a votos: ¿quién se lleva el escaño? | content/lote10-02-empate-escano | sí | sí | sí | no | previews/lote10-02-empate-escano-con-voz.mp4 (46,6 s) |
 | 2026-11-06 14:00 | ¿Por qué una canción te pone la piel de gallina? (PRIMERO EN PAPEL) | content/lote10-03-pelo-cancion | sí | sí | sí | no | previews/lote10-03-pelo-cancion-con-voz.mp4 (41,3 s) |
+| 2026-11-07 14:00 | ¿Por qué tu móvil se apaga con el 20 %? (papel) | content/lote10-04-movil-20 | sí | sí | sí | no | previews/lote10-04-movil-20-con-voz.mp4 (42,0 s) |
 
 ## Coste por fase (tokens de subagente, aprox.)
 | Fecha | Fase | Coste |
 |---|---|---|
 | 2026-10-16 | Librería (una vez) | 360.000 |
 | 2026-10-16 | Guiones semana 20-24 oct (5 vídeos) | 100.000 |
+| 2026-11-06 | Montaje móvil 20 (papel) | ≈ 187.000 |
 | 2026-11-06 | Estilo papel: librería 200k + montaje pelo-canción 187k + fondo papel en motor 142k | ≈ 530.000 |
 | 2026-11-02 | Montaje empate escaño (rossark) | ≈ 255.000 |
 | 2026-11-01 | Montaje frío batería (rossark) | ≈ 250.000 |
