@@ -1,0 +1,667 @@
+{
+ "source": "Fuentes: PNAS (Blood y Zatorre 2001) · Nature Neuroscience (Salimpoor 2011) · Social Cognitive and Affective Neuroscience (Sachs 2016) · Smithsonian",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Por",
+   "start": 0.1,
+   "end": 0.30000000000000004
+  },
+  {
+   "text": "qué",
+   "start": 0.31,
+   "end": 0.43
+  },
+  {
+   "text": "una",
+   "start": 0.44,
+   "end": 0.59
+  },
+  {
+   "text": "canción",
+   "start": 0.6,
+   "end": 0.98
+  },
+  {
+   "text": "te",
+   "start": 0.99,
+   "end": 1.06
+  },
+  {
+   "text": "pone",
+   "start": 1.07,
+   "end": 1.27
+  },
+  {
+   "text": "la",
+   "start": 1.28,
+   "end": 1.37
+  },
+  {
+   "text": "piel",
+   "start": 1.38,
+   "end": 1.5699999999999998
+  },
+  {
+   "text": "de",
+   "start": 1.58,
+   "end": 1.6500000000000001
+  },
+  {
+   "text": "gallina",
+   "start": 1.66,
+   "end": 1.98
+  },
+  {
+   "text": "sin",
+   "start": 1.99,
+   "end": 2.14
+  },
+  {
+   "text": "hacer",
+   "start": 2.15,
+   "end": 2.36
+  },
+  {
+   "text": "frío?",
+   "start": 2.37,
+   "end": 2.73
+  },
+  {
+   "text": "Se",
+   "start": 3.42,
+   "end": 3.64
+  },
+  {
+   "text": "llama",
+   "start": 3.65,
+   "end": 3.88
+  },
+  {
+   "text": "frisson:",
+   "start": 3.89,
+   "end": 4.28
+  },
+  {
+   "text": "un",
+   "start": 4.41,
+   "end": 4.49
+  },
+  {
+   "text": "escalofrío",
+   "start": 4.5,
+   "end": 4.97
+  },
+  {
+   "text": "de",
+   "start": 4.98,
+   "end": 5.0600000000000005
+  },
+  {
+   "text": "placer",
+   "start": 5.07,
+   "end": 5.3500000000000005
+  },
+  {
+   "text": "por",
+   "start": 5.36,
+   "end": 5.5
+  },
+  {
+   "text": "la",
+   "start": 5.51,
+   "end": 5.58
+  },
+  {
+   "text": "espalda",
+   "start": 5.59,
+   "end": 5.9799999999999995
+  },
+  {
+   "text": "y",
+   "start": 5.99,
+   "end": 6.04
+  },
+  {
+   "text": "los",
+   "start": 6.05,
+   "end": 6.18
+  },
+  {
+   "text": "brazos.",
+   "start": 6.19,
+   "end": 6.66
+  },
+  {
+   "text": "En",
+   "start": 7.36,
+   "end": 7.58
+  },
+  {
+   "text": "dos",
+   "start": 7.59,
+   "end": 7.72
+  },
+  {
+   "text": "mil",
+   "start": 7.73,
+   "end": 7.880000000000001
+  },
+  {
+   "text": "uno,",
+   "start": 7.89,
+   "end": 8.1
+  },
+  {
+   "text": "en",
+   "start": 8.19,
+   "end": 8.29
+  },
+  {
+   "text": "Montreal,",
+   "start": 8.3,
+   "end": 8.75
+  },
+  {
+   "text": "escanearon",
+   "start": 8.92,
+   "end": 9.39
+  },
+  {
+   "text": "a",
+   "start": 9.4,
+   "end": 9.44
+  },
+  {
+   "text": "diez",
+   "start": 9.45,
+   "end": 9.649999999999999
+  },
+  {
+   "text": "músicos",
+   "start": 9.66,
+   "end": 10.08
+  },
+  {
+   "text": "oyendo",
+   "start": 10.09,
+   "end": 10.41
+  },
+  {
+   "text": "su",
+   "start": 10.42,
+   "end": 10.53
+  },
+  {
+   "text": "canción",
+   "start": 10.54,
+   "end": 10.909999999999998
+  },
+  {
+   "text": "favorita.",
+   "start": 10.92,
+   "end": 11.46
+  },
+  {
+   "text": "En",
+   "start": 12.15,
+   "end": 12.360000000000001
+  },
+  {
+   "text": "pleno",
+   "start": 12.37,
+   "end": 12.59
+  },
+  {
+   "text": "escalofrío",
+   "start": 12.6,
+   "end": 13.09
+  },
+  {
+   "text": "se",
+   "start": 13.1,
+   "end": 13.209999999999999
+  },
+  {
+   "text": "encendía",
+   "start": 13.22,
+   "end": 13.620000000000001
+  },
+  {
+   "text": "la",
+   "start": 13.63,
+   "end": 13.71
+  },
+  {
+   "text": "recompensa",
+   "start": 13.72,
+   "end": 14.24
+  },
+  {
+   "text": "del",
+   "start": 14.25,
+   "end": 14.38
+  },
+  {
+   "text": "cerebro,",
+   "start": 14.39,
+   "end": 14.790000000000001
+  },
+  {
+   "text": "como",
+   "start": 14.9,
+   "end": 15.09
+  },
+  {
+   "text": "con",
+   "start": 15.1,
+   "end": 15.23
+  },
+  {
+   "text": "la",
+   "start": 15.24,
+   "end": 15.32
+  },
+  {
+   "text": "comida.",
+   "start": 15.33,
+   "end": 15.74
+  },
+  {
+   "text": "En",
+   "start": 16.44,
+   "end": 16.66
+  },
+  {
+   "text": "dos",
+   "start": 16.67,
+   "end": 16.8
+  },
+  {
+   "text": "mil",
+   "start": 16.81,
+   "end": 16.959999999999997
+  },
+  {
+   "text": "once",
+   "start": 16.97,
+   "end": 17.2
+  },
+  {
+   "text": "vieron",
+   "start": 17.21,
+   "end": 17.470000000000002
+  },
+  {
+   "text": "que",
+   "start": 17.48,
+   "end": 17.56
+  },
+  {
+   "text": "el",
+   "start": 17.57,
+   "end": 17.66
+  },
+  {
+   "text": "cerebro",
+   "start": 17.67,
+   "end": 17.970000000000002
+  },
+  {
+   "text": "libera",
+   "start": 17.98,
+   "end": 18.25
+  },
+  {
+   "text": "dopamina,",
+   "start": 18.26,
+   "end": 18.720000000000002
+  },
+  {
+   "text": "la",
+   "start": 18.84,
+   "end": 18.919999999999998
+  },
+  {
+   "text": "del",
+   "start": 18.93,
+   "end": 19.04
+  },
+  {
+   "text": "placer,",
+   "start": 19.05,
+   "end": 19.37
+  },
+  {
+   "text": "incluso",
+   "start": 19.48,
+   "end": 19.81
+  },
+  {
+   "text": "segundos",
+   "start": 19.82,
+   "end": 20.25
+  },
+  {
+   "text": "antes",
+   "start": 20.26,
+   "end": 20.51
+  },
+  {
+   "text": "del",
+   "start": 20.52,
+   "end": 20.62
+  },
+  {
+   "text": "momento",
+   "start": 20.63,
+   "end": 20.939999999999998
+  },
+  {
+   "text": "cumbre.",
+   "start": 20.95,
+   "end": 21.32
+  },
+  {
+   "text": "Tu",
+   "start": 22.01,
+   "end": 22.17
+  },
+  {
+   "text": "cerebro",
+   "start": 22.18,
+   "end": 22.49
+  },
+  {
+   "text": "anticipa,",
+   "start": 22.5,
+   "end": 22.97
+  },
+  {
+   "text": "y",
+   "start": 23.1,
+   "end": 23.14
+  },
+  {
+   "text": "si",
+   "start": 23.15,
+   "end": 23.25
+  },
+  {
+   "text": "la",
+   "start": 23.26,
+   "end": 23.34
+  },
+  {
+   "text": "canción",
+   "start": 23.35,
+   "end": 23.71
+  },
+  {
+   "text": "te",
+   "start": 23.72,
+   "end": 23.79
+  },
+  {
+   "text": "sorprende,",
+   "start": 23.8,
+   "end": 24.29
+  },
+  {
+   "text": "el",
+   "start": 24.39,
+   "end": 24.5
+  },
+  {
+   "text": "placer",
+   "start": 24.51,
+   "end": 24.76
+  },
+  {
+   "text": "explota.",
+   "start": 24.77,
+   "end": 25.27
+  },
+  {
+   "text": "No",
+   "start": 25.97,
+   "end": 26.18
+  },
+  {
+   "text": "le",
+   "start": 26.19,
+   "end": 26.28
+  },
+  {
+   "text": "pasa",
+   "start": 26.29,
+   "end": 26.52
+  },
+  {
+   "text": "a",
+   "start": 26.53,
+   "end": 26.59
+  },
+  {
+   "text": "todos:",
+   "start": 26.6,
+   "end": 26.950000000000003
+  },
+  {
+   "text": "quien",
+   "start": 27.1,
+   "end": 27.25
+  },
+  {
+   "text": "lo",
+   "start": 27.26,
+   "end": 27.34
+  },
+  {
+   "text": "siente",
+   "start": 27.35,
+   "end": 27.630000000000003
+  },
+  {
+   "text": "tiene",
+   "start": 27.64,
+   "end": 27.830000000000002
+  },
+  {
+   "text": "más",
+   "start": 27.84,
+   "end": 27.99
+  },
+  {
+   "text": "conexiones",
+   "start": 28.0,
+   "end": 28.54
+  },
+  {
+   "text": "entre",
+   "start": 28.55,
+   "end": 28.75
+  },
+  {
+   "text": "la",
+   "start": 28.76,
+   "end": 28.85
+  },
+  {
+   "text": "zona",
+   "start": 28.86,
+   "end": 29.11
+  },
+  {
+   "text": "que",
+   "start": 29.12,
+   "end": 29.26
+  },
+  {
+   "text": "oye",
+   "start": 29.27,
+   "end": 29.5
+  },
+  {
+   "text": "y",
+   "start": 29.51,
+   "end": 29.55
+  },
+  {
+   "text": "la",
+   "start": 29.56,
+   "end": 29.66
+  },
+  {
+   "text": "que",
+   "start": 29.67,
+   "end": 29.76
+  },
+  {
+   "text": "siente.",
+   "start": 29.77,
+   "end": 30.2
+  },
+  {
+   "text": "Tú",
+   "start": 30.89,
+   "end": 31.02
+  },
+  {
+   "text": "traes",
+   "start": 31.03,
+   "end": 31.28
+  },
+  {
+   "text": "las",
+   "start": 31.29,
+   "end": 31.439999999999998
+  },
+  {
+   "text": "dudas",
+   "start": 31.45,
+   "end": 31.72
+  },
+  {
+   "text": "y",
+   "start": 31.73,
+   "end": 31.77
+  },
+  {
+   "text": "nosotros",
+   "start": 31.78,
+   "end": 32.2
+  },
+  {
+   "text": "te",
+   "start": 32.21,
+   "end": 32.300000000000004
+  },
+  {
+   "text": "damos",
+   "start": 32.31,
+   "end": 32.580000000000005
+  },
+  {
+   "text": "el",
+   "start": 32.59,
+   "end": 32.690000000000005
+  },
+  {
+   "text": "truco.",
+   "start": 32.7,
+   "end": 33.080000000000005
+  },
+  {
+   "text": "Síguenos",
+   "start": 33.77,
+   "end": 34.28
+  },
+  {
+   "text": "y",
+   "start": 34.29,
+   "end": 34.339999999999996
+  },
+  {
+   "text": "las",
+   "start": 34.35,
+   "end": 34.480000000000004
+  },
+  {
+   "text": "resolvemos.",
+   "start": 34.49,
+   "end": 35.15
+  },
+  {
+   "text": "¿Qué",
+   "start": 35.84,
+   "end": 35.99
+  },
+  {
+   "text": "canción",
+   "start": 36.0,
+   "end": 36.34
+  },
+  {
+   "text": "te",
+   "start": 36.35,
+   "end": 36.42
+  },
+  {
+   "text": "pone",
+   "start": 36.43,
+   "end": 36.62
+  },
+  {
+   "text": "la",
+   "start": 36.63,
+   "end": 36.720000000000006
+  },
+  {
+   "text": "piel",
+   "start": 36.73,
+   "end": 36.919999999999995
+  },
+  {
+   "text": "de",
+   "start": 36.93,
+   "end": 36.99
+  },
+  {
+   "text": "gallina",
+   "start": 37.0,
+   "end": 37.3
+  },
+  {
+   "text": "a",
+   "start": 37.31,
+   "end": 37.36
+  },
+  {
+   "text": "ti?",
+   "start": 37.37,
+   "end": 37.599999999999994
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 38.1,
+  "cta": "Todo tiene un truco"
+ },
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué una canción te pone la *piel de gallina*",
+  "scene": 0
+ },
+ "duration": 40.7,
+ "cover_offset_ms": 41000
+}
