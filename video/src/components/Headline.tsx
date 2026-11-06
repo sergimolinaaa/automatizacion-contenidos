@@ -1,6 +1,7 @@
 import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { brand } from "../brand";
 import { exitOut, parseMarkup, pop, sec } from "../anim";
+import { boldText, tapeBlock } from "../theme";
 
 const { colors, fonts, border } = brand;
 
@@ -42,8 +43,7 @@ export const Headline: React.FC<{ text: string; number?: string | null; start: n
             height: size * 1.15,
             padding: "0 12px",
             background: colors.accent,
-            border: `${border}px solid ${colors.ink}`,
-            boxShadow: `8px 8px 0 ${colors.ink}`,
+            ...tapeBlock(border, 8),
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -66,7 +66,7 @@ export const Headline: React.FC<{ text: string; number?: string | null; start: n
             const t = pop(f, d + 4, 13);
             return (
               <span key={i} style={{ position: "relative", display: "inline-block", padding: "2px 14px 6px", transform: "rotate(-2deg)" }}>
-                <span style={{ position: "absolute", inset: 0, background: colors.accent, border: `${border - 1}px solid ${colors.ink}`, boxShadow: `7px 7px 0 ${colors.ink}`, transformOrigin: "0 50%", transform: `scaleX(${w})`, opacity: w > 0 ? 1 : 0 }} />
+                <span style={{ position: "absolute", inset: 0, background: colors.accent, ...tapeBlock(border - 1, 7), transformOrigin: "0 50%", transform: `scaleX(${w})`, opacity: w > 0 ? 1 : 0 }} />
                 <span style={{ position: "relative", display: "inline-block", overflow: "hidden", verticalAlign: "top" }}>
                   <span style={{ display: "inline-block", fontFamily: fonts.display, fontWeight: 900, fontSize: size, letterSpacing: -1, color: colors.ink, transform: `translateY(${interpolate(t, [0, 1], [105, 0])}%)` }}>{word}</span>
                 </span>
@@ -84,8 +84,7 @@ export const Headline: React.FC<{ text: string; number?: string | null; start: n
                   fontWeight: 900,
                   fontSize: size,
                   letterSpacing: -1,
-                  color: colors.paper,
-                  textShadow: `5px 5px 0 ${colors.ink}`,
+                  ...boldText(5),
                   transform: `translateY(${interpolate(s, [0, 1], [110, 0])}%) rotate(${interpolate(s, [0, 1], [6, 0])}deg)`,
                 }}
               >

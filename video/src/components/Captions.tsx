@@ -2,6 +2,7 @@ import { interpolate, useCurrentFrame } from "remotion";
 import { FPS, PAD, brand } from "../brand";
 import { pop, sec } from "../anim";
 import type { Word } from "../types";
+import { PAPEL, isPapel } from "../theme";
 
 const { colors, fonts } = brand;
 const MAX_WORDS = 4;
@@ -26,6 +27,7 @@ export const groupLines = (words: Word[]) => {
 // Subtítulos karaoke: la palabra que suena va en bloque lima; las siguientes, tenues.
 export const Captions: React.FC<{ words: Word[] }> = ({ words }) => {
   const frame = useCurrentFrame();
+  const papel = isPapel();
   const t = frame / FPS;
   const lines = groupLines(words);
   const li = lines.findIndex((l, i) => {
@@ -68,12 +70,23 @@ export const Captions: React.FC<{ words: Word[] }> = ({ words }) => {
               fontWeight: 800,
               fontSize: 54,
               padding: "4px 12px 8px",
-              borderRadius: 8,
-              color: active ? colors.ink : past ? colors.paper : colors.muted,
-              background: active ? colors.accent : "transparent",
-              border: `4px solid ${active ? colors.ink : "transparent"}`,
-              boxShadow: active ? `6px 6px 0 ${colors.ink}` : undefined,
-              textShadow: active ? undefined : past ? `4px 4px 0 ${colors.ink}` : undefined,
+              borderRadius: papel ? 3 : 8,
+              ...(papel
+                ? {
+                    // cinta adhesiva lima sobre la cartulina; lo dicho en tinta, lo que falta en tinta tenue
+                    color: active ? PAPEL.tinta : past ? PAPEL.tinta : "rgba(58,46,42,0.42)",
+                    background: active ? colors.accent : "transparent",
+                    border: "4px solid transparent",
+                    boxShadow: active ? "0 3px 7px rgba(58,46,42,0.28)" : undefined,
+                    textShadow: active ? undefined : "0 2px 0 rgba(255,250,240,0.7)",
+                  }
+                : {
+                    color: active ? colors.ink : past ? colors.paper : colors.muted,
+                    background: active ? colors.accent : "transparent",
+                    border: `4px solid ${active ? colors.ink : "transparent"}`,
+                    boxShadow: active ? `6px 6px 0 ${colors.ink}` : undefined,
+                    textShadow: active ? undefined : past ? `4px 4px 0 ${colors.ink}` : undefined,
+                  }),
               transform: active ? `scale(${interpolate(hit, [0, 1], [0.86, 1])}) rotate(-1.5deg)` : undefined,
             }}
           >

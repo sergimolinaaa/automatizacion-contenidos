@@ -2,6 +2,8 @@ import { Easing, interpolate, spring, useCurrentFrame } from "remotion";
 import { FPS, brand } from "../brand";
 import { exitOut, pop, sec } from "../anim";
 import type { Illustration as Ill, IllustrationAnim } from "../types";
+import { isPapel } from "../theme";
+import { PaperSheet } from "./Paper";
 
 const { colors, fonts, border, shadow } = brand;
 
@@ -234,12 +236,23 @@ export const IllustrationPanel: React.FC<{
   const out = isLast ? 1 : exitOut(frame, sec(sceneEnd), 6);
 
   const framed = variant === "panel";
+  const papel = isPapel() && framed;
   const box: React.CSSProperties =
     variant === "full"
       ? { position: "absolute", inset: 0, overflow: "hidden", opacity: Math.min(1, s * 2) * out, transform: `scale(${interpolate(s, [0, 1], [1.06, 1])})` }
       : variant === "free"
         ? { position: "relative", height, flexShrink: 0, overflow: "hidden", opacity: Math.min(1, s * 2) * out, transform: `translateY(${interpolate(s, [0, 1], [40, 0])}px) scale(${0.96 + 0.04 * out})` }
-        : {
+        : papel
+          ? {
+              // hoja de papel recortado: borde roto y sombra de papel (PaperSheet), el dibujo pegado encima
+              position: "relative",
+              height,
+              flexShrink: 0,
+              isolation: "isolate",
+              opacity: Math.min(1, s * 2) * out,
+              transform: `scale(${interpolate(s, [0, 1], [0.92, 1]) * (0.95 + 0.05 * out)}) rotate(${interpolate(s, [0, 1], [-3, -0.8])}deg)`,
+            }
+          : {
             position: "relative",
             height,
             flexShrink: 0,
@@ -255,10 +268,13 @@ export const IllustrationPanel: React.FC<{
   return (
     <div style={box}>
       <style>{css}</style>
-      <div
-        style={{ position: "absolute", inset: 0, transformOrigin: "50% 50%", transform: camera(ill.anims ?? [], frame, sceneStart, sceneEnd, vw, vh) }}
-        dangerouslySetInnerHTML={{ __html: svg }}
-      />
+      {papel && <PaperSheet color={colors.paper} />}
+      <div style={papel ? { position: "absolute", inset: 14, overflow: "hidden", borderRadius: 4 } : { position: "absolute", inset: 0 }}>
+        <div
+          style={{ position: "absolute", inset: 0, transformOrigin: "50% 50%", transform: camera(ill.anims ?? [], frame, sceneStart, sceneEnd, vw, vh) }}
+          dangerouslySetInnerHTML={{ __html: svg }}
+        />
+      </div>
       {ill.caption && framed && (
         <div
           style={{

@@ -13,6 +13,8 @@ import { ProgressBar } from "./components/ProgressBar";
 import { Signature } from "./components/Signature";
 import { ElementView } from "./elements/Elements";
 import type { ShortProps } from "./types";
+import { PAPER_EDGE, applyEstilo, isPapel } from "./theme";
+import { PaperDefs, PaperGrain } from "./components/Paper";
 
 // Zonas fijas de la pantalla (nada se dibuja fuera de la suya, así nada se tapa):
 // barra de capítulos 118-210 · contenido 236-1300 · subtítulos 1350-1480 · UI de la red social debajo.
@@ -40,6 +42,8 @@ const duckedVolume = (words: ShortProps["words"], base: number) => (f: number) =
 
 export const Short: React.FC<CoverProps> = (props) => {
   const { chapters, scenes, words, source, audio, music, musicVolume = 0.28, sfx, sfxVolume = 0.85, outro } = props;
+  applyEstilo(props.estilo);
+  const papel = isPapel();
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const t = frame / FPS;
@@ -63,6 +67,7 @@ export const Short: React.FC<CoverProps> = (props) => {
 
   return (
     <AbsoluteFill style={{ fontFamily: brand.fonts.display }}>
+      {papel && <PaperDefs />}
       <Background />
       {audio && <Audio src={src(audio)} />}
       {music && <Audio src={src(music)} volume={duckedVolume(words, musicVolume)} />}
@@ -72,7 +77,13 @@ export const Short: React.FC<CoverProps> = (props) => {
         <AbsoluteFill>
           <IllustrationPanel ill={ill} id={String(idx)} sceneStart={scene.start} sceneEnd={scene.end} isLast={ctx.isLast} height={1920} variant="full" />
           {/* velos para que el titular y los subtítulos se lean sobre el dibujo */}
-          <AbsoluteFill style={{ background: "linear-gradient(rgba(11,11,20,0.55), rgba(11,11,20,0) 26%, rgba(11,11,20,0) 62%, rgba(11,11,20,0.6) 82%, rgba(11,11,20,0.2))" }} />
+          <AbsoluteFill
+            style={{
+              background: papel
+                ? "linear-gradient(rgba(243,230,207,0.82), rgba(243,230,207,0) 24%, rgba(243,230,207,0) 64%, rgba(243,230,207,0.78) 80%, rgba(243,230,207,0.35))"
+                : "linear-gradient(rgba(11,11,20,0.55), rgba(11,11,20,0) 26%, rgba(11,11,20,0) 62%, rgba(11,11,20,0.6) 82%, rgba(11,11,20,0.2))",
+            }}
+          />
         </AbsoluteFill>
       )}
 
@@ -132,14 +143,17 @@ export const Short: React.FC<CoverProps> = (props) => {
               left: `${sweep * 140 - 20}%`,
               background: brand.colors.accent,
               transform: "rotate(14deg)",
-              borderLeft: `10px solid ${brand.colors.ink}`,
-              borderRight: `10px solid ${brand.colors.ink}`,
+              ...(papel
+                ? { filter: `url(#${PAPER_EDGE})`, opacity: 0.95 }
+                : { borderLeft: `10px solid ${brand.colors.ink}`, borderRight: `10px solid ${brand.colors.ink}` }),
             }}
           />
         </AbsoluteFill>
       )}
 
       {outro && <Outro at={outro.at} cta={outro.cta} />}
+
+      {papel && <PaperGrain />}
 
       {frame >= durationInFrames - COVER_FRAMES && (
         <AbsoluteFill>

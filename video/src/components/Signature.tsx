@@ -2,6 +2,7 @@ import { Easing, interpolate, useCurrentFrame } from "remotion";
 import { brand } from "../brand";
 import { exitOut, pop, sec } from "../anim";
 import { Mascot } from "./Mascot";
+import { boldText, tapeBlock } from "../theme";
 
 const { colors, fonts, border } = brand;
 
@@ -19,12 +20,9 @@ export const Wordmark: React.FC<{ size: number; f: number; stagger?: number }> =
             fontSize: size,
             lineHeight: 1,
             letterSpacing: -2,
-            color: w.boxed ? colors.ink : colors.paper,
             background: w.boxed ? colors.accent : "transparent",
             padding: w.boxed ? `${size * 0.06}px ${size * 0.18}px ${size * 0.12}px` : 0,
-            border: w.boxed ? `${border + 2}px solid ${colors.ink}` : undefined,
-            boxShadow: w.boxed ? `10px 10px 0 ${colors.ink}` : undefined,
-            textShadow: w.boxed ? undefined : `7px 7px 0 ${colors.ink}`,
+            ...(w.boxed ? { color: colors.ink, ...tapeBlock(border + 2, 10) } : boldText(7)),
             opacity: Math.min(1, s * 2),
             transform: `translateY(${interpolate(s, [0, 1], [-120, 0])}px) scale(${interpolate(s, [0, 1], [1.4, 1])}) rotate(${w.boxed ? -4 : 0}deg)`,
           }}
@@ -78,7 +76,7 @@ export const Signature: React.FC<{ start: number; end: number }> = ({ start, end
           return (
             <span key={i} style={{
               display: "inline-block", width: ch === " " ? 40 : undefined, fontFamily: fonts.display, fontWeight: 900, fontSize: 150,
-              lineHeight: 1, letterSpacing: -3, color: colors.paper, textShadow: `8px 8px 0 ${colors.ink}`,
+              lineHeight: 1, letterSpacing: -3, ...boldText(8),
               opacity: Math.min(1, k * 3),
               transform: `translateY(${interpolate(k, [0, 1], [-260, 0])}px) rotate(${interpolate(k, [0, 1], [(i % 2 ? 1 : -1) * 25, 0])}deg)`,
             }}>{ch}</span>
@@ -89,7 +87,7 @@ export const Signature: React.FC<{ start: number; end: number }> = ({ start, end
       <div style={{ position: "absolute", top: 300, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
         <div style={{
           display: "flex", alignItems: "baseline", fontFamily: fonts.display, fontWeight: 900, fontSize: 150, lineHeight: 1,
-          color: colors.ink, background: colors.accent, border: `${border + 2}px solid ${colors.ink}`, boxShadow: `12px 12px 0 ${colors.ink}`,
+          color: colors.ink, background: colors.accent, ...tapeBlock(border + 2, 12),
           padding: "8px 34px 18px", opacity: f < slam ? 0 : 1,
           transform: `scale(${interpolate(box, [0, 1], [2.4, 1])}) rotate(${interpolate(box, [0, 1], [8, -4])}deg)`,
         }}>

@@ -1,6 +1,7 @@
 import { interpolate, useCurrentFrame } from "remotion";
 import { FPS, PAD, brand } from "../brand";
 import type { Scene } from "../types";
+import { isPapel } from "../theme";
 
 const { colors, fonts } = brand;
 
@@ -8,6 +9,8 @@ const { colors, fonts } = brand;
 export const ProgressBar: React.FC<{ chapters: string[]; scenes: Scene[]; source?: string }> = ({ chapters, scenes, source }) => {
   const frame = useCurrentFrame();
   const t = frame / FPS;
+  // en papel, lo que era blanco translúcido pasa a tinta translúcida (se lee sobre la cartulina)
+  const soft = (a: number) => (isPapel() ? `rgba(58,46,42,${a})` : `rgba(255,255,255,${a})`);
 
   const spans = chapters.map((_, i) => {
     const own = scenes.filter((s) => s.chapter === i);
@@ -30,8 +33,8 @@ export const ProgressBar: React.FC<{ chapters: string[]; scenes: Scene[]; source
                 flex: i === 0 ? 0.55 : 1,
                 position: "relative",
                 borderRadius: 8,
-                border: `3px solid ${past || active ? colors.ink : "rgba(255,255,255,0.55)"}`,
-                background: past ? colors.ink : "rgba(255,255,255,0.08)",
+                border: `3px solid ${past || active ? colors.ink : soft(0.55)}`,
+                background: past ? colors.ink : soft(0.08),
                 overflow: "hidden",
                 transform: active ? `translateY(${-2 * Math.sin(frame / 6)}px)` : undefined,
               }}
@@ -45,7 +48,7 @@ export const ProgressBar: React.FC<{ chapters: string[]; scenes: Scene[]; source
                   fontFamily: fonts.mono,
                   fontWeight: 800,
                   fontSize: 20,
-                  color: past ? colors.accent : active ? colors.ink : "rgba(255,255,255,0.75)",
+                  color: past ? colors.accent : active ? colors.ink : soft(0.75),
                 }}
               >
                 {label}
@@ -55,7 +58,7 @@ export const ProgressBar: React.FC<{ chapters: string[]; scenes: Scene[]; source
         })}
       </div>
       {source && (
-        <div style={{ marginTop: 14, display: "flex", alignItems: "center", gap: 10, fontFamily: fonts.mono, fontWeight: 500, fontSize: 21, color: "rgba(255,255,255,0.85)" }}>
+        <div style={{ marginTop: 14, display: "flex", alignItems: "center", gap: 10, fontFamily: fonts.mono, fontWeight: 500, fontSize: 21, color: soft(0.85) }}>
           <div style={{ width: 14, height: 14, flexShrink: 0, background: colors.accent, border: `2px solid ${colors.ink}` }} />
           <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{source}</span>
         </div>

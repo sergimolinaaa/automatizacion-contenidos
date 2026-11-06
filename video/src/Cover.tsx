@@ -5,6 +5,8 @@ import { Background } from "./components/Background";
 import { Fit } from "./components/Fit";
 import { IllustrationPanel } from "./components/Illustration";
 import type { ShortProps } from "./types";
+import { applyEstilo, boldText, isPapel, tapeBlock } from "./theme";
+import { PaperDefs, PaperGrain } from "./components/Paper";
 
 const { colors, fonts, border } = brand;
 
@@ -17,6 +19,8 @@ export type CoverProps = ShortProps & {
  * de Instagram (y 240 a 1680) y la franja central 1:1.
  */
 export const Cover: React.FC<CoverProps> = (props) => {
+  applyEstilo(props.estilo);
+  const papel = isPapel();
   const c = props.cover ?? {};
   const sceneIdx = c.scene ?? 0;
   const scene = props.scenes[sceneIdx];
@@ -37,7 +41,7 @@ export const Cover: React.FC<CoverProps> = (props) => {
             key={i}
             style={{
               fontFamily: fonts.display, fontWeight: 900, fontSize: size, letterSpacing: -2, color: colors.ink,
-              background: colors.accent, border: `${border + 2}px solid ${colors.ink}`, boxShadow: `10px 10px 0 ${colors.ink}`,
+              background: colors.accent, ...tapeBlock(border + 2, 10),
               padding: "4px 20px 12px", transform: "rotate(-1.5deg)", textAlign: "center",
             }}
           >
@@ -45,7 +49,7 @@ export const Cover: React.FC<CoverProps> = (props) => {
           </span>
         ) : (
           p.text.split(/\s+/).filter(Boolean).map((w, j) => (
-            <span key={`${i}-${j}`} style={{ fontFamily: fonts.display, fontWeight: 900, fontSize: size, letterSpacing: -2, color: colors.paper, textShadow: `8px 8px 0 ${colors.ink}` }}>
+            <span key={`${i}-${j}`} style={{ fontFamily: fonts.display, fontWeight: 900, fontSize: size, letterSpacing: -2, ...boldText(8) }}>
               {w}
             </span>
           ))
@@ -56,6 +60,7 @@ export const Cover: React.FC<CoverProps> = (props) => {
 
   return (
     <AbsoluteFill>
+      {papel && <PaperDefs />}
       <Background />
       <div style={{ position: "absolute", top: 250, left: PAD }}>
         <Fit height={1420} width={W - PAD * 2} align="center">
@@ -77,6 +82,7 @@ export const Cover: React.FC<CoverProps> = (props) => {
           </div>
         </Fit>
       </div>
+      {papel && <PaperGrain />}
     </AbsoluteFill>
   );
 };

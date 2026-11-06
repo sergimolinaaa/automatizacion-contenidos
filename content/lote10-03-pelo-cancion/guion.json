@@ -1,6 +1,7 @@
 {
  "topic": "¿Por qué una canción te pone la piel de gallina? Es el frisson: con la música favorita se activa el sistema de recompensa (Blood y Zatorre 2001), se libera dopamina en el momento cumbre e incluso segundos antes (Salimpoor 2011), y quien lo siente tiene más conexiones entre la corteza auditiva y las zonas de la emoción (Sachs 2016)",
  "categoria": "cuerpo",
+ "estilo": "papel",
  "title": "¿Por qué una canción te pone la piel de gallina?",
  "source": "Fuentes: PNAS (Blood y Zatorre 2001) · Nature Neuroscience (Salimpoor 2011) · Social Cognitive and Affective Neuroscience (Sachs 2016) · Smithsonian",
  "chapters": [
@@ -1418,10 +1419,10 @@
       "effect": "zoom",
       "trigger": "si",
       "to": [
-       620,
-       360
+       600,
+       380
       ],
-      "amount": 1.12,
+      "amount": 1.08,
       "dur": 1.2
      }
     ]

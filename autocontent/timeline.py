@@ -112,6 +112,8 @@ def build_props(script: dict, scene_words: list[list[dict]], end_padding: float 
         "musicVolume": script.get("music_volume", 0.1),
         "outro": {"at": round(last_end, 3), "cta": script.get("outro_cta")} if script.get("outro", True) else None,
     }
+    if script.get("estilo"):  # "papel": fondo de cartulina y paneles de papel (video/src/theme.ts)
+        props["estilo"] = script["estilo"]
     return props
 
 

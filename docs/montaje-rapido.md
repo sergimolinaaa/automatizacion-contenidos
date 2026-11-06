@@ -6,6 +6,12 @@ Esta guía sustituye a la skill rossark, a los vídeos de referencia y a `Illust
 Desde el 2-nov TODO va en **papel recortado** (§0): la referencia de estilo es `muestras/estilos/C` (`muestras/estilos/dib.py`, `estilo_c`).
 
 ## 0. Estilo papel (obligatorio desde el 2-nov)
+**Todo vídeo nuevo lleva `"estilo": "papel"` en la raíz de `guion.json`** (junto a `categoria`). Con ese campo el motor
+(`video/src/theme.ts`) pone de fondo cartulina cálida con fibras y grano en TODO el vídeo (no el azul con cuadrícula), y convierte
+paneles y tarjetas en hojas de papel recortado (borde roto, sombra de papel, paleta `PAPEL`); titular, barra de capítulos y
+subtítulos pasan a tinta oscura con el resaltado lima como cinta adhesiva. Sin el campo, el vídeo sale en el estilo azul antiguo.
+Las escenas `free` se ven directamente sobre la cartulina: si una queda pobre, sube la escala de sus piezas (sin tocar la narración).
+
 Todo sale de `libreria/svg/papel.py` (catálogo: `entregas/estilos/catalogo_papel.png`, se regenera con
 `python3 libreria/catalogo_papel.py`). No hay que dibujar nada nuevo: las piezas de siempre se convierten.
 ```python

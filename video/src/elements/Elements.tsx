@@ -4,6 +4,8 @@ import { exitOut, formatNumber, pop, sec, seeded } from "../anim";
 import { Icon } from "../icons";
 import type { Element } from "../types";
 import { Trick } from "./Trick";
+import { PAPEL, isPapel, tapeBlock } from "../theme";
+import { PaperSheet } from "../components/Paper";
 
 const { colors, fonts, border, shadow, radius } = brand;
 
@@ -37,14 +39,14 @@ const Card: React.FC<{
   const out = ctx.isLast ? 1 : exitOut(frame, sec(ctx.end), 6);
   const tilt = (seeded(JSON.stringify(el)) - 0.5) * 2;
   const bg = tone === "accent" ? colors.accent : tone === "ink" ? colors.ink : colors.paper;
+  const papel = isPapel();
   return (
     <div
       style={{
         position: "relative",
-        background: bg,
-        border: `${border}px solid ${colors.ink}`,
-        borderRadius: radius,
-        boxShadow: `${shadow}px ${shadow}px 0 ${colors.ink}`,
+        ...(papel
+          ? { isolation: "isolate" as const } // la hoja de papel (PaperSheet) va detrás del contenido
+          : { background: bg, border: `${border}px solid ${colors.ink}`, borderRadius: radius, boxShadow: `${shadow}px ${shadow}px 0 ${colors.ink}` }),
         padding: pad,
         opacity: f < 0 ? 0 : out,
         clipPath: p < 1 ? `inset(-40px ${((1 - p) * 100).toFixed(2)}% -40px -40px)` : undefined,
@@ -52,9 +54,10 @@ const Card: React.FC<{
         ...style,
       }}
     >
+      {papel && <PaperSheet color={tone === "paper" ? PAPEL.crema : bg} fine />}
       {children}
       {p > 0 && p < 1 && (
-        <div style={{ position: "absolute", top: -border, bottom: -border, left: `calc(${(p * 100).toFixed(2)}% - 14px)`, width: 14, background: colors.accent, borderLeft: `4px solid ${colors.ink}`, borderRight: `4px solid ${colors.ink}` }} />
+        <div style={{ position: "absolute", top: -border, bottom: -border, left: `calc(${(p * 100).toFixed(2)}% - 14px)`, width: 14, background: colors.accent, ...(papel ? {} : { borderLeft: `4px solid ${colors.ink}`, borderRight: `4px solid ${colors.ink}` }) }} />
       )}
     </div>
   );
@@ -297,7 +300,7 @@ const Tag: React.FC<{ el: Extract<Element, { type: "tag" }>; ctx: Ctx }> = ({ el
   const out = ctx.isLast ? 1 : exitOut(frame, sec(ctx.end), 6);
   return (
     <div style={{ alignSelf: "flex-start", opacity: frame < sec(el.at) ? 0 : out, transform: `scale(${s}) rotate(${-4 + (1 - s) * -20}deg)` }}>
-      <div style={{ background: bg, color: fg, border: `5px solid ${colors.ink}`, boxShadow: `8px 8px 0 ${colors.ink}`, padding: "8px 20px", fontFamily: fonts.display, fontWeight: 900, fontSize: 40, textTransform: "uppercase" }}>
+      <div style={{ background: bg, color: fg, ...tapeBlock(5, 8), padding: "8px 20px", fontFamily: fonts.display, fontWeight: 900, fontSize: 40, textTransform: "uppercase" }}>
         {el.text}
       </div>
     </div>
@@ -373,7 +376,7 @@ const Stamp: React.FC<{ el: Extract<Element, { type: "stamp" }>; ctx: Ctx }> = (
           opacity: Math.min(1, s * 3),
           border: `10px solid ${colors.ink}`,
           background: color,
-          boxShadow: `12px 12px 0 ${colors.ink}`,
+          boxShadow: isPapel() ? "0 6px 14px rgba(58,46,42,0.3)" : `12px 12px 0 ${colors.ink}`,
           borderRadius: 16,
           padding: "6px 34px 12px",
           fontFamily: fonts.display,

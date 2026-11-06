@@ -88,4 +88,5 @@ export type ShortProps = {
   sfxVolume?: number;
   outro?: { at: number; cta?: string } | null;
   endPadding?: number;
+  estilo?: "papel" | null; // "papel": fondo de cartulina y paneles de papel recortado (sin campo, estilo azul de siempre)
 };
