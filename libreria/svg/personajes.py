@@ -25,7 +25,7 @@ Variantes:
     pelo: corto, largo, rizado, coleta, mono (moño), calvo, rapado, None
     pelo_color: castano, negro, rubio, pelirrojo, canoso, blanco o un hex
     ropa: camiseta, jersey, camisa, chaqueta, vestido, abrigo
-    accesorios: gafas, gafas_sol, gorro, bufanda, pendientes, baston, barba, bigote
+    accesorios: gafas, gafas_sol, gorro, bufanda, pendientes, baston, barba, bigote, cascos (de música)
     expresion: neutral, sorpresa, risa, duda, frio, sueno, triste, enfado, bostezo (ojos apretados, bocaza, lágrima {id}_lagrima)
     pose: de_pie, sentado, busto
     brazos (izq, der): abajo, cintura, arriba, saluda, senala, barbilla, boca (tapa el bostezo), coge, cruzados (los dos: abrazarse de frío),
@@ -316,6 +316,16 @@ def cabeza(id_, rx, ry, hy, piel="media", pelo="corto", pelo_color="castano", ex
         gs += brillo(f"M {f(-rx*0.6)} {f(top+ry*0.35)} Q {f(-rx*0.2)} {f(top+ry*0.05)} {f(rx*0.3)} {f(top+ry*0.12)}", 5, 0.5, "#FFB3A8")
         gs += f'<circle cx="0" cy="{f(top-ry*0.06)}" r="{f(rx*0.3)}" fill="#FFF3E6" stroke="{INK}" stroke-width="{SW}"/>'
         o += g(f"{id_}_acc_gorro", gs)
+    if "cascos" in accesorios:  # cascos de música: diadema por encima del pelo y dos almohadillas en las orejas
+        top = hy - ry * 1.16
+        d = (f"M {f(-rx*1.08)} {f(hy-ry*0.05)} C {f(-rx*1.18)} {f(top-ry*0.05)}, {f(rx*1.18)} {f(top-ry*0.05)}, {f(rx*1.08)} {f(hy-ry*0.05)}")
+        gs = f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="{f(rx*0.26)}" stroke-linecap="round"/>'
+        gs += f'<path d="{d}" fill="none" stroke="#3E5C93" stroke-width="{f(rx*0.14)}" stroke-linecap="round"/>'
+        for k in (-1, 1):
+            cx, cy = k * rx * 1.05, hy + ry * 0.08
+            gs += f'<rect x="{f(cx-rx*0.24)}" y="{f(cy-ry*0.36)}" width="{f(rx*0.48)}" height="{f(ry*0.72)}" rx="{f(rx*0.2)}" fill="#F0645A" stroke="{INK}" stroke-width="{SW}"/>'
+            gs += f'<rect x="{f(cx+k*rx*0.12-rx*0.07)}" y="{f(cy-ry*0.22)}" width="{f(rx*0.14)}" height="{f(ry*0.44)}" rx="{f(rx*0.06)}" fill="#3E5C93"/>'
+        o += g(f"{id_}_acc_cascos", gs)
     return o
 
 

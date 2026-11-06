@@ -1,0 +1,1495 @@
+{
+ "topic": "¿Por qué una canción te pone la piel de gallina? Es el frisson: con la música favorita se activa el sistema de recompensa (Blood y Zatorre 2001), se libera dopamina en el momento cumbre e incluso segundos antes (Salimpoor 2011), y quien lo siente tiene más conexiones entre la corteza auditiva y las zonas de la emoción (Sachs 2016)",
+ "categoria": "cuerpo",
+ "title": "¿Por qué una canción te pone la piel de gallina?",
+ "source": "Fuentes: PNAS (Blood y Zatorre 2001) · Nature Neuroscience (Salimpoor 2011) · Social Cognitive and Affective Neuroscience (Sachs 2016) · Smithsonian",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "outro_cta": "Todo tiene un truco",
+ "cover": {
+  "text": "Por qué una canción te pone la *piel de gallina*",
+  "scene": 0
+ },
+ "publish": {
+  "at": "2026-11-06T14:00:00+01:00",
+  "caption": "¿Por qué una canción te pone la piel de gallina? Es el frisson: tu cerebro enciende la recompensa y suelta dopamina, incluso segundos antes del momento cumbre (Blood y Zatorre 2001, Salimpoor 2011). Quien lo siente tiene más conexiones entre oído y emoción (Sachs 2016). ¿Qué canción te pone la piel de gallina a ti?",
+  "description": "¿Por qué una canción te pone la piel de gallina? Se llama frisson, un escalofrío de placer. En 2001, en Montreal, Blood y Zatorre escanearon a diez músicos con su música favorita y vieron que, durante el escalofrío, se activaban las zonas de recompensa del cerebro, las mismas que con la comida. En 2011, Salimpoor y su equipo midieron que se libera dopamina en el momento cumbre e incluso segundos antes, al anticiparlo; y en 2016 Sachs vio que quien lo siente tiene más conexiones entre la zona que oye y la que procesa emociones. Fuentes: PNAS, Nature Neuroscience, Social Cognitive and Affective Neuroscience. ¿Qué canción te pone la piel de gallina a ti?",
+  "hashtags": [
+   "musica",
+   "cerebro",
+   "pieldegallina",
+   "ciencia",
+   "curiosidades"
+  ]
+ },
+ "scenes": [
+  {
+   "chapter": 0,
+   "headline": "¿Gallina *sin frío*?",
+   "narration": "¿Por qué una canción te pone la piel de gallina sin hacer frío?",
+   "illustration": {
+    "svg_file": "gancho_full.svg",
+    "layout": "full",
+    "caption": "Fig. 1 · Piel de gallina",
+    "anims": [
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       500,
+       930
+      ],
+      "amount": 1.06,
+      "dur": 2.4
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "piel",
+      "to": [
+       540,
+       960
+      ],
+      "amount": 1.03,
+      "dur": 0.35
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "gallina",
+      "to": [
+       580,
+       990
+      ],
+      "amount": 1.1,
+      "dur": 1.0
+     },
+     {
+      "target": "lejos",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -14,
+       0
+      ],
+      "dur": 6
+     },
+     {
+      "target": "medio",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -40,
+       0
+      ],
+      "dur": 6
+     },
+     {
+      "target": "cerca",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -110,
+       0
+      ],
+      "dur": 6
+     },
+     {
+      "target": "chs",
+      "effect": "hide"
+     },
+     {
+      "target": "chico",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "chico",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.2,
+      "delay": 0.7
+     },
+     {
+      "target": "chico",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.13,
+      "delay": 0.7999999999999999
+     },
+     {
+      "target": "chn_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.28
+     },
+     {
+      "target": "chn_ojos",
+      "effect": "blink",
+      "delay": 0.6
+     },
+     {
+      "target": "chn_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 0.9
+     },
+     {
+      "target": "chn_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.28,
+      "delay": 0.35
+     },
+     {
+      "target": "chs_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.28
+     },
+     {
+      "target": "chs_ojos",
+      "effect": "blink",
+      "delay": 0.6
+     },
+     {
+      "target": "chs_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 0.9
+     },
+     {
+      "target": "chs_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.28,
+      "delay": 0.35
+     },
+     {
+      "target": "chn_acc_cascos",
+      "effect": "wiggle",
+      "trigger": "canción",
+      "amount": 0.4
+     },
+     {
+      "target": "chs_acc_cascos",
+      "effect": "wiggle",
+      "trigger": "canción",
+      "amount": 0.4
+     },
+     {
+      "target": "n0",
+      "effect": "slide-up",
+      "delay": 0.3,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "n0",
+      "effect": "float",
+      "amount": 0.45,
+      "delay": 0.8,
+      "phase": 0.1
+     },
+     {
+      "target": "n0",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.8999999999999999
+     },
+     {
+      "target": "n1",
+      "effect": "slide-up",
+      "delay": 0.5,
+      "dur": 0.5
+     },
+     {
+      "target": "n1",
+      "effect": "float",
+      "amount": 0.45,
+      "delay": 1.0,
+      "phase": 0.55
+     },
+     {
+      "target": "n1",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 1.1
+     },
+     {
+      "target": "n2",
+      "effect": "slide-up",
+      "delay": 0.7,
+      "dur": 0.5
+     },
+     {
+      "target": "n2",
+      "effect": "float",
+      "amount": 0.45,
+      "delay": 1.2,
+      "phase": 0.8
+     },
+     {
+      "target": "n2",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 1.2999999999999998
+     },
+     {
+      "target": "n0",
+      "effect": "punch",
+      "trigger": "canción",
+      "amount": 0.4,
+      "sfx": "pop"
+     },
+     {
+      "target": "brz",
+      "effect": "slide-left",
+      "trigger": "piel",
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "brz_erizado",
+      "effect": "hide"
+     },
+     {
+      "target": "brz_bultos",
+      "effect": "hide"
+     },
+     {
+      "target": "brz_vello",
+      "effect": "hide",
+      "trigger": "gallina"
+     },
+     {
+      "target": "brz_erizado",
+      "effect": "pop",
+      "trigger": "gallina",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "brz_bultos",
+      "effect": "fade",
+      "trigger": "gallina",
+      "dur": 0.25
+     },
+     {
+      "target": "brz",
+      "effect": "shake",
+      "trigger": "gallina",
+      "amount": 0.25
+     },
+     {
+      "target": "rayas",
+      "effect": "pop",
+      "trigger": "gallina"
+     },
+     {
+      "target": "rayas",
+      "effect": "wiggle",
+      "trigger": "gallina",
+      "amount": 0.5
+     },
+     {
+      "target": "chn",
+      "effect": "hide",
+      "trigger": "gallina"
+     },
+     {
+      "target": "chs",
+      "effect": "fade",
+      "trigger": "gallina",
+      "dur": 0.15
+     },
+     {
+      "target": "chs_cabeza",
+      "effect": "move",
+      "trigger": "gallina",
+      "to": [
+       0,
+       8
+      ],
+      "rotate": -5,
+      "antic": 0.4,
+      "origin": "bottom",
+      "dur": 0.5
+     },
+     {
+      "target": "termo",
+      "effect": "squash",
+      "trigger": "sin",
+      "to": [
+       0,
+       -160
+      ],
+      "dur": 0.5,
+      "sfx": "pop"
+     },
+     {
+      "target": "copo",
+      "effect": "pop",
+      "trigger": "sin"
+     },
+     {
+      "target": "copo",
+      "effect": "spin",
+      "trigger": "sin",
+      "amount": 0.1
+     },
+     {
+      "target": "aspa",
+      "effect": "draw",
+      "trigger": "hacer",
+      "dur": 0.4,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "salida",
+      "effect": "pan",
+      "trigger": "frío",
+      "to": [
+       0,
+       -2020
+      ],
+      "rotate": -3,
+      "dur": 0.75,
+      "sfx": "papel"
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "Se llama *frisson*",
+   "narration": "Se llama frisson: un escalofrío de placer por la espalda y los brazos.",
+   "illustration": {
+    "svg_file": "espalda_free.svg",
+    "layout": "free",
+    "height": 880,
+    "caption": "Fig. 2 · Frisson",
+    "anims": [
+     {
+      "target": "esp",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "esp",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.3,
+      "delay": 0.5
+     },
+     {
+      "target": "esp",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.1,
+      "delay": 0.6
+     },
+     {
+      "target": "esp_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.8
+     },
+     {
+      "target": "esp_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.14,
+      "delay": 1.0
+     },
+     {
+      "target": "esp_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.2,
+      "delay": 0.6
+     },
+     {
+      "target": "n5",
+      "effect": "pop",
+      "delay": 0.3
+     },
+     {
+      "target": "n5",
+      "effect": "float",
+      "amount": 0.4,
+      "delay": 0.6
+     },
+     {
+      "target": "n6",
+      "effect": "pop",
+      "delay": 0.6
+     },
+     {
+      "target": "n6",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.9,
+      "phase": 0.5
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       500,
+       470
+      ],
+      "amount": 1.06,
+      "dur": 3.0
+     },
+     {
+      "target": "et_fr",
+      "effect": "pop",
+      "trigger": "frisson",
+      "sfx": "pop"
+     },
+     {
+      "target": "esp_cabeza",
+      "effect": "move",
+      "trigger": "escalofrío",
+      "to": [
+       0,
+       10
+      ],
+      "rotate": 4,
+      "antic": 0.4,
+      "origin": "bottom",
+      "dur": 0.5
+     },
+     {
+      "target": "esp",
+      "effect": "shake",
+      "trigger": "escalofrío",
+      "amount": 0.3
+     },
+     {
+      "target": "ch2",
+      "effect": "pop",
+      "trigger": "placer",
+      "sfx": "brillo"
+     },
+     {
+      "target": "ch3",
+      "effect": "pop",
+      "trigger": "placer"
+     },
+     {
+      "target": "ch2",
+      "effect": "pulse",
+      "trigger": "placer",
+      "amount": 0.5
+     },
+     {
+      "target": "ch3",
+      "effect": "pulse",
+      "trigger": "placer",
+      "amount": 0.4
+     },
+     {
+      "target": "ola_col",
+      "effect": "draw",
+      "trigger": "espalda",
+      "dur": 0.6,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "ch4",
+      "effect": "pop",
+      "trigger": "espalda"
+     },
+     {
+      "target": "ola_bra",
+      "effect": "draw",
+      "trigger": "brazos",
+      "dur": 0.6
+     },
+     {
+      "target": "ch0",
+      "effect": "pop",
+      "trigger": "brazos",
+      "sfx": "pop"
+     },
+     {
+      "target": "ch1",
+      "effect": "pop",
+      "trigger": "brazos"
+     },
+     {
+      "target": "ch0",
+      "effect": "wiggle",
+      "trigger": "brazos",
+      "amount": 0.5
+     },
+     {
+      "target": "ch1",
+      "effect": "wiggle",
+      "trigger": "brazos",
+      "amount": 0.4
+     },
+     {
+      "target": "esp_brazo_izq",
+      "effect": "move",
+      "trigger": "brazos",
+      "rotate": 5,
+      "origin": "top-right",
+      "dur": 0.5
+     },
+     {
+      "target": "esp_brazo_der",
+      "effect": "move",
+      "trigger": "brazos",
+      "rotate": -4,
+      "origin": "top-left",
+      "dur": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "Diez *músicos*",
+   "narration": "En dos mil uno, en Montreal, escanearon a diez músicos oyendo su canción favorita.",
+   "illustration": {
+    "svg_file": "escaner_free.svg",
+    "layout": "free",
+    "height": 880,
+    "caption": "Fig. 3 · Blood y Zatorre",
+    "anims": [
+     {
+      "target": "esc",
+      "effect": "slide-down",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "esc_anillo",
+      "effect": "pulse",
+      "amount": 0.4,
+      "delay": 0.5
+     },
+     {
+      "target": "pac",
+      "effect": "slide-right",
+      "delay": 0.25,
+      "dur": 0.7
+     },
+     {
+      "target": "pac",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.4,
+      "delay": 1.0
+     },
+     {
+      "target": "et_2001",
+      "effect": "pop",
+      "trigger": "mil",
+      "sfx": "pop"
+     },
+     {
+      "target": "et_mtl",
+      "effect": "pop",
+      "trigger": "Montreal",
+      "sfx": "pop"
+     },
+     {
+      "target": "esc_pantalla",
+      "effect": "punch",
+      "trigger": "escanearon",
+      "amount": 0.4
+     },
+     {
+      "target": "esc",
+      "effect": "punch",
+      "trigger": "escanearon",
+      "amount": 0.12
+     },
+     {
+      "target": "pg0",
+      "effect": "pop",
+      "trigger": "diez",
+      "sfx": "pop"
+     },
+     {
+      "target": "pg0",
+      "effect": "bob",
+      "amount": 0.3,
+      "delay": 0.5
+     },
+     {
+      "target": "pg1",
+      "effect": "pop",
+      "trigger": "diez"
+     },
+     {
+      "target": "pg1",
+      "effect": "bob",
+      "amount": 0.3,
+      "delay": 0.63
+     },
+     {
+      "target": "pg2",
+      "effect": "pop",
+      "trigger": "diez"
+     },
+     {
+      "target": "pg2",
+      "effect": "bob",
+      "amount": 0.3,
+      "delay": 0.76
+     },
+     {
+      "target": "pg3",
+      "effect": "pop",
+      "trigger": "diez"
+     },
+     {
+      "target": "pg3",
+      "effect": "bob",
+      "amount": 0.3,
+      "delay": 0.89
+     },
+     {
+      "target": "pg4",
+      "effect": "pop",
+      "trigger": "diez"
+     },
+     {
+      "target": "pg4",
+      "effect": "bob",
+      "amount": 0.3,
+      "delay": 1.02
+     },
+     {
+      "target": "pg5",
+      "effect": "pop",
+      "trigger": "músicos",
+      "sfx": "pop"
+     },
+     {
+      "target": "pg5",
+      "effect": "bob",
+      "amount": 0.3,
+      "delay": 1.15
+     },
+     {
+      "target": "pg6",
+      "effect": "pop",
+      "trigger": "músicos"
+     },
+     {
+      "target": "pg6",
+      "effect": "bob",
+      "amount": 0.3,
+      "delay": 1.28
+     },
+     {
+      "target": "pg7",
+      "effect": "pop",
+      "trigger": "músicos"
+     },
+     {
+      "target": "pg7",
+      "effect": "bob",
+      "amount": 0.3,
+      "delay": 1.4100000000000001
+     },
+     {
+      "target": "pg8",
+      "effect": "pop",
+      "trigger": "músicos"
+     },
+     {
+      "target": "pg8",
+      "effect": "bob",
+      "amount": 0.3,
+      "delay": 1.54
+     },
+     {
+      "target": "pg9",
+      "effect": "pop",
+      "trigger": "músicos"
+     },
+     {
+      "target": "pg9",
+      "effect": "bob",
+      "amount": 0.3,
+      "delay": 1.67
+     },
+     {
+      "target": "ondas",
+      "effect": "pop",
+      "trigger": "oyendo"
+     },
+     {
+      "target": "ondas",
+      "effect": "pulse",
+      "trigger": "oyendo",
+      "amount": 0.6
+     },
+     {
+      "target": "cor",
+      "effect": "pop",
+      "trigger": "favorita",
+      "sfx": "ding"
+     },
+     {
+      "target": "cor",
+      "effect": "pulse",
+      "trigger": "favorita",
+      "amount": 0.5
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "canción",
+      "to": [
+       500,
+       420
+      ],
+      "amount": 1.12,
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "Zonas del *premio*",
+   "narration": "En pleno escalofrío se encendía la recompensa del cerebro, como con la comida.",
+   "illustration": {
+    "svg_file": "recompensa_free.svg",
+    "layout": "free",
+    "height": 860,
+    "caption": "Fig. 4 · Recompensa",
+    "anims": [
+     {
+      "target": "cab",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "cab",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.08,
+      "delay": 0.6
+     },
+     {
+      "target": "cab",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.4,
+      "delay": 0.5
+     },
+     {
+      "target": "cs0",
+      "effect": "pop",
+      "trigger": "escalofrío",
+      "sfx": "pop"
+     },
+     {
+      "target": "cs0",
+      "effect": "wiggle",
+      "trigger": "escalofrío",
+      "amount": 0.4
+     },
+     {
+      "target": "brillo",
+      "effect": "fade",
+      "trigger": "encendía",
+      "dur": 0.3,
+      "sfx": "brillo"
+     },
+     {
+      "target": "brillo",
+      "effect": "pulse",
+      "trigger": "encendía",
+      "amount": 0.6
+     },
+     {
+      "target": "anillo",
+      "effect": "ripple",
+      "trigger": "encendía",
+      "phase": 0
+     },
+     {
+      "target": "anillo2",
+      "effect": "ripple",
+      "trigger": "encendía",
+      "phase": 0.5
+     },
+     {
+      "target": "et_rec",
+      "effect": "pop",
+      "trigger": "recompensa",
+      "sfx": "pop"
+     },
+     {
+      "target": "guia",
+      "effect": "draw",
+      "trigger": "recompensa",
+      "dur": 0.5
+     },
+     {
+      "target": "cs1",
+      "effect": "pop",
+      "trigger": "cerebro"
+     },
+     {
+      "target": "cs2",
+      "effect": "pop",
+      "trigger": "cerebro"
+     },
+     {
+      "target": "comida",
+      "effect": "squash",
+      "trigger": "como",
+      "to": [
+       0,
+       -200
+      ],
+      "dur": 0.55,
+      "sfx": "boing"
+     },
+     {
+      "target": "pastel",
+      "effect": "punch",
+      "trigger": "comida",
+      "amount": 0.35
+     },
+     {
+      "target": "fl_com",
+      "effect": "draw",
+      "trigger": "comida",
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "brillo",
+      "effect": "punch",
+      "trigger": "comida",
+      "amount": 0.5
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       500,
+       430
+      ],
+      "amount": 1.05,
+      "dur": 2.5
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "*Dopamina*",
+   "narration": "En dos mil once vieron que el cerebro libera dopamina, la del placer, incluso segundos antes del momento cumbre.",
+   "illustration": {
+    "svg_file": "dopamina_full.svg",
+    "layout": "full",
+    "caption": "Fig. 5 · Salimpoor",
+    "anims": [
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       540,
+       900
+      ],
+      "amount": 1.06,
+      "dur": 2.6
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "segundos",
+      "to": [
+       560,
+       960
+      ],
+      "amount": 1.03,
+      "dur": 0.35
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "antes",
+      "to": [
+       600,
+       1000
+      ],
+      "amount": 1.1,
+      "dur": 1.0
+     },
+     {
+      "target": "lejos",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -14,
+       0
+      ],
+      "dur": 7
+     },
+     {
+      "target": "medio",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -40,
+       0
+      ],
+      "dur": 7
+     },
+     {
+      "target": "cerca",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -110,
+       0
+      ],
+      "dur": 7
+     },
+     {
+      "target": "neurona",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "amount": 0.7,
+      "sfx": "boing"
+     },
+     {
+      "target": "neurona",
+      "effect": "breathe",
+      "origin": "center",
+      "amount": 0.5,
+      "delay": 0.7
+     },
+     {
+      "target": "et_2011",
+      "effect": "pop",
+      "trigger": "once",
+      "sfx": "pop"
+     },
+     {
+      "target": "barra",
+      "effect": "slide-up",
+      "delay": 0.4,
+      "dur": 0.5
+     },
+     {
+      "target": "cumbre",
+      "effect": "pop",
+      "delay": 0.7
+     },
+     {
+      "target": "cumbre",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.15,
+      "delay": 1.0
+     },
+     {
+      "target": "cabezal",
+      "effect": "pop",
+      "delay": 0.8
+     },
+     {
+      "target": "cabezal",
+      "effect": "move",
+      "trigger": "cerebro",
+      "to": [
+       330,
+       0
+      ],
+      "dur": 3.0
+     },
+     {
+      "target": "cabezal",
+      "effect": "move",
+      "trigger": "segundos",
+      "to": [
+       180,
+       0
+      ],
+      "dur": 2.4
+     },
+     {
+      "target": "crono",
+      "effect": "pop",
+      "trigger": "segundos",
+      "sfx": "pop"
+     },
+     {
+      "target": "crono_aguja",
+      "effect": "spin",
+      "trigger": "segundos",
+      "origin": "bottom",
+      "amount": 1.2
+     },
+     {
+      "target": "neurona",
+      "effect": "punch",
+      "trigger": "libera",
+      "amount": 0.3
+     },
+     {
+      "target": "dp0",
+      "effect": "pop",
+      "trigger": "libera",
+      "sfx": "burbujas"
+     },
+     {
+      "target": "dp0",
+      "effect": "float",
+      "amount": 0.37081442692123034,
+      "phase": 0.1031660342307158
+     },
+     {
+      "target": "dp0",
+      "effect": "drift",
+      "amount": 0.5980291213053406,
+      "phase": 0.15497227080241027
+     },
+     {
+      "target": "dp1",
+      "effect": "pop",
+      "trigger": "libera"
+     },
+     {
+      "target": "dp1",
+      "effect": "float",
+      "amount": 0.319954528703877,
+      "phase": 0.40159101448507484
+     },
+     {
+      "target": "dp1",
+      "effect": "drift",
+      "amount": 0.8589775215438595,
+      "phase": 0.8004523514958085
+     },
+     {
+      "target": "dp2",
+      "effect": "pop",
+      "trigger": "dopamina"
+     },
+     {
+      "target": "dp2",
+      "effect": "float",
+      "amount": 0.5295487807516315,
+      "phase": 0.22192817569031764
+     },
+     {
+      "target": "dp2",
+      "effect": "drift",
+      "amount": 0.6683400040874068,
+      "phase": 0.2766826434414502
+     },
+     {
+      "target": "dp3",
+      "effect": "pop",
+      "trigger": "dopamina"
+     },
+     {
+      "target": "dp3",
+      "effect": "float",
+      "amount": 0.35179935878561064,
+      "phase": 0.10618329243153013
+     },
+     {
+      "target": "dp3",
+      "effect": "drift",
+      "amount": 0.5072002162894582,
+      "phase": 0.9274756314280604
+     },
+     {
+      "target": "dp4",
+      "effect": "pop",
+      "trigger": "placer",
+      "sfx": "burbujas"
+     },
+     {
+      "target": "dp4",
+      "effect": "float",
+      "amount": 0.5486760146335258,
+      "phase": 0.8066523467023234
+     },
+     {
+      "target": "dp4",
+      "effect": "drift",
+      "amount": 0.8002239192714831,
+      "phase": 0.19343561801924003
+     },
+     {
+      "target": "dp5",
+      "effect": "pop",
+      "trigger": "placer"
+     },
+     {
+      "target": "dp5",
+      "effect": "float",
+      "amount": 0.39295498718986066,
+      "phase": 0.6269756024131301
+     },
+     {
+      "target": "dp5",
+      "effect": "drift",
+      "amount": 0.765947354439359,
+      "phase": 0.8546483579913472
+     },
+     {
+      "target": "dp6",
+      "effect": "pop",
+      "trigger": "antes"
+     },
+     {
+      "target": "dp6",
+      "effect": "float",
+      "amount": 0.5640152254083598,
+      "phase": 0.08671825263492183
+     },
+     {
+      "target": "dp6",
+      "effect": "drift",
+      "amount": 0.70292594185994,
+      "phase": 0.6717014565164733
+     },
+     {
+      "target": "dp7",
+      "effect": "pop",
+      "trigger": "antes"
+     },
+     {
+      "target": "dp7",
+      "effect": "float",
+      "amount": 0.4517861327131246,
+      "phase": 0.17779017424078447
+     },
+     {
+      "target": "dp7",
+      "effect": "drift",
+      "amount": 0.6367939437925726,
+      "phase": 0.08934620726539033
+     },
+     {
+      "target": "et_dop",
+      "effect": "pop",
+      "trigger": "dopamina",
+      "sfx": "pop"
+     },
+     {
+      "target": "et_dop",
+      "effect": "punch",
+      "trigger": "placer",
+      "amount": 0.3
+     },
+     {
+      "target": "salida",
+      "effect": "pan",
+      "trigger": "cumbre",
+      "to": [
+       0,
+       -2020
+      ],
+      "rotate": -3,
+      "dur": 0.75,
+      "sfx": "papel"
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 3,
+   "number": "3",
+   "headline": "Anticipar y *sorprender*",
+   "narration": "Tu cerebro anticipa, y si la canción te sorprende, el placer explota.",
+   "illustration": {
+    "svg_file": "sorpresa_free.svg",
+    "layout": "free",
+    "height": 860,
+    "caption": "Fig. 6 · ¡Sorpresa!",
+    "anims": [
+     {
+      "target": "onda",
+      "effect": "draw",
+      "delay": 0,
+      "dur": 1.4,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "onda_base",
+      "effect": "slide-right",
+      "delay": 0,
+      "dur": 0.5
+     },
+     {
+      "target": "cab5",
+      "effect": "slide-down",
+      "delay": 0.2,
+      "dur": 0.4
+     },
+     {
+      "target": "oy",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5
+     },
+     {
+      "target": "oys",
+      "effect": "hide"
+     },
+     {
+      "target": "oy",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.6,
+      "phase": 0.65,
+      "delay": 0.6
+     },
+     {
+      "target": "oy",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.12,
+      "delay": 1.1
+     },
+     {
+      "target": "oyn_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.35,
+      "delay": 1.3
+     },
+     {
+      "target": "oyn_ojos",
+      "effect": "blink",
+      "delay": 1.1
+     },
+     {
+      "target": "oys_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.35,
+      "delay": 1.3
+     },
+     {
+      "target": "oys_ojos",
+      "effect": "blink",
+      "delay": 1.1
+     },
+     {
+      "target": "cab5",
+      "effect": "move",
+      "trigger": "Tu",
+      "to": [
+       560,
+       0
+      ],
+      "dur": 1.6
+     },
+     {
+      "target": "pien",
+      "effect": "pop",
+      "trigger": "anticipa",
+      "origin": "bottom-left",
+      "sfx": "pop"
+     },
+     {
+      "target": "pien_nota",
+      "effect": "pulse",
+      "trigger": "anticipa",
+      "amount": 0.6
+     },
+     {
+      "target": "cab5",
+      "effect": "move",
+      "trigger": "sorprende",
+      "to": [
+       80,
+       0
+      ],
+      "dur": 0.4
+     },
+     {
+      "target": "dest",
+      "effect": "pop",
+      "trigger": "sorprende",
+      "sfx": "brillo"
+     },
+     {
+      "target": "dest",
+      "effect": "pulse",
+      "trigger": "sorprende",
+      "amount": 0.5
+     },
+     {
+      "target": "onda",
+      "effect": "punch",
+      "trigger": "sorprende",
+      "amount": 0.2
+     },
+     {
+      "target": "conf",
+      "effect": "pop",
+      "trigger": "explota",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "conf",
+      "effect": "float",
+      "trigger": "explota",
+      "amount": 0.3
+     },
+     {
+      "target": "wow",
+      "effect": "pop",
+      "trigger": "explota"
+     },
+     {
+      "target": "wow",
+      "effect": "wiggle",
+      "trigger": "placer",
+      "amount": 0.4
+     },
+     {
+      "target": "oyn",
+      "effect": "hide",
+      "trigger": "explota"
+     },
+     {
+      "target": "oys",
+      "effect": "fade",
+      "trigger": "explota",
+      "dur": 0.15
+     },
+     {
+      "target": "oy",
+      "effect": "move",
+      "trigger": "explota",
+      "to": [
+       0,
+       -24
+      ],
+      "antic": 0.3,
+      "dur": 0.5
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "si",
+      "to": [
+       620,
+       360
+      ],
+      "amount": 1.12,
+      "dur": 1.2
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 4,
+   "number": "+",
+   "headline": "Cables *extra*",
+   "narration": "No le pasa a todos: quien lo siente tiene más conexiones entre la zona que oye y la que siente.",
+   "mascot": {
+    "trigger": "No",
+    "pose": "explain",
+    "note": "¡Más conexiones!",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "tag",
+     "text": "NO LE PASA A TODOS",
+     "tone": "ink",
+     "trigger": "todos",
+     "sfx": "pop"
+    },
+    {
+     "type": "stamp",
+     "text": "MÁS CONEXIONES",
+     "tone": "accent",
+     "trigger": "conexiones",
+     "sfx": "sello"
+    },
+    {
+     "type": "tag",
+     "text": "OÍDO + EMOCIÓN",
+     "tone": "hot",
+     "trigger": "oye",
+     "sfx": "pop"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "headline": "Dudas → *truco*",
+   "narration": "Tú traes las dudas y nosotros te damos el truco.",
+   "elements": [
+    {
+     "type": "trick",
+     "trigger": "Tú",
+     "reveal_trigger": "nosotros"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "number": "TÚ",
+   "headline": "*Confiesa*",
+   "narration": "Síguenos y las resolvemos. ¿Qué canción te pone la piel de gallina a ti?",
+   "elements": [
+    {
+     "type": "follow",
+     "trigger": "Síguenos"
+    },
+    {
+     "type": "ask",
+     "text": "¿Qué *canción* te pone la piel de gallina a ti?",
+     "trigger": "¿Qué"
+    }
+   ]
+  }
+ ]
+}

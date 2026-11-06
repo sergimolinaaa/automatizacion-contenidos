@@ -79,7 +79,7 @@ accesorios=(), bufanda_color, expresion, pose, brazos=(izq, der), mira=-1|0|1, s
 - (x, y) = suelo entre los pies (busto: centro del corte inferior). Alto a escala 1: adulto 600, mayor 575, niño 400.
 - `edad`: nino, joven, adulto, mayor · `piel`: clara, media, morena, oscura · `pelo`: corto, largo, rizado, coleta, mono, calvo, rapado, None
 - `pelo_color`: castano, negro, rubio, pelirrojo, canoso, blanco o hex · `ropa`: camiseta, jersey, camisa, chaqueta, vestido, abrigo
-- `accesorios`: gafas, gafas_sol, gorro, bufanda, pendientes, baston, barba, bigote · `expresion`: neutral, sorpresa, risa, duda, frio, sueno, triste, enfado,
+- `accesorios`: gafas, gafas_sol, gorro, bufanda, pendientes, baston, barba, bigote, **cascos** (de música, en `{id}_acc_cascos` dentro de la cabeza) · `expresion`: neutral, sorpresa, risa, duda, frio, sueno, triste, enfado,
   **bostezo** (ojos apretados, cejas arriba, bocaza con dientes, lengua y campanilla + lagrimilla `{id}_lagrima`; para «abrir la boca» usa `grow` origin top en `{id}_boca`)
 - `pose`: de_pie, sentado (con `silla=True` dibuja la silla), busto · `brazos`: abajo, cintura, arriba, saluda, senala, barbilla, **boca** (mano tapando el bostezo, por delante de la cara), coge, cruzados,
   **relajado** (codo algo doblado: mejor que «abajo», menos rígido), **explica** (antebrazo adelante, palma abierta), **apunta_arriba** (índice al cielo), **sujeta** (puño a la altura del hombro),
