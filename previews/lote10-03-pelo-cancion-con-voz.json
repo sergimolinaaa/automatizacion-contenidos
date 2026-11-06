@@ -657,6 +657,7 @@
   "at": 38.1,
   "cta": "Todo tiene un truco"
  },
+ "estilo": "papel",
  "sfx": "audio/sfx.wav",
  "cover": {
   "text": "Por qué una canción te pone la *piel de gallina*",
