@@ -186,6 +186,7 @@ fondos `sala_presentacion(W, H, suelo_y)`, `carretera(W, H, y0, y1)`, `pista_hie
 · `iones_bateria(id_, x0, y0, w, h, n, liquido="fluido|espeso|ambos")` (batería de litio en corte: ánodo gris, cátodo cobre, electrolito azul e iones lima con «+» en `_i<k>` (move ±`.puntos["viaje"]` para que crucen);
 «ambos» añade la capa oscura `_espeso` para fade; `_anodo`, `_catodo`, `_liquido`, `_t_anodo`/`_t_catodo`; .puntos liquido/iones/r) · `caja_pesada(id_, x0, base, w, h, texto="ENERGÍA")` ·
 `bateria_esfuerzo(id_, cx, base, s, nivel, inclina)` (pila con cara de esfuerzo empujando: `_cuerpo`, `_cara`, `_brazo_izq/_der` (wiggle origin top-left), `_pierna_atras`; .puntos manos/cabeza/sudor)
+· `escudo(id_, cx, cy, s, col, check=True)` (escudo de protección con ✓ en `_check`; circuitos protegidos, seguridad) · `calculadora(id_, cx, cy, w, texto="20 %", col)` (de bolsillo; cifra en `_pantalla`, `_teclas`; .puntos pantalla)
 
 ## objetos/compra.py (la compra: leche, pan, caprichos, reparto en frío)
 `brick_leche(id_, cx, base, s, col, texto="LECHE", rot_)` (brik de 1 L con techo a dos aguas, ≈ 110×235 a s=1; `_gota`; .puntos tapon/centro/base) ·

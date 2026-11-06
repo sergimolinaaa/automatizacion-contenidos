@@ -1,0 +1,1162 @@
+{
+ "topic": "¿Por qué el móvil se apaga con el 20 %? El porcentaje es una estimación que se desajusta; lo que manda es el voltaje, y si baja de un mínimo el móvil se apaga para proteger sus circuitos. Batería envejecida, frío o poca carga hacen que el voltaje se hunda con picos como abrir la cámara (Apple, Battery University)",
+ "categoria": "moviles",
+ "estilo": "papel",
+ "title": "¿Por qué tu móvil se apaga con el 20 % de batería?",
+ "source": "Fuentes: Apple (Batería y rendimiento del iPhone) · Battery University · Energies 2021",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "outro_cta": "Todo tiene un truco",
+ "cover": {
+  "text": "Por qué el móvil se apaga con el *20 %*",
+  "scene": 0
+ },
+ "publish": {
+  "at": "2026-11-07T14:00:00+01:00",
+  "caption": "¿Por qué tu móvil se apaga con el 20 %? Ese número es una estimación. Lo que manda es el voltaje: si una batería vieja o fría no da el pico que pide la cámara, el voltaje cae y el móvil se apaga para protegerse (Apple, Battery University). ¿Con qué porcentaje se te apaga a ti?",
+  "description": "¿Por qué tu móvil se apaga con el 20 % de batería? El porcentaje que ves no se mide, se calcula: es una estimación que se desajusta con el tiempo. Lo que de verdad manda es el voltaje, y si baja de un mínimo el móvil se apaga para proteger sus circuitos. Una batería envejecida, con frío o con poca carga tiene más resistencia interna y, cuando pides un pico de energía, el voltaje se hunde. Fuentes: Apple (Batería y rendimiento del iPhone), Battery University, Energies 2021. ¿Con qué porcentaje se te apaga a ti?",
+  "hashtags": [
+   "movil",
+   "bateria",
+   "tecnologia",
+   "smartphone",
+   "curiosidades"
+  ]
+ },
+ "scenes": [
+  {
+   "chapter": 0,
+   "headline": "¿Apagado con *20 %*?",
+   "narration": "¿Tu móvil marca un veinte por ciento y, de repente, se apaga?",
+   "illustration": {
+    "svg_file": "gancho_full.svg",
+    "layout": "full",
+    "caption": "Fig. 1 · ¡Plof!",
+    "anims": [
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       480,
+       880
+      ],
+      "amount": 1.06,
+      "dur": 1.6
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "veinte",
+      "to": [
+       540,
+       840
+      ],
+      "amount": 1.03,
+      "dur": 0.35
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "ciento",
+      "to": [
+       600,
+       800
+      ],
+      "amount": 1.16,
+      "dur": 0.9
+     },
+     {
+      "target": "lejos",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -14,
+       0
+      ],
+      "dur": 5
+     },
+     {
+      "target": "medio",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -40,
+       0
+      ],
+      "dur": 5
+     },
+     {
+      "target": "cerca",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -110,
+       0
+      ],
+      "dur": 5
+     },
+     {
+      "target": "chs",
+      "effect": "hide"
+     },
+     {
+      "target": "chica",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "chica",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.2,
+      "delay": 0.7
+     },
+     {
+      "target": "chica",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.13,
+      "delay": 0.7999999999999999
+     },
+     {
+      "target": "chn_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.28
+     },
+     {
+      "target": "chn_ojos",
+      "effect": "blink",
+      "delay": 0.6
+     },
+     {
+      "target": "chn_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 0.9
+     },
+     {
+      "target": "chn_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.1,
+      "delay": 0.35
+     },
+     {
+      "target": "chs_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.28
+     },
+     {
+      "target": "chs_ojos",
+      "effect": "blink",
+      "delay": 0.6
+     },
+     {
+      "target": "chs_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 0.9
+     },
+     {
+      "target": "chs_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.1,
+      "delay": 0.35
+     },
+     {
+      "target": "chn_acc_bufanda",
+      "effect": "flutter",
+      "origin": "top",
+      "amount": 0.8,
+      "phase": 0.1,
+      "delay": 0.25
+     },
+     {
+      "target": "chs_acc_bufanda",
+      "effect": "flutter",
+      "origin": "top",
+      "amount": 0.8,
+      "phase": 0.1,
+      "delay": 0.25
+     },
+     {
+      "target": "tel",
+      "effect": "slide-up",
+      "delay": 0.15,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "tel",
+      "effect": "float",
+      "amount": 0.2,
+      "delay": 0.65
+     },
+     {
+      "target": "tel",
+      "effect": "punch",
+      "trigger": "móvil",
+      "amount": 0.25
+     },
+     {
+      "target": "tel_pct",
+      "effect": "punch",
+      "trigger": "veinte",
+      "amount": 0.5,
+      "sfx": "pop"
+     },
+     {
+      "target": "chn_brazo_izq",
+      "effect": "move",
+      "trigger": "marca",
+      "rotate": 10,
+      "antic": 0.3,
+      "origin": "top-right",
+      "dur": 0.6
+     },
+     {
+      "target": "tel",
+      "effect": "shake",
+      "trigger": "repente",
+      "amount": 0.3
+     },
+     {
+      "target": "tel_negro",
+      "effect": "hide"
+     },
+     {
+      "target": "tel_negro",
+      "effect": "fade",
+      "trigger": "apaga",
+      "dur": 0.15
+     },
+     {
+      "target": "plof",
+      "effect": "pop",
+      "trigger": "apaga",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "plof",
+      "effect": "wiggle",
+      "trigger": "apaga",
+      "amount": 0.4
+     },
+     {
+      "target": "chn",
+      "effect": "hide",
+      "trigger": "apaga"
+     },
+     {
+      "target": "chs",
+      "effect": "fade",
+      "trigger": "apaga",
+      "dur": 0.15
+     },
+     {
+      "target": "chs_cabeza",
+      "effect": "move",
+      "trigger": "apaga",
+      "to": [
+       0,
+       8
+      ],
+      "rotate": -5,
+      "antic": 0.4,
+      "origin": "bottom",
+      "dur": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "Un número *calculado*",
+   "narration": "Ese porcentaje no se mide, se calcula. Es una estimación que, con el tiempo, se desajusta.",
+   "illustration": {
+    "svg_file": "calculado_free.svg",
+    "layout": "free",
+    "height": 880,
+    "caption": "Fig. 2 · Estimación",
+    "anims": [
+     {
+      "target": "bm",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "bm",
+      "effect": "float",
+      "amount": 0.2,
+      "delay": 0.5
+     },
+     {
+      "target": "bm_rayo",
+      "effect": "pulse",
+      "amount": 0.4
+     },
+     {
+      "target": "bm",
+      "effect": "punch",
+      "trigger": "porcentaje",
+      "amount": 0.3
+     },
+     {
+      "target": "regla",
+      "effect": "slide-right",
+      "trigger": "no se",
+      "dur": 0.45,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "aspa",
+      "effect": "draw",
+      "trigger": "mide",
+      "dur": 0.4,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "calc",
+      "effect": "squash",
+      "trigger": "calcula",
+      "to": [
+       0,
+       -200
+      ],
+      "dur": 0.55,
+      "amount": 0.7,
+      "sfx": "boing"
+     },
+     {
+      "target": "calc_pantalla",
+      "effect": "jitter",
+      "trigger": "Es una",
+      "amount": 0.4
+     },
+     {
+      "target": "dig",
+      "effect": "slide-up",
+      "trigger": "estimación",
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "v20",
+      "effect": "pop",
+      "trigger": "estimación"
+     },
+     {
+      "target": "et_marca",
+      "effect": "pop",
+      "trigger": "que",
+      "sfx": "pop"
+     },
+     {
+      "target": "qui",
+      "effect": "slide-up",
+      "trigger": "tiempo",
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "v05",
+      "effect": "pop",
+      "trigger": "tiempo"
+     },
+     {
+      "target": "et_hay",
+      "effect": "pop",
+      "trigger": "desajusta",
+      "sfx": "pop"
+     },
+     {
+      "target": "dist",
+      "effect": "pop",
+      "trigger": "desajusta",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "v05",
+      "effect": "jitter",
+      "trigger": "desajusta",
+      "amount": 0.9
+     },
+     {
+      "target": "qui",
+      "effect": "shake",
+      "trigger": "desajusta",
+      "amount": 0.3
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "con el",
+      "to": [
+       500,
+       620
+      ],
+      "amount": 1.1,
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "Manda el *voltaje*",
+   "narration": "Lo que de verdad manda es el voltaje, la fuerza con la que la batería empuja la electricidad.",
+   "illustration": {
+    "svg_file": "voltaje_free.svg",
+    "layout": "free",
+    "height": 880,
+    "caption": "Fig. 3 · Voltaje",
+    "anims": [
+     {
+      "target": "bv",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "amount": 0.7,
+      "sfx": "boing"
+     },
+     {
+      "target": "bv",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.4,
+      "delay": 0.6
+     },
+     {
+      "target": "bv_rayo",
+      "effect": "pulse",
+      "amount": 0.4
+     },
+     {
+      "target": "vm",
+      "effect": "slide-left",
+      "delay": 0.25,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "jet",
+      "effect": "grow",
+      "origin": "bottom",
+      "trigger": "manda",
+      "dur": 0.6,
+      "sfx": "chorro"
+     },
+     {
+      "target": "jet_lin",
+      "effect": "flow",
+      "trigger": "manda",
+      "amount": 0.6
+     },
+     {
+      "target": "jet",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 2.5,
+      "trigger": "voltaje"
+     },
+     {
+      "target": "fl_v",
+      "effect": "draw",
+      "trigger": "voltaje",
+      "dur": 0.4
+     },
+     {
+      "target": "vm_aguja",
+      "effect": "move",
+      "trigger": "voltaje",
+      "rotate": 100,
+      "origin": "center",
+      "dur": 1.2,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "et_v",
+      "effect": "pop",
+      "trigger": "fuerza",
+      "sfx": "pop"
+     },
+     {
+      "target": "go0",
+      "effect": "pop",
+      "trigger": "fuerza"
+     },
+     {
+      "target": "go0",
+      "effect": "float",
+      "amount": 0.5,
+      "phase": 0.2
+     },
+     {
+      "target": "go1",
+      "effect": "pop",
+      "trigger": "fuerza"
+     },
+     {
+      "target": "go1",
+      "effect": "float",
+      "amount": 0.5,
+      "phase": 0.43000000000000005
+     },
+     {
+      "target": "go2",
+      "effect": "pop",
+      "trigger": "la batería"
+     },
+     {
+      "target": "go2",
+      "effect": "float",
+      "amount": 0.5,
+      "phase": 0.66
+     },
+     {
+      "target": "go3",
+      "effect": "pop",
+      "trigger": "la batería"
+     },
+     {
+      "target": "go3",
+      "effect": "float",
+      "amount": 0.5,
+      "phase": 0.8900000000000001
+     },
+     {
+      "target": "bv",
+      "effect": "punch",
+      "trigger": "la batería",
+      "amount": 0.25
+     },
+     {
+      "target": "jet",
+      "effect": "punch",
+      "trigger": "empuja",
+      "amount": 0.35,
+      "sfx": "splash"
+     },
+     {
+      "target": "vm_aguja",
+      "effect": "jitter",
+      "trigger": "electricidad",
+      "amount": 0.3
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "empuja",
+      "to": [
+       420,
+       460
+      ],
+      "amount": 1.06,
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "Apagado de *seguridad*",
+   "narration": "Si baja de un mínimo, el móvil se apaga solo para proteger sus circuitos.",
+   "illustration": {
+    "svg_file": "seguridad_panel.svg",
+    "layout": "panel",
+    "caption": "Fig. 4 · Corte",
+    "anims": [
+     {
+      "target": "sm",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "tel3",
+      "effect": "slide-up",
+      "delay": 0.15,
+      "dur": 0.5
+     },
+     {
+      "target": "tel3",
+      "effect": "float",
+      "amount": 0.2,
+      "delay": 0.65
+     },
+     {
+      "target": "chip",
+      "effect": "slide-left",
+      "delay": 0.3,
+      "dur": 0.5
+     },
+     {
+      "target": "chip_nucleo",
+      "effect": "pulse",
+      "amount": 0.4,
+      "delay": 0.8
+     },
+     {
+      "target": "sm_aguja",
+      "effect": "move",
+      "trigger": "baja",
+      "rotate": -88,
+      "origin": "center",
+      "dur": 1.3,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "sm_min",
+      "effect": "pulse",
+      "trigger": "mínimo",
+      "amount": 0.6
+     },
+     {
+      "target": "sm",
+      "effect": "punch",
+      "trigger": "mínimo",
+      "amount": 0.2
+     },
+     {
+      "target": "tel3_negro",
+      "effect": "hide"
+     },
+     {
+      "target": "tel3_negro",
+      "effect": "fade",
+      "trigger": "apaga",
+      "dur": 0.15
+     },
+     {
+      "target": "tel3",
+      "effect": "shake",
+      "trigger": "apaga",
+      "amount": 0.3
+     },
+     {
+      "target": "esc",
+      "effect": "squash",
+      "trigger": "proteger",
+      "to": [
+       0,
+       -160
+      ],
+      "dur": 0.5,
+      "sfx": "pop"
+     },
+     {
+      "target": "esc_check",
+      "effect": "draw",
+      "trigger": "sus",
+      "dur": 0.4
+     },
+     {
+      "target": "sello",
+      "effect": "pop",
+      "trigger": "circuitos",
+      "sfx": "sello"
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "proteger",
+      "to": [
+       700,
+       380
+      ],
+      "amount": 1.3,
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "Batería *cansada*",
+   "narration": "Con los años, la batería envejece y le cuesta dar energía de golpe. Abres la cámara y el voltaje se hunde.",
+   "illustration": {
+    "svg_file": "cansada_full.svg",
+    "layout": "full",
+    "caption": "Fig. 5 · Pico de energía",
+    "anims": [
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       520,
+       900
+      ],
+      "amount": 1.06,
+      "dur": 2.4
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "Abres",
+      "to": [
+       560,
+       900
+      ],
+      "amount": 1.03,
+      "dur": 0.35
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "cámara",
+      "to": [
+       680,
+       860
+      ],
+      "amount": 1.15,
+      "dur": 1.0
+     },
+     {
+      "target": "lejos",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -14,
+       0
+      ],
+      "dur": 7
+     },
+     {
+      "target": "medio",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -40,
+       0
+      ],
+      "dur": 7
+     },
+     {
+      "target": "cerca",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -110,
+       0
+      ],
+      "dur": 7
+     },
+     {
+      "target": "cbs",
+      "effect": "hide"
+     },
+     {
+      "target": "chico",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "chico",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.65,
+      "delay": 0.7
+     },
+     {
+      "target": "chico",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.13,
+      "delay": 0.7999999999999999
+     },
+     {
+      "target": "cbn_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.4
+     },
+     {
+      "target": "cbn_ojos",
+      "effect": "blink",
+      "delay": 1.1
+     },
+     {
+      "target": "cbn_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 1.7
+     },
+     {
+      "target": "cbn_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.1,
+      "delay": 1.3
+     },
+     {
+      "target": "cbs_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.4
+     },
+     {
+      "target": "cbs_ojos",
+      "effect": "blink",
+      "delay": 1.1
+     },
+     {
+      "target": "cbs_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 1.7
+     },
+     {
+      "target": "cbs_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.1,
+      "delay": 1.3
+     },
+     {
+      "target": "tel4",
+      "effect": "slide-up",
+      "delay": 0.2,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "tel4",
+      "effect": "float",
+      "amount": 0.2,
+      "delay": 0.7
+     },
+     {
+      "target": "hm",
+      "effect": "slide-up",
+      "delay": 0.45,
+      "dur": 0.5
+     },
+     {
+      "target": "bg",
+      "effect": "squash",
+      "trigger": "batería",
+      "to": [
+       0,
+       -200
+      ],
+      "dur": 0.55,
+      "amount": 0.7,
+      "sfx": "boing"
+     },
+     {
+      "target": "bg",
+      "effect": "breathe",
+      "trigger": "envejece",
+      "origin": "bottom",
+      "amount": 0.8
+     },
+     {
+      "target": "cbn_brazo_izq",
+      "effect": "move",
+      "trigger": "envejece",
+      "rotate": 12,
+      "antic": 0.3,
+      "origin": "top-right",
+      "dur": 0.6
+     },
+     {
+      "target": "gota",
+      "effect": "pop",
+      "trigger": "cuesta",
+      "sfx": "pop"
+     },
+     {
+      "target": "gota",
+      "effect": "bob",
+      "trigger": "cuesta",
+      "amount": 0.4
+     },
+     {
+      "target": "ray",
+      "effect": "pop",
+      "trigger": "golpe",
+      "sfx": "chasquido"
+     },
+     {
+      "target": "ray",
+      "effect": "pulse",
+      "trigger": "golpe",
+      "amount": 0.5
+     },
+     {
+      "target": "tel4",
+      "effect": "punch",
+      "trigger": "Abres",
+      "amount": 0.3
+     },
+     {
+      "target": "cam_app",
+      "effect": "pop",
+      "trigger": "cámara",
+      "sfx": "pop"
+     },
+     {
+      "target": "hm_aguja",
+      "effect": "move",
+      "trigger": "voltaje",
+      "rotate": -105,
+      "origin": "center",
+      "dur": 0.45,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "hm",
+      "effect": "shake",
+      "trigger": "hunde",
+      "amount": 0.5
+     },
+     {
+      "target": "temb",
+      "effect": "pop",
+      "trigger": "voltaje",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "temb",
+      "effect": "wiggle",
+      "trigger": "voltaje",
+      "amount": 0.4
+     },
+     {
+      "target": "bg",
+      "effect": "shake",
+      "trigger": "hunde",
+      "amount": 0.4
+     },
+     {
+      "target": "cbn",
+      "effect": "hide",
+      "trigger": "voltaje"
+     },
+     {
+      "target": "cbs",
+      "effect": "fade",
+      "trigger": "voltaje",
+      "dur": 0.15
+     },
+     {
+      "target": "cbs_cabeza",
+      "effect": "move",
+      "trigger": "voltaje",
+      "to": [
+       0,
+       8
+      ],
+      "rotate": 5,
+      "antic": 0.4,
+      "origin": "bottom",
+      "dur": 0.5
+     },
+     {
+      "target": "salida",
+      "effect": "pan",
+      "trigger": "hunde",
+      "to": [
+       0,
+       -2020
+      ],
+      "rotate": -3,
+      "dur": 0.75,
+      "sfx": "papel"
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 3,
+   "number": "3",
+   "headline": "Frío y *poca carga*",
+   "narration": "Con frío y poca batería, todavía pasa más.",
+   "illustration": {
+    "svg_file": "frio_panel.svg",
+    "layout": "panel",
+    "caption": "Fig. 6 · Peor aún",
+    "anims": [
+     {
+      "target": "copo",
+      "effect": "slide-down",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "copo",
+      "effect": "spin",
+      "amount": 0.1,
+      "delay": 0.5
+     },
+     {
+      "target": "fm",
+      "effect": "slide-left",
+      "delay": 0.1,
+      "dur": 0.5
+     },
+     {
+      "target": "termo",
+      "effect": "squash",
+      "trigger": "frío",
+      "to": [
+       0,
+       -160
+      ],
+      "dur": 0.5,
+      "sfx": "pop"
+     },
+     {
+      "target": "b15",
+      "effect": "pop",
+      "trigger": "poca",
+      "sfx": "pop"
+     },
+     {
+      "target": "v15",
+      "effect": "pop",
+      "trigger": "batería"
+     },
+     {
+      "target": "fl1",
+      "effect": "draw",
+      "trigger": "todavía",
+      "dur": 0.4,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "fl2",
+      "effect": "draw",
+      "trigger": "todavía",
+      "dur": 0.4
+     },
+     {
+      "target": "fm_aguja",
+      "effect": "move",
+      "trigger": "pasa",
+      "rotate": -60,
+      "origin": "center",
+      "dur": 0.7,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "fm_min",
+      "effect": "pulse",
+      "trigger": "más",
+      "amount": 0.6
+     },
+     {
+      "target": "fm",
+      "effect": "shake",
+      "trigger": "más",
+      "amount": 0.4
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 4,
+   "number": "+",
+   "headline": "Mira la *salud*",
+   "narration": "Si te pasa a menudo, mira la salud de la batería en ajustes: quizá toque cambiarla.",
+   "mascot": {
+    "trigger": "Si",
+    "pose": "explain",
+    "note": "¡Mira la salud de la batería!",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "tag",
+     "text": "SI PASA A MENUDO",
+     "tone": "ink",
+     "trigger": "menudo",
+     "sfx": "pop"
+    },
+    {
+     "type": "tag",
+     "text": "SALUD DE LA BATERÍA",
+     "tone": "hot",
+     "trigger": "salud",
+     "sfx": "pop"
+    },
+    {
+     "type": "tag",
+     "text": "EN AJUSTES",
+     "tone": "ink",
+     "trigger": "ajustes",
+     "sfx": "pop"
+    },
+    {
+     "type": "stamp",
+     "text": "¿TOCA CAMBIARLA?",
+     "tone": "accent",
+     "trigger": "cambiarla",
+     "sfx": "sello"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "headline": "Dudas → *truco*",
+   "narration": "Tú traes las dudas y nosotros te damos el truco.",
+   "elements": [
+    {
+     "type": "trick",
+     "trigger": "Tú",
+     "reveal_trigger": "nosotros"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "number": "TÚ",
+   "headline": "*Confiesa*",
+   "narration": "Síguenos y las resolvemos. ¿Con qué porcentaje se te apaga a ti?",
+   "elements": [
+    {
+     "type": "follow",
+     "trigger": "Síguenos"
+    },
+    {
+     "type": "ask",
+     "text": "¿Con qué *porcentaje* se te apaga a ti?",
+     "trigger": "¿Con"
+    }
+   ]
+  }
+ ]
+}

@@ -473,3 +473,48 @@ def bateria_esfuerzo(id_, cx, base, s=1.0, nivel=0.3, inclina=10):
     cab = rotp(cx, by - bh / 2)
     sudor = rotp(cx - bw / 2 - 20 * s, by - bh * 0.32)
     return Pieza(g(id_, o), {"manos": manos, "cabeza": cab, "sudor": sudor}, (cx - 175 * s, cab[1] - 30 * s, manos[0] + 30 * s, base + 10))
+
+
+# ------------------------------------------------------------------ escudo de protección
+def escudo(id_, cx, cy, s=120, col=None, check=True):
+    """Escudo de protección (≈ s×1,15s) con marca ✓ dentro (circuitos protegidos, seguridad, garantía).
+    Sale de lote10-04-movil-20. (cx, cy) = centro. Sub-id {id}_check (draw o pop). Entra con pop/squash."""
+    col = col or TEAL
+    h = s * 1.15
+    x0, y0 = cx - s / 2, cy - h / 2
+    d = (f"M {f(cx)} {f(y0)} C {f(cx+s*0.22)} {f(y0+s*0.1)}, {f(cx+s*0.38)} {f(y0+s*0.12)}, {f(x0+s)} {f(y0+s*0.12)} "
+         f"C {f(x0+s)} {f(y0+h*0.55)}, {f(cx+s*0.3)} {f(y0+h*0.86)}, {f(cx)} {f(y0+h)} "
+         f"C {f(cx-s*0.3)} {f(y0+h*0.86)}, {f(x0)} {f(y0+h*0.55)}, {f(x0)} {f(y0+s*0.12)} "
+         f"C {f(cx-s*0.38)} {f(y0+s*0.12)}, {f(cx-s*0.22)} {f(y0+s*0.1)}, {f(cx)} {f(y0)} Z")
+    o = f'<path d="{d}" fill="{INK}" opacity="0.22" transform="translate({f(s*0.05)} {f(s*0.07)})"/>'
+    o += f'<path d="{d}" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="{f(max(5, s*0.05))}" stroke-linejoin="round"/>'
+    o += f'<path d="M {f(cx)} {f(y0+s*0.12)} L {f(cx)} {f(y0+h*0.86)}" stroke="#FFFFFF" stroke-width="{f(s*0.03)}" opacity="0.35"/>'
+    if check:
+        o += g(f"{id_}_check" if id_ else None,
+               f'<path d="M {f(cx-s*0.22)} {f(cy+s*0.02)} L {f(cx-s*0.04)} {f(cy+s*0.2)} L {f(cx+s*0.25)} {f(cy-s*0.18)}" fill="none" '
+               f'stroke="#FFFFFF" stroke-width="{f(s*0.1)}" stroke-linecap="round" stroke-linejoin="round"/>')
+    return Pieza(g(id_, o), {"centro": (cx, cy)}, (x0, y0, x0 + s, y0 + h))
+
+
+# ------------------------------------------------------------------ calculadora de bolsillo
+def calculadora(id_, cx, cy, w=240, texto="20 %", col=None):
+    """Calculadora de bolsillo (≈ w×1,45w) con pantalla de cifras y 4×4 teclas. Sale de lote10-04-movil-20 («se calcula»).
+    Sub-ids {id}_pantalla (cifra: fade/punch), {id}_teclas. .puntos: pantalla (centro de la cifra)."""
+    col = col or "#5A6170"
+    h = w * 1.45
+    x0, y0 = cx - w / 2, cy - h / 2
+    o = f'<rect x="{f(x0+10)}" y="{f(y0+14)}" width="{f(w)}" height="{f(h)}" rx="{f(w*0.1)}" fill="{INK}" opacity="0.22"/>'
+    o += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="{f(w*0.1)}" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="7"/>'
+    px0, py0, pw, ph = x0 + w * 0.1, y0 + w * 0.1, w * 0.8, w * 0.34
+    o += f'<rect x="{f(px0)}" y="{f(py0)}" width="{f(pw)}" height="{f(ph)}" rx="{f(w*0.04)}" fill="#C9D8B4" stroke="{INK}" stroke-width="5"/>'
+    o += g(f"{id_}_pantalla" if id_ else None, T(px0 + pw - w * 0.05, py0 + ph * 0.74, texto, ph * 0.62, INK, anchor="end", font=DISP))
+    teclas = ""
+    tw = w * 0.16
+    gap = (w * 0.8 - 4 * tw) / 3
+    cols = ("#F2F4F8", "#F2F4F8", "#F2F4F8", CORAL)
+    for r in range(4):
+        for c in range(4):
+            tx, ty = x0 + w * 0.1 + c * (tw + gap), py0 + ph + w * 0.1 + r * (tw * 0.8 + gap)
+            teclas += f'<rect x="{f(tx)}" y="{f(ty)}" width="{f(tw)}" height="{f(tw*0.8)}" rx="{f(tw*0.2)}" fill="{cols[c]}" stroke="{INK}" stroke-width="4"/>'
+    o += g(f"{id_}_teclas" if id_ else None, teclas)
+    return Pieza(g(id_, o), {"pantalla": (px0 + pw / 2, py0 + ph / 2)}, (x0, y0, x0 + w, y0 + h))
