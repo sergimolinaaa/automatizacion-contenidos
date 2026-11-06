@@ -236,7 +236,7 @@ def estilo_a():
     body += g("salida", f'<circle cx="{f(cx)}" cy="{f(cy)}" r="2300" fill="{AZUL}"/>'
               + T(cx, cy + 40, "?", 260, LIME, font=DISP, extra=f'stroke="{INK}" stroke-width="12" paint-order="stroke"'))
     A = anims_comunes(chico="chico", cab="chf_cabeza", ojos=("chf_ojos", "chs_ojos"), brazo_izq="chf_brazo_izq",
-                      brazo_der="chf_brazo_der", cara_frio="chf", cara_sorpresa="chs", zoom=((560, 1000), 1.12), extra=[
+                      brazo_der="chf_brazo_der", cara_frio="chf", cara_sorpresa="chs", zoom=((560, 1000), 1.06), extra=[
                           {"target": "chs_cabeza", "effect": "sway", "origin": "bottom", "amount": 0.25, "delay": 1.05},
                           {"target": "chs_brazo_izq", "effect": "sway", "origin": "top-right", "amount": 0.14, "delay": 0.9},
                           {"target": "tel", "effect": "squash", "trigger": "come", "to": [0, 170], "dur": 0.55, "amount": 0.7, "sfx": "whoosh"},

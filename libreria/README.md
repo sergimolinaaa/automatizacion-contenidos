@@ -4,6 +4,9 @@ Monta cada vídeo **combinando piezas** y dibuja solo lo específico del tema. P
 devuelve una cadena SVG (o `Pieza`: cadena con `.puntos` = anclajes en coordenadas finales y `.caja` = (x0, y0, x1, y1)).
 Estilo pegatina realista: contorno tinta `#0B0B14` 6-9 px, degradados claro→oscuro, brillo blanco arriba, sombra suave.
 
+- `svg/papel.py` — **estilo papel recortado (obligatorio desde el 2-nov)**: `a_papel(pieza, semilla)` convierte cualquier pieza,
+  `persona(..., estilo="papel")`, fondos `fondo_calle/casa/cielo/neutro`, `grano()`, `hoja_transicion()`, paleta `PAPEL`.
+  Guía en `docs/montaje-rapido.md` §0; catálogo `python3 libreria/catalogo_papel.py` → `entregas/estilos/catalogo_papel.png`.
 - `svg/base.py` — paleta, documento, etiquetas, flechas, globos, sellos, iconos, contadores, efectos.
 - `svg/personajes.py` — personaje paramétrico (edad, pelo, piel, ropa, accesorios, expresión, pose, brazos).
 - `svg/objetos/politica.py · noche.py · mente.py · sueno.py · casa.py · frio.py · compra.py · reptiles.py · cuerpo.py · escenarios.py · animales.py · tienda.py · coches.py · tecnologia.py · memoria.py` — piezas por tema ya aprobadas.

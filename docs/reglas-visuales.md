@@ -1,7 +1,15 @@
 # Reglas visuales
 
-## Estilo visual (estética azul: fondo azul con cuadrícula, título blanco con bloques lima, ilustración en viñeta)
-- El nivel MÍNIMO es `content/lote3-01-zapatero`. Pegatina realista: degradados, brillos, sombras; 3-4 SVG por vídeo hechos con Python.
+## Estilo visual: PAPEL RECORTADO (estándar desde el 2-nov)
+- Todos los vídeos nuevos van en papel recortado. Referencia de calidad: `muestras/estilos/C` (dibujos en `muestras/estilos/dib.py`,
+  `estilo_c`) más las recetas de `docs/montaje-rapido.md` §0 y §3 (parallax en 3 planos, squash, antic, flutter, puff, fall, jitter).
+- Cómo: `libreria/svg/papel.py`. Personas con `persona(..., estilo="papel")`; cualquier otra pieza con `a_papel(pieza, semilla)`;
+  fondos `fondo_calle`, `fondo_casa`, `fondo_cielo`, `fondo_neutro`; `grano()` al final de cada SVG; salida con `hoja_transicion`.
+  Catálogo de lo que ya convierte bien: `entregas/estilos/catalogo_papel.png`.
+- Rasgos: sin contornos negros (tinta marrón `#3A2E2A` solo en detalles), paleta cálida apagada (`PAPEL`), bordes irregulares,
+  sombra de papel levantado, grano y fibras, giros leves de collage, 3 planos con parallax. Nada de degradados ni brillos de pegatina.
+- El estilo pegatina anterior (`content/lote3-01-zapatero`, `content/lote6-03-voto-en-blanco`) sigue siendo la referencia de
+  calidad de guion, composición y animación, no de acabado. 3-4 SVG por vídeo hechos con Python.
 - NUNCA un momento vacío: cada frase tiene algo en pantalla que la ilustra. NUNCA más de 3 s sin que algo aparezca, se mueva o cambie.
 - Todas las escenas (salvo las 2 del cierre) llevan dibujo; mitad inferior libre para subtítulos; nada solapado ni cortado.
 - Layouts `panel` (1000x700), `free` (transparente, vertical) y `full` (1080x1920, lo importante entre y 450-1250). Mínimo 2 free/full.

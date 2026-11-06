@@ -3,6 +3,53 @@
 Esta guía sustituye a la skill rossark, a los vídeos de referencia y a `Illustration.tsx` para montar. Nivel aprobado:
 `content/lote8-09-gasto-campana`, `content/lote9-01-sacudida-dormir`, `content/lote10-01-frio-bateria`
 (sus dibujos en `libreria/archivo/{gasto-campana,sacudida-dormir,frio-bateria}/dib.py`). Ábrelos solo si algo de aquí no basta.
+Desde el 2-nov TODO va en **papel recortado** (§0): la referencia de estilo es `muestras/estilos/C` (`muestras/estilos/dib.py`, `estilo_c`).
+
+## 0. Estilo papel (obligatorio desde el 2-nov)
+Todo sale de `libreria/svg/papel.py` (catálogo: `entregas/estilos/catalogo_papel.png`, se regenera con
+`python3 libreria/catalogo_papel.py`). No hay que dibujar nada nuevo: las piezas de siempre se convierten.
+```python
+from libreria.svg.base import *
+from libreria.svg.personajes import persona
+from libreria.svg.papel import a_papel, recorte, fondo_calle, fondo_casa, fondo_cielo, fondo_neutro, grano, hoja_transicion, fx, PAPEL as PP
+from libreria.svg.objetos import tecnologia as TE, politica as P
+
+body = fondo_calle("dia")                                    # capas lejos / medio / cerca ya agrupadas para el parallax
+body += persona("ana", 400, 1290, 1.2, estilo="papel", expresion="duda", brazos=("relajado", "explica"))
+body += a_papel(TE.bateria("bat", 760, 900, 150, 280, nivel=0.3), semilla=3)
+body += a_papel(P.urna("urna", 300, 1240, 280, 300, texto="CONGRESO"), semilla=4)
+body += recorte("M 700 600 L 860 600 L 780 480 Z", PP["mostaza"], semilla=5, id_="aviso")   # forma suelta de papel
+body += hoja_transicion("salida", PP["mostaza"], "?")       # salida de escena (ver anims abajo)
+body += grano()                                               # SIEMPRE lo último: grano de papel encima de todo
+guardar(f"{OUT}/gancho_full.svg", svg(body, "full"))
+```
+- **`persona(..., estilo="papel")`**: mismos parámetros, ids (`_cabeza`, `_ojos`, `_brazo_izq/der`…) y `.puntos` que siempre;
+  sin contorno, mejillas marcadas, cada parte recortada con su sombra y un giro leve. Las recetas de §3 valen tal cual.
+- **`a_papel(pieza, semilla)`** sirve para CUALQUIER pieza (`objetos/*.py`, `persona()`, iconos y etiquetas de `base`): quita los
+  contornos negros (deja un filo fino tono sobre tono), pasa degradados y colores a la paleta, quita brillos, añade borde roto,
+  sombra y giro (±0,6-2° según `semilla`; `giro=0` lo quita). El id exterior se conserva: se anima igual. Usa una `semilla`
+  distinta por pieza. Con texto dentro elige solo `filtro="papelFino"` (no rompe letras); úsalo también en piezas pequeñas.
+  Convierten bien: personas, cerebro, termómetro, móvil, batería, chip, urna, dni, sobre, hemiciclo, taza, bombilla, reloj,
+  saco de dinero, sofá, ventana. Regular (se entienden, pero mejor redibujar si son protagonistas): `cuerpo.mano` (dedos
+  pegados), `animales.perro` (patas en líneas), `animales.gato` (conserva contorno oscuro propio).
+- **Fondos** (1080×1920, suelo en y 1290, capas con 200 px de sobra a cada lado): `fondo_calle(hora)` (dia, tarde, noche),
+  `fondo_casa(noche=False)`, `fondo_cielo(hora)` (sol o luna en `astro`, nubes `nube0..2`), `fondo_neutro(w, h, col)` (cartulina con
+  fibras; vale para `panel` 1000×700). Pásalos como primer trozo de `body` (o en `fondo=`). En `free` no hay fondo: piezas sueltas.
+- **Paleta** `PAPEL` (alias `PP`): crema `#FBF6EC`, hueso `#F3E6CF`, tinta `#3A2E2A` (en vez de negro), coral `#E86A4A`, mostaza
+  `#F2C14E`, azul `#6FA8C8`, azul_osc `#4B5A7A`, cielo `#BFD9E2`, verde `#7FBF7A`, terracota `#D98E6A`, arena `#E9B872`,
+  lavanda `#8FA7C4`, piel `#F1C7A1`, mejilla `#E99486`… `EQUIV` da la equivalencia de cada color de `base.py` y
+  `color_papel(hex)` convierte cualquiera. Textos y cifras: `T(..., fill=PP["tinta"], font=DISP)`; nada de LIMA chillón ni negro.
+- **Filtros** (atributo con `fx(nombre)`: `f'<g{fx("papelCapa")}>…</g>'`): `papelBorde` (pieza suelta), `papelCapa` (capa dentro de
+  una pieza), `papelFino` (pequeñas o con texto), `papelPlano` (borde roto sin sombra: suelos, cosas pegadas al fondo).
+  Nunca pongas el `filter` en el mismo `<g id>` que animas si además lleva `transform`: `a_papel`/`capa()` ya lo anidan bien.
+- **Transiciones de papel**: la salida de escena es una hoja rasgada que sube (`hoja_transicion`); entradas con `squash` (cae
+  aplastándose como un recorte) o `slide-up` + giro; los relevos de cifras con `fade` 0,1 y `jitter`. Anims:
+```json
+{"target": "salida", "effect": "pan", "delay": 5.15, "to": [0, -2020], "rotate": -3, "dur": 0.75, "sfx": "papel"},
+{"target": "chico", "effect": "squash", "delay": 0, "dur": 0.6, "sfx": "boing"},
+{"target": "aviso", "effect": "squash", "trigger": "batería", "dur": 0.5, "to": [0, -160], "sfx": "sorpresa"}
+```
+  `delay` de la hoja = duración de la escena − 0,8 s. `sfx` de papel: `papel` en entradas y salidas de hojas.
 
 ## 1. guion.json mínimo completo
 Los SVG se generan con un `dib.py` (ver §6) en la misma carpeta y se citan con `svg_file`. Tiempos: `trigger` (palabra de la voz)
@@ -73,6 +120,13 @@ caja del grupo (center, bottom, top, left, right, bottom-left, bottom-right, top
 | `ripple` | anillo que crece y se apaga, 1,6 s | dos anillos con `phase` 0 y 0,5 |
 | `blink` | parpadeo de 5 fotogramas cada 3 s (sin `phase`) | `delay` distinto por persona (0,4-1,7) |
 | `zoom` (`target: "camera"`) | acerca a `to` [x, y] del viewBox; `amount: 1` vuelve | full 1,08-1,22, `dur` 0,9-1,6; panel 1,3-1,8; 1-2 por escena |
+| `squash` (entrada) | cae estirado desde `to` (por defecto [0, −320]) y al tocar se aplasta y rebota (`amount` = rebote) | personas `dur` 0,6 + `boing`; avisos `to` [0, −160] 0,5; objetos `amount` 0,7 0,55 |
+| `move` + `antic` | antes del gesto retrocede `antic` (fracción) y luego se lanza | cabeza que se encoge 0,4 (0,5 s); brazo que saca el móvil 0,18-0,5 (0,55-0,7 s) |
+| `pan` | desplaza `to` [dx, dy] (y `rotate`) sin rebote, ease in-out en `dur` (6 por defecto) | parallax lejos −14, medio −40, cerca −110 en 6 s; niveles que bajan 2 s; hoja de salida [0, −2020] 0,75 |
+| `jitter` | temblor nervioso en x, y y giro (bucle) | 0,9 en cifras que caen; 0,3-0,5 en objetos nerviosos |
+| `flutter` | ondea con viento: dos senos desfasados (bucle) | bufanda, pelo, banderas 0,8 `origin: top`, `phase` 0,1 |
+| `puff` | partícula que nace, sube creciendo y se apaga, 1,8 s (bucle); `to` = recorrido | vaho y humo: 3 copias, `phase` i/3, `to` [70, −110] |
+| `fall` | cae en bucle recorriendo `to[1]` (900 por defecto) centrado en su sitio | copos: `amount` 0,7-1,3, `phase` al azar, `to` [0, 1500] + `drift` 0,4-1 + `spin` 0,05-0,15 |
 
 Reglas del motor: una entrada deja el grupo oculto hasta su momento; lo último que pasa manda (entrada, `hide`, entrada…).
 Los bucles empiezan en su `at` (sin trigger ni delay, al empezar la escena). Hay un avance de cámara automático ×1,045.
@@ -166,6 +220,27 @@ body += g("med_aguja", pivote(cx, cy, r * 0.75) + trazo(f"M {cx} {cy} L {tx} {ty
 {"target": "med_aguja", "effect": "move", "trigger": "entrega", "rotate": -110, "origin": "center", "dur": 1.5, "sfx": "whoosh"}
 ```
 
+**Cámara con parallax en 3 planos** (el fondo de papel ya trae `lejos`, `medio` y `cerca`; personas y objetos van aparte, sin pan):
+```json
+{"target": "camera", "effect": "zoom", "delay": 0, "to": [500, 930], "amount": 1.08, "dur": 2.6},
+{"target": "camera", "effect": "zoom", "delay": 2.9, "to": [520, 960], "amount": 1.03, "dur": 0.35},
+{"target": "camera", "effect": "zoom", "delay": 3.2, "to": [600, 900], "amount": 1.2, "dur": 1.3},
+{"target": "lejos", "effect": "pan", "delay": 0, "to": [-14, 0], "dur": 6},
+{"target": "medio", "effect": "pan", "delay": 0, "to": [-40, 0], "dur": 6},
+{"target": "cerca", "effect": "pan", "delay": 0, "to": [-110, 0], "dur": 6}
+```
+El zoom 1,03 entre los dos acercones es la anticipación de cámara (retrocede antes del golpe). Zoom final como mucho 1,2 en
+`full` (con titular de 2 líneas, 1,06-1,1). Lejos poco, cerca mucho: nunca los tres planos a la misma velocidad.
+
+**Copos, vaho y bufanda** (movimiento secundario de la muestra C):
+```json
+{"target": "bufanda", "effect": "flutter", "origin": "top", "amount": 0.8, "phase": 0.1, "delay": 0.25},
+{"target": "vh0", "effect": "puff", "delay": 0.3, "phase": 0, "to": [70, -110]},
+{"target": "cp0", "effect": "fall", "amount": 0.9, "phase": 0.37, "to": [0, 1500]},
+{"target": "cp0", "effect": "drift", "amount": 0.6, "phase": 0.2}, {"target": "cp0", "effect": "spin", "amount": 0.1},
+{"target": "pct_grp", "effect": "jitter", "delay": 2.5, "amount": 0.9}
+```
+
 ## 4. Composición
 - **Grandes**: al menos 2 escenas `free`/`full` (los aprobados usan casi solo free/full). `free` con `height` 820-900 y el
   protagonista ocupando más de media anchura; `full` para el gancho y lo espectacular; `panel` solo para esquemas con fondo propio.
@@ -220,6 +295,7 @@ EOF
    Reglas de subida de cada encargo en `docs/encargo-comun.md`.
 
 ## 7. Índice de la librería (`libreria/svg/`; firmas en `libreria/README.md`)
+- **papel** (OBLIGATORIO, §0): `a_papel`, `recolorear`, `recorte`, `capa`, `grano`, `fx`, `PAPEL`/`EQUIV`/`color_papel`, fondos `fondo_calle`, `fondo_casa`, `fondo_cielo`, `fondo_neutro`, `hoja_transicion`.
 - **base**: paleta (AZUL, LIME, CORAL, INK, AMARILLO, TEAL…), `svg`, `guardar`, `g`, `gt`, `T`, `degradado`, `trazo`, `sombra`, `brillo`; `etiqueta`, `flecha`, `flecha_gorda`, `globo`, `sello`, `onomatopeya`, `icono_duda/alerta/ok/no`, `contador`, `barra`, `medidor`, `copo`, `vaho`, `temblor`, `zzz`, `gota`, `nube`, `onda_expansiva`, `lupa`, `confeti`.
 - **personajes**: `persona(id, x, y, escala, edad, piel, pelo, …, expresion, pose, brazos=(izq, der))` (ids `_cabeza`, `_ojos`, `_boca`, `_brazo_izq/der`; `.puntos` boca, mano_der, cima…), `manos_entrelazadas`, `multitud`, `pictograma`.
 - **animales**: `perro` (bostezo), `icono_perro`, `gato` (caída en el aire), `mono` (en una rama, duerme o agarra).

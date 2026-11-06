@@ -34,6 +34,7 @@ Variantes:
         sujeta (puño a la altura del hombro, hacia fuera: sujetar un hilo, un globo, una pancarta),
         junta (manos delante del pecho; con las dos en «junta» dibuja los dedos entrelazados en {id}_manos y .puntos["manos"])
     mira: -1 izquierda, 0 frente, 1 derecha (pupilas)
+    estilo: "pegatina" (por defecto, el de siempre) o "papel" (papel recortado, obligatorio en los vídeos nuevos desde el 2-nov)
 Sale de: escalofrios/persona.py (gorro de lana, bufanda, cara de frío, castañeteo), lote4-01-bebe-carrito/dib.py
 (bebé y mamá: degradados de piel y pelo, mejillas, brillos) y nuevo-partido/np.py (pictograma).
 """
@@ -506,8 +507,18 @@ _BRAZOS = ("abajo", "cintura", "arriba", "saluda", "senala", "barbilla", "coge",
 def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media", pelo="corto", pelo_color="castano",
             ropa="jersey", ropa_color="#3B80CF", pantalon_color="#3E5C93", zapato_color="#2A2F3E", camisa_color="#FFFFFF",
             accesorios=(), bufanda_color="#FFC83D", expresion="neutral", pose="de_pie", brazos=("abajo", "abajo"),
-            mira=0, silla=False, espejo=False):
-    """Personaje completo. Ver docstring del módulo. espejo=True lo voltea en horizontal."""
+            mira=0, silla=False, espejo=False, estilo="pegatina"):
+    """Personaje completo. Ver docstring del módulo. espejo=True lo voltea en horizontal.
+    estilo: "pegatina" (el de siempre, por defecto) o "papel" (papel recortado de la muestra C: sin contorno, colores
+    planos de la paleta de papel, mejillas marcadas, cada parte (brazos, piernas, tronco, cabeza) recortada con su borde
+    irregular y su sombra, y un giro leve de collage). Mismos ids y .puntos en los dos estilos."""
+    papel = estilo == "papel"
+    if papel:
+        from .papel import capa as _capa
+        cap = _capa
+    else:
+        def cap(s_):
+            return s_
     e = dict(EDADES.get(edad, EDADES["adulto"]))
     if isinstance(brazos, str):
         brazos = (brazos, brazos)
@@ -526,7 +537,7 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
     if not busto:
         o.append(sombra(0, 2, e["cw"] * 2.2, 14, 0.18))
     if silla and sentado:
-        o.append(_silla(e, sdy))
+        o.append(cap(_silla(e, sdy)))
     # brazos: objetivos de la mano
     def target(pose_b, k):
         if pose_b == "cintura":
@@ -579,7 +590,7 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
     for lado in ("izq", "der"):
         if lado not in front:
             S, E, Hm, mt, _ = arms[lado]
-            cuerpo.append(_brazo(id_, lado, S, Hm, E, aw, piel, ropa, ropa_color, mt))
+            cuerpo.append(cap(_brazo(id_, lado, S, Hm, E, aw, piel, ropa, ropa_color, mt)))
     piernas = "" if busto else _piernas(e, ropa, pantalon_color, zapato_color, piel, sentado, sdy)
     tor = ""
     if ropa == "vestido" and not busto:
@@ -593,26 +604,34 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
     tor += neck + _torso(e, ropa, ropa_color, piel, sdy, camisa_color)
     if "bufanda" in accesorios:
         tor += g(f"{id_}_acc_bufanda", _bufanda(dict(e, sy=sy), bufanda_color))
-    body = g(f"{id_}_piernas", piernas) + tor if not busto else tor
+    if papel:
+        tor = cap(tor)
+    body = cap(g(f"{id_}_piernas", piernas)) + tor if not busto else tor
     cuerpo_svg = g(f"{id_}_cuerpo", body)
     o.append("".join(cuerpo))
     o.append(cuerpo_svg)
     for lado in ("izq", "der"):
         if lado in front and arms[lado][4] != "boca":
             S, E, Hm, mt, _ = arms[lado]
-            o.append(_brazo(id_, lado, S, Hm, E, aw, piel, ropa, ropa_color, mt))
+            o.append(cap(_brazo(id_, lado, S, Hm, E, aw, piel, ropa, ropa_color, mt)))
     if brazos[0] == "junta" and brazos[1] == "junta":
-        o.append(g(f"{id_}_manos", manos_entrelazadas(None, 0, sy + lu * 1.55, aw / 46, piel)))
+        o.append(cap(g(f"{id_}_manos", manos_entrelazadas(None, 0, sy + lu * 1.55, aw / 46, piel))))
         puntos["manos"] = (0, sy + lu * 1.55)
     if "baston" in accesorios and not busto:
         Hm = arms["der"][2]
-        o.append(g(f"{id_}_acc_baston", _baston(Hm, aw)))
-    o.append(g(f"{id_}_cabeza", cabeza(id_, rx, ry, hy, piel, pelo, pelo_color, expresion, mira, accesorios, edad)))
+        o.append(cap(g(f"{id_}_acc_baston", _baston(Hm, aw))))
+    o.append(cap(g(f"{id_}_cabeza", cabeza(id_, rx, ry, hy, piel, pelo, pelo_color, expresion, mira, accesorios, edad))))
     for lado in ("izq", "der"):  # la mano que tapa la boca va por delante de la cara
         if arms[lado][4] == "boca":
             S, E, Hm, mt, _ = arms[lado]
-            o.append(_brazo(id_, lado, S, Hm, E, aw, piel, ropa, ropa_color, mt))
+            o.append(cap(_brazo(id_, lado, S, Hm, E, aw, piel, ropa, ropa_color, mt)))
     inner = "".join(o)
+    giro = 0.0
+    if papel:
+        from .papel import recolorear, PAPEL as _PP
+        inner = inner.replace('fill="#FF8FA0" opacity="0.4"', f'fill="{_PP["mejilla"]}" opacity="0.85"')
+        inner = recolorear(inner, contorno=0.4, bordes=False)
+        giro = (-1.2, 1.0, -0.8, 1.3)[sum(map(ord, id_)) % 4]
     cut = None
     if busto:
         cut = sy + (e["cy"] - e["sy"]) * 0.62
@@ -622,10 +641,13 @@ def persona(id_="persona", x=500, y=650, escala=1.0, edad="adulto", piel="media"
                  f'<path d="M {f(-sw-30)} {f(cut)} L {f(sw+30)} {f(cut)}" stroke="{INK}" stroke-width="{SW+1}" stroke-linecap="round"/>')
     oy = -cut if busto else 0
     sx = -escala if espejo else escala
-    tr = f"translate({f(x)} {f(y)}) scale({f(sx)} {f(escala)})" + (f" translate(0 {f(oy)})" if oy else "")
+    tr = (f"translate({f(x)} {f(y)})" + (f" rotate({giro})" if giro else "") + f" scale({f(sx)} {f(escala)})"
+          + (f" translate(0 {f(oy)})" if oy else ""))
+    ca, sa = math.cos(math.radians(giro)), math.sin(math.radians(giro))
 
     def P(p):
-        return (x + p[0] * sx, y + (p[1] + oy) * escala)
+        u, v = p[0] * sx, (p[1] + oy) * escala
+        return (x + u * ca - v * sa, y + u * sa + v * ca)
 
     pts_ = {k: P(v) for k, v in puntos.items()}
     if espejo:
