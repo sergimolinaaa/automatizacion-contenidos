@@ -1,0 +1,663 @@
+{
+ "source": "Fuentes: Apple (Batería y rendimiento del iPhone) · Battery University · Energies 2021",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Tu",
+   "start": 0.1,
+   "end": 0.24000000000000002
+  },
+  {
+   "text": "móvil",
+   "start": 0.25,
+   "end": 0.51
+  },
+  {
+   "text": "marca",
+   "start": 0.52,
+   "end": 0.77
+  },
+  {
+   "text": "un",
+   "start": 0.78,
+   "end": 0.87
+  },
+  {
+   "text": "veinte",
+   "start": 0.88,
+   "end": 1.13
+  },
+  {
+   "text": "por",
+   "start": 1.14,
+   "end": 1.2799999999999998
+  },
+  {
+   "text": "ciento",
+   "start": 1.29,
+   "end": 1.61
+  },
+  {
+   "text": "y,",
+   "start": 1.62,
+   "end": 1.6700000000000002
+  },
+  {
+   "text": "de",
+   "start": 1.78,
+   "end": 1.86
+  },
+  {
+   "text": "repente,",
+   "start": 1.87,
+   "end": 2.31
+  },
+  {
+   "text": "se",
+   "start": 2.4,
+   "end": 2.51
+  },
+  {
+   "text": "apaga?",
+   "start": 2.52,
+   "end": 2.88
+  },
+  {
+   "text": "Ese",
+   "start": 3.57,
+   "end": 3.83
+  },
+  {
+   "text": "porcentaje",
+   "start": 3.84,
+   "end": 4.359999999999999
+  },
+  {
+   "text": "no",
+   "start": 4.37,
+   "end": 4.46
+  },
+  {
+   "text": "se",
+   "start": 4.47,
+   "end": 4.56
+  },
+  {
+   "text": "mide,",
+   "start": 4.57,
+   "end": 4.8500000000000005
+  },
+  {
+   "text": "se",
+   "start": 4.94,
+   "end": 5.050000000000001
+  },
+  {
+   "text": "calcula.",
+   "start": 5.06,
+   "end": 5.52
+  },
+  {
+   "text": "Es",
+   "start": 6.21,
+   "end": 6.41
+  },
+  {
+   "text": "una",
+   "start": 6.42,
+   "end": 6.56
+  },
+  {
+   "text": "estimación",
+   "start": 6.57,
+   "end": 7.08
+  },
+  {
+   "text": "que,",
+   "start": 7.09,
+   "end": 7.24
+  },
+  {
+   "text": "con",
+   "start": 7.33,
+   "end": 7.47
+  },
+  {
+   "text": "el",
+   "start": 7.48,
+   "end": 7.57
+  },
+  {
+   "text": "tiempo,",
+   "start": 7.58,
+   "end": 7.96
+  },
+  {
+   "text": "se",
+   "start": 8.06,
+   "end": 8.16
+  },
+  {
+   "text": "desajusta.",
+   "start": 8.17,
+   "end": 8.76
+  },
+  {
+   "text": "Lo",
+   "start": 9.46,
+   "end": 9.64
+  },
+  {
+   "text": "que",
+   "start": 9.65,
+   "end": 9.73
+  },
+  {
+   "text": "de",
+   "start": 9.74,
+   "end": 9.81
+  },
+  {
+   "text": "verdad",
+   "start": 9.82,
+   "end": 10.08
+  },
+  {
+   "text": "manda",
+   "start": 10.09,
+   "end": 10.35
+  },
+  {
+   "text": "es",
+   "start": 10.36,
+   "end": 10.469999999999999
+  },
+  {
+   "text": "el",
+   "start": 10.48,
+   "end": 10.55
+  },
+  {
+   "text": "voltaje,",
+   "start": 10.56,
+   "end": 10.99
+  },
+  {
+   "text": "la",
+   "start": 11.16,
+   "end": 11.25
+  },
+  {
+   "text": "fuerza",
+   "start": 11.26,
+   "end": 11.56
+  },
+  {
+   "text": "con",
+   "start": 11.57,
+   "end": 11.69
+  },
+  {
+   "text": "la",
+   "start": 11.7,
+   "end": 11.77
+  },
+  {
+   "text": "que",
+   "start": 11.78,
+   "end": 11.85
+  },
+  {
+   "text": "la",
+   "start": 11.86,
+   "end": 11.92
+  },
+  {
+   "text": "batería",
+   "start": 11.93,
+   "end": 12.28
+  },
+  {
+   "text": "empuja",
+   "start": 12.29,
+   "end": 12.629999999999999
+  },
+  {
+   "text": "la",
+   "start": 12.64,
+   "end": 12.72
+  },
+  {
+   "text": "electricidad.",
+   "start": 12.73,
+   "end": 13.370000000000001
+  },
+  {
+   "text": "Si",
+   "start": 14.06,
+   "end": 14.26
+  },
+  {
+   "text": "baja",
+   "start": 14.27,
+   "end": 14.49
+  },
+  {
+   "text": "de",
+   "start": 14.5,
+   "end": 14.58
+  },
+  {
+   "text": "un",
+   "start": 14.59,
+   "end": 14.67
+  },
+  {
+   "text": "mínimo,",
+   "start": 14.68,
+   "end": 15.04
+  },
+  {
+   "text": "el",
+   "start": 15.14,
+   "end": 15.26
+  },
+  {
+   "text": "móvil",
+   "start": 15.27,
+   "end": 15.54
+  },
+  {
+   "text": "se",
+   "start": 15.55,
+   "end": 15.64
+  },
+  {
+   "text": "apaga",
+   "start": 15.65,
+   "end": 15.93
+  },
+  {
+   "text": "solo",
+   "start": 15.94,
+   "end": 16.15
+  },
+  {
+   "text": "para",
+   "start": 16.16,
+   "end": 16.32
+  },
+  {
+   "text": "proteger",
+   "start": 16.33,
+   "end": 16.7
+  },
+  {
+   "text": "sus",
+   "start": 16.71,
+   "end": 16.85
+  },
+  {
+   "text": "circuitos.",
+   "start": 16.86,
+   "end": 17.43
+  },
+  {
+   "text": "Con",
+   "start": 18.13,
+   "end": 18.32
+  },
+  {
+   "text": "los",
+   "start": 18.33,
+   "end": 18.47
+  },
+  {
+   "text": "años,",
+   "start": 18.48,
+   "end": 18.8
+  },
+  {
+   "text": "la",
+   "start": 18.89,
+   "end": 18.990000000000002
+  },
+  {
+   "text": "batería",
+   "start": 19.0,
+   "end": 19.34
+  },
+  {
+   "text": "envejece",
+   "start": 19.35,
+   "end": 19.8
+  },
+  {
+   "text": "y",
+   "start": 19.81,
+   "end": 19.849999999999998
+  },
+  {
+   "text": "le",
+   "start": 19.86,
+   "end": 19.95
+  },
+  {
+   "text": "cuesta",
+   "start": 19.96,
+   "end": 20.220000000000002
+  },
+  {
+   "text": "dar",
+   "start": 20.23,
+   "end": 20.36
+  },
+  {
+   "text": "energía",
+   "start": 20.37,
+   "end": 20.740000000000002
+  },
+  {
+   "text": "de",
+   "start": 20.75,
+   "end": 20.81
+  },
+  {
+   "text": "golpe.",
+   "start": 20.82,
+   "end": 21.2
+  },
+  {
+   "text": "Abres",
+   "start": 21.9,
+   "end": 22.25
+  },
+  {
+   "text": "la",
+   "start": 22.26,
+   "end": 22.360000000000003
+  },
+  {
+   "text": "cámara",
+   "start": 22.37,
+   "end": 22.67
+  },
+  {
+   "text": "y",
+   "start": 22.68,
+   "end": 22.75
+  },
+  {
+   "text": "el",
+   "start": 22.76,
+   "end": 22.830000000000002
+  },
+  {
+   "text": "voltaje",
+   "start": 22.84,
+   "end": 23.22
+  },
+  {
+   "text": "se",
+   "start": 23.23,
+   "end": 23.35
+  },
+  {
+   "text": "hunde.",
+   "start": 23.36,
+   "end": 23.65
+  },
+  {
+   "text": "Con",
+   "start": 24.37,
+   "end": 24.580000000000002
+  },
+  {
+   "text": "frío",
+   "start": 24.59,
+   "end": 24.84
+  },
+  {
+   "text": "y",
+   "start": 24.85,
+   "end": 24.900000000000002
+  },
+  {
+   "text": "poca",
+   "start": 24.91,
+   "end": 25.11
+  },
+  {
+   "text": "batería,",
+   "start": 25.12,
+   "end": 25.55
+  },
+  {
+   "text": "todavía",
+   "start": 25.64,
+   "end": 26.0
+  },
+  {
+   "text": "pasa",
+   "start": 26.01,
+   "end": 26.21
+  },
+  {
+   "text": "más.",
+   "start": 26.22,
+   "end": 26.529999999999998
+  },
+  {
+   "text": "Si",
+   "start": 27.23,
+   "end": 27.42
+  },
+  {
+   "text": "te",
+   "start": 27.43,
+   "end": 27.52
+  },
+  {
+   "text": "pasa",
+   "start": 27.53,
+   "end": 27.76
+  },
+  {
+   "text": "a",
+   "start": 27.77,
+   "end": 27.8
+  },
+  {
+   "text": "menudo,",
+   "start": 27.81,
+   "end": 28.169999999999998
+  },
+  {
+   "text": "mira",
+   "start": 28.28,
+   "end": 28.44
+  },
+  {
+   "text": "la",
+   "start": 28.45,
+   "end": 28.529999999999998
+  },
+  {
+   "text": "salud",
+   "start": 28.54,
+   "end": 28.8
+  },
+  {
+   "text": "de",
+   "start": 28.81,
+   "end": 28.869999999999997
+  },
+  {
+   "text": "la",
+   "start": 28.88,
+   "end": 28.939999999999998
+  },
+  {
+   "text": "batería",
+   "start": 28.95,
+   "end": 29.31
+  },
+  {
+   "text": "en",
+   "start": 29.32,
+   "end": 29.4
+  },
+  {
+   "text": "ajustes:",
+   "start": 29.41,
+   "end": 29.89
+  },
+  {
+   "text": "quizá",
+   "start": 30.02,
+   "end": 30.24
+  },
+  {
+   "text": "toque",
+   "start": 30.25,
+   "end": 30.45
+  },
+  {
+   "text": "cambiarla.",
+   "start": 30.46,
+   "end": 30.990000000000002
+  },
+  {
+   "text": "Tú",
+   "start": 31.68,
+   "end": 31.81
+  },
+  {
+   "text": "traes",
+   "start": 31.82,
+   "end": 32.07
+  },
+  {
+   "text": "las",
+   "start": 32.08,
+   "end": 32.23
+  },
+  {
+   "text": "dudas",
+   "start": 32.24,
+   "end": 32.510000000000005
+  },
+  {
+   "text": "y",
+   "start": 32.52,
+   "end": 32.56
+  },
+  {
+   "text": "nosotros",
+   "start": 32.57,
+   "end": 32.99
+  },
+  {
+   "text": "te",
+   "start": 33.0,
+   "end": 33.09
+  },
+  {
+   "text": "damos",
+   "start": 33.1,
+   "end": 33.370000000000005
+  },
+  {
+   "text": "el",
+   "start": 33.38,
+   "end": 33.480000000000004
+  },
+  {
+   "text": "truco.",
+   "start": 33.49,
+   "end": 33.870000000000005
+  },
+  {
+   "text": "Síguenos",
+   "start": 34.56,
+   "end": 35.07
+  },
+  {
+   "text": "y",
+   "start": 35.08,
+   "end": 35.129999999999995
+  },
+  {
+   "text": "las",
+   "start": 35.14,
+   "end": 35.27
+  },
+  {
+   "text": "resolvemos.",
+   "start": 35.28,
+   "end": 35.94
+  },
+  {
+   "text": "¿Con",
+   "start": 36.63,
+   "end": 36.85
+  },
+  {
+   "text": "qué",
+   "start": 36.86,
+   "end": 36.95
+  },
+  {
+   "text": "porcentaje",
+   "start": 36.96,
+   "end": 37.46
+  },
+  {
+   "text": "se",
+   "start": 37.47,
+   "end": 37.57
+  },
+  {
+   "text": "te",
+   "start": 37.58,
+   "end": 37.65
+  },
+  {
+   "text": "apaga",
+   "start": 37.66,
+   "end": 37.93
+  },
+  {
+   "text": "a",
+   "start": 37.94,
+   "end": 37.989999999999995
+  },
+  {
+   "text": "ti?",
+   "start": 38.0,
+   "end": 38.24
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 38.74,
+  "cta": "Todo tiene un truco"
+ },
+ "estilo": "papel",
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué el móvil se apaga con el *20 %*",
+  "scene": 0
+ },
+ "duration": 41.34,
+ "cover_offset_ms": 41640
+}
