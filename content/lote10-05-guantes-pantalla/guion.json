@@ -1,0 +1,1420 @@
+{
+ "topic": "¿Por qué una salchicha usa tu móvil y tu guante no? La pantalla capacitiva detecta electricidad, no presión: una rejilla bajo el cristal crea un campo eléctrico y el dedo, que conduce, lo altera. La lana y el cuero aíslan; la salchicha conduce. En Corea del Sur, en 2010, las ventas de una marca de salchichas subieron casi un 40 % (The Register, TED Ed, MIT, OCU, Xataka Móvil)",
+ "categoria": "moviles",
+ "estilo": "papel",
+ "title": "¿Por qué una salchicha usa tu móvil y tu guante no?",
+ "source": "Fuentes: TED Ed · The Register · MIT · OCU · Xataka Móvil",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "outro_cta": "Todo tiene un truco",
+ "cover": {
+  "text": "Por qué el móvil no va con *guantes*",
+  "scene": 0
+ },
+ "publish": {
+  "at": "2026-11-08T14:00:00+01:00",
+  "caption": "¿Por qué una salchicha usa tu móvil y tu guante no? Tu pantalla detecta electricidad, no presión: tu dedo conduce y cambia su campo eléctrico. La lana aísla, la salchicha conduce. En Corea, en 2010, sus ventas subieron casi un 40 % (TED Ed, The Register, OCU). ¿Con qué cosa rara has tocado tú la pantalla?",
+  "description": "¿Por qué una salchicha usa tu móvil y tu guante no? En la ola de frío de 2010 en Corea del Sur, mucha gente tocaba el iPhone con salchichas y las ventas de una marca subieron cerca de un 40 %. La pantalla es capacitiva: una rejilla invisible crea un campo eléctrico y tu dedo, que conduce, lo cambia justo donde tocas. La lana o el cuero aíslan, así que la pantalla no nota nada; los guantes táctiles llevan hilos de plata o cobre en las yemas. Fuentes: TED Ed, The Register, MIT, OCU, Xataka Móvil. ¿Con qué cosa rara has tocado tú la pantalla?",
+  "hashtags": [
+   "movil",
+   "tecnologia",
+   "invierno",
+   "ciencia",
+   "curiosidades"
+  ]
+ },
+ "scenes": [
+  {
+   "chapter": 0,
+   "headline": "¿Salchicha *sí*, guante *no*?",
+   "narration": "¿Por qué una salchicha puede usar tu móvil y tu guante no?",
+   "illustration": {
+    "svg_file": "gancho_full.svg",
+    "layout": "full",
+    "caption": "Fig. 1 · ¿Salchicha sí?",
+    "anims": [
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       520,
+       860
+      ],
+      "amount": 1.06,
+      "dur": 1.6
+     },
+     {
+      "target": "lejos",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -14,
+       0
+      ],
+      "dur": 5
+     },
+     {
+      "target": "medio",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -40,
+       0
+      ],
+      "dur": 5
+     },
+     {
+      "target": "cerca",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -110,
+       0
+      ],
+      "dur": 5
+     },
+     {
+      "target": "chs",
+      "effect": "hide"
+     },
+     {
+      "target": "astro",
+      "effect": "hide"
+     },
+     {
+      "target": "chica",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "chica",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.2,
+      "delay": 0.7
+     },
+     {
+      "target": "chica",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.13,
+      "delay": 0.7999999999999999
+     },
+     {
+      "target": "chn_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.28
+     },
+     {
+      "target": "chn_ojos",
+      "effect": "blink",
+      "delay": 0.6
+     },
+     {
+      "target": "chn_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 0.9
+     },
+     {
+      "target": "chs_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 0.28
+     },
+     {
+      "target": "chs_ojos",
+      "effect": "blink",
+      "delay": 0.6
+     },
+     {
+      "target": "chs_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 0.9
+     },
+     {
+      "target": "chn_acc_bufanda",
+      "effect": "flutter",
+      "origin": "top",
+      "amount": 0.8,
+      "phase": 0.1,
+      "delay": 0.25
+     },
+     {
+      "target": "chs_acc_bufanda",
+      "effect": "flutter",
+      "origin": "top",
+      "amount": 0.8,
+      "phase": 0.1,
+      "delay": 0.25
+     },
+     {
+      "target": "tel",
+      "effect": "slide-up",
+      "delay": 0.15,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "tel",
+      "effect": "float",
+      "amount": 0.15,
+      "delay": 0.65
+     },
+     {
+      "target": "ms",
+      "effect": "slide-right",
+      "trigger": "salchicha",
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "ms",
+      "effect": "move",
+      "trigger": "puede",
+      "to": [
+       -10,
+       -8
+      ],
+      "dur": 0.3
+     },
+     {
+      "target": "tq",
+      "effect": "pop",
+      "trigger": "puede",
+      "sfx": "pop"
+     },
+     {
+      "target": "ok",
+      "effect": "pop",
+      "trigger": "usar",
+      "sfx": "ding"
+     },
+     {
+      "target": "ok",
+      "effect": "float",
+      "amount": 0.3,
+      "trigger": "tu móvil"
+     },
+     {
+      "target": "tel",
+      "effect": "punch",
+      "trigger": "móvil",
+      "amount": 0.25
+     },
+     {
+      "target": "ms",
+      "effect": "hide",
+      "trigger": "y tu"
+     },
+     {
+      "target": "ok",
+      "effect": "hide",
+      "trigger": "y tu"
+     },
+     {
+      "target": "tq",
+      "effect": "hide",
+      "trigger": "y tu"
+     },
+     {
+      "target": "mg",
+      "effect": "slide-right",
+      "trigger": "y tu",
+      "dur": 0.45,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "mg",
+      "effect": "move",
+      "trigger": "guante",
+      "to": [
+       -10,
+       -8
+      ],
+      "dur": 0.3
+     },
+     {
+      "target": "no",
+      "effect": "pop",
+      "trigger": "no",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "no",
+      "effect": "wiggle",
+      "trigger": "no",
+      "amount": 0.4
+     },
+     {
+      "target": "temb",
+      "effect": "pop",
+      "trigger": "no"
+     },
+     {
+      "target": "mg",
+      "effect": "shake",
+      "trigger": "no",
+      "amount": 0.4
+     },
+     {
+      "target": "chn",
+      "effect": "hide",
+      "trigger": "guante"
+     },
+     {
+      "target": "chs",
+      "effect": "fade",
+      "trigger": "guante",
+      "dur": 0.15
+     },
+     {
+      "target": "chs_cabeza",
+      "effect": "move",
+      "trigger": "no",
+      "to": [
+       0,
+       6
+      ],
+      "rotate": -5,
+      "antic": 0.4,
+      "origin": "bottom",
+      "dur": 0.5
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "guante",
+      "to": [
+       640,
+       800
+      ],
+      "amount": 1.14,
+      "dur": 0.9
+     },
+     {
+      "target": "cp0",
+      "effect": "fall",
+      "amount": 1.07,
+      "phase": 0.74,
+      "to": [
+       0,
+       1500
+      ]
+     },
+     {
+      "target": "cp0",
+      "effect": "drift",
+      "amount": 0.88,
+      "phase": 0.94
+     },
+     {
+      "target": "cp0",
+      "effect": "spin",
+      "amount": 0.12
+     },
+     {
+      "target": "cp1",
+      "effect": "fall",
+      "amount": 1.25,
+      "phase": 0.03,
+      "to": [
+       0,
+       1500
+      ]
+     },
+     {
+      "target": "cp1",
+      "effect": "drift",
+      "amount": 0.68,
+      "phase": 0.94
+     },
+     {
+      "target": "cp1",
+      "effect": "spin",
+      "amount": 0.11
+     },
+     {
+      "target": "cp2",
+      "effect": "fall",
+      "amount": 1.24,
+      "phase": 0.11,
+      "to": [
+       0,
+       1500
+      ]
+     },
+     {
+      "target": "cp2",
+      "effect": "drift",
+      "amount": 0.68,
+      "phase": 0.25
+     },
+     {
+      "target": "cp2",
+      "effect": "spin",
+      "amount": 0.1
+     },
+     {
+      "target": "cp3",
+      "effect": "fall",
+      "amount": 1.04,
+      "phase": 0.01,
+      "to": [
+       0,
+       1500
+      ]
+     },
+     {
+      "target": "cp3",
+      "effect": "drift",
+      "amount": 0.53,
+      "phase": 0.28
+     },
+     {
+      "target": "cp3",
+      "effect": "spin",
+      "amount": 0.14
+     },
+     {
+      "target": "cp4",
+      "effect": "fall",
+      "amount": 1.16,
+      "phase": 0.16,
+      "to": [
+       0,
+       1500
+      ]
+     },
+     {
+      "target": "cp4",
+      "effect": "drift",
+      "amount": 0.88,
+      "phase": 0.14
+     },
+     {
+      "target": "cp4",
+      "effect": "spin",
+      "amount": 0.11
+     },
+     {
+      "target": "cp5",
+      "effect": "fall",
+      "amount": 0.78,
+      "phase": 0.0,
+      "to": [
+       0,
+       1500
+      ]
+     },
+     {
+      "target": "cp5",
+      "effect": "drift",
+      "amount": 0.92,
+      "phase": 0.21
+     },
+     {
+      "target": "cp5",
+      "effect": "spin",
+      "amount": 0.07
+     },
+     {
+      "target": "cp6",
+      "effect": "fall",
+      "amount": 1.29,
+      "phase": 0.87,
+      "to": [
+       0,
+       1500
+      ]
+     },
+     {
+      "target": "cp6",
+      "effect": "drift",
+      "amount": 0.57,
+      "phase": 0.96
+     },
+     {
+      "target": "cp6",
+      "effect": "spin",
+      "amount": 0.1
+     },
+     {
+      "target": "cp7",
+      "effect": "fall",
+      "amount": 1.11,
+      "phase": 0.2,
+      "to": [
+       0,
+       1500
+      ]
+     },
+     {
+      "target": "cp7",
+      "effect": "drift",
+      "amount": 0.96,
+      "phase": 0.69
+     },
+     {
+      "target": "cp7",
+      "effect": "spin",
+      "amount": 0.15
+     },
+     {
+      "target": "cp8",
+      "effect": "fall",
+      "amount": 1.24,
+      "phase": 0.3,
+      "to": [
+       0,
+       1500
+      ]
+     },
+     {
+      "target": "cp8",
+      "effect": "drift",
+      "amount": 0.62,
+      "phase": 0.17
+     },
+     {
+      "target": "cp8",
+      "effect": "spin",
+      "amount": 0.06
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "Corea, *2010*",
+   "narration": "En Corea del Sur, en dos mil diez, la gente usaba salchichas para no quitarse los guantes.",
+   "illustration": {
+    "svg_file": "corea_free.svg",
+    "layout": "free",
+    "caption": "Fig. 2 · Ola de frío",
+    "anims": [
+     {
+      "target": "bcor",
+      "effect": "slide-down",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "bcor",
+      "effect": "sway",
+      "origin": "left",
+      "amount": 0.35,
+      "delay": 0.5
+     },
+     {
+      "target": "gp0",
+      "effect": "squash",
+      "delay": 0.05,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "gp1",
+      "effect": "squash",
+      "delay": 0.2,
+      "dur": 0.6
+     },
+     {
+      "target": "gp2",
+      "effect": "squash",
+      "delay": 0.35,
+      "dur": 0.6
+     },
+     {
+      "target": "gp0",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.2,
+      "delay": 0.7
+     },
+     {
+      "target": "gp0",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.12,
+      "delay": 0.7999999999999999
+     },
+     {
+      "target": "p0_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 1.0
+     },
+     {
+      "target": "p0_ojos",
+      "effect": "blink",
+      "delay": 0.4
+     },
+     {
+      "target": "p0_acc_bufanda",
+      "effect": "flutter",
+      "origin": "top",
+      "amount": 0.7,
+      "phase": 0.1,
+      "delay": 0.25
+     },
+     {
+      "target": "gp1",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.65,
+      "delay": 0.9
+     },
+     {
+      "target": "gp1",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.12,
+      "delay": 1.3
+     },
+     {
+      "target": "p1_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 1.2
+     },
+     {
+      "target": "p1_ojos",
+      "effect": "blink",
+      "delay": 0.9500000000000001
+     },
+     {
+      "target": "p1_acc_bufanda",
+      "effect": "flutter",
+      "origin": "top",
+      "amount": 0.7,
+      "phase": 0.4,
+      "delay": 0.25
+     },
+     {
+      "target": "gp2",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.4,
+      "delay": 1.1
+     },
+     {
+      "target": "gp2",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.12,
+      "delay": 1.8000000000000003
+     },
+     {
+      "target": "p2_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.3,
+      "delay": 1.4000000000000001
+     },
+     {
+      "target": "p2_ojos",
+      "effect": "blink",
+      "delay": 1.5
+     },
+     {
+      "target": "p2_acc_bufanda",
+      "effect": "flutter",
+      "origin": "top",
+      "amount": 0.7,
+      "phase": 0.7,
+      "delay": 0.25
+     },
+     {
+      "target": "et_2010",
+      "effect": "pop",
+      "trigger": "Corea",
+      "sfx": "pop"
+     },
+     {
+      "target": "bcor",
+      "effect": "punch",
+      "trigger": "Sur",
+      "amount": 0.25
+     },
+     {
+      "target": "termo",
+      "effect": "squash",
+      "trigger": "dos mil",
+      "to": [
+       0,
+       -160
+      ],
+      "dur": 0.5,
+      "sfx": "pop"
+     },
+     {
+      "target": "termo",
+      "effect": "shake",
+      "trigger": "gente",
+      "amount": 0.3
+     },
+     {
+      "target": "s0",
+      "effect": "pop",
+      "trigger": "usaba",
+      "sfx": "pop"
+     },
+     {
+      "target": "s1",
+      "effect": "pop",
+      "trigger": "salchichas",
+      "sfx": "pop"
+     },
+     {
+      "target": "s2",
+      "effect": "pop",
+      "trigger": "para",
+      "sfx": "pop"
+     },
+     {
+      "target": "s1",
+      "effect": "wiggle",
+      "trigger": "para",
+      "amount": 0.4
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "salchichas",
+      "to": [
+       500,
+       470
+      ],
+      "amount": 1.08,
+      "dur": 1.2
+     },
+     {
+      "target": "et_guantes",
+      "effect": "pop",
+      "trigger": "quitarse",
+      "sfx": "pop"
+     },
+     {
+      "target": "et_guantes",
+      "effect": "punch",
+      "trigger": "guantes",
+      "amount": 0.3
+     },
+     {
+      "target": "cq0",
+      "effect": "fall",
+      "amount": 0.98,
+      "phase": 0.37,
+      "to": [
+       0,
+       1000
+      ]
+     },
+     {
+      "target": "cq0",
+      "effect": "drift",
+      "amount": 0.48,
+      "phase": 0.87
+     },
+     {
+      "target": "cq0",
+      "effect": "spin",
+      "amount": 0.05
+     },
+     {
+      "target": "cq1",
+      "effect": "fall",
+      "amount": 1.0,
+      "phase": 0.9,
+      "to": [
+       0,
+       1000
+      ]
+     },
+     {
+      "target": "cq1",
+      "effect": "drift",
+      "amount": 0.45,
+      "phase": 0.55
+     },
+     {
+      "target": "cq1",
+      "effect": "spin",
+      "amount": 0.11
+     },
+     {
+      "target": "cq2",
+      "effect": "fall",
+      "amount": 0.72,
+      "phase": 0.38,
+      "to": [
+       0,
+       1000
+      ]
+     },
+     {
+      "target": "cq2",
+      "effect": "drift",
+      "amount": 0.82,
+      "phase": 0.45
+     },
+     {
+      "target": "cq2",
+      "effect": "spin",
+      "amount": 0.12
+     },
+     {
+      "target": "cq3",
+      "effect": "fall",
+      "amount": 0.79,
+      "phase": 0.24,
+      "to": [
+       0,
+       1000
+      ]
+     },
+     {
+      "target": "cq3",
+      "effect": "drift",
+      "amount": 0.47,
+      "phase": 0.51
+     },
+     {
+      "target": "cq3",
+      "effect": "spin",
+      "amount": 0.14
+     },
+     {
+      "target": "cq4",
+      "effect": "fall",
+      "amount": 1.05,
+      "phase": 0.77,
+      "to": [
+       0,
+       1000
+      ]
+     },
+     {
+      "target": "cq4",
+      "effect": "drift",
+      "amount": 0.63,
+      "phase": 0.75
+     },
+     {
+      "target": "cq4",
+      "effect": "spin",
+      "amount": 0.06
+     },
+     {
+      "target": "cq5",
+      "effect": "fall",
+      "amount": 0.87,
+      "phase": 0.67,
+      "to": [
+       0,
+       1000
+      ]
+     },
+     {
+      "target": "cq5",
+      "effect": "drift",
+      "amount": 0.84,
+      "phase": 0.42
+     },
+     {
+      "target": "cq5",
+      "effect": "spin",
+      "amount": 0.06
+     },
+     {
+      "target": "cq6",
+      "effect": "fall",
+      "amount": 0.86,
+      "phase": 0.21,
+      "to": [
+       0,
+       1000
+      ]
+     },
+     {
+      "target": "cq6",
+      "effect": "drift",
+      "amount": 0.57,
+      "phase": 0.81
+     },
+     {
+      "target": "cq6",
+      "effect": "spin",
+      "amount": 0.07
+     }
+    ],
+    "height": 860
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "Ventas *disparadas*",
+   "narration": "Las ventas de una marca subieron casi un cuarenta por ciento.",
+   "illustration": {
+    "svg_file": "ventas_panel.svg",
+    "layout": "panel",
+    "caption": "Fig. 3 · Ventas",
+    "anims": [
+     {
+      "target": "paq",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "paq",
+      "effect": "float",
+      "amount": 0.25,
+      "delay": 0.5
+     },
+     {
+      "target": "b_antes",
+      "effect": "grow",
+      "origin": "bottom",
+      "trigger": "ventas",
+      "dur": 0.6,
+      "sfx": "pop"
+     },
+     {
+      "target": "t_antes",
+      "effect": "fade",
+      "trigger": "ventas",
+      "dur": 0.3
+     },
+     {
+      "target": "dest",
+      "effect": "pop",
+      "trigger": "marca",
+      "sfx": "brillo"
+     },
+     {
+      "target": "dest",
+      "effect": "pulse",
+      "trigger": "marca",
+      "amount": 0.4
+     },
+     {
+      "target": "paq_faja",
+      "effect": "punch",
+      "trigger": "marca",
+      "amount": 0.3
+     },
+     {
+      "target": "b_2010",
+      "effect": "grow",
+      "origin": "bottom",
+      "trigger": "subieron",
+      "dur": 1.0,
+      "sfx": "ding"
+     },
+     {
+      "target": "t_2010",
+      "effect": "fade",
+      "trigger": "subieron",
+      "dur": 0.3
+     },
+     {
+      "target": "fl_sube",
+      "effect": "draw",
+      "trigger": "casi",
+      "dur": 0.45,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "b_2010",
+      "effect": "punch",
+      "trigger": "ciento",
+      "amount": 0.25
+     }
+    ]
+   },
+   "elements": [
+    {
+     "type": "stat",
+     "label": "Ventas en 2010",
+     "value": 40,
+     "from": 0,
+     "unit": "%",
+     "note": "casi",
+     "trigger": "cuarenta"
+    }
+   ]
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "Pantalla *capacitiva*",
+   "narration": "Tu pantalla es capacitiva: bajo el cristal, una rejilla invisible crea un pequeño campo eléctrico.",
+   "illustration": {
+    "svg_file": "capacitiva_full.svg",
+    "layout": "full",
+    "caption": "Fig. 4 · En capas",
+    "anims": [
+     {
+      "target": "tel3",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "tel3",
+      "effect": "float",
+      "amount": 0.2,
+      "delay": 0.5
+     },
+     {
+      "target": "cap",
+      "effect": "slide-up",
+      "delay": 0.15,
+      "dur": 0.55
+     },
+     {
+      "target": "fl3",
+      "effect": "draw",
+      "delay": 0.5,
+      "dur": 0.4
+     },
+     {
+      "target": "cap_campo",
+      "effect": "hide"
+     },
+     {
+      "target": "cap_rejilla",
+      "effect": "hide"
+     },
+     {
+      "target": "tel3",
+      "effect": "punch",
+      "trigger": "pantalla",
+      "amount": 0.25
+     },
+     {
+      "target": "et_cap",
+      "effect": "pop",
+      "trigger": "capacitiva",
+      "sfx": "pop"
+     },
+     {
+      "target": "t_cristal",
+      "effect": "pop",
+      "trigger": "cristal",
+      "sfx": "pop"
+     },
+     {
+      "target": "cap_rejilla",
+      "effect": "draw",
+      "trigger": "rejilla",
+      "dur": 0.6,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "et_rej",
+      "effect": "pop",
+      "trigger": "rejilla"
+     },
+     {
+      "target": "cap_rejilla",
+      "effect": "pulse",
+      "trigger": "invisible",
+      "amount": 0.3
+     },
+     {
+      "target": "cap_campo",
+      "effect": "fade",
+      "trigger": "crea",
+      "dur": 0.5,
+      "sfx": "brillo"
+     },
+     {
+      "target": "et_det",
+      "effect": "pop",
+      "trigger": "pequeño",
+      "sfx": "pop"
+     },
+     {
+      "target": "cap_campo",
+      "effect": "pulse",
+      "trigger": "campo",
+      "amount": 0.5
+     },
+     {
+      "target": "et_nop",
+      "effect": "pop",
+      "trigger": "eléctrico",
+      "sfx": "pop"
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "bajo",
+      "to": [
+       540,
+       900
+      ],
+      "amount": 1.08,
+      "dur": 1.4
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "Tu dedo *conduce*",
+   "narration": "Tu dedo conduce la electricidad: al acercarlo, cambia ese campo y el móvil calcula dónde has tocado.",
+   "illustration": {
+    "svg_file": "dedo_panel.svg",
+    "layout": "panel",
+    "caption": "Fig. 5 · El toque",
+    "anims": [
+     {
+      "target": "c4cap",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "c4n",
+      "effect": "pulse",
+      "amount": 0.3
+     },
+     {
+      "target": "c4d",
+      "effect": "hide"
+     },
+     {
+      "target": "dedo",
+      "effect": "slide-down",
+      "delay": 0.15,
+      "dur": 0.5
+     },
+     {
+      "target": "dedo",
+      "effect": "float",
+      "amount": 0.2,
+      "delay": 0.7
+     },
+     {
+      "target": "ray",
+      "effect": "pop",
+      "trigger": "conduce",
+      "sfx": "pop"
+     },
+     {
+      "target": "ray",
+      "effect": "pulse",
+      "trigger": "electricidad",
+      "amount": 0.5
+     },
+     {
+      "target": "dedo",
+      "effect": "move",
+      "trigger": "acercarlo",
+      "to": [
+       0,
+       190
+      ],
+      "antic": 0.2,
+      "dur": 0.6,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "ray",
+      "effect": "move",
+      "trigger": "acercarlo",
+      "to": [
+       0,
+       170
+      ],
+      "dur": 0.6
+     },
+     {
+      "target": "c4n",
+      "effect": "hide",
+      "trigger": "cambia"
+     },
+     {
+      "target": "c4d",
+      "effect": "fade",
+      "trigger": "cambia",
+      "dur": 0.15
+     },
+     {
+      "target": "c4d",
+      "effect": "pulse",
+      "trigger": "ese campo",
+      "amount": 0.4
+     },
+     {
+      "target": "chip",
+      "effect": "pop",
+      "trigger": "móvil",
+      "sfx": "pop"
+     },
+     {
+      "target": "fl4",
+      "effect": "draw",
+      "trigger": "calcula",
+      "dur": 0.4,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "chip_nucleo",
+      "effect": "pulse",
+      "trigger": "calcula",
+      "amount": 0.5
+     },
+     {
+      "target": "dia",
+      "effect": "pop",
+      "trigger": "dónde",
+      "sfx": "ding"
+     },
+     {
+      "target": "et_aqui",
+      "effect": "pop",
+      "trigger": "tocado",
+      "sfx": "pop"
+     },
+     {
+      "target": "dia",
+      "effect": "punch",
+      "trigger": "tocado",
+      "amount": 0.3
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 3,
+   "number": "3",
+   "headline": "Lana *aislante*",
+   "narration": "La lana o el cuero no dejan pasar esa electricidad: para la pantalla, no has tocado nada. La salchicha sí conduce.",
+   "illustration": {
+    "svg_file": "lana_panel.svg",
+    "layout": "panel",
+    "caption": "Fig. 6 · Aislante",
+    "anims": [
+     {
+      "target": "c5cap",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "c5n",
+      "effect": "pulse",
+      "amount": 0.3
+     },
+     {
+      "target": "c5d",
+      "effect": "hide"
+     },
+     {
+      "target": "mg5",
+      "effect": "slide-down",
+      "delay": 0.1,
+      "dur": 0.5
+     },
+     {
+      "target": "mg5",
+      "effect": "float",
+      "amount": 0.15,
+      "delay": 0.6
+     },
+     {
+      "target": "et_lana",
+      "effect": "pop",
+      "trigger": "lana",
+      "sfx": "pop"
+     },
+     {
+      "target": "et_cuero",
+      "effect": "pop",
+      "trigger": "cuero",
+      "sfx": "pop"
+     },
+     {
+      "target": "asp",
+      "effect": "draw",
+      "trigger": "pasar",
+      "dur": 0.4,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "mg5",
+      "effect": "move",
+      "trigger": "electricidad",
+      "to": [
+       0,
+       10
+      ],
+      "dur": 0.4
+     },
+     {
+      "target": "c5cap",
+      "effect": "punch",
+      "trigger": "pantalla",
+      "amount": 0.15
+     },
+     {
+      "target": "mg5",
+      "effect": "shake",
+      "trigger": "pantalla",
+      "amount": 0.3
+     },
+     {
+      "target": "et_lana",
+      "effect": "punch",
+      "trigger": "tocado",
+      "amount": 0.3
+     },
+     {
+      "target": "asp",
+      "effect": "punch",
+      "trigger": "nada",
+      "amount": 0.3
+     },
+     {
+      "target": "ms5",
+      "effect": "slide-down",
+      "trigger": "La salchicha",
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "ms5",
+      "effect": "move",
+      "trigger": "sí",
+      "to": [
+       0,
+       120
+      ],
+      "dur": 0.45
+     },
+     {
+      "target": "c5n",
+      "effect": "hide",
+      "trigger": "conduce"
+     },
+     {
+      "target": "c5d",
+      "effect": "fade",
+      "trigger": "conduce",
+      "dur": 0.15
+     },
+     {
+      "target": "c5d",
+      "effect": "pulse",
+      "trigger": "conduce",
+      "amount": 0.4
+     },
+     {
+      "target": "ok5",
+      "effect": "pop",
+      "trigger": "conduce",
+      "sfx": "ding"
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 4,
+   "number": "+",
+   "headline": "Hilos *de plata*",
+   "narration": "Los guantes táctiles llevan hilos de plata o cobre en las yemas.",
+   "mascot": {
+    "trigger": "Los",
+    "pose": "wave",
+    "note": "¡Yemas que conducen!",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "tag",
+     "text": "GUANTES TÁCTILES",
+     "tone": "ink",
+     "trigger": "guantes",
+     "sfx": "pop"
+    },
+    {
+     "type": "tag",
+     "text": "PLATA O COBRE",
+     "tone": "hot",
+     "trigger": "plata",
+     "sfx": "pop"
+    },
+    {
+     "type": "stamp",
+     "text": "EN LAS YEMAS",
+     "tone": "accent",
+     "trigger": "yemas",
+     "sfx": "sello"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "headline": "Dudas → *truco*",
+   "narration": "Tú traes las dudas y nosotros te damos el truco.",
+   "elements": [
+    {
+     "type": "trick",
+     "trigger": "Tú",
+     "reveal_trigger": "nosotros"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "number": "TÚ",
+   "headline": "*Confiesa*",
+   "narration": "Síguenos y las resolvemos. ¿Con qué cosa rara has tocado tú la pantalla?",
+   "elements": [
+    {
+     "type": "follow",
+     "trigger": "Síguenos"
+    },
+    {
+     "type": "ask",
+     "text": "¿Con qué cosa *rara* has tocado tú la pantalla?",
+     "trigger": "¿Con"
+    }
+   ]
+  }
+ ]
+}

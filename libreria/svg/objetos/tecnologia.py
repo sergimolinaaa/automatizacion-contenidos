@@ -518,3 +518,125 @@ def calculadora(id_, cx, cy, w=240, texto="20 %", col=None):
             teclas += f'<rect x="{f(tx)}" y="{f(ty)}" width="{f(tw)}" height="{f(tw*0.8)}" rx="{f(tw*0.2)}" fill="{cols[c]}" stroke="{INK}" stroke-width="4"/>'
     o += g(f"{id_}_teclas" if id_ else None, teclas)
     return Pieza(g(id_, o), {"pantalla": (px0 + pw / 2, py0 + ph / 2)}, (x0, y0, x0 + w, y0 + h))
+
+
+# ------------------------------------------------------------------ manos para tocar la pantalla (lote10-05-guantes-pantalla)
+def _gira(id_, x, y, s, ang, cuerpo, caja_h=330):
+    """Coloca un dibujo local (punta en 0,0, apuntando hacia arriba, ≈ ±70 de ancho) con la punta en (x, y), girado ang sobre la punta."""
+    body = f'<g transform="translate({f(x)} {f(y)}) rotate({f(ang)}) scale({f(s)})">{cuerpo}</g>'
+    r = caja_h * s
+    return Pieza(g(id_, body), {"punta": (x, y)}, (x - r, y - r, x + r, y + r))
+
+
+def mano_guante(id_, x, y, s=1.0, col="#D8443A", ang=0, yemas=None):
+    """Mano con guante de lana (punto con canalé en el puño) y el índice estirado; (x, y) = yema. ang gira sobre la yema
+    (0 = apunta arriba, 180 = apunta abajo). yemas="plata"|"cobre" = guante táctil con la punta conductora en {id}_yema (pulse).
+    Sub-ids {id}_dedo, {id}_yema. Sale de lote10-05-guantes-pantalla."""
+    osc, cl = shade(col, -0.25), shade(col, 0.18)
+    o = (f'<path d="M -50 300 L -44 160 L 58 160 L 64 300 Z" fill="{degradado(osc, 0.15)}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+         + "".join(f'<path d="M {-38 + k*16} 168 L {-40 + k*16} 292" stroke="{shade(col, -0.4)}" stroke-width="5" opacity="0.6"/>' for k in range(7))
+         + f'<path d="M -44 74 Q -54 76 -54 96 L -48 156 Q -10 172 54 158 L 60 98 Q 62 74 42 72 Z" fill="{degradado(col, 0.18)}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+         + f'<path d="M -52 104 Q -78 98 -74 122 Q -66 140 -44 134" fill="{col}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+         + "".join(f'<path d="M {-36 + k*18} 96 q 5 6 0 12 q -5 6 0 12" fill="none" stroke="{cl}" stroke-width="4" opacity="0.8"/>' for k in range(5))
+         + f'<path d="M -6 86 L -6 76 M 16 88 L 16 78 M 36 88 L 36 78" stroke="{osc}" stroke-width="5" stroke-linecap="round"/>')
+    dedo = (f'<path d="M -26 84 L -26 14 Q -26 -2 -10 -2 Q 8 -2 8 14 L 8 84 Z" fill="{degradado(col, 0.18)}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+            f'<path d="M -20 30 q 8 4 20 0 M -20 52 q 8 4 20 0" fill="none" stroke="{cl}" stroke-width="4" opacity="0.8"/>')
+    if yemas:
+        met = "#C9CED8" if yemas == "plata" else "#D9905A"
+        dedo += g(f"{id_}_yema" if id_ else None,
+                  f'<path d="M -26 22 L -26 14 Q -26 -2 -10 -2 Q 8 -2 8 14 L 8 22 Z" fill="{degradado(met, 0.3)}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+                  f'<path d="M -18 6 Q -10 2 -2 6" fill="none" stroke="#FFFFFF" stroke-width="4"/>')
+    o += g(f"{id_}_dedo" if id_ else None, dedo)
+    return _gira(id_, x, y, s, ang, o)
+
+
+def salchicha(id_, cx, cy, l=180, ang=0, col="#C7684A"):
+    """Salchicha tipo Frankfurt (largo l, grosor l/4,5) centrada en (cx, cy), girada ang (0 = vertical). Sub-id {id}_brillo."""
+    w = l / 4.5
+    o = (f'<rect x="{f(-w/2)}" y="{f(-l/2)}" width="{f(w)}" height="{f(l)}" rx="{f(w/2)}" fill="{degradado(col, 0.25, "h")}" stroke="{INK}" stroke-width="6"/>'
+         f'<path d="M {f(-w/2)} {f(-l/2+w*0.5)} l -6 -10 M {f(w/2)} {f(l/2-w*0.5)} l 6 10" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>')
+    o += g(f"{id_}_brillo" if id_ else None, brillo(f"M {f(-w*0.18)} {f(-l/2+w*0.7)} L {f(-w*0.18)} {f(l/2-w*0.7)}", 5, 0.55))
+    return Pieza(g(id_, f'<g transform="translate({f(cx)} {f(cy)}) rotate({f(ang)})">{o}</g>'), {"centro": (cx, cy)},
+                 (cx - l / 2, cy - l / 2, cx + l / 2, cy + l / 2))
+
+
+def mano_salchicha(id_, x, y, s=1.0, piel="#F2C7A4", manga="#4B5A7A", ang=0, col="#C7684A"):
+    """Puño que sujeta una salchicha como si fuera un puntero; (x, y) = punta de la salchicha. ang gira sobre la punta
+    (0 = apunta arriba). Sub-ids {id}_salchicha, {id}_puno. Sale de lote10-05-guantes-pantalla (Corea, 2010)."""
+    sal = salchicha(f"{id_}_salchicha" if id_ else None, -10, 112, 236, 0, col)
+    o = (f'<path d="M -52 350 L -44 246 L 56 246 L 64 350 Z" fill="{degradado(manga, 0.2)}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+         f'<path d="M -46 256 L 58 256" stroke="#FFFFFF" stroke-width="9" opacity="0.5"/>')
+    puno = (f'<path d="M -54 178 Q -58 160 -40 158 L 40 158 Q 58 160 56 182 L 52 240 Q 0 260 -48 242 Z" fill="{degradado(piel, 0.18)}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+            + "".join(f'<path d="M -46 {180 + k*20} Q -10 {174 + k*20} 40 {180 + k*20}" fill="none" stroke="#B9826A" stroke-width="5" stroke-linecap="round"/>' for k in range(3))
+            + f'<path d="M -54 170 Q -76 182 -60 206 Q -40 210 -24 186" fill="{piel}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>')
+    o += str(sal) + g(f"{id_}_puno" if id_ else None, puno)
+    return _gira(id_, x, y, s, ang, o, 380)
+
+
+# ------------------------------------------------------------------ pantalla capacitiva en corte
+def campo_electrico(id_, x0, x1, y, s=1.0, toque=None, col=None, n=3):
+    """Halo del campo eléctrico sobre el cristal: n líneas onduladas discontinuas entre x0 y x1, por encima de y.
+    toque=x deforma las líneas hacia abajo en ese punto (el dedo «se lleva» parte del campo). Para pasar de normal a
+    deformado: dibuja dos y alterna hide + fade. Anímalo con pulse o flow."""
+    col = col or TEAL
+    o = ""
+    for k in range(n):
+        h = (22 + k * 26) * s
+        pts_ = []
+        for i in range(41):
+            xx = x0 + (x1 - x0) * i / 40
+            yy = y - h + 5 * s * math.sin(i * 0.9 + k)
+            if toque is not None:
+                d = (xx - toque) / (90 * s)
+                yy += (h - 6 * s) * math.exp(-d * d) * (1 - k * 0.12)
+            pts_.append(f"{f(xx)} {f(yy)}")
+        o += (f'<path d="M {" L ".join(pts_)}" fill="none" stroke="{col}" stroke-width="{f(7*s)}" stroke-linecap="round" '
+              f'stroke-dasharray="{f(18*s)} {f(12*s)}" opacity="{f(0.95 - k*0.22)}"/>')
+    return Pieza(g(id_, o), {"toque": (toque, y)}, (x0, y - (22 + n * 26) * s, x1, y))
+
+
+def pantalla_capas(id_, x0, x1, y, s=1.0, campo=True, toque=None):
+    """Corte de una pantalla táctil capacitiva: cristal (arriba, y = superficie), rejilla de electrodos transparente
+    (líneas turquesa finas: {id}_rejilla, draw), pantalla de píxeles ({id}_pixeles) y base. campo=True añade el halo
+    ({id}_campo, ver campo_electrico; toque=x lo deforma). Alto ≈ 170·s bajo y. .puntos superficie, rejilla, centro."""
+    cx = (x0 + x1) / 2
+    w = x1 - x0
+    hc, hr, hp, hb = 50 * s, 34 * s, 56 * s, 30 * s
+    yr, yp, yb = y + hc, y + hc + hr, y + hc + hr + hp
+    o = f'<rect x="{f(x0+12)}" y="{f(y+14)}" width="{f(w)}" height="{f(hc+hr+hp+hb)}" rx="{f(14*s)}" fill="{INK}" opacity="0.2"/>'
+    o += f'<rect x="{f(x0)}" y="{f(yb)}" width="{f(w)}" height="{f(hb)}" rx="{f(10*s)}" fill="#5A6170" stroke="{INK}" stroke-width="6"/>'
+    pix = f'<rect x="{f(x0)}" y="{f(yp)}" width="{f(w)}" height="{f(hp)}" fill="#3B4560" stroke="{INK}" stroke-width="6"/>'
+    cols = (CORAL, LIME, "#5BC0FF")
+    pw = 18 * s
+    nx = int(w // (pw * 1.25))
+    pix += "".join(f'<rect x="{f(x0 + 8*s + i*pw*1.25)}" y="{f(yp + hp*0.3)}" width="{f(pw)}" height="{f(hp*0.4)}" rx="3" fill="{cols[i % 3]}" opacity="0.85"/>'
+                   for i in range(nx))
+    o += g(f"{id_}_pixeles" if id_ else None, pix)
+    o += f'<rect x="{f(x0)}" y="{f(yr)}" width="{f(w)}" height="{f(hr)}" fill="#E8F6F4" stroke="{INK}" stroke-width="5"/>'
+    rej = f'<path d="M {f(x0+6)} {f(yr+hr/2)} L {f(x1-6)} {f(yr+hr/2)}" stroke="{TEAL}" stroke-width="{f(5*s)}" stroke-linecap="round"/>'
+    sep = 46 * s
+    rej += "".join(f'<path d="M {f(x0 + sep*0.6 + i*sep)} {f(yr+4)} L {f(x0 + sep*0.6 + i*sep)} {f(yr+hr-4)}" stroke="{TEAL}" stroke-width="{f(5*s)}" stroke-linecap="round"/>'
+                   for i in range(int((w - sep * 0.6) // sep) + 1))
+    o += g(f"{id_}_rejilla" if id_ else None, rej)
+    o += f'<rect x="{f(x0)}" y="{f(y)}" width="{f(w)}" height="{f(hc)}" rx="{f(12*s)}" fill="#CFE9F7" fill-opacity="0.9" stroke="{INK}" stroke-width="6"/>'
+    o += brillo(f"M {f(x0+24*s)} {f(y+14*s)} L {f(x0+w*0.45)} {f(y+14*s)}", 6, 0.8)
+    if campo:
+        o += str(campo_electrico(f"{id_}_campo" if id_ else None, x0 + 10 * s, x1 - 10 * s, y - 6 * s, s, toque))
+    return Pieza(g(id_, o), {"superficie": (cx, y), "rejilla": (cx, yr + hr / 2), "centro": (cx, y + (hc + hr + hp + hb) / 2)},
+                 (x0, y - 110 * s, x1, yb + hb))
+
+
+def paquete_salchichas(id_, cx, cy, w=320, col="#E86A4A", texto="SALCHICHAS"):
+    """Paquete genérico (sin marca) de salchichas al vacío: bandeja con 5 salchichas y faja con texto (≈ w×0,62w).
+    Sub-ids {id}_faja. Sale de lote10-05-guantes-pantalla."""
+    h = w * 0.62
+    x0, y0 = cx - w / 2, cy - h / 2
+    o = f'<rect x="{f(x0+12)}" y="{f(y0+14)}" width="{f(w)}" height="{f(h)}" rx="{f(w*0.08)}" fill="{INK}" opacity="0.22"/>'
+    o += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="{f(w*0.08)}" fill="#F3F6FA" stroke="{INK}" stroke-width="7"/>'
+    for k in range(5):
+        o += str(salchicha(None, x0 + w * (0.18 + k * 0.16), cy, h * 0.82, 0))
+    o += f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" rx="{f(w*0.08)}" fill="#FFFFFF" opacity="0.18"/>'
+    faja = (f'<rect x="{f(x0-8)}" y="{f(cy-h*0.16)}" width="{f(w+16)}" height="{f(h*0.32)}" rx="8" fill="{col}" stroke="{INK}" stroke-width="6"/>'
+            + T(cx, cy + h * 0.07, texto, h * 0.17, "#FFFFFF", font=DISP))
+    o += g(f"{id_}_faja" if id_ else None, faja)
+    return Pieza(g(id_, o), {"centro": (cx, cy)}, (x0, y0, x0 + w, y0 + h))
