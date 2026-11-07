@@ -1,0 +1,668 @@
+{
+ "source": "Fuentes: TED Ed · The Register · MIT · OCU · Xataka Móvil",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Por",
+   "start": 0.1,
+   "end": 0.30000000000000004
+  },
+  {
+   "text": "qué",
+   "start": 0.31,
+   "end": 0.42
+  },
+  {
+   "text": "una",
+   "start": 0.43,
+   "end": 0.58
+  },
+  {
+   "text": "salchicha",
+   "start": 0.59,
+   "end": 1.01
+  },
+  {
+   "text": "puede",
+   "start": 1.02,
+   "end": 1.21
+  },
+  {
+   "text": "usar",
+   "start": 1.22,
+   "end": 1.46
+  },
+  {
+   "text": "tu",
+   "start": 1.47,
+   "end": 1.55
+  },
+  {
+   "text": "móvil",
+   "start": 1.56,
+   "end": 1.84
+  },
+  {
+   "text": "y",
+   "start": 1.85,
+   "end": 1.8900000000000001
+  },
+  {
+   "text": "tu",
+   "start": 1.9,
+   "end": 1.99
+  },
+  {
+   "text": "guante",
+   "start": 2.0,
+   "end": 2.27
+  },
+  {
+   "text": "no?",
+   "start": 2.28,
+   "end": 2.5199999999999996
+  },
+  {
+   "text": "En",
+   "start": 3.2,
+   "end": 3.4000000000000004
+  },
+  {
+   "text": "Corea",
+   "start": 3.41,
+   "end": 3.68
+  },
+  {
+   "text": "del",
+   "start": 3.69,
+   "end": 3.82
+  },
+  {
+   "text": "Sur,",
+   "start": 3.83,
+   "end": 4.0600000000000005
+  },
+  {
+   "text": "en",
+   "start": 4.17,
+   "end": 4.26
+  },
+  {
+   "text": "dos",
+   "start": 4.27,
+   "end": 4.3999999999999995
+  },
+  {
+   "text": "mil",
+   "start": 4.41,
+   "end": 4.55
+  },
+  {
+   "text": "diez,",
+   "start": 4.56,
+   "end": 4.81
+  },
+  {
+   "text": "la",
+   "start": 4.92,
+   "end": 5.04
+  },
+  {
+   "text": "gente",
+   "start": 5.05,
+   "end": 5.33
+  },
+  {
+   "text": "usaba",
+   "start": 5.34,
+   "end": 5.62
+  },
+  {
+   "text": "salchichas",
+   "start": 5.63,
+   "end": 6.13
+  },
+  {
+   "text": "para",
+   "start": 6.14,
+   "end": 6.279999999999999
+  },
+  {
+   "text": "no",
+   "start": 6.29,
+   "end": 6.39
+  },
+  {
+   "text": "quitarse",
+   "start": 6.4,
+   "end": 6.74
+  },
+  {
+   "text": "los",
+   "start": 6.75,
+   "end": 6.88
+  },
+  {
+   "text": "guantes.",
+   "start": 6.89,
+   "end": 7.359999999999999
+  },
+  {
+   "text": "Las",
+   "start": 8.06,
+   "end": 8.31
+  },
+  {
+   "text": "ventas",
+   "start": 8.32,
+   "end": 8.61
+  },
+  {
+   "text": "de",
+   "start": 8.62,
+   "end": 8.7
+  },
+  {
+   "text": "una",
+   "start": 8.71,
+   "end": 8.870000000000001
+  },
+  {
+   "text": "marca",
+   "start": 8.88,
+   "end": 9.17
+  },
+  {
+   "text": "subieron",
+   "start": 9.18,
+   "end": 9.54
+  },
+  {
+   "text": "casi",
+   "start": 9.55,
+   "end": 9.790000000000001
+  },
+  {
+   "text": "un",
+   "start": 9.8,
+   "end": 9.89
+  },
+  {
+   "text": "cuarenta",
+   "start": 9.9,
+   "end": 10.19
+  },
+  {
+   "text": "por",
+   "start": 10.2,
+   "end": 10.34
+  },
+  {
+   "text": "ciento.",
+   "start": 10.35,
+   "end": 10.73
+  },
+  {
+   "text": "Tu",
+   "start": 11.42,
+   "end": 11.57
+  },
+  {
+   "text": "pantalla",
+   "start": 11.58,
+   "end": 11.96
+  },
+  {
+   "text": "es",
+   "start": 11.97,
+   "end": 12.07
+  },
+  {
+   "text": "capacitiva:",
+   "start": 12.08,
+   "end": 12.64
+  },
+  {
+   "text": "bajo",
+   "start": 12.77,
+   "end": 13.0
+  },
+  {
+   "text": "el",
+   "start": 13.01,
+   "end": 13.07
+  },
+  {
+   "text": "cristal,",
+   "start": 13.08,
+   "end": 13.47
+  },
+  {
+   "text": "una",
+   "start": 13.58,
+   "end": 13.71
+  },
+  {
+   "text": "rejilla",
+   "start": 13.72,
+   "end": 14.06
+  },
+  {
+   "text": "invisible",
+   "start": 14.07,
+   "end": 14.51
+  },
+  {
+   "text": "crea",
+   "start": 14.52,
+   "end": 14.74
+  },
+  {
+   "text": "un",
+   "start": 14.75,
+   "end": 14.85
+  },
+  {
+   "text": "pequeño",
+   "start": 14.86,
+   "end": 15.2
+  },
+  {
+   "text": "campo",
+   "start": 15.21,
+   "end": 15.49
+  },
+  {
+   "text": "eléctrico.",
+   "start": 15.5,
+   "end": 16.04
+  },
+  {
+   "text": "Tu",
+   "start": 16.74,
+   "end": 16.889999999999997
+  },
+  {
+   "text": "dedo",
+   "start": 16.9,
+   "end": 17.09
+  },
+  {
+   "text": "conduce",
+   "start": 17.1,
+   "end": 17.450000000000003
+  },
+  {
+   "text": "la",
+   "start": 17.46,
+   "end": 17.54
+  },
+  {
+   "text": "electricidad:",
+   "start": 17.55,
+   "end": 18.13
+  },
+  {
+   "text": "al",
+   "start": 18.3,
+   "end": 18.38
+  },
+  {
+   "text": "acercarlo,",
+   "start": 18.39,
+   "end": 18.92
+  },
+  {
+   "text": "cambia",
+   "start": 19.01,
+   "end": 19.32
+  },
+  {
+   "text": "ese",
+   "start": 19.33,
+   "end": 19.49
+  },
+  {
+   "text": "campo",
+   "start": 19.5,
+   "end": 19.81
+  },
+  {
+   "text": "y",
+   "start": 19.82,
+   "end": 19.87
+  },
+  {
+   "text": "el",
+   "start": 19.88,
+   "end": 19.959999999999997
+  },
+  {
+   "text": "móvil",
+   "start": 19.97,
+   "end": 20.22
+  },
+  {
+   "text": "calcula",
+   "start": 20.23,
+   "end": 20.6
+  },
+  {
+   "text": "dónde",
+   "start": 20.61,
+   "end": 20.82
+  },
+  {
+   "text": "has",
+   "start": 20.83,
+   "end": 20.919999999999998
+  },
+  {
+   "text": "tocado.",
+   "start": 20.93,
+   "end": 21.36
+  },
+  {
+   "text": "La",
+   "start": 22.06,
+   "end": 22.259999999999998
+  },
+  {
+   "text": "lana",
+   "start": 22.27,
+   "end": 22.5
+  },
+  {
+   "text": "o",
+   "start": 22.51,
+   "end": 22.580000000000002
+  },
+  {
+   "text": "el",
+   "start": 22.59,
+   "end": 22.669999999999998
+  },
+  {
+   "text": "cuero",
+   "start": 22.68,
+   "end": 22.9
+  },
+  {
+   "text": "no",
+   "start": 22.91,
+   "end": 23.01
+  },
+  {
+   "text": "dejan",
+   "start": 23.02,
+   "end": 23.27
+  },
+  {
+   "text": "pasar",
+   "start": 23.28,
+   "end": 23.55
+  },
+  {
+   "text": "esa",
+   "start": 23.56,
+   "end": 23.72
+  },
+  {
+   "text": "electricidad:",
+   "start": 23.73,
+   "end": 24.34
+  },
+  {
+   "text": "para",
+   "start": 24.49,
+   "end": 24.63
+  },
+  {
+   "text": "la",
+   "start": 24.64,
+   "end": 24.71
+  },
+  {
+   "text": "pantalla,",
+   "start": 24.72,
+   "end": 25.16
+  },
+  {
+   "text": "no",
+   "start": 25.26,
+   "end": 25.360000000000003
+  },
+  {
+   "text": "has",
+   "start": 25.37,
+   "end": 25.46
+  },
+  {
+   "text": "tocado",
+   "start": 25.47,
+   "end": 25.75
+  },
+  {
+   "text": "nada.",
+   "start": 25.76,
+   "end": 26.080000000000002
+  },
+  {
+   "text": "La",
+   "start": 26.77,
+   "end": 26.99
+  },
+  {
+   "text": "salchicha",
+   "start": 27.0,
+   "end": 27.43
+  },
+  {
+   "text": "sí",
+   "start": 27.44,
+   "end": 27.55
+  },
+  {
+   "text": "conduce.",
+   "start": 27.56,
+   "end": 28.049999999999997
+  },
+  {
+   "text": "Los",
+   "start": 28.78,
+   "end": 29.0
+  },
+  {
+   "text": "guantes",
+   "start": 29.01,
+   "end": 29.3
+  },
+  {
+   "text": "táctiles",
+   "start": 29.31,
+   "end": 29.7
+  },
+  {
+   "text": "llevan",
+   "start": 29.71,
+   "end": 29.95
+  },
+  {
+   "text": "hilos",
+   "start": 29.96,
+   "end": 30.16
+  },
+  {
+   "text": "de",
+   "start": 30.17,
+   "end": 30.240000000000002
+  },
+  {
+   "text": "plata",
+   "start": 30.25,
+   "end": 30.53
+  },
+  {
+   "text": "o",
+   "start": 30.54,
+   "end": 30.61
+  },
+  {
+   "text": "cobre",
+   "start": 30.62,
+   "end": 30.87
+  },
+  {
+   "text": "en",
+   "start": 30.88,
+   "end": 30.939999999999998
+  },
+  {
+   "text": "las",
+   "start": 30.95,
+   "end": 31.06
+  },
+  {
+   "text": "yemas.",
+   "start": 31.07,
+   "end": 31.490000000000002
+  },
+  {
+   "text": "Tú",
+   "start": 32.2,
+   "end": 32.330000000000005
+  },
+  {
+   "text": "traes",
+   "start": 32.34,
+   "end": 32.59
+  },
+  {
+   "text": "las",
+   "start": 32.6,
+   "end": 32.75
+  },
+  {
+   "text": "dudas",
+   "start": 32.76,
+   "end": 33.03
+  },
+  {
+   "text": "y",
+   "start": 33.04,
+   "end": 33.08
+  },
+  {
+   "text": "nosotros",
+   "start": 33.09,
+   "end": 33.510000000000005
+  },
+  {
+   "text": "te",
+   "start": 33.52,
+   "end": 33.61000000000001
+  },
+  {
+   "text": "damos",
+   "start": 33.62,
+   "end": 33.89
+  },
+  {
+   "text": "el",
+   "start": 33.9,
+   "end": 34.0
+  },
+  {
+   "text": "truco.",
+   "start": 34.01,
+   "end": 34.39
+  },
+  {
+   "text": "Síguenos",
+   "start": 35.08,
+   "end": 35.589999999999996
+  },
+  {
+   "text": "y",
+   "start": 35.6,
+   "end": 35.65
+  },
+  {
+   "text": "las",
+   "start": 35.66,
+   "end": 35.79
+  },
+  {
+   "text": "resolvemos.",
+   "start": 35.8,
+   "end": 36.459999999999994
+  },
+  {
+   "text": "¿Con",
+   "start": 37.15,
+   "end": 37.36
+  },
+  {
+   "text": "qué",
+   "start": 37.37,
+   "end": 37.46
+  },
+  {
+   "text": "cosa",
+   "start": 37.47,
+   "end": 37.699999999999996
+  },
+  {
+   "text": "rara",
+   "start": 37.71,
+   "end": 37.92
+  },
+  {
+   "text": "has",
+   "start": 37.93,
+   "end": 38.02
+  },
+  {
+   "text": "tocado",
+   "start": 38.03,
+   "end": 38.32
+  },
+  {
+   "text": "tú",
+   "start": 38.33,
+   "end": 38.41
+  },
+  {
+   "text": "la",
+   "start": 38.42,
+   "end": 38.5
+  },
+  {
+   "text": "pantalla?",
+   "start": 38.51,
+   "end": 39.019999999999996
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 39.52,
+  "cta": "Todo tiene un truco"
+ },
+ "estilo": "papel",
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué el móvil no va con *guantes*",
+  "scene": 0
+ },
+ "duration": 42.120000000000005,
+ "cover_offset_ms": 42420
+}
