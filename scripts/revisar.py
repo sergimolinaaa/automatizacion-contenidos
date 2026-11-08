@@ -25,7 +25,9 @@ sys.path.insert(0, str(ROOT))
 from autocontent.render import load_script  # noqa: E402
 from autocontent.visual_qa import preview_props  # noqa: E402
 
-CHROME = "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell"
+import glob as _glob
+CHROME = next(iter(sorted(_glob.glob("/opt/pw-browsers/chromium_headless_shell-*/chrome-*/headless_shell"), reverse=True)),
+              "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell")
 MAX_GAP = 3.0
 LOOPS = {"float", "bob", "sway", "spin", "pulse", "shake", "wiggle", "flow", "blink", "ripple", "breathe", "drift", "jitter", "flutter", "puff", "fall"}
 SAFE = {"panel": (0, 35, 1000, 665)}  # x0, y0, x1, y1 visibles del panel 1000x700

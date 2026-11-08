@@ -5,7 +5,9 @@ import json, os, subprocess, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-os.environ.setdefault("REMOTION_BROWSER", "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell")
+import glob as _glob
+_hs = sorted(_glob.glob("/opt/pw-browsers/chromium_headless_shell-*/chrome-*/headless_shell"), reverse=True)
+os.environ.setdefault("REMOTION_BROWSER", _hs[0] if _hs else "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell")
 from autocontent.visual_qa import preview_props
 from autocontent.render import load_script
 folder, out = ROOT / sys.argv[1], Path(sys.argv[2]).resolve()
