@@ -69,12 +69,14 @@ Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
 | 2026-11-06 14:00 | ¿Por qué una canción te pone la piel de gallina? (PRIMERO EN PAPEL) | content/lote10-03-pelo-cancion | sí | sí | sí | no | previews/lote10-03-pelo-cancion-con-voz.mp4 (41,3 s) |
 | 2026-11-07 14:00 | ¿Por qué tu móvil se apaga con el 20 %? (papel) | content/lote10-04-movil-20 | sí | sí | sí | no | previews/lote10-04-movil-20-con-voz.mp4 (42,0 s) |
 | 2026-11-08 14:00 | ¿Salchicha sí, guante no? La pantalla y los guantes (papel) | content/lote10-05-guantes-pantalla | sí | sí | sí | no | previews/lote10-05-guantes-pantalla-con-voz.mp4 (42,8 s) |
+| 2026-11-09 14:00 | ¿Por qué te da calambre al tocar el coche? (papel) | content/lote10-06-calambre-coche | sí | sí | sí | no | previews/lote10-06-calambre-coche-con-voz.mp4 (41,7 s) |
 
 ## Coste por fase (tokens de subagente, aprox.)
 | Fecha | Fase | Coste |
 |---|---|---|
 | 2026-10-16 | Librería (una vez) | 360.000 |
 | 2026-10-16 | Guiones semana 20-24 oct (5 vídeos) | 100.000 |
+| 2026-11-08 | Montaje calambre (papel) | ≈ 215.000 |
 | 2026-11-07 | Montaje guantes (papel) | ≈ 179.000 |
 | 2026-11-06 | Montaje móvil 20 (papel) | ≈ 187.000 |
 | 2026-11-06 | Estilo papel: librería 200k + montaje pelo-canción 187k + fondo papel en motor 142k | ≈ 530.000 |
