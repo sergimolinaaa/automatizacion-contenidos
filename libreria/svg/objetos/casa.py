@@ -755,3 +755,75 @@ def espejo_roto(id_, cx, cy, w=200, h=260):
     o += f'<path d="M {f(ix)} {f(iy)} L {f(ix+rx*0.3)} {f(iy-ry*0.15)} L {f(ix+rx*0.22)} {f(iy+ry*0.22)} Z" fill="#5E8FB3" stroke="{INK}" stroke-width="4"/>'
     o += brillo(f"M {f(cx-rx*0.6)} {f(cy+ry*0.1)} L {f(cx-rx*0.35)} {f(cy-ry*0.45)}", 6, 0.8)
     return g(id_, o)
+
+
+# ------------------------------------------------------------------ electricidad estática (lote10-06-calambre-coche)
+def globo_frotado(id_, cx, cy, r=110, col=CORAL, cargas=True, hilo=170):
+    """Globo de goma con nudo e hilo, con signos «−» de carga encima (sub-id {id}_cargas, pop o pulse) y líneas de roce
+    a la izquierda ({id}_roce, wiggle). (cx, cy) = centro del globo. .puntos nudo, punta_hilo, izq."""
+    ry = r * 1.18
+    o = f'<path d="M {f(cx)} {f(cy+ry)} q -10 {f(hilo*0.35)} 8 {f(hilo*0.6)} t -6 {f(hilo*0.4)}" fill="none" stroke="{INK}" stroke-width="4"/>'
+    o += f'<ellipse cx="{f(cx)}" cy="{f(cy)}" rx="{f(r)}" ry="{f(ry)}" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="6"/>'
+    o += f'<path d="M {f(cx-12)} {f(cy+ry+14)} L {f(cx)} {f(cy+ry-4)} L {f(cx+12)} {f(cy+ry+14)} Z" fill="{col}" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>'
+    o += brillo(f"M {f(cx-r*0.55)} {f(cy-ry*0.25)} Q {f(cx-r*0.5)} {f(cy-ry*0.65)} {f(cx-r*0.15)} {f(cy-ry*0.75)}", max(6, r * 0.09), 0.7)
+    if cargas:
+        c = ""
+        for dx, dy in ((0.15, -0.35), (0.45, 0.05), (-0.1, 0.3), (0.35, 0.5)):
+            x, y = cx + dx * r, cy + dy * ry
+            c += f'<path d="M {f(x-r*0.11)} {f(y)} L {f(x+r*0.11)} {f(y)}" stroke="#FFFFFF" stroke-width="{f(r*0.07)}" stroke-linecap="round"/>'
+        o += g(f"{id_}_cargas" if id_ else None, c)
+    roce = "".join(f'<path d="M {f(cx-r*1.15)} {f(cy+dy*r)} q -{f(r*0.25)} -{f(r*0.08)} -{f(r*0.45)} 0" fill="none" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>'
+                   for dy in (-0.4, 0, 0.4))
+    o += g(f"{id_}_roce" if id_ else None, roce)
+    return Pieza(g(id_, o), {"nudo": (cx, cy + ry), "punta_hilo": (cx + 2, cy + ry + hilo), "izq": (cx - r, cy)},
+                 (cx - r * 1.6, cy - ry, cx + r, cy + ry + hilo))
+
+
+def pelos_punta(id_, cx, cy, w=160, n=7, col="#5A3A1E", alto=90, inclina=0.0):
+    """Mechones de pelo de punta (electricidad estática). (cx, cy) = base, sobre la coronilla de una persona.
+    inclina > 0 los tumba hacia la derecha (hacia el globo). Anímalos con grow (origin bottom) o sway."""
+    o = ""
+    for i in range(n):
+        t = i / max(1, n - 1) - 0.5
+        x = cx + t * w
+        tx = x + t * w * 0.5 + inclina * alto
+        o += f'<path d="M {f(x)} {f(cy)} Q {f(x + (tx - x) * 0.3)} {f(cy - alto * 0.6)} {f(tx)} {f(cy - alto * (1 - abs(t) * 0.5))}" fill="none" stroke="{col}" stroke-width="9" stroke-linecap="round"/>'
+    return g(id_, o)
+
+
+def jersey_colgado(id_, cx, top, w=300, col="#7FBF7A", rayas=None, texto=None, size=30):
+    """Jersey colgado de una percha. (cx, top) = gancho de la percha. ≈ w × 1,15w. rayas = color de 2 rayas (o None).
+    texto = rótulo de la etiqueta colgada (p. ej. «100 % ALGODÓN»). Sub-ids {id}_jersey (sway origin top), {id}_etiqueta.
+    .puntos pecho, gancho."""
+    h = w * 1.0
+    y0 = top + w * 0.32
+    o = (f'<path d="M {f(cx)} {f(top+w*0.14)} q 0 -{f(w*0.1)} {f(w*0.06)} -{f(w*0.1)} q {f(w*0.06)} 0 {f(w*0.04)} {f(w*0.06)}" fill="none" stroke="#8C877E" stroke-width="7" stroke-linecap="round"/>'
+         f'<path d="M {f(cx)} {f(top+w*0.14)} L {f(cx-w*0.48)} {f(y0+w*0.02)} L {f(cx+w*0.48)} {f(y0+w*0.02)} Z" fill="none" stroke="#B98457" stroke-width="10" stroke-linejoin="round"/>')
+    j = (f'<path d="M {f(cx-w*0.16)} {f(y0-w*0.04)} Q {f(cx)} {f(y0+w*0.08)} {f(cx+w*0.16)} {f(y0-w*0.04)} L {f(cx+w*0.42)} {f(y0+w*0.04)} '
+         f'L {f(cx+w*0.62)} {f(y0+h*0.62)} L {f(cx+w*0.48)} {f(y0+h*0.68)} L {f(cx+w*0.36)} {f(y0+h*0.32)} L {f(cx+w*0.34)} {f(y0+h*0.95)} '
+         f'L {f(cx-w*0.34)} {f(y0+h*0.95)} L {f(cx-w*0.36)} {f(y0+h*0.32)} L {f(cx-w*0.48)} {f(y0+h*0.68)} L {f(cx-w*0.62)} {f(y0+h*0.62)} '
+         f'L {f(cx-w*0.42)} {f(y0+w*0.04)} Z" fill="{degradado(col, 0.2)}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+         f'<path d="M {f(cx-w*0.34)} {f(y0+h*0.86)} L {f(cx+w*0.34)} {f(y0+h*0.86)}" stroke="{INK}" stroke-width="4" opacity="0.4"/>')
+    if rayas:
+        for yy in (0.42, 0.56):
+            j += f'<path d="M {f(cx-w*0.35)} {f(y0+h*yy)} L {f(cx+w*0.35)} {f(y0+h*yy)}" stroke="{rayas}" stroke-width="{f(w*0.06)}"/>'
+    if texto:
+        et = (f'<path d="M {f(cx+w*0.2)} {f(y0+h*0.95)} L {f(cx+w*0.24)} {f(y0+h*1.05)}" stroke="{INK}" stroke-width="3"/>'
+              f'<rect x="{f(cx+w*0.24-len(texto)*size*0.34)}" y="{f(y0+h*1.05)}" width="{f(len(texto)*size*0.68)}" height="{f(size*1.5)}" rx="6" fill="#FBF6EC" stroke="{INK}" stroke-width="4"/>'
+              + T(cx + w * 0.24, y0 + h * 1.05 + size * 1.05, texto, size, INK, font=DISP))
+        j += g(f"{id_}_etiqueta" if id_ else None, et)
+    o += g(f"{id_}_jersey" if id_ else None, j)
+    return Pieza(g(id_, o), {"pecho": (cx, y0 + h * 0.4), "gancho": (cx, top)}, (cx - w * 0.62, top, cx + w * 0.62, y0 + h * 1.1))
+
+
+def zapato_lado(id_, x0, suelo, s=1.0, col=CORAL, suela="#3A2E2A"):
+    """Zapatilla de perfil con suela gruesa de goma (sub-id {id}_suela, punch), puntera a la derecha. (x0, suelo) = talón
+    a ras de suelo. ≈ 420×190 a s=1. .puntos suela (centro de la suela), tobillo."""
+    o = (f'<path d="M 10 -40 Q 0 -150 60 -176 L 140 -186 Q 170 -150 210 -128 L 330 -96 Q 410 -80 414 -40 Z" fill="{degradado(col, 0.22)}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+         f'<path d="M 150 -150 L 220 -112 M 170 -170 L 240 -128 M 200 -168 L 260 -122" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.85"/>')
+    o += g(f"{id_}_suela" if id_ else None,
+           f'<path d="M 4 -44 L 418 -44 Q 424 -10 400 0 L 20 0 Q 0 -6 4 -44 Z" fill="{suela}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+           + "".join(f'<path d="M {x} -6 L {x+14} -6" stroke="#6E6A64" stroke-width="6"/>' for x in range(40, 400, 40)))
+    tr = f"translate({f(x0)} {f(suelo)}) scale({f(s)})"
+    return Pieza(gt(id_, tr, o), {"suela": (x0 + 210 * s, suelo - 22 * s), "tobillo": (x0 + 90 * s, suelo - 180 * s)},
+                 (x0, suelo - 186 * s, x0 + 424 * s, suelo))

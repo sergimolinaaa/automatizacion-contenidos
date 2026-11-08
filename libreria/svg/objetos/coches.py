@@ -309,3 +309,66 @@ def pista_hielo(W=1080, H=1920, y0=980):
     for (a, b, c_, d) in ((120, y0+200, 420, y0+260), (600, y0+160, 980, y0+230), (200, y0+380, 760, y0+330)):
         o += f'<path d="M {a} {b} Q {(a+c_)/2} {b-60} {c_} {d}" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.8"/>'
     return o
+
+
+# ------------------------------------------------------------------ turismo y asiento (lote10-06-calambre-coche)
+def turismo_lateral(id_, x0, base, s=1.0, col=CORAL, cristal="#BFD9E2", espejo=False):
+    """Turismo familiar de perfil (5 puertas), ≈ 820×330 a s=1; (x0, base) = trasera a ras de suelo, morro a la derecha
+    (espejo=True: morro a la izquierda, x0 sigue siendo la trasera). Sirve en papel con a_papel().
+    Sub-ids: {id}_puerta_tras, {id}_puerta_del, {id}_maneta (de la puerta trasera), {id}_rueda_tras, {id}_rueda_del (spin).
+    .puntos: maneta, maneta_del, marco (borde metálico superior de la puerta trasera), techo, rueda_tras, rueda_del."""
+    k = -1 if espejo else 1
+    oscuro = shade(col, -0.25) if col.startswith("#") else INK
+    o = sombra(410, 4, 400, 12, 0.2)
+    o += (f'<path d="M 20 -48 Q 4 -50 6 -92 L 18 -196 L 96 -210 L 156 -318 Q 166 -330 188 -330 L 520 -330 Q 548 -330 566 -312 '
+          f'L 664 -210 L 790 -190 Q 816 -184 816 -150 L 812 -66 Q 808 -48 788 -48 Z" fill="{degradado(col, 0.22)}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>')
+    # cristales
+    o += (f'<path d="M 112 -210 L 168 -308 L 330 -308 L 330 -210 Z M 346 -308 L 514 -308 Q 530 -308 540 -298 L 626 -210 L 346 -210 Z" '
+          f'fill="{cristal}" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>')
+    o += f'<path d="M 190 -296 L 150 -222 M 380 -296 L 350 -240" stroke="#FFFFFF" stroke-width="8" opacity="0.6" stroke-linecap="round"/>'
+    # puertas
+    pt = f'<path d="M 226 -210 L 226 -70 Q 226 -60 236 -60 L 436 -60 L 436 -210" fill="none" stroke="{oscuro}" stroke-width="5"/>'
+    pd = f'<path d="M 440 -210 L 440 -60 L 640 -60 Q 650 -60 650 -76 L 652 -208" fill="none" stroke="{oscuro}" stroke-width="5"/>'
+    o += g(f"{id_}_puerta_tras" if id_ else None, pt) + g(f"{id_}_puerta_del" if id_ else None, pd)
+    o += g(f"{id_}_maneta" if id_ else None, f'<rect x="384" y="-178" width="40" height="12" rx="6" fill="{INK}" opacity="0.75"/>')
+    o += f'<rect x="596" y="-178" width="40" height="12" rx="6" fill="{INK}" opacity="0.75"/>'
+    o += f'<path d="M 30 -112 L 800 -118" stroke="{oscuro}" stroke-width="4" opacity="0.6"/>'
+    # luces y parachoques
+    o += f'<path d="M 10 -176 L 30 -178 L 32 -128 L 10 -126 Z" fill="#C9563B" stroke="{INK}" stroke-width="4"/>'
+    o += f'<path d="M 790 -170 L 812 -164 L 812 -140 L 786 -142 Z" fill="#F7E6B5" stroke="{INK}" stroke-width="4"/>'
+    o += f'<path d="M 6 -66 L 816 -66 L 812 -48 L 10 -48 Z" fill="#6E6A64" stroke="{INK}" stroke-width="4"/>'
+    # pasos de rueda y ruedas
+    for nombre, cx in (("tras", 170), ("del", 650)):
+        o += f'<circle cx="{cx}" cy="-72" r="86" fill="#3A2E2A"/>'
+        r = (f'<circle cx="{cx}" cy="-72" r="72" fill="#2F2A28" stroke="{INK}" stroke-width="5"/>'
+             f'<circle cx="{cx}" cy="-72" r="38" fill="#C9C4BA" stroke="{INK}" stroke-width="4"/>'
+             + "".join(f'<path d="M {cx} -72 L {f(cx+30*math.cos(a))} {f(-72+30*math.sin(a))}" stroke="#8C877E" stroke-width="7"/>'
+                       for a in (0.3, 1.556, 2.81, 4.07, 5.33)))
+        o += g(f"{id_}_rueda_{nombre}" if id_ else None, r)
+    tr = f"translate({f(x0)} {f(base)}) scale({f(k*s)} {f(s)})"
+
+    def P(x, y):
+        return (x0 + k * x * s, base + y * s)
+    xs = (x0, x0 + k * 816 * s)
+    return Pieza(gt(id_, tr, o), {"maneta": P(404, -172), "maneta_del": P(616, -172), "marco": P(330, -212),
+                                  "techo": P(350, -330), "rueda_tras": P(170, -72), "rueda_del": P(650, -72)},
+                 (min(xs), base - 330 * s, max(xs), base))
+
+
+def asiento_frontal(id_, cx, cojin_y, s=1.0, col="#4B5A7A"):
+    """Asiento de coche visto de frente: respaldo, reposacabezas y cojín con costuras. (cx, cojin_y) = centro del borde
+    superior del cojín (donde se sienta una persona(pose="sentado") con y = cojin_y + 128*escala). ≈ 440×640 a s=1.
+    Sub-ids {id}_respaldo, {id}_cojin. .puntos cojin, respaldo, cabezal."""
+    cl = shade(col, 0.18) if col.startswith("#") else col
+    o = (f'<path d="M -70 -560 Q -70 -600 -30 -600 L 30 -600 Q 70 -600 70 -560 L 70 -500 L -70 -500 Z" fill="{degradado(col, 0.2)}" stroke="{INK}" stroke-width="6"/>'
+         f'<rect x="-34" y="-500" width="12" height="40" fill="#8C877E" stroke="{INK}" stroke-width="3"/><rect x="22" y="-500" width="12" height="40" fill="#8C877E" stroke="{INK}" stroke-width="3"/>')
+    res = (f'<path d="M -200 -40 Q -214 -300 -180 -440 Q -170 -470 -130 -470 L 130 -470 Q 170 -470 180 -440 Q 214 -300 200 -40 Z" fill="{degradado(col, 0.2)}" stroke="{INK}" stroke-width="6"/>'
+           f'<path d="M -110 -440 Q -126 -260 -112 -60 L 112 -60 Q 126 -260 110 -440 Z" fill="{cl}" stroke="{INK}" stroke-width="4"/>'
+           + "".join(f'<path d="M {-112 + 4} {y} L {112 - 4} {y}" stroke="{INK}" stroke-width="3" opacity="0.35"/>' for y in (-380, -300, -220, -140)))
+    o += g(f"{id_}_respaldo" if id_ else None, res)
+    coj = (f'<path d="M -230 -10 Q -236 -30 -210 -34 L 210 -34 Q 236 -30 230 -10 L 220 60 Q 216 76 196 76 L -196 76 Q -216 76 -220 60 Z" fill="{degradado(col, 0.25)}" stroke="{INK}" stroke-width="6"/>'
+           f'<path d="M -120 -24 L -126 66 M 120 -24 L 126 66" stroke="{INK}" stroke-width="3" opacity="0.35"/>')
+    o += g(f"{id_}_cojin" if id_ else None, coj)
+    tr = f"translate({f(cx)} {f(cojin_y + 34 * s)}) scale({f(s)})"
+    return Pieza(gt(id_, tr, o), {"cojin": (cx, cojin_y), "respaldo": (cx, cojin_y - 250 * s), "cabezal": (cx, cojin_y - 520 * s)},
+                 (cx - 236 * s, cojin_y - 566 * s, cx + 236 * s, cojin_y + 110 * s))

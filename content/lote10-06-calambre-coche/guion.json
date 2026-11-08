@@ -1,0 +1,1746 @@
+{
+ "topic": "¿Por qué te da calambre al tocar el coche? Al deslizarte por el asiento la ropa roza la tapicería y te cargas de electricidad estática; las suelas de goma no dejan escapar la carga y al tocar el metal salta en una chispa. Con aire seco (invierno) pasa más y la ropa sintética acumula más. Truco: agarra el marco metálico antes de pisar el suelo (RACE, Mapfre, Universidad de Kentucky, The Naked Scientists, Motorpasión)",
+ "categoria": "fisica",
+ "estilo": "papel",
+ "title": "¿Por qué te da calambre al tocar el coche?",
+ "source": "Fuentes: RACE · Mapfre · Univ. de Kentucky · The Naked Scientists",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "outro_cta": "Todo tiene un truco",
+ "cover": {
+  "text": "Por qué da *calambre* el coche",
+  "scene": 0
+ },
+ "publish": {
+  "at": "2026-11-09T14:00:00+01:00",
+  "caption": "¿Por qué te da calambre el coche? No es el coche, eres tú: te cargas al rozar el asiento y las suelas de goma no dejan escapar la carga. Al tocar el metal, chispa. Con aire seco, peor. Agarra el marco de la puerta antes de pisar el suelo (RACE, Mapfre). ¿A ti te da calambre el coche?",
+  "description": "¿Por qué te da calambre al tocar el coche? Al deslizarte por el asiento, la ropa y la tapicería se frotan y te cargas de electricidad estática; las suelas de goma no dejan que esa carga se vaya al suelo. Al tocar el metal, salta de golpe en una chispa diminuta. Pasa más en otoño e invierno porque el aire seco no se lleva la carga, y la ropa sintética acumula más. Truco práctico: agarra el marco metálico de la puerta antes de poner el pie en el suelo. Fuentes: RACE, Mapfre, Universidad de Kentucky, The Naked Scientists. ¿A ti te da calambre el coche?",
+  "hashtags": [
+   "coche",
+   "electricidad",
+   "fisica",
+   "invierno",
+   "curiosidades"
+  ]
+ },
+ "scenes": [
+  {
+   "chapter": 0,
+   "headline": "¡*Calambre*!",
+   "narration": "¿Por qué te da calambre al cerrar la puerta del coche?",
+   "illustration": {
+    "svg_file": "gancho_full.svg",
+    "layout": "full",
+    "caption": "Fig. 1 · ¡Zas!",
+    "anims": [
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       520,
+       860
+      ],
+      "amount": 1.06,
+      "dur": 1.6
+     },
+     {
+      "target": "lejos",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -14,
+       0
+      ],
+      "dur": 5
+     },
+     {
+      "target": "medio",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -40,
+       0
+      ],
+      "dur": 5
+     },
+     {
+      "target": "cerca",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -110,
+       0
+      ],
+      "dur": 5
+     },
+     {
+      "target": "astro",
+      "effect": "hide"
+     },
+     {
+      "target": "hombre",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "hs",
+      "effect": "hide"
+     },
+     {
+      "target": "hombre",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.75,
+      "phase": 0.2,
+      "delay": 0.7
+     },
+     {
+      "target": "hombre",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.13,
+      "delay": 0.8
+     },
+     {
+      "target": "hn_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 1.0
+     },
+     {
+      "target": "hn_ojos",
+      "effect": "blink",
+      "delay": 0.7
+     },
+     {
+      "target": "hn_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 1.1
+     },
+     {
+      "target": "hn_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.22,
+      "delay": 0.5
+     },
+     {
+      "target": "hs_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 1.0
+     },
+     {
+      "target": "hs_ojos",
+      "effect": "blink",
+      "delay": 0.7
+     },
+     {
+      "target": "hs_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 1.1
+     },
+     {
+      "target": "hs_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.22,
+      "delay": 0.5
+     },
+     {
+      "target": "hn",
+      "effect": "hide",
+      "trigger": "calambre"
+     },
+     {
+      "target": "hs",
+      "effect": "fade",
+      "trigger": "calambre",
+      "dur": 0.15
+     },
+     {
+      "target": "coche_rueda_del",
+      "effect": "spin",
+      "amount": 0.02
+     },
+     {
+      "target": "hn_brazo_der",
+      "effect": "move",
+      "trigger": "Por",
+      "rotate": 6,
+      "origin": "top-left",
+      "dur": 0.5
+     },
+     {
+      "target": "hs_brazo_der",
+      "effect": "move",
+      "trigger": "Por",
+      "rotate": 6,
+      "origin": "top-left",
+      "dur": 0.5
+     },
+     {
+      "target": "coche",
+      "effect": "punch",
+      "trigger": "da",
+      "amount": 0.06
+     },
+     {
+      "target": "chis",
+      "effect": "pop",
+      "trigger": "calambre",
+      "sfx": "chasquido"
+     },
+     {
+      "target": "chis",
+      "effect": "pulse",
+      "trigger": "calambre",
+      "amount": 0.5
+     },
+     {
+      "target": "rays",
+      "effect": "pop",
+      "trigger": "calambre"
+     },
+     {
+      "target": "rays",
+      "effect": "spin",
+      "trigger": "calambre",
+      "amount": 0.08
+     },
+     {
+      "target": "zas",
+      "effect": "pop",
+      "trigger": "al cerrar",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "zas",
+      "effect": "wiggle",
+      "trigger": "al cerrar",
+      "amount": 0.4
+     },
+     {
+      "target": "temb",
+      "effect": "pop",
+      "trigger": "calambre"
+     },
+     {
+      "target": "hn_brazo_der",
+      "effect": "move",
+      "trigger": "calambre",
+      "rotate": -26,
+      "origin": "top-left",
+      "dur": 0.25
+     },
+     {
+      "target": "hs_brazo_der",
+      "effect": "move",
+      "trigger": "calambre",
+      "rotate": -26,
+      "origin": "top-left",
+      "dur": 0.25
+     },
+     {
+      "target": "hombre",
+      "effect": "move",
+      "trigger": "calambre",
+      "to": [
+       -26,
+       -18
+      ],
+      "dur": 0.25
+     },
+     {
+      "target": "hs_cabeza",
+      "effect": "move",
+      "trigger": "al cerrar",
+      "rotate": -6,
+      "origin": "bottom",
+      "dur": 0.5
+     },
+     {
+      "target": "hombre",
+      "effect": "shake",
+      "trigger": "cerrar",
+      "amount": 0.3
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "calambre",
+      "to": [
+       560,
+       860
+      ],
+      "amount": 1.14,
+      "dur": 0.9
+     },
+     {
+      "target": "coche_maneta",
+      "effect": "punch",
+      "trigger": "puerta",
+      "amount": 0.4
+     },
+     {
+      "target": "coche",
+      "effect": "punch",
+      "trigger": "coche",
+      "amount": 0.05
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "No es el coche: *eres tú*",
+   "narration": "No es el coche: eres tú. Al deslizarte por el asiento, la ropa roza la tapicería y te cargas de electricidad estática.",
+   "illustration": {
+    "svg_file": "asiento_free.svg",
+    "layout": "free",
+    "height": 900,
+    "caption": "Fig. 2 · El roce",
+    "anims": [
+     {
+      "target": "asi",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "conductor",
+      "effect": "squash",
+      "delay": 0.1,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "cs",
+      "effect": "hide"
+     },
+     {
+      "target": "conductor",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.75,
+      "phase": 0.65,
+      "delay": 0.8
+     },
+     {
+      "target": "conductor",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.13,
+      "delay": 0.9
+     },
+     {
+      "target": "cn_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 1.1
+     },
+     {
+      "target": "cn_ojos",
+      "effect": "blink",
+      "delay": 0.8
+     },
+     {
+      "target": "cn_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 1.2
+     },
+     {
+      "target": "cn_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.22,
+      "delay": 0.6
+     },
+     {
+      "target": "cs_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 1.1
+     },
+     {
+      "target": "cs_ojos",
+      "effect": "blink",
+      "delay": 0.8
+     },
+     {
+      "target": "cs_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 1.2
+     },
+     {
+      "target": "cs_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.22,
+      "delay": 0.6
+     },
+     {
+      "target": "cn",
+      "effect": "hide",
+      "trigger": "cargas"
+     },
+     {
+      "target": "cs",
+      "effect": "fade",
+      "trigger": "cargas",
+      "dur": 0.15
+     },
+     {
+      "target": "m1_0",
+      "effect": "hide"
+     },
+     {
+      "target": "m1_1",
+      "effect": "hide"
+     },
+     {
+      "target": "m1_2",
+      "effect": "hide"
+     },
+     {
+      "target": "m1_3",
+      "effect": "hide"
+     },
+     {
+      "target": "m1_4",
+      "effect": "hide"
+     },
+     {
+      "target": "coch",
+      "effect": "pop",
+      "trigger": "No",
+      "sfx": "pop"
+     },
+     {
+      "target": "asp1",
+      "effect": "draw",
+      "trigger": "coche",
+      "dur": 0.35,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "et_tu",
+      "effect": "pop",
+      "trigger": "eres",
+      "sfx": "pop"
+     },
+     {
+      "target": "et_tu",
+      "effect": "punch",
+      "trigger": "tú",
+      "amount": 0.3
+     },
+     {
+      "target": "cn_brazo_der",
+      "effect": "move",
+      "trigger": "eres",
+      "rotate": -12,
+      "origin": "top-left",
+      "dur": 0.6
+     },
+     {
+      "target": "cs_brazo_der",
+      "effect": "move",
+      "trigger": "eres",
+      "rotate": -12,
+      "origin": "top-left",
+      "dur": 0.6
+     },
+     {
+      "target": "coch",
+      "effect": "hide",
+      "trigger": "Al"
+     },
+     {
+      "target": "asp1",
+      "effect": "hide",
+      "trigger": "Al"
+     },
+     {
+      "target": "fl1",
+      "effect": "draw",
+      "trigger": "deslizarte",
+      "dur": 0.45,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "conductor",
+      "effect": "move",
+      "trigger": "deslizarte",
+      "to": [
+       140,
+       0
+      ],
+      "dur": 1.4,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "asi_cojin",
+      "effect": "punch",
+      "trigger": "asiento",
+      "amount": 0.15
+     },
+     {
+      "target": "roce",
+      "effect": "pop",
+      "trigger": "ropa",
+      "sfx": "pop"
+     },
+     {
+      "target": "roce",
+      "effect": "wiggle",
+      "trigger": "roza",
+      "amount": 0.5
+     },
+     {
+      "target": "asi_respaldo",
+      "effect": "punch",
+      "trigger": "tapicería",
+      "amount": 0.12
+     },
+     {
+      "target": "m1_0",
+      "effect": "pop",
+      "trigger": "te cargas",
+      "sfx": "pop"
+     },
+     {
+      "target": "m1_1",
+      "effect": "pop",
+      "trigger": "cargas"
+     },
+     {
+      "target": "m1_2",
+      "effect": "pop",
+      "trigger": "de electricidad"
+     },
+     {
+      "target": "m1_3",
+      "effect": "pop",
+      "trigger": "electricidad",
+      "sfx": "pop"
+     },
+     {
+      "target": "m1_4",
+      "effect": "pop",
+      "trigger": "estática"
+     },
+     {
+      "target": "et_est",
+      "effect": "pop",
+      "trigger": "electricidad",
+      "sfx": "pop"
+     },
+     {
+      "target": "et_est",
+      "effect": "punch",
+      "trigger": "estática",
+      "amount": 0.3
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "cargas",
+      "to": [
+       520,
+       500
+      ],
+      "amount": 1.06,
+      "dur": 1.2
+     },
+     {
+      "target": "m1_0",
+      "effect": "pulse",
+      "trigger": "estática",
+      "amount": 0.4
+     },
+     {
+      "target": "m1_1",
+      "effect": "pulse",
+      "trigger": "estática",
+      "amount": 0.4
+     },
+     {
+      "target": "m1_2",
+      "effect": "pulse",
+      "trigger": "estática",
+      "amount": 0.4
+     },
+     {
+      "target": "m1_3",
+      "effect": "pulse",
+      "trigger": "estática",
+      "amount": 0.4
+     },
+     {
+      "target": "m1_4",
+      "effect": "pulse",
+      "trigger": "estática",
+      "amount": 0.4
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "Suelas *de goma*",
+   "narration": "Las suelas de goma no dejan escapar esa carga: vas cargado como un globo frotado.",
+   "illustration": {
+    "svg_file": "goma_free.svg",
+    "layout": "free",
+    "height": 860,
+    "caption": "Fig. 3 · Aislado",
+    "anims": [
+     {
+      "target": "zap",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "chico",
+      "effect": "squash",
+      "delay": 0.1,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "globo",
+      "effect": "hide"
+     },
+     {
+      "target": "pelos",
+      "effect": "hide"
+     },
+     {
+      "target": "asp2",
+      "effect": "hide"
+     },
+     {
+      "target": "fl2",
+      "effect": "hide"
+     },
+     {
+      "target": "chico",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.75,
+      "phase": 0.4,
+      "delay": 0.8
+     },
+     {
+      "target": "chico",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.13,
+      "delay": 0.9
+     },
+     {
+      "target": "chi_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 1.1
+     },
+     {
+      "target": "chi_ojos",
+      "effect": "blink",
+      "delay": 0.8
+     },
+     {
+      "target": "chi_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.22,
+      "delay": 0.6
+     },
+     {
+      "target": "m2z0",
+      "effect": "pop",
+      "sfx": "pop",
+      "delay": 0.3
+     },
+     {
+      "target": "m2z1",
+      "effect": "pop",
+      "sfx": "none",
+      "delay": 0.48
+     },
+     {
+      "target": "m2z2",
+      "effect": "pop",
+      "sfx": "none",
+      "delay": 0.66
+     },
+     {
+      "target": "m2p0",
+      "effect": "pop",
+      "sfx": "pop",
+      "delay": 0.5
+     },
+     {
+      "target": "m2p1",
+      "effect": "pop",
+      "sfx": "none",
+      "delay": 0.68
+     },
+     {
+      "target": "m2p2",
+      "effect": "pop",
+      "sfx": "none",
+      "delay": 0.86
+     },
+     {
+      "target": "zap_suela",
+      "effect": "punch",
+      "trigger": "suelas",
+      "amount": 0.3
+     },
+     {
+      "target": "et_goma",
+      "effect": "pop",
+      "trigger": "goma",
+      "sfx": "pop"
+     },
+     {
+      "target": "fl2",
+      "effect": "draw",
+      "trigger": "dejan",
+      "dur": 0.4,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "asp2",
+      "effect": "pop",
+      "trigger": "escapar",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "asp2",
+      "effect": "wiggle",
+      "trigger": "esa",
+      "amount": 0.4
+     },
+     {
+      "target": "m2z0",
+      "effect": "move",
+      "trigger": "escapar",
+      "to": [
+       0,
+       26
+      ],
+      "dur": 0.3
+     },
+     {
+      "target": "m2z1",
+      "effect": "move",
+      "trigger": "escapar",
+      "to": [
+       0,
+       26
+      ],
+      "dur": 0.3
+     },
+     {
+      "target": "m2z2",
+      "effect": "move",
+      "trigger": "escapar",
+      "to": [
+       0,
+       26
+      ],
+      "dur": 0.3
+     },
+     {
+      "target": "m2z0",
+      "effect": "move",
+      "trigger": "carga",
+      "to": [
+       0,
+       -26
+      ],
+      "dur": 0.45
+     },
+     {
+      "target": "m2z1",
+      "effect": "move",
+      "trigger": "carga",
+      "to": [
+       0,
+       -26
+      ],
+      "dur": 0.45
+     },
+     {
+      "target": "m2z2",
+      "effect": "move",
+      "trigger": "carga",
+      "to": [
+       0,
+       -26
+      ],
+      "dur": 0.45
+     },
+     {
+      "target": "m2p0",
+      "effect": "punch",
+      "trigger": "cargado",
+      "amount": 0.4
+     },
+     {
+      "target": "m2p1",
+      "effect": "punch",
+      "trigger": "cargado",
+      "amount": 0.4
+     },
+     {
+      "target": "m2p2",
+      "effect": "punch",
+      "trigger": "cargado",
+      "amount": 0.4
+     },
+     {
+      "target": "chico",
+      "effect": "punch",
+      "trigger": "vas",
+      "amount": 0.08
+     },
+     {
+      "target": "globo",
+      "effect": "pop",
+      "trigger": "globo",
+      "sfx": "pop"
+     },
+     {
+      "target": "globo",
+      "effect": "wiggle",
+      "trigger": "globo",
+      "amount": 0.45
+     },
+     {
+      "target": "globo_roce",
+      "effect": "wiggle",
+      "trigger": "frotado",
+      "amount": 0.6
+     },
+     {
+      "target": "chi_brazo_izq",
+      "effect": "wiggle",
+      "trigger": "globo",
+      "amount": 0.3,
+      "origin": "top-right"
+     },
+     {
+      "target": "pelos",
+      "effect": "grow",
+      "trigger": "frotado",
+      "origin": "bottom",
+      "dur": 0.5,
+      "sfx": "chasquido"
+     },
+     {
+      "target": "pelos",
+      "effect": "wiggle",
+      "trigger": "frotado",
+      "amount": 0.2
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "como",
+      "to": [
+       560,
+       450
+      ],
+      "amount": 1.05,
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "La *chispa*",
+   "narration": "Al tocar el metal, la carga salta de golpe en una chispa: el calambre.",
+   "illustration": {
+    "svg_file": "chispa_full.svg",
+    "layout": "full",
+    "caption": "Fig. 4 · Descarga",
+    "anims": [
+     {
+      "target": "dedo",
+      "effect": "slide-right",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "dedo",
+      "effect": "float",
+      "amount": 0.15,
+      "delay": 0.5
+     },
+     {
+      "target": "cargas3",
+      "effect": "slide-right",
+      "delay": 0,
+      "dur": 0.5
+     },
+     {
+      "target": "rayo3",
+      "effect": "hide"
+     },
+     {
+      "target": "dest3",
+      "effect": "hide"
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       540,
+       880
+      ],
+      "amount": 1.05,
+      "dur": 2.0
+     },
+     {
+      "target": "m3_0",
+      "effect": "pulse",
+      "amount": 0.3,
+      "delay": 0.5
+     },
+     {
+      "target": "m3_1",
+      "effect": "pulse",
+      "amount": 0.3,
+      "delay": 0.7
+     },
+     {
+      "target": "m3_2",
+      "effect": "pulse",
+      "amount": 0.3,
+      "delay": 0.9
+     },
+     {
+      "target": "m3_3",
+      "effect": "pulse",
+      "amount": 0.3,
+      "delay": 1.1
+     },
+     {
+      "target": "et_metal",
+      "effect": "pop",
+      "trigger": "metal",
+      "sfx": "pop"
+     },
+     {
+      "target": "puerta",
+      "effect": "punch",
+      "trigger": "metal",
+      "amount": 0.05
+     },
+     {
+      "target": "dedo",
+      "effect": "move",
+      "trigger": "tocar",
+      "to": [
+       60,
+       0
+      ],
+      "dur": 1.2
+     },
+     {
+      "target": "cargas3",
+      "effect": "move",
+      "trigger": "tocar",
+      "to": [
+       60,
+       0
+      ],
+      "dur": 1.2
+     },
+     {
+      "target": "cargas3",
+      "effect": "jitter",
+      "trigger": "carga",
+      "amount": 0.4
+     },
+     {
+      "target": "rayo3",
+      "effect": "draw",
+      "trigger": "salta",
+      "dur": 0.2,
+      "sfx": "chasquido"
+     },
+     {
+      "target": "dest3",
+      "effect": "pop",
+      "trigger": "golpe",
+      "sfx": "brillo"
+     },
+     {
+      "target": "dest3",
+      "effect": "spin",
+      "trigger": "golpe",
+      "amount": 0.1
+     },
+     {
+      "target": "ondas",
+      "effect": "hide"
+     },
+     {
+      "target": "ondas",
+      "effect": "pop",
+      "trigger": "golpe"
+     },
+     {
+      "target": "on1",
+      "effect": "ripple",
+      "trigger": "golpe",
+      "phase": 0
+     },
+     {
+      "target": "on2",
+      "effect": "ripple",
+      "trigger": "golpe",
+      "phase": 0.5
+     },
+     {
+      "target": "cargas3",
+      "effect": "hide",
+      "trigger": "golpe"
+     },
+     {
+      "target": "et_chispa",
+      "effect": "pop",
+      "trigger": "chispa",
+      "sfx": "pop"
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "chispa",
+      "to": [
+       520,
+       880
+      ],
+      "amount": 1.18,
+      "dur": 0.9
+     },
+     {
+      "target": "zas3",
+      "effect": "pop",
+      "trigger": "calambre",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "zas3",
+      "effect": "wiggle",
+      "trigger": "calambre",
+      "amount": 0.4
+     },
+     {
+      "target": "dedo",
+      "effect": "move",
+      "trigger": "calambre",
+      "to": [
+       -90,
+       10
+      ],
+      "dur": 0.3
+     },
+     {
+      "target": "rayo3",
+      "effect": "hide",
+      "trigger": "calambre"
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "Aire *seco*",
+   "narration": "En invierno pasa más: con aire húmedo, una capa invisible de agua se lleva la carga; con aire seco, no.",
+   "illustration": {
+    "svg_file": "aire_panel.svg",
+    "layout": "panel",
+    "caption": "Fig. 5 · Humedad",
+    "anims": [
+     {
+      "target": "bh",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "bs",
+      "effect": "slide-up",
+      "delay": 0.15,
+      "dur": 0.5
+     },
+     {
+      "target": "bh",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.75,
+      "phase": 0.2,
+      "delay": 0.8
+     },
+     {
+      "target": "bh",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.13,
+      "delay": 0.9
+     },
+     {
+      "target": "ph_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 1.1
+     },
+     {
+      "target": "ph_ojos",
+      "effect": "blink",
+      "delay": 0.8
+     },
+     {
+      "target": "bs",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.75,
+      "phase": 0.65,
+      "delay": 1.1
+     },
+     {
+      "target": "bs",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.13,
+      "delay": 1.2
+     },
+     {
+      "target": "ps_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 1.4
+     },
+     {
+      "target": "ps_ojos",
+      "effect": "blink",
+      "delay": 1.1
+     },
+     {
+      "target": "mh0",
+      "effect": "pop",
+      "sfx": "pop",
+      "delay": 0.4
+     },
+     {
+      "target": "mh1",
+      "effect": "pop",
+      "sfx": "none",
+      "delay": 0.58
+     },
+     {
+      "target": "mh2",
+      "effect": "pop",
+      "sfx": "none",
+      "delay": 0.76
+     },
+     {
+      "target": "ms0",
+      "effect": "pop",
+      "sfx": "pop",
+      "delay": 0.6
+     },
+     {
+      "target": "ms1",
+      "effect": "pop",
+      "sfx": "none",
+      "delay": 0.78
+     },
+     {
+      "target": "ms2",
+      "effect": "pop",
+      "sfx": "none",
+      "delay": 0.96
+     },
+     {
+      "target": "ms3",
+      "effect": "pop",
+      "sfx": "none",
+      "delay": 1.14
+     },
+     {
+      "target": "gt0",
+      "effect": "hide"
+     },
+     {
+      "target": "gt1",
+      "effect": "hide"
+     },
+     {
+      "target": "gt2",
+      "effect": "hide"
+     },
+     {
+      "target": "gt3",
+      "effect": "hide"
+     },
+     {
+      "target": "gt4",
+      "effect": "hide"
+     },
+     {
+      "target": "gt5",
+      "effect": "hide"
+     },
+     {
+      "target": "pelicula",
+      "effect": "hide"
+     },
+     {
+      "target": "et_seco",
+      "effect": "hide"
+     },
+     {
+      "target": "copo4",
+      "effect": "pop",
+      "trigger": "invierno",
+      "sfx": "pop"
+     },
+     {
+      "target": "copo4",
+      "effect": "spin",
+      "trigger": "invierno",
+      "amount": 0.1
+     },
+     {
+      "target": "termo4",
+      "effect": "squash",
+      "trigger": "pasa",
+      "to": [
+       0,
+       -160
+      ],
+      "dur": 0.5,
+      "sfx": "pop"
+     },
+     {
+      "target": "termo4",
+      "effect": "shake",
+      "trigger": "más",
+      "amount": 0.3
+     },
+     {
+      "target": "et_hum",
+      "effect": "pop",
+      "trigger": "húmedo",
+      "sfx": "pop"
+     },
+     {
+      "target": "gt0",
+      "effect": "pop",
+      "trigger": "húmedo"
+     },
+     {
+      "target": "gt1",
+      "effect": "pop",
+      "trigger": "húmedo"
+     },
+     {
+      "target": "gt2",
+      "effect": "pop",
+      "trigger": "húmedo"
+     },
+     {
+      "target": "gt3",
+      "effect": "pop",
+      "trigger": "capa"
+     },
+     {
+      "target": "gt4",
+      "effect": "pop",
+      "trigger": "capa"
+     },
+     {
+      "target": "gt5",
+      "effect": "pop",
+      "trigger": "capa"
+     },
+     {
+      "target": "gt0",
+      "effect": "float",
+      "amount": 0.25,
+      "trigger": "invisible"
+     },
+     {
+      "target": "gt1",
+      "effect": "float",
+      "amount": 0.22,
+      "trigger": "invisible"
+     },
+     {
+      "target": "gt2",
+      "effect": "float",
+      "amount": 0.28,
+      "trigger": "invisible"
+     },
+     {
+      "target": "gt3",
+      "effect": "float",
+      "amount": 0.23,
+      "trigger": "invisible"
+     },
+     {
+      "target": "gt4",
+      "effect": "float",
+      "amount": 0.21,
+      "trigger": "invisible"
+     },
+     {
+      "target": "gt5",
+      "effect": "float",
+      "amount": 0.28,
+      "trigger": "invisible"
+     },
+     {
+      "target": "pelicula",
+      "effect": "fade",
+      "trigger": "invisible",
+      "dur": 0.5,
+      "sfx": "brillo"
+     },
+     {
+      "target": "pelicula",
+      "effect": "pulse",
+      "trigger": "agua",
+      "amount": 0.3
+     },
+     {
+      "target": "mh0",
+      "effect": "move",
+      "trigger": "lleva",
+      "to": [
+       90,
+       -240
+      ],
+      "dur": 0.9
+     },
+     {
+      "target": "mh1",
+      "effect": "move",
+      "trigger": "lleva",
+      "to": [
+       -90,
+       -240
+      ],
+      "dur": 0.9
+     },
+     {
+      "target": "mh2",
+      "effect": "move",
+      "trigger": "lleva",
+      "to": [
+       90,
+       -240
+      ],
+      "dur": 0.9
+     },
+     {
+      "target": "mh0",
+      "effect": "hide",
+      "trigger": "con aire seco"
+     },
+     {
+      "target": "mh1",
+      "effect": "hide",
+      "trigger": "con aire seco"
+     },
+     {
+      "target": "mh2",
+      "effect": "hide",
+      "trigger": "con aire seco"
+     },
+     {
+      "target": "et_seco",
+      "effect": "pop",
+      "trigger": "seco",
+      "sfx": "pop"
+     },
+     {
+      "target": "et_hum",
+      "effect": "punch",
+      "trigger": "carga",
+      "amount": 0.25
+     },
+     {
+      "target": "bs",
+      "effect": "shake",
+      "trigger": "no",
+      "amount": 0.3
+     },
+     {
+      "target": "ms0",
+      "effect": "pulse",
+      "trigger": "no",
+      "amount": 0.5
+     },
+     {
+      "target": "ms1",
+      "effect": "pulse",
+      "trigger": "no",
+      "amount": 0.5
+     },
+     {
+      "target": "ms2",
+      "effect": "pulse",
+      "trigger": "no",
+      "amount": 0.5
+     },
+     {
+      "target": "ms3",
+      "effect": "pulse",
+      "trigger": "no",
+      "amount": 0.5
+     },
+     {
+      "target": "ms0",
+      "effect": "punch",
+      "trigger": "seco",
+      "amount": 0.4
+     },
+     {
+      "target": "ms1",
+      "effect": "punch",
+      "trigger": "seco",
+      "amount": 0.4
+     },
+     {
+      "target": "ms2",
+      "effect": "punch",
+      "trigger": "seco",
+      "amount": 0.4
+     },
+     {
+      "target": "ms3",
+      "effect": "punch",
+      "trigger": "seco",
+      "amount": 0.4
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 3,
+   "number": "3",
+   "headline": "Ropa *sintética*",
+   "narration": "La ropa sintética, como el poliéster, acumula todavía más.",
+   "illustration": {
+    "svg_file": "ropa_panel.svg",
+    "layout": "panel",
+    "caption": "Fig. 6 · Tejidos",
+    "anims": [
+     {
+      "target": "jalg",
+      "effect": "slide-down",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "jpol",
+      "effect": "slide-down",
+      "delay": 0.15,
+      "dur": 0.5
+     },
+     {
+      "target": "jalg_jersey",
+      "effect": "sway",
+      "origin": "top",
+      "amount": 0.1,
+      "delay": 0.6
+     },
+     {
+      "target": "jpol_jersey",
+      "effect": "sway",
+      "origin": "top",
+      "amount": 0.12,
+      "delay": 0.9
+     },
+     {
+      "target": "et_pol",
+      "effect": "hide"
+     },
+     {
+      "target": "ma0",
+      "effect": "pop",
+      "sfx": "pop",
+      "delay": 0.5
+     },
+     {
+      "target": "ma1",
+      "effect": "pop",
+      "sfx": "none",
+      "delay": 0.68
+     },
+     {
+      "target": "mp0",
+      "effect": "hide"
+     },
+     {
+      "target": "mp1",
+      "effect": "hide"
+     },
+     {
+      "target": "mp2",
+      "effect": "hide"
+     },
+     {
+      "target": "mp3",
+      "effect": "hide"
+     },
+     {
+      "target": "mp4",
+      "effect": "hide"
+     },
+     {
+      "target": "mp5",
+      "effect": "hide"
+     },
+     {
+      "target": "mp6",
+      "effect": "hide"
+     },
+     {
+      "target": "jalg_etiqueta",
+      "effect": "punch",
+      "trigger": "ropa",
+      "amount": 0.3
+     },
+     {
+      "target": "jpol",
+      "effect": "punch",
+      "trigger": "sintética",
+      "amount": 0.12
+     },
+     {
+      "target": "jpol_etiqueta",
+      "effect": "punch",
+      "trigger": "poliéster",
+      "amount": 0.35
+     },
+     {
+      "target": "mp0",
+      "effect": "pop",
+      "trigger": "como",
+      "sfx": "pop"
+     },
+     {
+      "target": "mp1",
+      "effect": "pop",
+      "trigger": "como",
+      "sfx": "none"
+     },
+     {
+      "target": "mp2",
+      "effect": "pop",
+      "trigger": "el",
+      "sfx": "pop"
+     },
+     {
+      "target": "mp3",
+      "effect": "pop",
+      "trigger": "poliéster",
+      "sfx": "none"
+     },
+     {
+      "target": "mp4",
+      "effect": "pop",
+      "trigger": "poliéster",
+      "sfx": "pop"
+     },
+     {
+      "target": "mp5",
+      "effect": "pop",
+      "trigger": "acumula",
+      "sfx": "none"
+     },
+     {
+      "target": "mp6",
+      "effect": "pop",
+      "trigger": "acumula",
+      "sfx": "pop"
+     },
+     {
+      "target": "mp0",
+      "effect": "shake",
+      "trigger": "todavía",
+      "amount": 0.5
+     },
+     {
+      "target": "mp1",
+      "effect": "shake",
+      "trigger": "todavía",
+      "amount": 0.5
+     },
+     {
+      "target": "mp2",
+      "effect": "shake",
+      "trigger": "todavía",
+      "amount": 0.5
+     },
+     {
+      "target": "mp3",
+      "effect": "shake",
+      "trigger": "todavía",
+      "amount": 0.5
+     },
+     {
+      "target": "mp4",
+      "effect": "shake",
+      "trigger": "todavía",
+      "amount": 0.5
+     },
+     {
+      "target": "mp5",
+      "effect": "shake",
+      "trigger": "todavía",
+      "amount": 0.5
+     },
+     {
+      "target": "mp6",
+      "effect": "shake",
+      "trigger": "todavía",
+      "amount": 0.5
+     },
+     {
+      "target": "et_pol",
+      "effect": "pop",
+      "trigger": "todavía",
+      "sfx": "pop"
+     },
+     {
+      "target": "et_pol",
+      "effect": "punch",
+      "trigger": "más",
+      "amount": 0.3
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "acumula",
+      "to": [
+       640,
+       370
+      ],
+      "amount": 1.12,
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 4,
+   "number": "+",
+   "headline": "Agarra el *marco*",
+   "narration": "Para evitarlo, agarra el marco metálico de la puerta antes de pisar el suelo.",
+   "mascot": {
+    "trigger": "evitarlo",
+    "pose": "point",
+    "note": "¡Primero la mano, luego el pie!",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "tag",
+     "text": "AGARRA EL MARCO",
+     "tone": "ink",
+     "trigger": "agarra",
+     "sfx": "pop"
+    },
+    {
+     "type": "tag",
+     "text": "ANTES DE PISAR",
+     "tone": "hot",
+     "trigger": "puerta",
+     "sfx": "pop"
+    },
+    {
+     "type": "stamp",
+     "text": "SIN CALAMBRE",
+     "tone": "accent",
+     "trigger": "suelo",
+     "sfx": "sello"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "headline": "Dudas → *truco*",
+   "narration": "Tú traes las dudas y nosotros te damos el truco.",
+   "elements": [
+    {
+     "type": "trick",
+     "trigger": "Tú",
+     "reveal_trigger": "nosotros"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "number": "TÚ",
+   "headline": "*Confiesa*",
+   "narration": "Síguenos y las resolvemos. ¿A ti te da calambre el coche?",
+   "elements": [
+    {
+     "type": "follow",
+     "trigger": "Síguenos"
+    },
+    {
+     "type": "ask",
+     "text": "¿A ti te da *calambre* el coche?",
+     "trigger": "¿A"
+    }
+   ]
+  }
+ ]
+}
