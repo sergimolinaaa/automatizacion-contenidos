@@ -1,0 +1,673 @@
+{
+ "source": "Fuentes: km77 · Motor.es · Carglass",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "words": [
+  {
+   "text": "¿Por",
+   "start": 0.1,
+   "end": 0.29000000000000004
+  },
+  {
+   "text": "qué",
+   "start": 0.3,
+   "end": 0.4
+  },
+  {
+   "text": "se",
+   "start": 0.41,
+   "end": 0.52
+  },
+  {
+   "text": "empaña",
+   "start": 0.53,
+   "end": 0.8300000000000001
+  },
+  {
+   "text": "el",
+   "start": 0.84,
+   "end": 0.9199999999999999
+  },
+  {
+   "text": "cristal",
+   "start": 0.93,
+   "end": 1.27
+  },
+  {
+   "text": "del",
+   "start": 1.28,
+   "end": 1.42
+  },
+  {
+   "text": "coche",
+   "start": 1.43,
+   "end": 1.69
+  },
+  {
+   "text": "por",
+   "start": 1.7,
+   "end": 1.8399999999999999
+  },
+  {
+   "text": "dentro",
+   "start": 1.85,
+   "end": 2.12
+  },
+  {
+   "text": "justo",
+   "start": 2.13,
+   "end": 2.41
+  },
+  {
+   "text": "cuando",
+   "start": 2.42,
+   "end": 2.6799999999999997
+  },
+  {
+   "text": "llueve?",
+   "start": 2.69,
+   "end": 3.05
+  },
+  {
+   "text": "Dentro,",
+   "start": 3.75,
+   "end": 4.21
+  },
+  {
+   "text": "el",
+   "start": 4.3,
+   "end": 4.42
+  },
+  {
+   "text": "aire",
+   "start": 4.43,
+   "end": 4.63
+  },
+  {
+   "text": "está",
+   "start": 4.64,
+   "end": 4.83
+  },
+  {
+   "text": "templado",
+   "start": 4.84,
+   "end": 5.27
+  },
+  {
+   "text": "y",
+   "start": 5.28,
+   "end": 5.33
+  },
+  {
+   "text": "lleno",
+   "start": 5.34,
+   "end": 5.55
+  },
+  {
+   "text": "de",
+   "start": 5.56,
+   "end": 5.64
+  },
+  {
+   "text": "humedad:",
+   "start": 5.65,
+   "end": 6.0
+  },
+  {
+   "text": "tu",
+   "start": 6.11,
+   "end": 6.2
+  },
+  {
+   "text": "aliento,",
+   "start": 6.21,
+   "end": 6.61
+  },
+  {
+   "text": "la",
+   "start": 6.72,
+   "end": 6.81
+  },
+  {
+   "text": "ropa",
+   "start": 6.82,
+   "end": 7.03
+  },
+  {
+   "text": "mojada,",
+   "start": 7.04,
+   "end": 7.43
+  },
+  {
+   "text": "el",
+   "start": 7.53,
+   "end": 7.65
+  },
+  {
+   "text": "paraguas.",
+   "start": 7.66,
+   "end": 8.17
+  },
+  {
+   "text": "El",
+   "start": 8.88,
+   "end": 9.08
+  },
+  {
+   "text": "cristal",
+   "start": 9.09,
+   "end": 9.42
+  },
+  {
+   "text": "está",
+   "start": 9.43,
+   "end": 9.65
+  },
+  {
+   "text": "frío:",
+   "start": 9.66,
+   "end": 9.95
+  },
+  {
+   "text": "al",
+   "start": 10.07,
+   "end": 10.19
+  },
+  {
+   "text": "tocarlo,",
+   "start": 10.2,
+   "end": 10.61
+  },
+  {
+   "text": "el",
+   "start": 10.71,
+   "end": 10.82
+  },
+  {
+   "text": "aire",
+   "start": 10.83,
+   "end": 11.03
+  },
+  {
+   "text": "suelta",
+   "start": 11.04,
+   "end": 11.319999999999999
+  },
+  {
+   "text": "el",
+   "start": 11.33,
+   "end": 11.42
+  },
+  {
+   "text": "agua",
+   "start": 11.43,
+   "end": 11.62
+  },
+  {
+   "text": "en",
+   "start": 11.63,
+   "end": 11.71
+  },
+  {
+   "text": "gotitas,",
+   "start": 11.72,
+   "end": 12.200000000000001
+  },
+  {
+   "text": "como",
+   "start": 12.31,
+   "end": 12.530000000000001
+  },
+  {
+   "text": "un",
+   "start": 12.54,
+   "end": 12.629999999999999
+  },
+  {
+   "text": "vaso",
+   "start": 12.64,
+   "end": 12.860000000000001
+  },
+  {
+   "text": "con",
+   "start": 12.87,
+   "end": 13.03
+  },
+  {
+   "text": "hielo.",
+   "start": 13.04,
+   "end": 13.35
+  },
+  {
+   "text": "Es",
+   "start": 14.04,
+   "end": 14.229999999999999
+  },
+  {
+   "text": "el",
+   "start": 14.24,
+   "end": 14.34
+  },
+  {
+   "text": "punto",
+   "start": 14.35,
+   "end": 14.59
+  },
+  {
+   "text": "de",
+   "start": 14.6,
+   "end": 14.68
+  },
+  {
+   "text": "rocío:",
+   "start": 14.69,
+   "end": 15.059999999999999
+  },
+  {
+   "text": "la",
+   "start": 15.22,
+   "end": 15.3
+  },
+  {
+   "text": "temperatura",
+   "start": 15.31,
+   "end": 15.8
+  },
+  {
+   "text": "a",
+   "start": 15.81,
+   "end": 15.84
+  },
+  {
+   "text": "la",
+   "start": 15.85,
+   "end": 15.94
+  },
+  {
+   "text": "que",
+   "start": 15.95,
+   "end": 16.05
+  },
+  {
+   "text": "el",
+   "start": 16.06,
+   "end": 16.139999999999997
+  },
+  {
+   "text": "aire",
+   "start": 16.15,
+   "end": 16.369999999999997
+  },
+  {
+   "text": "ya",
+   "start": 16.38,
+   "end": 16.49
+  },
+  {
+   "text": "no",
+   "start": 16.5,
+   "end": 16.6
+  },
+  {
+   "text": "puede",
+   "start": 16.61,
+   "end": 16.81
+  },
+  {
+   "text": "con",
+   "start": 16.82,
+   "end": 16.94
+  },
+  {
+   "text": "más",
+   "start": 16.95,
+   "end": 17.09
+  },
+  {
+   "text": "vapor.",
+   "start": 17.1,
+   "end": 17.46
+  },
+  {
+   "text": "Si",
+   "start": 18.15,
+   "end": 18.34
+  },
+  {
+   "text": "pones",
+   "start": 18.35,
+   "end": 18.6
+  },
+  {
+   "text": "la",
+   "start": 18.61,
+   "end": 18.7
+  },
+  {
+   "text": "recirculación,",
+   "start": 18.71,
+   "end": 19.41
+  },
+  {
+   "text": "mueves",
+   "start": 19.53,
+   "end": 19.790000000000003
+  },
+  {
+   "text": "el",
+   "start": 19.8,
+   "end": 19.89
+  },
+  {
+   "text": "mismo",
+   "start": 19.9,
+   "end": 20.16
+  },
+  {
+   "text": "aire",
+   "start": 20.17,
+   "end": 20.400000000000002
+  },
+  {
+   "text": "húmedo",
+   "start": 20.41,
+   "end": 20.67
+  },
+  {
+   "text": "una",
+   "start": 20.68,
+   "end": 20.87
+  },
+  {
+   "text": "y",
+   "start": 20.88,
+   "end": 20.959999999999997
+  },
+  {
+   "text": "otra",
+   "start": 20.97,
+   "end": 21.119999999999997
+  },
+  {
+   "text": "vez.",
+   "start": 21.13,
+   "end": 21.4
+  },
+  {
+   "text": "Lo",
+   "start": 22.12,
+   "end": 22.3
+  },
+  {
+   "text": "que",
+   "start": 22.31,
+   "end": 22.41
+  },
+  {
+   "text": "funciona",
+   "start": 22.42,
+   "end": 22.790000000000003
+  },
+  {
+   "text": "parece",
+   "start": 22.8,
+   "end": 23.1
+  },
+  {
+   "text": "un",
+   "start": 23.11,
+   "end": 23.21
+  },
+  {
+   "text": "error:",
+   "start": 23.22,
+   "end": 23.47
+  },
+  {
+   "text": "el",
+   "start": 23.58,
+   "end": 23.669999999999998
+  },
+  {
+   "text": "aire",
+   "start": 23.68,
+   "end": 23.86
+  },
+  {
+   "text": "acondicionado",
+   "start": 23.87,
+   "end": 24.45
+  },
+  {
+   "text": "en",
+   "start": 24.46,
+   "end": 24.53
+  },
+  {
+   "text": "invierno.",
+   "start": 24.54,
+   "end": 25.0
+  },
+  {
+   "text": "Seca",
+   "start": 25.7,
+   "end": 26.07
+  },
+  {
+   "text": "el",
+   "start": 26.08,
+   "end": 26.169999999999998
+  },
+  {
+   "text": "aire",
+   "start": 26.18,
+   "end": 26.41
+  },
+  {
+   "text": "y,",
+   "start": 26.42,
+   "end": 26.48
+  },
+  {
+   "text": "con",
+   "start": 26.59,
+   "end": 26.74
+  },
+  {
+   "text": "algo",
+   "start": 26.75,
+   "end": 26.94
+  },
+  {
+   "text": "de",
+   "start": 26.95,
+   "end": 27.02
+  },
+  {
+   "text": "calor,",
+   "start": 27.03,
+   "end": 27.34
+  },
+  {
+   "text": "despeja",
+   "start": 27.46,
+   "end": 27.830000000000002
+  },
+  {
+   "text": "el",
+   "start": 27.84,
+   "end": 27.919999999999998
+  },
+  {
+   "text": "cristal.",
+   "start": 27.93,
+   "end": 28.39
+  },
+  {
+   "text": "Así",
+   "start": 29.1,
+   "end": 29.380000000000003
+  },
+  {
+   "text": "que",
+   "start": 29.39,
+   "end": 29.5
+  },
+  {
+   "text": "aire",
+   "start": 29.51,
+   "end": 29.69
+  },
+  {
+   "text": "de",
+   "start": 29.7,
+   "end": 29.779999999999998
+  },
+  {
+   "text": "fuera,",
+   "start": 29.79,
+   "end": 30.07
+  },
+  {
+   "text": "aire",
+   "start": 30.17,
+   "end": 30.400000000000002
+  },
+  {
+   "text": "acondicionado",
+   "start": 30.41,
+   "end": 31.04
+  },
+  {
+   "text": "y",
+   "start": 31.05,
+   "end": 31.11
+  },
+  {
+   "text": "chorro",
+   "start": 31.12,
+   "end": 31.380000000000003
+  },
+  {
+   "text": "al",
+   "start": 31.39,
+   "end": 31.46
+  },
+  {
+   "text": "parabrisas.",
+   "start": 31.47,
+   "end": 32.11
+  },
+  {
+   "text": "Tú",
+   "start": 32.81,
+   "end": 32.940000000000005
+  },
+  {
+   "text": "traes",
+   "start": 32.95,
+   "end": 33.2
+  },
+  {
+   "text": "las",
+   "start": 33.21,
+   "end": 33.36
+  },
+  {
+   "text": "dudas",
+   "start": 33.37,
+   "end": 33.64
+  },
+  {
+   "text": "y",
+   "start": 33.65,
+   "end": 33.69
+  },
+  {
+   "text": "nosotros",
+   "start": 33.7,
+   "end": 34.120000000000005
+  },
+  {
+   "text": "te",
+   "start": 34.13,
+   "end": 34.220000000000006
+  },
+  {
+   "text": "damos",
+   "start": 34.23,
+   "end": 34.5
+  },
+  {
+   "text": "el",
+   "start": 34.51,
+   "end": 34.61
+  },
+  {
+   "text": "truco.",
+   "start": 34.62,
+   "end": 35.0
+  },
+  {
+   "text": "Síguenos",
+   "start": 35.69,
+   "end": 36.199999999999996
+  },
+  {
+   "text": "y",
+   "start": 36.21,
+   "end": 36.26
+  },
+  {
+   "text": "las",
+   "start": 36.27,
+   "end": 36.400000000000006
+  },
+  {
+   "text": "resolvemos.",
+   "start": 36.41,
+   "end": 37.06999999999999
+  },
+  {
+   "text": "¿Tú",
+   "start": 37.76,
+   "end": 37.91
+  },
+  {
+   "text": "cómo",
+   "start": 37.92,
+   "end": 38.11
+  },
+  {
+   "text": "lo",
+   "start": 38.12,
+   "end": 38.199999999999996
+  },
+  {
+   "text": "desempañas?",
+   "start": 38.21,
+   "end": 38.86
+  }
+ ],
+ "audio": "audio/voz.mp3",
+ "music": "audio/music.wav",
+ "musicVolume": 0.1,
+ "outro": {
+  "at": 39.36,
+  "cta": "Todo tiene un truco"
+ },
+ "estilo": "papel",
+ "sfx": "audio/sfx.wav",
+ "cover": {
+  "text": "Por qué se empañan los *cristales* del coche",
+  "scene": 0
+ },
+ "duration": 41.96,
+ "cover_offset_ms": 42260
+}
