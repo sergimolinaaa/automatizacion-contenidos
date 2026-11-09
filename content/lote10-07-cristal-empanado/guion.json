@@ -1,0 +1,2226 @@
+{
+ "topic": "¿Por qué se empañan por dentro los cristales del coche? El aire del interior está templado y cargado de humedad (aliento, ropa mojada, paraguas); al tocar el cristal frío baja de su punto de rocío y suelta el agua en gotitas, como un vaso con hielo. La recirculación lo empeora; el aire acondicionado, incluso en invierno, seca el aire y con algo de calor, aire exterior y chorro al parabrisas lo despeja (km77, Motor.es, Carglass)",
+ "categoria": "objetos",
+ "estilo": "papel",
+ "title": "¿Por qué se empañan por dentro los cristales del coche?",
+ "source": "Fuentes: km77 · Motor.es · Carglass",
+ "chapters": [
+  "?",
+  "1",
+  "2",
+  "3",
+  "+",
+  "TÚ"
+ ],
+ "outro_cta": "Todo tiene un truco",
+ "cover": {
+  "text": "Por qué se empañan los *cristales* del coche",
+  "scene": 0
+ },
+ "publish": {
+  "at": "2026-11-10T14:00:00+01:00",
+  "caption": "¿Por qué se empaña el coche por dentro? El aire húmedo de tu aliento y la ropa mojada toca el cristal frío y suelta el agua: punto de rocío. Quita la recirculación y enciende el aire acondicionado aunque sea invierno: seca el aire (km77, Motor.es). ¿Tú cómo lo desempañas?",
+  "description": "¿Por qué se empañan por dentro los cristales del coche? El aire del interior está templado y cargado de humedad por tu aliento, la ropa mojada y el paraguas. Cuando toca el cristal frío, baja de su punto de rocío y suelta el agua en gotitas, igual que un vaso con hielo. La recirculación lo empeora; lo que funciona es el aire acondicionado, incluso en invierno, porque seca el aire, con algo de calor, aire exterior y chorro al parabrisas. Fuentes: km77, Motor.es, Carglass. ¿Tú cómo lo desempañas?",
+  "hashtags": [
+   "coche",
+   "conducir",
+   "lluvia",
+   "trucos",
+   "ciencia"
+  ]
+ },
+ "scenes": [
+  {
+   "chapter": 0,
+   "headline": "¿Niebla *dentro*?",
+   "narration": "¿Por qué se empaña el cristal del coche por dentro justo cuando llueve?",
+   "illustration": {
+    "svg_file": "gancho_full.svg",
+    "layout": "full",
+    "caption": "Fig. 1 · ¡No veo nada!",
+    "anims": [
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       540,
+       860
+      ],
+      "amount": 1.06,
+      "dur": 1.6
+     },
+     {
+      "target": "lejos",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -30,
+       0
+      ],
+      "dur": 5
+     },
+     {
+      "target": "mu",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "mu",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.2,
+      "delay": 0.7
+     },
+     {
+      "target": "mu",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.12,
+      "delay": 0.8
+     },
+     {
+      "target": "mu_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 0.95
+     },
+     {
+      "target": "mu_ojos",
+      "effect": "blink",
+      "delay": 1.3
+     },
+     {
+      "target": "mu_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 1.8
+     },
+     {
+      "target": "mu_brazo_der",
+      "effect": "wiggle",
+      "origin": "bottom-left",
+      "amount": 0.45,
+      "delay": 0.7
+     },
+     {
+      "target": "gl0",
+      "effect": "fall",
+      "amount": 0.25,
+      "phase": 0.0,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl0",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.0
+     },
+     {
+      "target": "gl1",
+      "effect": "fall",
+      "amount": 0.29,
+      "phase": 0.37,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl1",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.21
+     },
+     {
+      "target": "gl2",
+      "effect": "fall",
+      "amount": 0.33,
+      "phase": 0.74,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl2",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.42
+     },
+     {
+      "target": "gl3",
+      "effect": "fall",
+      "amount": 0.37,
+      "phase": 0.11,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl3",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.63
+     },
+     {
+      "target": "gl4",
+      "effect": "fall",
+      "amount": 0.25,
+      "phase": 0.48,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl4",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.84
+     },
+     {
+      "target": "gl5",
+      "effect": "fall",
+      "amount": 0.29,
+      "phase": 0.85,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl5",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.05
+     },
+     {
+      "target": "gl6",
+      "effect": "fall",
+      "amount": 0.33,
+      "phase": 0.22,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl6",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.26
+     },
+     {
+      "target": "gl7",
+      "effect": "fall",
+      "amount": 0.37,
+      "phase": 0.59,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl7",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.47
+     },
+     {
+      "target": "gl8",
+      "effect": "fall",
+      "amount": 0.25,
+      "phase": 0.96,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl8",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.68
+     },
+     {
+      "target": "gl9",
+      "effect": "fall",
+      "amount": 0.29,
+      "phase": 0.33,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl9",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.89
+     },
+     {
+      "target": "vaho_borde",
+      "effect": "hide"
+     },
+     {
+      "target": "vaho_b0",
+      "effect": "hide"
+     },
+     {
+      "target": "vaho_b1",
+      "effect": "hide"
+     },
+     {
+      "target": "vaho_b2",
+      "effect": "hide"
+     },
+     {
+      "target": "vaho_b3",
+      "effect": "hide"
+     },
+     {
+      "target": "duda",
+      "effect": "hide"
+     },
+     {
+      "target": "volante",
+      "effect": "punch",
+      "trigger": "coche",
+      "amount": 0.08
+     },
+     {
+      "target": "vaho_borde",
+      "effect": "fade",
+      "trigger": "empaña",
+      "dur": 0.6,
+      "sfx": "brillo"
+     },
+     {
+      "target": "vaho_b0",
+      "effect": "fade",
+      "trigger": "cristal",
+      "dur": 0.5
+     },
+     {
+      "target": "vaho_b1",
+      "effect": "fade",
+      "trigger": "coche",
+      "dur": 0.5
+     },
+     {
+      "target": "vaho_b2",
+      "effect": "fade",
+      "trigger": "dentro",
+      "dur": 0.5
+     },
+     {
+      "target": "vaho_b3",
+      "effect": "fade",
+      "trigger": "justo",
+      "dur": 0.5
+     },
+     {
+      "target": "duda",
+      "effect": "pop",
+      "trigger": "dentro",
+      "sfx": "pop"
+     },
+     {
+      "target": "duda",
+      "effect": "float",
+      "trigger": "justo",
+      "amount": 0.3
+     },
+     {
+      "target": "mu",
+      "effect": "move",
+      "trigger": "por dentro",
+      "to": [
+       0,
+       -14
+      ],
+      "dur": 0.4
+     },
+     {
+      "target": "mu_cabeza",
+      "effect": "move",
+      "trigger": "justo",
+      "rotate": -7,
+      "origin": "bottom",
+      "dur": 0.6
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "llueve",
+      "to": [
+       560,
+       860
+      ],
+      "amount": 1.1,
+      "dur": 1.0
+     },
+     {
+      "target": "lluvia",
+      "effect": "punch",
+      "trigger": "llueve",
+      "amount": 0.08
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "Aire *húmedo*",
+   "narration": "Dentro, el aire está templado y lleno de humedad: tu aliento, la ropa mojada, el paraguas.",
+   "illustration": {
+    "svg_file": "humedad_panel.svg",
+    "layout": "panel",
+    "caption": "Fig. 2 · Humedad",
+    "anims": [
+     {
+      "target": "mh",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "mh",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.65,
+      "delay": 0.5
+     },
+     {
+      "target": "mh",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.12,
+      "delay": 0.6
+     },
+     {
+      "target": "mh_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 0.75
+     },
+     {
+      "target": "mh_ojos",
+      "effect": "blink",
+      "delay": 1.1
+     },
+     {
+      "target": "mh_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 1.6
+     },
+     {
+      "target": "mh_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.24,
+      "delay": 0.95
+     },
+     {
+      "target": "ventana",
+      "effect": "slide-down",
+      "delay": 0.1,
+      "dur": 0.5
+     },
+     {
+      "target": "aliento",
+      "effect": "hide"
+     },
+     {
+      "target": "ropag",
+      "effect": "hide"
+     },
+     {
+      "target": "par",
+      "effect": "hide"
+     },
+     {
+      "target": "et_temp",
+      "effect": "hide"
+     },
+     {
+      "target": "et_hum",
+      "effect": "hide"
+     },
+     {
+      "target": "vp0",
+      "effect": "hide"
+     },
+     {
+      "target": "vp1",
+      "effect": "hide"
+     },
+     {
+      "target": "vp2",
+      "effect": "hide"
+     },
+     {
+      "target": "vp3",
+      "effect": "hide"
+     },
+     {
+      "target": "vp4",
+      "effect": "hide"
+     },
+     {
+      "target": "vp5",
+      "effect": "hide"
+     },
+     {
+      "target": "et_temp",
+      "effect": "pop",
+      "trigger": "templado",
+      "sfx": "pop"
+     },
+     {
+      "target": "mh_brazo_der",
+      "effect": "move",
+      "trigger": "templado",
+      "rotate": -10,
+      "origin": "top-left",
+      "dur": 0.6
+     },
+     {
+      "target": "vp0",
+      "effect": "pop",
+      "trigger": "lleno",
+      "sfx": "pop"
+     },
+     {
+      "target": "vp1",
+      "effect": "pop",
+      "trigger": "lleno",
+      "sfx": "none"
+     },
+     {
+      "target": "vp2",
+      "effect": "pop",
+      "trigger": "de humedad",
+      "sfx": "pop"
+     },
+     {
+      "target": "vp3",
+      "effect": "pop",
+      "trigger": "de humedad",
+      "sfx": "none"
+     },
+     {
+      "target": "vp4",
+      "effect": "pop",
+      "trigger": "humedad",
+      "sfx": "pop"
+     },
+     {
+      "target": "vp5",
+      "effect": "pop",
+      "trigger": "humedad",
+      "sfx": "none"
+     },
+     {
+      "target": "vp0",
+      "effect": "float",
+      "amount": 0.3,
+      "delay": 0.0
+     },
+     {
+      "target": "vp1",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.2
+     },
+     {
+      "target": "vp2",
+      "effect": "float",
+      "amount": 0.4,
+      "delay": 0.4
+     },
+     {
+      "target": "vp3",
+      "effect": "float",
+      "amount": 0.45,
+      "delay": 0.6000000000000001
+     },
+     {
+      "target": "vp4",
+      "effect": "float",
+      "amount": 0.5,
+      "delay": 0.8
+     },
+     {
+      "target": "vp5",
+      "effect": "float",
+      "amount": 0.55,
+      "delay": 1.0
+     },
+     {
+      "target": "vp0",
+      "effect": "drift",
+      "amount": 0.5,
+      "phase": 0.0
+     },
+     {
+      "target": "vp1",
+      "effect": "drift",
+      "amount": 0.5,
+      "phase": 0.17
+     },
+     {
+      "target": "vp2",
+      "effect": "drift",
+      "amount": 0.5,
+      "phase": 0.34
+     },
+     {
+      "target": "vp3",
+      "effect": "drift",
+      "amount": 0.5,
+      "phase": 0.51
+     },
+     {
+      "target": "vp4",
+      "effect": "drift",
+      "amount": 0.5,
+      "phase": 0.68
+     },
+     {
+      "target": "vp5",
+      "effect": "drift",
+      "amount": 0.5,
+      "phase": 0.85
+     },
+     {
+      "target": "et_hum",
+      "effect": "pop",
+      "trigger": "humedad",
+      "sfx": "pop"
+     },
+     {
+      "target": "aliento",
+      "effect": "fade",
+      "trigger": "aliento",
+      "dur": 0.2,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "vh0",
+      "effect": "puff",
+      "phase": 0.0,
+      "to": [
+       70,
+       -110
+      ]
+     },
+     {
+      "target": "vh1",
+      "effect": "puff",
+      "phase": 0.33,
+      "to": [
+       70,
+       -110
+      ]
+     },
+     {
+      "target": "vh2",
+      "effect": "puff",
+      "phase": 0.67,
+      "to": [
+       70,
+       -110
+      ]
+     },
+     {
+      "target": "mh_boca",
+      "effect": "pulse",
+      "trigger": "aliento",
+      "amount": 0.5
+     },
+     {
+      "target": "ropag",
+      "effect": "pop",
+      "trigger": "ropa",
+      "sfx": "pop"
+     },
+     {
+      "target": "rg0",
+      "effect": "bob",
+      "amount": 0.4,
+      "delay": 0.0
+     },
+     {
+      "target": "rg1",
+      "effect": "bob",
+      "amount": 0.4,
+      "delay": 0.3
+     },
+     {
+      "target": "rg2",
+      "effect": "bob",
+      "amount": 0.4,
+      "delay": 0.6
+     },
+     {
+      "target": "rg3",
+      "effect": "bob",
+      "amount": 0.4,
+      "delay": 0.8999999999999999
+     },
+     {
+      "target": "mh",
+      "effect": "shake",
+      "trigger": "mojada",
+      "amount": 0.25
+     },
+     {
+      "target": "par",
+      "effect": "squash",
+      "trigger": "paraguas",
+      "to": [
+       0,
+       -160
+      ],
+      "dur": 0.5,
+      "sfx": "boing"
+     },
+     {
+      "target": "par_tela",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.12,
+      "trigger": "paraguas"
+     },
+     {
+      "target": "par_g0",
+      "effect": "bob",
+      "amount": 0.4,
+      "delay": 0.0
+     },
+     {
+      "target": "par_g1",
+      "effect": "bob",
+      "amount": 0.4,
+      "delay": 0.25
+     },
+     {
+      "target": "par_g2",
+      "effect": "bob",
+      "amount": 0.4,
+      "delay": 0.5
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "la ropa",
+      "to": [
+       500,
+       360
+      ],
+      "amount": 1.08,
+      "dur": 1.2
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 1,
+   "number": "1",
+   "headline": "Cristal *frío*",
+   "narration": "El cristal está frío: al tocarlo, el aire suelta el agua en gotitas, como un vaso con hielo.",
+   "illustration": {
+    "svg_file": "cristal_free.svg",
+    "layout": "free",
+    "height": 880,
+    "caption": "Fig. 3 · Condensación",
+    "anims": [
+     {
+      "target": "cristal",
+      "effect": "slide-up",
+      "delay": 0,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "ter",
+      "effect": "slide-up",
+      "delay": 0.1,
+      "dur": 0.5
+     },
+     {
+      "target": "m0",
+      "effect": "slide-left",
+      "delay": 0.0,
+      "dur": 0.5
+     },
+     {
+      "target": "m1",
+      "effect": "slide-left",
+      "delay": 0.05,
+      "dur": 0.5
+     },
+     {
+      "target": "m2",
+      "effect": "slide-left",
+      "delay": 0.1,
+      "dur": 0.5
+     },
+     {
+      "target": "m3",
+      "effect": "slide-left",
+      "delay": 0.15000000000000002,
+      "dur": 0.5
+     },
+     {
+      "target": "m4",
+      "effect": "slide-left",
+      "delay": 0.2,
+      "dur": 0.5
+     },
+     {
+      "target": "m0",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.5
+     },
+     {
+      "target": "m1",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.63
+     },
+     {
+      "target": "m2",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.76
+     },
+     {
+      "target": "m3",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.89
+     },
+     {
+      "target": "m4",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 1.02
+     },
+     {
+      "target": "cp0",
+      "effect": "spin",
+      "amount": 0.08
+     },
+     {
+      "target": "cp1",
+      "effect": "spin",
+      "amount": 0.11
+     },
+     {
+      "target": "cp2",
+      "effect": "spin",
+      "amount": 0.14
+     },
+     {
+      "target": "cp0",
+      "effect": "drift",
+      "amount": 0.5,
+      "phase": 0.0
+     },
+     {
+      "target": "cp1",
+      "effect": "drift",
+      "amount": 0.5,
+      "phase": 0.3
+     },
+     {
+      "target": "cp2",
+      "effect": "drift",
+      "amount": 0.5,
+      "phase": 0.6
+     },
+     {
+      "target": "et_frio",
+      "effect": "hide"
+     },
+     {
+      "target": "et_vapor",
+      "effect": "hide"
+     },
+     {
+      "target": "vaso",
+      "effect": "hide"
+     },
+     {
+      "target": "d0",
+      "effect": "hide"
+     },
+     {
+      "target": "d1",
+      "effect": "hide"
+     },
+     {
+      "target": "d2",
+      "effect": "hide"
+     },
+     {
+      "target": "d3",
+      "effect": "hide"
+     },
+     {
+      "target": "d4",
+      "effect": "hide"
+     },
+     {
+      "target": "gv0",
+      "effect": "hide"
+     },
+     {
+      "target": "gv1",
+      "effect": "hide"
+     },
+     {
+      "target": "gv2",
+      "effect": "hide"
+     },
+     {
+      "target": "gv3",
+      "effect": "hide"
+     },
+     {
+      "target": "gv4",
+      "effect": "hide"
+     },
+     {
+      "target": "gv5",
+      "effect": "hide"
+     },
+     {
+      "target": "cristal",
+      "effect": "punch",
+      "trigger": "cristal",
+      "amount": 0.15
+     },
+     {
+      "target": "et_frio",
+      "effect": "pop",
+      "trigger": "frío",
+      "sfx": "pop"
+     },
+     {
+      "target": "ter",
+      "effect": "shake",
+      "trigger": "frío",
+      "amount": 0.3
+     },
+     {
+      "target": "m0",
+      "effect": "move",
+      "trigger": "tocarlo",
+      "to": [
+       -164,
+       0
+      ],
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "m1",
+      "effect": "move",
+      "trigger": "tocarlo",
+      "to": [
+       -224,
+       0
+      ],
+      "dur": 0.56,
+      "sfx": "none"
+     },
+     {
+      "target": "m2",
+      "effect": "move",
+      "trigger": "tocarlo",
+      "to": [
+       -124,
+       0
+      ],
+      "dur": 0.62,
+      "sfx": "none"
+     },
+     {
+      "target": "m3",
+      "effect": "move",
+      "trigger": "tocarlo",
+      "to": [
+       -214,
+       0
+      ],
+      "dur": 0.6799999999999999,
+      "sfx": "none"
+     },
+     {
+      "target": "m4",
+      "effect": "move",
+      "trigger": "tocarlo",
+      "to": [
+       -154,
+       0
+      ],
+      "dur": 0.74,
+      "sfx": "none"
+     },
+     {
+      "target": "et_vapor",
+      "effect": "pop",
+      "trigger": "aire",
+      "sfx": "pop"
+     },
+     {
+      "target": "m0",
+      "effect": "hide",
+      "trigger": "agua"
+     },
+     {
+      "target": "m1",
+      "effect": "hide",
+      "trigger": "agua"
+     },
+     {
+      "target": "m2",
+      "effect": "hide",
+      "trigger": "agua"
+     },
+     {
+      "target": "m3",
+      "effect": "hide",
+      "trigger": "agua"
+     },
+     {
+      "target": "m4",
+      "effect": "hide",
+      "trigger": "agua"
+     },
+     {
+      "target": "d0",
+      "effect": "pop",
+      "trigger": "agua",
+      "sfx": "pop"
+     },
+     {
+      "target": "d1",
+      "effect": "pop",
+      "trigger": "agua",
+      "sfx": "none"
+     },
+     {
+      "target": "d2",
+      "effect": "pop",
+      "trigger": "en gotitas",
+      "sfx": "pop"
+     },
+     {
+      "target": "d3",
+      "effect": "pop",
+      "trigger": "gotitas",
+      "sfx": "none"
+     },
+     {
+      "target": "d4",
+      "effect": "pop",
+      "trigger": "gotitas",
+      "sfx": "pop"
+     },
+     {
+      "target": "d0",
+      "effect": "bob",
+      "amount": 0.25,
+      "trigger": "como",
+      "delay": 0
+     },
+     {
+      "target": "d1",
+      "effect": "bob",
+      "amount": 0.25,
+      "trigger": "como",
+      "delay": 0
+     },
+     {
+      "target": "d2",
+      "effect": "bob",
+      "amount": 0.25,
+      "trigger": "como",
+      "delay": 0
+     },
+     {
+      "target": "d3",
+      "effect": "bob",
+      "amount": 0.25,
+      "trigger": "como",
+      "delay": 0
+     },
+     {
+      "target": "d4",
+      "effect": "bob",
+      "amount": 0.25,
+      "trigger": "como",
+      "delay": 0
+     },
+     {
+      "target": "et_vapor",
+      "effect": "hide",
+      "trigger": "como"
+     },
+     {
+      "target": "vaso",
+      "effect": "squash",
+      "trigger": "como",
+      "to": [
+       0,
+       -200
+      ],
+      "dur": 0.55,
+      "sfx": "boing"
+     },
+     {
+      "target": "gv0",
+      "effect": "pop",
+      "trigger": "vaso",
+      "sfx": "pop"
+     },
+     {
+      "target": "gv1",
+      "effect": "pop",
+      "trigger": "vaso",
+      "sfx": "none"
+     },
+     {
+      "target": "gv2",
+      "effect": "pop",
+      "trigger": "con",
+      "sfx": "pop"
+     },
+     {
+      "target": "gv3",
+      "effect": "pop",
+      "trigger": "con",
+      "sfx": "none"
+     },
+     {
+      "target": "gv4",
+      "effect": "pop",
+      "trigger": "hielo",
+      "sfx": "pop"
+     },
+     {
+      "target": "gv5",
+      "effect": "pop",
+      "trigger": "hielo",
+      "sfx": "none"
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "vaso",
+      "to": [
+       500,
+       480
+      ],
+      "amount": 1.05,
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "Punto *de rocío*",
+   "narration": "Es el punto de rocío: la temperatura a la que el aire ya no puede con más vapor.",
+   "illustration": {
+    "svg_file": "rocio_panel.svg",
+    "layout": "panel",
+    "caption": "Fig. 4 · Esponja llena",
+    "anims": [
+     {
+      "target": "esp",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "ter3",
+      "effect": "slide-up",
+      "delay": 0.1,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "esp",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.5,
+      "delay": 0.7
+     },
+     {
+      "target": "esp_agua",
+      "effect": "hide"
+     },
+     {
+      "target": "marca",
+      "effect": "hide"
+     },
+     {
+      "target": "et_rocio",
+      "effect": "hide"
+     },
+     {
+      "target": "et_cabe",
+      "effect": "hide"
+     },
+     {
+      "target": "charco",
+      "effect": "hide"
+     },
+     {
+      "target": "gs0",
+      "effect": "hide"
+     },
+     {
+      "target": "gs1",
+      "effect": "hide"
+     },
+     {
+      "target": "gs2",
+      "effect": "hide"
+     },
+     {
+      "target": "et_rocio",
+      "effect": "pop",
+      "trigger": "rocío",
+      "sfx": "pop"
+     },
+     {
+      "target": "ter3_columna",
+      "effect": "grow",
+      "origin": "bottom",
+      "trigger": "temperatura",
+      "dur": 0.8
+     },
+     {
+      "target": "marca",
+      "effect": "pop",
+      "trigger": "temperatura",
+      "sfx": "ding"
+     },
+     {
+      "target": "esp_agua",
+      "effect": "fade",
+      "trigger": "aire",
+      "dur": 0.9,
+      "sfx": "chorro"
+     },
+     {
+      "target": "esp",
+      "effect": "shake",
+      "trigger": "no puede",
+      "amount": 0.4
+     },
+     {
+      "target": "esp",
+      "effect": "punch",
+      "trigger": "puede",
+      "amount": 0.3
+     },
+     {
+      "target": "gs0",
+      "effect": "pop",
+      "trigger": "con",
+      "sfx": "pop"
+     },
+     {
+      "target": "gs1",
+      "effect": "pop",
+      "trigger": "más",
+      "sfx": "none"
+     },
+     {
+      "target": "gs2",
+      "effect": "pop",
+      "trigger": "vapor",
+      "sfx": "pop"
+     },
+     {
+      "target": "gs0",
+      "effect": "bob",
+      "amount": 0.5,
+      "delay": 0.0
+     },
+     {
+      "target": "gs1",
+      "effect": "bob",
+      "amount": 0.5,
+      "delay": 0.2
+     },
+     {
+      "target": "gs2",
+      "effect": "bob",
+      "amount": 0.5,
+      "delay": 0.4
+     },
+     {
+      "target": "charco",
+      "effect": "fade",
+      "trigger": "vapor",
+      "dur": 0.4
+     },
+     {
+      "target": "et_cabe",
+      "effect": "pop",
+      "trigger": "más",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "ya",
+      "to": [
+       500,
+       370
+      ],
+      "amount": 1.06,
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 2,
+   "number": "2",
+   "headline": "*Recircular*: peor",
+   "narration": "Si pones la recirculación, mueves el mismo aire húmedo una y otra vez.",
+   "illustration": {
+    "svg_file": "recirc_panel.svg",
+    "layout": "panel",
+    "caption": "Fig. 5 · En bucle",
+    "anims": [
+     {
+      "target": "brec",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "car",
+      "effect": "slide-left",
+      "delay": 0.1,
+      "dur": 0.5,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "car_rueda_del",
+      "effect": "spin",
+      "amount": 0.02
+     },
+     {
+      "target": "brec_luz",
+      "effect": "hide"
+     },
+     {
+      "target": "asp",
+      "effect": "hide"
+     },
+     {
+      "target": "cvaho",
+      "effect": "hide"
+     },
+     {
+      "target": "giro",
+      "effect": "hide"
+     },
+     {
+      "target": "et_mismo",
+      "effect": "hide"
+     },
+     {
+      "target": "et_vaho",
+      "effect": "hide"
+     },
+     {
+      "target": "brec",
+      "effect": "punch",
+      "trigger": "pones",
+      "amount": 0.25,
+      "sfx": "chasquido"
+     },
+     {
+      "target": "brec_luz",
+      "effect": "pop",
+      "trigger": "recirculación",
+      "sfx": "ding"
+     },
+     {
+      "target": "brec_luz",
+      "effect": "pulse",
+      "trigger": "recirculación",
+      "amount": 0.5
+     },
+     {
+      "target": "giro",
+      "effect": "pop",
+      "trigger": "mueves",
+      "sfx": "whoosh"
+     },
+     {
+      "target": "giro",
+      "effect": "spin",
+      "trigger": "mueves",
+      "amount": 0.6
+     },
+     {
+      "target": "et_mismo",
+      "effect": "pop",
+      "trigger": "mismo",
+      "sfx": "pop"
+     },
+     {
+      "target": "cvaho",
+      "effect": "fade",
+      "trigger": "húmedo",
+      "dur": 0.8
+     },
+     {
+      "target": "asp",
+      "effect": "draw",
+      "trigger": "una",
+      "dur": 0.4,
+      "sfx": "rotulador"
+     },
+     {
+      "target": "et_vaho",
+      "effect": "pop",
+      "trigger": "otra",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "car",
+      "effect": "shake",
+      "trigger": "vez",
+      "amount": 0.3
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "aire",
+      "to": [
+       560,
+       380
+      ],
+      "amount": 1.06,
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 3,
+   "number": "3",
+   "headline": "Aire *seco*",
+   "narration": "Lo que funciona parece un error: el aire acondicionado en invierno. Seca el aire y, con algo de calor, despeja el cristal.",
+   "illustration": {
+    "svg_file": "ac_full.svg",
+    "layout": "full",
+    "caption": "Fig. 6 · Aire seco",
+    "anims": [
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "delay": 0,
+      "to": [
+       540,
+       900
+      ],
+      "amount": 1.05,
+      "dur": 2.0
+     },
+     {
+      "target": "lejos",
+      "effect": "pan",
+      "delay": 0,
+      "to": [
+       -30,
+       0
+      ],
+      "dur": 8
+     },
+     {
+      "target": "mujer",
+      "effect": "squash",
+      "delay": 0,
+      "dur": 0.6,
+      "sfx": "boing"
+     },
+     {
+      "target": "mujer",
+      "effect": "breathe",
+      "origin": "bottom",
+      "amount": 0.7,
+      "phase": 0.4,
+      "delay": 0.7
+     },
+     {
+      "target": "mujer",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.12,
+      "delay": 0.8
+     },
+     {
+      "target": "md_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 0.95
+     },
+     {
+      "target": "md_ojos",
+      "effect": "blink",
+      "delay": 1.3
+     },
+     {
+      "target": "md_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 1.8
+     },
+     {
+      "target": "md_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.24,
+      "delay": 1.15
+     },
+     {
+      "target": "mr_cabeza",
+      "effect": "sway",
+      "origin": "bottom",
+      "amount": 0.32,
+      "delay": 0.95
+     },
+     {
+      "target": "mr_ojos",
+      "effect": "blink",
+      "delay": 1.3
+     },
+     {
+      "target": "mr_brazo_izq",
+      "effect": "sway",
+      "origin": "top-right",
+      "amount": 0.16,
+      "delay": 1.8
+     },
+     {
+      "target": "mr_brazo_der",
+      "effect": "sway",
+      "origin": "top-left",
+      "amount": 0.24,
+      "delay": 1.15
+     },
+     {
+      "target": "mr",
+      "effect": "hide"
+     },
+     {
+      "target": "gl0",
+      "effect": "fall",
+      "amount": 0.25,
+      "phase": 0.0,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl0",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.0
+     },
+     {
+      "target": "gl1",
+      "effect": "fall",
+      "amount": 0.29,
+      "phase": 0.37,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl1",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.21
+     },
+     {
+      "target": "gl2",
+      "effect": "fall",
+      "amount": 0.33,
+      "phase": 0.74,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl2",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.42
+     },
+     {
+      "target": "gl3",
+      "effect": "fall",
+      "amount": 0.37,
+      "phase": 0.11,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl3",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.63
+     },
+     {
+      "target": "gl4",
+      "effect": "fall",
+      "amount": 0.25,
+      "phase": 0.48,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl4",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.84
+     },
+     {
+      "target": "gl5",
+      "effect": "fall",
+      "amount": 0.29,
+      "phase": 0.85,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl5",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.05
+     },
+     {
+      "target": "gl6",
+      "effect": "fall",
+      "amount": 0.33,
+      "phase": 0.22,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl6",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.26
+     },
+     {
+      "target": "gl7",
+      "effect": "fall",
+      "amount": 0.37,
+      "phase": 0.59,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl7",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.47
+     },
+     {
+      "target": "gl8",
+      "effect": "fall",
+      "amount": 0.25,
+      "phase": 0.96,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl8",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.68
+     },
+     {
+      "target": "gl9",
+      "effect": "fall",
+      "amount": 0.29,
+      "phase": 0.33,
+      "to": [
+       0,
+       260
+      ]
+     },
+     {
+      "target": "gl9",
+      "effect": "drift",
+      "amount": 0.3,
+      "phase": 0.89
+     },
+     {
+      "target": "m0",
+      "effect": "slide-down",
+      "delay": 0.0,
+      "dur": 0.5
+     },
+     {
+      "target": "m1",
+      "effect": "slide-down",
+      "delay": 0.05,
+      "dur": 0.5
+     },
+     {
+      "target": "m2",
+      "effect": "slide-down",
+      "delay": 0.1,
+      "dur": 0.5
+     },
+     {
+      "target": "m3",
+      "effect": "slide-down",
+      "delay": 0.15000000000000002,
+      "dur": 0.5
+     },
+     {
+      "target": "m4",
+      "effect": "slide-down",
+      "delay": 0.2,
+      "dur": 0.5
+     },
+     {
+      "target": "m5",
+      "effect": "slide-down",
+      "delay": 0.25,
+      "dur": 0.5
+     },
+     {
+      "target": "m0",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.55
+     },
+     {
+      "target": "m1",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.66
+     },
+     {
+      "target": "m2",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.77
+     },
+     {
+      "target": "m3",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.8800000000000001
+     },
+     {
+      "target": "m4",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 0.99
+     },
+     {
+      "target": "m5",
+      "effect": "float",
+      "amount": 0.35,
+      "delay": 1.1
+     },
+     {
+      "target": "bac_luz",
+      "effect": "hide"
+     },
+     {
+      "target": "duda5",
+      "effect": "hide"
+     },
+     {
+      "target": "cpf",
+      "effect": "hide"
+     },
+     {
+      "target": "et_inv",
+      "effect": "hide"
+     },
+     {
+      "target": "dest",
+      "effect": "hide"
+     },
+     {
+      "target": "calor",
+      "effect": "hide"
+     },
+     {
+      "target": "gd0",
+      "effect": "hide"
+     },
+     {
+      "target": "gd1",
+      "effect": "hide"
+     },
+     {
+      "target": "gd2",
+      "effect": "hide"
+     },
+     {
+      "target": "md_brazo_der",
+      "effect": "move",
+      "trigger": "funciona",
+      "rotate": -12,
+      "origin": "top-left",
+      "dur": 0.6
+     },
+     {
+      "target": "mr_brazo_der",
+      "effect": "move",
+      "trigger": "funciona",
+      "rotate": -12,
+      "origin": "top-left",
+      "dur": 0.6
+     },
+     {
+      "target": "duda5",
+      "effect": "pop",
+      "trigger": "error",
+      "sfx": "sorpresa"
+     },
+     {
+      "target": "duda5",
+      "effect": "wiggle",
+      "trigger": "error",
+      "amount": 0.4
+     },
+     {
+      "target": "md_cabeza",
+      "effect": "move",
+      "trigger": "parece",
+      "rotate": 7,
+      "origin": "bottom",
+      "dur": 0.6
+     },
+     {
+      "target": "bac",
+      "effect": "punch",
+      "trigger": "acondicionado",
+      "amount": 0.35,
+      "sfx": "chasquido"
+     },
+     {
+      "target": "bac_luz",
+      "effect": "pop",
+      "trigger": "acondicionado",
+      "sfx": "ding"
+     },
+     {
+      "target": "bac_luz",
+      "effect": "pulse",
+      "trigger": "acondicionado",
+      "amount": 0.5
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "acondicionado",
+      "to": [
+       560,
+       1000
+      ],
+      "amount": 1.1,
+      "dur": 1.0
+     },
+     {
+      "target": "duda5",
+      "effect": "hide",
+      "trigger": "en invierno"
+     },
+     {
+      "target": "et_inv",
+      "effect": "pop",
+      "trigger": "invierno",
+      "sfx": "pop"
+     },
+     {
+      "target": "cpf",
+      "effect": "pop",
+      "trigger": "invierno"
+     },
+     {
+      "target": "cpf",
+      "effect": "spin",
+      "trigger": "invierno",
+      "amount": 0.1
+     },
+     {
+      "target": "m0",
+      "effect": "move",
+      "trigger": "Seca",
+      "to": [
+       290.0,
+       460
+      ],
+      "dur": 0.7,
+      "sfx": "whoosh"
+     },
+     {
+      "target": "m1",
+      "effect": "move",
+      "trigger": "Seca",
+      "to": [
+       90.0,
+       380
+      ],
+      "dur": 0.7799999999999999,
+      "sfx": "none"
+     },
+     {
+      "target": "m2",
+      "effect": "move",
+      "trigger": "Seca",
+      "to": [
+       -110.0,
+       440
+      ],
+      "dur": 0.86,
+      "sfx": "none"
+     },
+     {
+      "target": "m3",
+      "effect": "move",
+      "trigger": "Seca",
+      "to": [
+       -310.0,
+       360
+      ],
+      "dur": 0.94,
+      "sfx": "none"
+     },
+     {
+      "target": "m4",
+      "effect": "move",
+      "trigger": "Seca",
+      "to": [
+       240.0,
+       220
+      ],
+      "dur": 1.02,
+      "sfx": "none"
+     },
+     {
+      "target": "m5",
+      "effect": "move",
+      "trigger": "Seca",
+      "to": [
+       -170.0,
+       200
+      ],
+      "dur": 1.1,
+      "sfx": "none"
+     },
+     {
+      "target": "rejilla",
+      "effect": "punch",
+      "trigger": "aire y",
+      "amount": 0.15
+     },
+     {
+      "target": "m0",
+      "effect": "hide",
+      "trigger": "aire y"
+     },
+     {
+      "target": "m1",
+      "effect": "hide",
+      "trigger": "aire y"
+     },
+     {
+      "target": "m2",
+      "effect": "hide",
+      "trigger": "aire y"
+     },
+     {
+      "target": "m3",
+      "effect": "hide",
+      "trigger": "aire y"
+     },
+     {
+      "target": "m4",
+      "effect": "hide",
+      "trigger": "aire y"
+     },
+     {
+      "target": "m5",
+      "effect": "hide",
+      "trigger": "aire y"
+     },
+     {
+      "target": "gd0",
+      "effect": "pop",
+      "trigger": "aire y",
+      "sfx": "pop"
+     },
+     {
+      "target": "gd1",
+      "effect": "pop",
+      "trigger": "aire y",
+      "sfx": "none"
+     },
+     {
+      "target": "gd2",
+      "effect": "pop",
+      "trigger": "aire y",
+      "sfx": "none"
+     },
+     {
+      "target": "gd0",
+      "effect": "move",
+      "trigger": "algo",
+      "to": [
+       0,
+       90
+      ],
+      "dur": 0.5
+     },
+     {
+      "target": "gd1",
+      "effect": "move",
+      "trigger": "algo",
+      "to": [
+       0,
+       90
+      ],
+      "dur": 0.5
+     },
+     {
+      "target": "gd2",
+      "effect": "move",
+      "trigger": "algo",
+      "to": [
+       0,
+       90
+      ],
+      "dur": 0.5
+     },
+     {
+      "target": "gd0",
+      "effect": "hide",
+      "trigger": "calor"
+     },
+     {
+      "target": "gd1",
+      "effect": "hide",
+      "trigger": "calor"
+     },
+     {
+      "target": "gd2",
+      "effect": "hide",
+      "trigger": "calor"
+     },
+     {
+      "target": "et_inv",
+      "effect": "hide",
+      "trigger": "algo"
+     },
+     {
+      "target": "calor",
+      "effect": "pop",
+      "trigger": "calor",
+      "sfx": "pop"
+     },
+     {
+      "target": "calor",
+      "effect": "float",
+      "trigger": "calor",
+      "amount": 0.5
+     },
+     {
+      "target": "camera",
+      "effect": "zoom",
+      "trigger": "calor",
+      "to": [
+       540,
+       900
+      ],
+      "amount": 1.04,
+      "dur": 1.2
+     },
+     {
+      "target": "vaho_b0",
+      "effect": "hide",
+      "trigger": "calor"
+     },
+     {
+      "target": "vaho_b1",
+      "effect": "hide",
+      "trigger": "despeja"
+     },
+     {
+      "target": "vaho_b2",
+      "effect": "hide",
+      "trigger": "el cristal"
+     },
+     {
+      "target": "vaho_b3",
+      "effect": "hide",
+      "trigger": "cristal"
+     },
+     {
+      "target": "vaho_borde",
+      "effect": "hide",
+      "trigger": "cristal"
+     },
+     {
+      "target": "md",
+      "effect": "hide",
+      "trigger": "despeja"
+     },
+     {
+      "target": "mr",
+      "effect": "fade",
+      "trigger": "despeja",
+      "dur": 0.15
+     },
+     {
+      "target": "mr_brazo_der",
+      "effect": "move",
+      "trigger": "cristal",
+      "rotate": -18,
+      "origin": "top-left",
+      "dur": 0.5
+     },
+     {
+      "target": "dest",
+      "effect": "pop",
+      "trigger": "cristal",
+      "sfx": "brillo"
+     },
+     {
+      "target": "dest",
+      "effect": "spin",
+      "trigger": "cristal",
+      "amount": 0.1
+     }
+    ]
+   }
+  },
+  {
+   "chapter": 4,
+   "number": "+",
+   "headline": "Aire de *fuera*",
+   "narration": "Así que aire de fuera, aire acondicionado y chorro al parabrisas.",
+   "mascot": {
+    "trigger": "Así",
+    "pose": "cheer",
+    "note": "¡Adiós, vaho!",
+    "side": "right"
+   },
+   "elements": [
+    {
+     "type": "tag",
+     "text": "AIRE DE FUERA",
+     "tone": "ink",
+     "trigger": "fuera",
+     "sfx": "pop"
+    },
+    {
+     "type": "tag",
+     "text": "A/C ENCENDIDO",
+     "tone": "hot",
+     "trigger": "acondicionado",
+     "sfx": "pop"
+    },
+    {
+     "type": "stamp",
+     "text": "AL PARABRISAS",
+     "tone": "accent",
+     "trigger": "parabrisas",
+     "sfx": "sello"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "headline": "Dudas → *truco*",
+   "narration": "Tú traes las dudas y nosotros te damos el truco.",
+   "elements": [
+    {
+     "type": "trick",
+     "trigger": "Tú",
+     "reveal_trigger": "nosotros"
+    }
+   ]
+  },
+  {
+   "chapter": 5,
+   "number": "TÚ",
+   "headline": "*Confiesa*",
+   "narration": "Síguenos y las resolvemos. ¿Tú cómo lo desempañas?",
+   "elements": [
+    {
+     "type": "follow",
+     "trigger": "Síguenos"
+    },
+    {
+     "type": "ask",
+     "text": "¿Tú cómo lo *desempañas*?",
+     "trigger": "¿Tú"
+    }
+   ]
+  }
+ ]
+}

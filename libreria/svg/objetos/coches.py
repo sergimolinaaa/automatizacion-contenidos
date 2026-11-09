@@ -6,6 +6,7 @@ arriba (brazos estirados con bolsas o pegados), pista de hielo y fondos (sala de
 Sale de: lote7-09-motor-central (por qué los superdeportivos llevan el motor en medio).
 """
 import math
+import random
 from ..base import (INK, LIME, CORAL, YEL, TEAL, VIO, f, g, gt, T, MONO, DISP, shade, trazo, sombra, brillo,
                     lg, rg, registrar_defs, degradado, Pieza)
 
@@ -372,3 +373,121 @@ def asiento_frontal(id_, cx, cojin_y, s=1.0, col="#4B5A7A"):
     tr = f"translate({f(cx)} {f(cojin_y + 34 * s)}) scale({f(s)})"
     return Pieza(gt(id_, tr, o), {"cojin": (cx, cojin_y), "respaldo": (cx, cojin_y - 250 * s), "cabezal": (cx, cojin_y - 520 * s)},
                  (cx - 236 * s, cojin_y - 566 * s, cx + 236 * s, cojin_y + 110 * s))
+
+
+# ------------------------------------------------------------------ interior del coche (vista del conductor), en PAPEL
+PARABRISAS = ((96, 470), (984, 470), (1060, 990), (20, 990))
+
+
+def interior_coche(lluvia=True, gotas=10, semilla=7, noche=False, volante=(800, 1120)):
+    """Fondo FULL (1080×1920) en papel recortado: vista desde el asiento hacia delante con techo, pilares, parabrisas
+    (calle y lluvia al otro lado), retrovisor, salpicadero claro con rejilla central y volante. Debajo de y 1300 todo
+    claro (crema), para que los subtítulos en tinta se lean. Ids: lejos (lo de fuera: pan suave), lluvia (contiene gl0..glN,
+    cada gota para "fall" + "drift"), retrovisor, salpicadero, rejilla (centro ≈ 540, 1080), volante (spin o move).
+    El parabrisas es PARABRISAS (para vaho_parabrisas). Ponlo como primer trozo de body y termina con grano()."""
+    from ..papel import PAPEL as P, recorte, fx
+    rnd = random.Random(semilla)
+    pts = " ".join(f"{x},{y}" for x, y in PARABRISAS)
+    cid = f"clipParabrisas{semilla}"
+    s = f'<rect width="1080" height="1920" fill="{P["hueso"]}"/>'
+    s += f'<clipPath id="{cid}"><polygon points="{pts}"/></clipPath>'
+    cielo = P["cielo_noche"] if noche else "#B7C7CF"
+    fuera = f'<rect x="-100" y="440" width="1280" height="600" fill="{cielo}"/>'
+    for i in range(7):  # edificios lejanos bajo la lluvia
+        bx, bw, bh = -40 + i * 170 + rnd.uniform(-20, 20), rnd.uniform(120, 170), rnd.uniform(140, 260)
+        fuera += f'<rect x="{f(bx)}" y="{f(830-bh)}" width="{f(bw)}" height="{f(bh+20)}" fill="{("#9FB1BB", "#A9B8BF", "#93A6B2")[i % 3]}"/>'
+        fuera += "".join(f'<rect x="{f(bx+16+c*40)}" y="{f(830-bh+24+r_*50)}" width="18" height="22" fill="{P["luz"] if noche else "#C9D6DC"}" opacity="0.8"/>'
+                         for c in range(int(bw // 44)) for r_ in range(int(bh // 60)))
+    fuera += f'<path d="M -100 830 L 1180 830 L 1180 1040 L -100 1040 Z" fill="#8E969B"/>'
+    fuera += f'<path d="M 520 830 L 560 830 L 700 1040 L 380 1040 Z" fill="#9AA2A6"/>'
+    fuera += "".join(f'<path d="M {f(536+k*6)} {f(850+k*60)} L {f(544+k*8)} {f(850+k*60)} L {f(548+k*10)} {f(880+k*70)} L {f(532+k*4)} {f(880+k*70)} Z" fill="{P["crema"]}"/>' for k in range(3))
+    # coche de delante con pilotos
+    fuera += (f'<path d="M 430 900 Q 432 860 470 852 L 610 852 Q 648 860 650 900 L 652 950 L 428 950 Z" fill="{P["azul_osc"]}"/>'
+              f'<rect x="446" y="900" width="38" height="18" rx="6" fill="{P["coral"]}"/><rect x="596" y="900" width="38" height="18" rx="6" fill="{P["coral"]}"/>'
+              f'<rect x="420" y="946" width="240" height="16" rx="6" fill="{P["tinta"]}" opacity="0.6"/>')
+    fuera += "".join(f'<path d="M {f(x)} {f(y)} l -10 34" stroke="#FFFFFF" stroke-width="3" opacity="0.55" stroke-linecap="round"/>'
+                     for x, y in ((rnd.uniform(60, 1020), rnd.uniform(470, 980)) for _ in range(40)))
+    s += f'<g clip-path="url(#{cid})">' + g("lejos", f'<g{fx("papelPlano")}>{fuera}</g>')
+    if lluvia:
+        gs = ""
+        for i in range(gotas):
+            gx, gy = rnd.uniform(130, 950), rnd.uniform(520, 940)
+            r = rnd.uniform(9, 15)
+            gs += g(f"gl{i}", f'<path d="M {f(gx)} {f(gy-r*1.6)} C {f(gx+r)} {f(gy-r*0.4)}, {f(gx+r)} {f(gy+r)}, {f(gx)} {f(gy+r)} '
+                               f'C {f(gx-r)} {f(gy+r)}, {f(gx-r)} {f(gy-r*0.4)}, {f(gx)} {f(gy-r*1.6)} Z" fill="#E6F2F7" opacity="0.85"/>'
+                               f'<circle cx="{f(gx-r*0.3)}" cy="{f(gy)}" r="{f(r*0.25)}" fill="#FFFFFF"/>')
+        s += g("lluvia", gs)
+    s += "</g>"
+    # techo y pilares
+    s += recorte("M -20 -20 L 1100 -20 L 1100 470 L 984 470 L 96 470 L -20 470 Z", P["hueso"], semilla + 1, "papelPlano", giro=0)
+    s += recorte("M 40 420 L 1040 420 L 1000 480 L 80 480 Z", P["carton"], semilla + 2, "papelBorde", giro=0)
+    s += recorte("M -20 420 L 100 440 L 30 1000 L -20 1000 Z", P["kraft"], semilla + 3, "papelBorde", giro=0)
+    s += recorte("M 1100 420 L 980 440 L 1050 1000 L 1100 1000 Z", P["kraft"], semilla + 4, "papelBorde", giro=0)
+    s += g("retrovisor", recorte("M 528 470 L 552 470 L 552 512 L 528 512 Z", P["gris_osc"], semilla + 5, "papelFino", giro=0)
+           + recorte("M 440 508 L 640 504 Q 652 506 650 540 L 646 566 L 434 570 L 432 534 Q 432 510 440 508 Z", P["gris_osc"], semilla + 6, "papelBorde", giro=0)
+           + f'<g{fx("papelPlano")}><path d="M 452 520 L 630 517 L 628 556 L 450 559 Z" fill="#C9D6DC"/></g>')
+    # salpicadero claro
+    sal = recorte("M -20 960 Q 300 920 540 922 Q 800 920 1100 960 L 1100 1310 L -20 1310 Z", P["arena"], semilla + 7, "papelBorde", giro=0)
+    sal += recorte("M -20 960 Q 300 920 540 922 Q 800 920 1100 960 L 1100 990 Q 800 952 540 954 Q 300 952 -20 990 Z", P["carton"], semilla + 8, "papelCapa", giro=0)
+    sal += recorte("M 40 1060 L 300 1056 L 300 1112 L 40 1116 Z", P["carton"], semilla + 9, "papelPlano", giro=0)
+    s += g("salpicadero", sal)
+    rj = recorte("M 430 1040 L 650 1036 L 652 1118 L 428 1122 Z", P["gris_osc"], semilla + 10, "papelBorde", giro=0)
+    rj += f'<g{fx("papelPlano")}>' + "".join(f'<rect x="446" y="{1052 + k*16}" width="190" height="8" rx="4" fill="{P["gris"]}"/>' for k in range(4)) + "</g>"
+    s += g("rejilla", rj)
+    # zona baja clara (bajo los subtítulos)
+    s += recorte("M -20 1290 Q 540 1270 1100 1290 L 1100 1940 L -20 1940 Z", P["crema"], semilla + 11, "papelPlano", giro=0)
+    vx, vy = volante
+    vol = (f'<g{fx("papelBorde")}><circle cx="{vx}" cy="{vy}" r="165" fill="none" stroke="{P["azul_marino"]}" stroke-width="40"/>'
+           f'<path d="M {vx-150} {vy+10} Q {vx} {vy-30} {vx+150} {vy+10} L {vx+40} {vy+40} L {vx+30} {vy+150} L {vx-30} {vy+150} L {vx-40} {vy+40} Z" fill="{P["azul_marino"]}"/>'
+           f'<circle cx="{vx}" cy="{vy+20}" r="46" fill="{P["azul_osc"]}"/></g>')
+    s += g("volante", vol)
+    return s
+
+
+def vaho_parabrisas(id_="vaho", bandas=4, op=0.82, semilla=3):
+    """Capa de vaho sobre PARABRISAS (para interior_coche). {id}_borde = marco empañado de los bordes (fade: «empieza a
+    empañarse»); {id}_b0..b{n-1} = franjas horizontales de ABAJO a ARRIBA que tapan el resto (fade para empañar; hide
+    una tras otra con triggers seguidos = barrido que despeja de abajo arriba)."""
+    from ..papel import PAPEL as P
+    rnd = random.Random(semilla)
+    pts = " ".join(f"{x},{y}" for x, y in PARABRISAS)
+    cid = f"clipVaho{semilla}"
+    y0, y1 = 470, 990
+    blanco = "#F4F7F6"
+    borde = (f'<polygon points="{pts}" fill="none" stroke="{blanco}" stroke-width="150" opacity="{op}"/>'
+             + "".join(f'<circle cx="{f(rnd.uniform(60, 1020))}" cy="{f(rnd.choice((rnd.uniform(470, 560), rnd.uniform(900, 990))))}" '
+                       f'r="{f(rnd.uniform(30, 60))}" fill="{blanco}" opacity="{op}"/>' for _ in range(10)))
+    s = g(f"{id_}_borde", borde)
+    hb = (y1 - y0) / bandas
+    for i in range(bandas):
+        yb = y1 - (i + 1) * hb
+        manchas = "".join(f'<circle cx="{f(rnd.uniform(80, 1000))}" cy="{f(yb+rnd.uniform(0, hb))}" r="{f(rnd.uniform(10, 22))}" fill="#FFFFFF" opacity="0.5"/>' for _ in range(5))
+        s += g(f"{id_}_b{i}", f'<rect x="0" y="{f(yb-1)}" width="1080" height="{f(hb+2)}" fill="{blanco}" opacity="{op}"/>' + manchas)
+    return g(id_, f'<clipPath id="{cid}"><polygon points="{pts}"/></clipPath><g clip-path="url(#{cid})">{s}</g>')
+
+
+def boton_clima(id_, cx, cy, r=60, tipo="ac"):
+    """Botón redondo del climatizador en papel: tipo "ac" (texto A/C), "recirc" (coche con flecha en U dentro),
+    "parabrisas" (parabrisas con flechas onduladas). {id}_luz = LED lima (ocúltalo con hide y sácalo con pop/pulse para encender).
+    .puntos centro."""
+    from ..papel import PAPEL as P, fx
+    s = f'<g{fx("papelBorde")}><circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r)}" fill="{P["azul_marino"]}"/>'
+    s += f'<circle cx="{f(cx)}" cy="{f(cy)}" r="{f(r*0.82)}" fill="{P["azul_osc"]}"/></g>'
+    ic = ""
+    if tipo == "ac":
+        ic = T(cx, cy + r * 0.2, "A/C", r * 0.52, P["crema"], font=DISP)
+    elif tipo == "recirc":
+        k = r / 60
+        ic = (f'<path d="M {f(cx-40*k)} {f(cy+22*k)} L {f(cx-36*k)} {f(cy-2*k)} L {f(cx-18*k)} {f(cy-26*k)} L {f(cx+20*k)} {f(cy-26*k)} '
+              f'L {f(cx+38*k)} {f(cy-2*k)} L {f(cx+42*k)} {f(cy+22*k)} Z" fill="none" stroke="{P["crema"]}" stroke-width="{f(6*k)}" stroke-linejoin="round"/>'
+              f'<path d="M {f(cx+16*k)} {f(cy+10*k)} A {f(16*k)} {f(14*k)} 0 1 1 {f(cx-16*k)} {f(cy+10*k)}" fill="none" stroke="{P["crema"]}" stroke-width="{f(6*k)}" stroke-linecap="round"/>'
+              f'<path d="M {f(cx-26*k)} {f(cy+2*k)} L {f(cx-16*k)} {f(cy+14*k)} L {f(cx-4*k)} {f(cy+2*k)}" fill="none" stroke="{P["crema"]}" stroke-width="{f(6*k)}" stroke-linecap="round" stroke-linejoin="round"/>')
+    else:
+        k = r / 60
+        ic = (f'<path d="M {f(cx-38*k)} {f(cy+20*k)} Q {f(cx)} {f(cy+30*k)} {f(cx+38*k)} {f(cy+20*k)} L {f(cx+30*k)} {f(cy-22*k)} Q {f(cx)} {f(cy-28*k)} {f(cx-30*k)} {f(cy-22*k)} Z" '
+              f'fill="none" stroke="{P["crema"]}" stroke-width="{f(6*k)}" stroke-linejoin="round"/>'
+              + "".join(f'<path d="M {f(cx+dx*k)} {f(cy+12*k)} q {f(-6*k)} {f(-8*k)} 0 {f(-16*k)} t 0 {f(-16*k)}" fill="none" stroke="{P["crema"]}" stroke-width="{f(5*k)}" stroke-linecap="round"/>' for dx in (-14, 0, 14)))
+    s += ic
+    luz = f'<g{fx("papelFino")}><rect x="{f(cx-r*0.3)}" y="{f(cy+r*0.52)}" width="{f(r*0.6)}" height="{f(r*0.16)}" rx="{f(r*0.08)}" fill="{P["lima"]}"/></g>'
+    s += g(f"{id_}_luz", luz)
+    return Pieza(g(id_, s), {"centro": (cx, cy)}, (cx - r, cy - r, cx + r, cy + r))

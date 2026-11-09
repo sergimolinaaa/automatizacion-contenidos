@@ -827,3 +827,50 @@ def zapato_lado(id_, x0, suelo, s=1.0, col=CORAL, suela="#3A2E2A"):
     tr = f"translate({f(x0)} {f(suelo)}) scale({f(s)})"
     return Pieza(gt(id_, tr, o), {"suela": (x0 + 210 * s, suelo - 22 * s), "tobillo": (x0 + 90 * s, suelo - 180 * s)},
                  (x0, suelo - 186 * s, x0 + 424 * s, suelo))
+
+
+def paraguas_cerrado(id_, cx, base, h=360, col=CORAL, mango="#8A5A2B", gotas=True):
+    """Paraguas cerrado y mojado, de pie con la punta abajo (base = punta en el suelo, mango arriba) ≈ h × 0.33h.
+    Sub-ids: {id}_tela (sway origin bottom), {id}_charco (grow/fade), {id}_g0..g2 (gotas que resbalan: bob o fall).
+    .puntos: punta, mango, charco. Sirve en papel con a_papel()."""
+    w = h * 0.3
+    top = base - h
+    t0 = top + h * 0.2
+    o = g(f"{id_}_charco" if id_ else None,
+          f'<ellipse cx="{f(cx)}" cy="{f(base+6)}" rx="{f(w*1.25)}" ry="{f(h*0.035)}" fill="#8FD3FF" stroke="{INK}" stroke-width="4" opacity="0.9"/>')
+    o += f'<path d="M {f(cx)} {f(base)} L {f(cx)} {f(top+h*0.12)}" stroke="{INK}" stroke-width="{f(h*0.03)}" stroke-linecap="round"/>'
+    tela = (f'<path d="M {f(cx)} {f(base-h*0.06)} L {f(cx-w*0.5)} {f(t0+h*0.12)} Q {f(cx-w*0.4)} {f(t0)} {f(cx)} {f(t0-h*0.02)} '
+            f'Q {f(cx+w*0.42)} {f(t0)} {f(cx+w*0.5)} {f(t0+h*0.12)} Z" fill="{col}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+            f'<path d="M {f(cx)} {f(base-h*0.08)} L {f(cx-w*0.16)} {f(t0+h*0.04)} M {f(cx)} {f(base-h*0.08)} L {f(cx+w*0.18)} {f(t0+h*0.04)}" '
+            f'stroke="{shade(col, -0.25) if col.startswith("#") else INK}" stroke-width="4" fill="none"/>'
+            f'<path d="M {f(cx-w*0.42)} {f(t0+h*0.28)} Q {f(cx)} {f(t0+h*0.34)} {f(cx+w*0.42)} {f(t0+h*0.28)}" stroke="{INK}" stroke-width="5" fill="none" opacity="0.5"/>')
+    o += g(f"{id_}_tela" if id_ else None, tela)
+    o += (f'<path d="M {f(cx)} {f(top+h*0.13)} L {f(cx)} {f(top+h*0.05)} Q {f(cx)} {f(top-h*0.04)} {f(cx+w*0.28)} {f(top-h*0.02)} '
+          f'Q {f(cx+w*0.42)} {f(top)} {f(cx+w*0.4)} {f(top+h*0.07)}" fill="none" stroke="{INK}" stroke-width="{f(h*0.05)}" stroke-linecap="round"/>'
+          f'<path d="M {f(cx)} {f(top+h*0.13)} L {f(cx)} {f(top+h*0.05)} Q {f(cx)} {f(top-h*0.04)} {f(cx+w*0.28)} {f(top-h*0.02)} '
+          f'Q {f(cx+w*0.42)} {f(top)} {f(cx+w*0.4)} {f(top+h*0.07)}" fill="none" stroke="{mango}" stroke-width="{f(h*0.03)}" stroke-linecap="round"/>')
+    if gotas:
+        for i, (dx, dy) in enumerate(((-0.3, 0.5), (0.25, 0.62), (0.05, 0.82))):
+            gx, gy = cx + w * dx, t0 + (base - t0) * dy
+            s_ = h * 0.035
+            o += g(f"{id_}_g{i}" if id_ else None,
+                   f'<path d="M {f(gx)} {f(gy-s_*1.6)} C {f(gx+s_)} {f(gy-s_*0.4)}, {f(gx+s_)} {f(gy+s_)}, {f(gx)} {f(gy+s_)} '
+                   f'C {f(gx-s_)} {f(gy+s_)}, {f(gx-s_)} {f(gy-s_*0.4)}, {f(gx)} {f(gy-s_*1.6)} Z" fill="#8FD3FF" stroke="{INK}" stroke-width="3"/>')
+    return Pieza(g(id_, o), {"punta": (cx, base), "mango": (cx + w * 0.3, top), "charco": (cx, base + 6)},
+                 (cx - w * 1.25, top - h * 0.05, cx + w * 1.25, base + h * 0.05))
+
+
+def esponja(id_, cx, cy, w=360, h=220, col="#FFC83D", agua="#8FD3FF", seed=4):
+    """Esponja de cocina vista de lado (bloque con poros) centrada en (cx, cy). Sub-ids: {id}_seca, {id}_agua (la misma
+    esponja empapada en azul: ocúltala y sácala con fade para «se llena de agua»), {id}_poros. .puntos: abajo (por donde
+    gotea), arriba. Sirve en papel con a_papel()."""
+    rnd = random.Random(seed)
+    x0, y0 = cx - w / 2, cy - h / 2
+    d = (f"M {f(x0+18)} {f(y0+6)} Q {f(cx)} {f(y0-10)} {f(x0+w-18)} {f(y0+4)} Q {f(x0+w+6)} {f(cy)} {f(x0+w-10)} {f(y0+h-6)} "
+         f"Q {f(cx)} {f(y0+h+10)} {f(x0+12)} {f(y0+h-4)} Q {f(x0-8)} {f(cy)} {f(x0+18)} {f(y0+6)} Z")
+    poros = "".join(f'<ellipse cx="{f(x0+rnd.uniform(0.1, 0.9)*w)}" cy="{f(y0+rnd.uniform(0.15, 0.85)*h)}" rx="{f(rnd.uniform(8, 18))}" '
+                    f'ry="{f(rnd.uniform(6, 12))}" fill="{INK}" opacity="0.22"/>' for _ in range(16))
+    o = g(f"{id_}_seca" if id_ else None, f'<path d="{d}" fill="{col}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>')
+    o += g(f"{id_}_agua" if id_ else None, f'<path d="{d}" fill="{agua}" stroke="{INK}" stroke-width="6" stroke-linejoin="round" opacity="0.85"/>')
+    o += g(f"{id_}_poros" if id_ else None, poros)
+    return Pieza(g(id_, o), {"abajo": (cx, y0 + h + 6), "arriba": (cx, y0)}, (x0 - 8, y0 - 10, x0 + w + 8, y0 + h + 10))
