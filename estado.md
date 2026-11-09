@@ -1,3 +1,5 @@
+> **CUENTA EN PAUSA desde el 9-nov-2026 (decisión del usuario: no da buenos resultados).** Últimos vídeos programados: calambre (9-nov) y cristal empañado (10-nov). Turno diario y revisión de noticias DESACTIVADOS. Guiones listos sin montar: semana-2026-11-02 (eléctrico frío, carga 80 %, abstención) y calendario 14-28 nov sin guion. Para reanudar: reactivar los turnos y seguir docs/estrategia.md.
+
 # Estado de producción
 
 Actualízalo al guionizar, montar, programar y publicar. Una fila por vídeo.
